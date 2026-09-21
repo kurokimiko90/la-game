@@ -1,0 +1,832 @@
+{
+  "sceneName": "語言小鎮・公園",
+  "sceneSlug": "la-park",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "plaza": "噴泉廣場",
+    "playground": "遊樂場",
+    "lake": "湖邊"
+  },
+  "elements": [
+    {
+      "name": "門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩根石柱撐起一道綠色橫樑的公園入口門架，橫樑上不寫字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "gate",
+        "words": {
+          "zh-TW": "門",
+          "en": "gate",
+          "ja": {
+            "text": "門",
+            "reading": "もん"
+          }
+        }
+      }
+    },
+    {
+      "name": "長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "三條木板椅面加兩條木板椅背、黑色鐵製椅腳與扶手的公園長椅。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "bench",
+        "words": {
+          "zh-TW": "長椅",
+          "en": "bench",
+          "ja": {
+            "text": "ベンチ",
+            "reading": "ベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色圓筒垃圾桶，頂部有蓋，蓋下一道黑色投入口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "trash-can",
+        "words": {
+          "zh-TW": "垃圾桶",
+          "en": "trash can",
+          "ja": {
+            "text": "ゴミ箱",
+            "reading": "ごみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "路燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長深灰色燈桿，頂端一盞倒梯形燈罩，燈罩下方淡黃色光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "streetlight",
+        "words": {
+          "zh-TW": "路燈",
+          "en": "streetlight",
+          "ja": {
+            "text": "街灯",
+            "reading": "がいとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "告示牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根木樁撐起的木框告示板，板面釘著兩張空白紙（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "notice-board",
+        "words": {
+          "zh-TW": "告示牌",
+          "en": "notice board",
+          "ja": {
+            "text": "掲示板",
+            "reading": "けいじばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "公園飲水台：一根灰色方柱，柱頂向右伸出一個淺灰色小平台（水盆），平台上一個小噴嘴，噴出一道往右上斜的藍色水柱（兩條藍色短直線）。所有形狀加深色描邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "drinking-fountain",
+        "words": {
+          "zh-TW": "飲水台",
+          "en": "drinking fountain",
+          "ja": {
+            "text": "水飲み場",
+            "reading": "みずのみば"
+          }
+        }
+      }
+    },
+    {
+      "name": "花壇",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "磚紅色長方形花台，上面一排紅、黃、粉紅的圓形花朵與綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "flower-bed",
+        "words": {
+          "zh-TW": "花壇",
+          "en": "flower bed",
+          "ja": {
+            "text": "花壇",
+            "reading": "かだん"
+          }
+        }
+      }
+    },
+    {
+      "name": "嬰兒車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的嬰兒推車：一個藍色圓角矩形車籃，車籃左上方連著一片斜的深藍遮陽篷（多邊形），車籃正下方貼著兩個灰色小圓輪，右上方一根斜推把向右上延伸。所有部件互相連接。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "stroller",
+        "words": {
+          "zh-TW": "嬰兒車",
+          "en": "stroller",
+          "ja": {
+            "text": "ベビーカー",
+            "reading": "ベビーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "草帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺黃色草帽：扁橢圓帽簷加上方梯形帽頂，一條紅色帽帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "straw-hat",
+        "words": {
+          "zh-TW": "草帽",
+          "en": "straw hat",
+          "ja": {
+            "text": "麦わら帽子",
+            "reading": "むぎわらぼうし"
+          }
+        }
+      }
+    },
+    {
+      "name": "噴泉",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "圓形石砌水池，中央兩層圓盤，頂端向上噴出藍色水柱（用直線與小圓點表現水花）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "fountain",
+        "words": {
+          "zh-TW": "噴泉",
+          "en": "fountain",
+          "ja": {
+            "text": "噴水",
+            "reading": "ふんすい"
+          }
+        }
+      }
+    },
+    {
+      "name": "氣球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色橢圓氣球，底部小三角結，下面垂一條細直線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "balloon",
+        "words": {
+          "zh-TW": "氣球",
+          "en": "balloon",
+          "ja": {
+            "text": "風船",
+            "reading": "ふうせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "鳥屋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "立在木桿上的小木屋，三角形屋頂，正面一個圓形小洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "birdhouse",
+        "words": {
+          "zh-TW": "鳥屋",
+          "en": "birdhouse",
+          "ja": {
+            "text": "巣箱",
+            "reading": "すばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "時鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色柱子頂端一個圓形時鐘，鐘面只有刻度與兩根指針，沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "clock",
+        "words": {
+          "zh-TW": "時鐘",
+          "en": "clock",
+          "ja": {
+            "text": "時計",
+            "reading": "とけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨傘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的紅色雨傘：傘面是一個寬扁的等腰三角形（底邊有三個小尖角），傘面正中央往下一根黑色直傘柄，柄底向左彎成 L 形把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "umbrella",
+        "words": {
+          "zh-TW": "雨傘",
+          "en": "umbrella",
+          "ja": {
+            "text": "傘",
+            "reading": "かさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "太陽眼鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色鏡片的太陽眼鏡，兩個圓角方形鏡片、細鏡架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "sunglasses",
+        "words": {
+          "zh-TW": "太陽眼鏡",
+          "en": "sunglasses",
+          "ja": {
+            "text": "サングラス",
+            "reading": "サングラス"
+          }
+        }
+      }
+    },
+    {
+      "name": "書",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "攤開的書，左右兩頁只有灰色線條代表文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "book",
+        "words": {
+          "zh-TW": "書",
+          "en": "book",
+          "ja": {
+            "text": "本",
+            "reading": "ほん"
+          }
+        }
+      }
+    },
+    {
+      "name": "水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色運動水壺，直筒瓶身，頂部黑色瓶蓋與提環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "water-bottle",
+        "words": {
+          "zh-TW": "水壺",
+          "en": "water bottle",
+          "ja": {
+            "text": "水筒",
+            "reading": "すいとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "溜滑梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "左邊直立梯子、頂部小平台、右邊斜斜往下的黃色滑道，紅色支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "slide",
+        "words": {
+          "zh-TW": "溜滑梯",
+          "en": "slide",
+          "ja": {
+            "text": "滑り台",
+            "reading": "すべりだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞦韆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "藍色 A 字形鐵架，橫桿下用兩條直線垂掛兩個紅色座板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "swing",
+        "words": {
+          "zh-TW": "鞦韆",
+          "en": "swing",
+          "ja": {
+            "text": "ブランコ",
+            "reading": "ブランコ"
+          }
+        }
+      }
+    },
+    {
+      "name": "翹翹板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "中央紅色三角形支點上架一條長長的黃色木板，兩端各有一個直立把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "seesaw",
+        "words": {
+          "zh-TW": "翹翹板",
+          "en": "seesaw",
+          "ja": {
+            "text": "シーソー",
+            "reading": "シーソー"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙坑",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木框方形沙坑（看得到上方淺黃色沙面），沙裡插著一把藍色小鏟子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "sandbox",
+        "words": {
+          "zh-TW": "沙坑",
+          "en": "sandbox",
+          "ja": {
+            "text": "砂場",
+            "reading": "すなば"
+          }
+        }
+      }
+    },
+    {
+      "name": "水桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色小塑膠水桶，梯形桶身，上方一條細提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "bucket",
+        "words": {
+          "zh-TW": "水桶",
+          "en": "bucket",
+          "ja": {
+            "text": "バケツ",
+            "reading": "バケツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅白相間的圓形皮球，中間一條白色橫帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "ball",
+        "words": {
+          "zh-TW": "球",
+          "en": "ball",
+          "ja": {
+            "text": "ボール",
+            "reading": "ボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "風箏",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "菱形風箏，十字骨架，下方一條折線尾巴綴著三個小三角形蝴蝶結。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "kite",
+        "words": {
+          "zh-TW": "風箏",
+          "en": "kite",
+          "ja": {
+            "text": "凧",
+            "reading": "たこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑板車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "側面看：細長踏板、前方直立把手、底下兩個小圓輪的滑板車。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "kick-scooter",
+        "words": {
+          "zh-TW": "滑板車",
+          "en": "kick scooter",
+          "ja": {
+            "text": "キックボード",
+            "reading": "キックボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "涼亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "四根木柱撐起的三角形屋頂涼亭，亭內一張小長椅。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "gazebo",
+        "words": {
+          "zh-TW": "涼亭",
+          "en": "gazebo",
+          "ja": {
+            "text": "東屋",
+            "reading": "あずまや"
+          }
+        }
+      }
+    },
+    {
+      "name": "小船",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的棕色小木船（梯形船身），船上交叉放著兩支槳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "rowboat",
+        "words": {
+          "zh-TW": "小船",
+          "en": "rowboat",
+          "ja": {
+            "text": "ボート",
+            "reading": "ボート"
+          }
+        }
+      }
+    },
+    {
+      "name": "野餐墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "鋪在地上的紅白格紋野餐墊（略帶俯角的平行四邊形）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "picnic-blanket",
+        "words": {
+          "zh-TW": "野餐墊",
+          "en": "picnic blanket",
+          "ja": {
+            "text": "レジャーシート",
+            "reading": "レジャーシート"
+          }
+        }
+      }
+    },
+    {
+      "name": "野餐籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色方形藤籃，籃身有交叉編織線，上方一條提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "picnic-basket",
+        "words": {
+          "zh-TW": "野餐籃",
+          "en": "picnic basket",
+          "ja": {
+            "text": "ピクニックバスケット",
+            "reading": "ピクニックバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "樹",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "棕色樹幹上一團由三到四個綠色圓形疊成的樹冠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "tree",
+        "words": {
+          "zh-TW": "樹",
+          "en": "tree",
+          "ja": {
+            "text": "木",
+            "reading": "き"
+          }
+        }
+      }
+    },
+    {
+      "name": "灌木叢",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "三個大小不一、深淺不同的綠色圓形疊在一起的矮灌木。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "bush",
+        "words": {
+          "zh-TW": "灌木叢",
+          "en": "bush",
+          "ja": {
+            "text": "茂み",
+            "reading": "しげみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "石頭",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "灰色不規則多邊形石頭，上緣一條淺色高光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "stone",
+        "words": {
+          "zh-TW": "石頭",
+          "en": "stone",
+          "ja": {
+            "text": "石",
+            "reading": "いし"
+          }
+        }
+      }
+    },
+    {
+      "name": "三明治",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三角形三明治，看得到吐司、綠色生菜、黃色起司、粉紅火腿的層次。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "sandwich",
+        "words": {
+          "zh-TW": "三明治",
+          "en": "sandwich",
+          "ja": {
+            "text": "サンドイッチ",
+            "reading": "サンドイッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鴿子",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "灰色鴿子，脖子帶綠紫光澤，側面站姿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "pigeon",
+        "words": {
+          "zh-TW": "鴿子",
+          "en": "pigeon",
+          "ja": {
+            "text": "鳩",
+            "reading": "はと"
+          }
+        }
+      }
+    },
+    {
+      "name": "狗",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "medium",
+      "desc": "棕色短毛小狗，側面站姿，搖著尾巴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "dog",
+        "words": {
+          "zh-TW": "狗",
+          "en": "dog",
+          "ja": {
+            "text": "犬",
+            "reading": "いぬ"
+          }
+        }
+      }
+    },
+    {
+      "name": "貓",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "橘色虎斑貓，蹲坐姿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "cat",
+        "words": {
+          "zh-TW": "貓",
+          "en": "cat",
+          "ja": {
+            "text": "猫",
+            "reading": "ねこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鴨子",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "白色鴨子，橘色嘴與腳，浮在水面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "duck",
+        "words": {
+          "zh-TW": "鴨子",
+          "en": "duck",
+          "ja": {
+            "text": "アヒル",
+            "reading": "アヒル"
+          }
+        }
+      }
+    },
+    {
+      "name": "松鼠",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "紅棕色松鼠，大尾巴，雙手抱著一顆堅果。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "squirrel",
+        "words": {
+          "zh-TW": "松鼠",
+          "en": "squirrel",
+          "ja": {
+            "text": "リス",
+            "reading": "リス"
+          }
+        }
+      }
+    },
+    {
+      "name": "蝴蝶",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "黃黑色花紋的蝴蝶，翅膀張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "butterfly",
+        "words": {
+          "zh-TW": "蝴蝶",
+          "en": "butterfly",
+          "ja": {
+            "text": "蝶",
+            "reading": "ちょう"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,790 @@
+{
+  "sceneName": "語言小鎮・商業街",
+  "sceneSlug": "la-street",
+  "propStyle": "front-flat",
+  "zones": {
+    "crossing": "路口",
+    "shops": "商店",
+    "cafe": "咖啡店",
+    "bus-stop": "公車站"
+  },
+  "elements": [
+    {
+      "name": "紅綠燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深灰色燈桿，黑色直立長方燈箱裡由上到下紅、黃、綠三個圓燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "traffic-light",
+        "words": {
+          "zh-TW": "紅綠燈",
+          "en": "traffic light",
+          "ja": {
+            "text": "信号",
+            "reading": "しんごう"
+          }
+        }
+      }
+    },
+    {
+      "name": "斑馬線",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "略帶俯角的斑馬線：一塊橫向的深灰色路面（平行四邊形），路面上 5 條等寬的白色平行四邊形條紋，條紋沿路面由左到右排開、彼此間隔相等。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "crosswalk",
+        "words": {
+          "zh-TW": "斑馬線",
+          "en": "crosswalk",
+          "ja": {
+            "text": "横断歩道",
+            "reading": "おうだんほどう"
+          }
+        }
+      }
+    },
+    {
+      "name": "消防栓",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色消防栓：圓頂、圓柱身、左右兩個短出水口、底部方形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "fire-hydrant",
+        "words": {
+          "zh-TW": "消防栓",
+          "en": "fire hydrant",
+          "ja": {
+            "text": "消火栓",
+            "reading": "しょうかせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵筒",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色圓柱形郵筒，頂部橢圓帽蓋，中段一道黑色投信口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "mailbox",
+        "words": {
+          "zh-TW": "郵筒",
+          "en": "mailbox",
+          "ja": {
+            "text": "ポスト",
+            "reading": "ポスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "路牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色桿子頂端一塊藍色圓形標誌牌，牌面一個白色箭頭（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "road-sign",
+        "words": {
+          "zh-TW": "路牌",
+          "en": "road sign",
+          "ja": {
+            "text": "標識",
+            "reading": "ひょうしき"
+          }
+        }
+      }
+    },
+    {
+      "name": "三角錐",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色三角錐，中間兩道白色反光條，底部黑色方形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "traffic-cone",
+        "words": {
+          "zh-TW": "三角錐",
+          "en": "traffic cone",
+          "ja": {
+            "text": "カラーコーン",
+            "reading": "カラーコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "汽車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面看的紅色小轎車：車身、兩扇淺藍車窗、兩個黑色輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "car",
+        "words": {
+          "zh-TW": "汽車",
+          "en": "car",
+          "ja": {
+            "text": "車",
+            "reading": "くるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "計程車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面看的黃色計程車，車頂一個小燈牌（不寫字），車身一條黑白格紋帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "taxi",
+        "words": {
+          "zh-TW": "計程車",
+          "en": "taxi",
+          "ja": {
+            "text": "タクシー",
+            "reading": "タクシー"
+          }
+        }
+      }
+    },
+    {
+      "name": "機車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的白色速克達機車：前方擋風板、座墊、兩個輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "scooter",
+        "words": {
+          "zh-TW": "機車",
+          "en": "scooter",
+          "ja": {
+            "text": "スクーター",
+            "reading": "スクーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "理髮店旋轉燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓柱形理髮店招牌燈，紅白藍斜條紋，上下銀色蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "barber-pole",
+        "words": {
+          "zh-TW": "理髮店旋轉燈",
+          "en": "barber pole",
+          "ja": {
+            "text": "サインポール",
+            "reading": "サインポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮陽棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "店門上方的綠白直條紋遮陽棚（梯形），下緣一排小三角形垂邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "awning",
+        "words": {
+          "zh-TW": "遮陽棚",
+          "en": "awning",
+          "ja": {
+            "text": "日よけ",
+            "reading": "ひよけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "櫥窗",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "木框大玻璃櫥窗，裡面陳列一頂帽子、一個手提包、一雙鞋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "shop-window",
+        "words": {
+          "zh-TW": "櫥窗",
+          "en": "shop window",
+          "ja": {
+            "text": "ショーウィンドウ",
+            "reading": "ショーウィンドウ"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動販賣機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍色長方形販賣機：上半部三排彩色飲料瓶，右側投幣口，下方黑色取物口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "vending-machine",
+        "words": {
+          "zh-TW": "自動販賣機",
+          "en": "vending machine",
+          "ja": {
+            "text": "自動販売機",
+            "reading": "じどうはんばいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牛皮紙色購物紙袋，梯形袋身，上方兩條提繩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "paper-bag",
+        "words": {
+          "zh-TW": "紙袋",
+          "en": "paper bag",
+          "ja": {
+            "text": "紙袋",
+            "reading": "かみぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色鐵桶裡插著一束紅、黃、紫的花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "bouquet",
+        "words": {
+          "zh-TW": "花束",
+          "en": "bouquet",
+          "ja": {
+            "text": "花束",
+            "reading": "はなたば"
+          }
+        }
+      }
+    },
+    {
+      "name": "提款機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "嵌在牆上的灰色提款機：上方藍色螢幕、中間按鍵格、下方出鈔口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "atm",
+        "words": {
+          "zh-TW": "提款機",
+          "en": "ATM",
+          "ja": {
+            "text": "ATM",
+            "reading": "エーティーエム"
+          }
+        }
+      }
+    },
+    {
+      "name": "傘架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓筒形傘架，插著三把收起來的不同顏色長傘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "umbrella-stand",
+        "words": {
+          "zh-TW": "傘架",
+          "en": "umbrella stand",
+          "ja": {
+            "text": "傘立て",
+            "reading": "かさたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "黑板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "A 字形木框立式小黑板，板面只有白色粉筆線條與小圖形（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "blackboard",
+        "words": {
+          "zh-TW": "黑板",
+          "en": "blackboard",
+          "ja": {
+            "text": "黒板",
+            "reading": "こくばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬克杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色馬克杯，杯中咖啡，上方三條直線蒸氣，右側方形把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "mug",
+        "words": {
+          "zh-TW": "馬克杯",
+          "en": "mug",
+          "ja": {
+            "text": "マグカップ",
+            "reading": "マグカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色外帶紙杯，棕色杯套與平蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "paper-cup",
+        "words": {
+          "zh-TW": "紙杯",
+          "en": "paper cup",
+          "ja": {
+            "text": "紙コップ",
+            "reading": "かみコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋糕",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三角形切片蛋糕，白色奶油層與海綿層，頂端一顆紅色草莓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "cake",
+        "words": {
+          "zh-TW": "蛋糕",
+          "en": "cake",
+          "ja": {
+            "text": "ケーキ",
+            "reading": "ケーキ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓胖的白色茶壺，左邊斜的壺嘴、右邊把手、頂部壺蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "teapot",
+        "words": {
+          "zh-TW": "茶壺",
+          "en": "teapot",
+          "ja": {
+            "text": "ティーポット",
+            "reading": "ティーポット"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色方形咖啡機，前方兩個出水口，下面一只小杯子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "coffee-maker",
+        "words": {
+          "zh-TW": "咖啡機",
+          "en": "coffee maker",
+          "ja": {
+            "text": "コーヒーメーカー",
+            "reading": "コーヒーメーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌子",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "咖啡座：中央一張白色圓桌（上方扁橢圓桌面、一根細桌腳、底部一條橫向底座），左右各一張側面看的金屬椅（直立椅背＋水平椅面＋兩條椅腳）。所有形狀加深色描邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "table",
+        "words": {
+          "zh-TW": "桌子",
+          "en": "table",
+          "ja": {
+            "text": "テーブル",
+            "reading": "テーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "報紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "折起的報紙，版面只有灰色線條與一個灰色方塊代表照片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "newspaper",
+        "words": {
+          "zh-TW": "報紙",
+          "en": "newspaper",
+          "ja": {
+            "text": "新聞",
+            "reading": "しんぶん"
+          }
+        }
+      }
+    },
+    {
+      "name": "餅乾",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形巧克力豆餅乾，表面幾個深棕色小點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "cookie",
+        "words": {
+          "zh-TW": "餅乾",
+          "en": "cookie",
+          "ja": {
+            "text": "クッキー",
+            "reading": "クッキー"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面看的綠色公車：一排方形車窗、兩扇車門、兩個黑色輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus",
+        "words": {
+          "zh-TW": "公車",
+          "en": "bus",
+          "ja": {
+            "text": "バス",
+            "reading": "バス"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車站牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "桿子頂端一個圓牌，圓牌中央一個簡化的公車圖形（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-stop",
+        "words": {
+          "zh-TW": "公車站牌",
+          "en": "bus stop",
+          "ja": {
+            "text": "バス停",
+            "reading": "バスてい"
+          }
+        }
+      }
+    },
+    {
+      "name": "反光鏡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橘色桿子頂端一面圓形凸面鏡，橘色鏡框，鏡面淺藍色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "traffic-mirror",
+        "words": {
+          "zh-TW": "反光鏡",
+          "en": "traffic mirror",
+          "ja": {
+            "text": "カーブミラー",
+            "reading": "カーブミラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "時刻表",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "貼在柱上的白色表格，只有格線沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "timetable",
+        "words": {
+          "zh-TW": "時刻表",
+          "en": "timetable",
+          "ja": {
+            "text": "時刻表",
+            "reading": "じこくひょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的藍色拉桿行李箱，上方伸出拉桿，底部兩個小輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "suitcase",
+        "words": {
+          "zh-TW": "行李箱",
+          "en": "suitcase",
+          "ja": {
+            "text": "スーツケース",
+            "reading": "スーツケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "手機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色智慧型手機，淺藍色螢幕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "smartphone",
+        "words": {
+          "zh-TW": "手機",
+          "en": "smartphone",
+          "ja": {
+            "text": "スマートフォン",
+            "reading": "スマートフォン"
+          }
+        }
+      }
+    },
+    {
+      "name": "背包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色後背包正面：圓角矩形包身，頂部一條短提把，正面下半部一個深紅色小口袋和一條橫向拉鍊線，包身左右兩側各露出一段黑色肩帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "backpack",
+        "words": {
+          "zh-TW": "背包",
+          "en": "backpack",
+          "ja": {
+            "text": "リュックサック",
+            "reading": "リュックサック"
+          }
+        }
+      }
+    },
+    {
+      "name": "電線桿",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "木製電線桿，上方一根橫擔，拉出幾條細電線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "utility-pole",
+        "words": {
+          "zh-TW": "電線桿",
+          "en": "utility pole",
+          "ja": {
+            "text": "電柱",
+            "reading": "でんちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "警察",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "穿深藍制服、戴警帽的警察，站姿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "police-officer",
+        "words": {
+          "zh-TW": "警察",
+          "en": "police officer",
+          "ja": {
+            "text": "警察官",
+            "reading": "けいさつかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵差",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "穿綠色制服、背郵包的郵差。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "mail-carrier",
+        "words": {
+          "zh-TW": "郵差",
+          "en": "mail carrier",
+          "ja": {
+            "text": "郵便配達員",
+            "reading": "ゆうびんはいたついん"
+          }
+        }
+      }
+    },
+    {
+      "name": "花店老闆",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "繫著圍裙、手捧花束的花店老闆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "florist",
+        "words": {
+          "zh-TW": "花店老闆",
+          "en": "florist",
+          "ja": {
+            "text": "花屋",
+            "reading": "はなや"
+          }
+        }
+      }
+    }
+  ]
+}

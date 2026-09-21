@@ -1,0 +1,748 @@
+{
+  "sceneName": "語言小鎮・河邊商業區",
+  "sceneSlug": "la-riverside",
+  "propStyle": "front-flat",
+  "zones": {
+    "bridge": "橋",
+    "pier": "碼頭",
+    "terrace": "露天座位",
+    "promenade": "河岸步道"
+  },
+  "elements": [
+    {
+      "name": "橋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面看的鋼構橋：平直橋面、下方三根橋墩、上方一排欄杆，橋下藍色水面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "bridge",
+        "words": {
+          "zh-TW": "橋",
+          "en": "bridge",
+          "ja": {
+            "text": "橋",
+            "reading": "はし"
+          }
+        }
+      }
+    },
+    {
+      "name": "欄杆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一段黑色鐵欄杆，一排直條加上下兩條橫桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "handrail",
+        "words": {
+          "zh-TW": "欄杆",
+          "en": "handrail",
+          "ja": {
+            "text": "手すり",
+            "reading": "てすり"
+          }
+        }
+      }
+    },
+    {
+      "name": "旗子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細旗桿上一面紅色三角旗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "flag",
+        "words": {
+          "zh-TW": "旗子",
+          "en": "flag",
+          "ja": {
+            "text": "旗",
+            "reading": "はた"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅白相間的圓形救生圈，四段顏色交替，繫著一段繩子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "life-buoy",
+        "words": {
+          "zh-TW": "救生圈",
+          "en": "life buoy",
+          "ja": {
+            "text": "救命浮き輪",
+            "reading": "きゅうめいうきわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "繩子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一捆米色粗繩：三個上下疊放、同樣大小的扁橢圓圈（圓圈只有描邊、中間空心，看起來像捲起來的繩子），右下方垂出一段短繩頭（粗折線）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "rope",
+        "words": {
+          "zh-TW": "繩子",
+          "en": "rope",
+          "ja": {
+            "text": "ロープ",
+            "reading": "ロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "階梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的灰色石頭階梯，五級台階往右上升。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "stairs",
+        "words": {
+          "zh-TW": "階梯",
+          "en": "stairs",
+          "ja": {
+            "text": "階段",
+            "reading": "かいだん"
+          }
+        }
+      }
+    },
+    {
+      "name": "鎖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色掛鎖：方形鎖身、上方ㄇ字形鎖環（用直線與矩形表現）、中間鑰匙孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "padlock",
+        "words": {
+          "zh-TW": "鎖",
+          "en": "padlock",
+          "ja": {
+            "text": "南京錠",
+            "reading": "なんきんじょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的腳踏車：兩個圓形車輪、三角形車架、座墊、把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "bicycle",
+        "words": {
+          "zh-TW": "腳踏車",
+          "en": "bicycle",
+          "ja": {
+            "text": "自転車",
+            "reading": "じてんしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "遊覽船",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面看的白色觀光船，兩層船艙、一排圓形窗戶、藍色船底。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "sightseeing-boat",
+        "words": {
+          "zh-TW": "遊覽船",
+          "en": "sightseeing boat",
+          "ja": {
+            "text": "遊覧船",
+            "reading": "ゆうらんせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "船錨",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色船錨：頂部圓環、直立錨桿、底部兩側上翹的錨爪（用多邊形）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "anchor",
+        "words": {
+          "zh-TW": "船錨",
+          "en": "anchor",
+          "ja": {
+            "text": "錨",
+            "reading": "いかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "燈塔",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅白橫條紋的圓柱燈塔，頂端黑色燈室與黃色燈光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "lighthouse",
+        "words": {
+          "zh-TW": "燈塔",
+          "en": "lighthouse",
+          "ja": {
+            "text": "灯台",
+            "reading": "とうだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "木箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個堆疊的淺木色木條箱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "crate",
+        "words": {
+          "zh-TW": "木箱",
+          "en": "crate",
+          "ja": {
+            "text": "木箱",
+            "reading": "きばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "釣竿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "斜斜的細長釣竿，靠近手把處一個捲線器，竿頭垂下釣線與紅白浮標。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "fishing-rod",
+        "words": {
+          "zh-TW": "釣竿",
+          "en": "fishing rod",
+          "ja": {
+            "text": "釣り竿",
+            "reading": "つりざお"
+          }
+        }
+      }
+    },
+    {
+      "name": "售票亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小型售票亭：方形亭身、前方小窗口、上方遮頂（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "ticket-office",
+        "words": {
+          "zh-TW": "售票亭",
+          "en": "ticket office",
+          "ja": {
+            "text": "切符売り場",
+            "reading": "きっぷうりば"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色背心式救生衣，胸前兩條黑色扣帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "life-jacket",
+        "words": {
+          "zh-TW": "救生衣",
+          "en": "life jacket",
+          "ja": {
+            "text": "ライフジャケット",
+            "reading": "ライフジャケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "船票",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形票券，一側打孔虛線，票面只有色塊（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "ticket",
+        "words": {
+          "zh-TW": "船票",
+          "en": "ticket",
+          "ja": {
+            "text": "チケット",
+            "reading": "チケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮陽傘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "米白色大型庭園遮陽傘（三角形拼成的傘面），中央立桿插在木桌上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "parasol",
+        "words": {
+          "zh-TW": "遮陽傘",
+          "en": "parasol",
+          "ja": {
+            "text": "パラソル",
+            "reading": "パラソル"
+          }
+        }
+      }
+    },
+    {
+      "name": "菜單",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的深綠色菜單夾，頁面只有灰色線條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "menu",
+        "words": {
+          "zh-TW": "菜單",
+          "en": "menu",
+          "ja": {
+            "text": "メニュー",
+            "reading": "メニュー"
+          }
+        }
+      }
+    },
+    {
+      "name": "高腳杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明高腳杯，杯中紅酒，細杯腳與橢圓底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "wine-glass",
+        "words": {
+          "zh-TW": "高腳杯",
+          "en": "wine glass",
+          "ja": {
+            "text": "ワイングラス",
+            "reading": "ワイングラス"
+          }
+        }
+      }
+    },
+    {
+      "name": "盤子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓盤，左邊叉子、右邊刀子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "plate",
+        "words": {
+          "zh-TW": "盤子",
+          "en": "plate",
+          "ja": {
+            "text": "皿",
+            "reading": "さら"
+          }
+        }
+      }
+    },
+    {
+      "name": "披薩",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形披薩切成八片，表面紅色臘腸圓片與綠色葉片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "pizza",
+        "words": {
+          "zh-TW": "披薩",
+          "en": "pizza",
+          "ja": {
+            "text": "ピザ",
+            "reading": "ピザ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃水瓶，裡面淺藍色的水與一片黃色檸檬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "pitcher",
+        "words": {
+          "zh-TW": "水瓶",
+          "en": "pitcher",
+          "ja": {
+            "text": "水差し",
+            "reading": "みずさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "蠟燭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短玻璃杯裡的白色蠟燭，頂端橘色火焰（多邊形）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "candle",
+        "words": {
+          "zh-TW": "蠟燭",
+          "en": "candle",
+          "ja": {
+            "text": "ろうそく",
+            "reading": "ろうそく"
+          }
+        }
+      }
+    },
+    {
+      "name": "相機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色相機：長方機身、中央大圓鏡頭、頂部快門鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "camera",
+        "words": {
+          "zh-TW": "相機",
+          "en": "camera",
+          "ja": {
+            "text": "カメラ",
+            "reading": "カメラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "地圖",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "立式河岸導覽看板，板面只有藍色河道與綠色色塊（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "map",
+        "words": {
+          "zh-TW": "地圖",
+          "en": "map",
+          "ja": {
+            "text": "地図",
+            "reading": "ちず"
+          }
+        }
+      }
+    },
+    {
+      "name": "望遠鏡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "立在柱子上的銀色投幣式雙筒望遠鏡，兩個圓形目鏡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "binoculars",
+        "words": {
+          "zh-TW": "望遠鏡",
+          "en": "binoculars",
+          "ja": {
+            "text": "双眼鏡",
+            "reading": "そうがんきょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "側面看的滑板：長條板面、下方兩個小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "skateboard",
+        "words": {
+          "zh-TW": "滑板",
+          "en": "skateboard",
+          "ja": {
+            "text": "スケートボード",
+            "reading": "スケートボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "攤車",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "紅白條紋頂棚的小攤車，檯面上擺著幾個瓶子，兩個輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "food-stall",
+        "words": {
+          "zh-TW": "攤車",
+          "en": "food stall",
+          "ja": {
+            "text": "屋台",
+            "reading": "やたい"
+          }
+        }
+      }
+    },
+    {
+      "name": "錢包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色對折皮夾，露出一張卡片邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "wallet",
+        "words": {
+          "zh-TW": "錢包",
+          "en": "wallet",
+          "ja": {
+            "text": "財布",
+            "reading": "さいふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑰匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色鑰匙：圓形頭、直鑰匙桿、鋸齒狀鑰匙齒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "key",
+        "words": {
+          "zh-TW": "鑰匙",
+          "en": "key",
+          "ja": {
+            "text": "鍵",
+            "reading": "かぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "海鷗",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "白色海鷗，灰色翅膀，展翅飛翔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "seagull",
+        "words": {
+          "zh-TW": "海鷗",
+          "en": "seagull",
+          "ja": {
+            "text": "カモメ",
+            "reading": "カモメ"
+          }
+        }
+      }
+    },
+    {
+      "name": "魚",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "銀藍色的魚，側面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "fish",
+        "words": {
+          "zh-TW": "魚",
+          "en": "fish",
+          "ja": {
+            "text": "魚",
+            "reading": "さかな"
+          }
+        }
+      }
+    },
+    {
+      "name": "螃蟹",
+      "category": "動物",
+      "lane": "a",
+      "sizeHint": "small",
+      "desc": "紅色螃蟹，兩隻大鉗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "crab",
+        "words": {
+          "zh-TW": "螃蟹",
+          "en": "crab",
+          "ja": {
+            "text": "カニ",
+            "reading": "カニ"
+          }
+        }
+      }
+    },
+    {
+      "name": "船長",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "戴白色船長帽、穿深藍外套的船長。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "captain",
+        "words": {
+          "zh-TW": "船長",
+          "en": "captain",
+          "ja": {
+            "text": "船長",
+            "reading": "せんちょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "服務生",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "穿白襯衫黑背心、手托餐盤的服務生。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "waiter",
+        "words": {
+          "zh-TW": "服務生",
+          "en": "waiter",
+          "ja": {
+            "text": "ウェイター",
+            "reading": "ウェイター"
+          }
+        }
+      }
+    }
+  ]
+}

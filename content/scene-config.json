@@ -1,0 +1,85 @@
+{
+  "world": {"width": 3600, "height": 2600},
+  "order": ["park", "street", "riverside", "supermarket"],
+  "scenes": {
+    "park": {
+      "name": "公園",
+      "icon": "fountain",
+      "zones": {"entrance": [0, 0, 650, 1130], "plaza": [650, 0, 1300, 740], "playground": [1300, 0, 1950, 740], "lake": [1950, 0, 2600, 1130]},
+      "bands": {
+        "ground": {"top": 230, "scale": [0.95, 1.05], "override": {"lake": {"top": 790}}},
+        "sky": {"top": 220, "bottom": 420, "layer": 3, "float": 150, "zones": ["plaza", "playground"]},
+        "water": {"top": 430, "bottom": 610, "layer": 1, "zones": ["lake"], "x0": 2040, "x1": 2520, "scale": [0.9, 0.9]}
+      },
+      "place": {"kite": "sky", "balloon": "sky", "rowboat": "water"},
+      "clusters": [["picnic-blanket", "picnic-basket", "sandwich"], ["sandbox", "bucket"], ["bench", "book"], ["slide", "ball"]],
+      "loose": ["book", "straw-hat", "sunglasses", "ball", "bucket", "water-bottle", "umbrella", "sandwich"],
+      "noFlip": [],
+      "motion": {"tree": "sway", "bush": "sway", "flower-bed": "sway", "balloon": "bob", "rowboat": "bob", "kite": "drift", "ball": "wobble"}
+    },
+    "street": {
+      "name": "商業街",
+      "icon": "traffic-light",
+      "zones": {"crossing": [0, 1130, 650, 1640], "shops": [650, 740, 1300, 1640], "cafe": [1300, 740, 1950, 1640], "bus-stop": [1950, 1130, 2600, 1640]},
+      "bands": {
+        "ground": {"top": 1160, "gaps": [[1245, 1515]], "scale": [0.95, 1.05], "override": {"cafe": {"top": 1515}}},
+        "road": {"top": 1300, "bottom": 1495},
+        "facade": {"levels": [1140], "zones": ["shops"], "inset": 50},
+        "wall": {"levels": [1030], "zones": ["shops"], "inset": 60},
+        "counter": {"levels": [1200], "zones": ["cafe"], "inset": 80, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 1242}
+      },
+      "place": {
+        "car": "road", "taxi": "road", "bus": "road", "scooter": "road", "crosswalk": "road",
+        "mug": "counter", "paper-cup": "counter", "cake": "counter", "teapot": "counter", "coffee-maker": "counter", "cookie": "counter",
+        "shop-window": "facade", "awning": "wall"
+      },
+      "clusters": [["table", "newspaper"], ["bus-stop", "suitcase", "backpack"], ["shop-window", "paper-bag"], ["vending-machine", "umbrella-stand"]],
+      "loose": ["newspaper", "paper-bag", "backpack", "smartphone", "traffic-cone"],
+      "noFlip": [],
+      "motion": {"bouquet": "sway", "smartphone": "wobble", "taxi": "wobble", "bus": "wobble"}
+    },
+    "riverside": {
+      "name": "河邊商業區",
+      "icon": "bridge",
+      "zones": {"bridge": [2600, 0, 3600, 650], "pier": [2600, 650, 3600, 1300], "terrace": [2600, 1300, 3600, 1950], "promenade": [2600, 1950, 3600, 2600]},
+      "bands": {
+        "ground": {"x0": 2980, "top": 230, "scale": [0.95, 1.05], "override": {"terrace": {"gaps": [[1450, 1740]]}}},
+        "footbridge": {"levels": [585], "zones": ["bridge"], "x0": 2680, "x1": 2920, "scale": [1.1, 1.1], "layer": 1},
+        "water": {"top": 1010, "bottom": 1280, "layer": 1, "zones": ["pier"], "x0": 2705, "x1": 2915, "scale": [0.85, 0.85]},
+        "jetty": {"levels": [895], "zones": ["pier"], "x0": 2815, "x1": 2975, "look": "jetty", "base": 922},
+        "table": {"levels": [1650], "zones": ["terrace"], "x0": 2990, "inset": 40, "scale": [0.75, 0.75], "look": "table", "base": 1720}
+      },
+      "place": {
+        "bridge": "footbridge", "sightseeing-boat": "water", "lighthouse": "jetty",
+        "parasol": "table", "plate": "table", "pizza": "table", "wine-glass": "table", "pitcher": "table", "candle": "table", "menu": "table", "camera": "table"
+      },
+      "clusters": [["crate", "anchor", "life-jacket"], ["handrail", "padlock", "life-buoy"], ["food-stall", "wallet"], ["map", "binoculars"]],
+      "loose": ["rope", "padlock", "key", "wallet", "skateboard", "life-jacket", "ticket", "menu"],
+      "noFlip": [],
+      "motion": {"flag": "sway", "parasol": "sway", "fishing-rod": "sway", "sightseeing-boat": "bob"}
+    },
+    "supermarket": {
+      "name": "超市",
+      "icon": "shopping-cart",
+      "zones": {"entrance": [0, 1640, 650, 2600], "fresh": [650, 1640, 1300, 2600], "fridge": [1300, 1640, 1950, 2600], "checkout": [1950, 1640, 2600, 2600]},
+      "bands": {
+        "ground": {"top": 1960, "bottom": 2555, "scale": [0.95, 1.05], "override": {"fresh": {"top": 2340}, "fridge": {"top": 2340}, "checkout": {"top": 2340}}},
+        "backwall": {"levels": [1893], "zones": ["entrance"], "inset": 50},
+        "stand": {"levels": [2110, 2225], "zones": ["fresh"], "inset": 70, "scale": [0.8, 0.8], "look": "stand", "base": 2290},
+        "chiller": {"levels": [2210], "zones": ["fridge"], "inset": 70, "scale": [0.85, 0.85], "look": "chiller", "base": 2290},
+        "checkout": {"levels": [2210], "zones": ["checkout"], "inset": 70, "scale": [0.85, 0.85], "look": "checkout", "base": 2290}
+      },
+      "place": {
+        "automatic-door": "backwall", "fire-extinguisher": "backwall",
+        "apple": "stand", "banana": "stand", "orange": "stand", "grapes": "stand", "watermelon": "stand", "carrot": "stand",
+        "tomato": "stand", "cabbage": "stand", "corn": "stand", "bread": "stand", "scale": "stand", "price-tag": "stand",
+        "milk": "chiller", "eggs": "chiller", "cheese": "chiller", "yogurt": "chiller", "ice-cream": "chiller", "juice": "chiller", "sausage": "chiller",
+        "cash-register": "checkout", "barcode-scanner": "checkout", "receipt": "checkout", "coins": "checkout", "credit-card": "checkout", "banknote": "checkout"
+      },
+      "clusters": [["shelf", "canned-food"], ["shopping-cart", "shopping-basket"], ["automatic-door", "flyer"]],
+      "loose": ["flyer", "receipt", "banknote", "credit-card", "banana", "carrot", "corn", "bread", "sausage"],
+      "noFlip": [],
+      "motion": {"price-tag": "sway", "shopping-cart": "wobble", "plastic-bag": "sway"}
+    }
+  }
+}

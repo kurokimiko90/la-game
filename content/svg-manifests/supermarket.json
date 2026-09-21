@@ -1,0 +1,790 @@
+{
+  "sceneName": "語言小鎮・超市",
+  "sceneSlug": "la-supermarket",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "fresh": "生鮮區",
+    "fridge": "冷藏區",
+    "checkout": "收銀台"
+  },
+  "elements": [
+    {
+      "name": "購物車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色金屬網格購物車，前方車籃、後方紅色推把、四個小輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "shopping-cart",
+        "words": {
+          "zh-TW": "購物車",
+          "en": "shopping cart",
+          "ja": {
+            "text": "ショッピングカート",
+            "reading": "ショッピングカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色塑膠購物籃，籃身格紋，上方兩條提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "shopping-basket",
+        "words": {
+          "zh-TW": "購物籃",
+          "en": "shopping basket",
+          "ja": {
+            "text": "買い物かご",
+            "reading": "かいものかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩扇銀框玻璃滑門，上方一個小感應器。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "automatic-door",
+        "words": {
+          "zh-TW": "自動門",
+          "en": "automatic door",
+          "ja": {
+            "text": "自動ドア",
+            "reading": "じどうドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "置物櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色置物櫃，六格小門，每格一個鑰匙孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "locker",
+        "words": {
+          "zh-TW": "置物櫃",
+          "en": "locker",
+          "ja": {
+            "text": "コインロッカー",
+            "reading": "コインロッカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "傳單",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張彩色特價傳單，只有色塊與商品小圖形（不寫字、不寫數字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "flyer",
+        "words": {
+          "zh-TW": "傳單",
+          "en": "flyer",
+          "ja": {
+            "text": "チラシ",
+            "reading": "チラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "滅火器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色滅火器，頂部黑色握把與噴管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "fire-extinguisher",
+        "words": {
+          "zh-TW": "滅火器",
+          "en": "fire extinguisher",
+          "ja": {
+            "text": "消火器",
+            "reading": "しょうかき"
+          }
+        }
+      }
+    },
+    {
+      "name": "貨架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "灰色金屬貨架，三層層板擺滿彩色盒子與瓶子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "shelf",
+        "words": {
+          "zh-TW": "貨架",
+          "en": "shelf",
+          "ja": {
+            "text": "棚",
+            "reading": "たな"
+          }
+        }
+      }
+    },
+    {
+      "name": "罐頭",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個疊起的銀色圓柱罐頭，罐身紅色標籤帶（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "canned-food",
+        "words": {
+          "zh-TW": "罐頭",
+          "en": "canned food",
+          "ja": {
+            "text": "缶詰",
+            "reading": "かんづめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘋果",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色蘋果，頂部短棕色果柄與一片綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "apple",
+        "words": {
+          "zh-TW": "蘋果",
+          "en": "apple",
+          "ja": {
+            "text": "りんご",
+            "reading": "りんご"
+          }
+        }
+      }
+    },
+    {
+      "name": "香蕉",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一串三根黃色香蕉（用多邊形逼近彎曲），尾端棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "banana",
+        "words": {
+          "zh-TW": "香蕉",
+          "en": "banana",
+          "ja": {
+            "text": "バナナ",
+            "reading": "バナナ"
+          }
+        }
+      }
+    },
+    {
+      "name": "柳橙",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色圓形柳橙，頂部小綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "orange",
+        "words": {
+          "zh-TW": "柳橙",
+          "en": "orange",
+          "ja": {
+            "text": "オレンジ",
+            "reading": "オレンジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "葡萄",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一串紫色葡萄，由小圓形堆成倒三角形，頂部綠色短枝。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "grapes",
+        "words": {
+          "zh-TW": "葡萄",
+          "en": "grapes",
+          "ja": {
+            "text": "ぶどう",
+            "reading": "ぶどう"
+          }
+        }
+      }
+    },
+    {
+      "name": "西瓜",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "整顆綠色橢圓西瓜，表面深綠色條紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "watermelon",
+        "words": {
+          "zh-TW": "西瓜",
+          "en": "watermelon",
+          "ja": {
+            "text": "スイカ",
+            "reading": "スイカ"
+          }
+        }
+      }
+    },
+    {
+      "name": "胡蘿蔔",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色細長倒三角形胡蘿蔔，頂端綠色葉子，表面幾道橫紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "carrot",
+        "words": {
+          "zh-TW": "胡蘿蔔",
+          "en": "carrot",
+          "ja": {
+            "text": "にんじん",
+            "reading": "にんじん"
+          }
+        }
+      }
+    },
+    {
+      "name": "番茄",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓形番茄，頂端綠色星形蒂頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "tomato",
+        "words": {
+          "zh-TW": "番茄",
+          "en": "tomato",
+          "ja": {
+            "text": "トマト",
+            "reading": "トマト"
+          }
+        }
+      }
+    },
+    {
+      "name": "高麗菜",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺綠色圓形高麗菜，幾層深淺不同的葉片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "cabbage",
+        "words": {
+          "zh-TW": "高麗菜",
+          "en": "cabbage",
+          "ja": {
+            "text": "キャベツ",
+            "reading": "キャベツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玉米",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色玉米，格狀顆粒，兩側綠色苞葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "corn",
+        "words": {
+          "zh-TW": "玉米",
+          "en": "corn",
+          "ja": {
+            "text": "とうもろこし",
+            "reading": "とうもろこし"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長條法國麵包，表面三道斜切口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "bread",
+        "words": {
+          "zh-TW": "麵包",
+          "en": "bread",
+          "ja": {
+            "text": "パン",
+            "reading": "パン"
+          }
+        }
+      }
+    },
+    {
+      "name": "秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色蔬果電子秤：上方平台、前方小螢幕（不寫數字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "scale",
+        "words": {
+          "zh-TW": "秤",
+          "en": "scale",
+          "ja": {
+            "text": "はかり",
+            "reading": "はかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "價格標籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色價格標籤，左端圓孔與細繩（不寫字、不寫數字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fresh",
+        "itemId": "price-tag",
+        "words": {
+          "zh-TW": "價格標籤",
+          "en": "price tag",
+          "ja": {
+            "text": "値札",
+            "reading": "ねふだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "玻璃門直立冷藏櫃，三層層板擺著彩色瓶子與盒子，頂部藍色燈條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "fridge",
+        "words": {
+          "zh-TW": "冰箱",
+          "en": "fridge",
+          "ja": {
+            "text": "冷蔵庫",
+            "reading": "れいぞうこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛奶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白藍色屋頂形牛奶紙盒，盒身一個簡單的牛奶滴圖形（不寫字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "milk",
+        "words": {
+          "zh-TW": "牛奶",
+          "en": "milk",
+          "ja": {
+            "text": "牛乳",
+            "reading": "ぎゅうにゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "雞蛋",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的蛋盒，裡面兩排共六顆白色雞蛋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "eggs",
+        "words": {
+          "zh-TW": "雞蛋",
+          "en": "eggs",
+          "ja": {
+            "text": "卵",
+            "reading": "たまご"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色三角形起司塊，表面幾個圓洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "cheese",
+        "words": {
+          "zh-TW": "起司",
+          "en": "cheese",
+          "ja": {
+            "text": "チーズ",
+            "reading": "チーズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "優格",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色小杯優格，粉紅色杯蓋，杯身一顆草莓圖形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "yogurt",
+        "words": {
+          "zh-TW": "優格",
+          "en": "yogurt",
+          "ja": {
+            "text": "ヨーグルト",
+            "reading": "ヨーグルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰淇淋",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "甜筒冰淇淋：棕色格紋甜筒上兩球粉紅和白色冰淇淋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "ice-cream",
+        "words": {
+          "zh-TW": "冰淇淋",
+          "en": "ice cream",
+          "ja": {
+            "text": "アイスクリーム",
+            "reading": "アイスクリーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "果汁",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明瓶裝柳橙汁，綠色瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "juice",
+        "words": {
+          "zh-TW": "果汁",
+          "en": "juice",
+          "ja": {
+            "text": "ジュース",
+            "reading": "ジュース"
+          }
+        }
+      }
+    },
+    {
+      "name": "香腸",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三條相連的紅棕色香腸。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "fridge",
+        "itemId": "sausage",
+        "words": {
+          "zh-TW": "香腸",
+          "en": "sausage",
+          "ja": {
+            "text": "ソーセージ",
+            "reading": "ソーセージ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色收銀機：前方螢幕、按鍵格、下方抽屜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "cash-register",
+        "words": {
+          "zh-TW": "收銀機",
+          "en": "cash register",
+          "ja": {
+            "text": "レジ",
+            "reading": "レジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長條白色收據，只有灰色橫線，底部鋸齒邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "receipt",
+        "words": {
+          "zh-TW": "收據",
+          "en": "receipt",
+          "ja": {
+            "text": "レシート",
+            "reading": "レシート"
+          }
+        }
+      }
+    },
+    {
+      "name": "硬幣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三枚疊起的金色硬幣，旁邊一枚銀色硬幣（不寫數字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "coins",
+        "words": {
+          "zh-TW": "硬幣",
+          "en": "coins",
+          "ja": {
+            "text": "硬貨",
+            "reading": "こうか"
+          }
+        }
+      }
+    },
+    {
+      "name": "信用卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色信用卡，左方金色晶片，下方一排灰色小方塊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "credit-card",
+        "words": {
+          "zh-TW": "信用卡",
+          "en": "credit card",
+          "ja": {
+            "text": "クレジットカード",
+            "reading": "クレジットカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "塑膠袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色半透明塑膠袋，上方兩個提耳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "plastic-bag",
+        "words": {
+          "zh-TW": "塑膠袋",
+          "en": "plastic bag",
+          "ja": {
+            "text": "レジ袋",
+            "reading": "レジぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "條碼掃描器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色手持條碼掃描器，前端一道紅色掃描光線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "barcode-scanner",
+        "words": {
+          "zh-TW": "條碼掃描器",
+          "en": "barcode scanner",
+          "ja": {
+            "text": "バーコードリーダー",
+            "reading": "バーコードリーダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鈔票",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色長方形鈔票，中央一個圓形圖案（不寫數字）。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "banknote",
+        "words": {
+          "zh-TW": "鈔票",
+          "en": "banknote",
+          "ja": {
+            "text": "お札",
+            "reading": "おさつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "店員",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "穿綠色圍裙的超市店員，手抱一箱蔬菜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "entrance",
+        "itemId": "clerk",
+        "words": {
+          "zh-TW": "店員",
+          "en": "clerk",
+          "ja": {
+            "text": "店員",
+            "reading": "てんいん"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀員",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "large",
+      "desc": "穿制服、站在收銀台後的收銀員。",
+      "ref": {
+        "project": "la-game",
+        "scene": "supermarket",
+        "zone": "checkout",
+        "itemId": "cashier",
+        "words": {
+          "zh-TW": "收銀員",
+          "en": "cashier",
+          "ja": {
+            "text": "レジ係",
+            "reading": "レジがかり"
+          }
+        }
+      }
+    }
+  ]
+}

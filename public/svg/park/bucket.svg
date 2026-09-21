@@ -1,0 +1,6 @@
+<svg viewBox="0 0 40 40">
+  <path d="M 4 20 V 4 H 36 V 20" fill="none" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="4,20 36,20 30,40 10,40" fill="#64b5f6" stroke="#37474f" stroke-width="1.5"/>
+  <rect x="2" y="18" width="36" height="4" rx="1" fill="#5c6bc0" stroke="#37474f" stroke-width="1.5"/>
+  <rect x="8" y="24" width="4" height="14" fill="#ffffff" opacity="0.3"/>
+</svg>

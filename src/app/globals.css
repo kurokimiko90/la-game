@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6f2e9;
+  --color-ink: #263238;
+  --color-muted: #607d8b;
+  --color-line: #d7ccc8;
+  --color-brand: #00796b;
+  --color-brand-soft: #e0f2f1;
+  --color-accent: #ffb300;
+  --color-danger: #e57373;
+  --font-sans: system-ui, -apple-system, "PingFang TC", "Hiragino Sans", "Noto Sans TC", "Noto Sans JP", sans-serif;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  overscroll-behavior: none;
+}
+
+ruby rt {
+  font-size: 0.5em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* 場景物件：找到後的光暈、提示區域脈動、點擊漣漪 */
+.scene-item {
+  transition: opacity 0.35s ease, filter 0.35s ease;
+}
+.scene-item--found {
+  filter: drop-shadow(0 0 6px rgba(0, 150, 136, 0.9));
+}
+.scene-item--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scene-item--flash {
+  animation: item-flash 0.9s ease-in-out 3;
+}
+@keyframes item-flash {
+  0%, 100% { filter: none; }
+  50% { filter: drop-shadow(0 0 10px rgba(255, 179, 0, 1)); }
+}
+
+/* 物件動態（docs/scene-standard.md §3.1）：只動 transform；參數由 build 算好，經 --dur/--delay/--amp 帶入。
+   位移用 %（相對物件外框），大小不同的物件晃動比例一致；幅度要小，記憶挑戰才判定得準 */
+.motion {
+  transform-box: fill-box;
+  animation-duration: var(--dur, 4s);
+  animation-delay: var(--delay, 0s);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.motion--sway { transform-origin: 50% 100%; animation-name: m-sway; }
+.motion--bob { transform-origin: 50% 50%; animation-name: m-bob; }
+.motion--drift { transform-origin: 50% 0%; animation-name: m-drift; }
+.motion--wobble { transform-origin: 50% 100%; animation-name: m-wobble; animation-timing-function: linear; }
+@keyframes m-sway {
+  0%, 100% { transform: rotate(calc(-2deg * var(--amp, 1))); }
+  50% { transform: rotate(calc(2deg * var(--amp, 1))); }
+}
+@keyframes m-bob {
+  0%, 100% { transform: translateY(0) rotate(calc(-1.5deg * var(--amp, 1))); }
+  50% { transform: translateY(calc(-3% * var(--amp, 1))) rotate(calc(1.5deg * var(--amp, 1))); }
+}
+@keyframes m-drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(calc(8% * var(--amp, 1)), -4%) rotate(calc(5deg * var(--amp, 1))); }
+  50% { transform: translate(0, 3%) rotate(0deg); }
+  75% { transform: translate(calc(-8% * var(--amp, 1)), -4%) rotate(calc(-5deg * var(--amp, 1))); }
+}
+@keyframes m-wobble {
+  0%, 86%, 100% { transform: rotate(0deg); }
+  88% { transform: rotate(-3deg); }
+  91% { transform: rotate(3deg); }
+  94% { transform: rotate(-2deg); }
+  97% { transform: rotate(1deg); }
+}
+
+/* 背景動態（src/components/scene/Ambient.tsx）：單位是場景座標 */
+.amb {
+  transform-box: fill-box;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.amb-shimmer { animation-name: a-shimmer; }
+.amb-sway { transform-origin: 50% 100%; animation-name: a-sway; }
+.amb-glow { animation-name: a-glow; }
+.amb-swing { transform-origin: 50% 0%; animation-name: a-swing; }
+@keyframes a-shimmer {
+  0%, 100% { transform: translateX(-14px); opacity: 0.35; }
+  50% { transform: translateX(14px); opacity: 1; }
+}
+@keyframes a-sway {
+  0%, 100% { transform: rotate(-7deg); }
+  50% { transform: rotate(7deg); }
+}
+@keyframes a-glow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+@keyframes a-swing {
+  0%, 100% { transform: rotate(-1.2deg); }
+  50% { transform: rotate(1.2deg); }
+}
+
+/* 畫面外的街區、記憶挑戰隱藏的物件：暫停動畫 */
+.district--idle .motion,
+.district--idle .amb,
+.scene-item--hidden .motion {
+  animation-play-state: paused;
+}
+
+.zone-hint {
+  animation: zone-pulse 1.2s ease-in-out infinite;
+}
+@keyframes zone-pulse {
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 0.35; }
+}
+
+.click-ripple {
+  animation: ripple 0.6s ease-out forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes ripple {
+  from { opacity: 0.8; transform: scale(0.3); }
+  to { opacity: 0; transform: scale(1.6); }
+}
+
+.pop-in {
+  animation: pop-in 0.18s ease-out;
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 40 60">
+  <polygon points="20,4 36,16 20,32 4,16" fill="#ffb74d" stroke="#37474f" stroke-width="1.5"/>
+  <line x1="20" y1="4" x2="20" y2="32" stroke="#37474f" stroke-width="1.5"/>
+  <line x1="4" y1="16" x2="36" y2="16" stroke="#37474f" stroke-width="1.5"/>
+  <path d="M 20 32 L 26 40 L 14 48 L 20 60" fill="none" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="22,37 22,43 30,37 30,43" fill="#e57373" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="10,45 10,51 18,45 18,51" fill="#43a047" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="16,53 16,59 24,53 24,59" fill="#fdd835" stroke="#37474f" stroke-width="1.5"/>
+  <rect x="17" y="7" width="2" height="6" fill="#ffffff" opacity="0.3"/>
+</svg>

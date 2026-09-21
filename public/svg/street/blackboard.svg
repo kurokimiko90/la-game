@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 114">
+  <polygon points="10,114 20,114 32,4 22,4" fill="#d7a86e" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="90,114 80,114 68,4 78,4" fill="#d7a86e" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="22,4 78,4 75,12 25,12" fill="#d7a86e" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="14,94 86,94 82,88 18,88" fill="#d7a86e" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="19,88 81,88 74,12 26,12" fill="#37474f" stroke="#37474f" stroke-width="1.5"/>
+  <polygon points="50,28 53,37 62,37 55,42 58,51 50,46 42,51 45,42 38,37 47,37" fill="#ffffff"/>
+  <line x1="42" y1="60" x2="58" y2="60" stroke="#ffffff" stroke-width="2"/>
+  <line x1="46" y1="66" x2="54" y2="66" stroke="#ffffff" stroke-width="2"/>
+  <polygon points="26,12 74,12 72,20 28,20" fill="#fff" opacity="0.2"/>
+</svg>
