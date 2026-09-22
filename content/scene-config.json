@@ -1,6 +1,6 @@
 {
-  "world": {"width": 6200, "height": 5200},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library"],
+  "world": {"width": 8800, "height": 5200},
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -426,6 +426,57 @@
       "noFlip": [],
       "motion": {"rain-chain": "sway", "document-shredder": "wobble", "ceiling-fan": "wobble"},
       "terrain": {"color": "#ffe082", "x0": 3600, "y0": 3900, "x1": 6200, "y1": 5200, "zones": [{"id": "entrance", "x0": 3600, "y0": 3900, "x1": 4900, "y1": 4550, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 4900, "y0": 3900, "x1": 6200, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "bookstacks", "x0": 4900, "y0": 4550, "x1": 6200, "y1": 5200, "indoor": true, "floor": "wood", "wallBase": 4730}, {"id": "reading-room", "x0": 3600, "y0": 4550, "x1": 4900, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
+    },
+    "post-office": {
+      "name": "郵局",
+      "icon": "cloud",
+      "zones": {"entrance": [6200, 0, 7500, 650], "service-hall": [7500, 0, 8800, 650], "waiting-area": [7500, 650, 8800, 1300], "sorting-room": [6200, 650, 7500, 1300]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 70, "bottom": 630}, "service-hall": {"top": 240, "bottom": 630, "gaps": [[190, 382]]}, "waiting-area": {"top": 890, "bottom": 1280, "gaps": [[840, 1155]]}, "sorting-room": {"top": 890, "bottom": 1280, "gaps": [[840, 1060]]}}},
+        "sky-entrance": {"top": 150, "bottom": 300, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-service-hall": {"levels": [140], "zones": ["service-hall"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-service-hall": {"levels": [178], "zones": ["service-hall"], "inset": 50},
+        "surface-service-hall": {"levels": [310], "zones": ["service-hall"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 352},
+        "wall-waiting-area": {"levels": [790], "zones": ["waiting-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-waiting-area": {"levels": [828], "zones": ["waiting-area"], "inset": 50},
+        "surface-waiting-area": {"levels": [960, 1055], "zones": ["waiting-area"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 1125},
+        "wall-sorting-room": {"levels": [790], "zones": ["sorting-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-sorting-room": {"levels": [828], "zones": ["sorting-room"], "inset": 50},
+        "surface-sorting-room": {"levels": [960], "zones": ["sorting-room"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 1030}
+      },
+      "place": {
+        "cloud": "sky-entrance",
+        "raindrop": "sky-entrance",
+        "wind-sock": "sky-entrance",
+        "rainbow": "sky-entrance",
+        "mail-slot": "wall-service-hall",
+        "letter-opener": "surface-service-hall",
+        "label-roll": "surface-service-hall",
+        "packing-tape-roll": "surface-service-hall",
+        "tape-cutter": "surface-service-hall",
+        "service-hatch": "wallbase-service-hall",
+        "counter-screen": "surface-service-hall",
+        "parcel-chute": "wallbase-service-hall",
+        "letter": "surface-service-hall",
+        "parcel-locker": "wallbase-waiting-area",
+        "mailing-tube": "surface-waiting-area",
+        "queue-ticket-dispenser": "wallbase-waiting-area",
+        "sticker": "surface-waiting-area",
+        "staple": "surface-waiting-area",
+        "mail-chute": "wallbase-waiting-area",
+        "notepad": "surface-sorting-room",
+        "tape-roll": "surface-sorting-room",
+        "glue": "surface-sorting-room",
+        "label": "surface-sorting-room",
+        "sorting-chute": "wallbase-sorting-room",
+        "emergency-light": "wall-sorting-room",
+        "scanner": "surface-sorting-room"
+      },
+      "clusters": [["puddle", "rain-gauge", "weed"], ["pebble", "moss"], ["postal-tube", "twine-spool", "mailing-tube-cap"], ["sorting-bin", "mail-tray"], ["mail-cart", "sack"], ["pallet", "pallet-jack"], ["plastic-tote", "mail-tub"], ["overalls", "work-boots"], ["safety-goggles", "work-gloves"]],
+      "loose": ["parcel", "postage-stamp", "pebble", "letter-opener", "twine-spool", "label-roll", "rubber-glove", "packing-tape-roll", "mailing-tube-cap", "letter", "packing-tape", "twine", "sticker", "staple", "sticker-sheet", "box-cutter", "safety-goggles", "work-gloves", "notepad", "tape-roll", "glue", "label"],
+      "noFlip": [],
+      "motion": {"flower": "sway", "cloud": "drift", "raindrop": "drift", "wind-sock": "sway", "moss": "sway", "weed": "sway", "work-apron": "sway"},
+      "terrain": {"color": "#f48fb1", "x0": 6200, "y0": 0, "x1": 8800, "y1": 1300, "zones": [{"id": "entrance", "x0": 6200, "y0": 0, "x1": 7500, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "service-hall", "x0": 7500, "y0": 0, "x1": 8800, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "waiting-area", "x0": 7500, "y0": 650, "x1": 8800, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "sorting-room", "x0": 6200, "y0": 650, "x1": 7500, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}]}
     }
   }
 }

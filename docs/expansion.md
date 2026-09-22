@@ -1,6 +1,6 @@
 # 小鎮自動擴展
 
-> 2026-09-22 起｜分支 `feat/expand-scenes`｜miko-ws runtime 的排程每 30 分鐘推進一步｜每個場景約 70 個物品
+> 2026-09-22 起｜分支 `feat/expand-scenes`｜miko-ws runtime 的排程每 30 分鐘推進一步｜每個場景 `itemsPerScene` 個物品（`content/expansion.json`）
 > 所有 LLM 工作（場景規劃、單字表）和 SVG 生成都交給 miko-ws；發音用本機 edge-tts 打底，英語再用 build-voice 換成 ChatGPT 的聲音（失敗就保留 edge-tts，不擋整合）。沒有人工步驟。
 
 ## 1. 流程（`scripts/auto-expand.mjs`，每次執行推進一步）
@@ -8,7 +8,7 @@
 ```
 idle
  │ 挑下一個主題與 slot（content/expansion.json）
- │ miko-ws codex：規劃 4 個區域（室內外、地面、地形特徵）→ 每區約 18 個物品（中英日、讀音、描述、位置）
+ │ miko-ws codex：規劃 4 個區域（室內外、地面、地形特徵）→ 每區 itemsPerScene / 4 個物品（中英日、讀音、描述、位置；至少一半放地上）
  │ 驗證（格式、跨場景不重複、描述不含文字）→ content/plans/<id>.json、content/svg-manifests/<id>.json
  │ 登記 miko-ws jobs.json
 generating
@@ -20,6 +20,10 @@ integrating
 idle（下一個場景）
 ```
 
+- **補元素**（`expansion.json` 的 `topUp: true`）：idle 時先補舊街區，再開新場景。已上線的街區每個區域補到 `itemsPerScene / 4` 個，
+  只生成新的物品（miko-ws 只做 manifest 裡還沒做過的），舊物品的 SVG 和位置都不動；補的全放地上（空的是地板）。
+  每個街區對同一個 `itemsPerScene` 只補一次（記在 `content/plans/<id>.json` 的 `topUp`），補不滿也不重試；調高 `itemsPerScene` 會再補一輪。
+  `--status` 會列出待補的街區和數量。
 - **任何一步失敗就停在 `blocked`**，不會一直燒額度。錯誤在 `.auto-expand/state.json`，各步驟輸出在 `.auto-expand/<步驟>.log`。
 - **只 commit 到 `feat/expand-scenes`**，不 push。
 - 物品少於 `minItems`（生成失敗太多）也算失敗。
@@ -87,3 +91,4 @@ y5200  slot 11          │  │          │ slot 12   │ slot 13   │ slot 1
 | 醫院（hospital） | 2026-09-22 08:57 | 69 | 0 | 自動 |
 | 機場（airport） | 2026-09-22 11:46 | 70 | 0 | 自動 |
 | 圖書館（library） | 2026-09-22 12:57 | 67 | 0 | 自動 |
+| 郵局（post-office） | 2026-09-22 13:44 | 70 | 0 | 自動 |

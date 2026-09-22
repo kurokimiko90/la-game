@@ -1,7 +1,8 @@
 {
   "branch": "feat/expand-scenes",
-  "itemsPerScene": 70,
-  "minItems": 45,
+  "itemsPerScene": 100,
+  "minItems": 65,
+  "topUp": true,
   "maxRequeueRounds": 4,
   "maxScenes": 30,
   "core": {"width": 3600, "height": 2600},

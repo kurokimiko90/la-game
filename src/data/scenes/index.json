@@ -138,5 +138,19 @@
       ],
       "body": "<polygon points=\"8,180 8,42 28,42 28,72 34,56 44,44 56,36 70,32 84,36 96,44 106,56 112,72 112,42 132,42 132,180\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"28,180 28,76 34,58 46,44 58,36 70,32 82,36 94,44 106,58 112,76 112,180\" fill=\"#37474f\"/><polygon points=\"38,180 38,78 44,62 54,50 62,44 70,42 78,44 86,50 96,62 102,78 102,180\" fill=\"#fafafa\"/><rect x=\"8\" y=\"42\" width=\"124\" height=\"7\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
+  },
+  {
+    "id": "post-office",
+    "name": "郵局",
+    "itemCount": 70,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        180,
+        140
+      ],
+      "body": "<circle cx=\"48\" cy=\"101\" r=\"25\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"82\" r=\"37\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"123\" cy=\"99\" r=\"30\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"30\" y=\"98\" width=\"111\" height=\"40\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"42\" y=\"101\" width=\"90\" height=\"7\" fill=\"#fff\" opacity=\"0.3\"/>"
+    }
   }
 ]

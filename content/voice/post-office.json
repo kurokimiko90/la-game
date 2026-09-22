@@ -1,0 +1,400 @@
+{
+  "en": {
+    "postage-stamp": {
+      "heard": "Postage stamp.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "mail-slot": {
+      "heard": "Mail slot.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "pebble": {
+      "heard": "Pebble?",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "service-hatch": {
+      "heard": "Service Hatch",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "moss": {
+      "heard": "Moss.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "mailbag": {
+      "heard": "Mailbag.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "letter-opener": {
+      "heard": "Let her open.",
+      "score": 0.75,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "packing-tape-roll": {
+      "heard": "Packing tape roll.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "tape-cutter": {
+      "heard": "Tape cutter?",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "counter-screen": {
+      "heard": "Counter screen.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "letter": {
+      "heard": "Letter.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "turnstile": {
+      "heard": "Turnstyle.",
+      "score": 0.89,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "puddle": {
+      "heard": "Puddle.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-glove": {
+      "heard": "Rubber Glove.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "sorting-bin": {
+      "heard": "Sorting bin bin.",
+      "score": 0.77,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "rain-gauge": {
+      "heard": "Rain Gauge",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "weed": {
+      "heard": "Weed.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "mail-tray": {
+      "heard": "Mail Tray.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "flagpole-base": {
+      "heard": "Flagpole-based.",
+      "score": 0.92,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "sandwich-board": {
+      "heard": "Sandwich board.",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "emergency-light": {
+      "heard": "emergency light,",
+      "score": 1,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "parcel-locker": {
+      "heard": "Parse a locker.",
+      "score": 0.83,
+      "take": "en-1790084287246.aac",
+      "account": "chatgpt1"
+    },
+    "label-roll": {
+      "heard": "Label roll.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "floor-scale": {
+      "heard": "Floor scale.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "postal-tube": {
+      "heard": "PostalTube.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "post-hole": {
+      "heard": "Post hole.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mail-sack": {
+      "heard": "MailSack.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "awning-frame": {
+      "heard": "Awning frame.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mailing-tube-cap": {
+      "heard": "Mailing Tube Cap.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "twine-spool": {
+      "heard": "Twine spool.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "basket": {
+      "heard": "Basket.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "parcel": {
+      "heard": "Parcel.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "queue-ticket-dispenser": {
+      "heard": "Cue ticket dispenser.",
+      "score": 0.85,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mail-chute": {
+      "heard": "Mail chute.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "sorting-chute": {
+      "heard": "Sorting chute.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "sticker": {
+      "heard": "Sticker.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "staple": {
+      "heard": "Staple.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "notepad": {
+      "heard": "Notepad.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "tape-roll": {
+      "heard": "Tape roll.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "glue": {
+      "heard": "Glue.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "label": {
+      "heard": "Label.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "scanner": {
+      "heard": "Scanner.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mailing-tube": {
+      "heard": "Mailing Tube.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "work-apron": {
+      "heard": "Work Apron.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "pallet-jack": {
+      "heard": "Pallet jack.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "work-boots": {
+      "heard": "Work boots.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mail-tub": {
+      "heard": "Mailtub.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "bubble-wrap": {
+      "heard": "Bubble wrap.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mail-tray-rack": {
+      "heard": "Trey Rack.",
+      "score": 0.88,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "rolling-cart": {
+      "heard": "Rolling cart.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "packing-tape": {
+      "heard": "Packing tape",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "rack": {
+      "heard": "Rack.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "mail-sorter": {
+      "heard": "Mail sorter.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "sticker-sheet": {
+      "heard": "Sticker sheet.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "folding-stool": {
+      "heard": "folding stool,",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "sack": {
+      "heard": "Sack.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "safety-goggles": {
+      "heard": "Safety goggles.",
+      "score": 1,
+      "take": "en-1790084418605.aac",
+      "account": "chatgpt1"
+    },
+    "overalls": {
+      "heard": "Overalls,",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "plastic-tote": {
+      "heard": "Plastic tote.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "box-cutter": {
+      "heard": "Box cutter.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "mail-cart": {
+      "heard": "MailCart.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "work-gloves": {
+      "heard": "Work gloves.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "twine": {
+      "heard": "Twine.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "wind-sock": {
+      "heard": "Windrock.",
+      "score": 0.88,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "rainbow": {
+      "heard": "Rainbow.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    },
+    "cloud": {
+      "heard": "Cloud.",
+      "score": 1,
+      "take": "en-1790084558838.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
