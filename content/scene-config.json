@@ -1,6 +1,6 @@
 {
-  "world": {"width": 6200, "height": 3900},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital"],
+  "world": {"width": 6200, "height": 5200},
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -312,6 +312,58 @@
       "noFlip": [],
       "motion": {"sunflower": "sway", "lavender": "sway", "plant": "sway"},
       "terrain": {"color": "#9fa8da", "x0": 3600, "y0": 2600, "x1": 6200, "y1": 3900, "zones": [{"id": "entrance", "x0": 3600, "y0": 2600, "x1": 4900, "y1": 3250, "indoor": false, "floor": "paving", "road": {"y0": 3060, "y1": 3220}}, {"id": "lobby", "x0": 4900, "y0": 2600, "x1": 6200, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "waiting-area", "x0": 4900, "y0": 3250, "x1": 6200, "y1": 3900, "indoor": true, "floor": "carpet", "wallBase": 3430}, {"id": "pharmacy", "x0": 3600, "y0": 3250, "x1": 4900, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}
+    },
+    "airport": {
+      "name": "機場",
+      "icon": "airplane",
+      "zones": {"entrance": [0, 3900, 1300, 4550], "check-in-hall": [1300, 3900, 2600, 4550], "security-check": [1300, 4550, 2600, 5200], "departure-gate": [0, 4550, 1300, 5200]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3970, "bottom": 4345}, "check-in-hall": {"top": 4140, "bottom": 4530, "gaps": [[4090, 4282]]}, "security-check": {"top": 4790, "bottom": 5180}, "departure-gate": {"top": 4790, "bottom": 5180, "gaps": [[4740, 5055]]}}},
+        "sky-entrance": {"top": 4050, "bottom": 4200, "zones": ["entrance"], "layer": 3, "float": 150},
+        "road-entrance": {"top": 4430, "bottom": 4500, "zones": ["entrance"], "inset": 20},
+        "wall-check-in-hall": {"levels": [4040], "zones": ["check-in-hall"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-check-in-hall": {"levels": [4078], "zones": ["check-in-hall"], "inset": 50},
+        "surface-check-in-hall": {"levels": [4210], "zones": ["check-in-hall"], "x0": 1450, "x1": 2450, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4252},
+        "wall-security-check": {"levels": [4690], "zones": ["security-check"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-security-check": {"levels": [4728], "zones": ["security-check"], "inset": 50},
+        "wall-departure-gate": {"levels": [4690], "zones": ["departure-gate"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-departure-gate": {"levels": [4728], "zones": ["departure-gate"], "inset": 50},
+        "surface-departure-gate": {"levels": [4860, 4955], "zones": ["departure-gate"], "x0": 150, "x1": 1150, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 5025}
+      },
+      "place": {
+        "airplane": "sky-entrance",
+        "airport-shuttle": "road-entrance",
+        "ceiling-light": "wall-check-in-hall",
+        "bar-stool-cushion": "surface-check-in-hall",
+        "bottle-opener": "surface-check-in-hall",
+        "hat": "surface-check-in-hall",
+        "passport": "surface-check-in-hall",
+        "boarding-pass": "surface-check-in-hall",
+        "cocktail-shaker": "surface-check-in-hall",
+        "bottle": "surface-check-in-hall",
+        "bar-towel": "surface-check-in-hall",
+        "x-ray-machine": "wallbase-security-check",
+        "body-scanner": "wallbase-security-check",
+        "sliding-door": "wallbase-security-check",
+        "cushion": "surface-departure-gate",
+        "display-case": "surface-departure-gate",
+        "power-bank": "surface-departure-gate",
+        "charging-cable": "surface-departure-gate",
+        "blanket": "surface-departure-gate",
+        "pretzel": "surface-departure-gate",
+        "pear": "surface-departure-gate",
+        "peach": "surface-departure-gate",
+        "granola-bar": "surface-departure-gate",
+        "wall-panel": "wall-departure-gate",
+        "headphones": "surface-departure-gate",
+        "earbuds": "surface-departure-gate",
+        "toiletry-bag": "surface-departure-gate"
+      },
+      "clusters": [["luggage-cart", "duffel-bag", "suit-bag", "safety-vest"], ["aircraft-tug", "wheel-chock", "aircraft-stairs", "fuel-hose"], ["shoe", "sock"]],
+      "loose": ["duffel-bag", "suit-bag", "travel-pillow", "luggage-tag", "safety-vest", "wheel-chock", "bar-stool-cushion", "bottle-opener", "shoe", "sock", "hat", "passport", "boarding-pass", "bottle", "security-wand", "tablet", "ring", "necklace", "bracelet", "hair-clip", "luggage-strap", "cushion", "power-bank", "charging-cable", "pretzel", "pear", "peach", "granola-bar"],
+      "noFlip": [],
+      "motion": {"airport-shuttle": "wobble", "aircraft-tug": "wobble"},
+      "terrain": {"color": "#c5e1a5", "x0": 0, "y0": 3900, "x1": 2600, "y1": 5200, "zones": [{"id": "entrance", "x0": 0, "y0": 3900, "x1": 1300, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "check-in-hall", "x0": 1300, "y0": 3900, "x1": 2600, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "security-check", "x0": 1300, "y0": 4550, "x1": 2600, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}, {"id": "departure-gate", "x0": 0, "y0": 4550, "x1": 1300, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
     }
   }
 }

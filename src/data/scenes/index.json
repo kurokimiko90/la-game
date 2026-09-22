@@ -110,5 +110,19 @@
       ],
       "body": "<polygon points=\"8,48 28,28 126,28 150,48 150,140 8,140\" fill=\"#ffffff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"8\" y=\"78\" width=\"142\" height=\"18\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"54\" width=\"34\" height=\"24\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"62\" y=\"54\" width=\"32\" height=\"24\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"104\" y=\"54\" width=\"30\" height=\"24\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"68\" y=\"42\" width=\"20\" height=\"12\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"88\" y=\"42\" width=\"20\" height=\"12\" fill=\"#ffffff\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"36\" cy=\"126\" r=\"11\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"122\" cy=\"126\" r=\"11\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"48\" width=\"136\" height=\"6\" fill=\"#ffffff\" opacity=\"0.3\"/>"
     }
+  },
+  {
+    "id": "airport",
+    "name": "機場",
+    "itemCount": 70,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        160,
+        180
+      ],
+      "body": "<polygon points=\"18,104 28,88 112,88 142,104 142,122 112,122 102,138 102,166 58,166 58,138 48,122 18,122\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"58,108 12,128 12,145 58,132\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"102,108 148,128 148,145 102,132\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"58,96 42,78 48,70 66,94\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"102,96 118,78 112,70 94,94\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><ellipse cx=\"136\" cy=\"105\" rx=\"9\" ry=\"17\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"78\" cy=\"104\" r=\"4\" fill=\"#64b5f6\"/><circle cx=\"88\" cy=\"104\" r=\"4\" fill=\"#64b5f6\"/><circle cx=\"98\" cy=\"104\" r=\"4\" fill=\"#64b5f6\"/><rect x=\"28\" y=\"91\" width=\"78\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
+    }
   }
 ]

@@ -35,6 +35,8 @@ tail -f .auto-expand/auto-expand.log
 和 `SceneAssetJobScheduler` 同一套模式：miko-ws 啟動後自動跑，每 30 分鐘叫一次 `auto-expand.mjs`。
 開關在 miko-ws 的 `.env`：`LA_GAME_EXPAND_ENABLED=true`、`LA_GAME_EXPAND_INTERVAL_MS`、`LA_GAME_DIR`（預設 `../la-game`）。
 排程狀態：`miko-ws/logs/single/la-game-expand-state.json`。
+同一個場景內不等排程：規劃完直接開始生成；生成器結束後自己接著跑 `auto-expand.mjs --after-generator` 去整合（失敗的重排後也馬上重開生成）。
+排程只負責開新場景和保底（生成器中途掛掉、接續呼叫撞到鎖時）。
 
 ## 2. 街區模板（`scripts/lib/district-kit.mjs`）
 
@@ -83,3 +85,4 @@ y5200  slot 11          │  │          │ slot 12   │ slot 13   │ slot 1
 | 餐廳（restaurant） | 2026-09-22 05:58 | 70 | 0 | 自動 |
 | 學校（school） | 2026-09-22 07:27 | 70 | 0 | 自動 |
 | 醫院（hospital） | 2026-09-22 08:57 | 69 | 0 | 自動 |
+| 機場（airport） | 2026-09-22 11:46 | 70 | 0 | 自動 |

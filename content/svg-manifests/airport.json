@@ -1,0 +1,1483 @@
+{
+  "sceneName": "語言小鎮・機場",
+  "sceneSlug": "la-airport",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "機場入口",
+    "check-in-hall": "報到大廳",
+    "security-check": "安檢區",
+    "departure-gate": "登機候機室"
+  },
+  "elements": [
+    {
+      "name": "飛機",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色機身配兩片寬大的機翼和尾翼，機頭圓鈍、窗戶排列整齊的飛機。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "airplane",
+        "words": {
+          "zh-TW": "飛機",
+          "en": "airplane",
+          "ja": {
+            "text": "飛行機",
+            "reading": "ひこうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "接駁車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色小型巴士，車頂略高，兩側有大片窗戶和黑色輪胎。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "airport-shuttle",
+        "words": {
+          "zh-TW": "接駁車",
+          "en": "shuttle",
+          "ja": {
+            "text": "シャトルバス",
+            "reading": "しゃとるばす"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李推車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "金屬框架組成的推車，上方有平整平台和彎曲把手，旁邊堆著幾件行李。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "luggage-cart",
+        "words": {
+          "zh-TW": "行李推車",
+          "en": "luggage-cart",
+          "ja": {
+            "text": "手荷物カート",
+            "reading": "てにもつかーと"
+          }
+        }
+      }
+    },
+    {
+      "name": "旅行袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深藍色圓筒形旅行袋，兩端微圓，頂部有短把手和一條肩背帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "duffel-bag",
+        "words": {
+          "zh-TW": "旅行袋",
+          "en": "duffel-bag",
+          "ja": {
+            "text": "ボストンバッグ",
+            "reading": "ぼすとんばっぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "透明玻璃組成的圓筒形入口，中間有數片放射狀門扇和金屬框架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "revolving-door",
+        "words": {
+          "zh-TW": "旋轉門",
+          "en": "revolving-door",
+          "ja": {
+            "text": "回転ドア",
+            "reading": "かいてんどあ"
+          }
+        }
+      }
+    },
+    {
+      "name": "屋頂",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口上方伸出的平坦屋頂，邊緣俐落，表面呈灰色並有金屬支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "roof",
+        "words": {
+          "zh-TW": "屋頂",
+          "en": "roof",
+          "ja": {
+            "text": "屋根",
+            "reading": "やね"
+          }
+        }
+      }
+    },
+    {
+      "name": "飛機牽引車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的黃色牽引車，前方有寬大的推板，底部裝著四個黑色輪胎。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "aircraft-tug",
+        "words": {
+          "zh-TW": "飛機牽引車",
+          "en": "aircraft-tug",
+          "ja": {
+            "text": "トーイングトラクター",
+            "reading": "とーいんぐとらくたー"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李輸送帶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黑色長條輸送帶架在金屬支架上，兩側有護板，前端微微向上翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "baggage-conveyor",
+        "words": {
+          "zh-TW": "行李輸送帶",
+          "en": "baggage-conveyor",
+          "ja": {
+            "text": "手荷物コンベヤー",
+            "reading": "てにもつこんべやー"
+          }
+        }
+      }
+    },
+    {
+      "name": "登機空橋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白灰色封閉通道從建築物向外伸出，側面有連續窗戶和可伸縮接縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "jet-bridge",
+        "words": {
+          "zh-TW": "登機空橋",
+          "en": "jet-bridge",
+          "ja": {
+            "text": "ボーディングブリッジ",
+            "reading": "ぼーでぃんぐぶりっじ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手提行李袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方圓形棕色手提袋，頂部有兩條短提帶，側面帶著一個小口袋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "suit-bag",
+        "words": {
+          "zh-TW": "手提行李袋",
+          "en": "holdall",
+          "ja": {
+            "text": "ボストンバッグ",
+            "reading": "ぼすとんばっぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "旅行枕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色馬蹄形軟枕，中間挖空，外層看起來蓬鬆柔軟。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "travel-pillow",
+        "words": {
+          "zh-TW": "旅行枕",
+          "en": "travel-pillow",
+          "ja": {
+            "text": "トラベルピロー",
+            "reading": "とらべるぴろー"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的橘色長方形牌子，頂端有圓孔並繫著短帶，平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "luggage-tag",
+        "words": {
+          "zh-TW": "行李牌",
+          "en": "luggage-tag",
+          "ja": {
+            "text": "荷札",
+            "reading": "にふだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "反光背心",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮黃色無袖背心，前後有兩條銀色反光帶，衣身攤開呈人字形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "safety-vest",
+        "words": {
+          "zh-TW": "反光背心",
+          "en": "safety-vest",
+          "ja": {
+            "text": "安全ベスト",
+            "reading": "あんぜんべすと"
+          }
+        }
+      }
+    },
+    {
+      "name": "輪擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色三角楔形物，底部平坦，斜面上有粗糙防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "wheel-chock",
+        "words": {
+          "zh-TW": "輪擋",
+          "en": "wheel-chock",
+          "ja": {
+            "text": "車輪止め",
+            "reading": "しゃりんどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "登機梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "銀色金屬梯架有一排寬階梯，兩側裝著斜向扶手，底部有小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "aircraft-stairs",
+        "words": {
+          "zh-TW": "登機梯",
+          "en": "aircraft-stairs",
+          "ja": {
+            "text": "タラップ",
+            "reading": "たらっぷ"
+          }
+        }
+      }
+    },
+    {
+      "name": "加油軟管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "粗大的黑色橡膠軟管蜿蜒放在地上，一端連著金屬接頭和圓形握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "fuel-hose",
+        "words": {
+          "zh-TW": "加油軟管",
+          "en": "fuel-hose",
+          "ja": {
+            "text": "給油ホース",
+            "reading": "きゅうゆほーす"
+          }
+        }
+      }
+    },
+    {
+      "name": "車輪擋塊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的長方形混凝土塊，灰白色，橫放在車道邊緣用來阻擋車輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "wheel-stop",
+        "words": {
+          "zh-TW": "車輪擋塊",
+          "en": "wheel stop",
+          "ja": {
+            "text": "車止め",
+            "reading": "くるまどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "輪胎",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色圓環形橡膠輪胎，側面厚實，中間有圓孔，平放在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "entrance",
+        "itemId": "tire",
+        "words": {
+          "zh-TW": "輪胎",
+          "en": "tire",
+          "ja": {
+            "text": "タイヤ",
+            "reading": "タイヤ"
+          }
+        }
+      }
+    },
+    {
+      "name": "天花板燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平的白色長方形燈具，固定在大廳上方，邊緣有細薄灰色外框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "ceiling-light",
+        "words": {
+          "zh-TW": "天花板燈",
+          "en": "ceiling-light",
+          "ja": {
+            "text": "シーリングライト",
+            "reading": "シーリングライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "排隊柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色細長立柱立在圓形底座上，頂端有金屬圓帽，排列在通道旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "queue-stanchion",
+        "words": {
+          "zh-TW": "排隊柱",
+          "en": "queue-stanchion",
+          "ja": {
+            "text": "ロープパーティションポール",
+            "reading": "ロープパーティションポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "排隊帶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根黑色排隊柱之間拉著一條深紅色扁平布帶，形成整齊通道。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "belt-barrier",
+        "words": {
+          "zh-TW": "排隊帶",
+          "en": "belt-barrier",
+          "ja": {
+            "text": "ベルトパーティション",
+            "reading": "ベルトパーティション"
+          }
+        }
+      }
+    },
+    {
+      "name": "資料架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明塑膠製的多層直立架，底部寬厚，空格中放著幾疊彩色紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "brochure-holder",
+        "words": {
+          "zh-TW": "資料架",
+          "en": "brochure-holder",
+          "ja": {
+            "text": "パンフレットスタンド",
+            "reading": "パンフレットスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "地墊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色長方形厚墊平放在地面，表面有細密短絨毛與窄窄包邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "floor-mat",
+        "words": {
+          "zh-TW": "地墊",
+          "en": "floor-mat",
+          "ja": {
+            "text": "フロアマット",
+            "reading": "フロアマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "立式指示牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色細框立在銀色底座上，中央是空白白板，外形像窄長直立畫框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "floor-sign",
+        "words": {
+          "zh-TW": "立式指示牌",
+          "en": "floor-sign",
+          "ja": {
+            "text": "フロアサイン",
+            "reading": "フロアサイン"
+          }
+        }
+      }
+    },
+    {
+      "name": "隔板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "半透明磨砂板由銀色細框支撐，直立分隔空間，頂端平直且沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "partition",
+        "words": {
+          "zh-TW": "隔板",
+          "en": "partition",
+          "ja": {
+            "text": "パーティション",
+            "reading": "パーティション"
+          }
+        }
+      }
+    },
+    {
+      "name": "吧台坐墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形深紅色軟墊放在吧台表面，邊緣縫線明顯，中央略微隆起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "bar-stool-cushion",
+        "words": {
+          "zh-TW": "吧台坐墊",
+          "en": "bar-stool-cushion",
+          "ja": {
+            "text": "バースツールクッション",
+            "reading": "バースツールクッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "開瓶器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色扁平金屬工具，一端有圓孔，另一端彎成小鉤，放在吧台上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "bottle-opener",
+        "words": {
+          "zh-TW": "開瓶器",
+          "en": "bottle-opener",
+          "ja": {
+            "text": "栓抜き",
+            "reading": "せんぬき"
+          }
+        }
+      }
+    },
+    {
+      "name": "襯衫",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色長袖襯衫鬆散攤在地面，衣領與兩條袖子輪廓清楚，布料有些皺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "shirt",
+        "words": {
+          "zh-TW": "襯衫",
+          "en": "shirt",
+          "ja": {
+            "text": "シャツ",
+            "reading": "シャツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一隻棕色低筒鞋側躺在地上，圓鞋頭、深色鞋底與鞋帶孔清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "shoe",
+        "words": {
+          "zh-TW": "鞋子",
+          "en": "shoe",
+          "ja": {
+            "text": "靴",
+            "reading": "くつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "襪子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一隻灰色短襪蜷在地面，襪口較寬，腳跟處形成明顯彎折輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "sock",
+        "words": {
+          "zh-TW": "襪子",
+          "en": "sock",
+          "ja": {
+            "text": "靴下",
+            "reading": "くつした"
+          }
+        }
+      }
+    },
+    {
+      "name": "帽子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色圓頂帽放在吧台上，前方有短帽簷，帽身柔軟並略微塌下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "hat",
+        "words": {
+          "zh-TW": "帽子",
+          "en": "hat",
+          "ja": {
+            "text": "帽子",
+            "reading": "ぼうし"
+          }
+        }
+      }
+    },
+    {
+      "name": "護照",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深色硬皮小冊子，略微張開，露出整齊的內頁與圓角封面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "passport",
+        "words": {
+          "zh-TW": "護照",
+          "en": "passport",
+          "ja": {
+            "text": "パスポート",
+            "reading": "パスポート"
+          }
+        }
+      }
+    },
+    {
+      "name": "登機證",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "狹長的白色紙卡，邊緣平整，中央有幾條深色粗線作為圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "boarding-pass",
+        "words": {
+          "zh-TW": "登機證",
+          "en": "boarding-pass",
+          "ja": {
+            "text": "搭乗券",
+            "reading": "とうじょうけん"
+          }
+        }
+      }
+    },
+    {
+      "name": "調酒器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色金屬圓筒，上窄下寬，頂端有小圓蓋，表面有明亮反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "cocktail-shaker",
+        "words": {
+          "zh-TW": "調酒器",
+          "en": "cocktail-shaker",
+          "ja": {
+            "text": "シェイカー",
+            "reading": "シェイカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "瓶子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃瓶，瓶身圓鼓，瓶頸細長，底部平穩並帶有深色瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "bottle",
+        "words": {
+          "zh-TW": "瓶子",
+          "en": "bottle",
+          "ja": {
+            "text": "ボトル",
+            "reading": "ボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "吧台巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "折疊的方形白色布巾，邊緣有細窄條紋，柔軟地攤放在吧台上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "check-in-hall",
+        "itemId": "bar-towel",
+        "words": {
+          "zh-TW": "吧台巾",
+          "en": "bar-towel",
+          "ja": {
+            "text": "バータオル",
+            "reading": "バータオル"
+          }
+        }
+      }
+    },
+    {
+      "name": "金屬探測門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "拱形灰色門架，兩側立柱連著頂部，通道中央可讓人走過。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "metal-detector",
+        "words": {
+          "zh-TW": "金屬探測門",
+          "en": "metal-detector",
+          "ja": {
+            "text": "金属探知ゲート",
+            "reading": "きんぞくたんちげーと"
+          }
+        }
+      }
+    },
+    {
+      "name": "Ｘ光檢查機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "大型深灰色箱體，一端有黑色開口，旁邊連著輸送帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "x-ray-machine",
+        "words": {
+          "zh-TW": "Ｘ光檢查機",
+          "en": "x-ray-machine",
+          "ja": {
+            "text": "エックス線検査機",
+            "reading": "えっくすせんけんさき"
+          }
+        }
+      }
+    },
+    {
+      "name": "手持金屬探測器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長黑色手柄連著扁平探測頭，外形像一支短棒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "security-wand",
+        "words": {
+          "zh-TW": "手持金屬探測器",
+          "en": "security-wand",
+          "ja": {
+            "text": "ハンディ金属探知機",
+            "reading": "はんでぃきんぞくたんちき"
+          }
+        }
+      }
+    },
+    {
+      "name": "人體掃描器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的白色直立箱體，中間有寬闊入口，外框圓潤平滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "body-scanner",
+        "words": {
+          "zh-TW": "人體掃描器",
+          "en": "body-scanner",
+          "ja": {
+            "text": "ボディースキャナー",
+            "reading": "ぼでぃーすきゃなー"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩片高大的玻璃門板嵌在灰色門框中，左右滑動開合。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "sliding-door",
+        "words": {
+          "zh-TW": "滑門",
+          "en": "sliding-door",
+          "ja": {
+            "text": "引き戸",
+            "reading": "ひきど"
+          }
+        }
+      }
+    },
+    {
+      "name": "輸送帶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黑色平直帶面架在低矮機台上，兩側有深色邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "conveyor-belt",
+        "words": {
+          "zh-TW": "輸送帶",
+          "en": "conveyor-belt",
+          "ja": {
+            "text": "コンベヤーベルト",
+            "reading": "こんべやーべると"
+          }
+        }
+      }
+    },
+    {
+      "name": "塑膠盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明藍色長方盒，四角圓滑，能清楚看見裡面的隨身物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "plastic-box",
+        "words": {
+          "zh-TW": "塑膠盒",
+          "en": "plastic-box",
+          "ja": {
+            "text": "プラスチックケース",
+            "reading": "ぷらすちっくけーす"
+          }
+        }
+      }
+    },
+    {
+      "name": "平板電腦",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "薄薄的黑色長方形電子裝置，正面是沒有文字的深色玻璃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "tablet",
+        "words": {
+          "zh-TW": "平板電腦",
+          "en": "tablet",
+          "ja": {
+            "text": "タブレット",
+            "reading": "たぶれっと"
+          }
+        }
+      }
+    },
+    {
+      "name": "戒指",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的金色圓環，環面平滑，在地面上微微側倒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "ring",
+        "words": {
+          "zh-TW": "戒指",
+          "en": "ring",
+          "ja": {
+            "text": "指輪",
+            "reading": "ゆびわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "項鍊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金色鏈條鬆散繞成一圈，中間垂著一顆簡單圓形墜飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "necklace",
+        "words": {
+          "zh-TW": "項鍊",
+          "en": "necklace",
+          "ja": {
+            "text": "ネックレス",
+            "reading": "ねっくれす"
+          }
+        }
+      }
+    },
+    {
+      "name": "手鍊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色細圓環彎成手腕大小，表面有整齊的小圓珠裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "bracelet",
+        "words": {
+          "zh-TW": "手鍊",
+          "en": "bracelet",
+          "ja": {
+            "text": "ブレスレット",
+            "reading": "ぶれすれっと"
+          }
+        }
+      }
+    },
+    {
+      "name": "皮帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色長條皮帶彎曲放置，末端有金色方形扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "belt",
+        "words": {
+          "zh-TW": "皮帶",
+          "en": "belt",
+          "ja": {
+            "text": "ベルト",
+            "reading": "べると"
+          }
+        }
+      }
+    },
+    {
+      "name": "夾克",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍色短版外套攤在地上，正面有衣領、長袖和拉鍊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "jacket",
+        "words": {
+          "zh-TW": "夾克",
+          "en": "jacket",
+          "ja": {
+            "text": "ジャケット",
+            "reading": "じゃけっと"
+          }
+        }
+      }
+    },
+    {
+      "name": "毛衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一件柔軟的藍色長袖毛衣，領口和袖口有明顯的羅紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "sweater",
+        "words": {
+          "zh-TW": "毛衣",
+          "en": "sweater",
+          "ja": {
+            "text": "セーター",
+            "reading": "セーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "髮夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一枚細長的粉紅色髮夾，中央有圓滑的彎曲夾身。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "hair-clip",
+        "words": {
+          "zh-TW": "髮夾",
+          "en": "hair-clip",
+          "ja": {
+            "text": "ヘアクリップ",
+            "reading": "ヘアクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條橘色寬布帶，兩端有黑色扣具，彎曲散落在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "luggage-strap",
+        "words": {
+          "zh-TW": "行李帶",
+          "en": "luggage-strap",
+          "ja": {
+            "text": "スーツケースベルト",
+            "reading": "スーツケースベルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "隔離欄",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色立柱連接紅色伸縮帶的隔離欄，用來分隔安檢排隊動線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "security-check",
+        "itemId": "barrier",
+        "words": {
+          "zh-TW": "隔離欄",
+          "en": "barrier",
+          "ja": {
+            "text": "バリア",
+            "reading": "バリア"
+          }
+        }
+      }
+    },
+    {
+      "name": "地毯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "鋪滿地面的深藍色短毛地毯，邊緣平整，表面有細緻的織紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "carpet",
+        "words": {
+          "zh-TW": "地毯",
+          "en": "carpet",
+          "ja": {
+            "text": "カーペット",
+            "reading": "カーペット"
+          }
+        }
+      }
+    },
+    {
+      "name": "扶手椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一張深灰色單人椅，有厚椅背、寬扶手和四隻短椅腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "armchair",
+        "words": {
+          "zh-TW": "扶手椅",
+          "en": "armchair",
+          "ja": {
+            "text": "アームチェア",
+            "reading": "アームチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "坐墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形柔軟坐墊，表面是明亮橘色布料，中央微微隆起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "cushion",
+        "words": {
+          "zh-TW": "坐墊",
+          "en": "cushion",
+          "ja": {
+            "text": "クッション",
+            "reading": "クッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的方形腳凳，覆著藍色布面，四角圓鈍且沒有靠背。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "ottoman",
+        "words": {
+          "zh-TW": "腳凳",
+          "en": "ottoman",
+          "ja": {
+            "text": "オットマン",
+            "reading": "オットマン"
+          }
+        }
+      }
+    },
+    {
+      "name": "展示台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色階梯式展示台，由數層平整平台組成，正面可見層層退後的輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "display-pedestal",
+        "words": {
+          "zh-TW": "展示台",
+          "en": "display-pedestal",
+          "ja": {
+            "text": "展示台",
+            "reading": "てんじだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "展示櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明玻璃展示櫃，外框是銀色金屬，內部放著整齊排列的小物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "display-case",
+        "words": {
+          "zh-TW": "展示櫃",
+          "en": "display-case",
+          "ja": {
+            "text": "ショーケース",
+            "reading": "ショーケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "行動電源",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的黑色長方形裝置，邊角圓滑，側面有一條短充電線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "power-bank",
+        "words": {
+          "zh-TW": "行動電源",
+          "en": "power-bank",
+          "ja": {
+            "text": "モバイルバッテリー",
+            "reading": "モバイルバッテリー"
+          }
+        }
+      }
+    },
+    {
+      "name": "充電線",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條白色細長電線，兩端各有小接頭，彎曲地放在展示台上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "charging-cable",
+        "words": {
+          "zh-TW": "充電線",
+          "en": "charging-cable",
+          "ja": {
+            "text": "充電ケーブル",
+            "reading": "じゅうでんケーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "毛毯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "摺疊整齊的柔軟毛毯，呈淡紫色，邊緣有短短的流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "blanket",
+        "words": {
+          "zh-TW": "毛毯",
+          "en": "blanket",
+          "ja": {
+            "text": "毛布",
+            "reading": "もうふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蝴蝶餅",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色烘烤點心，麵糰扭成交叉環結形狀，表面散著細小鹽粒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "pretzel",
+        "words": {
+          "zh-TW": "蝴蝶餅",
+          "en": "pretzel",
+          "ja": {
+            "text": "プレッツェル",
+            "reading": "プレッツェル"
+          }
+        }
+      }
+    },
+    {
+      "name": "梨子",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淡黃色梨子，上窄下寬，表面光滑，頂端有短短的棕色果梗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "pear",
+        "words": {
+          "zh-TW": "梨子",
+          "en": "pear",
+          "ja": {
+            "text": "梨",
+            "reading": "なし"
+          }
+        }
+      }
+    },
+    {
+      "name": "桃子",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓滾滾的粉紅色桃子，中間有明顯凹縫，表皮帶著柔和絨毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "peach",
+        "words": {
+          "zh-TW": "桃子",
+          "en": "peach",
+          "ja": {
+            "text": "桃",
+            "reading": "もも"
+          }
+        }
+      }
+    },
+    {
+      "name": "燕麥棒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的棕色燕麥點心，表面看得見顆粒和少量果乾，外形略不規則。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "granola-bar",
+        "words": {
+          "zh-TW": "燕麥棒",
+          "en": "granola-bar",
+          "ja": {
+            "text": "グラノーラバー",
+            "reading": "グラノーラバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "牆面板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "後牆上的米白色長方形吸音板，表面有細密凹槽，邊框平直整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "wall-panel",
+        "words": {
+          "zh-TW": "牆面板",
+          "en": "wall-panel",
+          "ja": {
+            "text": "壁パネル",
+            "reading": "かべパネル"
+          }
+        }
+      }
+    },
+    {
+      "name": "頭戴式耳機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色圓弧頭帶連接兩個圓形耳罩，耳罩內側有柔軟的厚墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "headphones",
+        "words": {
+          "zh-TW": "頭戴式耳機",
+          "en": "headphones",
+          "ja": {
+            "text": "ヘッドホン",
+            "reading": "ヘッドホン"
+          }
+        }
+      }
+    },
+    {
+      "name": "入耳式耳機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩枚小巧白色耳塞，各自連著短柄，放在小型收納盒旁邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "earbuds",
+        "words": {
+          "zh-TW": "入耳式耳機",
+          "en": "earbuds",
+          "ja": {
+            "text": "イヤホン",
+            "reading": "イヤホン"
+          }
+        }
+      }
+    },
+    {
+      "name": "盥洗包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形布袋，表面是深藍色，頂部有拉鍊和小提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "airport",
+        "zone": "departure-gate",
+        "itemId": "toiletry-bag",
+        "words": {
+          "zh-TW": "盥洗包",
+          "en": "toiletry-bag",
+          "ja": {
+            "text": "トイレタリーバッグ",
+            "reading": "トイレタリーバッグ"
+          }
+        }
+      }
+    }
+  ]
+}
