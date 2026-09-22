@@ -60,6 +60,33 @@ export interface Zone {
   y1: number;
 }
 
+/** 自動產生的街區的一個區域（scripts/lib/district-kit.mjs 算好的地形幾何） */
+export interface TerrainZone {
+  id: string;
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  indoor: boolean;
+  floor: 'tile' | 'wood' | 'carpet' | 'grass' | 'paving' | 'sand' | 'concrete';
+  /** 室內後牆的牆腳 y */
+  wallBase?: number;
+  road?: { y0: number; y1: number };
+  track?: { y0: number; y1: number };
+  pool?: { x0: number; y0: number; x1: number; y1: number };
+}
+
+/** 自動產生的街區地形（手畫的場景沒有這個欄位，地形在 WorldBackground.tsx） */
+export interface DistrictTerrain {
+  /** 小地圖顏色 */
+  color: string;
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  zones: TerrainZone[];
+}
+
 /** 一個場景 = 小鎮地圖上的一個街區；width/height 是整張地圖的大小，座標都是地圖座標 */
 export interface SceneData {
   id: string;
@@ -70,6 +97,7 @@ export interface SceneData {
   surfaces: Surface[];
   /** 陣列順序 = 繪製順序 */
   items: SceneItem[];
+  terrain?: DistrictTerrain;
 }
 
 export interface SceneSummary {

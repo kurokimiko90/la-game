@@ -66,7 +66,21 @@ function buildScene(world, source, placements, obstacles) {
         ...(motion[id] ? { motion: motionParams(sceneId, id, motion[id]) } : {}),
       };
     }),
+    // 自動擴展的街區才有：地形照這份畫（src/components/scene/districts/GeneratedDistrict.tsx）
+    ...(sceneConfig.terrain ? { terrain: sceneConfig.terrain } : {}),
   };
+}
+
+// src/lib/scenes.ts 從這裡 import 所有場景；新場景不用手改 import
+function registrySource(ids) {
+  const ident = (id) => id.replace(/-(\w)/g, (_, c) => c.toUpperCase());
+  return [
+    '// 由 scripts/build-scenes.mjs 產生，不要手改。',
+    ...ids.map((id) => `import ${ident(id)} from './${id}.json';`),
+    '',
+    `export const SCENE_DATA = { ${ids.map((id) => (ident(id) === id ? id : `'${id}': ${ident(id)}`)).join(', ')} };`,
+    '',
+  ].join('\n');
 }
 
 function main() {
@@ -100,6 +114,7 @@ function main() {
     console.log(`${sceneId}: ${scene.items.length} 個物件、${moving} 個會動${source.skipped.length ? `，略過（無 SVG）：${source.skipped.join(', ')}` : ''}`);
   }
   fs.writeFileSync(path.join(OUT_DIR, 'index.json'), `${JSON.stringify(index, null, 2)}\n`);
+  fs.writeFileSync(path.join(OUT_DIR, 'registry.ts'), registrySource(index.map((s) => s.id)));
   console.log(`→ ${path.relative(ROOT, OUT_DIR)}/`);
 }
 

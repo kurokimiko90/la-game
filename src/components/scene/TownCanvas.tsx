@@ -6,7 +6,7 @@ import { Minus, Plus, Maximize } from 'lucide-react';
 import { DistrictLayer } from './DistrictLayer';
 import { TownStrip } from './TownStrip';
 import { TownMinimap } from './TownMinimap';
-import { SECTIONS, WorldBackground } from './WorldBackground';
+import { WorldBackground, worldSections } from './WorldBackground';
 import { clampView, centerOn, defaultScale, fitScale, toScene, zoomAt, type View, type Size } from '@/lib/geometry';
 import { districtAt, districtBounds, type Rect, type Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
@@ -222,13 +222,14 @@ export function TownCanvas({
   }, [applyView, townSize]);
 
   const found = useMemo(() => new Set(foundIds), [foundIds]);
+  const sections = useMemo(() => worldSections(town), [town]);
   const visible: Rect | null = size ? {
     x0: -view.tx / view.scale - IDLE_MARGIN,
     y0: -view.ty / view.scale - IDLE_MARGIN,
     x1: (size.width - view.tx) / view.scale + IDLE_MARGIN,
     y1: (size.height - view.ty) / view.scale + IDLE_MARGIN,
   } : null;
-  const activeSections = visible ? Object.entries(SECTIONS).filter(([, r]) => intersects(r, visible)).map(([k]) => k).join(',') : '';
+  const activeSections = visible ? Object.entries(sections).filter(([, r]) => intersects(r, visible)).map(([k]) => k).join(',') : '';
 
   return (
     <div

@@ -55,7 +55,7 @@ async function clickItem(page: Page, itemId: string, zoneId: string, scene: Scen
   await page.mouse.click(point!.x, point!.y);
 }
 
-test('首頁：四個場景，只有公園開放', async ({ page }) => {
+test('首頁：只有公園開放，其他場景鎖著', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: '記憶小鎮' })).toBeVisible();
   await expect(page.getByRole('link', { name: /公園/ })).toBeVisible();

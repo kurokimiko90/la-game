@@ -46,6 +46,13 @@ public/audio/<en|ja>/<scene>/<itemId>.mp3
 - 物件 SVG 會被內嵌（點擊範圍 = 形狀），所以一定要經過白名單清洗；不要繞過 build-scenes 直接用 SVG
 - 場景上線後不要 `content:layout --reset`（玩家記住的位置會變）
 
+## 自動擴展（新場景全自動，見 `docs/expansion.md`）
+
+- `scripts/auto-expand.mjs` 由 launchd 每 30 分鐘推進一步：miko-ws codex 規劃場景與單字表 → miko-ws 生成 SVG → 整合、測試、commit 到 `feat/expand-scenes`
+- 新場景用街區模板（`scripts/lib/district-kit.mjs` + `src/components/scene/districts/GeneratedDistrict.tsx`），不手畫地形；主題與地圖 slot 在 `content/expansion.json`
+- 規劃結果在 `content/plans/<scene>.json`（manifest 由它產生）；狀態與紀錄在 `.auto-expand/`（不進 git）
+- `src/data/scenes/registry.ts` 由 build-scenes 產生，新場景不用改 `src/lib/scenes.ts`
+
 ## Key Constraints
 
 - 遊戲規則是純函式（`src/lib/stages.ts`、`progress.ts`、`geometry.ts`、`town.ts`），UI 只呼叫；新規則先寫單元測試

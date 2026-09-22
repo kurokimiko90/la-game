@@ -12,6 +12,7 @@ import { scatter } from '@/lib/scatter';
 import type { Rect, Town } from '@/lib/town';
 import { Glow, HangSwing, SwayTufts, WaterShimmer } from './Ambient';
 import { Surfaces } from './Surfaces';
+import { GeneratedDistrict } from './districts/GeneratedDistrict';
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
 
@@ -22,18 +23,28 @@ const LAKE = { cx: 2280, cy: 470, rx: 300, ry: 230 };
 const SHOPS = { x0: 650, x1: 1950, roof: 760, facade: 880, base: 1130 };
 const STREET = { x1: 2600, walkN: 1130, road: 1255, roadEnd: 1505, walkS: 1640 };
 const MARKET = { x1: 2600, wall: 1700, wallFace: 1722, floor: 1895, south: 2575 };
-const WORLD = { w: 3600, h: 2600 };
+// 手畫的核心範圍（前 4 個場景）；之後自動擴展的街區往南、往東加（districts/GeneratedDistrict.tsx）
+const CORE = { w: 3600, h: 2600 };
 const RIVER_TOP = 400;
 
-/** 背景分區：畫面外的分區暫停背景動畫（TownCanvas 算出哪些分區看得到） */
-export const SECTIONS: Record<string, Rect> = {
-  park: { x0: 0, y0: 0, x1: 2600, y1: 1130 },
-  shops: { x0: 650, y0: 760, x1: 1950, y1: 1130 },
-  street: { x0: 0, y0: 1130, x1: 2600, y1: 1640 },
-  market: { x0: 0, y0: 1640, x1: 2600, y1: 2600 },
-  river: { x0: 2600, y0: 0, x1: 2935, y1: 2600 },
-  east: { x0: 2935, y0: 0, x1: 3600, y1: 2600 },
-};
+const genKey = (sceneId: string) => `gen:${sceneId}`;
+
+/** 背景分區：畫面外的分區暫停背景動畫（TownCanvas 算出哪些分區看得到）；河和東岸一路延伸到地圖南緣 */
+export function worldSections(town: Town): Record<string, Rect> {
+  const sections: Record<string, Rect> = {
+    park: { x0: 0, y0: 0, x1: 2600, y1: 1130 },
+    shops: { x0: 650, y0: 760, x1: 1950, y1: 1130 },
+    street: { x0: 0, y0: 1130, x1: 2600, y1: 1640 },
+    market: { x0: 0, y0: 1640, x1: 2600, y1: 2600 },
+    river: { x0: 2600, y0: 0, x1: 2935, y1: town.height },
+    east: { x0: 2935, y0: 0, x1: 3600, y1: town.height },
+  };
+  for (const d of town.districts) {
+    const t = d.scene.terrain;
+    if (t) sections[genKey(d.scene.id)] = { x0: t.x0, y0: t.y0, x1: t.x1, y1: t.y1 };
+  }
+  return sections;
+}
 
 const inEllipse = (x: number, y: number, cx: number, cy: number, rx: number, ry: number) => ((x - cx) / rx) ** 2 + ((y - cy) / ry) ** 2 < 1;
 const inRect = (x: number, y: number, x0: number, y0: number, x1: number, y1: number) => x >= x0 && x <= x1 && y >= y0 && y <= y1;
@@ -152,9 +163,9 @@ function Supermarket({ town }: { town: Town }) {
         {range(Math.ceil(MARKET.x1 / 90)).map((i) => <line key={`v${i}`} x1={i * 90} y1={MARKET.floor} x2={i * 90} y2={MARKET.south} />)}
         {range(Math.ceil((MARKET.south - MARKET.floor) / 90)).map((i) => <line key={`h${i}`} x1={0} y1={MARKET.floor + i * 90} x2={MARKET.x1} y2={MARKET.floor + i * 90} />)}
       </g>
-      <rect x={0} y={MARKET.wall} width={22} height={WORLD.h - MARKET.wall} fill="#8d6e63" />
-      <rect x={MARKET.x1 - 22} y={MARKET.wall} width={22} height={WORLD.h - MARKET.wall} fill="#8d6e63" />
-      <rect x={0} y={MARKET.south} width={MARKET.x1} height={WORLD.h - MARKET.south} fill="#8d6e63" />
+      <rect x={0} y={MARKET.wall} width={22} height={CORE.h - MARKET.wall} fill="#8d6e63" />
+      <rect x={MARKET.x1 - 22} y={MARKET.wall} width={22} height={CORE.h - MARKET.wall} fill="#8d6e63" />
+      <rect x={0} y={MARKET.south} width={MARKET.x1} height={CORE.h - MARKET.south} fill="#8d6e63" />
       {/* 後牆上的區域吊牌與壁燈 */}
       {market?.zones.map((z, i) => {
         const cx = (z.x0 + z.x1) / 2;
@@ -176,32 +187,32 @@ function Supermarket({ town }: { town: Town }) {
   );
 }
 
-function River() {
-  const west = `M2700 ${RIVER_TOP} C2690 800 2712 1200 2690 1600 C2674 2000 2700 2300 2694 ${WORLD.h}`;
-  const eastEdge = `M2932 ${WORLD.h} C2940 2250 2918 1900 2930 1500 C2942 1100 2915 750 2922 ${RIVER_TOP}`;
+function River({ height }: { height: number }) {
+  const west = `M2700 ${RIVER_TOP} C2690 800 2712 1200 2690 1600 C2674 2000 2700 2300 2694 ${height}`;
+  const eastEdge = `M2932 ${height} C2940 2250 2918 1900 2930 1500 C2942 1100 2915 750 2922 ${RIVER_TOP}`;
   return (
     <g>
       {/* 西岸步道（商業街、超市的東邊） */}
-      <rect x={2600} y={0} width={110} height={WORLD.h} fill="#d7ccc8" />
+      <rect x={2600} y={0} width={110} height={height} fill="#d7ccc8" />
       <path d={`${west} L${eastEdge.slice(1)} Z`} fill="#7cc6e8" />
       <path d="M2700 330 C2760 300 2860 300 2922 330 L2922 400 L2700 400 Z" fill="#7cc6e8" />
       <path d={west} fill="none" stroke="#bcaaa4" strokeWidth={12} />
       <path d={eastEdge} fill="none" stroke="#bcaaa4" strokeWidth={12} />
-      <WaterShimmer seed={501} x0={2715} x1={2905} y0={420} y1={WORLD.h - 20} count={22} color="#b3e5fc" vertical />
+      <WaterShimmer seed={501} x0={2715} x1={2905} y0={420} y1={height - 20} count={Math.round(22 * height / CORE.h)} color="#b3e5fc" vertical />
     </g>
   );
 }
 
-function EastBank() {
-  // 北邊延續公園的草地，往南過渡成河岸步道的鋪面；步道上有幾個花台
-  const edge = `M2935 760 C3150 690 3350 820 ${WORLD.w} 730`;
+function EastBank({ height }: { height: number }) {
+  // 北邊延續公園的草地，往南過渡成河岸步道的鋪面（一路到地圖南緣）；步道上有幾個花台
+  const edge = `M2935 760 C3150 690 3350 820 ${CORE.w} 730`;
   const planters = [[3060, 1180], [3380, 1480], [3100, 2150], [3420, 2420]];
   return (
     <g>
-      <path d={`${edge} L${WORLD.w} ${WORLD.h} L2935 ${WORLD.h} Z`} fill="#e7dccb" />
+      <path d={`${edge} L${CORE.w} ${height} L2935 ${height} Z`} fill="#e7dccb" />
       <path d={edge} fill="none" stroke="#d7ccc8" strokeWidth={10} />
       <g stroke="#d7ccc8" strokeWidth={2}>
-        {range(16).map((i) => <line key={i} x1={2960 + i * 45} y1={840} x2={2960 + i * 45 - 40} y2={WORLD.h} />)}
+        {range(16).map((i) => <line key={i} x1={2960 + i * 45} y1={840} x2={2960 + i * 45 - 40} y2={height} />)}
       </g>
       <path d="M2920 585 C3120 560 3350 640 3560 600" fill="none" stroke="#eadfc6" strokeWidth={60} strokeLinecap="round" />
       <SwayTufts seed={502} x0={2990} x1={3580} y0={240} y1={680} count={14} color="#7cb342" />
@@ -232,8 +243,9 @@ function WorldBackgroundImpl({ town, activeSections }: WorldBackgroundProps) {
       {section('shops', <Shops />)}
       {section('street', <Street />)}
       {section('market', <Supermarket town={town} />)}
-      {section('river', <River />)}
-      {section('east', <EastBank />)}
+      {section('river', <River height={town.height} />)}
+      {section('east', <EastBank height={town.height} />)}
+      {town.districts.map((d) => d.scene.terrain && <g key={d.scene.id}>{section(genKey(d.scene.id), <GeneratedDistrict terrain={d.scene.terrain} />)}</g>)}
       {town.districts.map((d) => <Surfaces key={d.scene.id} surfaces={d.scene.surfaces} />)}
     </>
   );

@@ -35,7 +35,7 @@ export function TownMinimap({ town, view, size, activeSceneId, lockedSceneIds, o
         <rect width={town.width} height={town.height} fill="#dcedc8" />
         {town.districts.flatMap((d) => d.scene.zones.map((z) => (
           <rect key={`${d.scene.id}-${z.id}`} x={z.x0} y={z.y0} width={z.x1 - z.x0} height={z.y1 - z.y0}
-            fill={lockedSceneIds.has(d.scene.id) ? '#cfd8dc' : COLORS[d.scene.id] ?? FALLBACK}
+            fill={lockedSceneIds.has(d.scene.id) ? '#cfd8dc' : COLORS[d.scene.id] ?? d.scene.terrain?.color ?? FALLBACK}
             stroke={d.scene.id === activeSceneId ? '#00796b' : '#ffffff'} strokeWidth={d.scene.id === activeSceneId ? 40 : 20} />
         )))}
         <rect x={vx} y={vy} width={Math.max(0, vw)} height={Math.max(0, vh)} fill="none" stroke="#263238" strokeWidth={36} />

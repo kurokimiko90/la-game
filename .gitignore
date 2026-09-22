@@ -43,3 +43,6 @@ next-env.d.ts
 # playwright
 /playwright-report/
 /test-results/
+
+# auto-expand 執行狀態與紀錄
+/.auto-expand/

@@ -1,14 +1,11 @@
 // 場景資料（scripts/build-scenes.mjs 產生的 JSON）。改內容請改 content/ 後重跑 build。
 // JSON 在 build 時已檢查過（scene-config、擺放、動態），這裡直接當成 SceneData。
 import index from '@/data/scenes/index.json';
-import park from '@/data/scenes/park.json';
-import street from '@/data/scenes/street.json';
-import riverside from '@/data/scenes/riverside.json';
-import supermarket from '@/data/scenes/supermarket.json';
+import { SCENE_DATA } from '@/data/scenes/registry';
 import { buildTown } from './town';
 import type { SceneData, SceneSummary } from './types';
 
-const SCENES = { park, street, riverside, supermarket } as Record<string, SceneData>;
+const SCENES = SCENE_DATA as Record<string, SceneData>;
 
 export const SCENE_LIST: readonly SceneSummary[] = index;
 export const SCENE_ORDER: readonly string[] = index.map((s) => s.id);
