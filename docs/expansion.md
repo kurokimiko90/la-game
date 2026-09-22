@@ -1,6 +1,6 @@
 # 小鎮自動擴展
 
-> 2026-09-22 起｜分支 `feat/expand-scenes`｜launchd 每 30 分鐘推進一步｜每個場景約 70 個物品
+> 2026-09-22 起｜分支 `feat/expand-scenes`｜miko-ws runtime 的排程每 30 分鐘推進一步｜每個場景約 70 個物品
 > 所有 LLM 工作（場景規劃、單字表）和 SVG 生成都交給 miko-ws；發音用本機 edge-tts。沒有人工步驟。
 
 ## 1. 流程（`scripts/auto-expand.mjs`，每次執行推進一步）
@@ -28,10 +28,13 @@ idle（下一個場景）
 node scripts/auto-expand.mjs --status     # 目前在哪一步、miko-ws 進度
 node scripts/auto-expand.mjs              # 手動推進一步
 node scripts/auto-expand.mjs --unblock    # 修好問題後，從卡住的步驟重來
-bash scripts/install-auto-expand.sh       # 安裝 launchd 排程（每 30 分鐘）
-bash scripts/install-auto-expand.sh --remove
 tail -f .auto-expand/auto-expand.log
 ```
+
+**排程**：miko-ws runtime 的 `LaGameExpandScheduler`（`miko-ws/src/skills/scene-assets/LaGameExpandScheduler.js`），
+和 `SceneAssetJobScheduler` 同一套模式：miko-ws 啟動後自動跑，每 30 分鐘叫一次 `auto-expand.mjs`。
+開關在 miko-ws 的 `.env`：`LA_GAME_EXPAND_ENABLED=true`、`LA_GAME_EXPAND_INTERVAL_MS`、`LA_GAME_DIR`（預設 `../la-game`）。
+排程狀態：`miko-ws/logs/single/la-game-expand-state.json`。
 
 ## 2. 街區模板（`scripts/lib/district-kit.mjs`）
 

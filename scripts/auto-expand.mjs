@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 自動擴展小鎮：每執行一次推進一步，由 launchd 每 30 分鐘叫一次（scripts/install-auto-expand.sh）。
+// 自動擴展小鎮：每執行一次推進一步，由 miko-ws runtime 的 LaGameExpandScheduler 每 30 分鐘叫一次。
 // 所有 LLM 工作（場景規劃、單字表）和 SVG 生成都交給 miko-ws；發音用本機 edge-tts。
 //
 //   node scripts/auto-expand.mjs              推進一步

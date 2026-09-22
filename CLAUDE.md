@@ -48,7 +48,7 @@ public/audio/<en|ja>/<scene>/<itemId>.mp3
 
 ## 自動擴展（新場景全自動，見 `docs/expansion.md`）
 
-- `scripts/auto-expand.mjs` 由 launchd 每 30 分鐘推進一步：miko-ws codex 規劃場景與單字表 → miko-ws 生成 SVG → 整合、測試、commit 到 `feat/expand-scenes`
+- `scripts/auto-expand.mjs` 由 miko-ws runtime 的 `LaGameExpandScheduler` 每 30 分鐘推進一步（miko-ws `.env` 的 `LA_GAME_EXPAND_ENABLED`）：miko-ws codex 規劃場景與單字表 → miko-ws 生成 SVG → 整合、測試、commit 到 `feat/expand-scenes`
 - 新場景用街區模板（`scripts/lib/district-kit.mjs` + `src/components/scene/districts/GeneratedDistrict.tsx`），不手畫地形；主題與地圖 slot 在 `content/expansion.json`
 - 規劃結果在 `content/plans/<scene>.json`（manifest 由它產生）；狀態與紀錄在 `.auto-expand/`（不進 git）
 - `src/data/scenes/registry.ts` 由 build-scenes 產生，新場景不用改 `src/lib/scenes.ts`
