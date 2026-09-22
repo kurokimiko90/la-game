@@ -1,0 +1,1420 @@
+{
+  "sceneName": "語言小鎮・圖書館",
+  "sceneSlug": "la-library",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "lobby": "服務大廳",
+    "bookstacks": "書架區",
+    "reading-room": "閱覽室"
+  },
+  "elements": [
+    {
+      "name": "門把手",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色彎曲金屬握把，固定在門板一側，形狀簡單醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "door-handle",
+        "words": {
+          "zh-TW": "門把手",
+          "en": "door-handle",
+          "ja": {
+            "text": "ドアハンドル",
+            "reading": "ドアハンドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "密碼鍵盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色長方形按鍵面板，排列整齊的凸起按鍵清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "keypad",
+        "words": {
+          "zh-TW": "密碼鍵盤",
+          "en": "keypad",
+          "ja": {
+            "text": "キーパッド",
+            "reading": "キーパッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "鉸鏈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片銀色金屬片由中央轉軸連接，固定在門邊框上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "hinge",
+        "words": {
+          "zh-TW": "鉸鏈",
+          "en": "hinge",
+          "ja": {
+            "text": "ちょうつがい",
+            "reading": "チョウツガイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "閉門器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色長方形機械臂安裝在門的上方，連接門板與門框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "door-closer",
+        "words": {
+          "zh-TW": "閉門器",
+          "en": "door-closer",
+          "ja": {
+            "text": "ドアクローザー",
+            "reading": "ドアクローザー"
+          }
+        }
+      }
+    },
+    {
+      "name": "門檻",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "門底橫向的一條灰色金屬條，平貼地面並連接兩側地板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "threshold",
+        "words": {
+          "zh-TW": "門檻",
+          "en": "threshold",
+          "ja": {
+            "text": "しきい",
+            "reading": "シキイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "投射燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色圓筒燈具朝向入口，前端有明亮圓形燈面與短支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "spotlight",
+        "words": {
+          "zh-TW": "投射燈",
+          "en": "spotlight",
+          "ja": {
+            "text": "スポットライト",
+            "reading": "スポットライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "拱門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "米色牆面中央形成圓弧拱頂，兩側由厚實方形結構支撐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "archway",
+        "words": {
+          "zh-TW": "拱門",
+          "en": "archway",
+          "ja": {
+            "text": "アーチ",
+            "reading": "アーチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "磚塊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅褐色長方形磚塊，表面粗糙，邊緣筆直且具有厚度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "brick",
+        "words": {
+          "zh-TW": "磚塊",
+          "en": "brick",
+          "ja": {
+            "text": "れんが",
+            "reading": "レンガ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鋪路石板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色方形石板平鋪在入口地面，表面平整並有細小紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "paving-slab",
+        "words": {
+          "zh-TW": "鋪路石板",
+          "en": "paving-slab",
+          "ja": {
+            "text": "敷石",
+            "reading": "シキイシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "排水溝",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口邊緣一條狹長灰色凹槽，兩側有整齊邊框用來導水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "gutter",
+        "words": {
+          "zh-TW": "排水溝",
+          "en": "gutter",
+          "ja": {
+            "text": "側溝",
+            "reading": "ソッコウ"
+          }
+        }
+      }
+    },
+    {
+      "name": "落水管",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "貼著牆面垂直延伸的灰色管子，底端靠近地面排水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "downspout",
+        "words": {
+          "zh-TW": "落水管",
+          "en": "downspout",
+          "ja": {
+            "text": "雨どい",
+            "reading": "アマドイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨鏈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一串深色金屬環垂直懸掛，從屋簷邊緣一路連到地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "rain-chain",
+        "words": {
+          "zh-TW": "雨鏈",
+          "en": "rain-chain",
+          "ja": {
+            "text": "鎖樋",
+            "reading": "クサリドイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "百葉窗",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深綠色長方形窗板由多條水平葉片組成，靠在入口側牆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "shutter",
+        "words": {
+          "zh-TW": "百葉窗",
+          "en": "shutter",
+          "ja": {
+            "text": "雨戸",
+            "reading": "アマド"
+          }
+        }
+      }
+    },
+    {
+      "name": "通風百葉",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色長方形通風板內有多條斜向葉片，排列整齊且有陰影。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "louver",
+        "words": {
+          "zh-TW": "通風百葉",
+          "en": "louver",
+          "ja": {
+            "text": "ルーバー",
+            "reading": "ルーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "門框",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淺灰色粗厚框架包住門的四周，邊角方正並緊貼牆面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "door-frame",
+        "words": {
+          "zh-TW": "門框",
+          "en": "door-frame",
+          "ja": {
+            "text": "ドアフレーム",
+            "reading": "ドアフレーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁掛支架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色金屬三角支架固定在入口牆面，具有清楚的直角輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "wall-bracket",
+        "words": {
+          "zh-TW": "壁掛支架",
+          "en": "wall-bracket",
+          "ja": {
+            "text": "壁付け金具",
+            "reading": "カベツケカナグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門鈴",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "門旁牆面上的小型白色方盒，中央有圓形按鈕，外殼簡潔醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "doorbell",
+        "words": {
+          "zh-TW": "門鈴",
+          "en": "doorbell",
+          "ja": {
+            "text": "ドアベル",
+            "reading": "ドアベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "書桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形木桌，兩側有抽屜，表面平整，呈淺棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "desk",
+        "words": {
+          "zh-TW": "書桌",
+          "en": "desk",
+          "ja": {
+            "text": "つくえ",
+            "reading": "つくえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "印章",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柱形木柄連著方形印面，整體呈深紅色與棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "rubber-stamp",
+        "words": {
+          "zh-TW": "印章",
+          "en": "rubber-stamp",
+          "ja": {
+            "text": "スタンプ",
+            "reading": "スタンプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "印台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平方盒打開後露出深藍色軟墊，外殼呈黑色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "ink-pad",
+        "words": {
+          "zh-TW": "印台",
+          "en": "ink-pad",
+          "ja": {
+            "text": "朱肉",
+            "reading": "しゅにく"
+          }
+        }
+      }
+    },
+    {
+      "name": "迴紋針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬線彎成橢圓夾形，表面銀亮，容易看出彎曲輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "paper-clip",
+        "words": {
+          "zh-TW": "迴紋針",
+          "en": "paper-clip",
+          "ja": {
+            "text": "クリップ",
+            "reading": "クリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "長尾夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色三角夾身配兩個銀色環柄，正面可見寬闊夾口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "binder-clip",
+        "words": {
+          "zh-TW": "長尾夾",
+          "en": "binder-clip",
+          "ja": {
+            "text": "ダブルクリップ",
+            "reading": "ダブルクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "打孔機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色短方盒連著可下壓的長柄，前端有小圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "hole-punch",
+        "words": {
+          "zh-TW": "打孔機",
+          "en": "hole-punch",
+          "ja": {
+            "text": "穴あけパンチ",
+            "reading": "あなあけパンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "計算機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平黑色小方盒，上方有小顯示窗，下方排列許多按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "calculator",
+        "words": {
+          "zh-TW": "計算機",
+          "en": "calculator",
+          "ja": {
+            "text": "電卓",
+            "reading": "でんたく"
+          }
+        }
+      }
+    },
+    {
+      "name": "抽屜",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木製長方盒帶圓形拉把，半開時能看見深色內部。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "drawer",
+        "words": {
+          "zh-TW": "抽屜",
+          "en": "drawer",
+          "ja": {
+            "text": "引き出し",
+            "reading": "ひきだし"
+          }
+        }
+      }
+    },
+    {
+      "name": "碎紙機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高窄灰色機器，上方有細長紙槽，前方有可拉出的收集盒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "document-shredder",
+        "words": {
+          "zh-TW": "碎紙機",
+          "en": "document-shredder",
+          "ja": {
+            "text": "シュレッダー",
+            "reading": "シュレッダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡片讀取器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型黑色長方機器，頂部有狹窄插槽，正面有圓形感應區。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "card-reader",
+        "words": {
+          "zh-TW": "卡片讀取器",
+          "en": "card-reader",
+          "ja": {
+            "text": "カードリーダー",
+            "reading": "カードリーダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍掃描器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色底座連透明壓板，旁邊豎立細長支架，外形像小型攝影設備。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "book-scanner",
+        "words": {
+          "zh-TW": "書籍掃描器",
+          "en": "book-scanner",
+          "ja": {
+            "text": "ブックスキャナー",
+            "reading": "ブックスキャナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺灰色長方形托盤，前端較低，內部可放置整疊紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "filing-tray",
+        "words": {
+          "zh-TW": "文件盤",
+          "en": "filing-tray",
+          "ja": {
+            "text": "書類トレー",
+            "reading": "しょるいトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高窄白色機器，頂部有透明容器，下方有兩個出水口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "water-cooler",
+        "words": {
+          "zh-TW": "飲水機",
+          "en": "water-cooler",
+          "ja": {
+            "text": "ウォーターサーバー",
+            "reading": "ウォーターサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "立燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長黑色燈柱立在圓形底座上，頂端罩著半圓形米白燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "floor-lamp",
+        "words": {
+          "zh-TW": "立燈",
+          "en": "floor-lamp",
+          "ja": {
+            "text": "フロアランプ",
+            "reading": "フロアランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一塊長方形木板固定在後牆上，兩端有支架，表面放著小物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "wall-shelf",
+        "words": {
+          "zh-TW": "壁架",
+          "en": "wall-shelf",
+          "ja": {
+            "text": "壁棚",
+            "reading": "かべだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "起釘器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的黑色金屬夾具，前端有尖叉，中央有圓形按壓部。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "staple-remover",
+        "words": {
+          "zh-TW": "起釘器",
+          "en": "staple-remover",
+          "ja": {
+            "text": "ホッチキスリムーバー",
+            "reading": "ホッチキスリムーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "螢光筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的黃色塑膠筆身，尾端有筆蓋，前端露出斜切的螢光筆尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "highlighter",
+        "words": {
+          "zh-TW": "螢光筆",
+          "en": "highlighter",
+          "ja": {
+            "text": "蛍光ペン",
+            "reading": "けいこうペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "手推車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的金屬車架，下方有小平台與兩個黑色輪子，頂端有握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "hand-truck",
+        "words": {
+          "zh-TW": "手推車",
+          "en": "hand-truck",
+          "ja": {
+            "text": "台車",
+            "reading": "だいしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的直立燈具，圓形燈罩朝下，底座與燈桿呈深色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "reading-lamp",
+        "words": {
+          "zh-TW": "閱讀燈",
+          "en": "reading-lamp",
+          "ja": {
+            "text": "読書ランプ",
+            "reading": "どくしょランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "梯子",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩根長直立柱連著多根橫踏桿，通常靠在高處陳列架旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "ladder",
+        "words": {
+          "zh-TW": "梯子",
+          "en": "ladder",
+          "ja": {
+            "text": "はしご",
+            "reading": "はしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "懶骨頭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓滾柔軟的布製坐墊，表面常見單一鮮明顏色，沒有硬邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "beanbag",
+        "words": {
+          "zh-TW": "懶骨頭",
+          "en": "beanbag",
+          "ja": {
+            "text": "ビーズクッション",
+            "reading": "ビーズクッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "鎮紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "沉重的小型物件，外形多為圓石或扁平金屬塊，用來壓住紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "paperweight",
+        "words": {
+          "zh-TW": "鎮紙",
+          "en": "paperweight",
+          "ja": {
+            "text": "文鎮",
+            "reading": "ぶんちん"
+          }
+        }
+      }
+    },
+    {
+      "name": "便利貼",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小疊鮮黃色方形紙片，邊緣整齊，常有一角微微翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "sticky-note",
+        "words": {
+          "zh-TW": "便利貼",
+          "en": "sticky-note",
+          "ja": {
+            "text": "付箋",
+            "reading": "ふせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "墨水瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的小容器，頂部有窄口，通常呈深藍、黑色或棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "inkwell",
+        "words": {
+          "zh-TW": "墨水瓶",
+          "en": "inkwell",
+          "ja": {
+            "text": "インク壺",
+            "reading": "インクつぼ"
+          }
+        }
+      }
+    },
+    {
+      "name": "眼鏡盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的硬殼盒子，兩端圓滑，通常是深色並帶有可開合的盒蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "glasses-case",
+        "words": {
+          "zh-TW": "眼鏡盒",
+          "en": "glasses-case",
+          "ja": {
+            "text": "眼鏡ケース",
+            "reading": "めがねケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "頁面固定夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的夾具或彈性支架，兩端有小夾臂，用來壓住攤開的紙頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "page-holder",
+        "words": {
+          "zh-TW": "頁面固定夾",
+          "en": "page-holder",
+          "ja": {
+            "text": "ページホルダー",
+            "reading": "ページホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "借書卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小張長方形卡片，通常是白色或淡黃色，表面沒有可辨識的文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "library-card",
+        "words": {
+          "zh-TW": "借書卡",
+          "en": "library-card",
+          "ja": {
+            "text": "図書カード",
+            "reading": "としょカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡片座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "窄長底座上有一道細縫，可直立放入一張小卡片，外形簡單穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "card-holder",
+        "words": {
+          "zh-TW": "卡片座",
+          "en": "card-holder",
+          "ja": {
+            "text": "カード立て",
+            "reading": "カードたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "月曆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形紙板掛在牆上，下方垂著數張紙頁，畫面不含可讀文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "calendar",
+        "words": {
+          "zh-TW": "月曆",
+          "en": "calendar",
+          "ja": {
+            "text": "カレンダー",
+            "reading": "カレンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "放大鏡片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明圓形鏡片嵌在短柄或圓框中，正面可清楚看見放大的鏡面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "magnifying-lens",
+        "words": {
+          "zh-TW": "放大鏡片",
+          "en": "magnifying-lens",
+          "ja": {
+            "text": "拡大レンズ",
+            "reading": "かくだいレンズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏墊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮的長方形墊台，表面平坦，通常覆著深色布料或軟墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "footrest",
+        "words": {
+          "zh-TW": "腳踏墊",
+          "en": "footrest",
+          "ja": {
+            "text": "足置き",
+            "reading": "あしおき"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣帽鉤",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在牆面的單一彎鉤，通常由木頭或金屬製成，向外突出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "coat-hook",
+        "words": {
+          "zh-TW": "衣帽鉤",
+          "en": "coat-hook",
+          "ja": {
+            "text": "コートフック",
+            "reading": "コートフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙簍",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "開口向上的圓筒或方筒容器，常見金屬網格或深色塑膠外觀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "wastebasket",
+        "words": {
+          "zh-TW": "紙簍",
+          "en": "wastebasket",
+          "ja": {
+            "text": "くずかご",
+            "reading": "くずかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳墊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型長方形柔軟墊子，表面平整，常放在舒適座位前方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "foot-cushion",
+        "words": {
+          "zh-TW": "腳墊",
+          "en": "foot-cushion",
+          "ja": {
+            "text": "足まくら",
+            "reading": "あしまくら"
+          }
+        }
+      }
+    },
+    {
+      "name": "書車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "四輪金屬推車，分成上下兩層，側邊有高起的擋板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "book-cart",
+        "words": {
+          "zh-TW": "書車",
+          "en": "book-cart",
+          "ja": {
+            "text": "ブックカート",
+            "reading": "ブックカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "書櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的木製櫃體，分成多層開放格，格內整齊放著物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "bookcase",
+        "words": {
+          "zh-TW": "書櫃",
+          "en": "bookcase",
+          "ja": {
+            "text": "本棚",
+            "reading": "ほんだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "老花眼鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長鏡框配兩片透明鏡片，中間有鼻樑架和兩側鏡腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "reading-glasses",
+        "words": {
+          "zh-TW": "老花眼鏡",
+          "en": "reading-glasses",
+          "ja": {
+            "text": "老眼鏡",
+            "reading": "ろうがんきょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊扇",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "圓形中央機身連著數片寬扇葉，固定在室內上方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "ceiling-fan",
+        "words": {
+          "zh-TW": "吊扇",
+          "en": "ceiling-fan",
+          "ja": {
+            "text": "シーリングファン",
+            "reading": "しーりんぐふぁん"
+          }
+        }
+      }
+    },
+    {
+      "name": "燈具",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平長方形燈罩固定在牆面上，中央透出柔和白光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "light-fixture",
+        "words": {
+          "zh-TW": "燈具",
+          "en": "light-fixture",
+          "ja": {
+            "text": "照明器具",
+            "reading": "しょうめいきぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的楔形物，通常由橡膠或金屬製成，放在門下方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "doorstop",
+        "words": {
+          "zh-TW": "門擋",
+          "en": "doorstop",
+          "ja": {
+            "text": "ドアストッパー",
+            "reading": "どあすとっぱー"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "彎曲的金屬鉤子固定在牆上，可掛起輕巧物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "hook",
+        "words": {
+          "zh-TW": "掛鉤",
+          "en": "hook",
+          "ja": {
+            "text": "フック",
+            "reading": "ふっく"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "金色枝狀吊燈，中央垂下圓形燈罩，裝有多盞小燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "chandelier",
+        "words": {
+          "zh-TW": "吊燈",
+          "en": "chandelier",
+          "ja": {
+            "text": "シャンデリア",
+            "reading": "シャンデリア"
+          }
+        }
+      }
+    },
+    {
+      "name": "字典",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的深藍色硬皮書，長方形外殼，側邊整齊露出白色書頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "dictionary",
+        "words": {
+          "zh-TW": "字典",
+          "en": "dictionary",
+          "ja": {
+            "text": "辞書",
+            "reading": "じしょ"
+          }
+        }
+      }
+    },
+    {
+      "name": "百科全書",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚重的紅色硬皮書，長方形外形，封面中央有金色裝飾圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "encyclopedia",
+        "words": {
+          "zh-TW": "百科全書",
+          "en": "encyclopedia",
+          "ja": {
+            "text": "百科事典",
+            "reading": "ひゃっかじてん"
+          }
+        }
+      }
+    },
+    {
+      "name": "地圖冊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "攤開的藍綠色圖冊，兩側是平整頁面，呈現簡化的陸地輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "atlas",
+        "words": {
+          "zh-TW": "地圖冊",
+          "en": "atlas",
+          "ja": {
+            "text": "地図帳",
+            "reading": "ちずちょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "算盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形木框內有數根橫桿，每根橫桿穿著一排彩色圓珠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "abacus",
+        "words": {
+          "zh-TW": "算盤",
+          "en": "abacus",
+          "ja": {
+            "text": "そろばん",
+            "reading": "そろばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "羽毛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長棕色筆桿頂端接著大片白色羽毛，輪廓輕盈而容易辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "quill",
+        "words": {
+          "zh-TW": "羽毛筆",
+          "en": "quill",
+          "ja": {
+            "text": "羽ペン",
+            "reading": "はねペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "卷軸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色長條紙張向兩端捲起，中央平攤，兩側形成圓筒狀紙捲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "scroll",
+        "words": {
+          "zh-TW": "卷軸",
+          "en": "scroll",
+          "ja": {
+            "text": "巻物",
+            "reading": "まきもの"
+          }
+        }
+      }
+    },
+    {
+      "name": "羽毛",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根細長白色羽毛，中央有筆直羽軸，兩側排列柔軟羽枝。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "feather",
+        "words": {
+          "zh-TW": "羽毛",
+          "en": "feather",
+          "ja": {
+            "text": "羽",
+            "reading": "はね"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡片目錄櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色木製矮櫃，正面排列許多小抽屜，整體呈規整矩形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "card-catalog",
+        "words": {
+          "zh-TW": "卡片目錄櫃",
+          "en": "card-catalog",
+          "ja": {
+            "text": "カード目録棚",
+            "reading": "カードもくろくだな"
+          }
+        }
+      }
+    }
+  ]
+}

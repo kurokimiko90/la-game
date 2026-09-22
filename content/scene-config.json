@@ -1,6 +1,6 @@
 {
   "world": {"width": 6200, "height": 5200},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -364,6 +364,68 @@
       "noFlip": [],
       "motion": {"airport-shuttle": "wobble", "aircraft-tug": "wobble"},
       "terrain": {"color": "#c5e1a5", "x0": 0, "y0": 3900, "x1": 2600, "y1": 5200, "zones": [{"id": "entrance", "x0": 0, "y0": 3900, "x1": 1300, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "check-in-hall", "x0": 1300, "y0": 3900, "x1": 2600, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "security-check", "x0": 1300, "y0": 4550, "x1": 2600, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}, {"id": "departure-gate", "x0": 0, "y0": 4550, "x1": 1300, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
+    },
+    "library": {
+      "name": "圖書館",
+      "icon": "archway",
+      "zones": {"entrance": [3600, 3900, 4900, 4550], "lobby": [4900, 3900, 6200, 4550], "bookstacks": [4900, 4550, 6200, 5200], "reading-room": [3600, 4550, 4900, 5200]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3970, "bottom": 4530}, "lobby": {"top": 4140, "bottom": 4530, "gaps": [[4090, 4282]]}, "bookstacks": {"top": 4790, "bottom": 5180, "gaps": [[4740, 5055]]}, "reading-room": {"top": 4790, "bottom": 5180, "gaps": [[4740, 4960]]}}},
+        "sky-entrance": {"top": 4050, "bottom": 4200, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-lobby": {"levels": [4040], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-lobby": {"levels": [4078], "zones": ["lobby"], "inset": 50},
+        "surface-lobby": {"levels": [4210], "zones": ["lobby"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4252},
+        "wall-bookstacks": {"levels": [4690], "zones": ["bookstacks"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-bookstacks": {"levels": [4728], "zones": ["bookstacks"], "inset": 50},
+        "surface-bookstacks": {"levels": [4860, 4955], "zones": ["bookstacks"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 5025},
+        "wall-reading-room": {"levels": [4690], "zones": ["reading-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-reading-room": {"levels": [4728], "zones": ["reading-room"], "inset": 50},
+        "surface-reading-room": {"levels": [4860], "zones": ["reading-room"], "x0": 3750, "x1": 4750, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 4930}
+      },
+      "place": {
+        "rubber-stamp": "surface-lobby",
+        "ink-pad": "surface-lobby",
+        "paper-clip": "surface-lobby",
+        "binder-clip": "surface-lobby",
+        "hole-punch": "surface-lobby",
+        "calculator": "surface-lobby",
+        "card-reader": "surface-lobby",
+        "book-scanner": "surface-lobby",
+        "filing-tray": "surface-lobby",
+        "water-cooler": "wallbase-lobby",
+        "wall-shelf": "wall-lobby",
+        "staple-remover": "surface-lobby",
+        "highlighter": "surface-lobby",
+        "reading-lamp": "surface-bookstacks",
+        "paperweight": "surface-bookstacks",
+        "sticky-note": "surface-bookstacks",
+        "inkwell": "surface-bookstacks",
+        "glasses-case": "surface-bookstacks",
+        "page-holder": "surface-bookstacks",
+        "library-card": "surface-bookstacks",
+        "card-holder": "surface-bookstacks",
+        "calendar": "wall-bookstacks",
+        "magnifying-lens": "surface-bookstacks",
+        "coat-hook": "wall-bookstacks",
+        "bookcase": "wallbase-reading-room",
+        "reading-glasses": "surface-reading-room",
+        "ceiling-fan": "wall-reading-room",
+        "light-fixture": "wall-reading-room",
+        "hook": "wall-reading-room",
+        "chandelier": "wall-reading-room",
+        "dictionary": "surface-reading-room",
+        "encyclopedia": "surface-reading-room",
+        "atlas": "surface-reading-room",
+        "abacus": "surface-reading-room",
+        "quill": "surface-reading-room",
+        "scroll": "surface-reading-room",
+        "feather": "surface-reading-room"
+      },
+      "clusters": [["archway", "spotlight", "louver"], ["paving-slab", "brick"], ["desk", "drawer"], ["beanbag", "footrest", "foot-cushion"]],
+      "loose": ["brick", "rubber-stamp", "ink-pad", "paper-clip", "binder-clip", "hole-punch", "calculator", "staple-remover", "highlighter", "sticky-note", "inkwell", "glasses-case", "page-holder", "library-card", "magnifying-lens", "foot-cushion", "reading-glasses", "doorstop", "dictionary", "encyclopedia", "atlas", "abacus", "quill", "scroll", "feather"],
+      "noFlip": [],
+      "motion": {"rain-chain": "sway", "document-shredder": "wobble", "ceiling-fan": "wobble"},
+      "terrain": {"color": "#ffe082", "x0": 3600, "y0": 3900, "x1": 6200, "y1": 5200, "zones": [{"id": "entrance", "x0": 3600, "y0": 3900, "x1": 4900, "y1": 4550, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 4900, "y0": 3900, "x1": 6200, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "bookstacks", "x0": 4900, "y0": 4550, "x1": 6200, "y1": 5200, "indoor": true, "floor": "wood", "wallBase": 4730}, {"id": "reading-room", "x0": 3600, "y0": 4550, "x1": 4900, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
     }
   }
 }

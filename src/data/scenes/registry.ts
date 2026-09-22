@@ -8,5 +8,6 @@ import restaurant from './restaurant.json';
 import school from './school.json';
 import hospital from './hospital.json';
 import airport from './airport.json';
+import library from './library.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library };
