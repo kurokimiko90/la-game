@@ -4,5 +4,6 @@ import street from './street.json';
 import riverside from './riverside.json';
 import supermarket from './supermarket.json';
 import station from './station.json';
+import restaurant from './restaurant.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant };

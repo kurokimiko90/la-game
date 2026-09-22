@@ -1,0 +1,1483 @@
+{
+  "sceneName": "語言小鎮・餐廳",
+  "sceneSlug": "la-restaurant",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口廣場",
+    "dining-hall": "用餐區",
+    "open-kitchen": "開放廚房",
+    "dessert-stand": "甜點攤"
+  },
+  "elements": [
+    {
+      "name": "門墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形深灰色門墊，表面有密集短毛，邊緣整齊平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "doormat",
+        "words": {
+          "zh-TW": "門墊",
+          "en": "doormat",
+          "ja": {
+            "text": "玄関マット",
+            "reading": "げんかんマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "椅子",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一張木製椅子，有方形椅面、直立椅背和四根細長椅腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "chair",
+        "words": {
+          "zh-TW": "椅子",
+          "en": "chair",
+          "ja": {
+            "text": "椅子",
+            "reading": "いす"
+          }
+        }
+      }
+    },
+    {
+      "name": "柵欄",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一段矮矮的黑色金屬柵欄，由多根直立欄杆和橫桿組成。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "fence",
+        "words": {
+          "zh-TW": "柵欄",
+          "en": "fence",
+          "ja": {
+            "text": "柵",
+            "reading": "さく"
+          }
+        }
+      }
+    },
+    {
+      "name": "柱子",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "方形米白色石柱，表面平滑，底部和頂部各有簡單凸起裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "pillar",
+        "words": {
+          "zh-TW": "柱子",
+          "en": "pillar",
+          "ja": {
+            "text": "柱",
+            "reading": "はしら"
+          }
+        }
+      }
+    },
+    {
+      "name": "燈籠",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的紅色燈籠，有圓頂、金屬提把和四面半透明燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "lantern",
+        "words": {
+          "zh-TW": "燈籠",
+          "en": "lantern",
+          "ja": {
+            "text": "ランタン",
+            "reading": "ランタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "排水孔",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "地面上的黑色方形排水孔，外圍是灰色金屬框，表面有平行縫隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "drain",
+        "words": {
+          "zh-TW": "排水孔",
+          "en": "drain",
+          "ja": {
+            "text": "排水口",
+            "reading": "はいすいこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "人孔蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形深灰色金屬蓋嵌在地面，表面有放射狀凸紋和粗厚邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "manhole-cover",
+        "words": {
+          "zh-TW": "人孔蓋",
+          "en": "manhole cover",
+          "ja": {
+            "text": "マンホールのふた",
+            "reading": "マンホールのふた"
+          }
+        }
+      }
+    },
+    {
+      "name": "地磚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊方形淺灰色地磚，表面平整，四邊有深色細縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "tile",
+        "words": {
+          "zh-TW": "地磚",
+          "en": "tile",
+          "ja": {
+            "text": "タイル",
+            "reading": "タイル"
+          }
+        }
+      }
+    },
+    {
+      "name": "摩托車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一台紅黑色摩托車，有兩個輪子、低矮座椅、車把和圓形頭燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "motorcycle",
+        "words": {
+          "zh-TW": "摩托車",
+          "en": "motorcycle",
+          "ja": {
+            "text": "オートバイ",
+            "reading": "オートバイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "廂型車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一輛白色廂型車，車身高而方正，側面有車門、車窗和黑色輪胎。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "delivery-van",
+        "words": {
+          "zh-TW": "廂型車",
+          "en": "van",
+          "ja": {
+            "text": "バン",
+            "reading": "バン"
+          }
+        }
+      }
+    },
+    {
+      "name": "蕨類植物",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一叢綠色蕨類，細長葉片從中央向四周展開，葉緣呈羽毛狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "fern",
+        "words": {
+          "zh-TW": "蕨類植物",
+          "en": "fern",
+          "ja": {
+            "text": "シダ",
+            "reading": "シダ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玫瑰",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一株綠色玫瑰，有細莖、鋸齒葉片和一朵醒目的紅色花朵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "rose",
+        "words": {
+          "zh-TW": "玫瑰",
+          "en": "rose",
+          "ja": {
+            "text": "バラ",
+            "reading": "バラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花盆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓口橘紅色陶盆，底部較窄，裡面裝著深色土壤和綠色植物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "pot",
+        "words": {
+          "zh-TW": "花盆",
+          "en": "pot",
+          "ja": {
+            "text": "植木鉢",
+            "reading": "うえきばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平的棕色長方形托盤，四周有稍高的邊緣和兩個短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "tray",
+        "words": {
+          "zh-TW": "托盤",
+          "en": "tray",
+          "ja": {
+            "text": "トレー",
+            "reading": "トレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只圓形白碗，碗口寬大，底部收窄，外側有藍色邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "bowl",
+        "words": {
+          "zh-TW": "碗",
+          "en": "bowl",
+          "ja": {
+            "text": "ボウル",
+            "reading": "ボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "叉子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把銀色金屬叉子，有細長握柄和前端整齊排列的尖齒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "fork",
+        "words": {
+          "zh-TW": "叉子",
+          "en": "fork",
+          "ja": {
+            "text": "フォーク",
+            "reading": "フォーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "湯匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把銀色金屬湯匙，有細長握柄和圓滑淺凹的匙面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "spoon",
+        "words": {
+          "zh-TW": "湯匙",
+          "en": "spoon",
+          "ja": {
+            "text": "スプーン",
+            "reading": "スプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "木桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色木製圓桶，正面可見深色木板接縫與兩道黑色鐵箍。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "entrance",
+        "itemId": "barrel",
+        "words": {
+          "zh-TW": "木桶",
+          "en": "barrel",
+          "ja": {
+            "text": "樽",
+            "reading": "たる"
+          }
+        }
+      }
+    },
+    {
+      "name": "刀子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色細長刀身配黑色短刀柄，平放在餐墊旁邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "knife",
+        "words": {
+          "zh-TW": "刀子",
+          "en": "knife",
+          "ja": {
+            "text": "ナイフ",
+            "reading": "ナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "筷子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩根細長木筷並排擺放，前端尖細，尾端帶有深色紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "chopsticks",
+        "words": {
+          "zh-TW": "筷子",
+          "en": "chopsticks",
+          "ja": {
+            "text": "はし",
+            "reading": "はし"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形布巾整齊折疊，邊緣有淡藍色細邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "napkin",
+        "words": {
+          "zh-TW": "餐巾",
+          "en": "napkin",
+          "ja": {
+            "text": "ナプキン",
+            "reading": "ナプキン"
+          }
+        }
+      }
+    },
+    {
+      "name": "杯子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓筒杯身配彎曲握把，杯口朝上放在桌面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "cup",
+        "words": {
+          "zh-TW": "杯子",
+          "en": "cup",
+          "ja": {
+            "text": "コップ",
+            "reading": "コップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶托",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色扁平圓盤，中間有淺凹槽，放在杯子下方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "saucer",
+        "words": {
+          "zh-TW": "茶托",
+          "en": "saucer",
+          "ja": {
+            "text": "ソーサー",
+            "reading": "ソーサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形淺棕色餐墊，四角平直，表面有簡單織紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "placemat",
+        "words": {
+          "zh-TW": "餐墊",
+          "en": "placemat",
+          "ja": {
+            "text": "ランチョンマット",
+            "reading": "ランチョンマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "鹽罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮圓罐裝著白色鹽粒，銀色罐蓋上有細小孔洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "salt-shaker",
+        "words": {
+          "zh-TW": "鹽罐",
+          "en": "salt shaker",
+          "ja": {
+            "text": "しおいれ",
+            "reading": "しおいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "胡椒罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮圓罐裝著黑色胡椒粒，頂部有銀色撒孔蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "pepper-shaker",
+        "words": {
+          "zh-TW": "胡椒罐",
+          "en": "pepper shaker",
+          "ja": {
+            "text": "こしょういれ",
+            "reading": "こしょういれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "醬油瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深褐色小瓶配細長瓶嘴，瓶身圓潤，放在調味罐旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "soy-sauce-bottle",
+        "words": {
+          "zh-TW": "醬油瓶",
+          "en": "soy sauce bottle",
+          "ja": {
+            "text": "しょうゆさし",
+            "reading": "しょうゆさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐巾盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形盒子露出幾張餐巾，兩側有圓弧開口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "napkin-holder",
+        "words": {
+          "zh-TW": "餐巾盒",
+          "en": "napkin holder",
+          "ja": {
+            "text": "ナプキンたて",
+            "reading": "ナプキンたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "高腳凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形木座面配四根黑色細腳，靠在長桌側邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "stool",
+        "words": {
+          "zh-TW": "高腳凳",
+          "en": "stool",
+          "ja": {
+            "text": "スツール",
+            "reading": "スツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "窗戶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色窗框分成明亮玻璃格，能看見外面的藍天空景。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "window",
+        "words": {
+          "zh-TW": "窗戶",
+          "en": "window",
+          "ja": {
+            "text": "まど",
+            "reading": "まど"
+          }
+        }
+      }
+    },
+    {
+      "name": "窗簾",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淡黃色布簾垂掛在窗戶兩側，布面柔軟並有直向皺褶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "curtain",
+        "words": {
+          "zh-TW": "窗簾",
+          "en": "curtain",
+          "ja": {
+            "text": "カーテン",
+            "reading": "カーテン"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色燈罩固定在牆面，向下散出溫暖黃色光線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "wall-lamp",
+        "words": {
+          "zh-TW": "壁燈",
+          "en": "wall lamp",
+          "ja": {
+            "text": "かべつき",
+            "reading": "かべつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "鏡子",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形銀色鏡框掛在牆上，表面反射出桌椅輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "mirror",
+        "words": {
+          "zh-TW": "鏡子",
+          "en": "mirror",
+          "ja": {
+            "text": "かがみ",
+            "reading": "かがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "櫥櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺棕色櫥櫃靠牆站立，正面有兩扇門和圓形把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "cabinet",
+        "words": {
+          "zh-TW": "櫥櫃",
+          "en": "cabinet",
+          "ja": {
+            "text": "キャビネット",
+            "reading": "キャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "空氣清淨機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色直立機器靠牆放置，前面有深色出風格柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "air-purifier",
+        "words": {
+          "zh-TW": "空氣清淨機",
+          "en": "air purifier",
+          "ja": {
+            "text": "くうきせいじょうき",
+            "reading": "くうきせいじょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的米白色木籤，頂端平整，放在長桌上的小餐具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dining-hall",
+        "itemId": "toothpick",
+        "words": {
+          "zh-TW": "牙籤",
+          "en": "toothpick",
+          "ja": {
+            "text": "楊枝",
+            "reading": "ようじ"
+          }
+        }
+      }
+    },
+    {
+      "name": "烤箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "方正的銀色箱體，中央有深色玻璃門和粗大的橫向把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "oven",
+        "words": {
+          "zh-TW": "烤箱",
+          "en": "oven",
+          "ja": {
+            "text": "オーブン",
+            "reading": "オーブン"
+          }
+        }
+      }
+    },
+    {
+      "name": "爐台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黑色平面爐台嵌在料理檯內，上面排列幾個圓形爐口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "stove",
+        "words": {
+          "zh-TW": "爐台",
+          "en": "stove",
+          "ja": {
+            "text": "コンロ",
+            "reading": "コンロ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "銀色長方形水槽嵌在檯面中，中央有彎曲水龍頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "sink",
+        "words": {
+          "zh-TW": "水槽",
+          "en": "sink",
+          "ja": {
+            "text": "シンク",
+            "reading": "シンク"
+          }
+        }
+      }
+    },
+    {
+      "name": "抽油煙機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "貼著牆面的銀色扁平罩體，下方有深色濾網和小型按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "range-hood",
+        "words": {
+          "zh-TW": "抽油煙機",
+          "en": "range hood",
+          "ja": {
+            "text": "レンジフード",
+            "reading": "レンジフード"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗碗機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "低矮的銀色方形機體，正面有寬大的門板和橫向把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "dishwasher",
+        "words": {
+          "zh-TW": "洗碗機",
+          "en": "dishwasher",
+          "ja": {
+            "text": "食器洗い機",
+            "reading": "しょっきあらいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "平底鍋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色圓形鍋面連著一根長直把手，鍋緣微微向上彎。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "frying-pan",
+        "words": {
+          "zh-TW": "平底鍋",
+          "en": "frying pan",
+          "ja": {
+            "text": "フライパン",
+            "reading": "フライパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "鍋鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平黑色鏟面連著細長握柄，前端有整齊的直邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "spatula",
+        "words": {
+          "zh-TW": "鍋鏟",
+          "en": "spatula",
+          "ja": {
+            "text": "フライ返し",
+            "reading": "ふらいがえし"
+          }
+        }
+      }
+    },
+    {
+      "name": "湯勺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深圓勺面連著長直柄，整體呈銀色或黑色的簡單形狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "ladle",
+        "words": {
+          "zh-TW": "湯勺",
+          "en": "ladle",
+          "ja": {
+            "text": "おたま",
+            "reading": "おたま"
+          }
+        }
+      }
+    },
+    {
+      "name": "打蛋器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長握柄前端連著數圈金屬彎線，外形像圓錐形網罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "whisk",
+        "words": {
+          "zh-TW": "打蛋器",
+          "en": "whisk",
+          "ja": {
+            "text": "泡立て器",
+            "reading": "あわだてき"
+          }
+        }
+      }
+    },
+    {
+      "name": "砧板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的長方形木板，邊角圓鈍，頂端有一個小圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "cutting-board",
+        "words": {
+          "zh-TW": "砧板",
+          "en": "cutting board",
+          "ja": {
+            "text": "まな板",
+            "reading": "まないた"
+          }
+        }
+      }
+    },
+    {
+      "name": "擀麵棍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "光滑的圓柱形木棍，兩端各有一個短小握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "rolling-pin",
+        "words": {
+          "zh-TW": "擀麵棍",
+          "en": "rolling pin",
+          "ja": {
+            "text": "めん棒",
+            "reading": "めんぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "夾子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片細長金屬臂在尾端相連，前端張開成圓弧夾口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "tongs",
+        "words": {
+          "zh-TW": "夾子",
+          "en": "tongs",
+          "ja": {
+            "text": "トング",
+            "reading": "トング"
+          }
+        }
+      }
+    },
+    {
+      "name": "濾盆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形淺盆布滿小孔，兩側有短握邊，通常呈銀色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "colander",
+        "words": {
+          "zh-TW": "濾盆",
+          "en": "colander",
+          "ja": {
+            "text": "ざる",
+            "reading": "ざる"
+          }
+        }
+      }
+    },
+    {
+      "name": "果汁機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "底部是方形機座，上方裝著透明高筒容器和小型上蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "blender",
+        "words": {
+          "zh-TW": "果汁機",
+          "en": "blender",
+          "ja": {
+            "text": "ミキサー",
+            "reading": "ミキサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "圍裙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "布製圍裙呈梯形，頂端有頸帶，腰部伸出兩條綁帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "apron",
+        "words": {
+          "zh-TW": "圍裙",
+          "en": "apron",
+          "ja": {
+            "text": "エプロン",
+            "reading": "エプロン"
+          }
+        }
+      }
+    },
+    {
+      "name": "洋蔥",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淡黃色圓鼓球形蔬菜，頂端有短短的乾燥莖，外皮呈層狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "onion",
+        "words": {
+          "zh-TW": "洋蔥",
+          "en": "onion",
+          "ja": {
+            "text": "玉ねぎ",
+            "reading": "たまねぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "烤麵包機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形烤麵包機，頂部有兩道狹長插槽，前面有小旋鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "open-kitchen",
+        "itemId": "toaster",
+        "words": {
+          "zh-TW": "烤麵包機",
+          "en": "toaster",
+          "ja": {
+            "text": "トースター",
+            "reading": "トースター"
+          }
+        }
+      }
+    },
+    {
+      "name": "甜甜圈",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓環形的金黃色甜甜圈，表面覆著粉紅糖霜和彩色小糖粒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "donut",
+        "words": {
+          "zh-TW": "甜甜圈",
+          "en": "donut",
+          "ja": {
+            "text": "ドーナツ",
+            "reading": "ドーナツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬芬",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓柱形的棕色馬芬，頂部隆起，露出深色果乾或巧克力碎片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "muffin",
+        "words": {
+          "zh-TW": "馬芬",
+          "en": "muffin",
+          "ja": {
+            "text": "マフィン",
+            "reading": "マフィン"
+          }
+        }
+      }
+    },
+    {
+      "name": "派",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形金黃色派皮，邊緣有波浪花紋，中間露出紅色水果餡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "pie",
+        "words": {
+          "zh-TW": "派",
+          "en": "pie",
+          "ja": {
+            "text": "パイ",
+            "reading": "パイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水果塔",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓形酥皮底座，上面整齊放著鮮豔水果，外圍有金黃酥脆邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "tart",
+        "words": {
+          "zh-TW": "水果塔",
+          "en": "tart",
+          "ja": {
+            "text": "タルト",
+            "reading": "タルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "布丁",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的淡黃色半圓布丁，頂部平滑，表面淋著琥珀色焦糖醬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "pudding",
+        "words": {
+          "zh-TW": "布丁",
+          "en": "pudding",
+          "ja": {
+            "text": "プリン",
+            "reading": "プリン"
+          }
+        }
+      }
+    },
+    {
+      "name": "聖代",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明高腳容器裡分層放著奶油、水果與脆餅，頂端有鮮紅果實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "parfait",
+        "words": {
+          "zh-TW": "聖代",
+          "en": "parfait",
+          "ja": {
+            "text": "パフェ",
+            "reading": "パフェ"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬卡龍",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧圓形的彩色馬卡龍，兩片蓬鬆外殼中夾著一圈奶油餡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "macaron",
+        "words": {
+          "zh-TW": "馬卡龍",
+          "en": "macaron",
+          "ja": {
+            "text": "マカロン",
+            "reading": "マカロン"
+          }
+        }
+      }
+    },
+    {
+      "name": "鬆餅",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色方形鬆餅，表面布滿整齊凹槽，邊角微微烤成棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "waffle",
+        "words": {
+          "zh-TW": "鬆餅",
+          "en": "waffle",
+          "ja": {
+            "text": "ワッフル",
+            "reading": "ワッフル"
+          }
+        }
+      }
+    },
+    {
+      "name": "薄煎餅",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形金黃色薄煎餅，表面蓬鬆柔軟，中央放著一小塊奶油。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "pancake",
+        "words": {
+          "zh-TW": "薄煎餅",
+          "en": "pancake",
+          "ja": {
+            "text": "パンケーキ",
+            "reading": "パンケーキ"
+          }
+        }
+      }
+    },
+    {
+      "name": "吉拿棒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長彎曲的金黃色吉拿棒，表面有明顯縱向凹槽並裹著砂糖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "churro",
+        "words": {
+          "zh-TW": "吉拿棒",
+          "en": "churro",
+          "ja": {
+            "text": "チュロス",
+            "reading": "チュロス"
+          }
+        }
+      }
+    },
+    {
+      "name": "可頌",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "月牙形金黃色可頌，外皮層層酥脆，切面可見蓬鬆的麵團紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "croissant",
+        "words": {
+          "zh-TW": "可頌",
+          "en": "croissant",
+          "ja": {
+            "text": "クロワッサン",
+            "reading": "クロワッサン"
+          }
+        }
+      }
+    },
+    {
+      "name": "泡芙",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓鼓鼓的金黃色泡芙，頂部擠著白色奶油，外殼有細小裂紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "cream-puff",
+        "words": {
+          "zh-TW": "泡芙",
+          "en": "cream puff",
+          "ja": {
+            "text": "シュークリーム",
+            "reading": "シュークリーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "布朗尼",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形深棕色布朗尼，表面略帶裂紋，切面厚實並露出堅果碎粒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "brownie",
+        "words": {
+          "zh-TW": "布朗尼",
+          "en": "brownie",
+          "ja": {
+            "text": "ブラウニー",
+            "reading": "ブラウニー"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰棒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形鮮豔冰棒，底部露出木棒，表面光滑並帶有水果色彩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "popsicle",
+        "words": {
+          "zh-TW": "冰棒",
+          "en": "popsicle",
+          "ja": {
+            "text": "アイスキャンディー",
+            "reading": "アイスキャンディー"
+          }
+        }
+      }
+    },
+    {
+      "name": "司康",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實不規則圓形的棕色司康，表面粗糙微裂，邊緣烤成深金色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "scone",
+        "words": {
+          "zh-TW": "司康",
+          "en": "scone",
+          "ja": {
+            "text": "スコーン",
+            "reading": "スコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋白霜",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色蛋白霜捲成尖頂小山形，表面乾燥細緻，邊緣帶著淡黃色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "meringue",
+        "words": {
+          "zh-TW": "蛋白霜",
+          "en": "meringue",
+          "ja": {
+            "text": "メレンゲ",
+            "reading": "メレンゲ"
+          }
+        }
+      }
+    },
+    {
+      "name": "杯子蛋糕",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓頂的淡黃色小蛋糕，表面擠著粉紅色奶油，底部包著彩色紙杯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "restaurant",
+        "zone": "dessert-stand",
+        "itemId": "cupcake",
+        "words": {
+          "zh-TW": "杯子蛋糕",
+          "en": "cupcake",
+          "ja": {
+            "text": "カップケーキ",
+            "reading": "カップケーキ"
+          }
+        }
+      }
+    }
+  ]
+}
