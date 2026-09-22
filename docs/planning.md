@@ -13,7 +13,7 @@
 - 4 個手畫場景、132 個物品，合在一張 2D 小鎮地圖上（3/4 俯視地面 + 正面直立物件）；可平移、縮放，左下角有小地圖。
 - **自動擴展**（2026-09-22）：miko-ws 規劃場景與單字表、生成 SVG，la-game 自動整合、測試、commit，由 miko-ws runtime 每 30 分鐘推進一步。第 5 個場景「車站」（67 個物品）已自動加入；「餐廳」（70 個）生成中。詳見 [expansion.md](expansion.md)。
 - 4 種關卡 + 自由探索；提示、星級、場景與關卡解鎖。
-- 英語 / 日語發音：本機 edge-tts 預先合成，載入失敗時改用瀏覽器語音合成（下一步改走 miko-ws 語音生成，見 §3.5.1）。
+- 發音（英語、日語、中文）：edge-tts 底稿，再用 miko-ws 讓 ChatGPT 念、whisper 驗收後覆蓋；公園的英語、中文已部分換成 ChatGPT 的聲音（§3.5.1）。音檔載入失敗時改用瀏覽器語音合成。
 - 詞彙本：篩選、重聽發音、顯示所在區域。
 - 物件自然擺放（成群、歪倒、放上檯面），物件與背景有輕微動態；系統開啟「減少動態」時全部停止。
 - 內容管線：manifest → SVG → 擺放 → 場景 JSON → 音檔，build 時檢查遮擋、區域、id 重複。
@@ -26,7 +26,7 @@
 - 物件音效、環境音、回饋音、背景音樂。
 - 動物與人物（16 個，要走 Lane A）。
 - 詞彙本「在地圖上顯示位置」（目前只顯示區域名稱）。
-- 發音改用 miko-ws 語音生成（ChatGPT 朗讀的自然人聲，§3.5.1）。
+- 其他場景、日語換成 ChatGPT 的聲音；自動擴展接上 build-voice；edge-tts 也寫來源記錄（§3.5.1）。
 - PWA、Capacitor 打包。
 - 手機實機效能測試。
 
@@ -91,7 +91,7 @@
 | 點擊判定 | 物件 SVG 內嵌，形狀就是點擊範圍；SVG 先經白名單清洗 | 小物品誤觸 → 最小點擊尺寸規範（尚未訂） |
 | 擺放 | seed 自動擺放 → 鎖定在 `content/layouts/`，可手改；build 時檢查可見比例 ≥ 60%、底線不超出區域 | 上線後改位置會打亂玩家記住的位置 |
 | 物件美術 | miko-ws Lane B 已生成 132/132 個 SVG，見 [svg-assets.md](svg-assets.md) | 動物 / 人物 Lane B 畫不了，要走 Lane A，兩種畫風需統一 |
-| 發音 | 現況：本機 edge-tts 預先合成（en-US-JennyNeural、ja-JP-NanamiNeural，語速 −10%）。下一步：miko-ws 語音生成（ChatGPT 朗讀的自然人聲，失敗退回 edge-tts），見 §3.5.1 | 讀音未經母語者檢查（日語漢字讀法）；不同 ChatGPT 帳號的聲音可能不一致 |
+| 發音 | edge-tts 底稿（英、日、中）＋ miko-ws 的 ChatGPT 聲音覆蓋，whisper 切割與驗收，見 §3.5.1 | 讀音未經母語者檢查；不同 ChatGPT 帳號聲音可能不一致；單字改了不會重錄 |
 | 存檔 | localStorage，讀取時逐欄驗證；之後加帳號 + 雲端同步 | 跨裝置進度、清除瀏覽器資料會遺失 |
 | 框架 | Next.js 16 + React 19 + TypeScript + Tailwind v4；PWA 與 Capacitor 尚未設定 | 商店審核對 WebView 應用的要求 |
 
@@ -237,33 +237,43 @@ PM / 策劃 1、前端 1、插畫外包 1–2、配音外包；QA 由團隊內�
 
 | 類型 | 內容 | 狀態 |
 | --- | --- | --- |
-| 發音（必須） | 每個物品的英語、日語發音各一份 | edge-tts 版已完成（手畫 4 場景 + 車站）；改用 miko-ws 語音生成待做（§3.5.1） |
+| 發音（必須） | 每個物品的英語、日語、中文發音 | edge-tts 底稿完成；ChatGPT 版本：公園英語 31、中文 10 個（§3.5.1） |
 | 物件音效 | 有聲音的物品（交通工具、噴泉、動物等）點擊時播放 | 未做 |
 | 環境音 | 每個場景獨立環境音（公園鳥叫、超市廣播、河邊水聲） | 未做 |
 | 回饋音 | 收集、階段完成、提示 | 未做 |
 
-#### 3.5.1 發音生成
+#### 3.5.1 發音生成：edge-tts 底稿 + ChatGPT 的聲音覆蓋
 
-**la-game 現況**：`npm run content:audio`（`scripts/build-audio.mjs`）在本機呼叫 edge-tts。英語用 en-US-JennyNeural 念 `en`，日語用 ja-JP-NanamiNeural 念 `ja.text`，語速都是 −10%，輸出 `public/audio/<en|ja>/<scene>/<itemId>.mp3`。已經有的檔案不重做（`--force` 才全部重做）。遊戲裡音檔載入失敗時，改用瀏覽器語音合成。
+> 2026-09-22 起。實作在 `scripts/build-audio.mjs`、`scripts/build-voice.mjs`、`scripts/lib/voice-take.mjs`、`scripts/lib/voice-cut.mjs`（當天還沒 commit）。語言：英語、日語、中文（zh-TW）。
 
-**miko-ws 最新的語音生成**（LLM 指揮中心 `POST /api/llm/voice`，參數 `text`、`outputPath`、`engine`、`instruction`、`fallback`）：
+**第 1 層：edge-tts 底稿**（`npm run content:audio` → `build-audio.mjs`）
 
-1. **預設 `engine: 'gpt'`**：讓已登入的 ChatGPT（Chrome CDP）朗讀，得到自然的人聲，不像合成音在「念稿」。
-   - 先請 ChatGPT「一字一句照原稿輸出」，再機械比對輸出和原稿；被改寫或摘要就不朗讀，避免生出內容不對的音檔。
-   - 按下「大聲朗讀」後，攔截播放用的 MediaSource 資料，直接拿到 AAC 音訊。不是錄螢幕、也不用虛擬音效卡，所以沒有雜音或漏字，而且比實際播放快（實測 94 秒的音檔 15 秒拿到）。
-   - 逾時：原稿回應 180 秒、第一段聲音 30 秒、朗讀完成 300 秒。
-2. **備援由指揮中心決定**：依序試有語音能力的 ChatGPT 帳號（chatgpt1–4，付費帳號優先），忙碌、確認已掛、冷卻中的帳號跳過；全部失敗才退回 edge-tts 合成音，確保一定產出音檔。
-3. `engine: 'edge'` 直接用 edge-tts。帶 `instruction`（請 ChatGPT 依指示改寫再念）時預設不退回 edge-tts，避免把指示文字直接念出來。
-4. 送出的文字會傳到 ChatGPT（外部服務）。單字沒有個資，可以送。
+- 本機 edge-tts：英語 en-US-JennyNeural 念 `en`、日語 ja-JP-NanamiNeural 念 `ja.text`、中文 zh-TW-HsiaoChenNeural 念 `zh-TW`，語速都是 −10%。
+- 用途是保證每個詞都有聲音。只補缺的檔；`--force` 全部重做，但已經通過 ChatGPT 驗收的詞一律不動。
 
-**la-game 改用它要做的事**（待做）：
+**第 2 層：ChatGPT 的聲音**（`node scripts/build-voice.mjs [場景] [--lang=en,ja,zh] [--force] [--recut]`）
 
-- `build-audio.mjs` 改呼叫 miko-ws `/api/llm/voice`（和 SVG、規劃一樣經過 `scripts/lib/miko.mjs`），自動擴展的整合步驟跟著改用。
-- 格式：指揮中心輸出 `.wav` 時會用 ffmpeg 轉檔，其他副檔名直接寫原始資料（AAC）。遊戲目前讀 `.mp3`，要決定轉成 mp3 還是改用 `.m4a`（還沒驗證）。
-- 日語讀音：ChatGPT 念 `ja.text`（漢字）時，讀法可能和 `reading` 不同，要抽查；讀錯的改念假名。
-- 聲音一致：不同 ChatGPT 帳號的朗讀聲音可能不同，要固定各帳號的語音設定，或抽查同一場景的音檔。
-- 很短的單字（一兩個字）朗讀是否穩定、原稿比對會不會誤判，還沒測過。
-- 速度：每個場景約 140 個音檔（70 詞 × 2 語言），每個都要排一次 ChatGPT，比 edge-tts 慢很多，適合放在自動擴展的背景流程裡跑。
+1. 一個場景、一種語言做成一份朗讀稿（一行一個詞：英語「Bench.」，日語、中文「ベンチ。」），送 miko-ws `/api/llm/voice`（`engine: 'gpt'`）念一次，原始 AAC 存到 `.cache/voice-takes/<scene>/`。
+   - miko-ws 依序試 ChatGPT 帳號；全部失敗時它會退回 edge-tts，build-voice 把這種情況算失敗，不收合成音。
+   - ChatGPT 回的稿子和朗讀稿不一致（多字、漏字），這份錄音整份不用。
+2. whisper 聽寫整段 → 對回每個詞的位置（漏念的詞對不上）→ 在附近最安靜的地方下刀切開。
+3. 每一段單獨再聽寫一次，和預期的詞比相似度：英語、中文 ≥ 0.75，日語 ≥ 0.6（漢字寫法和讀音取較高者）。通過才轉成 mp3，覆蓋 `public/audio/<lang>/<scene>/<itemId>.mp3`。
+4. 沒過的詞集中再錄一份，最多 3 輪；還是沒過就保留第 1 層的 edge-tts 音檔。
+5. 處理對象是「還沒通過驗收的詞」，跟 edge-tts 檔在不在無關，所以底稿最後都會被 ChatGPT 版本取代（除了驗收不過的）。
+
+**來源標識**
+
+- `content/voice/<scene>.json` 記錄通過驗收的詞，按語言分段，每個詞記：`heard`（whisper 聽到的）、`score`、`take`（哪一份錄音）、`account`（哪個 ChatGPT 帳號，例如 chatgpt1）。
+- 不在這份記錄裡的詞就是 edge-tts。edge-tts 沒有自己的記錄，mp3 檔本身也沒有來源資訊，目前只能靠「不在記錄裡」推斷。
+
+**進度（2026-09-22）**：公園英語 31/33、中文 10/33 已換成 ChatGPT 的聲音；日語和其他場景都還是 edge-tts。
+
+**待補**
+
+- edge-tts 的詞也要寫記錄（來源、聲音、念的文字），讓每個音檔都有明確來源，不靠推斷。
+- 記錄要存「念的文字」：現在兩層都只看 itemId 或檔案在不在，單字改了（例如改譯名）不會重錄，會留下舊的發音。
+- 自動擴展的整合步驟只跑 build-audio，所以新場景只有 edge-tts；要把 build-voice 接進去（需要 ChatGPT 帳號、ffmpeg、whisper，一個場景 × 3 種語言至少錄 3 份）。
+- ChatGPT 版本還沒有人工聽過；不同帳號（chatgpt1、chatgpt2）的聲音可能不一樣。
 
 ### 3.6 技術設計摘要（TDD）
 
@@ -393,4 +403,4 @@ public/audio/<en|ja>/<scene>/<itemId>.mp3
 
 - **v0.1（2026-09-21）**：草案。同日完成 M1 原型：4 個場景共 132 個物品、4 種關卡 + 自由探索、英日發音、詞彙本。
 - **v0.2（2026-09-22）**：4 個場景合成一張可平移、縮放的 2D 小鎮地圖；物件自然散放、加入輕微動態（[scene-standard.md](scene-standard.md)）。規劃書依實作更新：進度總覽、技術現況、關卡與星級規則、TDD 資料格式、各里程碑狀態、新增風險與待確認項目。
-- **v0.3（2026-09-22）**：新場景改為自動擴展（miko-ws 規劃與生成、每 30 分鐘推進一步），第 5 個場景「車站」已自動加入；發音生成寫入 miko-ws 最新做法（ChatGPT 朗讀的自然人聲，備援 edge-tts）與 la-game 改用它的待辦（§3.5.1）。
+- **v0.3（2026-09-22）**：新場景改為自動擴展（miko-ws 規劃與生成、每 30 分鐘推進一步），第 5 個場景「車站」已自動加入；發音寫入目前做法：edge-tts 底稿 + miko-ws ChatGPT 聲音覆蓋（whisper 驗收）、來源記錄與待補事項（§3.5.1）。
