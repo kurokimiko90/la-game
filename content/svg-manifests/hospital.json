@@ -1,0 +1,1462 @@
+{
+  "sceneName": "語言小鎮・醫院",
+  "sceneSlug": "la-hospital",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "lobby": "大廳",
+    "waiting-area": "候診區",
+    "pharmacy": "藥局"
+  },
+  "elements": [
+    {
+      "name": "救護車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色車身配紅色條紋，車頂有紅白相間警示燈，車頭方正、後方寬大。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "ambulance",
+        "words": {
+          "zh-TW": "救護車",
+          "en": "ambulance",
+          "ja": {
+            "text": "救急車",
+            "reading": "きゅうきゅうしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "直升機",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長機身下接起落架，頂部有長旋翼，尾端有小螺旋槳，外觀醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "helicopter",
+        "words": {
+          "zh-TW": "直升機",
+          "en": "helicopter",
+          "ja": {
+            "text": "ヘリコプター",
+            "reading": "へりこぷたー"
+          }
+        }
+      }
+    },
+    {
+      "name": "門把",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形銀色金屬門把固定在門板側邊，表面光滑，形狀簡單好辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "doorknob",
+        "words": {
+          "zh-TW": "門把",
+          "en": "doorknob",
+          "ja": {
+            "text": "ドアノブ",
+            "reading": "どあのぶ"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗手液機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色直立容器固定在支架上，頂部有按壓頭，透明瓶身可看見內部。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "hand-sanitizer-dispenser",
+        "words": {
+          "zh-TW": "洗手液機",
+          "en": "hand sanitizer dispenser",
+          "ja": {
+            "text": "消毒液ディスペンサー",
+            "reading": "しょうどくえきでぃすぺんさー"
+          }
+        }
+      }
+    },
+    {
+      "name": "擔架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的白色床面裝在金屬架上，底部有四個輪子，兩端有推行把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "stretcher",
+        "words": {
+          "zh-TW": "擔架",
+          "en": "stretcher",
+          "ja": {
+            "text": "ストレッチャー",
+            "reading": "すとれっちゃー"
+          }
+        }
+      }
+    },
+    {
+      "name": "拐杖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根細長木色支架頂端有腋下托墊，中段有握把，底端套著橡膠墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "crutch",
+        "words": {
+          "zh-TW": "拐杖",
+          "en": "crutch",
+          "ja": {
+            "text": "松葉杖",
+            "reading": "まつばづえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手杖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根細長的棕色手杖，頂端彎成圓弧握把，底端有黑色防滑套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "cane",
+        "words": {
+          "zh-TW": "手杖",
+          "en": "cane",
+          "ja": {
+            "text": "杖",
+            "reading": "つえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "急救箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅白相間的方形盒子，上蓋有醒目的十字圖案，側邊裝著提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "first-aid-kit",
+        "words": {
+          "zh-TW": "急救箱",
+          "en": "first aid kit",
+          "ja": {
+            "text": "救急箱",
+            "reading": "きゅうきゅうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "體溫計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長白色電子體溫計，前端尖細，另一端有小型顯示窗和圓形按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "thermometer",
+        "words": {
+          "zh-TW": "體溫計",
+          "en": "thermometer",
+          "ja": {
+            "text": "体温計",
+            "reading": "たいおんけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "繃帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色長條繃帶鬆鬆捲起，邊緣有細密紋理，旁邊露出一小段尾端。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "bandage",
+        "words": {
+          "zh-TW": "繃帶",
+          "en": "bandage",
+          "ja": {
+            "text": "包帯",
+            "reading": "ほうたい"
+          }
+        }
+      }
+    },
+    {
+      "name": "注射器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明細長管身配白色推桿，前端有細針並套著小型保護帽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "syringe",
+        "words": {
+          "zh-TW": "注射器",
+          "en": "syringe",
+          "ja": {
+            "text": "注射器",
+            "reading": "ちゅうしゃき"
+          }
+        }
+      }
+    },
+    {
+      "name": "停車計時器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色直立柱頂端有圓形表盤，下方伸出小盒子，底部固定在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "parking-meter",
+        "words": {
+          "zh-TW": "停車計時器",
+          "en": "parking meter",
+          "ja": {
+            "text": "パーキングメーター",
+            "reading": "ぱーきんぐめーたー"
+          }
+        }
+      }
+    },
+    {
+      "name": "坡道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬闊平滑的灰色斜坡連接地面與入口，兩側有低矮邊緣方便通行。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "ramp",
+        "words": {
+          "zh-TW": "坡道",
+          "en": "ramp",
+          "ja": {
+            "text": "スロープ",
+            "reading": "すろーぷ"
+          }
+        }
+      }
+    },
+    {
+      "name": "氧氣筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高而圓的綠色金屬筒直立放置，頂部有閥門，底部套著黑色圓底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "oxygen-cylinder",
+        "words": {
+          "zh-TW": "氧氣筒",
+          "en": "oxygen cylinder",
+          "ja": {
+            "text": "酸素ボンベ",
+            "reading": "さんそぼんべ"
+          }
+        }
+      }
+    },
+    {
+      "name": "向日葵",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高直綠莖頂端開著大型黃色花朵，中央是深褐色圓心，葉片寬大。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "sunflower",
+        "words": {
+          "zh-TW": "向日葵",
+          "en": "sunflower",
+          "ja": {
+            "text": "ひまわり",
+            "reading": "ひまわり"
+          }
+        }
+      }
+    },
+    {
+      "name": "薰衣草",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長綠莖聚成小叢，頂端開著紫色穗狀花朵，整體形狀輕巧整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "lavender",
+        "words": {
+          "zh-TW": "薰衣草",
+          "en": "lavender",
+          "ja": {
+            "text": "ラベンダー",
+            "reading": "らべんだー"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮雨棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口上方伸出的藍灰色平頂遮雨棚，兩根柱子支撐著寬大的頂板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "entrance",
+        "itemId": "canopy",
+        "words": {
+          "zh-TW": "遮雨棚",
+          "en": "canopy",
+          "ja": {
+            "text": "ひさし",
+            "reading": "ひさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "吧台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "平直的木色吧台，正面有深色底座，檯面平整寬大。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "counter",
+        "words": {
+          "zh-TW": "吧台",
+          "en": "counter",
+          "ja": {
+            "text": "カウンター",
+            "reading": "カウンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙發",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬大的淺藍色沙發，有厚實坐墊、靠背和兩側扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "sofa",
+        "words": {
+          "zh-TW": "沙發",
+          "en": "sofa",
+          "ja": {
+            "text": "ソファ",
+            "reading": "ソファ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的黑色衣帽架，頂端伸出幾個彎曲掛鉤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "coat-rack",
+        "words": {
+          "zh-TW": "衣帽架",
+          "en": "coat-rack",
+          "ja": {
+            "text": "コートラック",
+            "reading": "コートラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "植物",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "綠色闊葉植物向上伸展，葉片集中在細長莖頂端。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "plant",
+        "words": {
+          "zh-TW": "植物",
+          "en": "plant",
+          "ja": {
+            "text": "植物",
+            "reading": "しょくぶつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "通風口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色長方形通風口，表面排列整齊的平行細柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "air-vent",
+        "words": {
+          "zh-TW": "通風口",
+          "en": "air-vent",
+          "ja": {
+            "text": "通気口",
+            "reading": "つうきこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "火警警報器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓形火警警報器，中央微微凸起，外圈有細小孔洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "fire-alarm",
+        "words": {
+          "zh-TW": "火警警報器",
+          "en": "fire-alarm",
+          "ja": {
+            "text": "火災警報器",
+            "reading": "かさいけいほうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "電話",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色座式電話，底座旁放著彎曲聽筒和短短的連接線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "telephone",
+        "words": {
+          "zh-TW": "電話",
+          "en": "telephone",
+          "ja": {
+            "text": "電話",
+            "reading": "でんわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "服務鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓頂服務鈴，放在小圓底座上，頂部有按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "reception-bell",
+        "words": {
+          "zh-TW": "服務鈴",
+          "en": "reception-bell",
+          "ja": {
+            "text": "呼び鈴",
+            "reading": "よびりん"
+          }
+        }
+      }
+    },
+    {
+      "name": "杯墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平圓形杯墊，表面是深藍色，邊緣有一圈淺色線條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "coaster",
+        "words": {
+          "zh-TW": "杯墊",
+          "en": "coaster",
+          "ja": {
+            "text": "コースター",
+            "reading": "コースター"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡豆",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆深棕色橢圓咖啡豆，中央各有一道明顯彎曲裂紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "coffee-bean",
+        "words": {
+          "zh-TW": "咖啡豆",
+          "en": "coffee-bean",
+          "ja": {
+            "text": "コーヒー豆",
+            "reading": "コーヒーまめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色小茶包，連著細線和扁平小紙片，平放在檯面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "tea-bag",
+        "words": {
+          "zh-TW": "茶包",
+          "en": "tea-bag",
+          "ja": {
+            "text": "ティーバッグ",
+            "reading": "ティーバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "方糖",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色小方糖，邊角略圓，單獨放在吧台表面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "sugar-cube",
+        "words": {
+          "zh-TW": "方糖",
+          "en": "sugar-cube",
+          "ja": {
+            "text": "角砂糖",
+            "reading": "かくざとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "檸檬",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "鮮黃色橢圓檸檬，兩端微尖，表皮有細小凹凸紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "lemon",
+        "words": {
+          "zh-TW": "檸檬",
+          "en": "lemon",
+          "ja": {
+            "text": "レモン",
+            "reading": "レモン"
+          }
+        }
+      }
+    },
+    {
+      "name": "醫療推車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色雙層醫療推車，側邊有推柄，底部裝著四個小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "medical-trolley",
+        "words": {
+          "zh-TW": "醫療推車",
+          "en": "medical-trolley",
+          "ja": {
+            "text": "医療ワゴン",
+            "reading": "いりょうワゴン"
+          }
+        }
+      }
+    },
+    {
+      "name": "聽診器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色橡膠管彎成圈狀，兩端連著銀色胸件和耳掛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "stethoscope",
+        "words": {
+          "zh-TW": "聽診器",
+          "en": "stethoscope",
+          "ja": {
+            "text": "聴診器",
+            "reading": "ちょうしんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "血壓計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色血壓計主機立在支架上，旁邊垂著黑色臂帶和軟管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "blood-pressure-monitor",
+        "words": {
+          "zh-TW": "血壓計",
+          "en": "blood-pressure-monitor",
+          "ja": {
+            "text": "血圧計",
+            "reading": "けつあつけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "保溫瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長圓柱形瓶身，銀色瓶蓋套在上方，側面有深色提帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "thermos",
+        "words": {
+          "zh-TW": "保溫瓶",
+          "en": "thermos",
+          "ja": {
+            "text": "水筒",
+            "reading": "スイトウ"
+          }
+        }
+      }
+    },
+    {
+      "name": "吸管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的白色管子，前端微微彎曲，平放在吧台表面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "lobby",
+        "itemId": "straw",
+        "words": {
+          "zh-TW": "吸管",
+          "en": "straw",
+          "ja": {
+            "text": "ストロー",
+            "reading": "ストロー"
+          }
+        }
+      }
+    },
+    {
+      "name": "電燈開關",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆上的小型白色方盒，中間有一片可上下按動的開關片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "light-switch",
+        "words": {
+          "zh-TW": "電燈開關",
+          "en": "light switch",
+          "ja": {
+            "text": "照明スイッチ",
+            "reading": "しょうめいスイッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "插座",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆面上的白色小方板，中間有兩個圓形插孔，外圍略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "power-outlet",
+        "words": {
+          "zh-TW": "插座",
+          "en": "power outlet",
+          "ja": {
+            "text": "コンセント",
+            "reading": "コンセント"
+          }
+        }
+      }
+    },
+    {
+      "name": "溫控器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆上的白色小盒子，正面有深色顯示區和一個圓形旋鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "thermostat",
+        "words": {
+          "zh-TW": "溫控器",
+          "en": "thermostat",
+          "ja": {
+            "text": "温度調節器",
+            "reading": "おんどちょうせつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "煙霧偵測器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆面上半圓形的白色裝置，外圈有細小孔洞，中央微微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "smoke-detector",
+        "words": {
+          "zh-TW": "煙霧偵測器",
+          "en": "smoke detector",
+          "ja": {
+            "text": "火災報知器",
+            "reading": "かさいほうちき"
+          }
+        }
+      }
+    },
+    {
+      "name": "暖氣片",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "靠牆立著的長方形白色暖氣片，表面有整齊排列的垂直散熱條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "radiator",
+        "words": {
+          "zh-TW": "暖氣片",
+          "en": "radiator",
+          "ja": {
+            "text": "ラジエーター",
+            "reading": "ラジエーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "助行器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色金屬架構的助行器，前方有兩個小輪子，四角各有支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "walker",
+        "words": {
+          "zh-TW": "助行器",
+          "en": "walker",
+          "ja": {
+            "text": "歩行器",
+            "reading": "ほこうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "助聽器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的米色彎曲裝置，帶有細短耳掛和圓潤的聽音部分。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "hearing-aid",
+        "words": {
+          "zh-TW": "助聽器",
+          "en": "hearing aid",
+          "ja": {
+            "text": "補聴器",
+            "reading": "ほちょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "藥瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮矮的半透明塑膠瓶，配有白色旋蓋，瓶身呈淡藍色或淡褐色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "medicine-bottle",
+        "words": {
+          "zh-TW": "藥瓶",
+          "en": "medicine bottle",
+          "ja": {
+            "text": "薬びん",
+            "reading": "くすりびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "藥盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的小型塑膠盒，分成幾個小格，蓋子通常是白色或透明。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "pillbox",
+        "words": {
+          "zh-TW": "藥盒",
+          "en": "pillbox",
+          "ja": {
+            "text": "ピルケース",
+            "reading": "ピルケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "吸入器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "掌心大小的白色塑膠裝置，上方有短短的吹嘴，外形方正圓潤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "inhaler",
+        "words": {
+          "zh-TW": "吸入器",
+          "en": "inhaler",
+          "ja": {
+            "text": "吸入器",
+            "reading": "きゅうにゅうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "小藥瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細小透明玻璃瓶，瓶口封著銀色薄膜，裡面可看見少量空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "vial",
+        "words": {
+          "zh-TW": "小藥瓶",
+          "en": "vial",
+          "ja": {
+            "text": "バイアル",
+            "reading": "バイアル"
+          }
+        }
+      }
+    },
+    {
+      "name": "試管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明玻璃管，底部圓弧，頂端開口並配有小巧的塞子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "test-tube",
+        "words": {
+          "zh-TW": "試管",
+          "en": "test tube",
+          "ja": {
+            "text": "試験管",
+            "reading": "しけんかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "棉花棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長白色小棒，兩端各有蓬鬆的白色棉球，外形輕巧易辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "cotton-swab",
+        "words": {
+          "zh-TW": "棉花棒",
+          "en": "cotton swab",
+          "ja": {
+            "text": "綿棒",
+            "reading": "めんぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "紗布捲",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色紗布捲成的小圓柱，表面有柔軟網格紋理，邊緣整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "gauze-roll",
+        "words": {
+          "zh-TW": "紗布捲",
+          "en": "gauze roll",
+          "ja": {
+            "text": "ガーゼロール",
+            "reading": "ガーゼロール"
+          }
+        }
+      }
+    },
+    {
+      "name": "面紙盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方正的白色盒子，頂部有橢圓形開口，露出一小角柔軟面紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "tissue-box",
+        "words": {
+          "zh-TW": "面紙盒",
+          "en": "tissue-box",
+          "ja": {
+            "text": "ティッシュボックス",
+            "reading": "ティッシュボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "遙控器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的黑色塑膠物品，表面排列著許多圓形按鈕，頂端有小小深色區塊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "remote-control",
+        "words": {
+          "zh-TW": "遙控器",
+          "en": "remote-control",
+          "ja": {
+            "text": "リモコン",
+            "reading": "リモコン"
+          }
+        }
+      }
+    },
+    {
+      "name": "積木",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "鮮黃色的小方塊積木，中央有一個凸起圓柱，邊角平整而容易辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "waiting-area",
+        "itemId": "toy-block",
+        "words": {
+          "zh-TW": "積木",
+          "en": "toy-block",
+          "ja": {
+            "text": "つみき",
+            "reading": "つみき"
+          }
+        }
+      }
+    },
+    {
+      "name": "藥品冷藏櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色直立冷藏櫃，正面有透明玻璃門、銀色把手和底部通風格柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "refrigerator",
+        "words": {
+          "zh-TW": "藥品冷藏櫃",
+          "en": "refrigerator",
+          "ja": {
+            "text": "薬品用冷蔵庫",
+            "reading": "やくひんようれいぞうこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "藥丸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小而圓的白色藥丸，表面平滑，中央有一道細細的刻痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "pill",
+        "words": {
+          "zh-TW": "藥丸",
+          "en": "pill",
+          "ja": {
+            "text": "錠剤",
+            "reading": "じょうざい"
+          }
+        }
+      }
+    },
+    {
+      "name": "膠囊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長橢圓形膠囊，由藍白兩半組成，表面光滑明亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "capsule",
+        "words": {
+          "zh-TW": "膠囊",
+          "en": "capsule",
+          "ja": {
+            "text": "カプセル",
+            "reading": "カプセル"
+          }
+        }
+      }
+    },
+    {
+      "name": "藥膏管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而柔軟的白色管狀容器，前端有細小旋蓋，尾端壓扁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "ointment-tube",
+        "words": {
+          "zh-TW": "藥膏管",
+          "en": "ointment tube",
+          "ja": {
+            "text": "軟膏チューブ",
+            "reading": "なんこうチューブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長塑膠握柄連著一排整齊刷毛，刷毛端朝上直立擺放。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "toothbrush",
+        "words": {
+          "zh-TW": "牙刷",
+          "en": "toothbrush",
+          "ja": {
+            "text": "歯ブラシ",
+            "reading": "はブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙膏",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的白色擠壓管，頂端有圓形旋蓋，管身微微彎曲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "toothpaste",
+        "words": {
+          "zh-TW": "牙膏",
+          "en": "toothpaste",
+          "ja": {
+            "text": "歯磨き粉",
+            "reading": "はみがきこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "香皂",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓角長方形的淡色香皂，表面平滑，中央微微隆起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "soap",
+        "words": {
+          "zh-TW": "香皂",
+          "en": "soap",
+          "ja": {
+            "text": "せっけん",
+            "reading": "せっけん"
+          }
+        }
+      }
+    },
+    {
+      "name": "刮鬍刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長握柄連著扁平刀頭，刀頭外圍有一圈深色保護框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "razor",
+        "words": {
+          "zh-TW": "刮鬍刀",
+          "en": "razor",
+          "ja": {
+            "text": "カミソリ",
+            "reading": "カミソリ"
+          }
+        }
+      }
+    },
+    {
+      "name": "梳子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長條形梳子，一側排列整齊的短齒，另一側是平滑握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "comb",
+        "words": {
+          "zh-TW": "梳子",
+          "en": "comb",
+          "ja": {
+            "text": "くし",
+            "reading": "くし"
+          }
+        }
+      }
+    },
+    {
+      "name": "止汗劑",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短胖的圓柱形容器，底部寬穩，頂端套著可拆下的圓弧蓋子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "deodorant",
+        "words": {
+          "zh-TW": "止汗劑",
+          "en": "deodorant",
+          "ja": {
+            "text": "制汗剤",
+            "reading": "せいかんざい"
+          }
+        }
+      }
+    },
+    {
+      "name": "防曬乳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的白色軟管，頂端有翻蓋，管身帶著圓潤彎曲的肩部。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "sunscreen",
+        "words": {
+          "zh-TW": "防曬乳",
+          "en": "sunscreen",
+          "ja": {
+            "text": "日焼け止め",
+            "reading": "ひやけどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "化妝棉",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片柔軟潔白的圓形薄棉片疊在一起，邊緣蓬鬆整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "cotton-pad",
+        "words": {
+          "zh-TW": "化妝棉",
+          "en": "cotton pad",
+          "ja": {
+            "text": "コットンパッド",
+            "reading": "コットンパッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "棉花球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "蓬鬆柔軟的白色小球，表面有細細纖維，形狀不完全規則。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "cotton-ball",
+        "words": {
+          "zh-TW": "棉花球",
+          "en": "cotton ball",
+          "ja": {
+            "text": "コットンボール",
+            "reading": "コットンボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑷子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片細長銀色金屬片在尾端連接，前端尖細並微微合攏。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "tweezers",
+        "words": {
+          "zh-TW": "鑷子",
+          "en": "tweezers",
+          "ja": {
+            "text": "ピンセット",
+            "reading": "ピンセット"
+          }
+        }
+      }
+    },
+    {
+      "name": "耳塞",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個小巧的橘色泡棉耳塞，呈短圓錐形，表面帶有柔軟皺褶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "earplug",
+        "words": {
+          "zh-TW": "耳塞",
+          "en": "earplug",
+          "ja": {
+            "text": "耳栓",
+            "reading": "みみせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "隱形眼鏡盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平小盒分成左右兩個圓蓋，白色盒身配上藍色旋轉蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "contact-lens-case",
+        "words": {
+          "zh-TW": "隱形眼鏡盒",
+          "en": "contact lens case",
+          "ja": {
+            "text": "コンタクトレンズケース",
+            "reading": "コンタクトレンズケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰敷袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平透明軟袋裡裝著淡藍色凝膠，四角圓鈍，表面微微鼓起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hospital",
+        "zone": "pharmacy",
+        "itemId": "ice-pack",
+        "words": {
+          "zh-TW": "冰敷袋",
+          "en": "ice pack",
+          "ja": {
+            "text": "保冷剤",
+            "reading": "ほれいざい"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "en": {
+    "oxygen-cylinder": {
+      "heard": "Oxygen cylinder.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "lavender": {
+      "heard": "Lavender.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "parking-meter": {
+      "heard": "Parking meter.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "cane": {
+      "heard": "came.",
+      "score": 0.75,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "air-vent": {
+      "heard": "Air vents.",
+      "score": 0.88,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "fire-alarm": {
+      "heard": "Fire alarm.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "stretcher": {
+      "heard": "Stretcher.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "ramp": {
+      "heard": "Ramp.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "canopy": {
+      "heard": "Canopy",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "telephone": {
+      "heard": "Telephone.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "sugar-cube": {
+      "heard": "Sugarcube.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "lemon": {
+      "heard": "Lemon",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "stethoscope": {
+      "heard": "Stethoscope.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "thermos": {
+      "heard": "Thermos.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "straw": {
+      "heard": "Straw.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "doorknob": {
+      "heard": "Doorknob.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "crutch": {
+      "heard": "Crutch.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "sunflower": {
+      "heard": "Sunflower.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "first-aid-kit": {
+      "heard": "First Aid Kit",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "syringe": {
+      "heard": "Syringe.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "medical-trolley": {
+      "heard": "Medical trolley",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "hand-sanitizer-dispenser": {
+      "heard": "Hand sanitizer dispenser.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "plant": {
+      "heard": "Plant.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "coat-rack": {
+      "heard": "Coat Rack.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "light-switch": {
+      "heard": "It's light switch.",
+      "score": 0.79,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "power-outlet": {
+      "heard": "Power Outlet.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "thermostat": {
+      "heard": "Thermostat.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "smoke-detector": {
+      "heard": "Smoke detector.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "hearing-aid": {
+      "heard": "hearing aid,",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "test-tube": {
+      "heard": "Test Tube",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "cotton-swab": {
+      "heard": "Cotton swab?",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "gauze-roll": {
+      "heard": "Gauze roll?",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "tissue-box": {
+      "heard": "Tissue box.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "remote-control": {
+      "heard": "Remote controlled.",
+      "score": 0.81,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "ointment-tube": {
+      "heard": "Ointment tube.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "razor": {
+      "heard": "Razor.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "sunscreen": {
+      "heard": "sunscreen.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "cotton-pad": {
+      "heard": "Cotton pad.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "tweezers": {
+      "heard": "Tweezers.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "contact-lens-case": {
+      "heard": "Contact lens case.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "ice-pack": {
+      "heard": "Icepack.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "helicopter": {
+      "heard": "Helicopter.",
+      "score": 1,
+      "take": "en-1790067075202.aac",
+      "account": "chatgpt1"
+    },
+    "reception-bell": {
+      "heard": "Reception bell.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "coaster": {
+      "heard": "Coaster.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-bean": {
+      "heard": "Coffee Bean.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "tea-bag": {
+      "heard": "teabag.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "sofa": {
+      "heard": "So far.",
+      "score": 0.8,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "thermometer": {
+      "heard": "Thermometer.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "bandage": {
+      "heard": "Bandage.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "blood-pressure-monitor": {
+      "heard": "Blood pressure monitor.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "radiator": {
+      "heard": "Radiator.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "refrigerator": {
+      "heard": "Refrigerator.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-bottle": {
+      "heard": "Medicine bottle.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "pillbox": {
+      "heard": "Pillbox.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "inhaler": {
+      "heard": "Inhaler.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "toy-block": {
+      "heard": "Toy Block.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "pill": {
+      "heard": "Pill.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "capsule": {
+      "heard": "Capsule.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "soap": {
+      "heard": "Soap.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "cotton-ball": {
+      "heard": "Cottonball.",
+      "score": 1,
+      "take": "en-1790067278925.aac",
+      "account": "chatgpt1"
+    },
+    "counter": {
+      "heard": "Counter-",
+      "score": 1,
+      "take": "en-1790067372272.aac",
+      "account": "chatgpt1"
+    },
+    "ambulance": {
+      "heard": "Ambulance.",
+      "score": 1,
+      "take": "en-1790067372272.aac",
+      "account": "chatgpt1"
+    },
+    "earplug": {
+      "heard": "Earplug.",
+      "score": 1,
+      "take": "en-1790067372272.aac",
+      "account": "chatgpt1"
+    },
+    "walker": {
+      "heard": "Walker.",
+      "score": 1,
+      "take": "en-1790067372272.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
