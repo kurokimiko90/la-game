@@ -1,6 +1,6 @@
 {
-  "world": {"width": 3600, "height": 2600},
-  "order": ["park", "street", "riverside", "supermarket"],
+  "world": {"width": 3600, "height": 3900},
+  "order": ["park", "street", "riverside", "supermarket", "station"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -80,6 +80,37 @@
       "loose": ["flyer", "receipt", "banknote", "credit-card", "banana", "carrot", "corn", "bread", "sausage"],
       "noFlip": [],
       "motion": {"price-tag": "sway", "shopping-cart": "wobble", "plastic-bag": "sway"}
+    },
+    "station": {
+      "name": "車站",
+      "icon": "train",
+      "zones": {"plaza": [0, 2600, 1300, 3250], "ticket-hall": [1300, 2600, 2600, 3250], "gates": [1300, 3250, 2600, 3900], "platform": [0, 3250, 1300, 3900]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"plaza": {"top": 2670, "bottom": 3230}, "ticket-hall": {"top": 2840, "bottom": 3230}, "gates": {"top": 3490, "bottom": 3880}, "platform": {"top": 3320, "bottom": 3720}}},
+        "sky-plaza": {"top": 2750, "bottom": 2900, "zones": ["plaza"], "layer": 3, "float": 150},
+        "wall-ticket-hall": {"levels": [2740], "zones": ["ticket-hall"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-ticket-hall": {"levels": [2778], "zones": ["ticket-hall"], "inset": 50},
+        "wall-gates": {"levels": [3390], "zones": ["gates"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-gates": {"levels": [3428], "zones": ["gates"], "inset": 50},
+        "sky-platform": {"top": 3400, "bottom": 3550, "zones": ["platform"], "layer": 3, "float": 150},
+        "track-platform": {"levels": [3860], "zones": ["platform"], "inset": 40, "scale": [2.2, 2.2]}
+      },
+      "place": {
+        "ticket-machine": "wallbase-ticket-hall",
+        "escalator": "wallbase-ticket-hall",
+        "elevator": "wallbase-ticket-hall",
+        "poster": "wall-ticket-hall",
+        "air-conditioner": "wall-ticket-hall",
+        "security-camera": "wall-gates",
+        "loudspeaker": "wall-gates",
+        "train": "track-platform",
+        "bullet-train": "track-platform"
+      },
+      "clusters": [["bike-rack", "helmet"], ["guitar", "microphone"], ["tent", "hot-dog", "popcorn", "cotton-candy"], ["kiosk", "lunch-box", "rice-ball", "magazine"], ["mop", "cardboard-box"], ["ticket-gate", "transit-card"], ["briefcase", "laptop", "necktie"], ["coat", "scarf"], ["broom", "dustpan"]],
+      "loose": ["helmet", "magazine", "chocolate", "candy", "postcard", "keychain", "earphones", "tissues", "gloves", "transit-card", "glasses", "rain-boots", "sneakers", "necktie", "scarf", "cap", "handkerchief", "handbag", "face-mask", "yo-yo"],
+      "noFlip": [],
+      "motion": {"flagpole": "sway", "truck": "wobble", "electric-fan": "wobble", "potted-plant": "sway", "train": "wobble", "bullet-train": "wobble", "yo-yo": "bob", "bell": "wobble", "walkie-talkie": "wobble"},
+      "terrain": {"color": "#ce93d8", "x0": 0, "y0": 2600, "x1": 2600, "y1": 3900, "zones": [{"id": "plaza", "x0": 0, "y0": 2600, "x1": 1300, "y1": 3250, "indoor": false, "floor": "paving"}, {"id": "ticket-hall", "x0": 1300, "y0": 2600, "x1": 2600, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "gates", "x0": 1300, "y0": 3250, "x1": 2600, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}, {"id": "platform", "x0": 0, "y0": 3250, "x1": 1300, "y1": 3900, "indoor": false, "floor": "concrete", "track": {"y0": 3740, "y1": 3900}}]}
     }
   }
 }

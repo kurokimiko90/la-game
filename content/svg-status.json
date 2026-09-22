@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-21T10:41:10.423Z",
+  "syncedAt": "2026-09-22T02:16:34.836Z",
   "scenes": [
     {
       "scene": "park",
@@ -93,6 +93,100 @@
         "crab",
         "captain",
         "waiter"
+      ]
+    },
+    {
+      "scene": "station",
+      "slug": "la-station",
+      "synced": [
+        "police-box",
+        "clock-tower",
+        "phone-booth",
+        "bike-rack",
+        "flagpole",
+        "helmet",
+        "truck",
+        "guitar",
+        "microphone",
+        "rickshaw",
+        "tent",
+        "megaphone",
+        "hot-dog",
+        "popcorn",
+        "cotton-candy",
+        "ticket-machine",
+        "escalator",
+        "elevator",
+        "poster",
+        "kiosk",
+        "lunch-box",
+        "rice-ball",
+        "magazine",
+        "wheelchair",
+        "gift-box",
+        "chocolate",
+        "candy",
+        "electric-fan",
+        "air-conditioner",
+        "potted-plant",
+        "mop",
+        "cardboard-box",
+        "postcard",
+        "keychain",
+        "daruma",
+        "folding-fan",
+        "ticket-gate",
+        "security-camera",
+        "loudspeaker",
+        "earphones",
+        "tissues",
+        "gloves",
+        "transit-card",
+        "glasses",
+        "watch",
+        "rain-boots",
+        "sneakers",
+        "laptop",
+        "briefcase",
+        "necktie",
+        "train",
+        "bullet-train",
+        "whistle",
+        "scarf",
+        "cap",
+        "handkerchief",
+        "broom",
+        "dustpan",
+        "handbag",
+        "face-mask",
+        "emergency-button",
+        "cup-noodles",
+        "yo-yo",
+        "coat",
+        "bell",
+        "flashlight",
+        "walkie-talkie"
+      ],
+      "failed": [
+        {
+          "itemId": "statue",
+          "elementId": "el-003",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "exit-sign",
+          "elementId": "el-041",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "teddy-bear",
+          "elementId": "el-065",
+          "error": "llm 判定無合適圖"
+        }
+      ],
+      "pending": [],
+      "skippedLaneA": [
+        "station-attendant"
       ]
     },
     {

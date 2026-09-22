@@ -1,0 +1,1504 @@
+{
+  "sceneName": "語言小鎮・車站",
+  "sceneSlug": "la-station",
+  "propStyle": "front-flat",
+  "zones": {
+    "plaza": "站前廣場",
+    "ticket-hall": "售票大廳",
+    "gates": "剪票口",
+    "platform": "月台"
+  },
+  "elements": [
+    {
+      "name": "派出所",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "小小的方形派出所建築：白牆、深藍色平屋頂，門口上方一盞紅色圓燈，正面一扇玻璃門和一扇小窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "police-box",
+        "words": {
+          "zh-TW": "派出所",
+          "en": "police box",
+          "ja": {
+            "text": "交番",
+            "reading": "こうばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "鐘塔",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細高的磚紅色方塔，塔頂尖尖的深綠色屋頂，塔身上半部有一個白色圓形鐘面和兩根黑色指針，鐘面沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "clock-tower",
+        "words": {
+          "zh-TW": "鐘塔",
+          "en": "clock tower",
+          "ja": {
+            "text": "時計台",
+            "reading": "とけいだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "雕像",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "灰色方形石台座上站著一個青銅色的人形雕像，一手舉起指向前方，整體是單一青銅色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "statue",
+        "words": {
+          "zh-TW": "雕像",
+          "en": "statue",
+          "ja": {
+            "text": "銅像",
+            "reading": "どうぞう"
+          }
+        }
+      }
+    },
+    {
+      "name": "電話亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長的直立玻璃電話亭，綠色邊框和屋頂，透過玻璃看得到裡面一台綠色的公用電話和話筒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "phone-booth",
+        "words": {
+          "zh-TW": "電話亭",
+          "en": "phone booth",
+          "ja": {
+            "text": "電話ボックス",
+            "reading": "でんわボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏車架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的銀色金屬架，一排四個倒U字形的鐵環並排固定在一條橫桿上，裡面沒有腳踏車。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "bike-rack",
+        "words": {
+          "zh-TW": "腳踏車架",
+          "en": "bike rack",
+          "ja": {
+            "text": "自転車ラック",
+            "reading": "じてんしゃラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "旗桿",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "非常細高的銀色旗桿，底部灰色圓形底座，頂端一顆小金球，桿上掛著一面沒有圖案的淺藍色長方形旗子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "flagpole",
+        "words": {
+          "zh-TW": "旗桿",
+          "en": "flagpole",
+          "ja": {
+            "text": "旗竿",
+            "reading": "はたざお"
+          }
+        }
+      }
+    },
+    {
+      "name": "安全帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色半圓形的腳踏車安全帽，側面三道黑色通風孔，下方垂著兩條黑色扣帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "helmet",
+        "words": {
+          "zh-TW": "安全帽",
+          "en": "helmet",
+          "ja": {
+            "text": "ヘルメット",
+            "reading": "ヘルメット"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面的白色小貨車：前面是藍色車頭和車窗，後面是很大的白色方形貨櫃，底下三個黑色輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "truck",
+        "words": {
+          "zh-TW": "卡車",
+          "en": "truck",
+          "ja": {
+            "text": "トラック",
+            "reading": "トラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "吉他",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺木色的木吉他，葫蘆形琴身中間一個黑色圓形音孔，長長的深棕色琴頸，頂端有小旋鈕，六條細弦。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "guitar",
+        "words": {
+          "zh-TW": "吉他",
+          "en": "guitar",
+          "ja": {
+            "text": "ギター",
+            "reading": "ギター"
+          }
+        }
+      }
+    },
+    {
+      "name": "麥克風",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "插在黑色細長腳架上的麥克風：頂端一顆銀灰色網狀圓球，下面黑色握柄，腳架底部三隻腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "microphone",
+        "words": {
+          "zh-TW": "麥克風",
+          "en": "microphone",
+          "ja": {
+            "text": "マイク",
+            "reading": "マイク"
+          }
+        }
+      }
+    },
+    {
+      "name": "人力車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面的黑色人力車：兩個很大的紅色木頭車輪，上方一張紅色坐墊座椅和折起的黑色遮篷，前方伸出兩根長長的拉桿，沒有馬也沒有人。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "rickshaw",
+        "words": {
+          "zh-TW": "人力車",
+          "en": "rickshaw",
+          "ja": {
+            "text": "人力車",
+            "reading": "じんりきしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "帳篷",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "活動用的白色方形帳篷：尖尖的紅白條紋屋頂，四根細柱子撐著，三面敞開，下面是空的。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "tent",
+        "words": {
+          "zh-TW": "帳篷",
+          "en": "tent",
+          "ja": {
+            "text": "テント",
+            "reading": "テント"
+          }
+        }
+      }
+    },
+    {
+      "name": "大聲公",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色的手持擴音器，側面看是一個越來越大的喇叭筒，後端有黑色握把和一個紅色按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "megaphone",
+        "words": {
+          "zh-TW": "大聲公",
+          "en": "megaphone",
+          "ja": {
+            "text": "メガホン",
+            "reading": "メガホン"
+          }
+        }
+      }
+    },
+    {
+      "name": "熱狗",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長條麵包夾著一根紅棕色香腸，香腸上一條彎彎曲曲的黃色芥末醬線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "hot-dog",
+        "words": {
+          "zh-TW": "熱狗",
+          "en": "hot dog",
+          "ja": {
+            "text": "ホットドッグ",
+            "reading": "ホットドッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "爆米花",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅白直條紋的紙桶，上面堆滿蓬鬆的白黃色爆米花顆粒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "popcorn",
+        "words": {
+          "zh-TW": "爆米花",
+          "en": "popcorn",
+          "ja": {
+            "text": "ポップコーン",
+            "reading": "ポップコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "棉花糖",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根細木棒上頂著一大團蓬鬆的粉紅色雲朵狀棉花糖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "plaza",
+        "itemId": "cotton-candy",
+        "words": {
+          "zh-TW": "棉花糖",
+          "en": "cotton candy",
+          "ja": {
+            "text": "綿あめ",
+            "reading": "わたあめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "售票機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的淺灰色售票機：上半部傾斜的藍色觸控螢幕，旁邊一排彩色圓按鈕，下方一個投幣孔和一個出票口，不寫任何字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "ticket-machine",
+        "words": {
+          "zh-TW": "售票機",
+          "en": "ticket machine",
+          "ja": {
+            "text": "券売機",
+            "reading": "けんばいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "手扶梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面看的手扶梯：從左下斜斜往右上的一段灰色階梯，兩側有黑色扶手帶和玻璃側板，上下兩端是平的踏板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "escalator",
+        "words": {
+          "zh-TW": "手扶梯",
+          "en": "escalator",
+          "ja": {
+            "text": "エスカレーター",
+            "reading": "エスカレーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "電梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "嵌在牆裡的銀色電梯門，兩片對開的金屬門中間一條縫，門上方一個向上和向下的三角形燈號，右側一個小按鈕面板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "elevator",
+        "words": {
+          "zh-TW": "電梯",
+          "en": "elevator",
+          "ja": {
+            "text": "エレベーター",
+            "reading": "エレベーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "海報",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直式的長方形海報，白色細邊框，畫面是藍天、綠色山和紅色太陽的風景圖，沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "poster",
+        "words": {
+          "zh-TW": "海報",
+          "en": "poster",
+          "ja": {
+            "text": "ポスター",
+            "reading": "ポスター"
+          }
+        }
+      }
+    },
+    {
+      "name": "小賣店",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "車站裡的小攤位：綠色小屋頂和條紋遮簷，前面是放滿彩色小包裝的矮櫃台，後面一排架子，不寫任何字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "kiosk",
+        "words": {
+          "zh-TW": "小賣店",
+          "en": "kiosk",
+          "ja": {
+            "text": "売店",
+            "reading": "ばいてん"
+          }
+        }
+      }
+    },
+    {
+      "name": "便當",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的長方形便當盒，裡面分格裝著白飯和一顆紅色梅子、黃色煎蛋、綠色蔬菜、一塊炸雞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "lunch-box",
+        "words": {
+          "zh-TW": "便當",
+          "en": "lunch box",
+          "ja": {
+            "text": "弁当",
+            "reading": "べんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "飯糰",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色三角形飯糰，下半部包著一片黑色長方形海苔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "rice-ball",
+        "words": {
+          "zh-TW": "飯糰",
+          "en": "rice ball",
+          "ja": {
+            "text": "おにぎり",
+            "reading": "おにぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "雜誌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "直立的長方形雜誌，封面是亮色的人像剪影和彩色色塊，右邊看得到很多頁的厚度，不寫任何字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "magazine",
+        "words": {
+          "zh-TW": "雜誌",
+          "en": "magazine",
+          "ja": {
+            "text": "雑誌",
+            "reading": "ざっし"
+          }
+        }
+      }
+    },
+    {
+      "name": "輪椅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的藍色輪椅：一個很大的灰色後輪、前面一個小輪，藍色座墊和椅背，後面兩根推把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "wheelchair",
+        "words": {
+          "zh-TW": "輪椅",
+          "en": "wheelchair",
+          "ja": {
+            "text": "車いす",
+            "reading": "くるまいす"
+          }
+        }
+      }
+    },
+    {
+      "name": "禮物盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形的紅色禮物盒，綁著黃色十字緞帶，頂端一個大蝴蝶結。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "gift-box",
+        "words": {
+          "zh-TW": "禮物盒",
+          "en": "gift",
+          "ja": {
+            "text": "プレゼント",
+            "reading": "プレゼント"
+          }
+        }
+      }
+    },
+    {
+      "name": "巧克力",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "撕開一半包裝的巧克力片：露出深棕色、有方格紋的巧克力，下半部是紅色包裝紙和銀色錫箔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "chocolate",
+        "words": {
+          "zh-TW": "巧克力",
+          "en": "chocolate",
+          "ja": {
+            "text": "チョコレート",
+            "reading": "チョコレート"
+          }
+        }
+      }
+    },
+    {
+      "name": "糖果",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆圓形糖果，兩端扭轉的透明彩色包裝紙像蝴蝶結，中間是粉紅色糖果。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "candy",
+        "words": {
+          "zh-TW": "糖果",
+          "en": "candy",
+          "ja": {
+            "text": "飴",
+            "reading": "あめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "電風扇",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立式電風扇：圓形的白色網罩裡面三片淺藍色扇葉，下面細長的立柱和圓形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "electric-fan",
+        "words": {
+          "zh-TW": "電風扇",
+          "en": "electric fan",
+          "ja": {
+            "text": "扇風機",
+            "reading": "せんぷうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "冷氣機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "掛在牆上的白色橫長方形冷氣機，下緣一排斜斜的出風口葉片，右下角一個綠色小燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "air-conditioner",
+        "words": {
+          "zh-TW": "冷氣機",
+          "en": "air conditioner",
+          "ja": {
+            "text": "エアコン",
+            "reading": "エアコン"
+          }
+        }
+      }
+    },
+    {
+      "name": "盆栽",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色圓柱形花盆裡種著一株大葉子的綠色觀葉植物，葉子寬大向四周展開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "potted-plant",
+        "words": {
+          "zh-TW": "盆栽",
+          "en": "potted plant",
+          "ja": {
+            "text": "観葉植物",
+            "reading": "かんようしょくぶつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "拖把",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長長的木色把手，下端一大團白色的布條拖把頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "mop",
+        "words": {
+          "zh-TW": "拖把",
+          "en": "mop",
+          "ja": {
+            "text": "モップ",
+            "reading": "モップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺棕色的瓦楞紙箱，上方兩片蓋子半開，中間一條淺色膠帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "cardboard-box",
+        "words": {
+          "zh-TW": "紙箱",
+          "en": "cardboard box",
+          "ja": {
+            "text": "段ボール箱",
+            "reading": "だんボールばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "明信片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橫式長方形明信片，左半邊是藍色海和白色帆船的小圖，右上角一個紅色小方塊郵票，右下幾條灰色橫線，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "postcard",
+        "words": {
+          "zh-TW": "明信片",
+          "en": "postcard",
+          "ja": {
+            "text": "はがき",
+            "reading": "はがき"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑰匙圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓形金屬環，接著一小段鏈子，下面掛著一顆黃色星星吊飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "keychain",
+        "words": {
+          "zh-TW": "鑰匙圈",
+          "en": "keychain",
+          "ja": {
+            "text": "キーホルダー",
+            "reading": "キーホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "達摩不倒翁",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓滾滾的紅色達摩娃娃，正面一塊白色臉部，兩個大大的圓眼睛和黑色粗眉毛，身上金色花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "daruma",
+        "words": {
+          "zh-TW": "達摩不倒翁",
+          "en": "daruma doll",
+          "ja": {
+            "text": "だるま",
+            "reading": "だるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺扇",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "展開成扇形的摺扇，一條條竹骨從下方同一點放射出去，扇面是淺粉色和白色的波浪紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "ticket-hall",
+        "itemId": "folding-fan",
+        "words": {
+          "zh-TW": "摺扇",
+          "en": "folding fan",
+          "ja": {
+            "text": "扇子",
+            "reading": "せんす"
+          }
+        }
+      }
+    },
+    {
+      "name": "剪票閘門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "側面看的車站剪票閘門：腰高的灰白色長方形機台，頂面前端一塊藍色感應區，中間一個小小的綠色箭頭燈，旁邊伸出兩片紅色半圓擋板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "ticket-gate",
+        "words": {
+          "zh-TW": "剪票閘門",
+          "en": "ticket gate",
+          "ja": {
+            "text": "改札機",
+            "reading": "かいさつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "監視器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形監視攝影機，前端一個黑色圓形鏡頭，用L形白色支架斜斜固定在牆上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "security-camera",
+        "words": {
+          "zh-TW": "監視器",
+          "en": "security camera",
+          "ja": {
+            "text": "防犯カメラ",
+            "reading": "ぼうはんカメラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "廣播喇叭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "掛在牆上的白色喇叭，形狀像往下斜的喇叭口，前面是深灰色網面，後面一個小支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "loudspeaker",
+        "words": {
+          "zh-TW": "廣播喇叭",
+          "en": "loudspeaker",
+          "ja": {
+            "text": "スピーカー",
+            "reading": "スピーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "出口標示",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色的長方形燈箱，中間白色剪影是一個向右奔跑的人和一扇打開的門，不寫任何字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "exit-sign",
+        "words": {
+          "zh-TW": "出口標示",
+          "en": "exit sign",
+          "ja": {
+            "text": "非常口",
+            "reading": "ひじょうぐち"
+          }
+        }
+      }
+    },
+    {
+      "name": "耳機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩顆白色小耳塞，各自連著白色細線，兩條線在下方合成一條並彎曲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "earphones",
+        "words": {
+          "zh-TW": "耳機",
+          "en": "earphones",
+          "ja": {
+            "text": "イヤホン",
+            "reading": "イヤホン"
+          }
+        }
+      }
+    },
+    {
+      "name": "面紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小包扁長方形的口袋面紙，透明包裝裡是白色紙巾，上方開口露出一角面紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "tissues",
+        "words": {
+          "zh-TW": "面紙",
+          "en": "tissues",
+          "ja": {
+            "text": "ティッシュ",
+            "reading": "ティッシュ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙紅色的針織手套，五根手指分開，手腕處有白色條紋羅紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "gloves",
+        "words": {
+          "zh-TW": "手套",
+          "en": "gloves",
+          "ja": {
+            "text": "手袋",
+            "reading": "てぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "交通卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓角長方形的淺綠色卡片，正面一個金色小方形晶片圖案和幾條彎曲的白色波浪線，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "transit-card",
+        "words": {
+          "zh-TW": "交通卡",
+          "en": "transit card",
+          "ja": {
+            "text": "ICカード",
+            "reading": "アイシーカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "眼鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "正面看的眼鏡：兩個黑色粗框的圓角方形鏡片，中間一個鼻橋，鏡片是淡淡的透明藍色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "glasses",
+        "words": {
+          "zh-TW": "眼鏡",
+          "en": "glasses",
+          "ja": {
+            "text": "眼鏡",
+            "reading": "めがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "手錶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支手錶：圓形銀色錶面，兩根黑色指針，錶面沒有數字，上下連著棕色皮革錶帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "watch",
+        "words": {
+          "zh-TW": "手錶",
+          "en": "watch",
+          "ja": {
+            "text": "腕時計",
+            "reading": "うでどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙黃色高筒雨鞋，側面看，鞋筒很高，鞋底黑色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "rain-boots",
+        "words": {
+          "zh-TW": "雨鞋",
+          "en": "rain boots",
+          "ja": {
+            "text": "長靴",
+            "reading": "ながぐつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "運動鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一隻側面的白色運動鞋，藍色鞋帶交叉，側面一道藍色弧線，白色厚鞋底。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "sneakers",
+        "words": {
+          "zh-TW": "運動鞋",
+          "en": "sneakers",
+          "ja": {
+            "text": "スニーカー",
+            "reading": "スニーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆記型電腦",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的銀色筆記型電腦，上半部藍色螢幕，下半部灰色鍵盤格子和觸控板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "laptop",
+        "words": {
+          "zh-TW": "筆記型電腦",
+          "en": "laptop",
+          "ja": {
+            "text": "ノートパソコン",
+            "reading": "ノートパソコン"
+          }
+        }
+      }
+    },
+    {
+      "name": "公事包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深棕色的長方形公事包，上方一個提把，正面兩個金色小扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "briefcase",
+        "words": {
+          "zh-TW": "公事包",
+          "en": "briefcase",
+          "ja": {
+            "text": "ブリーフケース",
+            "reading": "ブリーフケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "領帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條深藍色領帶，上方一個小三角形領結，往下變寬、尾端尖，上面斜斜的紅色細條紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "gates",
+        "itemId": "necktie",
+        "words": {
+          "zh-TW": "領帶",
+          "en": "necktie",
+          "ja": {
+            "text": "ネクタイ",
+            "reading": "ネクタイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "火車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面的通勤電車車廂：銀色方形車身，一條綠色橫帶，一排方形窗戶和兩扇雙開車門，車頂一個菱形集電弓，底下黑色輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "train",
+        "words": {
+          "zh-TW": "火車",
+          "en": "train",
+          "ja": {
+            "text": "電車",
+            "reading": "でんしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "新幹線",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "側面的白色新幹線車頭：前端又長又尖的流線型鼻子，一條藍色細線沿著車身，一排小窗戶，底下黑色輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "bullet-train",
+        "words": {
+          "zh-TW": "新幹線",
+          "en": "bullet train",
+          "ja": {
+            "text": "新幹線",
+            "reading": "しんかんせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "哨子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色金屬哨子，一端圓鼓鼓，另一端細長吹嘴，上方一個小孔，掛著一條紅色短繩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "whistle",
+        "words": {
+          "zh-TW": "哨子",
+          "en": "whistle",
+          "ja": {
+            "text": "笛",
+            "reading": "ふえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圍巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條紅綠格子紋的長圍巾，鬆鬆地折成一團，兩端有流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "scarf",
+        "words": {
+          "zh-TW": "圍巾",
+          "en": "scarf",
+          "ja": {
+            "text": "マフラー",
+            "reading": "マフラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鴨舌帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "側面看的藍色棒球帽，圓頂加上往前伸的帽簷，頂端一顆小鈕扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "cap",
+        "words": {
+          "zh-TW": "鴨舌帽",
+          "en": "cap",
+          "ja": {
+            "text": "帽子",
+            "reading": "ぼうし"
+          }
+        }
+      }
+    },
+    {
+      "name": "手帕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "折成方形的淺藍色手帕，四邊白色細邊，角落一朵小花圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "handkerchief",
+        "words": {
+          "zh-TW": "手帕",
+          "en": "handkerchief",
+          "ja": {
+            "text": "ハンカチ",
+            "reading": "ハンカチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "掃把",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長長的木色把手，下端一把展開成扇形的黃色掃帚毛，用紅繩綁住。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "broom",
+        "words": {
+          "zh-TW": "掃把",
+          "en": "broom",
+          "ja": {
+            "text": "ほうき",
+            "reading": "ほうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "畚箕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色塑膠畚箕：平平的鏟面加上兩側矮邊，後面一根短握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "dustpan",
+        "words": {
+          "zh-TW": "畚箕",
+          "en": "dustpan",
+          "ja": {
+            "text": "ちりとり",
+            "reading": "ちりとり"
+          }
+        }
+      }
+    },
+    {
+      "name": "手提包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "粉紅色的梯形手提包，上方一個彎彎的提把，正面一個金色扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "handbag",
+        "words": {
+          "zh-TW": "手提包",
+          "en": "handbag",
+          "ja": {
+            "text": "ハンドバッグ",
+            "reading": "ハンドバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "口罩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形的口罩，表面三道橫向褶痕，左右兩側各一條白色耳掛繩圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "face-mask",
+        "words": {
+          "zh-TW": "口罩",
+          "en": "face mask",
+          "ja": {
+            "text": "マスク",
+            "reading": "マスク"
+          }
+        }
+      }
+    },
+    {
+      "name": "緊急按鈕",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色方形小盒子，中間一顆很大的紅色圓形按鈕，固定在一根灰色柱子上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "emergency-button",
+        "words": {
+          "zh-TW": "緊急按鈕",
+          "en": "emergency button",
+          "ja": {
+            "text": "非常ボタン",
+            "reading": "ひじょうボタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "泡麵",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓筒形紙杯，杯身一條紅色寬帶，上面撕開一半的銀色蓋子露出黃色捲曲麵條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "cup-noodles",
+        "words": {
+          "zh-TW": "泡麵",
+          "en": "cup noodles",
+          "ja": {
+            "text": "カップ麺",
+            "reading": "カップめん"
+          }
+        }
+      }
+    },
+    {
+      "name": "泰迪熊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "坐著的淺棕色絨毛熊玩偶：圓圓的頭、兩個圓耳朵、黑色鈕扣眼睛，脖子上一個紅色蝴蝶結。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "teddy-bear",
+        "words": {
+          "zh-TW": "泰迪熊",
+          "en": "teddy bear",
+          "ja": {
+            "text": "クマのぬいぐるみ",
+            "reading": "くまのぬいぐるみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "溜溜球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "側面看的圓形溜溜球，兩片紅色圓盤中間一條縫，上方連著一條白色細繩和手指圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "yo-yo",
+        "words": {
+          "zh-TW": "溜溜球",
+          "en": "yo-yo",
+          "ja": {
+            "text": "ヨーヨー",
+            "reading": "ヨーヨー"
+          }
+        }
+      }
+    },
+    {
+      "name": "外套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "正面攤開的駝色長大衣，雙排扣子，兩個口袋，衣領翻開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "coat",
+        "words": {
+          "zh-TW": "外套",
+          "en": "coat",
+          "ja": {
+            "text": "コート",
+            "reading": "コート"
+          }
+        }
+      }
+    },
+    {
+      "name": "鈴鐺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色的手搖鈴，鐘形的鈴身，上方一根黑色木頭握柄，下緣露出一顆小鈴錘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "bell",
+        "words": {
+          "zh-TW": "鈴鐺",
+          "en": "bell",
+          "ja": {
+            "text": "ベル",
+            "reading": "ベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "手電筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色圓柱形手電筒，前端較寬，燈頭射出一道淡黃色的扇形光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "flashlight",
+        "words": {
+          "zh-TW": "手電筒",
+          "en": "flashlight",
+          "ja": {
+            "text": "懐中電灯",
+            "reading": "かいちゅうでんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "對講機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色直立長方形對講機，上方一根粗短的天線，正面一塊小螢幕和一格一格的喇叭孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "walkie-talkie",
+        "words": {
+          "zh-TW": "對講機",
+          "en": "walkie-talkie",
+          "ja": {
+            "text": "トランシーバー",
+            "reading": "トランシーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "站務員",
+      "category": "人物",
+      "lane": "a",
+      "sizeHint": "medium",
+      "desc": "穿深藍色制服、戴帽子的站務員，正面站姿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "station",
+        "zone": "platform",
+        "itemId": "station-attendant",
+        "words": {
+          "zh-TW": "站務員",
+          "en": "station attendant",
+          "ja": {
+            "text": "駅員",
+            "reading": "えきいん"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -54,5 +54,19 @@
       ],
       "body": "<rect x=\"8\" y=\"16\" width=\"12\" height=\"6\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"22\" x2=\"26\" y2=\"34\" stroke=\"#37474f\" stroke-width=\"3\"/><polygon points=\"24,34 74,34 68,78 30,78\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><path d=\"M34 38V74 M46 38V74 M58 38V74 M70 38V74 M27 50H72 M28 62H70\" fill=\"none\" stroke=\"#90a4ae\" stroke-width=\"1.5\"/><circle cx=\"28\" cy=\"96\" r=\"4\" fill=\"#37474f\"/><circle cx=\"42\" cy=\"96\" r=\"4\" fill=\"#37474f\"/><circle cx=\"58\" cy=\"96\" r=\"4\" fill=\"#37474f\"/><circle cx=\"70\" cy=\"96\" r=\"4\" fill=\"#37474f\"/>"
     }
+  },
+  {
+    "id": "station",
+    "name": "車站",
+    "itemCount": 67,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        180,
+        120
+      ],
+      "body": "<polygon points=\"70,28 90,8 110,28\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"90\" y1=\"8\" x2=\"90\" y2=\"28\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"5\" y=\"27\" width=\"170\" height=\"72\" rx=\"3\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"6\" y=\"48\" width=\"168\" height=\"12\" fill=\"#43a047\"/><rect x=\"14\" y=\"34\" width=\"23\" height=\"20\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"34\" width=\"23\" height=\"20\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"70\" y=\"34\" width=\"23\" height=\"20\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"98\" y=\"34\" width=\"23\" height=\"20\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"132\" y=\"34\" width=\"16\" height=\"58\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"34\" x2=\"140\" y2=\"92\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"152\" y=\"34\" width=\"16\" height=\"58\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"92\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"105\" r=\"10\" fill=\"#37474f\"/><circle cx=\"142\" cy=\"105\" r=\"10\" fill=\"#37474f\"/><rect x=\"8\" y=\"28\" width=\"165\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
+    }
   }
 ]
