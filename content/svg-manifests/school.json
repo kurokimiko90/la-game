@@ -1,0 +1,1483 @@
+{
+  "sceneName": "語言小鎮・學校",
+  "sceneSlug": "la-school",
+  "propStyle": "front-flat",
+  "zones": {
+    "school-gate": "校門口",
+    "school-yard": "校園廣場",
+    "classroom": "教室",
+    "library": "圖書館"
+  },
+  "elements": [
+    {
+      "name": "防撞柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "短粗的圓柱形防撞柱，表面是醒目的黃色，底部固定在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "bollard",
+        "words": {
+          "zh-TW": "防撞柱",
+          "en": "bollard",
+          "ja": {
+            "text": "車止め",
+            "reading": "くるまどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "減速丘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橫跨車道的低矮隆起，呈長條形，表面有黑黃相間的醒目條紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "speed-bump",
+        "words": {
+          "zh-TW": "減速丘",
+          "en": "speed bump",
+          "ja": {
+            "text": "減速帯",
+            "reading": "げんそくたい"
+          }
+        }
+      }
+    },
+    {
+      "name": "路緣",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "道路邊緣整齊的長條石塊，灰色平直，分隔車道與人行區域。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "curb",
+        "words": {
+          "zh-TW": "路緣",
+          "en": "curb",
+          "ja": {
+            "text": "縁石",
+            "reading": "えんせき"
+          }
+        }
+      }
+    },
+    {
+      "name": "排水格柵",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "嵌在地面的長方形金屬格柵，深灰色，表面有平行細縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "drainage-grate",
+        "words": {
+          "zh-TW": "排水格柵",
+          "en": "drainage grate",
+          "ja": {
+            "text": "排水溝のふた",
+            "reading": "はいすいこうのふた"
+          }
+        }
+      }
+    },
+    {
+      "name": "柵欄桿",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "從路旁機座伸出的細長橫桿，白色帶紅色條紋，可上下抬起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "barrier-arm",
+        "words": {
+          "zh-TW": "柵欄桿",
+          "en": "barrier arm",
+          "ja": {
+            "text": "遮断棒",
+            "reading": "しゃだんぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "鉛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的黃色木製筆桿，一端尖尖的，另一端有粉紅色橡皮擦。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "pencil",
+        "words": {
+          "zh-TW": "鉛筆",
+          "en": "pencil",
+          "ja": {
+            "text": "鉛筆",
+            "reading": "えんぴつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡皮擦",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的白色長方體橡皮擦，表面平滑，邊角略微圓鈍。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "eraser",
+        "words": {
+          "zh-TW": "橡皮擦",
+          "en": "eraser",
+          "ja": {
+            "text": "消しゴム",
+            "reading": "けしごむ"
+          }
+        }
+      }
+    },
+    {
+      "name": "尺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明的直尺，呈淡藍色，邊緣筆直，表面沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "ruler",
+        "words": {
+          "zh-TW": "尺",
+          "en": "ruler",
+          "ja": {
+            "text": "定規",
+            "reading": "じょうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鉛筆盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形的藍色布製鉛筆盒，頂部有拉鍊，外形柔軟略鼓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "pencil-case",
+        "words": {
+          "zh-TW": "鉛筆盒",
+          "en": "pencil case",
+          "ja": {
+            "text": "筆箱",
+            "reading": "ふでばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蠟筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的紅色蠟筆，兩端圓鈍，一端露出蠟質筆尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "crayon",
+        "words": {
+          "zh-TW": "蠟筆",
+          "en": "crayon",
+          "ja": {
+            "text": "クレヨン",
+            "reading": "クレヨン"
+          }
+        }
+      }
+    },
+    {
+      "name": "口紅膠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短小的圓柱形膠棒，白色棒身配藍色旋轉底座，頂部有小蓋子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "glue-stick",
+        "words": {
+          "zh-TW": "口紅膠",
+          "en": "glue stick",
+          "ja": {
+            "text": "スティックのり",
+            "reading": "スティックのり"
+          }
+        }
+      }
+    },
+    {
+      "name": "剪刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型剪刀有兩個圓形握孔，金屬刀刃交叉，握柄呈鮮紅色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "scissors",
+        "words": {
+          "zh-TW": "剪刀",
+          "en": "scissors",
+          "ja": {
+            "text": "はさみ",
+            "reading": "はさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "摺疊後的黃色防水雨衣，帽子與袖子收在一起，表面有明顯皺褶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "raincoat",
+        "words": {
+          "zh-TW": "雨衣",
+          "en": "raincoat",
+          "ja": {
+            "text": "レインコート",
+            "reading": "レインコート"
+          }
+        }
+      }
+    },
+    {
+      "name": "便鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只黑色低跟皮鞋，鞋面平滑，前端圓潤，開口處有寬鞋舌。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "loafer",
+        "words": {
+          "zh-TW": "便鞋",
+          "en": "loafer",
+          "ja": {
+            "text": "ローファー",
+            "reading": "ローファー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鬱金香",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長綠莖頂端開著紅色杯狀花朵，花瓣向上聚攏，姿態清楚醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "tulip",
+        "words": {
+          "zh-TW": "鬱金香",
+          "en": "tulip",
+          "ja": {
+            "text": "チューリップ",
+            "reading": "チューリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雛菊",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短綠莖頂端是一圈白色細花瓣，中央有圓圓的黃色花心。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "daisy",
+        "words": {
+          "zh-TW": "雛菊",
+          "en": "daisy",
+          "ja": {
+            "text": "ひなぎく",
+            "reading": "ひなぎく"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡實",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的褐色橢圓果實，頂端戴著粗糙的杯狀帽，常可單獨落在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "acorn",
+        "words": {
+          "zh-TW": "橡實",
+          "en": "acorn",
+          "ja": {
+            "text": "どんぐり",
+            "reading": "どんぐり"
+          }
+        }
+      }
+    },
+    {
+      "name": "細樹枝",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長彎曲的褐色樹枝，表面粗糙，末端分出兩個短小枝杈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-gate",
+        "itemId": "twig",
+        "words": {
+          "zh-TW": "細樹枝",
+          "en": "twig",
+          "ja": {
+            "text": "小枝",
+            "reading": "こえだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "籃球框",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "橘色圓形籃框固定在透明籃板下方，立在高高的金屬支架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "hoop",
+        "words": {
+          "zh-TW": "籃球框",
+          "en": "hoop",
+          "ja": {
+            "text": "バスケットゴール",
+            "reading": "バスケットゴール"
+          }
+        }
+      }
+    },
+    {
+      "name": "足球門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色金屬框架連著白色球網，呈現寬大的矩形門洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "soccer-goal",
+        "words": {
+          "zh-TW": "足球門",
+          "en": "soccer goal",
+          "ja": {
+            "text": "サッカーゴール",
+            "reading": "サッカーゴール"
+          }
+        }
+      }
+    },
+    {
+      "name": "網球拍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橢圓形網面連著細長握柄，框架呈鮮明的紅色與白色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "tennis-racket",
+        "words": {
+          "zh-TW": "網球拍",
+          "en": "tennis racket",
+          "ja": {
+            "text": "テニスラケット",
+            "reading": "テニスラケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "羽球拍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細小橢圓拍框繃著密集網面，下方接著纖細長柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "badminton-racket",
+        "words": {
+          "zh-TW": "羽球拍",
+          "en": "badminton racket",
+          "ja": {
+            "text": "バドミントンラケット",
+            "reading": "バドミントンラケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "飛盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平圓盤呈鮮黃色，邊緣略微向上彎起，表面平滑醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "frisbee",
+        "words": {
+          "zh-TW": "飛盤",
+          "en": "frisbee",
+          "ja": {
+            "text": "フリスビー",
+            "reading": "フリスビー"
+          }
+        }
+      }
+    },
+    {
+      "name": "棒球棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的棕色木棒一端較粗，另一端有短短的握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "baseball-bat",
+        "words": {
+          "zh-TW": "棒球棒",
+          "en": "baseball bat",
+          "ja": {
+            "text": "野球バット",
+            "reading": "やきゅうバット"
+          }
+        }
+      }
+    },
+    {
+      "name": "棒球手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色皮革手套張開成大凹袋，邊緣有明顯縫線與指套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "baseball-glove",
+        "words": {
+          "zh-TW": "棒球手套",
+          "en": "baseball glove",
+          "ja": {
+            "text": "野球グローブ",
+            "reading": "やきゅうグローブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "粉筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的白色圓柱體，兩端平整，表面帶有粉末質感。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "chalk",
+        "words": {
+          "zh-TW": "粉筆",
+          "en": "chalk",
+          "ja": {
+            "text": "チョーク",
+            "reading": "チョーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "夾板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形硬板上方有大型金屬夾，板面平整且呈淺棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "clipboard",
+        "words": {
+          "zh-TW": "夾板",
+          "en": "clipboard",
+          "ja": {
+            "text": "クリップボード",
+            "reading": "クリップボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "灑水器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮小圓形裝置伸出短短噴頭，金屬表面呈銀灰色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "sprinkler",
+        "words": {
+          "zh-TW": "灑水器",
+          "en": "sprinkler",
+          "ja": {
+            "text": "スプリンクラー",
+            "reading": "スプリンクラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "水管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "綠色長軟管盤成鬆散圓圈，一端接著小型噴頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "hose",
+        "words": {
+          "zh-TW": "水管",
+          "en": "hose",
+          "ja": {
+            "text": "ホース",
+            "reading": "ホース"
+          }
+        }
+      }
+    },
+    {
+      "name": "松果",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色橢圓形果實由一片片硬鱗片交疊組成，底部較寬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "pine-cone",
+        "words": {
+          "zh-TW": "松果",
+          "en": "pine cone",
+          "ja": {
+            "text": "松ぼっくり",
+            "reading": "まつぼっくり"
+          }
+        }
+      }
+    },
+    {
+      "name": "葉子",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "單片綠色葉子呈尖橢圓形，中間有清楚的細長葉脈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "leaf",
+        "words": {
+          "zh-TW": "葉子",
+          "en": "leaf",
+          "ja": {
+            "text": "葉っぱ",
+            "reading": "はっぱ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蒲公英",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮綠葉中央伸出細莖，頂端開著蓬鬆的黃色圓花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "dandelion",
+        "words": {
+          "zh-TW": "蒲公英",
+          "en": "dandelion",
+          "ja": {
+            "text": "タンポポ",
+            "reading": "タンポポ"
+          }
+        }
+      }
+    },
+    {
+      "name": "三葉草",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細短莖上長著成組的圓潤綠葉，中央可見小小白花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "clover",
+        "words": {
+          "zh-TW": "三葉草",
+          "en": "clover",
+          "ja": {
+            "text": "クローバー",
+            "reading": "クローバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘑菇",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓傘下方接著短白莖，傘面散布幾個白色斑點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "mushroom",
+        "words": {
+          "zh-TW": "蘑菇",
+          "en": "mushroom",
+          "ja": {
+            "text": "きのこ",
+            "reading": "きのこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鼓",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓筒形鼓身呈棕色，兩端覆著白色鼓面並繫有深色帶子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "drum",
+        "words": {
+          "zh-TW": "鼓",
+          "en": "drum",
+          "ja": {
+            "text": "太鼓",
+            "reading": "たいこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色塑膠袋綁成鼓起的袋口，袋身圓鼓柔軟，歪倒在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "school-yard",
+        "itemId": "garbage-bag",
+        "words": {
+          "zh-TW": "垃圾袋",
+          "en": "garbage bag",
+          "ja": {
+            "text": "ごみ袋",
+            "reading": "ごみぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "投影幕",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "牆上一大片白色矩形幕面，上方有細長捲軸，邊緣平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "projection-screen",
+        "words": {
+          "zh-TW": "投影幕",
+          "en": "projection screen",
+          "ja": {
+            "text": "スクリーン",
+            "reading": "スクリーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "投影機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色方盒形機器，前端有圓形黑色鏡頭，側面有散熱孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "projector",
+        "words": {
+          "zh-TW": "投影機",
+          "en": "projector",
+          "ja": {
+            "text": "プロジェクター",
+            "reading": "プロジェクター"
+          }
+        }
+      }
+    },
+    {
+      "name": "電腦螢幕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色矩形螢幕立在底座上，正面是平整深色畫面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "computer-monitor",
+        "words": {
+          "zh-TW": "電腦螢幕",
+          "en": "computer monitor",
+          "ja": {
+            "text": "モニター",
+            "reading": "モニター"
+          }
+        }
+      }
+    },
+    {
+      "name": "鍵盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平長方形黑色鍵盤，表面整齊排列許多淺色按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "keyboard",
+        "words": {
+          "zh-TW": "鍵盤",
+          "en": "keyboard",
+          "ja": {
+            "text": "キーボード",
+            "reading": "キーボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "電腦滑鼠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧圓滑的黑色滑鼠，前端連著一條細長電線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "computer-mouse",
+        "words": {
+          "zh-TW": "電腦滑鼠",
+          "en": "computer mouse",
+          "ja": {
+            "text": "マウス",
+            "reading": "マウス"
+          }
+        }
+      }
+    },
+    {
+      "name": "削鉛筆機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型彩色盒子，側面有圓孔，底部接著透明集屑盒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "pencil-sharpener",
+        "words": {
+          "zh-TW": "削鉛筆機",
+          "en": "pencil sharpener",
+          "ja": {
+            "text": "鉛筆削り",
+            "reading": "えんぴつけずり"
+          }
+        }
+      }
+    },
+    {
+      "name": "麥克筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支粗短彩色筆，兩端有圓頭筆蓋，外形簡單醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "marker",
+        "words": {
+          "zh-TW": "麥克筆",
+          "en": "marker",
+          "ja": {
+            "text": "マーカー",
+            "reading": "マーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "畫筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長木柄畫筆，前端有一束尖尖的棕色刷毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "paintbrush",
+        "words": {
+          "zh-TW": "畫筆",
+          "en": "paintbrush",
+          "ja": {
+            "text": "絵筆",
+            "reading": "えふで"
+          }
+        }
+      }
+    },
+    {
+      "name": "調色盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色扁平橢圓盤，周圍有數個圓形凹槽和拇指孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "paint-palette",
+        "words": {
+          "zh-TW": "調色盤",
+          "en": "paint palette",
+          "ja": {
+            "text": "パレット",
+            "reading": "パレット"
+          }
+        }
+      }
+    },
+    {
+      "name": "訂書機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型黑色長方形訂書機，上蓋向前延伸，底部平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "stapler",
+        "words": {
+          "zh-TW": "訂書機",
+          "en": "stapler",
+          "ja": {
+            "text": "ホッチキス",
+            "reading": "ホッチキス"
+          }
+        }
+      }
+    },
+    {
+      "name": "膠帶台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚重底座上裝著透明膠帶圓盤，前端有鋸齒切口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "tape-dispenser",
+        "words": {
+          "zh-TW": "膠帶台",
+          "en": "tape dispenser",
+          "ja": {
+            "text": "テープカッター",
+            "reading": "テープカッター"
+          }
+        }
+      }
+    },
+    {
+      "name": "放大鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形透明鏡片接著短柄，外框和握柄都是深色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "magnifying-glass",
+        "words": {
+          "zh-TW": "放大鏡",
+          "en": "magnifying glass",
+          "ja": {
+            "text": "虫眼鏡",
+            "reading": "むしめがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "圓規",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩根細長金屬腳從頂端張開，一端尖銳，另一端夾著筆芯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "compass",
+        "words": {
+          "zh-TW": "圓規",
+          "en": "compass",
+          "ja": {
+            "text": "コンパス",
+            "reading": "コンパス"
+          }
+        }
+      }
+    },
+    {
+      "name": "顯微鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色底座上立著彎曲支架，頂端有目鏡，下方有圓形載物台。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "microscope",
+        "words": {
+          "zh-TW": "顯微鏡",
+          "en": "microscope",
+          "ja": {
+            "text": "顕微鏡",
+            "reading": "けんびきょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "地球儀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍綠相間的圓球固定在弧形支架上，底部有圓形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "globe",
+        "words": {
+          "zh-TW": "地球儀",
+          "en": "globe",
+          "ja": {
+            "text": "地球儀",
+            "reading": "ちきゅうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙張",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張平整的白色矩形紙，四角分明，表面沒有任何圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "paper",
+        "words": {
+          "zh-TW": "紙張",
+          "en": "paper",
+          "ja": {
+            "text": "紙",
+            "reading": "かみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "白板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色長方形板面，四周有灰色邊框，下方帶細長置物槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "classroom",
+        "itemId": "whiteboard",
+        "words": {
+          "zh-TW": "白板",
+          "en": "whiteboard",
+          "ja": {
+            "text": "ホワイトボード",
+            "reading": "ホワイトボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "檯燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓柱底座上伸出彎曲燈臂，頂端有朝下的半圓形燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "desk-lamp",
+        "words": {
+          "zh-TW": "檯燈",
+          "en": "desk lamp",
+          "ja": {
+            "text": "デスクライト",
+            "reading": "ですくらいと"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆記本",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一本小巧的矩形硬皮本，封面呈藍色，邊角平整，沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "notebook",
+        "words": {
+          "zh-TW": "筆記本",
+          "en": "notebook",
+          "ja": {
+            "text": "ノート",
+            "reading": "のーと"
+          }
+        }
+      }
+    },
+    {
+      "name": "原子筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的藍色筆身配銀色筆尖與筆夾，斜斜躺在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "pen",
+        "words": {
+          "zh-TW": "原子筆",
+          "en": "pen",
+          "ja": {
+            "text": "ボールペン",
+            "reading": "ぼーるぺん"
+          }
+        }
+      }
+    },
+    {
+      "name": "資料夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個扁平的長方形硬紙夾，呈黃色，中央有明顯的折線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "folder",
+        "words": {
+          "zh-TW": "資料夾",
+          "en": "folder",
+          "ja": {
+            "text": "ファイル",
+            "reading": "ふぁいる"
+          }
+        }
+      }
+    },
+    {
+      "name": "信封",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形紙封套，背面有三角形折口，邊緣整齊俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "envelope",
+        "words": {
+          "zh-TW": "信封",
+          "en": "envelope",
+          "ja": {
+            "text": "封筒",
+            "reading": "ふうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條細長的紅色紙帶，頂端有小圓孔和短穗，平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "bookmark",
+        "words": {
+          "zh-TW": "書籤",
+          "en": "bookmark",
+          "ja": {
+            "text": "しおり",
+            "reading": "しおり"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙漏",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "上下兩個透明圓肚由細腰相連，底部有深色方形支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "hourglass",
+        "words": {
+          "zh-TW": "沙漏",
+          "en": "hourglass",
+          "ja": {
+            "text": "砂時計",
+            "reading": "すなどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "收音機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色長方形機身，前方有圓形旋鈕和一大片格狀喇叭面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "radio",
+        "words": {
+          "zh-TW": "收音機",
+          "en": "radio",
+          "ja": {
+            "text": "ラジオ",
+            "reading": "らじお"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡式錄音帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色扁平透明盒，中央可見兩個白色圓形捲軸，外框呈長方形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "cassette-tape",
+        "words": {
+          "zh-TW": "卡式錄音帶",
+          "en": "cassette tape",
+          "ja": {
+            "text": "カセットテープ",
+            "reading": "かせっとてーぷ"
+          }
+        }
+      }
+    },
+    {
+      "name": "黑膠唱片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片黑色圓形薄片，中央有小圓孔，表面排列細密同心圓紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "vinyl-record",
+        "words": {
+          "zh-TW": "黑膠唱片",
+          "en": "vinyl record",
+          "ja": {
+            "text": "レコード",
+            "reading": "れこーど"
+          }
+        }
+      }
+    },
+    {
+      "name": "打字機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色厚重機身，上方有弧形紙架，下方排列許多圓形按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "typewriter",
+        "words": {
+          "zh-TW": "打字機",
+          "en": "typewriter",
+          "ja": {
+            "text": "タイプライター",
+            "reading": "たいぷらいたー"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡皮筋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾條黃色細橡膠圈互相套疊，鬆散地彎曲躺在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "rubber-band",
+        "words": {
+          "zh-TW": "橡皮筋",
+          "en": "rubber band",
+          "ja": {
+            "text": "輪ゴム",
+            "reading": "わごむ"
+          }
+        }
+      }
+    },
+    {
+      "name": "講台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色木製斜面台面立在單根支柱上，底部有寬大的穩定底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "lectern",
+        "words": {
+          "zh-TW": "講台",
+          "en": "lectern",
+          "ja": {
+            "text": "講演台",
+            "reading": "こうえんだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小型木架有斜斜的托板和兩側擋條，呈暖棕色，正面平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "reading-stand",
+        "words": {
+          "zh-TW": "閱讀架",
+          "en": "reading stand",
+          "ja": {
+            "text": "読書台",
+            "reading": "どくしょだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "花瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍白相間的細口陶製容器，瓶身圓鼓，底部寬而穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "vase",
+        "words": {
+          "zh-TW": "花瓶",
+          "en": "vase",
+          "ja": {
+            "text": "花瓶",
+            "reading": "かびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "印表機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色長方形機器，前方有深色出紙口，上蓋微微向上隆起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "printer",
+        "words": {
+          "zh-TW": "印表機",
+          "en": "printer",
+          "ja": {
+            "text": "プリンター",
+            "reading": "ぷりんたー"
+          }
+        }
+      }
+    },
+    {
+      "name": "書擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金屬製三角形書擋，底部平穩，側面有圓孔裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "school",
+        "zone": "library",
+        "itemId": "bookend",
+        "words": {
+          "zh-TW": "書擋",
+          "en": "bookend",
+          "ja": {
+            "text": "ブックエンド",
+            "reading": "ブックエンド"
+          }
+        }
+      }
+    }
+  ]
+}

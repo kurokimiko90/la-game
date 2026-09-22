@@ -82,5 +82,19 @@
       ],
       "body": "<rect x=\"5\" y=\"24\" width=\"150\" height=\"8\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"5\" y=\"65\" width=\"150\" height=\"8\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"100\" stroke=\"#37474f\" stroke-width=\"6\"/><line x1=\"38\" y1=\"18\" x2=\"38\" y2=\"100\" stroke=\"#37474f\" stroke-width=\"6\"/><line x1=\"64\" y1=\"18\" x2=\"64\" y2=\"100\" stroke=\"#37474f\" stroke-width=\"6\"/><line x1=\"90\" y1=\"18\" x2=\"90\" y2=\"100\" stroke=\"#37474f\" stroke-width=\"6\"/><line x1=\"116\" y1=\"18\" x2=\"116\" y2=\"100\" stroke=\"#37474f\" stroke-width=\"6\"/><line x1=\"142\" y1=\"18\" x2=\"142\" y2=\"100\" stroke=\"#37474f\" stroke-width=\"6\"/>"
     }
+  },
+  {
+    "id": "school",
+    "name": "學校",
+    "itemCount": 70,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        160,
+        100
+      ],
+      "body": "<rect x=\"14\" y=\"88\" width=\"34\" height=\"12\" rx=\"2\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"25\" y=\"54\" width=\"12\" height=\"36\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"31,48 145,16 149,30 35,62\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"57,41 69,38 73,52 61,55\" fill=\"#e57373\"/><polygon points=\"94,31 106,27 110,41 98,45\" fill=\"#e57373\"/><polygon points=\"131,21 143,18 147,31 135,34\" fill=\"#e57373\"/><rect x=\"31\" y=\"48\" width=\"114\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
+    }
   }
 ]

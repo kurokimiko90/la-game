@@ -1,6 +1,6 @@
 {
   "world": {"width": 6200, "height": 3900},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -186,6 +186,60 @@
       "noFlip": [],
       "motion": {"delivery-van": "wobble", "fern": "sway", "rose": "sway", "curtain": "sway"},
       "terrain": {"color": "#80cbc4", "x0": 3600, "y0": 0, "x1": 6200, "y1": 1300, "zones": [{"id": "entrance", "x0": 3600, "y0": 0, "x1": 4900, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "dining-hall", "x0": 4900, "y0": 0, "x1": 6200, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "open-kitchen", "x0": 4900, "y0": 650, "x1": 6200, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}, {"id": "dessert-stand", "x0": 3600, "y0": 650, "x1": 4900, "y1": 1300, "indoor": false, "floor": "concrete"}]}
+    },
+    "school": {
+      "name": "學校",
+      "icon": "barrier-arm",
+      "zones": {"school-gate": [3600, 1300, 4900, 1950], "school-yard": [4900, 1300, 6200, 1950], "classroom": [4900, 1950, 6200, 2600], "library": [3600, 1950, 4900, 2600]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"school-gate": {"top": 1370, "bottom": 1745}, "school-yard": {"top": 1370, "bottom": 1930}, "classroom": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2360]]}, "library": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2455]]}}},
+        "sky-school-gate": {"top": 1450, "bottom": 1600, "zones": ["school-gate"], "layer": 3, "float": 150},
+        "road-school-gate": {"top": 1830, "bottom": 1900, "zones": ["school-gate"], "inset": 20},
+        "sky-school-yard": {"top": 1450, "bottom": 1600, "zones": ["school-yard"], "layer": 3, "float": 150},
+        "wall-classroom": {"levels": [2090], "zones": ["classroom"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-classroom": {"levels": [2128], "zones": ["classroom"], "inset": 50},
+        "surface-classroom": {"levels": [2260], "zones": ["classroom"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 2330},
+        "wall-library": {"levels": [2090], "zones": ["library"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-library": {"levels": [2128], "zones": ["library"], "inset": 50},
+        "surface-library": {"levels": [2260, 2355], "zones": ["library"], "x0": 3750, "x1": 4750, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2425}
+      },
+      "place": {
+        "projection-screen": "wall-classroom",
+        "projector": "surface-classroom",
+        "computer-monitor": "surface-classroom",
+        "keyboard": "surface-classroom",
+        "computer-mouse": "surface-classroom",
+        "pencil-sharpener": "surface-classroom",
+        "marker": "surface-classroom",
+        "paintbrush": "surface-classroom",
+        "paint-palette": "surface-classroom",
+        "stapler": "surface-classroom",
+        "tape-dispenser": "surface-classroom",
+        "magnifying-glass": "surface-classroom",
+        "compass": "surface-classroom",
+        "microscope": "surface-classroom",
+        "globe": "surface-classroom",
+        "paper": "surface-classroom",
+        "whiteboard": "wall-classroom",
+        "desk-lamp": "surface-library",
+        "notebook": "surface-library",
+        "folder": "surface-library",
+        "envelope": "surface-library",
+        "hourglass": "surface-library",
+        "radio": "surface-library",
+        "cassette-tape": "surface-library",
+        "vinyl-record": "surface-library",
+        "typewriter": "surface-library",
+        "reading-stand": "surface-library",
+        "vase": "surface-library",
+        "printer": "wallbase-library",
+        "bookend": "surface-library"
+      },
+      "clusters": [["bollard", "barrier-arm"]],
+      "loose": ["pencil", "eraser", "ruler", "pencil-case", "crayon", "glue-stick", "scissors", "loafer", "acorn", "twig", "frisbee", "baseball-glove", "chalk", "clipboard", "pine-cone", "leaf", "garbage-bag", "computer-mouse", "pencil-sharpener", "marker", "paintbrush", "paint-palette", "stapler", "tape-dispenser", "magnifying-glass", "compass", "paper", "pen", "bookmark", "rubber-band"],
+      "noFlip": [],
+      "motion": {"raincoat": "sway", "tulip": "sway", "daisy": "sway", "dandelion": "sway", "clover": "sway"},
+      "terrain": {"color": "#ffab91", "x0": 3600, "y0": 1300, "x1": 6200, "y1": 2600, "zones": [{"id": "school-gate", "x0": 3600, "y0": 1300, "x1": 4900, "y1": 1950, "indoor": false, "floor": "paving", "road": {"y0": 1760, "y1": 1920}}, {"id": "school-yard", "x0": 4900, "y0": 1300, "x1": 6200, "y1": 1950, "indoor": false, "floor": "grass"}, {"id": "classroom", "x0": 4900, "y0": 1950, "x1": 6200, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}, {"id": "library", "x0": 3600, "y0": 1950, "x1": 4900, "y1": 2600, "indoor": true, "floor": "carpet", "wallBase": 2130}]}
     }
   }
 }
