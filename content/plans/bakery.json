@@ -1147,6 +1147,261 @@
       "loose": false,
       "motion": null,
       "cluster": "cash-register"
+    },
+    {
+      "id": "doorstep-brush",
+      "zh": "門口刷",
+      "en": "doorstep-brush",
+      "ja": "玄関ブラシ",
+      "reading": "げんかんブラシ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "短而寬的長方形刷子，木色刷柄連著一排深色硬刷毛，刷毛朝下貼地。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bread-tin",
+      "zh": "吐司模",
+      "en": "bread-tin",
+      "ja": "食パン型",
+      "reading": "しょくパンがた",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深金色的長方形金屬烤模，四面高起，邊緣向外翻折，內部空著。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "tablecloth",
+      "zh": "桌布",
+      "en": "tablecloth",
+      "ja": "テーブルクロス",
+      "reading": "テーブルクロス",
+      "category": "道具",
+      "size": "medium",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "長方形的白色布料平鋪在長桌上，四邊垂下，邊緣繡有一圈紅色細線。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "toothpick-holder",
+      "zh": "牙籤筒",
+      "en": "toothpick-holder",
+      "ja": "つまようじ入れ",
+      "reading": "つまようじいれ",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "矮小的白色圓筒罐，頂部有一個小孔，幾根細長的木色牙籤從孔中露出。",
+      "loose": true,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "water-glass",
+      "zh": "水杯",
+      "en": "water-glass",
+      "ja": "水用グラス",
+      "reading": "みずようグラス",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "透明的直筒玻璃杯，杯口圓形，杯底略厚，杯身沒有圖案。",
+      "loose": true,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "sugar-packet",
+      "zh": "糖包",
+      "en": "sugar packet",
+      "ja": "砂糖の小袋",
+      "reading": "さとうのこぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "扁平的白色小紙包，頂端有撕開的鋸齒邊，正面沒有文字或圖案。",
+      "loose": true,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "coffee-cup",
+      "zh": "咖啡杯",
+      "en": "coffee cup",
+      "ja": "コーヒーカップ",
+      "reading": "コーヒーカップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "白色小圓杯配著寬扁杯口和弧形把手，杯內可見深棕色咖啡。",
+      "loose": true,
+      "motion": null,
+      "cluster": "saucer"
+    },
+    {
+      "id": "tea-cup",
+      "zh": "茶杯",
+      "en": "tea cup",
+      "ja": "ティーカップ",
+      "reading": "ティーカップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "淡黃色圓杯有短弧形把手，杯口寬而平，杯內盛著紅棕色茶水。",
+      "loose": true,
+      "motion": null,
+      "cluster": "teapot"
+    },
+    {
+      "id": "milk-jug",
+      "zh": "奶壺",
+      "en": "milk jug",
+      "ja": "ミルクピッチャー",
+      "reading": "ミルクピッチャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "小巧白色陶壺有尖嘴和圓弧把手，壺身光滑、底部平穩。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-cup"
+    },
+    {
+      "id": "napkin-dispenser",
+      "zh": "餐巾紙盒",
+      "en": "napkin dispenser",
+      "ja": "ナプキンディスペンサー",
+      "reading": "ナプキンディスペンサー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "扁扁的方形金屬盒，頂部有狹長開口，露出幾張白色餐巾紙。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "tip-jar",
+      "zh": "小費罐",
+      "en": "tip jar",
+      "ja": "チップジャー",
+      "reading": "チップジャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "透明的圓柱玻璃罐，開口寬大，罐底散放幾枚沒有文字的硬幣。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "cake-server",
+      "zh": "蛋糕鏟",
+      "en": "cake server",
+      "ja": "ケーキサーバー",
+      "reading": "ケーキサーバー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "薄薄的金屬三角鏟面連著長柄，鏟面寬而平，邊緣微微翹起。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cake-slice"
+    },
+    {
+      "id": "receipt-roll",
+      "zh": "收據紙捲",
+      "en": "receipt roll",
+      "ja": "レシートロール",
+      "reading": "レシートロール",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "一捲白色薄紙呈圓筒狀，紙頭微微翹起，表面乾淨沒有文字。",
+      "loose": true,
+      "motion": null,
+      "cluster": "receipt-printer"
+    },
+    {
+      "id": "loyalty-card",
+      "zh": "集點卡",
+      "en": "loyalty card",
+      "ja": "ポイントカード",
+      "reading": "ポイントカード",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "一張小小的長方形硬卡，表面有幾個彩色圓點圖案，沒有文字或數字。",
+      "loose": true,
+      "motion": null,
+      "cluster": "card-terminal"
+    },
+    {
+      "id": "coffee-spoon",
+      "zh": "咖啡匙",
+      "en": "coffee spoon",
+      "ja": "コーヒースプーン",
+      "reading": "コーヒースプーン",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "一支短柄銀色小匙，匙面呈橢圓形，柄尾有圓潤的弧形。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-cup"
+    },
+    {
+      "id": "coffee-pot",
+      "zh": "咖啡壺",
+      "en": "coffee pot",
+      "ja": "コーヒーポット",
+      "reading": "コーヒーポット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "圓腹不鏽鋼壺身配黑色弧形把手、尖嘴和圓蓋，表面映出明亮銀色光澤。",
+      "loose": false,
+      "motion": null,
+      "cluster": "coffee-cup"
+    },
+    {
+      "id": "cake-fork",
+      "zh": "蛋糕叉",
+      "en": "cake fork",
+      "ja": "ケーキフォーク",
+      "reading": "ケーキフォーク",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "細長的銀色小叉子，短柄末端微彎，前端有三根尖齒，旁邊放著蛋糕切片。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cake-slice"
     }
   ],
   "rejected": [
@@ -1744,7 +1999,212 @@
       "id": "wall-clock",
       "reason": "英文重複",
       "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-dispenser",
+      "reason": "中文重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "butter-dish",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "salt-shaker",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "saucer",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "teapot",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "spoon",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "straw",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-packet",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cookie",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "muffin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "croissant",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "donut",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cupcake",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "pie",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "chocolate",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "key",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-dispenser",
+      "reason": "中文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "serving-tongs",
+      "reason": "中文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "saucer",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "tea-strainer",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-packet",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cinnamon-roll",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cookie",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "muffin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "spatula",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "banknote",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "credit-card",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "sugar-packet",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "tea-pot",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cupcake",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
     }
   ],
-  "createdAt": "2026-09-23T07:02:12.188Z"
+  "createdAt": "2026-09-23T07:02:12.188Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 17,
+    "at": "2026-09-23T07:30:00.002Z"
+  }
 }

@@ -644,8 +644,8 @@
         "pastry-tray": "surface-checkout-counter",
         "card-terminal": "surface-checkout-counter"
       },
-      "clusters": [["breadbasket", "bread-loaf", "bakery-tray", "bread-crumb", "poppy-seed-roll"], ["flour-sack", "wheat-flour"], ["dining-table", "dining-chair", "high-chair", "bench-seat"]],
-      "loose": ["wheat-stalk", "maple-leaf", "bread-loaf", "wooden-spoon", "oven-mitt", "flour-bowl", "measuring-cup", "pastry-brush", "bread-knife", "oven-thermometer", "yeast-jar", "hand-broom", "wheat-flour", "shopping-bag", "bread-crumb", "pretzel-bun", "poppy-seed-roll", "olive", "garlic-clove", "walnut", "sesame-seeds", "bread-clip"],
+      "clusters": [["breadbasket", "bread-loaf", "bakery-tray", "bread-crumb", "poppy-seed-roll"], ["flour-sack", "wheat-flour"], ["dining-table", "dining-chair", "high-chair", "bench-seat", "tablecloth", "toothpick-holder", "water-glass", "sugar-packet"]],
+      "loose": ["wheat-stalk", "maple-leaf", "bread-loaf", "wooden-spoon", "oven-mitt", "flour-bowl", "measuring-cup", "pastry-brush", "bread-knife", "oven-thermometer", "yeast-jar", "hand-broom", "wheat-flour", "shopping-bag", "bread-crumb", "pretzel-bun", "poppy-seed-roll", "olive", "garlic-clove", "walnut", "sesame-seeds", "bread-clip", "doorstep-brush", "bread-tin", "toothpick-holder", "water-glass", "sugar-packet", "coffee-cup", "tea-cup", "milk-jug", "cake-server", "receipt-roll", "loyalty-card", "coffee-spoon", "cake-fork"],
       "noFlip": [],
       "motion": {"wheat-stalk": "sway"},
       "arrange": "auto",

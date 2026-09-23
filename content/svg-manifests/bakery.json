@@ -1562,6 +1562,363 @@
           }
         }
       }
+    },
+    {
+      "name": "門口刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而寬的長方形刷子，木色刷柄連著一排深色硬刷毛，刷毛朝下貼地。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "doorstep-brush",
+        "words": {
+          "zh-TW": "門口刷",
+          "en": "doorstep-brush",
+          "ja": {
+            "text": "玄関ブラシ",
+            "reading": "げんかんブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "吐司模",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深金色的長方形金屬烤模，四面高起，邊緣向外翻折，內部空著。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "bread-tin",
+        "words": {
+          "zh-TW": "吐司模",
+          "en": "bread-tin",
+          "ja": {
+            "text": "食パン型",
+            "reading": "しょくパンがた"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形的白色布料平鋪在長桌上，四邊垂下，邊緣繡有一圈紅色細線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "tablecloth",
+        "words": {
+          "zh-TW": "桌布",
+          "en": "tablecloth",
+          "ja": {
+            "text": "テーブルクロス",
+            "reading": "テーブルクロス"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙籤筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮小的白色圓筒罐，頂部有一個小孔，幾根細長的木色牙籤從孔中露出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "toothpick-holder",
+        "words": {
+          "zh-TW": "牙籤筒",
+          "en": "toothpick-holder",
+          "ja": {
+            "text": "つまようじ入れ",
+            "reading": "つまようじいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明的直筒玻璃杯，杯口圓形，杯底略厚，杯身沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "water-glass",
+        "words": {
+          "zh-TW": "水杯",
+          "en": "water-glass",
+          "ja": {
+            "text": "水用グラス",
+            "reading": "みずようグラス"
+          }
+        }
+      }
+    },
+    {
+      "name": "糖包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的白色小紙包，頂端有撕開的鋸齒邊，正面沒有文字或圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "sugar-packet",
+        "words": {
+          "zh-TW": "糖包",
+          "en": "sugar packet",
+          "ja": {
+            "text": "砂糖の小袋",
+            "reading": "さとうのこぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色小圓杯配著寬扁杯口和弧形把手，杯內可見深棕色咖啡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "coffee-cup",
+        "words": {
+          "zh-TW": "咖啡杯",
+          "en": "coffee cup",
+          "ja": {
+            "text": "コーヒーカップ",
+            "reading": "コーヒーカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淡黃色圓杯有短弧形把手，杯口寬而平，杯內盛著紅棕色茶水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "tea-cup",
+        "words": {
+          "zh-TW": "茶杯",
+          "en": "tea cup",
+          "ja": {
+            "text": "ティーカップ",
+            "reading": "ティーカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧白色陶壺有尖嘴和圓弧把手，壺身光滑、底部平穩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "milk-jug",
+        "words": {
+          "zh-TW": "奶壺",
+          "en": "milk jug",
+          "ja": {
+            "text": "ミルクピッチャー",
+            "reading": "ミルクピッチャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐巾紙盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁扁的方形金屬盒，頂部有狹長開口，露出幾張白色餐巾紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "napkin-dispenser",
+        "words": {
+          "zh-TW": "餐巾紙盒",
+          "en": "napkin dispenser",
+          "ja": {
+            "text": "ナプキンディスペンサー",
+            "reading": "ナプキンディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "小費罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明的圓柱玻璃罐，開口寬大，罐底散放幾枚沒有文字的硬幣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "tip-jar",
+        "words": {
+          "zh-TW": "小費罐",
+          "en": "tip jar",
+          "ja": {
+            "text": "チップジャー",
+            "reading": "チップジャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋糕鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "薄薄的金屬三角鏟面連著長柄，鏟面寬而平，邊緣微微翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "cake-server",
+        "words": {
+          "zh-TW": "蛋糕鏟",
+          "en": "cake server",
+          "ja": {
+            "text": "ケーキサーバー",
+            "reading": "ケーキサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據紙捲",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一捲白色薄紙呈圓筒狀，紙頭微微翹起，表面乾淨沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "receipt-roll",
+        "words": {
+          "zh-TW": "收據紙捲",
+          "en": "receipt roll",
+          "ja": {
+            "text": "レシートロール",
+            "reading": "レシートロール"
+          }
+        }
+      }
+    },
+    {
+      "name": "集點卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張小小的長方形硬卡，表面有幾個彩色圓點圖案，沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "loyalty-card",
+        "words": {
+          "zh-TW": "集點卡",
+          "en": "loyalty card",
+          "ja": {
+            "text": "ポイントカード",
+            "reading": "ポイントカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支短柄銀色小匙，匙面呈橢圓形，柄尾有圓潤的弧形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "coffee-spoon",
+        "words": {
+          "zh-TW": "咖啡匙",
+          "en": "coffee spoon",
+          "ja": {
+            "text": "コーヒースプーン",
+            "reading": "コーヒースプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓腹不鏽鋼壺身配黑色弧形把手、尖嘴和圓蓋，表面映出明亮銀色光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "coffee-pot",
+        "words": {
+          "zh-TW": "咖啡壺",
+          "en": "coffee pot",
+          "ja": {
+            "text": "コーヒーポット",
+            "reading": "コーヒーポット"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋糕叉",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的銀色小叉子，短柄末端微彎，前端有三根尖齒，旁邊放著蛋糕切片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "cake-fork",
+        "words": {
+          "zh-TW": "蛋糕叉",
+          "en": "cake fork",
+          "ja": {
+            "text": "ケーキフォーク",
+            "reading": "ケーキフォーク"
+          }
+        }
+      }
     }
   ]
 }
