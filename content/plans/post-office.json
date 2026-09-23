@@ -1087,6 +1087,321 @@
       "loose": false,
       "motion": null,
       "cluster": "label"
+    },
+    {
+      "id": "post-office-door",
+      "zh": "郵局大門",
+      "en": "post-office-door",
+      "ja": "郵便局のドア",
+      "reading": "ゆうびんきょくのドア",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深藍色的雙扇門，中央有兩塊長方形玻璃窗，兩側各有一支銀色門把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "postage-meter",
+      "zh": "郵資機",
+      "en": "postage-meter",
+      "ja": "郵便料金計器",
+      "reading": "ゆうびんりょうきんけいき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "紅色桌上機器，頂部有窄縫，正面有凸起按鍵與一小片深色顯示窗。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "parcel-scale",
+      "zh": "包裹秤",
+      "en": "parcel-scale",
+      "ja": "荷物用はかり",
+      "reading": "にもつようはかり",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "方形灰色底座上有一片平坦金屬秤盤，前方連著帶圓形指針盤的短立柱。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "mailbox-flag",
+      "zh": "郵筒旗標",
+      "en": "mailbox-flag",
+      "ja": "郵便ポストの旗",
+      "reading": "ゆうびんポストのはた",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "紅色細長旗片連著短短的銀色轉軸，旗片向上斜起，旁邊露出圓形固定座。",
+      "loose": true,
+      "motion": null,
+      "cluster": "mailbox"
+    },
+    {
+      "id": "paper-label",
+      "zh": "包裹標籤",
+      "en": "paper-label",
+      "ja": "荷札",
+      "reading": "にふだ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淡黃色長方形紙牌，四角微圓，頂端有一個穿繩小孔，表面留白沒有圖案。",
+      "loose": true,
+      "motion": null,
+      "cluster": "parcel"
+    },
+    {
+      "id": "letter-box",
+      "zh": "信件回收箱",
+      "en": "letter-box",
+      "ja": "郵便ポスト",
+      "reading": "ゆうびんポスト",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "紅色長方形金屬箱立在短腳上，頂部有窄窄的投信縫，正面沒有文字或圖案。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "postage-label",
+      "zh": "郵資標籤",
+      "en": "postage-label",
+      "ja": "郵便ラベル",
+      "reading": "ゆうびんラベル",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一張白色長方形紙片，邊緣有細小鋸齒，中央留白，平放在地面上。",
+      "loose": true,
+      "motion": null,
+      "cluster": "parcel"
+    },
+    {
+      "id": "postal-scale",
+      "zh": "郵件秤",
+      "en": "postal-scale",
+      "ja": "郵便はかり",
+      "reading": "ゆうびんはかり",
+      "category": "道具",
+      "size": "small",
+      "zone": "service-hall",
+      "spot": "ground",
+      "desc": "白色方形電子秤，頂面是平坦金屬秤盤，正面有深色顯示窗和幾個圓按鍵。",
+      "loose": false,
+      "motion": null,
+      "cluster": "mail-tray"
+    },
+    {
+      "id": "parcel-box",
+      "zh": "包裹箱",
+      "en": "parcel-box",
+      "ja": "小包箱",
+      "reading": "こづつみばこ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "service-hall",
+      "spot": "ground",
+      "desc": "棕色長方紙箱，頂部兩片封口翼微微張開，箱身可見寬條膠帶但沒有標記。",
+      "loose": false,
+      "motion": null,
+      "cluster": "packing-tape-roll"
+    },
+    {
+      "id": "envelope-opener",
+      "zh": "信封開口器",
+      "en": "envelope-opener",
+      "ja": "レターオープナー",
+      "reading": "レターオープナー",
+      "category": "道具",
+      "size": "small",
+      "zone": "service-hall",
+      "spot": "ground",
+      "desc": "細長的銀色金屬片，一端尖而圓鈍，另一端有扁平握柄，平放在地上。",
+      "loose": true,
+      "motion": null,
+      "cluster": "letter-opener"
+    },
+    {
+      "id": "parcel-hook",
+      "zh": "包裹鉤",
+      "en": "parcel-hook",
+      "ja": "荷物フック",
+      "reading": "にもつフック",
+      "category": "道具",
+      "size": "small",
+      "zone": "service-hall",
+      "spot": "ground",
+      "desc": "粗短的深灰金屬鉤子，彎成清楚的問號形，底端接著圓形握柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": "parcel-box"
+    },
+    {
+      "id": "string-cutter",
+      "zh": "割繩器",
+      "en": "string-cutter",
+      "ja": "ひも切り",
+      "reading": "ひもきり",
+      "category": "道具",
+      "size": "small",
+      "zone": "waiting-area",
+      "spot": "ground",
+      "desc": "小巧的扁平金屬工具，彎月形外殼包住短刀刃，中央留有穿繩的窄槽。",
+      "loose": true,
+      "motion": null,
+      "cluster": "twine"
+    },
+    {
+      "id": "scale-pan",
+      "zh": "秤盤",
+      "en": "scale-pan",
+      "ja": "はかり皿",
+      "reading": "はかりざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "waiting-area",
+      "spot": "ground",
+      "desc": "淺灰色圓形金屬托盤，盤沿略高，底部中央有短圓柱形接頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": "postal-scale"
+    },
+    {
+      "id": "wax-seal",
+      "zh": "封蠟",
+      "en": "wax-seal",
+      "ja": "封ろう",
+      "reading": "ふうろう",
+      "category": "道具",
+      "size": "small",
+      "zone": "waiting-area",
+      "spot": "ground",
+      "desc": "深紅色圓形蠟滴壓成扁平圓章，邊緣微凸，表面有簡單的放射紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": "envelope"
+    },
+    {
+      "id": "scotch-tape",
+      "zh": "透明膠帶",
+      "en": "scotch-tape",
+      "ja": "セロハンテープ",
+      "reading": "セロハンテープ",
+      "category": "道具",
+      "size": "small",
+      "zone": "waiting-area",
+      "spot": "ground",
+      "desc": "透明膠帶纏在短圓筒上，外圈泛著淡淡的米黃色光澤，中心露出圓形紙芯。",
+      "loose": true,
+      "motion": null,
+      "cluster": "packing-tape"
+    },
+    {
+      "id": "twist-tie",
+      "zh": "束線帶",
+      "en": "twist-tie",
+      "ja": "ビニタイ",
+      "reading": "ビニタイ",
+      "category": "道具",
+      "size": "small",
+      "zone": "waiting-area",
+      "spot": "ground",
+      "desc": "一條細長的綠色塑膠包覆鐵絲，兩端露出短短金屬線身，彎成鬆鬆的圈。",
+      "loose": true,
+      "motion": null,
+      "cluster": "twine"
+    },
+    {
+      "id": "letter-scale",
+      "zh": "信件秤",
+      "en": "letter-scale",
+      "ja": "レタースケール",
+      "reading": "レタースケール",
+      "category": "道具",
+      "size": "small",
+      "zone": "waiting-area",
+      "spot": "ground",
+      "desc": "小巧的藍色機械秤有圓形底座、細直支柱與淺盤，指針和刻度清晰可見。",
+      "loose": false,
+      "motion": null,
+      "cluster": "scale-pan"
+    },
+    {
+      "id": "glue-brush",
+      "zh": "膠水刷",
+      "en": "glue brush",
+      "ja": "のり刷毛",
+      "reading": "のりばけ",
+      "category": "道具",
+      "size": "small",
+      "zone": "sorting-room",
+      "spot": "ground",
+      "desc": "細長的淺木色握柄前端束著一撮短而平的白色刷毛，刷毛上沒有沾附液體。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "rubber-mat",
+      "zh": "橡膠墊",
+      "en": "rubber mat",
+      "ja": "ゴムマット",
+      "reading": "ゴムマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "sorting-room",
+      "spot": "ground",
+      "desc": "深灰色長方形厚橡膠墊，表面有整齊凸起的圓點紋路，四角略為圓滑。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "work-light",
+      "zh": "工作燈",
+      "en": "work light",
+      "ja": "作業灯",
+      "reading": "さぎょうとう",
+      "category": "道具",
+      "size": "medium",
+      "zone": "sorting-room",
+      "spot": "ground",
+      "desc": "黃色方形燈殼裝著乳白色燈面，兩側連著黑色可折支架，底部有寬扁底座。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "parcel-tray",
+      "zh": "郵件托盤",
+      "en": "mail tray",
+      "ja": "メールトレー",
+      "reading": "メールトレー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "sorting-room",
+      "spot": "ground",
+      "desc": "淺灰色長方形塑膠托盤，四周有低矮凸起的邊框，底面平整。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1169,7 +1484,187 @@
       "id": "mail-pouch",
       "reason": "中文重複",
       "zone": "sorting-room"
+    },
+    {
+      "id": "parcel-locker",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "rubber-band",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "postage-meter",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "date-stamp",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "ink-pad",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "envelope",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "rubber-band",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "ink-bottle",
+      "reason": "中文重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "rubber-band",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "ink-stamp",
+      "reason": "中文重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "rubber-stamp",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "ink-pad",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "paper-clip",
+      "reason": "id 重複",
+      "zone": "service-hall"
+    },
+    {
+      "id": "envelope",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "rubber-stamp",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "ink-pad",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "scissors",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "rubber-band",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "rubber-band",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "rubber-stamp-pad",
+      "reason": "中文重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "rubber-stamp",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "ink-pad",
+      "reason": "id 重複",
+      "zone": "waiting-area"
+    },
+    {
+      "id": "file-tray",
+      "reason": "中文重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "rubber-band",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "mail-opener",
+      "reason": "中文重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "ink-stamp",
+      "reason": "中文重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "safety-vest-hook",
+      "reason": "英文重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "letter-opener",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "twist-tie",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "date-stamp",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "mail-sack",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "safety-vest",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "scissors",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "twist-tie",
+      "reason": "id 重複",
+      "zone": "sorting-room"
+    },
+    {
+      "id": "hand-truck",
+      "reason": "id 重複",
+      "zone": "sorting-room"
     }
   ],
-  "createdAt": "2026-09-22T13:20:56.054Z"
+  "createdAt": "2026-09-22T13:20:56.054Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 21,
+    "at": "2026-09-23T06:00:24.824Z"
+  }
 }

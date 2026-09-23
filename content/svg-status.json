@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T05:34:05.759Z",
+  "syncedAt": "2026-09-23T06:03:27.430Z",
   "scenes": [
     {
       "scene": "airport",
@@ -419,7 +419,28 @@
         "sorting-chute",
         "emergency-light",
         "work-apron",
-        "scanner"
+        "scanner",
+        "post-office-door",
+        "postage-meter",
+        "parcel-scale",
+        "mailbox-flag",
+        "paper-label",
+        "letter-box",
+        "postage-label",
+        "postal-scale",
+        "parcel-box",
+        "envelope-opener",
+        "parcel-hook",
+        "string-cutter",
+        "scale-pan",
+        "wax-seal",
+        "scotch-tape",
+        "twist-tie",
+        "letter-scale",
+        "glue-brush",
+        "rubber-mat",
+        "work-light",
+        "parcel-tray"
       ],
       "failed": [],
       "pending": [],

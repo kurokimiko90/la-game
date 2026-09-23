@@ -527,8 +527,8 @@
         "emergency-light": "wall-sorting-room",
         "scanner": "surface-sorting-room"
       },
-      "clusters": [["puddle", "rain-gauge", "weed"], ["pebble", "moss"], ["postal-tube", "twine-spool", "mailing-tube-cap"], ["sorting-bin", "mail-tray"], ["mail-cart", "sack"], ["pallet", "pallet-jack"], ["plastic-tote", "mail-tub"], ["overalls", "work-boots"], ["safety-goggles", "work-gloves"]],
-      "loose": ["parcel", "postage-stamp", "pebble", "letter-opener", "twine-spool", "label-roll", "rubber-glove", "packing-tape-roll", "mailing-tube-cap", "letter", "packing-tape", "twine", "sticker", "staple", "sticker-sheet", "box-cutter", "safety-goggles", "work-gloves", "notepad", "tape-roll", "glue", "label"],
+      "clusters": [["puddle", "rain-gauge", "weed"], ["pebble", "moss"], ["postal-tube", "twine-spool", "mailing-tube-cap"], ["sorting-bin", "mail-tray"], ["mail-cart", "sack"], ["pallet", "pallet-jack"], ["plastic-tote", "mail-tub"], ["overalls", "work-boots"], ["safety-goggles", "work-gloves"], ["twine", "string-cutter", "twist-tie"]],
+      "loose": ["parcel", "postage-stamp", "pebble", "letter-opener", "twine-spool", "label-roll", "rubber-glove", "packing-tape-roll", "mailing-tube-cap", "letter", "packing-tape", "twine", "sticker", "staple", "sticker-sheet", "box-cutter", "safety-goggles", "work-gloves", "notepad", "tape-roll", "glue", "label", "mailbox-flag", "paper-label", "postage-label", "envelope-opener", "parcel-hook", "string-cutter", "wax-seal", "scotch-tape", "twist-tie", "glue-brush"],
       "noFlip": [],
       "motion": {"flower": "sway", "cloud": "drift", "raindrop": "drift", "wind-sock": "sway", "moss": "sway", "weed": "sway", "work-apron": "sway"},
       "arrange": "auto",

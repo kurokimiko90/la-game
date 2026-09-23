@@ -1478,6 +1478,447 @@
           }
         }
       }
+    },
+    {
+      "name": "郵局大門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深藍色的雙扇門，中央有兩塊長方形玻璃窗，兩側各有一支銀色門把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "post-office-door",
+        "words": {
+          "zh-TW": "郵局大門",
+          "en": "post-office-door",
+          "ja": {
+            "text": "郵便局のドア",
+            "reading": "ゆうびんきょくのドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵資機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色桌上機器，頂部有窄縫，正面有凸起按鍵與一小片深色顯示窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "postage-meter",
+        "words": {
+          "zh-TW": "郵資機",
+          "en": "postage-meter",
+          "ja": {
+            "text": "郵便料金計器",
+            "reading": "ゆうびんりょうきんけいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "包裹秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形灰色底座上有一片平坦金屬秤盤，前方連著帶圓形指針盤的短立柱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "parcel-scale",
+        "words": {
+          "zh-TW": "包裹秤",
+          "en": "parcel-scale",
+          "ja": {
+            "text": "荷物用はかり",
+            "reading": "にもつようはかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵筒旗標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色細長旗片連著短短的銀色轉軸，旗片向上斜起，旁邊露出圓形固定座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "mailbox-flag",
+        "words": {
+          "zh-TW": "郵筒旗標",
+          "en": "mailbox-flag",
+          "ja": {
+            "text": "郵便ポストの旗",
+            "reading": "ゆうびんポストのはた"
+          }
+        }
+      }
+    },
+    {
+      "name": "包裹標籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淡黃色長方形紙牌，四角微圓，頂端有一個穿繩小孔，表面留白沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "paper-label",
+        "words": {
+          "zh-TW": "包裹標籤",
+          "en": "paper-label",
+          "ja": {
+            "text": "荷札",
+            "reading": "にふだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "信件回收箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色長方形金屬箱立在短腳上，頂部有窄窄的投信縫，正面沒有文字或圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "letter-box",
+        "words": {
+          "zh-TW": "信件回收箱",
+          "en": "letter-box",
+          "ja": {
+            "text": "郵便ポスト",
+            "reading": "ゆうびんポスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵資標籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張白色長方形紙片，邊緣有細小鋸齒，中央留白，平放在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "entrance",
+        "itemId": "postage-label",
+        "words": {
+          "zh-TW": "郵資標籤",
+          "en": "postage-label",
+          "ja": {
+            "text": "郵便ラベル",
+            "reading": "ゆうびんラベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵件秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形電子秤，頂面是平坦金屬秤盤，正面有深色顯示窗和幾個圓按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "service-hall",
+        "itemId": "postal-scale",
+        "words": {
+          "zh-TW": "郵件秤",
+          "en": "postal-scale",
+          "ja": {
+            "text": "郵便はかり",
+            "reading": "ゆうびんはかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "包裹箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色長方紙箱，頂部兩片封口翼微微張開，箱身可見寬條膠帶但沒有標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "service-hall",
+        "itemId": "parcel-box",
+        "words": {
+          "zh-TW": "包裹箱",
+          "en": "parcel-box",
+          "ja": {
+            "text": "小包箱",
+            "reading": "こづつみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "信封開口器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的銀色金屬片，一端尖而圓鈍，另一端有扁平握柄，平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "service-hall",
+        "itemId": "envelope-opener",
+        "words": {
+          "zh-TW": "信封開口器",
+          "en": "envelope-opener",
+          "ja": {
+            "text": "レターオープナー",
+            "reading": "レターオープナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "包裹鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "粗短的深灰金屬鉤子，彎成清楚的問號形，底端接著圓形握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "service-hall",
+        "itemId": "parcel-hook",
+        "words": {
+          "zh-TW": "包裹鉤",
+          "en": "parcel-hook",
+          "ja": {
+            "text": "荷物フック",
+            "reading": "にもつフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "割繩器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的扁平金屬工具，彎月形外殼包住短刀刃，中央留有穿繩的窄槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "waiting-area",
+        "itemId": "string-cutter",
+        "words": {
+          "zh-TW": "割繩器",
+          "en": "string-cutter",
+          "ja": {
+            "text": "ひも切り",
+            "reading": "ひもきり"
+          }
+        }
+      }
+    },
+    {
+      "name": "秤盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺灰色圓形金屬托盤，盤沿略高，底部中央有短圓柱形接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "waiting-area",
+        "itemId": "scale-pan",
+        "words": {
+          "zh-TW": "秤盤",
+          "en": "scale-pan",
+          "ja": {
+            "text": "はかり皿",
+            "reading": "はかりざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "封蠟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深紅色圓形蠟滴壓成扁平圓章，邊緣微凸，表面有簡單的放射紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "waiting-area",
+        "itemId": "wax-seal",
+        "words": {
+          "zh-TW": "封蠟",
+          "en": "wax-seal",
+          "ja": {
+            "text": "封ろう",
+            "reading": "ふうろう"
+          }
+        }
+      }
+    },
+    {
+      "name": "透明膠帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明膠帶纏在短圓筒上，外圈泛著淡淡的米黃色光澤，中心露出圓形紙芯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "waiting-area",
+        "itemId": "scotch-tape",
+        "words": {
+          "zh-TW": "透明膠帶",
+          "en": "scotch-tape",
+          "ja": {
+            "text": "セロハンテープ",
+            "reading": "セロハンテープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "束線帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條細長的綠色塑膠包覆鐵絲，兩端露出短短金屬線身，彎成鬆鬆的圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "waiting-area",
+        "itemId": "twist-tie",
+        "words": {
+          "zh-TW": "束線帶",
+          "en": "twist-tie",
+          "ja": {
+            "text": "ビニタイ",
+            "reading": "ビニタイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "信件秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的藍色機械秤有圓形底座、細直支柱與淺盤，指針和刻度清晰可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "waiting-area",
+        "itemId": "letter-scale",
+        "words": {
+          "zh-TW": "信件秤",
+          "en": "letter-scale",
+          "ja": {
+            "text": "レタースケール",
+            "reading": "レタースケール"
+          }
+        }
+      }
+    },
+    {
+      "name": "膠水刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的淺木色握柄前端束著一撮短而平的白色刷毛，刷毛上沒有沾附液體。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "sorting-room",
+        "itemId": "glue-brush",
+        "words": {
+          "zh-TW": "膠水刷",
+          "en": "glue brush",
+          "ja": {
+            "text": "のり刷毛",
+            "reading": "のりばけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡膠墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深灰色長方形厚橡膠墊，表面有整齊凸起的圓點紋路，四角略為圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "sorting-room",
+        "itemId": "rubber-mat",
+        "words": {
+          "zh-TW": "橡膠墊",
+          "en": "rubber mat",
+          "ja": {
+            "text": "ゴムマット",
+            "reading": "ゴムマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "工作燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黃色方形燈殼裝著乳白色燈面，兩側連著黑色可折支架，底部有寬扁底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "sorting-room",
+        "itemId": "work-light",
+        "words": {
+          "zh-TW": "工作燈",
+          "en": "work light",
+          "ja": {
+            "text": "作業灯",
+            "reading": "さぎょうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵件托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺灰色長方形塑膠托盤，四周有低矮凸起的邊框，底面平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "post-office",
+        "zone": "sorting-room",
+        "itemId": "parcel-tray",
+        "words": {
+          "zh-TW": "郵件托盤",
+          "en": "mail tray",
+          "ja": {
+            "text": "メールトレー",
+            "reading": "メールトレー"
+          }
+        }
+      }
     }
   ]
 }

@@ -395,6 +395,132 @@
       "score": 1,
       "take": "en-1790084558838.aac",
       "account": "chatgpt1"
+    },
+    "postage-meter": {
+      "heard": "Postage meter.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "post-office-door": {
+      "heard": "Post Office Store.",
+      "score": 0.8,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "letter-box": {
+      "heard": "Letterboxd.",
+      "score": 0.9,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "parcel-box": {
+      "heard": "Parcelbox.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "parcel-scale": {
+      "heard": "It's parcel scale.",
+      "score": 0.79,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "envelope-opener": {
+      "heard": "Envelope opener.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "parcel-hook": {
+      "heard": "Parcel hook.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-mat": {
+      "heard": "Rubber mat.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "glue-brush": {
+      "heard": "Glue Brush",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "scotch-tape": {
+      "heard": "Scotch tape.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "string-cutter": {
+      "heard": "String Cutter.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "twist-tie": {
+      "heard": "Twist tie.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "raindrop": {
+      "heard": "Raindrop.",
+      "score": 1,
+      "take": "en-1790143417348.aac",
+      "account": "chatgpt1"
+    },
+    "mailbox-flag": {
+      "heard": "Mailbox flag.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "paper-label": {
+      "heard": "Paper label.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "postage-label": {
+      "heard": "Postage label.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "postal-scale": {
+      "heard": "Postal scale.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "wax-seal": {
+      "heard": "Wax Seal.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "work-light": {
+      "heard": "Work light.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "parcel-tray": {
+      "heard": "Mail Tray.",
+      "score": 1,
+      "take": "en-1790143521092.aac",
+      "account": "chatgpt1"
+    },
+    "scale-pan": {
+      "heard": "ScalePan.",
+      "score": 1,
+      "take": "en-1790143580622.aac",
+      "account": "chatgpt1"
     }
   }
 }
