@@ -1,12 +1,9 @@
 // 單字發音：優先播 public/audio 的預先合成音檔；載入失敗時退回瀏覽器語音合成。
 import type { Lang, Words } from './types';
+import { wordText } from './words';
 
-const SPEECH_LANG: Record<Lang, string> = { en: 'en-US', ja: 'ja-JP' };
+const SPEECH_LANG: Record<Lang, string> = { en: 'en-US', ja: 'ja-JP', zh: 'zh-TW' };
 let current: HTMLAudioElement | null = null;
-
-export function wordText(words: Words, lang: Lang): string {
-  return lang === 'ja' ? words.ja.text : words.en;
-}
 
 function speak(text: string, lang: Lang): void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;

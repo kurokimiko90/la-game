@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import {
-  STAGES, HINTS_PER_STAGE, RECALL_MAX_MISSES, getStage, pickTargets, createStageState, clickItem,
+  STAGES, RECALL_MAX_MISSES, getStage, pickTargets, createStageState, clickItem,
   currentTarget, remainingTargets, takeHint, starsFor, type StageDef, type StageState,
 } from '@/lib/stages';
 import { createRng } from '@/lib/rng';
@@ -15,7 +15,8 @@ function stateWith(id: number, targets: string[]): StageState {
 describe('STAGES', () => {
   test('四個階段，提示逐步減少', () => {
     expect(STAGES.map((s) => s.mode)).toEqual(['picture', 'text', 'audio', 'recall']);
-    expect(STAGES.map((s) => s.count)).toEqual([5, 8, 10, 10]);
+    expect(STAGES.map((s) => s.count)).toEqual([10, 8, 10, 10]);
+    expect(STAGES.map((s) => s.hints)).toEqual([3, 3, 3, 10]);
     expect(getStage(9)).toBeUndefined();
   });
 });
@@ -115,13 +116,23 @@ describe('takeHint', () => {
   test('清單模式提示第一個未找到；次數用完回 null', () => {
     let s = stateWith(1, ['bench', 'tree']);
     s = clickItem(s, stage(1), 'bench', 1).state;
-    for (let i = 0; i < HINTS_PER_STAGE; i++) {
+    for (let i = 0; i < stage(1).hints; i++) {
       const r = takeHint(s, stage(1));
       expect(r.targetId).toBe('tree');
       s = r.state;
     }
     expect(takeHint(s, stage(1)).targetId).toBeNull();
-    expect(s.hintsUsed).toBe(HINTS_PER_STAGE);
+    expect(s.hintsUsed).toBe(stage(1).hints);
+  });
+
+  test('記憶挑戰可以用 10 次提示', () => {
+    let s = stateWith(4, ITEMS.slice(0, 10));
+    for (let i = 0; i < 10; i++) {
+      const r = takeHint(s, stage(4));
+      expect(r.targetId).toBe('bench');
+      s = r.state;
+    }
+    expect(takeHint(s, stage(4)).targetId).toBeNull();
   });
 
   test('依序模式提示目前目標；完成後不能用', () => {

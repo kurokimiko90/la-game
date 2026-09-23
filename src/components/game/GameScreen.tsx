@@ -12,7 +12,7 @@ import { WordPopup } from './WordPopup';
 import { StageMenu } from './StageMenu';
 import { StageResult } from './StageResult';
 import {
-  HINTS_PER_STAGE, RECALL_MAX_MISSES, clickItem, createStageState, currentTarget, starsFor, takeHint,
+  RECALL_MAX_MISSES, clickItem, createStageState, currentTarget, starsFor, takeHint,
   type StageDef, type StageEvent, type StageState,
 } from '@/lib/stages';
 import { isSceneUnlocked, recordStageClear, recordWordFound, recordWordSeen, wordKey } from '@/lib/progress';
@@ -163,6 +163,10 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
       const target = currentTarget(state, stage);
       const item = target ? itemsById.get(target) : undefined;
       hit = item && isNearItem(item, scenePoint) ? item.id : null;
+    } else if (!hit) {
+      // 點到背景（背景也畫了櫥窗、貨架等）：給回饋，不要讓人以為沒反應
+      showToast('這裡沒有物品，再找找看');
+      return;
     }
     const { state: next, events } = clickItem(state, stage, hit, Date.now());
     setPhase({ ...phase, state: next });
@@ -223,9 +227,9 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
           </div>
         </div>
         {playing && (
-          <button type="button" onClick={onHint} disabled={playing.state.hintsUsed >= HINTS_PER_STAGE}
+          <button type="button" onClick={onHint} disabled={playing.state.hintsUsed >= playing.stage.hints}
             className="flex items-center gap-1 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-semibold text-ink disabled:opacity-40">
-            <Lightbulb size={16} /> {HINTS_PER_STAGE - playing.state.hintsUsed}
+            <Lightbulb size={16} /> {playing.stage.hints - playing.state.hintsUsed}
           </button>
         )}
         <LangToggle compact />

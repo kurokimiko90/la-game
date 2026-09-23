@@ -26,13 +26,14 @@ export function fitScale(container: Size, world: Size): number {
   return Math.min(container.width / world.width, container.height / world.height);
 }
 
-// 內容比容器小就置中，否則不讓邊緣露出來
+// 內容比容器大：不讓邊緣露出來；比容器小：可以在容器內拖動，但不超出容器（縮小後也拉得動）
 function clampAxis(t: number, containerLen: number, contentLen: number): number {
-  if (contentLen <= containerLen) return (containerLen - contentLen) / 2;
-  return Math.min(0, Math.max(containerLen - contentLen, t));
+  const lo = Math.min(0, containerLen - contentLen);
+  const hi = Math.max(0, containerLen - contentLen);
+  return Math.min(hi, Math.max(lo, t));
 }
 
-/** 縮放限制在「看見整張地圖」到「預設的 MAX_ZOOM 倍」；上下左右都不超出地圖 */
+/** 縮放限制在「看見整張地圖」到「預設的 MAX_ZOOM 倍」；地圖比畫面大時不露出邊緣，比畫面小時不超出畫面 */
 export function clampView(view: View, container: Size, world: Size): View {
   const base = defaultScale(container);
   const lo = Math.min(fitScale(container, world), base);
@@ -42,6 +43,12 @@ export function clampView(view: View, container: Size, world: Size): View {
     tx: clampAxis(view.tx, container.width, world.width * scale),
     ty: clampAxis(view.ty, container.height, world.height * scale),
   };
+}
+
+/** 「看整個小鎮」：整張地圖放進畫面並置中 */
+export function wholeView(container: Size, world: Size): View {
+  const scale = fitScale(container, world);
+  return { scale, tx: (container.width - world.width * scale) / 2, ty: (container.height - world.height * scale) / 2 };
 }
 
 /** 以螢幕上的 anchor 為中心縮放（滾輪、雙指） */
@@ -63,6 +70,18 @@ export function centerOn(view: View, target: Point, container: Size, scene: Size
 export function isNearItem(item: Pick<SceneItem, 'x' | 'y' | 'w' | 'h'>, p: Point, minPad = 40): boolean {
   const pad = Math.max(minPad, Math.min(item.w, item.h) * 0.25);
   return p.x >= item.x - pad && p.x <= item.x + item.w + pad && p.y >= item.y - pad && p.y <= item.y + item.h + pad;
+}
+
+type ItemBox = Pick<SceneItem, 'id' | 'x' | 'y' | 'w' | 'h'>;
+
+/** 點擊沒落在物件形狀上（繩圈、筷子間的空隙）時的後備：外框外擴 pad 內的物件，重疊時取面積最小的；都沒有回 null */
+export function itemAtPoint<T extends ItemBox>(items: Iterable<T>, p: Point, pad: number): T | null {
+  let best: T | null = null;
+  for (const it of items) {
+    const inside = p.x >= it.x - pad && p.x <= it.x + it.w + pad && p.y >= it.y - pad && p.y <= it.y + it.h + pad;
+    if (inside && (!best || it.w * it.h < best.w * best.h)) best = it;
+  }
+  return best;
 }
 
 /** 物件的傾斜與鏡像：以底部中心為支點（給外層 <g> 的 transform 屬性）；正立不鏡像時回傳 undefined */

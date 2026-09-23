@@ -71,10 +71,16 @@ export function parseOutline(raw, { theme, usedZoneIds = [] }) {
   return { id: theme.id, name: theme.name, zones: clean };
 }
 
-export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion }) {
-  const spots = allowedSpots(zone).map((s) => `${s}（${s === 'surface' ? `放在${FEATURE_TEXT[zone.feature].slice(1)}上` : SPOT_TEXT[s]}）`).join(' | ');
+/**
+ * spots：這次只收這些位置（補元素時只要 ground）；existing：區域裡已經有的物品 { id, zh }，新的要和它們不同、可以搭配。
+ * 可以放別的位置時，至少一半要放地上：不然 LLM 常把東西全擺在牆上和檯面上，地板空一大片。
+ */
+export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, spots = allowedSpots(zone), existing = [] }) {
+  const spotText = spots.map((s) => `${s}（${s === 'surface' ? `放在${FEATURE_TEXT[zone.feature].slice(1)}上` : SPOT_TEXT[s]}）`).join(' | ');
+  const minGround = spots.length > 1 && spots.includes('ground') ? Math.ceil(count / 2) : 0;
   return [
     `語言學習找物遊戲《記憶小鎮》，街區「${sceneName}」裡的區域「${zone.name}」（${zone.indoor ? '室內' : '室外'}，${FEATURE_TEXT[zone.feature]}）。`,
+    ...(existing.length ? [`這個區域已經有：${existing.map((e) => `${e.zh}（${e.id}）`).join('、')}。列出其他東西，可以和它們搭配。`] : []),
     `列出 ${count} 個會出現在這裡、語言初學者（A1–A2）該學的具體物品名詞。規則：`,
     '1. 單一、能用正面扁平向量圖示畫出來、一眼認得出的物品。不要動物、人物、場所、抽象概念、液體或一大片東西；也不要人形或動物形狀的東西（雕像、玩偶、畫著人形的標誌），這類圖畫不出來。',
     '2. 物品不能靠文字辨認（例如招牌、書名），圖裡不會有任何文字或數字。',
@@ -84,7 +90,7 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion }) 
     '   zh：繁體中文（台灣用語）；en：英文單字（小寫）；ja：日文常用說法；reading：只用平假名或片假名的讀音',
     `   category：${CATEGORIES.join(' | ')}`,
     '   size：small（手拿得起）| medium（家具、腳踏車大小）| large（建築、車輛、大型設備）',
-    `   spot：${spots}`,
+    `   spot：${spotText}${minGround ? `；至少 ${minGround} 個是 ground` : ''}`,
     '   desc：繁體中文 20–60 字，正面平視的外觀：主要形狀、顏色、一兩個一眼能認出的特徵。不要寫數字或英文字母。',
     '   loose：true = 散落在地上、可以歪倒的小東西',
     `   motion：null，或 sway（植物、布料輕擺）| wobble（會震動的機器、車輛）| bob（水上、空中浮動）| drift（風箏飄移）；最多 ${maxMotion} 個不是 null`,
@@ -96,12 +102,12 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion }) 
 
 /**
  * 驗證一個區域的物品。used：已經用掉的 { ids, en, zh }（Set），通過的物品會加進去。
+ * spots：可以放的位置，其他的退回地上。
  * @returns {{ ok: object[], rejected: Array<{ id: string, reason: string }> }}
  */
-export function validateElements(list, { zone, used }) {
+export function validateElements(list, { zone, used, spots = allowedSpots(zone) }) {
   const ok = [];
   const rejected = [];
-  const spots = allowedSpots(zone);
   for (const raw of Array.isArray(list) ? list : []) {
     const e = raw ?? {};
     const en = String(e.en ?? '').trim().toLowerCase();
@@ -192,5 +198,18 @@ export function planToSceneConfig(plan, available) {
 /** 每個區域要幾個物品（總數平均分，前面的區域多 1） */
 export function splitCount(total, parts) {
   return Array.from({ length: parts }, (_, i) => Math.floor(total / parts) + (i < total % parts ? 1 : 0));
+}
+
+/**
+ * 已上線的街區每個區域還差幾個物品才到 itemsPerScene 的平均分配（只算有 SVG 的，生成失敗的不算）。
+ * @returns {Array<{ zone: object, have: number, need: number }>}
+ */
+export function zoneShortfall(plan, available, itemsPerScene) {
+  const has = new Set(available);
+  const target = splitCount(itemsPerScene, plan.zones.length);
+  return plan.zones.map((zone, i) => {
+    const have = plan.elements.filter((e) => e.zone === zone.id && has.has(e.id)).length;
+    return { zone, have, need: Math.max(0, target[i] - have) };
+  });
 }
 

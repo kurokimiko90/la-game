@@ -22,7 +22,6 @@ export function SceneItemNode({ item, className }: { item: SceneItem; className?
         viewBox={item.viewBox.join(' ')}
         overflow="visible"
         className={className}
-        style={{ cursor: 'pointer' }}
       >
         <g className={m ? `motion motion--${m.type}` : undefined} style={motionStyle} dangerouslySetInnerHTML={{ __html: item.body }} />
       </svg>

@@ -8,6 +8,7 @@ import { SvgArt } from '../SvgArt';
 import { Stars } from '../game/StageMenu';
 import { SCENE_LIST, SCENE_ORDER } from '@/lib/scenes';
 import { STAGES } from '@/lib/stages';
+import { translationLabel } from '@/lib/words';
 import { isSceneUnlocked, isStageCleared, sceneStars, updateSettings, type Settings } from '@/lib/progress';
 
 const CARD_COLORS = ['bg-[#dcedc8]', 'bg-[#ffe0b2]', 'bg-[#b3e5fc]', 'bg-[#f8bbd0]'];
@@ -39,7 +40,7 @@ export function HomeScreen() {
         <div className="flex flex-col items-start gap-2 sm:items-end">
           <LangToggle />
           <div className="flex gap-4">
-            <Toggle label="中文翻譯" checked={settings.showTranslation} onChange={(v) => set({ showTranslation: v })} />
+            <Toggle label={translationLabel(settings.lang)} checked={settings.showTranslation} onChange={(v) => set({ showTranslation: v })} />
             {settings.lang === 'ja' && <Toggle label="假名讀音" checked={settings.showReading} onChange={(v) => set({ showReading: v })} />}
           </div>
         </div>

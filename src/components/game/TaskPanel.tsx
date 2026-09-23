@@ -54,6 +54,7 @@ export function TaskPanel({ stage, state, itemsById, lang, showReading, explored
     return (
       <div className="flex items-center gap-4 px-4 py-3">
         <SpeakButton big label="再聽一次" onClick={() => target && onSay(target)} />
+        {stage.mode === 'audio' && item && <SvgArt viewBox={item.viewBox} body={item.body} className="size-9 shrink-0" />}
         <div className="min-w-0 flex-1">
           <div className="text-sm text-muted">{stage.mode === 'recall' ? '它原本在哪裡？點出它的位置' : '聽發音，找出這個物品'}</div>
           {stage.mode === 'recall' && item && (
@@ -73,7 +74,7 @@ export function TaskPanel({ stage, state, itemsById, lang, showReading, explored
         const done = state.found.includes(id);
         return (
           <li key={id} className={`flex shrink-0 items-center gap-2 rounded-2xl border px-3 py-2 transition-opacity ${done ? 'border-brand bg-brand-soft opacity-60' : 'border-line bg-white'}`}>
-            {stage.mode === 'picture' && <SvgArt viewBox={item.viewBox} body={item.body} className="size-9" />}
+            <SvgArt viewBox={item.viewBox} body={item.body} className="size-9" />
             <WordText words={item.words} lang={lang} showReading={showReading} className={`text-lg font-bold ${done ? 'line-through' : ''}`} />
             {done ? <Check size={18} className="text-brand" /> : <SpeakButton label="聽發音" onClick={() => onSay(id)} />}
           </li>

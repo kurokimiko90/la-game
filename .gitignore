@@ -15,6 +15,7 @@
 
 # next.js
 /.next/
+/.next-play/
 /out/
 
 # production
@@ -46,3 +47,6 @@ next-env.d.ts
 
 # auto-expand 執行狀態與紀錄
 /.auto-expand/
+
+# 發音錄音原檔（build-voice）
+/.cache/

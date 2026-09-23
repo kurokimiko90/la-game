@@ -1,4 +1,4 @@
-export type Lang = 'en' | 'ja';
+export type Lang = 'en' | 'ja' | 'zh';
 
 export interface Words {
   'zh-TW': string;

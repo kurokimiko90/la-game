@@ -7,6 +7,7 @@ import type { Lang } from '@/lib/types';
 const OPTIONS: Array<{ lang: Lang; label: string; full: string }> = [
   { lang: 'en', label: 'EN', full: 'English' },
   { lang: 'ja', label: '日', full: '日本語' },
+  { lang: 'zh', label: '中', full: '中文' },
 ];
 
 export function LangToggle({ compact = false }: { compact?: boolean }) {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey,
+  buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey, zoneShortfall,
 } from '../../scripts/lib/scene-plan.mjs';
 
 const theme = { id: 'cafe', name: '咖啡館' };
@@ -53,6 +53,11 @@ describe('validateElements', () => {
     expect(used.en.has('teacup')).toBe(true);
   });
 
+  it('限定位置時，其他位置一律退回地上', () => {
+    const { ok } = validateElements([el({ spot: 'surface' })], { zone: zones[1], used: freshUsed(), spots: ['ground'] });
+    expect(ok[0].spot).toBe('ground');
+  });
+
   it.each([
     [{ id: 'Tea Cup' }, 'id 格式不對'],
     [{ id: 'bench' }, 'id 重複'],
@@ -77,6 +82,16 @@ describe('buildZonePrompt', () => {
     expect(p).not.toContain('sky（');
     expect(p).toContain('bench, cup');
     expect(p).toContain('18 個');
+    expect(p).toContain('至少 9 個是 ground');
+    expect(p).not.toContain('已經有');
+  });
+
+  it('補元素：只給地上的位置，列出區域裡已經有的物品', () => {
+    const p = buildZonePrompt({ sceneName: '咖啡館', zone: zones[1], count: 7, avoidEn: [], maxMotion: 1, spots: ['ground'], existing: [{ id: 'teacup', zh: '茶杯' }] });
+    expect(p).toContain('spot：ground（地上）\n');
+    expect(p).not.toContain('surface（');
+    expect(p).not.toContain('至少');
+    expect(p).toContain('已經有：茶杯（teacup）');
   });
 });
 
@@ -118,5 +133,19 @@ describe('planToManifest / planToSceneConfig', () => {
 describe('splitCount', () => {
   it('平均分，前面的多 1', () => {
     expect(splitCount(70, 4)).toEqual([18, 18, 17, 17]);
+  });
+});
+
+describe('zoneShortfall', () => {
+  it('每個區域補到平均數，只算有 SVG 的物件', () => {
+    const plan = {
+      zones,
+      elements: [
+        el({ id: 'a', zone: 'door' }), el({ id: 'b', zone: 'door' }), el({ id: 'c', zone: 'door' }),
+        el({ id: 'd', zone: 'bar' }), el({ id: 'failed', zone: 'bar' }),
+      ],
+    };
+    const out = zoneShortfall(plan, ['a', 'b', 'c', 'd'], 10);
+    expect(out.map(({ zone, have, need }) => [zone.id, have, need])).toEqual([['door', 3, 0], ['bar', 1, 2], ['seats', 0, 2], ['terrace', 0, 2]]);
   });
 });

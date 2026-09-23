@@ -130,7 +130,7 @@
 2. **manifest**：單字、描述、`sizeHint`。
 3. **scene-config**：`name`、`icon`、`zones`（地圖矩形）、`bands`、`place`、`clusters`、`loose`、`motion`。需要檯面時，在地帶加 `look`；要新樣式就在 `Surfaces.tsx` 加一種。另外在 `TownMinimap.tsx` 的 `COLORS` 加上這個場景的顏色。
 4. **擺放**：`npm run content:sync-svg` → `npm run content:layout -- <scene>` → `npm run content:scenes` → `npm run content:scene-preview`，看預覽圖後手改 `content/layouts/<scene>.json`，再預覽一次。
-5. **音檔**：`npm run content:audio`。
+5. **音檔**：`npm run content:audio`（edge-tts 底稿）→ `npm run content:voice -- <scene>`（ChatGPT 的聲音，需要 miko-ws、ffmpeg、whisper-cli）。
 6. **檢查**：`npm test`、`npm run test:e2e`，並在手機上看一次動態和平移。
 7. **鎖定**：上線後 `content/layouts/<scene>.json` 視為鎖定，不再 `--reset`。
 

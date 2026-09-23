@@ -9,6 +9,7 @@ const eslintConfig = defineConfig([
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    ".next-play/**", // npm run play 的 build
     "out/**",
     "build/**",
     "next-env.d.ts",

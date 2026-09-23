@@ -17,6 +17,7 @@
 ```bash
 npm run dev               # 開發
 npm run build && npm start
+npm run play              # 試玩用 production（build 到 .next-play、開在 3220）；自動擴展重建 .next 不會弄壞它
 npm test                  # Vitest（src/lib、scripts/lib）
 npm run test:coverage
 npm run test:e2e          # next build + Playwright
@@ -36,8 +37,9 @@ content/scene-config.json      地圖大小、各區域在地圖上的矩形、�
 content/layouts/<scene>.json   鎖定的位置（可手改，build 只讀它）
         │ npm run content:scenes（白名單清洗 SVG + 檢查擺放/動態/id 重複）
 src/data/scenes/<scene>.json   遊戲讀的資料（產出物）
-        │ npm run content:audio（edge-tts）
-public/audio/<en|ja>/<scene>/<itemId>.mp3
+        │ npm run content:audio（edge-tts 底稿，保證每個詞都有聲音）
+        │ npm run content:voice（miko-ws 讓 ChatGPT 念整個場景 → whisper 切割、驗收 → 覆蓋；記錄在 content/voice/）
+public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 ```
 
 - 擺放演算法：`scripts/lib/layout.mjs`；動態參數：`scripts/lib/motion.mjs`；設定檢查：`scripts/lib/scene-config.mjs`；SVG 白名單：`scripts/lib/svg-sanitize.mjs`

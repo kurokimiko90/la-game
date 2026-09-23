@@ -1,13 +1,14 @@
 'use client';
 
-// 小鎮畫布：一張 2D 地圖，上下左右拖曳平移、雙指 / ⌘＋捲動 / 按鈕縮放（最小可以看到整個小鎮）。
+// 小鎮畫布：一張 2D 地圖，拖曳平移；滾輪 / 雙指 / 按鈕 / 鍵盤縮放（最小可以看到整個小鎮）。
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Minus, Plus, Maximize } from 'lucide-react';
 import { DistrictLayer } from './DistrictLayer';
 import { TownStrip } from './TownStrip';
 import { TownMinimap } from './TownMinimap';
 import { WorldBackground, worldSections } from './WorldBackground';
-import { clampView, centerOn, defaultScale, fitScale, toScene, zoomAt, type View, type Size } from '@/lib/geometry';
+import { keyIntent, primaryButtonChange, wheelIntent, type ViewIntent } from '@/lib/controls';
+import { clampView, centerOn, defaultScale, itemAtPoint, toScene, wholeView, zoomAt, type View, type Size } from '@/lib/geometry';
 import { districtAt, districtBounds, type Rect, type Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
 
@@ -49,6 +50,8 @@ interface TownCanvasProps {
 }
 
 const DRAG_THRESHOLD = 8;
+/** 點擊判定的容許誤差（螢幕像素） */
+const HIT_SLOP_PX = 10;
 const FOCUS_MS = 450;
 /** 畫面外多遠還算「看得到」（動畫不暫停） */
 const IDLE_MARGIN = 300;
@@ -137,21 +140,46 @@ export function TownCanvas({
     if (s) applyView(centerOn(viewRef.current, p, s, townSize));
   }, [applyView, townSize]);
 
-  // 觸控板雙指 / 滾輪：平移（上下左右）；ctrl/⌘ + 滾輪（含觸控板捏合）= 縮放。需要 passive:false 才能擋掉頁面捲動
+  const showWholeTown = useCallback(() => {
+    const s = sizeRef.current;
+    if (s) applyView(wholeView(s, townSize));
+  }, [applyView, townSize]);
+
+  const applyIntent = useCallback((intent: ViewIntent, anchor?: Point) => {
+    const v = viewRef.current;
+    if (intent.kind === 'zoom') zoomBy(intent.factor, anchor);
+    else if (intent.kind === 'pan') applyView({ ...v, tx: v.tx - intent.dx, ty: v.ty - intent.dy });
+    else if (intent.kind === 'fit') showWholeTown();
+  }, [applyView, zoomBy, showWholeTown]);
+
+  // 滾輪 = 以游標為中心縮放；觸控板橫滑 / Shift + 滾輪 = 橫向平移。需要 passive:false 才能擋掉頁面捲動
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return undefined;
     const onWheel = (e: WheelEvent) => {
+      // 面板（選關、結算、按鈕）上的滾輪留給面板自己捲動
+      if (e.target instanceof Element && e.target.closest('[data-ui]')) return;
       e.preventDefault();
-      const v = viewRef.current;
-      if (e.ctrlKey || e.metaKey) zoomBy(Math.exp(-e.deltaY * 0.01), localPoint(e));
-      else applyView({ ...v, tx: v.tx - e.deltaX, ty: v.ty - e.deltaY });
+      applyIntent(wheelIntent(e), localPoint(e));
     };
     el.addEventListener('wheel', onWheel, { passive: false });
     return () => el.removeEventListener('wheel', onWheel);
-  }, [applyView, zoomBy]);
+  }, [applyIntent]);
 
-  const onPointerDown = (e: React.PointerEvent) => {
+  // 鍵盤快捷鍵整頁有效（不用先點地圖）；輸入框、單選群組裡的按鍵與 ctrl/⌘/alt 組合鍵留給瀏覽器
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey || isKeyOwnedByTarget(e.target)) return;
+      const intent = keyIntent(e.key);
+      if (intent.kind === 'none') return;
+      e.preventDefault();
+      applyIntent(intent);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [applyIntent]);
+
+  const startPointer = (e: React.PointerEvent) => {
     containerRef.current?.setPointerCapture(e.pointerId);
     const p = localPoint(e);
     pointers.current.set(e.pointerId, p);
@@ -163,7 +191,19 @@ export function TownCanvas({
     }
   };
 
+  // 滑鼠只認左鍵（右鍵、中鍵不拖曳）
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    startPointer(e);
+  };
+
   const onPointerMove = (e: React.PointerEvent) => {
+    // 別的鍵卡著時，左鍵的按下 / 放開只會以 pointermove 出現（見 primaryButtonChange）
+    if (e.pointerType === 'mouse') {
+      const change = primaryButtonChange(e.buttons, pointers.current.has(e.pointerId));
+      if (change === 'press') return startPointer(e);
+      if (change === 'release') return endPointer(e);
+    }
     if (!pointers.current.has(e.pointerId) || !gesture.current) return;
     const p = localPoint(e);
     pointers.current.set(e.pointerId, p);
@@ -172,6 +212,7 @@ export function TownCanvas({
       const dx = p.x - g.start.x;
       const dy = p.y - g.start.y;
       if (!g.moved && Math.hypot(dx, dy) < DRAG_THRESHOLD) return;
+      if (!g.moved) containerRef.current?.setAttribute('data-dragging', '');
       g.moved = true;
       applyView({ ...g.startView, tx: g.startView.tx + dx, ty: g.startView.ty + dy });
     } else if (pointers.current.size >= 2) {
@@ -182,9 +223,21 @@ export function TownCanvas({
     }
   };
 
-  const onPointerUp = (e: React.PointerEvent) => {
+  const found = useMemo(() => new Set(foundIds), [foundIds]);
+
+  // 點在形狀的空隙（繩圈、筷子之間）也算點到：外框外擴 HIT_SLOP_PX 個螢幕像素；記憶挑戰隱形的物品不算
+  const nearbyItemId = (sceneId: string, sp: Point): string | null => {
+    const scene = districts.find((d) => d.scene.id === sceneId)?.scene;
+    if (!scene) return null;
+    const hidden = (itemId: string) => hideUnfound && sceneId === activeSceneId && !found.has(itemId);
+    return itemAtPoint(scene.items.filter((it) => !hidden(it.id)), sp, HIT_SLOP_PX / viewRef.current.scale)?.id ?? null;
+  };
+
+  const endPointer = (e: React.PointerEvent) => {
+    if (!pointers.current.has(e.pointerId)) return;
     const g = gesture.current;
     pointers.current.delete(e.pointerId);
+    if (pointers.current.size === 0) containerRef.current?.removeAttribute('data-dragging');
     if (pointers.current.size > 0) {
       // 雙指放開一指：剩下的那指接續平移，但不當成點擊
       const [rest] = [...pointers.current.values()];
@@ -199,29 +252,13 @@ export function TownCanvas({
     const sceneId = districtAt(town, sp)?.scene.id ?? null;
     const locked = sceneId !== null && lockedSceneIds.has(sceneId);
     const target = !locked && g.target instanceof Element ? g.target.closest('[data-item-id]') : null;
+    const itemId = target?.getAttribute('data-item-id') ?? (locked || !sceneId ? null : nearbyItemId(sceneId, sp));
     const id = Date.now();
     setRipples((r) => [...r, { ...sp, id }]);
     window.setTimeout(() => setRipples((r) => r.filter((x) => x.id !== id)), 600);
-    onSceneClick({ itemId: target?.getAttribute('data-item-id') ?? null, sceneId, locked, scenePoint: sp, localPoint: lp });
+    onSceneClick({ itemId, sceneId, locked, scenePoint: sp, localPoint: lp });
   };
 
-  const onKeyDown = (e: React.KeyboardEvent) => {
-    const v = viewRef.current;
-    const step = 160;
-    const moves: Record<string, Partial<View>> = {
-      ArrowLeft: { tx: v.tx + step }, ArrowRight: { tx: v.tx - step }, ArrowUp: { ty: v.ty + step }, ArrowDown: { ty: v.ty - step },
-    };
-    if (moves[e.key]) { e.preventDefault(); applyView({ ...v, ...moves[e.key] }); }
-    if (e.key === '+' || e.key === '=') zoomBy(1.25);
-    if (e.key === '-') zoomBy(0.8);
-  };
-
-  const showWholeTown = useCallback(() => {
-    const s = sizeRef.current;
-    if (s) applyView({ scale: fitScale(s, townSize), tx: 0, ty: 0 });
-  }, [applyView, townSize]);
-
-  const found = useMemo(() => new Set(foundIds), [foundIds]);
   const sections = useMemo(() => worldSections(town), [town]);
   const visible: Rect | null = size ? {
     x0: -view.tx / view.scale - IDLE_MARGIN,
@@ -234,14 +271,13 @@ export function TownCanvas({
   return (
     <div
       ref={containerRef}
-      className="relative h-full w-full overflow-hidden touch-none select-none outline-none bg-[#cfe3b4]"
+      className="town-canvas relative h-full w-full overflow-hidden touch-none select-none outline-none bg-[#cfe3b4]"
       tabIndex={0}
-      aria-label="小鎮：拖曳移動、雙指或 ⌘＋捲動縮放、方向鍵平移"
+      aria-label="小鎮：拖曳移動、滾輪或雙指縮放、方向鍵或 WASD 平移、＋－縮放、0 看整個小鎮"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
-      onPointerUp={onPointerUp}
-      onPointerCancel={onPointerUp}
-      onKeyDown={onKeyDown}
+      onPointerUp={endPointer}
+      onPointerCancel={endPointer}
     >
       {size && (
         <svg width={size.width} height={size.height} className="block">
@@ -277,9 +313,9 @@ export function TownCanvas({
       )}
 
       <div data-ui="overlay" className="absolute right-3 top-1/2 flex -translate-y-1/2 flex-col gap-2" onPointerDown={(e) => e.stopPropagation()}>
-        <ZoomButton label="放大" onClick={() => zoomBy(1.3)}><Plus size={18} /></ZoomButton>
-        <ZoomButton label="縮小" onClick={() => zoomBy(1 / 1.3)}><Minus size={18} /></ZoomButton>
-        <ZoomButton label="看整個小鎮" onClick={showWholeTown}><Maximize size={18} /></ZoomButton>
+        <ZoomButton label="放大" shortcut="滾輪上 / +" onClick={() => zoomBy(1.3)}><Plus size={18} /></ZoomButton>
+        <ZoomButton label="縮小" shortcut="滾輪下 / −" onClick={() => zoomBy(1 / 1.3)}><Minus size={18} /></ZoomButton>
+        <ZoomButton label="看整個小鎮" shortcut="0" onClick={showWholeTown}><Maximize size={18} /></ZoomButton>
       </div>
 
       <TownStrip town={town} activeSceneId={activeSceneId} lockedSceneIds={lockedSceneIds} hintZoneKey={hintZoneKey} onDistrict={onDistrict} onJumpTo={jumpTo} />
@@ -289,9 +325,16 @@ export function TownCanvas({
   );
 }
 
-function ZoomButton({ label, onClick, children }: { label: string; onClick: () => void; children: ReactNode }) {
+/** 焦點在輸入框、下拉選單或單選 / 分頁群組時，按鍵歸它們（例如語言切換的方向鍵） */
+function isKeyOwnedByTarget(target: EventTarget | null): boolean {
+  if (!(target instanceof HTMLElement)) return false;
+  if (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) return true;
+  return target.closest('[role="radiogroup"],[role="tablist"],[role="listbox"],[role="menu"],[role="slider"]') !== null;
+}
+
+function ZoomButton({ label, shortcut, onClick, children }: { label: string; shortcut: string; onClick: () => void; children: ReactNode }) {
   return (
-    <button type="button" aria-label={label} onClick={onClick}
+    <button type="button" aria-label={label} title={`${label}（${shortcut}）`} onClick={onClick}
       className="grid size-10 place-items-center rounded-full bg-white/90 text-ink shadow-md ring-1 ring-black/5 hover:bg-white">
       {children}
     </button>

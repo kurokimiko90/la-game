@@ -6,6 +6,7 @@ import { WordText } from '../WordText';
 import { Stars, formatTime } from './StageMenu';
 import { getStage, type StageDef, type StageState } from '@/lib/stages';
 import type { Lang, SceneItem } from '@/lib/types';
+import { translationOf } from '@/lib/words';
 
 interface StageResultProps {
   stage: StageDef;
@@ -25,8 +26,9 @@ export function StageResult({ stage, state, stars, itemsById, lang, showReading,
   const next = getStage(stage.id + 1);
   const timeMs = (state.finishedAt ?? state.startedAt) - state.startedAt;
   return (
-    <div className="absolute inset-0 z-30 grid place-items-center bg-ink/30 p-4 backdrop-blur-[2px]" onPointerDown={(e) => e.stopPropagation()}>
-      <div className="pop-in flex max-h-full w-full max-w-md flex-col rounded-3xl bg-paper p-5 shadow-2xl">
+    // 遮罩不擋滑鼠：面板外可以直接拖曳地圖；只有面板本身攔截
+    <div className="pointer-events-none absolute inset-0 z-30 grid place-items-center bg-ink/20 p-4">
+      <div data-ui="overlay" className="pop-in pointer-events-auto flex max-h-full w-full max-w-md flex-col rounded-3xl bg-paper p-5 shadow-2xl" onPointerDown={(e) => e.stopPropagation()}>
         <div className="text-center">
           <div className="text-sm font-semibold text-brand">{stage.name} 完成</div>
           <div className="mt-2 flex justify-center"><Stars count={stars} size={36} /></div>
@@ -46,7 +48,7 @@ export function StageResult({ stage, state, stars, itemsById, lang, showReading,
                   <SvgArt viewBox={item.viewBox} body={item.body} className="size-8 shrink-0" />
                   <span className="min-w-0 flex-1">
                     <WordText words={item.words} lang={lang} showReading={showReading} className="block truncate font-bold" />
-                    {showTranslation && <span className="block truncate text-xs text-muted">{item.words['zh-TW']}</span>}
+                    {showTranslation && <span className="block truncate text-xs text-muted">{translationOf(item.words, lang)}</span>}
                   </span>
                   <Volume2 size={14} className="shrink-0 text-brand" />
                 </button>

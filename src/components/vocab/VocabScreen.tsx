@@ -10,6 +10,7 @@ import { WordText } from '../WordText';
 import { allScenes } from '@/lib/scenes';
 import { wordKey } from '@/lib/progress';
 import { playWord } from '@/lib/audio';
+import { translationOf } from '@/lib/words';
 
 type Filter = 'all' | 'seen' | 'found';
 const FILTERS: Array<{ id: Filter; label: string }> = [
@@ -70,7 +71,7 @@ export function VocabScreen() {
                           {known ? (
                             <>
                               <WordText words={item.words} lang={lang} showReading={showReading} className="block truncate text-lg font-bold" />
-                              {showTranslation && <span className="block truncate text-xs text-muted">{item.words['zh-TW']}</span>}
+                              {showTranslation && <span className="block truncate text-xs text-muted">{translationOf(item.words, lang)}</span>}
                             </>
                           ) : (
                             <span className="block text-lg font-bold text-black/25">？？？</span>

@@ -28,8 +28,9 @@ export function Stars({ count, size = 16 }: { count: number; size?: number }) {
 
 export function StageMenu({ sceneId, sceneName, progress, onExplore, onStart }: StageMenuProps) {
   return (
-    <div className="absolute inset-0 z-30 grid place-items-center bg-ink/30 p-4 backdrop-blur-[2px]" onPointerDown={(e) => e.stopPropagation()}>
-      <div className="pop-in w-full max-w-md rounded-3xl bg-paper p-5 shadow-2xl">
+    // 遮罩不擋滑鼠：面板外可以直接拖曳地圖；只有面板本身攔截
+    <div className="pointer-events-none absolute inset-0 z-30 grid place-items-center bg-ink/20 p-4">
+      <div data-ui="overlay" className="pop-in pointer-events-auto w-full max-w-md rounded-3xl bg-paper p-5 shadow-2xl" onPointerDown={(e) => e.stopPropagation()}>
         <h2 className="text-2xl font-bold">{sceneName}</h2>
         <p className="mt-1 text-sm text-muted">物品的位置永遠不變。從看圖開始，一路練到憑記憶找到它們。</p>
 

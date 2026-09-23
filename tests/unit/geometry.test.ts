@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { defaultScale, fitScale, clampView, zoomAt, toScene, centerOn, isNearItem, itemTransform, MAX_ZOOM, VIEW_HEIGHT } from '@/lib/geometry';
+import { defaultScale, fitScale, clampView, zoomAt, toScene, centerOn, isNearItem, itemAtPoint, itemTransform, wholeView, MAX_ZOOM, VIEW_HEIGHT } from '@/lib/geometry';
 
 const scene = { width: 4000, height: 3000 };
 const container = { width: 800, height: 450 };
@@ -10,8 +10,17 @@ describe('defaultScale / fitScale / clampView', () => {
     expect(fitScale(container, scene)).toBe(Math.min(800 / 4000, 450 / 3000));
   });
 
-  test('最小可以縮到看見整張地圖，內容比容器小的方向置中', () => {
-    const v = clampView({ scale: 0.001, tx: 50, ty: 50 }, container, scene);
+  test('最小可以縮到看見整張地圖；內容比容器小的方向可以在容器內拖動，但不超出容器', () => {
+    const s = fitScale(container, scene);
+    const room = 800 - 4000 * s;
+    expect(room).toBeGreaterThan(0);
+    expect(clampView({ scale: 0.001, tx: 50, ty: 0 }, container, scene)).toEqual({ scale: s, tx: 50, ty: 0 });
+    expect(clampView({ scale: s, tx: -30, ty: 0 }, container, scene).tx).toBe(0);
+    expect(clampView({ scale: s, tx: room + 30, ty: 0 }, container, scene).tx).toBe(room);
+  });
+
+  test('wholeView：整張地圖置中', () => {
+    const v = wholeView(container, scene);
     expect(v.scale).toBe(fitScale(container, scene));
     expect(v.tx).toBe((800 - 4000 * v.scale) / 2);
     expect(v.ty).toBe((450 - 3000 * v.scale) / 2);
@@ -70,5 +79,24 @@ describe('itemTransform', () => {
 
   test('以底部中心為支點旋轉與鏡像', () => {
     expect(itemTransform({ ...box, rotate: 15, flip: true })).toBe('translate(120 260) rotate(15) scale(-1 1) translate(-120 -260)');
+  });
+});
+
+describe('itemAtPoint（點在形狀空隙時的後備判定）', () => {
+  const rope = { id: 'rope', x: 100, y: 100, w: 200, h: 200 };
+  const coin = { id: 'coin', x: 180, y: 180, w: 20, h: 20 };
+  const bench = { id: 'bench', x: 600, y: 100, w: 100, h: 50 };
+
+  test('點在外框內 → 該物件', () => {
+    expect(itemAtPoint([rope, bench], { x: 150, y: 150 }, 0)?.id).toBe('rope');
+  });
+
+  test('外框重疊時取面積最小的（小東西優先）', () => {
+    expect(itemAtPoint([rope, coin], { x: 190, y: 190 }, 0)?.id).toBe('coin');
+  });
+
+  test('外框外擴 pad 以內也算；超出就沒有', () => {
+    expect(itemAtPoint([bench], { x: 590, y: 120 }, 12)?.id).toBe('bench');
+    expect(itemAtPoint([bench], { x: 580, y: 120 }, 12)).toBeNull();
   });
 });

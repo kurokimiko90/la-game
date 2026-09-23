@@ -1,5 +1,6 @@
 // 階段規則（純函式，UI 只負責呼叫與顯示）。
 // 同一場景物品位置不變，提示逐步減少：看圖 → 看字 → 聽音 → 憑記憶點出原位置。
+// 看圖、看字、聽音的題目都附物品圖示。
 
 export type StageMode = 'picture' | 'text' | 'audio' | 'recall';
 export type StageId = 1 | 2 | 3 | 4;
@@ -12,16 +13,17 @@ export interface StageDef {
   count: number;
   /** true：一次只找一個（聽音、記憶）；false：清單上的任意順序 */
   sequential: boolean;
+  /** 這一關可用的提示次數 */
+  hints: number;
 }
 
 export const STAGES: readonly StageDef[] = [
-  { id: 1, mode: 'picture', name: '看圖找', description: '看圖示和單字，找出物品', count: 5, sequential: false },
-  { id: 2, mode: 'text', name: '看字找', description: '只看單字，找出物品', count: 8, sequential: false },
-  { id: 3, mode: 'audio', name: '聽音找', description: '只聽發音，找出物品', count: 10, sequential: true },
-  { id: 4, mode: 'recall', name: '記憶挑戰', description: '物品都藏起來了，聽到單字後點出它原本的位置', count: 10, sequential: true },
+  { id: 1, mode: 'picture', name: '看圖找', description: '看圖示和單字，找出物品', count: 10, sequential: false, hints: 3 },
+  { id: 2, mode: 'text', name: '看字找', description: '看單字和圖示，找出物品', count: 8, sequential: false, hints: 3 },
+  { id: 3, mode: 'audio', name: '聽音找', description: '聽發音、看圖示，找出物品', count: 10, sequential: true, hints: 3 },
+  { id: 4, mode: 'recall', name: '記憶挑戰', description: '物品都藏起來了，聽到單字後點出它原本的位置', count: 10, sequential: true, hints: 10 },
 ];
 
-export const HINTS_PER_STAGE = 3;
 /** 記憶挑戰同一個物品點錯幾次後直接揭曉位置 */
 export const RECALL_MAX_MISSES = 3;
 
@@ -118,7 +120,7 @@ export function clickItem(state: StageState, stage: StageDef, itemId: string | n
 
 /** 用掉一次提示，回傳要提示的物品（依序模式 = 目前目標；清單模式 = 第一個還沒找到的） */
 export function takeHint(state: StageState, stage: StageDef): { state: StageState; targetId: string | null } {
-  if (state.finishedAt !== null || state.hintsUsed >= HINTS_PER_STAGE) return { state, targetId: null };
+  if (state.finishedAt !== null || state.hintsUsed >= stage.hints) return { state, targetId: null };
   const targetId = stage.sequential ? currentTarget(state, stage) : remainingTargets(state)[0] ?? null;
   if (!targetId) return { state, targetId: null };
   return { state: { ...state, hintsUsed: state.hintsUsed + 1 }, targetId };

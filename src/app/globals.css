@@ -28,6 +28,19 @@ ruby rt {
 /* 場景物件：找到後的光暈、提示區域脈動、點擊漣漪 */
 .scene-item {
   transition: opacity 0.35s ease, filter 0.35s ease;
+  cursor: pointer;
+}
+/* 地圖：平常是張開的手（可以拖），拖曳中是抓住的手（經過物品也不變成手指） */
+.town-canvas {
+  cursor: grab;
+}
+.town-canvas[data-dragging],
+.town-canvas[data-dragging] .scene-item {
+  cursor: grabbing;
+}
+/* 疊在地圖上的面板、按鈕、小地圖維持原本的游標 */
+.town-canvas [data-ui] {
+  cursor: auto;
 }
 .scene-item--found {
   filter: drop-shadow(0 0 6px rgba(0, 150, 136, 0.9));

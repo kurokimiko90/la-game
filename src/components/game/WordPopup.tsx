@@ -2,6 +2,7 @@
 
 import { Check, Volume2 } from 'lucide-react';
 import { WordText } from '../WordText';
+import { translationOf } from '@/lib/words';
 import type { Lang, Point, Words } from '@/lib/types';
 
 interface WordPopupProps {
@@ -46,7 +47,7 @@ export function WordPopup({ words, lang, showTranslation, showReading, point, fo
             <Volume2 size={18} />
           </button>
         </div>
-        {showTranslation && <div className="mt-1 text-sm text-muted">{words['zh-TW']}</div>}
+        {showTranslation && <div className="mt-1 text-sm text-muted">{translationOf(words, lang)}</div>}
       </div>
     </div>
   );

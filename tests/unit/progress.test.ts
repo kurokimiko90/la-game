@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import {
-  DEFAULT_PROGRESS, recordStageClear, recordWordSeen, recordWordFound, updateSettings,
+  DEFAULT_PROGRESS, FREE_SCENE_COUNT, recordStageClear, recordWordSeen, recordWordFound, updateSettings,
   isSceneUnlocked, isStageUnlocked, isStageCleared, sceneStars, parseProgress, stageKey, wordKey,
 } from '@/lib/progress';
 
@@ -26,13 +26,21 @@ describe('單字紀錄', () => {
 });
 
 describe('解鎖規則', () => {
-  test('第一個場景永遠開放；下一個要前一個過階段 1', () => {
-    expect(isSceneUnlocked(DEFAULT_PROGRESS, 'park', ORDER)).toBe(true);
-    expect(isSceneUnlocked(DEFAULT_PROGRESS, 'street', ORDER)).toBe(false);
+  test('一開始開放前 FREE_SCENE_COUNT 個場景', () => {
+    const order = Array.from({ length: FREE_SCENE_COUNT + 2 }, (_, i) => `s${i}`);
+    expect(FREE_SCENE_COUNT).toBe(8);
+    for (const id of order.slice(0, FREE_SCENE_COUNT)) expect(isSceneUnlocked(DEFAULT_PROGRESS, id, order)).toBe(true);
+    expect(isSceneUnlocked(DEFAULT_PROGRESS, order[FREE_SCENE_COUNT], order)).toBe(false);
+    expect(isSceneUnlocked(DEFAULT_PROGRESS, 'unknown', order)).toBe(false);
+  });
+
+  test('開放範圍之後：下一個要前一個過階段 1', () => {
+    expect(isSceneUnlocked(DEFAULT_PROGRESS, 'park', ORDER, 1)).toBe(true);
+    expect(isSceneUnlocked(DEFAULT_PROGRESS, 'street', ORDER, 1)).toBe(false);
     const p = recordStageClear(DEFAULT_PROGRESS, 'park', 1, 3, 1);
-    expect(isSceneUnlocked(p, 'street', ORDER)).toBe(true);
-    expect(isSceneUnlocked(p, 'riverside', ORDER)).toBe(false);
-    expect(isSceneUnlocked(p, 'unknown', ORDER)).toBe(false);
+    expect(isSceneUnlocked(p, 'street', ORDER, 1)).toBe(true);
+    expect(isSceneUnlocked(p, 'riverside', ORDER, 1)).toBe(false);
+    expect(isSceneUnlocked(p, 'unknown', ORDER, 1)).toBe(false);
   });
 
   test('階段依序解鎖', () => {
@@ -76,6 +84,10 @@ describe('parseProgress（localStorage 資料不可信）', () => {
     expect(p.settings).toEqual({ lang: 'en', showTranslation: false, showReading: true, unlockAll: true });
     expect(p.stages).toEqual({ 'park:1': { stars: 3, bestTimeMs: 100, clears: 1 } });
     expect(p.words).toEqual({ 'park/bench': { seen: 1, found: 0, lastAt: 2 } });
+  });
+
+  test('中文是合法的學習語言', () => {
+    expect(parseProgress({ version: 1, settings: { lang: 'zh' } }).settings.lang).toBe('zh');
   });
 
   test('正常資料原樣保留', () => {

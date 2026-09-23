@@ -1,5 +1,6 @@
 // 玩家進度與設定：不可變更新 + 讀取 localStorage 時的防禦性解析（外部資料不可信）。
 import type { Lang } from './types';
+import { isLang } from './words';
 
 export interface StageRecord {
   stars: number;
@@ -62,11 +63,15 @@ export function isStageCleared(p: Progress, sceneId: string, stageId: number): b
   return Boolean(p.stages[stageKey(sceneId, stageId)]);
 }
 
-/** 場景依小鎮路線解鎖：前一個場景過了階段 1 才開下一個 */
-export function isSceneUnlocked(p: Progress, sceneId: string, order: readonly string[]): boolean {
+/** 一開始就開放的場景數（小鎮路線上的前幾個） */
+export const FREE_SCENE_COUNT = 8;
+
+/** 場景依小鎮路線解鎖：前 freeCount 個一開始就開放，之後前一個場景過了階段 1 才開下一個 */
+export function isSceneUnlocked(p: Progress, sceneId: string, order: readonly string[], freeCount = FREE_SCENE_COUNT): boolean {
   if (p.settings.unlockAll) return true;
   const i = order.indexOf(sceneId);
-  if (i <= 0) return i === 0;
+  if (i < 0) return false;
+  if (i < Math.max(1, freeCount)) return true;
   return isStageCleared(p, order[i - 1], 1);
 }
 
@@ -90,7 +95,7 @@ const isCount = (v: unknown): v is number => typeof v === 'number' && Number.isF
 function parseSettings(raw: unknown): Settings {
   if (!isObject(raw)) return DEFAULT_SETTINGS;
   return {
-    lang: raw.lang === 'ja' || raw.lang === 'en' ? raw.lang : DEFAULT_SETTINGS.lang,
+    lang: isLang(raw.lang) ? raw.lang : DEFAULT_SETTINGS.lang,
     showTranslation: typeof raw.showTranslation === 'boolean' ? raw.showTranslation : DEFAULT_SETTINGS.showTranslation,
     showReading: typeof raw.showReading === 'boolean' ? raw.showReading : DEFAULT_SETTINGS.showReading,
     unlockAll: typeof raw.unlockAll === 'boolean' ? raw.unlockAll : DEFAULT_SETTINGS.unlockAll,
