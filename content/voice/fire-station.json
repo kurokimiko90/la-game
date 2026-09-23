@@ -353,6 +353,132 @@
       "score": 1,
       "take": "en-1790145510887.aac",
       "account": "chatgpt1"
+    },
+    "axe": {
+      "heard": "Axe.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "hose-reel-cart": {
+      "heard": "Bade. Hose reel cart.",
+      "score": 0.75,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "speaker": {
+      "heard": "Speaker.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-belt": {
+      "heard": "Fire belt.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "carabiner": {
+      "heard": "Carabiner?",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "oxygen-mask": {
+      "heard": "oxygen mask,",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-door": {
+      "heard": "Fire door.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "boots": {
+      "heard": "boots",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-harness": {
+      "heard": "Fire harness.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-rope": {
+      "heard": "Fire Rope.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-pickaxe": {
+      "heard": "Fire pickaxe.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-cutter": {
+      "heard": "Firecutter.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-spreader": {
+      "heard": "Fire spreader.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-ram": {
+      "heard": "Fire ram.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-hook": {
+      "heard": "Firehook.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-shovel": {
+      "heard": "Fire shovel.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-rake": {
+      "heard": "Fire rake.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-saw": {
+      "heard": "Fire saw.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "rescue-basket": {
+      "heard": "Rescue Baskets.",
+      "score": 0.92,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-flag": {
+      "heard": "Fire station flag.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
+    },
+    "smoke": {
+      "heard": "Smoke.",
+      "score": 1,
+      "take": "en-1790146067210.aac",
+      "account": "chatgpt1"
     }
   }
 }

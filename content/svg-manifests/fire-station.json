@@ -1688,6 +1688,90 @@
           }
         }
       }
+    },
+    {
+      "name": "水帶推車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色金屬框架裝著圓形捲盤，兩側有黑色輪子，前方伸出一根推把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "fire-station",
+        "zone": "garage",
+        "itemId": "hose-reel-cart",
+        "words": {
+          "zh-TW": "水帶推車",
+          "en": "hose-reel-cart",
+          "ja": {
+            "text": "ホースリールカート",
+            "reading": "ホースリールカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "防火門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "厚實的深紅色單扇門，表面平整，配銀色門把和簡單的金屬鉸鏈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "fire-station",
+        "zone": "dispatch-room",
+        "itemId": "fire-door",
+        "words": {
+          "zh-TW": "防火門",
+          "en": "fire door",
+          "ja": {
+            "text": "防火扉",
+            "reading": "ぼうかとびら"
+          }
+        }
+      }
+    },
+    {
+      "name": "地面排水孔",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "嵌在地面的方形銀色金屬格柵，格縫排列整齊，外圍有平整邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "fire-station",
+        "zone": "dispatch-room",
+        "itemId": "floor-drain",
+        "words": {
+          "zh-TW": "地面排水孔",
+          "en": "floor drain",
+          "ja": {
+            "text": "排水口",
+            "reading": "はいすいこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "電池",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一節銀色圓柱電池橫放在地上，兩端分別有凸起的小圓點和扁平金屬底。",
+      "ref": {
+        "project": "la-game",
+        "scene": "fire-station",
+        "zone": "dispatch-room",
+        "itemId": "flashlight-battery",
+        "words": {
+          "zh-TW": "電池",
+          "en": "battery",
+          "ja": {
+            "text": "電池",
+            "reading": "でんち"
+          }
+        }
+      }
     }
   ]
 }

@@ -582,7 +582,7 @@
         "desk-phone": "surface-dispatch-room"
       },
       "clusters": [["fire-engine-seat", "steering-wheel"], ["hubcap", "spare-wheel"], ["hose-bridge", "fire-nozzle"], ["fire-harness", "fire-rope"], ["fire-cutter", "fire-spreader"], ["fire-shovel", "fire-rake"]],
-      "loose": ["hose-nozzle", "fire-helmet", "axe", "fire-bucket", "fire-extinguisher-hose", "toolbox", "hose-coupling", "fire-station-wrench", "fire-station-cone", "fire-boot", "fire-blanket", "wheel-wrench", "fire-nozzle", "fire-gloves", "fire-goggles", "fire-helmet-visor", "radio-microphone", "fire-rope", "carabiner"],
+      "loose": ["hose-nozzle", "fire-helmet", "axe", "fire-bucket", "fire-extinguisher-hose", "toolbox", "hose-coupling", "fire-station-wrench", "fire-station-cone", "fire-boot", "fire-blanket", "wheel-wrench", "fire-nozzle", "fire-gloves", "fire-goggles", "fire-helmet-visor", "radio-microphone", "fire-rope", "carabiner", "flashlight-battery"],
       "noFlip": [],
       "motion": {"fire-engine": "wobble", "fire-station-flag": "sway", "smoke": "drift", "fire-hood": "sway", "fire-jacket": "sway", "fire-trousers": "sway"},
       "arrange": "auto",

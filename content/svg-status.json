@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T06:34:11.769Z",
+  "syncedAt": "2026-09-23T06:47:44.551Z",
   "scenes": [
     {
       "scene": "airport",
@@ -182,7 +182,11 @@
         "fire-blanket-case",
         "fire-alarm-panel",
         "desk-phone",
-        "boots"
+        "boots",
+        "hose-reel-cart",
+        "fire-door",
+        "floor-drain",
+        "flashlight-battery"
       ],
       "failed": [],
       "pending": [],

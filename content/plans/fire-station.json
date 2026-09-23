@@ -1237,6 +1237,66 @@
       "loose": false,
       "motion": null,
       "cluster": "umbrella"
+    },
+    {
+      "id": "hose-reel-cart",
+      "zh": "水帶推車",
+      "en": "hose-reel-cart",
+      "ja": "ホースリールカート",
+      "reading": "ホースリールカート",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "紅色金屬框架裝著圓形捲盤，兩側有黑色輪子，前方伸出一根推把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-door",
+      "zh": "防火門",
+      "en": "fire door",
+      "ja": "防火扉",
+      "reading": "ぼうかとびら",
+      "category": "設施",
+      "size": "large",
+      "zone": "dispatch-room",
+      "spot": "ground",
+      "desc": "厚實的深紅色單扇門，表面平整，配銀色門把和簡單的金屬鉸鏈。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "floor-drain",
+      "zh": "地面排水孔",
+      "en": "floor drain",
+      "ja": "排水口",
+      "reading": "はいすいこう",
+      "category": "設施",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "ground",
+      "desc": "嵌在地面的方形銀色金屬格柵，格縫排列整齊，外圍有平整邊框。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "flashlight-battery",
+      "zh": "電池",
+      "en": "battery",
+      "ja": "電池",
+      "reading": "でんち",
+      "category": "道具",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "ground",
+      "desc": "一節銀色圓柱電池橫放在地上，兩端分別有凸起的小圓點和扁平金屬底。",
+      "loose": true,
+      "motion": null,
+      "cluster": "flashlight"
     }
   ],
   "rejected": [
@@ -1644,7 +1704,272 @@
       "id": "emergency-light",
       "reason": "id 重複",
       "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-boots",
+      "reason": "英文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-boot",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "clipboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "headset",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "key",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "mug",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "first-aid-kit",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "thermos",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "pen",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "notepad",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "coat-rack",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "water-cooler",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "tissue-box",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "headset",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "map",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "clipboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "pen",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "key",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "drawer",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "first-aid-kit",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "mug",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "coat-hanger",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "stool",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "coffee-machine",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "mug",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "key",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "clipboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "pen",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "paper-cup",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "key-cabinet",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "map",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "first-aid-kit",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
     }
   ],
-  "createdAt": "2026-09-23T06:15:43.801Z"
+  "createdAt": "2026-09-23T06:15:43.801Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 4,
+    "at": "2026-09-23T06:47:05.554Z"
+  }
 }
