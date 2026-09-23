@@ -785,6 +785,573 @@
           }
         }
       }
+    },
+    {
+      "name": "停車柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一根短粗的紅白相間金屬柱，頂端圓滑，直立固定在人行道邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "parking-meter-post",
+        "words": {
+          "zh-TW": "停車柱",
+          "en": "parking post",
+          "ja": {
+            "text": "駐車ポール",
+            "reading": "ちゅうしゃポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "自行車架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的銀色金屬架，數個倒置的弧形環並排固定在底座上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "bicycle-rack",
+        "words": {
+          "zh-TW": "自行車架",
+          "en": "bicycle rack",
+          "ja": {
+            "text": "駐輪ラック",
+            "reading": "ちゅうりんラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "人孔蓋開啟鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支短柄金屬工具，末端彎成鉤狀，平放在圓形人孔蓋旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "manhole-key",
+        "words": {
+          "zh-TW": "人孔蓋開啟鉤",
+          "en": "manhole hook",
+          "ja": {
+            "text": "マンホールフック",
+            "reading": "マンホールフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "水溝蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的灰色金屬蓋板，表面排列著一排排小孔，覆在路邊水溝上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "manhole-lid",
+        "words": {
+          "zh-TW": "水溝蓋",
+          "en": "drain cover",
+          "ja": {
+            "text": "側溝のふた",
+            "reading": "そっこうのふた"
+          }
+        }
+      }
+    },
+    {
+      "name": "道路護欄",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一段銀灰色弧形金屬護欄，由兩根立柱支撐，沿著路邊水平延伸。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "traffic-barrier",
+        "words": {
+          "zh-TW": "道路護欄",
+          "en": "road barrier",
+          "ja": {
+            "text": "ガードレール",
+            "reading": "ガードレール"
+          }
+        }
+      }
+    },
+    {
+      "name": "行人號誌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形黑色號誌盒立在細長灰色柱子上，正面有兩個不帶圖案的圓形燈面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "crossing",
+        "itemId": "pedestrian-signal",
+        "words": {
+          "zh-TW": "行人號誌",
+          "en": "pedestrian-signal",
+          "ja": {
+            "text": "歩行者用信号",
+            "reading": "ほこうしゃようしんごう"
+          }
+        }
+      }
+    },
+    {
+      "name": "人體模特",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "光滑的奶油色無五官人形上半身，立在細長的黑色底座上，肩膀平直，腰部收窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "mannequin",
+        "words": {
+          "zh-TW": "人體模特",
+          "en": "mannequin",
+          "ja": {
+            "text": "マネキン",
+            "reading": "マネキン"
+          }
+        }
+      }
+    },
+    {
+      "name": "洋裝",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "掛在店面外展示架上的紅色洋裝，裙襬微微張開，短袖與圓領輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "dress",
+        "words": {
+          "zh-TW": "洋裝",
+          "en": "dress",
+          "ja": {
+            "text": "ワンピース",
+            "reading": "ワンピース"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁長的藍色紙盒，盒蓋略微錯開，露出裡面一雙白色鞋子的輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "shoe-box",
+        "words": {
+          "zh-TW": "鞋盒",
+          "en": "shoe box",
+          "ja": {
+            "text": "靴箱",
+            "reading": "くつばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玩具火車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅黃藍三節木製玩具火車排在地上，每節車廂都有小輪子，車頭帶有圓形煙囪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "toy-train",
+        "words": {
+          "zh-TW": "玩具火車",
+          "en": "toy train",
+          "ja": {
+            "text": "おもちゃの電車",
+            "reading": "おもちゃのでんしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圍巾架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色立式金屬展示架，幾條不同顏色的圍巾整齊掛在橫桿上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "shops",
+        "itemId": "scarf-display",
+        "words": {
+          "zh-TW": "圍巾架",
+          "en": "scarf rack",
+          "ja": {
+            "text": "マフラーラック",
+            "reading": "マフラーラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "壓粉器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓柱形金屬底座連著細握柄，通常是銀色或黑色，外形像小槌。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "espresso-tamper",
+        "words": {
+          "zh-TW": "壓粉器",
+          "en": "tamper",
+          "ja": {
+            "text": "タンパー",
+            "reading": "タンパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶泡壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色小壺身配尖嘴與環形把手，壺口敞開，側面光滑沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "milk-frothing-pitcher",
+        "words": {
+          "zh-TW": "奶泡壺",
+          "en": "milk pitcher",
+          "ja": {
+            "text": "ミルクピッチャー",
+            "reading": "ミルクピッチャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "磨豆機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形底座上立著透明豆槽，頂部有圓形蓋子，正面有旋鈕和出粉口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "coffee-grinder",
+        "words": {
+          "zh-TW": "磨豆機",
+          "en": "coffee grinder",
+          "ja": {
+            "text": "コーヒーグラインダー",
+            "reading": "コーヒーグラインダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "攪拌匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長直柄末端接著小橢圓匙面，銀色金屬表面簡單明亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "stirring-spoon",
+        "words": {
+          "zh-TW": "攪拌匙",
+          "en": "stirring spoon",
+          "ja": {
+            "text": "マドラー",
+            "reading": "マドラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "菜單板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色長方形板面裝在木製直立支架上，表面保持空白，不含文字或圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "menu-board",
+        "words": {
+          "zh-TW": "菜單板",
+          "en": "menu board",
+          "ja": {
+            "text": "メニューボード",
+            "reading": "メニューボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡樹盆栽",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮小綠色灌木長在圓形陶盆裡，枝間有成串紅色小果實和橢圓葉片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "coffee-plant",
+        "words": {
+          "zh-TW": "咖啡樹盆栽",
+          "en": "coffee plant",
+          "ja": {
+            "text": "コーヒーの木",
+            "reading": "コーヒーのき"
+          }
+        }
+      }
+    },
+    {
+      "name": "菜單架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明的直立展示架，底部有寬扁的支腳，裡面放著沒有文字的淺色紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "menu-holder",
+        "words": {
+          "zh-TW": "菜單架",
+          "en": "menu holder",
+          "ja": {
+            "text": "メニュースタンド",
+            "reading": "メニュースタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡量匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄連著圓潤的小勺，金屬色表面平滑，勺面朝上放在磨豆機旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "coffee-scoop",
+        "words": {
+          "zh-TW": "咖啡量匙",
+          "en": "coffee scoop",
+          "ja": {
+            "text": "コーヒーメジャー",
+            "reading": "コーヒーメジャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡豆罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的圓柱形金屬罐，配有圓形密封蓋，罐身沒有標籤或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "cafe",
+        "itemId": "coffee-canister",
+        "words": {
+          "zh-TW": "咖啡豆罐",
+          "en": "coffee canister",
+          "ja": {
+            "text": "コーヒーキャニスター",
+            "reading": "コーヒーキャニスター"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車候車亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "透明玻璃側板搭配平頂棚架，兩側以深色金屬支柱支撐，外觀簡潔俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-shelter",
+        "words": {
+          "zh-TW": "公車候車亭",
+          "en": "bus shelter",
+          "ja": {
+            "text": "バスシェルター",
+            "reading": "バスシェルター"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車票",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張小巧的長方形紙票，淡黃色底色，邊緣有短短的齒孔，正面沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-ticket",
+        "words": {
+          "zh-TW": "公車票",
+          "en": "bus-ticket",
+          "ja": {
+            "text": "バスの乗車券",
+            "reading": "バスのじょうしゃけん"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車車門",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一扇高大的雙片折疊車門，深色玻璃窗嵌在金屬框裡，底部有低矮踏板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-passenger-door",
+        "words": {
+          "zh-TW": "公車車門",
+          "en": "bus-door",
+          "ja": {
+            "text": "バスのドア",
+            "reading": "バスのドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車輪胎",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一個厚實的黑色圓形輪胎，外圈有清楚的深色胎紋，中央露出銀灰色輪圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-wheel",
+        "words": {
+          "zh-TW": "公車輪胎",
+          "en": "bus-wheel",
+          "ja": {
+            "text": "バスのタイヤ",
+            "reading": "バスのタイヤ"
+          }
+        }
+      }
+    },
+    {
+      "name": "下車鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆裝在短柄上的圓形紅色按鈕，外圍有淺灰色底座，表面平滑醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-stop-button",
+        "words": {
+          "zh-TW": "下車鈴",
+          "en": "stop-button",
+          "ja": {
+            "text": "降車ボタン",
+            "reading": "こうしゃボタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "公車路線圖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張直立的長方形彩色紙圖，幾條彎曲色線交錯連接，沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-route-map",
+        "words": {
+          "zh-TW": "公車路線圖",
+          "en": "route-map",
+          "ja": {
+            "text": "路線図",
+            "reading": "ろせんず"
+          }
+        }
+      }
+    },
+    {
+      "name": "候車長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一張窄長木製椅面架在兩支深灰色金屬腳上，椅背由幾根水平木條組成。",
+      "ref": {
+        "project": "la-game",
+        "scene": "street",
+        "zone": "bus-stop",
+        "itemId": "bus-stop-bench",
+        "words": {
+          "zh-TW": "候車長椅",
+          "en": "bus-bench",
+          "ja": {
+            "text": "バス停のベンチ",
+            "reading": "バスていのベンチ"
+          }
+        }
+      }
     }
   ]
 }

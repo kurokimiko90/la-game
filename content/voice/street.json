@@ -203,6 +203,162 @@
       "score": 1,
       "take": "en-1790052798401.aac",
       "account": "chatgpt2"
+    },
+    "pedestrian-signal": {
+      "heard": "Pedestrian signal.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "parking-meter-post": {
+      "heard": "Parking Post",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "manhole-key": {
+      "heard": "Manhole Hook.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "bus-ticket": {
+      "heard": "Bus ticket.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "menu-holder": {
+      "heard": "Menu Holder.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "bus-shelter": {
+      "heard": "Bus shelter.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "dress": {
+      "heard": "Dress.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "scarf-display": {
+      "heard": "scarf rack,",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "menu-board": {
+      "heard": "Menu board.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "bus-route-map": {
+      "heard": "Rootmap.",
+      "score": 0.75,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "bus-wheel": {
+      "heard": "Bus wheel.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-plant": {
+      "heard": "Coffee plant.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-grinder": {
+      "heard": "Coffee grinder.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "mannequin": {
+      "heard": "Mannequin.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "milk-frothing-pitcher": {
+      "heard": "Milk Pitcher.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "stirring-spoon": {
+      "heard": "Stirring speed.",
+      "score": 0.77,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "bus-stop-button": {
+      "heard": "Stop button.",
+      "score": 1,
+      "take": "en-1790170053744.aac",
+      "account": "chatgpt1"
+    },
+    "manhole-lid": {
+      "heard": "drain cover,",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "toy-train": {
+      "heard": "Toy train.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "bicycle-rack": {
+      "heard": "Bicycle rack.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-canister": {
+      "heard": "Coffee canister.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "bus-stop-bench": {
+      "heard": "Bus bench.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "traffic-barrier": {
+      "heard": "Road barriers.",
+      "score": 0.92,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-box": {
+      "heard": "Shoebox.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-scoop": {
+      "heard": "Coffee Scoop.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
+    },
+    "espresso-tamper": {
+      "heard": "tamper.",
+      "score": 1,
+      "take": "en-1790170179809.aac",
+      "account": "chatgpt1"
     }
   }
 }

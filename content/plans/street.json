@@ -443,7 +443,689 @@
       "size": "large",
       "desc": "繫著圍裙、手捧花束的花店老闆。",
       "lane": "a"
+    },
+    {
+      "id": "parking-meter-post",
+      "zh": "停車柱",
+      "en": "parking post",
+      "ja": "駐車ポール",
+      "reading": "ちゅうしゃポール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "crossing",
+      "spot": "ground",
+      "desc": "一根短粗的紅白相間金屬柱，頂端圓滑，直立固定在人行道邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bicycle-rack",
+      "zh": "自行車架",
+      "en": "bicycle rack",
+      "ja": "駐輪ラック",
+      "reading": "ちゅうりんラック",
+      "category": "設施",
+      "size": "medium",
+      "zone": "crossing",
+      "spot": "ground",
+      "desc": "低矮的銀色金屬架，數個倒置的弧形環並排固定在底座上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "manhole-key",
+      "zh": "人孔蓋開啟鉤",
+      "en": "manhole hook",
+      "ja": "マンホールフック",
+      "reading": "マンホールフック",
+      "category": "道具",
+      "size": "small",
+      "zone": "crossing",
+      "spot": "ground",
+      "desc": "一支短柄金屬工具，末端彎成鉤狀，平放在圓形人孔蓋旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": "manhole-cover"
+    },
+    {
+      "id": "manhole-lid",
+      "zh": "水溝蓋",
+      "en": "drain cover",
+      "ja": "側溝のふた",
+      "reading": "そっこうのふた",
+      "category": "設施",
+      "size": "medium",
+      "zone": "crossing",
+      "spot": "ground",
+      "desc": "窄長的灰色金屬蓋板，表面排列著一排排小孔，覆在路邊水溝上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "drain-grate"
+    },
+    {
+      "id": "traffic-barrier",
+      "zh": "道路護欄",
+      "en": "road barrier",
+      "ja": "ガードレール",
+      "reading": "ガードレール",
+      "category": "設施",
+      "size": "large",
+      "zone": "crossing",
+      "spot": "ground",
+      "desc": "一段銀灰色弧形金屬護欄，由兩根立柱支撐，沿著路邊水平延伸。",
+      "loose": false,
+      "motion": null,
+      "cluster": "curb"
+    },
+    {
+      "id": "pedestrian-signal",
+      "zh": "行人號誌",
+      "en": "pedestrian-signal",
+      "ja": "歩行者用信号",
+      "reading": "ほこうしゃようしんごう",
+      "category": "設施",
+      "size": "medium",
+      "zone": "crossing",
+      "spot": "ground",
+      "desc": "方形黑色號誌盒立在細長灰色柱子上，正面有兩個不帶圖案的圓形燈面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "mannequin",
+      "zh": "人體模特",
+      "en": "mannequin",
+      "ja": "マネキン",
+      "reading": "マネキン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "shops",
+      "spot": "ground",
+      "desc": "光滑的奶油色無五官人形上半身，立在細長的黑色底座上，肩膀平直，腰部收窄。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dress",
+      "zh": "洋裝",
+      "en": "dress",
+      "ja": "ワンピース",
+      "reading": "ワンピース",
+      "category": "道具",
+      "size": "small",
+      "zone": "shops",
+      "spot": "ground",
+      "desc": "掛在店面外展示架上的紅色洋裝，裙襬微微張開，短袖與圓領輪廓清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shoe-box",
+      "zh": "鞋盒",
+      "en": "shoe box",
+      "ja": "靴箱",
+      "reading": "くつばこ",
+      "category": "道具",
+      "size": "small",
+      "zone": "shops",
+      "spot": "ground",
+      "desc": "扁長的藍色紙盒，盒蓋略微錯開，露出裡面一雙白色鞋子的輪廓。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "toy-train",
+      "zh": "玩具火車",
+      "en": "toy train",
+      "ja": "おもちゃの電車",
+      "reading": "おもちゃのでんしゃ",
+      "category": "道具",
+      "size": "small",
+      "zone": "shops",
+      "spot": "ground",
+      "desc": "紅黃藍三節木製玩具火車排在地上，每節車廂都有小輪子，車頭帶有圓形煙囪。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "scarf-display",
+      "zh": "圍巾架",
+      "en": "scarf rack",
+      "ja": "マフラーラック",
+      "reading": "マフラーラック",
+      "category": "設施",
+      "size": "medium",
+      "zone": "shops",
+      "spot": "ground",
+      "desc": "黑色立式金屬展示架，幾條不同顏色的圍巾整齊掛在橫桿上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "espresso-tamper",
+      "zh": "壓粉器",
+      "en": "tamper",
+      "ja": "タンパー",
+      "reading": "タンパー",
+      "category": "道具",
+      "size": "small",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "短圓柱形金屬底座連著細握柄，通常是銀色或黑色，外形像小槌。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-maker"
+    },
+    {
+      "id": "milk-frothing-pitcher",
+      "zh": "奶泡壺",
+      "en": "milk pitcher",
+      "ja": "ミルクピッチャー",
+      "reading": "ミルクピッチャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "銀色小壺身配尖嘴與環形把手，壺口敞開，側面光滑沒有文字。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-maker"
+    },
+    {
+      "id": "coffee-grinder",
+      "zh": "磨豆機",
+      "en": "coffee grinder",
+      "ja": "コーヒーグラインダー",
+      "reading": "コーヒーグラインダー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "方形底座上立著透明豆槽，頂部有圓形蓋子，正面有旋鈕和出粉口。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": "coffee-maker"
+    },
+    {
+      "id": "stirring-spoon",
+      "zh": "攪拌匙",
+      "en": "stirring spoon",
+      "ja": "マドラー",
+      "reading": "マドラー",
+      "category": "道具",
+      "size": "small",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "細長直柄末端接著小橢圓匙面，銀色金屬表面簡單明亮。",
+      "loose": true,
+      "motion": null,
+      "cluster": "paper-cup"
+    },
+    {
+      "id": "menu-board",
+      "zh": "菜單板",
+      "en": "menu board",
+      "ja": "メニューボード",
+      "reading": "メニューボード",
+      "category": "道具",
+      "size": "medium",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "黑色長方形板面裝在木製直立支架上，表面保持空白，不含文字或圖案。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "coffee-plant",
+      "zh": "咖啡樹盆栽",
+      "en": "coffee plant",
+      "ja": "コーヒーの木",
+      "reading": "コーヒーのき",
+      "category": "植物",
+      "size": "medium",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "矮小綠色灌木長在圓形陶盆裡，枝間有成串紅色小果實和橢圓葉片。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "menu-holder",
+      "zh": "菜單架",
+      "en": "menu holder",
+      "ja": "メニュースタンド",
+      "reading": "メニュースタンド",
+      "category": "道具",
+      "size": "small",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "透明的直立展示架，底部有寬扁的支腳，裡面放著沒有文字的淺色紙張。",
+      "loose": false,
+      "motion": null,
+      "cluster": "menu-board"
+    },
+    {
+      "id": "coffee-scoop",
+      "zh": "咖啡量匙",
+      "en": "coffee scoop",
+      "ja": "コーヒーメジャー",
+      "reading": "コーヒーメジャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "短柄連著圓潤的小勺，金屬色表面平滑，勺面朝上放在磨豆機旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-grinder"
+    },
+    {
+      "id": "coffee-canister",
+      "zh": "咖啡豆罐",
+      "en": "coffee canister",
+      "ja": "コーヒーキャニスター",
+      "reading": "コーヒーキャニスター",
+      "category": "道具",
+      "size": "small",
+      "zone": "cafe",
+      "spot": "ground",
+      "desc": "矮胖的圓柱形金屬罐，配有圓形密封蓋，罐身沒有標籤或文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "coffee-grinder"
+    },
+    {
+      "id": "bus-shelter",
+      "zh": "公車候車亭",
+      "en": "bus shelter",
+      "ja": "バスシェルター",
+      "reading": "バスシェルター",
+      "category": "設施",
+      "size": "large",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "透明玻璃側板搭配平頂棚架，兩側以深色金屬支柱支撐，外觀簡潔俐落。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bus-ticket",
+      "zh": "公車票",
+      "en": "bus-ticket",
+      "ja": "バスの乗車券",
+      "reading": "バスのじょうしゃけん",
+      "category": "道具",
+      "size": "small",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "一張小巧的長方形紙票，淡黃色底色，邊緣有短短的齒孔，正面沒有文字或數字。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bus-passenger-door",
+      "zh": "公車車門",
+      "en": "bus-door",
+      "ja": "バスのドア",
+      "reading": "バスのドア",
+      "category": "交通工具",
+      "size": "large",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "一扇高大的雙片折疊車門，深色玻璃窗嵌在金屬框裡，底部有低矮踏板。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bus-wheel",
+      "zh": "公車輪胎",
+      "en": "bus-wheel",
+      "ja": "バスのタイヤ",
+      "reading": "バスのタイヤ",
+      "category": "交通工具",
+      "size": "large",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "一個厚實的黑色圓形輪胎，外圈有清楚的深色胎紋，中央露出銀灰色輪圈。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bus-stop-button",
+      "zh": "下車鈴",
+      "en": "stop-button",
+      "ja": "降車ボタン",
+      "reading": "こうしゃボタン",
+      "category": "道具",
+      "size": "small",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "一顆裝在短柄上的圓形紅色按鈕，外圍有淺灰色底座，表面平滑醒目。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bus-route-map",
+      "zh": "公車路線圖",
+      "en": "route-map",
+      "ja": "路線図",
+      "reading": "ろせんず",
+      "category": "道具",
+      "size": "small",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "一張直立的長方形彩色紙圖，幾條彎曲色線交錯連接，沒有文字或數字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bus-stop-bench",
+      "zh": "候車長椅",
+      "en": "bus-bench",
+      "ja": "バス停のベンチ",
+      "reading": "バスていのベンチ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bus-stop",
+      "spot": "ground",
+      "desc": "一張窄長木製椅面架在兩支深灰色金屬腳上，椅背由幾根水平木條組成。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bus-shelter"
     }
   ],
-  "createdAt": "2026-09-23T12:22:55.092Z"
+  "createdAt": "2026-09-23T12:22:55.092Z",
+  "rejected": [
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "bus",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "traffic-mirror",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "parking-meter",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "manhole-cover",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "drain-grate",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "manhole-cover",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "drain-grate",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "curb",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "wheelie-bin",
+      "reason": "中文重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "traffic-mirror",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "manhole-cover",
+      "reason": "id 重複",
+      "zone": "crossing"
+    },
+    {
+      "id": "clothes-hanger",
+      "reason": "中文重複",
+      "zone": "shops"
+    },
+    {
+      "id": "flower-pot",
+      "reason": "中文重複",
+      "zone": "shops"
+    },
+    {
+      "id": "sandwich-board",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "broom",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "shopping-cart",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "price-tag",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "clothing-rack",
+      "reason": "中文重複",
+      "zone": "shops"
+    },
+    {
+      "id": "shoe-display",
+      "reason": "中文重複",
+      "zone": "shops"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "scarf",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "sunglasses",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "wallet",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "watch",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "shoehorn",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "handbag",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "scarf",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "shoehorn",
+      "reason": "id 重複",
+      "zone": "shops"
+    },
+    {
+      "id": "saucer",
+      "reason": "id 重複",
+      "zone": "cafe"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "cafe"
+    },
+    {
+      "id": "coffee-beans",
+      "reason": "中文重複",
+      "zone": "cafe"
+    },
+    {
+      "id": "bench",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "parking-meter",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "shopping-bag",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "newspaper",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "pigeon",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "puddle",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "parking-meter",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "road-barrier",
+      "reason": "英文重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "bicycle-rack",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "newspaper",
+      "reason": "id 重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "bus-card",
+      "reason": "中文重複",
+      "zone": "bus-stop"
+    },
+    {
+      "id": "bus-lane-cone",
+      "reason": "中文重複",
+      "zone": "bus-stop"
+    }
+  ],
+  "topUp": {
+    "itemsPerScene": 70,
+    "added": 27,
+    "at": "2026-09-23T13:23:24.286Z"
+  }
 }
