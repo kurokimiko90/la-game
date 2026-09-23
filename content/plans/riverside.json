@@ -423,7 +423,694 @@
       "size": "large",
       "desc": "穿白襯衫黑背心、手托餐盤的服務生。",
       "lane": "a"
+    },
+    {
+      "id": "fishing-net",
+      "zh": "漁網",
+      "en": "fishing net",
+      "ja": "漁網",
+      "reading": "ぎょもう",
+      "category": "道具",
+      "size": "medium",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "一團攤開的深綠色網子，細繩交織成菱形網格，邊緣繫著較粗的繩索。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fishing-rod"
+    },
+    {
+      "id": "oar",
+      "zh": "船槳",
+      "en": "oar",
+      "ja": "オール",
+      "reading": "オール",
+      "category": "道具",
+      "size": "medium",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "細長的棕色木槳，握柄一端較窄，另一端接著寬扁的橢圓形槳葉。",
+      "loose": false,
+      "motion": null,
+      "cluster": "sightseeing-boat"
+    },
+    {
+      "id": "mooring-ring",
+      "zh": "繫船環",
+      "en": "mooring ring",
+      "ja": "係船環",
+      "reading": "けいせんかん",
+      "category": "設施",
+      "size": "small",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "固定在灰色石墩上的粗黑鐵環，環身厚實，底部有金屬固定座。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bollard"
+    },
+    {
+      "id": "life-ring-cabinet",
+      "zh": "救生圈箱",
+      "en": "life ring cabinet",
+      "ja": "救命浮輪収納箱",
+      "reading": "きゅうめいうきわしゅうのうばこ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "紅色長方形金屬箱，正面有透明圓窗，可看見裡面的橘白相間救生圈。",
+      "loose": false,
+      "motion": null,
+      "cluster": "life-buoy"
+    },
+    {
+      "id": "mooring-cleat",
+      "zh": "繫船柱",
+      "en": "mooring cleat",
+      "ja": "係船柱",
+      "reading": "けいせんちゅう",
+      "category": "設施",
+      "size": "small",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "固定在地面的深灰金屬底座，上方有兩個向外伸出的短角，可供繩索纏繞。",
+      "loose": false,
+      "motion": null,
+      "cluster": "rope"
+    },
+    {
+      "id": "fishing-basket",
+      "zh": "魚簍",
+      "en": "fishing basket",
+      "ja": "魚籠",
+      "reading": "びく",
+      "category": "道具",
+      "size": "medium",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "棕色編織圓筒籃，頂部有提把和圓形開口，側面可見交錯的藤條紋路。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fishing-rod"
+    },
+    {
+      "id": "stone-post",
+      "zh": "石柱",
+      "en": "stone post",
+      "ja": "石柱",
+      "reading": "せきちゅう",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "矮胖的灰色方形石柱，頂面平整，表面有粗糙石紋，立在橋邊地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": "handrail"
+    },
+    {
+      "id": "metal-chain",
+      "zh": "鐵鏈",
+      "en": "metal chain",
+      "ja": "金属チェーン",
+      "reading": "きんぞくチェーン",
+      "category": "道具",
+      "size": "small",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "一段深灰色粗鐵鏈，橢圓鏈環相扣，彎曲地放在地面上。",
+      "loose": true,
+      "motion": null,
+      "cluster": "padlock"
+    },
+    {
+      "id": "life-jacket-hook",
+      "zh": "救生衣掛鉤",
+      "en": "life jacket hook",
+      "ja": "救命胴衣フック",
+      "reading": "きゅうめいどういフック",
+      "category": "設施",
+      "size": "small",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "固定在欄杆旁的黑色金屬掛鉤，鉤身向上彎曲，掛著一件橘色救生衣。",
+      "loose": false,
+      "motion": null,
+      "cluster": "handrail"
+    },
+    {
+      "id": "life-buoy-rope",
+      "zh": "救生圈繩",
+      "en": "lifebuoy rope",
+      "ja": "救命浮き輪のロープ",
+      "reading": "きゅうめいうきわのロープ",
+      "category": "道具",
+      "size": "small",
+      "zone": "bridge",
+      "spot": "ground",
+      "desc": "一捆粗短的白色編織繩，盤成幾圈，末端繫著一個醒目的紅色小浮球。",
+      "loose": true,
+      "motion": null,
+      "cluster": "life-buoy"
+    },
+    {
+      "id": "dock-ladder",
+      "zh": "碼頭梯",
+      "en": "dock ladder",
+      "ja": "桟橋用はしご",
+      "reading": "さんばしようはしご",
+      "category": "設施",
+      "size": "medium",
+      "zone": "pier",
+      "spot": "ground",
+      "desc": "兩根銀灰色直立金屬桿連著幾根橫踏桿，底端微微彎向水面，固定在碼頭邊緣。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fender",
+      "zh": "船用護舷球",
+      "en": "fender",
+      "ja": "フェンダー",
+      "reading": "フェンダー",
+      "category": "道具",
+      "size": "small",
+      "zone": "pier",
+      "spot": "ground",
+      "desc": "一個藍白相間的橢圓形充氣護舷球，兩端各有小孔，表面帶著光滑的橡膠光澤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "mooring-cleat"
+    },
+    {
+      "id": "mooring-rope",
+      "zh": "繫船繩",
+      "en": "mooring rope",
+      "ja": "係船ロープ",
+      "reading": "けいせんロープ",
+      "category": "道具",
+      "size": "small",
+      "zone": "pier",
+      "spot": "ground",
+      "desc": "粗厚的米色編織繩盤成幾圈，末端打著大結，纖維紋理清晰可見。",
+      "loose": true,
+      "motion": null,
+      "cluster": "mooring-cleat"
+    },
+    {
+      "id": "sunshade-base",
+      "zh": "遮陽傘底座",
+      "en": "umbrella base",
+      "ja": "パラソルベース",
+      "reading": "パラソルベース",
+      "category": "道具",
+      "size": "small",
+      "zone": "terrace",
+      "spot": "ground",
+      "desc": "扁圓形的深灰色底座，中央有直立的短管，表面平滑厚實。",
+      "loose": false,
+      "motion": null,
+      "cluster": "parasol"
+    },
+    {
+      "id": "lemon-wedge",
+      "zh": "檸檬角",
+      "en": "lemon wedge",
+      "ja": "レモンのくし切り",
+      "reading": "レモンのくしぎり",
+      "category": "食物",
+      "size": "small",
+      "zone": "terrace",
+      "spot": "ground",
+      "desc": "黃色檸檬切成三角扇形，果肉分成幾瓣，外側帶著薄薄果皮。",
+      "loose": true,
+      "motion": null,
+      "cluster": "wine-glass"
+    },
+    {
+      "id": "round-table",
+      "zh": "圓桌",
+      "en": "round table",
+      "ja": "丸テーブル",
+      "reading": "まるテーブル",
+      "category": "設施",
+      "size": "medium",
+      "zone": "terrace",
+      "spot": "ground",
+      "desc": "圓形淺木色桌面配一根黑色金屬桌腳，桌面平整，邊緣略厚。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pizza-cutter",
+      "zh": "披薩刀",
+      "en": "pizza cutter",
+      "ja": "ピザカッター",
+      "reading": "ピザカッター",
+      "category": "道具",
+      "size": "small",
+      "zone": "terrace",
+      "spot": "ground",
+      "desc": "短柄末端裝著圓形銀色刀輪，中央有小圓軸，輪緣清楚可見。",
+      "loose": true,
+      "motion": null,
+      "cluster": "round-table"
+    },
+    {
+      "id": "riverside-bench",
+      "zh": "河岸長椅",
+      "en": "riverside bench",
+      "ja": "ベンチ",
+      "reading": "ベンチ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "promenade",
+      "spot": "ground",
+      "desc": "深棕色長方形木板椅面連著黑色弧形金屬椅腳，兩端有短扶手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "willow-tree",
+      "zh": "柳樹",
+      "en": "willow tree",
+      "ja": "柳",
+      "reading": "やなぎ",
+      "category": "植物",
+      "size": "large",
+      "zone": "promenade",
+      "spot": "ground",
+      "desc": "粗短棕色樹幹頂著圓形樹冠，細長綠葉成束垂掛在枝條末端。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "river-rock",
+      "zh": "河石",
+      "en": "river rock",
+      "ja": "川石",
+      "reading": "かわいし",
+      "category": "自然",
+      "size": "small",
+      "zone": "promenade",
+      "spot": "ground",
+      "desc": "灰褐色扁圓石塊，表面光滑帶幾道淺色斑紋，邊緣不規則圓鈍。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "potted-flower",
+      "zh": "盆花",
+      "en": "potted flower",
+      "ja": "鉢植えの花",
+      "reading": "はちうえのはな",
+      "category": "植物",
+      "size": "medium",
+      "zone": "promenade",
+      "spot": "ground",
+      "desc": "圓形陶盆裡長出綠葉與幾朵紅色花，花瓣分明，枝葉自然向外伸展。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "willow-tree"
+    },
+    {
+      "id": "cattail",
+      "zh": "香蒲",
+      "en": "cattail",
+      "ja": "ガマ",
+      "reading": "ガマ",
+      "category": "植物",
+      "size": "medium",
+      "zone": "promenade",
+      "spot": "ground",
+      "desc": "幾根細長綠葉從地面叢生，直立莖頂端各有一支深褐色圓柱形穗。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "river-rock"
+    },
+    {
+      "id": "fallen-branch",
+      "zh": "落枝",
+      "en": "fallen branch",
+      "ja": "落ち枝",
+      "reading": "おちえだ",
+      "category": "自然",
+      "size": "small",
+      "zone": "promenade",
+      "spot": "ground",
+      "desc": "一截棕色彎曲枝條斜躺地面，表面有幾處節點，末端分成兩根細枝。",
+      "loose": true,
+      "motion": null,
+      "cluster": "willow-tree"
     }
   ],
-  "createdAt": "2026-09-23T12:22:55.093Z"
+  "createdAt": "2026-09-23T12:22:55.093Z",
+  "rejected": [
+    {
+      "id": "fishing-float",
+      "reason": "id 重複",
+      "zone": "bridge"
+    },
+    {
+      "id": "life-buoy",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "mooring-cleat",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "oar",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-net",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-basket",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "mooring-ring",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "metal-chain",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "stone-post",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "life-jacket-hook",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "lifebuoy-rope",
+      "reason": "英文重複",
+      "zone": "pier"
+    },
+    {
+      "id": "mooring-cleat",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-net",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "oar",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "mooring-ring",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-basket",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "stone-post",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "metal-chain",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "life-jacket-hook",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "lifebuoy-rope",
+      "reason": "英文重複",
+      "zone": "pier"
+    },
+    {
+      "id": "life-ring-cabinet",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "mooring-cleat",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "oar",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-net",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-basket",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "mooring-ring",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fishing-float",
+      "reason": "id 重複",
+      "zone": "pier"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "spoon",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "placemat",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "salt-shaker",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "pepper-shaker",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "menu-holder",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "dining-table",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "folding-chair",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "side-table",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "salt-shaker",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "olive",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "flower-pot",
+      "reason": "中文重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "folding-chair",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "salt-shaker",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "sunglasses",
+      "reason": "id 重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "flowerpot",
+      "reason": "中文重複",
+      "zone": "terrace"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "fishing-rod",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "fishing-net",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "oar",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "life-buoy",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "fishing-basket",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "reusable-cup",
+      "reason": "中文重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "flowerpot",
+      "reason": "中文重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "bicycle-rack",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "recycling-bin",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "thermos",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "newspaper",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "dragonfly",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "fishing-rod",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "fishing-basket",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "life-ring",
+      "reason": "中文重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "mooring-rope",
+      "reason": "id 重複",
+      "zone": "promenade"
+    },
+    {
+      "id": "fishing-float",
+      "reason": "id 重複",
+      "zone": "promenade"
+    }
+  ],
+  "topUp": {
+    "itemsPerScene": 70,
+    "added": 23,
+    "at": "2026-09-23T22:39:16.326+09:00"
+  }
 }

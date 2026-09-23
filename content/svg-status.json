@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T13:27:18.591Z",
+  "syncedAt": "2026-09-23T22:42:39.055+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -884,7 +884,30 @@
         "skateboard",
         "food-stall",
         "wallet",
-        "key"
+        "key",
+        "fishing-net",
+        "oar",
+        "mooring-ring",
+        "life-ring-cabinet",
+        "mooring-cleat",
+        "fishing-basket",
+        "stone-post",
+        "metal-chain",
+        "life-jacket-hook",
+        "life-buoy-rope",
+        "dock-ladder",
+        "fender",
+        "mooring-rope",
+        "sunshade-base",
+        "lemon-wedge",
+        "round-table",
+        "pizza-cutter",
+        "riverside-bench",
+        "willow-tree",
+        "river-rock",
+        "potted-flower",
+        "cattail",
+        "fallen-branch"
       ],
       "failed": [],
       "pending": [],

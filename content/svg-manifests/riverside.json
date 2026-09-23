@@ -743,6 +743,489 @@
           }
         }
       }
+    },
+    {
+      "name": "漁網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一團攤開的深綠色網子，細繩交織成菱形網格，邊緣繫著較粗的繩索。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "fishing-net",
+        "words": {
+          "zh-TW": "漁網",
+          "en": "fishing net",
+          "ja": {
+            "text": "漁網",
+            "reading": "ぎょもう"
+          }
+        }
+      }
+    },
+    {
+      "name": "船槳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的棕色木槳，握柄一端較窄，另一端接著寬扁的橢圓形槳葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "oar",
+        "words": {
+          "zh-TW": "船槳",
+          "en": "oar",
+          "ja": {
+            "text": "オール",
+            "reading": "オール"
+          }
+        }
+      }
+    },
+    {
+      "name": "繫船環",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在灰色石墩上的粗黑鐵環，環身厚實，底部有金屬固定座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "mooring-ring",
+        "words": {
+          "zh-TW": "繫船環",
+          "en": "mooring ring",
+          "ja": {
+            "text": "係船環",
+            "reading": "けいせんかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生圈箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色長方形金屬箱，正面有透明圓窗，可看見裡面的橘白相間救生圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "life-ring-cabinet",
+        "words": {
+          "zh-TW": "救生圈箱",
+          "en": "life ring cabinet",
+          "ja": {
+            "text": "救命浮輪収納箱",
+            "reading": "きゅうめいうきわしゅうのうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "繫船柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在地面的深灰金屬底座，上方有兩個向外伸出的短角，可供繩索纏繞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "mooring-cleat",
+        "words": {
+          "zh-TW": "繫船柱",
+          "en": "mooring cleat",
+          "ja": {
+            "text": "係船柱",
+            "reading": "けいせんちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "魚簍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色編織圓筒籃，頂部有提把和圓形開口，側面可見交錯的藤條紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "fishing-basket",
+        "words": {
+          "zh-TW": "魚簍",
+          "en": "fishing basket",
+          "ja": {
+            "text": "魚籠",
+            "reading": "びく"
+          }
+        }
+      }
+    },
+    {
+      "name": "石柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的灰色方形石柱，頂面平整，表面有粗糙石紋，立在橋邊地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "stone-post",
+        "words": {
+          "zh-TW": "石柱",
+          "en": "stone post",
+          "ja": {
+            "text": "石柱",
+            "reading": "せきちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "鐵鏈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一段深灰色粗鐵鏈，橢圓鏈環相扣，彎曲地放在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "metal-chain",
+        "words": {
+          "zh-TW": "鐵鏈",
+          "en": "metal chain",
+          "ja": {
+            "text": "金属チェーン",
+            "reading": "きんぞくチェーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生衣掛鉤",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在欄杆旁的黑色金屬掛鉤，鉤身向上彎曲，掛著一件橘色救生衣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "life-jacket-hook",
+        "words": {
+          "zh-TW": "救生衣掛鉤",
+          "en": "life jacket hook",
+          "ja": {
+            "text": "救命胴衣フック",
+            "reading": "きゅうめいどういフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生圈繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一捆粗短的白色編織繩，盤成幾圈，末端繫著一個醒目的紅色小浮球。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "bridge",
+        "itemId": "life-buoy-rope",
+        "words": {
+          "zh-TW": "救生圈繩",
+          "en": "lifebuoy rope",
+          "ja": {
+            "text": "救命浮き輪のロープ",
+            "reading": "きゅうめいうきわのロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "碼頭梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根銀灰色直立金屬桿連著幾根橫踏桿，底端微微彎向水面，固定在碼頭邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "dock-ladder",
+        "words": {
+          "zh-TW": "碼頭梯",
+          "en": "dock ladder",
+          "ja": {
+            "text": "桟橋用はしご",
+            "reading": "さんばしようはしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "船用護舷球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個藍白相間的橢圓形充氣護舷球，兩端各有小孔，表面帶著光滑的橡膠光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "fender",
+        "words": {
+          "zh-TW": "船用護舷球",
+          "en": "fender",
+          "ja": {
+            "text": "フェンダー",
+            "reading": "フェンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "繫船繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "粗厚的米色編織繩盤成幾圈，末端打著大結，纖維紋理清晰可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "pier",
+        "itemId": "mooring-rope",
+        "words": {
+          "zh-TW": "繫船繩",
+          "en": "mooring rope",
+          "ja": {
+            "text": "係船ロープ",
+            "reading": "けいせんロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮陽傘底座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓形的深灰色底座，中央有直立的短管，表面平滑厚實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "sunshade-base",
+        "words": {
+          "zh-TW": "遮陽傘底座",
+          "en": "umbrella base",
+          "ja": {
+            "text": "パラソルベース",
+            "reading": "パラソルベース"
+          }
+        }
+      }
+    },
+    {
+      "name": "檸檬角",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色檸檬切成三角扇形，果肉分成幾瓣，外側帶著薄薄果皮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "lemon-wedge",
+        "words": {
+          "zh-TW": "檸檬角",
+          "en": "lemon wedge",
+          "ja": {
+            "text": "レモンのくし切り",
+            "reading": "レモンのくしぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "圓桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形淺木色桌面配一根黑色金屬桌腳，桌面平整，邊緣略厚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "round-table",
+        "words": {
+          "zh-TW": "圓桌",
+          "en": "round table",
+          "ja": {
+            "text": "丸テーブル",
+            "reading": "まるテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "披薩刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄末端裝著圓形銀色刀輪，中央有小圓軸，輪緣清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "terrace",
+        "itemId": "pizza-cutter",
+        "words": {
+          "zh-TW": "披薩刀",
+          "en": "pizza cutter",
+          "ja": {
+            "text": "ピザカッター",
+            "reading": "ピザカッター"
+          }
+        }
+      }
+    },
+    {
+      "name": "河岸長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深棕色長方形木板椅面連著黑色弧形金屬椅腳，兩端有短扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "riverside-bench",
+        "words": {
+          "zh-TW": "河岸長椅",
+          "en": "riverside bench",
+          "ja": {
+            "text": "ベンチ",
+            "reading": "ベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "柳樹",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "粗短棕色樹幹頂著圓形樹冠，細長綠葉成束垂掛在枝條末端。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "willow-tree",
+        "words": {
+          "zh-TW": "柳樹",
+          "en": "willow tree",
+          "ja": {
+            "text": "柳",
+            "reading": "やなぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "河石",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "灰褐色扁圓石塊，表面光滑帶幾道淺色斑紋，邊緣不規則圓鈍。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "river-rock",
+        "words": {
+          "zh-TW": "河石",
+          "en": "river rock",
+          "ja": {
+            "text": "川石",
+            "reading": "かわいし"
+          }
+        }
+      }
+    },
+    {
+      "name": "盆花",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形陶盆裡長出綠葉與幾朵紅色花，花瓣分明，枝葉自然向外伸展。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "potted-flower",
+        "words": {
+          "zh-TW": "盆花",
+          "en": "potted flower",
+          "ja": {
+            "text": "鉢植えの花",
+            "reading": "はちうえのはな"
+          }
+        }
+      }
+    },
+    {
+      "name": "香蒲",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "幾根細長綠葉從地面叢生，直立莖頂端各有一支深褐色圓柱形穗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "cattail",
+        "words": {
+          "zh-TW": "香蒲",
+          "en": "cattail",
+          "ja": {
+            "text": "ガマ",
+            "reading": "ガマ"
+          }
+        }
+      }
+    },
+    {
+      "name": "落枝",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一截棕色彎曲枝條斜躺地面，表面有幾處節點，末端分成兩根細枝。",
+      "ref": {
+        "project": "la-game",
+        "scene": "riverside",
+        "zone": "promenade",
+        "itemId": "fallen-branch",
+        "words": {
+          "zh-TW": "落枝",
+          "en": "fallen branch",
+          "ja": {
+            "text": "落ち枝",
+            "reading": "おちえだ"
+          }
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,274 @@
+{
+  "en": {
+    "bridge": {
+      "heard": "Bridge.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "sightseeing-boat": {
+      "heard": "Sightseeing boat.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "fishing-basket": {
+      "heard": "Fishing basket.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "stone-post": {
+      "heard": "StonePost.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "life-ring-cabinet": {
+      "heard": "Life Ring Cabinet,",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "fishing-net": {
+      "heard": "Fishing net.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "metal-chain": {
+      "heard": "metal chain",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "mooring-ring": {
+      "heard": "mooring ring,",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "life-jacket-hook": {
+      "heard": "Life Jacket Hook",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "mooring-cleat": {
+      "heard": "Or, mooring cleat,",
+      "score": 0.86,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "stairs": {
+      "heard": "Stairs.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "handrail": {
+      "heard": "Handrail.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "lighthouse": {
+      "heard": "Lighthouse.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "ticket": {
+      "heard": "Ticket.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "fishing-rod": {
+      "heard": "Fishing rod.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "pizza-cutter": {
+      "heard": "Pizza cutter.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "lemon-wedge": {
+      "heard": "Lemon Wedge.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "parasol": {
+      "heard": "Parasol.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "menu": {
+      "heard": "Menu.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "wine-glass": {
+      "heard": "Wine glass.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "plate": {
+      "heard": "plate.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "round-table": {
+      "heard": "Roundtable.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "willow-tree": {
+      "heard": "Willow tree?",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "binoculars": {
+      "heard": "Binoculars.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "fallen-branch": {
+      "heard": "Fallen Branch.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "food-stall": {
+      "heard": "Food stall.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "riverside-bench": {
+      "heard": "Riverside Bench.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "wallet": {
+      "heard": "Wallet",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "potted-flower": {
+      "heard": "Potted flour.",
+      "score": 0.83,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "river-rock": {
+      "heard": "River Rock.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "map": {
+      "heard": "Map.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "skateboard": {
+      "heard": "Skateboard.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "key": {
+      "heard": "Key.",
+      "score": 1,
+      "take": "en-1790170970070.aac",
+      "account": "chatgpt1"
+    },
+    "bicycle": {
+      "heard": "Bicycles",
+      "score": 0.88,
+      "take": "en-1790171147048.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-office": {
+      "heard": "Ticket Office.",
+      "score": 1,
+      "take": "en-1790171147048.aac",
+      "account": "chatgpt1"
+    },
+    "mooring-rope": {
+      "heard": "mooring rope,",
+      "score": 1,
+      "take": "en-1790171147048.aac",
+      "account": "chatgpt1"
+    },
+    "crate": {
+      "heard": "Crate.",
+      "score": 1,
+      "take": "en-1790171147048.aac",
+      "account": "chatgpt1"
+    },
+    "life-jacket": {
+      "heard": "Lifejacket.",
+      "score": 1,
+      "take": "en-1790171147048.aac",
+      "account": "chatgpt1"
+    },
+    "cattail": {
+      "heard": "Catail?",
+      "score": 0.86,
+      "take": "en-1790171147048.aac",
+      "account": "chatgpt1"
+    },
+    "life-buoy-rope": {
+      "heard": "Lifeboy Rope.",
+      "score": 0.92,
+      "take": "en-1790171236545.aac",
+      "account": "chatgpt1"
+    },
+    "fender": {
+      "heard": "Sender.",
+      "score": 0.83,
+      "take": "en-1790171236545.aac",
+      "account": "chatgpt1"
+    },
+    "dock-ladder": {
+      "heard": "Doc Ladder.",
+      "score": 0.9,
+      "take": "en-1790171236545.aac",
+      "account": "chatgpt1"
+    },
+    "anchor": {
+      "heard": "Anchor.",
+      "score": 1,
+      "take": "en-1790171236545.aac",
+      "account": "chatgpt1"
+    },
+    "pizza": {
+      "heard": "Pizza.",
+      "score": 1,
+      "take": "en-1790171236545.aac",
+      "account": "chatgpt1"
+    },
+    "pitcher": {
+      "heard": "Pitcher",
+      "score": 1,
+      "take": "en-1790171236545.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
