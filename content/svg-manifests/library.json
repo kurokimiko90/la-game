@@ -1415,6 +1415,447 @@
           }
         }
       }
+    },
+    {
+      "name": "鎖孔蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的圓形金屬蓋片，中央有一條細縫，邊緣略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "keyhole-cover",
+        "words": {
+          "zh-TW": "鎖孔蓋",
+          "en": "keyhole-cover",
+          "ja": {
+            "text": "鍵穴カバー",
+            "reading": "かぎあなカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "門底擋水條",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的深色橡膠條，貼在門扇底部，外緣有微微隆起的唇邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "door-sill",
+        "words": {
+          "zh-TW": "門底擋水條",
+          "en": "door-sill",
+          "ja": {
+            "text": "ドア下部の水切り",
+            "reading": "ドアかぶのミズキリ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鎖孔飾片",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的長方形金屬片，中間開著細長鎖孔，四角各有一個小孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "keyhole-escutcheon",
+        "words": {
+          "zh-TW": "鎖孔飾片",
+          "en": "keyhole-escutcheon",
+          "ja": {
+            "text": "鍵穴プレート",
+            "reading": "かぎあなプレート"
+          }
+        }
+      }
+    },
+    {
+      "name": "門底密封條",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "貼在門底的一條長形金屬軌，底下垂著柔軟的黑色刷毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "door-sweep",
+        "words": {
+          "zh-TW": "門底密封條",
+          "en": "door-sweep",
+          "ja": {
+            "text": "ドア下部シール",
+            "reading": "ドアかぶシール"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋底刮泥器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮的黑色金屬框內排著一列硬刷毛，兩端有短短的支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "boot-scraper",
+        "words": {
+          "zh-TW": "鞋底刮泥器",
+          "en": "boot-scraper",
+          "ja": {
+            "text": "靴底ブラシ",
+            "reading": "くつぞこブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門擋楔",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊小巧的三角楔形橡膠，寬端有橫向防滑紋，尖端較薄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "doorstop-wedge",
+        "words": {
+          "zh-TW": "門擋楔",
+          "en": "doorstop-wedge",
+          "ja": {
+            "text": "ドアストッパー",
+            "reading": "ドアストッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "無障礙斜坡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "灰色水泥斜坡由地面緩緩升高，兩側有低矮的邊緣，表面帶有細密防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "accessibility-ramp",
+        "words": {
+          "zh-TW": "無障礙斜坡",
+          "en": "accessibility-ramp",
+          "ja": {
+            "text": "スロープ",
+            "reading": "スロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門口地墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一塊扁平的深紅色長方形墊子，表面有短短的粗纖維，四周圍著細窄的黑色邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "entrance",
+        "itemId": "door-mat",
+        "words": {
+          "zh-TW": "門口地墊",
+          "en": "door-mat",
+          "ja": {
+            "text": "玄関マット",
+            "reading": "げんかんマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "辦公椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色軟墊椅面和弧形椅背，下方有五支黑色腳爪與小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "desk-chair",
+        "words": {
+          "zh-TW": "辦公椅",
+          "en": "office-chair",
+          "ja": {
+            "text": "オフィスチェア",
+            "reading": "オフィスチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌上收納架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色塑膠收納架有數個高低不同的方格，前方是低矮開口，側面有圓角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "desk-organizer",
+        "words": {
+          "zh-TW": "桌上收納架",
+          "en": "desk-organizer",
+          "ja": {
+            "text": "デスクオーガナイザー",
+            "reading": "デスクオーガナイザー"
+          }
+        }
+      }
+    },
+    {
+      "name": "排隊欄柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根細長的銀色金屬立柱，頂端連著一條紅色伸縮布帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "queue-barrier",
+        "words": {
+          "zh-TW": "排隊欄柱",
+          "en": "queue-barrier",
+          "ja": {
+            "text": "ベルトパーテーション",
+            "reading": "ベルトパーテーション"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的淺灰色金屬架，底部有寬底座，前方留有開口可放入文件。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "document-holder",
+        "words": {
+          "zh-TW": "文件架",
+          "en": "document-holder",
+          "ja": {
+            "text": "書類立て",
+            "reading": "しょるいたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑰匙櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小型灰色長方櫃，正面有一扇窄門，門上裝著圓形鎖孔和短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "key-cabinet",
+        "words": {
+          "zh-TW": "鑰匙櫃",
+          "en": "key-cabinet",
+          "ja": {
+            "text": "鍵付きキャビネット",
+            "reading": "かぎつきキャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "日期章",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色方形底座上立著短柱和圓形按柄，底座下露出一圈紅色橡膠印面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "lobby",
+        "itemId": "date-stamp",
+        "words": {
+          "zh-TW": "日期章",
+          "en": "date-stamp",
+          "ja": {
+            "text": "日付印",
+            "reading": "ひづけいん"
+          }
+        }
+      }
+    },
+    {
+      "name": "書燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的夾式燈具，有黑色長夾、彎曲細燈臂和朝下的橢圓燈頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "book-light",
+        "words": {
+          "zh-TW": "書燈",
+          "en": "book-light",
+          "ja": {
+            "text": "ブックライト",
+            "reading": "ブックライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "地球儀底座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "獨立的深色圓形底盤中央立著短支柱，頂端有小圓形接頭，旁邊沒有球體。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "bookstacks",
+        "itemId": "globe-stand",
+        "words": {
+          "zh-TW": "地球儀底座",
+          "en": "globe-stand",
+          "ja": {
+            "text": "地球儀スタンド",
+            "reading": "ちきゅうぎスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "讀書架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "斜放的木質底板架在短支腳上，前緣有一條橫檔，可托住攤開的書本。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "bookstand",
+        "words": {
+          "zh-TW": "讀書架",
+          "en": "bookstand",
+          "ja": {
+            "text": "書見台",
+            "reading": "しょけんだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "鋼筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的黑色筆身配金色筆尖與筆夾，側放時可看見流暢的圓管外形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "fountain-pen",
+        "words": {
+          "zh-TW": "鋼筆",
+          "en": "fountain-pen",
+          "ja": {
+            "text": "万年筆",
+            "reading": "まんねんひつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌上鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的圓形鐘面嵌在深棕色木框裡，兩側有短支腳，沒有可辨識的文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "desk-clock",
+        "words": {
+          "zh-TW": "桌上鐘",
+          "en": "desk-clock",
+          "ja": {
+            "text": "置き時計",
+            "reading": "おきどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "長桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長方形棕色桌面由四條粗木桌腳支撐，桌面平坦寬闊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "long-table",
+        "words": {
+          "zh-TW": "長桌",
+          "en": "long table",
+          "ja": {
+            "text": "長机",
+            "reading": "ながづくえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "攤開的書",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩頁奶油白色書頁向左右攤開，中央有清楚的折線，外側露出深藍色封面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "library",
+        "zone": "reading-room",
+        "itemId": "open-book",
+        "words": {
+          "zh-TW": "攤開的書",
+          "en": "open-book",
+          "ja": {
+            "text": "開いた本",
+            "reading": "ひらいたほん"
+          }
+        }
+      }
     }
   ]
 }

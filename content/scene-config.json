@@ -475,7 +475,7 @@
         "scroll": "surface-reading-room",
         "feather": "surface-reading-room"
       },
-      "clusters": [["archway", "spotlight", "louver"], ["paving-slab", "brick"], ["desk", "drawer", "desk-chair"], ["beanbag", "footrest", "foot-cushion"], ["long-table", "open-book"]],
+      "clusters": [["archway", "spotlight", "louver"], ["paving-slab", "brick"], ["desk", "drawer", "desk-chair", "desk-organizer", "document-holder"], ["beanbag", "footrest", "foot-cushion"], ["long-table", "open-book"]],
       "loose": ["brick", "rubber-stamp", "ink-pad", "paper-clip", "binder-clip", "hole-punch", "calculator", "staple-remover", "highlighter", "sticky-note", "inkwell", "glasses-case", "page-holder", "library-card", "magnifying-lens", "foot-cushion", "reading-glasses", "doorstop", "dictionary", "encyclopedia", "atlas", "abacus", "quill", "scroll", "feather", "keyhole-cover", "keyhole-escutcheon", "doorstop-wedge", "date-stamp", "book-light", "globe-stand", "fountain-pen", "open-book"],
       "noFlip": [],
       "motion": {"rain-chain": "sway", "document-shredder": "wobble", "ceiling-fan": "wobble"},

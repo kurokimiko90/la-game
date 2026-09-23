@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T01:34:35.703Z",
+  "syncedAt": "2026-09-23T05:34:05.759Z",
   "scenes": [
     {
       "scene": "airport",
@@ -270,7 +270,28 @@
         "quill",
         "scroll",
         "feather",
-        "card-catalog"
+        "card-catalog",
+        "keyhole-cover",
+        "door-sill",
+        "keyhole-escutcheon",
+        "door-sweep",
+        "boot-scraper",
+        "doorstop-wedge",
+        "accessibility-ramp",
+        "door-mat",
+        "desk-chair",
+        "desk-organizer",
+        "queue-barrier",
+        "document-holder",
+        "key-cabinet",
+        "date-stamp",
+        "book-light",
+        "globe-stand",
+        "bookstand",
+        "fountain-pen",
+        "desk-clock",
+        "long-table",
+        "open-book"
       ],
       "failed": [],
       "pending": [],

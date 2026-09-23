@@ -1042,6 +1042,321 @@
       "loose": false,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "keyhole-cover",
+      "zh": "鎖孔蓋",
+      "en": "keyhole-cover",
+      "ja": "鍵穴カバー",
+      "reading": "かぎあなカバー",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "小巧的圓形金屬蓋片，中央有一條細縫，邊緣略微凸起。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "door-sill",
+      "zh": "門底擋水條",
+      "en": "door-sill",
+      "ja": "ドア下部の水切り",
+      "reading": "ドアかぶのミズキリ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "細長的深色橡膠條，貼在門扇底部，外緣有微微隆起的唇邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "keyhole-escutcheon",
+      "zh": "鎖孔飾片",
+      "en": "keyhole-escutcheon",
+      "ja": "鍵穴プレート",
+      "reading": "かぎあなプレート",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "扁平的長方形金屬片，中間開著細長鎖孔，四角各有一個小孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "door-sweep",
+      "zh": "門底密封條",
+      "en": "door-sweep",
+      "ja": "ドア下部シール",
+      "reading": "ドアかぶシール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "貼在門底的一條長形金屬軌，底下垂著柔軟的黑色刷毛。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "boot-scraper",
+      "zh": "鞋底刮泥器",
+      "en": "boot-scraper",
+      "ja": "靴底ブラシ",
+      "reading": "くつぞこブラシ",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "低矮的黑色金屬框內排著一列硬刷毛，兩端有短短的支腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "doorstop-wedge",
+      "zh": "門擋楔",
+      "en": "doorstop-wedge",
+      "ja": "ドアストッパー",
+      "reading": "ドアストッパー",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一塊小巧的三角楔形橡膠，寬端有橫向防滑紋，尖端較薄。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "accessibility-ramp",
+      "zh": "無障礙斜坡",
+      "en": "accessibility-ramp",
+      "ja": "スロープ",
+      "reading": "スロープ",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "灰色水泥斜坡由地面緩緩升高，兩側有低矮的邊緣，表面帶有細密防滑紋路。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "door-mat",
+      "zh": "門口地墊",
+      "en": "door-mat",
+      "ja": "玄関マット",
+      "reading": "げんかんマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一塊扁平的深紅色長方形墊子，表面有短短的粗纖維，四周圍著細窄的黑色邊框。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "desk-chair",
+      "zh": "辦公椅",
+      "en": "office-chair",
+      "ja": "オフィスチェア",
+      "reading": "オフィスチェア",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "深藍色軟墊椅面和弧形椅背，下方有五支黑色腳爪與小輪子。",
+      "loose": false,
+      "motion": null,
+      "cluster": "desk"
+    },
+    {
+      "id": "desk-organizer",
+      "zh": "桌上收納架",
+      "en": "desk-organizer",
+      "ja": "デスクオーガナイザー",
+      "reading": "デスクオーガナイザー",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "藍色塑膠收納架有數個高低不同的方格，前方是低矮開口，側面有圓角。",
+      "loose": false,
+      "motion": null,
+      "cluster": "desk"
+    },
+    {
+      "id": "queue-barrier",
+      "zh": "排隊欄柱",
+      "en": "queue-barrier",
+      "ja": "ベルトパーテーション",
+      "reading": "ベルトパーテーション",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "兩根細長的銀色金屬立柱，頂端連著一條紅色伸縮布帶。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "document-holder",
+      "zh": "文件架",
+      "en": "document-holder",
+      "ja": "書類立て",
+      "reading": "しょるいたて",
+      "category": "道具",
+      "size": "medium",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "直立的淺灰色金屬架，底部有寬底座，前方留有開口可放入文件。",
+      "loose": false,
+      "motion": null,
+      "cluster": "desk"
+    },
+    {
+      "id": "key-cabinet",
+      "zh": "鑰匙櫃",
+      "en": "key-cabinet",
+      "ja": "鍵付きキャビネット",
+      "reading": "かぎつきキャビネット",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "小型灰色長方櫃，正面有一扇窄門，門上裝著圓形鎖孔和短把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": "drawer"
+    },
+    {
+      "id": "date-stamp",
+      "zh": "日期章",
+      "en": "date-stamp",
+      "ja": "日付印",
+      "reading": "ひづけいん",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "黑色方形底座上立著短柱和圓形按柄，底座下露出一圈紅色橡膠印面。",
+      "loose": true,
+      "motion": null,
+      "cluster": "rubber-stamp"
+    },
+    {
+      "id": "book-light",
+      "zh": "書燈",
+      "en": "book-light",
+      "ja": "ブックライト",
+      "reading": "ブックライト",
+      "category": "道具",
+      "size": "small",
+      "zone": "bookstacks",
+      "spot": "ground",
+      "desc": "小巧的夾式燈具，有黑色長夾、彎曲細燈臂和朝下的橢圓燈頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "globe-stand",
+      "zh": "地球儀底座",
+      "en": "globe-stand",
+      "ja": "地球儀スタンド",
+      "reading": "ちきゅうぎスタンド",
+      "category": "道具",
+      "size": "small",
+      "zone": "bookstacks",
+      "spot": "ground",
+      "desc": "獨立的深色圓形底盤中央立著短支柱，頂端有小圓形接頭，旁邊沒有球體。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bookstand",
+      "zh": "讀書架",
+      "en": "bookstand",
+      "ja": "書見台",
+      "reading": "しょけんだい",
+      "category": "道具",
+      "size": "small",
+      "zone": "reading-room",
+      "spot": "ground",
+      "desc": "斜放的木質底板架在短支腳上，前緣有一條橫檔，可托住攤開的書本。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fountain-pen",
+      "zh": "鋼筆",
+      "en": "fountain-pen",
+      "ja": "万年筆",
+      "reading": "まんねんひつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "reading-room",
+      "spot": "ground",
+      "desc": "細長的黑色筆身配金色筆尖與筆夾，側放時可看見流暢的圓管外形。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "desk-clock",
+      "zh": "桌上鐘",
+      "en": "desk-clock",
+      "ja": "置き時計",
+      "reading": "おきどけい",
+      "category": "道具",
+      "size": "small",
+      "zone": "reading-room",
+      "spot": "ground",
+      "desc": "小巧的圓形鐘面嵌在深棕色木框裡，兩側有短支腳，沒有可辨識的文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "long-table",
+      "zh": "長桌",
+      "en": "long table",
+      "ja": "長机",
+      "reading": "ながづくえ",
+      "category": "設施",
+      "size": "large",
+      "zone": "reading-room",
+      "spot": "ground",
+      "desc": "長方形棕色桌面由四條粗木桌腳支撐，桌面平坦寬闊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "open-book",
+      "zh": "攤開的書",
+      "en": "open-book",
+      "ja": "開いた本",
+      "reading": "ひらいたほん",
+      "category": "道具",
+      "size": "small",
+      "zone": "reading-room",
+      "spot": "ground",
+      "desc": "兩頁奶油白色書頁向左右攤開，中央有清楚的折線，外側露出深藍色封面。",
+      "loose": true,
+      "motion": null,
+      "cluster": "long-table"
     }
   ],
   "rejected": [
@@ -1164,7 +1479,267 @@
       "id": "glasses",
       "reason": "id 重複",
       "zone": "reading-room"
+    },
+    {
+      "id": "wall-sconce",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "computer-monitor",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "globe",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "paperweight",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "sticky-note",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "wristwatch",
+      "reason": "中文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "key",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "envelope",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "umbrella",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "magnifying-glass",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "bookend",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "reading-glass",
+      "reason": "中文重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "dictionary",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "encyclopedia",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "atlas",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "abacus",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "quill",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "scroll",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "book",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "bookmark",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "bookend",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "notebook",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "pen",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "globe",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "vase",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "hourglass",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "book",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "bookend",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "globe",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "hourglass",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "reading-stand",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "magnifying-glass",
+      "reason": "id 重複",
+      "zone": "bookstacks"
+    },
+    {
+      "id": "bookmark",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "inkwell",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "paperweight",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "magnifying-glass",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "ink-bottle",
+      "reason": "中文重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "paperclip",
+      "reason": "中文重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "chair",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "book",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "notebook",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "paper",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "pencil",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "bookend",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "bookmark",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "ink-bottle",
+      "reason": "中文重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "paperweight",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "bookend",
+      "reason": "id 重複",
+      "zone": "reading-room"
+    },
+    {
+      "id": "globe",
+      "reason": "id 重複",
+      "zone": "reading-room"
     }
   ],
-  "createdAt": "2026-09-22T12:23:40.942Z"
+  "createdAt": "2026-09-22T12:23:40.942Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 21,
+    "at": "2026-09-23T01:59:38.840Z"
+  }
 }
