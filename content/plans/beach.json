@@ -1,0 +1,1830 @@
+{
+  "id": "beach",
+  "name": "海邊",
+  "zones": [
+    {
+      "id": "entrance",
+      "name": "沙灘入口",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "road"
+    },
+    {
+      "id": "boardwalk",
+      "name": "海濱步道",
+      "indoor": false,
+      "floor": "grass",
+      "feature": "none"
+    },
+    {
+      "id": "tide-pool",
+      "name": "潮池區",
+      "indoor": false,
+      "floor": "sand",
+      "feature": "water"
+    },
+    {
+      "id": "snack-shack",
+      "name": "海邊小屋",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "counter"
+    }
+  ],
+  "slot": {
+    "x": 6200,
+    "y": 3900
+  },
+  "colorIndex": 9,
+  "icon": "lifeguard-chair",
+  "elements": [
+    {
+      "id": "lifeguard-chair",
+      "zh": "救生員椅",
+      "en": "lifeguard-chair",
+      "ja": "監視台",
+      "reading": "かんしたい",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "高高的木製座椅架在交叉支腳上，椅面寬平，旁邊有短梯可供攀爬。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shower",
+      "zh": "淋浴器",
+      "en": "shower",
+      "ja": "シャワー",
+      "reading": "シャワー",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "銀色直立管柱頂端伸出圓形蓮蓬頭，旁邊有一個明顯的旋鈕。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "foot-wash",
+      "zh": "洗腳台",
+      "en": "foot-wash",
+      "ja": "足洗い場",
+      "reading": "あしあらいば",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "矮矮的白色方形水槽裝在金屬支架上，前方有腳踏板和彎曲水管。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "surfboard",
+      "zh": "衝浪板",
+      "en": "surfboard",
+      "ja": "サーフボード",
+      "reading": "サーフボード",
+      "category": "道具",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "細長的白色板身兩端收尖，一端較圓，底面有三片小小的尾鰭。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "snorkel",
+      "zh": "呼吸管",
+      "en": "snorkel",
+      "ja": "シュノーケル",
+      "reading": "シュノーケル",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "彎成弧形的藍色塑膠管，一端有短短的咬嘴，另一端向上彎起。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "goggles",
+      "zh": "泳鏡",
+      "en": "goggles",
+      "ja": "ゴーグル",
+      "reading": "ゴーグル",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "兩個圓角透明鏡框由短橋連接，外側繫著一條藍色彈性帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "swim-fins",
+      "zh": "蛙鞋",
+      "en": "swim-fins",
+      "ja": "フィン",
+      "reading": "フィン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一雙亮黃色長腳蹼，前端寬扁，後方各有套住腳掌的橢圓開口。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "beach-chair",
+      "zh": "沙灘椅",
+      "en": "beach-chair",
+      "ja": "ビーチチェア",
+      "reading": "ビーチチェア",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "藍白相間的布面椅身由細金屬管撐起，椅背向後傾斜，支腳交叉。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "folding-table",
+      "zh": "折疊桌",
+      "en": "folding-table",
+      "ja": "折りたたみテーブル",
+      "reading": "おりたたみテーブル",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "白色長方桌面架在兩組交叉金屬腳上，桌面邊緣平直，腳架可折起。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "cooler",
+      "zh": "保冷箱",
+      "en": "cooler",
+      "ja": "クーラーボックス",
+      "reading": "クーラーボックス",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "藍白相間的長方形硬殼箱，上方有厚蓋子，側面裝著小提把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "beach-ball",
+      "zh": "沙灘球",
+      "en": "beach-ball",
+      "ja": "ビーチボール",
+      "reading": "ビーチボール",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "圓滾滾的彩色充氣球，表面有幾片彎曲相接的紅、黃、藍色區塊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sandcastle-mold",
+      "zh": "沙堡模具",
+      "en": "sandcastle-mold",
+      "ja": "砂型",
+      "reading": "すながた",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "橘色塑膠城堡模具呈倒扣的塔形，頂部有小尖塔，側面有方形凹紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shell",
+      "zh": "貝殼",
+      "en": "shell",
+      "ja": "貝殻",
+      "reading": "かいがら",
+      "category": "自然",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淡粉色扇形貝殼，外緣有一圈細小齒紋，表面帶著放射狀的凸起紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "starfish",
+      "zh": "海星",
+      "en": "starfish",
+      "ja": "ヒトデ",
+      "reading": "ヒトデ",
+      "category": "自然",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "橘紅色的扁平五角星形海星，五隻短臂向外伸展，表面點綴細小圓點。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "seaweed",
+      "zh": "海藻",
+      "en": "seaweed",
+      "ja": "海藻",
+      "reading": "かいそう",
+      "category": "植物",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "幾片深綠色長葉從短短的根部伸出，葉片彎曲交疊，邊緣略呈波浪形。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "palm-tree",
+      "zh": "棕櫚樹",
+      "en": "palm-tree",
+      "ja": "ヤシの木",
+      "reading": "ヤシのき",
+      "category": "植物",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "細長的棕色樹幹頂端伸出一圈深綠色羽狀大葉，葉片向外舒展。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "seashell-wind-chime",
+      "zh": "貝殼風鈴",
+      "en": "seashell-wind-chime",
+      "ja": "貝殻の風鈴",
+      "reading": "かいがらのふうりん",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "幾片乳白色小貝殼以細繩垂掛在圓形木環下，底端繫著一片長條形吊飾。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "electric-scooter",
+      "zh": "電動滑板車",
+      "en": "electric-scooter",
+      "ja": "電動キックボード",
+      "reading": "でんどうキックボード",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "黑色窄踏板下裝著兩個小輪，直立車桿連著橫向把手，前方有小燈。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "parking-post",
+      "zh": "停車樁",
+      "en": "parking-post",
+      "ja": "車止め",
+      "reading": "くるまどめ",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "矮短的圓柱形金屬樁，頂端圓潤，漆成醒目的黃黑相間條紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "parking-block",
+      "zh": "停車擋",
+      "en": "parking-block",
+      "ja": "輪止め",
+      "reading": "わどめ",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "貼著地面的長條混凝土塊，外形低矮，表面有黃黑斜紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "road-marker",
+      "zh": "道路反光標記",
+      "en": "road-marker",
+      "ja": "道路鋲",
+      "reading": "どうろびょう",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "貼在地面的扁圓形金屬標記，銀灰外框包著明亮的黃色反光面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "beach-towel",
+      "zh": "沙灘巾",
+      "en": "beach-towel",
+      "ja": "ビーチタオル",
+      "reading": "ビーチタオル",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "長方形布巾平鋪在沙地上，藍白相間的寬條紋十分醒目。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "flip-flop",
+      "zh": "夾腳拖",
+      "en": "flip-flop",
+      "ja": "ビーチサンダル",
+      "reading": "ビーチサンダル",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一雙薄底橢圓拖鞋，鮮黃色鞋面有兩條分開腳趾的帶子。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "beach-umbrella",
+      "zh": "海灘遮陽傘",
+      "en": "beach umbrella",
+      "ja": "ビーチパラソル",
+      "reading": "ビーチパラソル",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "圓形的藍白相間傘面撐在細長傘桿上，底部有寬扁的圓形傘座。",
+      "loose": false,
+      "motion": null,
+      "cluster": "beach-chair"
+    },
+    {
+      "id": "snorkel-mask",
+      "zh": "潛水面罩",
+      "en": "snorkel mask",
+      "ja": "シュノーケルマスク",
+      "reading": "シュノーケルマスク",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "透明的大框面罩邊緣有藍色軟膠，兩側連著一條彎曲的藍色頭帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": "snorkel"
+    },
+    {
+      "id": "bicycle-pump",
+      "zh": "打氣筒",
+      "en": "bicycle pump",
+      "ja": "空気入れ",
+      "reading": "くうきいれ",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "細長直立的金屬筒身頂端有短握柄，底部接著一條黑色軟管。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bicycle"
+    },
+    {
+      "id": "driftwood",
+      "zh": "漂流木",
+      "en": "driftwood",
+      "ja": "流木",
+      "reading": "りゅうぼく",
+      "category": "自然",
+      "size": "medium",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "淺褐色彎曲木枝橫躺地面，表面乾燥粗糙，兩端有分岔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "folding-chair",
+      "zh": "折疊椅",
+      "en": "folding chair",
+      "ja": "折りたたみ椅子",
+      "reading": "おりたたみいす",
+      "category": "道具",
+      "size": "medium",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "亮藍色布面椅座與椅背繃在交叉的細金屬椅腳上，椅腳末端有黑色套帽。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "camera-tripod",
+      "zh": "相機腳架",
+      "en": "camera tripod",
+      "ja": "カメラ三脚",
+      "reading": "カメラさんきゃく",
+      "category": "道具",
+      "size": "medium",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "黑色伸縮支架由中央柱和三根向外張開的細腳組成，頂端有小平台。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "driftwood-branch",
+      "zh": "枯枝",
+      "en": "branch",
+      "ja": "小枝",
+      "reading": "こえだ",
+      "category": "自然",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "灰褐色細長枯枝有兩個分岔，表面粗糙並帶著幾段淺色磨痕。",
+      "loose": true,
+      "motion": null,
+      "cluster": "driftwood"
+    },
+    {
+      "id": "dune-grass",
+      "zh": "海濱草",
+      "en": "beach grass",
+      "ja": "ハマニンニク",
+      "reading": "ハマニンニク",
+      "category": "植物",
+      "size": "medium",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "一叢細長綠葉從低矮根部向外散開，葉片尖細，頂端微微彎垂。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "sea-holly",
+      "zh": "海濱刺芹",
+      "en": "sea holly",
+      "ja": "ハマボウフウ",
+      "reading": "ハマボウフウ",
+      "category": "植物",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "貼地的深綠色圓裂葉叢中伸出細莖，頂端聚成一顆淡紫色小花球。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "coastal-grass-seedhead",
+      "zh": "草穗",
+      "en": "grass seed head",
+      "ja": "草の穂",
+      "reading": "くさのほ",
+      "category": "植物",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "細直綠莖頂端長著一支金棕色穗狀花序，穗粒排列緊密並微微下垂。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "tide-pool",
+      "zh": "潮池",
+      "en": "tide pool",
+      "ja": "タイドプール",
+      "reading": "タイドプール",
+      "category": "自然",
+      "size": "large",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "岩石圍出淺淺的圓形水窪，池底透出藍綠色，邊緣凹凸不平。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "rock-pool-net",
+      "zh": "撈網",
+      "en": "hand net",
+      "ja": "たも網",
+      "reading": "たもあみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "細長手柄連著圓形網框，淡藍色網布張開，邊緣有一圈深色框。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "sand-shovel",
+      "zh": "小鏟子",
+      "en": "small shovel",
+      "ja": "小さなスコップ",
+      "reading": "ちいさなスコップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "紅色短柄接著寬扁的鏟面，鏟面前端圓弧，側邊微微翹起。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bucket"
+    },
+    {
+      "id": "tide-pool-guide",
+      "zh": "觀察盒",
+      "en": "viewing box",
+      "ja": "観察ケース",
+      "reading": "かんさつケース",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "透明方形淺盒，上緣有厚厚的藍色框，盒底平整，能看見空空的內部。",
+      "loose": true,
+      "motion": null,
+      "cluster": "magnifying-glass"
+    },
+    {
+      "id": "rock",
+      "zh": "岩石",
+      "en": "rock",
+      "ja": "岩",
+      "reading": "いわ",
+      "category": "自然",
+      "size": "medium",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "灰褐色的不規則岩塊，表面有幾道深色裂紋，頂部高低起伏。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "sea-glass",
+      "zh": "海玻璃",
+      "en": "sea glass",
+      "ja": "シーグラス",
+      "reading": "シーグラス",
+      "category": "自然",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "幾片磨圓的半透明玻璃碎片，呈淡綠和淺藍色，表面霧霧的。",
+      "loose": true,
+      "motion": null,
+      "cluster": "pebble"
+    },
+    {
+      "id": "tide-pool-sign-post",
+      "zh": "木樁",
+      "en": "wooden post",
+      "ja": "木の杭",
+      "reading": "きのくい",
+      "category": "設施",
+      "size": "medium",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "一根粗短的褐色木柱立在池邊，頂端平平的，表面有幾道深色木紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "towel",
+      "zh": "毛巾",
+      "en": "towel",
+      "ja": "タオル",
+      "reading": "タオル",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "淺黃色長方形布巾摺成厚厚一疊，布邊有細短流蘇，表面帶柔軟織紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bench"
+    },
+    {
+      "id": "water-shoe",
+      "zh": "溯溪鞋",
+      "en": "water shoe",
+      "ja": "マリンシューズ",
+      "reading": "マリンシューズ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "藍色包覆式水鞋，鞋頭圓鈍，鞋面有透氣小孔，鞋底厚實有深色紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": "towel"
+    },
+    {
+      "id": "waterproof-case",
+      "zh": "防水盒",
+      "en": "waterproof case",
+      "ja": "防水ケース",
+      "reading": "ぼうすいケース",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "透明扁平方盒，邊緣有橘色密封圈，側面扣著一個短短的卡扣。",
+      "loose": true,
+      "motion": null,
+      "cluster": "viewing-box"
+    },
+    {
+      "id": "reed",
+      "zh": "蘆葦",
+      "en": "reed",
+      "ja": "アシ",
+      "reading": "アシ",
+      "category": "植物",
+      "size": "medium",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "幾根細長綠色莖稈直立成簇，頂端長著棕色毛絮狀穗子，葉片向旁伸展。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "sea-lavender",
+      "zh": "海濱馬鞍藤",
+      "en": "beach morning glory",
+      "ja": "ハマヒルガオ",
+      "reading": "ハマヒルガオ",
+      "category": "植物",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "低矮藤蔓貼地伸展，圓心形綠葉旁開著淡粉紫色喇叭花，花瓣向外展開。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "rock"
+    },
+    {
+      "id": "buoy",
+      "zh": "浮標",
+      "en": "buoy",
+      "ja": "ブイ",
+      "reading": "ブイ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "water",
+      "desc": "橘紅色圓錐形浮標露出水面，頂端有短短的握把，底部帶著一圈深色邊。",
+      "loose": false,
+      "motion": "bob",
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "water-scope",
+      "zh": "水下觀察鏡",
+      "en": "water-scope",
+      "ja": "水中スコープ",
+      "reading": "すいちゅうスコープ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "短粗的藍色圓筒，前端有透明圓形鏡片，側邊連著一個扁平握把。",
+      "loose": true,
+      "motion": null,
+      "cluster": "tide-pool-guide"
+    },
+    {
+      "id": "sand-dollar",
+      "zh": "沙錢",
+      "en": "sand-dollar",
+      "ja": "カシパン",
+      "reading": "カシパン",
+      "category": "自然",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "扁平的乳白色圓盤，表面有淡淡的五瓣花形紋路，外緣略微起伏。",
+      "loose": true,
+      "motion": null,
+      "cluster": "shell"
+    },
+    {
+      "id": "tide-pool-marker",
+      "zh": "潮池標記牌",
+      "en": "tide-pool-marker",
+      "ja": "潮だまりの目印",
+      "reading": "しおだまりのめじるし",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "紅白相間的短木棒，頂端是圓鈍形，底部尖細，插在池邊砂地上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "water-pail",
+      "zh": "提水桶",
+      "en": "water-pail",
+      "ja": "バケツ",
+      "reading": "バケツ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "黃色圓筒形小桶，桶口寬而敞開，兩側接著一個拱形金屬提把。",
+      "loose": true,
+      "motion": null,
+      "cluster": "rock-pool-net"
+    },
+    {
+      "id": "shell-brush",
+      "zh": "貝殼刷",
+      "en": "shell-brush",
+      "ja": "貝がらブラシ",
+      "reading": "かいがらブラシ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "短木柄末端固定一簇淺棕色刷毛，刷頭略呈橢圓形，旁邊放著貝殼。",
+      "loose": true,
+      "motion": null,
+      "cluster": "shell"
+    },
+    {
+      "id": "sand-sifter",
+      "zh": "篩砂網",
+      "en": "sand-sifter",
+      "ja": "砂ふるい",
+      "reading": "すなふるい",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "淺藍色圓框繃著細密網面，兩側有短握柄，框內留著少量細砂。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sand-shovel"
+    },
+    {
+      "id": "sea-anemone",
+      "zh": "海葵",
+      "en": "sea-anemone",
+      "ja": "イソギンチャク",
+      "reading": "イソギンチャク",
+      "category": "自然",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "water",
+      "desc": "橘紅色柔軟圓柱底部固定在石面，頂端伸出一圈細短觸手，浮在淺水中。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "rock"
+    },
+    {
+      "id": "waterproof-bin",
+      "zh": "防水收納盒",
+      "en": "waterproof-bin",
+      "ja": "防水収納ケース",
+      "reading": "ぼうすいしゅうのうケース",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "透明扁方盒配亮黃色卡扣，盒蓋邊緣有粗厚密封圈，旁邊放著防水盒。",
+      "loose": true,
+      "motion": null,
+      "cluster": "waterproof-case"
+    },
+    {
+      "id": "tide-pool-ladder",
+      "zh": "池邊小梯",
+      "en": "tide-pool-ladder",
+      "ja": "潮だまり用の小さなはしご",
+      "reading": "しおだまりようのちいさなはしご",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "兩根淺木色直桿由三根橫桿連接，底端穩穩踩在石岸上，靠著池邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tide-pool"
+    },
+    {
+      "id": "rock-pool-chart",
+      "zh": "潮池圖卡",
+      "en": "rock-pool-chart",
+      "ja": "磯の生き物カード",
+      "reading": "いそのいきものカード",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "一張橫向的淡藍色硬卡片，正面畫著幾個彩色貝殼和海星圖案，四角圓滑。",
+      "loose": true,
+      "motion": null,
+      "cluster": "viewing-box"
+    },
+    {
+      "id": "sea-glass-bottle",
+      "zh": "海玻璃瓶",
+      "en": "sea-glass-bottle",
+      "ja": "シーグラス瓶",
+      "reading": "シーグラスびん",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "透明矮玻璃瓶，瓶身裝著幾顆磨圓的綠色與淡藍色海玻璃，寬口配著木塞。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sea-glass"
+    },
+    {
+      "id": "tide-pool-sandals",
+      "zh": "涉水涼鞋",
+      "en": "tide-pool-sandals",
+      "ja": "マリンシューズ",
+      "reading": "マリンシューズ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "一雙深藍色橡膠涼鞋，鞋面有交叉寬帶，鞋底厚實並排列著防滑凹紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "water-shoe"
+    },
+    {
+      "id": "ice-maker",
+      "zh": "製冰機",
+      "en": "ice maker",
+      "ja": "製氷機",
+      "reading": "せいひょうき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "銀色方盒狀製冰機，正面有深色接冰口和下方突出的接水盤。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": null
+    },
+    {
+      "id": "bar-stool",
+      "zh": "吧台椅",
+      "en": "bar stool",
+      "ja": "バースツール",
+      "reading": "バースツール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "圓形深棕色椅面下接四根黑色細椅腳，椅腳間有圓形踏桿。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bar-counter"
+    },
+    {
+      "id": "wooden-chair",
+      "zh": "木椅",
+      "en": "wooden chair",
+      "ja": "木の椅子",
+      "reading": "きのいす",
+      "category": "設施",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "棕色木椅有方形椅面、直條椅背和四根筆直椅腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "side-table",
+      "zh": "邊桌",
+      "en": "side table",
+      "ja": "サイドテーブル",
+      "reading": "サイドテーブル",
+      "category": "設施",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "小巧的深棕色方桌，桌面平坦，四根木腳向下筆直延伸。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "floor-fan",
+      "zh": "立扇",
+      "en": "floor fan",
+      "ja": "扇風機",
+      "reading": "せんぷうき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "黑色圓形網罩內有三片扇葉，細長支架連著寬大的十字底座。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": null
+    },
+    {
+      "id": "fireplace",
+      "zh": "壁爐",
+      "en": "fireplace",
+      "ja": "暖炉",
+      "reading": "だんろ",
+      "category": "設施",
+      "size": "large",
+      "zone": "snack-shack",
+      "spot": "wallbase",
+      "desc": "深棕石砌壁爐有方形黑色爐口，上方突出厚實的木製爐台。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wood-log",
+      "zh": "木柴",
+      "en": "log",
+      "ja": "薪",
+      "reading": "まき",
+      "category": "自然",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "兩截短粗棕色木柴交疊擺放，圓形切面露出淺色年輪。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fireplace"
+    },
+    {
+      "id": "firewood-basket",
+      "zh": "柴籃",
+      "en": "firewood basket",
+      "ja": "薪かご",
+      "reading": "まきかご",
+      "category": "道具",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "深棕色橢圓編織籃裝著幾截木柴，兩側各有一個粗把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fireplace"
+    },
+    {
+      "id": "candle-holder",
+      "zh": "燭台",
+      "en": "candle holder",
+      "ja": "キャンドルスタンド",
+      "reading": "キャンドルスタンド",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "黃銅色金屬燭台有圓形底盤、細長立柱和淺碟形托座。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bar-counter"
+    },
+    {
+      "id": "bartop",
+      "zh": "吧台檯面",
+      "en": "bar top",
+      "ja": "カウンターの天板",
+      "reading": "カウンターのてんばん",
+      "category": "設施",
+      "size": "large",
+      "zone": "snack-shack",
+      "spot": "wallbase",
+      "desc": "深棕色長方形木檯面，正面有厚實的直立木板，沿牆延伸成一字形吧台。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bar-stool-footrest",
+      "zh": "吧台椅腳踏桿",
+      "en": "bar stool footrest",
+      "ja": "カウンターチェアの足置き",
+      "reading": "カウンターチェアのあしおき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "金屬椅腳中段橫接一圈細長圓桿，呈銀灰色，形成清楚的環狀踏腳處。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bar-stool"
+    },
+    {
+      "id": "bar-counter",
+      "zh": "吧台櫃",
+      "en": "bar counter",
+      "ja": "バーカウンター",
+      "reading": "バーカウンター",
+      "category": "設施",
+      "size": "large",
+      "zone": "snack-shack",
+      "spot": "wallbase",
+      "desc": "深色木製長方櫃體，上方伸出寬檯面，正面有數個平整木板門片。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "ice-bucket",
+      "zh": "冰桶",
+      "en": "ice bucket",
+      "ja": "アイスペール",
+      "reading": "アイスペール",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "銀灰色圓筒金屬桶，兩側有小把手，桶口露出幾塊方形冰塊。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bartop"
+    },
+    {
+      "id": "bar-spoon",
+      "zh": "吧匙",
+      "en": "bar spoon",
+      "ja": "バースプーン",
+      "reading": "バースプーン",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "細長銀色金屬匙柄，一端有小匙勺，另一端有扁平小圓盤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bartop"
+    },
+    {
+      "id": "cocktail-glass",
+      "zh": "雞尾酒杯",
+      "en": "cocktail glass",
+      "ja": "カクテルグラス",
+      "reading": "カクテルグラス",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "透明杯身呈寬淺三角形，接著細長杯梗與圓形底座，輪廓俐落。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bartop"
+    },
+    {
+      "id": "fire-poker",
+      "zh": "火鉗",
+      "en": "fire poker",
+      "ja": "火かき棒",
+      "reading": "ひかきぼう",
+      "category": "道具",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "黑色細長金屬桿，一端彎成短鉤，另一端有小圓握柄，靠在壁爐旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fireplace"
+    },
+    {
+      "id": "bellows",
+      "zh": "風箱",
+      "en": "bellows",
+      "ja": "ふいご",
+      "reading": "ふいご",
+      "category": "道具",
+      "size": "medium",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "深棕木柄夾著摺疊的黑色皮風囊，前端接短金屬噴嘴，放在壁爐邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fireplace"
+    },
+    {
+      "id": "wooden-tray",
+      "zh": "木托盤",
+      "en": "wooden tray",
+      "ja": "木製トレー",
+      "reading": "もくせいトレー",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "淺棕色長方木盤，四周有低矮凸起邊框，兩端各有一個橢圓提孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": "side-table"
+    },
+    {
+      "id": "beer-tap",
+      "zh": "啤酒龍頭",
+      "en": "beer-tap",
+      "ja": "ビールサーバーの注ぎ口",
+      "reading": "ビールサーバーのつぎぐち",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "短粗的金屬直管立在圓形底座上，頂端有一支向前伸出的黑色扳柄。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bar-counter"
+    },
+    {
+      "id": "ashtray",
+      "zh": "煙灰缸",
+      "en": "ashtray",
+      "ja": "灰皿",
+      "reading": "はいざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "淺而寬的圓形玻璃碟，厚實的透明邊緣有幾個放煙的位置。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "record-player",
+      "zh": "唱片機",
+      "en": "record-player",
+      "ja": "レコードプレーヤー",
+      "reading": "レコードプレーヤー",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "surface",
+      "desc": "方形木色機箱上有一片黑色圓盤，旁邊伸出細長的金屬唱臂。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bar-counter"
+    },
+    {
+      "id": "firewood",
+      "zh": "柴火",
+      "en": "firewood",
+      "ja": "薪",
+      "reading": "まき",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "幾段短粗的棕色木柴交疊成小堆，斷面呈淺色圓形並帶有年輪。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fireplace"
+    },
+    {
+      "id": "poker-chip",
+      "zh": "籌碼",
+      "en": "poker-chip",
+      "ja": "ポーカーチップ",
+      "reading": "ポーカーチップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "幾枚扁平圓形籌碼散落地面，紅藍相間，外圈有簡單的白色短條。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    }
+  ],
+  "rejected": [
+    {
+      "id": "parking-barrier",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-meter",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bike-rack",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "lifebuoy",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "cloud",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "car",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "drain-cover",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "car",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "handrail",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "lifebuoy",
+      "reason": "中文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "anchor",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "skateboard",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "streetlight",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "drinking-fountain",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "planter",
+      "reason": "中文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "fern",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "rose",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "shell",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pebble",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "seashell-wind-chime",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "rope",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "binoculars",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "camera",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunglasses",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "parasol",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "cloud",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "rainbow",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "kite",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "balloon",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "raindrop",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bench",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "handrail",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "lantern",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "drain",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "manhole-cover",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "paving-tile",
+      "reason": "中文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "recycling-bin",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "kick-scooter",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "skateboard",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "electric-scooter",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "water-bottle",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunglasses",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "keychain",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "paper-cup",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunscreen",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "shell",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pebble",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "seaweed",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "palm-tree",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "cloud",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "coastal-bin",
+      "reason": "英文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "recycling-bin",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "coastal-bench",
+      "reason": "英文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bicycle-rack",
+      "reason": "描述有數字或英文字母",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "streetlight",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "drinking-fountain",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "handrail",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "coastal-lantern",
+      "reason": "英文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "thermos",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "binoculars",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "kite",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "wind-sock",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "seashell",
+      "reason": "中文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pebble",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pine-cone",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "beach-leaf",
+      "reason": "英文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "magnifying-glass",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "bucket",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "pebble",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "shell",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "seaweed",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "driftwood",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "rope",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "wooden-crate",
+      "reason": "中文重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "bench",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "binoculars",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "sunscreen-tube",
+      "reason": "中文重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "water-shoes-rack",
+      "reason": "中文重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "shell",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "driftwood",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "seaweed",
+      "reason": "id 重複",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "bar-counter",
+      "reason": "中文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "refrigerator",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "coffee-maker",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "sink",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "wall-clock",
+      "reason": "英文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "sconce",
+      "reason": "中文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "coat-hanger",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "floor-lamp",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "rug",
+      "reason": "中文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "plant-pot",
+      "reason": "英文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "glass",
+      "reason": "英文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bowl",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "spoon",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "orange",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "cheese",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "wine-glass",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "glass",
+      "reason": "英文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bottle",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "coaster",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bar-stool",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "guitar",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "rug",
+      "reason": "中文重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "coaster",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "corkscrew",
+      "reason": "中文重複",
+      "zone": "snack-shack"
+    }
+  ],
+  "createdAt": "2026-09-23T08:08:46.898Z"
+}

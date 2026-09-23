@@ -1,6 +1,6 @@
 {
   "world": {"width": 8800, "height": 5200},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -650,6 +650,42 @@
       "motion": {"wheat-stalk": "sway"},
       "arrange": "auto",
       "terrain": {"color": "#bcaaa4", "x0": 6200, "y0": 2600, "x1": 8800, "y1": 3900, "zones": [{"id": "entrance", "x0": 6200, "y0": 2600, "x1": 7500, "y1": 3250, "indoor": false, "floor": "paving"}, {"id": "display-area", "x0": 7500, "y0": 2600, "x1": 8800, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "seating-area", "x0": 7500, "y0": 3250, "x1": 8800, "y1": 3900, "indoor": true, "floor": "wood", "wallBase": 3430}, {"id": "checkout-counter", "x0": 6200, "y0": 3250, "x1": 7500, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}
+    },
+    "beach": {
+      "name": "海邊",
+      "icon": "lifeguard-chair",
+      "zones": {"entrance": [6200, 3900, 7500, 4550], "boardwalk": [7500, 3900, 8800, 4550], "tide-pool": [7500, 4550, 8800, 5200], "snack-shack": [6200, 4550, 7500, 5200]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3970, "bottom": 4345}, "boardwalk": {"top": 3970, "bottom": 4530}, "tide-pool": {"top": 4620, "bottom": 5180, "x1": 8120}, "snack-shack": {"top": 4790, "bottom": 5180, "gaps": [[4740, 4932]]}}},
+        "sky-entrance": {"top": 4050, "bottom": 4200, "zones": ["entrance"], "layer": 3, "float": 150},
+        "road-entrance": {"top": 4430, "bottom": 4500, "zones": ["entrance"], "inset": 20},
+        "sky-boardwalk": {"top": 4050, "bottom": 4200, "zones": ["boardwalk"], "layer": 3, "float": 150},
+        "sky-tide-pool": {"top": 4700, "bottom": 4850, "zones": ["tide-pool"], "layer": 3, "float": 150},
+        "water-tide-pool": {"x0": 8190, "x1": 8710, "top": 4730, "bottom": 5130, "zones": ["tide-pool"], "layer": 1, "scale": [0.9, 0.9]},
+        "wall-snack-shack": {"levels": [4690], "zones": ["snack-shack"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-snack-shack": {"levels": [4728], "zones": ["snack-shack"], "inset": 50},
+        "surface-snack-shack": {"levels": [4860], "zones": ["snack-shack"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4902}
+      },
+      "place": {
+        "buoy": "water-tide-pool",
+        "ice-maker": "surface-snack-shack",
+        "fireplace": "wallbase-snack-shack",
+        "candle-holder": "surface-snack-shack",
+        "bartop": "wallbase-snack-shack",
+        "bar-counter": "wallbase-snack-shack",
+        "ice-bucket": "surface-snack-shack",
+        "bar-spoon": "surface-snack-shack",
+        "cocktail-glass": "surface-snack-shack",
+        "beer-tap": "surface-snack-shack",
+        "ashtray": "surface-snack-shack",
+        "record-player": "surface-snack-shack"
+      },
+      "clusters": [["beach-chair", "beach-umbrella"], ["snorkel", "snorkel-mask"], ["driftwood", "driftwood-branch"], ["tide-pool", "rock-pool-net", "rock", "tide-pool-sign-post", "reed", "tide-pool-marker", "tide-pool-ladder"], ["side-table", "wooden-tray"]],
+      "loose": ["snorkel", "goggles", "sandcastle-mold", "shell", "starfish", "flip-flop", "snorkel-mask", "bicycle-pump", "driftwood-branch", "sand-shovel", "tide-pool-guide", "sea-glass", "towel", "water-shoe", "waterproof-case", "water-scope", "sand-dollar", "water-pail", "shell-brush", "sand-sifter", "waterproof-bin", "rock-pool-chart", "sea-glass-bottle", "tide-pool-sandals", "wood-log", "bar-spoon", "cocktail-glass", "wooden-tray", "firewood", "poker-chip"],
+      "noFlip": [],
+      "motion": {"seaweed": "sway", "palm-tree": "sway", "seashell-wind-chime": "sway", "dune-grass": "sway", "sea-holly": "sway", "coastal-grass-seedhead": "sway", "reed": "sway", "sea-lavender": "sway", "buoy": "bob", "ice-maker": "wobble", "floor-fan": "wobble"},
+      "arrange": "auto",
+      "terrain": {"color": "#a5d6a7", "x0": 6200, "y0": 3900, "x1": 8800, "y1": 5200, "zones": [{"id": "entrance", "x0": 6200, "y0": 3900, "x1": 7500, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "boardwalk", "x0": 7500, "y0": 3900, "x1": 8800, "y1": 4550, "indoor": false, "floor": "grass"}, {"id": "tide-pool", "x0": 7500, "y0": 4550, "x1": 8800, "y1": 5200, "indoor": false, "floor": "sand", "pool": {"x0": 8150, "y0": 4660, "x1": 8750, "y1": 5160}}, {"id": "snack-shack", "x0": 6200, "y0": 4550, "x1": 7500, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}]}
     }
   }
 }

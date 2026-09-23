@@ -1,0 +1,478 @@
+{
+  "en": {
+    "surfboard": {
+      "heard": "Surfboard.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "palm-tree": {
+      "heard": "Palm tree.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "driftwood": {
+      "heard": "Driftwood.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "folding-chair": {
+      "heard": "Folding chair.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "camera-tripod": {
+      "heard": "Camera tripod.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "driftwood-branch": {
+      "heard": "Branch.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "foot-wash": {
+      "heard": "Foot washed.",
+      "score": 0.8,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "swim-fins": {
+      "heard": "Swim fins.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "beach-chair": {
+      "heard": "Beach Chair.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "folding-table": {
+      "heard": "Folding table.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "cooler": {
+      "heard": "Cooler.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "beach-ball": {
+      "heard": "Beach ball.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "seaweed": {
+      "heard": "Seaweed.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "beach-umbrella": {
+      "heard": "Beach umbrella",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "goggles": {
+      "heard": "Goggled.",
+      "score": 0.86,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sandcastle-mold": {
+      "heard": "Sandcastle mold.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "shell": {
+      "heard": "Shell.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "parking-post": {
+      "heard": "Parking Post.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "parking-block": {
+      "heard": "Parking block.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "road-marker": {
+      "heard": "Road marker.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "flip-flop": {
+      "heard": "Flip-Flop.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "snorkel-mask": {
+      "heard": "Snorkel mask.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sea-holly": {
+      "heard": "See Holly.",
+      "score": 0.88,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "coastal-grass-seedhead": {
+      "heard": "Grass Seed Head.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "tide-pool": {
+      "heard": "Tidepool.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "rock-pool-net": {
+      "heard": "Handnet.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "rock": {
+      "heard": "Rock.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "tide-pool-sign-post": {
+      "heard": "Woodenpost.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "tide-pool-marker": {
+      "heard": "Read, Tidepool Marker.",
+      "score": 0.78,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "tide-pool-ladder": {
+      "heard": "Tidepool ladder.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "fireplace": {
+      "heard": "Fireplace.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "bartop": {
+      "heard": "Bar Top",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "bar-counter": {
+      "heard": "Bar counter.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sand-shovel": {
+      "heard": "Small shovel.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "tide-pool-guide": {
+      "heard": "Viewing box.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sea-glass": {
+      "heard": "Sea Glass.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "towel": {
+      "heard": "towel",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "water-shoe": {
+      "heard": "Water Shoe.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "waterproof-case": {
+      "heard": "Waterproof case.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sea-lavender": {
+      "heard": "Beach Morning Glory.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "water-scope": {
+      "heard": "Water Scope.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "ice-maker": {
+      "heard": "Ice maker.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "candle-holder": {
+      "heard": "Candle Holder.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "ice-bucket": {
+      "heard": "Ice bucket.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "beer-tap": {
+      "heard": "Beer tap.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "ashtray": {
+      "heard": "Ashtray.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "water-pail": {
+      "heard": "Water pail.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "shell-brush": {
+      "heard": "Shell Brush",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sand-sifter": {
+      "heard": "Sand sifter.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "waterproof-bin": {
+      "heard": "Waterproof",
+      "score": 0.77,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "rock-pool-chart": {
+      "heard": "Ben, rock pool chart.",
+      "score": 0.81,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "sea-glass-bottle": {
+      "heard": "Sea glass bottle.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "bar-stool": {
+      "heard": "Barstool.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-chair": {
+      "heard": "Wooden chair.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "side-table": {
+      "heard": "Side table.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "bar-stool-footrest": {
+      "heard": "Barstool footrest.",
+      "score": 1,
+      "take": "en-1790160593691.aac",
+      "account": "chatgpt1"
+    },
+    "lifeguard-chair": {
+      "heard": "Lifeguard chair.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "dune-grass": {
+      "heard": "Beach grass.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "shower": {
+      "heard": "Shower.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "electric-scooter": {
+      "heard": "Electric scooter.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "beach-towel": {
+      "heard": "Beach towel.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "snorkel": {
+      "heard": "Snorkel.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "starfish": {
+      "heard": "Starfish.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "seashell-wind-chime": {
+      "heard": "Seashell wind chime.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "bicycle-pump": {
+      "heard": "Bicycle pump.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "reed": {
+      "heard": "Read.",
+      "score": 0.75,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "bar-spoon": {
+      "heard": "Bar Spoon.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "cocktail-glass": {
+      "heard": "Cocktail glass.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "record-player": {
+      "heard": "Record players.",
+      "score": 0.92,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "sand-dollar": {
+      "heard": "Sand Dollar.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "floor-fan": {
+      "heard": "Floor fan.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "firewood-basket": {
+      "heard": "Firewood basket.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "fire-poker": {
+      "heard": "Fire poker.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "tide-pool-sandals": {
+      "heard": "Tidepool sandals.",
+      "score": 1,
+      "take": "en-1790160893588.aac",
+      "account": "chatgpt1"
+    },
+    "bellows": {
+      "heard": "Bellows.",
+      "score": 1,
+      "take": "en-1790160996758.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-tray": {
+      "heard": "Wooden tray.",
+      "score": 1,
+      "take": "en-1790160996758.aac",
+      "account": "chatgpt1"
+    },
+    "wood-log": {
+      "heard": "Log.",
+      "score": 1,
+      "take": "en-1790160996758.aac",
+      "account": "chatgpt1"
+    },
+    "firewood": {
+      "heard": "Firewood.",
+      "score": 1,
+      "take": "en-1790160996758.aac",
+      "account": "chatgpt1"
+    },
+    "poker-chip": {
+      "heard": "Pokerchip.",
+      "score": 1,
+      "take": "en-1790160996758.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

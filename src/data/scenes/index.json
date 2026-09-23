@@ -180,5 +180,19 @@
       ],
       "body": "<rect x=\"8\" y=\"42\" width=\"144\" height=\"22\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"16\" y=\"64\" width=\"10\" height=\"76\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"64\" width=\"10\" height=\"76\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"42\" width=\"144\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
+  },
+  {
+    "id": "beach",
+    "name": "海邊",
+    "itemCount": 80,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        150,
+        180
+      ],
+      "body": "<line x1=\"42\" y1=\"68\" x2=\"108\" y2=\"168\" stroke=\"#8d6e63\" stroke-width=\"8\"/><line x1=\"108\" y1=\"68\" x2=\"42\" y2=\"168\" stroke=\"#8d6e63\" stroke-width=\"8\"/><rect x=\"26\" y=\"56\" width=\"98\" height=\"12\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"38\" y=\"30\" width=\"74\" height=\"26\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"44\" y=\"4\" width=\"10\" height=\"26\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"96\" y=\"4\" width=\"10\" height=\"26\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"4\" width=\"66\" height=\"8\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"116\" y1=\"72\" x2=\"134\" y2=\"168\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"134\" y1=\"88\" x2=\"119\" y2=\"88\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"137\" y1=\"106\" x2=\"122\" y2=\"106\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"140\" y1=\"124\" x2=\"125\" y2=\"124\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"143\" y1=\"142\" x2=\"128\" y2=\"142\" stroke=\"#37474f\" stroke-width=\"2\"/>"
+    }
   }
 ]
