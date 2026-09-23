@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T01:00:49.750Z",
+  "syncedAt": "2026-09-23T01:34:35.703Z",
   "scenes": [
     {
       "scene": "airport",
@@ -74,7 +74,26 @@
         "wall-panel",
         "headphones",
         "earbuds",
-        "toiletry-bag"
+        "toiletry-bag",
+        "luggage-scale",
+        "car-door",
+        "luggage-trolley",
+        "parking-ticket-machine",
+        "mouse",
+        "travel-mug",
+        "check-in-kiosk",
+        "security-tray",
+        "laptop-bag",
+        "shoe-cover",
+        "plastic-seal",
+        "shoehorn",
+        "plastic-tub",
+        "shoe-rack",
+        "slipper",
+        "sleep-mask",
+        "neck-pillow",
+        "sandals",
+        "eye-mask-case"
       ],
       "failed": [],
       "pending": [],

@@ -359,8 +359,8 @@
         "earbuds": "surface-departure-gate",
         "toiletry-bag": "surface-departure-gate"
       },
-      "clusters": [["luggage-cart", "duffel-bag", "suit-bag", "safety-vest"], ["aircraft-tug", "wheel-chock", "aircraft-stairs", "fuel-hose"], ["shoe", "sock"]],
-      "loose": ["duffel-bag", "suit-bag", "travel-pillow", "luggage-tag", "safety-vest", "wheel-chock", "bar-stool-cushion", "bottle-opener", "shoe", "sock", "hat", "passport", "boarding-pass", "bottle", "security-wand", "tablet", "ring", "necklace", "bracelet", "hair-clip", "luggage-strap", "cushion", "power-bank", "charging-cable", "pretzel", "pear", "peach", "granola-bar"],
+      "clusters": [["luggage-cart", "duffel-bag", "suit-bag", "safety-vest"], ["aircraft-tug", "wheel-chock", "aircraft-stairs", "fuel-hose"], ["shoe", "sock"], ["sleep-mask", "eye-mask-case"]],
+      "loose": ["duffel-bag", "suit-bag", "travel-pillow", "luggage-tag", "safety-vest", "wheel-chock", "bar-stool-cushion", "bottle-opener", "shoe", "sock", "hat", "passport", "boarding-pass", "bottle", "security-wand", "tablet", "ring", "necklace", "bracelet", "hair-clip", "luggage-strap", "cushion", "power-bank", "charging-cable", "pretzel", "pear", "peach", "granola-bar", "luggage-scale", "travel-mug", "laptop-bag", "shoe-cover", "plastic-seal", "shoehorn", "slipper", "sleep-mask", "neck-pillow", "sandals", "eye-mask-case"],
       "noFlip": [],
       "motion": {"airport-shuttle": "wobble", "aircraft-tug": "wobble"},
       "terrain": {"color": "#c5e1a5", "x0": 0, "y0": 3900, "x1": 2600, "y1": 5200, "zones": [{"id": "entrance", "x0": 0, "y0": 3900, "x1": 1300, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "check-in-hall", "x0": 1300, "y0": 3900, "x1": 2600, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "security-check", "x0": 1300, "y0": 4550, "x1": 2600, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}, {"id": "departure-gate", "x0": 0, "y0": 4550, "x1": 1300, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}

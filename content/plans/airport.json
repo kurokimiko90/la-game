@@ -1087,6 +1087,291 @@
       "loose": false,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "luggage-scale",
+      "zh": "行李秤",
+      "en": "luggage-scale",
+      "ja": "荷物用はかり",
+      "reading": "にもつようはかり",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "小型黑色手提秤，頂端有彎曲掛鉤，正面有圓形表盤與短柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "car-door",
+      "zh": "車門",
+      "en": "car-door",
+      "ja": "車のドア",
+      "reading": "くるまのドア",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "獨立的車身側門板，外側是亮銀色金屬，帶有黑色把手與一片深色車窗。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "luggage-trolley",
+      "zh": "行李拖車",
+      "en": "luggage-trolley",
+      "ja": "荷物用トレーラー",
+      "reading": "にもつようトレーラー",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "低矮的平板拖車有四個小輪子，平台上疊放幾只行李箱，前端連著細長的牽引桿。",
+      "loose": false,
+      "motion": null,
+      "cluster": "suitcase"
+    },
+    {
+      "id": "parking-ticket-machine",
+      "zh": "停車繳費機",
+      "en": "parking-ticket-machine",
+      "ja": "駐車券精算機",
+      "reading": "ちゅうしゃけんせいさんき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "直立的灰色長方形機箱立在車道邊，面板有一個小螢幕、圓形按鈕和窄窄的取票口。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "mouse",
+      "zh": "滑鼠",
+      "en": "mouse",
+      "ja": "マウス",
+      "reading": "マウス",
+      "category": "道具",
+      "size": "small",
+      "zone": "check-in-hall",
+      "spot": "ground",
+      "desc": "黑色圓弧形的小滑鼠，頂部有分開的左右按鍵和中央滾輪，連著一條細線。",
+      "loose": false,
+      "motion": null,
+      "cluster": "computer-monitor"
+    },
+    {
+      "id": "travel-mug",
+      "zh": "隨行杯",
+      "en": "travel-mug",
+      "ja": "タンブラー",
+      "reading": "タンブラー",
+      "category": "道具",
+      "size": "small",
+      "zone": "check-in-hall",
+      "spot": "ground",
+      "desc": "圓柱形杯身配深色杯蓋，側邊有短把手，底部略窄。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "check-in-kiosk",
+      "zh": "自助報到機",
+      "en": "check-in-kiosk",
+      "ja": "自動チェックイン機",
+      "reading": "じどうチェックインき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "check-in-hall",
+      "spot": "ground",
+      "desc": "直立的灰色機台，正面有一塊黑色觸控螢幕和下方的窄紙槽，畫面保持空白。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "security-tray",
+      "zh": "安檢托盤",
+      "en": "security tray",
+      "ja": "セキュリティトレー",
+      "reading": "セキュリティトレー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "扁平的長方形淺托盤，四周有低矮邊緣，表面平滑，通常是灰色或黑色。",
+      "loose": false,
+      "motion": null,
+      "cluster": "x-ray-machine"
+    },
+    {
+      "id": "laptop-bag",
+      "zh": "電腦包",
+      "en": "laptop bag",
+      "ja": "パソコンバッグ",
+      "reading": "パソコンバッグ",
+      "category": "道具",
+      "size": "small",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "扁長方形軟包，頂端有短提把與拉鍊，前方有一個小口袋，整體呈深藍色。",
+      "loose": true,
+      "motion": null,
+      "cluster": "conveyor-belt"
+    },
+    {
+      "id": "shoe-cover",
+      "zh": "鞋套",
+      "en": "shoe-cover",
+      "ja": "シューズカバー",
+      "reading": "シューズカバー",
+      "category": "道具",
+      "size": "small",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "一雙藍色薄塑膠鞋套，外形像短襪，開口有白色鬆緊邊，表面微微皺起。",
+      "loose": true,
+      "motion": null,
+      "cluster": "security-tray"
+    },
+    {
+      "id": "plastic-seal",
+      "zh": "封條",
+      "en": "seal",
+      "ja": "封印シール",
+      "reading": "ふういんシール",
+      "category": "道具",
+      "size": "small",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "一條細長的紅色塑膠封條，中央有一排小孔，兩端扣合成扁平的環。",
+      "loose": true,
+      "motion": null,
+      "cluster": "laptop-bag"
+    },
+    {
+      "id": "shoehorn",
+      "zh": "鞋拔",
+      "en": "shoehorn",
+      "ja": "靴べら",
+      "reading": "くつべら",
+      "category": "道具",
+      "size": "small",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "細長的弧形鞋拔，表面是亮銀色金屬，一端較寬且微微彎起，另一端有圓孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "plastic-tub",
+      "zh": "塑膠收納箱",
+      "en": "plastic-tub",
+      "ja": "プラスチックケース",
+      "reading": "プラスチックケース",
+      "category": "道具",
+      "size": "medium",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "半透明的長方形塑膠箱，箱身較深，邊緣有厚實的凸起框，兩側各有握槽。",
+      "loose": false,
+      "motion": null,
+      "cluster": "conveyor-belt"
+    },
+    {
+      "id": "shoe-rack",
+      "zh": "鞋架",
+      "en": "shoe-rack",
+      "ja": "靴置き",
+      "reading": "くつおき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "security-check",
+      "spot": "ground",
+      "desc": "低矮的黑色金屬架有兩層平行橫桿，架上放著幾雙鞋子的輪廓。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "slipper",
+      "zh": "拖鞋",
+      "en": "slipper",
+      "ja": "スリッパ",
+      "reading": "スリッパ",
+      "category": "道具",
+      "size": "small",
+      "zone": "departure-gate",
+      "spot": "ground",
+      "desc": "一隻深紅色室內拖鞋，鞋底扁平，前端有寬寬的弧形鞋面，開口露出腳趾位置。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sleep-mask",
+      "zh": "眼罩",
+      "en": "sleep-mask",
+      "ja": "アイマスク",
+      "reading": "アイマスク",
+      "category": "道具",
+      "size": "small",
+      "zone": "departure-gate",
+      "spot": "ground",
+      "desc": "深紫色扁平眼罩呈圓弧形，兩側連著細帶，中央有柔軟隆起的鼻樑凹口。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "neck-pillow",
+      "zh": "頸枕",
+      "en": "neck-pillow",
+      "ja": "ネックピロー",
+      "reading": "ネックピロー",
+      "category": "道具",
+      "size": "small",
+      "zone": "departure-gate",
+      "spot": "ground",
+      "desc": "藍色厚實的馬蹄形枕頭，兩端圓鈍，表面有一圈縫線，內側留出明顯弧形空隙。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sandals",
+      "zh": "涼鞋",
+      "en": "sandals",
+      "ja": "サンダル",
+      "reading": "サンダル",
+      "category": "道具",
+      "size": "small",
+      "zone": "departure-gate",
+      "spot": "ground",
+      "desc": "一雙並排的黃色涼鞋，扁平鞋底上各有兩條交叉鞋帶，露出鞋頭與腳跟位置。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "eye-mask-case",
+      "zh": "眼罩收納盒",
+      "en": "eye-mask-case",
+      "ja": "アイマスクケース",
+      "reading": "アイマスクケース",
+      "category": "道具",
+      "size": "small",
+      "zone": "departure-gate",
+      "spot": "ground",
+      "desc": "青綠色橢圓硬殼收納盒，外緣有一道接縫，前方突出一小段扣合凸片。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sleep-mask"
     }
   ],
   "rejected": [
@@ -1164,7 +1449,252 @@
       "id": "cracker",
       "reason": "中文重複",
       "zone": "departure-gate"
+    },
+    {
+      "id": "car",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "taxi",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bus",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-barrier",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "curb",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "curb",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "taxi",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wheelchair",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "computer-monitor",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "keyboard",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "microphone",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "headphones",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "printer",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "plant-pot",
+      "reason": "中文重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "check-in-kiosk",
+      "reason": "英文重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "rolling-suitcase",
+      "reason": "英文重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "suitcase-scale",
+      "reason": "英文重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "boarding-pass-holder",
+      "reason": "英文重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "paper-cup",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "printer",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "desk",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "handbag",
+      "reason": "id 重複",
+      "zone": "check-in-hall"
+    },
+    {
+      "id": "laptop",
+      "reason": "id 重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "camera",
+      "reason": "id 重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "keys",
+      "reason": "英文重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "coins",
+      "reason": "id 重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "watch",
+      "reason": "id 重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "shoes",
+      "reason": "中文重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "scanner-basket",
+      "reason": "英文重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "security-camera",
+      "reason": "id 重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "divesting-bench",
+      "reason": "英文重複",
+      "zone": "security-check"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "scarf",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "thermos",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "travel-mug",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "water-cup",
+      "reason": "英文重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "suitcase",
+      "reason": "id 重複",
+      "zone": "departure-gate"
+    },
+    {
+      "id": "slippers",
+      "reason": "英文重複",
+      "zone": "departure-gate"
     }
   ],
-  "createdAt": "2026-09-22T11:20:44.565Z"
+  "createdAt": "2026-09-22T11:20:44.565Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 19,
+    "at": "2026-09-23T01:31:38.714Z"
+  }
 }

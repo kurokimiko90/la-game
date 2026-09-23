@@ -377,6 +377,150 @@
       "score": 1,
       "take": "en-1790077385531.aac",
       "account": "chatgpt1"
+    },
+    "luggage-trolley": {
+      "heard": "Luggage trolley.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "car-door": {
+      "heard": "Car door.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "luggage-scale": {
+      "heard": "Luggage scale.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "check-in-kiosk": {
+      "heard": "Check-in kiosk.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "parking-ticket-machine": {
+      "heard": "Parking take machine.",
+      "score": 0.85,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "safety-vest": {
+      "heard": "Safety vest.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "shoe": {
+      "heard": "Shoo!",
+      "score": 0.75,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "mouse": {
+      "heard": "Mouse.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "travel-mug": {
+      "heard": "Travel mug.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "plastic-seal": {
+      "heard": "Seal.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "cushion": {
+      "heard": "Cushion",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "security-tray": {
+      "heard": "Okay, security tray.",
+      "score": 0.75,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "laptop-bag": {
+      "heard": "Laptop bag.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-cover": {
+      "heard": "Shoe cover.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "shoehorn": {
+      "heard": "Shoehorn.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-rack": {
+      "heard": "Shoe Rack.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "neck-pillow": {
+      "heard": "Neck pillow.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "plastic-tub": {
+      "heard": "Plastic Tub",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "sandals": {
+      "heard": "- Sandals.",
+      "score": 1,
+      "take": "en-1790127284702.aac",
+      "account": "chatgpt1"
+    },
+    "necklace": {
+      "heard": "Necklace.",
+      "score": 1,
+      "take": "en-1790127372283.aac",
+      "account": "chatgpt1"
+    },
+    "sweater": {
+      "heard": "Sweater.",
+      "score": 1,
+      "take": "en-1790127372283.aac",
+      "account": "chatgpt1"
+    },
+    "slipper": {
+      "heard": "Slipper.",
+      "score": 1,
+      "take": "en-1790127372283.aac",
+      "account": "chatgpt1"
+    },
+    "sleep-mask": {
+      "heard": "Sleep mask.",
+      "score": 1,
+      "take": "en-1790127372283.aac",
+      "account": "chatgpt1"
+    },
+    "display-case": {
+      "heard": "Display case.",
+      "score": 1,
+      "take": "en-1790127419423.aac",
+      "account": "chatgpt1"
     }
   }
 }
