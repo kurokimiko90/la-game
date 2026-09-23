@@ -1106,5 +1106,10 @@
       "zone": "library"
     }
   ],
-  "createdAt": "2026-09-22T06:29:46.236Z"
+  "createdAt": "2026-09-22T06:29:46.236Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 0,
+    "at": "2026-09-22T23:45:43.744Z"
+  }
 }

@@ -383,6 +383,168 @@
       "score": 1,
       "take": "en-1790067372272.aac",
       "account": "chatgpt1"
+    },
+    "air-freshener": {
+      "heard": "Air freshener.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-stirrer": {
+      "heard": "Coffee stirrer.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "sugar-bowl": {
+      "heard": "Sugar Bowl.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "tea-strainer": {
+      "heard": "Tea strainer.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-filter": {
+      "heard": "Coffee filter.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "paper-towel": {
+      "heard": "Paper towel.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "ceiling-speaker": {
+      "heard": "Ceiling speaker.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "toothbrush": {
+      "heard": "Toothbrush.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "toothpaste": {
+      "heard": "Toothpaste",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "comb": {
+      "heard": "Comb.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "deodorant": {
+      "heard": "Deodorant.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "lip-balm": {
+      "heard": "Lip balm.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "blood-glucose-meter": {
+      "heard": "Blood glucose meter.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "nail-clipper": {
+      "heard": "Nail Clipper",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "hair-tie": {
+      "heard": "Hair tie.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "pulse-oximeter": {
+      "heard": "Pulse oximeter.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "humidifier": {
+      "heard": "Humidifier.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "recycling-bin": {
+      "heard": "Recycling bin.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "tongue-depressor": {
+      "heard": "Tongue Depressor.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "blister-pack": {
+      "heard": "Blister Pack.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "safety-pin": {
+      "heard": "Safety pin.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "nail-file": {
+      "heard": "Nail file.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "hairbrush": {
+      "heard": "Hairbrush.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "face-shield": {
+      "heard": "Face Shield.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "otoscope": {
+      "heard": "Otoscope.",
+      "score": 1,
+      "take": "en-1790125260284.aac",
+      "account": "chatgpt1"
+    },
+    "pill-cutter": {
+      "heard": "Pill cutter.",
+      "score": 1,
+      "take": "en-1790125350164.aac",
+      "account": "chatgpt1"
+    },
+    "coat-hanger": {
+      "heard": "Coathanger.",
+      "score": 1,
+      "take": "en-1790125350164.aac",
+      "account": "chatgpt1"
     }
   }
 }

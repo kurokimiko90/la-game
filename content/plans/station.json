@@ -1091,5 +1091,10 @@
   ],
   "rejected": [],
   "createdAt": "2026-09-22T02:06:47.121Z",
-  "note": "第一個自動整合的場景；單字表是手寫的（之後的場景由 miko-ws codex 規劃）"
+  "note": "第一個自動整合的場景；單字表是手寫的（之後的場景由 miko-ws codex 規劃）",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 0,
+    "at": "2026-09-22T16:21:28.951Z"
+  }
 }

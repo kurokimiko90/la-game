@@ -1478,27 +1478,6 @@
           }
         }
       }
-    },
-    {
-      "name": "站務員",
-      "category": "人物",
-      "lane": "a",
-      "sizeHint": "medium",
-      "desc": "穿深藍色制服、戴帽子的站務員，正面站姿。",
-      "ref": {
-        "project": "la-game",
-        "scene": "station",
-        "zone": "platform",
-        "itemId": "station-attendant",
-        "words": {
-          "zh-TW": "站務員",
-          "en": "station attendant",
-          "ja": {
-            "text": "駅員",
-            "reading": "えきいん"
-          }
-        }
-      }
     }
   ]
 }

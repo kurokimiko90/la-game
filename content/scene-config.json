@@ -307,8 +307,8 @@
         "contact-lens-case": "surface-pharmacy",
         "ice-pack": "surface-pharmacy"
       },
-      "clusters": [["first-aid-kit", "thermometer", "bandage", "syringe"], ["sofa", "plant"], ["medical-trolley", "blood-pressure-monitor"]],
-      "loose": ["cane", "first-aid-kit", "thermometer", "bandage", "syringe", "coaster", "coffee-bean", "tea-bag", "sugar-cube", "lemon", "straw", "remote-control", "toy-block", "pill", "capsule", "cotton-ball", "earplug"],
+      "clusters": [["first-aid-kit", "thermometer", "bandage", "syringe"], ["sofa", "plant"], ["medical-trolley", "blood-pressure-monitor"], ["counter", "paper-towel"]],
+      "loose": ["cane", "first-aid-kit", "thermometer", "bandage", "syringe", "coaster", "coffee-bean", "tea-bag", "sugar-cube", "lemon", "straw", "remote-control", "toy-block", "pill", "capsule", "cotton-ball", "earplug", "air-freshener", "coffee-filter", "tea-strainer", "sugar-bowl", "coffee-stirrer", "pulse-oximeter", "otoscope", "blood-glucose-meter", "face-shield", "tongue-depressor", "pill-cutter", "nail-clipper", "nail-file", "safety-pin", "hairbrush", "hair-tie", "lip-balm", "blister-pack"],
       "noFlip": [],
       "motion": {"sunflower": "sway", "lavender": "sway", "plant": "sway"},
       "terrain": {"color": "#9fa8da", "x0": 3600, "y0": 2600, "x1": 6200, "y1": 3900, "zones": [{"id": "entrance", "x0": 3600, "y0": 2600, "x1": 4900, "y1": 3250, "indoor": false, "floor": "paving", "road": {"y0": 3060, "y1": 3220}}, {"id": "lobby", "x0": 4900, "y0": 2600, "x1": 6200, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "waiting-area", "x0": 4900, "y0": 3250, "x1": 6200, "y1": 3900, "indoor": true, "floor": "carpet", "wallBase": 3430}, {"id": "pharmacy", "x0": 3600, "y0": 3250, "x1": 4900, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}

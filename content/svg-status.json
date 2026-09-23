@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-22T13:37:37.976Z",
+  "syncedAt": "2026-09-23T01:00:49.750Z",
   "scenes": [
     {
       "scene": "airport",
@@ -152,7 +152,30 @@
         "tweezers",
         "earplug",
         "contact-lens-case",
-        "ice-pack"
+        "ice-pack",
+        "air-freshener",
+        "ceiling-speaker",
+        "coffee-filter",
+        "tea-strainer",
+        "sugar-bowl",
+        "coffee-stirrer",
+        "paper-towel",
+        "pulse-oximeter",
+        "otoscope",
+        "humidifier",
+        "coat-hanger",
+        "recycling-bin",
+        "blood-glucose-meter",
+        "face-shield",
+        "tongue-depressor",
+        "pill-cutter",
+        "nail-clipper",
+        "nail-file",
+        "safety-pin",
+        "hairbrush",
+        "hair-tie",
+        "lip-balm",
+        "blister-pack"
       ],
       "failed": [],
       "pending": [],
@@ -655,9 +678,7 @@
         }
       ],
       "pending": [],
-      "skippedLaneA": [
-        "station-attendant"
-      ]
+      "skippedLaneA": []
     },
     {
       "scene": "street",

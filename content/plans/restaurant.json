@@ -1111,5 +1111,10 @@
       "zone": "dessert-stand"
     }
   ],
-  "createdAt": "2026-09-22T02:54:59.756Z"
+  "createdAt": "2026-09-22T02:54:59.756Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 0,
+    "at": "2026-09-22T19:51:19.403Z"
+  }
 }
