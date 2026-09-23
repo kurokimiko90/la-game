@@ -191,6 +191,7 @@ export function planToSceneConfig(plan, available) {
     loose: elements.filter((e) => e.loose && (onGround(e) || district.place[e.id]?.startsWith('surface-'))).map((e) => e.id),
     noFlip: [],
     motion,
+    arrange: 'auto',
     terrain: district.terrain,
   };
 }

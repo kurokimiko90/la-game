@@ -54,6 +54,8 @@ LLM 只從列舉值裡選，幾何由模板算：
 | 地形特徵 | none、road（車道）、track（鐵軌）、water（水池）只能在室外；counter / table / stand / chiller / checkout（檯面，沿用 `Surfaces.tsx`） |
 | 物品位置 | ground、wall、wallbase、surface、road、track、water、sky（區域不支援的位置退回 ground） |
 
+**自動排列**：`planToSceneConfig` 產生的設定帶 `"arrange": "auto"`，擺放時依地形和物件大小自動排（規則見 `docs/scene-standard.md` §2.2）。排不進整齊位置的物件改成隨機，並在 `content:layout` 印出 ⚠️，不會卡住流程。補元素時新物件會避開已鎖定的物件排。
+
 地形由 `src/components/scene/districts/GeneratedDistrict.tsx` 照場景 JSON 的 `terrain` 畫；手畫的前 4 個場景不受影響。
 新場景不用改程式：`build-scenes` 會產生 `src/data/scenes/registry.ts`，小地圖顏色也在 `terrain` 裡。
 

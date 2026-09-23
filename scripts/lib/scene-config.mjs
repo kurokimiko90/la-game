@@ -26,14 +26,45 @@ function checkZones(zones, zoneIds) {
   return problems;
 }
 
+const isPoint = (p) => Array.isArray(p) && p.length === 2 && p.every(isNum);
+
+// rows / spots：物件要存在、只能出現一次、點要是 [x, y]
+function checkAnchors(config, needItem) {
+  const problems = [];
+  const seen = new Set();
+  const once = (id, where) => {
+    needItem(id, where);
+    if (seen.has(id)) problems.push(`${where}：${id} 出現在多個錨點`);
+    seen.add(id);
+  };
+  (config.rows ?? []).forEach((row, i) => {
+    if (!Array.isArray(row.points) || !row.points.length || !row.points.every(isPoint)) problems.push(`rows[${i}] 的 points 要是 [[x, y], …]`);
+    if (!Array.isArray(row.items) || !row.items.some(Boolean)) problems.push(`rows[${i}] 的 items 至少要有一個物件`);
+    (row.items ?? []).forEach((id) => { if (id !== null) once(id, `rows[${i}]`); });
+  });
+  for (const [id, p] of Object.entries(config.spots ?? {})) {
+    once(id, 'spots');
+    if (!isPoint(p)) problems.push(`spots.${id} 要是 [x, y]`);
+  }
+  return problems;
+}
+
+// 群組成員要和主體在同一個區域（跨區域時演算法找不到主體，成員會隨機亂放）
+function checkClusterZones(clusters, zoneOf) {
+  return clusters.flatMap(([host, ...members], i) => members
+    .filter((m) => zoneOf[m] && zoneOf[host] && zoneOf[m] !== zoneOf[host])
+    .map((m) => `clusters[${i}]：${m}（${zoneOf[m]}）和主體 ${host}（${zoneOf[host]}）不同區域`));
+}
+
 /**
  * @param {string} sceneId
  * @param {object} config scene-config.json 裡這個場景的設定
  * @param {string[]} itemIds 這個場景有 SVG 的物件
  * @param {string[]} zoneIds manifest 裡的區域
+ * @param {Record<string, string>} [zoneOf] 物件 → 區域（有給才檢查群組是否跨區域）
  * @returns {string[]} 問題清單，空陣列 = 通過
  */
-export function validateSceneConfig(sceneId, config, itemIds, zoneIds) {
+export function validateSceneConfig(sceneId, config, itemIds, zoneIds, zoneOf) {
   const problems = [];
   const ids = new Set(itemIds);
   const bands = config.bands ?? {};
@@ -50,6 +81,9 @@ export function validateSceneConfig(sceneId, config, itemIds, zoneIds) {
     if (!bands[band]) problems.push(`place.${id}：沒有地帶 ${band}`);
   }
   (config.clusters ?? []).forEach((group, i) => group.forEach((id) => needItem(id, `clusters[${i}]`)));
+  if (zoneOf) problems.push(...checkClusterZones(config.clusters ?? [], zoneOf));
+  if (config.arrange !== undefined && config.arrange !== 'auto') problems.push(`arrange 只能是 "auto"（收到 ${config.arrange}）`);
+  problems.push(...checkAnchors(config, needItem));
   (config.loose ?? []).forEach((id) => needItem(id, 'loose'));
   (config.noFlip ?? []).forEach((id) => needItem(id, 'noFlip'));
   for (const [id, type] of Object.entries(config.motion ?? {})) {

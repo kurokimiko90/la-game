@@ -121,7 +121,8 @@ describe('planToManifest / planToSceneConfig', () => {
     expect(cfg.clusters).toEqual([['armchair', 'table-lamp']]);
     expect(cfg.loose).toEqual(['teacup']);
     expect(cfg.motion).toEqual({ 'espresso-machine': 'wobble' }); // 5 個物件 × 0.3 × 0.8 → 最多 1 個
-    expect(Object.keys(cfg).sort()).toEqual(['bands', 'clusters', 'icon', 'loose', 'motion', 'name', 'noFlip', 'place', 'terrain', 'zones']);
+    expect(cfg.arrange).toBe('auto'); // 依地形和大小自動排列（docs/scene-standard.md §2.2）
+    expect(Object.keys(cfg).sort()).toEqual(['arrange', 'bands', 'clusters', 'icon', 'loose', 'motion', 'name', 'noFlip', 'place', 'terrain', 'zones']);
     expect(JSON.stringify(cfg)).not.toContain('missing');
   });
 

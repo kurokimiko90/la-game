@@ -34,7 +34,7 @@ export function loadSceneSource(root, config, sceneId) {
   }
 
   const zoneIds = Object.keys(manifest.zones);
-  const problems = validateSceneConfig(sceneId, sceneConfig, items.map((it) => it.id), zoneIds);
+  const problems = validateSceneConfig(sceneId, sceneConfig, items.map((it) => it.id), zoneIds, Object.fromEntries(items.map((it) => [it.id, it.zone])));
   if (problems.length) throw new Error(`scene-config.json 有問題：\n  ${problems.join('\n  ')}`);
   const zones = zoneIds.map((id) => {
     const [x0, y0, x1, y1] = sceneConfig.zones[id];
@@ -54,9 +54,11 @@ export function formatLayout(layout) {
 }
 
 // 鎖定檔的位置 → 擺放資料（加上 layer/float；SVG 長寬比變了就保留寬度與底線重算高度）
+// 只差 1 單位是 itemSize 的四捨五入誤差，不算長寬比變了（不然 build 的遮擋檢查會和擺放時對不上）
 export function fitToViewBox(pos, viewBox) {
   const [, , vw, vh] = viewBox;
   const h = Math.round(pos.w * (vh / vw));
+  if (Math.abs(h - pos.h) <= 1) return { ...pos };
   return { ...pos, y: pos.y + pos.h - h, h };
 }
 

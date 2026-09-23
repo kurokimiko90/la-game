@@ -23,15 +23,17 @@ function buildLayout(source, reset, obstacles) {
   const removed = Object.keys(previous).filter((id) => !ids.has(id));
   const locked = Object.fromEntries(Object.entries(previous).filter(([id]) => ids.has(id)));
 
+  const warnings = [];
   const placed = layoutScene({
-    sceneId, zones, items, locked, obstacles,
+    sceneId, zones, items, locked, obstacles, warnings, arrange: sceneConfig.arrange,
     bands: sceneConfig.bands, place: sceneConfig.place, clusters: sceneConfig.clusters,
-    loose: sceneConfig.loose, noFlip: sceneConfig.noFlip,
+    loose: sceneConfig.loose, noFlip: sceneConfig.noFlip, rows: sceneConfig.rows, spots: sceneConfig.spots,
   });
   const layout = Object.fromEntries(placed.map(({ id, x, y, w, h, rotate, flip }) => [id, { x, y, w, h, rotate, flip }]));
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, formatLayout(layout));
 
+  for (const w of warnings) console.warn(`⚠️ ${w}`);
   const added = placed.filter((p) => !locked[p.id]).length;
   console.log(`${sceneId}: 保留 ${Object.keys(locked).length}、新擺 ${added}${removed.length ? `、移除 ${removed.join(', ')}` : ''} → ${path.relative(ROOT, file)}`);
   return placed;

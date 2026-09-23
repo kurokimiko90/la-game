@@ -65,4 +65,19 @@ describe('validateSceneConfig', () => {
       expect(problems).toContain(word);
     }
   });
+  test('rows / spots：物件要存在、只能出現一次、點要是數字；群組成員要和主體同區域', () => {
+    const zonesOf = { tree: 'a', kite: 'a', ball: 'b', cup: 'a' };
+    const good = { ...ok, clusters: [['tree', 'kite']], rows: [{ points: [[10, 20], [30, 40]], items: ['tree', null] }], spots: { cup: [5, 6] } };
+    expect(validateSceneConfig('park', good, ids, zoneIds, zonesOf)).toEqual([]);
+    const bad = {
+      ...ok,
+      clusters: [['tree', 'ball']],
+      rows: [{ points: [[10]], items: ['tree', 'ghost-row'] }, { points: [[1, 2]], items: [] }],
+      spots: { tree: [1, 2], 'ghost-spot': [1, 2], cup: ['x', 1] },
+    };
+    const problems = validateSceneConfig('park', bad, ids, zoneIds, zonesOf).join('\n');
+    expect(validateSceneConfig('park', { ...ok, arrange: 'magic' }, ids, zoneIds).join()).toContain('arrange');
+    for (const word of ['ghost-row', 'ghost-spot', 'rows[0]', 'rows[1]', 'spots.cup', 'tree 出現', 'ball']) expect(problems).toContain(word);
+  });
 });
+

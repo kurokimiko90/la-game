@@ -12,7 +12,21 @@
         "water": {"top": 430, "bottom": 610, "layer": 1, "zones": ["lake"], "x0": 2040, "x1": 2520, "scale": [0.9, 0.9]}
       },
       "place": {"kite": "sky", "balloon": "sky", "rowboat": "water"},
-      "clusters": [["picnic-blanket", "picnic-basket", "sandwich"], ["sandbox", "bucket"], ["bench", "book"], ["slide", "ball"]],
+      "clusters": [["picnic-blanket", "picnic-basket", "sandwich"], ["sandbox", "bucket"], ["bench", "straw-hat"], ["slide", "ball"]],
+      "rows": [
+        {"note": "入口：步道西側", "points": [[215, 420], [215, 960]], "items": ["notice-board", "streetlight", "drinking-fountain"]},
+        {"note": "入口：步道東側", "points": [[450, 700], [450, 1000]], "items": ["trash-can", "bench"]},
+        {"note": "廣場：噴泉前緣", "points": [[800, 560], [975, 640], [1150, 560]], "items": ["umbrella", "book", "sunglasses", "water-bottle"]},
+        {"note": "遊樂場：後排器材", "points": [[1400, 420], [1870, 420]], "items": ["swing", "slide"]},
+        {"note": "遊樂場：前排", "points": [[1400, 630], [1870, 630]], "items": ["seesaw", "sandbox"]},
+        {"note": "湖邊：步道南側", "points": [[2000, 1070], [2570, 1070]], "items": ["tree", "picnic-blanket", "gazebo"]}
+      ],
+      "spots": {
+        "gate": [330, 1110], "flower-bed": [175, 1085], "stroller": [330, 800],
+        "fountain": [975, 470], "clock": [790, 360], "birdhouse": [1160, 360],
+        "kick-scooter": [1880, 710],
+        "rowboat": [2330, 560], "stone": [2060, 800], "bush": [2530, 800]
+      },
       "loose": ["book", "straw-hat", "sunglasses", "ball", "bucket", "water-bottle", "umbrella", "sandwich"],
       "noFlip": [],
       "motion": {"tree": "sway", "bush": "sway", "flower-bed": "sway", "balloon": "bob", "rowboat": "bob", "kite": "drift", "ball": "wobble"}
@@ -33,8 +47,21 @@
         "mug": "counter", "paper-cup": "counter", "cake": "counter", "teapot": "counter", "coffee-maker": "counter", "cookie": "counter",
         "shop-window": "facade", "awning": "wall"
       },
-      "clusters": [["table", "newspaper"], ["bus-stop", "suitcase", "backpack"], ["shop-window", "paper-bag"], ["vending-machine", "umbrella-stand"]],
-      "loose": ["newspaper", "paper-bag", "backpack", "smartphone", "traffic-cone"],
+      "clusters": [["table", "newspaper"], ["bus-stop", "suitcase", "backpack"], ["vending-machine", "umbrella-stand"]],
+      "rows": [
+        {"note": "商店：北側人行道貼門面（理髮店、花店在遮雨棚下、櫥窗前）", "points": [[680, 1235], [1280, 1235]], "items": ["barber-pole", "atm", "bouquet", "blackboard", "paper-bag", "vending-machine"]},
+        {"note": "咖啡店：櫃台", "points": [[1400, 1200], [1850, 1200]], "items": ["coffee-maker", "mug", "paper-cup", "teapot", "cake", "cookie"]},
+        {"note": "公車站：北側人行道", "points": [[1990, 1235], [2570, 1235]], "items": ["traffic-mirror", "bus-stop", "timetable", "utility-pole"]}
+      ],
+      "spots": {
+        "road-sign": [110, 1235], "mailbox": [215, 1235], "traffic-light": [440, 1235], "traffic-cone": [570, 1238],
+        "crosswalk": [330, 1495], "car": [135, 1375], "scooter": [130, 1495], "taxi": [535, 1495],
+        "fire-hydrant": [320, 1600],
+        "awning": [970, 1030], "shop-window": [1165, 1140],
+        "table": [1625, 1600],
+        "bus": [2200, 1375], "smartphone": [2000, 1600]
+      },
+      "loose": ["newspaper", "paper-bag", "backpack", "smartphone"],
       "noFlip": [],
       "motion": {"bouquet": "sway", "smartphone": "wobble", "taxi": "wobble", "bus": "wobble"}
     },
@@ -47,13 +74,24 @@
         "footbridge": {"levels": [585], "zones": ["bridge"], "x0": 2680, "x1": 2920, "scale": [1.1, 1.1], "layer": 1},
         "water": {"top": 1010, "bottom": 1280, "layer": 1, "zones": ["pier"], "x0": 2705, "x1": 2915, "scale": [0.85, 0.85]},
         "jetty": {"levels": [895], "zones": ["pier"], "x0": 2815, "x1": 2975, "look": "jetty", "base": 922},
-        "table": {"levels": [1650], "zones": ["terrace"], "x0": 2990, "inset": 40, "scale": [0.75, 0.75], "look": "table", "base": 1720}
+        "table": {"levels": [1650], "zones": ["terrace"], "x0": 3000, "x1": 3260, "scale": [0.75, 0.75], "look": "table", "base": 1720},
+        "table2": {"levels": [1650], "zones": ["terrace"], "x0": 3330, "x1": 3560, "scale": [0.75, 0.75], "look": "table", "base": 1720}
       },
       "place": {
         "bridge": "footbridge", "sightseeing-boat": "water", "lighthouse": "jetty",
-        "parasol": "table", "plate": "table", "pizza": "table", "wine-glass": "table", "pitcher": "table", "candle": "table", "menu": "table", "camera": "table"
+        "parasol": "table", "plate": "table", "pizza": "table", "wine-glass": "table", "pitcher": "table", "candle": "table2", "menu": "table2", "camera": "table2"
       },
-      "clusters": [["crate", "anchor", "life-jacket"], ["handrail", "padlock", "life-buoy"], ["food-stall", "wallet"], ["map", "binoculars"]],
+      "clusters": [["crate", "anchor", "life-jacket"], ["handrail", "padlock", "life-buoy"], ["food-stall", "wallet"]],
+      "rows": [
+        {"note": "露天座位：另一桌", "points": [[3345, 1650], [3545, 1650]], "items": ["candle", "menu", "camera"]},
+        {"note": "河岸步道：沿河邊欄杆", "points": [[3040, 2050], [3040, 2560]], "items": ["binoculars", null, "map"]}
+      ],
+      "spots": {
+        "bridge": [2800, 585], "handrail": [3040, 545], "flag": [3140, 520], "rope": [3220, 520], "bicycle": [3330, 600], "stairs": [3500, 540],
+        "lighthouse": [2895, 895], "sightseeing-boat": [2810, 1200], "fishing-rod": [3040, 1100], "ticket-office": [3250, 900], "ticket": [3345, 905], "crate": [3450, 1150],
+        "parasol": [3130, 1650], "plate": [3034, 1650], "pizza": [3100, 1650], "wine-glass": [3160, 1650], "pitcher": [3226, 1650],
+        "food-stall": [3330, 2300], "skateboard": [3200, 2540], "key": [3480, 2560]
+      },
       "loose": ["rope", "padlock", "key", "wallet", "skateboard", "life-jacket", "ticket", "menu"],
       "noFlip": [],
       "motion": {"flag": "sway", "parasol": "sway", "fishing-rod": "sway", "sightseeing-boat": "bob"}
@@ -64,19 +102,30 @@
       "zones": {"entrance": [0, 1640, 650, 2600], "fresh": [650, 1640, 1300, 2600], "fridge": [1300, 1640, 1950, 2600], "checkout": [1950, 1640, 2600, 2600]},
       "bands": {
         "ground": {"top": 1960, "bottom": 2555, "scale": [0.95, 1.05], "override": {"fresh": {"top": 2340}, "fridge": {"top": 2340}, "checkout": {"top": 2340}}},
-        "backwall": {"levels": [1893], "zones": ["entrance"], "inset": 50},
+        "backwall": {"levels": [1893], "zones": ["entrance", "fridge"], "inset": 50},
         "stand": {"levels": [2110, 2225], "zones": ["fresh"], "inset": 70, "scale": [0.8, 0.8], "look": "stand", "base": 2290},
         "chiller": {"levels": [2210], "zones": ["fridge"], "inset": 70, "scale": [0.85, 0.85], "look": "chiller", "base": 2290},
         "checkout": {"levels": [2210], "zones": ["checkout"], "inset": 70, "scale": [0.85, 0.85], "look": "checkout", "base": 2290}
       },
       "place": {
-        "automatic-door": "backwall", "fire-extinguisher": "backwall",
+        "automatic-door": "backwall", "fire-extinguisher": "backwall", "fridge": "backwall", "plastic-bag": "checkout",
         "apple": "stand", "banana": "stand", "orange": "stand", "grapes": "stand", "watermelon": "stand", "carrot": "stand",
         "tomato": "stand", "cabbage": "stand", "corn": "stand", "bread": "stand", "scale": "stand", "price-tag": "stand",
         "milk": "chiller", "eggs": "chiller", "cheese": "chiller", "yogurt": "chiller", "ice-cream": "chiller", "juice": "chiller", "sausage": "chiller",
         "cash-register": "checkout", "barcode-scanner": "checkout", "receipt": "checkout", "coins": "checkout", "credit-card": "checkout", "banknote": "checkout"
       },
       "clusters": [["shelf", "canned-food"], ["shopping-cart", "shopping-basket"], ["automatic-door", "flyer"]],
+      "rows": [
+        {"note": "入口：左牆", "points": [[100, 2050], [100, 2500]], "items": ["locker", "shelf"]},
+        {"note": "生鮮：上層", "points": [[720, 2110], [1230, 2110]], "items": ["tomato", "corn", "banana", "carrot", "grapes", "orange"]},
+        {"note": "生鮮：下層", "points": [[720, 2225], [1230, 2225]], "items": ["watermelon", "apple", "bread", "price-tag", "cabbage", "scale"]},
+        {"note": "冷藏：展示台", "points": [[1370, 2210], [1880, 2210]], "items": ["milk", "juice", "yogurt", "cheese", "eggs", "ice-cream", "sausage"]},
+        {"note": "收銀台：袋子 → 掃描 → 付款 → 收銀機", "points": [[2020, 2210], [2530, 2210]], "items": ["plastic-bag", "barcode-scanner", "receipt", "coins", "banknote", "credit-card", "cash-register"]}
+      ],
+      "spots": {
+        "automatic-door": [480, 1893], "fire-extinguisher": [300, 1893], "shopping-cart": [320, 2160],
+        "fridge": [1870, 1893]
+      },
       "loose": ["flyer", "receipt", "banknote", "credit-card", "banana", "carrot", "corn", "bread", "sausage"],
       "noFlip": [],
       "motion": {"price-tag": "sway", "shopping-cart": "wobble", "plastic-bag": "sway"}
@@ -110,6 +159,7 @@
       "loose": ["helmet", "magazine", "chocolate", "candy", "postcard", "keychain", "earphones", "tissues", "gloves", "transit-card", "glasses", "rain-boots", "sneakers", "necktie", "scarf", "cap", "handkerchief", "handbag", "face-mask", "yo-yo"],
       "noFlip": [],
       "motion": {"flagpole": "sway", "truck": "wobble", "electric-fan": "wobble", "potted-plant": "sway", "train": "wobble", "bullet-train": "wobble", "yo-yo": "bob", "bell": "wobble", "walkie-talkie": "wobble"},
+      "arrange": "auto",
       "terrain": {"color": "#ce93d8", "x0": 0, "y0": 2600, "x1": 2600, "y1": 3900, "zones": [{"id": "plaza", "x0": 0, "y0": 2600, "x1": 1300, "y1": 3250, "indoor": false, "floor": "paving"}, {"id": "ticket-hall", "x0": 1300, "y0": 2600, "x1": 2600, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "gates", "x0": 1300, "y0": 3250, "x1": 2600, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}, {"id": "platform", "x0": 0, "y0": 3250, "x1": 1300, "y1": 3900, "indoor": false, "floor": "concrete", "track": {"y0": 3740, "y1": 3900}}]}
     },
     "restaurant": {
@@ -185,6 +235,7 @@
       "loose": ["bowl", "fork", "spoon", "napkin", "toothpick"],
       "noFlip": [],
       "motion": {"delivery-van": "wobble", "fern": "sway", "rose": "sway", "curtain": "sway"},
+      "arrange": "auto",
       "terrain": {"color": "#80cbc4", "x0": 3600, "y0": 0, "x1": 6200, "y1": 1300, "zones": [{"id": "entrance", "x0": 3600, "y0": 0, "x1": 4900, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "dining-hall", "x0": 4900, "y0": 0, "x1": 6200, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "open-kitchen", "x0": 4900, "y0": 650, "x1": 6200, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}, {"id": "dessert-stand", "x0": 3600, "y0": 650, "x1": 4900, "y1": 1300, "indoor": false, "floor": "concrete"}]}
     },
     "school": {
@@ -239,6 +290,7 @@
       "loose": ["pencil", "eraser", "ruler", "pencil-case", "crayon", "glue-stick", "scissors", "loafer", "acorn", "twig", "frisbee", "baseball-glove", "chalk", "clipboard", "pine-cone", "leaf", "garbage-bag", "computer-mouse", "pencil-sharpener", "marker", "paintbrush", "paint-palette", "stapler", "tape-dispenser", "magnifying-glass", "compass", "paper", "pen", "bookmark", "rubber-band"],
       "noFlip": [],
       "motion": {"raincoat": "sway", "tulip": "sway", "daisy": "sway", "dandelion": "sway", "clover": "sway"},
+      "arrange": "auto",
       "terrain": {"color": "#ffab91", "x0": 3600, "y0": 1300, "x1": 6200, "y1": 2600, "zones": [{"id": "school-gate", "x0": 3600, "y0": 1300, "x1": 4900, "y1": 1950, "indoor": false, "floor": "paving", "road": {"y0": 1760, "y1": 1920}}, {"id": "school-yard", "x0": 4900, "y0": 1300, "x1": 6200, "y1": 1950, "indoor": false, "floor": "grass"}, {"id": "classroom", "x0": 4900, "y0": 1950, "x1": 6200, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}, {"id": "library", "x0": 3600, "y0": 1950, "x1": 4900, "y1": 2600, "indoor": true, "floor": "carpet", "wallBase": 2130}]}
     },
     "hospital": {
@@ -311,6 +363,7 @@
       "loose": ["cane", "first-aid-kit", "thermometer", "bandage", "syringe", "coaster", "coffee-bean", "tea-bag", "sugar-cube", "lemon", "straw", "remote-control", "toy-block", "pill", "capsule", "cotton-ball", "earplug", "air-freshener", "coffee-filter", "tea-strainer", "sugar-bowl", "coffee-stirrer", "pulse-oximeter", "otoscope", "blood-glucose-meter", "face-shield", "tongue-depressor", "pill-cutter", "nail-clipper", "nail-file", "safety-pin", "hairbrush", "hair-tie", "lip-balm", "blister-pack"],
       "noFlip": [],
       "motion": {"sunflower": "sway", "lavender": "sway", "plant": "sway"},
+      "arrange": "auto",
       "terrain": {"color": "#9fa8da", "x0": 3600, "y0": 2600, "x1": 6200, "y1": 3900, "zones": [{"id": "entrance", "x0": 3600, "y0": 2600, "x1": 4900, "y1": 3250, "indoor": false, "floor": "paving", "road": {"y0": 3060, "y1": 3220}}, {"id": "lobby", "x0": 4900, "y0": 2600, "x1": 6200, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "waiting-area", "x0": 4900, "y0": 3250, "x1": 6200, "y1": 3900, "indoor": true, "floor": "carpet", "wallBase": 3430}, {"id": "pharmacy", "x0": 3600, "y0": 3250, "x1": 4900, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}
     },
     "airport": {
@@ -363,6 +416,7 @@
       "loose": ["duffel-bag", "suit-bag", "travel-pillow", "luggage-tag", "safety-vest", "wheel-chock", "bar-stool-cushion", "bottle-opener", "shoe", "sock", "hat", "passport", "boarding-pass", "bottle", "security-wand", "tablet", "ring", "necklace", "bracelet", "hair-clip", "luggage-strap", "cushion", "power-bank", "charging-cable", "pretzel", "pear", "peach", "granola-bar", "luggage-scale", "travel-mug", "laptop-bag", "shoe-cover", "plastic-seal", "shoehorn", "slipper", "sleep-mask", "neck-pillow", "sandals", "eye-mask-case"],
       "noFlip": [],
       "motion": {"airport-shuttle": "wobble", "aircraft-tug": "wobble"},
+      "arrange": "auto",
       "terrain": {"color": "#c5e1a5", "x0": 0, "y0": 3900, "x1": 2600, "y1": 5200, "zones": [{"id": "entrance", "x0": 0, "y0": 3900, "x1": 1300, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "check-in-hall", "x0": 1300, "y0": 3900, "x1": 2600, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "security-check", "x0": 1300, "y0": 4550, "x1": 2600, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}, {"id": "departure-gate", "x0": 0, "y0": 4550, "x1": 1300, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
     },
     "library": {
@@ -421,10 +475,11 @@
         "scroll": "surface-reading-room",
         "feather": "surface-reading-room"
       },
-      "clusters": [["archway", "spotlight", "louver"], ["paving-slab", "brick"], ["desk", "drawer"], ["beanbag", "footrest", "foot-cushion"]],
-      "loose": ["brick", "rubber-stamp", "ink-pad", "paper-clip", "binder-clip", "hole-punch", "calculator", "staple-remover", "highlighter", "sticky-note", "inkwell", "glasses-case", "page-holder", "library-card", "magnifying-lens", "foot-cushion", "reading-glasses", "doorstop", "dictionary", "encyclopedia", "atlas", "abacus", "quill", "scroll", "feather"],
+      "clusters": [["archway", "spotlight", "louver"], ["paving-slab", "brick"], ["desk", "drawer", "desk-chair"], ["beanbag", "footrest", "foot-cushion"], ["long-table", "open-book"]],
+      "loose": ["brick", "rubber-stamp", "ink-pad", "paper-clip", "binder-clip", "hole-punch", "calculator", "staple-remover", "highlighter", "sticky-note", "inkwell", "glasses-case", "page-holder", "library-card", "magnifying-lens", "foot-cushion", "reading-glasses", "doorstop", "dictionary", "encyclopedia", "atlas", "abacus", "quill", "scroll", "feather", "keyhole-cover", "keyhole-escutcheon", "doorstop-wedge", "date-stamp", "book-light", "globe-stand", "fountain-pen", "open-book"],
       "noFlip": [],
       "motion": {"rain-chain": "sway", "document-shredder": "wobble", "ceiling-fan": "wobble"},
+      "arrange": "auto",
       "terrain": {"color": "#ffe082", "x0": 3600, "y0": 3900, "x1": 6200, "y1": 5200, "zones": [{"id": "entrance", "x0": 3600, "y0": 3900, "x1": 4900, "y1": 4550, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 4900, "y0": 3900, "x1": 6200, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "bookstacks", "x0": 4900, "y0": 4550, "x1": 6200, "y1": 5200, "indoor": true, "floor": "wood", "wallBase": 4730}, {"id": "reading-room", "x0": 3600, "y0": 4550, "x1": 4900, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
     },
     "post-office": {
@@ -476,6 +531,7 @@
       "loose": ["parcel", "postage-stamp", "pebble", "letter-opener", "twine-spool", "label-roll", "rubber-glove", "packing-tape-roll", "mailing-tube-cap", "letter", "packing-tape", "twine", "sticker", "staple", "sticker-sheet", "box-cutter", "safety-goggles", "work-gloves", "notepad", "tape-roll", "glue", "label"],
       "noFlip": [],
       "motion": {"flower": "sway", "cloud": "drift", "raindrop": "drift", "wind-sock": "sway", "moss": "sway", "weed": "sway", "work-apron": "sway"},
+      "arrange": "auto",
       "terrain": {"color": "#f48fb1", "x0": 6200, "y0": 0, "x1": 8800, "y1": 1300, "zones": [{"id": "entrance", "x0": 6200, "y0": 0, "x1": 7500, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "service-hall", "x0": 7500, "y0": 0, "x1": 8800, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "waiting-area", "x0": 7500, "y0": 650, "x1": 8800, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "sorting-room", "x0": 6200, "y0": 650, "x1": 7500, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}]}
     }
   }
