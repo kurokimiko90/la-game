@@ -1,0 +1,358 @@
+{
+  "en": {
+    "automatic-door": {
+      "heard": "Automatic door.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "fire-extinguisher": {
+      "heard": "Fire extinguisher.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "fridge": {
+      "heard": "fridge.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "flyer": {
+      "heard": "Flyer.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-cart-wheel": {
+      "heard": "Cartwheel.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "banana": {
+      "heard": "Banana?",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "orange": {
+      "heard": "Orange.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "grapes": {
+      "heard": "Grapes?",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "carrot": {
+      "heard": "Carrot.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "tomato": {
+      "heard": "Tomato?",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "corn": {
+      "heard": "Corn.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-cart": {
+      "heard": "Shopping cart?",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-basket": {
+      "heard": "Shopping basket.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "milk": {
+      "heard": "Milk.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "coins": {
+      "heard": "Coins",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "credit-card": {
+      "heard": "Credit card.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "barcode-scanner": {
+      "heard": "Bag barcode scanner.",
+      "score": 0.82,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "banknote": {
+      "heard": "Banknote.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "handbasket": {
+      "heard": "Handbasket.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "cabbage": {
+      "heard": "Cabbage.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "bread": {
+      "heard": "Bread.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "scale": {
+      "heard": "Scale.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "price-tag": {
+      "heard": "Price tag.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-trolley-token": {
+      "heard": "Trolley token.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-cart-token": {
+      "heard": "Shopping Cart Token",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "bag-holder": {
+      "heard": "Bag Holder.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "cream-cheese": {
+      "heard": "Cream cheese.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "price-label-holder": {
+      "heard": "Price label holder.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "buttermilk": {
+      "heard": "Buttermilk.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "eggplant": {
+      "heard": "Eggplant",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-bag-roll": {
+      "heard": "Shopping bag roll.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "sour-milk": {
+      "heard": "Sour Milk.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-list": {
+      "heard": "shopping list.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-bag-hook": {
+      "heard": "Yop. Shopping bag hook.",
+      "score": 0.83,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "handheld-scanner": {
+      "heard": "Handheld scanner.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "pickle-jar": {
+      "heard": "Pickle jar.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "reusable-bag": {
+      "heard": "Reusable bag.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "basket-divider": {
+      "heard": "Basket divider.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "broccoli": {
+      "heard": "Broccoli.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "produce-mister": {
+      "heard": "Produce Mister.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "cream": {
+      "heard": "Cream.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "pumpkin": {
+      "heard": "Pumpkin.",
+      "score": 1,
+      "take": "en-1790172217030.aac",
+      "account": "chatgpt1"
+    },
+    "locker": {
+      "heard": "Locker.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "ice-cream": {
+      "heard": "Ice cream.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "sausage": {
+      "heard": "Sausage.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "cash-register": {
+      "heard": "Cash register.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "receipt": {
+      "heard": "Receipt.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "plastic-bag": {
+      "heard": "Plastic bag.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "apple": {
+      "heard": "Apple.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "coin-tray": {
+      "heard": "Cointray.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "radish": {
+      "heard": "Radish.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "shelf": {
+      "heard": "Shelf.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "whipped-cream": {
+      "heard": "Whipped cream.",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "canned-food": {
+      "heard": "canned food,",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "checkout-divider": {
+      "heard": "Check out Divider",
+      "score": 1,
+      "take": "en-1790172396739.aac",
+      "account": "chatgpt1"
+    },
+    "eggs": {
+      "heard": "Eggs.",
+      "score": 1,
+      "take": "en-1790172478030.aac",
+      "account": "chatgpt1"
+    },
+    "juice": {
+      "heard": "Juice.",
+      "score": 1,
+      "take": "en-1790172478030.aac",
+      "account": "chatgpt1"
+    },
+    "cottage-cheese": {
+      "heard": "Ben, cottage cheese.",
+      "score": 0.81,
+      "take": "en-1790172478030.aac",
+      "account": "chatgpt1"
+    },
+    "handheld-scanner-cradle": {
+      "heard": "Scanner Cradle.",
+      "score": 1,
+      "take": "en-1790172478030.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
