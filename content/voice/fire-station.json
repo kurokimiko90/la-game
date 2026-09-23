@@ -1,0 +1,358 @@
+{
+  "en": {
+    "fire-station-shutter": {
+      "heard": "Fire station shutter.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-pole": {
+      "heard": "Firepole.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-engine-door": {
+      "heard": "Fire engine door.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "side-mirror": {
+      "heard": "Side mirror.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "hose-cabinet": {
+      "heard": "Host Cabinet.",
+      "score": 0.91,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-hose": {
+      "heard": "Firehose.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "hose-reel": {
+      "heard": "Hose Reel.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "drain-grate": {
+      "heard": "Drain grape.",
+      "score": 0.9,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-window": {
+      "heard": "Fire station window.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-door": {
+      "heard": "Side door.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-gutter": {
+      "heard": "Drain pipe.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-steps": {
+      "heard": "Steps.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-engine-seat": {
+      "heard": "Fire engine seat.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "steering-wheel": {
+      "heard": "Steering wheel.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "dashboard": {
+      "heard": "Dashboard.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "spare-wheel": {
+      "heard": "Spare wheel.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "bolt-cutter": {
+      "heard": "Bolt cutter.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "crowbar": {
+      "heard": "Crowbar.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "sledgehammer": {
+      "heard": "Sledgehammer.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "hose-nozzle": {
+      "heard": "Hose nozzle.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-helmet": {
+      "heard": "Fire Helmet.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-bucket": {
+      "heard": "Firebucket.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-extinguisher-hose": {
+      "heard": "Extinguisher host.",
+      "score": 0.94,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-alarm-bell": {
+      "heard": "Fire alarm bell.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "toolbox": {
+      "heard": "Toolbox",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-wrench": {
+      "heard": "Wrench.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "ladder-hook": {
+      "heard": "Ladder hook.",
+      "score": 1,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "hose-bridge": {
+      "heard": "Coasebridge.",
+      "score": 0.82,
+      "take": "en-1790145362779.aac",
+      "account": "chatgpt1"
+    },
+    "windshield-wiper": {
+      "heard": "Windshield wiper.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "hubcap": {
+      "heard": "Hubcap.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "hose-coupling": {
+      "heard": "Bade hose coupling.",
+      "score": 0.75,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-station-cone": {
+      "heard": "Cone.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-boot": {
+      "heard": "Fireboot.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-blanket": {
+      "heard": "Fire Blanket.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-nozzle": {
+      "heard": "Fire Nozzle.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "rearview-mirror": {
+      "heard": "Rearview mirror.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "wheel-wrench": {
+      "heard": "Wheel wrench.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "jack": {
+      "heard": "Jack.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-gloves": {
+      "heard": "Fire gloves.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-goggles": {
+      "heard": "Fire goggles.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-helmet-visor": {
+      "heard": "Firehelm Advisor.",
+      "score": 0.87,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-engine": {
+      "heard": "Fire Engine.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "clock-face": {
+      "heard": "Wall Clock",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "siren": {
+      "heard": "Siren.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-alarm-panel": {
+      "heard": "Fire alarm panel.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "filing-cabinet": {
+      "heard": "Filing Cabinet.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-blanket-case": {
+      "heard": "Fire blanket case.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "breathing-apparatus": {
+      "heard": "Breathing apparatus.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-mask": {
+      "heard": "Fire mask.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-radio": {
+      "heard": "Fire Radio.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-helmet-lamp": {
+      "heard": "Fire helmet lamp.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-helmet-shield": {
+      "heard": "Fire Helmet Shield.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "radio-console": {
+      "heard": "Radio console.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "dispatch-console": {
+      "heard": "Dispatch console, Moner.",
+      "score": 0.75,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "monitor": {
+      "heard": "Monitor.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "desk-phone": {
+      "heard": "desk phone.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-hood": {
+      "heard": "Firehood.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-jacket": {
+      "heard": "Firejacket.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    },
+    "fire-trousers": {
+      "heard": "Fire Trousers.",
+      "score": 1,
+      "take": "en-1790145510887.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

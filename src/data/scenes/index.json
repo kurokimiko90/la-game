@@ -152,5 +152,19 @@
       ],
       "body": "<circle cx=\"48\" cy=\"101\" r=\"25\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"82\" r=\"37\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"123\" cy=\"99\" r=\"30\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"30\" y=\"98\" width=\"111\" height=\"40\" fill=\"#fff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"42\" y=\"101\" width=\"90\" height=\"7\" fill=\"#fff\" opacity=\"0.3\"/>"
     }
+  },
+  {
+    "id": "fire-station",
+    "name": "消防局",
+    "itemCount": 80,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        160,
+        140
+      ],
+      "body": "<rect x=\"12\" y=\"56\" width=\"136\" height=\"64\" rx=\"5\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"24\" y=\"28\" width=\"84\" height=\"30\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"112\" y=\"70\" width=\"26\" height=\"28\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"30\" y=\"34\" width=\"68\" height=\"5\" fill=\"#ffffff\" opacity=\"0.25\"/><rect x=\"38\" y=\"64\" width=\"70\" height=\"8\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"42\" y1=\"62\" x2=\"42\" y2=\"76\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"55\" y1=\"62\" x2=\"55\" y2=\"76\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"68\" y1=\"62\" x2=\"68\" y2=\"76\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"81\" y1=\"62\" x2=\"81\" y2=\"76\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"94\" y1=\"62\" x2=\"94\" y2=\"76\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"46\" cy=\"120\" r=\"15\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"46\" cy=\"120\" r=\"6\" fill=\"#eceff1\"/><circle cx=\"119\" cy=\"120\" r=\"15\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"119\" cy=\"120\" r=\"6\" fill=\"#eceff1\"/>"
+    }
   }
 ]

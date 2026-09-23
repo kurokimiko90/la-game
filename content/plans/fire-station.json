@@ -1,0 +1,1650 @@
+{
+  "id": "fire-station",
+  "name": "消防局",
+  "zones": [
+    {
+      "id": "front-yard",
+      "name": "前院",
+      "indoor": false,
+      "floor": "concrete",
+      "feature": "road"
+    },
+    {
+      "id": "garage",
+      "name": "車庫",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    },
+    {
+      "id": "equipment-room",
+      "name": "器材室",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "stand"
+    },
+    {
+      "id": "dispatch-room",
+      "name": "指揮室",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "counter"
+    }
+  ],
+  "slot": {
+    "x": 6200,
+    "y": 1300
+  },
+  "colorIndex": 7,
+  "icon": "fire-engine",
+  "elements": [
+    {
+      "id": "fire-engine",
+      "zh": "消防車",
+      "en": "fire-engine",
+      "ja": "消防車",
+      "reading": "しょうぼうしゃ",
+      "category": "交通工具",
+      "size": "large",
+      "zone": "front-yard",
+      "spot": "road",
+      "desc": "紅色大型車身配白色車頂，側面有金屬梯子、車輪與深色車窗，外形醒目。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": null
+    },
+    {
+      "id": "fire-hose",
+      "zh": "消防水帶",
+      "en": "fire-hose",
+      "ja": "消防ホース",
+      "reading": "しょうぼうホース",
+      "category": "道具",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "粗長的黃色軟管盤成幾圈，兩端各有銀色圓形接頭，放在車道旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": "hose-nozzle"
+    },
+    {
+      "id": "hose-nozzle",
+      "zh": "水帶噴嘴",
+      "en": "hose-nozzle",
+      "ja": "ホースノズル",
+      "reading": "ホースノズル",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "銀色金屬短管前端逐漸變細，握柄處有深色橫紋，旁邊連著水帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-hose"
+    },
+    {
+      "id": "fire-helmet",
+      "zh": "消防頭盔",
+      "en": "fire-helmet",
+      "ja": "消防ヘルメット",
+      "reading": "しょうぼうヘルメット",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "亮黃色圓頂頭盔，前方有短帽沿，兩側露出深色固定帶，放在地上。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "axe",
+      "zh": "消防斧",
+      "en": "axe",
+      "ja": "消防斧",
+      "reading": "しょうぼうおの",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "深色短柄連著紅色寬斧頭，斧刃呈弧形，平放時輪廓一眼可辨。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hose-reel",
+      "zh": "水帶捲盤",
+      "en": "hose-reel",
+      "ja": "ホースリール",
+      "reading": "ホースリール",
+      "category": "道具",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "紅色圓形側板中間繞著一圈黃色軟管，中央有金屬軸心與轉柄。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-hose"
+    },
+    {
+      "id": "fire-bucket",
+      "zh": "消防水桶",
+      "en": "fire-bucket",
+      "ja": "消防バケツ",
+      "reading": "しょうぼうバケツ",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "紅色圓筒形金屬桶，頂部敞開，兩側有細金屬提把，放在牆邊。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-extinguisher-hose",
+      "zh": "滅火器軟管",
+      "en": "extinguisher-hose",
+      "ja": "消火器ホース",
+      "reading": "しょうかきホース",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "黑色短軟管彎成弧形，一端接著紅色圓筒狀滅火器，另一端有小噴口。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-extinguisher"
+    },
+    {
+      "id": "fire-alarm-bell",
+      "zh": "消防警鈴",
+      "en": "fire-alarm-bell",
+      "ja": "火災警報ベル",
+      "reading": "かさいけいほうベル",
+      "category": "設施",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "紅色圓形金屬鈴固定在低矮支架上，外側有小槌，沒有任何文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "drain-grate",
+      "zh": "排水溝蓋",
+      "en": "drain-grate",
+      "ja": "排水溝のふた",
+      "reading": "はいすいこうのふた",
+      "category": "設施",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "深灰色長方形金屬格柵嵌在地面，表面有數條平行縫隙。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "toolbox",
+      "zh": "工具箱",
+      "en": "toolbox",
+      "ja": "工具箱",
+      "reading": "こうぐばこ",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "藍色長方形硬殼箱有黑色提把，箱蓋分成上下兩層，放在車道旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "spade",
+      "zh": "鏟子",
+      "en": "spade",
+      "ja": "スコップ",
+      "reading": "スコップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "木色長柄連著深灰色尖頭鏟面，鏟面寬而扁，斜靠在牆邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hose-coupling",
+      "zh": "水帶接頭",
+      "en": "hose-coupling",
+      "ja": "ホースカップリング",
+      "reading": "ホースカップリング",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "銀色短圓筒兩端有凸起環圈，中間帶有卡榫，放在水帶旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-hose"
+    },
+    {
+      "id": "fire-station-shutter",
+      "zh": "車庫鐵捲門",
+      "en": "fire-station-shutter",
+      "ja": "車庫シャッター",
+      "reading": "しゃこシャッター",
+      "category": "設施",
+      "size": "large",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "寬大的紅色橫向捲門由許多細長金屬片組成，表面沒有標誌或文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-station-window",
+      "zh": "車庫窗戶",
+      "en": "fire-station-window",
+      "ja": "車庫の窓",
+      "reading": "しゃこのまど",
+      "category": "設施",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "方形窗框裡有兩片藍灰色玻璃，中間以直條分隔，嵌在車庫外牆。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-station-flag",
+      "zh": "消防局旗幟",
+      "en": "fire-station-flag",
+      "ja": "消防署の旗",
+      "reading": "しょうぼうしょのはた",
+      "category": "道具",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "sky",
+      "desc": "純紅色三角旗掛在短桿上，沒有圖案或文字，旗面向一側輕輕展開。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "smoke",
+      "zh": "煙",
+      "en": "smoke",
+      "ja": "煙",
+      "reading": "けむり",
+      "category": "自然",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "sky",
+      "desc": "一團淺灰色圓潤煙霧由車庫後方升起，邊緣柔軟分散，不遮住物品。",
+      "loose": false,
+      "motion": "drift",
+      "cluster": null
+    },
+    {
+      "id": "fire-station-door",
+      "zh": "側門",
+      "en": "side-door",
+      "ja": "勝手口",
+      "reading": "かってぐち",
+      "category": "設施",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "深紅色的單扇門，表面有幾道凸起長框，旁邊裝著圓形金屬把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-station-gutter",
+      "zh": "排水管",
+      "en": "drainpipe",
+      "ja": "排水管",
+      "reading": "はいすいかん",
+      "category": "設施",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "沿著磚牆垂直延伸的紅色金屬管，末端彎向地面，管口清楚可見。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-station-steps",
+      "zh": "台階",
+      "en": "steps",
+      "ja": "階段",
+      "reading": "かいだん",
+      "category": "設施",
+      "size": "medium",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "三層寬闊的灰色混凝土階梯，邊角平直，連接側門與車道地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-station-wrench",
+      "zh": "扳手",
+      "en": "wrench",
+      "ja": "レンチ",
+      "reading": "レンチ",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "銀灰色金屬扳手，細長柄的一端有開口叉頭，另一端有圓形握孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": "hose-coupling"
+    },
+    {
+      "id": "fire-station-cone",
+      "zh": "交通錐",
+      "en": "cone",
+      "ja": "カラーコーン",
+      "reading": "カラーコーン",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "橘紅色錐形交通錐，頂端圓鈍，底部有寬扁的黑色方形底座。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-pole",
+      "zh": "消防滑竿",
+      "en": "fire-pole",
+      "ja": "消防士用すべり棒",
+      "reading": "しょうぼうしようすべりぼう",
+      "category": "設施",
+      "size": "large",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "一根筆直的紅色金屬圓柱，從前院地面穿過屋頂，底部接著方形固定座。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-boot",
+      "zh": "消防靴",
+      "en": "fire-boot",
+      "ja": "消防ブーツ",
+      "reading": "しょうぼうブーツ",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "一雙黑色厚底長筒靴，靴筒頂端寬口，鞋面有亮黃色反光條。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-blanket",
+      "zh": "防火毯",
+      "en": "fire-blanket",
+      "ja": "防火ブランケット",
+      "reading": "ぼうかブランケット",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-yard",
+      "spot": "ground",
+      "desc": "一塊摺疊成方形的銀灰色厚布，邊緣有紅色包邊，旁邊露出拉帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-engine-seat",
+      "zh": "消防車座椅",
+      "en": "fire-engine-seat",
+      "ja": "消防車の座席",
+      "reading": "しょうぼうしゃのざせき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "紅色車廂內的單人座椅，有厚實的深色椅墊和明顯的靠背。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "steering-wheel",
+      "zh": "方向盤",
+      "en": "steering-wheel",
+      "ja": "ハンドル",
+      "reading": "ハンドル",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "黑色圓環連著中央圓盤，裝在駕駛座前方，輪圈上有幾道握槽。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-engine-seat"
+    },
+    {
+      "id": "dashboard",
+      "zh": "儀表板",
+      "en": "dashboard",
+      "ja": "ダッシュボード",
+      "reading": "ダッシュボード",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "駕駛座前方的寬扁黑色面板，帶有圓形儀表和幾個凸起按鈕。",
+      "loose": false,
+      "motion": null,
+      "cluster": "steering-wheel"
+    },
+    {
+      "id": "rearview-mirror",
+      "zh": "後視鏡",
+      "en": "rearview-mirror",
+      "ja": "バックミラー",
+      "reading": "バックミラー",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "車廂前方的小型黑框長方鏡，固定在短支架上，鏡面呈灰藍色。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dashboard"
+    },
+    {
+      "id": "windshield-wiper",
+      "zh": "雨刷",
+      "en": "windshield-wiper",
+      "ja": "ワイパー",
+      "reading": "ワイパー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "兩支細長黑色雨刷平放在車窗下緣，帶有扁平橡膠刮片。",
+      "loose": false,
+      "motion": null,
+      "cluster": "rearview-mirror"
+    },
+    {
+      "id": "fire-engine-door",
+      "zh": "消防車車門",
+      "en": "fire-engine-door",
+      "ja": "消防車のドア",
+      "reading": "しょうぼうしゃのドア",
+      "category": "交通工具",
+      "size": "large",
+      "zone": "garage",
+      "spot": "wallbase",
+      "desc": "紅色方形車門帶有黑色窗框、銀色把手和一條醒目的黃色反光條。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "side-mirror",
+      "zh": "車側後視鏡",
+      "en": "side-mirror",
+      "ja": "サイドミラー",
+      "reading": "サイドミラー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "wallbase",
+      "desc": "紅色短支架伸出車門，末端接著黑框橢圓鏡面，外殼厚實醒目。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-engine-door"
+    },
+    {
+      "id": "hubcap",
+      "zh": "輪圈蓋",
+      "en": "hubcap",
+      "ja": "ホイールカバー",
+      "reading": "ホイールカバー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "銀灰色圓盤帶放射狀凹槽，中央有圓形凸起，靠著車輪擺放。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "spare-wheel",
+      "zh": "備胎",
+      "en": "spare-wheel",
+      "ja": "スペアタイヤ",
+      "reading": "スペアタイヤ",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "黑色厚橡膠圓環平放在地，外圈有深刻的防滑紋路，中央露出金屬輪圈。",
+      "loose": false,
+      "motion": null,
+      "cluster": "hubcap"
+    },
+    {
+      "id": "wheel-wrench",
+      "zh": "輪胎扳手",
+      "en": "wheel-wrench",
+      "ja": "ホイールレンチ",
+      "reading": "ホイールレンチ",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "銀灰色金屬長柄工具，一端分成十字形短臂，另一端有套筒頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": "spare-wheel"
+    },
+    {
+      "id": "jack",
+      "zh": "千斤頂",
+      "en": "jack",
+      "ja": "ジャッキ",
+      "reading": "ジャッキ",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "紅色金屬菱形支架，中央有螺桿和短曲柄，底部是扁平支腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wheel-wrench"
+    },
+    {
+      "id": "bolt-cutter",
+      "zh": "斷線鉗",
+      "en": "bolt-cutter",
+      "ja": "ボルトカッター",
+      "reading": "ボルトカッター",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "兩根長黑柄在中間交叉，前端連著粗壯的紅色鉗頭和短刃口。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tool-chest"
+    },
+    {
+      "id": "crowbar",
+      "zh": "撬棍",
+      "en": "crowbar",
+      "ja": "バール",
+      "reading": "バール",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "深灰色細長金屬桿，一端彎成扁平叉口，另一端略微彎鉤。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tool-chest"
+    },
+    {
+      "id": "sledgehammer",
+      "zh": "大鎚",
+      "en": "sledgehammer",
+      "ja": "大ハンマー",
+      "reading": "おおハンマー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "深色長柄連著厚重的方形鐵鎚頭，鎚頭兩端平直，斜靠在工具箱旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": "crowbar"
+    },
+    {
+      "id": "ladder-hook",
+      "zh": "梯鉤",
+      "en": "ladder-hook",
+      "ja": "梯子フック",
+      "reading": "はしごフック",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "銀灰色長金屬桿，頂端彎成醒目的鉤子，底部有黑色握把。",
+      "loose": false,
+      "motion": null,
+      "cluster": "shovel"
+    },
+    {
+      "id": "hose-bridge",
+      "zh": "水帶跨橋",
+      "en": "hose-bridge",
+      "ja": "ホースブリッジ",
+      "reading": "ホースブリッジ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "黃色低矮拱形護罩，頂面有兩道平行凹槽，兩端平坦，供水帶從下方通過。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-nozzle",
+      "zh": "消防水帶噴嘴",
+      "en": "fire-nozzle",
+      "ja": "消防ノズル",
+      "reading": "しょうぼうノズル",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "銀色短圓管前端逐漸收窄，後端有紅色旋鈕和粗大的接頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": "hose-bridge"
+    },
+    {
+      "id": "hose-cabinet",
+      "zh": "水帶櫃",
+      "en": "hose-cabinet",
+      "ja": "ホース収納箱",
+      "reading": "ホースしゅうのうばこ",
+      "category": "道具",
+      "size": "large",
+      "zone": "garage",
+      "spot": "wallbase",
+      "desc": "紅色高方櫃前方開著，裡面露出一圈圈捲好的黃褐色水帶。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-gloves",
+      "zh": "消防手套",
+      "en": "fire-gloves",
+      "ja": "消防用手袋",
+      "reading": "しょうぼうようてぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "一雙厚實的黃色手套並排放著，掌面有深色防滑塊，手腕處較長。",
+      "loose": true,
+      "motion": null,
+      "cluster": "tool-chest"
+    },
+    {
+      "id": "fire-goggles",
+      "zh": "消防護目鏡",
+      "en": "fire-goggles",
+      "ja": "消防ゴーグル",
+      "reading": "しょうぼうゴーグル",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "黑色橢圓鏡框連著透明鏡片，兩側有寬扁彈性帶和黃色邊緣。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-gloves"
+    },
+    {
+      "id": "fire-helmet-visor",
+      "zh": "消防頭盔面罩",
+      "en": "fire-helmet-visor",
+      "ja": "消防ヘルメットのシールド",
+      "reading": "しょうぼうヘルメットのシールド",
+      "category": "道具",
+      "size": "small",
+      "zone": "garage",
+      "spot": "ground",
+      "desc": "透明弧形防護面罩帶有紅色固定邊框，兩側各有小型金屬卡扣。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-goggles"
+    },
+    {
+      "id": "breathing-apparatus",
+      "zh": "空氣呼吸器",
+      "en": "breathing-apparatus",
+      "ja": "空気呼吸器",
+      "reading": "くうきこきゅうき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "黑色背負架上固定兩個銀色圓筒，前方垂著粗管與面罩。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-mask",
+      "zh": "消防面罩",
+      "en": "fire-mask",
+      "ja": "防火マスク",
+      "reading": "ぼうかマスク",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "透明弧形面罩連著黑色橡膠邊框，兩側有扣帶和接氣管的圓接口。",
+      "loose": false,
+      "motion": null,
+      "cluster": "breathing-apparatus"
+    },
+    {
+      "id": "fire-radio",
+      "zh": "消防無線電",
+      "en": "fire-radio",
+      "ja": "消防無線機",
+      "reading": "しょうぼうむせんき",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "黑色長方形手持機頂端有短天線，正面有圓形旋鈕和揚聲孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "radio-microphone",
+      "zh": "無線電麥克風",
+      "en": "radio-microphone",
+      "ja": "無線機マイク",
+      "reading": "むせんきマイク",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "黑色小型長方形麥克風，側邊有按鍵，上方伸出捲曲電線。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-radio"
+    },
+    {
+      "id": "fire-helmet-lamp",
+      "zh": "消防頭盔燈",
+      "en": "fire-helmet-lamp",
+      "ja": "ヘルメットライト",
+      "reading": "ヘルメットライト",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "小巧的黑色燈座前端有圓形透明燈罩，背面帶有夾扣。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-helmet-shield",
+      "zh": "消防頭盔護目鏡",
+      "en": "fire-helmet-shield",
+      "ja": "ヘルメットシールド",
+      "reading": "ヘルメットシールド",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "透明琥珀色弧形護目鏡，兩端有黑色轉軸，能罩住臉部。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-helmet-lamp"
+    },
+    {
+      "id": "fire-hood",
+      "zh": "消防頭套",
+      "en": "fire-hood",
+      "ja": "防火フード",
+      "reading": "ぼうかフード",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "米黃色厚布頭套像短圓筒，頂部封住，前方留有橢圓形開口。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "fire-jacket",
+      "zh": "消防外套",
+      "en": "fire-jacket",
+      "ja": "消防服",
+      "reading": "しょうぼうふく",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "厚實的深色防護外套，胸前與袖口有兩道亮黃色反光帶。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "fire-trousers",
+      "zh": "消防褲",
+      "en": "fire-trousers",
+      "ja": "消防ズボン",
+      "reading": "しょうぼうズボン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "一條深色厚布長褲，褲管下段各有兩道亮黃色反光帶。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "fire-jacket"
+    },
+    {
+      "id": "fire-belt",
+      "zh": "消防腰帶",
+      "en": "fire-belt",
+      "ja": "消防用ベルト",
+      "reading": "しょうぼうようベルト",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "寬版黑色腰帶，中央有大型金屬扣環，兩側掛著小型固定環。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-jacket"
+    },
+    {
+      "id": "fire-harness",
+      "zh": "消防安全吊帶",
+      "en": "fire-harness",
+      "ja": "消防用ハーネス",
+      "reading": "しょうぼうようハーネス",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "紅色織帶交叉成背心狀，肩部和腰部有多個銀色金屬扣環。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-rope",
+      "zh": "消防救援繩",
+      "en": "fire-rope",
+      "ja": "救助ロープ",
+      "reading": "きゅうじょロープ",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "一捆粗白繩盤成整齊的圓圈，外側繞有紅色固定繩帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-harness"
+    },
+    {
+      "id": "carabiner",
+      "zh": "登山扣",
+      "en": "carabiner",
+      "ja": "カラビナ",
+      "reading": "カラビナ",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "銀色橢圓金屬環有一側開口，開口處連著可活動的彈簧門。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fire-harness"
+    },
+    {
+      "id": "fire-pickaxe",
+      "zh": "消防破壞斧",
+      "en": "fire-pickaxe",
+      "ja": "消防用ピッケル",
+      "reading": "しょうぼうようピッケル",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "長木柄頂端裝著銀灰色金屬頭，一端是寬斧刃，另一端尖如鉤。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-cutter",
+      "zh": "消防剪切器",
+      "en": "fire-cutter",
+      "ja": "油圧カッター",
+      "reading": "ゆあつカッター",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "紅色手持液壓工具前端有兩片粗厚彎曲刀刃，中央連著黑色握把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-spreader",
+      "zh": "消防撐開器",
+      "en": "fire-spreader",
+      "ja": "油圧スプレッダー",
+      "reading": "ゆあつスプレッダー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "紅色液壓工具前端分成兩支向外張開的金屬臂，底部連著粗管。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-cutter"
+    },
+    {
+      "id": "fire-ram",
+      "zh": "消防破門器",
+      "en": "fire-ram",
+      "ja": "破壊器具",
+      "reading": "はかいきぐ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "粗壯的紅色金屬圓筒橫放在地，兩端有厚重的黑色撞擊頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-hook",
+      "zh": "消防鉤",
+      "en": "fire-hook",
+      "ja": "消防用フック",
+      "reading": "しょうぼうようフック",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "長木柄頂端接著彎曲的銀灰色金屬鉤，鉤尖朝上並向內彎。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-shovel",
+      "zh": "消防鏟",
+      "en": "fire-shovel",
+      "ja": "消防用シャベル",
+      "reading": "しょうぼうようシャベル",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "長木柄底端裝著寬扁的黑色鏟面，鏟面兩側微微上翹。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-rake",
+      "zh": "消防耙",
+      "en": "fire-rake",
+      "ja": "消防用レーキ",
+      "reading": "しょうぼうようレーキ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "長柄頂端橫接一排粗短金屬齒，齒尖向下排列，形狀清楚俐落。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fire-shovel"
+    },
+    {
+      "id": "fire-saw",
+      "zh": "消防鏈鋸",
+      "en": "fire-saw",
+      "ja": "チェーンソー",
+      "reading": "チェーンソー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "橘紅色機身前方伸出長條鋸板，鋸板邊緣有一圈清楚的齒鏈。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "rescue-basket",
+      "zh": "救援籃",
+      "en": "rescue-basket",
+      "ja": "救助バスケット",
+      "reading": "きゅうじょバスケット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "equipment-room",
+      "spot": "ground",
+      "desc": "橘紅色長橢圓框架籃，側邊有交叉支架，底部是扁平網格。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "oxygen-mask",
+      "zh": "氧氣面罩",
+      "en": "oxygen-mask",
+      "ja": "酸素マスク",
+      "reading": "さんそマスク",
+      "category": "道具",
+      "size": "small",
+      "zone": "equipment-room",
+      "spot": "surface",
+      "desc": "透明杯狀面罩連著一條軟管，邊緣有寬寬的固定帶，旁邊帶有圓形接頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": "breathing-apparatus"
+    },
+    {
+      "id": "radio-console",
+      "zh": "無線電控制台",
+      "en": "radio console",
+      "ja": "無線機",
+      "reading": "むせんき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "dispatch-room",
+      "spot": "surface",
+      "desc": "長方形深色機身上排列數個旋鈕與方形按鍵，前方有小喇叭孔與手持話筒。",
+      "loose": false,
+      "motion": null,
+      "cluster": "radio-microphone"
+    },
+    {
+      "id": "dispatch-console",
+      "zh": "派遣控制台",
+      "en": "dispatch console",
+      "ja": "指令卓",
+      "reading": "しれいしょく",
+      "category": "設施",
+      "size": "medium",
+      "zone": "dispatch-room",
+      "spot": "surface",
+      "desc": "寬大的灰色桌台嵌著一排按鍵、旋鈕和小型喇叭孔，檯面分成幾個操作區。",
+      "loose": false,
+      "motion": null,
+      "cluster": "radio-console"
+    },
+    {
+      "id": "clock-face",
+      "zh": "掛鐘",
+      "en": "wall clock",
+      "ja": "掛け時計",
+      "reading": "かけどけい",
+      "category": "道具",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "wall",
+      "desc": "圓形白色鐘面配深色外框，兩根指針清楚伸向不同方向，沒有文字標記。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "filing-cabinet",
+      "zh": "文件櫃",
+      "en": "filing cabinet",
+      "ja": "書類棚",
+      "reading": "しょるいだな",
+      "category": "設施",
+      "size": "large",
+      "zone": "dispatch-room",
+      "spot": "wallbase",
+      "desc": "高而窄的灰色金屬櫃，正面有數個抽屜，每個抽屜中央都有小把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "siren",
+      "zh": "警報器",
+      "en": "siren",
+      "ja": "サイレン",
+      "reading": "サイレン",
+      "category": "道具",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "wall",
+      "desc": "紅色圓頂罩安在方形底座上，外殼邊緣有一圈深色細縫。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "speaker",
+      "zh": "喇叭",
+      "en": "speaker",
+      "ja": "スピーカー",
+      "reading": "スピーカー",
+      "category": "道具",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "wall",
+      "desc": "黑色方形喇叭正面有一個大型圓形網罩，外框四角微微圓鈍。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "monitor",
+      "zh": "螢幕",
+      "en": "monitor",
+      "ja": "モニター",
+      "reading": "モニター",
+      "category": "道具",
+      "size": "medium",
+      "zone": "dispatch-room",
+      "spot": "surface",
+      "desc": "黑色長方形螢幕立在短底座上，螢幕中央映著簡單的紅藍色塊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-blanket-case",
+      "zh": "消防毯箱",
+      "en": "fire-blanket-case",
+      "ja": "防火毛布ケース",
+      "reading": "ぼうかもうふケース",
+      "category": "道具",
+      "size": "medium",
+      "zone": "dispatch-room",
+      "spot": "wallbase",
+      "desc": "紅色長方形金屬箱，正面有透明窄窗，裡面露出摺疊的黃布。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fire-alarm-panel",
+      "zh": "火警控制盤",
+      "en": "fire-alarm-panel",
+      "ja": "火災報知盤",
+      "reading": "かさいほうちばん",
+      "category": "道具",
+      "size": "medium",
+      "zone": "dispatch-room",
+      "spot": "wall",
+      "desc": "灰色方形面板上有幾顆紅綠圓燈和一個透明小窗，排列清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "desk-phone",
+      "zh": "桌上電話",
+      "en": "desk phone",
+      "ja": "固定電話",
+      "reading": "こていでんわ",
+      "category": "道具",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "surface",
+      "desc": "黑色底座上有斜放的聽筒，前方排列小方形按鍵，旁邊接著捲曲電話線。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "boots",
+      "zh": "雨靴",
+      "en": "boots",
+      "ja": "長靴",
+      "reading": "ながぐつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "dispatch-room",
+      "spot": "ground",
+      "desc": "一雙黃色高筒雨靴並排放著，靴口寬大，黑色厚底和圓潤鞋尖清楚可見。",
+      "loose": false,
+      "motion": null,
+      "cluster": "umbrella"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "ladder",
+      "reason": "id 重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "wheelbarrow",
+      "reason": "中文重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "broom",
+      "reason": "id 重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "bucket",
+      "reason": "id 重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "work-glove",
+      "reason": "中文重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "downspout",
+      "reason": "id 重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "fire-station-hose-hook",
+      "reason": "英文重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "fire-station-gloves",
+      "reason": "英文重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "fire-station-ladder",
+      "reason": "英文重複",
+      "zone": "front-yard"
+    },
+    {
+      "id": "tool-chest",
+      "reason": "中文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "shovel",
+      "reason": "中文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-axe",
+      "reason": "中文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-boot",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-pole",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "tool-chest",
+      "reason": "中文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "safety-cone",
+      "reason": "英文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-axe",
+      "reason": "中文重複",
+      "zone": "garage"
+    },
+    {
+      "id": "work-light",
+      "reason": "id 重複",
+      "zone": "garage"
+    },
+    {
+      "id": "fire-boots",
+      "reason": "英文重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-axe",
+      "reason": "中文重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-boot",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "fire-boot",
+      "reason": "id 重複",
+      "zone": "equipment-room"
+    },
+    {
+      "id": "radio-microphone",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "wall-map",
+      "reason": "英文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "desk-chair",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-gloves",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-boots",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-jacket",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-trousers",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "megaphone",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "binoculars",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "headset",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "computer-monitor",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "keyboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "mouse",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "printer",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "walkie-talkie",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-axe",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "toolbox",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-hose",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "wall-map",
+      "reason": "英文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "whiteboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "keyboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "mouse-device",
+      "reason": "英文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "desk-lamp",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "coffee-cup",
+      "reason": "英文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "chair",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "first-aid-cabinet",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "megaphone",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "clipboard",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-helmet",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-axe",
+      "reason": "英文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "toolbox",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "headset",
+      "reason": "中文重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "map",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "mug",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "pen",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "notepad",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "key",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "flashlight",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "toolbox",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "umbrella",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "coat",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    },
+    {
+      "id": "emergency-light",
+      "reason": "id 重複",
+      "zone": "dispatch-room"
+    }
+  ],
+  "createdAt": "2026-09-23T06:15:43.801Z"
+}

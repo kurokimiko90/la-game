@@ -1,6 +1,6 @@
 {
   "world": {"width": 8800, "height": 5200},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -533,6 +533,60 @@
       "motion": {"flower": "sway", "cloud": "drift", "raindrop": "drift", "wind-sock": "sway", "moss": "sway", "weed": "sway", "work-apron": "sway"},
       "arrange": "auto",
       "terrain": {"color": "#f48fb1", "x0": 6200, "y0": 0, "x1": 8800, "y1": 1300, "zones": [{"id": "entrance", "x0": 6200, "y0": 0, "x1": 7500, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "service-hall", "x0": 7500, "y0": 0, "x1": 8800, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "waiting-area", "x0": 7500, "y0": 650, "x1": 8800, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "sorting-room", "x0": 6200, "y0": 650, "x1": 7500, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}]}
+    },
+    "fire-station": {
+      "name": "消防局",
+      "icon": "fire-engine",
+      "zones": {"front-yard": [6200, 1300, 7500, 1950], "garage": [7500, 1300, 8800, 1950], "equipment-room": [7500, 1950, 8800, 2600], "dispatch-room": [6200, 1950, 7500, 2600]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"front-yard": {"top": 1370, "bottom": 1745}, "garage": {"top": 1540, "bottom": 1930}, "equipment-room": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2455]]}, "dispatch-room": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2332]]}}},
+        "sky-front-yard": {"top": 1450, "bottom": 1600, "zones": ["front-yard"], "layer": 3, "float": 150},
+        "road-front-yard": {"top": 1830, "bottom": 1900, "zones": ["front-yard"], "inset": 20},
+        "wall-garage": {"levels": [1440], "zones": ["garage"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-garage": {"levels": [1478], "zones": ["garage"], "inset": 50},
+        "wall-equipment-room": {"levels": [2090], "zones": ["equipment-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-equipment-room": {"levels": [2128], "zones": ["equipment-room"], "inset": 50},
+        "surface-equipment-room": {"levels": [2260, 2355], "zones": ["equipment-room"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2425},
+        "wall-dispatch-room": {"levels": [2090], "zones": ["dispatch-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-dispatch-room": {"levels": [2128], "zones": ["dispatch-room"], "inset": 50},
+        "surface-dispatch-room": {"levels": [2260], "zones": ["dispatch-room"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 2302}
+      },
+      "place": {
+        "fire-engine": "road-front-yard",
+        "fire-station-flag": "sky-front-yard",
+        "smoke": "sky-front-yard",
+        "fire-engine-door": "wallbase-garage",
+        "side-mirror": "wallbase-garage",
+        "hose-cabinet": "wallbase-garage",
+        "breathing-apparatus": "surface-equipment-room",
+        "fire-mask": "surface-equipment-room",
+        "fire-radio": "surface-equipment-room",
+        "radio-microphone": "surface-equipment-room",
+        "fire-helmet-lamp": "surface-equipment-room",
+        "fire-helmet-shield": "surface-equipment-room",
+        "fire-hood": "surface-equipment-room",
+        "fire-jacket": "surface-equipment-room",
+        "fire-trousers": "surface-equipment-room",
+        "fire-belt": "surface-equipment-room",
+        "carabiner": "surface-equipment-room",
+        "oxygen-mask": "surface-equipment-room",
+        "radio-console": "surface-dispatch-room",
+        "dispatch-console": "surface-dispatch-room",
+        "clock-face": "wall-dispatch-room",
+        "filing-cabinet": "wallbase-dispatch-room",
+        "siren": "wall-dispatch-room",
+        "speaker": "wall-dispatch-room",
+        "monitor": "surface-dispatch-room",
+        "fire-blanket-case": "wallbase-dispatch-room",
+        "fire-alarm-panel": "wall-dispatch-room",
+        "desk-phone": "surface-dispatch-room"
+      },
+      "clusters": [["fire-engine-seat", "steering-wheel"], ["hubcap", "spare-wheel"], ["hose-bridge", "fire-nozzle"], ["fire-harness", "fire-rope"], ["fire-cutter", "fire-spreader"], ["fire-shovel", "fire-rake"]],
+      "loose": ["hose-nozzle", "fire-helmet", "axe", "fire-bucket", "fire-extinguisher-hose", "toolbox", "hose-coupling", "fire-station-wrench", "fire-station-cone", "fire-boot", "fire-blanket", "wheel-wrench", "fire-nozzle", "fire-gloves", "fire-goggles", "fire-helmet-visor", "radio-microphone", "fire-rope", "carabiner"],
+      "noFlip": [],
+      "motion": {"fire-engine": "wobble", "fire-station-flag": "sway", "smoke": "drift", "fire-hood": "sway", "fire-jacket": "sway", "fire-trousers": "sway"},
+      "arrange": "auto",
+      "terrain": {"color": "#90caf9", "x0": 6200, "y0": 1300, "x1": 8800, "y1": 2600, "zones": [{"id": "front-yard", "x0": 6200, "y0": 1300, "x1": 7500, "y1": 1950, "indoor": false, "floor": "concrete", "road": {"y0": 1760, "y1": 1920}}, {"id": "garage", "x0": 7500, "y0": 1300, "x1": 8800, "y1": 1950, "indoor": true, "floor": "tile", "wallBase": 1480}, {"id": "equipment-room", "x0": 7500, "y0": 1950, "x1": 8800, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}, {"id": "dispatch-room", "x0": 6200, "y0": 1950, "x1": 7500, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}]}
     }
   }
 }
