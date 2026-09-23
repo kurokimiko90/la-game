@@ -1,0 +1,448 @@
+{
+  "en": {
+    "paving-stone": {
+      "heard": "Paving stone.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "street-sign": {
+      "heard": "Street sign.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "flour-sack": {
+      "heard": "Flower Sack.",
+      "score": 0.8,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "breadbasket": {
+      "heard": "Breadbasket.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-loaf": {
+      "heard": "Bread loaf.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bakery-tray": {
+      "heard": "Baking tray.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "cooling-rack": {
+      "heard": "Cooling rack.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-roll": {
+      "heard": "Bread roll.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "baguette": {
+      "heard": "Baguette.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bagel": {
+      "heard": "Bagel.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-slice": {
+      "heard": "Bread slice.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "cinnamon-roll": {
+      "heard": "Cinnamon roll.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "danish-pastry": {
+      "heard": "Danish pastry.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "pain-au-chocolat": {
+      "heard": "Pain au chocolat.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "brioche": {
+      "heard": "Brioche.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "pita": {
+      "heard": "PETA",
+      "score": 0.75,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "focaccia": {
+      "heard": "Focaccia.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "rye-bread": {
+      "heard": "Rye bread.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "breadstick": {
+      "heard": "Breadstick.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "cheese-bread": {
+      "heard": "Cheese bread.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "garlic-bread": {
+      "heard": "Garlic bread.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "butter-knife": {
+      "heard": "Butter knife.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "wheat-stalk": {
+      "heard": "Wheatstock.",
+      "score": 0.8,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "maple-leaf": {
+      "heard": "Maple Leaf.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-spoon": {
+      "heard": "Wooden spoon.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "oven-mitt": {
+      "heard": "Oven mitt.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "flour-bowl": {
+      "heard": "Mixing bowl.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "measuring-cup": {
+      "heard": "Measuring cup.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "pastry-brush": {
+      "heard": "Pastry brush.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-knife": {
+      "heard": "Bread knife.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "oven-thermometer": {
+      "heard": "Oven thermometer.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "yeast-jar": {
+      "heard": "Yeast Jar",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "pretzel-bun": {
+      "heard": "Pretzel bun.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-crate": {
+      "heard": "Breadcrate",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-clip": {
+      "heard": "Bread clip.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "highchair-cushion": {
+      "heard": "High chair cushion.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "dining-tray": {
+      "heard": "Dinner plate.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "side-plate": {
+      "heard": "Side plate.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "soup-bowl": {
+      "heard": "Soup bowl.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "teaspoon": {
+      "heard": "teaspoon.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "fork-holder": {
+      "heard": "Utensil holder.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "cream-pitcher": {
+      "heard": "Cream Pitcher.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "pepper-grinder": {
+      "heard": "Pepper Grinder",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "table-number-stand": {
+      "heard": "Table stand.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bread-plate": {
+      "heard": "Bread plate.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "dinner-knife": {
+      "heard": "Dinner knife.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "dinner-spoon": {
+      "heard": "Dinner spoon.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "drinking-glass": {
+      "heard": "Drinking glass.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-printer": {
+      "heard": "Receipt printer.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "cake-slice": {
+      "heard": "Cake Slice.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "pastry-tray": {
+      "heard": "Pastry tray.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "card-terminal": {
+      "heard": "Card terminal.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "dining-chair": {
+      "heard": "Dining chair.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "high-chair": {
+      "heard": "Hi, chair.",
+      "score": 0.78,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "bench-seat": {
+      "heard": "Bench seat.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "baby-stroller": {
+      "heard": "Baby stroller.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "serving-cart": {
+      "heard": "Serving Cart",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "highchair-tray": {
+      "heard": "Hi, Chair Tray.",
+      "score": 0.85,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "dining-table": {
+      "heard": "Dining table.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "highchair-footrest": {
+      "heard": "High chair footrest.",
+      "score": 1,
+      "take": "en-1790147565153.aac",
+      "account": "chatgpt1"
+    },
+    "wheat-flour": {
+      "heard": "Flour?",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "bread-crumb": {
+      "heard": "Breadcrumb.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "poppy-seed-roll": {
+      "heard": "Poppy Seed Roll",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "jam-jar": {
+      "heard": "Jam jar.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "honey-jar": {
+      "heard": "Honey jar.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "butter-dish": {
+      "heard": "Butter dish.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "cheese-wedge": {
+      "heard": "Cheese wedge.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "olive": {
+      "heard": "Olive.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "garlic-clove": {
+      "heard": "Garlic clove",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "walnut": {
+      "heard": "Walnut",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "sesame-seeds": {
+      "heard": "Sesame seeds.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "cash-drawer": {
+      "heard": "Cash drawer.",
+      "score": 1,
+      "take": "en-1790147824290.aac",
+      "account": "chatgpt1"
+    },
+    "hand-broom": {
+      "heard": "Hand broom.",
+      "score": 1,
+      "take": "en-1790147902024.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-bag": {
+      "heard": "Shopping bag.",
+      "score": 1,
+      "take": "en-1790147902024.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

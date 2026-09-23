@@ -1,6 +1,6 @@
 {
   "world": {"width": 8800, "height": 5200},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -587,6 +587,69 @@
       "motion": {"fire-engine": "wobble", "fire-station-flag": "sway", "smoke": "drift", "fire-hood": "sway", "fire-jacket": "sway", "fire-trousers": "sway"},
       "arrange": "auto",
       "terrain": {"color": "#90caf9", "x0": 6200, "y0": 1300, "x1": 8800, "y1": 2600, "zones": [{"id": "front-yard", "x0": 6200, "y0": 1300, "x1": 7500, "y1": 1950, "indoor": false, "floor": "concrete", "road": {"y0": 1760, "y1": 1920}}, {"id": "garage", "x0": 7500, "y0": 1300, "x1": 8800, "y1": 1950, "indoor": true, "floor": "tile", "wallBase": 1480}, {"id": "equipment-room", "x0": 7500, "y0": 1950, "x1": 8800, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}, {"id": "dispatch-room", "x0": 6200, "y0": 1950, "x1": 7500, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}]}
+    },
+    "bakery": {
+      "name": "麵包店",
+      "icon": "dining-table",
+      "zones": {"entrance": [6200, 2600, 7500, 3250], "display-area": [7500, 2600, 8800, 3250], "seating-area": [7500, 3250, 8800, 3900], "checkout-counter": [6200, 3250, 7500, 3900]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 2670, "bottom": 3230}, "display-area": {"top": 2840, "bottom": 3230, "gaps": [[2790, 3105]]}, "seating-area": {"top": 3490, "bottom": 3880, "gaps": [[3440, 3660]]}, "checkout-counter": {"top": 3490, "bottom": 3880, "gaps": [[3440, 3632]]}}},
+        "sky-entrance": {"top": 2750, "bottom": 2900, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-display-area": {"levels": [2740], "zones": ["display-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-display-area": {"levels": [2778], "zones": ["display-area"], "inset": 50},
+        "surface-display-area": {"levels": [2910, 3005], "zones": ["display-area"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 3075},
+        "wall-seating-area": {"levels": [3390], "zones": ["seating-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-seating-area": {"levels": [3428], "zones": ["seating-area"], "inset": 50},
+        "surface-seating-area": {"levels": [3560], "zones": ["seating-area"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 3630},
+        "wall-checkout-counter": {"levels": [3390], "zones": ["checkout-counter"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-checkout-counter": {"levels": [3428], "zones": ["checkout-counter"], "inset": 50},
+        "surface-checkout-counter": {"levels": [3560], "zones": ["checkout-counter"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 3602}
+      },
+      "place": {
+        "bread-roll": "surface-display-area",
+        "baguette": "surface-display-area",
+        "bagel": "surface-display-area",
+        "bread-slice": "surface-display-area",
+        "cinnamon-roll": "surface-display-area",
+        "danish-pastry": "surface-display-area",
+        "pain-au-chocolat": "surface-display-area",
+        "brioche": "surface-display-area",
+        "pita": "surface-display-area",
+        "focaccia": "surface-display-area",
+        "rye-bread": "surface-display-area",
+        "breadstick": "surface-display-area",
+        "cheese-bread": "surface-display-area",
+        "garlic-bread": "surface-display-area",
+        "butter-knife": "surface-display-area",
+        "jam-jar": "surface-display-area",
+        "honey-jar": "surface-display-area",
+        "butter-dish": "surface-display-area",
+        "cheese-wedge": "surface-display-area",
+        "highchair-cushion": "surface-seating-area",
+        "dining-tray": "surface-seating-area",
+        "side-plate": "surface-seating-area",
+        "soup-bowl": "surface-seating-area",
+        "teaspoon": "surface-seating-area",
+        "fork-holder": "surface-seating-area",
+        "cream-pitcher": "surface-seating-area",
+        "pepper-grinder": "surface-seating-area",
+        "table-number-stand": "surface-seating-area",
+        "bread-plate": "surface-seating-area",
+        "dinner-knife": "surface-seating-area",
+        "dinner-spoon": "surface-seating-area",
+        "drinking-glass": "surface-seating-area",
+        "receipt-printer": "surface-checkout-counter",
+        "cash-drawer": "surface-checkout-counter",
+        "cake-slice": "surface-checkout-counter",
+        "pastry-tray": "surface-checkout-counter",
+        "card-terminal": "surface-checkout-counter"
+      },
+      "clusters": [["breadbasket", "bread-loaf", "bakery-tray", "bread-crumb", "poppy-seed-roll"], ["flour-sack", "wheat-flour"], ["dining-table", "dining-chair", "high-chair", "bench-seat"]],
+      "loose": ["wheat-stalk", "maple-leaf", "bread-loaf", "wooden-spoon", "oven-mitt", "flour-bowl", "measuring-cup", "pastry-brush", "bread-knife", "oven-thermometer", "yeast-jar", "hand-broom", "wheat-flour", "shopping-bag", "bread-crumb", "pretzel-bun", "poppy-seed-roll", "olive", "garlic-clove", "walnut", "sesame-seeds", "bread-clip"],
+      "noFlip": [],
+      "motion": {"wheat-stalk": "sway"},
+      "arrange": "auto",
+      "terrain": {"color": "#bcaaa4", "x0": 6200, "y0": 2600, "x1": 8800, "y1": 3900, "zones": [{"id": "entrance", "x0": 6200, "y0": 2600, "x1": 7500, "y1": 3250, "indoor": false, "floor": "paving"}, {"id": "display-area", "x0": 7500, "y0": 2600, "x1": 8800, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "seating-area", "x0": 7500, "y0": 3250, "x1": 8800, "y1": 3900, "indoor": true, "floor": "wood", "wallBase": 3430}, {"id": "checkout-counter", "x0": 6200, "y0": 3250, "x1": 7500, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}
     }
   }
 }

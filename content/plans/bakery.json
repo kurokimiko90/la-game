@@ -1,0 +1,1750 @@
+{
+  "id": "bakery",
+  "name": "麵包店",
+  "zones": [
+    {
+      "id": "entrance",
+      "name": "入口",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "display-area",
+      "name": "麵包展台",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "stand"
+    },
+    {
+      "id": "seating-area",
+      "name": "用餐區",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "table"
+    },
+    {
+      "id": "checkout-counter",
+      "name": "結帳區",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "counter"
+    }
+  ],
+  "slot": {
+    "x": 6200,
+    "y": 2600
+  },
+  "colorIndex": 8,
+  "icon": "dining-table",
+  "elements": [
+    {
+      "id": "paving-stone",
+      "zh": "鋪路石",
+      "en": "paving stone",
+      "ja": "敷石",
+      "reading": "しきいし",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "灰色扁平方石，表面粗糙帶淡淡斑點，邊緣整齊，單獨鋪在人行道上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "street-sign",
+      "zh": "街道指示牌",
+      "en": "street sign",
+      "ja": "道路標識",
+      "reading": "どうろひょうしき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "固定在細柱上的綠色長方形牌面，輪廓清楚，表面完全空白沒有文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "flour-sack",
+      "zh": "麵粉袋",
+      "en": "flour sack",
+      "ja": "小麦粉の袋",
+      "reading": "こむぎこのふくろ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "米白色鼓起的布袋，袋口以繩子束緊，表面有柔軟的摺痕且沒有標記。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wheat-stalk",
+      "zh": "麥穗",
+      "en": "wheat stalk",
+      "ja": "小麦の穂",
+      "reading": "こむぎのほ",
+      "category": "植物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "金黃色細長麥稈頂端長著一串尖尖穀粒，幾片窄葉向兩側伸展。",
+      "loose": true,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "maple-leaf",
+      "zh": "楓葉",
+      "en": "maple leaf",
+      "ja": "カエデの葉",
+      "reading": "カエデのは",
+      "category": "植物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "橘紅色掌形葉片有五個尖角，中央細葉脈分岔清楚，單片落在地上。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "breadbasket",
+      "zh": "麵包籃",
+      "en": "breadbasket",
+      "ja": "パンかご",
+      "reading": "パンかご",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺棕色編織籃，橢圓形籃口配兩側短提把，籃內放著幾個圓麵包。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bread-loaf",
+      "zh": "長條麵包",
+      "en": "bread loaf",
+      "ja": "バゲット",
+      "reading": "バゲット",
+      "category": "食物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "金黃色的長條麵包，表面有幾道斜切紋，兩端略尖，外皮帶有烘烤色澤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "breadbasket"
+    },
+    {
+      "id": "bakery-tray",
+      "zh": "烤盤",
+      "en": "baking tray",
+      "ja": "天板",
+      "reading": "てんばん",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "扁平的深灰色長方形金屬盤，四周有低矮凸起的邊框。",
+      "loose": false,
+      "motion": null,
+      "cluster": "breadbasket"
+    },
+    {
+      "id": "wooden-spoon",
+      "zh": "木匙",
+      "en": "wooden spoon",
+      "ja": "木べら",
+      "reading": "きべら",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺棕色長柄木匙，匙面寬而扁，柄端圓潤，木紋簡單清楚。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bakery-tray"
+    },
+    {
+      "id": "oven-mitt",
+      "zh": "隔熱手套",
+      "en": "oven mitt",
+      "ja": "鍋つかみ",
+      "reading": "なべつかみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "紅色厚布手套，拇指側突出，掌面有簡單的格紋縫線。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bakery-tray"
+    },
+    {
+      "id": "flour-bowl",
+      "zh": "麵粉碗",
+      "en": "mixing bowl",
+      "ja": "ボウル",
+      "reading": "ボウル",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "圓口的淺藍色大碗，碗身向下收窄，內部盛著白色粉末。",
+      "loose": true,
+      "motion": null,
+      "cluster": "rolling-pin"
+    },
+    {
+      "id": "measuring-cup",
+      "zh": "量杯",
+      "en": "measuring cup",
+      "ja": "計量カップ",
+      "reading": "けいりょうカップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "透明的矮圓杯身配一個短把手，杯口寬，側面沒有刻度或文字。",
+      "loose": true,
+      "motion": null,
+      "cluster": "flour-bowl"
+    },
+    {
+      "id": "pastry-brush",
+      "zh": "烘焙刷",
+      "en": "pastry brush",
+      "ja": "はけ",
+      "reading": "はけ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "短木柄前端排著一束淡黃色刷毛，外形像小型油漆刷，沒有標記。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bakery-tray"
+    },
+    {
+      "id": "cooling-rack",
+      "zh": "網架",
+      "en": "cooling rack",
+      "ja": "ケーキクーラー",
+      "reading": "ケーキクーラー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "銀灰色金屬網架，長方形外框內交錯排列細直線，四角有短腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bakery-tray"
+    },
+    {
+      "id": "bread-knife",
+      "zh": "麵包刀",
+      "en": "bread knife",
+      "ja": "パン切り包丁",
+      "reading": "パンきりぼうちょう",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "長而窄的銀色刀身帶有鋸齒邊，黑色握柄呈圓角長形。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bread-loaf"
+    },
+    {
+      "id": "oven-thermometer",
+      "zh": "烤箱溫度計",
+      "en": "oven thermometer",
+      "ja": "オーブン温度計",
+      "reading": "オーブンおんどけい",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "圓形銀色金屬外殼，中央有一根細指針和幾圈刻線，沒有文字或數字。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bakery-tray"
+    },
+    {
+      "id": "yeast-jar",
+      "zh": "酵母罐",
+      "en": "yeast jar",
+      "ja": "イーストのびん",
+      "reading": "イーストのびん",
+      "category": "食物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "矮胖透明玻璃罐裝著米黃色顆粒，罐口旋有深色圓蓋，外壁沒有標籤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "flour-bowl"
+    },
+    {
+      "id": "hand-broom",
+      "zh": "小掃把",
+      "en": "hand broom",
+      "ja": "小ぼうき",
+      "reading": "こぼうき",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "短木柄接著扇形金黃色刷草，柄尾圓鈍，刷毛整齊朝外張開。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wheat-flour",
+      "zh": "麵粉",
+      "en": "flour",
+      "ja": "小麦粉",
+      "reading": "こむぎこ",
+      "category": "食物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一小堆白色細粉散在地面，邊緣鬆散不規則，表面有柔和的粉末質感。",
+      "loose": true,
+      "motion": null,
+      "cluster": "flour-sack"
+    },
+    {
+      "id": "shopping-bag",
+      "zh": "購物袋",
+      "en": "shopping bag",
+      "ja": "買い物袋",
+      "reading": "かいものぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺棕色紙袋呈長方形，頂端有兩個拱形提把，袋口微微敞開。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bread-loaf"
+    },
+    {
+      "id": "bread-crumb",
+      "zh": "麵包屑",
+      "en": "bread crumb",
+      "ja": "パンくず",
+      "reading": "パンクズ",
+      "category": "食物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "幾塊不規則的淡金黃色小碎粒，邊緣鬆散，散在地面上。",
+      "loose": true,
+      "motion": null,
+      "cluster": "breadbasket"
+    },
+    {
+      "id": "pretzel-bun",
+      "zh": "扭結麵包",
+      "en": "pretzel bun",
+      "ja": "プレッツェルパン",
+      "reading": "プレッツェルパン",
+      "category": "食物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "圓潤的深棕色麵包表面有三道交疊隆起，頂部點綴幾粒粗鹽。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bread-loaf"
+    },
+    {
+      "id": "poppy-seed-roll",
+      "zh": "罌粟籽麵包捲",
+      "en": "poppy seed roll",
+      "ja": "ケシの実パン",
+      "reading": "ケシノミパン",
+      "category": "食物",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "短圓的金黃色麵包捲，表面密布深色小籽，兩端略微收窄。",
+      "loose": true,
+      "motion": null,
+      "cluster": "breadbasket"
+    },
+    {
+      "id": "bread-roll",
+      "zh": "餐包",
+      "en": "bread roll",
+      "ja": "ロールパン",
+      "reading": "ロールパン",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "圓鼓鼓的金黃色小麵包，表皮光滑，頂部有一道淺淺的切痕。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "baguette",
+      "zh": "法國麵包",
+      "en": "baguette",
+      "ja": "バゲット",
+      "reading": "バゲット",
+      "category": "食物",
+      "size": "medium",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "細長的金褐色麵包，表面有幾道斜切口，兩端略尖。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bagel",
+      "zh": "貝果",
+      "en": "bagel",
+      "ja": "ベーグル",
+      "reading": "ベーグル",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "厚實的圓環狀麵包，外皮呈深金黃色，中間有清楚的圓孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bread-slice",
+      "zh": "吐司片",
+      "en": "bread slice",
+      "ja": "食パン",
+      "reading": "しょくパン",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "方形厚片麵包，四角圓潤，外圈是金褐色麵包皮，中央淡黃。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "cinnamon-roll",
+      "zh": "肉桂捲",
+      "en": "cinnamon roll",
+      "ja": "シナモンロール",
+      "reading": "シナモンロール",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "圓形螺旋麵包，層層捲起的深褐色紋路清楚，頂上有白色糖霜。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "danish-pastry",
+      "zh": "丹麥酥",
+      "en": "danish pastry",
+      "ja": "デニッシュ",
+      "reading": "デニッシュ",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "方形金黃色酥皮點心，邊緣層層摺起，中央放著一顆紅色果實。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pain-au-chocolat",
+      "zh": "巧克力可頌",
+      "en": "pain au chocolat",
+      "ja": "パン・オ・ショコラ",
+      "reading": "パン・オ・ショコラ",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "長方形的金黃酥皮麵包，兩端露出深褐色巧克力，外層有清晰薄片。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "brioche",
+      "zh": "布里歐麵包",
+      "en": "brioche",
+      "ja": "ブリオッシュ",
+      "reading": "ブリオッシュ",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "圓頂小麵包呈亮金黃色，上方鼓起一個小圓球，表面刷得發亮。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pita",
+      "zh": "口袋餅",
+      "en": "pita",
+      "ja": "ピタパン",
+      "reading": "ピタパン",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "圓扁的淡褐色麵包，側邊有一道縫口，中央微微鼓起像小口袋。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "focaccia",
+      "zh": "佛卡夏",
+      "en": "focaccia",
+      "ja": "フォカッチャ",
+      "reading": "フォカッチャ",
+      "category": "食物",
+      "size": "medium",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "長方形扁麵包呈金黃色，表面有凹點，散著綠色香草葉與橄欖。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "rye-bread",
+      "zh": "黑麥麵包",
+      "en": "rye bread",
+      "ja": "ライ麦パン",
+      "reading": "ライむぎパン",
+      "category": "食物",
+      "size": "medium",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "圓形深褐色麵包，表皮粗糙，頂部撒著淺色籽粒，邊緣厚實。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "breadstick",
+      "zh": "麵包棒",
+      "en": "breadstick",
+      "ja": "グリッシーニ",
+      "reading": "グリッシーニ",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "細長筆直的金黃色烤麵包棒，兩端略尖，表面帶有烘烤斑點。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "cheese-bread",
+      "zh": "起司麵包",
+      "en": "cheese bread",
+      "ja": "チーズパン",
+      "reading": "チーズパン",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "圓頂小麵包呈金黃色，頂部覆著融化的橘黃色起司，邊緣微焦。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garlic-bread",
+      "zh": "蒜香麵包",
+      "en": "garlic bread",
+      "ja": "ガーリックトースト",
+      "reading": "ガーリックトースト",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "短片狀金黃色麵包，表面有綠色香草碎點，邊緣烤成深褐色。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "butter-knife",
+      "zh": "奶油刀",
+      "en": "butter-knife",
+      "ja": "バターナイフ",
+      "reading": "バターナイフ",
+      "category": "道具",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "短而圓鈍的銀色刀身連著簡單刀柄，外形扁平，刀面沒有花紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bread-slice"
+    },
+    {
+      "id": "jam-jar",
+      "zh": "果醬罐",
+      "en": "jam-jar",
+      "ja": "ジャムの瓶",
+      "reading": "ジャムのびん",
+      "category": "道具",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "透明矮玻璃罐裝著紅色果醬，瓶口旋著金屬圓蓋，罐身沒有標籤。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bread-roll"
+    },
+    {
+      "id": "honey-jar",
+      "zh": "蜂蜜罐",
+      "en": "honey-jar",
+      "ja": "はちみつの瓶",
+      "reading": "はちみつのびん",
+      "category": "道具",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "小巧透明玻璃罐盛著金黃色蜂蜜，瓶口有旋蓋，罐身圓潤無字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "danish-pastry"
+    },
+    {
+      "id": "butter-dish",
+      "zh": "奶油盒",
+      "en": "butter-dish",
+      "ja": "バターケース",
+      "reading": "バターケース",
+      "category": "道具",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "淺色長方形小盒裡放著一塊淡黃色奶油，上方配有透明圓弧盒蓋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bread-slice"
+    },
+    {
+      "id": "cheese-wedge",
+      "zh": "起司楔",
+      "en": "cheese-wedge",
+      "ja": "チーズのくさび",
+      "reading": "チーズのくさび",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "surface",
+      "desc": "一塊黃色三角楔形起司，側面有幾個圓孔，切面平整清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bagel"
+    },
+    {
+      "id": "olive",
+      "zh": "橄欖",
+      "en": "olive",
+      "ja": "オリーブ",
+      "reading": "オリーブ",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "ground",
+      "desc": "幾顆深綠色橢圓橄欖散在地面，表皮光滑，部分帶著短梗。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garlic-clove",
+      "zh": "蒜瓣",
+      "en": "garlic-clove",
+      "ja": "にんにく",
+      "reading": "にんにく",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "ground",
+      "desc": "幾瓣奶白色蒜瓣散落地上，形狀彎彎尖尖，表面帶淡紫色薄皮。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "walnut",
+      "zh": "核桃",
+      "en": "walnut",
+      "ja": "くるみ",
+      "reading": "くるみ",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "ground",
+      "desc": "幾顆棕色核桃散落在地上，外殼呈圓橢形，表面有深刻皺褶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sesame-seeds",
+      "zh": "芝麻",
+      "en": "sesame-seeds",
+      "ja": "ごま",
+      "reading": "ごま",
+      "category": "食物",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "ground",
+      "desc": "一小撮乳白與淡褐色芝麻粒散在地面，顆粒細小，形狀橢圓。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bread-clip",
+      "zh": "封口夾",
+      "en": "bread-clip",
+      "ja": "バッグ・クロージャー",
+      "reading": "バッグ・クロージャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "display-area",
+      "spot": "ground",
+      "desc": "扁平小塑膠夾呈白色方形，中央有短突片，旁邊落著一段細鐵絲。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bread-crate",
+      "zh": "麵包周轉箱",
+      "en": "bread-crate",
+      "ja": "パン用コンテナ",
+      "reading": "パンようコンテナ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "display-area",
+      "spot": "ground",
+      "desc": "棕色長方形木製周轉箱，四角有直立板條，側面留有兩個提手孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dining-table",
+      "zh": "餐桌",
+      "en": "dining table",
+      "ja": "ダイニングテーブル",
+      "reading": "ダイニングテーブル",
+      "category": "設施",
+      "size": "large",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "寬長的棕色木桌面下方有四根直立桌腳，桌面平整，沒有任何文字或裝飾。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dining-chair",
+      "zh": "餐椅",
+      "en": "dining chair",
+      "ja": "ダイニングチェア",
+      "reading": "ダイニングチェア",
+      "category": "設施",
+      "size": "medium",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "棕色木製椅面連著方形靠背，四根細直椅腳落地，外形簡單清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "high-chair",
+      "zh": "兒童餐椅",
+      "en": "high chair",
+      "ja": "ベビーチェア",
+      "reading": "ベビーチェア",
+      "category": "設施",
+      "size": "medium",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "小型木製高椅有方形椅面、短靠背和四根長椅腳，兩側帶有扶手。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "bench-seat",
+      "zh": "長凳",
+      "en": "bench seat",
+      "ja": "ベンチシート",
+      "reading": "ベンチシート",
+      "category": "設施",
+      "size": "large",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "細長的棕色木製座面靠著後牆，底下有兩組粗短支架，沒有靠背。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "baby-stroller",
+      "zh": "嬰兒推車",
+      "en": "baby stroller",
+      "ja": "ベビーカー",
+      "reading": "ベビーカー",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "深色車架支撐圓弧形布篷和座位，底下有四個小輪，側面露出推把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "serving-cart",
+      "zh": "送餐推車",
+      "en": "serving cart",
+      "ja": "配膳ワゴン",
+      "reading": "はいぜんワゴン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "窄長的金屬推車有兩層矩形平台，四角立柱連著下方的小輪。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "highchair-cushion",
+      "zh": "兒童椅墊",
+      "en": "high chair cushion",
+      "ja": "ベビーチェアクッション",
+      "reading": "ベビーチェアクッション",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "柔軟的方形淺黃色坐墊，四角圓潤，表面有細緻布紋和短綁帶。",
+      "loose": false,
+      "motion": null,
+      "cluster": "high-chair"
+    },
+    {
+      "id": "dining-tray",
+      "zh": "餐盤",
+      "en": "dinner plate",
+      "ja": "大皿",
+      "reading": "おおざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "白色圓盤中央平坦，外圈微微向上翹起，盤面沒有圖案或文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "side-plate",
+      "zh": "小盤子",
+      "en": "side plate",
+      "ja": "取り皿",
+      "reading": "とりざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "小巧的白色圓盤有淺淺的凹面和薄盤沿，放在大盤旁邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-tray"
+    },
+    {
+      "id": "soup-bowl",
+      "zh": "湯碗",
+      "en": "soup bowl",
+      "ja": "スープボウル",
+      "reading": "スープボウル",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "圓形白瓷碗口寬、底部收窄，碗壁平滑，正面看得到深色內沿。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "teaspoon",
+      "zh": "茶匙",
+      "en": "teaspoon",
+      "ja": "ティースプーン",
+      "reading": "ティースプーン",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "小巧銀色湯匙有圓橢圓形匙面，接著一根短而細的直柄。",
+      "loose": false,
+      "motion": null,
+      "cluster": "soup-bowl"
+    },
+    {
+      "id": "fork-holder",
+      "zh": "餐具筒",
+      "en": "utensil holder",
+      "ja": "カトラリースタンド",
+      "reading": "カトラリースタンド",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "銀色圓筒容器上緣敞開，筒身有幾道直向鏤空，插著餐具。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "cream-pitcher",
+      "zh": "奶精壺",
+      "en": "cream pitcher",
+      "ja": "ミルクピッチャー",
+      "reading": "ミルクピッチャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "白色小壺有圓肚、短尖嘴和彎曲把手，壺口上方敞開。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "pepper-grinder",
+      "zh": "胡椒研磨器",
+      "en": "pepper grinder",
+      "ja": "ペッパーミル",
+      "reading": "ペッパーミル",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "透明短圓筒裝著深色顆粒，頂端有黑色旋轉帽，外形細長。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "table-number-stand",
+      "zh": "桌牌座",
+      "en": "table stand",
+      "ja": "テーブルスタンド",
+      "reading": "テーブルスタンド",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "小型金屬底座托著空白直立卡片，卡面純色，不含任何文字或數字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "bread-plate",
+      "zh": "麵包盤",
+      "en": "bread plate",
+      "ja": "パン皿",
+      "reading": "パンざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "淺棕色小圓盤上放著一片金黃色吐司，盤沿簡潔，沒有花紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "dinner-knife",
+      "zh": "餐刀",
+      "en": "dinner knife",
+      "ja": "テーブルナイフ",
+      "reading": "テーブルナイフ",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "窄長銀灰色刀身接著圓弧握柄，刀背平直、刀尖微圓，平放在長桌上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "dinner-spoon",
+      "zh": "餐匙",
+      "en": "dinner spoon",
+      "ja": "テーブルスプーン",
+      "reading": "テーブルスプーン",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "銀灰色細柄連著橢圓形匙面，匙面朝上放在桌面，輪廓簡潔而清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "drinking-glass",
+      "zh": "玻璃杯",
+      "en": "drinking glass",
+      "ja": "コップ",
+      "reading": "コップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "surface",
+      "desc": "透明的直筒玻璃杯，杯口呈橢圓形，厚實圓底帶淡藍色反光，放在桌面上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dining-table"
+    },
+    {
+      "id": "highchair-footrest",
+      "zh": "兒童餐椅腳踏板",
+      "en": "high chair footrest",
+      "ja": "ハイチェアの足置き",
+      "reading": "ハイチェアのあしおき",
+      "category": "設施",
+      "size": "small",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "兒童餐椅下方的扁平橫板，木色板面由兩側短支架托住，靠近椅腳放置。",
+      "loose": false,
+      "motion": null,
+      "cluster": "high-chair"
+    },
+    {
+      "id": "highchair-tray",
+      "zh": "兒童餐椅托盤",
+      "en": "highchair tray",
+      "ja": "ベビーチェアのトレイ",
+      "reading": "ベビーチェアのトレイ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "seating-area",
+      "spot": "ground",
+      "desc": "淺灰色弧形塑膠托盤，前緣略高，兩側有固定卡榫。",
+      "loose": false,
+      "motion": null,
+      "cluster": "high-chair"
+    },
+    {
+      "id": "receipt-printer",
+      "zh": "收據印表機",
+      "en": "receipt printer",
+      "ja": "レシートプリンター",
+      "reading": "レシートプリンター",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "矮胖的白色方盒，頂部開著一條黑色出紙縫，露出一小截空白紙卷。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "cash-drawer",
+      "zh": "錢箱",
+      "en": "cash drawer",
+      "ja": "キャッシュドロワー",
+      "reading": "キャッシュドロワー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "扁平的深灰色金屬抽屜，正面有短把手，拉開後可見分隔成格的內槽。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "cake-slice",
+      "zh": "蛋糕切片",
+      "en": "cake slice",
+      "ja": "ケーキサーバー",
+      "reading": "ケーキサーバー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "銀色扁平三角鏟面接著細長握柄，鏟面邊緣平滑，柄端略微圓鈍。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cake"
+    },
+    {
+      "id": "pastry-tray",
+      "zh": "糕點盤",
+      "en": "pastry tray",
+      "ja": "ペストリートレー",
+      "reading": "ペストリートレー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "淺銀色長方形金屬托盤，四角圓滑，盤面平整並有低矮凸起的邊緣。",
+      "loose": false,
+      "motion": null,
+      "cluster": "muffin"
+    },
+    {
+      "id": "card-terminal",
+      "zh": "刷卡機",
+      "en": "card terminal",
+      "ja": "カード端末",
+      "reading": "カードたんまつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "小巧的深灰色斜面機器，面板上有一排彩色按鍵，頂端有感應卡片的平面區。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "brick",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "drain-grate",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "downspout",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "gutter",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "curb",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "speed-bump",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-mirror",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "utility-pole",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-meter",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "streetlight",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-cone",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "delivery-van",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "scooter",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "handcart",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wooden-crate",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "rolling-pin",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "feather",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "paper-bag",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "rolling-pin",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "whisk",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "apron",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "rolling-cart",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wooden-crate",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "rolling-pin",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wheat-ear",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "pretzel",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "baking-sheet",
+      "reason": "中文重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "wire-rack",
+      "reason": "中文重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "bread-knife",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "oven-mitt",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "flour-sack",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "wooden-spoon",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "rolling-pin",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "pastry-brush",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "measuring-cup",
+      "reason": "id 重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "bread-basket",
+      "reason": "中文重複",
+      "zone": "display-area"
+    },
+    {
+      "id": "trash-bin",
+      "reason": "中文重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "spoon",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "chopsticks",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "butter-knife",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "croissant",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "jam-jar",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "bread-basket",
+      "reason": "中文重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "mug",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "teapot",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "jam-jar",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "placemat",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "fork",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "salt-shaker",
+      "reason": "id 重複",
+      "zone": "seating-area"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "card-reader",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "banknote",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "credit-card",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "price-tag",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "paper-bag",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "bread-basket",
+      "reason": "中文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-bag",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "floor-scale",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "recycling-bin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "stool",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "refrigerator",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "display-case",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shelf",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "wall-clock",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "spotlight",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "fire-extinguisher",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "automatic-door",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cardboard-box",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "card-reader",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "banknote",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "credit-card",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "paper-bag",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-bag",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "breadbasket",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "bread-loaf",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "bread-knife",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cake",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cookie",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "muffin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-cart",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-basket",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "queue-barrier",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "wall-clock",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "recycling-bin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "floor-scale",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "hand-truck",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "banknote",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "credit-card",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "paper-bag",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-basket",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "queue-barrier",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "floor-mat",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "menu",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cake",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cupcake",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cookie",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "croissant",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "muffin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "donut",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "pie",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "wall-clock",
+      "reason": "英文重複",
+      "zone": "checkout-counter"
+    }
+  ],
+  "createdAt": "2026-09-23T07:02:12.188Z"
+}

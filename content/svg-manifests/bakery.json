@@ -1,0 +1,1567 @@
+{
+  "sceneName": "語言小鎮・麵包店",
+  "sceneSlug": "la-bakery",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "display-area": "麵包展台",
+    "seating-area": "用餐區",
+    "checkout-counter": "結帳區"
+  },
+  "elements": [
+    {
+      "name": "鋪路石",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色扁平方石，表面粗糙帶淡淡斑點，邊緣整齊，單獨鋪在人行道上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "paving-stone",
+        "words": {
+          "zh-TW": "鋪路石",
+          "en": "paving stone",
+          "ja": {
+            "text": "敷石",
+            "reading": "しきいし"
+          }
+        }
+      }
+    },
+    {
+      "name": "街道指示牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "固定在細柱上的綠色長方形牌面，輪廓清楚，表面完全空白沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "street-sign",
+        "words": {
+          "zh-TW": "街道指示牌",
+          "en": "street sign",
+          "ja": {
+            "text": "道路標識",
+            "reading": "どうろひょうしき"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵粉袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "米白色鼓起的布袋，袋口以繩子束緊，表面有柔軟的摺痕且沒有標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "flour-sack",
+        "words": {
+          "zh-TW": "麵粉袋",
+          "en": "flour sack",
+          "ja": {
+            "text": "小麦粉の袋",
+            "reading": "こむぎこのふくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "麥穗",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色細長麥稈頂端長著一串尖尖穀粒，幾片窄葉向兩側伸展。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "wheat-stalk",
+        "words": {
+          "zh-TW": "麥穗",
+          "en": "wheat stalk",
+          "ja": {
+            "text": "小麦の穂",
+            "reading": "こむぎのほ"
+          }
+        }
+      }
+    },
+    {
+      "name": "楓葉",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘紅色掌形葉片有五個尖角，中央細葉脈分岔清楚，單片落在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "maple-leaf",
+        "words": {
+          "zh-TW": "楓葉",
+          "en": "maple leaf",
+          "ja": {
+            "text": "カエデの葉",
+            "reading": "カエデのは"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺棕色編織籃，橢圓形籃口配兩側短提把，籃內放著幾個圓麵包。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "breadbasket",
+        "words": {
+          "zh-TW": "麵包籃",
+          "en": "breadbasket",
+          "ja": {
+            "text": "パンかご",
+            "reading": "パンかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "長條麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色的長條麵包，表面有幾道斜切紋，兩端略尖，外皮帶有烘烤色澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "bread-loaf",
+        "words": {
+          "zh-TW": "長條麵包",
+          "en": "bread loaf",
+          "ja": {
+            "text": "バゲット",
+            "reading": "バゲット"
+          }
+        }
+      }
+    },
+    {
+      "name": "烤盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平的深灰色長方形金屬盤，四周有低矮凸起的邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "bakery-tray",
+        "words": {
+          "zh-TW": "烤盤",
+          "en": "baking tray",
+          "ja": {
+            "text": "天板",
+            "reading": "てんばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "木匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺棕色長柄木匙，匙面寬而扁，柄端圓潤，木紋簡單清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "wooden-spoon",
+        "words": {
+          "zh-TW": "木匙",
+          "en": "wooden spoon",
+          "ja": {
+            "text": "木べら",
+            "reading": "きべら"
+          }
+        }
+      }
+    },
+    {
+      "name": "隔熱手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色厚布手套，拇指側突出，掌面有簡單的格紋縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "oven-mitt",
+        "words": {
+          "zh-TW": "隔熱手套",
+          "en": "oven mitt",
+          "ja": {
+            "text": "鍋つかみ",
+            "reading": "なべつかみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵粉碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓口的淺藍色大碗，碗身向下收窄，內部盛著白色粉末。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "flour-bowl",
+        "words": {
+          "zh-TW": "麵粉碗",
+          "en": "mixing bowl",
+          "ja": {
+            "text": "ボウル",
+            "reading": "ボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "量杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明的矮圓杯身配一個短把手，杯口寬，側面沒有刻度或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "measuring-cup",
+        "words": {
+          "zh-TW": "量杯",
+          "en": "measuring cup",
+          "ja": {
+            "text": "計量カップ",
+            "reading": "けいりょうカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "烘焙刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短木柄前端排著一束淡黃色刷毛，外形像小型油漆刷，沒有標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "pastry-brush",
+        "words": {
+          "zh-TW": "烘焙刷",
+          "en": "pastry brush",
+          "ja": {
+            "text": "はけ",
+            "reading": "はけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "網架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀灰色金屬網架，長方形外框內交錯排列細直線，四角有短腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "cooling-rack",
+        "words": {
+          "zh-TW": "網架",
+          "en": "cooling rack",
+          "ja": {
+            "text": "ケーキクーラー",
+            "reading": "ケーキクーラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長而窄的銀色刀身帶有鋸齒邊，黑色握柄呈圓角長形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "bread-knife",
+        "words": {
+          "zh-TW": "麵包刀",
+          "en": "bread knife",
+          "ja": {
+            "text": "パン切り包丁",
+            "reading": "パンきりぼうちょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "烤箱溫度計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形銀色金屬外殼，中央有一根細指針和幾圈刻線，沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "oven-thermometer",
+        "words": {
+          "zh-TW": "烤箱溫度計",
+          "en": "oven thermometer",
+          "ja": {
+            "text": "オーブン温度計",
+            "reading": "オーブンおんどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "酵母罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖透明玻璃罐裝著米黃色顆粒，罐口旋有深色圓蓋，外壁沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "yeast-jar",
+        "words": {
+          "zh-TW": "酵母罐",
+          "en": "yeast jar",
+          "ja": {
+            "text": "イーストのびん",
+            "reading": "イーストのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "小掃把",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短木柄接著扇形金黃色刷草，柄尾圓鈍，刷毛整齊朝外張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "hand-broom",
+        "words": {
+          "zh-TW": "小掃把",
+          "en": "hand broom",
+          "ja": {
+            "text": "小ぼうき",
+            "reading": "こぼうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵粉",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小堆白色細粉散在地面，邊緣鬆散不規則，表面有柔和的粉末質感。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "wheat-flour",
+        "words": {
+          "zh-TW": "麵粉",
+          "en": "flour",
+          "ja": {
+            "text": "小麦粉",
+            "reading": "こむぎこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺棕色紙袋呈長方形，頂端有兩個拱形提把，袋口微微敞開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "shopping-bag",
+        "words": {
+          "zh-TW": "購物袋",
+          "en": "shopping bag",
+          "ja": {
+            "text": "買い物袋",
+            "reading": "かいものぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包屑",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾塊不規則的淡金黃色小碎粒，邊緣鬆散，散在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "bread-crumb",
+        "words": {
+          "zh-TW": "麵包屑",
+          "en": "bread crumb",
+          "ja": {
+            "text": "パンくず",
+            "reading": "パンクズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "扭結麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的深棕色麵包表面有三道交疊隆起，頂部點綴幾粒粗鹽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "pretzel-bun",
+        "words": {
+          "zh-TW": "扭結麵包",
+          "en": "pretzel bun",
+          "ja": {
+            "text": "プレッツェルパン",
+            "reading": "プレッツェルパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "罌粟籽麵包捲",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓的金黃色麵包捲，表面密布深色小籽，兩端略微收窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "entrance",
+        "itemId": "poppy-seed-roll",
+        "words": {
+          "zh-TW": "罌粟籽麵包捲",
+          "en": "poppy seed roll",
+          "ja": {
+            "text": "ケシの実パン",
+            "reading": "ケシノミパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓鼓鼓的金黃色小麵包，表皮光滑，頂部有一道淺淺的切痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "bread-roll",
+        "words": {
+          "zh-TW": "餐包",
+          "en": "bread roll",
+          "ja": {
+            "text": "ロールパン",
+            "reading": "ロールパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "法國麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的金褐色麵包，表面有幾道斜切口，兩端略尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "baguette",
+        "words": {
+          "zh-TW": "法國麵包",
+          "en": "baguette",
+          "ja": {
+            "text": "バゲット",
+            "reading": "バゲット"
+          }
+        }
+      }
+    },
+    {
+      "name": "貝果",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的圓環狀麵包，外皮呈深金黃色，中間有清楚的圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "bagel",
+        "words": {
+          "zh-TW": "貝果",
+          "en": "bagel",
+          "ja": {
+            "text": "ベーグル",
+            "reading": "ベーグル"
+          }
+        }
+      }
+    },
+    {
+      "name": "吐司片",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形厚片麵包，四角圓潤，外圈是金褐色麵包皮，中央淡黃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "bread-slice",
+        "words": {
+          "zh-TW": "吐司片",
+          "en": "bread slice",
+          "ja": {
+            "text": "食パン",
+            "reading": "しょくパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "肉桂捲",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形螺旋麵包，層層捲起的深褐色紋路清楚，頂上有白色糖霜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "cinnamon-roll",
+        "words": {
+          "zh-TW": "肉桂捲",
+          "en": "cinnamon roll",
+          "ja": {
+            "text": "シナモンロール",
+            "reading": "シナモンロール"
+          }
+        }
+      }
+    },
+    {
+      "name": "丹麥酥",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形金黃色酥皮點心，邊緣層層摺起，中央放著一顆紅色果實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "danish-pastry",
+        "words": {
+          "zh-TW": "丹麥酥",
+          "en": "danish pastry",
+          "ja": {
+            "text": "デニッシュ",
+            "reading": "デニッシュ"
+          }
+        }
+      }
+    },
+    {
+      "name": "巧克力可頌",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形的金黃酥皮麵包，兩端露出深褐色巧克力，外層有清晰薄片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "pain-au-chocolat",
+        "words": {
+          "zh-TW": "巧克力可頌",
+          "en": "pain au chocolat",
+          "ja": {
+            "text": "パン・オ・ショコラ",
+            "reading": "パン・オ・ショコラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "布里歐麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓頂小麵包呈亮金黃色，上方鼓起一個小圓球，表面刷得發亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "brioche",
+        "words": {
+          "zh-TW": "布里歐麵包",
+          "en": "brioche",
+          "ja": {
+            "text": "ブリオッシュ",
+            "reading": "ブリオッシュ"
+          }
+        }
+      }
+    },
+    {
+      "name": "口袋餅",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓扁的淡褐色麵包，側邊有一道縫口，中央微微鼓起像小口袋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "pita",
+        "words": {
+          "zh-TW": "口袋餅",
+          "en": "pita",
+          "ja": {
+            "text": "ピタパン",
+            "reading": "ピタパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "佛卡夏",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形扁麵包呈金黃色，表面有凹點，散著綠色香草葉與橄欖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "focaccia",
+        "words": {
+          "zh-TW": "佛卡夏",
+          "en": "focaccia",
+          "ja": {
+            "text": "フォカッチャ",
+            "reading": "フォカッチャ"
+          }
+        }
+      }
+    },
+    {
+      "name": "黑麥麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形深褐色麵包，表皮粗糙，頂部撒著淺色籽粒，邊緣厚實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "rye-bread",
+        "words": {
+          "zh-TW": "黑麥麵包",
+          "en": "rye bread",
+          "ja": {
+            "text": "ライ麦パン",
+            "reading": "ライむぎパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包棒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長筆直的金黃色烤麵包棒，兩端略尖，表面帶有烘烤斑點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "breadstick",
+        "words": {
+          "zh-TW": "麵包棒",
+          "en": "breadstick",
+          "ja": {
+            "text": "グリッシーニ",
+            "reading": "グリッシーニ"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓頂小麵包呈金黃色，頂部覆著融化的橘黃色起司，邊緣微焦。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "cheese-bread",
+        "words": {
+          "zh-TW": "起司麵包",
+          "en": "cheese bread",
+          "ja": {
+            "text": "チーズパン",
+            "reading": "チーズパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "蒜香麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短片狀金黃色麵包，表面有綠色香草碎點，邊緣烤成深褐色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "garlic-bread",
+        "words": {
+          "zh-TW": "蒜香麵包",
+          "en": "garlic bread",
+          "ja": {
+            "text": "ガーリックトースト",
+            "reading": "ガーリックトースト"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而圓鈍的銀色刀身連著簡單刀柄，外形扁平，刀面沒有花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "butter-knife",
+        "words": {
+          "zh-TW": "奶油刀",
+          "en": "butter-knife",
+          "ja": {
+            "text": "バターナイフ",
+            "reading": "バターナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "果醬罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮玻璃罐裝著紅色果醬，瓶口旋著金屬圓蓋，罐身沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "jam-jar",
+        "words": {
+          "zh-TW": "果醬罐",
+          "en": "jam-jar",
+          "ja": {
+            "text": "ジャムの瓶",
+            "reading": "ジャムのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "蜂蜜罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧透明玻璃罐盛著金黃色蜂蜜，瓶口有旋蓋，罐身圓潤無字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "honey-jar",
+        "words": {
+          "zh-TW": "蜂蜜罐",
+          "en": "honey-jar",
+          "ja": {
+            "text": "はちみつの瓶",
+            "reading": "はちみつのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺色長方形小盒裡放著一塊淡黃色奶油，上方配有透明圓弧盒蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "butter-dish",
+        "words": {
+          "zh-TW": "奶油盒",
+          "en": "butter-dish",
+          "ja": {
+            "text": "バターケース",
+            "reading": "バターケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司楔",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊黃色三角楔形起司，側面有幾個圓孔，切面平整清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "cheese-wedge",
+        "words": {
+          "zh-TW": "起司楔",
+          "en": "cheese-wedge",
+          "ja": {
+            "text": "チーズのくさび",
+            "reading": "チーズのくさび"
+          }
+        }
+      }
+    },
+    {
+      "name": "橄欖",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆深綠色橢圓橄欖散在地面，表皮光滑，部分帶著短梗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "olive",
+        "words": {
+          "zh-TW": "橄欖",
+          "en": "olive",
+          "ja": {
+            "text": "オリーブ",
+            "reading": "オリーブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蒜瓣",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾瓣奶白色蒜瓣散落地上，形狀彎彎尖尖，表面帶淡紫色薄皮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "garlic-clove",
+        "words": {
+          "zh-TW": "蒜瓣",
+          "en": "garlic-clove",
+          "ja": {
+            "text": "にんにく",
+            "reading": "にんにく"
+          }
+        }
+      }
+    },
+    {
+      "name": "核桃",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆棕色核桃散落在地上，外殼呈圓橢形，表面有深刻皺褶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "walnut",
+        "words": {
+          "zh-TW": "核桃",
+          "en": "walnut",
+          "ja": {
+            "text": "くるみ",
+            "reading": "くるみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "芝麻",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小撮乳白與淡褐色芝麻粒散在地面，顆粒細小，形狀橢圓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "sesame-seeds",
+        "words": {
+          "zh-TW": "芝麻",
+          "en": "sesame-seeds",
+          "ja": {
+            "text": "ごま",
+            "reading": "ごま"
+          }
+        }
+      }
+    },
+    {
+      "name": "封口夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平小塑膠夾呈白色方形，中央有短突片，旁邊落著一段細鐵絲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "bread-clip",
+        "words": {
+          "zh-TW": "封口夾",
+          "en": "bread-clip",
+          "ja": {
+            "text": "バッグ・クロージャー",
+            "reading": "バッグ・クロージャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包周轉箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色長方形木製周轉箱，四角有直立板條，側面留有兩個提手孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "display-area",
+        "itemId": "bread-crate",
+        "words": {
+          "zh-TW": "麵包周轉箱",
+          "en": "bread-crate",
+          "ja": {
+            "text": "パン用コンテナ",
+            "reading": "パンようコンテナ"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬長的棕色木桌面下方有四根直立桌腳，桌面平整，沒有任何文字或裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "dining-table",
+        "words": {
+          "zh-TW": "餐桌",
+          "en": "dining table",
+          "ja": {
+            "text": "ダイニングテーブル",
+            "reading": "ダイニングテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色木製椅面連著方形靠背，四根細直椅腳落地，外形簡單清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "dining-chair",
+        "words": {
+          "zh-TW": "餐椅",
+          "en": "dining chair",
+          "ja": {
+            "text": "ダイニングチェア",
+            "reading": "ダイニングチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "兒童餐椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小型木製高椅有方形椅面、短靠背和四根長椅腳，兩側帶有扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "high-chair",
+        "words": {
+          "zh-TW": "兒童餐椅",
+          "en": "high chair",
+          "ja": {
+            "text": "ベビーチェア",
+            "reading": "ベビーチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "長凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長的棕色木製座面靠著後牆，底下有兩組粗短支架，沒有靠背。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "bench-seat",
+        "words": {
+          "zh-TW": "長凳",
+          "en": "bench seat",
+          "ja": {
+            "text": "ベンチシート",
+            "reading": "ベンチシート"
+          }
+        }
+      }
+    },
+    {
+      "name": "嬰兒推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深色車架支撐圓弧形布篷和座位，底下有四個小輪，側面露出推把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "baby-stroller",
+        "words": {
+          "zh-TW": "嬰兒推車",
+          "en": "baby stroller",
+          "ja": {
+            "text": "ベビーカー",
+            "reading": "ベビーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "送餐推車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的金屬推車有兩層矩形平台，四角立柱連著下方的小輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "serving-cart",
+        "words": {
+          "zh-TW": "送餐推車",
+          "en": "serving cart",
+          "ja": {
+            "text": "配膳ワゴン",
+            "reading": "はいぜんワゴン"
+          }
+        }
+      }
+    },
+    {
+      "name": "兒童椅墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的方形淺黃色坐墊，四角圓潤，表面有細緻布紋和短綁帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "highchair-cushion",
+        "words": {
+          "zh-TW": "兒童椅墊",
+          "en": "high chair cushion",
+          "ja": {
+            "text": "ベビーチェアクッション",
+            "reading": "ベビーチェアクッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓盤中央平坦，外圈微微向上翹起，盤面沒有圖案或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "dining-tray",
+        "words": {
+          "zh-TW": "餐盤",
+          "en": "dinner plate",
+          "ja": {
+            "text": "大皿",
+            "reading": "おおざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "小盤子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的白色圓盤有淺淺的凹面和薄盤沿，放在大盤旁邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "side-plate",
+        "words": {
+          "zh-TW": "小盤子",
+          "en": "side plate",
+          "ja": {
+            "text": "取り皿",
+            "reading": "とりざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "湯碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白瓷碗口寬、底部收窄，碗壁平滑，正面看得到深色內沿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "soup-bowl",
+        "words": {
+          "zh-TW": "湯碗",
+          "en": "soup bowl",
+          "ja": {
+            "text": "スープボウル",
+            "reading": "スープボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧銀色湯匙有圓橢圓形匙面，接著一根短而細的直柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "teaspoon",
+        "words": {
+          "zh-TW": "茶匙",
+          "en": "teaspoon",
+          "ja": {
+            "text": "ティースプーン",
+            "reading": "ティースプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐具筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓筒容器上緣敞開，筒身有幾道直向鏤空，插著餐具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "fork-holder",
+        "words": {
+          "zh-TW": "餐具筒",
+          "en": "utensil holder",
+          "ja": {
+            "text": "カトラリースタンド",
+            "reading": "カトラリースタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶精壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色小壺有圓肚、短尖嘴和彎曲把手，壺口上方敞開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "cream-pitcher",
+        "words": {
+          "zh-TW": "奶精壺",
+          "en": "cream pitcher",
+          "ja": {
+            "text": "ミルクピッチャー",
+            "reading": "ミルクピッチャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "胡椒研磨器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明短圓筒裝著深色顆粒，頂端有黑色旋轉帽，外形細長。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "pepper-grinder",
+        "words": {
+          "zh-TW": "胡椒研磨器",
+          "en": "pepper grinder",
+          "ja": {
+            "text": "ペッパーミル",
+            "reading": "ペッパーミル"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌牌座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型金屬底座托著空白直立卡片，卡面純色，不含任何文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "table-number-stand",
+        "words": {
+          "zh-TW": "桌牌座",
+          "en": "table stand",
+          "ja": {
+            "text": "テーブルスタンド",
+            "reading": "テーブルスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺棕色小圓盤上放著一片金黃色吐司，盤沿簡潔，沒有花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "bread-plate",
+        "words": {
+          "zh-TW": "麵包盤",
+          "en": "bread plate",
+          "ja": {
+            "text": "パン皿",
+            "reading": "パンざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "窄長銀灰色刀身接著圓弧握柄，刀背平直、刀尖微圓，平放在長桌上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "dinner-knife",
+        "words": {
+          "zh-TW": "餐刀",
+          "en": "dinner knife",
+          "ja": {
+            "text": "テーブルナイフ",
+            "reading": "テーブルナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀灰色細柄連著橢圓形匙面，匙面朝上放在桌面，輪廓簡潔而清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "dinner-spoon",
+        "words": {
+          "zh-TW": "餐匙",
+          "en": "dinner spoon",
+          "ja": {
+            "text": "テーブルスプーン",
+            "reading": "テーブルスプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "玻璃杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明的直筒玻璃杯，杯口呈橢圓形，厚實圓底帶淡藍色反光，放在桌面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "drinking-glass",
+        "words": {
+          "zh-TW": "玻璃杯",
+          "en": "drinking glass",
+          "ja": {
+            "text": "コップ",
+            "reading": "コップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "兒童餐椅腳踏板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兒童餐椅下方的扁平橫板，木色板面由兩側短支架托住，靠近椅腳放置。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "highchair-footrest",
+        "words": {
+          "zh-TW": "兒童餐椅腳踏板",
+          "en": "high chair footrest",
+          "ja": {
+            "text": "ハイチェアの足置き",
+            "reading": "ハイチェアのあしおき"
+          }
+        }
+      }
+    },
+    {
+      "name": "兒童餐椅托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺灰色弧形塑膠托盤，前緣略高，兩側有固定卡榫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "seating-area",
+        "itemId": "highchair-tray",
+        "words": {
+          "zh-TW": "兒童餐椅托盤",
+          "en": "highchair tray",
+          "ja": {
+            "text": "ベビーチェアのトレイ",
+            "reading": "ベビーチェアのトレイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據印表機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的白色方盒，頂部開著一條黑色出紙縫，露出一小截空白紙卷。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "receipt-printer",
+        "words": {
+          "zh-TW": "收據印表機",
+          "en": "receipt printer",
+          "ja": {
+            "text": "レシートプリンター",
+            "reading": "レシートプリンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "錢箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的深灰色金屬抽屜，正面有短把手，拉開後可見分隔成格的內槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "cash-drawer",
+        "words": {
+          "zh-TW": "錢箱",
+          "en": "cash drawer",
+          "ja": {
+            "text": "キャッシュドロワー",
+            "reading": "キャッシュドロワー"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋糕切片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色扁平三角鏟面接著細長握柄，鏟面邊緣平滑，柄端略微圓鈍。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "cake-slice",
+        "words": {
+          "zh-TW": "蛋糕切片",
+          "en": "cake slice",
+          "ja": {
+            "text": "ケーキサーバー",
+            "reading": "ケーキサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "糕點盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺銀色長方形金屬托盤，四角圓滑，盤面平整並有低矮凸起的邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "pastry-tray",
+        "words": {
+          "zh-TW": "糕點盤",
+          "en": "pastry tray",
+          "ja": {
+            "text": "ペストリートレー",
+            "reading": "ペストリートレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "刷卡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的深灰色斜面機器，面板上有一排彩色按鍵，頂端有感應卡片的平面區。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bakery",
+        "zone": "checkout-counter",
+        "itemId": "card-terminal",
+        "words": {
+          "zh-TW": "刷卡機",
+          "en": "card terminal",
+          "ja": {
+            "text": "カード端末",
+            "reading": "カードたんまつ"
+          }
+        }
+      }
+    }
+  ]
+}

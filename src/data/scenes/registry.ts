@@ -11,5 +11,6 @@ import airport from './airport.json';
 import library from './library.json';
 import postOffice from './post-office.json';
 import fireStation from './fire-station.json';
+import bakery from './bakery.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery };
