@@ -9,19 +9,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { checkLayout, resolveBand } from './lib/layout.mjs';
+import { checkLayout, depthOf, resolveBand } from './lib/layout.mjs';
 import { checkMotionBudget, motionParams } from './lib/motion.mjs';
-import { layoutFile, loadSceneConfig, loadSceneSource, lockedPlacements } from './lib/scene-source.mjs';
+import { layoutFile, loadSceneConfig, loadSceneSource, loadStage, lockedPlacements } from './lib/scene-source.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'scenes');
 
 // 有 look 的地帶 = 背景要畫出來的檯面（蔬果台、冷藏櫃、收銀台、吧台、餐桌、碼頭）
-function surfacesOf(bands, zones) {
-  return Object.entries(bands).filter(([, b]) => b.look).flatMap(([name, b]) => zones.flatMap((z) => {
+// 有情境擺放的區域改畫情境裡的家具（staging.mjs），不畫地帶的檯面
+function surfacesOf(bands, zones, stage) {
+  const staged = stage?.zones ?? new Set();
+  const fromBands = Object.entries(bands).filter(([, b]) => b.look).flatMap(([name, b]) => zones.filter((z) => !staged.has(z.id)).flatMap((z) => {
     const r = resolveBand(bands, name, z);
     return r ? [{ look: b.look, zone: z.id, x0: r.x0, x1: r.x1, levels: r.levels ?? [r.top], base: b.base ?? r.bottom + 60 }] : [];
   }));
+  return [...fromBands, ...(stage?.fixtures ?? [])];
 }
 
 function checkWorld(world, sources) {
@@ -48,15 +51,15 @@ function buildScene(world, source, placements, obstacles) {
   checkMotionBudget(motion, items.length);
 
   const byId = new Map(items.map((it) => [it.id, it]));
-  // 陣列順序 = 繪製順序（後面的蓋在前面上）：先依 layer，同層依底線由上到下
-  const ordered = [...placements].sort((a, b) => a.layer - b.layer || (a.y + a.h) - (b.y + b.h));
+  // 陣列順序 = 繪製順序（後面的蓋在前面上）：先依 layer，同層依深度由上到下（放在檯面上的東西跟著宿主）
+  const ordered = [...placements].sort((a, b) => a.layer - b.layer || depthOf(a) - depthOf(b));
   return {
     id: sceneId,
     name: sceneConfig.name,
     width: world.width,
     height: world.height,
     zones: zones.map(({ id, name, x0, y0, x1, y1 }) => ({ id, name, x0, y0, x1, y1 })),
-    surfaces: surfacesOf(sceneConfig.bands, zones),
+    surfaces: surfacesOf(sceneConfig.bands, zones, loadStage(ROOT, source)),
     items: ordered.map(({ id, x, y, w, h, rotate = 0, flip = false, float = 0 }) => {
       const it = byId.get(id);
       return {

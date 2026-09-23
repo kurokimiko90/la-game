@@ -1,0 +1,450 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "note": "航廈外牆",
+          "row": "back",
+          "x": [
+            0.02,
+            0.54
+          ],
+          "fixture": "facade"
+        },
+        {
+          "note": "停車繳費機",
+          "row": "back",
+          "x": [
+            0.03,
+            0.16
+          ],
+          "main": "parking-ticket-machine"
+        },
+        {
+          "note": "旋轉門",
+          "row": "back",
+          "x": [
+            0.18,
+            0.34
+          ],
+          "main": "revolving-door"
+        },
+        {
+          "note": "候車屋頂",
+          "row": "back",
+          "x": [
+            0.36,
+            0.53
+          ],
+          "main": "roof"
+        },
+        {
+          "note": "登機空橋",
+          "row": "back",
+          "x": [
+            0.56,
+            0.78
+          ],
+          "main": "jet-bridge"
+        },
+        {
+          "note": "登機梯",
+          "row": "back",
+          "x": [
+            0.8,
+            0.98
+          ],
+          "main": "aircraft-stairs"
+        },
+        {
+          "note": "行李推車",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "main": "luggage-cart",
+          "on": [
+            "duffel-bag",
+            "suit-bag",
+            "travel-pillow"
+          ],
+          "front": [
+            "luggage-tag",
+            "luggage-scale"
+          ]
+        },
+        {
+          "note": "行李輸送",
+          "row": "mid",
+          "x": [
+            0.56,
+            0.97
+          ],
+          "main": "baggage-conveyor",
+          "beside": [
+            "aircraft-tug",
+            "luggage-trolley"
+          ]
+        },
+        {
+          "note": "輪胎",
+          "row": "front",
+          "x": [
+            0.03,
+            0.24
+          ],
+          "main": "tire",
+          "beside": [
+            "wheel-stop"
+          ]
+        },
+        {
+          "note": "接送車門",
+          "row": "front",
+          "x": [
+            0.3,
+            0.46
+          ],
+          "main": "car-door"
+        },
+        {
+          "note": "加油作業",
+          "row": "front",
+          "x": [
+            0.56,
+            0.96
+          ],
+          "main": "fuel-hose",
+          "front": [
+            "safety-vest",
+            "wheel-chock"
+          ]
+        }
+      ],
+      "sky": {
+        "airplane": [
+          0.44,
+          0.46
+        ]
+      }
+    },
+    "check-in-hall": {
+      "sets": [
+        {
+          "note": "自助報到機",
+          "row": "back",
+          "x": [
+            0.02,
+            0.16
+          ],
+          "main": "check-in-kiosk"
+        },
+        {
+          "note": "天花板燈",
+          "row": "back",
+          "x": [
+            0.18,
+            0.4
+          ],
+          "wall": [
+            "ceiling-light"
+          ]
+        },
+        {
+          "note": "隔板",
+          "row": "back",
+          "x": [
+            0.42,
+            0.6
+          ],
+          "main": "partition"
+        },
+        {
+          "note": "機場酒吧",
+          "row": "back",
+          "x": [
+            0.62,
+            0.98
+          ],
+          "fixture": "counter",
+          "on": [
+            "cocktail-shaker",
+            "bottle",
+            "bar-towel",
+            "bottle-opener",
+            "travel-mug"
+          ],
+          "beside": [
+            "bar-stool-cushion"
+          ]
+        },
+        {
+          "note": "報到櫃台",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.4
+          ],
+          "fixture": "desk",
+          "on": [
+            "passport",
+            "boarding-pass",
+            "mouse"
+          ],
+          "beside": [
+            "brochure-holder"
+          ]
+        },
+        {
+          "note": "排隊動線",
+          "row": "mid",
+          "x": [
+            0.45,
+            0.67
+          ],
+          "main": "queue-stanchion",
+          "beside": [
+            "belt-barrier"
+          ]
+        },
+        {
+          "note": "服飾小店",
+          "row": "mid",
+          "x": [
+            0.72,
+            0.97
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "hat",
+            "shirt",
+            "sock",
+            "shoe"
+          ]
+        },
+        {
+          "note": "地墊",
+          "row": "front",
+          "x": [
+            0.36,
+            0.56
+          ],
+          "main": "floor-mat"
+        },
+        {
+          "note": "立式指示牌",
+          "row": "front",
+          "x": [
+            0.62,
+            0.76
+          ],
+          "main": "floor-sign"
+        }
+      ]
+    },
+    "security-check": {
+      "sets": [
+        {
+          "note": "滑門",
+          "row": "back",
+          "x": [
+            0.02,
+            0.18
+          ],
+          "main": "sliding-door"
+        },
+        {
+          "note": "人體掃描器",
+          "row": "back",
+          "x": [
+            0.2,
+            0.38
+          ],
+          "main": "body-scanner"
+        },
+        {
+          "note": "金屬探測門",
+          "row": "back",
+          "x": [
+            0.4,
+            0.57
+          ],
+          "main": "metal-detector"
+        },
+        {
+          "note": "穿鞋區",
+          "row": "back",
+          "x": [
+            0.6,
+            0.8
+          ],
+          "main": "shoe-rack",
+          "on": [
+            "shoe-cover",
+            "shoehorn"
+          ]
+        },
+        {
+          "note": "收納箱",
+          "row": "back",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "main": "plastic-tub",
+          "on": [
+            "hair-clip",
+            "plastic-seal"
+          ]
+        },
+        {
+          "note": "行李輸送帶",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "main": "conveyor-belt",
+          "on": [
+            "plastic-box",
+            "belt"
+          ]
+        },
+        {
+          "note": "X 光機",
+          "row": "mid",
+          "x": [
+            0.32,
+            0.56
+          ],
+          "main": "x-ray-machine",
+          "on": [
+            "security-wand",
+            "jacket",
+            "sweater"
+          ]
+        },
+        {
+          "note": "隨身物品檢查桌",
+          "row": "mid",
+          "x": [
+            0.6,
+            0.97
+          ],
+          "fixture": "desk",
+          "on": [
+            "security-tray",
+            "laptop-bag",
+            "tablet",
+            "ring",
+            "necklace",
+            "bracelet",
+            "luggage-strap"
+          ],
+          "beside": [
+            "barrier"
+          ]
+        }
+      ]
+    },
+    "departure-gate": {
+      "sets": [
+        {
+          "note": "牆面板",
+          "row": "back",
+          "x": [
+            0.02,
+            0.3
+          ],
+          "main": "wall-panel"
+        },
+        {
+          "note": "3C 展示櫃",
+          "row": "back",
+          "x": [
+            0.33,
+            0.58
+          ],
+          "main": "display-case",
+          "on": [
+            "headphones",
+            "earbuds"
+          ]
+        },
+        {
+          "note": "展示台",
+          "row": "back",
+          "x": [
+            0.61,
+            0.79
+          ],
+          "main": "display-pedestal",
+          "on": [
+            "neck-pillow"
+          ]
+        },
+        {
+          "note": "零食架",
+          "row": "back",
+          "x": [
+            0.81,
+            0.98
+          ],
+          "fixture": "shelf",
+          "on": [
+            "pretzel",
+            "pear",
+            "peach",
+            "granola-bar"
+          ]
+        },
+        {
+          "note": "休息扶手椅",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.36
+          ],
+          "main": "armchair",
+          "on": [
+            "cushion",
+            "blanket"
+          ],
+          "beside": [
+            "ottoman"
+          ],
+          "front": [
+            "slipper",
+            "sandals"
+          ]
+        },
+        {
+          "note": "旅行用品櫃",
+          "row": "mid",
+          "x": [
+            0.64,
+            0.96
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "toiletry-bag",
+            "sleep-mask",
+            "eye-mask-case",
+            "power-bank",
+            "charging-cable"
+          ]
+        },
+        {
+          "note": "地毯",
+          "row": "front",
+          "x": [
+            0.38,
+            0.68
+          ],
+          "main": "carpet"
+        }
+      ]
+    }
+  }
+}

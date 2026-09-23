@@ -1,0 +1,48 @@
+{
+  "zones": {
+    "school-gate": {
+      "sets": [
+        { "note": "校舍大門", "row": "back", "x": [0.32, 0.68], "fixture": "facade", "door": true, "wall": ["raincoat"] },
+        { "note": "柵欄桿", "row": "back", "x": [0.04, 0.3], "main": "barrier-arm" },
+        { "note": "花圃", "row": "back", "x": [0.72, 0.97], "fixture": "planter", "on": ["tulip", "daisy"], "front": ["acorn", "twig"] },
+        { "note": "鞋櫃", "row": "mid", "x": [0.04, 0.26], "fixture": "cabinet", "on": ["loafer"] },
+        { "note": "校門口文具攤", "row": "mid", "x": [0.32, 0.72], "fixture": "desk", "on": ["pencil", "eraser", "ruler", "pencil-case", "crayon", "glue-stick", "scissors"] },
+        { "note": "防撞柱", "row": "front", "x": [0.04, 0.2], "main": "bollard" },
+        { "note": "減速丘", "row": "front", "x": [0.3, 0.56], "main": "speed-bump" },
+        { "note": "排水格柵", "row": "front", "x": [0.62, 0.8], "main": "drainage-grate" },
+        { "note": "路緣", "row": "front", "x": [0.83, 0.97], "main": "curb" }
+      ]
+    },
+    "school-yard": {
+      "sets": [
+        { "note": "籃球框", "row": "back", "x": [0.02, 0.24], "main": "hoop" },
+        { "note": "體育器材箱", "row": "back", "x": [0.28, 0.58], "fixture": "cabinet", "on": ["tennis-racket", "badminton-racket", "baseball-bat", "baseball-glove"] },
+        { "note": "足球門", "row": "back", "x": [0.62, 0.97], "main": "soccer-goal" },
+        { "note": "體育老師桌", "row": "mid", "x": [0.03, 0.3], "fixture": "desk", "on": ["clipboard", "chalk"], "beside": ["drum"] },
+        { "note": "澆水", "row": "mid", "x": [0.36, 0.6], "main": "sprinkler", "beside": ["hose"] },
+        { "note": "自然觀察花台", "row": "mid", "x": [0.66, 0.96], "fixture": "planter", "on": ["dandelion", "clover", "mushroom"], "front": ["pine-cone", "leaf"] },
+        { "note": "垃圾袋", "row": "front", "x": [0.04, 0.18], "main": "garbage-bag" },
+        { "note": "飛盤", "row": "front", "x": [0.42, 0.56], "main": "frisbee" }
+      ]
+    },
+    "classroom": {
+      "sets": [
+        { "note": "白板", "row": "back", "x": [0.03, 0.26], "main": "whiteboard", "on": ["marker"] },
+        { "note": "投影幕", "row": "back", "x": [0.3, 0.72], "wall": ["projection-screen"] },
+        { "note": "自然科教具架", "row": "back", "x": [0.75, 0.98], "fixture": "shelf", "on": ["globe", "microscope", "magnifying-glass"] },
+        { "note": "電腦桌", "row": "mid", "x": [0.03, 0.33], "fixture": "desk", "on": ["computer-monitor", "keyboard", "computer-mouse"] },
+        { "note": "講桌", "row": "mid", "x": [0.39, 0.63], "fixture": "desk", "on": ["projector", "stapler", "tape-dispenser", "pencil-sharpener"] },
+        { "note": "美術桌", "row": "mid", "x": [0.69, 0.97], "fixture": "desk", "on": ["paint-palette", "paintbrush", "paper", "compass"] }
+      ]
+    },
+    "library": {
+      "sets": [
+        { "note": "印表機", "row": "back", "x": [0.02, 0.2], "main": "printer" },
+        { "note": "影音架", "row": "back", "x": [0.24, 0.62], "fixture": "shelf", "on": ["bookend", "hourglass", "radio", "cassette-tape", "vinyl-record", "vase"] },
+        { "note": "講台", "row": "back", "x": [0.66, 0.82], "main": "lectern" },
+        { "note": "閱覽桌", "row": "mid", "x": [0.04, 0.45], "fixture": "desk", "on": ["desk-lamp", "notebook", "pen", "bookmark", "rubber-band"] },
+        { "note": "打字桌", "row": "mid", "x": [0.52, 0.95], "fixture": "desk", "on": ["typewriter", "folder", "envelope"], "beside": ["reading-stand"] }
+      ]
+    }
+  }
+}

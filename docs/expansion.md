@@ -59,22 +59,28 @@ LLM 只從列舉值裡選，幾何由模板算：
 地形由 `src/components/scene/districts/GeneratedDistrict.tsx` 照場景 JSON 的 `terrain` 畫；手畫的前 4 個場景不受影響。
 新場景不用改程式：`build-scenes` 會產生 `src/data/scenes/registry.ts`，小地圖顏色也在 `terrain` 裡。
 
-## 3. 地圖
+## 3. 地圖（城市格線，2026-09-23 起；規劃見 `docs/city-plan.md`）
+
+slot 之間留 240 寬的街道，外圍一圈環路，再外面是東側丘陵與南側海岸。幾何在 `src/lib/city.ts`（畫路網）和 `scripts/lib/district-kit.mjs`（`STREET_WIDTH`、`EDGE_SIZE`、`worldSize`），兩邊由單元測試檢查一致。
 
 ```
-x:  0 ─────────── 2600 ─ 2935 ── 3600 ──────── 6200 ──────── 8800 ─────── 11400
-y0     公園             │河│ 河邊東岸 │ slot 2    │ slot 7    │ slot 14
-       商業街           │  │          ├───────────┤           │
-y1300                   │  │          │ slot 3    │ slot 8    │ slot 15
-       超市             │  │          │           │           │
-y2600  車站（slot 1）    │  │ 河岸步道  │ slot 4    │ slot 9    │ slot 16
-y3900  slot 5           │  │  延伸    │ slot 6    │ slot 10   │ slot 17
-y5200  slot 11          │  │          │ slot 12   │ slot 13   │ slot 18
+x:  0 ──── 2600 ─ 2935 ─ 3600 │街│ 3840 ── 6440 │街│ 6680 ── 9280 │街│ 9520 …  │環路│ 丘陵
+y0     公園         │河│ 河邊東岸 │  │ 餐廳         │  │ 郵局         │  │ 商業
+       商業街       │  │          │  │ ═══ 街 ═════ ╪══╪ ═══════════ ╪══╪
+y1540  超市         │  │          │  │ 學校         │  │ 消防局       │  │ 商業
+y2600  ══ 街（核心南緣）══ 橋 ═══════╪══╪ ═══════════ ╪══╪ ═══════════ ╪══╪
+       站前廣場     │  │          │圓環
+y3080  車站         │  │ 河岸步道  │  │ 醫院         │  │ 麵包店       │  │ 商業
+y4620  機場         │  │          │  │ 圖書館       │  │ 海邊         │  │ 休閒
+       ═══════════════ 濱海環路 ════════════════════════════════════════════════
+       沙灘、海（河在這裡出海）
 ```
 
-- slot 順序和主題清單在 `content/expansion.json`，要更多場景就往裡面加。
-- 地圖大小自動算（核心範圍 + 已用的 slot）。河和東岸步道一路延伸到地圖南緣。
-- 既有場景的座標不動；已上線的場景不要 `content:layout --reset`。
+- slot 和主題都有 `zone`（土地使用分區：commercial / civic / neighborhood / residential / leisure / outskirts）。新主題優先放同分區的空 slot，沒有才放任何空的（`nextSlot`）。主題清單的順序 = 建造順序，城市由內往外長。
+- 地圖大小自動算（內側範圍 + 環路 + 邊緣）。格線上還沒蓋的 slot 畫成小樹林。
+- 2026-09-23 把已上線的 10 個自動擴展街區整塊平移過一次（`scripts/migrate-city-grid.mjs`，只能跑一次，`expansion.json` 的 `grid.street` 是標記）。街區內的相對位置不變；玩家進度只存物件 id，不受影響。
+- 之後已上線的場景座標不動；不要 `content:layout --reset`。
+- **手畫核心 4 區也會補元素**（2026-09-23 起）：`content/plans/{park,street,riverside,supermarket}.json` 是從 manifest 反推的（`manifestToPlan`，`core: true`、`itemsTarget: 70`）。整合時不重寫手寫的 scene-config，只替新物品在 ground 地帶排位置，舊物品不動。目標 70 比 itemsPerScene 小，因為手畫區域有湖、馬路、貨架，空地少。
 
 ## 4. 已知限制
 

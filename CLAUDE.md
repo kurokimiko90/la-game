@@ -45,6 +45,7 @@ public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 - 擺放演算法：`scripts/lib/layout.mjs`；動態參數：`scripts/lib/motion.mjs`；設定檢查：`scripts/lib/scene-config.mjs`；SVG 白名單：`scripts/lib/svg-sanitize.mjs`
 - 預覽整張地圖與各街區：開著 `npm run dev` 再跑 `npm run content:scene-preview` → `docs/scene-preview/`
 - 地形座標（道路、河、牆）在 `WorldBackground.tsx`，要和 scene-config 的區域、地帶一致，改地圖時兩邊一起改
+- 街區之間的路網、地圖邊緣（海岸、丘陵）由 `src/lib/city.ts` 算、`src/components/scene/city/` 畫；格線數字要和 `district-kit.mjs` 一致（見 `docs/city-plan.md`）
 - 物件 SVG 會被內嵌（點擊範圍 = 形狀），所以一定要經過白名單清洗；不要繞過 build-scenes 直接用 SVG
 - 場景上線後不要 `content:layout --reset`（玩家記住的位置會變）
 

@@ -3,7 +3,7 @@
   "name": "車站",
   "slot": {
     "x": 0,
-    "y": 2600
+    "y": 3080
   },
   "colorIndex": 0,
   "icon": "train",

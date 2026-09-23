@@ -17,7 +17,7 @@ const FLOOR: Record<TerrainZone['floor'], { fill: string; line: string }> = {
   sand: { fill: '#f3dfb4', line: '#e6c98f' },
   concrete: { fill: '#d5dbdf', line: '#b0bec5' },
 };
-const WALL = { cap: '#8d6e63', face: '#fff3e0', base: '#bcaaa4' };
+const WALL = { face: '#fff3e0', base: '#bcaaa4' };
 
 function Floor({ z }: { z: TerrainZone }) {
   const { fill, line } = FLOOR[z.floor];
@@ -53,20 +53,37 @@ function Floor({ z }: { z: TerrainZone }) {
   );
 }
 
-/** 室內：後牆 + 兩側牆柱，牆上的燈會明暗變化（背景動態） */
-function BackWall({ z }: { z: TerrainZone }) {
+/**
+ * 室內：畫成「被切開的一棟樓」（docs/city-plan.md §4）——上緣是切開的屋頂板、兩側是切開的外牆、前緣一道矮牆的切口，
+ * 地板靠牆處有陰影，看起來有高度而不是平面圖。牆上的燈會明暗變化（背景動態）。
+ */
+const SECTION = { cut: '#5d4037', edge: '#8d6e63', roof: 26, side: 22, front: 12 };
+
+function BackWall({ z, roof }: { z: TerrainZone; roof: string }) {
   if (!z.wallBase) return null;
   const w = z.x1 - z.x0;
+  const top = z.y0 + SECTION.roof;
   return (
     <g>
-      <rect x={z.x0} y={z.y0} width={w} height={16} fill={WALL.cap} />
-      <rect x={z.x0} y={z.y0 + 16} width={w} height={z.wallBase - z.y0 - 16} fill={WALL.face} />
+      <rect x={z.x0} y={top} width={w} height={z.wallBase - top} fill={WALL.face} />
       <rect x={z.x0} y={z.wallBase - 10} width={w} height={10} fill={WALL.base} />
-      <rect x={z.x0} y={z.y0} width={14} height={z.y1 - z.y0} fill={WALL.cap} />
-      <rect x={z.x1 - 14} y={z.y0} width={14} height={z.y1 - z.y0} fill={WALL.cap} />
+      {/* 地板靠後牆、兩側牆的陰影 */}
+      <rect x={z.x0} y={z.wallBase} width={w} height={56} fill="url(#city-shade-down)" />
+      <rect x={z.x0 + SECTION.side} y={top} width={34} height={z.y1 - top} fill="url(#city-shade-right)" />
+      <rect x={z.x1 - SECTION.side - 34} y={top} width={34} height={z.y1 - top} fill="url(#city-shade-left)" />
+      {/* 切開的屋頂板（上緣露出屋瓦顏色）、兩側外牆、前緣矮牆 */}
+      <rect x={z.x0} y={z.y0} width={w} height={SECTION.roof} fill={SECTION.cut} />
+      <rect x={z.x0} y={z.y0} width={w} height={9} fill={roof} />
+      {[z.x0, z.x1 - SECTION.side].map((x) => (
+        <g key={x}>
+          <rect x={x} y={z.y0} width={SECTION.side} height={z.y1 - z.y0} fill={SECTION.cut} />
+          <rect x={x === z.x0 ? x + SECTION.side - 4 : x} y={top} width={4} height={z.y1 - top} fill={SECTION.edge} />
+        </g>
+      ))}
+      <rect x={z.x0} y={z.y1 - SECTION.front} width={w} height={SECTION.front} fill={SECTION.cut} />
       {[0.2, 0.5, 0.8].map((t, i) => (
         <Glow key={t} dur={4.5 + i * 0.7} phase={(z.x0 % 7) / 7 + i * 0.3}>
-          <rect x={z.x0 + w * t - 14} y={z.y0 + 30} width={28} height={12} rx={4} fill="#fff59d" stroke="#e0e0e0" strokeWidth={2} />
+          <rect x={z.x0 + w * t - 14} y={top + 16} width={28} height={12} rx={4} fill="#fff59d" stroke="#e0e0e0" strokeWidth={2} />
         </Glow>
       ))}
     </g>
@@ -133,6 +150,28 @@ function OutdoorAmbient({ z }: { z: TerrainZone }) {
   );
 }
 
+// 相鄰兩區之間（至少一邊是室內）開一扇門：左右相鄰開在隔間牆上，上下相鄰開在前緣矮牆 / 屋頂板上。
+// 幾個房間看起來是同一棟樓，室內也看得出從哪裡走進來（借自 feat/scene-staging 的 IndoorBlock）
+const DOOR = { w: 70, top: 250, h: 150, wide: 130 };
+
+function Doors({ zones }: { zones: readonly TerrainZone[] }) {
+  const out: ReactNode[] = [];
+  for (const a of zones) {
+    for (const b of zones) {
+      if (a === b || !(a.indoor || b.indoor)) continue;
+      if (a.x1 === b.x0 && a.y0 === b.y0) {
+        out.push(<rect key={`h${a.id}-${b.id}`} x={a.x1 - DOOR.w / 2} y={a.y0 + DOOR.top} width={DOOR.w} height={DOOR.h} rx={6} fill="#efe6d8" stroke={SECTION.cut} strokeWidth={3} />);
+      } else if (a.y1 === b.y0 && a.x0 === b.x0) {
+        const cx = a.x0 + (a.x1 - a.x0) * 0.2;
+        const y0 = a.indoor ? a.y1 - SECTION.front : a.y1;
+        const y1 = b.indoor ? b.y0 + SECTION.roof : b.y0;
+        out.push(<rect key={`v${a.id}-${b.id}`} x={cx - DOOR.wide / 2} y={y0} width={DOOR.wide} height={y1 - y0} fill="#efe6d8" />);
+      }
+    }
+  }
+  return <g>{out}</g>;
+}
+
 export function GeneratedDistrict({ terrain }: { terrain: DistrictTerrain }) {
   const { x0, y0, x1, y1 } = terrain;
   return (
@@ -142,13 +181,14 @@ export function GeneratedDistrict({ terrain }: { terrain: DistrictTerrain }) {
       {terrain.zones.map((z) => (
         <g key={z.id}>
           <Floor z={z} />
-          <BackWall z={z} />
+          <BackWall z={z} roof={terrain.color} />
           <Road z={z} />
           <Track z={z} />
           <Pool z={z} />
           <OutdoorAmbient z={z} />
         </g>
       ))}
+      <Doors zones={terrain.zones} />
     </g>
   );
 }

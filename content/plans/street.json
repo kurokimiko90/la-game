@@ -1,0 +1,449 @@
+{
+  "id": "street",
+  "name": "商業街",
+  "core": true,
+  "itemsTarget": 70,
+  "zones": [
+    {
+      "id": "crossing",
+      "name": "路口",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "shops",
+      "name": "商店",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "cafe",
+      "name": "咖啡店",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "bus-stop",
+      "name": "公車站",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    }
+  ],
+  "elements": [
+    {
+      "id": "traffic-light",
+      "zone": "crossing",
+      "zh": "紅綠燈",
+      "en": "traffic light",
+      "ja": "信号",
+      "reading": "しんごう",
+      "category": "設施",
+      "size": "medium",
+      "desc": "深灰色燈桿，黑色直立長方燈箱裡由上到下紅、黃、綠三個圓燈。"
+    },
+    {
+      "id": "crosswalk",
+      "zone": "crossing",
+      "zh": "斑馬線",
+      "en": "crosswalk",
+      "ja": "横断歩道",
+      "reading": "おうだんほどう",
+      "category": "設施",
+      "size": "large",
+      "desc": "略帶俯角的斑馬線：一塊橫向的深灰色路面（平行四邊形），路面上 5 條等寬的白色平行四邊形條紋，條紋沿路面由左到右排開、彼此間隔相等。"
+    },
+    {
+      "id": "fire-hydrant",
+      "zone": "crossing",
+      "zh": "消防栓",
+      "en": "fire hydrant",
+      "ja": "消火栓",
+      "reading": "しょうかせん",
+      "category": "設施",
+      "size": "small",
+      "desc": "紅色消防栓：圓頂、圓柱身、左右兩個短出水口、底部方形底座。"
+    },
+    {
+      "id": "mailbox",
+      "zone": "crossing",
+      "zh": "郵筒",
+      "en": "mailbox",
+      "ja": "ポスト",
+      "reading": "ポスト",
+      "category": "設施",
+      "size": "medium",
+      "desc": "紅色圓柱形郵筒，頂部橢圓帽蓋，中段一道黑色投信口。"
+    },
+    {
+      "id": "road-sign",
+      "zone": "crossing",
+      "zh": "路牌",
+      "en": "road sign",
+      "ja": "標識",
+      "reading": "ひょうしき",
+      "category": "設施",
+      "size": "medium",
+      "desc": "灰色桿子頂端一塊藍色圓形標誌牌，牌面一個白色箭頭（不寫字）。"
+    },
+    {
+      "id": "traffic-cone",
+      "zone": "crossing",
+      "zh": "三角錐",
+      "en": "traffic cone",
+      "ja": "カラーコーン",
+      "reading": "カラーコーン",
+      "category": "設施",
+      "size": "small",
+      "desc": "橘色三角錐，中間兩道白色反光條，底部黑色方形底座。"
+    },
+    {
+      "id": "car",
+      "zone": "crossing",
+      "zh": "汽車",
+      "en": "car",
+      "ja": "車",
+      "reading": "くるま",
+      "category": "交通工具",
+      "size": "large",
+      "desc": "側面看的紅色小轎車：車身、兩扇淺藍車窗、兩個黑色輪子。"
+    },
+    {
+      "id": "taxi",
+      "zone": "crossing",
+      "zh": "計程車",
+      "en": "taxi",
+      "ja": "タクシー",
+      "reading": "タクシー",
+      "category": "交通工具",
+      "size": "large",
+      "desc": "側面看的黃色計程車，車頂一個小燈牌（不寫字），車身一條黑白格紋帶。"
+    },
+    {
+      "id": "scooter",
+      "zone": "crossing",
+      "zh": "機車",
+      "en": "scooter",
+      "ja": "スクーター",
+      "reading": "スクーター",
+      "category": "交通工具",
+      "size": "medium",
+      "desc": "側面看的白色速克達機車：前方擋風板、座墊、兩個輪子。"
+    },
+    {
+      "id": "barber-pole",
+      "zone": "shops",
+      "zh": "理髮店旋轉燈",
+      "en": "barber pole",
+      "ja": "サインポール",
+      "reading": "サインポール",
+      "category": "設施",
+      "size": "small",
+      "desc": "圓柱形理髮店招牌燈，紅白藍斜條紋，上下銀色蓋。"
+    },
+    {
+      "id": "awning",
+      "zone": "shops",
+      "zh": "遮陽棚",
+      "en": "awning",
+      "ja": "日よけ",
+      "reading": "ひよけ",
+      "category": "設施",
+      "size": "medium",
+      "desc": "店門上方的綠白直條紋遮陽棚（梯形），下緣一排小三角形垂邊。"
+    },
+    {
+      "id": "shop-window",
+      "zone": "shops",
+      "zh": "櫥窗",
+      "en": "shop window",
+      "ja": "ショーウィンドウ",
+      "reading": "ショーウィンドウ",
+      "category": "設施",
+      "size": "large",
+      "desc": "木框大玻璃櫥窗，裡面陳列一頂帽子、一個手提包、一雙鞋。"
+    },
+    {
+      "id": "vending-machine",
+      "zone": "shops",
+      "zh": "自動販賣機",
+      "en": "vending machine",
+      "ja": "自動販売機",
+      "reading": "じどうはんばいき",
+      "category": "設施",
+      "size": "medium",
+      "desc": "藍色長方形販賣機：上半部三排彩色飲料瓶，右側投幣口，下方黑色取物口。"
+    },
+    {
+      "id": "paper-bag",
+      "zone": "shops",
+      "zh": "紙袋",
+      "en": "paper bag",
+      "ja": "紙袋",
+      "reading": "かみぶくろ",
+      "category": "道具",
+      "size": "small",
+      "desc": "牛皮紙色購物紙袋，梯形袋身，上方兩條提繩。"
+    },
+    {
+      "id": "bouquet",
+      "zone": "shops",
+      "zh": "花束",
+      "en": "bouquet",
+      "ja": "花束",
+      "reading": "はなたば",
+      "category": "植物",
+      "size": "medium",
+      "desc": "銀色鐵桶裡插著一束紅、黃、紫的花。"
+    },
+    {
+      "id": "atm",
+      "zone": "shops",
+      "zh": "提款機",
+      "en": "ATM",
+      "ja": "ATM",
+      "reading": "エーティーエム",
+      "category": "設施",
+      "size": "medium",
+      "desc": "嵌在牆上的灰色提款機：上方藍色螢幕、中間按鍵格、下方出鈔口。"
+    },
+    {
+      "id": "umbrella-stand",
+      "zone": "shops",
+      "zh": "傘架",
+      "en": "umbrella stand",
+      "ja": "傘立て",
+      "reading": "かさたて",
+      "category": "道具",
+      "size": "small",
+      "desc": "圓筒形傘架，插著三把收起來的不同顏色長傘。"
+    },
+    {
+      "id": "blackboard",
+      "zone": "shops",
+      "zh": "黑板",
+      "en": "blackboard",
+      "ja": "黒板",
+      "reading": "こくばん",
+      "category": "設施",
+      "size": "medium",
+      "desc": "A 字形木框立式小黑板，板面只有白色粉筆線條與小圖形（不寫字）。"
+    },
+    {
+      "id": "mug",
+      "zone": "cafe",
+      "zh": "馬克杯",
+      "en": "mug",
+      "ja": "マグカップ",
+      "reading": "マグカップ",
+      "category": "道具",
+      "size": "small",
+      "desc": "白色馬克杯，杯中咖啡，上方三條直線蒸氣，右側方形把手。"
+    },
+    {
+      "id": "paper-cup",
+      "zone": "cafe",
+      "zh": "紙杯",
+      "en": "paper cup",
+      "ja": "紙コップ",
+      "reading": "かみコップ",
+      "category": "道具",
+      "size": "small",
+      "desc": "白色外帶紙杯，棕色杯套與平蓋。"
+    },
+    {
+      "id": "cake",
+      "zone": "cafe",
+      "zh": "蛋糕",
+      "en": "cake",
+      "ja": "ケーキ",
+      "reading": "ケーキ",
+      "category": "食物",
+      "size": "small",
+      "desc": "三角形切片蛋糕，白色奶油層與海綿層，頂端一顆紅色草莓。"
+    },
+    {
+      "id": "teapot",
+      "zone": "cafe",
+      "zh": "茶壺",
+      "en": "teapot",
+      "ja": "ティーポット",
+      "reading": "ティーポット",
+      "category": "道具",
+      "size": "small",
+      "desc": "圓胖的白色茶壺，左邊斜的壺嘴、右邊把手、頂部壺蓋。"
+    },
+    {
+      "id": "coffee-maker",
+      "zone": "cafe",
+      "zh": "咖啡機",
+      "en": "coffee maker",
+      "ja": "コーヒーメーカー",
+      "reading": "コーヒーメーカー",
+      "category": "道具",
+      "size": "medium",
+      "desc": "銀色方形咖啡機，前方兩個出水口，下面一只小杯子。"
+    },
+    {
+      "id": "table",
+      "zone": "cafe",
+      "zh": "桌子",
+      "en": "table",
+      "ja": "テーブル",
+      "reading": "テーブル",
+      "category": "設施",
+      "size": "medium",
+      "desc": "咖啡座：中央一張白色圓桌（上方扁橢圓桌面、一根細桌腳、底部一條橫向底座），左右各一張側面看的金屬椅（直立椅背＋水平椅面＋兩條椅腳）。所有形狀加深色描邊。"
+    },
+    {
+      "id": "newspaper",
+      "zone": "cafe",
+      "zh": "報紙",
+      "en": "newspaper",
+      "ja": "新聞",
+      "reading": "しんぶん",
+      "category": "道具",
+      "size": "small",
+      "desc": "折起的報紙，版面只有灰色線條與一個灰色方塊代表照片。"
+    },
+    {
+      "id": "cookie",
+      "zone": "cafe",
+      "zh": "餅乾",
+      "en": "cookie",
+      "ja": "クッキー",
+      "reading": "クッキー",
+      "category": "食物",
+      "size": "small",
+      "desc": "圓形巧克力豆餅乾，表面幾個深棕色小點。"
+    },
+    {
+      "id": "bus",
+      "zone": "bus-stop",
+      "zh": "公車",
+      "en": "bus",
+      "ja": "バス",
+      "reading": "バス",
+      "category": "交通工具",
+      "size": "large",
+      "desc": "側面看的綠色公車：一排方形車窗、兩扇車門、兩個黑色輪子。"
+    },
+    {
+      "id": "bus-stop",
+      "zone": "bus-stop",
+      "zh": "公車站牌",
+      "en": "bus stop",
+      "ja": "バス停",
+      "reading": "バスてい",
+      "category": "設施",
+      "size": "medium",
+      "desc": "桿子頂端一個圓牌，圓牌中央一個簡化的公車圖形（不寫字）。"
+    },
+    {
+      "id": "traffic-mirror",
+      "zone": "bus-stop",
+      "zh": "反光鏡",
+      "en": "traffic mirror",
+      "ja": "カーブミラー",
+      "reading": "カーブミラー",
+      "category": "設施",
+      "size": "medium",
+      "desc": "橘色桿子頂端一面圓形凸面鏡，橘色鏡框，鏡面淺藍色。"
+    },
+    {
+      "id": "timetable",
+      "zone": "bus-stop",
+      "zh": "時刻表",
+      "en": "timetable",
+      "ja": "時刻表",
+      "reading": "じこくひょう",
+      "category": "設施",
+      "size": "small",
+      "desc": "貼在柱上的白色表格，只有格線沒有文字。"
+    },
+    {
+      "id": "suitcase",
+      "zone": "bus-stop",
+      "zh": "行李箱",
+      "en": "suitcase",
+      "ja": "スーツケース",
+      "reading": "スーツケース",
+      "category": "道具",
+      "size": "medium",
+      "desc": "直立的藍色拉桿行李箱，上方伸出拉桿，底部兩個小輪。"
+    },
+    {
+      "id": "smartphone",
+      "zone": "bus-stop",
+      "zh": "手機",
+      "en": "smartphone",
+      "ja": "スマートフォン",
+      "reading": "スマートフォン",
+      "category": "道具",
+      "size": "small",
+      "desc": "黑色智慧型手機，淺藍色螢幕。"
+    },
+    {
+      "id": "backpack",
+      "zone": "bus-stop",
+      "zh": "背包",
+      "en": "backpack",
+      "ja": "リュックサック",
+      "reading": "リュックサック",
+      "category": "道具",
+      "size": "small",
+      "desc": "紅色後背包正面：圓角矩形包身，頂部一條短提把，正面下半部一個深紅色小口袋和一條橫向拉鍊線，包身左右兩側各露出一段黑色肩帶。"
+    },
+    {
+      "id": "utility-pole",
+      "zone": "bus-stop",
+      "zh": "電線桿",
+      "en": "utility pole",
+      "ja": "電柱",
+      "reading": "でんちゅう",
+      "category": "設施",
+      "size": "large",
+      "desc": "木製電線桿，上方一根橫擔，拉出幾條細電線。"
+    },
+    {
+      "id": "police-officer",
+      "zone": "crossing",
+      "zh": "警察",
+      "en": "police officer",
+      "ja": "警察官",
+      "reading": "けいさつかん",
+      "category": "人物",
+      "size": "large",
+      "desc": "穿深藍制服、戴警帽的警察，站姿。",
+      "lane": "a"
+    },
+    {
+      "id": "mail-carrier",
+      "zone": "bus-stop",
+      "zh": "郵差",
+      "en": "mail carrier",
+      "ja": "郵便配達員",
+      "reading": "ゆうびんはいたついん",
+      "category": "人物",
+      "size": "large",
+      "desc": "穿綠色制服、背郵包的郵差。",
+      "lane": "a"
+    },
+    {
+      "id": "florist",
+      "zone": "shops",
+      "zh": "花店老闆",
+      "en": "florist",
+      "ja": "花屋",
+      "reading": "はなや",
+      "category": "人物",
+      "size": "large",
+      "desc": "繫著圍裙、手捧花束的花店老闆。",
+      "lane": "a"
+    }
+  ],
+  "createdAt": "2026-09-23T12:22:55.092Z"
+}

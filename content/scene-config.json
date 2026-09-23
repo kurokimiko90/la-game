@@ -1,5 +1,5 @@
 {
-  "world": {"width": 8800, "height": 5200},
+  "world": {"width": 10420, "height": 6960},
   "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach"],
   "scenes": {
     "park": {
@@ -81,18 +81,18 @@
         "bridge": "footbridge", "sightseeing-boat": "water", "lighthouse": "jetty",
         "parasol": "table", "plate": "table", "pizza": "table", "wine-glass": "table", "pitcher": "table", "candle": "table2", "menu": "table2", "camera": "table2"
       },
-      "clusters": [["crate", "anchor", "life-jacket"], ["handrail", "padlock", "life-buoy"], ["food-stall", "wallet"]],
+      "clusters": [["handrail", "padlock", "life-buoy"], ["food-stall", "wallet"]],
       "rows": [
         {"note": "露天座位：另一桌", "points": [[3345, 1650], [3545, 1650]], "items": ["candle", "menu", "camera"]},
         {"note": "河岸步道：沿河邊欄杆", "points": [[3040, 2050], [3040, 2560]], "items": ["binoculars", null, "map"]}
       ],
       "spots": {
         "bridge": [2800, 585], "handrail": [3040, 545], "flag": [3140, 520], "rope": [3220, 520], "bicycle": [3330, 600], "stairs": [3500, 540],
-        "lighthouse": [2895, 895], "sightseeing-boat": [2810, 1200], "fishing-rod": [3040, 1100], "ticket-office": [3250, 900], "ticket": [3345, 905], "crate": [3450, 1150],
+        "lighthouse": [2895, 895], "sightseeing-boat": [2810, 1200], "fishing-rod": [3040, 1100], "ticket-office": [3250, 900], "ticket": [3345, 905], "crate": [3090, 1255], "life-jacket": [3215, 1255], "anchor": [3335, 1255],
         "parasol": [3130, 1650], "plate": [3034, 1650], "pizza": [3100, 1650], "wine-glass": [3160, 1650], "pitcher": [3226, 1650],
         "food-stall": [3330, 2300], "skateboard": [3200, 2540], "key": [3480, 2560]
       },
-      "loose": ["rope", "padlock", "key", "wallet", "skateboard", "life-jacket", "ticket", "menu"],
+      "loose": ["rope", "padlock", "key", "wallet", "skateboard", "ticket", "menu"],
       "noFlip": [],
       "motion": {"flag": "sway", "parasol": "sway", "fishing-rod": "sway", "sightseeing-boat": "bob"}
     },
@@ -133,16 +133,16 @@
     "station": {
       "name": "車站",
       "icon": "train",
-      "zones": {"plaza": [0, 2600, 1300, 3250], "ticket-hall": [1300, 2600, 2600, 3250], "gates": [1300, 3250, 2600, 3900], "platform": [0, 3250, 1300, 3900]},
+      "zones": {"plaza": [0, 3080, 1300, 3730], "ticket-hall": [1300, 3080, 2600, 3730], "gates": [1300, 3730, 2600, 4380], "platform": [0, 3730, 1300, 4380]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"plaza": {"top": 2670, "bottom": 3230}, "ticket-hall": {"top": 2840, "bottom": 3230}, "gates": {"top": 3490, "bottom": 3880}, "platform": {"top": 3320, "bottom": 3720}}},
-        "sky-plaza": {"top": 2750, "bottom": 2900, "zones": ["plaza"], "layer": 3, "float": 150},
-        "wall-ticket-hall": {"levels": [2740], "zones": ["ticket-hall"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-ticket-hall": {"levels": [2778], "zones": ["ticket-hall"], "inset": 50},
-        "wall-gates": {"levels": [3390], "zones": ["gates"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-gates": {"levels": [3428], "zones": ["gates"], "inset": 50},
-        "sky-platform": {"top": 3400, "bottom": 3550, "zones": ["platform"], "layer": 3, "float": 150},
-        "track-platform": {"levels": [3860], "zones": ["platform"], "inset": 40, "scale": [2.2, 2.2]}
+        "ground": {"scale": [0.95, 1.05], "override": {"plaza": {"top": 3150, "bottom": 3710}, "ticket-hall": {"top": 3320, "bottom": 3710}, "gates": {"top": 3970, "bottom": 4360}, "platform": {"top": 3800, "bottom": 4200}}},
+        "sky-plaza": {"top": 3230, "bottom": 3380, "zones": ["plaza"], "layer": 3, "float": 150},
+        "wall-ticket-hall": {"levels": [3220], "zones": ["ticket-hall"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-ticket-hall": {"levels": [3258], "zones": ["ticket-hall"], "inset": 50},
+        "wall-gates": {"levels": [3870], "zones": ["gates"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-gates": {"levels": [3908], "zones": ["gates"], "inset": 50},
+        "sky-platform": {"top": 3880, "bottom": 4030, "zones": ["platform"], "layer": 3, "float": 150},
+        "track-platform": {"levels": [4340], "zones": ["platform"], "inset": 40, "scale": [2.2, 2.2]}
       },
       "place": {
         "ticket-machine": "wallbase-ticket-hall",
@@ -160,23 +160,23 @@
       "noFlip": [],
       "motion": {"flagpole": "sway", "truck": "wobble", "electric-fan": "wobble", "potted-plant": "sway", "train": "wobble", "bullet-train": "wobble", "yo-yo": "bob", "bell": "wobble", "walkie-talkie": "wobble"},
       "arrange": "auto",
-      "terrain": {"color": "#ce93d8", "x0": 0, "y0": 2600, "x1": 2600, "y1": 3900, "zones": [{"id": "plaza", "x0": 0, "y0": 2600, "x1": 1300, "y1": 3250, "indoor": false, "floor": "paving"}, {"id": "ticket-hall", "x0": 1300, "y0": 2600, "x1": 2600, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "gates", "x0": 1300, "y0": 3250, "x1": 2600, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}, {"id": "platform", "x0": 0, "y0": 3250, "x1": 1300, "y1": 3900, "indoor": false, "floor": "concrete", "track": {"y0": 3740, "y1": 3900}}]}
+      "terrain": {"color": "#ce93d8", "x0": 0, "y0": 3080, "x1": 2600, "y1": 4380, "zones": [{"id": "plaza", "x0": 0, "y0": 3080, "x1": 1300, "y1": 3730, "indoor": false, "floor": "paving"}, {"id": "ticket-hall", "x0": 1300, "y0": 3080, "x1": 2600, "y1": 3730, "indoor": true, "floor": "tile", "wallBase": 3260}, {"id": "gates", "x0": 1300, "y0": 3730, "x1": 2600, "y1": 4380, "indoor": true, "floor": "tile", "wallBase": 3910}, {"id": "platform", "x0": 0, "y0": 3730, "x1": 1300, "y1": 4380, "indoor": false, "floor": "concrete", "track": {"y0": 4220, "y1": 4380}}]}
     },
     "restaurant": {
       "name": "餐廳",
       "icon": "fence",
-      "zones": {"entrance": [3600, 0, 4900, 650], "dining-hall": [4900, 0, 6200, 650], "open-kitchen": [4900, 650, 6200, 1300], "dessert-stand": [3600, 650, 4900, 1300]},
+      "zones": {"entrance": [3840, 0, 5140, 650], "dining-hall": [5140, 0, 6440, 650], "open-kitchen": [5140, 650, 6440, 1300], "dessert-stand": [3840, 650, 5140, 1300]},
       "bands": {
         "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 70, "bottom": 630}, "dining-hall": {"top": 240, "bottom": 630, "gaps": [[190, 410]]}, "open-kitchen": {"top": 890, "bottom": 1280, "gaps": [[840, 1032]]}, "dessert-stand": {"top": 720, "bottom": 1280, "gaps": [[670, 985]]}}},
         "sky-entrance": {"top": 150, "bottom": 300, "zones": ["entrance"], "layer": 3, "float": 150},
         "wall-dining-hall": {"levels": [140], "zones": ["dining-hall"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-dining-hall": {"levels": [178], "zones": ["dining-hall"], "inset": 50},
-        "surface-dining-hall": {"levels": [310], "zones": ["dining-hall"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 380},
+        "surface-dining-hall": {"levels": [310], "zones": ["dining-hall"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 380},
         "wall-open-kitchen": {"levels": [790], "zones": ["open-kitchen"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-open-kitchen": {"levels": [828], "zones": ["open-kitchen"], "inset": 50},
-        "surface-open-kitchen": {"levels": [960], "zones": ["open-kitchen"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 1002},
+        "surface-open-kitchen": {"levels": [960], "zones": ["open-kitchen"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 1002},
         "sky-dessert-stand": {"top": 800, "bottom": 950, "zones": ["dessert-stand"], "layer": 3, "float": 150},
-        "surface-dessert-stand": {"levels": [790, 885], "zones": ["dessert-stand"], "x0": 3750, "x1": 4750, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 955}
+        "surface-dessert-stand": {"levels": [790, 885], "zones": ["dessert-stand"], "x0": 3990, "x1": 4990, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 955}
       },
       "place": {
         "knife": "surface-dining-hall",
@@ -236,23 +236,23 @@
       "noFlip": [],
       "motion": {"delivery-van": "wobble", "fern": "sway", "rose": "sway", "curtain": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#80cbc4", "x0": 3600, "y0": 0, "x1": 6200, "y1": 1300, "zones": [{"id": "entrance", "x0": 3600, "y0": 0, "x1": 4900, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "dining-hall", "x0": 4900, "y0": 0, "x1": 6200, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "open-kitchen", "x0": 4900, "y0": 650, "x1": 6200, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}, {"id": "dessert-stand", "x0": 3600, "y0": 650, "x1": 4900, "y1": 1300, "indoor": false, "floor": "concrete"}]}
+      "terrain": {"color": "#80cbc4", "x0": 3840, "y0": 0, "x1": 6440, "y1": 1300, "zones": [{"id": "entrance", "x0": 3840, "y0": 0, "x1": 5140, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "dining-hall", "x0": 5140, "y0": 0, "x1": 6440, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "open-kitchen", "x0": 5140, "y0": 650, "x1": 6440, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}, {"id": "dessert-stand", "x0": 3840, "y0": 650, "x1": 5140, "y1": 1300, "indoor": false, "floor": "concrete"}]}
     },
     "school": {
       "name": "學校",
       "icon": "barrier-arm",
-      "zones": {"school-gate": [3600, 1300, 4900, 1950], "school-yard": [4900, 1300, 6200, 1950], "classroom": [4900, 1950, 6200, 2600], "library": [3600, 1950, 4900, 2600]},
+      "zones": {"school-gate": [3840, 1540, 5140, 2190], "school-yard": [5140, 1540, 6440, 2190], "classroom": [5140, 2190, 6440, 2840], "library": [3840, 2190, 5140, 2840]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"school-gate": {"top": 1370, "bottom": 1745}, "school-yard": {"top": 1370, "bottom": 1930}, "classroom": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2360]]}, "library": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2455]]}}},
-        "sky-school-gate": {"top": 1450, "bottom": 1600, "zones": ["school-gate"], "layer": 3, "float": 150},
-        "road-school-gate": {"top": 1830, "bottom": 1900, "zones": ["school-gate"], "inset": 20},
-        "sky-school-yard": {"top": 1450, "bottom": 1600, "zones": ["school-yard"], "layer": 3, "float": 150},
-        "wall-classroom": {"levels": [2090], "zones": ["classroom"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-classroom": {"levels": [2128], "zones": ["classroom"], "inset": 50},
-        "surface-classroom": {"levels": [2260], "zones": ["classroom"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 2330},
-        "wall-library": {"levels": [2090], "zones": ["library"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-library": {"levels": [2128], "zones": ["library"], "inset": 50},
-        "surface-library": {"levels": [2260, 2355], "zones": ["library"], "x0": 3750, "x1": 4750, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2425}
+        "ground": {"scale": [0.95, 1.05], "override": {"school-gate": {"top": 1610, "bottom": 1985}, "school-yard": {"top": 1610, "bottom": 2170}, "classroom": {"top": 2430, "bottom": 2820, "gaps": [[2380, 2600]]}, "library": {"top": 2430, "bottom": 2820, "gaps": [[2380, 2695]]}}},
+        "sky-school-gate": {"top": 1690, "bottom": 1840, "zones": ["school-gate"], "layer": 3, "float": 150},
+        "road-school-gate": {"top": 2070, "bottom": 2140, "zones": ["school-gate"], "inset": 20},
+        "sky-school-yard": {"top": 1690, "bottom": 1840, "zones": ["school-yard"], "layer": 3, "float": 150},
+        "wall-classroom": {"levels": [2330], "zones": ["classroom"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-classroom": {"levels": [2368], "zones": ["classroom"], "inset": 50},
+        "surface-classroom": {"levels": [2500], "zones": ["classroom"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 2570},
+        "wall-library": {"levels": [2330], "zones": ["library"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-library": {"levels": [2368], "zones": ["library"], "inset": 50},
+        "surface-library": {"levels": [2500, 2595], "zones": ["library"], "x0": 3990, "x1": 4990, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2665}
       },
       "place": {
         "projection-screen": "wall-classroom",
@@ -291,25 +291,25 @@
       "noFlip": [],
       "motion": {"raincoat": "sway", "tulip": "sway", "daisy": "sway", "dandelion": "sway", "clover": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#ffab91", "x0": 3600, "y0": 1300, "x1": 6200, "y1": 2600, "zones": [{"id": "school-gate", "x0": 3600, "y0": 1300, "x1": 4900, "y1": 1950, "indoor": false, "floor": "paving", "road": {"y0": 1760, "y1": 1920}}, {"id": "school-yard", "x0": 4900, "y0": 1300, "x1": 6200, "y1": 1950, "indoor": false, "floor": "grass"}, {"id": "classroom", "x0": 4900, "y0": 1950, "x1": 6200, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}, {"id": "library", "x0": 3600, "y0": 1950, "x1": 4900, "y1": 2600, "indoor": true, "floor": "carpet", "wallBase": 2130}]}
+      "terrain": {"color": "#ffab91", "x0": 3840, "y0": 1540, "x1": 6440, "y1": 2840, "zones": [{"id": "school-gate", "x0": 3840, "y0": 1540, "x1": 5140, "y1": 2190, "indoor": false, "floor": "paving", "road": {"y0": 2000, "y1": 2160}}, {"id": "school-yard", "x0": 5140, "y0": 1540, "x1": 6440, "y1": 2190, "indoor": false, "floor": "grass"}, {"id": "classroom", "x0": 5140, "y0": 2190, "x1": 6440, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}, {"id": "library", "x0": 3840, "y0": 2190, "x1": 5140, "y1": 2840, "indoor": true, "floor": "carpet", "wallBase": 2370}]}
     },
     "hospital": {
       "name": "醫院",
       "icon": "ambulance",
-      "zones": {"entrance": [3600, 2600, 4900, 3250], "lobby": [4900, 2600, 6200, 3250], "waiting-area": [4900, 3250, 6200, 3900], "pharmacy": [3600, 3250, 4900, 3900]},
+      "zones": {"entrance": [3840, 3080, 5140, 3730], "lobby": [5140, 3080, 6440, 3730], "waiting-area": [5140, 3730, 6440, 4380], "pharmacy": [3840, 3730, 5140, 4380]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 2670, "bottom": 3045}, "lobby": {"top": 2840, "bottom": 3230, "gaps": [[2790, 2982]]}, "waiting-area": {"top": 3490, "bottom": 3880, "gaps": [[3440, 3660]]}, "pharmacy": {"top": 3490, "bottom": 3880, "gaps": [[3440, 3660]]}}},
-        "sky-entrance": {"top": 2750, "bottom": 2900, "zones": ["entrance"], "layer": 3, "float": 150},
-        "road-entrance": {"top": 3130, "bottom": 3200, "zones": ["entrance"], "inset": 20},
-        "wall-lobby": {"levels": [2740], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-lobby": {"levels": [2778], "zones": ["lobby"], "inset": 50},
-        "surface-lobby": {"levels": [2910], "zones": ["lobby"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 2952},
-        "wall-waiting-area": {"levels": [3390], "zones": ["waiting-area"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-waiting-area": {"levels": [3428], "zones": ["waiting-area"], "inset": 50},
-        "surface-waiting-area": {"levels": [3560], "zones": ["waiting-area"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 3630},
-        "wall-pharmacy": {"levels": [3390], "zones": ["pharmacy"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-pharmacy": {"levels": [3428], "zones": ["pharmacy"], "inset": 50},
-        "surface-pharmacy": {"levels": [3560], "zones": ["pharmacy"], "x0": 3750, "x1": 4750, "inset": 0, "scale": [0.8, 0.8], "look": "chiller", "base": 3630}
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3150, "bottom": 3525}, "lobby": {"top": 3320, "bottom": 3710, "gaps": [[3270, 3462]]}, "waiting-area": {"top": 3970, "bottom": 4360, "gaps": [[3920, 4140]]}, "pharmacy": {"top": 3970, "bottom": 4360, "gaps": [[3920, 4140]]}}},
+        "sky-entrance": {"top": 3230, "bottom": 3380, "zones": ["entrance"], "layer": 3, "float": 150},
+        "road-entrance": {"top": 3610, "bottom": 3680, "zones": ["entrance"], "inset": 20},
+        "wall-lobby": {"levels": [3220], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-lobby": {"levels": [3258], "zones": ["lobby"], "inset": 50},
+        "surface-lobby": {"levels": [3390], "zones": ["lobby"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 3432},
+        "wall-waiting-area": {"levels": [3870], "zones": ["waiting-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-waiting-area": {"levels": [3908], "zones": ["waiting-area"], "inset": 50},
+        "surface-waiting-area": {"levels": [4040], "zones": ["waiting-area"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 4110},
+        "wall-pharmacy": {"levels": [3870], "zones": ["pharmacy"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-pharmacy": {"levels": [3908], "zones": ["pharmacy"], "inset": 50},
+        "surface-pharmacy": {"levels": [4040], "zones": ["pharmacy"], "x0": 3990, "x1": 4990, "inset": 0, "scale": [0.8, 0.8], "look": "chiller", "base": 4110}
       },
       "place": {
         "ambulance": "road-entrance",
@@ -364,24 +364,24 @@
       "noFlip": [],
       "motion": {"sunflower": "sway", "lavender": "sway", "plant": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#9fa8da", "x0": 3600, "y0": 2600, "x1": 6200, "y1": 3900, "zones": [{"id": "entrance", "x0": 3600, "y0": 2600, "x1": 4900, "y1": 3250, "indoor": false, "floor": "paving", "road": {"y0": 3060, "y1": 3220}}, {"id": "lobby", "x0": 4900, "y0": 2600, "x1": 6200, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "waiting-area", "x0": 4900, "y0": 3250, "x1": 6200, "y1": 3900, "indoor": true, "floor": "carpet", "wallBase": 3430}, {"id": "pharmacy", "x0": 3600, "y0": 3250, "x1": 4900, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}
+      "terrain": {"color": "#9fa8da", "x0": 3840, "y0": 3080, "x1": 6440, "y1": 4380, "zones": [{"id": "entrance", "x0": 3840, "y0": 3080, "x1": 5140, "y1": 3730, "indoor": false, "floor": "paving", "road": {"y0": 3540, "y1": 3700}}, {"id": "lobby", "x0": 5140, "y0": 3080, "x1": 6440, "y1": 3730, "indoor": true, "floor": "tile", "wallBase": 3260}, {"id": "waiting-area", "x0": 5140, "y0": 3730, "x1": 6440, "y1": 4380, "indoor": true, "floor": "carpet", "wallBase": 3910}, {"id": "pharmacy", "x0": 3840, "y0": 3730, "x1": 5140, "y1": 4380, "indoor": true, "floor": "tile", "wallBase": 3910}]}
     },
     "airport": {
       "name": "機場",
       "icon": "airplane",
-      "zones": {"entrance": [0, 3900, 1300, 4550], "check-in-hall": [1300, 3900, 2600, 4550], "security-check": [1300, 4550, 2600, 5200], "departure-gate": [0, 4550, 1300, 5200]},
+      "zones": {"entrance": [0, 4620, 1300, 5270], "check-in-hall": [1300, 4620, 2600, 5270], "security-check": [1300, 5270, 2600, 5920], "departure-gate": [0, 5270, 1300, 5920]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3970, "bottom": 4345}, "check-in-hall": {"top": 4140, "bottom": 4530, "gaps": [[4090, 4282]]}, "security-check": {"top": 4790, "bottom": 5180}, "departure-gate": {"top": 4790, "bottom": 5180, "gaps": [[4740, 5055]]}}},
-        "sky-entrance": {"top": 4050, "bottom": 4200, "zones": ["entrance"], "layer": 3, "float": 150},
-        "road-entrance": {"top": 4430, "bottom": 4500, "zones": ["entrance"], "inset": 20},
-        "wall-check-in-hall": {"levels": [4040], "zones": ["check-in-hall"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-check-in-hall": {"levels": [4078], "zones": ["check-in-hall"], "inset": 50},
-        "surface-check-in-hall": {"levels": [4210], "zones": ["check-in-hall"], "x0": 1450, "x1": 2450, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4252},
-        "wall-security-check": {"levels": [4690], "zones": ["security-check"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-security-check": {"levels": [4728], "zones": ["security-check"], "inset": 50},
-        "wall-departure-gate": {"levels": [4690], "zones": ["departure-gate"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-departure-gate": {"levels": [4728], "zones": ["departure-gate"], "inset": 50},
-        "surface-departure-gate": {"levels": [4860, 4955], "zones": ["departure-gate"], "x0": 150, "x1": 1150, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 5025}
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 4690, "bottom": 5065}, "check-in-hall": {"top": 4860, "bottom": 5250, "gaps": [[4810, 5002]]}, "security-check": {"top": 5510, "bottom": 5900}, "departure-gate": {"top": 5510, "bottom": 5900, "gaps": [[5460, 5775]]}}},
+        "sky-entrance": {"top": 4770, "bottom": 4920, "zones": ["entrance"], "layer": 3, "float": 150},
+        "road-entrance": {"top": 5150, "bottom": 5220, "zones": ["entrance"], "inset": 20},
+        "wall-check-in-hall": {"levels": [4760], "zones": ["check-in-hall"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-check-in-hall": {"levels": [4798], "zones": ["check-in-hall"], "inset": 50},
+        "surface-check-in-hall": {"levels": [4930], "zones": ["check-in-hall"], "x0": 1450, "x1": 2450, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4972},
+        "wall-security-check": {"levels": [5410], "zones": ["security-check"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-security-check": {"levels": [5448], "zones": ["security-check"], "inset": 50},
+        "wall-departure-gate": {"levels": [5410], "zones": ["departure-gate"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-departure-gate": {"levels": [5448], "zones": ["departure-gate"], "inset": 50},
+        "surface-departure-gate": {"levels": [5580, 5675], "zones": ["departure-gate"], "x0": 150, "x1": 1150, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 5745}
       },
       "place": {
         "airplane": "sky-entrance",
@@ -417,24 +417,24 @@
       "noFlip": [],
       "motion": {"airport-shuttle": "wobble", "aircraft-tug": "wobble"},
       "arrange": "auto",
-      "terrain": {"color": "#c5e1a5", "x0": 0, "y0": 3900, "x1": 2600, "y1": 5200, "zones": [{"id": "entrance", "x0": 0, "y0": 3900, "x1": 1300, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "check-in-hall", "x0": 1300, "y0": 3900, "x1": 2600, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "security-check", "x0": 1300, "y0": 4550, "x1": 2600, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}, {"id": "departure-gate", "x0": 0, "y0": 4550, "x1": 1300, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
+      "terrain": {"color": "#c5e1a5", "x0": 0, "y0": 4620, "x1": 2600, "y1": 5920, "zones": [{"id": "entrance", "x0": 0, "y0": 4620, "x1": 1300, "y1": 5270, "indoor": false, "floor": "paving", "road": {"y0": 5080, "y1": 5240}}, {"id": "check-in-hall", "x0": 1300, "y0": 4620, "x1": 2600, "y1": 5270, "indoor": true, "floor": "tile", "wallBase": 4800}, {"id": "security-check", "x0": 1300, "y0": 5270, "x1": 2600, "y1": 5920, "indoor": true, "floor": "tile", "wallBase": 5450}, {"id": "departure-gate", "x0": 0, "y0": 5270, "x1": 1300, "y1": 5920, "indoor": true, "floor": "carpet", "wallBase": 5450}]}
     },
     "library": {
       "name": "圖書館",
       "icon": "archway",
-      "zones": {"entrance": [3600, 3900, 4900, 4550], "lobby": [4900, 3900, 6200, 4550], "bookstacks": [4900, 4550, 6200, 5200], "reading-room": [3600, 4550, 4900, 5200]},
+      "zones": {"entrance": [3840, 4620, 5140, 5270], "lobby": [5140, 4620, 6440, 5270], "bookstacks": [5140, 5270, 6440, 5920], "reading-room": [3840, 5270, 5140, 5920]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3970, "bottom": 4530}, "lobby": {"top": 4140, "bottom": 4530, "gaps": [[4090, 4282]]}, "bookstacks": {"top": 4790, "bottom": 5180, "gaps": [[4740, 5055]]}, "reading-room": {"top": 4790, "bottom": 5180, "gaps": [[4740, 4960]]}}},
-        "sky-entrance": {"top": 4050, "bottom": 4200, "zones": ["entrance"], "layer": 3, "float": 150},
-        "wall-lobby": {"levels": [4040], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-lobby": {"levels": [4078], "zones": ["lobby"], "inset": 50},
-        "surface-lobby": {"levels": [4210], "zones": ["lobby"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4252},
-        "wall-bookstacks": {"levels": [4690], "zones": ["bookstacks"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-bookstacks": {"levels": [4728], "zones": ["bookstacks"], "inset": 50},
-        "surface-bookstacks": {"levels": [4860, 4955], "zones": ["bookstacks"], "x0": 5050, "x1": 6050, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 5025},
-        "wall-reading-room": {"levels": [4690], "zones": ["reading-room"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-reading-room": {"levels": [4728], "zones": ["reading-room"], "inset": 50},
-        "surface-reading-room": {"levels": [4860], "zones": ["reading-room"], "x0": 3750, "x1": 4750, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 4930}
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 4690, "bottom": 5250}, "lobby": {"top": 4860, "bottom": 5250, "gaps": [[4810, 5002]]}, "bookstacks": {"top": 5510, "bottom": 5900, "gaps": [[5460, 5775]]}, "reading-room": {"top": 5510, "bottom": 5900, "gaps": [[5460, 5680]]}}},
+        "sky-entrance": {"top": 4770, "bottom": 4920, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-lobby": {"levels": [4760], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-lobby": {"levels": [4798], "zones": ["lobby"], "inset": 50},
+        "surface-lobby": {"levels": [4930], "zones": ["lobby"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4972},
+        "wall-bookstacks": {"levels": [5410], "zones": ["bookstacks"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-bookstacks": {"levels": [5448], "zones": ["bookstacks"], "inset": 50},
+        "surface-bookstacks": {"levels": [5580, 5675], "zones": ["bookstacks"], "x0": 5290, "x1": 6290, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 5745},
+        "wall-reading-room": {"levels": [5410], "zones": ["reading-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-reading-room": {"levels": [5448], "zones": ["reading-room"], "inset": 50},
+        "surface-reading-room": {"levels": [5580], "zones": ["reading-room"], "x0": 3990, "x1": 4990, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 5650}
       },
       "place": {
         "rubber-stamp": "surface-lobby",
@@ -480,24 +480,24 @@
       "noFlip": [],
       "motion": {"rain-chain": "sway", "document-shredder": "wobble", "ceiling-fan": "wobble"},
       "arrange": "auto",
-      "terrain": {"color": "#ffe082", "x0": 3600, "y0": 3900, "x1": 6200, "y1": 5200, "zones": [{"id": "entrance", "x0": 3600, "y0": 3900, "x1": 4900, "y1": 4550, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 4900, "y0": 3900, "x1": 6200, "y1": 4550, "indoor": true, "floor": "tile", "wallBase": 4080}, {"id": "bookstacks", "x0": 4900, "y0": 4550, "x1": 6200, "y1": 5200, "indoor": true, "floor": "wood", "wallBase": 4730}, {"id": "reading-room", "x0": 3600, "y0": 4550, "x1": 4900, "y1": 5200, "indoor": true, "floor": "carpet", "wallBase": 4730}]}
+      "terrain": {"color": "#ffe082", "x0": 3840, "y0": 4620, "x1": 6440, "y1": 5920, "zones": [{"id": "entrance", "x0": 3840, "y0": 4620, "x1": 5140, "y1": 5270, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 5140, "y0": 4620, "x1": 6440, "y1": 5270, "indoor": true, "floor": "tile", "wallBase": 4800}, {"id": "bookstacks", "x0": 5140, "y0": 5270, "x1": 6440, "y1": 5920, "indoor": true, "floor": "wood", "wallBase": 5450}, {"id": "reading-room", "x0": 3840, "y0": 5270, "x1": 5140, "y1": 5920, "indoor": true, "floor": "carpet", "wallBase": 5450}]}
     },
     "post-office": {
       "name": "郵局",
       "icon": "cloud",
-      "zones": {"entrance": [6200, 0, 7500, 650], "service-hall": [7500, 0, 8800, 650], "waiting-area": [7500, 650, 8800, 1300], "sorting-room": [6200, 650, 7500, 1300]},
+      "zones": {"entrance": [6680, 0, 7980, 650], "service-hall": [7980, 0, 9280, 650], "waiting-area": [7980, 650, 9280, 1300], "sorting-room": [6680, 650, 7980, 1300]},
       "bands": {
         "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 70, "bottom": 630}, "service-hall": {"top": 240, "bottom": 630, "gaps": [[190, 382]]}, "waiting-area": {"top": 890, "bottom": 1280, "gaps": [[840, 1155]]}, "sorting-room": {"top": 890, "bottom": 1280, "gaps": [[840, 1060]]}}},
         "sky-entrance": {"top": 150, "bottom": 300, "zones": ["entrance"], "layer": 3, "float": 150},
         "wall-service-hall": {"levels": [140], "zones": ["service-hall"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-service-hall": {"levels": [178], "zones": ["service-hall"], "inset": 50},
-        "surface-service-hall": {"levels": [310], "zones": ["service-hall"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 352},
+        "surface-service-hall": {"levels": [310], "zones": ["service-hall"], "x0": 8130, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 352},
         "wall-waiting-area": {"levels": [790], "zones": ["waiting-area"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-waiting-area": {"levels": [828], "zones": ["waiting-area"], "inset": 50},
-        "surface-waiting-area": {"levels": [960, 1055], "zones": ["waiting-area"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 1125},
+        "surface-waiting-area": {"levels": [960, 1055], "zones": ["waiting-area"], "x0": 8130, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 1125},
         "wall-sorting-room": {"levels": [790], "zones": ["sorting-room"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-sorting-room": {"levels": [828], "zones": ["sorting-room"], "inset": 50},
-        "surface-sorting-room": {"levels": [960], "zones": ["sorting-room"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 1030}
+        "surface-sorting-room": {"levels": [960], "zones": ["sorting-room"], "x0": 6830, "x1": 7830, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 1030}
       },
       "place": {
         "cloud": "sky-entrance",
@@ -532,24 +532,24 @@
       "noFlip": [],
       "motion": {"flower": "sway", "cloud": "drift", "raindrop": "drift", "wind-sock": "sway", "moss": "sway", "weed": "sway", "work-apron": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#f48fb1", "x0": 6200, "y0": 0, "x1": 8800, "y1": 1300, "zones": [{"id": "entrance", "x0": 6200, "y0": 0, "x1": 7500, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "service-hall", "x0": 7500, "y0": 0, "x1": 8800, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "waiting-area", "x0": 7500, "y0": 650, "x1": 8800, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "sorting-room", "x0": 6200, "y0": 650, "x1": 7500, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}]}
+      "terrain": {"color": "#f48fb1", "x0": 6680, "y0": 0, "x1": 9280, "y1": 1300, "zones": [{"id": "entrance", "x0": 6680, "y0": 0, "x1": 7980, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "service-hall", "x0": 7980, "y0": 0, "x1": 9280, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "waiting-area", "x0": 7980, "y0": 650, "x1": 9280, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "sorting-room", "x0": 6680, "y0": 650, "x1": 7980, "y1": 1300, "indoor": true, "floor": "tile", "wallBase": 830}]}
     },
     "fire-station": {
       "name": "消防局",
       "icon": "fire-engine",
-      "zones": {"front-yard": [6200, 1300, 7500, 1950], "garage": [7500, 1300, 8800, 1950], "equipment-room": [7500, 1950, 8800, 2600], "dispatch-room": [6200, 1950, 7500, 2600]},
+      "zones": {"front-yard": [6680, 1540, 7980, 2190], "garage": [7980, 1540, 9280, 2190], "equipment-room": [7980, 2190, 9280, 2840], "dispatch-room": [6680, 2190, 7980, 2840]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"front-yard": {"top": 1370, "bottom": 1745}, "garage": {"top": 1540, "bottom": 1930}, "equipment-room": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2455]]}, "dispatch-room": {"top": 2190, "bottom": 2580, "gaps": [[2140, 2332]]}}},
-        "sky-front-yard": {"top": 1450, "bottom": 1600, "zones": ["front-yard"], "layer": 3, "float": 150},
-        "road-front-yard": {"top": 1830, "bottom": 1900, "zones": ["front-yard"], "inset": 20},
-        "wall-garage": {"levels": [1440], "zones": ["garage"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-garage": {"levels": [1478], "zones": ["garage"], "inset": 50},
-        "wall-equipment-room": {"levels": [2090], "zones": ["equipment-room"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-equipment-room": {"levels": [2128], "zones": ["equipment-room"], "inset": 50},
-        "surface-equipment-room": {"levels": [2260, 2355], "zones": ["equipment-room"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2425},
-        "wall-dispatch-room": {"levels": [2090], "zones": ["dispatch-room"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-dispatch-room": {"levels": [2128], "zones": ["dispatch-room"], "inset": 50},
-        "surface-dispatch-room": {"levels": [2260], "zones": ["dispatch-room"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 2302}
+        "ground": {"scale": [0.95, 1.05], "override": {"front-yard": {"top": 1610, "bottom": 1985}, "garage": {"top": 1780, "bottom": 2170}, "equipment-room": {"top": 2430, "bottom": 2820, "gaps": [[2380, 2695]]}, "dispatch-room": {"top": 2430, "bottom": 2820, "gaps": [[2380, 2572]]}}},
+        "sky-front-yard": {"top": 1690, "bottom": 1840, "zones": ["front-yard"], "layer": 3, "float": 150},
+        "road-front-yard": {"top": 2070, "bottom": 2140, "zones": ["front-yard"], "inset": 20},
+        "wall-garage": {"levels": [1680], "zones": ["garage"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-garage": {"levels": [1718], "zones": ["garage"], "inset": 50},
+        "wall-equipment-room": {"levels": [2330], "zones": ["equipment-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-equipment-room": {"levels": [2368], "zones": ["equipment-room"], "inset": 50},
+        "surface-equipment-room": {"levels": [2500, 2595], "zones": ["equipment-room"], "x0": 8130, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2665},
+        "wall-dispatch-room": {"levels": [2330], "zones": ["dispatch-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-dispatch-room": {"levels": [2368], "zones": ["dispatch-room"], "inset": 50},
+        "surface-dispatch-room": {"levels": [2500], "zones": ["dispatch-room"], "x0": 6830, "x1": 7830, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 2542}
       },
       "place": {
         "fire-engine": "road-front-yard",
@@ -586,24 +586,24 @@
       "noFlip": [],
       "motion": {"fire-engine": "wobble", "fire-station-flag": "sway", "smoke": "drift", "fire-hood": "sway", "fire-jacket": "sway", "fire-trousers": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#90caf9", "x0": 6200, "y0": 1300, "x1": 8800, "y1": 2600, "zones": [{"id": "front-yard", "x0": 6200, "y0": 1300, "x1": 7500, "y1": 1950, "indoor": false, "floor": "concrete", "road": {"y0": 1760, "y1": 1920}}, {"id": "garage", "x0": 7500, "y0": 1300, "x1": 8800, "y1": 1950, "indoor": true, "floor": "tile", "wallBase": 1480}, {"id": "equipment-room", "x0": 7500, "y0": 1950, "x1": 8800, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}, {"id": "dispatch-room", "x0": 6200, "y0": 1950, "x1": 7500, "y1": 2600, "indoor": true, "floor": "tile", "wallBase": 2130}]}
+      "terrain": {"color": "#90caf9", "x0": 6680, "y0": 1540, "x1": 9280, "y1": 2840, "zones": [{"id": "front-yard", "x0": 6680, "y0": 1540, "x1": 7980, "y1": 2190, "indoor": false, "floor": "concrete", "road": {"y0": 2000, "y1": 2160}}, {"id": "garage", "x0": 7980, "y0": 1540, "x1": 9280, "y1": 2190, "indoor": true, "floor": "tile", "wallBase": 1720}, {"id": "equipment-room", "x0": 7980, "y0": 2190, "x1": 9280, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}, {"id": "dispatch-room", "x0": 6680, "y0": 2190, "x1": 7980, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}]}
     },
     "bakery": {
       "name": "麵包店",
       "icon": "dining-table",
-      "zones": {"entrance": [6200, 2600, 7500, 3250], "display-area": [7500, 2600, 8800, 3250], "seating-area": [7500, 3250, 8800, 3900], "checkout-counter": [6200, 3250, 7500, 3900]},
+      "zones": {"entrance": [6680, 3080, 7980, 3730], "display-area": [7980, 3080, 9280, 3730], "seating-area": [7980, 3730, 9280, 4380], "checkout-counter": [6680, 3730, 7980, 4380]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 2670, "bottom": 3230}, "display-area": {"top": 2840, "bottom": 3230, "gaps": [[2790, 3105]]}, "seating-area": {"top": 3490, "bottom": 3880, "gaps": [[3440, 3660]]}, "checkout-counter": {"top": 3490, "bottom": 3880, "gaps": [[3440, 3632]]}}},
-        "sky-entrance": {"top": 2750, "bottom": 2900, "zones": ["entrance"], "layer": 3, "float": 150},
-        "wall-display-area": {"levels": [2740], "zones": ["display-area"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-display-area": {"levels": [2778], "zones": ["display-area"], "inset": 50},
-        "surface-display-area": {"levels": [2910, 3005], "zones": ["display-area"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 3075},
-        "wall-seating-area": {"levels": [3390], "zones": ["seating-area"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-seating-area": {"levels": [3428], "zones": ["seating-area"], "inset": 50},
-        "surface-seating-area": {"levels": [3560], "zones": ["seating-area"], "x0": 7650, "x1": 8650, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 3630},
-        "wall-checkout-counter": {"levels": [3390], "zones": ["checkout-counter"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-checkout-counter": {"levels": [3428], "zones": ["checkout-counter"], "inset": 50},
-        "surface-checkout-counter": {"levels": [3560], "zones": ["checkout-counter"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 3602}
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3150, "bottom": 3710}, "display-area": {"top": 3320, "bottom": 3710, "gaps": [[3270, 3585]]}, "seating-area": {"top": 3970, "bottom": 4360, "gaps": [[3920, 4140]]}, "checkout-counter": {"top": 3970, "bottom": 4360, "gaps": [[3920, 4112]]}}},
+        "sky-entrance": {"top": 3230, "bottom": 3380, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-display-area": {"levels": [3220], "zones": ["display-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-display-area": {"levels": [3258], "zones": ["display-area"], "inset": 50},
+        "surface-display-area": {"levels": [3390, 3485], "zones": ["display-area"], "x0": 8130, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 3555},
+        "wall-seating-area": {"levels": [3870], "zones": ["seating-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-seating-area": {"levels": [3908], "zones": ["seating-area"], "inset": 50},
+        "surface-seating-area": {"levels": [4040], "zones": ["seating-area"], "x0": 8130, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 4110},
+        "wall-checkout-counter": {"levels": [3870], "zones": ["checkout-counter"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-checkout-counter": {"levels": [3908], "zones": ["checkout-counter"], "inset": 50},
+        "surface-checkout-counter": {"levels": [4040], "zones": ["checkout-counter"], "x0": 6830, "x1": 7830, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4082}
       },
       "place": {
         "bread-roll": "surface-display-area",
@@ -649,22 +649,22 @@
       "noFlip": [],
       "motion": {"wheat-stalk": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#bcaaa4", "x0": 6200, "y0": 2600, "x1": 8800, "y1": 3900, "zones": [{"id": "entrance", "x0": 6200, "y0": 2600, "x1": 7500, "y1": 3250, "indoor": false, "floor": "paving"}, {"id": "display-area", "x0": 7500, "y0": 2600, "x1": 8800, "y1": 3250, "indoor": true, "floor": "tile", "wallBase": 2780}, {"id": "seating-area", "x0": 7500, "y0": 3250, "x1": 8800, "y1": 3900, "indoor": true, "floor": "wood", "wallBase": 3430}, {"id": "checkout-counter", "x0": 6200, "y0": 3250, "x1": 7500, "y1": 3900, "indoor": true, "floor": "tile", "wallBase": 3430}]}
+      "terrain": {"color": "#bcaaa4", "x0": 6680, "y0": 3080, "x1": 9280, "y1": 4380, "zones": [{"id": "entrance", "x0": 6680, "y0": 3080, "x1": 7980, "y1": 3730, "indoor": false, "floor": "paving"}, {"id": "display-area", "x0": 7980, "y0": 3080, "x1": 9280, "y1": 3730, "indoor": true, "floor": "tile", "wallBase": 3260}, {"id": "seating-area", "x0": 7980, "y0": 3730, "x1": 9280, "y1": 4380, "indoor": true, "floor": "wood", "wallBase": 3910}, {"id": "checkout-counter", "x0": 6680, "y0": 3730, "x1": 7980, "y1": 4380, "indoor": true, "floor": "tile", "wallBase": 3910}]}
     },
     "beach": {
       "name": "海邊",
       "icon": "lifeguard-chair",
-      "zones": {"entrance": [6200, 3900, 7500, 4550], "boardwalk": [7500, 3900, 8800, 4550], "tide-pool": [7500, 4550, 8800, 5200], "snack-shack": [6200, 4550, 7500, 5200]},
+      "zones": {"entrance": [6680, 4620, 7980, 5270], "boardwalk": [7980, 4620, 9280, 5270], "tide-pool": [7980, 5270, 9280, 5920], "snack-shack": [6680, 5270, 7980, 5920]},
       "bands": {
-        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 3970, "bottom": 4345}, "boardwalk": {"top": 3970, "bottom": 4530}, "tide-pool": {"top": 4620, "bottom": 5180, "x1": 8120}, "snack-shack": {"top": 4790, "bottom": 5180, "gaps": [[4740, 4932]]}}},
-        "sky-entrance": {"top": 4050, "bottom": 4200, "zones": ["entrance"], "layer": 3, "float": 150},
-        "road-entrance": {"top": 4430, "bottom": 4500, "zones": ["entrance"], "inset": 20},
-        "sky-boardwalk": {"top": 4050, "bottom": 4200, "zones": ["boardwalk"], "layer": 3, "float": 150},
-        "sky-tide-pool": {"top": 4700, "bottom": 4850, "zones": ["tide-pool"], "layer": 3, "float": 150},
-        "water-tide-pool": {"x0": 8190, "x1": 8710, "top": 4730, "bottom": 5130, "zones": ["tide-pool"], "layer": 1, "scale": [0.9, 0.9]},
-        "wall-snack-shack": {"levels": [4690], "zones": ["snack-shack"], "inset": 60, "scale": [0.85, 0.85]},
-        "wallbase-snack-shack": {"levels": [4728], "zones": ["snack-shack"], "inset": 50},
-        "surface-snack-shack": {"levels": [4860], "zones": ["snack-shack"], "x0": 6350, "x1": 7350, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 4902}
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 4690, "bottom": 5065}, "boardwalk": {"top": 4690, "bottom": 5250}, "tide-pool": {"top": 5340, "bottom": 5900, "x1": 8600}, "snack-shack": {"top": 5510, "bottom": 5900, "gaps": [[5460, 5652]]}}},
+        "sky-entrance": {"top": 4770, "bottom": 4920, "zones": ["entrance"], "layer": 3, "float": 150},
+        "road-entrance": {"top": 5150, "bottom": 5220, "zones": ["entrance"], "inset": 20},
+        "sky-boardwalk": {"top": 4770, "bottom": 4920, "zones": ["boardwalk"], "layer": 3, "float": 150},
+        "sky-tide-pool": {"top": 5420, "bottom": 5570, "zones": ["tide-pool"], "layer": 3, "float": 150},
+        "water-tide-pool": {"x0": 8670, "x1": 9190, "top": 5450, "bottom": 5850, "zones": ["tide-pool"], "layer": 1, "scale": [0.9, 0.9]},
+        "wall-snack-shack": {"levels": [5410], "zones": ["snack-shack"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-snack-shack": {"levels": [5448], "zones": ["snack-shack"], "inset": 50},
+        "surface-snack-shack": {"levels": [5580], "zones": ["snack-shack"], "x0": 6830, "x1": 7830, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 5622}
       },
       "place": {
         "buoy": "water-tide-pool",
@@ -685,7 +685,7 @@
       "noFlip": [],
       "motion": {"seaweed": "sway", "palm-tree": "sway", "seashell-wind-chime": "sway", "dune-grass": "sway", "sea-holly": "sway", "coastal-grass-seedhead": "sway", "reed": "sway", "sea-lavender": "sway", "buoy": "bob", "ice-maker": "wobble", "floor-fan": "wobble"},
       "arrange": "auto",
-      "terrain": {"color": "#a5d6a7", "x0": 6200, "y0": 3900, "x1": 8800, "y1": 5200, "zones": [{"id": "entrance", "x0": 6200, "y0": 3900, "x1": 7500, "y1": 4550, "indoor": false, "floor": "paving", "road": {"y0": 4360, "y1": 4520}}, {"id": "boardwalk", "x0": 7500, "y0": 3900, "x1": 8800, "y1": 4550, "indoor": false, "floor": "grass"}, {"id": "tide-pool", "x0": 7500, "y0": 4550, "x1": 8800, "y1": 5200, "indoor": false, "floor": "sand", "pool": {"x0": 8150, "y0": 4660, "x1": 8750, "y1": 5160}}, {"id": "snack-shack", "x0": 6200, "y0": 4550, "x1": 7500, "y1": 5200, "indoor": true, "floor": "tile", "wallBase": 4730}]}
+      "terrain": {"color": "#a5d6a7", "x0": 6680, "y0": 4620, "x1": 9280, "y1": 5920, "zones": [{"id": "entrance", "x0": 6680, "y0": 4620, "x1": 7980, "y1": 5270, "indoor": false, "floor": "paving", "road": {"y0": 5080, "y1": 5240}}, {"id": "boardwalk", "x0": 7980, "y0": 4620, "x1": 9280, "y1": 5270, "indoor": false, "floor": "grass"}, {"id": "tide-pool", "x0": 7980, "y0": 5270, "x1": 9280, "y1": 5920, "indoor": false, "floor": "sand", "pool": {"x0": 8630, "y0": 5380, "x1": 9230, "y1": 5880}}, {"id": "snack-shack", "x0": 6680, "y0": 5270, "x1": 7980, "y1": 5920, "indoor": true, "floor": "tile", "wallBase": 5450}]}
     }
   }
 }

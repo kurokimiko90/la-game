@@ -1,4 +1,5 @@
-// 小鎮地圖背景（3/4 俯視地面，地圖座標 3600×2600）。純裝飾、不可點擊，不放文字。
+// 小鎮地圖背景（3/4 俯視地面）。純裝飾、不可點擊，不放文字。
+// 手畫的核心（左上 3600×2600）在這個檔案；街區之間的路網、地圖邊緣在 city/（幾何：src/lib/city.ts，規劃：docs/city-plan.md）。
 // 場景之間靠地形自然銜接：公園的步道通到商業街、湖水流進河、商店街南邊就是超市。
 //
 //   公園（左上）       │ 河（湖水往南流）│ 河邊東岸（右側，由北到南：橋 → 碼頭 → 露天座位 → 河岸步道）
@@ -8,10 +9,13 @@
 // ⚠️ 這裡的座標（道路、河、牆）要和 content/scene-config.json 的區域與地帶一致；改地圖時兩邊一起改。
 // 規範（docs/scene-standard.md）：重複元素用 scatter 抖動、每個區域都有背景動態、不畫像單字物品的東西。
 import { memo, type ReactNode } from 'react';
+import { buildCity, districtRects } from '@/lib/city';
 import { scatter } from '@/lib/scatter';
 import type { Rect, Town } from '@/lib/town';
 import { Glow, HangSwing, SwayTufts, WaterShimmer } from './Ambient';
 import { Surfaces } from './Surfaces';
+import { CityEdges } from './city/CityEdges';
+import { CityStreets, cityShadowDefs, DistrictShadows, streetKey } from './city/CityStreets';
 import { GeneratedDistrict } from './districts/GeneratedDistrict';
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
@@ -43,6 +47,7 @@ export function worldSections(town: Town): Record<string, Rect> {
     const t = d.scene.terrain;
     if (t) sections[genKey(d.scene.id)] = { x0: t.x0, y0: t.y0, x1: t.x1, y1: t.y1 };
   }
+  for (const s of buildCity(districtRects(town)).streets) sections[streetKey(s.id)] = s;
   return sections;
 }
 
@@ -206,7 +211,7 @@ function River({ height }: { height: number }) {
 function EastBank({ height }: { height: number }) {
   // 北邊延續公園的草地，往南過渡成河岸步道的鋪面（一路到地圖南緣）；步道上有幾個花台
   const edge = `M2935 760 C3150 690 3350 820 ${CORE.w} 730`;
-  const planters = [[3060, 1180], [3380, 1480], [3100, 2150], [3420, 2420]];
+  const planters = [[3400, 1020], [3380, 1480], [3100, 2150], [3420, 2420]];
   return (
     <g>
       <path d={`${edge} L${CORE.w} ${height} L2935 ${height} Z`} fill="#e7dccb" />
@@ -236,15 +241,26 @@ interface WorldBackgroundProps {
 function WorldBackgroundImpl({ town, activeSections }: WorldBackgroundProps) {
   const active = new Set(activeSections.split(','));
   const section = (key: string, node: ReactNode) => <g className={active.has(key) ? undefined : 'district--idle'}>{node}</g>;
+  const city = buildCity(districtRects(town));
+  const world = { width: town.width, height: town.height };
+  const shadows = [
+    { x0: 0, y0: MARKET.wall, x1: MARKET.x1, y1: CORE.h },
+    ...town.districts.flatMap((d) => (d.scene.terrain ? [d.scene.terrain] : [])),
+  ];
   return (
     <>
+      {cityShadowDefs}
       <rect width={town.width} height={town.height} fill="#b7d98b" />
+      <CityEdges city={city} world={world} />
       {section('park', <Park />)}
       {section('shops', <Shops />)}
       {section('street', <Street />)}
       {section('market', <Supermarket town={town} />)}
-      {section('river', <River height={town.height} />)}
-      {section('east', <EastBank height={town.height} />)}
+      {/* 河一路往南流進海 */}
+      {section('river', <River height={city.coast.sea + 60} />)}
+      {section('east', <EastBank height={city.coast.sand} />)}
+      <CityStreets city={city} section={section} />
+      <DistrictShadows rects={shadows} />
       {town.districts.map((d) => d.scene.terrain && <g key={d.scene.id}>{section(genKey(d.scene.id), <GeneratedDistrict terrain={d.scene.terrain} />)}</g>)}
       {town.districts.map((d) => <Surfaces key={d.scene.id} surfaces={d.scene.surfaces} />)}
     </>

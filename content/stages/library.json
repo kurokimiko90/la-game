@@ -1,0 +1,394 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "note": "左側外牆與落水管",
+          "row": "back",
+          "x": [
+            0.02,
+            0.24
+          ],
+          "fixture": "facade",
+          "main": "downspout",
+          "wall": [
+            "louver",
+            "wall-bracket",
+            "keypad"
+          ]
+        },
+        {
+          "note": "拱門入口",
+          "row": "back",
+          "x": [
+            0.24,
+            0.5
+          ],
+          "fixture": "facade",
+          "main": "archway",
+          "wall": [
+            "spotlight"
+          ]
+        },
+        {
+          "note": "側門與門上五金",
+          "row": "back",
+          "x": [
+            0.5,
+            0.74
+          ],
+          "fixture": "facade",
+          "main": "door-frame",
+          "wall": [
+            "doorbell",
+            "door-handle",
+            "door-closer"
+          ]
+        },
+        {
+          "note": "右側外牆",
+          "row": "back",
+          "x": [
+            0.74,
+            0.98
+          ],
+          "fixture": "facade",
+          "main": "rain-chain",
+          "wall": [
+            "shutter",
+            "hinge",
+            "keyhole-escutcheon",
+            "keyhole-cover"
+          ]
+        },
+        {
+          "note": "排水溝",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "main": "gutter"
+        },
+        {
+          "note": "無障礙斜坡",
+          "row": "mid",
+          "x": [
+            0.34,
+            0.64
+          ],
+          "main": "accessibility-ramp",
+          "front": [
+            "door-sill",
+            "threshold"
+          ]
+        },
+        {
+          "note": "門口地墊",
+          "row": "mid",
+          "x": [
+            0.68,
+            0.97
+          ],
+          "main": "door-mat",
+          "beside": [
+            "boot-scraper"
+          ],
+          "front": [
+            "doorstop-wedge",
+            "door-sweep"
+          ]
+        },
+        {
+          "note": "鋪面",
+          "row": "front",
+          "x": [
+            0.04,
+            0.32
+          ],
+          "main": "paving-slab",
+          "beside": [
+            "brick"
+          ]
+        }
+      ]
+    },
+    "lobby": {
+      "sets": [
+        {
+          "note": "飲水機",
+          "row": "back",
+          "x": [
+            0.02,
+            0.16
+          ],
+          "main": "water-cooler"
+        },
+        {
+          "note": "鑰匙櫃",
+          "row": "back",
+          "x": [
+            0.18,
+            0.34
+          ],
+          "main": "key-cabinet"
+        },
+        {
+          "note": "壁架",
+          "row": "back",
+          "x": [
+            0.36,
+            0.57
+          ],
+          "wall": [
+            "wall-shelf"
+          ]
+        },
+        {
+          "note": "碎紙機",
+          "row": "back",
+          "x": [
+            0.59,
+            0.8
+          ],
+          "main": "document-shredder",
+          "beside": [
+            "hand-truck"
+          ]
+        },
+        {
+          "note": "立燈",
+          "row": "back",
+          "x": [
+            0.83,
+            0.98
+          ],
+          "main": "floor-lamp"
+        },
+        {
+          "note": "借還書櫃台",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.52
+          ],
+          "fixture": "counter",
+          "on": [
+            "card-reader",
+            "book-scanner",
+            "rubber-stamp",
+            "ink-pad",
+            "date-stamp",
+            "calculator",
+            "paper-clip",
+            "binder-clip",
+            "staple-remover",
+            "highlighter",
+            "hole-punch"
+          ],
+          "beside": [
+            "queue-barrier"
+          ]
+        },
+        {
+          "note": "館員辦公桌",
+          "row": "mid",
+          "x": [
+            0.57,
+            0.97
+          ],
+          "main": "desk",
+          "on": [
+            "desk-organizer",
+            "filing-tray",
+            "document-holder"
+          ],
+          "beside": [
+            "desk-chair",
+            "drawer"
+          ]
+        }
+      ]
+    },
+    "bookstacks": {
+      "sets": [
+        {
+          "note": "書架梯",
+          "row": "back",
+          "x": [
+            0.02,
+            0.2
+          ],
+          "main": "ladder"
+        },
+        {
+          "note": "月曆與掛鉤",
+          "row": "back",
+          "x": [
+            0.22,
+            0.4
+          ],
+          "wall": [
+            "calendar",
+            "coat-hook"
+          ]
+        },
+        {
+          "note": "還書車",
+          "row": "back",
+          "x": [
+            0.42,
+            0.62
+          ],
+          "main": "book-cart",
+          "on": [
+            "library-card",
+            "card-holder"
+          ]
+        },
+        {
+          "note": "古董玻璃櫃",
+          "row": "back",
+          "x": [
+            0.66,
+            0.98
+          ],
+          "fixture": "display",
+          "on": [
+            "globe-stand",
+            "paperweight",
+            "inkwell",
+            "magnifying-lens"
+          ]
+        },
+        {
+          "note": "懶骨頭閱讀角",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.4
+          ],
+          "main": "beanbag",
+          "beside": [
+            "footrest"
+          ],
+          "front": [
+            "foot-cushion"
+          ]
+        },
+        {
+          "note": "閱讀檯",
+          "row": "mid",
+          "x": [
+            0.46,
+            0.96
+          ],
+          "fixture": "counter",
+          "on": [
+            "reading-lamp",
+            "book-light",
+            "sticky-note",
+            "glasses-case",
+            "page-holder"
+          ],
+          "beside": [
+            "wastebasket"
+          ]
+        }
+      ]
+    },
+    "reading-room": {
+      "sets": [
+        {
+          "note": "書櫃",
+          "row": "back",
+          "x": [
+            0.02,
+            0.3
+          ],
+          "main": "bookcase",
+          "on": [
+            "dictionary",
+            "encyclopedia",
+            "atlas"
+          ]
+        },
+        {
+          "note": "燈具與掛鉤",
+          "row": "back",
+          "x": [
+            0.32,
+            0.6
+          ],
+          "wall": [
+            "chandelier",
+            "light-fixture",
+            "hook"
+          ]
+        },
+        {
+          "note": "卡片目錄櫃",
+          "row": "back",
+          "x": [
+            0.62,
+            0.8
+          ],
+          "main": "card-catalog",
+          "on": [
+            "desk-clock",
+            "abacus"
+          ]
+        },
+        {
+          "note": "吊扇",
+          "row": "back",
+          "x": [
+            0.81,
+            0.98
+          ],
+          "wall": [
+            "ceiling-fan"
+          ]
+        },
+        {
+          "note": "長桌",
+          "row": "mid",
+          "x": [
+            0.04,
+            0.56
+          ],
+          "main": "long-table",
+          "on": [
+            "open-book",
+            "reading-glasses",
+            "fountain-pen",
+            "bookstand"
+          ],
+          "front": [
+            "doorstop"
+          ]
+        },
+        {
+          "note": "書法角",
+          "row": "mid",
+          "x": [
+            0.62,
+            0.95
+          ],
+          "fixture": "counter",
+          "on": [
+            "quill",
+            "scroll",
+            "feather"
+          ]
+        }
+      ]
+    }
+  },
+  "scale": {
+    "long-table": 1.4,
+    "door-frame": 0.8,
+    "archway": 0.9,
+    "desk": 1.4
+  }
+}

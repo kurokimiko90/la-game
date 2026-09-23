@@ -1,0 +1,429 @@
+{
+  "id": "riverside",
+  "name": "河邊商業區",
+  "core": true,
+  "itemsTarget": 70,
+  "zones": [
+    {
+      "id": "bridge",
+      "name": "橋",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "pier",
+      "name": "碼頭",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "terrace",
+      "name": "露天座位",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "promenade",
+      "name": "河岸步道",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    }
+  ],
+  "elements": [
+    {
+      "id": "bridge",
+      "zone": "bridge",
+      "zh": "橋",
+      "en": "bridge",
+      "ja": "橋",
+      "reading": "はし",
+      "category": "設施",
+      "size": "large",
+      "desc": "側面看的鋼構橋：平直橋面、下方三根橋墩、上方一排欄杆，橋下藍色水面。"
+    },
+    {
+      "id": "handrail",
+      "zone": "bridge",
+      "zh": "欄杆",
+      "en": "handrail",
+      "ja": "手すり",
+      "reading": "てすり",
+      "category": "設施",
+      "size": "medium",
+      "desc": "一段黑色鐵欄杆，一排直條加上下兩條橫桿。"
+    },
+    {
+      "id": "flag",
+      "zone": "bridge",
+      "zh": "旗子",
+      "en": "flag",
+      "ja": "旗",
+      "reading": "はた",
+      "category": "道具",
+      "size": "small",
+      "desc": "細旗桿上一面紅色三角旗。"
+    },
+    {
+      "id": "life-buoy",
+      "zone": "bridge",
+      "zh": "救生圈",
+      "en": "life buoy",
+      "ja": "救命浮き輪",
+      "reading": "きゅうめいうきわ",
+      "category": "道具",
+      "size": "small",
+      "desc": "紅白相間的圓形救生圈，四段顏色交替，繫著一段繩子。"
+    },
+    {
+      "id": "rope",
+      "zone": "bridge",
+      "zh": "繩子",
+      "en": "rope",
+      "ja": "ロープ",
+      "reading": "ロープ",
+      "category": "道具",
+      "size": "small",
+      "desc": "一捆米色粗繩：三個上下疊放、同樣大小的扁橢圓圈（圓圈只有描邊、中間空心，看起來像捲起來的繩子），右下方垂出一段短繩頭（粗折線）。"
+    },
+    {
+      "id": "stairs",
+      "zone": "bridge",
+      "zh": "階梯",
+      "en": "stairs",
+      "ja": "階段",
+      "reading": "かいだん",
+      "category": "設施",
+      "size": "medium",
+      "desc": "側面看的灰色石頭階梯，五級台階往右上升。"
+    },
+    {
+      "id": "padlock",
+      "zone": "bridge",
+      "zh": "鎖",
+      "en": "padlock",
+      "ja": "南京錠",
+      "reading": "なんきんじょう",
+      "category": "道具",
+      "size": "small",
+      "desc": "金色掛鎖：方形鎖身、上方ㄇ字形鎖環（用直線與矩形表現）、中間鑰匙孔。"
+    },
+    {
+      "id": "bicycle",
+      "zone": "bridge",
+      "zh": "腳踏車",
+      "en": "bicycle",
+      "ja": "自転車",
+      "reading": "じてんしゃ",
+      "category": "交通工具",
+      "size": "medium",
+      "desc": "側面看的腳踏車：兩個圓形車輪、三角形車架、座墊、把手。"
+    },
+    {
+      "id": "sightseeing-boat",
+      "zone": "pier",
+      "zh": "遊覽船",
+      "en": "sightseeing boat",
+      "ja": "遊覧船",
+      "reading": "ゆうらんせん",
+      "category": "交通工具",
+      "size": "large",
+      "desc": "側面看的白色觀光船，兩層船艙、一排圓形窗戶、藍色船底。"
+    },
+    {
+      "id": "anchor",
+      "zone": "pier",
+      "zh": "船錨",
+      "en": "anchor",
+      "ja": "錨",
+      "reading": "いかり",
+      "category": "道具",
+      "size": "small",
+      "desc": "黑色船錨：頂部圓環、直立錨桿、底部兩側上翹的錨爪（用多邊形）。"
+    },
+    {
+      "id": "lighthouse",
+      "zone": "pier",
+      "zh": "燈塔",
+      "en": "lighthouse",
+      "ja": "灯台",
+      "reading": "とうだい",
+      "category": "設施",
+      "size": "medium",
+      "desc": "紅白橫條紋的圓柱燈塔，頂端黑色燈室與黃色燈光。"
+    },
+    {
+      "id": "crate",
+      "zone": "pier",
+      "zh": "木箱",
+      "en": "crate",
+      "ja": "木箱",
+      "reading": "きばこ",
+      "category": "道具",
+      "size": "small",
+      "desc": "兩個堆疊的淺木色木條箱。"
+    },
+    {
+      "id": "fishing-rod",
+      "zone": "pier",
+      "zh": "釣竿",
+      "en": "fishing rod",
+      "ja": "釣り竿",
+      "reading": "つりざお",
+      "category": "道具",
+      "size": "medium",
+      "desc": "斜斜的細長釣竿，靠近手把處一個捲線器，竿頭垂下釣線與紅白浮標。"
+    },
+    {
+      "id": "ticket-office",
+      "zone": "pier",
+      "zh": "售票亭",
+      "en": "ticket office",
+      "ja": "切符売り場",
+      "reading": "きっぷうりば",
+      "category": "設施",
+      "size": "medium",
+      "desc": "小型售票亭：方形亭身、前方小窗口、上方遮頂（不寫字）。"
+    },
+    {
+      "id": "life-jacket",
+      "zone": "pier",
+      "zh": "救生衣",
+      "en": "life jacket",
+      "ja": "ライフジャケット",
+      "reading": "ライフジャケット",
+      "category": "道具",
+      "size": "small",
+      "desc": "橘色背心式救生衣，胸前兩條黑色扣帶。"
+    },
+    {
+      "id": "ticket",
+      "zone": "pier",
+      "zh": "船票",
+      "en": "ticket",
+      "ja": "チケット",
+      "reading": "チケット",
+      "category": "道具",
+      "size": "small",
+      "desc": "長方形票券，一側打孔虛線，票面只有色塊（不寫字）。"
+    },
+    {
+      "id": "parasol",
+      "zone": "terrace",
+      "zh": "遮陽傘",
+      "en": "parasol",
+      "ja": "パラソル",
+      "reading": "パラソル",
+      "category": "設施",
+      "size": "large",
+      "desc": "米白色大型庭園遮陽傘（三角形拼成的傘面），中央立桿插在木桌上。"
+    },
+    {
+      "id": "menu",
+      "zone": "terrace",
+      "zh": "菜單",
+      "en": "menu",
+      "ja": "メニュー",
+      "reading": "メニュー",
+      "category": "道具",
+      "size": "small",
+      "desc": "打開的深綠色菜單夾，頁面只有灰色線條。"
+    },
+    {
+      "id": "wine-glass",
+      "zone": "terrace",
+      "zh": "高腳杯",
+      "en": "wine glass",
+      "ja": "ワイングラス",
+      "reading": "ワイングラス",
+      "category": "道具",
+      "size": "small",
+      "desc": "透明高腳杯，杯中紅酒，細杯腳與橢圓底座。"
+    },
+    {
+      "id": "plate",
+      "zone": "terrace",
+      "zh": "盤子",
+      "en": "plate",
+      "ja": "皿",
+      "reading": "さら",
+      "category": "道具",
+      "size": "small",
+      "desc": "白色圓盤，左邊叉子、右邊刀子。"
+    },
+    {
+      "id": "pizza",
+      "zone": "terrace",
+      "zh": "披薩",
+      "en": "pizza",
+      "ja": "ピザ",
+      "reading": "ピザ",
+      "category": "食物",
+      "size": "small",
+      "desc": "圓形披薩切成八片，表面紅色臘腸圓片與綠色葉片。"
+    },
+    {
+      "id": "pitcher",
+      "zone": "terrace",
+      "zh": "水瓶",
+      "en": "pitcher",
+      "ja": "水差し",
+      "reading": "みずさし",
+      "category": "道具",
+      "size": "small",
+      "desc": "透明玻璃水瓶，裡面淺藍色的水與一片黃色檸檬。"
+    },
+    {
+      "id": "candle",
+      "zone": "terrace",
+      "zh": "蠟燭",
+      "en": "candle",
+      "ja": "ろうそく",
+      "reading": "ろうそく",
+      "category": "道具",
+      "size": "small",
+      "desc": "短玻璃杯裡的白色蠟燭，頂端橘色火焰（多邊形）。"
+    },
+    {
+      "id": "camera",
+      "zone": "terrace",
+      "zh": "相機",
+      "en": "camera",
+      "ja": "カメラ",
+      "reading": "カメラ",
+      "category": "道具",
+      "size": "small",
+      "desc": "黑色相機：長方機身、中央大圓鏡頭、頂部快門鈕。"
+    },
+    {
+      "id": "map",
+      "zone": "promenade",
+      "zh": "地圖",
+      "en": "map",
+      "ja": "地図",
+      "reading": "ちず",
+      "category": "設施",
+      "size": "medium",
+      "desc": "立式河岸導覽看板，板面只有藍色河道與綠色色塊（不寫字）。"
+    },
+    {
+      "id": "binoculars",
+      "zone": "promenade",
+      "zh": "望遠鏡",
+      "en": "binoculars",
+      "ja": "双眼鏡",
+      "reading": "そうがんきょう",
+      "category": "設施",
+      "size": "medium",
+      "desc": "立在柱子上的銀色投幣式雙筒望遠鏡，兩個圓形目鏡。"
+    },
+    {
+      "id": "skateboard",
+      "zone": "promenade",
+      "zh": "滑板",
+      "en": "skateboard",
+      "ja": "スケートボード",
+      "reading": "スケートボード",
+      "category": "道具",
+      "size": "small",
+      "desc": "側面看的滑板：長條板面、下方兩個小輪子。"
+    },
+    {
+      "id": "food-stall",
+      "zone": "promenade",
+      "zh": "攤車",
+      "en": "food stall",
+      "ja": "屋台",
+      "reading": "やたい",
+      "category": "設施",
+      "size": "large",
+      "desc": "紅白條紋頂棚的小攤車，檯面上擺著幾個瓶子，兩個輪子。"
+    },
+    {
+      "id": "wallet",
+      "zone": "promenade",
+      "zh": "錢包",
+      "en": "wallet",
+      "ja": "財布",
+      "reading": "さいふ",
+      "category": "道具",
+      "size": "small",
+      "desc": "棕色對折皮夾，露出一張卡片邊。"
+    },
+    {
+      "id": "key",
+      "zone": "promenade",
+      "zh": "鑰匙",
+      "en": "key",
+      "ja": "鍵",
+      "reading": "かぎ",
+      "category": "道具",
+      "size": "small",
+      "desc": "金色鑰匙：圓形頭、直鑰匙桿、鋸齒狀鑰匙齒。"
+    },
+    {
+      "id": "seagull",
+      "zone": "pier",
+      "zh": "海鷗",
+      "en": "seagull",
+      "ja": "カモメ",
+      "reading": "カモメ",
+      "category": "動物",
+      "size": "small",
+      "desc": "白色海鷗，灰色翅膀，展翅飛翔。",
+      "lane": "a"
+    },
+    {
+      "id": "fish",
+      "zone": "bridge",
+      "zh": "魚",
+      "en": "fish",
+      "ja": "魚",
+      "reading": "さかな",
+      "category": "動物",
+      "size": "small",
+      "desc": "銀藍色的魚，側面。",
+      "lane": "a"
+    },
+    {
+      "id": "crab",
+      "zone": "pier",
+      "zh": "螃蟹",
+      "en": "crab",
+      "ja": "カニ",
+      "reading": "カニ",
+      "category": "動物",
+      "size": "small",
+      "desc": "紅色螃蟹，兩隻大鉗。",
+      "lane": "a"
+    },
+    {
+      "id": "captain",
+      "zone": "pier",
+      "zh": "船長",
+      "en": "captain",
+      "ja": "船長",
+      "reading": "せんちょう",
+      "category": "人物",
+      "size": "large",
+      "desc": "戴白色船長帽、穿深藍外套的船長。",
+      "lane": "a"
+    },
+    {
+      "id": "waiter",
+      "zone": "terrace",
+      "zh": "服務生",
+      "en": "waiter",
+      "ja": "ウェイター",
+      "reading": "ウェイター",
+      "category": "人物",
+      "size": "large",
+      "desc": "穿白襯衫黑背心、手托餐盤的服務生。",
+      "lane": "a"
+    }
+  ],
+  "createdAt": "2026-09-23T12:22:55.093Z"
+}

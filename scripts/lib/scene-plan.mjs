@@ -147,6 +147,26 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone) 
 }
 
 /** 規劃 → manifest（miko-ws 生成 SVG 用，格式同手寫的 content/svg-manifests/*.json） */
+/**
+ * 手畫的核心場景（公園、商業街、河邊、超市）沒有規劃檔：從 manifest 反推一份，讓補元素流程也能替它們補物品。
+ * core: true = 場景設定是手寫的，整合時不重寫 scene-config（新物品只照 ground 地帶自動排，舊物品不動）。
+ * itemsTarget：這個場景自己的目標數（手畫區域有湖、馬路、貨架，空地比生成街區少）。
+ */
+export function manifestToPlan(manifest, { id, name, indoor, itemsTarget }) {
+  const floor = indoor ? 'tile' : 'paving';
+  return {
+    id,
+    name,
+    core: true,
+    itemsTarget,
+    zones: Object.entries(manifest.zones).map(([zid, zname]) => ({ id: zid, name: zname, indoor, floor, feature: 'none' })),
+    elements: manifest.elements.map((e) => ({
+      id: e.ref.itemId, zone: e.ref.zone, zh: e.ref.words['zh-TW'], en: e.ref.words.en, ja: e.ref.words.ja.text, reading: e.ref.words.ja.reading,
+      category: e.category, size: e.sizeHint, desc: e.desc, ...(e.lane === 'b' ? {} : { lane: e.lane }),
+    })),
+  };
+}
+
 export function planToManifest(plan) {
   return {
     sceneName: `語言小鎮・${plan.name}`,
@@ -154,7 +174,7 @@ export function planToManifest(plan) {
     propStyle: 'front-flat',
     zones: Object.fromEntries(plan.zones.map((z) => [z.id, z.name])),
     elements: plan.elements.map((e) => ({
-      name: e.zh, category: e.category, lane: 'b', sizeHint: e.size, desc: e.desc,
+      name: e.zh, category: e.category, lane: e.lane ?? 'b', sizeHint: e.size, desc: e.desc,
       ref: { project: 'la-game', scene: plan.id, zone: e.zone, itemId: e.id, words: { 'zh-TW': e.zh, en: e.en, ja: { text: e.ja, reading: e.reading } } },
     })),
   };

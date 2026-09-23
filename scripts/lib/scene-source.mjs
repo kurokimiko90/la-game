@@ -3,8 +3,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { sanitizeSvg } from './svg-sanitize.mjs';
+import { contentTop } from './svg-bounds.mjs';
 import { validateSceneConfig } from './scene-config.mjs';
 import { resolveBand } from './layout.mjs';
+import { stageScene, validateStage } from './staging.mjs';
 
 export function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -30,7 +32,7 @@ export function loadSceneSource(root, config, sceneId) {
     const file = path.join(root, 'public', 'svg', sceneId, `${itemId}.svg`);
     if (!fs.existsSync(file)) { skipped.push(itemId); continue; }
     const svg = sanitizeSvg(fs.readFileSync(file, 'utf8'), `${sceneId}/${itemId}`);
-    items.push({ id: itemId, zone, category: el.category, sizeHint: el.sizeHint, words, viewBox: svg.viewBox, body: svg.body });
+    items.push({ id: itemId, zone, category: el.category, sizeHint: el.sizeHint, words, viewBox: svg.viewBox, body: svg.body, top: contentTop(svg.body, svg.viewBox) });
   }
 
   const zoneIds = Object.keys(manifest.zones);
@@ -78,4 +80,24 @@ export function lockedPlacements(root, source) {
 export function bandOf(sceneConfig, item, zone) {
   const { bands, place = {} } = sceneConfig;
   return resolveBand(bands, place[item.id] ?? 'ground', zone) ?? resolveBand(bands, 'ground', zone);
+}
+
+export function stageFile(root, sceneId) {
+  return path.join(root, 'content', 'stages', `${sceneId}.json`);
+}
+
+/**
+ * 情境擺放（content/stages/<scene>.json，只有自動擴展的街區有地形可用）→ 錨點與家具。沒有情境檔回傳 null。
+ * @returns {null | { anchors: Map<string, object>, fixtures: object[], zones: Set<string> }}
+ */
+export function loadStage(root, source) {
+  const file = stageFile(root, source.sceneId);
+  if (!fs.existsSync(file)) return null;
+  const { sceneId, sceneConfig, items } = source;
+  if (!sceneConfig.terrain) throw new Error(`${sceneId}：情境擺放需要 scene-config 的 terrain（只支援自動擴展的街區）`);
+  const stage = readJson(file);
+  const words = items.map((it) => it.words.en);
+  const problems = validateStage({ stage, zoneOf: Object.fromEntries(items.map((it) => [it.id, it.zone])), terrain: sceneConfig.terrain, words });
+  if (problems.length) throw new Error(`${path.relative(root, file)} 有問題：\n  ${problems.join('\n  ')}`);
+  return stageScene({ sceneId, terrain: sceneConfig.terrain, stage, items: new Map(items.map((it) => [it.id, it])) });
 }

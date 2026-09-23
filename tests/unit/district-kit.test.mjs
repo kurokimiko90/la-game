@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { allowedSpots, buildDistrict, nextSlot, normalizeZone, worldSize, zoneRects } from '../../scripts/lib/district-kit.mjs';
+import { allowedSpots, buildDistrict, EDGE_SIZE, nextSlot, normalizeZone, SLOT_SIZE, STREET_WIDTH, worldSize, zoneRects } from '../../scripts/lib/district-kit.mjs';
+import { EDGE, SLOT, STREET, worldFromInner } from '../../src/lib/city';
 import { resolveBand } from '../../scripts/lib/layout.mjs';
 
 const ZONES = [
@@ -88,8 +89,20 @@ describe('slot 與地圖大小', () => {
     expect(nextSlot(slots, [{ x: 0, y: 2600 }])).toEqual({ x: 3600, y: 0 });
     expect(nextSlot(slots, slots)).toBeNull();
   });
-  it('worldSize 包住核心與所有 slot', () => {
-    expect(worldSize({ width: 3600, height: 2600 }, [{ x: 0, y: 2600 }])).toEqual({ width: 3600, height: 3900 });
-    expect(worldSize({ width: 3600, height: 2600 }, slots)).toEqual({ width: 6200, height: 3900 });
+  it('nextSlot 優先找同分區的空 slot，沒有就退回第一個空的', () => {
+    const zoned = [{ x: 0, y: 0, zone: 'civic' }, { x: 1, y: 0, zone: 'leisure' }, { x: 2, y: 0, zone: 'leisure' }];
+    expect(nextSlot(zoned, [{ x: 1, y: 0 }], 'leisure')).toEqual(zoned[2]);
+    expect(nextSlot(zoned, [], 'farm')).toEqual(zoned[0]);
+  });
+  it('worldSize 包住核心與所有 slot，外加環路與邊緣', () => {
+    const pad = { width: STREET_WIDTH + EDGE_SIZE.east, height: STREET_WIDTH + EDGE_SIZE.south };
+    expect(worldSize({ width: 3600, height: 2600 }, [{ x: 0, y: 2600 }])).toEqual({ width: 3600 + pad.width, height: 3900 + pad.height });
+    expect(worldSize({ width: 3600, height: 2600 }, slots)).toEqual({ width: 6200 + pad.width, height: 3900 + pad.height });
+  });
+  it('格線和 src/lib/city.ts 一致（路網畫在 slot 之間）', () => {
+    expect(SLOT_SIZE).toEqual(SLOT);
+    expect(STREET_WIDTH).toBe(STREET);
+    expect(EDGE_SIZE).toEqual(EDGE);
+    expect(worldSize({ width: 3600, height: 2600 }, slots)).toEqual(worldFromInner({ w: 6200, h: 3900 }));
   });
 });

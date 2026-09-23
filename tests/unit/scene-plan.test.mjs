@@ -1,6 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, test } from 'vitest';
 import {
-  buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey, zoneShortfall,
+  buildZonePrompt, extractJson, manifestToPlan, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey, zoneShortfall,
 } from '../../scripts/lib/scene-plan.mjs';
 
 const theme = { id: 'cafe', name: '咖啡館' };
@@ -148,5 +148,27 @@ describe('zoneShortfall', () => {
     };
     const out = zoneShortfall(plan, ['a', 'b', 'c', 'd'], 10);
     expect(out.map(({ zone, have, need }) => [zone.id, have, need])).toEqual([['door', 3, 0], ['bar', 1, 2], ['seats', 0, 2], ['terrace', 0, 2]]);
+  });
+});
+
+describe('manifestToPlan（手畫的核心場景接上補元素）', () => {
+  const manifest = {
+    sceneName: '語言小鎮・公園', sceneSlug: 'la-park', propStyle: 'front-flat',
+    zones: { entrance: '入口', lake: '湖邊' },
+    elements: [
+      { name: '門', category: '設施', lane: 'b', sizeHint: 'large', desc: '石柱門架', ref: { project: 'la-game', scene: 'park', zone: 'entrance', itemId: 'gate', words: { 'zh-TW': '門', en: 'gate', ja: { text: '門', reading: 'もん' } } } },
+      { name: '小船', category: '交通', lane: 'b', sizeHint: 'medium', desc: '木製小船', ref: { project: 'la-game', scene: 'park', zone: 'lake', itemId: 'rowboat', words: { 'zh-TW': '小船', en: 'rowboat', ja: { text: 'ボート', reading: 'ぼーと' } } } },
+    ],
+  };
+  const plan = manifestToPlan(manifest, { id: 'park', name: '公園', indoor: false, itemsTarget: 70 });
+
+  test('轉回 manifest 和原本一模一樣（補元素時舊物品不變）', () => {
+    expect(planToManifest(plan)).toEqual(manifest);
+  });
+  test('標記 core、帶自己的目標數，缺額照目標數算', () => {
+    expect(plan).toMatchObject({ id: 'park', core: true, itemsTarget: 70 });
+    expect(plan.zones.map((z) => z.id)).toEqual(['entrance', 'lake']);
+    const short = zoneShortfall(plan, ['gate', 'rowboat'], plan.itemsTarget);
+    expect(short.map((s) => s.need)).toEqual([34, 34]);
   });
 });

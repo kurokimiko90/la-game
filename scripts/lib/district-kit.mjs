@@ -5,6 +5,9 @@
 // 幾何只在這裡算一次，地形和擺放才不會對不上。純函式，不讀檔。
 
 export const SLOT_SIZE = { w: 2600, h: 1300 };
+// 城市格線（src/lib/city.ts 用同一組數字畫路網，tests/unit/district-kit.test.mjs 檢查一致）：slot 之間留街道，外圍一圈環路 + 地圖邊緣
+export const STREET_WIDTH = 240;
+export const EDGE_SIZE = { east: 900, south: 800 };
 export const FLOORS = { indoor: ['tile', 'wood', 'carpet'], outdoor: ['grass', 'paving', 'sand', 'concrete'] };
 export const SURFACE_LOOKS = { counter: 'cafe-counter', table: 'table', stand: 'stand', chiller: 'chiller', checkout: 'checkout' };
 const OUTDOOR_ONLY = ['road', 'track', 'water'];
@@ -146,16 +149,16 @@ export function buildDistrict({ slot, zones: zoneSpecs, elements, colorIndex = 0
   };
 }
 
-/** 已用的 slot 之外，依序找下一個空的 */
-export function nextSlot(slots, usedSlots) {
+/** 已用的 slot 之外，依序找下一個空的；有給分區（zone）時優先找同分區的，沒有才退回任何空的 */
+export function nextSlot(slots, usedSlots, zone) {
   const used = new Set(usedSlots.map((s) => `${s.x},${s.y}`));
-  return slots.find((s) => !used.has(`${s.x},${s.y}`)) ?? null;
+  const free = slots.filter((s) => !used.has(`${s.x},${s.y}`));
+  return (zone && free.find((s) => s.zone === zone)) || free[0] || null;
 }
 
-/** 地圖大小 = 原本的核心範圍 + 所有已用 slot 的外框 */
+/** 地圖大小 = 核心範圍與所有已用 slot 的外框（內側）+ 環路 + 邊緣（丘陵、海岸） */
 export function worldSize(core, usedSlots) {
-  return {
-    width: Math.max(core.width, ...usedSlots.map((s) => s.x + SLOT_SIZE.w)),
-    height: Math.max(core.height, ...usedSlots.map((s) => s.y + SLOT_SIZE.h)),
-  };
+  const w = Math.max(core.width, ...usedSlots.map((s) => s.x + SLOT_SIZE.w));
+  const h = Math.max(core.height, ...usedSlots.map((s) => s.y + SLOT_SIZE.h));
+  return { width: w + STREET_WIDTH + EDGE_SIZE.east, height: h + STREET_WIDTH + EDGE_SIZE.south };
 }

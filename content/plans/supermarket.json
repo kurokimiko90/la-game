@@ -1,0 +1,448 @@
+{
+  "id": "supermarket",
+  "name": "超市",
+  "core": true,
+  "itemsTarget": 70,
+  "zones": [
+    {
+      "id": "entrance",
+      "name": "入口",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    },
+    {
+      "id": "fresh",
+      "name": "生鮮區",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    },
+    {
+      "id": "fridge",
+      "name": "冷藏區",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    },
+    {
+      "id": "checkout",
+      "name": "收銀台",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    }
+  ],
+  "elements": [
+    {
+      "id": "shopping-cart",
+      "zone": "entrance",
+      "zh": "購物車",
+      "en": "shopping cart",
+      "ja": "ショッピングカート",
+      "reading": "ショッピングカート",
+      "category": "道具",
+      "size": "medium",
+      "desc": "銀色金屬網格購物車，前方車籃、後方紅色推把、四個小輪。"
+    },
+    {
+      "id": "shopping-basket",
+      "zone": "entrance",
+      "zh": "購物籃",
+      "en": "shopping basket",
+      "ja": "買い物かご",
+      "reading": "かいものかご",
+      "category": "道具",
+      "size": "small",
+      "desc": "紅色塑膠購物籃，籃身格紋，上方兩條提把。"
+    },
+    {
+      "id": "automatic-door",
+      "zone": "entrance",
+      "zh": "自動門",
+      "en": "automatic door",
+      "ja": "自動ドア",
+      "reading": "じどうドア",
+      "category": "設施",
+      "size": "large",
+      "desc": "兩扇銀框玻璃滑門，上方一個小感應器。"
+    },
+    {
+      "id": "locker",
+      "zone": "entrance",
+      "zh": "置物櫃",
+      "en": "locker",
+      "ja": "コインロッカー",
+      "reading": "コインロッカー",
+      "category": "設施",
+      "size": "medium",
+      "desc": "灰色置物櫃，六格小門，每格一個鑰匙孔。"
+    },
+    {
+      "id": "flyer",
+      "zone": "entrance",
+      "zh": "傳單",
+      "en": "flyer",
+      "ja": "チラシ",
+      "reading": "チラシ",
+      "category": "道具",
+      "size": "small",
+      "desc": "一張彩色特價傳單，只有色塊與商品小圖形（不寫字、不寫數字）。"
+    },
+    {
+      "id": "fire-extinguisher",
+      "zone": "entrance",
+      "zh": "滅火器",
+      "en": "fire extinguisher",
+      "ja": "消火器",
+      "reading": "しょうかき",
+      "category": "設施",
+      "size": "small",
+      "desc": "紅色滅火器，頂部黑色握把與噴管。"
+    },
+    {
+      "id": "shelf",
+      "zone": "entrance",
+      "zh": "貨架",
+      "en": "shelf",
+      "ja": "棚",
+      "reading": "たな",
+      "category": "設施",
+      "size": "large",
+      "desc": "灰色金屬貨架，三層層板擺滿彩色盒子與瓶子。"
+    },
+    {
+      "id": "canned-food",
+      "zone": "entrance",
+      "zh": "罐頭",
+      "en": "canned food",
+      "ja": "缶詰",
+      "reading": "かんづめ",
+      "category": "食物",
+      "size": "small",
+      "desc": "兩個疊起的銀色圓柱罐頭，罐身紅色標籤帶（不寫字）。"
+    },
+    {
+      "id": "apple",
+      "zone": "fresh",
+      "zh": "蘋果",
+      "en": "apple",
+      "ja": "りんご",
+      "reading": "りんご",
+      "category": "食物",
+      "size": "small",
+      "desc": "紅色蘋果，頂部短棕色果柄與一片綠葉。"
+    },
+    {
+      "id": "banana",
+      "zone": "fresh",
+      "zh": "香蕉",
+      "en": "banana",
+      "ja": "バナナ",
+      "reading": "バナナ",
+      "category": "食物",
+      "size": "small",
+      "desc": "一串三根黃色香蕉（用多邊形逼近彎曲），尾端棕色。"
+    },
+    {
+      "id": "orange",
+      "zone": "fresh",
+      "zh": "柳橙",
+      "en": "orange",
+      "ja": "オレンジ",
+      "reading": "オレンジ",
+      "category": "食物",
+      "size": "small",
+      "desc": "橘色圓形柳橙，頂部小綠葉。"
+    },
+    {
+      "id": "grapes",
+      "zone": "fresh",
+      "zh": "葡萄",
+      "en": "grapes",
+      "ja": "ぶどう",
+      "reading": "ぶどう",
+      "category": "食物",
+      "size": "small",
+      "desc": "一串紫色葡萄，由小圓形堆成倒三角形，頂部綠色短枝。"
+    },
+    {
+      "id": "watermelon",
+      "zone": "fresh",
+      "zh": "西瓜",
+      "en": "watermelon",
+      "ja": "スイカ",
+      "reading": "スイカ",
+      "category": "食物",
+      "size": "medium",
+      "desc": "整顆綠色橢圓西瓜，表面深綠色條紋。"
+    },
+    {
+      "id": "carrot",
+      "zone": "fresh",
+      "zh": "胡蘿蔔",
+      "en": "carrot",
+      "ja": "にんじん",
+      "reading": "にんじん",
+      "category": "食物",
+      "size": "small",
+      "desc": "橘色細長倒三角形胡蘿蔔，頂端綠色葉子，表面幾道橫紋。"
+    },
+    {
+      "id": "tomato",
+      "zone": "fresh",
+      "zh": "番茄",
+      "en": "tomato",
+      "ja": "トマト",
+      "reading": "トマト",
+      "category": "食物",
+      "size": "small",
+      "desc": "紅色圓形番茄，頂端綠色星形蒂頭。"
+    },
+    {
+      "id": "cabbage",
+      "zone": "fresh",
+      "zh": "高麗菜",
+      "en": "cabbage",
+      "ja": "キャベツ",
+      "reading": "キャベツ",
+      "category": "食物",
+      "size": "small",
+      "desc": "淺綠色圓形高麗菜，幾層深淺不同的葉片。"
+    },
+    {
+      "id": "corn",
+      "zone": "fresh",
+      "zh": "玉米",
+      "en": "corn",
+      "ja": "とうもろこし",
+      "reading": "とうもろこし",
+      "category": "食物",
+      "size": "small",
+      "desc": "黃色玉米，格狀顆粒，兩側綠色苞葉。"
+    },
+    {
+      "id": "bread",
+      "zone": "fresh",
+      "zh": "麵包",
+      "en": "bread",
+      "ja": "パン",
+      "reading": "パン",
+      "category": "食物",
+      "size": "small",
+      "desc": "長條法國麵包，表面三道斜切口。"
+    },
+    {
+      "id": "scale",
+      "zone": "fresh",
+      "zh": "秤",
+      "en": "scale",
+      "ja": "はかり",
+      "reading": "はかり",
+      "category": "道具",
+      "size": "medium",
+      "desc": "白色蔬果電子秤：上方平台、前方小螢幕（不寫數字）。"
+    },
+    {
+      "id": "price-tag",
+      "zone": "fresh",
+      "zh": "價格標籤",
+      "en": "price tag",
+      "ja": "値札",
+      "reading": "ねふだ",
+      "category": "道具",
+      "size": "small",
+      "desc": "黃色價格標籤，左端圓孔與細繩（不寫字、不寫數字）。"
+    },
+    {
+      "id": "fridge",
+      "zone": "fridge",
+      "zh": "冰箱",
+      "en": "fridge",
+      "ja": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "category": "設施",
+      "size": "large",
+      "desc": "玻璃門直立冷藏櫃，三層層板擺著彩色瓶子與盒子，頂部藍色燈條。"
+    },
+    {
+      "id": "milk",
+      "zone": "fridge",
+      "zh": "牛奶",
+      "en": "milk",
+      "ja": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "category": "食物",
+      "size": "small",
+      "desc": "白藍色屋頂形牛奶紙盒，盒身一個簡單的牛奶滴圖形（不寫字）。"
+    },
+    {
+      "id": "eggs",
+      "zone": "fridge",
+      "zh": "雞蛋",
+      "en": "eggs",
+      "ja": "卵",
+      "reading": "たまご",
+      "category": "食物",
+      "size": "small",
+      "desc": "打開的蛋盒，裡面兩排共六顆白色雞蛋。"
+    },
+    {
+      "id": "cheese",
+      "zone": "fridge",
+      "zh": "起司",
+      "en": "cheese",
+      "ja": "チーズ",
+      "reading": "チーズ",
+      "category": "食物",
+      "size": "small",
+      "desc": "黃色三角形起司塊，表面幾個圓洞。"
+    },
+    {
+      "id": "yogurt",
+      "zone": "fridge",
+      "zh": "優格",
+      "en": "yogurt",
+      "ja": "ヨーグルト",
+      "reading": "ヨーグルト",
+      "category": "食物",
+      "size": "small",
+      "desc": "白色小杯優格，粉紅色杯蓋，杯身一顆草莓圖形。"
+    },
+    {
+      "id": "ice-cream",
+      "zone": "fridge",
+      "zh": "冰淇淋",
+      "en": "ice cream",
+      "ja": "アイスクリーム",
+      "reading": "アイスクリーム",
+      "category": "食物",
+      "size": "small",
+      "desc": "甜筒冰淇淋：棕色格紋甜筒上兩球粉紅和白色冰淇淋。"
+    },
+    {
+      "id": "juice",
+      "zone": "fridge",
+      "zh": "果汁",
+      "en": "juice",
+      "ja": "ジュース",
+      "reading": "ジュース",
+      "category": "食物",
+      "size": "small",
+      "desc": "透明瓶裝柳橙汁，綠色瓶蓋。"
+    },
+    {
+      "id": "sausage",
+      "zone": "fridge",
+      "zh": "香腸",
+      "en": "sausage",
+      "ja": "ソーセージ",
+      "reading": "ソーセージ",
+      "category": "食物",
+      "size": "small",
+      "desc": "三條相連的紅棕色香腸。"
+    },
+    {
+      "id": "cash-register",
+      "zone": "checkout",
+      "zh": "收銀機",
+      "en": "cash register",
+      "ja": "レジ",
+      "reading": "レジ",
+      "category": "設施",
+      "size": "medium",
+      "desc": "灰色收銀機：前方螢幕、按鍵格、下方抽屜。"
+    },
+    {
+      "id": "receipt",
+      "zone": "checkout",
+      "zh": "收據",
+      "en": "receipt",
+      "ja": "レシート",
+      "reading": "レシート",
+      "category": "道具",
+      "size": "small",
+      "desc": "長條白色收據，只有灰色橫線，底部鋸齒邊。"
+    },
+    {
+      "id": "coins",
+      "zone": "checkout",
+      "zh": "硬幣",
+      "en": "coins",
+      "ja": "硬貨",
+      "reading": "こうか",
+      "category": "道具",
+      "size": "small",
+      "desc": "三枚疊起的金色硬幣，旁邊一枚銀色硬幣（不寫數字）。"
+    },
+    {
+      "id": "credit-card",
+      "zone": "checkout",
+      "zh": "信用卡",
+      "en": "credit card",
+      "ja": "クレジットカード",
+      "reading": "クレジットカード",
+      "category": "道具",
+      "size": "small",
+      "desc": "藍色信用卡，左方金色晶片，下方一排灰色小方塊。"
+    },
+    {
+      "id": "plastic-bag",
+      "zone": "checkout",
+      "zh": "塑膠袋",
+      "en": "plastic bag",
+      "ja": "レジ袋",
+      "reading": "レジぶくろ",
+      "category": "道具",
+      "size": "small",
+      "desc": "白色半透明塑膠袋，上方兩個提耳。"
+    },
+    {
+      "id": "barcode-scanner",
+      "zone": "checkout",
+      "zh": "條碼掃描器",
+      "en": "barcode scanner",
+      "ja": "バーコードリーダー",
+      "reading": "バーコードリーダー",
+      "category": "道具",
+      "size": "small",
+      "desc": "黑色手持條碼掃描器，前端一道紅色掃描光線。"
+    },
+    {
+      "id": "banknote",
+      "zone": "checkout",
+      "zh": "鈔票",
+      "en": "banknote",
+      "ja": "お札",
+      "reading": "おさつ",
+      "category": "道具",
+      "size": "small",
+      "desc": "綠色長方形鈔票，中央一個圓形圖案（不寫數字）。"
+    },
+    {
+      "id": "clerk",
+      "zone": "entrance",
+      "zh": "店員",
+      "en": "clerk",
+      "ja": "店員",
+      "reading": "てんいん",
+      "category": "人物",
+      "size": "large",
+      "desc": "穿綠色圍裙的超市店員，手抱一箱蔬菜。",
+      "lane": "a"
+    },
+    {
+      "id": "cashier",
+      "zone": "checkout",
+      "zh": "收銀員",
+      "en": "cashier",
+      "ja": "レジ係",
+      "reading": "レジがかり",
+      "category": "人物",
+      "size": "large",
+      "desc": "穿制服、站在收銀台後的收銀員。",
+      "lane": "a"
+    }
+  ],
+  "createdAt": "2026-09-23T12:22:55.094Z"
+}

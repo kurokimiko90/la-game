@@ -3,6 +3,7 @@
 // 不畫成任何單字物品的樣子（規範 §0-4）。
 import type { ReactNode } from 'react';
 import type { Surface } from '@/lib/types';
+import { FIXTURE_LOOKS } from './Fixtures';
 
 const DEPTH = 55; // 檯面頂的深度
 const PAD = 24; // 檯面比物件可放範圍左右多出的寬度
@@ -116,6 +117,9 @@ const LOOKS: Record<string, (props: { s: Surface }) => ReactNode> = {
   'cafe-counter': CafeCounter,
   table: ClothTable,
   jetty: Jetty,
+  // 情境擺放的家具（Fixtures.tsx）；桌布長桌沿用 ClothTable，但家具的 x0 / x1 已經是外緣，不再外擴
+  ...FIXTURE_LOOKS,
+  'cloth-table': ({ s }) => <ClothTable s={{ ...s, x0: s.x0 + PAD, x1: s.x1 - PAD }} />,
 };
 
 export function Surfaces({ surfaces }: { surfaces: readonly Surface[] }) {
@@ -123,7 +127,8 @@ export function Surfaces({ surfaces }: { surfaces: readonly Surface[] }) {
     <>
       {surfaces.map((s) => {
         const Look = LOOKS[s.look];
-        return Look ? <Look key={`${s.look}-${s.zone}`} s={s} /> : null;
+        // 同一區可以有好幾件同款家具（情境擺放），key 要帶位置
+        return Look ? <Look key={`${s.look}-${s.zone}-${s.x0}-${s.levels[0]}`} s={s} /> : null;
       })}
     </>
   );

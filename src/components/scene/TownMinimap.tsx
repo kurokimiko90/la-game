@@ -1,4 +1,5 @@
 // 左下角的小地圖：整張小鎮的街區分布（未解鎖為灰色）+ 目前看到的範圍，點一下跳過去。
+import { buildCity, districtRects } from '@/lib/city';
 import type { Size, View } from '@/lib/geometry';
 import type { Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
@@ -18,6 +19,7 @@ interface TownMinimapProps {
 
 export function TownMinimap({ town, view, size, activeSceneId, lockedSceneIds, onJumpTo }: TownMinimapProps) {
   const height = (WIDTH * town.height) / town.width;
+  const city = buildCity(districtRects(town));
   const k = WIDTH / town.width;
   const vx = Math.max(0, -view.tx / view.scale);
   const vy = Math.max(0, -view.ty / view.scale);
@@ -33,6 +35,8 @@ export function TownMinimap({ town, view, size, activeSceneId, lockedSceneIds, o
     <div data-ui="overlay" className="absolute bottom-3 left-3 z-40 overflow-hidden rounded-xl bg-white/85 p-1 shadow ring-1 ring-black/5" onPointerDown={(e) => e.stopPropagation()}>
       <svg width={WIDTH} height={height} viewBox={`0 0 ${town.width} ${town.height}`} role="img" aria-label="小地圖：點一下移過去" onClick={onClick} className="block cursor-pointer">
         <rect width={town.width} height={town.height} fill="#dcedc8" />
+        <rect y={city.coast.sea} width={town.width} height={town.height - city.coast.sea} fill="#81d4fa" />
+        {city.streets.map((st) => <rect key={st.id} x={st.x0} y={st.y0} width={st.x1 - st.x0} height={st.y1 - st.y0} fill="#ffffff" />)}
         {town.districts.flatMap((d) => d.scene.zones.map((z) => (
           <rect key={`${d.scene.id}-${z.id}`} x={z.x0} y={z.y0} width={z.x1 - z.x0} height={z.y1 - z.y0}
             fill={lockedSceneIds.has(d.scene.id) ? '#cfd8dc' : COLORS[d.scene.id] ?? d.scene.terrain?.color ?? FALLBACK}

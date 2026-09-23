@@ -22,6 +22,7 @@ import {
   buildOutlinePrompt, buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey,
   zoneShortfall,
 } from './lib/scene-plan.mjs';
+import { buildStagePrompt, parseStage } from './lib/stage-plan.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(SELF), '..');
@@ -34,6 +35,7 @@ const P = {
   config: path.join(ROOT, 'content', 'scene-config.json'),
   manifests: path.join(ROOT, 'content', 'svg-manifests'),
   plans: path.join(ROOT, 'content', 'plans'),
+  stages: path.join(ROOT, 'content', 'stages'),
   svg: path.join(ROOT, 'public', 'svg'),
   log: path.join(ROOT, 'docs', 'expansion.md'),
 };
@@ -96,7 +98,8 @@ function pickTheme(settings, config) {
 
 function usedSlots() {
   if (!fs.existsSync(P.plans)) return [];
-  return fs.readdirSync(P.plans).map((f) => readJson(path.join(P.plans, f)).slot);
+  // 手畫核心場景的規劃（core: true）沒有 slot
+  return fs.readdirSync(P.plans).map((f) => readJson(path.join(P.plans, f)).slot).filter(Boolean);
 }
 
 /** 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：區域裡已經有的物品 */
@@ -160,6 +163,9 @@ function availableSvgs(sceneId) {
   return fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.svg')).map((f) => path.basename(f, '.svg')) : [];
 }
 
+/** 這個街區要補到幾個物品：規劃裡有 itemsTarget（手畫核心場景）就用它，否則用 expansion.json 的 itemsPerScene */
+const targetOf = (plan, settings) => plan.itemsTarget ?? settings.itemsPerScene;
+
 /** 需要補的街區（依地圖順序）：已上線、還沒照目前的 itemsPerScene 補過、有區域不到目標數 */
 function topUpCandidates(settings) {
   if (!fs.existsSync(P.plans)) return [];
@@ -167,8 +173,8 @@ function topUpCandidates(settings) {
   return order
     .filter((id) => fs.existsSync(path.join(P.plans, `${id}.json`)))
     .map((id) => readJson(path.join(P.plans, `${id}.json`)))
-    .filter((plan) => plan.topUp?.itemsPerScene !== settings.itemsPerScene)
-    .map((plan) => ({ plan, shortfall: zoneShortfall(plan, availableSvgs(plan.id), settings.itemsPerScene) }))
+    .filter((plan) => plan.topUp?.itemsPerScene !== targetOf(plan, settings))
+    .map((plan) => ({ plan, shortfall: zoneShortfall(plan, availableSvgs(plan.id), targetOf(plan, settings)) }))
     .filter(({ shortfall }) => shortfall.some((s) => s.need > 0));
 }
 
@@ -188,7 +194,7 @@ async function planTopUp({ plan, shortfall }, settings) {
     ...plan,
     elements: [...plan.elements, ...added],
     rejected: [...(plan.rejected ?? []), ...rejected],
-    topUp: { itemsPerScene: settings.itemsPerScene, added: added.length, at: new Date().toISOString() },
+    topUp: { itemsPerScene: targetOf(plan, settings), added: added.length, at: new Date().toISOString() },
   };
   writeJson(path.join(P.plans, `${plan.id}.json`), next);
   const manifestFile = path.join(P.manifests, `${plan.id}.json`);
@@ -210,9 +216,71 @@ function tryVoice(sceneId) {
   }
 }
 
-function integrate(plan, settings) {
+const STAGE_TRIES = 2;
+
+/**
+ * 情境規劃（新街區才做；補元素時保留原本的情境，新物品照舊自動排列）。
+ * 問 codex → 修整 → 驗證，有問題帶著問題重問；還是不行就不用情境。寫到 content/stages/<scene>.json。
+ */
+async function planStage(plan, available, terrain) {
+  let problems = [];
+  for (let i = 0; i < STAGE_TRIES; i++) {
+    try {
+      const raw = await codexText(buildStagePrompt({ plan, available, problems }));
+      const r = parseStage(raw, { plan, available, terrain });
+      problems = r.problems;
+      if (!problems.length) {
+        fs.mkdirSync(P.stages, { recursive: true });
+        writeJson(path.join(P.stages, `${plan.id}.json`), r.stage);
+        log(`情境規劃完成${r.dropped.length ? `，${r.dropped.length} 個物品沒安排到（照舊自動排列）：${r.dropped.join('、')}` : ''}`);
+        return true;
+      }
+    } catch (e) {
+      problems = [e.message.split('\n')[0]];
+    }
+  }
+  log(`情境規劃沒做成，照舊自動排列：${problems.slice(0, 3).join('；')}`);
+  return false;
+}
+
+// 擺放：有情境時先試情境，排不下（被擋太多）就刪掉情境檔、照舊自動排列，不讓自動擴展卡住
+function layoutWithFallback(sceneId, args) {
+  try {
+    run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
+  } catch (e) {
+    const file = path.join(P.stages, `${sceneId}.json`);
+    if (!fs.existsSync(file)) throw e;
+    log(`情境擺放排不下，改用自動排列：${e.message.split('\n')[0]}`);
+    fs.rmSync(file);
+    run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
+  }
+}
+
+/**
+ * 手畫核心場景補元素：scene-config 是手寫的（rows、spots、手調的地帶），不重寫；
+ * 新物品在 manifest 裡、沒有鎖定位置，build-layout 只替它們在 ground 地帶找位置，舊物品不動。
+ */
+function integrateCore(plan, available) {
+  log(`整合 ${plan.name}（手畫場景，只替新物品排位置）：${available.length} 個 SVG`);
+  run('layout', process.execPath, ['scripts/build-layout.mjs', plan.id]);
+  runChecks(plan.id);
+  return available.length;
+}
+
+function runChecks(sceneId) {
+  run('build-scenes', process.execPath, ['scripts/build-scenes.mjs']);
+  run('audio', process.execPath, ['scripts/build-audio.mjs']);
+  tryVoice(sceneId);
+  run('unit-test', 'npx', ['vitest', 'run']);
+  run('typecheck', 'npx', ['tsc', '--noEmit']);
+  run('lint', 'npx', ['eslint']);
+  run('e2e', 'npm', ['run', 'test:e2e']);
+}
+
+async function integrate(plan, settings, { topUp = false } = {}) {
   run('sync-svg', process.execPath, ['scripts/sync-svg.mjs']);
   const available = availableSvgs(plan.id);
+  if (plan.core) return integrateCore(plan, available);
   if (available.length < settings.minItems) throw new Error(`${plan.id} 只有 ${available.length} 個 SVG（至少要 ${settings.minItems}）`);
 
   const text = fs.readFileSync(P.config, 'utf8');
@@ -222,14 +290,10 @@ function integrate(plan, settings) {
   fs.writeFileSync(P.config, upsertScene(text, plan.id, planToSceneConfig(plan, available), { world, order }));
   log(`scene-config：${plan.id}，${available.length} 個物件，地圖 ${world.width}×${world.height}`);
 
-  run('layout', process.execPath, ['scripts/build-layout.mjs', plan.id]);
-  run('build-scenes', process.execPath, ['scripts/build-scenes.mjs']);
-  run('audio', process.execPath, ['scripts/build-audio.mjs']);
-  tryVoice(plan.id);
-  run('unit-test', 'npx', ['vitest', 'run']);
-  run('typecheck', 'npx', ['tsc', '--noEmit']);
-  run('lint', 'npx', ['eslint']);
-  run('e2e', 'npm', ['run', 'test:e2e']);
+  // 新街區還沒上線，可以用情境重排（--reset）；補元素時只替新物品排位置
+  const staged = !topUp && !fs.existsSync(path.join(P.stages, `${plan.id}.json`)) && await planStage(plan, available, readJson(P.config).scenes[plan.id].terrain);
+  layoutWithFallback(plan.id, staged ? ['--reset'] : []);
+  runChecks(plan.id);
   return available.length;
 }
 
@@ -278,7 +342,7 @@ async function tick({ afterGenerator = false } = {}) {
     const config = readJson(P.config);
     if (state.history.length >= settings.maxScenes) return log(`已完成 ${state.history.length} 個場景，達到上限 ${settings.maxScenes}`);
     const theme = state.current?.theme ?? pickTheme(settings, config);
-    const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots());
+    const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots(), theme?.zone);
     if (!theme || !slot) return log(theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
     saveState({ ...state, phase: 'planning', current: { theme, slot } });
     const plan = await planScene(theme, slot, usedSlots().length, settings);
@@ -314,7 +378,7 @@ async function tick({ afterGenerator = false } = {}) {
     const plan = readJson(path.join(P.plans, `${cur.id}.json`));
     const layoutFile = path.join(ROOT, 'content', 'layouts', `${plan.id}.json`);
     const before = cur.topUp && fs.existsSync(layoutFile) ? Object.keys(readJson(layoutFile)).length : 0;
-    const count = integrate(plan, settings);
+    const count = await integrate(plan, settings, { topUp: Boolean(cur.topUp) });
     if (cur.topUp) {
       appendLog(plan, count, cur.rounds, `補元素 +${count - before}`);
       commit(`feat: add ${count - before} items to ${plan.name} district (${count} total)`, settings);
@@ -335,7 +399,7 @@ function printStatus() {
   console.log(JSON.stringify({ phase: s.phase, current: s.current, error: s.error, done: s.history.map((h) => `${h.name}(${h.items})`) }, null, 2));
   const settings = readJson(P.settings);
   const topUp = topUpCandidates(settings).map(({ plan, shortfall }) => `${plan.name} +${shortfall.reduce((n, x) => n + x.need, 0)}`);
-  if (topUp.length) console.log(`待補元素（每個街區 ${settings.itemsPerScene} 個，topUp ${settings.topUp ? '開' : '關'}）：${topUp.join('、')}`);
+  if (topUp.length) console.log(`待補元素（目標 ${settings.itemsPerScene} 個、手畫場景看各自的 itemsTarget，topUp ${settings.topUp ? '開' : '關'}）：${topUp.join('、')}`);
   if (s.current?.slug) {
     try { console.log('miko-ws：', jobProgress(s.current.slug)); } catch (e) { console.log(e.message); }
   }

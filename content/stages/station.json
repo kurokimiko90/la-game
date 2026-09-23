@@ -1,0 +1,329 @@
+{
+  "zones": {
+    "plaza": {
+      "sets": [
+        {
+          "note": "派出所與旗桿",
+          "row": "back",
+          "x": [
+            0.02,
+            0.24
+          ],
+          "main": "police-box",
+          "beside": [
+            "flagpole"
+          ]
+        },
+        {
+          "note": "鐘塔",
+          "row": "back",
+          "x": [
+            0.27,
+            0.46
+          ],
+          "main": "clock-tower"
+        },
+        {
+          "note": "電話亭",
+          "row": "back",
+          "x": [
+            0.5,
+            0.64
+          ],
+          "main": "phone-booth"
+        },
+        {
+          "note": "市集帳篷",
+          "row": "back",
+          "x": [
+            0.68,
+            0.98
+          ],
+          "main": "tent"
+        },
+        {
+          "note": "排班人力車",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "main": "rickshaw"
+        },
+        {
+          "note": "街頭表演台",
+          "row": "mid",
+          "x": [
+            0.34,
+            0.62
+          ],
+          "fixture": "platform",
+          "on": [
+            "guitar",
+            "microphone",
+            "megaphone"
+          ]
+        },
+        {
+          "note": "小吃攤",
+          "row": "mid",
+          "x": [
+            0.68,
+            0.97
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "hot-dog",
+            "popcorn",
+            "cotton-candy"
+          ]
+        },
+        {
+          "note": "腳踏車停放",
+          "row": "front",
+          "x": [
+            0.04,
+            0.34
+          ],
+          "main": "bike-rack",
+          "front": [
+            "helmet"
+          ]
+        },
+        {
+          "note": "卸貨卡車",
+          "row": "front",
+          "x": [
+            0.58,
+            0.96
+          ],
+          "main": "truck"
+        }
+      ]
+    },
+    "ticket-hall": {
+      "sets": [
+        {
+          "note": "電梯",
+          "row": "back",
+          "x": [
+            0.02,
+            0.2
+          ],
+          "main": "elevator"
+        },
+        {
+          "note": "手扶梯",
+          "row": "back",
+          "x": [
+            0.22,
+            0.44
+          ],
+          "main": "escalator"
+        },
+        {
+          "note": "售票機",
+          "row": "back",
+          "x": [
+            0.47,
+            0.61
+          ],
+          "main": "ticket-machine"
+        },
+        {
+          "note": "牆上海報與冷氣",
+          "row": "back",
+          "x": [
+            0.61,
+            0.8
+          ],
+          "wall": [
+            "poster",
+            "air-conditioner"
+          ]
+        },
+        {
+          "note": "小賣店",
+          "row": "back",
+          "x": [
+            0.8,
+            0.98
+          ],
+          "main": "kiosk"
+        },
+        {
+          "note": "愛心輪椅",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.27
+          ],
+          "main": "wheelchair",
+          "beside": [
+            "potted-plant"
+          ]
+        },
+        {
+          "note": "清潔角",
+          "row": "mid",
+          "x": [
+            0.32,
+            0.58
+          ],
+          "main": "cardboard-box",
+          "beside": [
+            "mop",
+            "electric-fan"
+          ]
+        },
+        {
+          "note": "伴手禮陳列台",
+          "row": "mid",
+          "x": [
+            0.63,
+            0.98
+          ],
+          "fixture": "stand",
+          "on": [
+            "lunch-box",
+            "rice-ball",
+            "chocolate",
+            "candy",
+            "gift-box",
+            "magazine",
+            "postcard",
+            "keychain",
+            "daruma",
+            "folding-fan"
+          ]
+        }
+      ]
+    },
+    "gates": {
+      "sets": [
+        {
+          "note": "天花板設備",
+          "row": "back",
+          "x": [
+            0.04,
+            0.4
+          ],
+          "wall": [
+            "security-camera",
+            "loudspeaker"
+          ]
+        },
+        {
+          "note": "失物招領架",
+          "row": "back",
+          "x": [
+            0.52,
+            0.98
+          ],
+          "fixture": "shelf",
+          "on": [
+            "earphones",
+            "tissues",
+            "gloves",
+            "glasses",
+            "watch",
+            "necktie",
+            "laptop",
+            "rain-boots",
+            "sneakers"
+          ]
+        },
+        {
+          "note": "剪票閘門",
+          "row": "mid",
+          "x": [
+            0.06,
+            0.46
+          ],
+          "main": "ticket-gate",
+          "on": [
+            "transit-card"
+          ],
+          "beside": [
+            "briefcase"
+          ]
+        }
+      ]
+    },
+    "platform": {
+      "sets": [
+        {
+          "note": "車站建築",
+          "row": "back",
+          "x": [
+            0.02,
+            0.98
+          ],
+          "fixture": "facade",
+          "wall": [
+            "emergency-button",
+            "bell"
+          ]
+        },
+        {
+          "note": "清潔用具",
+          "row": "back",
+          "x": [
+            0.04,
+            0.2
+          ],
+          "main": "broom",
+          "beside": [
+            "dustpan"
+          ]
+        },
+        {
+          "note": "站務台",
+          "row": "mid",
+          "x": [
+            0.04,
+            0.34
+          ],
+          "fixture": "desk",
+          "on": [
+            "whistle",
+            "walkie-talkie",
+            "flashlight"
+          ]
+        },
+        {
+          "note": "月台小賣部",
+          "row": "mid",
+          "x": [
+            0.4,
+            0.66
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "cup-noodles",
+            "face-mask",
+            "handkerchief"
+          ]
+        },
+        {
+          "note": "候車平台",
+          "row": "mid",
+          "x": [
+            0.71,
+            0.97
+          ],
+          "fixture": "platform",
+          "on": [
+            "handbag",
+            "scarf",
+            "cap",
+            "coat"
+          ],
+          "front": [
+            "yo-yo"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -102,6 +102,13 @@ ruby rt {
 .amb-sway { transform-origin: 50% 100%; animation-name: a-sway; }
 .amb-glow { animation-name: a-glow; }
 .amb-swing { transform-origin: 50% 0%; animation-name: a-swing; }
+/* 背景車流：沿街道開過去（距離由 --dx / --dy 給），頭尾淡入淡出 */
+.amb-drive { animation-name: a-drive; animation-timing-function: linear; }
+@keyframes a-drive {
+  0% { transform: translate(0, 0); opacity: 0; }
+  3%, 97% { opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)); opacity: 0; }
+}
 @keyframes a-shimmer {
   0%, 100% { transform: translateX(-14px); opacity: 0.35; }
   50% { transform: translateX(14px); opacity: 1; }
@@ -157,4 +164,8 @@ ruby rt {
     animation: none !important;
     transition: none !important;
   }
+}
+/* 車流停下來會卡在街道兩端，減少動態時整個不畫 */
+@media (prefers-reduced-motion: reduce) {
+  .amb-drive { display: none; }
 }
