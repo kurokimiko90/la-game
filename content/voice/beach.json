@@ -473,6 +473,96 @@
       "score": 1,
       "take": "en-1790160996758.aac",
       "account": "chatgpt1"
+    },
+    "coastal-shelter": {
+      "heard": "Coastal shelter.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "camera-bag": {
+      "heard": "Camera bag.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "camera-lens": {
+      "heard": "Camera lens.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "shell-necklace": {
+      "heard": "Shell necklace.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "driftwood-log": {
+      "heard": "Driftwood Log",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "sailboat": {
+      "heard": "Sailboat.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "driftwood-piece": {
+      "heard": "Driftwood Peace",
+      "score": 0.86,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "bicycle-bell": {
+      "heard": "Bicycle bell.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "bicycle-lock": {
+      "heard": "Bicycle lock.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "bike-helmet": {
+      "heard": "Bike Helmet.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "lens-cap": {
+      "heard": "Lenscap.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "binocular-case": {
+      "heard": "Binocular case.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "dry-leaf": {
+      "heard": "Dry leaf.",
+      "score": 1,
+      "take": "en-1790172876101.aac",
+      "account": "chatgpt1"
+    },
+    "quartz": {
+      "heard": "Quartz",
+      "score": 1,
+      "take": "en-1790172961966.aac",
+      "account": "chatgpt4"
+    },
+    "bottle-cork": {
+      "heard": "Bork.",
+      "score": 0.75,
+      "take": "en-1790173025907.aac",
+      "account": "chatgpt1"
     }
   }
 }

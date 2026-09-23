@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T23:03:21.690+09:00",
+  "syncedAt": "2026-09-23T23:14:27.645+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -282,7 +282,22 @@
         "ashtray",
         "record-player",
         "firewood",
-        "poker-chip"
+        "poker-chip",
+        "bicycle-bell",
+        "bicycle-lock",
+        "bike-helmet",
+        "camera-lens",
+        "lens-cap",
+        "camera-bag",
+        "binocular-case",
+        "shell-necklace",
+        "driftwood-log",
+        "coastal-shelter",
+        "sailboat",
+        "driftwood-piece",
+        "dry-leaf",
+        "quartz",
+        "bottle-cork"
       ],
       "failed": [
         {

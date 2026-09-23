@@ -680,8 +680,8 @@
         "ashtray": "surface-snack-shack",
         "record-player": "surface-snack-shack"
       },
-      "clusters": [["beach-chair", "beach-umbrella"], ["snorkel", "snorkel-mask"], ["driftwood", "driftwood-branch"], ["tide-pool", "rock-pool-net", "rock", "tide-pool-sign-post", "reed", "tide-pool-marker", "tide-pool-ladder"], ["side-table", "wooden-tray"]],
-      "loose": ["snorkel", "goggles", "sandcastle-mold", "shell", "starfish", "flip-flop", "snorkel-mask", "bicycle-pump", "driftwood-branch", "sand-shovel", "tide-pool-guide", "sea-glass", "towel", "water-shoe", "waterproof-case", "water-scope", "sand-dollar", "water-pail", "shell-brush", "sand-sifter", "waterproof-bin", "rock-pool-chart", "sea-glass-bottle", "tide-pool-sandals", "wood-log", "bar-spoon", "cocktail-glass", "wooden-tray", "firewood", "poker-chip"],
+      "clusters": [["beach-chair", "beach-umbrella"], ["snorkel", "snorkel-mask"], ["driftwood", "driftwood-branch", "shell-necklace"], ["tide-pool", "rock-pool-net", "rock", "tide-pool-sign-post", "reed", "tide-pool-marker", "tide-pool-ladder"], ["side-table", "wooden-tray"], ["camera-tripod", "camera-lens", "camera-bag"], ["driftwood-log", "driftwood-piece"]],
+      "loose": ["snorkel", "goggles", "sandcastle-mold", "shell", "starfish", "flip-flop", "snorkel-mask", "bicycle-pump", "driftwood-branch", "sand-shovel", "tide-pool-guide", "sea-glass", "towel", "water-shoe", "waterproof-case", "water-scope", "sand-dollar", "water-pail", "shell-brush", "sand-sifter", "waterproof-bin", "rock-pool-chart", "sea-glass-bottle", "tide-pool-sandals", "wood-log", "bar-spoon", "cocktail-glass", "wooden-tray", "firewood", "poker-chip", "bicycle-bell", "bicycle-lock", "bike-helmet", "camera-lens", "lens-cap", "binocular-case", "shell-necklace", "driftwood-piece", "dry-leaf", "quartz", "bottle-cork"],
       "noFlip": [],
       "motion": {"seaweed": "sway", "palm-tree": "sway", "seashell-wind-chime": "sway", "dune-grass": "sway", "sea-holly": "sway", "coastal-grass-seedhead": "sway", "reed": "sway", "sea-lavender": "sway", "buoy": "bob", "ice-maker": "wobble", "floor-fan": "wobble"},
       "arrange": "auto",

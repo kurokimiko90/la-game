@@ -1252,6 +1252,231 @@
       "loose": true,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "bicycle-bell",
+      "zh": "腳踏車鈴",
+      "en": "bicycle bell",
+      "ja": "自転車のベル",
+      "reading": "じてんしゃのベル",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "銀色圓頂連著短短的黑色固定座，旁邊有一根彎起的小撥桿。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bicycle-pump"
+    },
+    {
+      "id": "bicycle-lock",
+      "zh": "腳踏車鎖",
+      "en": "bicycle lock",
+      "ja": "自転車の鍵",
+      "reading": "じてんしゃのかぎ",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "粗黑色橡膠包住彎曲的金屬鎖環，末端連著一個小鎖頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bicycle-pump"
+    },
+    {
+      "id": "bike-helmet",
+      "zh": "自行車安全帽",
+      "en": "bike helmet",
+      "ja": "自転車用ヘルメット",
+      "reading": "じてんしゃようヘルメット",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "圓弧形亮黃色外殼下露出黑色內襯，殼面有幾道長形通風孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bicycle-pump"
+    },
+    {
+      "id": "camera-lens",
+      "zh": "相機鏡頭",
+      "en": "camera lens",
+      "ja": "カメラレンズ",
+      "reading": "カメラレンズ",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "黑色短圓筒前端嵌著一圈玻璃，筒身有兩道凸起的調整環。",
+      "loose": true,
+      "motion": null,
+      "cluster": "camera-tripod"
+    },
+    {
+      "id": "lens-cap",
+      "zh": "鏡頭蓋",
+      "en": "lens cap",
+      "ja": "レンズキャップ",
+      "reading": "レンズキャップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "扁平的黑色圓蓋，邊緣有一圈細紋，中央略微凸起。",
+      "loose": true,
+      "motion": null,
+      "cluster": "camera-lens"
+    },
+    {
+      "id": "camera-bag",
+      "zh": "相機包",
+      "en": "camera bag",
+      "ja": "カメラバッグ",
+      "reading": "カメラバッグ",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "深灰色長方軟包有厚實圓角、短提把與兩個扣合的外袋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "camera-tripod"
+    },
+    {
+      "id": "binocular-case",
+      "zh": "望遠鏡袋",
+      "en": "binocular case",
+      "ja": "双眼鏡ケース",
+      "reading": "そうがんきょうケース",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "深藍色軟質橢圓袋身，頂端有短拉鍊，側邊接著細肩帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": "binoculars"
+    },
+    {
+      "id": "shell-necklace",
+      "zh": "貝殼項鍊",
+      "en": "shell necklace",
+      "ja": "貝殻のネックレス",
+      "reading": "かいがらのネックレス",
+      "category": "道具",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "細棕繩串著數枚乳白色小貝殼，攤開成彎彎的弧線。",
+      "loose": true,
+      "motion": null,
+      "cluster": "driftwood"
+    },
+    {
+      "id": "driftwood-log",
+      "zh": "漂流木枝幹",
+      "en": "driftwood log",
+      "ja": "流木",
+      "reading": "りゅうぼく",
+      "category": "自然",
+      "size": "medium",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "灰褐色粗木段表面乾燥粗糙，兩端不平，側面伸出短短的斷枝。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "coastal-shelter",
+      "zh": "海濱涼亭",
+      "en": "coastal-shelter",
+      "ja": "東屋",
+      "reading": "あずまや",
+      "category": "設施",
+      "size": "large",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "四根深色木柱撐起寬大的四角屋頂，屋頂下方沒有牆面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sailboat",
+      "zh": "帆船",
+      "en": "sailboat",
+      "ja": "ヨット",
+      "reading": "ヨット",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "白色船身上立著細長桅杆，兩片三角帆朝同一側張開。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "driftwood-piece",
+      "zh": "小塊漂流木",
+      "en": "driftwood-piece",
+      "ja": "流木",
+      "reading": "りゅうぼく",
+      "category": "自然",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "淺褐色短木塊表面粗糙，一端分出兩根彎曲的小枝。",
+      "loose": true,
+      "motion": null,
+      "cluster": "driftwood-log"
+    },
+    {
+      "id": "dry-leaf",
+      "zh": "乾葉",
+      "en": "dry-leaf",
+      "ja": "枯れ葉",
+      "reading": "かれは",
+      "category": "植物",
+      "size": "small",
+      "zone": "boardwalk",
+      "spot": "ground",
+      "desc": "一片黃褐色的扁平葉片，中央粗葉脈清楚，邊緣微捲。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "quartz",
+      "zh": "石英",
+      "en": "quartz",
+      "ja": "石英",
+      "reading": "せきえい",
+      "category": "自然",
+      "size": "small",
+      "zone": "tide-pool",
+      "spot": "ground",
+      "desc": "一塊乳白色半透明的小石英，表面有幾個尖角，側面透出淡淡的光澤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "rock"
+    },
+    {
+      "id": "bottle-cork",
+      "zh": "瓶塞",
+      "en": "cork",
+      "ja": "コルク栓",
+      "reading": "コルクせん",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-shack",
+      "spot": "ground",
+      "desc": "短短的圓柱形棕色軟木塞，表面有細小孔洞，一端略寬。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cocktail-glass"
     }
   ],
   "rejected": [
@@ -1824,7 +2049,172 @@
       "id": "corkscrew",
       "reason": "中文重複",
       "zone": "snack-shack"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "helmet",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "water-bottle",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunglasses",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunscreen",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "beach-towel",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "beach-umbrella",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "cooler",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "watermelon",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "seashell",
+      "reason": "中文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pebble",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "feather",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pine-cone",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "daisy",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sea-lavender",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "driftwood",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "fishing-net",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "water-bottle",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunglasses",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "binoculars",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "picnic-basket",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "thermos",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sea-glass",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "pine-cone",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "shell",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "fishing-rod",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "thermos",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sunscreen",
+      "reason": "id 重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "coastal-cone",
+      "reason": "中文重複",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "coaster",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "wine-glass",
+      "reason": "id 重複",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "wine-glass",
+      "reason": "id 重複",
+      "zone": "snack-shack"
     }
   ],
-  "createdAt": "2026-09-23T08:08:46.898Z"
+  "createdAt": "2026-09-23T08:08:46.898Z",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 15,
+    "at": "2026-09-23T23:12:00.611+09:00"
+  }
 }

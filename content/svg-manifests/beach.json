@@ -1709,6 +1709,321 @@
           }
         }
       }
+    },
+    {
+      "name": "腳踏車鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓頂連著短短的黑色固定座，旁邊有一根彎起的小撥桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "bicycle-bell",
+        "words": {
+          "zh-TW": "腳踏車鈴",
+          "en": "bicycle bell",
+          "ja": {
+            "text": "自転車のベル",
+            "reading": "じてんしゃのベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏車鎖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "粗黑色橡膠包住彎曲的金屬鎖環，末端連著一個小鎖頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "bicycle-lock",
+        "words": {
+          "zh-TW": "腳踏車鎖",
+          "en": "bicycle lock",
+          "ja": {
+            "text": "自転車の鍵",
+            "reading": "じてんしゃのかぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "自行車安全帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓弧形亮黃色外殼下露出黑色內襯，殼面有幾道長形通風孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "bike-helmet",
+        "words": {
+          "zh-TW": "自行車安全帽",
+          "en": "bike helmet",
+          "ja": {
+            "text": "自転車用ヘルメット",
+            "reading": "じてんしゃようヘルメット"
+          }
+        }
+      }
+    },
+    {
+      "name": "相機鏡頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色短圓筒前端嵌著一圈玻璃，筒身有兩道凸起的調整環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "camera-lens",
+        "words": {
+          "zh-TW": "相機鏡頭",
+          "en": "camera lens",
+          "ja": {
+            "text": "カメラレンズ",
+            "reading": "カメラレンズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鏡頭蓋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的黑色圓蓋，邊緣有一圈細紋，中央略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "lens-cap",
+        "words": {
+          "zh-TW": "鏡頭蓋",
+          "en": "lens cap",
+          "ja": {
+            "text": "レンズキャップ",
+            "reading": "レンズキャップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "相機包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深灰色長方軟包有厚實圓角、短提把與兩個扣合的外袋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "camera-bag",
+        "words": {
+          "zh-TW": "相機包",
+          "en": "camera bag",
+          "ja": {
+            "text": "カメラバッグ",
+            "reading": "カメラバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "望遠鏡袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深藍色軟質橢圓袋身，頂端有短拉鍊，側邊接著細肩帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "binocular-case",
+        "words": {
+          "zh-TW": "望遠鏡袋",
+          "en": "binocular case",
+          "ja": {
+            "text": "双眼鏡ケース",
+            "reading": "そうがんきょうケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "貝殼項鍊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細棕繩串著數枚乳白色小貝殼，攤開成彎彎的弧線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "shell-necklace",
+        "words": {
+          "zh-TW": "貝殼項鍊",
+          "en": "shell necklace",
+          "ja": {
+            "text": "貝殻のネックレス",
+            "reading": "かいがらのネックレス"
+          }
+        }
+      }
+    },
+    {
+      "name": "漂流木枝幹",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰褐色粗木段表面乾燥粗糙，兩端不平，側面伸出短短的斷枝。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "driftwood-log",
+        "words": {
+          "zh-TW": "漂流木枝幹",
+          "en": "driftwood log",
+          "ja": {
+            "text": "流木",
+            "reading": "りゅうぼく"
+          }
+        }
+      }
+    },
+    {
+      "name": "海濱涼亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "四根深色木柱撐起寬大的四角屋頂，屋頂下方沒有牆面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "coastal-shelter",
+        "words": {
+          "zh-TW": "海濱涼亭",
+          "en": "coastal-shelter",
+          "ja": {
+            "text": "東屋",
+            "reading": "あずまや"
+          }
+        }
+      }
+    },
+    {
+      "name": "帆船",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色船身上立著細長桅杆，兩片三角帆朝同一側張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "sailboat",
+        "words": {
+          "zh-TW": "帆船",
+          "en": "sailboat",
+          "ja": {
+            "text": "ヨット",
+            "reading": "ヨット"
+          }
+        }
+      }
+    },
+    {
+      "name": "小塊漂流木",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺褐色短木塊表面粗糙，一端分出兩根彎曲的小枝。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "driftwood-piece",
+        "words": {
+          "zh-TW": "小塊漂流木",
+          "en": "driftwood-piece",
+          "ja": {
+            "text": "流木",
+            "reading": "りゅうぼく"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾葉",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片黃褐色的扁平葉片，中央粗葉脈清楚，邊緣微捲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "boardwalk",
+        "itemId": "dry-leaf",
+        "words": {
+          "zh-TW": "乾葉",
+          "en": "dry-leaf",
+          "ja": {
+            "text": "枯れ葉",
+            "reading": "かれは"
+          }
+        }
+      }
+    },
+    {
+      "name": "石英",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊乳白色半透明的小石英，表面有幾個尖角，側面透出淡淡的光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "tide-pool",
+        "itemId": "quartz",
+        "words": {
+          "zh-TW": "石英",
+          "en": "quartz",
+          "ja": {
+            "text": "石英",
+            "reading": "せきえい"
+          }
+        }
+      }
+    },
+    {
+      "name": "瓶塞",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的圓柱形棕色軟木塞，表面有細小孔洞，一端略寬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "beach",
+        "zone": "snack-shack",
+        "itemId": "bottle-cork",
+        "words": {
+          "zh-TW": "瓶塞",
+          "en": "cork",
+          "ja": {
+            "text": "コルク栓",
+            "reading": "コルクせん"
+          }
+        }
+      }
     }
   ]
 }
