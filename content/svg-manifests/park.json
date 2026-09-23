@@ -827,6 +827,699 @@
           }
         }
       }
+    },
+    {
+      "name": "園藝手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙綠色厚布手套，五根指頭張開，掌心有深色防滑點，平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "garden-glove",
+        "words": {
+          "zh-TW": "園藝手套",
+          "en": "gardening-glove",
+          "ja": {
+            "text": "園芸用手袋",
+            "reading": "えんげいようてぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "修枝剪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片彎月形金屬刀刃連著紅色短握柄，中央有圓形轉軸，剪口張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "pruning-shears",
+        "words": {
+          "zh-TW": "修枝剪",
+          "en": "pruning-shears",
+          "ja": {
+            "text": "剪定ばさみ",
+            "reading": "せんていばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "澆水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色壺身上有弧形提把，壺嘴細長向前伸出，末端帶圓形灑水頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "watering-can",
+        "words": {
+          "zh-TW": "澆水壺",
+          "en": "watering-can",
+          "ja": {
+            "text": "じょうろ",
+            "reading": "じょうろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "耙子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長木柄末端裝著扇形金屬耙頭，一排彎曲齒尖朝下，橫放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "rake",
+        "words": {
+          "zh-TW": "耙子",
+          "en": "rake",
+          "ja": {
+            "text": "熊手",
+            "reading": "くまで"
+          }
+        }
+      }
+    },
+    {
+      "name": "鳥浴盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺藍色圓盆架在細柱上，柱腳是寬大的圓形底座，盆裡沒有水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "birdbath",
+        "words": {
+          "zh-TW": "鳥浴盆",
+          "en": "birdbath",
+          "ja": {
+            "text": "バードバス",
+            "reading": "バードバス"
+          }
+        }
+      }
+    },
+    {
+      "name": "堆肥箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形深褐色塑膠箱帶有掀開的頂蓋，箱身側面排列著整齊的小通氣孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "compost-bin",
+        "words": {
+          "zh-TW": "堆肥箱",
+          "en": "compost-bin",
+          "ja": {
+            "text": "コンポスト容器",
+            "reading": "コンポストようき"
+          }
+        }
+      }
+    },
+    {
+      "name": "園藝鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短木柄連著銀色窄鏟面，鏟面尖端圓弧收窄，柄尾有掛孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "garden-trowel",
+        "words": {
+          "zh-TW": "園藝鏟",
+          "en": "garden-trowel",
+          "ja": {
+            "text": "移植ごて",
+            "reading": "いしょくごて"
+          }
+        }
+      }
+    },
+    {
+      "name": "長椅扶手",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "獨立的深綠色金屬扶手，頂端圓潤，兩端帶有固定用的扁平底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "entrance",
+        "itemId": "park-bench-armrest",
+        "words": {
+          "zh-TW": "長椅扶手",
+          "en": "armrest",
+          "ja": {
+            "text": "肘掛け",
+            "reading": "ひじかけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "噴水柱",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一道白色水柱從地面圓形噴口向上噴出，底部濺起一圈細小水花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "fountain-jet",
+        "words": {
+          "zh-TW": "噴水柱",
+          "en": "water-jet",
+          "ja": {
+            "text": "噴水",
+            "reading": "ふんすい"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明圓筒形塑膠杯，杯口較寬、杯底平坦，側面沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "drinking-cup",
+        "words": {
+          "zh-TW": "飲水杯",
+          "en": "drinking cup",
+          "ja": {
+            "text": "水飲みカップ",
+            "reading": "みずのみカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "噴泉水池",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "圓形淺灰石造水池，低矮池沿圍住中央噴泉，內側可見藍色水面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "fountain-basin",
+        "words": {
+          "zh-TW": "噴泉水池",
+          "en": "fountain basin",
+          "ja": {
+            "text": "噴水池",
+            "reading": "ふんすいち"
+          }
+        }
+      }
+    },
+    {
+      "name": "鳥飼料盒",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的木製盒狀鳥飼料台，有斜屋頂、開口和短短的底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "pigeon-feeder",
+        "words": {
+          "zh-TW": "鳥飼料盒",
+          "en": "bird feeder",
+          "ja": {
+            "text": "野鳥の餌台",
+            "reading": "やちょうのえさだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "公園燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長黑色燈柱立在方形底座上，頂端有一盞向下照明的白色燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "park-lamp",
+        "words": {
+          "zh-TW": "公園燈",
+          "en": "lamp post",
+          "ja": {
+            "text": "街灯",
+            "reading": "がいとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "網球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "鮮黃色小圓球，表面有兩道白色彎曲縫線，獨自滾落在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "tennis-ball",
+        "words": {
+          "zh-TW": "網球",
+          "en": "tennis ball",
+          "ja": {
+            "text": "テニスボール",
+            "reading": "テニスボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "落葉",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘黃色掌形葉片平躺地面，葉脈清晰，邊緣有幾個圓鈍缺口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "fallen-leaf",
+        "words": {
+          "zh-TW": "落葉",
+          "en": "fallen leaf",
+          "ja": {
+            "text": "落ち葉",
+            "reading": "おちば"
+          }
+        }
+      }
+    },
+    {
+      "name": "泡泡棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長塑膠棒頂端有一個圓環，圓環沾著薄薄的透明泡泡液。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "plaza",
+        "itemId": "soap-bubble-wand",
+        "words": {
+          "zh-TW": "泡泡棒",
+          "en": "bubble wand",
+          "ja": {
+            "text": "シャボン玉の輪",
+            "reading": "シャボンだまのわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "公園指示牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "綠色長方形牌面固定在灰色立柱上，牌面只有簡單的彩色圖形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "park-sign",
+        "words": {
+          "zh-TW": "公園指示牌",
+          "en": "park sign",
+          "ja": {
+            "text": "公園案内板",
+            "reading": "こうえんあんないばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "溜滑梯梯子",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩根金屬側桿連著幾根橫踏桿，頂端接在溜滑梯的平台旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "slide-ladder",
+        "words": {
+          "zh-TW": "溜滑梯梯子",
+          "en": "slide ladder",
+          "ja": {
+            "text": "すべり台のはしご",
+            "reading": "すべりだいのはしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "遊戲隧道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "短而粗的彩色圓筒橫放地面，兩端敞開，筒身有圓弧形外殼。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "playground-tunnel",
+        "words": {
+          "zh-TW": "遊戲隧道",
+          "en": "playground tunnel",
+          "ja": {
+            "text": "トンネル遊具",
+            "reading": "トンネルゆうぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玩沙鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄連著扁平的小鏟面，亮黃色塑膠製，旁邊有圓形握孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "toy-shovel",
+        "words": {
+          "zh-TW": "玩沙鏟",
+          "en": "toy shovel",
+          "ja": {
+            "text": "砂遊び用スコップ",
+            "reading": "すなあそびようスコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玩沙耙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的塑膠握柄接著一排寬齒，橘紅色，平放在沙坑旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "toy-rake",
+        "words": {
+          "zh-TW": "玩沙耙",
+          "en": "toy rake",
+          "ja": {
+            "text": "砂遊び用くまで",
+            "reading": "すなあそびようくまで"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條細長的紅色繩子彎成鬆鬆的弧形，兩端各接一個短握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "jump-rope",
+        "words": {
+          "zh-TW": "跳繩",
+          "en": "jump rope",
+          "ja": {
+            "text": "なわとび",
+            "reading": "なわとび"
+          }
+        }
+      }
+    },
+    {
+      "name": "呼拉圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "亮藍色塑膠圓環平放地上，環面寬而光滑，接縫處有一小段凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "hula-hoop",
+        "words": {
+          "zh-TW": "呼拉圈",
+          "en": "hula hoop",
+          "ja": {
+            "text": "フラフープ",
+            "reading": "フラフープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玩具卡車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色小車頭連著藍色方形車斗，四個黑色圓輪清楚露在車身下方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "toy-truck",
+        "words": {
+          "zh-TW": "玩具卡車",
+          "en": "toy truck",
+          "ja": {
+            "text": "おもちゃのトラック",
+            "reading": "おもちゃのトラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳格子格子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "地面上排成一列的白色方格線，末端接著一個半圓形，沒有數字或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "playground",
+        "itemId": "hopscotch-grid",
+        "words": {
+          "zh-TW": "跳格子格子",
+          "en": "hopscotch grid",
+          "ja": {
+            "text": "けんけんぱの輪",
+            "reading": "けんけんぱのわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "魚線",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一圈透明細線繞成小圓盤，中央有深色圓孔，旁邊露出一小段線頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "fishing-line",
+        "words": {
+          "zh-TW": "魚線",
+          "en": "fishing-line",
+          "ja": {
+            "text": "釣り糸",
+            "reading": "つりいと"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡蓮葉",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片圓圓的綠葉，邊緣有一道切口，葉面可見幾條放射狀葉脈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "lily-pad",
+        "words": {
+          "zh-TW": "睡蓮葉",
+          "en": "lily-pad",
+          "ja": {
+            "text": "ハスの葉",
+            "reading": "ハスのは"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡蓮",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片粉紅色花瓣圍著黃色花心，花朵攤開，底下露出一片圓形綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "water-lily",
+        "words": {
+          "zh-TW": "睡蓮",
+          "en": "water-lily",
+          "ja": {
+            "text": "スイレン",
+            "reading": "スイレン"
+          }
+        }
+      }
+    },
+    {
+      "name": "蜻蜓",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長身體配上兩對透明翅膀，翅膀左右張開，頭部有兩顆圓眼睛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "dragonfly",
+        "words": {
+          "zh-TW": "蜻蜓",
+          "en": "dragonfly",
+          "ja": {
+            "text": "トンボ",
+            "reading": "トンボ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水波紋",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾道淺藍色橢圓弧線由中心向外擴散，線條平滑，呈現水面波紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "water-ripple",
+        "words": {
+          "zh-TW": "水波紋",
+          "en": "water-ripple",
+          "ja": {
+            "text": "水の波紋",
+            "reading": "みずのはもん"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡蓮花苞",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆尖尖的粉紅花苞由綠色花萼托住，旁邊連著一段短短的彎曲莖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "water-lily-bud",
+        "words": {
+          "zh-TW": "睡蓮花苞",
+          "en": "water-lily-bud",
+          "ja": {
+            "text": "スイレンのつぼみ",
+            "reading": "スイレンのつぼみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡蓮蓮蓬",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色圓錐形蓮蓬，頂面有一圈排列整齊的小圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "water-lily-seed-pod",
+        "words": {
+          "zh-TW": "睡蓮蓮蓬",
+          "en": "water lily seed pod",
+          "ja": {
+            "text": "スイレンの実",
+            "reading": "スイレンのみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "釣魚浮標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅白相間的細長橢圓浮標，頂端有一小段細尖桿，底部連著短短的繫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "park",
+        "zone": "lake",
+        "itemId": "fishing-float",
+        "words": {
+          "zh-TW": "釣魚浮標",
+          "en": "fishing-float",
+          "ja": {
+            "text": "釣り浮き",
+            "reading": "つりうき"
+          }
+        }
+      }
     }
   ]
 }

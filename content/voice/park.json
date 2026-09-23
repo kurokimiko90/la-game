@@ -197,6 +197,198 @@
       "score": 1,
       "take": "en-1790052646655.aac",
       "account": "chatgpt1"
+    },
+    "fountain-basin": {
+      "heard": "Fountain Basin.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "park-lamp": {
+      "heard": "Lamp post.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "slide-ladder": {
+      "heard": "Slide ladder.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "park-bench-armrest": {
+      "heard": "Armrest.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "birdbath": {
+      "heard": "Birdbath.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "garden-glove": {
+      "heard": "Gardening Glove.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "toy-truck": {
+      "heard": "Toy truck.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "drinking-cup": {
+      "heard": "Drinking cup.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "pigeon-feeder": {
+      "heard": "Birdfeeder.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "rake": {
+      "heard": "Rake.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "park-sign": {
+      "heard": "Park sign.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "playground-tunnel": {
+      "heard": "Playground Tunnel.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "toy-shovel": {
+      "heard": "Toy Shovel",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "toy-rake": {
+      "heard": "Toy Rake",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "fallen-leaf": {
+      "heard": "Fallen Leaf.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "jump-rope": {
+      "heard": "Jump rope.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "hopscotch-grid": {
+      "heard": "Hopscotch Grid.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "fountain-jet": {
+      "heard": "water jet",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "hula-hoop": {
+      "heard": "Hula hoop.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "watering-can": {
+      "heard": "watering can.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "fishing-line": {
+      "heard": "Fishing line.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "water-ripple": {
+      "heard": "Water Ripple.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "lily-pad": {
+      "heard": "Lilypad",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "pruning-shears": {
+      "heard": "Pruning shears.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "water-lily-seed-pod": {
+      "heard": "Water lily seed pod.",
+      "score": 1,
+      "take": "en-1790167290170.aac",
+      "account": "chatgpt2"
+    },
+    "compost-bin": {
+      "heard": "Compost bin.",
+      "score": 1,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
+    },
+    "soap-bubble-wand": {
+      "heard": "Bubble Wands.",
+      "score": 0.91,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
+    },
+    "tennis-ball": {
+      "heard": "Tennis ball.",
+      "score": 1,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
+    },
+    "fishing-float": {
+      "heard": "Fishing Float",
+      "score": 1,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
+    },
+    "water-lily": {
+      "heard": "Water lily.",
+      "score": 1,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
+    },
+    "garden-trowel": {
+      "heard": "Garden trowel.",
+      "score": 1,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
+    },
+    "water-lily-bud": {
+      "heard": "Water lily bud.",
+      "score": 1,
+      "take": "en-1790167510531.aac",
+      "account": "chatgpt3"
     }
   }
 }

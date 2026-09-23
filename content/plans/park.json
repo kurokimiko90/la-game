@@ -468,7 +468,639 @@
       "size": "small",
       "desc": "黃黑色花紋的蝴蝶，翅膀張開。",
       "lane": "a"
+    },
+    {
+      "id": "garden-glove",
+      "zh": "園藝手套",
+      "en": "gardening-glove",
+      "ja": "園芸用手袋",
+      "reading": "えんげいようてぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一雙綠色厚布手套，五根指頭張開，掌心有深色防滑點，平放在地面。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pruning-shears",
+      "zh": "修枝剪",
+      "en": "pruning-shears",
+      "ja": "剪定ばさみ",
+      "reading": "せんていばさみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "兩片彎月形金屬刀刃連著紅色短握柄，中央有圓形轉軸，剪口張開。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "watering-can",
+      "zh": "澆水壺",
+      "en": "watering-can",
+      "ja": "じょうろ",
+      "reading": "じょうろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "綠色壺身上有弧形提把，壺嘴細長向前伸出，末端帶圓形灑水頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "rake",
+      "zh": "耙子",
+      "en": "rake",
+      "ja": "熊手",
+      "reading": "くまで",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "長木柄末端裝著扇形金屬耙頭，一排彎曲齒尖朝下，橫放在地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "birdbath",
+      "zh": "鳥浴盆",
+      "en": "birdbath",
+      "ja": "バードバス",
+      "reading": "バードバス",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺藍色圓盆架在細柱上，柱腳是寬大的圓形底座，盆裡沒有水。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "compost-bin",
+      "zh": "堆肥箱",
+      "en": "compost-bin",
+      "ja": "コンポスト容器",
+      "reading": "コンポストようき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "方形深褐色塑膠箱帶有掀開的頂蓋，箱身側面排列著整齊的小通氣孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-trowel",
+      "zh": "園藝鏟",
+      "en": "garden-trowel",
+      "ja": "移植ごて",
+      "reading": "いしょくごて",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "短木柄連著銀色窄鏟面，鏟面尖端圓弧收窄，柄尾有掛孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "park-bench-armrest",
+      "zh": "長椅扶手",
+      "en": "armrest",
+      "ja": "肘掛け",
+      "reading": "ひじかけ",
+      "category": "設施",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "獨立的深綠色金屬扶手，頂端圓潤，兩端帶有固定用的扁平底座。",
+      "loose": false,
+      "motion": null,
+      "cluster": "bench"
+    },
+    {
+      "id": "fountain-jet",
+      "zh": "噴水柱",
+      "en": "water-jet",
+      "ja": "噴水",
+      "reading": "ふんすい",
+      "category": "自然",
+      "size": "medium",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "一道白色水柱從地面圓形噴口向上噴出，底部濺起一圈細小水花。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fountain"
+    },
+    {
+      "id": "drinking-cup",
+      "zh": "飲水杯",
+      "en": "drinking cup",
+      "ja": "水飲みカップ",
+      "reading": "みずのみカップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "透明圓筒形塑膠杯，杯口較寬、杯底平坦，側面沒有圖案。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fountain"
+    },
+    {
+      "id": "fountain-basin",
+      "zh": "噴泉水池",
+      "en": "fountain basin",
+      "ja": "噴水池",
+      "reading": "ふんすいち",
+      "category": "設施",
+      "size": "large",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "圓形淺灰石造水池，低矮池沿圍住中央噴泉，內側可見藍色水面。",
+      "loose": false,
+      "motion": null,
+      "cluster": "fountain"
+    },
+    {
+      "id": "pigeon-feeder",
+      "zh": "鳥飼料盒",
+      "en": "bird feeder",
+      "ja": "野鳥の餌台",
+      "reading": "やちょうのえさだい",
+      "category": "設施",
+      "size": "small",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "小巧的木製盒狀鳥飼料台，有斜屋頂、開口和短短的底座。",
+      "loose": false,
+      "motion": null,
+      "cluster": "pigeon"
+    },
+    {
+      "id": "park-lamp",
+      "zh": "公園燈",
+      "en": "lamp post",
+      "ja": "街灯",
+      "reading": "がいとう",
+      "category": "設施",
+      "size": "large",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "細長黑色燈柱立在方形底座上，頂端有一盞向下照明的白色燈罩。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "tennis-ball",
+      "zh": "網球",
+      "en": "tennis ball",
+      "ja": "テニスボール",
+      "reading": "テニスボール",
+      "category": "道具",
+      "size": "small",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "鮮黃色小圓球，表面有兩道白色彎曲縫線，獨自滾落在地面。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fallen-leaf",
+      "zh": "落葉",
+      "en": "fallen leaf",
+      "ja": "落ち葉",
+      "reading": "おちば",
+      "category": "自然",
+      "size": "small",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "橘黃色掌形葉片平躺地面，葉脈清晰，邊緣有幾個圓鈍缺口。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "soap-bubble-wand",
+      "zh": "泡泡棒",
+      "en": "bubble wand",
+      "ja": "シャボン玉の輪",
+      "reading": "シャボンだまのわ",
+      "category": "道具",
+      "size": "small",
+      "zone": "plaza",
+      "spot": "ground",
+      "desc": "細長塑膠棒頂端有一個圓環，圓環沾著薄薄的透明泡泡液。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "park-sign",
+      "zh": "公園指示牌",
+      "en": "park sign",
+      "ja": "公園案内板",
+      "reading": "こうえんあんないばん",
+      "category": "設施",
+      "size": "medium",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "綠色長方形牌面固定在灰色立柱上，牌面只有簡單的彩色圖形。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "slide-ladder",
+      "zh": "溜滑梯梯子",
+      "en": "slide ladder",
+      "ja": "すべり台のはしご",
+      "reading": "すべりだいのはしご",
+      "category": "設施",
+      "size": "large",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "兩根金屬側桿連著幾根橫踏桿，頂端接在溜滑梯的平台旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": "slide"
+    },
+    {
+      "id": "playground-tunnel",
+      "zh": "遊戲隧道",
+      "en": "playground tunnel",
+      "ja": "トンネル遊具",
+      "reading": "トンネルゆうぐ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "短而粗的彩色圓筒橫放地面，兩端敞開，筒身有圓弧形外殼。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "toy-shovel",
+      "zh": "玩沙鏟",
+      "en": "toy shovel",
+      "ja": "砂遊び用スコップ",
+      "reading": "すなあそびようスコップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "短柄連著扁平的小鏟面，亮黃色塑膠製，旁邊有圓形握孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sandbox"
+    },
+    {
+      "id": "toy-rake",
+      "zh": "玩沙耙",
+      "en": "toy rake",
+      "ja": "砂遊び用くまで",
+      "reading": "すなあそびようくまで",
+      "category": "道具",
+      "size": "small",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "短短的塑膠握柄接著一排寬齒，橘紅色，平放在沙坑旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sandbox"
+    },
+    {
+      "id": "jump-rope",
+      "zh": "跳繩",
+      "en": "jump rope",
+      "ja": "なわとび",
+      "reading": "なわとび",
+      "category": "道具",
+      "size": "small",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "一條細長的紅色繩子彎成鬆鬆的弧形，兩端各接一個短握把。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hula-hoop",
+      "zh": "呼拉圈",
+      "en": "hula hoop",
+      "ja": "フラフープ",
+      "reading": "フラフープ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "亮藍色塑膠圓環平放地上，環面寬而光滑，接縫處有一小段凸起。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "toy-truck",
+      "zh": "玩具卡車",
+      "en": "toy truck",
+      "ja": "おもちゃのトラック",
+      "reading": "おもちゃのトラック",
+      "category": "道具",
+      "size": "small",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "紅色小車頭連著藍色方形車斗，四個黑色圓輪清楚露在車身下方。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hopscotch-grid",
+      "zh": "跳格子格子",
+      "en": "hopscotch grid",
+      "ja": "けんけんぱの輪",
+      "reading": "けんけんぱのわ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "playground",
+      "spot": "ground",
+      "desc": "地面上排成一列的白色方格線，末端接著一個半圓形，沒有數字或文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fishing-line",
+      "zh": "魚線",
+      "en": "fishing-line",
+      "ja": "釣り糸",
+      "reading": "つりいと",
+      "category": "道具",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "一圈透明細線繞成小圓盤，中央有深色圓孔，旁邊露出一小段線頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": "fishing-rod"
+    },
+    {
+      "id": "lily-pad",
+      "zh": "睡蓮葉",
+      "en": "lily-pad",
+      "ja": "ハスの葉",
+      "reading": "ハスのは",
+      "category": "植物",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "一片圓圓的綠葉，邊緣有一道切口，葉面可見幾條放射狀葉脈。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "water-lily",
+      "zh": "睡蓮",
+      "en": "water-lily",
+      "ja": "スイレン",
+      "reading": "スイレン",
+      "category": "植物",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "幾片粉紅色花瓣圍著黃色花心，花朵攤開，底下露出一片圓形綠葉。",
+      "loose": false,
+      "motion": null,
+      "cluster": "lily-pad"
+    },
+    {
+      "id": "dragonfly",
+      "zh": "蜻蜓",
+      "en": "dragonfly",
+      "ja": "トンボ",
+      "reading": "トンボ",
+      "category": "自然",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "細長身體配上兩對透明翅膀，翅膀左右張開，頭部有兩顆圓眼睛。",
+      "loose": false,
+      "motion": "bob",
+      "cluster": null
+    },
+    {
+      "id": "water-ripple",
+      "zh": "水波紋",
+      "en": "water-ripple",
+      "ja": "水の波紋",
+      "reading": "みずのはもん",
+      "category": "自然",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "幾道淺藍色橢圓弧線由中心向外擴散，線條平滑，呈現水面波紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "water-lily-bud",
+      "zh": "睡蓮花苞",
+      "en": "water-lily-bud",
+      "ja": "スイレンのつぼみ",
+      "reading": "スイレンのつぼみ",
+      "category": "植物",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "一顆尖尖的粉紅花苞由綠色花萼托住，旁邊連著一段短短的彎曲莖。",
+      "loose": false,
+      "motion": null,
+      "cluster": "lily-pad"
+    },
+    {
+      "id": "water-lily-seed-pod",
+      "zh": "睡蓮蓮蓬",
+      "en": "water lily seed pod",
+      "ja": "スイレンの実",
+      "reading": "スイレンのみ",
+      "category": "植物",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "綠色圓錐形蓮蓬，頂面有一圈排列整齊的小圓孔。",
+      "loose": false,
+      "motion": "bob",
+      "cluster": "water-lily"
+    },
+    {
+      "id": "fishing-float",
+      "zh": "釣魚浮標",
+      "en": "fishing-float",
+      "ja": "釣り浮き",
+      "reading": "つりうき",
+      "category": "道具",
+      "size": "small",
+      "zone": "lake",
+      "spot": "ground",
+      "desc": "紅白相間的細長橢圓浮標，頂端有一小段細尖桿，底部連著短短的繫線。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
     }
   ],
-  "createdAt": "2026-09-23T12:22:55.085Z"
+  "createdAt": "2026-09-23T12:22:55.085Z",
+  "rejected": [
+    {
+      "id": "wheelbarrow",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "watering-hose-nozzle",
+      "reason": "英文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "park-binoculars",
+      "reason": "英文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "park-binoculars",
+      "reason": "英文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "coin",
+      "reason": "英文重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "feather",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "acorn",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "pine-cone",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "dandelion",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "clover",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "mushroom",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "sprinkler",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "hose",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "park-bin",
+      "reason": "英文重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "watering-can",
+      "reason": "id 重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "flowerpot",
+      "reason": "中文重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "sprinkler-head",
+      "reason": "英文重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "lawn-chair",
+      "reason": "英文重複",
+      "zone": "plaza"
+    },
+    {
+      "id": "trash-can",
+      "reason": "id 重複",
+      "zone": "playground"
+    },
+    {
+      "id": "playground-balloon",
+      "reason": "英文重複",
+      "zone": "playground"
+    },
+    {
+      "id": "binoculars",
+      "reason": "id 重複",
+      "zone": "lake"
+    },
+    {
+      "id": "fishing-rod",
+      "reason": "id 重複",
+      "zone": "lake"
+    },
+    {
+      "id": "fishing-float",
+      "reason": "中文重複",
+      "zone": "lake"
+    },
+    {
+      "id": "life-ring",
+      "reason": "中文重複",
+      "zone": "lake"
+    },
+    {
+      "id": "fishing-bobber",
+      "reason": "中文重複",
+      "zone": "lake"
+    },
+    {
+      "id": "water-lily-leaf",
+      "reason": "中文重複",
+      "zone": "lake"
+    }
+  ],
+  "topUp": {
+    "itemsPerScene": 70,
+    "added": 33,
+    "at": "2026-09-23T12:36:36.082Z"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T10:49:17.614Z",
+  "syncedAt": "2026-09-23T12:41:14.334Z",
   "scenes": [
     {
       "scene": "airport",
@@ -621,9 +621,47 @@
         "tree",
         "bush",
         "stone",
-        "sandwich"
+        "sandwich",
+        "garden-glove",
+        "pruning-shears",
+        "watering-can",
+        "rake",
+        "birdbath",
+        "compost-bin",
+        "garden-trowel",
+        "park-bench-armrest",
+        "fountain-jet",
+        "drinking-cup",
+        "fountain-basin",
+        "pigeon-feeder",
+        "park-lamp",
+        "tennis-ball",
+        "fallen-leaf",
+        "soap-bubble-wand",
+        "park-sign",
+        "slide-ladder",
+        "playground-tunnel",
+        "toy-shovel",
+        "toy-rake",
+        "jump-rope",
+        "hula-hoop",
+        "toy-truck",
+        "hopscotch-grid",
+        "fishing-line",
+        "lily-pad",
+        "water-lily",
+        "water-ripple",
+        "water-lily-bud",
+        "water-lily-seed-pod",
+        "fishing-float"
       ],
-      "failed": [],
+      "failed": [
+        {
+          "itemId": "dragonfly",
+          "elementId": "el-062",
+          "error": "llm 判定無合適圖"
+        }
+      ],
       "pending": [],
       "skippedLaneA": [
         "pigeon",
