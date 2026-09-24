@@ -102,6 +102,11 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
     stopAudio();
   };
 
+  const explore = () => {
+    resetOverlays();
+    setPhase({ kind: 'explore' });
+  };
+
   const startStage = (stage: StageDef) => {
     resetOverlays();
     const state = createStageState(stage, itemIds, createRng(Date.now()), Date.now());
@@ -151,7 +156,9 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
       showToast(lockedMessage(sceneId));
       return;
     }
-    if (phase.kind === 'explore') {
+    // 選關時點地圖 = 不想選關：關掉選單進自由探索，點到的物品照常顯示單字
+    if (phase.kind === 'menu' || phase.kind === 'explore') {
+      if (phase.kind === 'menu') setPhase({ kind: 'explore' });
       if (itemId) showWord(itemId, localPoint, false);
       return;
     }
@@ -261,7 +268,7 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
           )}
           {phase.kind === 'menu' && (
             <StageMenu sceneId={scene.id} sceneName={scene.name} progress={progress}
-              onExplore={() => { resetOverlays(); setPhase({ kind: 'explore' }); }} onStart={startStage} />
+              onExplore={explore} onClose={explore} onStart={startStage} />
           )}
           {phase.kind === 'result' && (
             <StageResult stage={phase.stage} state={phase.state} stars={phase.stars} itemsById={itemsById} lang={lang}

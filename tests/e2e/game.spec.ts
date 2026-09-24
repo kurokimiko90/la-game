@@ -239,6 +239,25 @@ test('選關畫面：面板外可以拖曳地圖', async ({ page }) => {
   await expect.poll(transform).not.toBe(before);
 });
 
+test('選關畫面：點地圖上的物品直接關掉選單、進入自由探索', async ({ page }) => {
+  await page.goto('/scene/park');
+  await expect(page.getByRole('button', { name: /自由探索/ })).toBeVisible();
+  const bench = park.items.find((i) => i.id === 'bench')!;
+  await clickItem(page, 'bench', bench.zone);
+  await expect(page.getByRole('button', { name: /自由探索/ })).toBeHidden();
+  await expect(page.getByRole('status')).toContainText('bench');
+});
+
+test('選關畫面：✕ 和 Esc 都能關掉選單', async ({ page }) => {
+  await page.goto('/scene/park');
+  await page.getByRole('button', { name: '關閉選單' }).click();
+  await expect(page.getByRole('button', { name: /自由探索/ })).toBeHidden();
+  await page.getByRole('button', { name: '回選關' }).click();
+  await expect(page.getByRole('button', { name: /自由探索/ })).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('button', { name: /自由探索/ })).toBeHidden();
+});
+
 test('看圖找：點錯物品只顯示單字、不算找到；提示會用掉次數', async ({ page }) => {
   await page.goto('/scene/park');
   await page.getByRole('button', { name: /看圖找/ }).click();

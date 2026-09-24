@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Compass, Lock, Star } from 'lucide-react';
+import { useEffect } from 'react';
+import { Compass, Lock, Star, X } from 'lucide-react';
 import { STAGES, type StageDef } from '@/lib/stages';
 import { isStageUnlocked, stageKey, type Progress } from '@/lib/progress';
 
@@ -10,6 +11,8 @@ interface StageMenuProps {
   sceneName: string;
   progress: Progress;
   onExplore: () => void;
+  /** ✕、Esc：不選關，直接看地圖（自由探索） */
+  onClose: () => void;
   onStart: (stage: StageDef) => void;
 }
 
@@ -26,12 +29,26 @@ export function Stars({ count, size = 16 }: { count: number; size?: number }) {
   );
 }
 
-export function StageMenu({ sceneId, sceneName, progress, onExplore, onStart }: StageMenuProps) {
+export function StageMenu({ sceneId, sceneName, progress, onExplore, onClose, onStart }: StageMenuProps) {
+  useEffect(() => {
+    const onKeyDown = (ev: KeyboardEvent) => {
+      if (ev.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [onClose]);
+
   return (
     // 遮罩不擋滑鼠：面板外可以直接拖曳地圖；只有面板本身攔截
     <div className="pointer-events-none absolute inset-0 z-30 grid place-items-center bg-ink/20 p-4">
       <div data-ui="overlay" className="pop-in pointer-events-auto w-full max-w-md rounded-3xl bg-paper p-5 shadow-2xl" onPointerDown={(e) => e.stopPropagation()}>
-        <h2 className="text-2xl font-bold">{sceneName}</h2>
+        <div className="flex items-start justify-between gap-2">
+          <h2 className="text-2xl font-bold">{sceneName}</h2>
+          <button type="button" aria-label="關閉選單" onClick={onClose}
+            className="-mr-2 -mt-1 grid size-9 shrink-0 place-items-center rounded-full text-muted hover:bg-black/5 hover:text-ink">
+            <X size={20} />
+          </button>
+        </div>
         <p className="mt-1 text-sm text-muted">物品的位置永遠不變。從看圖開始，一路練到憑記憶找到它們。</p>
 
         <button type="button" onClick={onExplore}
