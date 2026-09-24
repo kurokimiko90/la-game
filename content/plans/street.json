@@ -475,21 +475,6 @@
       "cluster": null
     },
     {
-      "id": "manhole-key",
-      "zh": "人孔蓋開啟鉤",
-      "en": "manhole hook",
-      "ja": "マンホールフック",
-      "reading": "マンホールフック",
-      "category": "道具",
-      "size": "small",
-      "zone": "crossing",
-      "spot": "ground",
-      "desc": "一支短柄金屬工具，末端彎成鉤狀，平放在圓形人孔蓋旁。",
-      "loose": true,
-      "motion": null,
-      "cluster": "manhole-cover"
-    },
-    {
       "id": "manhole-lid",
       "zh": "水溝蓋",
       "en": "drain cover",
@@ -700,21 +685,6 @@
       "cluster": null
     },
     {
-      "id": "menu-holder",
-      "zh": "菜單架",
-      "en": "menu holder",
-      "ja": "メニュースタンド",
-      "reading": "メニュースタンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "cafe",
-      "spot": "ground",
-      "desc": "透明的直立展示架，底部有寬扁的支腳，裡面放著沒有文字的淺色紙張。",
-      "loose": false,
-      "motion": null,
-      "cluster": "menu-board"
-    },
-    {
       "id": "coffee-scoop",
       "zh": "咖啡量匙",
       "en": "coffee scoop",
@@ -771,51 +741,6 @@
       "spot": "ground",
       "desc": "一張小巧的長方形紙票，淡黃色底色，邊緣有短短的齒孔，正面沒有文字或數字。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bus-passenger-door",
-      "zh": "公車車門",
-      "en": "bus-door",
-      "ja": "バスのドア",
-      "reading": "バスのドア",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "bus-stop",
-      "spot": "ground",
-      "desc": "一扇高大的雙片折疊車門，深色玻璃窗嵌在金屬框裡，底部有低矮踏板。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bus-wheel",
-      "zh": "公車輪胎",
-      "en": "bus-wheel",
-      "ja": "バスのタイヤ",
-      "reading": "バスのタイヤ",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "bus-stop",
-      "spot": "ground",
-      "desc": "一個厚實的黑色圓形輪胎，外圈有清楚的深色胎紋，中央露出銀灰色輪圈。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bus-stop-button",
-      "zh": "下車鈴",
-      "en": "stop-button",
-      "ja": "降車ボタン",
-      "reading": "こうしゃボタン",
-      "category": "道具",
-      "size": "small",
-      "zone": "bus-stop",
-      "spot": "ground",
-      "desc": "一顆裝在短柄上的圓形紅色按鈕，外圍有淺灰色底座，表面平滑醒目。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -1127,5 +1052,12 @@
     "itemsPerScene": 70,
     "added": 27,
     "at": "2026-09-23T13:23:24.286Z"
-  }
+  },
+  "removedDuplicates": [
+    "bus-wheel",
+    "bus-passenger-door",
+    "bus-stop-button",
+    "menu-holder",
+    "manhole-key"
+  ]
 }

@@ -575,36 +575,6 @@
       "cluster": null
     },
     {
-      "id": "park-bench-armrest",
-      "zh": "長椅扶手",
-      "en": "armrest",
-      "ja": "肘掛け",
-      "reading": "ひじかけ",
-      "category": "設施",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "獨立的深綠色金屬扶手，頂端圓潤，兩端帶有固定用的扁平底座。",
-      "loose": false,
-      "motion": null,
-      "cluster": "bench"
-    },
-    {
-      "id": "fountain-jet",
-      "zh": "噴水柱",
-      "en": "water-jet",
-      "ja": "噴水",
-      "reading": "ふんすい",
-      "category": "自然",
-      "size": "medium",
-      "zone": "plaza",
-      "spot": "ground",
-      "desc": "一道白色水柱從地面圓形噴口向上噴出，底部濺起一圈細小水花。",
-      "loose": false,
-      "motion": null,
-      "cluster": "fountain"
-    },
-    {
       "id": "drinking-cup",
       "zh": "飲水杯",
       "en": "drinking cup",
@@ -616,21 +586,6 @@
       "spot": "ground",
       "desc": "透明圓筒形塑膠杯，杯口較寬、杯底平坦，側面沒有圖案。",
       "loose": true,
-      "motion": null,
-      "cluster": "fountain"
-    },
-    {
-      "id": "fountain-basin",
-      "zh": "噴泉水池",
-      "en": "fountain basin",
-      "ja": "噴水池",
-      "reading": "ふんすいち",
-      "category": "設施",
-      "size": "large",
-      "zone": "plaza",
-      "spot": "ground",
-      "desc": "圓形淺灰石造水池，低矮池沿圍住中央噴泉，內側可見藍色水面。",
-      "loose": false,
       "motion": null,
       "cluster": "fountain"
     },
@@ -648,21 +603,6 @@
       "loose": false,
       "motion": null,
       "cluster": "pigeon"
-    },
-    {
-      "id": "park-lamp",
-      "zh": "公園燈",
-      "en": "lamp post",
-      "ja": "街灯",
-      "reading": "がいとう",
-      "category": "設施",
-      "size": "large",
-      "zone": "plaza",
-      "spot": "ground",
-      "desc": "細長黑色燈柱立在方形底座上，頂端有一盞向下照明的白色燈罩。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "tennis-ball",
@@ -710,36 +650,6 @@
       "cluster": null
     },
     {
-      "id": "park-sign",
-      "zh": "公園指示牌",
-      "en": "park sign",
-      "ja": "公園案内板",
-      "reading": "こうえんあんないばん",
-      "category": "設施",
-      "size": "medium",
-      "zone": "playground",
-      "spot": "ground",
-      "desc": "綠色長方形牌面固定在灰色立柱上，牌面只有簡單的彩色圖形。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "slide-ladder",
-      "zh": "溜滑梯梯子",
-      "en": "slide ladder",
-      "ja": "すべり台のはしご",
-      "reading": "すべりだいのはしご",
-      "category": "設施",
-      "size": "large",
-      "zone": "playground",
-      "spot": "ground",
-      "desc": "兩根金屬側桿連著幾根橫踏桿，頂端接在溜滑梯的平台旁。",
-      "loose": false,
-      "motion": null,
-      "cluster": "slide"
-    },
-    {
       "id": "playground-tunnel",
       "zh": "遊戲隧道",
       "en": "playground tunnel",
@@ -765,21 +675,6 @@
       "zone": "playground",
       "spot": "ground",
       "desc": "短柄連著扁平的小鏟面，亮黃色塑膠製，旁邊有圓形握孔。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sandbox"
-    },
-    {
-      "id": "toy-rake",
-      "zh": "玩沙耙",
-      "en": "toy rake",
-      "ja": "砂遊び用くまで",
-      "reading": "すなあそびようくまで",
-      "category": "道具",
-      "size": "small",
-      "zone": "playground",
-      "spot": "ground",
-      "desc": "短短的塑膠握柄接著一排寬齒，橘紅色，平放在沙坑旁。",
       "loose": true,
       "motion": null,
       "cluster": "sandbox"
@@ -918,36 +813,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "water-lily-bud",
-      "zh": "睡蓮花苞",
-      "en": "water-lily-bud",
-      "ja": "スイレンのつぼみ",
-      "reading": "スイレンのつぼみ",
-      "category": "植物",
-      "size": "small",
-      "zone": "lake",
-      "spot": "ground",
-      "desc": "一顆尖尖的粉紅花苞由綠色花萼托住，旁邊連著一段短短的彎曲莖。",
-      "loose": false,
-      "motion": null,
-      "cluster": "lily-pad"
-    },
-    {
-      "id": "water-lily-seed-pod",
-      "zh": "睡蓮蓮蓬",
-      "en": "water lily seed pod",
-      "ja": "スイレンの実",
-      "reading": "スイレンのみ",
-      "category": "植物",
-      "size": "small",
-      "zone": "lake",
-      "spot": "ground",
-      "desc": "綠色圓錐形蓮蓬，頂面有一圈排列整齊的小圓孔。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "water-lily"
     },
     {
       "id": "fishing-float",
@@ -1102,5 +967,16 @@
     "itemsPerScene": 70,
     "added": 33,
     "at": "2026-09-23T12:36:36.082Z"
-  }
+  },
+  "removedDuplicates": [
+    "fountain-jet",
+    "fountain-basin",
+    "park-lamp",
+    "park-bench-armrest",
+    "slide-ladder",
+    "toy-rake",
+    "water-lily-bud",
+    "water-lily-seed-pod",
+    "park-sign"
+  ]
 }

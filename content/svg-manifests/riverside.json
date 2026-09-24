@@ -787,48 +787,6 @@
       }
     },
     {
-      "name": "繫船環",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "固定在灰色石墩上的粗黑鐵環，環身厚實，底部有金屬固定座。",
-      "ref": {
-        "project": "la-game",
-        "scene": "riverside",
-        "zone": "bridge",
-        "itemId": "mooring-ring",
-        "words": {
-          "zh-TW": "繫船環",
-          "en": "mooring ring",
-          "ja": {
-            "text": "係船環",
-            "reading": "けいせんかん"
-          }
-        }
-      }
-    },
-    {
-      "name": "救生圈箱",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色長方形金屬箱，正面有透明圓窗，可看見裡面的橘白相間救生圈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "riverside",
-        "zone": "bridge",
-        "itemId": "life-ring-cabinet",
-        "words": {
-          "zh-TW": "救生圈箱",
-          "en": "life ring cabinet",
-          "ja": {
-            "text": "救命浮輪収納箱",
-            "reading": "きゅうめいうきわしゅうのうばこ"
-          }
-        }
-      }
-    },
-    {
       "name": "繫船柱",
       "category": "設施",
       "lane": "b",
@@ -913,48 +871,6 @@
       }
     },
     {
-      "name": "救生衣掛鉤",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "固定在欄杆旁的黑色金屬掛鉤，鉤身向上彎曲，掛著一件橘色救生衣。",
-      "ref": {
-        "project": "la-game",
-        "scene": "riverside",
-        "zone": "bridge",
-        "itemId": "life-jacket-hook",
-        "words": {
-          "zh-TW": "救生衣掛鉤",
-          "en": "life jacket hook",
-          "ja": {
-            "text": "救命胴衣フック",
-            "reading": "きゅうめいどういフック"
-          }
-        }
-      }
-    },
-    {
-      "name": "救生圈繩",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一捆粗短的白色編織繩，盤成幾圈，末端繫著一個醒目的紅色小浮球。",
-      "ref": {
-        "project": "la-game",
-        "scene": "riverside",
-        "zone": "bridge",
-        "itemId": "life-buoy-rope",
-        "words": {
-          "zh-TW": "救生圈繩",
-          "en": "lifebuoy rope",
-          "ja": {
-            "text": "救命浮き輪のロープ",
-            "reading": "きゅうめいうきわのロープ"
-          }
-        }
-      }
-    },
-    {
       "name": "碼頭梯",
       "category": "設施",
       "lane": "b",
@@ -992,48 +908,6 @@
           "ja": {
             "text": "フェンダー",
             "reading": "フェンダー"
-          }
-        }
-      }
-    },
-    {
-      "name": "繫船繩",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "粗厚的米色編織繩盤成幾圈，末端打著大結，纖維紋理清晰可見。",
-      "ref": {
-        "project": "la-game",
-        "scene": "riverside",
-        "zone": "pier",
-        "itemId": "mooring-rope",
-        "words": {
-          "zh-TW": "繫船繩",
-          "en": "mooring rope",
-          "ja": {
-            "text": "係船ロープ",
-            "reading": "けいせんロープ"
-          }
-        }
-      }
-    },
-    {
-      "name": "遮陽傘底座",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁圓形的深灰色底座，中央有直立的短管，表面平滑厚實。",
-      "ref": {
-        "project": "la-game",
-        "scene": "riverside",
-        "zone": "terrace",
-        "itemId": "sunshade-base",
-        "words": {
-          "zh-TW": "遮陽傘底座",
-          "en": "umbrella base",
-          "ja": {
-            "text": "パラソルベース",
-            "reading": "パラソルベース"
           }
         }
       }

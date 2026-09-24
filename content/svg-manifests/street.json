@@ -829,27 +829,6 @@
       }
     },
     {
-      "name": "人孔蓋開啟鉤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一支短柄金屬工具，末端彎成鉤狀，平放在圓形人孔蓋旁。",
-      "ref": {
-        "project": "la-game",
-        "scene": "street",
-        "zone": "crossing",
-        "itemId": "manhole-key",
-        "words": {
-          "zh-TW": "人孔蓋開啟鉤",
-          "en": "manhole hook",
-          "ja": {
-            "text": "マンホールフック",
-            "reading": "マンホールフック"
-          }
-        }
-      }
-    },
-    {
       "name": "水溝蓋",
       "category": "設施",
       "lane": "b",
@@ -1144,27 +1123,6 @@
       }
     },
     {
-      "name": "菜單架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明的直立展示架，底部有寬扁的支腳，裡面放著沒有文字的淺色紙張。",
-      "ref": {
-        "project": "la-game",
-        "scene": "street",
-        "zone": "cafe",
-        "itemId": "menu-holder",
-        "words": {
-          "zh-TW": "菜單架",
-          "en": "menu holder",
-          "ja": {
-            "text": "メニュースタンド",
-            "reading": "メニュースタンド"
-          }
-        }
-      }
-    },
-    {
       "name": "咖啡量匙",
       "category": "道具",
       "lane": "b",
@@ -1244,69 +1202,6 @@
           "ja": {
             "text": "バスの乗車券",
             "reading": "バスのじょうしゃけん"
-          }
-        }
-      }
-    },
-    {
-      "name": "公車車門",
-      "category": "交通工具",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "一扇高大的雙片折疊車門，深色玻璃窗嵌在金屬框裡，底部有低矮踏板。",
-      "ref": {
-        "project": "la-game",
-        "scene": "street",
-        "zone": "bus-stop",
-        "itemId": "bus-passenger-door",
-        "words": {
-          "zh-TW": "公車車門",
-          "en": "bus-door",
-          "ja": {
-            "text": "バスのドア",
-            "reading": "バスのドア"
-          }
-        }
-      }
-    },
-    {
-      "name": "公車輪胎",
-      "category": "交通工具",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "一個厚實的黑色圓形輪胎，外圈有清楚的深色胎紋，中央露出銀灰色輪圈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "street",
-        "zone": "bus-stop",
-        "itemId": "bus-wheel",
-        "words": {
-          "zh-TW": "公車輪胎",
-          "en": "bus-wheel",
-          "ja": {
-            "text": "バスのタイヤ",
-            "reading": "バスのタイヤ"
-          }
-        }
-      }
-    },
-    {
-      "name": "下車鈴",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一顆裝在短柄上的圓形紅色按鈕，外圍有淺灰色底座，表面平滑醒目。",
-      "ref": {
-        "project": "la-game",
-        "scene": "street",
-        "zone": "bus-stop",
-        "itemId": "bus-stop-button",
-        "words": {
-          "zh-TW": "下車鈴",
-          "en": "stop-button",
-          "ja": {
-            "text": "降車ボタン",
-            "reading": "こうしゃボタン"
           }
         }
       }

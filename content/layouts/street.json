@@ -1,63 +1,450 @@
 {
-  "atm": { "x": 788, "y": 1109, "w": 84, "h": 126, "rotate": 0, "flip": true },
-  "awning": { "x": 905, "y": 926, "w": 130, "h": 104, "rotate": 0, "flip": true },
-  "backpack": { "x": 2116, "y": 1155, "w": 57, "h": 71, "rotate": 0, "flip": false },
-  "barber-pole": { "x": 704, "y": 1158, "w": 52, "h": 77, "rotate": 0, "flip": true },
-  "bicycle-rack": { "x": 131, "y": 1479, "w": 143, "h": 143, "rotate": 0, "flip": false },
-  "blackboard": { "x": 975, "y": 1109, "w": 110, "h": 126, "rotate": 0, "flip": false },
-  "bouquet": { "x": 880, "y": 1109, "w": 100, "h": 126, "rotate": 0, "flip": true },
-  "bus": { "x": 2100, "y": 1264, "w": 200, "h": 111, "rotate": 0, "flip": false },
-  "bus-passenger-door": { "x": 2128, "y": 1386, "w": 170, "h": 219, "rotate": 0, "flip": false },
-  "bus-route-map": { "x": 2493, "y": 1472, "w": 70, "h": 87, "rotate": 0, "flip": true },
-  "bus-shelter": { "x": 2317, "y": 1325, "w": 182, "h": 205, "rotate": 0, "flip": true },
-  "bus-stop": { "x": 2158, "y": 1109, "w": 100, "h": 126, "rotate": 0, "flip": false },
-  "bus-stop-bench": { "x": 2353, "y": 1491, "w": 134, "h": 134, "rotate": 0, "flip": false },
-  "bus-stop-button": { "x": 2294, "y": 1547, "w": 66, "h": 82, "rotate": 0, "flip": true },
-  "bus-ticket": { "x": 2371, "y": 1150, "w": 66, "h": 83, "rotate": 0, "flip": false },
-  "bus-wheel": { "x": 2012, "y": 1360, "w": 201, "h": 201, "rotate": 0, "flip": false },
-  "cake": { "x": 1713, "y": 1136, "w": 51, "h": 64, "rotate": 0, "flip": false },
-  "car": { "x": 35, "y": 1242, "w": 200, "h": 133, "rotate": 0, "flip": true },
-  "coffee-canister": { "x": 1333, "y": 1546, "w": 63, "h": 79, "rotate": 0, "flip": false },
-  "coffee-grinder": { "x": 1807, "y": 1443, "w": 111, "h": 122, "rotate": 0, "flip": true },
-  "coffee-maker": { "x": 1395, "y": 1096, "w": 87, "h": 104, "rotate": 0, "flip": true },
-  "coffee-plant": { "x": 1671, "y": 1424, "w": 115, "h": 138, "rotate": 0, "flip": true },
-  "coffee-scoop": { "x": 1719, "y": 1547, "w": 65, "h": 81, "rotate": 0, "flip": false },
-  "cookie": { "x": 1781, "y": 1136, "w": 64, "h": 64, "rotate": 0, "flip": true },
-  "crosswalk": { "x": 230, "y": 1320, "w": 200, "h": 175, "rotate": 0, "flip": false },
-  "dress": { "x": 681, "y": 1460, "w": 65, "h": 81, "rotate": 0, "flip": true },
-  "espresso-tamper": { "x": 1455, "y": 1551, "w": 62, "h": 78, "rotate": 0, "flip": true },
-  "fire-hydrant": { "x": 290, "y": 1517, "w": 60, "h": 83, "rotate": 0, "flip": false },
-  "mailbox": { "x": 164, "y": 1109, "w": 103, "h": 126, "rotate": 0, "flip": true },
-  "manhole-key": { "x": 275, "y": 1154, "w": 79, "h": 63, "rotate": 0, "flip": true },
-  "manhole-lid": { "x": 44, "y": 1526, "w": 127, "h": 84, "rotate": 0, "flip": false },
-  "mannequin": { "x": 825, "y": 1441, "w": 118, "h": 131, "rotate": 0, "flip": false },
-  "menu-board": { "x": 1430, "y": 1417, "w": 112, "h": 134, "rotate": 0, "flip": true },
-  "menu-holder": { "x": 1366, "y": 1450, "w": 63, "h": 78, "rotate": 0, "flip": false },
-  "milk-frothing-pitcher": { "x": 1356, "y": 1510, "w": 69, "h": 87, "rotate": 0, "flip": true },
-  "mug": { "x": 1488, "y": 1136, "w": 51, "h": 64, "rotate": 0, "flip": true },
-  "newspaper": { "x": 1674, "y": 1546, "w": 67, "h": 84, "rotate": 12, "flip": true },
-  "paper-bag": { "x": 1101, "y": 1158, "w": 59, "h": 77, "rotate": -7, "flip": true },
-  "paper-cup": { "x": 1563, "y": 1136, "w": 51, "h": 64, "rotate": 0, "flip": false },
-  "parking-meter-post": { "x": 483, "y": 1064, "w": 94, "h": 118, "rotate": 0, "flip": true },
-  "pedestrian-signal": { "x": 345, "y": 1064, "w": 116, "h": 116, "rotate": 0, "flip": true },
-  "road-sign": { "x": 65, "y": 1109, "w": 91, "h": 126, "rotate": 0, "flip": false },
-  "scarf-display": { "x": 1007, "y": 1426, "w": 124, "h": 124, "rotate": 0, "flip": true },
-  "scooter": { "x": 71, "y": 1365, "w": 118, "h": 130, "rotate": 0, "flip": true },
-  "shoe-box": { "x": 1052, "y": 1555, "w": 90, "h": 72, "rotate": 0, "flip": true },
-  "shop-window": { "x": 1071, "y": 940, "w": 188, "h": 200, "rotate": 0, "flip": true },
-  "smartphone": { "x": 1972, "y": 1517, "w": 56, "h": 83, "rotate": -12, "flip": true },
-  "stirring-spoon": { "x": 1784, "y": 1543, "w": 67, "h": 84, "rotate": 0, "flip": true },
-  "suitcase": { "x": 2220, "y": 1118, "w": 102, "h": 127, "rotate": 0, "flip": false },
-  "table": { "x": 1565, "y": 1467, "w": 121, "h": 133, "rotate": 0, "flip": false },
-  "taxi": { "x": 435, "y": 1362, "w": 200, "h": 133, "rotate": 0, "flip": false },
-  "teapot": { "x": 1638, "y": 1136, "w": 51, "h": 64, "rotate": 0, "flip": true },
-  "timetable": { "x": 2322, "y": 1158, "w": 62, "h": 77, "rotate": 0, "flip": true },
-  "toy-train": { "x": 966, "y": 1544, "w": 82, "h": 66, "rotate": 0, "flip": false },
-  "traffic-barrier": { "x": 353, "y": 1474, "w": 203, "h": 153, "rotate": 0, "flip": false },
-  "traffic-cone": { "x": 541, "y": 1161, "w": 59, "h": 77, "rotate": 0, "flip": false },
-  "traffic-light": { "x": 395, "y": 1109, "w": 91, "h": 126, "rotate": 0, "flip": true },
-  "traffic-mirror": { "x": 2012, "y": 1109, "w": 103, "h": 126, "rotate": 0, "flip": false },
-  "umbrella-stand": { "x": 1160, "y": 1162, "w": 55, "h": 83, "rotate": 0, "flip": true },
-  "utility-pole": { "x": 2438, "y": 1042, "w": 121, "h": 193, "rotate": 0, "flip": true },
-  "vending-machine": { "x": 1193, "y": 1109, "w": 75, "h": 126, "rotate": 0, "flip": false }
+  "atm": {
+    "x": 788,
+    "y": 1109,
+    "w": 84,
+    "h": 126,
+    "rotate": 0,
+    "flip": true
+  },
+  "awning": {
+    "x": 905,
+    "y": 926,
+    "w": 130,
+    "h": 104,
+    "rotate": 0,
+    "flip": true
+  },
+  "backpack": {
+    "x": 2116,
+    "y": 1155,
+    "w": 57,
+    "h": 71,
+    "rotate": 0,
+    "flip": false
+  },
+  "barber-pole": {
+    "x": 704,
+    "y": 1158,
+    "w": 52,
+    "h": 77,
+    "rotate": 0,
+    "flip": true
+  },
+  "bicycle-rack": {
+    "x": 131,
+    "y": 1479,
+    "w": 143,
+    "h": 143,
+    "rotate": 0,
+    "flip": false
+  },
+  "blackboard": {
+    "x": 975,
+    "y": 1109,
+    "w": 110,
+    "h": 126,
+    "rotate": 0,
+    "flip": false
+  },
+  "bouquet": {
+    "x": 880,
+    "y": 1109,
+    "w": 100,
+    "h": 126,
+    "rotate": 0,
+    "flip": true
+  },
+  "bus": {
+    "x": 2100,
+    "y": 1264,
+    "w": 200,
+    "h": 111,
+    "rotate": 0,
+    "flip": false
+  },
+  "bus-route-map": {
+    "x": 2493,
+    "y": 1472,
+    "w": 70,
+    "h": 87,
+    "rotate": 0,
+    "flip": true
+  },
+  "bus-shelter": {
+    "x": 2317,
+    "y": 1325,
+    "w": 182,
+    "h": 205,
+    "rotate": 0,
+    "flip": true
+  },
+  "bus-stop": {
+    "x": 2158,
+    "y": 1109,
+    "w": 100,
+    "h": 126,
+    "rotate": 0,
+    "flip": false
+  },
+  "bus-stop-bench": {
+    "x": 2353,
+    "y": 1491,
+    "w": 134,
+    "h": 134,
+    "rotate": 0,
+    "flip": false
+  },
+  "bus-ticket": {
+    "x": 2371,
+    "y": 1150,
+    "w": 66,
+    "h": 83,
+    "rotate": 0,
+    "flip": false
+  },
+  "cake": {
+    "x": 1713,
+    "y": 1136,
+    "w": 51,
+    "h": 64,
+    "rotate": 0,
+    "flip": false
+  },
+  "car": {
+    "x": 35,
+    "y": 1242,
+    "w": 200,
+    "h": 133,
+    "rotate": 0,
+    "flip": true
+  },
+  "coffee-canister": {
+    "x": 1333,
+    "y": 1546,
+    "w": 63,
+    "h": 79,
+    "rotate": 0,
+    "flip": false
+  },
+  "coffee-grinder": {
+    "x": 1807,
+    "y": 1443,
+    "w": 111,
+    "h": 122,
+    "rotate": 0,
+    "flip": true
+  },
+  "coffee-maker": {
+    "x": 1395,
+    "y": 1096,
+    "w": 87,
+    "h": 104,
+    "rotate": 0,
+    "flip": true
+  },
+  "coffee-plant": {
+    "x": 1671,
+    "y": 1424,
+    "w": 115,
+    "h": 138,
+    "rotate": 0,
+    "flip": true
+  },
+  "coffee-scoop": {
+    "x": 1719,
+    "y": 1547,
+    "w": 65,
+    "h": 81,
+    "rotate": 0,
+    "flip": false
+  },
+  "cookie": {
+    "x": 1781,
+    "y": 1136,
+    "w": 64,
+    "h": 64,
+    "rotate": 0,
+    "flip": true
+  },
+  "crosswalk": {
+    "x": 230,
+    "y": 1320,
+    "w": 200,
+    "h": 175,
+    "rotate": 0,
+    "flip": false
+  },
+  "dress": {
+    "x": 681,
+    "y": 1460,
+    "w": 65,
+    "h": 81,
+    "rotate": 0,
+    "flip": true
+  },
+  "espresso-tamper": {
+    "x": 1455,
+    "y": 1551,
+    "w": 62,
+    "h": 78,
+    "rotate": 0,
+    "flip": true
+  },
+  "fire-hydrant": {
+    "x": 290,
+    "y": 1517,
+    "w": 60,
+    "h": 83,
+    "rotate": 0,
+    "flip": false
+  },
+  "mailbox": {
+    "x": 164,
+    "y": 1109,
+    "w": 103,
+    "h": 126,
+    "rotate": 0,
+    "flip": true
+  },
+  "manhole-lid": {
+    "x": 44,
+    "y": 1526,
+    "w": 127,
+    "h": 84,
+    "rotate": 0,
+    "flip": false
+  },
+  "mannequin": {
+    "x": 825,
+    "y": 1441,
+    "w": 118,
+    "h": 131,
+    "rotate": 0,
+    "flip": false
+  },
+  "menu-board": {
+    "x": 1430,
+    "y": 1417,
+    "w": 112,
+    "h": 134,
+    "rotate": 0,
+    "flip": true
+  },
+  "milk-frothing-pitcher": {
+    "x": 1356,
+    "y": 1510,
+    "w": 69,
+    "h": 87,
+    "rotate": 0,
+    "flip": true
+  },
+  "mug": {
+    "x": 1488,
+    "y": 1136,
+    "w": 51,
+    "h": 64,
+    "rotate": 0,
+    "flip": true
+  },
+  "newspaper": {
+    "x": 1674,
+    "y": 1546,
+    "w": 67,
+    "h": 84,
+    "rotate": 12,
+    "flip": true
+  },
+  "paper-bag": {
+    "x": 1101,
+    "y": 1158,
+    "w": 59,
+    "h": 77,
+    "rotate": -7,
+    "flip": true
+  },
+  "paper-cup": {
+    "x": 1563,
+    "y": 1136,
+    "w": 51,
+    "h": 64,
+    "rotate": 0,
+    "flip": false
+  },
+  "parking-meter-post": {
+    "x": 483,
+    "y": 1064,
+    "w": 94,
+    "h": 118,
+    "rotate": 0,
+    "flip": true
+  },
+  "pedestrian-signal": {
+    "x": 345,
+    "y": 1064,
+    "w": 116,
+    "h": 116,
+    "rotate": 0,
+    "flip": true
+  },
+  "road-sign": {
+    "x": 65,
+    "y": 1109,
+    "w": 91,
+    "h": 126,
+    "rotate": 0,
+    "flip": false
+  },
+  "scarf-display": {
+    "x": 1007,
+    "y": 1426,
+    "w": 124,
+    "h": 124,
+    "rotate": 0,
+    "flip": true
+  },
+  "scooter": {
+    "x": 71,
+    "y": 1365,
+    "w": 118,
+    "h": 130,
+    "rotate": 0,
+    "flip": true
+  },
+  "shoe-box": {
+    "x": 1052,
+    "y": 1555,
+    "w": 90,
+    "h": 72,
+    "rotate": 0,
+    "flip": true
+  },
+  "shop-window": {
+    "x": 1071,
+    "y": 940,
+    "w": 188,
+    "h": 200,
+    "rotate": 0,
+    "flip": true
+  },
+  "smartphone": {
+    "x": 1972,
+    "y": 1517,
+    "w": 56,
+    "h": 83,
+    "rotate": -12,
+    "flip": true
+  },
+  "stirring-spoon": {
+    "x": 1784,
+    "y": 1543,
+    "w": 67,
+    "h": 84,
+    "rotate": 0,
+    "flip": true
+  },
+  "suitcase": {
+    "x": 2220,
+    "y": 1118,
+    "w": 102,
+    "h": 127,
+    "rotate": 0,
+    "flip": false
+  },
+  "table": {
+    "x": 1565,
+    "y": 1467,
+    "w": 121,
+    "h": 133,
+    "rotate": 0,
+    "flip": false
+  },
+  "taxi": {
+    "x": 435,
+    "y": 1362,
+    "w": 200,
+    "h": 133,
+    "rotate": 0,
+    "flip": false
+  },
+  "teapot": {
+    "x": 1638,
+    "y": 1136,
+    "w": 51,
+    "h": 64,
+    "rotate": 0,
+    "flip": true
+  },
+  "timetable": {
+    "x": 2322,
+    "y": 1158,
+    "w": 62,
+    "h": 77,
+    "rotate": 0,
+    "flip": true
+  },
+  "toy-train": {
+    "x": 966,
+    "y": 1544,
+    "w": 82,
+    "h": 66,
+    "rotate": 0,
+    "flip": false
+  },
+  "traffic-barrier": {
+    "x": 353,
+    "y": 1474,
+    "w": 203,
+    "h": 153,
+    "rotate": 0,
+    "flip": false
+  },
+  "traffic-cone": {
+    "x": 541,
+    "y": 1161,
+    "w": 59,
+    "h": 77,
+    "rotate": 0,
+    "flip": false
+  },
+  "traffic-light": {
+    "x": 395,
+    "y": 1109,
+    "w": 91,
+    "h": 126,
+    "rotate": 0,
+    "flip": true
+  },
+  "traffic-mirror": {
+    "x": 2012,
+    "y": 1109,
+    "w": 103,
+    "h": 126,
+    "rotate": 0,
+    "flip": false
+  },
+  "umbrella-stand": {
+    "x": 1160,
+    "y": 1162,
+    "w": 55,
+    "h": 83,
+    "rotate": 0,
+    "flip": true
+  },
+  "utility-pole": {
+    "x": 2438,
+    "y": 1042,
+    "w": 121,
+    "h": 193,
+    "rotate": 0,
+    "flip": true
+  },
+  "vending-machine": {
+    "x": 1193,
+    "y": 1109,
+    "w": 75,
+    "h": 126,
+    "rotate": 0,
+    "flip": false
+  }
 }

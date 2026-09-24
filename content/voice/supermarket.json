@@ -24,12 +24,6 @@
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
     },
-    "shopping-cart-wheel": {
-      "heard": "Cartwheel.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
     "banana": {
       "heard": "Banana?",
       "score": 1,
@@ -108,12 +102,6 @@
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
     },
-    "handbasket": {
-      "heard": "Handbasket.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
     "cabbage": {
       "heard": "Cabbage.",
       "score": 1,
@@ -138,12 +126,6 @@
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
     },
-    "shopping-trolley-token": {
-      "heard": "Trolley token.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
     "shopping-cart-token": {
       "heard": "Shopping Cart Token",
       "score": 1,
@@ -156,56 +138,14 @@
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
     },
-    "cream-cheese": {
-      "heard": "Cream cheese.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
-    "price-label-holder": {
-      "heard": "Price label holder.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
-    "buttermilk": {
-      "heard": "Buttermilk.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
     "eggplant": {
       "heard": "Eggplant",
       "score": 1,
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
     },
-    "shopping-bag-roll": {
-      "heard": "Shopping bag roll.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
-    "sour-milk": {
-      "heard": "Sour Milk.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
     "shopping-list": {
       "heard": "shopping list.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
-    "shopping-bag-hook": {
-      "heard": "Yop. Shopping bag hook.",
-      "score": 0.83,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
-    "handheld-scanner": {
-      "heard": "Handheld scanner.",
       "score": 1,
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
@@ -218,12 +158,6 @@
     },
     "reusable-bag": {
       "heard": "Reusable bag.",
-      "score": 1,
-      "take": "en-1790172217030.aac",
-      "account": "chatgpt1"
-    },
-    "basket-divider": {
-      "heard": "Basket divider.",
       "score": 1,
       "take": "en-1790172217030.aac",
       "account": "chatgpt1"
@@ -312,12 +246,6 @@
       "take": "en-1790172396739.aac",
       "account": "chatgpt1"
     },
-    "whipped-cream": {
-      "heard": "Whipped cream.",
-      "score": 1,
-      "take": "en-1790172396739.aac",
-      "account": "chatgpt1"
-    },
     "canned-food": {
       "heard": "canned food,",
       "score": 1,
@@ -338,18 +266,6 @@
     },
     "juice": {
       "heard": "Juice.",
-      "score": 1,
-      "take": "en-1790172478030.aac",
-      "account": "chatgpt1"
-    },
-    "cottage-cheese": {
-      "heard": "Ben, cottage cheese.",
-      "score": 0.81,
-      "take": "en-1790172478030.aac",
-      "account": "chatgpt1"
-    },
-    "handheld-scanner-cradle": {
-      "heard": "Scanner Cradle.",
       "score": 1,
       "take": "en-1790172478030.aac",
       "account": "chatgpt1"

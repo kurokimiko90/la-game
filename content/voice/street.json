@@ -216,20 +216,8 @@
       "take": "en-1790170053744.aac",
       "account": "chatgpt1"
     },
-    "manhole-key": {
-      "heard": "Manhole Hook.",
-      "score": 1,
-      "take": "en-1790170053744.aac",
-      "account": "chatgpt1"
-    },
     "bus-ticket": {
       "heard": "Bus ticket.",
-      "score": 1,
-      "take": "en-1790170053744.aac",
-      "account": "chatgpt1"
-    },
-    "menu-holder": {
-      "heard": "Menu Holder.",
       "score": 1,
       "take": "en-1790170053744.aac",
       "account": "chatgpt1"
@@ -264,12 +252,6 @@
       "take": "en-1790170053744.aac",
       "account": "chatgpt1"
     },
-    "bus-wheel": {
-      "heard": "Bus wheel.",
-      "score": 1,
-      "take": "en-1790170053744.aac",
-      "account": "chatgpt1"
-    },
     "coffee-plant": {
       "heard": "Coffee plant.",
       "score": 1,
@@ -297,12 +279,6 @@
     "stirring-spoon": {
       "heard": "Stirring speed.",
       "score": 0.77,
-      "take": "en-1790170053744.aac",
-      "account": "chatgpt1"
-    },
-    "bus-stop-button": {
-      "heard": "Stop button.",
-      "score": 1,
       "take": "en-1790170053744.aac",
       "account": "chatgpt1"
     },

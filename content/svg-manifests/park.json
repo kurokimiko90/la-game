@@ -976,48 +976,6 @@
       }
     },
     {
-      "name": "長椅扶手",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "獨立的深綠色金屬扶手，頂端圓潤，兩端帶有固定用的扁平底座。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "entrance",
-        "itemId": "park-bench-armrest",
-        "words": {
-          "zh-TW": "長椅扶手",
-          "en": "armrest",
-          "ja": {
-            "text": "肘掛け",
-            "reading": "ひじかけ"
-          }
-        }
-      }
-    },
-    {
-      "name": "噴水柱",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "一道白色水柱從地面圓形噴口向上噴出，底部濺起一圈細小水花。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "plaza",
-        "itemId": "fountain-jet",
-        "words": {
-          "zh-TW": "噴水柱",
-          "en": "water-jet",
-          "ja": {
-            "text": "噴水",
-            "reading": "ふんすい"
-          }
-        }
-      }
-    },
-    {
       "name": "飲水杯",
       "category": "道具",
       "lane": "b",
@@ -1039,27 +997,6 @@
       }
     },
     {
-      "name": "噴泉水池",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "圓形淺灰石造水池，低矮池沿圍住中央噴泉，內側可見藍色水面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "plaza",
-        "itemId": "fountain-basin",
-        "words": {
-          "zh-TW": "噴泉水池",
-          "en": "fountain basin",
-          "ja": {
-            "text": "噴水池",
-            "reading": "ふんすいち"
-          }
-        }
-      }
-    },
-    {
       "name": "鳥飼料盒",
       "category": "設施",
       "lane": "b",
@@ -1076,27 +1013,6 @@
           "ja": {
             "text": "野鳥の餌台",
             "reading": "やちょうのえさだい"
-          }
-        }
-      }
-    },
-    {
-      "name": "公園燈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "細長黑色燈柱立在方形底座上，頂端有一盞向下照明的白色燈罩。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "plaza",
-        "itemId": "park-lamp",
-        "words": {
-          "zh-TW": "公園燈",
-          "en": "lamp post",
-          "ja": {
-            "text": "街灯",
-            "reading": "がいとう"
           }
         }
       }
@@ -1165,48 +1081,6 @@
       }
     },
     {
-      "name": "公園指示牌",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "綠色長方形牌面固定在灰色立柱上，牌面只有簡單的彩色圖形。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "playground",
-        "itemId": "park-sign",
-        "words": {
-          "zh-TW": "公園指示牌",
-          "en": "park sign",
-          "ja": {
-            "text": "公園案内板",
-            "reading": "こうえんあんないばん"
-          }
-        }
-      }
-    },
-    {
-      "name": "溜滑梯梯子",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "兩根金屬側桿連著幾根橫踏桿，頂端接在溜滑梯的平台旁。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "playground",
-        "itemId": "slide-ladder",
-        "words": {
-          "zh-TW": "溜滑梯梯子",
-          "en": "slide ladder",
-          "ja": {
-            "text": "すべり台のはしご",
-            "reading": "すべりだいのはしご"
-          }
-        }
-      }
-    },
-    {
       "name": "遊戲隧道",
       "category": "設施",
       "lane": "b",
@@ -1244,27 +1118,6 @@
           "ja": {
             "text": "砂遊び用スコップ",
             "reading": "すなあそびようスコップ"
-          }
-        }
-      }
-    },
-    {
-      "name": "玩沙耙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短短的塑膠握柄接著一排寬齒，橘紅色，平放在沙坑旁。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "playground",
-        "itemId": "toy-rake",
-        "words": {
-          "zh-TW": "玩沙耙",
-          "en": "toy rake",
-          "ja": {
-            "text": "砂遊び用くまで",
-            "reading": "すなあそびようくまで"
           }
         }
       }
@@ -1454,48 +1307,6 @@
           "ja": {
             "text": "水の波紋",
             "reading": "みずのはもん"
-          }
-        }
-      }
-    },
-    {
-      "name": "睡蓮花苞",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一顆尖尖的粉紅花苞由綠色花萼托住，旁邊連著一段短短的彎曲莖。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "lake",
-        "itemId": "water-lily-bud",
-        "words": {
-          "zh-TW": "睡蓮花苞",
-          "en": "water-lily-bud",
-          "ja": {
-            "text": "スイレンのつぼみ",
-            "reading": "スイレンのつぼみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "睡蓮蓮蓬",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "綠色圓錐形蓮蓬，頂面有一圈排列整齊的小圓孔。",
-      "ref": {
-        "project": "la-game",
-        "scene": "park",
-        "zone": "lake",
-        "itemId": "water-lily-seed-pod",
-        "words": {
-          "zh-TW": "睡蓮蓮蓬",
-          "en": "water lily seed pod",
-          "ja": {
-            "text": "スイレンの実",
-            "reading": "スイレンのみ"
           }
         }
       }

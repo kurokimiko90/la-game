@@ -787,48 +787,6 @@
       }
     },
     {
-      "name": "手提籃",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色塑膠編織紋提籃，籃口寬、底部平坦，兩側有一個拱起的手把。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "entrance",
-        "itemId": "handbasket",
-        "words": {
-          "zh-TW": "手提籃",
-          "en": "handbasket",
-          "ja": {
-            "text": "買い物かご",
-            "reading": "かいものかご"
-          }
-        }
-      }
-    },
-    {
-      "name": "蔬果秤",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "白色桌上型秤有寬平托盤、方形底座和前方凸起的顯示窗，面板上沒有文字或數字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "entrance",
-        "itemId": "produce-scale",
-        "words": {
-          "zh-TW": "蔬果秤",
-          "en": "produce-scale",
-          "ja": {
-            "text": "野菜・果物用はかり",
-            "reading": "やさい・くだものようはかり"
-          }
-        }
-      }
-    },
-    {
       "name": "購物清單",
       "category": "道具",
       "lane": "b",
@@ -850,69 +808,6 @@
       }
     },
     {
-      "name": "手持掃描器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色手持裝置由短握柄和寬扁掃描頭組成，前端有一塊醒目的紅色透明窗。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "entrance",
-        "itemId": "handheld-scanner",
-        "words": {
-          "zh-TW": "手持掃描器",
-          "en": "handheld-scanner",
-          "ja": {
-            "text": "ハンディスキャナー",
-            "reading": "ハンディスキャナー"
-          }
-        }
-      }
-    },
-    {
-      "name": "推車代幣",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一枚銀色圓形塑膠片，表面有凸起的簡單購物車圖案，沒有文字或數字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "entrance",
-        "itemId": "shopping-trolley-token",
-        "words": {
-          "zh-TW": "推車代幣",
-          "en": "trolley-token",
-          "ja": {
-            "text": "カート用コイン",
-            "reading": "カートようコイン"
-          }
-        }
-      }
-    },
-    {
-      "name": "籃子隔板",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一片藍色扁平塑膠板，呈長方形並帶有兩側卡榫，可直立插入購物籃中。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "entrance",
-        "itemId": "basket-divider",
-        "words": {
-          "zh-TW": "籃子隔板",
-          "en": "basket-divider",
-          "ja": {
-            "text": "かごの仕切り板",
-            "reading": "かごのしきりいた"
-          }
-        }
-      }
-    },
-    {
       "name": "蔬果噴霧器",
       "category": "設施",
       "lane": "b",
@@ -929,27 +824,6 @@
           "ja": {
             "text": "野菜ミスト装置",
             "reading": "やさいミストそうち"
-          }
-        }
-      }
-    },
-    {
-      "name": "推車輪子",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色厚橡膠圓輪，中央有灰色金屬軸心，旁邊連著短短的轉向支架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "entrance",
-        "itemId": "shopping-cart-wheel",
-        "words": {
-          "zh-TW": "推車輪子",
-          "en": "cart-wheel",
-          "ja": {
-            "text": "カートの車輪",
-            "reading": "カートのしゃりん"
           }
         }
       }
@@ -1123,132 +997,6 @@
       }
     },
     {
-      "name": "酸奶油",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一個矮矮的白色圓塑膠杯，頂上蓋著淡藍色圓蓋，杯身有奶油色帶。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "fridge",
-        "itemId": "sour-cream",
-        "words": {
-          "zh-TW": "酸奶油",
-          "en": "sour cream",
-          "ja": {
-            "text": "サワークリーム",
-            "reading": "サワークリーム"
-          }
-        }
-      }
-    },
-    {
-      "name": "茅屋起司",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一個透明矮圓盒，裡面裝著顆粒狀白色起司，盒口覆著淺藍色塑膠蓋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "fridge",
-        "itemId": "cottage-cheese",
-        "words": {
-          "zh-TW": "茅屋起司",
-          "en": "cottage cheese",
-          "ja": {
-            "text": "カッテージチーズ",
-            "reading": "カッテージチーズ"
-          }
-        }
-      }
-    },
-    {
-      "name": "奶油起司",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一個扁平的銀色方形包裝，中央有一塊白色起司圖案，四角微微折起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "fridge",
-        "itemId": "cream-cheese",
-        "words": {
-          "zh-TW": "奶油起司",
-          "en": "cream cheese",
-          "ja": {
-            "text": "クリームチーズ",
-            "reading": "クリームチーズ"
-          }
-        }
-      }
-    },
-    {
-      "name": "酪乳",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一個乳白色小瓶，瓶身圓鼓、肩部收窄，頂端有深藍色旋蓋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "fridge",
-        "itemId": "buttermilk",
-        "words": {
-          "zh-TW": "酪乳",
-          "en": "buttermilk",
-          "ja": {
-            "text": "バターミルク",
-            "reading": "バターミルク"
-          }
-        }
-      }
-    },
-    {
-      "name": "鮮奶油花",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一罐白色圓筒罐，頂部有細長噴嘴與紅色按頭，罐身印著一圈奶油花。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "fridge",
-        "itemId": "whipped-cream",
-        "words": {
-          "zh-TW": "鮮奶油花",
-          "en": "whipped cream",
-          "ja": {
-            "text": "ホイップクリーム",
-            "reading": "ホイップクリーム"
-          }
-        }
-      }
-    },
-    {
-      "name": "發酵乳",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一個短胖的白色瓶子，瓶頸窄而圓，瓶口旋著淺綠色瓶蓋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "fridge",
-        "itemId": "sour-milk",
-        "words": {
-          "zh-TW": "發酵乳",
-          "en": "sour milk",
-          "ja": {
-            "text": "発酵乳",
-            "reading": "はっこうにゅう"
-          }
-        }
-      }
-    },
-    {
       "name": "醃黃瓜罐",
       "category": "食物",
       "lane": "b",
@@ -1312,27 +1060,6 @@
       }
     },
     {
-      "name": "標價牌架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明塑膠製的矮架子，底座扁平，頂端夾著一塊空白的長方形牌片。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "checkout",
-        "itemId": "price-label-holder",
-        "words": {
-          "zh-TW": "標價牌架",
-          "en": "price-label-holder",
-          "ja": {
-            "text": "値札スタンド",
-            "reading": "ねふだスタンド"
-          }
-        }
-      }
-    },
-    {
       "name": "環保購物袋",
       "category": "道具",
       "lane": "b",
@@ -1391,90 +1118,6 @@
           "ja": {
             "text": "袋掛け",
             "reading": "ふくろかけ"
-          }
-        }
-      }
-    },
-    {
-      "name": "購物袋掛鉤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀色金屬彎鉤固定在扁平方形底座上，鉤身朝前彎起，末端有圓滑小球。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "checkout",
-        "itemId": "shopping-bag-hook",
-        "words": {
-          "zh-TW": "購物袋掛鉤",
-          "en": "shopping-bag-hook",
-          "ja": {
-            "text": "買い物袋フック",
-            "reading": "かいものぶくろフック"
-          }
-        }
-      }
-    },
-    {
-      "name": "收據回收盒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "矮小的藍色方盒，正面有一道窄長開口，盒身沒有文字或圖案。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "checkout",
-        "itemId": "receipt-bin",
-        "words": {
-          "zh-TW": "收據回收盒",
-          "en": "receipt-bin",
-          "ja": {
-            "text": "レシート回収箱",
-            "reading": "レシートカイシュウバコ"
-          }
-        }
-      }
-    },
-    {
-      "name": "購物袋捲",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一卷薄薄的白色塑膠袋，側面露出圓形捲芯，袋邊整齊疊在一起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "checkout",
-        "itemId": "shopping-bag-roll",
-        "words": {
-          "zh-TW": "購物袋捲",
-          "en": "shopping-bag-roll",
-          "ja": {
-            "text": "レジ袋ロール",
-            "reading": "レジブクロロール"
-          }
-        }
-      }
-    },
-    {
-      "name": "掃描器底座",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色彎弧形塑膠底座，前端有淺凹槽，外形像供手持掃描器停放的支架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "supermarket",
-        "zone": "checkout",
-        "itemId": "handheld-scanner-cradle",
-        "words": {
-          "zh-TW": "掃描器底座",
-          "en": "scanner-cradle",
-          "ja": {
-            "text": "スキャナー台",
-            "reading": "スキャナーダイ"
           }
         }
       }

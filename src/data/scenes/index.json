@@ -2,7 +2,7 @@
   {
     "id": "park",
     "name": "公園",
-    "itemCount": 65,
+    "itemCount": 56,
     "icon": {
       "viewBox": [
         0,
@@ -16,7 +16,7 @@
   {
     "id": "street",
     "name": "商業街",
-    "itemCount": 61,
+    "itemCount": 56,
     "icon": {
       "viewBox": [
         0,
@@ -30,7 +30,7 @@
   {
     "id": "riverside",
     "name": "河邊商業區",
-    "itemCount": 53,
+    "itemCount": 47,
     "icon": {
       "viewBox": [
         0,
@@ -44,7 +44,7 @@
   {
     "id": "supermarket",
     "name": "超市",
-    "itemCount": 68,
+    "itemCount": 51,
     "icon": {
       "viewBox": [
         0,

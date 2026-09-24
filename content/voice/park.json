@@ -198,30 +198,6 @@
       "take": "en-1790052646655.aac",
       "account": "chatgpt1"
     },
-    "fountain-basin": {
-      "heard": "Fountain Basin.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
-    "park-lamp": {
-      "heard": "Lamp post.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
-    "slide-ladder": {
-      "heard": "Slide ladder.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
-    "park-bench-armrest": {
-      "heard": "Armrest.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
     "birdbath": {
       "heard": "Birdbath.",
       "score": 1,
@@ -258,12 +234,6 @@
       "take": "en-1790167290170.aac",
       "account": "chatgpt2"
     },
-    "park-sign": {
-      "heard": "Park sign.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
     "playground-tunnel": {
       "heard": "Playground Tunnel.",
       "score": 1,
@@ -272,12 +242,6 @@
     },
     "toy-shovel": {
       "heard": "Toy Shovel",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
-    "toy-rake": {
-      "heard": "Toy Rake",
       "score": 1,
       "take": "en-1790167290170.aac",
       "account": "chatgpt2"
@@ -296,12 +260,6 @@
     },
     "hopscotch-grid": {
       "heard": "Hopscotch Grid.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
-    "fountain-jet": {
-      "heard": "water jet",
       "score": 1,
       "take": "en-1790167290170.aac",
       "account": "chatgpt2"
@@ -342,12 +300,6 @@
       "take": "en-1790167290170.aac",
       "account": "chatgpt2"
     },
-    "water-lily-seed-pod": {
-      "heard": "Water lily seed pod.",
-      "score": 1,
-      "take": "en-1790167290170.aac",
-      "account": "chatgpt2"
-    },
     "compost-bin": {
       "heard": "Compost bin.",
       "score": 1,
@@ -380,12 +332,6 @@
     },
     "garden-trowel": {
       "heard": "Garden trowel.",
-      "score": 1,
-      "take": "en-1790167510531.aac",
-      "account": "chatgpt3"
-    },
-    "water-lily-bud": {
-      "heard": "Water lily bud.",
       "score": 1,
       "take": "en-1790167510531.aac",
       "account": "chatgpt3"

@@ -24,12 +24,6 @@
       "take": "en-1790170970070.aac",
       "account": "chatgpt1"
     },
-    "life-ring-cabinet": {
-      "heard": "Life Ring Cabinet,",
-      "score": 1,
-      "take": "en-1790170970070.aac",
-      "account": "chatgpt1"
-    },
     "fishing-net": {
       "heard": "Fishing net.",
       "score": 1,
@@ -38,18 +32,6 @@
     },
     "metal-chain": {
       "heard": "metal chain",
-      "score": 1,
-      "take": "en-1790170970070.aac",
-      "account": "chatgpt1"
-    },
-    "mooring-ring": {
-      "heard": "mooring ring,",
-      "score": 1,
-      "take": "en-1790170970070.aac",
-      "account": "chatgpt1"
-    },
-    "life-jacket-hook": {
-      "heard": "Life Jacket Hook",
       "score": 1,
       "take": "en-1790170970070.aac",
       "account": "chatgpt1"
@@ -210,12 +192,6 @@
       "take": "en-1790171147048.aac",
       "account": "chatgpt1"
     },
-    "mooring-rope": {
-      "heard": "mooring rope,",
-      "score": 1,
-      "take": "en-1790171147048.aac",
-      "account": "chatgpt1"
-    },
     "crate": {
       "heard": "Crate.",
       "score": 1,
@@ -232,12 +208,6 @@
       "heard": "Catail?",
       "score": 0.86,
       "take": "en-1790171147048.aac",
-      "account": "chatgpt1"
-    },
-    "life-buoy-rope": {
-      "heard": "Lifeboy Rope.",
-      "score": 0.92,
-      "take": "en-1790171236545.aac",
       "account": "chatgpt1"
     },
     "fender": {
