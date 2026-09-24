@@ -9,6 +9,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { localIso } from './lib/local-time.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MANIFEST_DIR = path.join(ROOT, 'content', 'svg-manifests');
@@ -66,7 +67,7 @@ function main() {
     for (const f of s.failed) console.log(`  ✗ ${s.scene}/${f.itemId}（${f.elementId}）：${f.error}`);
   }
   if (dry) return;
-  fs.writeFileSync(STATUS_FILE, `${JSON.stringify({ syncedAt: new Date().toISOString(), scenes }, null, 2)}\n`);
+  fs.writeFileSync(STATUS_FILE, `${JSON.stringify({ syncedAt: localIso(), scenes }, null, 2)}\n`);
   console.log(`→ public/svg/、${path.relative(ROOT, STATUS_FILE)}`);
 }
 

@@ -40,6 +40,27 @@ export function extractJson(text) {
 /** 英文單字比對用：小寫、去掉結尾的 s（避免 glove / gloves 這種重複） */
 export const wordKey = (en) => String(en).trim().toLowerCase().replace(/(es|s)$/, '');
 
+const tokens = (en) => String(en).toLowerCase().split(/[\s-]+/).filter(Boolean).map(wordKey);
+const containsSeq = (long, short) => short.length > 0 && long.length >= short.length
+  && long.some((_, i) => short.every((t, j) => long[i + j] === t));
+
+/**
+ * 和街區已有物品太像：英文一個是另一個的一部分（fountain / fountain jet）、中文互相包含（噴泉 / 噴泉水池）、日文相同。
+ * 補元素時 LLM 愛列已有物品的零件和變體，這些畫出來幾乎一樣，玩家會覺得重複。
+ * @returns {object | undefined} 太像的那個已有物品
+ */
+export function findSimilar(item, related) {
+  const a = tokens(item.en);
+  const zh = item.zh.trim();
+  return related.find((r) => {
+    const b = tokens(r.en);
+    if (containsSeq(a, b) || containsSeq(b, a)) return true;
+    const [short, long] = zh.length <= r.zh.length ? [zh, r.zh] : [r.zh, zh];
+    if (short.length >= 2 && long.includes(short)) return true;
+    return Boolean(item.ja && r.ja) && item.ja.trim() === r.ja.trim();
+  });
+}
+
 export function buildOutlinePrompt({ theme, existingScenes }) {
   return [
     '你在幫語言學習找物遊戲《記憶小鎮》設計一個新街區。玩家在 2D 小鎮地圖上找東西，點物品會顯示單字並播放英語、日語發音。',
@@ -80,7 +101,7 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
   const minGround = spots.length > 1 && spots.includes('ground') ? Math.ceil(count / 2) : 0;
   return [
     `語言學習找物遊戲《記憶小鎮》，街區「${sceneName}」裡的區域「${zone.name}」（${zone.indoor ? '室內' : '室外'}，${FEATURE_TEXT[zone.feature]}）。`,
-    ...(existing.length ? [`這個區域已經有：${existing.map((e) => `${e.zh}（${e.id}）`).join('、')}。列出其他東西，可以和它們搭配。`] : []),
+    ...(existing.length ? [`這個街區已經有：${existing.map((e) => `${e.zh}（${e.id}）`).join('、')}。列出完全不同的東西：不要它們的零件、配件、同類變體或換個說法（已有噴泉就不要噴水柱、噴泉水池；已有購物籃就不要手提籃）。`] : []),
     `列出 ${count} 個會出現在這裡、語言初學者（A1–A2）該學的具體物品名詞。規則：`,
     '1. 單一、能用正面扁平向量圖示畫出來、一眼認得出的物品。不要動物、人物、場所、抽象概念、液體或一大片東西；也不要人形或動物形狀的東西（雕像、玩偶、畫著人形的標誌），這類圖畫不出來。',
     '2. 物品不能靠文字辨認（例如招牌、書名），圖裡不會有任何文字或數字。',
@@ -102,11 +123,12 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
 
 /**
  * 驗證一個區域的物品。used：已經用掉的 { ids, en, zh }（Set），通過的物品會加進去。
- * spots：可以放的位置，其他的退回地上。
+ * spots：可以放的位置，其他的退回地上。related：同一個街區已經有的物品 { en, zh, ja }，太像的擋下（通過的也會加進比對）。
  * @returns {{ ok: object[], rejected: Array<{ id: string, reason: string }> }}
  */
-export function validateElements(list, { zone, used, spots = allowedSpots(zone) }) {
+export function validateElements(list, { zone, used, spots = allowedSpots(zone), related = [] }) {
   const ok = [];
+  const similarPool = [...related];
   const rejected = [];
   for (const raw of Array.isArray(list) ? list : []) {
     const e = raw ?? {};
@@ -125,6 +147,8 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone) 
       const desc = String(e.desc ?? '');
       if (desc.length < 8 || desc.length > 120) return '描述長度不對';
       if (NO_TEXT_RE.test(desc)) return '描述有數字或英文字母';
+      const similar = findSimilar({ en, zh: e.zh, ja: e.ja }, similarPool);
+      if (similar) return `和已有的 ${similar.en} 太像`;
       return null;
     })();
     if (reason) {
@@ -141,6 +165,7 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone) 
     used.ids.add(item.id);
     used.en.add(wordKey(en));
     used.zh.add(item.zh);
+    similarPool.push(item);
     ok.push(item);
   }
   return { ok, rejected };

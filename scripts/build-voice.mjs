@@ -21,6 +21,7 @@ import { fileURLToPath } from 'node:url';
 import { gptVoice } from './lib/miko.mjs';
 import { cutAround, frameEnergy, padClip, renderClip, wavBuffer } from './lib/voice-cut.mjs';
 import { PASS_SCORE, VOICE_LANGS, alignItems, heardScore, spokenMatches, spokenText, takeScript } from './lib/voice-take.mjs';
+import { localIso } from './lib/local-time.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'src', 'data', 'scenes');
@@ -76,7 +77,7 @@ async function recordTake(sceneId, lang, items, round) {
   const voice = await gptVoice(script, file);
   const take = {
     file: path.relative(ROOT, file), lang, round, itemIds: items.map((i) => i.id), account: voice.account,
-    at: new Date().toISOString(), verbatim: spokenMatches(script, voice.spoken),
+    at: localIso(), verbatim: spokenMatches(script, voice.spoken),
   };
   writeJson(file.replace(/\.aac$/, '.json'), take);
   return take;

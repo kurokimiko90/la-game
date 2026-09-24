@@ -72,6 +72,29 @@ describe('validateElements', () => {
     expect(ok).toEqual([]);
     expect(rejected[0].reason).toBe(reason);
   });
+
+  const related = [{ en: 'fountain', zh: '噴泉', ja: '噴水' }, { en: 'shopping basket', zh: '購物籃', ja: '買い物かご' }];
+  it.each([
+    [{ id: 'fountain-jet', en: 'fountain jet', zh: '噴水柱' }],
+    [{ id: 'fountain-basin', en: 'fountain basin', zh: '噴泉水池' }],
+    [{ id: 'basket', en: 'basket', zh: '籃子' }],
+    [{ id: 'handbasket', en: 'handbasket', zh: '手提籃', ja: '買い物かご' }],
+    [{ id: 'jet', en: 'water jet', zh: '噴泉' }],
+  ])('擋下和街區已有物品太像的（零件、變體、同義）%o', (over) => {
+    const { ok, rejected } = validateElements([el(over)], { zone: zones[1], used: freshUsed(), related });
+    expect(ok).toEqual([]);
+    expect(rejected[0].reason).toMatch(/^和已有的/);
+  });
+
+  it('同一批裡互相太像的也擋下；不相關的收下', () => {
+    const { ok, rejected } = validateElements([
+      el({ id: 'cream', en: 'cream', zh: '鮮奶油', ja: 'クリーム' }),
+      el({ id: 'sour-cream', en: 'sour cream', zh: '酸奶油', ja: 'サワークリーム' }),
+      el({ id: 'fountain-pen', en: 'pen', zh: '筆', ja: 'ペン', reading: 'ペン' }),
+    ], { zone: zones[1], used: freshUsed(), related });
+    expect(ok.map((e) => e.id)).toEqual(['cream', 'fountain-pen']);
+    expect(rejected).toEqual([{ id: 'sour-cream', reason: '和已有的 cream 太像' }]);
+  });
 });
 
 describe('buildZonePrompt', () => {

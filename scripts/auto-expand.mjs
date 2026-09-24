@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // 自動擴展小鎮：每執行一次推進一步，由 miko-ws runtime 的 LaGameExpandScheduler 每 30 分鐘叫一次。
-// 同一個場景內不等排程：規劃完直接開始生成，生成器結束後自己接著叫 --after-generator 整合；排程只負責開新場景和保底。
+// 全程不等排程：規劃完直接開始生成，生成器結束後自己接著叫 --after-generator 整合，commit 完直接開下一個；排程只負責啟動和保底。
 // 所有 LLM 工作（場景規劃、單字表）和 SVG 生成都交給 miko-ws；發音用本機 edge-tts 打底，英語再換成 ChatGPT 的聲音（build-voice）。
 //
 //   node scripts/auto-expand.mjs              推進一步
@@ -23,6 +23,7 @@ import {
   zoneShortfall,
 } from './lib/scene-plan.mjs';
 import { buildStagePrompt, parseStage } from './lib/stage-plan.mjs';
+import { localIso } from './lib/local-time.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(SELF), '..');
@@ -48,7 +49,7 @@ const writeJson = (file, data) => {
 };
 
 function log(msg) {
-  const line = `[${new Date().toISOString()}] ${msg}`;
+  const line = `[${localIso()}] ${msg}`;
   console.log(line);
   fs.mkdirSync(STATE_DIR, { recursive: true });
   fs.appendFileSync(LOG_FILE, `${line}\n`);
@@ -102,7 +103,7 @@ function usedSlots() {
   return fs.readdirSync(P.plans).map((f) => readJson(path.join(P.plans, f)).slot).filter(Boolean);
 }
 
-/** 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：區域裡已經有的物品 */
+/** 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：街區裡已經有的物品（太像的會擋下） */
 async function planZone({ sceneName, zone, count, used, spots, existing = [] }) {
   const elements = [];
   const rejected = [];
@@ -118,7 +119,7 @@ async function planZone({ sceneName, zone, count, used, spots, existing = [] }) 
       log(`  ${zone.name} 第 ${t + 1} 次解析失敗：${e.message}`);
       continue;
     }
-    const result = validateElements((Array.isArray(list) ? list : []).slice(0, need), { zone, used, spots });
+    const result = validateElements((Array.isArray(list) ? list : []).slice(0, need), { zone, used, spots, related: [...existing, ...elements] });
     elements.push(...result.ok);
     rejected.push(...result.rejected.map((r) => ({ ...r, zone: zone.id })));
   }
@@ -137,13 +138,13 @@ async function planScene(theme, slot, colorIndex, settings) {
   const elements = [];
   const rejected = [];
   for (const [i, zone] of outline.zones.entries()) {
-    const r = await planZone({ sceneName: outline.name, zone, count: counts[i], used });
+    const r = await planZone({ sceneName: outline.name, zone, count: counts[i], used, existing: elements });
     elements.push(...r.elements);
     rejected.push(...r.rejected);
   }
   if (elements.length < settings.minItems) throw new Error(`規劃只得到 ${elements.length} 個合格物品（至少要 ${settings.minItems}）`);
 
-  const plan = { ...outline, slot, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, createdAt: new Date().toISOString() };
+  const plan = { ...outline, slot, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, createdAt: localIso() };
   writeJson(path.join(P.plans, `${plan.id}.json`), plan);
   const manifestFile = path.join(P.manifests, `${plan.id}.json`);
   writeJson(manifestFile, planToManifest(plan));
@@ -185,8 +186,7 @@ async function planTopUp({ plan, shortfall }, settings) {
   const added = [];
   const rejected = [];
   for (const { zone, need } of shortfall.filter((s) => s.need > 0)) {
-    const existing = plan.elements.filter((e) => e.zone === zone.id);
-    const r = await planZone({ sceneName: plan.name, zone, count: need, used, spots: TOP_UP_SPOTS, existing });
+    const r = await planZone({ sceneName: plan.name, zone, count: need, used, spots: TOP_UP_SPOTS, existing: [...plan.elements, ...added] });
     added.push(...r.elements);
     rejected.push(...r.rejected);
   }
@@ -194,7 +194,7 @@ async function planTopUp({ plan, shortfall }, settings) {
     ...plan,
     elements: [...plan.elements, ...added],
     rejected: [...(plan.rejected ?? []), ...rejected],
-    topUp: { itemsPerScene: targetOf(plan, settings), added: added.length, at: new Date().toISOString() },
+    topUp: { itemsPerScene: targetOf(plan, settings), added: added.length, at: localIso() },
   };
   writeJson(path.join(P.plans, `${plan.id}.json`), next);
   const manifestFile = path.join(P.manifests, `${plan.id}.json`);
@@ -299,7 +299,7 @@ async function integrate(plan, settings, { topUp = false } = {}) {
 
 function appendLog(plan, count, rounds, note = '自動') {
   const text = fs.readFileSync(P.log, 'utf8');
-  const row = `| ${plan.name}（${plan.id}） | ${new Date().toISOString().slice(0, 16).replace('T', ' ')} | ${count} | ${rounds} | ${note} |`;
+  const row = `| ${plan.name}（${plan.id}） | ${localIso().slice(0, 16).replace('T', ' ')} | ${count} | ${rounds} | ${note} |`;
   fs.writeFileSync(P.log, `${text.trimEnd()}\n${row}\n`);
 }
 
@@ -313,7 +313,7 @@ function commit(title, settings) {
 // ── 狀態機 ────────────────────────────────────────────────────────────
 
 /**
- * 推進一步。回傳 true 表示下一步不用等排程，可以馬上接著跑（規劃完 → 開始生成、重排失敗 → 重開生成）。
+ * 推進一步。回傳 true 表示下一步不用等排程，可以馬上接著跑（規劃完 → 開始生成、重排失敗 → 重開生成、commit 完 → 下一個）。
  * afterGenerator：由生成器結束後的接續呼叫進來。
  */
 async function tick({ afterGenerator = false } = {}) {
@@ -336,7 +336,7 @@ async function tick({ afterGenerator = false } = {}) {
         log(`${id} 沒有補到合格的物品，略過`);
         return true;
       }
-      saveState({ ...state, phase: 'generating', current: { id, slug: `la-${id}`, rounds: 0, startedAt: new Date().toISOString(), topUp: true } });
+      saveState({ ...state, phase: 'generating', current: { id, slug: `la-${id}`, rounds: 0, startedAt: localIso(), topUp: true } });
       return true;
     }
     const config = readJson(P.config);
@@ -346,7 +346,7 @@ async function tick({ afterGenerator = false } = {}) {
     if (!theme || !slot) return log(theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
     saveState({ ...state, phase: 'planning', current: { theme, slot } });
     const plan = await planScene(theme, slot, usedSlots().length, settings);
-    saveState({ ...state, phase: 'generating', current: { id: plan.id, slug: `la-${plan.id}`, rounds: 0, startedAt: new Date().toISOString() } });
+    saveState({ ...state, phase: 'generating', current: { id: plan.id, slug: `la-${plan.id}`, rounds: 0, startedAt: localIso() } });
     return true;
   }
 
@@ -382,15 +382,16 @@ async function tick({ afterGenerator = false } = {}) {
     if (cur.topUp) {
       appendLog(plan, count, cur.rounds, `補元素 +${count - before}`);
       commit(`feat: add ${count - before} items to ${plan.name} district (${count} total)`, settings);
-      const history = state.history.map((h) => (h.id === plan.id ? { ...h, items: count, toppedUpAt: new Date().toISOString() } : h));
+      const history = state.history.map((h) => (h.id === plan.id ? { ...h, items: count, toppedUpAt: localIso() } : h));
       saveState({ phase: 'idle', current: null, history });
       log(`補完 ${plan.name}：+${count - before}，共 ${count} 個物件，已 commit`);
-      return;
+      return true;
     }
     appendLog(plan, count, cur.rounds);
     commit(`feat: add ${plan.name} district (${count} items)`, settings);
-    saveState({ phase: 'idle', current: null, history: [...state.history, { id: plan.id, name: plan.name, items: count, doneAt: new Date().toISOString() }] });
+    saveState({ phase: 'idle', current: null, history: [...state.history, { id: plan.id, name: plan.name, items: count, doneAt: localIso() }] });
     log(`完成 ${plan.name}：${count} 個物件，已 commit`);
+    return true;
   }
 }
 
@@ -419,7 +420,7 @@ async function main() {
     while (await tick({ afterGenerator })) afterGenerator = false;
   } catch (e) {
     const s = loadState();
-    saveState({ ...s, phase: 'blocked', resumePhase: s.phase, error: e.message, blockedAt: new Date().toISOString() });
+    saveState({ ...s, phase: 'blocked', resumePhase: s.phase, error: e.message, blockedAt: localIso() });
     log(`失敗，停在 blocked：${e.message}`);
     process.exitCode = 1;
   } finally {
