@@ -1,410 +1,53 @@
 {
-  "apple": {
-    "x": 823,
-    "y": 2161,
-    "w": 51,
-    "h": 64,
-    "rotate": 0,
-    "flip": false
-  },
-  "automatic-door": {
-    "x": 393,
-    "y": 1693,
-    "w": 175,
-    "h": 200,
-    "rotate": 0,
-    "flip": true
-  },
-  "bag-holder": {
-    "x": 2419,
-    "y": 2278,
-    "w": 62,
-    "h": 78,
-    "rotate": 0,
-    "flip": false
-  },
-  "banana": {
-    "x": 908,
-    "y": 2046,
-    "w": 51,
-    "h": 64,
-    "rotate": -4,
-    "flip": true
-  },
-  "banknote": {
-    "x": 2314,
-    "y": 2159,
-    "w": 68,
-    "h": 51,
-    "rotate": 1,
-    "flip": true
-  },
-  "barcode-scanner": {
-    "x": 2098,
-    "y": 2142,
-    "w": 63,
-    "h": 68,
-    "rotate": 0,
-    "flip": true
-  },
-  "bell-pepper": {
-    "x": 1108,
-    "y": 2392,
-    "w": 64,
-    "h": 80,
-    "rotate": 0,
-    "flip": true
-  },
-  "bread": {
-    "x": 901,
-    "y": 2187,
-    "w": 64,
-    "h": 38,
-    "rotate": 8,
-    "flip": false
-  },
-  "broccoli": {
-    "x": 969,
-    "y": 2430,
-    "w": 66,
-    "h": 83,
-    "rotate": 0,
-    "flip": true
-  },
-  "butter": {
-    "x": 1667,
-    "y": 2386,
-    "w": 69,
-    "h": 86,
-    "rotate": 0,
-    "flip": true
-  },
-  "cabbage": {
-    "x": 1071,
-    "y": 2161,
-    "w": 64,
-    "h": 64,
-    "rotate": 0,
-    "flip": false
-  },
-  "canned-food": {
-    "x": 156,
-    "y": 2347,
-    "w": 61,
-    "h": 76,
-    "rotate": 0,
-    "flip": true
-  },
-  "carrot": {
-    "x": 994,
-    "y": 2046,
-    "w": 48,
-    "h": 64,
-    "rotate": 1,
-    "flip": true
-  },
-  "cash-register": {
-    "x": 2439,
-    "y": 2099,
-    "w": 111,
-    "h": 111,
-    "rotate": 0,
-    "flip": false
-  },
-  "checkout-divider": {
-    "x": 2494,
-    "y": 2372,
-    "w": 68,
-    "h": 85,
-    "rotate": 0,
-    "flip": true
-  },
-  "cheese": {
-    "x": 1597,
-    "y": 2142,
-    "w": 57,
-    "h": 68,
-    "rotate": 0,
-    "flip": false
-  },
-  "coin-tray": {
-    "x": 1995,
-    "y": 2297,
-    "w": 61,
-    "h": 77,
-    "rotate": 0,
-    "flip": true
-  },
-  "coins": {
-    "x": 2244,
-    "y": 2142,
-    "w": 63,
-    "h": 68,
-    "rotate": 0,
-    "flip": true
-  },
-  "corn": {
-    "x": 824,
-    "y": 2046,
-    "w": 48,
-    "h": 64,
-    "rotate": -18,
-    "flip": true
-  },
-  "cream": {
-    "x": 1332,
-    "y": 2445,
-    "w": 69,
-    "h": 86,
-    "rotate": 0,
-    "flip": true
-  },
-  "credit-card": {
-    "x": 2387,
-    "y": 2159,
-    "w": 68,
-    "h": 51,
-    "rotate": 13,
-    "flip": true
-  },
-  "cucumber": {
-    "x": 1195,
-    "y": 2379,
-    "w": 67,
-    "h": 84,
-    "rotate": 0,
-    "flip": true
-  },
-  "eggplant": {
-    "x": 864,
-    "y": 2283,
-    "w": 65,
-    "h": 81,
-    "rotate": 0,
-    "flip": true
-  },
-  "eggs": {
-    "x": 1664,
-    "y": 2142,
-    "w": 68,
-    "h": 68,
-    "rotate": 0,
-    "flip": false
-  },
-  "fire-extinguisher": {
-    "x": 268,
-    "y": 1813,
-    "w": 64,
-    "h": 80,
-    "rotate": 0,
-    "flip": false
-  },
-  "flyer": {
-    "x": 468,
-    "y": 1890,
-    "w": 56,
-    "h": 70,
-    "rotate": -20,
-    "flip": false
-  },
-  "fridge": {
-    "x": 1792,
-    "y": 1693,
-    "w": 156,
-    "h": 200,
-    "rotate": 0,
-    "flip": false
-  },
-  "grapes": {
-    "x": 1078,
-    "y": 2046,
-    "w": 51,
-    "h": 64,
-    "rotate": 0,
-    "flip": false
-  },
-  "ice-cream": {
-    "x": 1744,
-    "y": 2142,
-    "w": 54,
-    "h": 68,
-    "rotate": 0,
-    "flip": false
-  },
-  "juice": {
-    "x": 1452,
-    "y": 2142,
-    "w": 54,
-    "h": 68,
-    "rotate": 0,
-    "flip": false
-  },
-  "locker": {
-    "x": 49,
-    "y": 2035,
-    "w": 102,
-    "h": 128,
-    "rotate": 0,
-    "flip": false
-  },
-  "milk": {
-    "x": 1378,
-    "y": 2142,
-    "w": 57,
-    "h": 68,
-    "rotate": 0,
-    "flip": false
-  },
-  "orange": {
-    "x": 1163,
-    "y": 2046,
-    "w": 51,
-    "h": 64,
-    "rotate": 0,
-    "flip": false
-  },
-  "pickle-jar": {
-    "x": 1760,
-    "y": 2418,
-    "w": 68,
-    "h": 85,
-    "rotate": 0,
-    "flip": false
-  },
-  "plastic-bag": {
-    "x": 2025,
-    "y": 2142,
-    "w": 63,
-    "h": 68,
-    "rotate": 0,
-    "flip": false
-  },
-  "price-tag": {
-    "x": 992,
-    "y": 2161,
-    "w": 53,
-    "h": 64,
-    "rotate": 0,
-    "flip": false
-  },
-  "produce-mister": {
-    "x": 473,
-    "y": 2400,
-    "w": 127,
-    "h": 127,
-    "rotate": 0,
-    "flip": false
-  },
-  "pumpkin": {
-    "x": 680,
-    "y": 2416,
-    "w": 134,
-    "h": 134,
-    "rotate": 0,
-    "flip": false
-  },
-  "radish": {
-    "x": 1138,
-    "y": 2305,
-    "w": 59,
-    "h": 74,
-    "rotate": 0,
-    "flip": false
-  },
-  "receipt": {
-    "x": 2189,
-    "y": 2142,
-    "w": 27,
-    "h": 68,
-    "rotate": 13,
-    "flip": false
-  },
-  "reusable-bag": {
-    "x": 2141,
-    "y": 2425,
-    "w": 70,
-    "h": 87,
-    "rotate": 0,
-    "flip": false
-  },
-  "sausage": {
-    "x": 1817,
-    "y": 2142,
-    "w": 54,
-    "h": 68,
-    "rotate": -16,
-    "flip": false
-  },
-  "scale": {
-    "x": 1141,
-    "y": 2121,
-    "w": 94,
-    "h": 104,
-    "rotate": 0,
-    "flip": false
-  },
-  "shelf": {
-    "x": 32,
-    "y": 2184,
-    "w": 136,
-    "h": 204,
-    "rotate": 0,
-    "flip": false
-  },
-  "shopping-basket": {
-    "x": 371,
-    "y": 2091,
-    "w": 66,
-    "h": 83,
-    "rotate": 0,
-    "flip": false
-  },
-  "shopping-cart": {
-    "x": 269,
-    "y": 2032,
-    "w": 102,
-    "h": 128,
-    "rotate": 0,
-    "flip": true
-  },
-  "shopping-cart-token": {
-    "x": 2110,
-    "y": 2279,
-    "w": 60,
-    "h": 75,
-    "rotate": 0,
-    "flip": false
-  },
-  "shopping-list": {
-    "x": 507,
-    "y": 2303,
-    "w": 63,
-    "h": 78,
-    "rotate": 0,
-    "flip": true
-  },
-  "tomato": {
-    "x": 731,
-    "y": 2046,
-    "w": 64,
-    "h": 64,
-    "rotate": 0,
-    "flip": true
-  },
-  "watermelon": {
-    "x": 720,
-    "y": 2121,
-    "w": 87,
-    "h": 104,
-    "rotate": 0,
-    "flip": false
-  },
-  "yogurt": {
-    "x": 1525,
-    "y": 2142,
-    "w": 54,
-    "h": 68,
-    "rotate": 0,
-    "flip": true
-  }
+  "apple": { "x": 823, "y": 2161, "w": 51, "h": 64, "rotate": 0, "flip": false },
+  "automatic-door": { "x": 393, "y": 1693, "w": 175, "h": 200, "rotate": 0, "flip": true },
+  "bag-holder": { "x": 2377, "y": 2447, "w": 66, "h": 83, "rotate": 0, "flip": true },
+  "banana": { "x": 908, "y": 2046, "w": 51, "h": 64, "rotate": -4, "flip": true },
+  "banknote": { "x": 2314, "y": 2159, "w": 68, "h": 51, "rotate": 1, "flip": true },
+  "barcode-scanner": { "x": 2098, "y": 2142, "w": 63, "h": 68, "rotate": 0, "flip": true },
+  "bell-pepper": { "x": 1068, "y": 2406, "w": 51, "h": 64, "rotate": 0, "flip": true },
+  "bread": { "x": 901, "y": 2187, "w": 64, "h": 38, "rotate": 8, "flip": false },
+  "broccoli": { "x": 833, "y": 2406, "w": 51, "h": 64, "rotate": 0, "flip": false },
+  "butter": { "x": 1515, "y": 2402, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "cabbage": { "x": 1071, "y": 2161, "w": 64, "h": 64, "rotate": 0, "flip": false },
+  "canned-food": { "x": 156, "y": 2347, "w": 61, "h": 76, "rotate": 0, "flip": true },
+  "carrot": { "x": 994, "y": 2046, "w": 48, "h": 64, "rotate": 1, "flip": true },
+  "cash-register": { "x": 2439, "y": 2099, "w": 111, "h": 111, "rotate": 0, "flip": false },
+  "checkout-divider": { "x": 2058, "y": 2402, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "cheese": { "x": 1597, "y": 2142, "w": 57, "h": 68, "rotate": 0, "flip": false },
+  "coin-tray": { "x": 2148, "y": 2402, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "coins": { "x": 2244, "y": 2142, "w": 63, "h": 68, "rotate": 0, "flip": true },
+  "corn": { "x": 824, "y": 2046, "w": 48, "h": 64, "rotate": -18, "flip": true },
+  "cream": { "x": 1598, "y": 2402, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "credit-card": { "x": 2387, "y": 2159, "w": 68, "h": 51, "rotate": 13, "flip": true },
+  "cucumber": { "x": 911, "y": 2406, "w": 51, "h": 64, "rotate": 0, "flip": true },
+  "eggplant": { "x": 989, "y": 2406, "w": 51, "h": 64, "rotate": 0, "flip": false },
+  "eggs": { "x": 1664, "y": 2142, "w": 68, "h": 68, "rotate": 0, "flip": false },
+  "fire-extinguisher": { "x": 268, "y": 1813, "w": 64, "h": 80, "rotate": 0, "flip": false },
+  "flyer": { "x": 468, "y": 1890, "w": 56, "h": 70, "rotate": -20, "flip": false },
+  "fridge": { "x": 1792, "y": 1693, "w": 156, "h": 200, "rotate": 0, "flip": false },
+  "grapes": { "x": 1078, "y": 2046, "w": 51, "h": 64, "rotate": 0, "flip": false },
+  "ice-cream": { "x": 1744, "y": 2142, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "juice": { "x": 1452, "y": 2142, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "locker": { "x": 49, "y": 2035, "w": 102, "h": 128, "rotate": 0, "flip": false },
+  "milk": { "x": 1378, "y": 2142, "w": 57, "h": 68, "rotate": 0, "flip": false },
+  "orange": { "x": 1163, "y": 2046, "w": 51, "h": 64, "rotate": 0, "flip": false },
+  "pickle-jar": { "x": 1681, "y": 2402, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "plastic-bag": { "x": 2025, "y": 2142, "w": 63, "h": 68, "rotate": 0, "flip": false },
+  "price-tag": { "x": 992, "y": 2161, "w": 53, "h": 64, "rotate": 0, "flip": false },
+  "produce-mister": { "x": 505, "y": 2159, "w": 131, "h": 131, "rotate": 0, "flip": false },
+  "pumpkin": { "x": 727, "y": 2366, "w": 104, "h": 104, "rotate": 0, "flip": false },
+  "radish": { "x": 1146, "y": 2406, "w": 51, "h": 64, "rotate": 0, "flip": false },
+  "receipt": { "x": 2189, "y": 2142, "w": 27, "h": 68, "rotate": 13, "flip": false },
+  "reusable-bag": { "x": 2477, "y": 2447, "w": 66, "h": 83, "rotate": 19, "flip": true },
+  "sausage": { "x": 1817, "y": 2142, "w": 54, "h": 68, "rotate": -16, "flip": false },
+  "scale": { "x": 1141, "y": 2121, "w": 94, "h": 104, "rotate": 0, "flip": false },
+  "shelf": { "x": 32, "y": 2184, "w": 136, "h": 204, "rotate": 0, "flip": false },
+  "shopping-basket": { "x": 371, "y": 2091, "w": 66, "h": 83, "rotate": 0, "flip": false },
+  "shopping-cart": { "x": 269, "y": 2032, "w": 102, "h": 128, "rotate": 0, "flip": true },
+  "shopping-cart-token": { "x": 2238, "y": 2402, "w": 54, "h": 68, "rotate": 0, "flip": false },
+  "shopping-list": { "x": 268, "y": 2170, "w": 64, "h": 80, "rotate": -2, "flip": true },
+  "tomato": { "x": 731, "y": 2046, "w": 64, "h": 64, "rotate": 0, "flip": true },
+  "watermelon": { "x": 720, "y": 2121, "w": 87, "h": 104, "rotate": 0, "flip": false },
+  "yogurt": { "x": 1525, "y": 2142, "w": 54, "h": 68, "rotate": 0, "flip": true }
 }
