@@ -1,0 +1,334 @@
+{
+  "en": {
+    "parking-barrier": {
+      "heard": "Parking barrier.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "film-poster-frame": {
+      "heard": "Film poster frame.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "popcorn-machine": {
+      "heard": "Popcorn Machine.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "windshield": {
+      "heard": "Windshield",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-barrier": {
+      "heard": "Ticket Barrier.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-validator": {
+      "heard": "Ticket Validator Park",
+      "score": 0.79,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-roll": {
+      "heard": "Ticket roll.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "soda-can": {
+      "heard": "Soda can.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ice-cream-cone": {
+      "heard": "Ice cream cone.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "candy-box": {
+      "heard": "Candybox.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "soda-fountain": {
+      "heard": "Soda fountain.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "film-reel": {
+      "heard": "Filmreel.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "film-strip": {
+      "heard": "Filmstrip.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "clapperboard": {
+      "heard": "Clapperboard?",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "license-plate": {
+      "heard": "License plate?",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "car-battery": {
+      "heard": "Car battery.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "movie-ticket": {
+      "heard": "Movie Ticket.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "parking-ticket": {
+      "heard": "Parking ticket.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "red-carpet": {
+      "heard": "Red carpet.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "velvet-rope": {
+      "heard": "Velvet Rope.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "film-camera": {
+      "heard": "Film camera.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "director-chair": {
+      "heard": "Director Chair",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "film-canister": {
+      "heard": "Film canister.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "popcorn-box": {
+      "heard": "Popcorn box.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "armrest": {
+      "heard": "Armrest.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-stub": {
+      "heard": "Ticket stub.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "soda-bottle": {
+      "heard": "Soda bottle.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "exit-door": {
+      "heard": "Exit door.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "fire-extinguisher-cabinet": {
+      "heard": "Fire extinguisher cabinet.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "soda-dispenser": {
+      "heard": "Soda Dispenser.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "seat-number-plate": {
+      "heard": "seat plate.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "cup-holder": {
+      "heard": "Cup holder.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "seat-cushion": {
+      "heard": "Seat Cushion",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "laser-pointer": {
+      "heard": "Laser pointer.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "handheld-fan": {
+      "heard": "Handheld fan.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "waffle-cone": {
+      "heard": "Waffle Cone.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "candy-cane": {
+      "heard": "Candy Candy.",
+      "score": 0.8,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "gummy-bear": {
+      "heard": "Gully bear.",
+      "score": 0.78,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "jelly-cup": {
+      "heard": "Jelly Cup.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "nachos": {
+      "heard": "Nachos.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "salt-packet": {
+      "heard": "Salt packet.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ketchup-packet": {
+      "heard": "Ketchup packet.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "sauce-bowl": {
+      "heard": "Sauce Bowl.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "menu-holder": {
+      "heard": "Menu holder.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "scoop": {
+      "heard": "Scoop.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "chocolate-syrup": {
+      "heard": "Chocolate syrup.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "seat-row-marker": {
+      "heard": "Row marker.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-punch": {
+      "heard": "Ticket punch.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "curtain-tieback": {
+      "heard": "Curtain tieback.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "wristband": {
+      "heard": "Wristband",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "serving-tray-rack": {
+      "heard": "Serving tray rack.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "stainless-steel-table": {
+      "heard": "Stainless steel table.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "floor-squeegee": {
+      "heard": "Floor squeegee.",
+      "score": 1,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "folding-seat": {
+      "heard": "Folding seats.",
+      "score": 0.92,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    },
+    "floor-speaker": {
+      "heard": "Floor speak.",
+      "score": 0.83,
+      "take": "en-1790337890751.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
