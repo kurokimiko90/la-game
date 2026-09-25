@@ -1,6 +1,6 @@
 {
-  "world": {"width": 10420, "height": 6960},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach"],
+  "world": {"width": 13260, "height": 6960},
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -725,6 +725,47 @@
       "motion": {"seaweed": "sway", "palm-tree": "sway", "seashell-wind-chime": "sway", "dune-grass": "sway", "sea-holly": "sway", "coastal-grass-seedhead": "sway", "reed": "sway", "sea-lavender": "sway", "buoy": "bob", "ice-maker": "wobble", "floor-fan": "wobble"},
       "arrange": "auto",
       "terrain": {"color": "#a5d6a7", "x0": 6680, "y0": 4620, "x1": 9280, "y1": 5920, "zones": [{"id": "entrance", "x0": 6680, "y0": 4620, "x1": 7980, "y1": 5270, "indoor": false, "floor": "paving", "road": {"y0": 5080, "y1": 5240}}, {"id": "boardwalk", "x0": 7980, "y0": 4620, "x1": 9280, "y1": 5270, "indoor": false, "floor": "grass"}, {"id": "tide-pool", "x0": 7980, "y0": 5270, "x1": 9280, "y1": 5920, "indoor": false, "floor": "sand", "pool": {"x0": 8630, "y0": 5380, "x1": 9230, "y1": 5880}}, {"id": "snack-shack", "x0": 6680, "y0": 5270, "x1": 7980, "y1": 5920, "indoor": true, "floor": "tile", "wallBase": 5450}]}
+    },
+    "clothing-store": {
+      "name": "服飾店",
+      "icon": "full-length-mirror",
+      "zones": {"entrance": [9520, 0, 10820, 650], "display": [10820, 0, 12120, 650], "fitting": [10820, 650, 12120, 1300], "checkout": [9520, 650, 10820, 1300]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 70, "bottom": 630}, "display": {"top": 240, "bottom": 630, "gaps": [[190, 505]]}, "fitting": {"top": 890, "bottom": 1280}, "checkout": {"top": 890, "bottom": 1280, "gaps": [[840, 1060]]}}},
+        "sky-entrance": {"top": 150, "bottom": 300, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-display": {"levels": [140], "zones": ["display"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-display": {"levels": [178], "zones": ["display"], "inset": 50},
+        "surface-display": {"levels": [310, 405], "zones": ["display"], "x0": 10970, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 475},
+        "wall-fitting": {"levels": [790], "zones": ["fitting"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-fitting": {"levels": [828], "zones": ["fitting"], "inset": 50},
+        "wall-checkout": {"levels": [790], "zones": ["checkout"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-checkout": {"levels": [828], "zones": ["checkout"], "inset": 50},
+        "surface-checkout": {"levels": [960], "zones": ["checkout"], "x0": 9670, "x1": 10670, "inset": 0, "scale": [0.8, 0.8], "look": "checkout", "base": 1030}
+      },
+      "place": {
+        "purse": "surface-display",
+        "earrings": "surface-display",
+        "brooch": "surface-display",
+        "crown": "surface-display",
+        "necklace-box": "surface-display",
+        "bow-tie": "surface-display",
+        "vest": "surface-display",
+        "shorts": "surface-display",
+        "hand-mirror": "surface-display",
+        "clutch": "surface-display",
+        "handbag-mirror": "surface-checkout",
+        "seam-ripper": "surface-checkout",
+        "thimble": "surface-checkout",
+        "fabric-marker": "surface-checkout",
+        "price-gun": "surface-checkout",
+        "receipt-spike": "surface-checkout"
+      },
+      "clusters": [["clothing-rack", "skirt", "trousers", "blouse"], ["shoe-brush", "shoe-polish"], ["needle", "thread-spool"], ["fabric-roll", "measuring-tape"], ["iron", "ironing-board"]],
+      "loose": ["skirt", "trousers", "blouse", "shoelace", "shoe-brush", "shoe-polish", "clothing-bag", "button", "needle", "thread-spool", "measuring-tape", "shoe-tree", "sewing-scissors", "fabric-swatch", "clothes-peg", "purse", "earrings", "brooch", "bow-tie", "boot-jack", "bowler-hat", "swimsuit", "belt-buckle", "laundry-tag", "clothes-brush", "cardigan", "laundry-bag", "fabric-measuring-tape", "shoe-polishing-cloth", "scarf-ring", "seam-ripper", "thimble", "fabric-marker", "folding-wallet", "garment-tag", "coat-check-token"],
+      "noFlip": [],
+      "motion": {"skirt": "sway", "blouse": "sway", "clothesline": "sway", "vest": "sway", "shorts": "sway", "garment-steamer": "wobble", "privacy-curtain": "sway"},
+      "arrange": "auto",
+      "terrain": {"color": "#ce93d8", "x0": 9520, "y0": 0, "x1": 12120, "y1": 1300, "zones": [{"id": "entrance", "x0": 9520, "y0": 0, "x1": 10820, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "display", "x0": 10820, "y0": 0, "x1": 12120, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "fitting", "x0": 10820, "y0": 650, "x1": 12120, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "checkout", "x0": 9520, "y0": 650, "x1": 10820, "y1": 1300, "indoor": true, "floor": "wood", "wallBase": 830}]}
     }
   }
 }

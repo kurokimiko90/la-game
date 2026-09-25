@@ -13,5 +13,6 @@ import postOffice from './post-office.json';
 import fireStation from './fire-station.json';
 import bakery from './bakery.json';
 import beach from './beach.json';
+import clothingStore from './clothing-store.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore };

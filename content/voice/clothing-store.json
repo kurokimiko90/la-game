@@ -1,0 +1,424 @@
+{
+  "en": {
+    "full-length-mirror": {
+      "heard": "Full length mirror.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "folding-screen": {
+      "heard": "Folding screen.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "earrings": {
+      "heard": "Earrings.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "brooch": {
+      "heard": "Broach",
+      "score": 0.83,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "crown": {
+      "heard": "Crown.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "necklace-box": {
+      "heard": "Jewelry box.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "facade-bracket": {
+      "heard": "Canopy Bracket.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "clothing-rack": {
+      "heard": "Clothing rack.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "skirt": {
+      "heard": "Skirt.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "trousers": {
+      "heard": "Trousers.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "blouse": {
+      "heard": "Blouse.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "standee": {
+      "heard": "Clothing stand.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "sewing-machine": {
+      "heard": "sewing machine.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "fabric-roll": {
+      "heard": "Fabric roll.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "measuring-tape": {
+      "heard": "tape measure.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "clothesline": {
+      "heard": "Clothesline.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "clothes-hamper": {
+      "heard": "close hamper.",
+      "score": 0.77,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "bow-tie": {
+      "heard": "Bowtie.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "vest": {
+      "heard": "Best.",
+      "score": 0.75,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "shorts": {
+      "heard": "shorts",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "hand-mirror": {
+      "heard": "Handmirror.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "clutch": {
+      "heard": "Clutch.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "ironing-board": {
+      "heard": "Ironing board.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "clothing-bag": {
+      "heard": "Garment bag.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "shoe-tree": {
+      "heard": "Shoe trees.",
+      "score": 0.89,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "sewing-scissors": {
+      "heard": "Sewing Scissors",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "fabric-swatch": {
+      "heard": "Fabric swatch.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "high-heels": {
+      "heard": "Peg, high heels.",
+      "score": 0.75,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "boot-jack": {
+      "heard": "Boot jack.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "laundry-detergent": {
+      "heard": "laundry detergent,",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "iron": {
+      "heard": "Iron.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "thimble": {
+      "heard": "Thimble.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "fabric-marker": {
+      "heard": "Fabric marker.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "price-gun": {
+      "heard": "Price gun.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "fabric-measuring-tape": {
+      "heard": "Fabric measuring tape.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "shoe-polishing-cloth": {
+      "heard": "Shoe polishing cloths.",
+      "score": 0.95,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "scarf-ring": {
+      "heard": "Garf ring.",
+      "score": 0.78,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "shoehorn-stand": {
+      "heard": "shoehorn stand.",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "folding-wallet": {
+      "heard": "Folding Wallet",
+      "score": 1,
+      "take": "en-1790294801959.aac",
+      "account": "chatgpt2"
+    },
+    "purse": {
+      "heard": "Purse.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "hat-stand": {
+      "heard": "Hat stand.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "shoelace": {
+      "heard": "Shoelace.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-brush": {
+      "heard": "Shoebrush.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-polish": {
+      "heard": "Shoe polish.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "bowler-hat": {
+      "heard": "Bowler hat.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "handbag-mirror": {
+      "heard": "Compact Mirror",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "seam-ripper": {
+      "heard": "Seam Ripper",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-spike": {
+      "heard": "Receipt spikes.",
+      "score": 0.92,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "suit": {
+      "heard": "suit.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "pajamas": {
+      "heard": "Pajamas.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-basket": {
+      "heard": "Laundry basket.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "changing-stool": {
+      "heard": "Changing stool.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "garment-cover": {
+      "heard": "Garment cover.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "full-length-mirror-frame": {
+      "heard": "Mirror Frame",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-bag-holder": {
+      "heard": "Shopping bag holder.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-bag": {
+      "heard": "Laundry bag.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "garment-tag": {
+      "heard": "Garment tag.",
+      "score": 1,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "coat-check-token": {
+      "heard": "Code check token.",
+      "score": 0.86,
+      "take": "en-1790295069015.aac",
+      "account": "chatgpt1"
+    },
+    "button": {
+      "heard": "Button.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "needle": {
+      "heard": "Needles.",
+      "score": 0.86,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "thread-spool": {
+      "heard": "Pool.",
+      "score": 0.8,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "clothes-peg": {
+      "heard": "Clothes peg.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-bench": {
+      "heard": "Shoe bench.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "privacy-curtain": {
+      "heard": "Privacy Curtain",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "swimsuit": {
+      "heard": "swimsuit.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "belt-buckle": {
+      "heard": "Belt buckle.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-tag": {
+      "heard": "Laundry tag.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "clothes-brush": {
+      "heard": "Close brush.",
+      "score": 0.75,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "cardigan": {
+      "heard": "Cardigan.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    },
+    "garment-steamer": {
+      "heard": "Garment steamer.",
+      "score": 1,
+      "take": "en-1790295219436.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

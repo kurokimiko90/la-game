@@ -1,0 +1,1483 @@
+{
+  "sceneName": "語言小鎮・服飾店",
+  "sceneSlug": "la-clothing-store",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "display": "展示區",
+    "fitting": "試衣間",
+    "checkout": "結帳區"
+  },
+  "elements": [
+    {
+      "name": "遮棚支架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根深色金屬桿從牆面斜伸出來，末端以橫桿相連，撐住上方布棚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "facade-bracket",
+        "words": {
+          "zh-TW": "遮棚支架",
+          "en": "canopy-bracket",
+          "ja": {
+            "text": "ひさしの金具",
+            "reading": "ひさしのかなぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣架桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長金屬橫桿架在兩支直立支腳上，底部有平坦的長方形支座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "clothing-rack",
+        "words": {
+          "zh-TW": "衣架桿",
+          "en": "clothing-rack",
+          "ja": {
+            "text": "ハンガーラック",
+            "reading": "ハンガーラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "裙子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "腰頭窄而平直，布料向下微微張開，呈現簡潔的鐘形輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "skirt",
+        "words": {
+          "zh-TW": "裙子",
+          "en": "skirt",
+          "ja": {
+            "text": "スカート",
+            "reading": "スカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "長褲",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "腰頭平整，兩條褲管由上往下延伸，褲腳略寬，中央可見分岔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "trousers",
+        "words": {
+          "zh-TW": "長褲",
+          "en": "trousers",
+          "ja": {
+            "text": "ズボン",
+            "reading": "ズボン"
+          }
+        }
+      }
+    },
+    {
+      "name": "女用襯衫",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟布料剪成上衣形狀，領口有小翻領，前襟排列一列圓扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "blouse",
+        "words": {
+          "zh-TW": "女用襯衫",
+          "en": "blouse",
+          "ja": {
+            "text": "ブラウス",
+            "reading": "ブラウス"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長柔軟的扁繩盤成鬆散圈狀，兩端各有一截硬質包頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "shoelace",
+        "words": {
+          "zh-TW": "鞋帶",
+          "en": "shoelace",
+          "ja": {
+            "text": "靴ひも",
+            "reading": "くつひも"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短木柄連著一排密集深色刷毛，刷毛邊緣整齊排列成長方形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "shoe-brush",
+        "words": {
+          "zh-TW": "鞋刷",
+          "en": "shoe-brush",
+          "ja": {
+            "text": "靴ブラシ",
+            "reading": "くつブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋油",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓鐵罐配扁平旋蓋，罐身有色塊與簡單圖案但沒有字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "shoe-polish",
+        "words": {
+          "zh-TW": "鞋油",
+          "en": "shoe-polish",
+          "ja": {
+            "text": "靴クリーム",
+            "reading": "くつクリーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "穿衣鏡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高而窄的長方形鏡面嵌在細木框內，底部有兩支斜撐腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "full-length-mirror",
+        "words": {
+          "zh-TW": "穿衣鏡",
+          "en": "full-length-mirror",
+          "ja": {
+            "text": "姿見",
+            "reading": "すがたみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣物防塵袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長袋包住衣物輪廓，頂端開口收在短掛鉤下，表面有細摺痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "clothing-bag",
+        "words": {
+          "zh-TW": "衣物防塵袋",
+          "en": "garment-bag",
+          "ja": {
+            "text": "衣類カバー",
+            "reading": "いるいカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "服飾展示架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的金屬直桿立在圓形底座上，頂端分出數根向外伸展的短臂。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "standee",
+        "words": {
+          "zh-TW": "服飾展示架",
+          "en": "clothing-stand",
+          "ja": {
+            "text": "ディスプレイスタンド",
+            "reading": "ディスプレイスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "折疊屏風",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "三片窄長木板以深色鉸鏈相連，站立成彎折形狀，表面是素色布面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "folding-screen",
+        "words": {
+          "zh-TW": "折疊屏風",
+          "en": "folding-screen",
+          "ja": {
+            "text": "ついたて",
+            "reading": "ついたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "鈕扣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的圓形扁片，表面有四個深色小孔，邊緣略帶光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "button",
+        "words": {
+          "zh-TW": "鈕扣",
+          "en": "button",
+          "ja": {
+            "text": "ボタン",
+            "reading": "ボタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "縫衣針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細直的銀色金屬針，一端尖銳，另一端有清楚可見的小圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "needle",
+        "words": {
+          "zh-TW": "縫衣針",
+          "en": "needle",
+          "ja": {
+            "text": "縫い針",
+            "reading": "ぬいばり"
+          }
+        }
+      }
+    },
+    {
+      "name": "線軸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的圓筒形木軸，中間纏著一圈圈亮色細線，上下有凸出的圓盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "thread-spool",
+        "words": {
+          "zh-TW": "線軸",
+          "en": "spool",
+          "ja": {
+            "text": "糸巻き",
+            "reading": "いとまき"
+          }
+        }
+      }
+    },
+    {
+      "name": "縫紉機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮方盒形機身向右伸出縫紉臂，頂部有大圓輪，前方可見細針和底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "sewing-machine",
+        "words": {
+          "zh-TW": "縫紉機",
+          "en": "sewing-machine",
+          "ja": {
+            "text": "ミシン",
+            "reading": "ミシン"
+          }
+        }
+      }
+    },
+    {
+      "name": "布卷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一卷厚實的長方布料橫放著，兩端露出圓形紙筒，外層有簡單條紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "fabric-roll",
+        "words": {
+          "zh-TW": "布卷",
+          "en": "fabric-roll",
+          "ja": {
+            "text": "布ロール",
+            "reading": "ぬのロール"
+          }
+        }
+      }
+    },
+    {
+      "name": "捲尺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓形黃色外殼，側面伸出一小截金屬尺帶，頂端有方形止片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "measuring-tape",
+        "words": {
+          "zh-TW": "捲尺",
+          "en": "tape-measure",
+          "ja": {
+            "text": "メジャー",
+            "reading": "メジャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋撐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木製鞋楦呈鞋頭形狀，後方接著細長彈簧桿與圓形拉環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "shoe-tree",
+        "words": {
+          "zh-TW": "鞋撐",
+          "en": "shoe-tree",
+          "ja": {
+            "text": "シューキーパー",
+            "reading": "シューキーパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "曬衣繩",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根短柱之間拉著一條細直繩，繩上夾著幾個素色木製衣夾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "clothesline",
+        "words": {
+          "zh-TW": "曬衣繩",
+          "en": "clothesline",
+          "ja": {
+            "text": "物干しロープ",
+            "reading": "ものほしロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣物籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "米白色長方形編織籃，兩側有提把，籃身排列著整齊的通風孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "clothes-hamper",
+        "words": {
+          "zh-TW": "衣物籃",
+          "en": "clothes-hamper",
+          "ja": {
+            "text": "ランドリーバスケット",
+            "reading": "ランドリーバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "裁縫剪刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把銀色長刀刃剪刀，搭配兩個黑色橢圓握環，刀刃在中間以螺絲相接。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "sewing-scissors",
+        "words": {
+          "zh-TW": "裁縫剪刀",
+          "en": "sewing-scissors",
+          "ja": {
+            "text": "裁ちばさみ",
+            "reading": "たちばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "布樣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小片方形靛藍布料，邊緣有細密白色車線，布面帶著柔軟的織紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "fabric-swatch",
+        "words": {
+          "zh-TW": "布樣",
+          "en": "fabric-swatch",
+          "ja": {
+            "text": "生地見本",
+            "reading": "きじみほん"
+          }
+        }
+      }
+    },
+    {
+      "name": "曬衣夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一枚黃色木製曬衣夾，兩片細長夾身由中央金屬彈簧連接，夾口清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "entrance",
+        "itemId": "clothes-peg",
+        "words": {
+          "zh-TW": "曬衣夾",
+          "en": "clothes-peg",
+          "ja": {
+            "text": "洗濯ばさみ",
+            "reading": "せんたくばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "零錢包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧扁平的半圓包身，頂端有一排金屬齒的拉鍊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "purse",
+        "words": {
+          "zh-TW": "零錢包",
+          "en": "purse",
+          "ja": {
+            "text": "小銭入れ",
+            "reading": "こぜにいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "耳環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對小巧金色圓環，各自垂著一顆亮色圓珠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "earrings",
+        "words": {
+          "zh-TW": "耳環",
+          "en": "earrings",
+          "ja": {
+            "text": "イヤリング",
+            "reading": "イヤリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "胸針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "花朵形金屬飾針，中央鑲著一顆醒目的彩色圓石。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "brooch",
+        "words": {
+          "zh-TW": "胸針",
+          "en": "brooch",
+          "ja": {
+            "text": "ブローチ",
+            "reading": "ブローチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "皇冠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色弧形底環上立著三個尖角，中央鑲有一顆紅寶石。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "crown",
+        "words": {
+          "zh-TW": "皇冠",
+          "en": "crown",
+          "ja": {
+            "text": "王冠",
+            "reading": "おうかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "首飾盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形小盒掀開上蓋，內襯深色絨布，中央放著一條項鍊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "necklace-box",
+        "words": {
+          "zh-TW": "首飾盒",
+          "en": "jewelry-box",
+          "ja": {
+            "text": "ジュエリーボックス",
+            "reading": "ジュエリーボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "領結",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片對稱的三角布翼在中央收緊打結，顏色鮮明。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "bow-tie",
+        "words": {
+          "zh-TW": "領結",
+          "en": "bow-tie",
+          "ja": {
+            "text": "蝶ネクタイ",
+            "reading": "ちょうネクタイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "背心",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "無袖上衣正面敞開，兩側有深色布面，胸前帶小口袋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "vest",
+        "words": {
+          "zh-TW": "背心",
+          "en": "vest",
+          "ja": {
+            "text": "ベスト",
+            "reading": "ベスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "短褲",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "腰頭平直、兩條褲管短而寬，褲腳各有一圈縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "shorts",
+        "words": {
+          "zh-TW": "短褲",
+          "en": "shorts",
+          "ja": {
+            "text": "ショートパンツ",
+            "reading": "ショートパンツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "高跟鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙尖頭女鞋，後跟細長高起，鞋面有一條細帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "high-heels",
+        "words": {
+          "zh-TW": "高跟鞋",
+          "en": "high-heels",
+          "ja": {
+            "text": "ハイヒール",
+            "reading": "ハイヒール"
+          }
+        }
+      }
+    },
+    {
+      "name": "脫靴器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平木板兩端各有一個叉形凹口，中央凸起形成踩踏區。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "boot-jack",
+        "words": {
+          "zh-TW": "脫靴器",
+          "en": "boot-jack",
+          "ja": {
+            "text": "ブーツジャック",
+            "reading": "ブーツジャック"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣精",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓角塑膠瓶身配寬瓶口與握把，瓶身沒有標籤或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "laundry-detergent",
+        "words": {
+          "zh-TW": "洗衣精",
+          "en": "laundry-detergent",
+          "ja": {
+            "text": "洗濯洗剤",
+            "reading": "せんたくせんざい"
+          }
+        }
+      }
+    },
+    {
+      "name": "熨斗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三角尖頭的扁平底座上立著弧形握把，側面有小旋鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "iron",
+        "words": {
+          "zh-TW": "熨斗",
+          "en": "iron",
+          "ja": {
+            "text": "アイロン",
+            "reading": "アイロン"
+          }
+        }
+      }
+    },
+    {
+      "name": "熨衣板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長橢圓布面由交叉金屬腳架支撐，尖端朝向一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "ironing-board",
+        "words": {
+          "zh-TW": "熨衣板",
+          "en": "ironing-board",
+          "ja": {
+            "text": "アイロン台",
+            "reading": "アイロンだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "手持鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形銀色鏡面嵌在短柄上，柄尾有圓孔，外框帶著柔和的金色光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "hand-mirror",
+        "words": {
+          "zh-TW": "手持鏡",
+          "en": "hand-mirror",
+          "ja": {
+            "text": "手鏡",
+            "reading": "てかがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "晚宴包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的黑色扁長方形手拿包，表面有一道金色細邊與簡單扣飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "clutch",
+        "words": {
+          "zh-TW": "晚宴包",
+          "en": "clutch",
+          "ja": {
+            "text": "クラッチバッグ",
+            "reading": "クラッチバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長木柱立在圓形底座上，頂端伸出數根短彎鉤，木色溫暖簡潔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "hat-stand",
+        "words": {
+          "zh-TW": "帽架",
+          "en": "hat-stand",
+          "ja": {
+            "text": "帽子掛け",
+            "reading": "ぼうしかけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圓頂帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色圓頂帽有低矮的半球形帽冠與窄帽簷，帽冠下緣繞著一圈深色帽帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "display",
+        "itemId": "bowler-hat",
+        "words": {
+          "zh-TW": "圓頂帽",
+          "en": "bowler hat",
+          "ja": {
+            "text": "ボーラーハット",
+            "reading": "ボーラーハット"
+          }
+        }
+      }
+    },
+    {
+      "name": "西裝",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一套炭灰色西裝外套與長褲，外套有俐落翻領、胸袋與兩顆扣子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "suit",
+        "words": {
+          "zh-TW": "西裝",
+          "en": "suit",
+          "ja": {
+            "text": "スーツ",
+            "reading": "スーツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一套淡紫色長袖睡衣與長褲，衣襟有白色滾邊，布面散布小星形圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "pajamas",
+        "words": {
+          "zh-TW": "睡衣",
+          "en": "pajamas",
+          "ja": {
+            "text": "パジャマ",
+            "reading": "パジャマ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一件紅白相間的連身泳衣，肩帶寬而平直，腰側有兩道弧形白色拼接。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "swimsuit",
+        "words": {
+          "zh-TW": "泳衣",
+          "en": "swimsuit",
+          "ja": {
+            "text": "水着",
+            "reading": "みずぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一只淺灰色橢圓塑膠籃，側面有整齊長孔，兩端各有一個寬握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "laundry-basket",
+        "words": {
+          "zh-TW": "洗衣籃",
+          "en": "laundry-basket",
+          "ja": {
+            "text": "洗濯かご",
+            "reading": "せんたくかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "皮帶扣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一枚銀色長方形皮帶扣，中間有細金屬針，外框四角圓滑且表面發亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "belt-buckle",
+        "words": {
+          "zh-TW": "皮帶扣",
+          "en": "belt-buckle",
+          "ja": {
+            "text": "ベルトのバックル",
+            "reading": "ベルトのバックル"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣標籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小片白色長方布標籤，兩端平整，表面只有幾個簡單線條圖樣且沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "laundry-tag",
+        "words": {
+          "zh-TW": "洗衣標籤",
+          "en": "laundry-tag",
+          "ja": {
+            "text": "洗濯表示タグ",
+            "reading": "せんたくひょうじタグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣物刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把扁長木柄衣物刷，深色短刷毛整齊排列在橢圓刷面，柄尾收窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "clothes-brush",
+        "words": {
+          "zh-TW": "衣物刷",
+          "en": "clothes-brush",
+          "ja": {
+            "text": "洋服ブラシ",
+            "reading": "ようふくブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "開襟毛衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的淺灰色針織上衣，前襟敞開，袖口與下擺有細密羅紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "cardigan",
+        "words": {
+          "zh-TW": "開襟毛衣",
+          "en": "cardigan",
+          "ja": {
+            "text": "カーディガン",
+            "reading": "カーディガン"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛燙機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色手持蒸氣熨衣器，扁平三角形底板布滿小孔，握把彎曲成環狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "garment-steamer",
+        "words": {
+          "zh-TW": "掛燙機",
+          "en": "garment-steamer",
+          "ja": {
+            "text": "衣類スチーマー",
+            "reading": "いるいスチーマー"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明網布縫成的長方形拉鍊袋，袋身柔軟微鼓，能看見裡面的布料輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "laundry-bag",
+        "words": {
+          "zh-TW": "洗衣袋",
+          "en": "laundry-bag",
+          "ja": {
+            "text": "ランドリーバッグ",
+            "reading": "ランドリーバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "試衣凳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形深紅布面凳子，厚實軟墊搭配四支短木腳，外觀簡潔穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "changing-stool",
+        "words": {
+          "zh-TW": "試衣凳",
+          "en": "changing-stool",
+          "ja": {
+            "text": "試着用スツール",
+            "reading": "しちゃくようスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "穿鞋長凳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的淺木色座凳，平坦木板椅面由兩側方形支腳穩穩托住。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "shoe-bench",
+        "words": {
+          "zh-TW": "穿鞋長凳",
+          "en": "shoe-bench",
+          "ja": {
+            "text": "腰掛けベンチ",
+            "reading": "こしかけベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "裁縫軟尺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色柔軟布尺捲成鬆散圓圈，末端鑲著小金屬片，表面沒有可辨識字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "fabric-measuring-tape",
+        "words": {
+          "zh-TW": "裁縫軟尺",
+          "en": "fabric-measuring-tape",
+          "ja": {
+            "text": "洋裁用メジャー",
+            "reading": "ようさいようメジャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "試衣簾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一片垂落的淡紫色布簾，褶皺柔和，底邊微微離地，側緣有布帶束起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "privacy-curtain",
+        "words": {
+          "zh-TW": "試衣簾",
+          "en": "privacy-curtain",
+          "ja": {
+            "text": "試着室カーテン",
+            "reading": "しちゃくしつカーテン"
+          }
+        }
+      }
+    },
+    {
+      "name": "擦鞋布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "折成方塊的深棕色柔軟布片，邊緣有細密車縫線，表面略帶絨感。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "shoe-polishing-cloth",
+        "words": {
+          "zh-TW": "擦鞋布",
+          "en": "shoe-polishing-cloth",
+          "ja": {
+            "text": "靴磨きクロス",
+            "reading": "くつみがきクロス"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣物套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明長形塑膠衣套，頂端有開口與短掛孔，底部寬鬆垂下並微微起皺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "garment-cover",
+        "words": {
+          "zh-TW": "衣物套",
+          "en": "garment-cover",
+          "ja": {
+            "text": "洋服カバー",
+            "reading": "ようふくカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鏡框",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的直立長方形框，四角略帶裝飾，中央留有明亮平滑的鏡面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "fitting",
+        "itemId": "full-length-mirror-frame",
+        "words": {
+          "zh-TW": "鏡框",
+          "en": "mirror-frame",
+          "ja": {
+            "text": "鏡の額縁",
+            "reading": "かがみのがくぶち"
+          }
+        }
+      }
+    },
+    {
+      "name": "化妝鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形銀色雙片小鏡合起放置，外殼光滑，邊緣有一圈亮面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "handbag-mirror",
+        "words": {
+          "zh-TW": "化妝鏡",
+          "en": "compact-mirror",
+          "ja": {
+            "text": "コンパクトミラー",
+            "reading": "コンパクトミラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "圍巾環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色圓環配一個小小的橢圓穿孔，表面平滑並帶柔和亮光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "scarf-ring",
+        "words": {
+          "zh-TW": "圍巾環",
+          "en": "scarf-ring",
+          "ja": {
+            "text": "スカーフリング",
+            "reading": "スカーフリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋拔架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色直立小架座配圓形底盤，中央插著一支細長彎曲的金屬鞋拔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "shoehorn-stand",
+        "words": {
+          "zh-TW": "鞋拔架",
+          "en": "shoehorn-stand",
+          "ja": {
+            "text": "靴べらスタンド",
+            "reading": "くつべらスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "拆線器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄塑膠工具前端分成兩叉，中間有尖銳彎鉤，旁邊帶著紅色小圓珠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "seam-ripper",
+        "words": {
+          "zh-TW": "拆線器",
+          "en": "seam ripper",
+          "ja": {
+            "text": "リッパー",
+            "reading": "リッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "頂針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的銀色金屬杯狀物，頂部圓潤，外壁布滿細小凹點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "thimble",
+        "words": {
+          "zh-TW": "頂針",
+          "en": "thimble",
+          "ja": {
+            "text": "指ぬき",
+            "reading": "ゆびぬき"
+          }
+        }
+      }
+    },
+    {
+      "name": "布用筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支粗短的紫色筆，兩端各有深色筆蓋，筆身平滑且沒有標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "fabric-marker",
+        "words": {
+          "zh-TW": "布用筆",
+          "en": "fabric marker",
+          "ja": {
+            "text": "布用ペン",
+            "reading": "ぬのようペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "標價槍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "手持式槍形工具，白色外殼配橘色扳機，前端有短短的出標口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "price-gun",
+        "words": {
+          "zh-TW": "標價槍",
+          "en": "price-gun",
+          "ja": {
+            "text": "値付けガン",
+            "reading": "ねづけガン"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據插針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色圓形底座中央豎起一根細長金屬尖針，頂端有小圓頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "receipt-spike",
+        "words": {
+          "zh-TW": "收據插針",
+          "en": "receipt-spike",
+          "ja": {
+            "text": "伝票差し",
+            "reading": "でんぴょうさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物袋架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色金屬立架帶有橫向掛桿，底部是寬扁的十字形支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "shopping-bag-holder",
+        "words": {
+          "zh-TW": "購物袋架",
+          "en": "shopping-bag-holder",
+          "ja": {
+            "text": "買い物袋ホルダー",
+            "reading": "かいものぶくろホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "短夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色皮革長方形短夾對折收合，表面有一道縫線和小型扣片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "folding-wallet",
+        "words": {
+          "zh-TW": "短夾",
+          "en": "folding-wallet",
+          "ja": {
+            "text": "二つ折り財布",
+            "reading": "ふたつおりさいふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型米白色長方吊牌，頂端有圓孔，繫著一段短短的細繩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "garment-tag",
+        "words": {
+          "zh-TW": "吊牌",
+          "en": "garment-tag",
+          "ja": {
+            "text": "下げ札",
+            "reading": "さげふだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "寄物牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平橢圓形木牌，邊緣繞著深色細框，頂端穿有一個小孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "clothing-store",
+        "zone": "checkout",
+        "itemId": "coat-check-token",
+        "words": {
+          "zh-TW": "寄物牌",
+          "en": "coat-check-token",
+          "ja": {
+            "text": "預かり札",
+            "reading": "あずかりふだ"
+          }
+        }
+      }
+    }
+  ]
+}
