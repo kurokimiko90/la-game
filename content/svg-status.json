@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T21:03:31.979+09:00",
+  "syncedAt": "2026-09-25T21:25:10.007+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -782,7 +782,16 @@
         "chocolate-syrup",
         "sprinkle-shaker",
         "straw-wrapper",
-        "floor-squeegee"
+        "floor-squeegee",
+        "oil-can",
+        "paint-bucket",
+        "bollard-light",
+        "wheelie-bin",
+        "cherry",
+        "citrus-squeezer",
+        "ice-tongs",
+        "retractable-screen",
+        "sundae-dish"
       ],
       "failed": [],
       "pending": [],

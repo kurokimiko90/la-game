@@ -329,6 +329,198 @@
       "score": 0.83,
       "take": "en-1790337890751.aac",
       "account": "chatgpt1"
+    },
+    "bollard-light": {
+      "heard": "bollard light",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "wheelie-bin": {
+      "heard": "Wheelie bin.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "parking-sign": {
+      "heard": "Parking sign.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "traffic-barrel": {
+      "heard": "Traffic barrel.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "potted-shrub": {
+      "heard": "Potted shrub",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "oil-can": {
+      "heard": "Oil can",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "paint-bucket": {
+      "heard": "Paint Bucket",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "parking-disc": {
+      "heard": "Parking Disk",
+      "score": 0.91,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "ice-tongs": {
+      "heard": "Ice tongue.",
+      "score": 0.78,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "soda-cup": {
+      "heard": "Soda cup.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "candy-wrapper": {
+      "heard": "Candy wrapper.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "electric-car": {
+      "heard": "Electric car.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "aisle-light": {
+      "heard": "Isle light.",
+      "score": 0.9,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "soft-toy": {
+      "heard": "Soft toy.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "sundae-glass": {
+      "heard": "Sunday glass.",
+      "score": 0.91,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "lollipop": {
+      "heard": "Lollipop.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "chocolate-bar": {
+      "heard": "Chocolate bar.",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "cheese-popcorn": {
+      "heard": "cheese popcorn,",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "sprinkle-shaker": {
+      "heard": "Stir, sprinkle shaker.",
+      "score": 0.78,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "projector-lens": {
+      "heard": "Projector Lens",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "sundae-dish": {
+      "heard": "Sunday Dish",
+      "score": 0.9,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "electric-cable-reel": {
+      "heard": "Electric Cable Reel",
+      "score": 1,
+      "take": "en-1790339118367.aac",
+      "account": "chatgpt3"
+    },
+    "cherry": {
+      "heard": "Cherry.",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "citrus-squeezer": {
+      "heard": "Citrus Squeezer",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "step-stool": {
+      "heard": "Stepstool.",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "cable-cover": {
+      "heard": "Cable Cover",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "seat-back": {
+      "heard": "Seat back.",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "straw-wrapper": {
+      "heard": "Straw wrapper.",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "glow-stick": {
+      "heard": "Glowstick.",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "retractable-screen": {
+      "heard": "Retractable screen.",
+      "score": 1,
+      "take": "en-1790339647152.aac",
+      "account": "chatgpt1"
+    },
+    "coiled-cable": {
+      "heard": "Coiled cable.",
+      "score": 1,
+      "take": "en-1790339757810.aac",
+      "account": "chatgpt1"
+    },
+    "paper-cup-lid": {
+      "heard": "Couplid.",
+      "score": 0.86,
+      "take": "en-1790339757810.aac",
+      "account": "chatgpt1"
     }
   }
 }

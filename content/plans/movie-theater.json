@@ -1268,6 +1268,141 @@
       "loose": false,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "oil-can",
+      "zh": "機油罐",
+      "en": "oil can",
+      "ja": "オイル缶",
+      "reading": "オイルかん",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "矮胖的紅色金屬罐，頂部有短短的尖嘴與小圓蓋，側面帶弧形提把。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "paint-bucket",
+      "zh": "油漆桶",
+      "en": "paint bucket",
+      "ja": "ペンキ缶",
+      "reading": "ペンキかん",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "藍色圓柱形金屬桶，頂端開口露出白色漆面，兩側連著細金屬提把。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bollard-light",
+      "zh": "矮柱燈",
+      "en": "bollard-light",
+      "ja": "ボラードライト",
+      "reading": "ボラードライト",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "短粗的深灰色圓柱燈，頂端罩著乳白色半透明燈罩，底部固定在圓盤底座上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wheelie-bin",
+      "zh": "有輪垃圾桶",
+      "en": "wheelie-bin",
+      "ja": "キャスター付きゴミ箱",
+      "reading": "キャスターつきゴミばこ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深綠色長方形塑膠桶身，上方有掀蓋，底部兩側各有一個黑輪。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "cherry",
+      "zh": "櫻桃",
+      "en": "cherry",
+      "ja": "さくらんぼ",
+      "reading": "さくらんぼ",
+      "category": "食物",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "兩顆圓潤鮮紅的果實並排相連，細長綠梗從頂端交叉伸出，輪廓簡潔清楚。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sundae-glass"
+    },
+    {
+      "id": "citrus-squeezer",
+      "zh": "檸檬榨汁器",
+      "en": "citrus-squeezer",
+      "ja": "レモン絞り器",
+      "reading": "レモンしぼりき",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "亮黃色手持榨汁器由兩個碗狀壓片和鉸鏈把手組成，前端有細小濾孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sugar-bowl"
+    },
+    {
+      "id": "ice-tongs",
+      "zh": "冰夾",
+      "en": "ice-tongs",
+      "ja": "アイストング",
+      "reading": "アイストング",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "ground",
+      "desc": "銀色細長金屬夾呈張開的弧形，兩端各有寬而圓的夾面。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "retractable-screen",
+      "zh": "捲軸式銀幕",
+      "en": "retractable-screen",
+      "ja": "巻き上げ式スクリーン",
+      "reading": "まきあげしきスクリーン",
+      "category": "設施",
+      "size": "large",
+      "zone": "screening-room",
+      "spot": "ground",
+      "desc": "寬大的白色長方形幕面掛在深色橫桿下，兩側邊緣筆直，表面平整無字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sundae-dish",
+      "zh": "聖代盤",
+      "en": "sundae-dish",
+      "ja": "パフェ皿",
+      "reading": "パフェざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "snack-bar",
+      "spot": "ground",
+      "desc": "透明玻璃碗口寬、底部有短柄，碗身帶著一圈圈凸起的弧形紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1865,7 +2000,187 @@
       "id": "tongs",
       "reason": "id 重複",
       "zone": "snack-bar"
+    },
+    {
+      "id": "curb",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "manhole-cover",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "drain-grate",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wheelbarrow",
+      "reason": "中文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bicycle",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "hose",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "bollard",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "ashtray",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "curb",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "drain-grate",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wheel-stop",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "ticket-canopy",
+      "reason": "英文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "wheel-stop",
+      "reason": "id 重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "license-plate-frame",
+      "reason": "和已有的 license plate 太像",
+      "zone": "entrance"
+    },
+    {
+      "id": "windshield-sunshade",
+      "reason": "和已有的 windshield 太像",
+      "zone": "entrance"
+    },
+    {
+      "id": "coat-check-tag",
+      "reason": "中文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "cash-register",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "menu-board",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "sundae-glass",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "ice-cream-scoop",
+      "reason": "中文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "fireplace-poker",
+      "reason": "中文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "menu-board",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "bar-napkin-holder",
+      "reason": "英文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "sugar-dispenser",
+      "reason": "中文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "cash-till",
+      "reason": "英文重複",
+      "zone": "lobby"
+    },
+    {
+      "id": "seat-cushion",
+      "reason": "id 重複",
+      "zone": "screening-room"
+    },
+    {
+      "id": "megaphone",
+      "reason": "id 重複",
+      "zone": "screening-room"
+    },
+    {
+      "id": "wall-sconce",
+      "reason": "中文重複",
+      "zone": "screening-room"
+    },
+    {
+      "id": "3d-glasses",
+      "reason": "id 格式不對",
+      "zone": "screening-room"
+    },
+    {
+      "id": "napkin",
+      "reason": "id 重複",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "sundae-dish",
+      "reason": "和已有的 sundae glass 太像",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "napkin-box",
+      "reason": "中文重複",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "sugar-bowl",
+      "reason": "id 重複",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "menu-board",
+      "reason": "id 重複",
+      "zone": "snack-bar"
     }
   ],
-  "createdAt": "2026-09-25T20:51:15.677+09:00"
+  "createdAt": "2026-09-25T20:51:15.677+09:00",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 9,
+    "at": "2026-09-25T21:22:49.998+09:00"
+  }
 }

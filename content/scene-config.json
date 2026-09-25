@@ -829,7 +829,7 @@
         "sprinkle-shaker": "surface-snack-bar"
       },
       "clusters": [["ticket-barrier", "ticket-validator"], ["film-camera", "film-canister"]],
-      "loose": ["film-reel", "film-strip", "clapperboard", "car-key", "parking-disc", "license-plate", "car-battery", "movie-ticket", "parking-ticket", "popcorn-box", "armrest", "ticket-roll", "soda-can", "soda-cup", "candy-wrapper", "rubber-sole", "film-canister", "ticket-stub", "soda-bottle", "ice-cream-cone", "seat-cushion", "laser-pointer", "coiled-cable", "handheld-fan", "soft-toy", "paper-cup-lid", "glow-stick", "waffle-cone", "candy-cane", "lollipop", "chocolate-bar", "gummy-bear", "sundae-spoon", "salt-packet", "ketchup-packet", "stirrer", "scoop", "straw-wrapper"],
+      "loose": ["film-reel", "film-strip", "clapperboard", "car-key", "parking-disc", "license-plate", "car-battery", "movie-ticket", "parking-ticket", "popcorn-box", "armrest", "ticket-roll", "soda-can", "soda-cup", "candy-wrapper", "rubber-sole", "film-canister", "ticket-stub", "soda-bottle", "ice-cream-cone", "seat-cushion", "laser-pointer", "coiled-cable", "handheld-fan", "soft-toy", "paper-cup-lid", "glow-stick", "waffle-cone", "candy-cane", "lollipop", "chocolate-bar", "gummy-bear", "sundae-spoon", "salt-packet", "ketchup-packet", "stirrer", "scoop", "straw-wrapper", "oil-can", "paint-bucket", "cherry", "citrus-squeezer", "ice-tongs", "sundae-dish"],
       "noFlip": [],
       "motion": {"electric-car": "wobble", "potted-shrub": "sway", "popcorn-machine": "wobble"},
       "arrange": "auto",

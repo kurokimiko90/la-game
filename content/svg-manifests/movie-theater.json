@@ -1730,6 +1730,195 @@
           }
         }
       }
+    },
+    {
+      "name": "機油罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的紅色金屬罐，頂部有短短的尖嘴與小圓蓋，側面帶弧形提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "entrance",
+        "itemId": "oil-can",
+        "words": {
+          "zh-TW": "機油罐",
+          "en": "oil can",
+          "ja": {
+            "text": "オイル缶",
+            "reading": "オイルかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "油漆桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色圓柱形金屬桶，頂端開口露出白色漆面，兩側連著細金屬提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "entrance",
+        "itemId": "paint-bucket",
+        "words": {
+          "zh-TW": "油漆桶",
+          "en": "paint bucket",
+          "ja": {
+            "text": "ペンキ缶",
+            "reading": "ペンキかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "矮柱燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "短粗的深灰色圓柱燈，頂端罩著乳白色半透明燈罩，底部固定在圓盤底座上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "entrance",
+        "itemId": "bollard-light",
+        "words": {
+          "zh-TW": "矮柱燈",
+          "en": "bollard-light",
+          "ja": {
+            "text": "ボラードライト",
+            "reading": "ボラードライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "有輪垃圾桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色長方形塑膠桶身，上方有掀蓋，底部兩側各有一個黑輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "entrance",
+        "itemId": "wheelie-bin",
+        "words": {
+          "zh-TW": "有輪垃圾桶",
+          "en": "wheelie-bin",
+          "ja": {
+            "text": "キャスター付きゴミ箱",
+            "reading": "キャスターつきゴミばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "櫻桃",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩顆圓潤鮮紅的果實並排相連，細長綠梗從頂端交叉伸出，輪廓簡潔清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "lobby",
+        "itemId": "cherry",
+        "words": {
+          "zh-TW": "櫻桃",
+          "en": "cherry",
+          "ja": {
+            "text": "さくらんぼ",
+            "reading": "さくらんぼ"
+          }
+        }
+      }
+    },
+    {
+      "name": "檸檬榨汁器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮黃色手持榨汁器由兩個碗狀壓片和鉸鏈把手組成，前端有細小濾孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "lobby",
+        "itemId": "citrus-squeezer",
+        "words": {
+          "zh-TW": "檸檬榨汁器",
+          "en": "citrus-squeezer",
+          "ja": {
+            "text": "レモン絞り器",
+            "reading": "レモンしぼりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色細長金屬夾呈張開的弧形，兩端各有寬而圓的夾面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "lobby",
+        "itemId": "ice-tongs",
+        "words": {
+          "zh-TW": "冰夾",
+          "en": "ice-tongs",
+          "ja": {
+            "text": "アイストング",
+            "reading": "アイストング"
+          }
+        }
+      }
+    },
+    {
+      "name": "捲軸式銀幕",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的白色長方形幕面掛在深色橫桿下，兩側邊緣筆直，表面平整無字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "screening-room",
+        "itemId": "retractable-screen",
+        "words": {
+          "zh-TW": "捲軸式銀幕",
+          "en": "retractable-screen",
+          "ja": {
+            "text": "巻き上げ式スクリーン",
+            "reading": "まきあげしきスクリーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "聖代盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃碗口寬、底部有短柄，碗身帶著一圈圈凸起的弧形紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "movie-theater",
+        "zone": "snack-bar",
+        "itemId": "sundae-dish",
+        "words": {
+          "zh-TW": "聖代盤",
+          "en": "sundae-dish",
+          "ja": {
+            "text": "パフェ皿",
+            "reading": "パフェざら"
+          }
+        }
+      }
     }
   ]
 }
