@@ -191,7 +191,8 @@ test('縮到看整個小鎮後，地圖還是拉得動；游標是手（拖曳�
   expect(await cursor()).toBe('grab');
   await page.mouse.move(x, y);
   await page.mouse.down();
-  await page.mouse.move(x - 150, y, { steps: 8 });
+  // 斜著拉：地圖剛好塞滿某一軸時，那一軸本來就不能動，只看另一軸
+  await page.mouse.move(x - 150, y - 150, { steps: 8 });
   expect(await cursor()).toBe('grabbing');
   await page.mouse.up();
   expect(await cursor()).toBe('grab');
