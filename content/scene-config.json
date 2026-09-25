@@ -761,7 +761,7 @@
         "receipt-spike": "surface-checkout"
       },
       "clusters": [["clothing-rack", "skirt", "trousers", "blouse"], ["shoe-brush", "shoe-polish"], ["needle", "thread-spool"], ["fabric-roll", "measuring-tape"], ["iron", "ironing-board"]],
-      "loose": ["skirt", "trousers", "blouse", "shoelace", "shoe-brush", "shoe-polish", "clothing-bag", "button", "needle", "thread-spool", "measuring-tape", "shoe-tree", "sewing-scissors", "fabric-swatch", "clothes-peg", "purse", "earrings", "brooch", "bow-tie", "boot-jack", "bowler-hat", "swimsuit", "belt-buckle", "laundry-tag", "clothes-brush", "cardigan", "laundry-bag", "fabric-measuring-tape", "shoe-polishing-cloth", "scarf-ring", "seam-ripper", "thimble", "fabric-marker", "folding-wallet", "garment-tag", "coat-check-token"],
+      "loose": ["skirt", "trousers", "blouse", "shoelace", "shoe-brush", "shoe-polish", "clothing-bag", "button", "needle", "thread-spool", "measuring-tape", "shoe-tree", "sewing-scissors", "fabric-swatch", "clothes-peg", "purse", "earrings", "brooch", "bow-tie", "boot-jack", "bowler-hat", "swimsuit", "belt-buckle", "laundry-tag", "clothes-brush", "cardigan", "laundry-bag", "fabric-measuring-tape", "shoe-polishing-cloth", "scarf-ring", "seam-ripper", "thimble", "fabric-marker", "folding-wallet", "garment-tag", "coat-check-token", "folded-shirt", "shoelast", "lint-roller", "laundry-powder-box", "laundry-detergent-scoop", "cash-register-key", "coin-roll", "price-labeler", "receipt-folder", "size-ring", "scarf-pin", "shoe-measuring-device"],
       "noFlip": [],
       "motion": {"skirt": "sway", "blouse": "sway", "clothesline": "sway", "vest": "sway", "shorts": "sway", "garment-steamer": "wobble", "privacy-curtain": "sway"},
       "arrange": "auto",

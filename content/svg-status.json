@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T20:28:45.575+09:00",
+  "syncedAt": "2026-09-25T20:35:54.221+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -382,7 +382,25 @@
         "shopping-bag-holder",
         "folding-wallet",
         "garment-tag",
-        "coat-check-token"
+        "coat-check-token",
+        "dress-form",
+        "garment-rack",
+        "folded-shirt",
+        "jewelry-tray",
+        "shoelast",
+        "laundry-folding-board",
+        "lint-roller",
+        "laundry-powder-box",
+        "laundry-detergent-scoop",
+        "cash-register-key",
+        "coin-roll",
+        "price-labeler",
+        "cash-register-mat",
+        "receipt-folder",
+        "size-ring",
+        "cash-tray",
+        "scarf-pin",
+        "shoe-measuring-device"
       ],
       "failed": [],
       "pending": [],
