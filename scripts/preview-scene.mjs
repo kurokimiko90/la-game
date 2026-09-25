@@ -15,7 +15,7 @@ import { chromium } from 'playwright';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'docs', 'scene-preview');
-const BASE = process.env.PREVIEW_URL || 'http://localhost:3000';
+const BASE = process.env.PREVIEW_URL || 'http://localhost:3220';
 const PAD = 40;
 
 function districtBounds(scene) {

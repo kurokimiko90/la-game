@@ -159,7 +159,7 @@
 - 改動都在工作目錄：路網、邊緣、切開的樓、情境擺放、門、遷移後的 content、文件、預覽圖。
 - **自動擴展暫停中**：`sleep` 程序 PID 86104 佔著 `.auto-expand/lock`，最長到 2026-09-24 02:00 左右（6 小時）。恢復前要先 commit，否則排程的 commit 會把 `content/` 的改動混進它的自動訊息。
 - 重排前的位置檔備份在 session scratchpad 的 `layouts-before-staging/`（session 結束後可能消失）。
-- 預覽 server：`npx next dev -p 3330`（3310 是 `la-game-staging`，不是這個 repo）。
+- 預覽 server：`npm run dev`（固定 3220，和 `npm run play` 同一個端口，一次只開一個）。
 
 **下一步（依優先順序）**
 1. **commit + 恢復排程**：commit 這批改動 → `kill 86104`。
