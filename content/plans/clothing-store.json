@@ -34,7 +34,8 @@
   "slot": {
     "x": 9520,
     "y": 0,
-    "zone": "commercial"
+    "zone": "commercial",
+    "span": 2
   },
   "colorIndex": 10,
   "icon": "full-length-mirror",

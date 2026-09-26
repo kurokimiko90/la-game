@@ -34,7 +34,8 @@
   "slot": {
     "x": 9520,
     "y": 1540,
-    "zone": "commercial"
+    "zone": "commercial",
+    "span": 2
   },
   "colorIndex": 11,
   "icon": "parking-barrier",

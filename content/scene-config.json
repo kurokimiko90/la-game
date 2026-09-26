@@ -1,5 +1,5 @@
 {
-  "world": {"width": 13260, "height": 6960},
+  "world": {"width": 21780, "height": 6960},
   "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank"],
   "scenes": {
     "park": {
@@ -729,18 +729,18 @@
     "clothing-store": {
       "name": "服飾店",
       "icon": "full-length-mirror",
-      "zones": {"entrance": [9520, 0, 10820, 650], "display": [10820, 0, 12120, 650], "fitting": [10820, 650, 12120, 1300], "checkout": [9520, 650, 10820, 1300]},
+      "zones": {"entrance": [9520, 0, 12120, 650], "display": [12360, 0, 14960, 650], "fitting": [12360, 650, 14960, 1300], "checkout": [9520, 650, 12120, 1300]},
       "bands": {
         "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 70, "bottom": 630}, "display": {"top": 240, "bottom": 630, "gaps": [[190, 505]]}, "fitting": {"top": 890, "bottom": 1280}, "checkout": {"top": 890, "bottom": 1280, "gaps": [[840, 1060]]}}},
         "sky-entrance": {"top": 150, "bottom": 300, "zones": ["entrance"], "layer": 3, "float": 150},
         "wall-display": {"levels": [140], "zones": ["display"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-display": {"levels": [178], "zones": ["display"], "inset": 50},
-        "surface-display": {"levels": [310, 405], "zones": ["display"], "x0": 10970, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 475},
+        "surface-display": {"levels": [310, 405], "zones": ["display"], "x0": 12510, "x1": 14810, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 475},
         "wall-fitting": {"levels": [790], "zones": ["fitting"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-fitting": {"levels": [828], "zones": ["fitting"], "inset": 50},
         "wall-checkout": {"levels": [790], "zones": ["checkout"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-checkout": {"levels": [828], "zones": ["checkout"], "inset": 50},
-        "surface-checkout": {"levels": [960], "zones": ["checkout"], "x0": 9670, "x1": 10670, "inset": 0, "scale": [0.8, 0.8], "look": "checkout", "base": 1030}
+        "surface-checkout": {"levels": [960], "zones": ["checkout"], "x0": 9670, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "checkout", "base": 1030}
       },
       "place": {
         "purse": "surface-display",
@@ -765,7 +765,7 @@
       "noFlip": [],
       "motion": {"skirt": "sway", "blouse": "sway", "clothesline": "sway", "vest": "sway", "shorts": "sway", "garment-steamer": "wobble", "privacy-curtain": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#ce93d8", "x0": 9520, "y0": 0, "x1": 12120, "y1": 1300, "zones": [{"id": "entrance", "x0": 9520, "y0": 0, "x1": 10820, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "display", "x0": 10820, "y0": 0, "x1": 12120, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "fitting", "x0": 10820, "y0": 650, "x1": 12120, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "checkout", "x0": 9520, "y0": 650, "x1": 10820, "y1": 1300, "indoor": true, "floor": "wood", "wallBase": 830}]}
+      "terrain": {"color": "#ce93d8", "x0": 9520, "y0": 0, "x1": 14960, "y1": 1300, "zones": [{"id": "entrance", "x0": 9520, "y0": 0, "x1": 12120, "y1": 650, "indoor": false, "floor": "paving"}, {"id": "display", "x0": 12360, "y0": 0, "x1": 14960, "y1": 650, "indoor": true, "floor": "tile", "wallBase": 180}, {"id": "fitting", "x0": 12360, "y0": 650, "x1": 14960, "y1": 1300, "indoor": true, "floor": "carpet", "wallBase": 830}, {"id": "checkout", "x0": 9520, "y0": 650, "x1": 12120, "y1": 1300, "indoor": true, "floor": "wood", "wallBase": 830}]}
     },
     "movie-theater": {
       "name": "電影院",

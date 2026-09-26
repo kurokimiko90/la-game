@@ -419,6 +419,102 @@
       "score": 1,
       "take": "en-1790295219436.aac",
       "account": "chatgpt1"
+    },
+    "garment-rack": {
+      "heard": "Garment display table.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "folded-shirt": {
+      "heard": "Folded shirt.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "dress-form": {
+      "heard": "Dress form.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "jewelry-tray": {
+      "heard": "Jewelry Tray",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-folding-board": {
+      "heard": "Folding board.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "lint-roller": {
+      "heard": "Lint roller.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "cash-register-key": {
+      "heard": "Cash register key.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-folder": {
+      "heard": "Receipt folder.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "size-ring": {
+      "heard": "Size ring.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "shoelast": {
+      "heard": "Shoe Last.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-powder-box": {
+      "heard": "Laundry powder box.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-detergent-scoop": {
+      "heard": "Detergent scoop.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "price-labeler": {
+      "heard": "Price Labeler.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-measuring-device": {
+      "heard": "Shoe measuring device.",
+      "score": 1,
+      "take": "en-1790390948589.aac",
+      "account": "chatgpt1"
+    },
+    "coin-roll": {
+      "heard": "Coin roll.",
+      "score": 1,
+      "take": "en-1790391029649.aac",
+      "account": "chatgpt1"
+    },
+    "cash-register-mat": {
+      "heard": "Cash register map.",
+      "score": 0.93,
+      "take": "en-1790391029649.aac",
+      "account": "chatgpt1"
     }
   }
 }

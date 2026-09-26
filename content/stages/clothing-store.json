@@ -1,0 +1,381 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "店門與遮棚",
+          "x": [
+            0.02,
+            0.23
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "facade-bracket"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "門口服飾展示",
+          "x": [
+            0.26,
+            0.49
+          ],
+          "main": "standee",
+          "beside": [
+            "full-length-mirror"
+          ],
+          "front": [
+            "clothing-bag"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "當季衣架",
+          "x": [
+            0.53,
+            0.75
+          ],
+          "main": "clothing-rack",
+          "on": [
+            "skirt",
+            "trousers",
+            "blouse"
+          ],
+          "beside": [
+            "folding-screen"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "鞋履保養台",
+          "x": [
+            0.78,
+            0.98
+          ],
+          "fixture": "stand",
+          "on": [
+            "shoelace",
+            "shoe-brush",
+            "shoe-polish",
+            "shoe-tree"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "裁縫工作桌",
+          "x": [
+            0.18,
+            0.48
+          ],
+          "fixture": "desk",
+          "on": [
+            "button",
+            "needle",
+            "thread-spool",
+            "sewing-scissors"
+          ],
+          "beside": [
+            "sewing-machine"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "布料與量裁",
+          "x": [
+            0.51,
+            0.75
+          ],
+          "fixture": "stand",
+          "main": "dress-form",
+          "on": [
+            "fabric-roll",
+            "fabric-swatch",
+            "measuring-tape"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "店後晾衣區",
+          "x": [
+            0.78,
+            0.98
+          ],
+          "main": "clothesline",
+          "on": [
+            "clothes-peg"
+          ],
+          "beside": [
+            "clothes-hamper"
+          ]
+        }
+      ]
+    },
+    "display": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "首飾玻璃展示",
+          "x": [
+            0.02,
+            0.29
+          ],
+          "fixture": "display",
+          "on": [
+            "purse",
+            "earrings",
+            "brooch",
+            "crown"
+          ],
+          "wall": [
+            "necklace-box"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "晚宴配件陳列",
+          "x": [
+            0.32,
+            0.56
+          ],
+          "fixture": "stand",
+          "on": [
+            "bow-tie",
+            "clutch",
+            "jewelry-tray"
+          ],
+          "beside": [
+            "hand-mirror"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "男女休閒服展示",
+          "x": [
+            0.59,
+            0.83
+          ],
+          "main": "garment-rack",
+          "on": [
+            "vest",
+            "shorts",
+            "folded-shirt"
+          ],
+          "beside": [
+            "hat-stand"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "帽飾展示",
+          "x": [
+            0.86,
+            0.99
+          ],
+          "fixture": "display",
+          "on": [
+            "bowler-hat",
+            "high-heels"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "試穿整理角",
+          "x": [
+            0.3,
+            0.55
+          ],
+          "fixture": "desk",
+          "on": [
+            "laundry-detergent",
+            "iron"
+          ],
+          "beside": [
+            "ironing-board",
+            "boot-jack"
+          ]
+        }
+      ]
+    },
+    "fitting": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "試衣簾與鏡前穿搭",
+          "x": [
+            0.02,
+            0.26
+          ],
+          "main": "privacy-curtain",
+          "on": [
+            "suit",
+            "cardigan"
+          ],
+          "beside": [
+            "full-length-mirror-frame"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "試衣座與鞋履整理",
+          "x": [
+            0.29,
+            0.52
+          ],
+          "main": "shoe-bench",
+          "on": [
+            "belt-buckle",
+            "shoelast"
+          ],
+          "beside": [
+            "changing-stool"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "衣物護理台",
+          "x": [
+            0.55,
+            0.78
+          ],
+          "fixture": "desk",
+          "on": [
+            "clothes-brush",
+            "garment-steamer",
+            "lint-roller",
+            "shoe-polishing-cloth"
+          ],
+          "beside": [
+            "garment-cover"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "待洗衣物分類",
+          "x": [
+            0.81,
+            0.99
+          ],
+          "main": "laundry-basket",
+          "on": [
+            "pajamas",
+            "swimsuit"
+          ],
+          "beside": [
+            "laundry-bag"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "量身與衣物摺整",
+          "x": [
+            0.28,
+            0.53
+          ],
+          "fixture": "desk",
+          "on": [
+            "fabric-measuring-tape",
+            "laundry-folding-board",
+            "laundry-tag"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "洗衣用品收納",
+          "x": [
+            0.56,
+            0.79
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "laundry-powder-box",
+            "laundry-detergent-scoop"
+          ]
+        }
+      ]
+    },
+    "checkout": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "收銀結帳櫃台",
+          "x": [
+            0.2,
+            0.61
+          ],
+          "fixture": "counter",
+          "on": [
+            "cash-register-mat",
+            "cash-tray",
+            "cash-register-key",
+            "coin-roll"
+          ],
+          "beside": [
+            "receipt-spike"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "購物袋與包裝",
+          "x": [
+            0.64,
+            0.94
+          ],
+          "main": "shopping-bag-holder",
+          "on": [
+            "folding-wallet",
+            "garment-tag",
+            "coat-check-token"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "配件與尺碼整理台",
+          "x": [
+            0.02,
+            0.18
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "handbag-mirror",
+            "scarf-ring",
+            "size-ring",
+            "scarf-pin"
+          ],
+          "beside": [
+            "shoehorn-stand"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "標價與縫補工具台",
+          "x": [
+            0.2,
+            0.45
+          ],
+          "fixture": "desk",
+          "on": [
+            "price-gun",
+            "price-labeler",
+            "seam-ripper",
+            "thimble"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "收據整理",
+          "x": [
+            0.64,
+            0.84
+          ],
+          "fixture": "desk",
+          "on": [
+            "receipt-folder",
+            "fabric-marker"
+          ]
+        }
+      ]
+    }
+  }
+}
