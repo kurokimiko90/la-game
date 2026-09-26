@@ -1,0 +1,604 @@
+{
+  "en": {
+    "window-box": {
+      "heard": "window box.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "wall-clock-hair-salon": {
+      "heard": "Wall clock.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "coat-hanger-hair-salon": {
+      "heard": "Coathanger.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "wall-shelf-hair-salon": {
+      "heard": "Wall Shelf.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "shampoo-bottle": {
+      "heard": "Shampoo bottle.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hairdryer": {
+      "heard": "Hairdryer.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "spray-bottle": {
+      "heard": "Spray bottle.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-roller": {
+      "heard": "Hair Roller.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "cape": {
+      "heard": "Salon cape?",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "salon-stool": {
+      "heard": "Salon stool.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-color-brush": {
+      "heard": "hair color brush,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hand-mirror-hair-salon": {
+      "heard": "Hand mirror.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "key-cabinet-hair-salon": {
+      "heard": "Key cabinet.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "sticky-note-hair-salon": {
+      "heard": "Sticky note.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "letter-opener-hair-salon": {
+      "heard": "Letter opener.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "ceiling-fan-hair-salon": {
+      "heard": "ceiling fan.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "paper-towel-hair-salon": {
+      "heard": "paper towel,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "shoe-rack-hair-salon": {
+      "heard": "Shoe Rack",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "umbrella-stand-hair-salon": {
+      "heard": "fan umbrella stand",
+      "score": 0.81,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "air-purifier-hair-salon": {
+      "heard": "air purified.",
+      "score": 0.91,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-product-jar": {
+      "heard": "Hair Wax Jar.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-oil-bottle": {
+      "heard": "hair oil bottle,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "bicycle-seat": {
+      "heard": "Bicycle seat.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "bicycle-basket": {
+      "heard": "Bicycle basketball.",
+      "score": 0.76,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "handlebar-grip": {
+      "heard": "Get Handlebar Grip.",
+      "score": 0.81,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hairpin": {
+      "heard": "hairpin.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-claw": {
+      "heard": "Claw clip.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-ribbon": {
+      "heard": "Hair ribbon.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-wig": {
+      "heard": "Wig.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "kickstand": {
+      "heard": "Kickstand.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "coat-rack-hair-salon": {
+      "heard": "Coat Rack.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "cash-register-hair-salon": {
+      "heard": "Cash register.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "recycling-bin-hair-salon": {
+      "heard": "Recycling Bin",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "plant-pot-hair-salon": {
+      "heard": "Plant pot.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "floor-lamp-hair-salon": {
+      "heard": "Floor lamp.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "wastebasket-hair-salon": {
+      "heard": "Wastebasket.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "tissue-box-hair-salon": {
+      "heard": "Tissue box.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "wall-mounted-magnifier": {
+      "heard": "Magnifying Mirror.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "wall-dispenser": {
+      "heard": "wall dispenser",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-wash-basin": {
+      "heard": "Salon Shampoo Basin",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "shampoo-chair": {
+      "heard": "Shampoo chair.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "water-heater": {
+      "heard": "Water Heater",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "stylist-spray": {
+      "heard": "styling speed.",
+      "score": 0.75,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-brush": {
+      "heard": "Ray round brush.",
+      "score": 0.77,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "paddle-brush": {
+      "heard": "Paddle Brush.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "tail-comb": {
+      "heard": "Tail Comb.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-extension": {
+      "heard": "hair extension,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-swatch-ring": {
+      "heard": "Hair Color Swatch Ring",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-color-chart": {
+      "heard": "hair color chart,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-extension-weft": {
+      "heard": "Hair weft.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "shampoo-brush": {
+      "heard": "Shampoo Brush",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "shower-head": {
+      "heard": "Showerhead",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "water-tap": {
+      "heard": "Water tap.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "thermostatic-valve": {
+      "heard": "Temperature valve.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hooded-dryer": {
+      "heard": "Hooded Hair Dryer",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "waterproof-stool": {
+      "heard": "Waterproof stuff.",
+      "score": 0.8,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "rubber-sandals": {
+      "heard": "Rubber sandals",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "salon-trolley": {
+      "heard": "Salon Trolley.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "salon-mirror": {
+      "heard": "Salon Mirror.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "towel-warmer": {
+      "heard": "towel warmer,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-pin-curl": {
+      "heard": "Hair Fork.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-net": {
+      "heard": "Hairnet.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-dye-tube": {
+      "heard": "Hair Color Tube.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "developer-bottle": {
+      "heard": "Developer Bottle.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-dye-foil": {
+      "heard": "hair foil sheet,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "highlighting-cap": {
+      "heard": "highlighting cap,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "plastic-basin": {
+      "heard": "Plastic Basin.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "water-scoop": {
+      "heard": "Water Scoop.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "rubber-gloves": {
+      "heard": "Rubber gloves.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "laundry-detergent-bottle": {
+      "heard": "laundry detergent bottle,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-washing-brush": {
+      "heard": "hair washing brush,",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-drying-towel": {
+      "heard": "Hair-drying towel.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-vacuum": {
+      "heard": "Hair Vacuum.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "laundry-tongs": {
+      "heard": "Laundry Tongues.",
+      "score": 0.86,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "waterproof-apron": {
+      "heard": "Waterproof apron.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-cutting-cape-stand": {
+      "heard": "Cape stand.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "rubber-squeegee": {
+      "heard": "Rubber squeegee.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "wet-floor-sign": {
+      "heard": "Wet floor sign.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "shampoo-cape": {
+      "heard": "Shampoo cape.",
+      "score": 1,
+      "take": "en-1790399114099.aac",
+      "account": "chatgpt4"
+    },
+    "hair-salon-chair": {
+      "heard": "Salon chair.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "privacy-screen": {
+      "heard": "Privacy screen.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "hair-color-bowl": {
+      "heard": "Hair Color Bowl,",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "floor-fan-hair-salon": {
+      "heard": "Floor fan.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "hand-sanitizer-dispenser-hair-salon": {
+      "heard": "Hand sanitizer dispenser.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "haircap": {
+      "heard": "Hair cap.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-brush-hair-salon": {
+      "heard": "Shoe brush.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "folding-umbrella": {
+      "heard": "Folding umbrella.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "refrigerator-hair-salon": {
+      "heard": "Refrigerator.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "appointment-book": {
+      "heard": "Appointment book.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "card-terminal-hair-salon": {
+      "heard": "Card terminal.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "hair-trap": {
+      "heard": "Dream Haircatcher.",
+      "score": 0.81,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "shampoo-pump": {
+      "heard": "Shampoo pump bottle",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "conditioner-bottle": {
+      "heard": "Conditioner bottle.",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "curling-iron": {
+      "heard": "Curling iron?",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "hair-clips-sectioning": {
+      "heard": "Sectioning Clip",
+      "score": 1,
+      "take": "en-1790399526285.aac",
+      "account": "chatgpt1"
+    },
+    "desk-phone-hair-salon": {
+      "heard": "Desk phone.",
+      "score": 1,
+      "take": "en-1790399636968.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-basket-hair-salon": {
+      "heard": "Laundry Basket.",
+      "score": 1,
+      "take": "en-1790399636968.aac",
+      "account": "chatgpt1"
+    },
+    "hair-steamer": {
+      "heard": "Hair steamer.",
+      "score": 1,
+      "take": "en-1790399636968.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-machine": {
+      "heard": "Washing machine.",
+      "score": 1,
+      "take": "en-1790399636968.aac",
+      "account": "chatgpt1"
+    },
+    "hair-straightener": {
+      "heard": "Hair straightener.",
+      "score": 1,
+      "take": "en-1790399636968.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

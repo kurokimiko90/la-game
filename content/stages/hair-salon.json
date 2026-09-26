@@ -1,0 +1,392 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "入口門面與窗台花箱",
+          "x": [
+            0.02,
+            0.24
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "window-box"
+          ],
+          "beside": [
+            "privacy-screen"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "腳踏車停放處",
+          "x": [
+            0.72,
+            0.98
+          ],
+          "main": "bicycle-seat",
+          "on": [
+            "bicycle-basket",
+            "handlebar-grip"
+          ],
+          "beside": [
+            "kickstand"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "門邊雨具與清潔用品",
+          "x": [
+            0.03,
+            0.22
+          ],
+          "front": [
+            "folding-umbrella",
+            "shoe-brush-hair-salon"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "造型展示桌",
+          "x": [
+            0.26,
+            0.52
+          ],
+          "fixture": "display",
+          "on": [
+            "hairpin",
+            "hair-claw",
+            "hair-ribbon",
+            "hair-wig"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "美髮工具與椅具陳列",
+          "x": [
+            0.28,
+            0.96
+          ],
+          "fixture": "stand",
+          "on": [
+            "hairdryer",
+            "spray-bottle",
+            "hair-roller",
+            "cape"
+          ],
+          "beside": [
+            "hair-salon-chair",
+            "salon-stool"
+          ],
+          "front": [
+            "hand-mirror-hair-salon",
+            "hair-color-bowl",
+            "hair-color-brush"
+          ]
+        }
+      ]
+    },
+    "reception": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "接待收銀櫃台",
+          "x": [
+            0.28,
+            0.72
+          ],
+          "fixture": "counter",
+          "on": [
+            "appointment-book",
+            "cash-register-hair-salon",
+            "card-terminal-hair-salon",
+            "desk-phone-hair-salon"
+          ],
+          "wall": [
+            "wall-clock-hair-salon"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "櫃台備品與留言",
+          "x": [
+            0.25,
+            0.48
+          ],
+          "fixture": "shelf",
+          "on": [
+            "sticky-note-hair-salon",
+            "letter-opener-hair-salon",
+            "paper-towel-hair-salon"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "入口鞋物收納",
+          "x": [
+            0.02,
+            0.22
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "key-cabinet-hair-salon"
+          ],
+          "beside": [
+            "shoe-rack-hair-salon",
+            "umbrella-stand-hair-salon"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "客人掛衣與等候角落",
+          "x": [
+            0.03,
+            0.24
+          ],
+          "fixture": "rug",
+          "main": "coat-rack-hair-salon",
+          "beside": [
+            "floor-lamp-hair-salon",
+            "plant-pot-hair-salon"
+          ],
+          "front": [
+            "tissue-box-hair-salon"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "室內通風設備",
+          "x": [
+            0.76,
+            0.98
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "ceiling-fan-hair-salon"
+          ],
+          "beside": [
+            "floor-fan-hair-salon",
+            "air-purifier-hair-salon"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "清潔與洗衣用品角",
+          "x": [
+            0.76,
+            0.98
+          ],
+          "main": "refrigerator-hair-salon",
+          "beside": [
+            "recycling-bin-hair-salon",
+            "laundry-basket-hair-salon"
+          ],
+          "front": [
+            "wastebasket-hair-salon"
+          ]
+        }
+      ]
+    },
+    "styling-area": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "鏡前造型工作台",
+          "x": [
+            0.04,
+            0.32
+          ],
+          "fixture": "desk",
+          "on": [
+            "stylist-spray",
+            "hair-brush",
+            "paddle-brush",
+            "tail-comb"
+          ],
+          "wall": [
+            "wall-mounted-magnifier"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "熱工具與分區造型",
+          "x": [
+            0.04,
+            0.3
+          ],
+          "fixture": "stand",
+          "on": [
+            "hair-straightener",
+            "curling-iron",
+            "hair-clips-sectioning",
+            "hair-pin-curl"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "接髮與髮色諮詢台",
+          "x": [
+            0.36,
+            0.64
+          ],
+          "fixture": "display",
+          "on": [
+            "hair-swatch-ring",
+            "hair-color-chart",
+            "hair-extension",
+            "hair-extension-weft"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "染髮配料工作台",
+          "x": [
+            0.36,
+            0.64
+          ],
+          "fixture": "desk",
+          "on": [
+            "hair-dye-tube",
+            "developer-bottle",
+            "hair-dye-foil",
+            "highlighting-cap"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "洗髮設備與排水",
+          "x": [
+            0.68,
+            0.96
+          ],
+          "main": "hair-wash-basin",
+          "on": [
+            "hair-trap"
+          ],
+          "beside": [
+            "hair-steamer",
+            "hooded-dryer"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "造型推車與披肩收納",
+          "x": [
+            0.68,
+            0.96
+          ],
+          "main": "salon-trolley",
+          "on": [
+            "hair-net"
+          ],
+          "beside": [
+            "hair-vacuum",
+            "hair-cutting-cape-stand"
+          ]
+        }
+      ]
+    },
+    "wash-area": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "洗髮椅與洗髮設備",
+          "x": [
+            0.04,
+            0.34
+          ],
+          "main": "shampoo-chair",
+          "on": [
+            "shower-head",
+            "water-tap",
+            "thermostatic-valve"
+          ],
+          "beside": [
+            "waterproof-stool",
+            "rubber-sandals"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "洗護用品壁掛區",
+          "x": [
+            0.37,
+            0.62
+          ],
+          "fixture": "shelf",
+          "on": [
+            "shampoo-pump",
+            "conditioner-bottle",
+            "shampoo-brush"
+          ],
+          "wall": [
+            "wall-dispenser"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "毛巾加熱與擦髮用品",
+          "x": [
+            0.04,
+            0.3
+          ],
+          "main": "towel-warmer",
+          "on": [
+            "hair-drying-towel"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "熱水與洗衣設備",
+          "x": [
+            0.67,
+            0.96
+          ],
+          "main": "water-heater",
+          "beside": [
+            "laundry-machine"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "洗衣與清潔用品角",
+          "x": [
+            0.36,
+            0.62
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "laundry-detergent-bottle",
+            "rubber-gloves",
+            "water-scoop",
+            "plastic-basin"
+          ],
+          "beside": [
+            "laundry-tongs",
+            "waterproof-apron"
+          ],
+          "front": [
+            "rubber-squeegee",
+            "wet-floor-sign"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "洗髮區鏡面與沖洗用品",
+          "x": [
+            0.67,
+            0.96
+          ],
+          "main": "salon-mirror",
+          "on": [
+            "hair-washing-brush"
+          ],
+          "front": [
+            "shampoo-cape"
+          ]
+        }
+      ]
+    }
+  }
+}
