@@ -1,0 +1,381 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "救生員瞭望與救援裝備",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "main": "lifeguard-chair",
+          "beside": [
+            "surfboard",
+            "palm-tree"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "沖洗區",
+          "x": [
+            0.22,
+            0.38
+          ],
+          "main": "shower",
+          "beside": [
+            "foot-wash"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "水上活動用品租借桌",
+          "x": [
+            0.4,
+            0.59
+          ],
+          "fixture": "counter",
+          "on": [
+            "snorkel",
+            "goggles",
+            "snorkel-mask",
+            "swim-fins"
+          ],
+          "beside": [
+            "beach-chair"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "沙灘休息與補給",
+          "x": [
+            0.62,
+            0.81
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "cooler",
+            "beach-ball"
+          ],
+          "beside": [
+            "beach-umbrella"
+          ],
+          "front": [
+            "beach-towel",
+            "flip-flop"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "沙堡遊戲區",
+          "x": [
+            0.83,
+            0.98
+          ],
+          "fixture": "rug",
+          "on": [
+            "sandcastle-mold",
+            "shell",
+            "starfish",
+            "seaweed"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "入口停車與道路標記",
+          "x": [
+            0.03,
+            0.19
+          ],
+          "main": "electric-scooter",
+          "beside": [
+            "parking-post",
+            "parking-block"
+          ],
+          "front": [
+            "road-marker"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "入口風鈴與隨身物品",
+          "x": [
+            0.83,
+            0.98
+          ],
+          "fixture": "stand",
+          "on": [
+            "seashell-wind-chime"
+          ]
+        }
+      ]
+    },
+    "boardwalk": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "海濱涼亭休憩處",
+          "x": [
+            0.03,
+            0.24
+          ],
+          "main": "coastal-shelter",
+          "beside": [
+            "folding-chair",
+            "dune-grass"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "自行車簡易維修站",
+          "x": [
+            0.27,
+            0.44
+          ],
+          "fixture": "stand",
+          "on": [
+            "bicycle-pump",
+            "bicycle-bell",
+            "bicycle-lock",
+            "bike-helmet"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "海景攝影架設區",
+          "x": [
+            0.47,
+            0.65
+          ],
+          "main": "camera-tripod",
+          "on": [
+            "camera-lens",
+            "lens-cap"
+          ],
+          "beside": [
+            "camera-bag",
+            "binocular-case"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "漂流木與海岸植物",
+          "x": [
+            0.68,
+            0.84
+          ],
+          "main": "driftwood-log",
+          "beside": [
+            "driftwood"
+          ],
+          "front": [
+            "driftwood-branch",
+            "driftwood-piece",
+            "dry-leaf"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "海濱植物觀察角",
+          "x": [
+            0.87,
+            0.98
+          ],
+          "fixture": "planter",
+          "on": [
+            "sea-holly",
+            "coastal-grass-seedhead"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "步道邊的拾物與紀念品",
+          "x": [
+            0.27,
+            0.44
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "shell-necklace",
+            "sailboat"
+          ]
+        }
+      ]
+    },
+    "tide-pool": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "潮池觀察主區",
+          "x": [
+            0.25,
+            0.72
+          ],
+          "main": "tide-pool",
+          "beside": [
+            "rock",
+            "tide-pool-ladder"
+          ],
+          "front": [
+            "rock-pool-net",
+            "sand-shovel",
+            "tide-pool-guide"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "潮池邊的水生植物",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "fixture": "planter",
+          "on": [
+            "reed",
+            "sea-lavender"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "觀察工具與防水收納",
+          "x": [
+            0.23,
+            0.43
+          ],
+          "fixture": "stand",
+          "on": [
+            "water-scope",
+            "waterproof-case",
+            "waterproof-bin",
+            "rock-pool-chart"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "海玻璃與礦石整理",
+          "x": [
+            0.75,
+            0.98
+          ],
+          "fixture": "display",
+          "on": [
+            "sea-glass",
+            "sea-glass-bottle",
+            "quartz",
+            "sand-dollar"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "涉水前的鞋物整理",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "towel",
+            "water-shoe",
+            "tide-pool-sandals",
+            "water-pail"
+          ]
+        }
+      ]
+    },
+    "snack-shack": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "點餐與飲料吧台",
+          "x": [
+            0.28,
+            0.68
+          ],
+          "fixture": "counter",
+          "main": "bar-counter",
+          "on": [
+            "bartop",
+            "beer-tap",
+            "ice-bucket",
+            "ashtray"
+          ],
+          "beside": [
+            "bar-stool",
+            "bar-stool-footrest"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "製冰與調飲區",
+          "x": [
+            0.03,
+            0.24
+          ],
+          "fixture": "cabinet",
+          "main": "ice-maker",
+          "on": [
+            "bar-spoon",
+            "cocktail-glass",
+            "wooden-tray",
+            "bottle-cork"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "壁爐與柴火",
+          "x": [
+            0.72,
+            0.97
+          ],
+          "main": "fireplace",
+          "on": [
+            "wood-log",
+            "firewood",
+            "fire-poker",
+            "bellows"
+          ],
+          "beside": [
+            "firewood-basket"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "窗邊小桌休息區",
+          "x": [
+            0.03,
+            0.25
+          ],
+          "main": "side-table",
+          "on": [
+            "candle-holder",
+            "record-player"
+          ],
+          "beside": [
+            "wooden-chair"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "室內通風與臨時座位",
+          "x": [
+            0.72,
+            0.97
+          ],
+          "main": "floor-fan"
+        },
+        {
+          "row": "mid",
+          "note": "吧台遊戲小物",
+          "x": [
+            0.28,
+            0.48
+          ],
+          "fixture": "desk",
+          "on": [
+            "poker-chip"
+          ]
+        }
+      ]
+    }
+  }
+}

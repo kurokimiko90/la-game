@@ -33,7 +33,9 @@
   ],
   "slot": {
     "x": 6680,
-    "y": 4620
+    "y": 4620,
+    "zone": "leisure",
+    "span": 2
   },
   "colorIndex": 9,
   "icon": "lifeguard-chair",
