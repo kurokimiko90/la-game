@@ -43,6 +43,7 @@ src/data/scenes/<scene>.json   遊戲讀的資料（產出物）
 public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 ```
 
+- 元素生成後的「按實際場景擺放」（情境規劃 + 擺放 + 排不下的退路）：`scripts/lib/placement.mjs`，手動跑 `npm run content:place -- <scene>`
 - 擺放演算法：`scripts/lib/layout.mjs`；動態參數：`scripts/lib/motion.mjs`；設定檢查：`scripts/lib/scene-config.mjs`；SVG 白名單：`scripts/lib/svg-sanitize.mjs`
 - 預覽整張地圖與各街區：開著 `npm run dev` 再跑 `npm run content:scene-preview` → `docs/scene-preview/`
 - 地形座標（道路、河、牆）在 `WorldBackground.tsx`，要和 scene-config 的區域、地帶一致，改地圖時兩邊一起改

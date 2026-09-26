@@ -20,20 +20,29 @@ export function usableFixtures(words) {
   return Object.keys(FIXTURES).filter((k) => !FIXTURES[k].words.some((w) => set.has(w)));
 }
 
+/** 情境裡已經安排的物品 */
+export function stagedIds(stage) {
+  return new Set(Object.values(stage?.zones ?? {}).flatMap((z) => z.sets.flatMap((s) => [s.main, ...SLOTS.flatMap((k) => s[k] ?? [])]).filter(Boolean)));
+}
+
 /**
- * @param {{ plan: object, available: string[], problems?: string[] }} input
+ * @param {{ plan: object, available: string[], problems?: string[], existing?: object }} input
  *   problems：上一次回答的問題（重問時附上）
+ *   existing：已經上線的情境（補元素）：只安排還沒在情境裡的物品，新的組要開在空的範圍
  */
-export function buildStagePrompt({ plan, available, problems = [] }) {
+export function buildStagePrompt({ plan, available, problems = [], existing = null }) {
   const has = new Set(available);
+  const done = stagedIds(existing);
   const elements = plan.elements.filter((e) => has.has(e.id));
   const fixtures = usableFixtures(elements.map((e) => e.en));
   const [[zx0, zy0, zx1, zy1]] = zoneRects(plan.slot ?? { x: 0, y: 0 });
   const zoneSize = `${zx1 - zx0}×${zy1 - zy0}`;
   const zoneText = plan.zones.map((z) => {
-    const list = elements.filter((e) => e.zone === z.id && !['road', 'track', 'water', 'sky'].includes(e.spot));
+    const list = elements.filter((e) => e.zone === z.id && !done.has(e.id) && !['road', 'track', 'water', 'sky'].includes(e.spot));
+    const old = existing?.zones?.[z.id]?.sets ?? [];
     return [
       `### ${z.id}（${z.name}，${z.indoor ? '室內，有後牆' : '室外'}，地面 ${z.floor}${z.feature !== 'none' ? `，地形 ${z.feature}` : ''}）`,
+      ...(old.length ? [`已經有的組（不能動；新的組不能和它們同一排重疊）：${old.map((o) => `${o.row} [${o.x[0]}, ${o.x[1]}]${o.note ? ` ${o.note}` : ''}`).join('、')}`] : []),
       ...list.map((e) => `- ${e.id}：${e.zh}，${e.size}`),
     ].join('\n');
   }).join('\n\n');
@@ -54,6 +63,7 @@ export function buildStagePrompt({ plan, available, problems = [] }) {
     `數量上限：每組 on 最多 ${SLOT_CAP.on} 個、wall 最多 ${SLOT_CAP.wall} 個、beside 最多 ${SLOT_CAP.beside} 個、front 最多 ${SLOT_CAP.front} 個；東西多就多開幾組，不要全堆在同一張桌上。`,
     '規則：每個列出的物品剛好出現一次；小東西不要單獨放在地上，要放在合理的家具上；大設備靠牆；同類的東西放一起（例如文具都在同一張桌上）。',
     '',
+    ...(existing ? ['這個街區已經擺好了，只安排下面列出的新物品：開新的組放在各排空著的範圍，只回傳新的組。', ''] : []),
     '物品（id：名稱，大小）：',
     zoneText,
     '',
@@ -104,16 +114,18 @@ function cleanSet(raw, { zoneId, zoneOf, fixtures, seen, indoor }) {
  * @param {{ plan: object, available: string[], terrain: object }} ctx
  * @returns {{ stage: object, problems: string[], dropped: string[] }}  dropped：沒被安排到的物品（會照舊自動排列）
  */
-export function parseStage(raw, { plan, available, terrain }) {
+export function parseStage(raw, { plan, available, terrain, existing = null }) {
   const data = extractJson(raw);
   const has = new Set(available);
   const elements = plan.elements.filter((e) => has.has(e.id) && !['road', 'track', 'water', 'sky'].includes(e.spot));
   const zoneOf = Object.fromEntries(elements.map((e) => [e.id, e.zone]));
   const words = plan.elements.filter((e) => has.has(e.id)).map((e) => e.en);
   const fixtures = usableFixtures(words);
-  const seen = new Set();
+  // 補元素：舊情境的物品不能再用，新的組接在舊的後面、不能和舊的重疊
+  const seen = stagedIds(existing);
   const zones = {};
   for (const z of plan.zones) {
+    const old = existing?.zones?.[z.id]?.sets ?? [];
     const release = (s) => { for (const id of [s.main, ...SLOTS.flatMap((k) => s[k] ?? [])].filter(Boolean)) seen.delete(id); };
     const sets = (Array.isArray(data.zones?.[z.id]?.sets) ? data.zones[z.id].sets : [])
       .map((s) => cleanSet(s ?? {}, { zoneId: z.id, zoneOf, fixtures, seen, indoor: z.indoor }));
@@ -121,13 +133,14 @@ export function parseStage(raw, { plan, available, terrain }) {
     const kept = [];
     for (const s of sets) {
       const empty = !(s.fixture || s.main || SLOTS.some((k) => s[k]?.length));
-      const clash = s.x && kept.some((k) => k.row === s.row && overlaps(k, s) && !wallOnly(k) && !wallOnly(s));
+      const clash = s.x && [...old, ...kept].some((k) => k.row === s.row && overlaps(k, s) && !wallOnly(k) && !wallOnly(s));
       if (!s.x || empty || clash) release(s);
       else kept.push(s);
     }
     // 天空的東西 LLM 不管：沿區域上緣平均排開
     const sky = plan.elements.filter((e) => has.has(e.id) && e.zone === z.id && e.spot === 'sky');
-    if (kept.length) zones[z.id] = { sets: kept, ...(sky.length ? { sky: Object.fromEntries(sky.map((e, i) => [e.id, +((i + 0.5) / sky.length).toFixed(2)])) } : {}) };
+    const all = [...old, ...kept];
+    if (all.length) zones[z.id] = { sets: all, ...(sky.length ? { sky: Object.fromEntries(sky.map((e, i) => [e.id, +((i + 0.5) / sky.length).toFixed(2)])) } : {}) };
   }
   const stage = { zones };
   const problems = validateStage({ stage, zoneOf: Object.fromEntries(plan.elements.filter((e) => has.has(e.id)).map((e) => [e.id, e.zone])), terrain, words });

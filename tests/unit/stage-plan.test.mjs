@@ -128,3 +128,26 @@ describe('pruneStage', () => {
     expect(stage.zones.room.sets[0].on).toEqual(['cup', 'pen']);
   });
 });
+
+describe('補元素：在既有情境裡加新物品', () => {
+  const existing = { zones: { room: { sets: [{ row: 'mid', x: [0.1, 0.5], fixture: 'desk', on: ['cup'] }] } } };
+  test('prompt 只列還沒安排的物品，並標出已經佔用的範圍', () => {
+    const p = buildStagePrompt({ plan: PLAN, available: AVAILABLE, existing });
+    expect(p).toContain('- pen');
+    expect(p).not.toContain('- cup');
+    expect(p).toContain('mid [0.1, 0.5]');
+  });
+  test('新的組接在舊的後面；和舊的組同一排重疊的丟掉；舊物品不能再用', () => {
+    const r = parseStage(JSON.stringify({ zones: { room: { sets: [
+      { row: 'mid', x: [0.3, 0.7], main: 'sofa' },
+      { row: 'mid', x: [0.6, 0.9], fixture: 'desk', on: ['pen', 'cup'] },
+    ] } } }), { plan: PLAN, available: AVAILABLE, terrain: TERRAIN, existing });
+    expect(r.stage.zones.room.sets).toEqual([
+      existing.zones.room.sets[0],
+      { row: 'mid', x: [0.6, 0.9], fixture: 'desk', on: ['pen'] },
+    ]);
+    expect(r.dropped).toEqual(expect.arrayContaining(['sofa', 'mat']));
+    expect(r.dropped).not.toContain('cup');
+    expect(r.problems).toEqual([]);
+  });
+});

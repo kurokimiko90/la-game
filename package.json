@@ -18,6 +18,7 @@
     "test:e2e": "next build && playwright test",
     "typecheck": "tsc --noEmit",
     "content:layout": "node scripts/build-layout.mjs",
+    "content:place": "node scripts/place-scene.mjs",
     "content:scene-preview": "node scripts/preview-scene.mjs"
   },
   "dependencies": {
