@@ -80,14 +80,18 @@ function run(name, cmd, args) {
 
 // ── 規劃（miko-ws codex）──────────────────────────────────────────────
 
-function usedWords() {
-  const used = { ids: new Set(), en: new Set(), zh: new Set() };
+/**
+ * 已用掉的 id（整張地圖唯一）和單字（只在同一個街區內不能重複；不同街區可以有同樣的東西）。
+ * sceneElements：這個街區已經有的物品。
+ */
+function usedWords(sceneElements = []) {
+  const used = { ids: new Set(), en: new Set(), zh: new Set(), renamed: new Map() };
   for (const f of fs.readdirSync(P.manifests)) {
-    for (const el of readJson(path.join(P.manifests, f)).elements) {
-      used.ids.add(el.ref.itemId);
-      used.en.add(wordKey(el.ref.words.en));
-      used.zh.add(el.name);
-    }
+    for (const el of readJson(path.join(P.manifests, f)).elements) used.ids.add(el.ref.itemId);
+  }
+  for (const el of sceneElements) {
+    used.en.add(wordKey(el.en));
+    used.zh.add(el.zh);
   }
   return used;
 }
@@ -104,13 +108,13 @@ function usedSlots() {
 }
 
 /** 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：街區裡已經有的物品（太像的會擋下） */
-async function planZone({ sceneName, zone, count, used, spots, existing = [] }) {
+async function planZone({ sceneId, sceneName, zone, count, used, spots, existing = [] }) {
   const elements = [];
   const rejected = [];
   for (let t = 0; t < ZONE_TRIES && elements.length < count; t++) {
     const need = count - elements.length;
     const prompt = buildZonePrompt({
-      sceneName, zone, count: need, avoidEn: [...used.en], maxMotion: Math.max(1, Math.floor(need * 0.2)), spots, existing: [...existing, ...elements],
+      sceneName, zone, count: need, avoidEn: [], maxMotion: Math.max(1, Math.floor(need * 0.2)), spots, existing: [...existing, ...elements],
     });
     let list;
     try {
@@ -119,7 +123,7 @@ async function planZone({ sceneName, zone, count, used, spots, existing = [] }) 
       log(`  ${zone.name} 第 ${t + 1} 次解析失敗：${e.message}`);
       continue;
     }
-    const result = validateElements((Array.isArray(list) ? list : []).slice(0, need), { zone, used, spots, related: [...existing, ...elements] });
+    const result = validateElements((Array.isArray(list) ? list : []).slice(0, need), { zone, used, spots, related: [...existing, ...elements], sceneId });
     elements.push(...result.ok);
     rejected.push(...result.rejected.map((r) => ({ ...r, zone: zone.id })));
   }
@@ -138,7 +142,7 @@ async function planScene(theme, slot, colorIndex, settings) {
   const elements = [];
   const rejected = [];
   for (const [i, zone] of outline.zones.entries()) {
-    const r = await planZone({ sceneName: outline.name, zone, count: counts[i], used, existing: elements });
+    const r = await planZone({ sceneId: outline.id, sceneName: outline.name, zone, count: counts[i], used, existing: elements });
     elements.push(...r.elements);
     rejected.push(...r.rejected);
   }
@@ -182,11 +186,11 @@ function topUpCandidates(settings) {
 /** @returns {Promise<number>} 規劃到的新物品數 */
 async function planTopUp({ plan, shortfall }, settings) {
   log(`補元素 ${plan.name}（${plan.id}）：${shortfall.map((s) => `${s.zone.name} ${s.have}+${s.need}`).join('、')}`);
-  const used = usedWords();
+  const used = usedWords(plan.elements);
   const added = [];
   const rejected = [];
   for (const { zone, need } of shortfall.filter((s) => s.need > 0)) {
-    const r = await planZone({ sceneName: plan.name, zone, count: need, used, spots: TOP_UP_SPOTS, existing: [...plan.elements, ...added] });
+    const r = await planZone({ sceneId: plan.id, sceneName: plan.name, zone, count: need, used, spots: TOP_UP_SPOTS, existing: [...plan.elements, ...added] });
     added.push(...r.elements);
     rejected.push(...r.rejected);
   }

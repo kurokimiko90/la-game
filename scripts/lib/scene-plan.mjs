@@ -105,8 +105,8 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
     `列出 ${count} 個會出現在這裡、語言初學者（A1–A2）該學的具體物品名詞。規則：`,
     '1. 單一、能用正面扁平向量圖示畫出來、一眼認得出的物品。不要動物、人物、場所、抽象概念、液體或一大片東西；也不要人形或動物形狀的東西（雕像、玩偶、畫著人形的標誌），這類圖畫不出來。',
     '2. 物品不能靠文字辨認（例如招牌、書名），圖裡不會有任何文字或數字。',
-    `3. 英文單字不能和這些重複（單複數不同也算重複）：${avoidEn.join(', ')}`,
-    '4. 每個物品的欄位：',
+    ...(avoidEn.length ? [`3. 英文單字不能和這些重複（單複數不同也算重複）：${avoidEn.join(', ')}`] : []),
+    `${avoidEn.length ? 4 : 3}. 每個物品的欄位：`,
     '   id：英文小寫 kebab-case（通常就是英文單字）',
     '   zh：繁體中文（台灣用語）；en：英文單字（小寫）；ja：日文常用說法；reading：只用平假名或片假名的讀音',
     `   category：${CATEGORIES.join(' | ')}`,
@@ -124,18 +124,22 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
 /**
  * 驗證一個區域的物品。used：已經用掉的 { ids, en, zh }（Set），通過的物品會加進去。
  * spots：可以放的位置，其他的退回地上。related：同一個街區已經有的物品 { en, zh, ja }，太像的擋下（通過的也會加進比對）。
+ * sceneId：給了就允許和別的街區同一個單字——id 撞到時改成 `<id>-<sceneId>`（id 在整張地圖上要唯一），
+ * 改名記在 used.renamed，cluster 跟著換。
  * @returns {{ ok: object[], rejected: Array<{ id: string, reason: string }> }}
  */
-export function validateElements(list, { zone, used, spots = allowedSpots(zone), related = [] }) {
+export function validateElements(list, { zone, used, spots = allowedSpots(zone), related = [], sceneId = null }) {
+  const renamed = used.renamed ?? new Map();
   const ok = [];
   const similarPool = [...related];
   const rejected = [];
   for (const raw of Array.isArray(list) ? list : []) {
     const e = raw ?? {};
     const en = String(e.en ?? '').trim().toLowerCase();
+    const id = sceneId && used.ids.has(e.id) ? `${e.id}-${sceneId}` : e.id;
     const reason = (() => {
       if (!ID_RE.test(e.id)) return 'id 格式不對';
-      if (used.ids.has(e.id)) return 'id 重複';
+      if (used.ids.has(id)) return 'id 重複';
       if (!EN_RE.test(en)) return '英文格式不對';
       if (used.en.has(wordKey(en))) return '英文重複';
       if (typeof e.zh !== 'string' || !CJK_RE.test(e.zh)) return '缺中文';
@@ -155,12 +159,13 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone),
       rejected.push({ id: String(e.id ?? '?'), reason });
       continue;
     }
+    if (id !== e.id) renamed.set(e.id, id);
     const item = {
-      id: e.id, zh: e.zh.trim(), en, ja: e.ja.trim(), reading: e.reading.trim(), category: e.category, size: e.size,
+      id, zh: e.zh.trim(), en, ja: e.ja.trim(), reading: e.reading.trim(), category: e.category, size: e.size,
       zone: zone.id, spot: spots.includes(e.spot) ? e.spot : 'ground', desc: String(e.desc).trim(),
       loose: e.loose === true && e.size === 'small',
       motion: MOTION_PRESETS[e.motion] ? e.motion : null,
-      cluster: typeof e.cluster === 'string' ? e.cluster : null,
+      cluster: typeof e.cluster === 'string' ? (renamed.get(e.cluster) ?? e.cluster) : null,
     };
     used.ids.add(item.id);
     used.en.add(wordKey(en));

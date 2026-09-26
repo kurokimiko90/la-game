@@ -95,6 +95,23 @@ describe('validateElements', () => {
     expect(ok.map((e) => e.id)).toEqual(['cream', 'fountain-pen']);
     expect(rejected).toEqual([{ id: 'sour-cream', reason: '和已有的 cream 太像' }]);
   });
+
+  it('給了 sceneId：別的街區用過的 id 自動加街區後綴，cluster 跟著改', () => {
+    const used = { ids: new Set(['bench', 'table']), en: new Set(), zh: new Set() };
+    const { ok, rejected } = validateElements([
+      el({ id: 'table', en: 'table', zh: '桌子', ja: 'テーブル', reading: 'テーブル', spot: 'ground' }),
+      el({ id: 'bench', en: 'bench', zh: '長椅', ja: 'ベンチ', reading: 'ベンチ', spot: 'ground', cluster: 'table' }),
+    ], { zone: zones[1], used, sceneId: 'bank' });
+    expect(rejected).toEqual([]);
+    expect(ok.map((e) => [e.id, e.en, e.cluster])).toEqual([['table-bank', 'table', null], ['bench-bank', 'bench', 'table-bank']]);
+    expect(used.ids.has('bench-bank')).toBe(true);
+  });
+
+  it('加了後綴還是重複就擋下', () => {
+    const used = { ids: new Set(['bench', 'bench-bank']), en: new Set(), zh: new Set() };
+    const { rejected } = validateElements([el({ id: 'bench', en: 'bench', zh: '長椅' })], { zone: zones[1], used, sceneId: 'bank' });
+    expect(rejected).toEqual([{ id: 'bench', reason: 'id 重複' }]);
+  });
 });
 
 describe('buildZonePrompt', () => {
@@ -115,6 +132,11 @@ describe('buildZonePrompt', () => {
     expect(p).not.toContain('surface（');
     expect(p).not.toContain('至少');
     expect(p).toContain('已經有：茶杯（teacup）');
+  });
+
+  it('沒有要避開的單字時不出現避開規則', () => {
+    const p = buildZonePrompt({ sceneName: '咖啡館', zone: zones[1], count: 7, avoidEn: [], maxMotion: 1 });
+    expect(p).not.toContain('不能和這些重複');
   });
 });
 
