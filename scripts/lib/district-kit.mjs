@@ -1,4 +1,5 @@
 // 自動擴展的街區模板：一個 slot（2600×1300）切成 2×2 個區域，路線順時針（左上 → 右上 → 右下 → 左下）。
+// 物品多的街區佔兩格（slot.span = 2，同一列左右相鄰的兩個 slot）：每區變成一整格寬（2600×650），兩格中間照樣是街道。
 // 每個區域有「室內 / 室外」、地面材質、最多一種地形特徵。從這些資料算出：
 //   - scene-config 的 zones / bands / place（擺放用，和手寫的場景同一套格式）
 //   - terrain：畫地形用的幾何（build 時寫進場景 JSON，由 GeneratedDistrict.tsx 畫）
@@ -22,16 +23,27 @@ const ROAD = { top: 190, bottom: 30 }; // 距下緣
 const TRACK = { top: 160, rail: 40 };
 const SKY = { top: 150, bottom: 300 };
 
+const spanOf = (slot) => (slot.span === 2 ? 2 : 1);
+
+/** 街區佔的寬度（佔兩格時含中間的街道） */
+export const slotWidth = (slot) => spanOf(slot) * SLOT_SIZE.w + (spanOf(slot) - 1) * STREET_WIDTH;
+
+/** 街區佔用的格子（佔兩格時是左右兩個 slot） */
+const cellsOf = (slot) => (spanOf(slot) === 2 ? [slot, { x: slot.x + SLOT_SIZE.w + STREET_WIDTH, y: slot.y }] : [slot]);
+
 /** slot → 4 個區域矩形 [x0, y0, x1, y1]，順序 = 路線順序 */
 export function zoneRects(slot) {
   const { x, y } = slot;
-  const w = SLOT_SIZE.w / 2;
   const h = SLOT_SIZE.h / 2;
+  // 一格：左右兩半；兩格：左格、右格各一整格寬
+  const [left, right] = spanOf(slot) === 2
+    ? [[x, x + SLOT_SIZE.w], [x + SLOT_SIZE.w + STREET_WIDTH, x + slotWidth(slot)]]
+    : [[x, x + SLOT_SIZE.w / 2], [x + SLOT_SIZE.w / 2, x + SLOT_SIZE.w]];
   return [
-    [x, y, x + w, y + h],
-    [x + w, y, x + 2 * w, y + h],
-    [x + w, y + h, x + 2 * w, y + 2 * h],
-    [x, y + h, x + w, y + 2 * h],
+    [left[0], y, left[1], y + h],
+    [right[0], y, right[1], y + h],
+    [right[0], y + h, right[1], y + 2 * h],
+    [left[0], y + h, left[1], y + 2 * h],
   ];
 }
 
@@ -133,7 +145,7 @@ export function buildDistrict({ slot, zones: zoneSpecs, elements, colorIndex = 0
     place,
     terrain: {
       color: MAP_COLORS[colorIndex % MAP_COLORS.length],
-      x0, y0, x1: x0 + SLOT_SIZE.w, y1: y0 + SLOT_SIZE.h,
+      x0, y0, x1: x0 + slotWidth(slot), y1: y0 + SLOT_SIZE.h,
       zones: zones.map((z, i) => {
         const [zx0, zy0, zx1, zy1] = rects[i];
         const g = geos[i];
@@ -149,16 +161,24 @@ export function buildDistrict({ slot, zones: zoneSpecs, elements, colorIndex = 0
   };
 }
 
-/** 已用的 slot 之外，依序找下一個空的；有給分區（zone）時優先找同分區的，沒有才退回任何空的 */
-export function nextSlot(slots, usedSlots, zone) {
-  const used = new Set(usedSlots.map((s) => `${s.x},${s.y}`));
-  const free = slots.filter((s) => !used.has(`${s.x},${s.y}`));
-  return (zone && free.find((s) => s.zone === zone)) || free[0] || null;
+/**
+ * 已用的 slot 之外，依序找下一個空的；有給分區（zone）時優先找同分區的，沒有才退回任何空的。
+ * span 2：要同一列、右邊相鄰的 slot 也空著，回傳帶 span: 2 的 slot。
+ */
+export function nextSlot(slots, usedSlots, zone, span = 1) {
+  const key = (s) => `${s.x},${s.y}`;
+  const used = new Set(usedSlots.flatMap(cellsOf).map(key));
+  const listed = new Set(slots.map(key));
+  const fits = (s) => cellsOf({ ...s, span }).every((c) => listed.has(key(c)) && !used.has(key(c)));
+  const free = slots.filter(fits);
+  const pick = (zone && free.find((s) => s.zone === zone)) || free[0];
+  if (!pick) return null;
+  return span === 2 ? { ...pick, span: 2 } : pick;
 }
 
 /** 地圖大小 = 核心範圍與所有已用 slot 的外框（內側）+ 環路 + 邊緣（丘陵、海岸） */
 export function worldSize(core, usedSlots) {
-  const w = Math.max(core.width, ...usedSlots.map((s) => s.x + SLOT_SIZE.w));
+  const w = Math.max(core.width, ...usedSlots.map((s) => s.x + slotWidth(s)));
   const h = Math.max(core.height, ...usedSlots.map((s) => s.y + SLOT_SIZE.h));
   return { width: w + STREET_WIDTH + EDGE_SIZE.east, height: h + STREET_WIDTH + EDGE_SIZE.south };
 }

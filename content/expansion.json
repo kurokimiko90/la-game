@@ -2,11 +2,12 @@
   "branch": "feat/expand-scenes",
   "itemsPerScene": 100,
   "minItems": 65,
+  "wideAbove": 80,
   "topUp": true,
   "maxRequeueRounds": 4,
   "maxScenes": 30,
   "core": {"width": 3600, "height": 2600},
-  "grid": {"street": 240, "note": "slot 之間留 240 的街道（src/lib/city.ts）；zone = 土地使用分區，新主題優先放同分區的 slot（docs/city-plan.md §5）"},
+  "grid": {"street": 240, "note": "slot 之間留 240 的街道（src/lib/city.ts）；zone = 土地使用分區，新主題優先放同分區的 slot（docs/city-plan.md §5）；itemsPerScene 超過 wideAbove 的街區佔同一列左右相鄰的兩個 slot"},
   "slots": [
     {"x": 0, "y": 3080, "zone": "commercial"},
     {"x": 3840, "y": 0, "zone": "neighborhood"},

@@ -36,6 +36,12 @@ describe('buildStagePrompt', () => {
     expect(p).not.toContain('- car');
     expect(p).not.toMatch(/rug=/);
     expect(p).toContain('x 重疊');
+    expect(p).toContain('1300×650');
+  });
+
+  test('佔兩格的街區，區域寬度跟著變', () => {
+    const p = buildStagePrompt({ plan: { ...PLAN, slot: { x: 3840, y: 0, span: 2 } }, available: AVAILABLE });
+    expect(p).toContain('2600×650');
   });
 });
 

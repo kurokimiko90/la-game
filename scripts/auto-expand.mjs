@@ -373,7 +373,9 @@ async function tick({ afterGenerator = false } = {}) {
     const config = readJson(P.config);
     if (state.history.length >= settings.maxScenes) return log(`已完成 ${state.history.length} 個場景，達到上限 ${settings.maxScenes}`);
     const theme = state.current?.theme ?? pickTheme(settings, config);
-    const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots(), theme?.zone);
+    // 物品多（itemsPerScene 超過 wideAbove）的街區佔兩格；找不到相鄰的兩格就退回一格
+    const span = settings.itemsPerScene > (settings.wideAbove ?? Infinity) ? 2 : 1;
+    const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots(), theme?.zone, span) ?? nextSlot(settings.slots, usedSlots(), theme?.zone);
     if (!theme || !slot) return log(theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
     saveState({ ...state, phase: 'planning', current: { theme, slot } });
     const plan = await planScene(theme, slot, usedSlots().length, settings);

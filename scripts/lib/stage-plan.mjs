@@ -3,6 +3,7 @@
 // 修不好就回傳問題，呼叫端可以帶著問題重問一次，還是不行就不用情境（照舊自動排列）。純函式。
 import { FIXTURES, ROWS, SLOTS, validateStage } from './staging.mjs';
 import { extractJson } from './scene-plan.mjs';
+import { zoneRects } from './district-kit.mjs';
 
 // 每組每個位置最多幾個：一張桌子擺 7 樣東西一定互相擋住，多的交給自動排列
 export const SLOT_CAP = { on: 4, wall: 3, beside: 2, front: 3 };
@@ -27,6 +28,8 @@ export function buildStagePrompt({ plan, available, problems = [] }) {
   const has = new Set(available);
   const elements = plan.elements.filter((e) => has.has(e.id));
   const fixtures = usableFixtures(elements.map((e) => e.en));
+  const [[zx0, zy0, zx1, zy1]] = zoneRects(plan.slot ?? { x: 0, y: 0 });
+  const zoneSize = `${zx1 - zx0}×${zy1 - zy0}`;
   const zoneText = plan.zones.map((z) => {
     const list = elements.filter((e) => e.zone === z.id && !['road', 'track', 'water', 'sky'].includes(e.spot));
     return [
@@ -35,7 +38,7 @@ export function buildStagePrompt({ plan, available, problems = [] }) {
     ].join('\n');
   }).join('\n\n');
   return [
-    '你是城市遊戲的場景規劃師。語言學習找物遊戲《記憶小鎮》的街區「' + plan.name + '」有 4 個區域，每個區域是 3/4 俯視的一塊 1300×650 空間（室內上方 180 是後牆）。',
+    '你是城市遊戲的場景規劃師。語言學習找物遊戲《記憶小鎮》的街區「' + plan.name + '」有 4 個區域，每個區域是 3/4 俯視的一塊 ' + zoneSize + ' 空間（室內上方 180 是後牆）。',
     '請把每個區域的物品安排成真實世界裡會看到的樣子：先想這個空間實際怎麼用（動線、櫃台、座位區、靠牆的設備），拆成 3–6 組「情境」，每組是一件家具或一個主體物品，其他物品依和它的關係擺。',
     '',
     '每組的欄位：',

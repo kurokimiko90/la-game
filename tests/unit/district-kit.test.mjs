@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { allowedSpots, buildDistrict, EDGE_SIZE, nextSlot, normalizeZone, SLOT_SIZE, STREET_WIDTH, worldSize, zoneRects } from '../../scripts/lib/district-kit.mjs';
+import { allowedSpots, buildDistrict, EDGE_SIZE, nextSlot, normalizeZone, SLOT_SIZE, slotWidth, STREET_WIDTH, worldSize, zoneRects } from '../../scripts/lib/district-kit.mjs';
 import { EDGE, SLOT, STREET, worldFromInner } from '../../src/lib/city';
 import { resolveBand } from '../../scripts/lib/layout.mjs';
 
@@ -16,6 +16,17 @@ describe('zoneRects', () => {
     expect(zoneRects(slot)).toEqual([
       [3600, 0, 4900, 650], [4900, 0, 6200, 650], [4900, 650, 6200, 1300], [3600, 650, 4900, 1300],
     ]);
+  });
+  it('佔兩格（span 2）：每區一整格寬，中間隔一條街，路線照樣順時針', () => {
+    const x2 = 3600 + 2600 + 240;
+    expect(zoneRects({ ...slot, span: 2 })).toEqual([
+      [3600, 0, 6200, 650], [x2, 0, x2 + 2600, 650], [x2, 650, x2 + 2600, 1300], [3600, 650, 6200, 1300],
+    ]);
+    expect(slotWidth({ ...slot, span: 2 })).toBe(2600 * 2 + 240);
+  });
+  it('佔兩格的街區外框包住兩格', () => {
+    const d = buildDistrict({ slot: { ...slot, span: 2 }, zones: ZONES, elements: [] });
+    expect([d.terrain.x0, d.terrain.x1, d.terrain.y1]).toEqual([3600, 3600 + 5440, 1300]);
   });
 });
 
@@ -93,6 +104,17 @@ describe('slot 與地圖大小', () => {
     const zoned = [{ x: 0, y: 0, zone: 'civic' }, { x: 1, y: 0, zone: 'leisure' }, { x: 2, y: 0, zone: 'leisure' }];
     expect(nextSlot(zoned, [{ x: 1, y: 0 }], 'leisure')).toEqual(zoned[2]);
     expect(nextSlot(zoned, [], 'farm')).toEqual(zoned[0]);
+  });
+  it('nextSlot 佔兩格：要找同一列、右邊相鄰也空著的 slot；已用的兩格都算', () => {
+    const row = [{ x: 3840, y: 0, zone: 'civic' }, { x: 6680, y: 0, zone: 'civic' }, { x: 9520, y: 0, zone: 'leisure' }, { x: 12360, y: 0, zone: 'leisure' }];
+    expect(nextSlot(row, [], 'leisure', 2)).toEqual({ ...row[2], span: 2 });
+    expect(nextSlot(row, [{ x: 6680, y: 0 }], 'civic', 2)).toEqual({ ...row[2], span: 2 });
+    expect(nextSlot(row, [{ x: 3840, y: 0, span: 2 }], null, 1)).toEqual(row[2]);
+    expect(nextSlot(row, [{ x: 6680, y: 0 }, { x: 12360, y: 0 }], null, 2)).toBeNull();
+  });
+  it('worldSize 算進佔兩格的寬度', () => {
+    const pad = STREET_WIDTH + EDGE_SIZE.east;
+    expect(worldSize({ width: 3600, height: 2600 }, [{ x: 3840, y: 0, span: 2 }]).width).toBe(3840 + 5440 + pad);
   });
   it('worldSize 包住核心與所有 slot，外加環路與邊緣', () => {
     const pad = { width: STREET_WIDTH + EDGE_SIZE.east, height: STREET_WIDTH + EDGE_SIZE.south };
