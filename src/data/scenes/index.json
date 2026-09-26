@@ -222,5 +222,19 @@
       ],
       "body": "<rect x=\"8\" y=\"91\" width=\"144\" height=\"59\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"14\" y=\"105\" width=\"132\" height=\"45\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"77\" width=\"16\" height=\"73\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"122\" y=\"83\" width=\"16\" height=\"67\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"30\" y=\"68\" width=\"104\" height=\"13\" rx=\"3\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"52\" y=\"69\" width=\"16\" height=\"11\" fill=\"#e57373\"/><rect x=\"91\" y=\"69\" width=\"16\" height=\"11\" fill=\"#e57373\"/><rect x=\"8\" y=\"118\" width=\"144\" height=\"6\" fill=\"#37474f\"/><rect x=\"35\" y=\"71\" width=\"16\" height=\"4\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
+  },
+  {
+    "id": "bank",
+    "name": "銀行",
+    "itemCount": 99,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        140,
+        180
+      ],
+      "body": "<rect x=\"55\" y=\"170\" width=\"30\" height=\"8\" fill=\"#37474f\"/><rect x=\"66\" y=\"48\" width=\"8\" height=\"123\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"68\" y=\"39\" width=\"30\" height=\"8\" fill=\"#37474f\"/><polygon points=\"82,39 92,18 116,18 128,39\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"87,39 122,39 116,46 92,46\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"96\" y=\"21\" width=\"18\" height=\"4\" fill=\"#ffffff\" opacity=\"0.25\"/>"
+    }
   }
 ]

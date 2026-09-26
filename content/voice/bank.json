@@ -1,0 +1,526 @@
+{
+  "en": {
+    "lamp": {
+      "heard": "Lamp.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "fountain-bank": {
+      "heard": "Fountains.",
+      "score": 0.89,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "scooter-bank": {
+      "heard": "Scooter.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "tree-bank": {
+      "heard": "tree.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "calendar-bank": {
+      "heard": "Calendar",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "clock-bank": {
+      "heard": "Clock.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "security-camera-bank": {
+      "heard": "Security camera.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "bicycle-rack-bank": {
+      "heard": "Can. Bicycle rack.",
+      "score": 0.79,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "paper-bank": {
+      "heard": "Paper.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "stapler-bank": {
+      "heard": "staplered.",
+      "score": 0.78,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "coffee-cup-bank": {
+      "heard": "Cup.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "folder-bank": {
+      "heard": "folder",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "umbrella-bank": {
+      "heard": "Umbrella.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "ball-bank": {
+      "heard": "Balk.",
+      "score": 0.75,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "fire-extinguisher-bank": {
+      "heard": "Fire extinguisher.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "plant-pot": {
+      "heard": "Potted plant.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "stanchion": {
+      "heard": "Stanchion.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "car-bank": {
+      "heard": "car.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "bulletin-board": {
+      "heard": "Taxi. Bulletin board.",
+      "score": 0.76,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "wall-vent": {
+      "heard": "Vent.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "pipe-valve": {
+      "heard": "Pipe valve.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "metal-shelf": {
+      "heard": "Metal Shelf.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "calculator-bank": {
+      "heard": "calculators.",
+      "score": 0.91,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "tape-dispenser-bank": {
+      "heard": "Tape dispenser.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "hole-punch-bank": {
+      "heard": "Hole Punch.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "banknote-bank": {
+      "heard": "Banknote.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "magnifying-glass-bank": {
+      "heard": "card, magnifying glass,",
+      "score": 0.79,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "staple-remover-bank": {
+      "heard": "Faple remover.",
+      "score": 0.85,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "wooden-crate": {
+      "heard": "wooden crate",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "hand-truck-bank": {
+      "heard": "Hand truck.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "broom-bank": {
+      "heard": "Broom.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "metal-pipe": {
+      "heard": "Metal pipe.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "coat-rack-bank": {
+      "heard": "Coat rack.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "flashlight-bank": {
+      "heard": "Box. Flashlight.",
+      "score": 0.77,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "lantern-bank": {
+      "heard": "Lantern.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "dustpan-bank": {
+      "heard": "Dustpan.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "bucket-bank": {
+      "heard": "Bucket.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "velvet-pouch": {
+      "heard": "velvet pouch,",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "paperclip": {
+      "heard": "Bag paperclip.",
+      "score": 0.75,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "cloud-bank": {
+      "heard": "Cloud.",
+      "score": 1,
+      "take": "en-1790386589471.aac",
+      "account": "chatgpt2"
+    },
+    "door": {
+      "heard": "Door.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "bench-bank": {
+      "heard": "Bench.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "bollard-bank": {
+      "heard": "Bollard.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "mailbox-bank": {
+      "heard": "Mailbox.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "planter": {
+      "heard": "planter.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "trash-can-bank": {
+      "heard": "Trashcan.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "bush-bank": {
+      "heard": "Bush.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "puddle-bank": {
+      "heard": "Puddle.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "telephone-bank": {
+      "heard": "Telephone.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "envelope-bank": {
+      "heard": "Envelope.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "traffic-cone-bank": {
+      "heard": "Traffic Cone.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "key-bank": {
+      "heard": "Key.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "wallet-bank": {
+      "heard": "Wallet.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "stone-bank": {
+      "heard": "Stone.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "briefcase-bank": {
+      "heard": "Briefcase.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "counter-stool": {
+      "heard": "stool",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "van": {
+      "heard": "Van.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "taxi-bank": {
+      "heard": "Taxi.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "service-counter": {
+      "heard": "Counter.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "filing-cabinet-bank": {
+      "heard": "Filing cabinet.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "folding-ladder": {
+      "heard": "Folding ladder.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "monitor-bank": {
+      "heard": "Monitor.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "keyboard-bank": {
+      "heard": "Keyboard.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "cash-register-bank": {
+      "heard": "Cash register.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "coin": {
+      "heard": "COIN",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "card": {
+      "heard": "Card.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "briefcase-lock": {
+      "heard": "Combination Lock",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "vault-wheel": {
+      "heard": "Vault Wheel.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "treasure-chest": {
+      "heard": "Treasure Chest.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "gold-bar": {
+      "heard": "Gold bar.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "gemstone": {
+      "heard": "Gemstone.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "pearl": {
+      "heard": "Pearl.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "jewelry-box": {
+      "heard": "Jewelry box.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "safe-deposit-box": {
+      "heard": "Safe deposit box.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "gloves-bank": {
+      "heard": "Gloves",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "hard-hat": {
+      "heard": "Hardhat.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "safety-deposit-envelope": {
+      "heard": "Passbook.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "security-seal": {
+      "heard": "sealing wax,",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "water-bottle-bank": {
+      "heard": "Water bottle.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "waste-bin-liner": {
+      "heard": "Trash bag.",
+      "score": 1,
+      "take": "en-1790387170435.aac",
+      "account": "chatgpt1"
+    },
+    "computer": {
+      "heard": "Computer.",
+      "score": 1,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    },
+    "bell-bank": {
+      "heard": "Bell.",
+      "score": 1,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    },
+    "tray-bank": {
+      "heard": "Trey.",
+      "score": 0.75,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    },
+    "globe-bank": {
+      "heard": "Globe.",
+      "score": 1,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    },
+    "water-cooler-bank": {
+      "heard": "Water cool.",
+      "score": 0.82,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    },
+    "scissors-bank": {
+      "heard": "Scissors.",
+      "score": 1,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    },
+    "ruler-bank": {
+      "heard": "Ruler.",
+      "score": 1,
+      "take": "en-1790387557867.aac",
+      "account": "chatgpt2"
+    }
+  }
+}

@@ -1,0 +1,2092 @@
+{
+  "sceneName": "語言小鎮・銀行",
+  "sceneSlug": "la-bank",
+  "propStyle": "front-flat",
+  "zones": {
+    "front-plaza": "前庭",
+    "lobby": "大廳",
+    "service-hall": "服務區",
+    "vault-room": "金庫室"
+  },
+  "elements": [
+    {
+      "name": "長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形木製椅面搭配兩條椅背橫板，椅腳是深色金屬，正面輪廓簡單清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "bench-bank",
+        "words": {
+          "zh-TW": "長椅",
+          "en": "bench",
+          "ja": {
+            "text": "ベンチ",
+            "reading": "ベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "車阻",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "粗短的圓柱形石樁，頂部平坦，表面是淺灰色，立在車道邊緣阻擋車輛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "bollard-bank",
+        "words": {
+          "zh-TW": "車阻",
+          "en": "bollard",
+          "ja": {
+            "text": "車止め",
+            "reading": "くるまどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "路燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長深色燈柱頂端裝著圓罩燈頭，燈罩向下張開，輪廓簡潔醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "lamp",
+        "words": {
+          "zh-TW": "路燈",
+          "en": "lamp",
+          "ja": {
+            "text": "街灯",
+            "reading": "がいとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "噴泉",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "低矮圓形石池中央立著短柱，水流向上噴出後落回池中，池沿厚實明顯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "fountain-bank",
+        "words": {
+          "zh-TW": "噴泉",
+          "en": "fountain",
+          "ja": {
+            "text": "噴水",
+            "reading": "ふんすい"
+          }
+        }
+      }
+    },
+    {
+      "name": "郵筒",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色直立箱體頂部有圓弧形蓋子，正面開著一道窄長投入口，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "mailbox-bank",
+        "words": {
+          "zh-TW": "郵筒",
+          "en": "mailbox",
+          "ja": {
+            "text": "郵便ポスト",
+            "reading": "ゆうびんポスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "花盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬口方形陶盆，盆身是赭紅色，裡面長出一小叢圓葉綠色植物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "planter",
+        "words": {
+          "zh-TW": "花盆",
+          "en": "planter",
+          "ja": {
+            "text": "植木鉢",
+            "reading": "うえきばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "綠色方筒形桶身配半圓形上蓋，正面有小開口，表面乾淨且沒有標誌。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "trash-can-bank",
+        "words": {
+          "zh-TW": "垃圾桶",
+          "en": "trash can",
+          "ja": {
+            "text": "ごみ箱",
+            "reading": "ごみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "自行車架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一排銀灰色金屬倒形支架固定在地面，每個弧形空隙可停放一個車輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "bicycle-rack-bank",
+        "words": {
+          "zh-TW": "自行車架",
+          "en": "bicycle rack",
+          "ja": {
+            "text": "駐輪ラック",
+            "reading": "ちゅうりんラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "汽車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "小型藍色轎車正面可見寬擋風玻璃、兩側後照鏡、引擎蓋和一對圓形頭燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "car-bank",
+        "words": {
+          "zh-TW": "汽車",
+          "en": "car",
+          "ja": {
+            "text": "車",
+            "reading": "くるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "廂型車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色廂型車車頭平直，前方有寬擋風玻璃與兩盞方燈，車頂較高且車身方正。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "van",
+        "words": {
+          "zh-TW": "廂型車",
+          "en": "van",
+          "ja": {
+            "text": "バン",
+            "reading": "バン"
+          }
+        }
+      }
+    },
+    {
+      "name": "機車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "紅色小型機車有兩個黑輪、低矮踏板與上翹車把，前方裝著圓形頭燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "scooter-bank",
+        "words": {
+          "zh-TW": "機車",
+          "en": "scooter",
+          "ja": {
+            "text": "スクーター",
+            "reading": "スクーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "計程車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黃色轎車車頂有小型方形燈箱，車頭有兩盞圓燈與寬擋風玻璃，不含標字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "taxi-bank",
+        "words": {
+          "zh-TW": "計程車",
+          "en": "taxi",
+          "ja": {
+            "text": "タクシー",
+            "reading": "タクシー"
+          }
+        }
+      }
+    },
+    {
+      "name": "交通錐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘紅色錐形塑膠筒立在方形底座上，錐身有一道白色橫帶，表面沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "traffic-cone-bank",
+        "words": {
+          "zh-TW": "交通錐",
+          "en": "traffic cone",
+          "ja": {
+            "text": "カラーコーン",
+            "reading": "カラーコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨傘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "收起的深藍色雨傘呈細長圓筒狀，頂端有弧形握把，底端露出尖頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "umbrella-bank",
+        "words": {
+          "zh-TW": "雨傘",
+          "en": "umbrella",
+          "ja": {
+            "text": "傘",
+            "reading": "かさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形橘色球面帶有幾條彎曲接縫線，明暗分明，沒有圖案或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "ball-bank",
+        "words": {
+          "zh-TW": "球",
+          "en": "ball",
+          "ja": {
+            "text": "ボール",
+            "reading": "ボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑰匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把金色金屬鑰匙平放，圓環握柄連著細長齒狀匙身，外形簡單易辨。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "key-bank",
+        "words": {
+          "zh-TW": "鑰匙",
+          "en": "key",
+          "ja": {
+            "text": "鍵",
+            "reading": "かぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "錢包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色長方形皮革錢包對折，邊角圓滑，正面有一道短縫線與小扣帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "wallet-bank",
+        "words": {
+          "zh-TW": "錢包",
+          "en": "wallet",
+          "ja": {
+            "text": "財布",
+            "reading": "さいふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一朵黃色花有五片圓潤花瓣與橘色花心，連著短綠莖和兩片葉子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "flower-bank",
+        "words": {
+          "zh-TW": "花",
+          "en": "flower",
+          "ja": {
+            "text": "花",
+            "reading": "はな"
+          }
+        }
+      }
+    },
+    {
+      "name": "樹",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "粗直棕色樹幹支撐一團濃綠圓冠，枝葉外緣起伏，正面形狀完整清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "tree-bank",
+        "words": {
+          "zh-TW": "樹",
+          "en": "tree",
+          "ja": {
+            "text": "木",
+            "reading": "き"
+          }
+        }
+      }
+    },
+    {
+      "name": "灌木",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮圓拱形綠色灌木由數團葉簇組成，底部略平，枝葉密集且沒有花果。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "bush-bank",
+        "words": {
+          "zh-TW": "灌木",
+          "en": "bush",
+          "ja": {
+            "text": "低木",
+            "reading": "ていぼく"
+          }
+        }
+      }
+    },
+    {
+      "name": "雲",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色雲朵由幾個柔軟圓弧連成一團，底部稍平，邊緣蓬鬆而容易辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "cloud-bank",
+        "words": {
+          "zh-TW": "雲",
+          "en": "cloud",
+          "ja": {
+            "text": "雲",
+            "reading": "くも"
+          }
+        }
+      }
+    },
+    {
+      "name": "水窪",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "地面上一灘扁平不規則的淺藍色水面，邊緣彎曲，表面帶著柔和反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "puddle-bank",
+        "words": {
+          "zh-TW": "水窪",
+          "en": "puddle",
+          "ja": {
+            "text": "水たまり",
+            "reading": "みずたまり"
+          }
+        }
+      }
+    },
+    {
+      "name": "石頭",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "灰褐色不規則卵形石塊，表面有幾處深色斑點與圓鈍邊角，獨立放置。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "stone-bank",
+        "words": {
+          "zh-TW": "石頭",
+          "en": "stone",
+          "ja": {
+            "text": "石",
+            "reading": "いし"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動櫃員機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的深灰色金屬機身，正面有一個深色螢幕和突出的卡片插槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "atm-bank",
+        "words": {
+          "zh-TW": "自動櫃員機",
+          "en": "atm",
+          "ja": {
+            "text": "ATM",
+            "reading": "エーティーエム"
+          }
+        }
+      }
+    },
+    {
+      "name": "公事包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的長方形硬殼包，深棕色皮面，頂端有短提把和兩個金色扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "front-plaza",
+        "itemId": "briefcase-bank",
+        "words": {
+          "zh-TW": "公事包",
+          "en": "briefcase",
+          "ja": {
+            "text": "ブリーフケース",
+            "reading": "ブリーフケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "吧台椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形深色椅面下接四根細長金屬椅腳，沒有椅背的高腳椅。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "counter-stool",
+        "words": {
+          "zh-TW": "吧台椅",
+          "en": "stool",
+          "ja": {
+            "text": "スツール",
+            "reading": "スツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "電腦",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色扁平螢幕立在底座上，旁邊放著細長鍵盤與滑鼠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "computer",
+        "words": {
+          "zh-TW": "電腦",
+          "en": "computer",
+          "ja": {
+            "text": "パソコン",
+            "reading": "パソコン"
+          }
+        }
+      }
+    },
+    {
+      "name": "電話",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色桌上型電話有斜立聽筒、方形按鍵區和捲曲的連接線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "telephone-bank",
+        "words": {
+          "zh-TW": "電話",
+          "en": "telephone",
+          "ja": {
+            "text": "電話",
+            "reading": "でんわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮銀色圓頂搭配小巧底座，頂端有一顆突起按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "bell-bank",
+        "words": {
+          "zh-TW": "鈴",
+          "en": "bell",
+          "ja": {
+            "text": "ベル",
+            "reading": "ベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的藍色筆身，前端露出金屬筆尖，尾端有短夾子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "pen-bank",
+        "words": {
+          "zh-TW": "筆",
+          "en": "pen",
+          "ja": {
+            "text": "ペン",
+            "reading": "ペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張白色長方紙，四角平整，表面空白且沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "paper-bank",
+        "words": {
+          "zh-TW": "紙",
+          "en": "paper",
+          "ja": {
+            "text": "紙",
+            "reading": "かみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "印章",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓柱印章立在方形底座上，頂端有一顆圓潤握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "stamp",
+        "words": {
+          "zh-TW": "印章",
+          "en": "stamp",
+          "ja": {
+            "text": "はんこ",
+            "reading": "はんこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "訂書機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色長橢圓上蓋連著扁平金屬底座，前端有窄縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "stapler-bank",
+        "words": {
+          "zh-TW": "訂書機",
+          "en": "stapler",
+          "ja": {
+            "text": "ホッチキス",
+            "reading": "ホッチキス"
+          }
+        }
+      }
+    },
+    {
+      "name": "月曆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形白底紙張掛在牆上，頂端有一排彩色小格與金屬掛環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "calendar-bank",
+        "words": {
+          "zh-TW": "月曆",
+          "en": "calendar",
+          "ja": {
+            "text": "カレンダー",
+            "reading": "カレンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "時鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形白色鐘面外框是深色木頭，兩根黑色指針清楚指向不同方向。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "clock-bank",
+        "words": {
+          "zh-TW": "時鐘",
+          "en": "clock",
+          "ja": {
+            "text": "時計",
+            "reading": "とけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "滅火器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色直立圓筒上方有黑色短管、握把與一段彎曲軟管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "fire-extinguisher-bank",
+        "words": {
+          "zh-TW": "滅火器",
+          "en": "fire extinguisher",
+          "ja": {
+            "text": "消火器",
+            "reading": "しょうかき"
+          }
+        }
+      }
+    },
+    {
+      "name": "門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深木色長方門板立在後牆，側邊有金屬把手與細長門框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "door",
+        "words": {
+          "zh-TW": "門",
+          "en": "door",
+          "ja": {
+            "text": "ドア",
+            "reading": "ドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "盆栽",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬大的陶盆裡長出一叢綠色葉片，葉形圓潤並向四周伸展。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "plant-pot",
+        "words": {
+          "zh-TW": "盆栽",
+          "en": "potted plant",
+          "ja": {
+            "text": "鉢植え",
+            "reading": "はちうえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "地毯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形酒紅色地毯，四周有短流蘇，中央是簡單的金色幾何花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "rug",
+        "words": {
+          "zh-TW": "地毯",
+          "en": "rug",
+          "ja": {
+            "text": "ラグ",
+            "reading": "ラグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "廢紙簍",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深灰色圓筒形小桶，桶口敞開，側面有一圈圈細窄凹槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "wastebasket-bank",
+        "words": {
+          "zh-TW": "廢紙簍",
+          "en": "wastebasket",
+          "ja": {
+            "text": "くずかご",
+            "reading": "くずかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "門前鋪著深藍色長方墊子，表面有粗短纖維和清楚的包邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "floor-mat-bank",
+        "words": {
+          "zh-TW": "腳踏墊",
+          "en": "mat",
+          "ja": {
+            "text": "マット",
+            "reading": "マット"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色陶瓷杯身帶圓弧把手，杯口可見深棕色咖啡表面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "coffee-cup-bank",
+        "words": {
+          "zh-TW": "咖啡杯",
+          "en": "cup",
+          "ja": {
+            "text": "カップ",
+            "reading": "カップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形銀色托盤邊緣微微翹起，表面光滑明亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "tray-bank",
+        "words": {
+          "zh-TW": "托盤",
+          "en": "tray",
+          "ja": {
+            "text": "トレー",
+            "reading": "トレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "地球儀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍綠色球體以細金屬軸固定在圓形底座上，表面沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "globe-bank",
+        "words": {
+          "zh-TW": "地球儀",
+          "en": "globe",
+          "ja": {
+            "text": "地球儀",
+            "reading": "ちきゅうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "資料夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色硬紙板對折成長方形，側邊露出兩個金屬活頁環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "folder-bank",
+        "words": {
+          "zh-TW": "資料夾",
+          "en": "folder",
+          "ja": {
+            "text": "ファイル",
+            "reading": "ファイル"
+          }
+        }
+      }
+    },
+    {
+      "name": "信封",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色長方信封背面有清楚的三角形折口，表面完全空白。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "envelope-bank",
+        "words": {
+          "zh-TW": "信封",
+          "en": "envelope",
+          "ja": {
+            "text": "封筒",
+            "reading": "ふうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "排隊欄杆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根圓柱形金屬立桿之間拉著一條鮮紅色布帶，底部各有圓形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "queue-barrier-bank",
+        "words": {
+          "zh-TW": "排隊欄杆",
+          "en": "queue barrier",
+          "ja": {
+            "text": "ベルトパーテーション",
+            "reading": "ベルトパーテーション"
+          }
+        }
+      }
+    },
+    {
+      "name": "監視攝影機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色短圓筒鏡頭裝在可轉動的支架上，鏡頭前端是黑色圓玻璃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "security-camera-bank",
+        "words": {
+          "zh-TW": "監視攝影機",
+          "en": "security camera",
+          "ja": {
+            "text": "防犯カメラ",
+            "reading": "ぼうはんカメラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "伸縮柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一根筆直的銀色金屬柱立在圓形底座上，頂端有固定布帶的短小接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "stanchion",
+        "words": {
+          "zh-TW": "伸縮柱",
+          "en": "stanchion",
+          "ja": {
+            "text": "ポールパーテーション",
+            "reading": "ポールパーテーション"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方正的直立機身，頂部放著透明水桶，正面有出水按鈕和接水槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "lobby",
+        "itemId": "water-cooler-bank",
+        "words": {
+          "zh-TW": "飲水機",
+          "en": "water cooler",
+          "ja": {
+            "text": "ウォーターサーバー",
+            "reading": "ウォーターサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "服務櫃檯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的木製櫃檯正面平整，邊緣有厚實檯面，底下留有深色踢腳板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "service-counter",
+        "words": {
+          "zh-TW": "服務櫃檯",
+          "en": "counter",
+          "ja": {
+            "text": "カウンター",
+            "reading": "カウンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "螢幕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色扁平長方形螢幕立在短底座上，邊框窄，正面沒有顯示內容。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "monitor-bank",
+        "words": {
+          "zh-TW": "螢幕",
+          "en": "monitor",
+          "ja": {
+            "text": "モニター",
+            "reading": "モニター"
+          }
+        }
+      }
+    },
+    {
+      "name": "鍵盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色扁平長方形板面排列整齊的小方鍵，正面不印文字或符號。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "keyboard-bank",
+        "words": {
+          "zh-TW": "鍵盤",
+          "en": "keyboard",
+          "ja": {
+            "text": "キーボード",
+            "reading": "キーボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑鼠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的黑色掌心大小外殼，中央有一道細縫與小滾輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "mouse-bank",
+        "words": {
+          "zh-TW": "滑鼠",
+          "en": "mouse",
+          "ja": {
+            "text": "マウス",
+            "reading": "マウス"
+          }
+        }
+      }
+    },
+    {
+      "name": "計算機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "掌心大小的長方形機身，上方有深色顯示窗，下方排列一格格按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "calculator-bank",
+        "words": {
+          "zh-TW": "計算機",
+          "en": "calculator",
+          "ja": {
+            "text": "電卓",
+            "reading": "でんたく"
+          }
+        }
+      }
+    },
+    {
+      "name": "剪刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片交叉的銀色刀刃連著圓形手柄，手柄一大一小，開口微張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "scissors-bank",
+        "words": {
+          "zh-TW": "剪刀",
+          "en": "scissors",
+          "ja": {
+            "text": "はさみ",
+            "reading": "はさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "尺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明塑膠長條，兩端平直，沿邊有短刻線但沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "ruler-bank",
+        "words": {
+          "zh-TW": "尺",
+          "en": "ruler",
+          "ja": {
+            "text": "定規",
+            "reading": "じょうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "膠帶台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "沉重的三角形底座上套著透明膠帶卷，前端有鋸齒狀切口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "tape-dispenser-bank",
+        "words": {
+          "zh-TW": "膠帶台",
+          "en": "tape-dispenser",
+          "ja": {
+            "text": "テープカッター",
+            "reading": "テープカッター"
+          }
+        }
+      }
+    },
+    {
+      "name": "打孔機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色金屬長柄壓在圓潤底座上，前端有兩個小圓孔與接紙槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "hole-punch-bank",
+        "words": {
+          "zh-TW": "打孔機",
+          "en": "hole-punch",
+          "ja": {
+            "text": "穴あけパンチ",
+            "reading": "あなあけパンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "板夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "硬挺的棕色長方板頂端夾著銀色彈簧夾，板面空白平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "clipboard-bank",
+        "words": {
+          "zh-TW": "板夾",
+          "en": "clipboard",
+          "ja": {
+            "text": "バインダー",
+            "reading": "バインダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的白色方形機器，頂部有窄縫伸出一小段空白紙條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "calculator-receipt-printer",
+        "words": {
+          "zh-TW": "收據機",
+          "en": "receipt-printer",
+          "ja": {
+            "text": "レシートプリンター",
+            "reading": "レシートプリンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形機身前方有一排凸起按鍵，上方支著小型空白顯示屏。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "cash-register-bank",
+        "words": {
+          "zh-TW": "收銀機",
+          "en": "cash-register",
+          "ja": {
+            "text": "レジスター",
+            "reading": "レジスター"
+          }
+        }
+      }
+    },
+    {
+      "name": "硬幣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一枚圓形金色金屬片，邊緣略厚，正面只有簡單的凸起圓紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "coin",
+        "words": {
+          "zh-TW": "硬幣",
+          "en": "coin",
+          "ja": {
+            "text": "硬貨",
+            "reading": "こうか"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙鈔",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張薄薄的綠色長方紙片，四角平整，中央只有抽象的圓形花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "banknote-bank",
+        "words": {
+          "zh-TW": "紙鈔",
+          "en": "banknote",
+          "ja": {
+            "text": "紙幣",
+            "reading": "しへい"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張邊角圓滑的藍色塑膠長方卡，正面只有一塊金色晶片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "card",
+        "words": {
+          "zh-TW": "卡片",
+          "en": "card",
+          "ja": {
+            "text": "カード",
+            "reading": "カード"
+          }
+        }
+      }
+    },
+    {
+      "name": "放大鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形透明鏡片連著短短黑色手柄，鏡框厚實，輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "magnifying-glass-bank",
+        "words": {
+          "zh-TW": "放大鏡",
+          "en": "magnifying-glass",
+          "ja": {
+            "text": "虫眼鏡",
+            "reading": "むしめがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "拔釘器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的金屬拔釘器有兩片尖嘴與彎曲握柄，外形像短鉗子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "staple-remover-bank",
+        "words": {
+          "zh-TW": "拔釘器",
+          "en": "staple-remover",
+          "ja": {
+            "text": "リムーバー",
+            "reading": "リムーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長木柱立在圓形底座上，頂端伸出幾根向上彎的短掛鉤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "coat-rack-bank",
+        "words": {
+          "zh-TW": "衣帽架",
+          "en": "coat-rack",
+          "ja": {
+            "text": "コートハンガー",
+            "reading": "コートハンガー"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "灰色直立金屬櫃有三層抽屜，每層中央各有一個小把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "filing-cabinet-bank",
+        "words": {
+          "zh-TW": "文件櫃",
+          "en": "filing-cabinet",
+          "ja": {
+            "text": "キャビネット",
+            "reading": "キャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明細長塑膠瓶裝著藍色瓶蓋，瓶身圓柱形，側面沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "water-bottle-bank",
+        "words": {
+          "zh-TW": "水壺",
+          "en": "water-bottle",
+          "ja": {
+            "text": "水筒",
+            "reading": "すいとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "密碼鎖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色小型掛鎖有圓弧鎖鉤，正面排著幾個無字的轉輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "briefcase-lock",
+        "words": {
+          "zh-TW": "密碼鎖",
+          "en": "combination-lock",
+          "ja": {
+            "text": "ダイヤル錠",
+            "reading": "ダイヤルじょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色薄塑膠袋鬆鬆地敞開，袋口皺褶明顯，底部平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "waste-bin-liner",
+        "words": {
+          "zh-TW": "垃圾袋",
+          "en": "trash-bag",
+          "ja": {
+            "text": "ごみ袋",
+            "reading": "ごみぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "迴紋針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長銀色金屬線彎成內外兩層橢圓迴圈，側面平扁，散落在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "paperclip",
+        "words": {
+          "zh-TW": "迴紋針",
+          "en": "paperclip",
+          "ja": {
+            "text": "ゼムクリップ",
+            "reading": "ゼムクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "公告欄",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形的深棕色木框，裡面是淺棕色軟木板，表面沒有張貼任何紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "bulletin-board",
+        "words": {
+          "zh-TW": "公告欄",
+          "en": "bulletin board",
+          "ja": {
+            "text": "掲示板",
+            "reading": "けいじばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "轉盤把手",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形金屬轉盤中央連著短軸，外圈均勻伸出數根粗短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "vault-wheel",
+        "words": {
+          "zh-TW": "轉盤把手",
+          "en": "vault wheel",
+          "ja": {
+            "text": "金庫のハンドル",
+            "reading": "きんこのハンドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "金條",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊厚實的長方形金磚，頂面微微隆起，邊角俐落，通體金黃色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "gold-bar",
+        "words": {
+          "zh-TW": "金條",
+          "en": "gold bar",
+          "ja": {
+            "text": "金の延べ棒",
+            "reading": "きんののべぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "寶石",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆深紅色切面寶石呈圓潤水滴形，中央有幾片明亮的三角形反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "gemstone",
+        "words": {
+          "zh-TW": "寶石",
+          "en": "gemstone",
+          "ja": {
+            "text": "宝石",
+            "reading": "ほうせき"
+          }
+        }
+      }
+    },
+    {
+      "name": "珍珠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆乳白色圓珠表面光滑，帶有柔和的粉色與銀色光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "pearl",
+        "words": {
+          "zh-TW": "珍珠",
+          "en": "pearl",
+          "ja": {
+            "text": "真珠",
+            "reading": "しんじゅ"
+          }
+        }
+      }
+    },
+    {
+      "name": "珠寶盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深藍色方形小盒敞開盒蓋，內襯紅色絨布，邊緣鑲著金色飾條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "jewelry-box",
+        "words": {
+          "zh-TW": "珠寶盒",
+          "en": "jewelry box",
+          "ja": {
+            "text": "宝石箱",
+            "reading": "ほうせきばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "寶箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色木箱配圓弧形箱蓋，正面有寬大的金屬扣環與深色包角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "treasure-chest",
+        "words": {
+          "zh-TW": "寶箱",
+          "en": "treasure chest",
+          "ja": {
+            "text": "宝箱",
+            "reading": "たからばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "保管箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個灰色厚鋼小箱，正面有方形門片、短把手和獨立的圓形鎖孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "safe-deposit-box",
+        "words": {
+          "zh-TW": "保管箱",
+          "en": "safe deposit box",
+          "ja": {
+            "text": "貸金庫",
+            "reading": "かしきんこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "金屬架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黑色金屬立架有四根細長支柱與三層平板，側邊可見交叉支撐桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "metal-shelf",
+        "words": {
+          "zh-TW": "金屬架",
+          "en": "metal shelf",
+          "ja": {
+            "text": "金属棚",
+            "reading": "きんぞくだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "木箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形淺棕木箱由寬木板拼成，四角有深色包邊，側面留著縫隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "wooden-crate",
+        "words": {
+          "zh-TW": "木箱",
+          "en": "wooden crate",
+          "ja": {
+            "text": "木箱",
+            "reading": "きばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色金屬直立車架底部伸出短平台，兩側各有一個黑色橡膠輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "hand-truck-bank",
+        "words": {
+          "zh-TW": "手推車",
+          "en": "hand truck",
+          "ja": {
+            "text": "台車",
+            "reading": "だいしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手電筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色短圓筒手電筒，前端是寬大的透明燈罩，側面有小開關。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "flashlight-bank",
+        "words": {
+          "zh-TW": "手電筒",
+          "en": "flashlight",
+          "ja": {
+            "text": "懐中電灯",
+            "reading": "かいちゅうでんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "提燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形金屬提燈有拱形提把，透明玻璃罩中露出橘黃色燈芯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "lantern-bank",
+        "words": {
+          "zh-TW": "提燈",
+          "en": "lantern",
+          "ja": {
+            "text": "ランタン",
+            "reading": "ランタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "畚箕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色扁平畚箕前緣寬而低，後方接著短柄，兩側有略高的擋邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "dustpan-bank",
+        "words": {
+          "zh-TW": "畚箕",
+          "en": "dustpan",
+          "ja": {
+            "text": "ちりとり",
+            "reading": "ちりとり"
+          }
+        }
+      }
+    },
+    {
+      "name": "掃把",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一根長木柄下端綁著一束金棕色硬刷毛，刷毛向外張成扇形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "broom-bank",
+        "words": {
+          "zh-TW": "掃把",
+          "en": "broom",
+          "ja": {
+            "text": "ほうき",
+            "reading": "ほうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "水桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓桶上寬下窄，頂端有半圓形金屬提把，桶身沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "bucket-bank",
+        "words": {
+          "zh-TW": "水桶",
+          "en": "bucket",
+          "ja": {
+            "text": "バケツ",
+            "reading": "バケツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "海綿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色長方形清潔海綿表面佈滿細小孔洞，底面貼著一層深綠色粗布。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "sponge",
+        "words": {
+          "zh-TW": "海綿",
+          "en": "sponge",
+          "ja": {
+            "text": "スポンジ",
+            "reading": "スポンジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙橘色厚布手套並排放著，每隻都有清楚分開的拇指和四根指套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "gloves-bank",
+        "words": {
+          "zh-TW": "手套",
+          "en": "gloves",
+          "ja": {
+            "text": "手袋",
+            "reading": "てぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "安全帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色圓頂安全帽前方有短帽簷，帽殼上隆起一條粗厚的中央脊線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "hard-hat",
+        "words": {
+          "zh-TW": "安全帽",
+          "en": "hard hat",
+          "ja": {
+            "text": "ヘルメット",
+            "reading": "ヘルメット"
+          }
+        }
+      }
+    },
+    {
+      "name": "折疊梯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "銀灰色雙側梯以尖頂相連，兩側各有數根平直橫踏桿，斜靠在牆邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "folding-ladder",
+        "words": {
+          "zh-TW": "折疊梯",
+          "en": "folding ladder",
+          "ja": {
+            "text": "折りたたみはしご",
+            "reading": "おりたたみはしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "金屬管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一根粗直的灰色金屬圓管橫放地面，兩端開口呈深色圓環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "metal-pipe",
+        "words": {
+          "zh-TW": "金屬管",
+          "en": "metal pipe",
+          "ja": {
+            "text": "金属パイプ",
+            "reading": "きんぞくパイプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "通風口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "牆上嵌著一個灰色長方形通風口，正面有多條平行斜向金屬葉片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "wall-vent",
+        "words": {
+          "zh-TW": "通風口",
+          "en": "vent",
+          "ja": {
+            "text": "換気口",
+            "reading": "かんきこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "管線閥門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "牆面粗管中央裝著紅色圓輪閥，輪緣有短握柄，管線向上下延伸。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "pipe-valve",
+        "words": {
+          "zh-TW": "管線閥門",
+          "en": "pipe valve",
+          "ja": {
+            "text": "配管バルブ",
+            "reading": "はいかんバルブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "絨布袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深紅色柔軟小袋，袋口束緊並露出兩條短繩，底部圓鼓，表面呈細緻絨面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "velvet-pouch",
+        "words": {
+          "zh-TW": "絨布袋",
+          "en": "velvet pouch",
+          "ja": {
+            "text": "ベルベットの巾着袋",
+            "reading": "ベルベットのきんちゃくぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "存摺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一本深藍色的小冊子，封面有淺色邊框與簡單的幾何圖案，側邊露出一疊白色紙頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "safety-deposit-envelope",
+        "words": {
+          "zh-TW": "存摺",
+          "en": "passbook",
+          "ja": {
+            "text": "通帳",
+            "reading": "つうちょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "封蠟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小塊紅色圓柱狀蠟塊，頂面微凹，旁邊有短短的蠟滴形凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "vault-room",
+        "itemId": "security-seal",
+        "words": {
+          "zh-TW": "封蠟",
+          "en": "sealing wax",
+          "ja": {
+            "text": "封蝋",
+            "reading": "ふうろう"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -24,14 +24,18 @@ idle（下一個場景）
   只生成新的物品（miko-ws 只做 manifest 裡還沒做過的），舊物品的 SVG 和位置都不動；補的全放地上（空的是地板）。
   每個街區對同一個 `itemsPerScene` 只補一次（記在 `content/plans/<id>.json` 的 `topUp`），補不滿也不重試；調高 `itemsPerScene` 會再補一輪。
   `--status` 會列出待補的街區和數量。
-- **任何一步失敗就停在 `blocked`**，不會一直燒額度。錯誤在 `.auto-expand/state.json`，各步驟輸出在 `.auto-expand/<步驟>.log`。
+- **失敗不會一直停著**（`scripts/lib/recovery.mjs`）：
+  - 規劃的合格物品不夠 → 跳過這個主題（記在 state 的 `skipped`，log 會寫不合格原因統計），下一輪換下一個主題
+  - 規劃、生成出錯（多半是 miko-ws 連不上）→ 停在 `blocked`，退避後自動重試（30 分、1、2、4、最多 6 小時），不放棄主題
+  - 整合連續失敗 3 次 → 放棄這個場景，改到一半的檔案收進 `git stash`（`git stash list` 找得回來）
+  - 錯誤在 `.auto-expand/state.json`，各步驟輸出在 `.auto-expand/<步驟>.log`
 - **只 commit 到 `feat/expand-scenes`**，不 push。
 - 物品少於 `minItems`（生成失敗太多）也算失敗。
 
 ```bash
 node scripts/auto-expand.mjs --status     # 目前在哪一步、miko-ws 進度
 node scripts/auto-expand.mjs              # 手動推進一步
-node scripts/auto-expand.mjs --unblock    # 修好問題後，從卡住的步驟重來
+node scripts/auto-expand.mjs --unblock    # 不等退避，馬上從卡住的步驟重來
 tail -f .auto-expand/auto-expand.log
 ```
 
@@ -118,3 +122,4 @@ y4620  機場         │  │          │  │ 圖書館       │  │ 海邊
 | 服飾店（clothing-store） | 2026-09-25 20:37 | 88 | 0 | 補元素 +18 |
 | 電影院（movie-theater） | 2026-09-25 21:17 | 82 | 0 | 自動 |
 | 電影院（movie-theater） | 2026-09-25 21:38 | 91 | 0 | 補元素 +9 |
+| 銀行（bank） | 2026-09-26 10:58 | 99 | 0 | 自動 |
