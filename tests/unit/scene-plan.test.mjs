@@ -1,6 +1,6 @@
 import { describe, expect, it, test } from 'vitest';
 import {
-  buildZonePrompt, extractJson, manifestToPlan, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey, zoneShortfall,
+  buildZonePrompt, extractJson, preferNewWords, manifestToPlan, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey, zoneShortfall,
 } from '../../scripts/lib/scene-plan.mjs';
 
 const theme = { id: 'cafe', name: '咖啡館' };
@@ -107,6 +107,14 @@ describe('validateElements', () => {
     expect(used.ids.has('bench-bank')).toBe(true);
   });
 
+  it('limit：收滿就停，後面的不算不合格', () => {
+    const { ok, rejected } = validateElements([
+      el(), el({ id: 'rug', zh: '地毯', en: 'rug', ja: 'ラグ', reading: 'ラグ' }),
+    ], { zone: zones[1], used: freshUsed(), limit: 1 });
+    expect(ok.map((e) => e.id)).toEqual(['teacup']);
+    expect(rejected).toEqual([]);
+  });
+
   it('加了後綴還是重複就擋下', () => {
     const used = { ids: new Set(['bench', 'bench-bank']), en: new Set(), zh: new Set() };
     const { rejected } = validateElements([el({ id: 'bench', en: 'bench', zh: '長椅' })], { zone: zones[1], used, sceneId: 'bank' });
@@ -132,6 +140,11 @@ describe('buildZonePrompt', () => {
     expect(p).not.toContain('surface（');
     expect(p).not.toContain('至少');
     expect(p).toContain('已經有：茶杯（teacup）');
+  });
+
+  it('帶上全鎮已有的單字，要求優先給新的', () => {
+    const p = buildZonePrompt({ sceneName: '銀行', zone: zones[1], count: 7, avoidEn: [], maxMotion: 1, townEn: ['bench', 'car'] });
+    expect(p).toContain('盡量不要用小鎮別的街區已經有的：bench, car');
   });
 
   it('沒有要避開的單字時不出現避開規則', () => {
@@ -215,5 +228,13 @@ describe('manifestToPlan（手畫的核心場景接上補元素）', () => {
     expect(plan.zones.map((z) => z.id)).toEqual(['entrance', 'lake']);
     const short = zoneShortfall(plan, ['gate', 'rowboat'], plan.itemsTarget);
     expect(short.map((s) => s.need)).toEqual([34, 34]);
+  });
+});
+
+describe('preferNewWords', () => {
+  it('全鎮沒有的單字排前面，其餘照原順序', () => {
+    const list = [{ en: 'Bench' }, { en: 'vault' }, { en: 'cars' }, { en: 'teller window' }];
+    expect(preferNewWords(list, new Set([wordKey('bench'), wordKey('car')])).map((e) => e?.en))
+      .toEqual(['vault', 'teller window', 'Bench', 'cars']);
   });
 });

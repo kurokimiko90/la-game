@@ -96,7 +96,7 @@ export function parseOutline(raw, { theme, usedZoneIds = [] }) {
  * spots：這次只收這些位置（補元素時只要 ground）；existing：區域裡已經有的物品 { id, zh }，新的要和它們不同、可以搭配。
  * 可以放別的位置時，至少一半要放地上：不然 LLM 常把東西全擺在牆上和檯面上，地板空一大片。
  */
-export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, spots = allowedSpots(zone), existing = [] }) {
+export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, spots = allowedSpots(zone), existing = [], townEn = [] }) {
   const spotText = spots.map((s) => `${s}（${s === 'surface' ? `放在${FEATURE_TEXT[zone.feature].slice(1)}上` : SPOT_TEXT[s]}）`).join(' | ');
   const minGround = spots.length > 1 && spots.includes('ground') ? Math.ceil(count / 2) : 0;
   return [
@@ -106,6 +106,7 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
     '1. 單一、能用正面扁平向量圖示畫出來、一眼認得出的物品。不要動物、人物、場所、抽象概念、液體或一大片東西；也不要人形或動物形狀的東西（雕像、玩偶、畫著人形的標誌），這類圖畫不出來。',
     '2. 物品不能靠文字辨認（例如招牌、書名），圖裡不會有任何文字或數字。',
     ...(avoidEn.length ? [`3. 英文單字不能和這些重複（單複數不同也算重複）：${avoidEn.join(', ')}`] : []),
+    ...(townEn.length ? [`   盡量不要用小鎮別的街區已經有的：${townEn.join(', ')}。真的找不到新的才用。`] : []),
     `${avoidEn.length ? 4 : 3}. 每個物品的欄位：`,
     '   id：英文小寫 kebab-case（通常就是英文單字）',
     '   zh：繁體中文（台灣用語）；en：英文單字（小寫）；ja：日文常用說法；reading：只用平假名或片假名的讀音',
@@ -128,12 +129,13 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
  * 改名記在 used.renamed，cluster 跟著換。
  * @returns {{ ok: object[], rejected: Array<{ id: string, reason: string }> }}
  */
-export function validateElements(list, { zone, used, spots = allowedSpots(zone), related = [], sceneId = null }) {
+export function validateElements(list, { zone, used, spots = allowedSpots(zone), related = [], sceneId = null, limit = Infinity }) {
   const renamed = used.renamed ?? new Map();
   const ok = [];
   const similarPool = [...related];
   const rejected = [];
   for (const raw of Array.isArray(list) ? list : []) {
+    if (ok.length >= limit) break;
     const e = raw ?? {};
     const en = String(e.en ?? '').trim().toLowerCase();
     const id = sceneId && used.ids.has(e.id) ? `${e.id}-${sceneId}` : e.id;
@@ -174,6 +176,12 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone),
     ok.push(item);
   }
   return { ok, rejected };
+}
+
+/** 全鎮還沒有的單字排前面（穩定排序），讓 validateElements 的 limit 先收新詞。townEn：wordKey 的 Set */
+export function preferNewWords(list, townEn) {
+  const isOld = (e) => townEn.has(wordKey(String(e?.en ?? '').trim().toLowerCase()));
+  return [...list.filter((e) => !isOld(e)), ...list.filter(isOld)];
 }
 
 /** 規劃 → manifest（miko-ws 生成 SVG 用，格式同手寫的 content/svg-manifests/*.json） */

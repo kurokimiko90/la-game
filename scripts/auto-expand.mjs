@@ -19,7 +19,7 @@ import { nextSlot, worldSize } from './lib/district-kit.mjs';
 import { upsertScene } from './lib/config-writer.mjs';
 import { codexText, ensureGenerator, jobProgress, registerJob, requeueFailed } from './lib/miko.mjs';
 import {
-  buildOutlinePrompt, buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey,
+  buildOutlinePrompt, buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, preferNewWords, splitCount, validateElements, wordKey,
   zoneShortfall,
 } from './lib/scene-plan.mjs';
 import { buildStagePrompt, parseStage } from './lib/stage-plan.mjs';
@@ -41,6 +41,7 @@ const P = {
   log: path.join(ROOT, 'docs', 'expansion.md'),
 };
 const ZONE_TRIES = 3;
+const OVERSAMPLE = 1.5;
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const writeJson = (file, data) => {
@@ -82,12 +83,15 @@ function run(name, cmd, args) {
 
 /**
  * 已用掉的 id（整張地圖唯一）和單字（只在同一個街區內不能重複；不同街區可以有同樣的東西）。
- * sceneElements：這個街區已經有的物品。
+ * town：全鎮已有的單字（不擋，只是讓新詞優先）。sceneElements：這個街區已經有的物品。
  */
 function usedWords(sceneElements = []) {
-  const used = { ids: new Set(), en: new Set(), zh: new Set(), renamed: new Map() };
+  const used = { ids: new Set(), en: new Set(), zh: new Set(), renamed: new Map(), town: new Map() };
   for (const f of fs.readdirSync(P.manifests)) {
-    for (const el of readJson(path.join(P.manifests, f)).elements) used.ids.add(el.ref.itemId);
+    for (const el of readJson(path.join(P.manifests, f)).elements) {
+      used.ids.add(el.ref.itemId);
+      used.town.set(wordKey(el.ref.words.en), el.ref.words.en);
+    }
   }
   for (const el of sceneElements) {
     used.en.add(wordKey(el.en));
@@ -107,14 +111,17 @@ function usedSlots() {
   return fs.readdirSync(P.plans).map((f) => readJson(path.join(P.plans, f)).slot).filter(Boolean);
 }
 
-/** 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：街區裡已經有的物品（太像的會擋下） */
+/**
+ * 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：街區裡已經有的物品（太像的會擋下）。
+ * 多要一半，全鎮還沒有的單字先收，不夠才用別的街區已有的。
+ */
 async function planZone({ sceneId, sceneName, zone, count, used, spots, existing = [] }) {
   const elements = [];
   const rejected = [];
   for (let t = 0; t < ZONE_TRIES && elements.length < count; t++) {
     const need = count - elements.length;
     const prompt = buildZonePrompt({
-      sceneName, zone, count: need, avoidEn: [], maxMotion: Math.max(1, Math.floor(need * 0.2)), spots, existing: [...existing, ...elements],
+      sceneName, zone, count: Math.ceil(need * OVERSAMPLE), avoidEn: [], townEn: [...used.town.values()], maxMotion: Math.max(1, Math.floor(need * 0.2)), spots, existing: [...existing, ...elements],
     });
     let list;
     try {
@@ -123,11 +130,13 @@ async function planZone({ sceneId, sceneName, zone, count, used, spots, existing
       log(`  ${zone.name} 第 ${t + 1} 次解析失敗：${e.message}`);
       continue;
     }
-    const result = validateElements((Array.isArray(list) ? list : []).slice(0, need), { zone, used, spots, related: [...existing, ...elements], sceneId });
+    const candidates = preferNewWords(Array.isArray(list) ? list : [], new Set(used.town.keys()));
+    const result = validateElements(candidates, { zone, used, spots, related: [...existing, ...elements], sceneId, limit: need });
     elements.push(...result.ok);
     rejected.push(...result.rejected.map((r) => ({ ...r, zone: zone.id })));
   }
-  log(`  ${zone.name}：${elements.length}/${count} 個`);
+  const fresh = elements.filter((e) => !used.town.has(wordKey(e.en))).length;
+  log(`  ${zone.name}：${elements.length}/${count} 個（新詞 ${fresh}）`);
   return { elements, rejected };
 }
 
