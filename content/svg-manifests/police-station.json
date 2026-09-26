@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・警察局",
+  "sceneSlug": "la-police-station",
+  "propStyle": "front-flat",
+  "zones": {
+    "station-entrance": "警局入口",
+    "reception": "接待大廳",
+    "evidence-room": "證物室",
+    "training-yard": "訓練場"
+  },
+  "elements": [
+    {
+      "name": "警車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色車身配深藍色車門，車頂有紅藍警示燈，車頭有黑色格柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "police-car",
+        "words": {
+          "zh-TW": "警車",
+          "en": "police car",
+          "ja": {
+            "text": "パトカー",
+            "reading": "パトカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "警用摩托車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色摩托車有兩個黑色輪胎，車頭裝著透明擋風板和警示燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "motorcycle-police-station",
+        "words": {
+          "zh-TW": "警用摩托車",
+          "en": "police motorcycle",
+          "ja": {
+            "text": "白バイ",
+            "reading": "しろばい"
+          }
+        }
+      }
+    },
+    {
+      "name": "警用腳踏車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深色車架配兩個細輪胎，車把上有黑色握把，後方裝著小型置物架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "bicycle-police-station",
+        "words": {
+          "zh-TW": "警用腳踏車",
+          "en": "police bicycle",
+          "ja": {
+            "text": "警察用自転車",
+            "reading": "けいさつようじてんしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "巡邏廂型車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "方正的白色廂型車，側面有深色車窗，車頂裝著紅藍警示燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "patrol-van",
+        "words": {
+          "zh-TW": "巡邏廂型車",
+          "en": "patrol van",
+          "ja": {
+            "text": "パトロールバン",
+            "reading": "パトロールバン"
+          }
+        }
+      }
+    },
+    {
+      "name": "停車柵欄桿",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅白相間的長條橫桿，一端連著方形立柱，橫桿抬起斜指天空。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "parking-barrier-arm",
+        "words": {
+          "zh-TW": "停車柵欄桿",
+          "en": "parking barrier arm",
+          "ja": {
+            "text": "駐車場バー",
+            "reading": "ちゅうしゃじょうバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "柵欄立柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮方柱立在車道邊，頂部有圓角蓋板，側面伸出一支長柵欄桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "barrier-post",
+        "words": {
+          "zh-TW": "柵欄立柱",
+          "en": "barrier post",
+          "ja": {
+            "text": "ゲート柱",
+            "reading": "ゲートちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "警徽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色盾牌形金屬徽章，中央有凸起的小圓飾，周圍有細窄的邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "police-badge",
+        "words": {
+          "zh-TW": "警徽",
+          "en": "police badge",
+          "ja": {
+            "text": "警察バッジ",
+            "reading": "けいさつバッジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "警帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深藍色圓頂帽，帽前有小型金色盾形徽章，前方伸出短帽簷。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "uniform-cap",
+        "words": {
+          "zh-TW": "警帽",
+          "en": "police cap",
+          "ja": {
+            "text": "警察帽",
+            "reading": "けいさつぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "手銬",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個銀色金屬圓環以短鏈相連，每個圓環旁都有一段細小的齒狀扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "handcuffs",
+        "words": {
+          "zh-TW": "手銬",
+          "en": "handcuffs",
+          "ja": {
+            "text": "手錠",
+            "reading": "てじょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "警用無線電",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色長方形手持機身，頂端有短天線，正面有揚聲孔和圓形旋鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "police-radio",
+        "words": {
+          "zh-TW": "警用無線電",
+          "en": "police radio",
+          "ja": {
+            "text": "警察無線機",
+            "reading": "けいさつむせんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "無線電套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色皮革直立套袋，頂端敞開，側邊有短扣帶和金屬固定環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "radio-holster",
+        "words": {
+          "zh-TW": "無線電套",
+          "en": "radio holster",
+          "ja": {
+            "text": "無線機ホルスター",
+            "reading": "むせんきホルスター"
+          }
+        }
+      }
+    },
+    {
+      "name": "警棍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而粗的黑色圓柱棍，一端略粗，握柄處有一圈防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "police-baton",
+        "words": {
+          "zh-TW": "警棍",
+          "en": "police baton",
+          "ja": {
+            "text": "警棒",
+            "reading": "けいぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "哨子掛繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深色細繩彎成一個圈，末端有小金屬扣環，可連接一只小哨子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "whistle-lanyard",
+        "words": {
+          "zh-TW": "哨子掛繩",
+          "en": "whistle lanyard",
+          "ja": {
+            "text": "笛のひも",
+            "reading": "ふえのひも"
+          }
+        }
+      }
+    },
+    {
+      "name": "指揮棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的紅色圓柱棒，兩端為黑色，握柄末端有一段防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "traffic-baton",
+        "words": {
+          "zh-TW": "指揮棒",
+          "en": "traffic baton",
+          "ja": {
+            "text": "誘導棒",
+            "reading": "ゆうどうぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "警用手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙深藍色短手套，五根指頭分開，手腕處各有窄窄的收口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "police-gloves",
+        "words": {
+          "zh-TW": "警用手套",
+          "en": "police gloves",
+          "ja": {
+            "text": "警察用手袋",
+            "reading": "けいさつようてぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "道路警示燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色短圓筒警示燈，透明圓罩露出在頂端，底部有扁平黑色底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "road-flare",
+        "words": {
+          "zh-TW": "道路警示燈",
+          "en": "road flare",
+          "ja": {
+            "text": "道路用発炎筒",
+            "reading": "どうろようはつえんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "反光標柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色細長立柱固定在路邊，頂端有一塊紅色反光片，底部套著黑色圓環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "reflector-post",
+        "words": {
+          "zh-TW": "反光標柱",
+          "en": "reflector post",
+          "ja": {
+            "text": "視線誘導標",
+            "reading": "しせんゆうどうひょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "道路反光標記",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平金屬圓角方塊嵌在車道表面，頂面有一小片黃色反光材質。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "road-stud",
+        "words": {
+          "zh-TW": "道路反光標記",
+          "en": "road stud",
+          "ja": {
+            "text": "道路鋲",
+            "reading": "どうろびょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "地面標記塊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色扁平長方塊固定在地面，表面有凸起的幾何紋路，不含文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "ground-marker",
+        "words": {
+          "zh-TW": "地面標記塊",
+          "en": "ground marker",
+          "ja": {
+            "text": "路面標示ブロック",
+            "reading": "ろめんひょうじブロック"
+          }
+        }
+      }
+    },
+    {
+      "name": "護欄",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀灰色金屬橫桿由多根直立支柱架起，沿著車道邊緣延伸。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "guard-rail",
+        "words": {
+          "zh-TW": "護欄",
+          "en": "guard rail",
+          "ja": {
+            "text": "ガードレール",
+            "reading": "ガードレール"
+          }
+        }
+      }
+    },
+    {
+      "name": "連鎖柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根黑色短柱立在地面，中間垂著一段銀色金屬鏈條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "chain-post",
+        "words": {
+          "zh-TW": "連鎖柱",
+          "en": "chain post",
+          "ja": {
+            "text": "チェーンポール",
+            "reading": "チェーンポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "停車擋輪塊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的灰色長方塊橫在車位前端，兩側有圓角，表面嵌著小型反光片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "parking-curb-stop",
+        "words": {
+          "zh-TW": "停車擋輪塊",
+          "en": "parking curb stop",
+          "ja": {
+            "text": "車止めブロック",
+            "reading": "くるまどめブロック"
+          }
+        }
+      }
+    },
+    {
+      "name": "防撞柱套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色厚布套包住短圓柱，頂部圓滑，表面有一圈黑色反光帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "bollard-cover",
+        "words": {
+          "zh-TW": "防撞柱套",
+          "en": "bollard cover",
+          "ja": {
+            "text": "車止めポールカバー",
+            "reading": "くるまどめポールカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "攝影機支架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "灰色金屬彎臂連著方形固定底板，末端有圓形接頭，可托住攝影機。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "camera-bracket",
+        "words": {
+          "zh-TW": "攝影機支架",
+          "en": "camera bracket",
+          "ja": {
+            "text": "カメラブラケット",
+            "reading": "カメラブラケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色短彎臂托著乳白色圓罩燈，燈罩朝下，底部連著小型圓形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "station-entrance",
+        "itemId": "wall-light",
+        "words": {
+          "zh-TW": "壁燈",
+          "en": "wall light",
+          "ja": {
+            "text": "壁付け照明",
+            "reading": "かべつけしょうめい"
+          }
+        }
+      }
+    },
+    {
+      "name": "訪客椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "單人椅有方正的深藍椅背與椅面，四根細長黑色椅腳清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "visitor-chair",
+        "words": {
+          "zh-TW": "訪客椅",
+          "en": "visitor chair",
+          "ja": {
+            "text": "来客用椅子",
+            "reading": "らいきゃくよういす"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形塑膠盤，前緣較低，盤內疊著幾張沒有文字的白紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "filing-tray-police-station",
+        "words": {
+          "zh-TW": "文件盤",
+          "en": "filing tray",
+          "ja": {
+            "text": "書類トレー",
+            "reading": "しょるいトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "印台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁方形黑色底座配掀開的藍色上蓋，中央露出一塊深紅色印泥。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "ink-pad-police-station",
+        "words": {
+          "zh-TW": "印台",
+          "en": "ink pad",
+          "ja": {
+            "text": "スタンプ台",
+            "reading": "スタンプだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡皮章",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木質短柄上接方形橡膠印面，柄頂呈圓弧，底面朝向下方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "rubber-stamp-police-station",
+        "words": {
+          "zh-TW": "橡皮章",
+          "en": "rubber stamp",
+          "ja": {
+            "text": "ゴム印",
+            "reading": "ゴムいん"
+          }
+        }
+      }
+    },
+    {
+      "name": "打孔機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色金屬長臂壓在扁平底座上，前端有兩個圓形打孔口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "hole-punch-police-station",
+        "words": {
+          "zh-TW": "打孔機",
+          "en": "hole punch",
+          "ja": {
+            "text": "穴あけパンチ",
+            "reading": "あなあけパンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "迴紋針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色細金屬線彎成兩層細長橢圓，一端收成圓滑的小彎鉤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "paperclip-police-station",
+        "words": {
+          "zh-TW": "迴紋針",
+          "en": "paper clip",
+          "ja": {
+            "text": "ゼムクリップ",
+            "reading": "ゼムクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "長尾夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色三角金屬夾身兩側各有一個細長銀色折柄，輪廓緊湊醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "binder-clip-police-station",
+        "words": {
+          "zh-TW": "長尾夾",
+          "en": "binder clip",
+          "ja": {
+            "text": "ダブルクリップ",
+            "reading": "ダブルクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深色直立木柱頂端伸出數支彎鉤，底部以三腳支架穩穩立在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "coat-rack-police-station",
+        "words": {
+          "zh-TW": "衣帽架",
+          "en": "coat rack",
+          "ja": {
+            "text": "コート掛け",
+            "reading": "コートかけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "火警警報器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色方形盒子中央凸出一個透明圓燈罩，底部有小型按壓面板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "fire-alarm-police-station",
+        "words": {
+          "zh-TW": "火警警報器",
+          "en": "fire alarm",
+          "ja": {
+            "text": "火災報知器",
+            "reading": "かさいほうちき"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明深色塑膠袋鼓起成不規則圓團，袋口打結並向一側歪斜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "trash-bag",
+        "words": {
+          "zh-TW": "垃圾袋",
+          "en": "trash bag",
+          "ja": {
+            "text": "ごみ袋",
+            "reading": "ごみぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "月曆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方紙張掛在牆上，頂端有金屬線圈，頁面只見空白格線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "wall-calendar",
+        "words": {
+          "zh-TW": "月曆",
+          "en": "wall calendar",
+          "ja": {
+            "text": "壁掛けカレンダー",
+            "reading": "かべかけカレンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一片淺木色長板由兩個黑色三角支架托住，板面放著幾本合起來的空白冊子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "wall-shelf-police-station",
+        "words": {
+          "zh-TW": "壁架",
+          "en": "wall shelf",
+          "ja": {
+            "text": "壁棚",
+            "reading": "かべだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌上收納架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木製多格小架子有幾個開口方格，插著空白紙張與幾支不同顏色的筆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "desk-organizer-police-station",
+        "words": {
+          "zh-TW": "桌上收納架",
+          "en": "desk organizer",
+          "ja": {
+            "text": "デスクオーガナイザー",
+            "reading": "デスクオーガナイザー"
+          }
+        }
+      }
+    },
+    {
+      "name": "原子筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長藍色筆身一端是金屬筆尖，另一端有小筆夾，平放在吧台上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "pen-police-station",
+        "words": {
+          "zh-TW": "原子筆",
+          "en": "ballpoint pen",
+          "ja": {
+            "text": "ボールペン",
+            "reading": "ボールペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "資料夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮黃色薄文件夾沿中央折線合起，頂邊一側凸出短短的索引耳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "folder-police-station",
+        "words": {
+          "zh-TW": "資料夾",
+          "en": "file folder",
+          "ja": {
+            "text": "ファイルフォルダー",
+            "reading": "ファイルフォルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "訂書機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短胖的黑色金屬機身上下分層，前端有窄縫，底部平穩貼著桌面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "stapler-police-station",
+        "words": {
+          "zh-TW": "訂書機",
+          "en": "stapler",
+          "ja": {
+            "text": "ホチキス",
+            "reading": "ホチキス"
+          }
+        }
+      }
+    },
+    {
+      "name": "抽屜",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "吧台下方露出一個木製長方抽屜，正面有單一圓形金屬把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "drawer-police-station",
+        "words": {
+          "zh-TW": "抽屜",
+          "en": "drawer",
+          "ja": {
+            "text": "引き出し",
+            "reading": "ひきだし"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "灰色直立金屬櫃分成數層抽屜，每層中央有小把手與狹長標籤框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "filing-cabinet-police-station",
+        "words": {
+          "zh-TW": "文件櫃",
+          "en": "filing cabinet",
+          "ja": {
+            "text": "書類キャビネット",
+            "reading": "しょるいキャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "滅火器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色圓筒瓶身頂部有黑色握把與短噴嘴，側邊掛著一條黑色軟管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "fire-extinguisher-police-station",
+        "words": {
+          "zh-TW": "滅火器",
+          "en": "fire extinguisher",
+          "ja": {
+            "text": "消火器",
+            "reading": "しょうかき"
+          }
+        }
+      }
+    },
+    {
+      "name": "煙霧偵測器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓盤狀裝置貼在牆面上，中央有細小通氣孔，側邊露出窄窄的縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "smoke-detector-police-station",
+        "words": {
+          "zh-TW": "煙霧偵測器",
+          "en": "smoke detector",
+          "ja": {
+            "text": "煙感知器",
+            "reading": "けむりかんちき"
+          }
+        }
+      }
+    },
+    {
+      "name": "急救箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方硬殼箱配紅色十字圖形，頂上有拱形提把與兩側扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "first-aid-kit-police-station",
+        "words": {
+          "zh-TW": "急救箱",
+          "en": "first aid kit",
+          "ja": {
+            "text": "救急箱",
+            "reading": "きゅうきゅうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色直立機身頂部倒扣透明水桶，下方有兩個出水龍頭與接水槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "water-cooler-police-station",
+        "words": {
+          "zh-TW": "飲水機",
+          "en": "water cooler",
+          "ja": {
+            "text": "ウォーターサーバー",
+            "reading": "ウォーターサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "廢紙簍",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色網狀圓筒籃口寬底部窄，籃內露出一團揉皺的白紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "wastebasket-police-station",
+        "words": {
+          "zh-TW": "廢紙簍",
+          "en": "wastebasket",
+          "ja": {
+            "text": "くずかご",
+            "reading": "くずかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨傘架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深灰色高筒傘架有圓形開口與窄長排水孔，旁邊立著一把收起的傘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "umbrella-stand-police-station",
+        "words": {
+          "zh-TW": "雨傘架",
+          "en": "umbrella stand",
+          "ja": {
+            "text": "傘立て",
+            "reading": "かさたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色鐘面包在深木色外框裡，兩根黑色指針從中央伸出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "reception",
+        "itemId": "wall-clock",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall clock",
+          "ja": {
+            "text": "掛け時計",
+            "reading": "かけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "證物箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明硬殼箱配深色邊框，正面有扣合卡榫，裡面放著一件單獨物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "evidence-box",
+        "words": {
+          "zh-TW": "證物箱",
+          "en": "evidence box",
+          "ja": {
+            "text": "証拠品箱",
+            "reading": "しょうこひんばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "證物袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長方形塑膠袋，頂端有封口條，袋內裝著一枚小型金屬物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "evidence-bag",
+        "words": {
+          "zh-TW": "證物袋",
+          "en": "evidence bag",
+          "ja": {
+            "text": "証拠品袋",
+            "reading": "しょうこひんぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "指紋卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺色硬卡片上有幾道黑色弧形指紋紋路，旁邊留著一塊空白區域。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "fingerprint-card",
+        "words": {
+          "zh-TW": "指紋卡",
+          "en": "fingerprint card",
+          "ja": {
+            "text": "指紋カード",
+            "reading": "しもんカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "指紋粉末罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的圓罐配深色旋蓋，罐身透明，能看見裡面裝著細緻的黑色粉末。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "fingerprint-powder",
+        "words": {
+          "zh-TW": "指紋粉末罐",
+          "en": "fingerprint powder jar",
+          "ja": {
+            "text": "指紋採取用粉末容器",
+            "reading": "しもんさいしゅようふんまつようき"
+          }
+        }
+      }
+    },
+    {
+      "name": "指紋刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長握柄前端接著一簇柔軟的黑色刷毛，刷毛呈圓錐狀散開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "fingerprint-brush",
+        "words": {
+          "zh-TW": "指紋刷",
+          "en": "fingerprint brush",
+          "ja": {
+            "text": "指紋採取用ブラシ",
+            "reading": "しもんさいしゅようブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "採樣棉棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的白色棒身兩端各有一團蓬鬆棉頭，外形輕巧而醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "swab",
+        "words": {
+          "zh-TW": "採樣棉棒",
+          "en": "swab",
+          "ja": {
+            "text": "綿棒",
+            "reading": "めんぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "密封信封",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺褐色長方形紙封套，背面三角形封口以紅色封蠟固定，外表沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "sealed-envelope",
+        "words": {
+          "zh-TW": "密封信封",
+          "en": "sealed envelope",
+          "ja": {
+            "text": "封筒",
+            "reading": "ふうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "封蠟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形暗紅色蠟片表面帶有簡單凸紋，邊緣微微不規則，沒有字母或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "wax-seal-police-station",
+        "words": {
+          "zh-TW": "封蠟",
+          "en": "wax seal",
+          "ja": {
+            "text": "封蝋",
+            "reading": "ふうろう"
+          }
+        }
+      }
+    },
+    {
+      "name": "證物吊牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小張米白色硬紙牌，頂端穿孔並繫著短棉繩，牌面完全空白。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "evidence-tag",
+        "words": {
+          "zh-TW": "證物吊牌",
+          "en": "evidence tag",
+          "ja": {
+            "text": "証拠品タグ",
+            "reading": "しょうこひんタグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "封條",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮黃色窄長封條帶有撕裂邊緣，中央只有醒目的盾形圖案，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "evidence-seal",
+        "words": {
+          "zh-TW": "封條",
+          "en": "evidence seal",
+          "ja": {
+            "text": "封印シール",
+            "reading": "ふういんシール"
+          }
+        }
+      }
+    },
+    {
+      "name": "手持掃描器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色手握式裝置頂端有寬扁掃描窗，握柄上有幾個彩色按鍵，沒有螢幕文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "handheld-scanner",
+        "words": {
+          "zh-TW": "手持掃描器",
+          "en": "handheld scanner",
+          "ja": {
+            "text": "ハンディスキャナー",
+            "reading": "ハンディスキャナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "電子秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平方形秤面配四個圓角，前側有一塊空白深色顯示窗，表面沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "digital-scale",
+        "words": {
+          "zh-TW": "電子秤",
+          "en": "digital scale",
+          "ja": {
+            "text": "デジタルはかり",
+            "reading": "デジタルはかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "三腳架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "三根細長金屬腳向外張開，頂端支撐圓形雲台，結構對稱而容易辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "tripod",
+        "words": {
+          "zh-TW": "三腳架",
+          "en": "tripod",
+          "ja": {
+            "text": "三脚",
+            "reading": "さんきゃく"
+          }
+        }
+      }
+    },
+    {
+      "name": "底片筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧不透明圓筒配緊密卡扣上蓋，外觀簡潔，沒有標籤或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "film-canister-police-station",
+        "words": {
+          "zh-TW": "底片筒",
+          "en": "film canister",
+          "ja": {
+            "text": "フィルムケース",
+            "reading": "フィルムケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋印石膏模",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺灰色長方形石膏塊上壓著清楚的鞋底紋路，邊緣厚實且略有缺口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "shoe-print-cast",
+        "words": {
+          "zh-TW": "鞋印石膏模",
+          "en": "shoeprint cast",
+          "ja": {
+            "text": "靴跡の石膏型",
+            "reading": "くつあとのせっこうがた"
+          }
+        }
+      }
+    },
+    {
+      "name": "玻璃碎片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片淡藍透明的不規則尖角薄片聚在一起，邊緣帶有明亮反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "broken-glass",
+        "words": {
+          "zh-TW": "玻璃碎片",
+          "en": "broken glass",
+          "ja": {
+            "text": "ガラス片",
+            "reading": "ガラスへん"
+          }
+        }
+      }
+    },
+    {
+      "name": "金屬碎片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "彎曲的銀灰色薄金屬片一端尖銳，表面有明暗反光與一道折痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "metal-shard",
+        "words": {
+          "zh-TW": "金屬碎片",
+          "en": "metal shard",
+          "ja": {
+            "text": "金属片",
+            "reading": "きんぞくへん"
+          }
+        }
+      }
+    },
+    {
+      "name": "彈殼",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短小黃銅色圓筒，一端開口、一端平整，側面有一圈明顯的底緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "spent-cartridge",
+        "words": {
+          "zh-TW": "彈殼",
+          "en": "spent cartridge",
+          "ja": {
+            "text": "薬莢",
+            "reading": "やっきょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "破損手錶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形深色錶盤外接一條斷開的皮革錶帶，鏡面有裂紋且沒有可讀刻度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "broken-watch",
+        "words": {
+          "zh-TW": "破損手錶",
+          "en": "broken watch",
+          "ja": {
+            "text": "壊れた腕時計",
+            "reading": "こわれたうでどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "破損手機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平黑色長方形機身，正面玻璃裂成放射狀紋路，沒有圖示或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "broken-phone",
+        "words": {
+          "zh-TW": "破損手機",
+          "en": "broken phone",
+          "ja": {
+            "text": "壊れた携帯電話",
+            "reading": "こわれたけいたいでんわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "美工刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長塑膠刀柄配一截銀色滑出刀片，背面有醒目的推鈕，造型簡單。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "utility-knife",
+        "words": {
+          "zh-TW": "美工刀",
+          "en": "utility knife",
+          "ja": {
+            "text": "カッターナイフ",
+            "reading": "カッターナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "護目鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明弧形鏡片配粗厚深色邊框，兩側連著一條寬彈性頭帶，沒有字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "protective-goggles",
+        "words": {
+          "zh-TW": "護目鏡",
+          "en": "protective goggles",
+          "ja": {
+            "text": "保護ゴーグル",
+            "reading": "ほごゴーグル"
+          }
+        }
+      }
+    },
+    {
+      "name": "防護面罩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明硬質面罩罩住口鼻區域，兩側有深色固定帶，沒有任何人形或圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "protective-mask",
+        "words": {
+          "zh-TW": "防護面罩",
+          "en": "protective mask",
+          "ja": {
+            "text": "防護マスク",
+            "reading": "ぼうごマスク"
+          }
+        }
+      }
+    },
+    {
+      "name": "捲尺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色短尺帶從紅黑色圓形外殼伸出，外殼側邊有按壓鎖定鈕，不顯示刻度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "measuring-tape-police-station",
+        "words": {
+          "zh-TW": "捲尺",
+          "en": "tape measure",
+          "ja": {
+            "text": "巻尺",
+            "reading": "まきじゃく"
+          }
+        }
+      }
+    },
+    {
+      "name": "金屬銼刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長矩形鋼製銼刀表面布滿斜向齒紋，一端接著短而圓的黑色握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "evidence-room",
+        "itemId": "metal-file",
+        "words": {
+          "zh-TW": "金屬銼刀",
+          "en": "metal file",
+          "ja": {
+            "text": "金属やすり",
+            "reading": "きんぞくやすり"
+          }
+        }
+      }
+    },
+    {
+      "name": "平衡木",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一條低矮的長方形木樑，表面平坦，兩端由短腳架撐起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "balance-beam",
+        "words": {
+          "zh-TW": "平衡木",
+          "en": "balance beam",
+          "ja": {
+            "text": "平均台",
+            "reading": "へいきんだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "雙槓",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩根平行的水平金屬桿架在四支直立支柱上，底部有寬腳座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "parallel-bars",
+        "words": {
+          "zh-TW": "雙槓",
+          "en": "parallel bars",
+          "ja": {
+            "text": "平行棒",
+            "reading": "へいこうぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "單槓",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根筆直的水平金屬桿，由兩根垂直支柱穩穩架在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "horizontal-bar",
+        "words": {
+          "zh-TW": "單槓",
+          "en": "horizontal bar",
+          "ja": {
+            "text": "鉄棒",
+            "reading": "てつぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳馬",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形分層箱體上覆著棕色軟墊，底部有穩固的支撐腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "vaulting-horse",
+        "words": {
+          "zh-TW": "跳馬",
+          "en": "vaulting horse",
+          "ja": {
+            "text": "跳び箱",
+            "reading": "とびばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "體操墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一塊厚實的長方形藍色墊子，邊緣平直，表面平滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "gym-mat",
+        "words": {
+          "zh-TW": "體操墊",
+          "en": "gym mat",
+          "ja": {
+            "text": "体操マット",
+            "reading": "たいそうマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "跨欄架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩個窄腳架撐著一根橫向欄木，造型簡單，顏色對比鮮明。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "hurdle",
+        "words": {
+          "zh-TW": "跨欄架",
+          "en": "hurdle",
+          "ja": {
+            "text": "ハードル",
+            "reading": "ハードル"
+          }
+        }
+      }
+    },
+    {
+      "name": "起跑架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條短金屬橫桿連著兩塊斜向踏板，踏板有止滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "starting-block",
+        "words": {
+          "zh-TW": "起跑架",
+          "en": "starting block",
+          "ja": {
+            "text": "スターティングブロック",
+            "reading": "スターティングブロック"
+          }
+        }
+      }
+    },
+    {
+      "name": "碼錶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形錶面上方有兩個按鈕，側邊帶著短掛環，外殼鮮明。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "stopwatch",
+        "words": {
+          "zh-TW": "碼錶",
+          "en": "stopwatch",
+          "ja": {
+            "text": "ストップウォッチ",
+            "reading": "ストップウォッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "訓練標誌錐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色錐形塑膠標誌，底部是寬方形底座，頂端尖圓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "cone-marker",
+        "words": {
+          "zh-TW": "訓練標誌錐",
+          "en": "training marker cone",
+          "ja": {
+            "text": "マーカーコーン",
+            "reading": "マーカーコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "敏捷梯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩條平行扁帶之間連著多根短橫檔，平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "agility-ladder",
+        "words": {
+          "zh-TW": "敏捷梯",
+          "en": "agility ladder",
+          "ja": {
+            "text": "ラダー",
+            "reading": "ラダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "藥球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆深色圓球，表面有粗糙顆粒紋理，輪廓厚實飽滿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "medicine-ball",
+        "words": {
+          "zh-TW": "藥球",
+          "en": "medicine ball",
+          "ja": {
+            "text": "メディシンボール",
+            "reading": "メディシンボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "啞鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短握柄兩端連著厚實圓盤，整體左右對稱，金屬色澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "dumbbell",
+        "words": {
+          "zh-TW": "啞鈴",
+          "en": "dumbbell",
+          "ja": {
+            "text": "ダンベル",
+            "reading": "ダンベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "壺鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的重球頂部接著粗厚拱形把手，底部平坦可以站立。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "kettlebell",
+        "words": {
+          "zh-TW": "壺鈴",
+          "en": "kettlebell",
+          "ja": {
+            "text": "ケトルベル",
+            "reading": "ケトルベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "槓鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根長直金屬桿兩端套著厚圓形槓片，整體呈水平排列。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "barbell",
+        "words": {
+          "zh-TW": "槓鈴",
+          "en": "barbell",
+          "ja": {
+            "text": "バーベル",
+            "reading": "バーベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "槓片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的圓形金屬片，中央有圓孔，外緣平滑且略帶倒角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "weight-plate",
+        "words": {
+          "zh-TW": "槓片",
+          "en": "weight plate",
+          "ja": {
+            "text": "ウェイトプレート",
+            "reading": "ウェイトプレート"
+          }
+        }
+      }
+    },
+    {
+      "name": "引體向上架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高架的矩形金屬框，上方橫桿突出，兩側立柱固定在寬底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "pull-up-station",
+        "words": {
+          "zh-TW": "引體向上架",
+          "en": "pull-up station",
+          "ja": {
+            "text": "懸垂バー",
+            "reading": "けんすいバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "攀爬繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一條粗厚的棕色編織繩垂直懸掛，底端打著大結。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "climbing-rope",
+        "words": {
+          "zh-TW": "攀爬繩",
+          "en": "climbing rope",
+          "ja": {
+            "text": "登り綱",
+            "reading": "のぼりづな"
+          }
+        }
+      }
+    },
+    {
+      "name": "攀爬網",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "粗繩交織成方格網面，四邊繃緊固定在堅固的支架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "rope-net",
+        "words": {
+          "zh-TW": "攀爬網",
+          "en": "climbing net",
+          "ja": {
+            "text": "登り網",
+            "reading": "のぼりあみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "平衡盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片圓形厚墊，表面布滿小凸點，側面略有弧度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "balance-disc",
+        "words": {
+          "zh-TW": "平衡盤",
+          "en": "balance disc",
+          "ja": {
+            "text": "バランスディスク",
+            "reading": "バランスディスク"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚實的方形軟墊箱，邊角圓滑，表面由不同顏色區塊組成。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "jump-box",
+        "words": {
+          "zh-TW": "跳箱",
+          "en": "jump box",
+          "ja": {
+            "text": "ジャンプボックス",
+            "reading": "ジャンプボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "訓練圓環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一個直立的圓形塑膠環，底部接著寬而扁的穩固腳座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "agility-hoop",
+        "words": {
+          "zh-TW": "訓練圓環",
+          "en": "agility hoop",
+          "ja": {
+            "text": "アジリティフープ",
+            "reading": "アジリティフープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "迴轉標桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長直立的彩色桿子插在圓形底座上，外形醒目簡潔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "slalom-pole",
+        "words": {
+          "zh-TW": "迴轉標桿",
+          "en": "slalom pole",
+          "ja": {
+            "text": "スラロームポール",
+            "reading": "スラロームポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "擒拿訓練假人",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "不具人形輪廓的長圓柱形訓練沙袋，表面有縫線和厚實底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "training-dummy",
+        "words": {
+          "zh-TW": "擒拿訓練假人",
+          "en": "grappling dummy",
+          "ja": {
+            "text": "投げ込み人形",
+            "reading": "なげこみにんぎょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "厚實的長圓柱形深色袋體，頂端由短鏈懸掛在橫架下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "punching-bag",
+        "words": {
+          "zh-TW": "沙包",
+          "en": "punching bag",
+          "ja": {
+            "text": "サンドバッグ",
+            "reading": "サンドバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "滾筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根短粗圓柱形泡棉筒，表面有規則凸紋，兩端平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "police-station",
+        "zone": "training-yard",
+        "itemId": "foam-roller",
+        "words": {
+          "zh-TW": "滾筒",
+          "en": "foam roller",
+          "ja": {
+            "text": "フォームローラー",
+            "reading": "フォームローラー"
+          }
+        }
+      }
+    }
+  ]
+}

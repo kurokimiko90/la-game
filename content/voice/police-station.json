@@ -1,0 +1,598 @@
+{
+  "en": {
+    "wall-clock": {
+      "heard": "Wall Clock.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "wall-calendar": {
+      "heard": "Wall Calendar",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "camera-bracket": {
+      "heard": "Camera Bracket",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "wall-light": {
+      "heard": "Wall light.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "smoke-detector-police-station": {
+      "heard": "Smoke detector.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "fire-alarm-police-station": {
+      "heard": "Fire alarm.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "wall-shelf-police-station": {
+      "heard": "Wall Shelf",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "guard-rail": {
+      "heard": "Guardrail.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "parking-curb-stop": {
+      "heard": "Parking curb stop.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "reflector-post": {
+      "heard": "Reflector Post",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "bollard-cover": {
+      "heard": "Bollard cover.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "road-flare": {
+      "heard": "Road Flare.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "filing-cabinet-police-station": {
+      "heard": "Filing Cabinet",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "filing-tray-police-station": {
+      "heard": "Filing tray.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "hole-punch-police-station": {
+      "heard": "Hole punch.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "paperclip-police-station": {
+      "heard": "Paperclip.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "binder-clip-police-station": {
+      "heard": "Binder Clip.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "desk-organizer-police-station": {
+      "heard": "Desk Organizer.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "pen-police-station": {
+      "heard": "Ballpoint pen.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "folder-police-station": {
+      "heard": "File folder.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "drawer-police-station": {
+      "heard": "Drawer.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "trash-bag": {
+      "heard": "Trash Bash.",
+      "score": 0.78,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "police-badge": {
+      "heard": "Bag police badge.",
+      "score": 0.79,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "bicycle-police-station": {
+      "heard": "Police bicycle.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "parking-barrier-arm": {
+      "heard": "Parking Barrier Arm.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "uniform-cap": {
+      "heard": "Police cap.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "handcuffs": {
+      "heard": "Handcuffs.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "police-radio": {
+      "heard": "Police Radio.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "barrier-post": {
+      "heard": "Barrier post.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "police-baton": {
+      "heard": "Police baton.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "radio-holster": {
+      "heard": "Radio Holster.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "chain-post": {
+      "heard": "Chainpost.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "road-stud": {
+      "heard": "Road stud.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "ground-marker": {
+      "heard": "Ground marker.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "whistle-lanyard": {
+      "heard": "Whistle lanyard.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "traffic-baton": {
+      "heard": "Traffic baton.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "police-gloves": {
+      "heard": "Police gloves.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "visitor-chair": {
+      "heard": "Visitor Chair",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "water-cooler-police-station": {
+      "heard": "Water cooler.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "wastebasket-police-station": {
+      "heard": "Wastebasket.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "umbrella-stand-police-station": {
+      "heard": "Umbrella stand.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "coat-rack-police-station": {
+      "heard": "Coat rack.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "fire-extinguisher-police-station": {
+      "heard": "Fire extinguisher.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "police-car": {
+      "heard": "Police car.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "motorcycle-police-station": {
+      "heard": "Police motorcycle.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "patrol-van": {
+      "heard": "Patrol van.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "evidence-tag": {
+      "heard": "Evidence tag.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "evidence-box": {
+      "heard": "Evidence box.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "evidence-bag": {
+      "heard": "Evidence bag.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "fingerprint-card": {
+      "heard": "Fingerprint card.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "fingerprint-powder": {
+      "heard": "Fingerprint Powder Jar.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "fingerprint-brush": {
+      "heard": "fingerprint brush,",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "sealed-envelope": {
+      "heard": "Sealed envelope.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "evidence-seal": {
+      "heard": "Evidence seal.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "handheld-scanner": {
+      "heard": "Handheld scanner.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "digital-scale": {
+      "heard": "digital scale,",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "utility-knife": {
+      "heard": "Utility knife.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "protective-goggles": {
+      "heard": "Protective goggles",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "protective-mask": {
+      "heard": "Protective mask.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "measuring-tape-police-station": {
+      "heard": "tape measure,",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "metal-file": {
+      "heard": "Metal file",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "tripod": {
+      "heard": "Tripod.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "agility-ladder": {
+      "heard": "Beam Agility Ladder",
+      "score": 0.76,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "training-dummy": {
+      "heard": "Grappling dummy.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "slalom-pole": {
+      "heard": "Slalom poll.",
+      "score": 0.9,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "jump-box": {
+      "heard": "Jumpbox.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "starting-block": {
+      "heard": "Starting block.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "cone-marker": {
+      "heard": "Training Marker Cone",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "balance-disc": {
+      "heard": "Balance Disk.",
+      "score": 0.91,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "film-canister-police-station": {
+      "heard": "Film canister.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-print-cast": {
+      "heard": "ShoePrintCast",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "broken-glass": {
+      "heard": "Broken glass.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "metal-shard": {
+      "heard": "Metal shard.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "broken-phone": {
+      "heard": "Broken phone.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "foam-roller": {
+      "heard": "Foam roller.",
+      "score": 1,
+      "take": "en-1790394664721.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-stamp-police-station": {
+      "heard": "Pad rubber stamp.",
+      "score": 0.79,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "stapler-police-station": {
+      "heard": "Stapler.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "first-aid-kit-police-station": {
+      "heard": "First Aid Kit",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "parallel-bars": {
+      "heard": "Parallel bars.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "horizontal-bar": {
+      "heard": "Horizontal bar.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "pull-up-station": {
+      "heard": "Pull-up station.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "kettlebell": {
+      "heard": "Kettlebell.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "barbell": {
+      "heard": "Barbell.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "weight-plate": {
+      "heard": "Weight plate.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "climbing-rope": {
+      "heard": "Climbing rope.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "rope-net": {
+      "heard": "Climbing net.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "punching-bag": {
+      "heard": "Punching bag.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "dumbbell": {
+      "heard": "Dumbbell.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-ball": {
+      "heard": "medicine ball.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "swab": {
+      "heard": "Swab.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "balance-beam": {
+      "heard": "Balance beam.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "hurdle": {
+      "heard": "Hurdle.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "vaulting-horse": {
+      "heard": "Vaulting Horn",
+      "score": 0.85,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "broken-watch": {
+      "heard": "Broken Watch.",
+      "score": 1,
+      "take": "en-1790395041749.aac",
+      "account": "chatgpt1"
+    },
+    "ink-pad-police-station": {
+      "heard": "Inkpad.",
+      "score": 1,
+      "take": "en-1790395171010.aac",
+      "account": "chatgpt1"
+    },
+    "wax-seal-police-station": {
+      "heard": "Wax Seal.",
+      "score": 1,
+      "take": "en-1790395171010.aac",
+      "account": "chatgpt1"
+    },
+    "stopwatch": {
+      "heard": "Stopwatch.",
+      "score": 1,
+      "take": "en-1790395171010.aac",
+      "account": "chatgpt1"
+    },
+    "agility-hoop": {
+      "heard": "Agility Hoop.",
+      "score": 1,
+      "take": "en-1790395171010.aac",
+      "account": "chatgpt1"
+    },
+    "spent-cartridge": {
+      "heard": "spent cartridge.",
+      "score": 1,
+      "take": "en-1790395171010.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

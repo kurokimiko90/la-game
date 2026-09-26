@@ -17,5 +17,6 @@ import clothingStore from './clothing-store.json';
 import movieTheater from './movie-theater.json';
 import bank from './bank.json';
 import museum from './museum.json';
+import policeStation from './police-station.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation };
