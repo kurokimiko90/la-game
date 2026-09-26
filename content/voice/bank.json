@@ -521,6 +521,60 @@
       "score": 1,
       "take": "en-1790387557867.aac",
       "account": "chatgpt2"
+    },
+    "rug": {
+      "heard": "Rug.",
+      "score": 1,
+      "take": "en-1790387979679.aac",
+      "account": "chatgpt1"
+    },
+    "floor-mat-bank": {
+      "heard": "Matt",
+      "score": 0.75,
+      "take": "en-1790387979679.aac",
+      "account": "chatgpt1"
+    },
+    "wastebasket-bank": {
+      "heard": "Wastebasket.",
+      "score": 1,
+      "take": "en-1790387979679.aac",
+      "account": "chatgpt1"
+    },
+    "teller-window": {
+      "heard": "Bulletproof glass",
+      "score": 1,
+      "take": "en-1790387979679.aac",
+      "account": "chatgpt1"
+    },
+    "sponge": {
+      "heard": "Sponge.",
+      "score": 1,
+      "take": "en-1790387979679.aac",
+      "account": "chatgpt1"
+    },
+    "queue-barrier-bank": {
+      "heard": "Cue barrier.",
+      "score": 0.75,
+      "take": "en-1790388077690.aac",
+      "account": "chatgpt1"
+    },
+    "mouse-bank": {
+      "heard": "Mouse.",
+      "score": 1,
+      "take": "en-1790388077690.aac",
+      "account": "chatgpt1"
+    },
+    "clipboard-bank": {
+      "heard": "Clipboard.",
+      "score": 1,
+      "take": "en-1790388077690.aac",
+      "account": "chatgpt1"
+    },
+    "calculator-receipt-printer": {
+      "heard": "Receipt printer.",
+      "score": 1,
+      "take": "en-1790388077690.aac",
+      "account": "chatgpt1"
     }
   }
 }

@@ -2087,6 +2087,27 @@
           }
         }
       }
+    },
+    {
+      "name": "防彈玻璃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一整片厚實透明的玻璃嵌在櫃檯上方，中央有一個小小的圓形傳遞孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bank",
+        "zone": "service-hall",
+        "itemId": "teller-window",
+        "words": {
+          "zh-TW": "防彈玻璃",
+          "en": "bulletproof glass",
+          "ja": {
+            "text": "防弾ガラス",
+            "reading": "ぼうだんガラス"
+          }
+        }
+      }
     }
   ]
 }

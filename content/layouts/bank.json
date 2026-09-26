@@ -82,6 +82,7 @@
   "tape-dispenser-bank": { "x": 11320, "y": 3976, "w": 64, "h": 64, "rotate": 0, "flip": false },
   "taxi-bank": { "x": 10490, "y": 3505, "w": 200, "h": 175, "rotate": 0, "flip": true },
   "telephone-bank": { "x": 11069, "y": 3326, "w": 53, "h": 64, "rotate": 0, "flip": false },
+  "teller-window": { "x": 11188, "y": 4117, "w": 133, "h": 133, "rotate": 0, "flip": true },
   "traffic-cone-bank": { "x": 9595, "y": 3380, "w": 66, "h": 83, "rotate": -8, "flip": true },
   "trash-can-bank": { "x": 10105, "y": 3208, "w": 130, "h": 130, "rotate": 0, "flip": true },
   "tray-bank": { "x": 11653, "y": 3326, "w": 51, "h": 64, "rotate": 7, "flip": false },

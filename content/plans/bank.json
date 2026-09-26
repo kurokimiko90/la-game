@@ -1523,6 +1523,21 @@
       "loose": true,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "teller-window",
+      "zh": "防彈玻璃",
+      "en": "bulletproof glass",
+      "ja": "防弾ガラス",
+      "reading": "ぼうだんガラス",
+      "category": "設施",
+      "size": "medium",
+      "zone": "service-hall",
+      "spot": "ground",
+      "desc": "一整片厚實透明的玻璃嵌在櫃檯上方，中央有一個小小的圓形傳遞孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1610,7 +1625,22 @@
       "id": "magnifying-lamp",
       "reason": "和已有的 lamp 太像",
       "zone": "vault-room"
+    },
+    {
+      "id": "water-glass",
+      "reason": "和已有的 magnifying-glass 太像",
+      "zone": "service-hall"
+    },
+    {
+      "id": "cash-counting-machine",
+      "reason": "和已有的 counter 太像",
+      "zone": "service-hall"
     }
   ],
-  "createdAt": "2026-09-26T10:20:35.754+09:00"
+  "createdAt": "2026-09-26T10:20:35.754+09:00",
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 1,
+    "at": "2026-09-26T10:59:05.779+09:00"
+  }
 }
