@@ -155,10 +155,12 @@ export function stageZone({ sceneId, zone, stage, items, scale = {} }) {
     const sideW = (list) => list.reduce((t, p) => t + p.w + SIDE_GAP, 0);
     const coreX0 = fx?.wallOnly || set.fixture === 'facade' ? X0 : X0 + sideW(left);
     const coreX1 = fx?.wallOnly || set.fixture === 'facade' ? X1 : X1 - sideW(right);
+    // 門面佔滿整組寬，兩側的東西會在組外面：夾回區域內（貼著區域邊緣的組才不會跑出去）
+    const inside = (p, x) => Math.min(Math.max(x, frame.x0 + p.w / 2), frame.x1 - p.w / 2);
     let edgeL = coreX0;
-    for (const p of left) { put(p, edgeL - SIDE_GAP / 2 - p.w / 2, base + 4 + rng() * 14); edgeL -= p.w + SIDE_GAP; }
+    for (const p of left) { put(p, inside(p, edgeL - SIDE_GAP / 2 - p.w / 2), base + 4 + rng() * 14); edgeL -= p.w + SIDE_GAP; }
     let edgeR = coreX1;
-    for (const p of right) { put(p, edgeR + SIDE_GAP / 2 + p.w / 2, base + 4 + rng() * 14); edgeR += p.w + SIDE_GAP; }
+    for (const p of right) { put(p, inside(p, edgeR + SIDE_GAP / 2 + p.w / 2), base + 4 + rng() * 14); edgeR += p.w + SIDE_GAP; }
 
     // 家具
     let surfaces = []; // 檯面：{ x0, x1, y }，on 的物件底線落在 y

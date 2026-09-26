@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { stageZone, stageScene, validateStage, zoneFrame, FIXTURES } from '../../scripts/lib/staging.mjs';
-import { layoutScene, checkLayout } from '../../scripts/lib/layout.mjs';
+import { layoutScene, checkLayout, itemSize } from '../../scripts/lib/layout.mjs';
 
 const INDOOR = { id: 'room', x0: 0, y0: 0, x1: 1300, y1: 650, indoor: true, floor: 'tile', wallBase: 180 };
 const OUTDOOR = { id: 'yard', x0: 1300, y0: 0, x1: 2600, y1: 650, indoor: false, floor: 'paving', road: { y0: 460, y1: 620 } };
@@ -55,6 +55,16 @@ describe('stageZone', () => {
       expect(a.x).toBeGreaterThan(INDOOR.x0);
       expect(a.x).toBeLessThan(INDOOR.x1);
       expect(a.y).toBeLessThanOrEqual(INDOOR.y1);
+    }
+  });
+
+  test('門面貼著區域邊緣時，兩側的物件不跑出區域', () => {
+    const stage = { sets: [{ row: 'back', x: [0.0, 0.2], fixture: 'facade', beside: ['bench', 'sign', 'flower'] }] };
+    const { anchors } = stageZone({ sceneId: 's', zone: OUTDOOR, stage, items: byId });
+    for (const id of ['bench', 'sign', 'flower']) {
+      const a = anchors.get(id);
+      const { w } = itemSize(byId.get(id).viewBox, byId.get(id).sizeHint, a.scale);
+      expect(a.x - w / 2, id).toBeGreaterThanOrEqual(OUTDOOR.x0);
     }
   });
 
