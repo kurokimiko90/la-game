@@ -13,7 +13,7 @@
 // 任何一步失敗就停在 blocked，不會一直燒 LLM 額度；錯誤寫在 .auto-expand/state.json。
 import fs from 'node:fs';
 import path from 'node:path';
-import { spawnSync } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { nextSlot, worldSize } from './lib/district-kit.mjs';
 import { upsertScene } from './lib/config-writer.mjs';
@@ -332,6 +332,13 @@ function commit(title, settings) {
   if (branch !== settings.branch) throw new Error(`目前在 ${branch}，自動擴展只 commit 到 ${settings.branch}`);
   run('git-add', 'git', ['add', 'content', 'public/svg', 'public/audio', 'src/data/scenes', 'docs/expansion.md']);
   run('git-commit', 'git', ['commit', '-m', `${title}\n\nauto-expand：miko-ws 規劃與生成 SVG；發音 edge-tts 底稿 + ChatGPT（英語）。`]);
+  reloadPlay();
+}
+
+/** 試玩伺服器（3220）在背景重新 build + 重啟，新場景馬上看得到；不等它、失敗也不擋（紀錄在 .auto-expand/play.log） */
+function reloadPlay() {
+  spawn(process.execPath, ['scripts/reload-play.mjs'], { cwd: ROOT, stdio: 'ignore', detached: true }).unref();
+  log('試玩伺服器背景重新 build 中（http://localhost:3220）');
 }
 
 // ── 狀態機 ────────────────────────────────────────────────────────────

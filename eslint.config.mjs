@@ -10,6 +10,7 @@ const eslintConfig = defineConfig([
     // Default ignores of eslint-config-next:
     ".next/**",
     ".next-play/**", // npm run play 的 build
+    ".next-play-b/**", // scripts/reload-play.mjs 輪流用的第二個 build
     "out/**",
     "build/**",
     "next-env.d.ts",
