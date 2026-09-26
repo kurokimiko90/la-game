@@ -1,0 +1,354 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "博物館入口門面",
+          "x": [
+            0,
+            0.3
+          ],
+          "fixture": "facade",
+          "door": true,
+          "beside": [
+            "museum-column",
+            "stone-arch"
+          ],
+          "front": [
+            "museum-banner"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "售票窗口",
+          "x": [
+            0.34,
+            0.55
+          ],
+          "main": "ticket-booth",
+          "on": [
+            "ticket-window",
+            "ticket-roll-museum"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "入館導覽",
+          "x": [
+            0.59,
+            0.78
+          ],
+          "main": "map-board",
+          "on": [
+            "direction-arrow"
+          ],
+          "beside": [
+            "wooden-signpost"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花園邊界與休息處",
+          "x": [
+            0,
+            0.27
+          ],
+          "main": "hedge",
+          "beside": [
+            "stone-bench"
+          ],
+          "front": [
+            "marigold",
+            "flower-pot",
+            "tree-stump"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "入口排隊與展示",
+          "x": [
+            0.31,
+            0.61
+          ],
+          "main": "wrought-iron-gate",
+          "beside": [
+            "rope-barrier",
+            "sculpture-plinth"
+          ],
+          "front": [
+            "stone-sphere",
+            "cobblestone",
+            "drain-grate-museum"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "庭園照明",
+          "x": [
+            0.66,
+            1
+          ],
+          "main": "stone-urn",
+          "beside": [
+            "wall-torch",
+            "ground-lantern"
+          ]
+        }
+      ]
+    },
+    "sculpture-garden": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "藤架休憩區",
+          "x": [
+            0.05,
+            0.3
+          ],
+          "main": "pergola",
+          "on": [
+            "wind-chime"
+          ],
+          "beside": [
+            "picnic-table",
+            "sunhat"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "灌溉與育苗工作台",
+          "x": [
+            0.57,
+            0.77
+          ],
+          "fixture": "stand",
+          "on": [
+            "watering-tray",
+            "plant-label"
+          ],
+          "beside": [
+            "garden-hose"
+          ],
+          "front": [
+            "watering-hose-nozzle"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "堆肥整理區",
+          "x": [
+            0.57,
+            0.77
+          ],
+          "main": "compost-bin-museum",
+          "beside": [
+            "garden-fork"
+          ],
+          "front": [
+            "stone-mortar"
+          ]
+        }
+      ]
+    },
+    "main-gallery": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "主展廳壁畫與帷幕",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "wall": [
+            "landscape-painting",
+            "wall-sconce",
+            "ceiling-medallion"
+          ],
+          "front": [
+            "velvet-curtain"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "抽象畫與掛毯",
+          "x": [
+            0.34,
+            0.53
+          ],
+          "fixture": "board",
+          "wall": [
+            "abstract-painting",
+            "wall-tapestry",
+            "ornate-frame"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "古物玻璃展示櫃",
+          "x": [
+            0.04,
+            0.29
+          ],
+          "fixture": "display",
+          "on": [
+            "museum-vase",
+            "ceramic-plate",
+            "bronze-bell",
+            "pocket-watch"
+          ],
+          "front": [
+            "sculpture-label"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "書畫與文物陳列",
+          "x": [
+            0.33,
+            0.59
+          ],
+          "fixture": "display",
+          "on": [
+            "feather-quill",
+            "stone-tablet",
+            "ceramic-mask",
+            "lace-fan"
+          ],
+          "beside": [
+            "glass-cloche"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "航海與交通模型",
+          "x": [
+            0.63,
+            0.82
+          ],
+          "fixture": "stand",
+          "on": [
+            "model-ship",
+            "model-train"
+          ],
+          "beside": [
+            "brass-telescope",
+            "easel"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "騎士盔甲展示",
+          "x": [
+            0.79,
+            0.97
+          ],
+          "fixture": "platform",
+          "main": "suit-of-armor",
+          "on": [
+            "round-shield",
+            "ceremonial-helmet"
+          ]
+        }
+      ]
+    },
+    "art-workshop": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "陶藝拉坯與修坯桌",
+          "x": [
+            0.03,
+            0.29
+          ],
+          "fixture": "desk",
+          "main": "pottery-wheel",
+          "on": [
+            "pottery-rib",
+            "needle-tool",
+            "wooden-mallet",
+            "clay-extruder"
+          ],
+          "beside": [
+            "sculpting-loop-tool",
+            "wire-clay-cutter"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "陶窯燒製區",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "main": "ceramic-kiln",
+          "beside": [
+            "plaster-mold"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "陶土壓片工作區",
+          "x": [
+            0.23,
+            0.41
+          ],
+          "main": "slab-roller",
+          "beside": [
+            "wood-chisel",
+            "carving-gouge"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "版畫製作桌",
+          "x": [
+            0.33,
+            0.57
+          ],
+          "fixture": "desk",
+          "main": "printing-press",
+          "on": [
+            "brayer",
+            "ink-roller",
+            "linocut-tool",
+            "linoleum-block"
+          ],
+          "beside": [
+            "stencil"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "絹印與裁紙區",
+          "x": [
+            0.61,
+            0.79
+          ],
+          "fixture": "desk",
+          "on": [
+            "screen-printing-frame",
+            "paper-cutter",
+            "palette-knife",
+            "paint-tube"
+          ],
+          "beside": [
+            "paint-pot"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "作品晾置區",
+          "x": [
+            0.44,
+            0.62
+          ],
+          "main": "drying-rack",
+          "on": [
+            "canvas"
+          ]
+        }
+      ]
+    }
+  }
+}

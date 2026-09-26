@@ -1,0 +1,598 @@
+{
+  "en": {
+    "water-lily-museum": {
+      "heard": "Water lily.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "lotus-pod": {
+      "heard": "Lotus Pod.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-booth": {
+      "heard": "Ticket booth.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "map-board": {
+      "heard": "Mapboard.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "pergola": {
+      "heard": "Pergola.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "compost-bin-museum": {
+      "heard": "Compost bin.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-window": {
+      "heard": "Ticket window.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-roll-museum": {
+      "heard": "Ticket roll.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "garden-fork": {
+      "heard": "GardenFork",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-arch": {
+      "heard": "Stone Arch.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "museum-column": {
+      "heard": "Column.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "sunhat": {
+      "heard": "SunHat.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "birdbath-basin": {
+      "heard": "Birdbath Basin.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "garden-cart": {
+      "heard": "Garden cart.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "wheelbarrow": {
+      "heard": "Wheelbarrow.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "garden-rake": {
+      "heard": "Garden rake.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-mortar": {
+      "heard": "Stone Mortar.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "museum-banner": {
+      "heard": "Banner.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "support-post": {
+      "heard": "Post.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "topiary": {
+      "heard": "Topiary.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "hedge": {
+      "heard": "Hedge.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-urn": {
+      "heard": "Stone urn.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "wall-torch": {
+      "heard": "Wall Torch.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "garden-hose": {
+      "heard": "garden hosts,",
+      "score": 0.82,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "sculpture-plinth": {
+      "heard": "Plinth.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "rope-barrier": {
+      "heard": "Rope Barrier.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ground-lantern": {
+      "heard": "Garden Lantern.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-bench": {
+      "heard": "Stone Bench.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "watering-hose-nozzle": {
+      "heard": "Hose nozzle.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "flower-pot": {
+      "heard": "Flowerpot.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "cobblestone": {
+      "heard": "Cobblestone.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-sphere": {
+      "heard": "Stone Sphere.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "marigold": {
+      "heard": "Marigold.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "tree-stump": {
+      "heard": "Tree stump.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "sundial": {
+      "heard": "Sun Deal.",
+      "score": 0.86,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "sculpture-rope": {
+      "heard": "Sculpture rope.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "watering-can-spout": {
+      "heard": "watering can.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "garden-trowel-museum": {
+      "heard": "Garden trowel.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "pruning-shears-museum": {
+      "heard": "Pruning shears.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "gloves-museum": {
+      "heard": "Gardening gloves.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-step": {
+      "heard": "Stepping stone.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "abstract-painting": {
+      "heard": "Abstract painting.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ceiling-medallion": {
+      "heard": "Ceiling medallion.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "wall-tapestry": {
+      "heard": "Tapestry.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "wall-sconce": {
+      "heard": "Wall sconce.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ornate-frame": {
+      "heard": "Ornate Frame",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "landscape-painting": {
+      "heard": "Landscape painting.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "slab-roller": {
+      "heard": "Slab roller.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "drying-rack": {
+      "heard": "Art Drying Rack.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "round-shield": {
+      "heard": "Round Shield.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ceremonial-helmet": {
+      "heard": "Ceremonial Helmet",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "wood-chisel": {
+      "heard": "Wood chisel.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "plaster-mold": {
+      "heard": "Plaster Mold",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "velvet-curtain": {
+      "heard": "Velvet Curtain",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "pottery-wheel": {
+      "heard": "Pottery wheel.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "printing-press": {
+      "heard": "Printing Press.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "museum-vase": {
+      "heard": "Decorative vase.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "feather-quill": {
+      "heard": "Quillpen.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "pocket-watch": {
+      "heard": "Pocket Watch.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "model-ship": {
+      "heard": "Model ship.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "model-train": {
+      "heard": "Model train.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stone-tablet": {
+      "heard": "Stone tablet.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ceramic-mask": {
+      "heard": "Ceramic mask.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "lace-fan": {
+      "heard": "Lace fan.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "clay-extruder": {
+      "heard": "Clay Extruder",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "pottery-rib": {
+      "heard": "Pottery rib.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "needle-tool": {
+      "heard": "Needle tool.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-mallet": {
+      "heard": "Wooden mallet.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "palette-knife": {
+      "heard": "Pallet Knife",
+      "score": 0.75,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "paint-tube": {
+      "heard": "Paint tube.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "brayer": {
+      "heard": "Brayer.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "ink-roller": {
+      "heard": "Ink roller.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "linocut-tool": {
+      "heard": "Linicut tool.",
+      "score": 0.91,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "screen-printing-frame": {
+      "heard": "Screen Printing Frame",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "linoleum-block": {
+      "heard": "linoleum block.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "paper-cutter": {
+      "heard": "Paper cutter.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "brass-telescope": {
+      "heard": "Brass Telescope.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "sculpting-loop-tool": {
+      "heard": "Sculpting Loop Tool",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "stencil": {
+      "heard": "Stencil.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "sculpture-label": {
+      "heard": "Play Label.",
+      "score": 0.75,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "mosaic-floor": {
+      "heard": "Mosaic tile.",
+      "score": 1,
+      "take": "en-1790392365894.aac",
+      "account": "chatgpt1"
+    },
+    "direction-arrow": {
+      "heard": "Arrow sign.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "wind-chime": {
+      "heard": "Wind chime.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "picnic-table": {
+      "heard": "Picnic table.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-signpost": {
+      "heard": "Signpost.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "leaf-bag": {
+      "heard": "Leaf bags.",
+      "score": 0.88,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "watering-tray": {
+      "heard": "Seed tray.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "plant-label": {
+      "heard": "Plant Label.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "drain-grate-museum": {
+      "heard": "Drain great.",
+      "score": 0.8,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "suit-of-armor": {
+      "heard": "Suit of armor.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "ceramic-kiln": {
+      "heard": "Ceramic kiln.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "canvas": {
+      "heard": "Canvas.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "carving-gouge": {
+      "heard": "Carving out.",
+      "score": 0.75,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "ceramic-plate": {
+      "heard": "ceramic plate",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "bronze-bell": {
+      "heard": "Bronze Bell.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "easel": {
+      "heard": "Easel",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "glass-cloche": {
+      "heard": "Glass cloche.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "wire-clay-cutter": {
+      "heard": "Wire Clay Cutter.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    },
+    "paint-pot": {
+      "heard": "Paint Pot.",
+      "score": 1,
+      "take": "en-1790392914797.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
