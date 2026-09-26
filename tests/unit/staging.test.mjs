@@ -58,6 +58,13 @@ describe('stageZone', () => {
     }
   });
 
+  test('放在很高的主體上：底線不超出區域上緣（室外後排的藤架）', () => {
+    const items = new Map([...byId, ['pergola', mk('pergola', 'yard', 'large', [0, 0, 100, 400])]]);
+    const stage = { sets: [{ row: 'back', x: [0.05, 0.4], main: 'pergola', on: ['flower', 'sign'] }] };
+    const { anchors } = stageZone({ sceneId: 's', zone: OUTDOOR, stage, items });
+    for (const id of ['flower', 'sign']) expect(anchors.get(id).y, id).toBeGreaterThan(OUTDOOR.y0);
+  });
+
   test('層架上的物件分在兩層，層架畫成家具', () => {
     const { anchors, fixtures } = run();
     const shelf = fixtures.find((f) => f.look === 'shelf');

@@ -200,7 +200,8 @@ export function stageZone({ sceneId, zone, stage, items, scale = {} }) {
       chunks(on, levels.length).forEach((list, k) => {
         const lv = levels[k];
         const { centers, fit } = spread(lv.x0, lv.x1, list.map((p) => p.w), rng);
-        list.forEach((p, i) => put(p, centers[i], lv.y, fit, false, hostDepth));
+        // 很高的主體（室外後排的藤架）頂端可能在區域外：底線至少落在區域內（build 的檢查），像掛在主體上
+        list.forEach((p, i) => put(p, centers[i], Math.max(lv.y, zone.y0 + CEILING), fit, false, hostDepth));
       });
     }
 
