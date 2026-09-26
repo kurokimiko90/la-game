@@ -1,0 +1,598 @@
+{
+  "en": {
+    "garden-arch": {
+      "heard": "Garden Arch.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "window-box-flower-shop": {
+      "heard": "Window box.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-trowel-flower-shop": {
+      "heard": "X-Trowel?",
+      "score": 0.86,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "watering-can-flower-shop": {
+      "heard": "watering can,",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "pruning-shears-flower-shop": {
+      "heard": "Pruning shears.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "seed-tray": {
+      "heard": "Seed tray.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-rake-flower-shop": {
+      "heard": "Garden rake.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "plant-label-flower-shop": {
+      "heard": "Plant Label.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-hose-flower-shop": {
+      "heard": "Garden hose.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-gate": {
+      "heard": "Gate.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-fork-flower-shop": {
+      "heard": "GardenFork",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-foam": {
+      "heard": "Floral foam",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-arranging-knife": {
+      "heard": "Floral knife.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-wire": {
+      "heard": "floral wire.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-tape": {
+      "heard": "Floral tape.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-arranging-foam-brick": {
+      "heard": "Flower arranging foam brick.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-frog": {
+      "heard": "Flower frog",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-scissors": {
+      "heard": "Floral scissors.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-stem-cutter": {
+      "heard": "Stem Cutter",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "plant-mister": {
+      "heard": "Plantmister.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-bucket": {
+      "heard": "Flower Bucket.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-bench": {
+      "heard": "Garden bent.",
+      "score": 0.82,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "wheelbarrow-flower-shop": {
+      "heard": "wheelbarrow.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "tree-stump-flower-shop": {
+      "heard": "Tree stump.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-pot-flower-shop": {
+      "heard": "Flower pot.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "marigold-flower-shop": {
+      "heard": "Marigold.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-basket": {
+      "heard": "Flower Basket.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "bouquet-wrap": {
+      "heard": "Bouquet Wrap.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-sleeve": {
+      "heard": "Flower Sleeve",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-pick": {
+      "heard": "Flower Pick.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-pin": {
+      "heard": "Floral Pin.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-ribbon": {
+      "heard": "Floral Ribbon",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-ribbon-shear": {
+      "heard": "Bull ribbon shears.",
+      "score": 0.75,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "bouquet-ribbon-cutter": {
+      "heard": "Ribbon cutter.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "potting-soil-bag": {
+      "heard": "Potting Soil Bag",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "bulb-planter": {
+      "heard": "Bulb planter.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "dibber": {
+      "heard": "Dibber.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-sieve": {
+      "heard": "Garden sieve.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "hanging-planter": {
+      "heard": "Hanging planter.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "plant-support-ring": {
+      "heard": "Plant support ring.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-cane": {
+      "heard": "Bamboo cane.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "pothos": {
+      "heard": "Pothos.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "monstera": {
+      "heard": "Monstera.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-drying-rack": {
+      "heard": "Flower Drying Rack",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "plant-tie": {
+      "heard": "Plant tie.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-plant": {
+      "heard": "Rubber plant.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "plant-potting-mat": {
+      "heard": "Potting mat.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "watering-globe": {
+      "heard": "Water and globe.",
+      "score": 0.85,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "succulent": {
+      "heard": "succulent",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-adhesive": {
+      "heard": "Floral Adhesive",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-preservative-crystals": {
+      "heard": "Flower Preservative Crystals",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-bulb": {
+      "heard": "Flower bulb.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-portfolio": {
+      "heard": "Floral Portfolio",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-wire": {
+      "heard": "Floral Aluminum",
+      "score": 0.78,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "floral-sachet": {
+      "heard": "Scented sachet.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-coaster": {
+      "heard": "Flower Coaster",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "flower-shaped-candle": {
+      "heard": "Flower-shaped candle.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "aloe-vera": {
+      "heard": "Aloe vera.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "snake-plant": {
+      "heard": "Snake Plant.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "peace-lily": {
+      "heard": "Peace, Lily.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "garden-twine-cutter": {
+      "heard": "Twine cutter.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "root-pruner": {
+      "heard": "...jar, root pruning knife.",
+      "score": 0.84,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "hand-fork": {
+      "heard": "Hand fork.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "plant-cutting": {
+      "heard": "Plant cutting.",
+      "score": 1,
+      "take": "en-1790401573117.aac",
+      "account": "chatgpt1"
+    },
+    "glass-vase": {
+      "heard": "Glass vase.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "ceramic-vase": {
+      "heard": "Ceramic vase.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-food-sachet": {
+      "heard": "Flower food sachet",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-preservative-bottle": {
+      "heard": "Flower preservative bottle.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "leaf-bag-flower-shop": {
+      "heard": "Leaf Bag",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "fern-flower-shop": {
+      "heard": "Fern.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "sunflower-flower-shop": {
+      "heard": "Sunflower.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "compost-bin-flower-shop": {
+      "heard": "compost bin.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "rose-flower-shop": {
+      "heard": "Rose.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "daisy-flower-shop": {
+      "heard": "Daisy.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "lavender-flower-shop": {
+      "heard": "Lavender.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-corsage-box": {
+      "heard": "Corsage box.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-display-riser": {
+      "heard": "display riser,",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-display-bowl": {
+      "heard": "display bowl",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "twine-spool-flower-shop": {
+      "heard": "Twine spool.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-carrier-box": {
+      "heard": "Flower Carrier Box",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-stem-stripper": {
+      "heard": "- Flower stem stripper",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-seed-packet": {
+      "heard": "Flower seed packet.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-drying-bundle": {
+      "heard": "dried flower bundle,",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "ribbon-spool": {
+      "heard": "Pin, ribbon spool.",
+      "score": 0.79,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "cactus": {
+      "heard": "Cactus.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "bouquet-handle": {
+      "heard": "Bouquet Handle",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "flower-press": {
+      "heard": "Flower press.",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "rooting-hormone-jar": {
+      "heard": "Rooting Hormone Jar",
+      "score": 1,
+      "take": "en-1790402003586.aac",
+      "account": "chatgpt1"
+    },
+    "tulip-flower-shop": {
+      "heard": "Tulip.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "mushroom-flower-shop": {
+      "heard": "Mushroom.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-display-tray": {
+      "heard": "Display tray.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-wreath": {
+      "heard": "Flower wreath.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-vase-brush": {
+      "heard": "Vase Brush.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-vase-cleaner": {
+      "heard": "Vase cleaning beads.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-arrangement-pin": {
+      "heard": "Floral Arrangement Pin",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "plant-stand": {
+      "heard": "Plant stand.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "floral-paddle-wire": {
+      "heard": "Floral paddle wire.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-bouquet-collar": {
+      "heard": "Bouquet collar.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    },
+    "flower-bouquet-holder": {
+      "heard": "Bouquet Holder.",
+      "score": 1,
+      "take": "en-1790402158765.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

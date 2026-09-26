@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・花店",
+  "sceneSlug": "la-flower-shop",
+  "propStyle": "front-flat",
+  "zones": {
+    "front-garden": "門前花園",
+    "flower-display": "花卉展區",
+    "bouquet-counter": "花束櫃檯",
+    "plant-corner": "植栽角落"
+  },
+  "elements": [
+    {
+      "name": "園藝鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短木柄連著銀色窄鏟面，鏟面尖端圓滑，平放在盆栽旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-trowel-flower-shop",
+        "words": {
+          "zh-TW": "園藝鏟",
+          "en": "trowel",
+          "ja": {
+            "text": "移植ごて",
+            "reading": "いしょくごて"
+          }
+        }
+      }
+    },
+    {
+      "name": "花盆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅褐色陶土盆口寬底部窄，盆沿厚實，正面有一道淺色弧形裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "flower-pot-flower-shop",
+        "words": {
+          "zh-TW": "花盆",
+          "en": "flower pot",
+          "ja": {
+            "text": "植木鉢",
+            "reading": "うえきばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "花園長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色鑄鐵椅架支撐棕色木板椅面與椅背，扶手兩端向上彎曲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-bench",
+        "words": {
+          "zh-TW": "花園長椅",
+          "en": "garden bench",
+          "ja": {
+            "text": "ガーデンベンチ",
+            "reading": "ガーデンベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花園拱門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩根深綠金屬立柱支撐圓弧形頂框，細藤葉沿著一側向上攀爬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-arch",
+        "words": {
+          "zh-TW": "花園拱門",
+          "en": "garden arch",
+          "ja": {
+            "text": "ガーデンアーチ",
+            "reading": "ガーデンアーチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花園門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩扇深綠色鐵門由直條欄杆組成，頂端有簡單的尖角，左右接著矮牆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-gate",
+        "words": {
+          "zh-TW": "花園門",
+          "en": "gate",
+          "ja": {
+            "text": "門",
+            "reading": "もん"
+          }
+        }
+      }
+    },
+    {
+      "name": "澆水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色金屬壺身帶拱形提把，細長壺嘴末端有圓形蓮蓬頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "watering-can-flower-shop",
+        "words": {
+          "zh-TW": "澆水壺",
+          "en": "watering can",
+          "ja": {
+            "text": "じょうろ",
+            "reading": "じょうろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "修枝剪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色雙握柄在下方交叉，兩片彎月形金屬刀刃張開成剪刀狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "pruning-shears-flower-shop",
+        "words": {
+          "zh-TW": "修枝剪",
+          "en": "pruning shears",
+          "ja": {
+            "text": "剪定ばさみ",
+            "reading": "せんていばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色橡膠管盤成幾圈，末端接著短短的金屬噴嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-hose-flower-shop",
+        "words": {
+          "zh-TW": "水管",
+          "en": "garden hose",
+          "ja": {
+            "text": "ホース",
+            "reading": "ホース"
+          }
+        }
+      }
+    },
+    {
+      "name": "窗台花箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形深棕木箱，箱沿整齊，裡面長出幾片圓潤的綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "window-box-flower-shop",
+        "words": {
+          "zh-TW": "窗台花箱",
+          "en": "window box",
+          "ja": {
+            "text": "プランター",
+            "reading": "プランター"
+          }
+        }
+      }
+    },
+    {
+      "name": "育苗盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色淺長方形塑膠盤，底部分成整齊小格，幾格冒出嫩綠芽葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "seed-tray",
+        "words": {
+          "zh-TW": "育苗盤",
+          "en": "seed tray",
+          "ja": {
+            "text": "育苗トレー",
+            "reading": "いくびょうトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "園藝耙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長木柄連著扇形金屬耙頭，耙頭排列一排細長齒尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-rake-flower-shop",
+        "words": {
+          "zh-TW": "園藝耙",
+          "en": "garden rake",
+          "ja": {
+            "text": "熊手",
+            "reading": "くまで"
+          }
+        }
+      }
+    },
+    {
+      "name": "園藝叉",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長木柄底端接著四根粗金屬叉齒，叉齒筆直並排，頂端略尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "garden-fork-flower-shop",
+        "words": {
+          "zh-TW": "園藝叉",
+          "en": "garden fork",
+          "ja": {
+            "text": "ガーデンフォーク",
+            "reading": "ガーデンフォーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "手推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色淺斗車身架在黑色單輪上，後方有兩根長把手，兩側帶支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "wheelbarrow-flower-shop",
+        "words": {
+          "zh-TW": "手推車",
+          "en": "wheelbarrow",
+          "ja": {
+            "text": "手押し車",
+            "reading": "ておしぐるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "堆肥桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色方形桶身配掀蓋，側面排列幾道細長通氣孔，底部平穩落地。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "compost-bin-flower-shop",
+        "words": {
+          "zh-TW": "堆肥桶",
+          "en": "compost bin",
+          "ja": {
+            "text": "コンポスト容器",
+            "reading": "コンポストようき"
+          }
+        }
+      }
+    },
+    {
+      "name": "落葉袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色立式紙袋口張開，袋身微皺，邊緣露出幾片黃橘色葉子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "leaf-bag-flower-shop",
+        "words": {
+          "zh-TW": "落葉袋",
+          "en": "leaf bag",
+          "ja": {
+            "text": "落ち葉袋",
+            "reading": "おちばぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "植物標籤牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色細長塑膠牌插在小木棒上，牌面空白，底端削尖方便插進土裡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "plant-label-flower-shop",
+        "words": {
+          "zh-TW": "植物標籤牌",
+          "en": "plant label",
+          "ja": {
+            "text": "植物ラベル",
+            "reading": "しょくぶつラベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "玫瑰",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色玫瑰花瓣層層向內捲成圓形，花莖深綠，莖上帶幾片鋸齒葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "rose-flower-shop",
+        "words": {
+          "zh-TW": "玫瑰",
+          "en": "rose",
+          "ja": {
+            "text": "バラ",
+            "reading": "バラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鬱金香",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘紅色杯狀花朵立在筆直綠莖頂端，兩片寬葉從莖下方向外伸展。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "tulip-flower-shop",
+        "words": {
+          "zh-TW": "鬱金香",
+          "en": "tulip",
+          "ja": {
+            "text": "チューリップ",
+            "reading": "チューリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雛菊",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色細長花瓣環繞黃色圓花心，細綠莖下方有兩片小葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "daisy-flower-shop",
+        "words": {
+          "zh-TW": "雛菊",
+          "en": "daisy",
+          "ja": {
+            "text": "デイジー",
+            "reading": "デイジー"
+          }
+        }
+      }
+    },
+    {
+      "name": "薰衣草",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一束細直綠莖頂端長著紫色小花穗，狹長灰綠葉沿莖成對生長。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "lavender-flower-shop",
+        "words": {
+          "zh-TW": "薰衣草",
+          "en": "lavender",
+          "ja": {
+            "text": "ラベンダー",
+            "reading": "ラベンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "向日葵",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高直綠莖頂端有大片黃色花瓣，中央是深棕色圓盤，旁邊長著寬葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "sunflower-flower-shop",
+        "words": {
+          "zh-TW": "向日葵",
+          "en": "sunflower",
+          "ja": {
+            "text": "ひまわり",
+            "reading": "ひまわり"
+          }
+        }
+      }
+    },
+    {
+      "name": "萬壽菊",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘黃色花朵由許多短而圓的花瓣組成，花下有細綠莖和羽狀葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "marigold-flower-shop",
+        "words": {
+          "zh-TW": "萬壽菊",
+          "en": "marigold",
+          "ja": {
+            "text": "マリーゴールド",
+            "reading": "マリーゴールド"
+          }
+        }
+      }
+    },
+    {
+      "name": "蕨類",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一叢亮綠色羽狀葉從中央向兩側展開，每片細葉沿著彎曲葉軸排列。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "fern-flower-shop",
+        "words": {
+          "zh-TW": "蕨類",
+          "en": "fern",
+          "ja": {
+            "text": "シダ",
+            "reading": "シダ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘑菇",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅褐色圓傘蓋下接著短白柄，傘面有幾個淺色小斑點，直立在土邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "mushroom-flower-shop",
+        "words": {
+          "zh-TW": "蘑菇",
+          "en": "mushroom",
+          "ja": {
+            "text": "きのこ",
+            "reading": "きのこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "樹樁",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮粗棕色木樁頂面平坦，切面有一圈圈年輪，外皮帶著深色裂紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "front-garden",
+        "itemId": "tree-stump-flower-shop",
+        "words": {
+          "zh-TW": "樹樁",
+          "en": "tree stump",
+          "ja": {
+            "text": "切り株",
+            "reading": "きりかぶ"
+          }
+        }
+      }
+    },
+    {
+      "name": "插花海綿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色長方體海綿，表面布滿細小孔洞，切面平整，常用來固定花莖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "floral-foam",
+        "words": {
+          "zh-TW": "插花海綿",
+          "en": "floral foam",
+          "ja": {
+            "text": "フローラルフォーム",
+            "reading": "フローラルフォーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而彎曲的銀色刀刃連著深色握柄，刀尖向上彎，外形俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-arranging-knife",
+        "words": {
+          "zh-TW": "花藝刀",
+          "en": "floral knife",
+          "ja": {
+            "text": "フローラルナイフ",
+            "reading": "フローラルナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝鐵絲",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一束細長的綠色金屬線盤成圓圈，線身柔韌，末端露出短短一截。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "floral-wire",
+        "words": {
+          "zh-TW": "花藝鐵絲",
+          "en": "floral wire",
+          "ja": {
+            "text": "フラワーワイヤー",
+            "reading": "フラワーワイヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝膠帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一卷窄窄的綠色霧面膠帶，圓形紙芯露在中央，側面整齊平滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "floral-tape",
+        "words": {
+          "zh-TW": "花藝膠帶",
+          "en": "floral tape",
+          "ja": {
+            "text": "フローラルテープ",
+            "reading": "フローラルテープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺棕色編織籃身配弧形提把，籃口寬敞，側面有交錯的藤條紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-basket",
+        "words": {
+          "zh-TW": "花籃",
+          "en": "flower basket",
+          "ja": {
+            "text": "フラワーバスケット",
+            "reading": "フラワーバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束包裝紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾張半透明粉色包裝紙疊成扇形，邊緣微微起伏，紙面沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "bouquet-wrap",
+        "words": {
+          "zh-TW": "花束包裝紙",
+          "en": "bouquet wrap",
+          "ja": {
+            "text": "花束ラッピングペーパー",
+            "reading": "はなたばラッピングペーパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束套袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明塑膠製的尖底套袋攤平放著，輪廓呈寬口三角形，表面透亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "floral-sleeve",
+        "words": {
+          "zh-TW": "花束套袋",
+          "en": "flower sleeve",
+          "ja": {
+            "text": "フラワースリーブ",
+            "reading": "フラワースリーブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "插花固定磚",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深綠色長方磚塊，頂面均勻佈滿細孔，四角略圓，外觀看來乾爽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-arranging-foam-brick",
+        "words": {
+          "zh-TW": "插花固定磚",
+          "en": "flower arranging foam brick",
+          "ja": {
+            "text": "吸水フォーム",
+            "reading": "きゅうすいフォーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "插花針座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形金屬底座上排列密集短針，針尖朝上，底部厚實且帶有重量感。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-frog",
+        "words": {
+          "zh-TW": "插花針座",
+          "en": "flower frog",
+          "ja": {
+            "text": "剣山",
+            "reading": "けんざん"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝剪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "粗短的銀色剪刀有圓形握孔和寬厚刀刃，握柄呈深綠色，造型結實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "floral-scissors",
+        "words": {
+          "zh-TW": "花藝剪",
+          "en": "floral scissors",
+          "ja": {
+            "text": "花ばさみ",
+            "reading": "はなばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高身銀灰色圓桶，桶口略寬並有兩個小提耳，桶壁光滑帶金屬光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-bucket",
+        "words": {
+          "zh-TW": "花桶",
+          "en": "flower bucket",
+          "ja": {
+            "text": "花用バケツ",
+            "reading": "はなようバケツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花梗切割器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型桌上切割器有厚實底座與短柄壓桿，前端露出一片斜角金屬刀刃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-stem-cutter",
+        "words": {
+          "zh-TW": "花梗切割器",
+          "en": "stem cutter",
+          "ja": {
+            "text": "茎切り器",
+            "reading": "くききりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "玻璃花瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃瓶呈細長水滴形，瓶頸窄而直，底部厚實，邊緣反射淡淡亮光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "glass-vase",
+        "words": {
+          "zh-TW": "玻璃花瓶",
+          "en": "glass vase",
+          "ja": {
+            "text": "ガラス花瓶",
+            "reading": "ガラスかびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "陶製花器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的藍白陶器，寬口向外翻開，圓弧瓶腹配平底，表面有簡單色塊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "ceramic-vase",
+        "words": {
+          "zh-TW": "陶製花器",
+          "en": "ceramic vase",
+          "ja": {
+            "text": "陶器の花器",
+            "reading": "とうきのかき"
+          }
+        }
+      }
+    },
+    {
+      "name": "切花保鮮劑",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的小白色粉末包，封口有鋸齒邊，正面只有淡綠色花朵圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-food-sachet",
+        "words": {
+          "zh-TW": "切花保鮮劑",
+          "en": "flower food sachet",
+          "ja": {
+            "text": "切り花栄養剤",
+            "reading": "きりばなえいようざい"
+          }
+        }
+      }
+    },
+    {
+      "name": "切花保鮮液瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮瓶裝著淡綠色凝膠，瓶肩圓滑，頂端有白色旋蓋與細長瓶嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-preservative-bottle",
+        "words": {
+          "zh-TW": "切花保鮮液瓶",
+          "en": "flower preservative bottle",
+          "ja": {
+            "text": "切り花延命剤ボトル",
+            "reading": "きりばなえんめいざいボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束插牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長綠色塑膠插桿頂端帶一片小小的空白葉形牌，沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-pick",
+        "words": {
+          "zh-TW": "花束插牌",
+          "en": "flower pick",
+          "ja": {
+            "text": "フラワーピック",
+            "reading": "フラワーピック"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝珠針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾根細長金屬珠針平行排放，圓珠頭呈珍珠白色，針身明亮纖細。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "floral-pin",
+        "words": {
+          "zh-TW": "花藝珠針",
+          "en": "floral pin",
+          "ja": {
+            "text": "フラワーピン",
+            "reading": "フラワーピン"
+          }
+        }
+      }
+    },
+    {
+      "name": "胸花盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺色方形硬紙盒有透明上蓋，四角整齊，盒內襯著柔軟的白色墊片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-corsage-box",
+        "words": {
+          "zh-TW": "胸花盒",
+          "en": "corsage box",
+          "ja": {
+            "text": "コサージュボックス",
+            "reading": "コサージュボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束提盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形牛皮紙盒頂部開有拱形提手孔，兩側有圓形透氣孔，盒身挺直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-carrier-box",
+        "words": {
+          "zh-TW": "花束提盒",
+          "en": "flower carrier box",
+          "ja": {
+            "text": "フラワーキャリーボックス",
+            "reading": "フラワーキャリーボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "花卉展示墊台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形淺木色矮墊台，頂面平整，四側簡潔厚實，將小型花器稍稍墊高。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-display-riser",
+        "words": {
+          "zh-TW": "花卉展示墊台",
+          "en": "display riser",
+          "ja": {
+            "text": "ディスプレイ台",
+            "reading": "ディスプレイだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "花卉展示盤",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形淺木盤帶低矮圍邊，底面平滑，四角圓潤，適合整齊陳列小物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-display-tray",
+        "words": {
+          "zh-TW": "花卉展示盤",
+          "en": "display tray",
+          "ja": {
+            "text": "ディスプレイトレー",
+            "reading": "ディスプレイトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "花卉展示碗",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺口圓碗呈霧面奶油白，碗沿寬而平，碗身圓滑，正面看輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "flower-display-bowl",
+        "words": {
+          "zh-TW": "花卉展示碗",
+          "en": "display bowl",
+          "ja": {
+            "text": "ディスプレイボウル",
+            "reading": "ディスプレイボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "植物噴霧器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明圓肚瓶配金屬色按壓噴頭，頂端有短噴嘴，握把彎成醒目的弧形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "plant-mister",
+        "words": {
+          "zh-TW": "植物噴霧器",
+          "en": "plant mister",
+          "ja": {
+            "text": "霧吹き",
+            "reading": "きりふき"
+          }
+        }
+      }
+    },
+    {
+      "name": "麻繩線軸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一卷粗麻色細繩纏繞在圓形紙軸上，側面層層盤繞，末端自然垂出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "flower-display",
+        "itemId": "twine-spool-flower-shop",
+        "words": {
+          "zh-TW": "麻繩線軸",
+          "en": "twine spool",
+          "ja": {
+            "text": "麻ひも巻き",
+            "reading": "あさひもまき"
+          }
+        }
+      }
+    },
+    {
+      "name": "花梗去刺器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的塑膠工具，中央有穿過花梗的圓孔，側邊開著一道窄縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-stem-stripper",
+        "words": {
+          "zh-TW": "花梗去刺器",
+          "en": "flower stem stripper",
+          "ja": {
+            "text": "フラワーステムストリッパー",
+            "reading": "フラワーステムストリッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝黏土",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小團綠色黏土，表面柔軟略帶凹痕，捏成扁圓形放在檯面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "floral-adhesive",
+        "words": {
+          "zh-TW": "花藝黏土",
+          "en": "floral adhesive",
+          "ja": {
+            "text": "フローラルアドヒーシブ",
+            "reading": "フローラルアドヒーシブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "切花保鮮粉",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一撮細小的白色晶粒，聚成不規則小堆，表面有微微閃亮的顆粒感。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-preservative-crystals",
+        "words": {
+          "zh-TW": "切花保鮮粉",
+          "en": "flower preservative crystals",
+          "ja": {
+            "text": "切り花用鮮度保持剤",
+            "reading": "キリバナヨウセンドホジザイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花球莖",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色橢圓形球莖，外層包著乾燥薄皮，頂端露出短短的尖芽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-bulb",
+        "words": {
+          "zh-TW": "花球莖",
+          "en": "flower bulb",
+          "ja": {
+            "text": "花の球根",
+            "reading": "ハナノキュウコン"
+          }
+        }
+      }
+    },
+    {
+      "name": "花種子包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "未印字的米白色小紙包，頂端折口封住，正面有一個簡單的花朵圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-seed-packet",
+        "words": {
+          "zh-TW": "花種子包",
+          "en": "flower seed packet",
+          "ja": {
+            "text": "花の種の袋",
+            "reading": "ハナノタネノフクロ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝作品集",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的深綠色硬皮冊子，封面只有一朵立體壓紋花，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "floral-portfolio",
+        "words": {
+          "zh-TW": "花藝作品集",
+          "en": "floral portfolio",
+          "ja": {
+            "text": "フラワーデザイン作品集",
+            "reading": "フラワーデザインサクヒンシュウ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花卉壓花器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片方形木板由四角螺旋旋鈕夾緊，板縫間露出薄薄的紙層。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-press",
+        "words": {
+          "zh-TW": "花卉壓花器",
+          "en": "flower press",
+          "ja": {
+            "text": "押し花器",
+            "reading": "オシバナキ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花卉乾燥架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色細金屬架有多層圓形網盤，細長支架撐起整座架子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-drying-rack",
+        "words": {
+          "zh-TW": "花卉乾燥架",
+          "en": "flower drying rack",
+          "ja": {
+            "text": "花の乾燥ラック",
+            "reading": "ハナノカンソウラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾燥花束",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一束倒掛的乾燥花枝，花朵呈褐黃與淡紫色，細梗用繩子束在一起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-drying-bundle",
+        "words": {
+          "zh-TW": "乾燥花束",
+          "en": "dried flower bundle",
+          "ja": {
+            "text": "ドライフラワーの束",
+            "reading": "ドライフラワーのタバ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花圈",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓環形花圈由深綠葉片和粉白小花交錯編成，中間留著明顯的圓洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-wreath",
+        "words": {
+          "zh-TW": "花圈",
+          "en": "flower wreath",
+          "ja": {
+            "text": "フラワーリース",
+            "reading": "フラワーリース"
+          }
+        }
+      }
+    },
+    {
+      "name": "花瓶刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長柄末端接著橢圓形刷頭，刷毛向四周散開，柄尾有小掛孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-vase-brush",
+        "words": {
+          "zh-TW": "花瓶刷",
+          "en": "vase brush",
+          "ja": {
+            "text": "花瓶ブラシ",
+            "reading": "カビンブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花瓶清潔珠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小堆半透明的圓形清潔珠，大小相近，散落成鬆散的圓丘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-vase-cleaner",
+        "words": {
+          "zh-TW": "花瓶清潔珠",
+          "en": "vase cleaning beads",
+          "ja": {
+            "text": "花瓶洗浄ビーズ",
+            "reading": "カビンセンジョウビーズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "插花定位針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根細長金屬針，尾端有扁平圓頭，旁邊放著幾根相同的針。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-arrangement-pin",
+        "words": {
+          "zh-TW": "插花定位針",
+          "en": "floral arrangement pin",
+          "ja": {
+            "text": "フラワーアレンジメントピン",
+            "reading": "フラワーアレンジメントピン"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝緞帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條鮮紅色緞帶打成大蝴蝶結，兩條尾端平順垂下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "floral-ribbon",
+        "words": {
+          "zh-TW": "花藝緞帶",
+          "en": "floral ribbon",
+          "ja": {
+            "text": "フラワーリボン",
+            "reading": "フラワーリボン"
+          }
+        }
+      }
+    },
+    {
+      "name": "緞帶線軸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片圓形木片夾著一圈寬緞帶，側面露出整齊疊起的布層。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "ribbon-spool",
+        "words": {
+          "zh-TW": "緞帶線軸",
+          "en": "ribbon spool",
+          "ja": {
+            "text": "リボン巻き",
+            "reading": "リボンマキ"
+          }
+        }
+      }
+    },
+    {
+      "name": "緞帶剪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把銀色長刃剪刀，握柄是寬大的圓弧形，刀尖細長筆直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "floral-ribbon-shear",
+        "words": {
+          "zh-TW": "緞帶剪",
+          "en": "ribbon shears",
+          "ja": {
+            "text": "リボン用はさみ",
+            "reading": "リボンヨウハサミ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝鋁線",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一圈柔軟的銀色細線盤成圓環，末端略微翹起，表面平滑發亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-wire",
+        "words": {
+          "zh-TW": "花藝鋁線",
+          "en": "floral aluminum wire",
+          "ja": {
+            "text": "フラワー用アルミワイヤー",
+            "reading": "フラワーヨウアルミワイヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "花藝扁線",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色金屬細線緊密纏在扁平小線盤上，線頭沿盤邊垂出一小段。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "floral-paddle-wire",
+        "words": {
+          "zh-TW": "花藝扁線",
+          "en": "floral paddle wire",
+          "ja": {
+            "text": "フローラルパドルワイヤー",
+            "reading": "フローラルパドルワイヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束襯環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明薄片折成寬大的漏斗形圓環，邊緣有一圈細緻波浪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-bouquet-collar",
+        "words": {
+          "zh-TW": "花束襯環",
+          "en": "bouquet collar",
+          "ja": {
+            "text": "ブーケカラー",
+            "reading": "ブーケカラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "緞帶切割器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓筒形小型金屬工具，側面有窄縫與內藏刀片，外殼光滑無標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "bouquet-ribbon-cutter",
+        "words": {
+          "zh-TW": "緞帶切割器",
+          "en": "ribbon cutter",
+          "ja": {
+            "text": "リボンカッター",
+            "reading": "リボンカッター"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束握把",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色短筒形握把，外壁有整齊凸紋，底端開口可套住花梗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "bouquet-handle",
+        "words": {
+          "zh-TW": "花束握把",
+          "en": "bouquet handle",
+          "ja": {
+            "text": "ブーケハンドル",
+            "reading": "ブーケハンドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "花束握柄座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色塑膠錐形握柄，上端連著圓球狀多孔花泥，底部收成細柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-bouquet-holder",
+        "words": {
+          "zh-TW": "花束握柄座",
+          "en": "bouquet holder",
+          "ja": {
+            "text": "ブーケホルダー",
+            "reading": "ブーケホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "香氛袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的淡紫色布袋收成圓角方形，袋口束起並垂著兩條細帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "floral-sachet",
+        "words": {
+          "zh-TW": "香氛袋",
+          "en": "scented sachet",
+          "ja": {
+            "text": "サシェ",
+            "reading": "サシェ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花朵杯墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的圓形杯墊，外緣裁成六片花瓣形，中心壓出同心圓紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-coaster",
+        "words": {
+          "zh-TW": "花朵杯墊",
+          "en": "flower coaster",
+          "ja": {
+            "text": "花形コースター",
+            "reading": "ハナガタコースター"
+          }
+        }
+      }
+    },
+    {
+      "name": "花形蠟燭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淡粉色蠟燭做成盛開花朵形狀，中央立著短燭芯，底部平穩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "bouquet-counter",
+        "itemId": "flower-shaped-candle",
+        "words": {
+          "zh-TW": "花形蠟燭",
+          "en": "flower-shaped candle",
+          "ja": {
+            "text": "花形キャンドル",
+            "reading": "ハナガタキャンドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "花架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長金屬支架上有數層窄平台，平台邊緣帶有弧形花紋，整體漆成深綠色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "plant-stand",
+        "words": {
+          "zh-TW": "花架",
+          "en": "plant stand",
+          "ja": {
+            "text": "フラワースタンド",
+            "reading": "フラワースタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "培養土袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "鼓起的棕色紙袋，袋口折成厚邊，正面有一小片深色土壤露出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "potting-soil-bag",
+        "words": {
+          "zh-TW": "培養土袋",
+          "en": "potting soil bag",
+          "ja": {
+            "text": "培養土",
+            "reading": "ばいようど"
+          }
+        }
+      }
+    },
+    {
+      "name": "球根種植器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄金屬工具呈尖細圓筒狀，頂端有橫向握把，筒身帶有幾道刻痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "bulb-planter",
+        "words": {
+          "zh-TW": "球根種植器",
+          "en": "bulb planter",
+          "ja": {
+            "text": "球根植え器",
+            "reading": "きゅうこんうえき"
+          }
+        }
+      }
+    },
+    {
+      "name": "播種棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根光滑的淺木色圓錐棒，頂端有圓形握柄，側面刻著幾道短線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "dibber",
+        "words": {
+          "zh-TW": "播種棒",
+          "en": "dibber",
+          "ja": {
+            "text": "ディバー",
+            "reading": "ディバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "園藝篩網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺木框中繃著細密黑色網面，四角用金屬片固定，外框呈方形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "garden-sieve",
+        "words": {
+          "zh-TW": "園藝篩網",
+          "en": "garden sieve",
+          "ja": {
+            "text": "園芸ふるい",
+            "reading": "えんげいふるい"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊掛花器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓錐形藤編花器由三條細繩吊起，器口伸出幾片圓潤的綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "hanging-planter",
+        "words": {
+          "zh-TW": "吊掛花器",
+          "en": "hanging planter",
+          "ja": {
+            "text": "ハンギングプランター",
+            "reading": "ハンギングプランター"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動澆水球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明藍綠玻璃球連著細長尖管，球內可見少量空隙，尖端朝下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "watering-globe",
+        "words": {
+          "zh-TW": "自動澆水球",
+          "en": "watering globe",
+          "ja": {
+            "text": "自動給水器",
+            "reading": "じどうきゅうすいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "植物支撐圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬桿頂端套著圓環，環上有兩個小開口，桿身呈深綠色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "plant-support-ring",
+        "words": {
+          "zh-TW": "植物支撐圈",
+          "en": "plant support ring",
+          "ja": {
+            "text": "支柱リング",
+            "reading": "しちゅうリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹支柱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根修長的淡黃綠竹竿，表面有幾道突起竹節，底端削成尖頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "bamboo-cane",
+        "words": {
+          "zh-TW": "竹支柱",
+          "en": "bamboo cane",
+          "ja": {
+            "text": "園芸支柱",
+            "reading": "えんげいしちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "植物束帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一圈柔軟的深綠色扁帶，兩端交疊打成鬆結，旁邊露出短短帶尾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "plant-tie",
+        "words": {
+          "zh-TW": "植物束帶",
+          "en": "plant tie",
+          "ja": {
+            "text": "園芸用結束バンド",
+            "reading": "えんげいようけっそくバンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "手用小叉",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木柄末端接著三根短而彎曲的銀色金屬尖齒，柄尾有一個圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "hand-fork",
+        "words": {
+          "zh-TW": "手用小叉",
+          "en": "hand fork",
+          "ja": {
+            "text": "ハンドフォーク",
+            "reading": "ハンドフォーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "噴霧瓶噴頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色塑膠噴頭有短彎嘴、扳機和螺旋瓶口，側面帶一個小小的調節旋鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "plant-mister-nozzle",
+        "words": {
+          "zh-TW": "噴霧瓶噴頭",
+          "en": "mister nozzle",
+          "ja": {
+            "text": "霧吹きノズル",
+            "reading": "きりふきノズル"
+          }
+        }
+      }
+    },
+    {
+      "name": "根部修剪刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而厚的銀色弧形刀片配深木色握柄，柄尾有一個圓形掛孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "root-pruner",
+        "words": {
+          "zh-TW": "根部修剪刀",
+          "en": "root pruning knife",
+          "ja": {
+            "text": "根切りナイフ",
+            "reading": "ねきりナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "園藝繩剪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型金屬剪具只有短短的彎鉤刀口，握柄包著綠色防滑膠套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "garden-twine-cutter",
+        "words": {
+          "zh-TW": "園藝繩剪",
+          "en": "twine cutter",
+          "ja": {
+            "text": "ひも切り",
+            "reading": "ひもきり"
+          }
+        }
+      }
+    },
+    {
+      "name": "植栽工作墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形墨綠色防水墊，四角各有一顆扣子，邊緣折起形成低矮擋邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "plant-potting-mat",
+        "words": {
+          "zh-TW": "植栽工作墊",
+          "en": "potting mat",
+          "ja": {
+            "text": "園芸マット",
+            "reading": "えんげいマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "發根粉罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖白色塑膠罐配深綠旋蓋，罐口露出一圈細粉，正面沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "rooting-hormone-jar",
+        "words": {
+          "zh-TW": "發根粉罐",
+          "en": "rooting hormone jar",
+          "ja": {
+            "text": "発根促進剤の容器",
+            "reading": "はっこんそくしんざいのようき"
+          }
+        }
+      }
+    },
+    {
+      "name": "植物插枝",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一段嫩綠枝條切口平整，枝上長著兩片小葉與一枚尚未展開的芽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "plant-cutting",
+        "words": {
+          "zh-TW": "植物插枝",
+          "en": "plant cutting",
+          "ja": {
+            "text": "挿し穂",
+            "reading": "さしほ"
+          }
+        }
+      }
+    },
+    {
+      "name": "多肉植物",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮的蓮座狀植物由多層肥厚葉片組成，葉尖泛紅，中心嫩綠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "succulent",
+        "words": {
+          "zh-TW": "多肉植物",
+          "en": "succulent",
+          "ja": {
+            "text": "多肉植物",
+            "reading": "たにくしょくぶつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "仙人掌",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短胖的綠色柱狀仙人掌長出兩側小臂，表面密布細小白刺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "cactus",
+        "words": {
+          "zh-TW": "仙人掌",
+          "en": "cactus",
+          "ja": {
+            "text": "サボテン",
+            "reading": "サボテン"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘆薈",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一簇厚實長葉從中心向外伸展，葉片翠綠帶白色小斑點，邊緣有細齒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "aloe-vera",
+        "words": {
+          "zh-TW": "蘆薈",
+          "en": "aloe vera",
+          "ja": {
+            "text": "アロエ",
+            "reading": "アロエ"
+          }
+        }
+      }
+    },
+    {
+      "name": "黃金葛",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "心形綠葉沿著細長藤蔓垂下，葉面帶有不規則的淡黃色斑紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "pothos",
+        "words": {
+          "zh-TW": "黃金葛",
+          "en": "pothos",
+          "ja": {
+            "text": "ポトス",
+            "reading": "ポトス"
+          }
+        }
+      }
+    },
+    {
+      "name": "龜背芋",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "粗壯直立的綠莖托起大片深綠葉，葉片有明顯裂口與長形穿孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "monstera",
+        "words": {
+          "zh-TW": "龜背芋",
+          "en": "monstera",
+          "ja": {
+            "text": "モンステラ",
+            "reading": "モンステラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡膠樹",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "挺直木質枝幹上交錯長著厚實橢圓葉，葉面深綠發亮，新芽帶紅褐色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "rubber-plant",
+        "words": {
+          "zh-TW": "橡膠樹",
+          "en": "rubber plant",
+          "ja": {
+            "text": "ゴムの木",
+            "reading": "ゴムのき"
+          }
+        }
+      }
+    },
+    {
+      "name": "虎尾蘭",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "數片挺直的劍形葉向上伸展，深綠葉面有淺綠橫紋，葉緣帶黃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "snake-plant",
+        "words": {
+          "zh-TW": "虎尾蘭",
+          "en": "snake plant",
+          "ja": {
+            "text": "サンスベリア",
+            "reading": "サンスベリア"
+          }
+        }
+      }
+    },
+    {
+      "name": "白鶴芋",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一簇深綠長葉間冒出白色船帆狀花苞，中央有淡黃色細長花序。",
+      "ref": {
+        "project": "la-game",
+        "scene": "flower-shop",
+        "zone": "plant-corner",
+        "itemId": "peace-lily",
+        "words": {
+          "zh-TW": "白鶴芋",
+          "en": "peace lily",
+          "ja": {
+            "text": "スパティフィラム",
+            "reading": "スパティフィラム"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "zones": {
+    "front-garden": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "花園入口拱門",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "main": "garden-arch",
+          "beside": [
+            "garden-gate"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "窗邊花箱與花苗",
+          "x": [
+            0.22,
+            0.39
+          ],
+          "main": "window-box-flower-shop",
+          "on": [
+            "seed-tray",
+            "plant-label-flower-shop"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "庭園長椅與盆花",
+          "x": [
+            0.04,
+            0.22
+          ],
+          "main": "garden-bench",
+          "beside": [
+            "flower-pot-flower-shop"
+          ],
+          "front": [
+            "rose-flower-shop",
+            "tulip-flower-shop",
+            "daisy-flower-shop"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "花園工具與澆水區",
+          "x": [
+            0.42,
+            0.61
+          ],
+          "fixture": "stand",
+          "on": [
+            "watering-can-flower-shop",
+            "pruning-shears-flower-shop",
+            "garden-trowel-flower-shop",
+            "garden-rake-flower-shop"
+          ],
+          "beside": [
+            "garden-hose-flower-shop",
+            "garden-fork-flower-shop"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "園藝推車與堆肥整理",
+          "x": [
+            0.43,
+            0.63
+          ],
+          "main": "wheelbarrow-flower-shop",
+          "beside": [
+            "compost-bin-flower-shop",
+            "leaf-bag-flower-shop"
+          ],
+          "front": [
+            "lavender-flower-shop",
+            "marigold-flower-shop",
+            "mushroom-flower-shop"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "庭園花叢與樹樁",
+          "x": [
+            0.72,
+            0.97
+          ],
+          "main": "tree-stump-flower-shop",
+          "beside": [
+            "sunflower-flower-shop",
+            "fern-flower-shop"
+          ]
+        }
+      ]
+    },
+    "flower-display": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "花藝材料備料台",
+          "x": [
+            0.03,
+            0.22
+          ],
+          "fixture": "desk",
+          "on": [
+            "floral-foam",
+            "floral-wire",
+            "floral-tape",
+            "flower-arranging-foam-brick"
+          ],
+          "beside": [
+            "flower-bucket"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "花藝剪裁工具台",
+          "x": [
+            0.24,
+            0.42
+          ],
+          "fixture": "desk",
+          "on": [
+            "flower-arranging-knife",
+            "floral-scissors",
+            "flower-stem-cutter",
+            "flower-frog"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花束包裝展示台",
+          "x": [
+            0.04,
+            0.24
+          ],
+          "fixture": "counter",
+          "on": [
+            "bouquet-wrap",
+            "floral-sleeve",
+            "flower-basket",
+            "twine-spool-flower-shop"
+          ],
+          "beside": [
+            "flower-carrier-box"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "花器與保鮮用品",
+          "x": [
+            0.44,
+            0.63
+          ],
+          "fixture": "display",
+          "on": [
+            "glass-vase",
+            "ceramic-vase",
+            "flower-food-sachet",
+            "flower-preservative-bottle"
+          ],
+          "beside": [
+            "plant-mister"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花卉小物陳列架",
+          "x": [
+            0.47,
+            0.67
+          ],
+          "fixture": "stand",
+          "on": [
+            "flower-display-tray",
+            "flower-display-bowl",
+            "flower-display-riser",
+            "flower-pick"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "禮盒胸花與固定用品",
+          "x": [
+            0.72,
+            0.96
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "flower-corsage-box",
+            "floral-pin"
+          ]
+        }
+      ]
+    },
+    "bouquet-counter": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "花梗處理工作台",
+          "x": [
+            0.03,
+            0.22
+          ],
+          "fixture": "desk",
+          "on": [
+            "flower-stem-stripper",
+            "flower-arrangement-pin",
+            "flower-vase-brush",
+            "flower-vase-cleaner"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "緞帶裁切工作台",
+          "x": [
+            0.24,
+            0.43
+          ],
+          "fixture": "desk",
+          "on": [
+            "floral-ribbon",
+            "ribbon-spool",
+            "floral-ribbon-shear",
+            "bouquet-ribbon-cutter"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花束結構材料櫃台",
+          "x": [
+            0.04,
+            0.25
+          ],
+          "fixture": "counter",
+          "on": [
+            "flower-wire",
+            "floral-paddle-wire",
+            "flower-bouquet-collar",
+            "bouquet-handle"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花束握柄組裝區",
+          "x": [
+            0.28,
+            0.46
+          ],
+          "fixture": "desk",
+          "on": [
+            "flower-bouquet-holder",
+            "floral-adhesive",
+            "flower-preservative-crystals",
+            "flower-bulb"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "乾燥花與花圈展示",
+          "x": [
+            0.5,
+            0.71
+          ],
+          "fixture": "shelf",
+          "on": [
+            "flower-drying-bundle",
+            "flower-wreath"
+          ],
+          "beside": [
+            "flower-drying-rack"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花藝靈感與香氛小物",
+          "x": [
+            0.74,
+            0.96
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "floral-portfolio",
+            "floral-sachet",
+            "flower-coaster",
+            "flower-shaped-candle"
+          ],
+          "beside": [
+            "flower-press"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "種子與花材保存",
+          "x": [
+            0.74,
+            0.96
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "flower-seed-packet"
+          ]
+        }
+      ]
+    },
+    "plant-corner": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "植栽換盆工作台",
+          "x": [
+            0.03,
+            0.23
+          ],
+          "fixture": "desk",
+          "on": [
+            "potting-soil-bag",
+            "bulb-planter",
+            "dibber",
+            "garden-sieve"
+          ],
+          "beside": [
+            "plant-potting-mat"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "插枝繁殖與養根用品",
+          "x": [
+            0.04,
+            0.24
+          ],
+          "front": [
+            "rooting-hormone-jar",
+            "plant-cutting",
+            "hand-fork",
+            "root-pruner"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "大型觀葉植栽展示",
+          "x": [
+            0.27,
+            0.47
+          ],
+          "fixture": "planter",
+          "on": [
+            "monstera"
+          ],
+          "beside": [
+            "rubber-plant"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "花架與小型盆栽",
+          "x": [
+            0.28,
+            0.48
+          ],
+          "main": "plant-stand",
+          "on": [
+            "aloe-vera"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "吊掛植物與攀藤支撐",
+          "x": [
+            0.51,
+            0.72
+          ],
+          "fixture": "shelf",
+          "on": [
+            "hanging-planter",
+            "pothos",
+            "plant-support-ring",
+            "bamboo-cane"
+          ],
+          "beside": [
+            "plant-tie"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "室內耐陰植栽區",
+          "x": [
+            0.75,
+            0.97
+          ],
+          "fixture": "planter",
+          "on": [
+            "peace-lily",
+            "snake-plant"
+          ],
+          "beside": [
+            "plant-mister-nozzle",
+            "garden-twine-cutter"
+          ]
+        }
+      ]
+    }
+  }
+}

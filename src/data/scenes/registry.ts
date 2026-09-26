@@ -19,5 +19,6 @@ import bank from './bank.json';
 import museum from './museum.json';
 import policeStation from './police-station.json';
 import hairSalon from './hair-salon.json';
+import flowerShop from './flower-shop.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop };
