@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { buildStagePrompt, parseStage, usableFixtures } from '../../scripts/lib/stage-plan.mjs';
+import { blockedIds, buildStagePrompt, parseStage, pruneStage, usableFixtures } from '../../scripts/lib/stage-plan.mjs';
 
 const el = (id, zone, en = id, spot = 'ground', size = 'small') => ({ id, zone, en, zh: id, spot, size });
 const PLAN = {
@@ -82,5 +82,43 @@ describe('parseStage', () => {
 
   test('不是 JSON 就丟錯', () => {
     expect(() => parseStage('沒有', { plan: PLAN, available: AVAILABLE, terrain: TERRAIN })).toThrow();
+  });
+});
+
+describe('每組的數量上限（放太多一定排不下）', () => {
+  const smalls = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+  const plan = { ...PLAN, elements: [...PLAN.elements, ...smalls.map((id) => el(id, 'room'))] };
+  test('檯面上最多 4 個、旁邊最多 2 個，多的回到自動排列', () => {
+    const r = parseStage(JSON.stringify({ zones: { room: { sets: [
+      { row: 'mid', x: [0.1, 0.5], fixture: 'desk', on: smalls, beside: ['cup', 'pen', 'mat'] },
+    ] } } }), { plan, available: plan.elements.map((e) => e.id), terrain: TERRAIN });
+    const [set] = r.stage.zones.room.sets;
+    expect(set.on).toEqual(['a', 'b', 'c', 'd']);
+    expect(set.beside).toEqual(['cup', 'pen']);
+    expect(r.dropped).toEqual(expect.arrayContaining(['e', 'f', 'g', 'mat']));
+  });
+});
+
+describe('blockedIds', () => {
+  test('從擺放失敗訊息取出被擋住的物件', () => {
+    const msg = '失敗：bank/lobby：試了 20 次仍有物件被擋太多：security-camera（露出 50%，被 fire-extinguisher 擋住）、telephone-bank（露出 26%，被 bell、pen 擋住）';
+    expect(blockedIds(msg)).toEqual(['security-camera', 'telephone-bank']);
+    expect(blockedIds('其他錯誤')).toEqual([]);
+  });
+});
+
+describe('pruneStage', () => {
+  const stage = { zones: {
+    room: { sets: [
+      { row: 'mid', x: [0.1, 0.5], fixture: 'desk', on: ['cup', 'pen'] },
+      { row: 'mid', x: [0.6, 0.9], main: 'sofa', front: ['mat'] },
+    ] },
+    front: { sets: [{ row: 'back', x: [0.1, 0.3], beside: ['sign'] }] },
+  } };
+  test('拿掉物件；主體被擋就整組拿掉；空掉的組和區域也拿掉；不改原本的物件', () => {
+    const next = pruneStage(stage, ['pen', 'sofa', 'sign']);
+    expect(next.zones.room.sets).toEqual([{ row: 'mid', x: [0.1, 0.5], fixture: 'desk', on: ['cup'] }]);
+    expect(next.zones.front).toBeUndefined();
+    expect(stage.zones.room.sets[0].on).toEqual(['cup', 'pen']);
   });
 });

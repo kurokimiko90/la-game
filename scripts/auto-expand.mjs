@@ -22,7 +22,7 @@ import {
   buildOutlinePrompt, buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, preferNewWords, splitCount, validateElements, wordKey,
   zoneShortfall,
 } from './lib/scene-plan.mjs';
-import { buildStagePrompt, parseStage } from './lib/stage-plan.mjs';
+import { blockedIds, buildStagePrompt, parseStage, pruneStage } from './lib/stage-plan.mjs';
 import { localIso } from './lib/local-time.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
@@ -256,16 +256,27 @@ async function planStage(plan, available, terrain) {
   return false;
 }
 
-// 擺放：有情境時先試情境，排不下（被擋太多）就刪掉情境檔、照舊自動排列，不讓自動擴展卡住
+// 擺放：有情境時先試情境；被擋太多的物件拿出情境（交給自動排列）再試，最多 PRUNE_ROUNDS 輪；
+// 還是不行就刪掉情境檔、整個照舊自動排列，不讓自動擴展卡住
+const PRUNE_ROUNDS = 6;
 function layoutWithFallback(sceneId, args) {
-  try {
-    run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
-  } catch (e) {
-    const file = path.join(P.stages, `${sceneId}.json`);
-    if (!fs.existsSync(file)) throw e;
-    log(`情境擺放排不下，改用自動排列：${e.message.split('\n')[0]}`);
-    fs.rmSync(file);
-    run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
+  const file = path.join(P.stages, `${sceneId}.json`);
+  const layout = () => run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
+  for (let round = 0; ; round++) {
+    try {
+      return layout();
+    } catch (e) {
+      if (!fs.existsSync(file)) throw e;
+      const ids = blockedIds(e.message);
+      if (ids.length && round < PRUNE_ROUNDS) {
+        writeJson(file, pruneStage(readJson(file), ids));
+        log(`情境擺放有物件被擋住，改成自動排列：${ids.join('、')}`);
+        continue;
+      }
+      log(`情境擺放排不下，改用自動排列：${e.message.split('\n')[0]}`);
+      fs.rmSync(file);
+      return layout();
+    }
   }
 }
 

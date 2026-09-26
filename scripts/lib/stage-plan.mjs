@@ -4,6 +4,9 @@
 import { FIXTURES, ROWS, SLOTS, validateStage } from './staging.mjs';
 import { extractJson } from './scene-plan.mjs';
 
+// 每組每個位置最多幾個：一張桌子擺 7 樣東西一定互相擋住，多的交給自動排列
+export const SLOT_CAP = { on: 4, wall: 3, beside: 2, front: 3 };
+
 const FIXTURE_TEXT = {
   desk: '書桌 / 工作桌（有桌腳）', counter: '實心長櫃台', cabinet: '矮櫃', display: '玻璃展示櫃', shelf: '靠牆開放層架（兩層，只能 back、室內）',
   stand: '階梯陳列台（兩層）', 'cloth-table': '鋪桌布的長桌', rug: '地毯（主體物件站在上面）', platform: '木平台', planter: '長條花台（植物放 on）',
@@ -45,6 +48,7 @@ export function buildStagePrompt({ plan, available, problems = [] }) {
     '- beside：立在家具 / 主體兩側地上的東西。',
     '- front：散在這組前面地上的東西（掉在地上的小物）。',
     '- note：這組是什麼（繁體中文，例如「掛號櫃台」）。',
+    `數量上限：每組 on 最多 ${SLOT_CAP.on} 個、wall 最多 ${SLOT_CAP.wall} 個、beside 最多 ${SLOT_CAP.beside} 個、front 最多 ${SLOT_CAP.front} 個；東西多就多開幾組，不要全堆在同一張桌上。`,
     '規則：每個列出的物品剛好出現一次；小東西不要單獨放在地上，要放在合理的家具上；大設備靠牆；同類的東西放一起（例如文具都在同一張桌上）。',
     '',
     '物品（id：名稱，大小）：',
@@ -79,7 +83,8 @@ function cleanSet(raw, { zoneId, zoneOf, fixtures, seen, indoor }) {
   if (take(raw.main)) set.main = raw.main;
   if (raw.over === true && set.main) set.over = true;
   for (const slot of SLOTS) {
-    const list = (Array.isArray(raw[slot]) ? raw[slot] : []).filter(take);
+    const list = [];
+    for (const id of Array.isArray(raw[slot]) ? raw[slot] : []) if (list.length < SLOT_CAP[slot] && take(id)) list.push(id);
     if (list.length) set[slot] = list;
   }
   // 沒有東西可以放在上面 → 改放前面地上；室外沒有門面 → 牆上的改放旁邊
@@ -125,4 +130,34 @@ export function parseStage(raw, { plan, available, terrain }) {
   const problems = validateStage({ stage, zoneOf: Object.fromEntries(plan.elements.filter((e) => has.has(e.id)).map((e) => [e.id, e.zone])), terrain, words });
   const dropped = elements.filter((e) => !seen.has(e.id)).map((e) => e.id);
   return { stage, problems, dropped };
+}
+
+/** 擺放失敗訊息（layout.mjs：「a（露出 50%，被 b 擋住）、c（…）」）→ 被擋住的物件 id */
+export function blockedIds(message) {
+  return [...String(message).matchAll(/([a-z0-9-]+)（露出/g)].map((m) => m[1]);
+}
+
+/**
+ * 把這些物件拿出情境（交給自動排列）。主體被拿掉就整組拿掉；空掉的組、區域也拿掉。回傳新的情境。
+ */
+export function pruneStage(stage, ids) {
+  const drop = new Set(ids);
+  const zones = {};
+  for (const [zoneId, zone] of Object.entries(stage.zones)) {
+    const sets = zone.sets
+      .filter((set) => !drop.has(set.main))
+      .map((set) => {
+        const next = { ...set };
+        for (const slot of SLOTS) {
+          if (!set[slot]) continue;
+          const kept = set[slot].filter((id) => !drop.has(id));
+          if (kept.length) next[slot] = kept;
+          else delete next[slot];
+        }
+        return next;
+      })
+      .filter((set) => set.fixture || set.main || SLOTS.some((k) => set[k]?.length));
+    if (sets.length) zones[zoneId] = { ...zone, sets };
+  }
+  return { ...stage, zones };
 }
