@@ -1,0 +1,369 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "入口驗票通道",
+          "x": [
+            0.05,
+            0.22
+          ],
+          "main": "ticket-barrier",
+          "beside": [
+            "ticket-validator"
+          ],
+          "front": [
+            "movie-ticket"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "停車場出入口",
+          "x": [
+            0.25,
+            0.48
+          ],
+          "main": "parking-barrier",
+          "beside": [
+            "traffic-barrel",
+            "bollard-light"
+          ],
+          "front": [
+            "parking-ticket"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "停車指示與綠化",
+          "x": [
+            0.52,
+            0.72
+          ],
+          "fixture": "facade",
+          "wall": [
+            "parking-sign"
+          ],
+          "beside": [
+            "potted-shrub",
+            "wheelie-bin"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "車輛維護檢查",
+          "x": [
+            0.75,
+            0.98
+          ],
+          "main": "windshield",
+          "on": [
+            "car-key",
+            "parking-disc",
+            "license-plate",
+            "car-battery"
+          ],
+          "beside": [
+            "oil-can",
+            "paint-bucket"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "電影宣傳道具",
+          "x": [
+            0.05,
+            0.2
+          ],
+          "fixture": "facade",
+          "wall": [
+            "film-reel",
+            "film-strip",
+            "clapperboard"
+          ]
+        }
+      ]
+    },
+    "lobby": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "爆米花販售櫃台",
+          "x": [
+            0.04,
+            0.3
+          ],
+          "fixture": "counter",
+          "on": [
+            "popcorn-machine",
+            "popcorn-box",
+            "ticket-roll"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "汽水與冰品櫃台",
+          "x": [
+            0.33,
+            0.57
+          ],
+          "fixture": "counter",
+          "on": [
+            "soda-fountain",
+            "soda-cup",
+            "soda-can",
+            "soda-bottle"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "糖果與配料展示",
+          "x": [
+            0.04,
+            0.27
+          ],
+          "fixture": "display",
+          "on": [
+            "candy-box",
+            "ice-cream-cone",
+            "cherry",
+            "citrus-squeezer"
+          ],
+          "beside": [
+            "ice-tongs"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "電影海報牆",
+          "x": [
+            0.62,
+            0.82
+          ],
+          "wall": [
+            "film-poster-frame"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "等候休息區",
+          "x": [
+            0.33,
+            0.55
+          ],
+          "main": "director-chair",
+          "on": [
+            "film-camera",
+            "film-canister"
+          ],
+          "beside": [
+            "armrest"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "入口排隊與散落垃圾",
+          "x": [
+            0.62,
+            0.96
+          ],
+          "fixture": "rug",
+          "main": "red-carpet",
+          "beside": [
+            "velvet-rope"
+          ],
+          "front": [
+            "candy-wrapper",
+            "rubber-sole",
+            "ticket-stub"
+          ]
+        }
+      ]
+    },
+    "screening-room": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "銀幕與出口",
+          "x": [
+            0.05,
+            0.28
+          ],
+          "wall": [
+            "retractable-screen"
+          ],
+          "beside": [
+            "exit-door"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "左側座位排",
+          "x": [
+            0.05,
+            0.31
+          ],
+          "main": "folding-seat",
+          "on": [
+            "seat-back"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "右側座位排",
+          "x": [
+            0.35,
+            0.61
+          ],
+          "beside": [
+            "step-stool",
+            "soft-toy"
+          ],
+          "front": [
+            "seat-row-marker"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "走道照明與安全設備",
+          "x": [
+            0.33,
+            0.49
+          ],
+          "main": "fire-extinguisher-cabinet",
+          "beside": [
+            "floor-speaker"
+          ],
+          "front": [
+            "aisle-light"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "放映維修器材",
+          "x": [
+            0.65,
+            0.82
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "projector-lens",
+            "laser-pointer",
+            "ticket-punch"
+          ],
+          "beside": [
+            "electric-cable-reel",
+            "coiled-cable"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "觀眾遺落小物與線路",
+          "x": [
+            0.65,
+            0.96
+          ],
+          "main": "cable-cover",
+          "on": [
+            "paper-cup-lid",
+            "glow-stick",
+            "wristband"
+          ],
+          "beside": [
+            "curtain-tieback",
+            "handheld-fan"
+          ]
+        }
+      ]
+    },
+    "snack-bar": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "冰淇淋聖代製作台",
+          "x": [
+            0.04,
+            0.27
+          ],
+          "fixture": "counter",
+          "on": [
+            "sundae-glass",
+            "sundae-spoon",
+            "sundae-dish",
+            "scoop"
+          ],
+          "beside": [
+            "chocolate-syrup",
+            "sprinkle-shaker"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "糖果零食展示",
+          "x": [
+            0.04,
+            0.26
+          ],
+          "fixture": "display",
+          "on": [
+            "waffle-cone",
+            "candy-cane",
+            "lollipop",
+            "chocolate-bar"
+          ],
+          "beside": [
+            "gummy-bear",
+            "jelly-cup"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "熱食與醬料工作桌",
+          "x": [
+            0.31,
+            0.55
+          ],
+          "fixture": "desk",
+          "on": [
+            "nachos",
+            "cheese-popcorn",
+            "salt-packet",
+            "ketchup-packet"
+          ],
+          "beside": [
+            "sauce-bowl"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "汽水自助區",
+          "x": [
+            0.59,
+            0.78
+          ],
+          "main": "soda-dispenser",
+          "beside": [
+            "serving-tray-rack"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "備料與清潔區",
+          "x": [
+            0.31,
+            0.54
+          ],
+          "main": "stainless-steel-table",
+          "on": [
+            "menu-holder",
+            "stirrer",
+            "straw-wrapper"
+          ],
+          "beside": [
+            "floor-squeegee"
+          ]
+        }
+      ]
+    }
+  }
+}

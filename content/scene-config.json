@@ -770,20 +770,20 @@
     "movie-theater": {
       "name": "電影院",
       "icon": "parking-barrier",
-      "zones": {"entrance": [9520, 1540, 10820, 2190], "lobby": [10820, 1540, 12120, 2190], "screening-room": [10820, 2190, 12120, 2840], "snack-bar": [9520, 2190, 10820, 2840]},
+      "zones": {"entrance": [9520, 1540, 12120, 2190], "lobby": [12360, 1540, 14960, 2190], "screening-room": [12360, 2190, 14960, 2840], "snack-bar": [9520, 2190, 12120, 2840]},
       "bands": {
         "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 1610, "bottom": 1985}, "lobby": {"top": 1780, "bottom": 2170, "gaps": [[1730, 1922]]}, "screening-room": {"top": 2430, "bottom": 2820, "gaps": [[2380, 2695]]}, "snack-bar": {"top": 2430, "bottom": 2820, "gaps": [[2380, 2600]]}}},
         "sky-entrance": {"top": 1690, "bottom": 1840, "zones": ["entrance"], "layer": 3, "float": 150},
         "road-entrance": {"top": 2070, "bottom": 2140, "zones": ["entrance"], "inset": 20},
         "wall-lobby": {"levels": [1680], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-lobby": {"levels": [1718], "zones": ["lobby"], "inset": 50},
-        "surface-lobby": {"levels": [1850], "zones": ["lobby"], "x0": 10970, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 1892},
+        "surface-lobby": {"levels": [1850], "zones": ["lobby"], "x0": 12510, "x1": 14810, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 1892},
         "wall-screening-room": {"levels": [2330], "zones": ["screening-room"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-screening-room": {"levels": [2368], "zones": ["screening-room"], "inset": 50},
-        "surface-screening-room": {"levels": [2500, 2595], "zones": ["screening-room"], "x0": 10970, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2665},
+        "surface-screening-room": {"levels": [2500, 2595], "zones": ["screening-room"], "x0": 12510, "x1": 14810, "inset": 0, "scale": [0.8, 0.8], "look": "stand", "base": 2665},
         "wall-snack-bar": {"levels": [2330], "zones": ["snack-bar"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-snack-bar": {"levels": [2368], "zones": ["snack-bar"], "inset": 50},
-        "surface-snack-bar": {"levels": [2500], "zones": ["snack-bar"], "x0": 9670, "x1": 10670, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 2570}
+        "surface-snack-bar": {"levels": [2500], "zones": ["snack-bar"], "x0": 9670, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 2570}
       },
       "place": {
         "electric-car": "road-entrance",
@@ -833,7 +833,7 @@
       "noFlip": [],
       "motion": {"electric-car": "wobble", "potted-shrub": "sway", "popcorn-machine": "wobble"},
       "arrange": "auto",
-      "terrain": {"color": "#80cbc4", "x0": 9520, "y0": 1540, "x1": 12120, "y1": 2840, "zones": [{"id": "entrance", "x0": 9520, "y0": 1540, "x1": 10820, "y1": 2190, "indoor": false, "floor": "paving", "road": {"y0": 2000, "y1": 2160}}, {"id": "lobby", "x0": 10820, "y0": 1540, "x1": 12120, "y1": 2190, "indoor": true, "floor": "tile", "wallBase": 1720}, {"id": "screening-room", "x0": 10820, "y0": 2190, "x1": 12120, "y1": 2840, "indoor": true, "floor": "carpet", "wallBase": 2370}, {"id": "snack-bar", "x0": 9520, "y0": 2190, "x1": 10820, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}]}
+      "terrain": {"color": "#80cbc4", "x0": 9520, "y0": 1540, "x1": 14960, "y1": 2840, "zones": [{"id": "entrance", "x0": 9520, "y0": 1540, "x1": 12120, "y1": 2190, "indoor": false, "floor": "paving", "road": {"y0": 2000, "y1": 2160}}, {"id": "lobby", "x0": 12360, "y0": 1540, "x1": 14960, "y1": 2190, "indoor": true, "floor": "tile", "wallBase": 1720}, {"id": "screening-room", "x0": 12360, "y0": 2190, "x1": 14960, "y1": 2840, "indoor": true, "floor": "carpet", "wallBase": 2370}, {"id": "snack-bar", "x0": 9520, "y0": 2190, "x1": 12120, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}]}
     },
     "bank": {
       "name": "銀行",
