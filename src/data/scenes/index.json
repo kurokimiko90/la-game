@@ -292,5 +292,19 @@
       ],
       "body": "<rect x=\"18\" y=\"72\" width=\"10\" height=\"106\" fill=\"#388e3c\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"112\" y=\"72\" width=\"10\" height=\"106\" fill=\"#388e3c\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"18,76 18,52 24,30 36,14 52,4 70,1 88,4 104,14 116,30 122,52 122,76 112,76 112,53 106,34 96,20 84,12 70,9 56,12 44,20 34,34 28,53 28,76\" fill=\"#388e3c\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"35\" cy=\"59\" r=\"7\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"30\" cy=\"43\" r=\"7\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"39\" cy=\"28\" r=\"7\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"51\" cy=\"16\" r=\"7\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"32,54 44,42 40,57\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"27,39 40,29 35,45\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"37,25 51,17 44,33\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/>"
     }
+  },
+  {
+    "id": "bookstore",
+    "name": "書店",
+    "itemCount": 100,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        140,
+        180
+      ],
+      "body": "<rect x=\"5\" y=\"4\" width=\"130\" height=\"176\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"13\" y=\"15\" width=\"114\" height=\"38\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"13\" y=\"60\" width=\"114\" height=\"38\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"13\" y=\"105\" width=\"114\" height=\"38\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"13\" y=\"150\" width=\"114\" height=\"22\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"21\" y=\"22\" width=\"13\" height=\"31\" fill=\"#e57373\"/><rect x=\"38\" y=\"18\" width=\"12\" height=\"35\" fill=\"#64b5f6\"/><rect x=\"56\" y=\"25\" width=\"14\" height=\"28\" fill=\"#43a047\"/><rect x=\"78\" y=\"66\" width=\"12\" height=\"32\" fill=\"#5c6bc0\"/><rect x=\"95\" y=\"63\" width=\"13\" height=\"35\" fill=\"#ffb74d\"/><rect x=\"19\" y=\"111\" width=\"14\" height=\"32\" fill=\"#8e24aa\"/><rect x=\"38\" y=\"116\" width=\"13\" height=\"27\" fill=\"#f48fb1\"/><rect x=\"5\" y=\"4\" width=\"130\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
+    }
   }
 ]

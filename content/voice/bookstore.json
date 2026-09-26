@@ -1,0 +1,604 @@
+{
+  "en": {
+    "bookbinding-needle": {
+      "heard": "Binding needle.",
+      "score": 0.76,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-cloth": {
+      "heard": "book cloth,",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookbinding-board": {
+      "heard": "Bookbinding board.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "wall-clock-bookstore": {
+      "heard": "Wall Clock.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "ornate-frame-bookstore": {
+      "heard": "Picture frame.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "scroll-bookstore": {
+      "heard": "Scroll.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-nook-chair": {
+      "heard": "Reading chair.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-display-stand": {
+      "heard": "Book display stand.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-lamp-bookstore": {
+      "heard": "Reading Lamp.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "card-catalog-bookstore": {
+      "heard": "Card Catalog.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "desk-clock-bookstore": {
+      "heard": "desk clock,",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "globe-bookstore": {
+      "heard": "Globe.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "hourglass-bookstore": {
+      "heard": "Hourglass.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-glasses-bookstore": {
+      "heard": "reading glasses,",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "inkwell-bookstore": {
+      "heard": "Inkwell.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "quill-pen": {
+      "heard": "Quill Pen.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "decorative-urn": {
+      "heard": "Ceramic urn.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "stacked-novels": {
+      "heard": "Novels.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "hardcover-book": {
+      "heard": "hardcover book,",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "paperback-book": {
+      "heard": "Paperback book.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-cover": {
+      "heard": "Book cover.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-binding-press": {
+      "heard": "Bookbinding Press.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-repair-tape": {
+      "heard": "Book Repair Tape.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookbinding-awl": {
+      "heard": "Bookbinding All.",
+      "score": 0.93,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookbinding-thread": {
+      "heard": "Book Binding Thread,",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-binding-clamp": {
+      "heard": "Bookbinding Clamp.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-dolly": {
+      "heard": "Book Dolly.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "open-book-bookstore": {
+      "heard": "Open book.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookplate": {
+      "heard": "Bookplate.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-sleeve": {
+      "heard": "Book sleeve.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-embosser": {
+      "heard": "Book embosser.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-return-box": {
+      "heard": "Book return box.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-cart-bookstore": {
+      "heard": "BookCart.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookstand-bookstore": {
+      "heard": "Bookshelf.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-rest": {
+      "heard": "Book rest.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookbinding-bone-folder": {
+      "heard": "Bone folder.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-corner-protector": {
+      "heard": "Book Corner Protector.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-cushion": {
+      "heard": "Reading Cushion",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "page-holder-bookstore": {
+      "heard": "Page holder.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-bell": {
+      "heard": "Gail. Counter Service Bell.",
+      "score": 0.82,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-coin-tray": {
+      "heard": "Wooden coin tray.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-dryer": {
+      "heard": "Book Drying Rack.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-repair-kit": {
+      "heard": "Book Repair Kit",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-spine-repairer": {
+      "heard": "Book spine repair tool.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-glass": {
+      "heard": "Monocle.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-stamp": {
+      "heard": "Bookshop stamp.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "ink-stamp-pad": {
+      "heard": "Stamp pad.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-restraint": {
+      "heard": "Book security device.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-table": {
+      "heard": "Reading table.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-press": {
+      "heard": "Book Press.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-opener": {
+      "heard": "Book opener.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookstand-reading": {
+      "heard": "Book display easel.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-weight": {
+      "heard": "Book weight.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-timer": {
+      "heard": "Reading timer.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-tote": {
+      "heard": "Paper shopping bag.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-rest-chair": {
+      "heard": "Waiting chair.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "reading-footstool": {
+      "heard": "Reading footstool.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "bookcase-ladder": {
+      "heard": "Library Ladder",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "step-ladder": {
+      "heard": "Stepladder.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-return-bin": {
+      "heard": "Book Recycling",
+      "score": 0.81,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-umbrella": {
+      "heard": "Bin. Book-shaped umbrella stand.",
+      "score": 0.88,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "folding-book-crate": {
+      "heard": "Wooden Book Crate.",
+      "score": 0.75,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "book-holder": {
+      "heard": "Bookholder.",
+      "score": 1,
+      "take": "en-1790406195529.aac",
+      "account": "chatgpt1"
+    },
+    "abacus-bookstore": {
+      "heard": "Abacus.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "paperweight-bookstore": {
+      "heard": "Paperweight.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "reading-glasses-case": {
+      "heard": "Glasses case.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "bookend-bookstore": {
+      "heard": "Bookend.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "inlaid-box": {
+      "heard": "wooden box",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-light-bookstore": {
+      "heard": "Book light.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "reading-glass-chain": {
+      "heard": "Glasses chain.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "reading-screen": {
+      "heard": "Reading screen.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "step-stool-bookstore": {
+      "heard": "Stepstool.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "bookmark-bookstore": {
+      "heard": "Bookmark.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "magnifying-glass-bookstore": {
+      "heard": "Magnifying glass.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-mobile": {
+      "heard": "Book mobile.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-label": {
+      "heard": "Book label.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "bookshop-vent": {
+      "heard": "Wall vent.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "bookshop-window": {
+      "heard": "Bookshop Window.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-return-slot": {
+      "heard": "Book return slot.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "wall-shelf-books": {
+      "heard": "Wall Book Display",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-vending-machine": {
+      "heard": "Book vending machine.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "bookshop-door": {
+      "heard": "Bookshop Glass Store.",
+      "score": 0.83,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "bookshop-pendulum-clock": {
+      "heard": "Grandfather Clock.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "reading-booth": {
+      "heard": "Reading booth.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "reading-pod": {
+      "heard": "Reading pod.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-sling": {
+      "heard": "BookSling",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "reading-glove": {
+      "heard": "Reading Glove.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-rest-pillow": {
+      "heard": "Book Support Pillow.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-spike-bookstore": {
+      "heard": "Receipt spike.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "price-computing-scale": {
+      "heard": "Price Computing Scale",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "coin-bank": {
+      "heard": "Coinbank",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "magnifying-lamp": {
+      "heard": "Magnifying lamp.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "library-card-bookstore": {
+      "heard": "Library card.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-bin": {
+      "heard": "Book bin.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-crate-books": {
+      "heard": "Wooden book crates.",
+      "score": 0.94,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-rest-strap": {
+      "heard": "Bookstrap.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-stand": {
+      "heard": "Bookstand.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "page-turner": {
+      "heard": "Page-turner.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-dampener": {
+      "heard": "Page Dampener.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    },
+    "book-jacket": {
+      "heard": "Dust jacket.",
+      "score": 1,
+      "take": "en-1790406545308.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

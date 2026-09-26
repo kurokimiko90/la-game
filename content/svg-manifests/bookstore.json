@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・書店",
+  "sceneSlug": "la-bookstore",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口廣場",
+    "front-shelves": "新書區",
+    "reading-corner": "閱讀角",
+    "checkout": "結帳區"
+  },
+  "elements": [
+    {
+      "name": "還書箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方正的深綠色金屬箱，頂部有一道窄長投入口，正面有圓形把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "book-return-box",
+        "words": {
+          "zh-TW": "還書箱",
+          "en": "book return box",
+          "ja": {
+            "text": "返却ポスト",
+            "reading": "へんきゃくポスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深棕色木椅有寬大的方形椅背、平坦椅面和四條直腿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "reading-nook-chair",
+        "words": {
+          "zh-TW": "閱讀椅",
+          "en": "reading chair",
+          "ja": {
+            "text": "読書椅子",
+            "reading": "どくしょいす"
+          }
+        }
+      }
+    },
+    {
+      "name": "書架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淺木色直立架子分成數層，側板方直，層板上沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "bookstand-bookstore",
+        "words": {
+          "zh-TW": "書架",
+          "en": "bookshelf",
+          "ja": {
+            "text": "本棚",
+            "reading": "ほんだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "攤開的書",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一本攤開的厚書，兩側書頁微微拱起，封面是素色，頁面沒有字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "open-book-bookstore",
+        "words": {
+          "zh-TW": "攤開的書",
+          "en": "open book",
+          "ja": {
+            "text": "開いた本",
+            "reading": "ひらいたほん"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀眼鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色細框眼鏡由兩個圓角鏡片和中央鼻樑架相連，兩側鏡腳向後伸展。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "reading-glasses-bookstore",
+        "words": {
+          "zh-TW": "閱讀眼鏡",
+          "en": "reading glasses",
+          "ja": {
+            "text": "読書用メガネ",
+            "reading": "どくしょようメガネ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圖書推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "三層深綠色金屬推車有平板層架、彎曲推把和四個小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "book-cart-bookstore",
+        "words": {
+          "zh-TW": "圖書推車",
+          "en": "book cart",
+          "ja": {
+            "text": "ブックカート",
+            "reading": "ブックカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡片目錄櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮木櫃正面排列許多小抽屜，每個抽屜有圓形拉環，沒有標籤文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "card-catalog-bookstore",
+        "words": {
+          "zh-TW": "卡片目錄櫃",
+          "en": "card catalog",
+          "ja": {
+            "text": "カード目録箱",
+            "reading": "カードもくろくばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "書頁固定器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個木製圓頭夾以短彈簧相連，張開後能壓住攤開書頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "page-holder-bookstore",
+        "words": {
+          "zh-TW": "書頁固定器",
+          "en": "page holder",
+          "ja": {
+            "text": "ページホルダー",
+            "reading": "ページホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的藍色夾燈有扁平底夾、短彎臂和橢圓形燈頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "book-light-bookstore",
+        "words": {
+          "zh-TW": "閱讀燈",
+          "en": "book light",
+          "ja": {
+            "text": "読書灯",
+            "reading": "どくしょとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "立燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長黑色立柱接著寬圓底座，頂端是向下開口的米黃色燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "reading-lamp-bookstore",
+        "words": {
+          "zh-TW": "立燈",
+          "en": "reading lamp",
+          "ja": {
+            "text": "フロアランプ",
+            "reading": "フロアランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色鐘面嵌在深棕色木框裡，底部有兩個短支腳，沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "desk-clock-bookstore",
+        "words": {
+          "zh-TW": "桌鐘",
+          "en": "desk clock",
+          "ja": {
+            "text": "置き時計",
+            "reading": "おきどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "木盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方正的胡桃木盒有平坦盒蓋和黃銅小扣，表面鑲著簡單幾何木片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "inlaid-box",
+        "words": {
+          "zh-TW": "木盒",
+          "en": "wooden box",
+          "ja": {
+            "text": "木箱",
+            "reading": "きばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "陶甕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "赭紅色陶甕有寬圓腹、短窄瓶口和厚實底部，表面帶有簡單環紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "decorative-urn",
+        "words": {
+          "zh-TW": "陶甕",
+          "en": "ceramic urn",
+          "ja": {
+            "text": "陶器の壺",
+            "reading": "とうきのつぼ"
+          }
+        }
+      }
+    },
+    {
+      "name": "相框",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色長方形木框邊緣有簡單浮雕花紋，中央留白，不含圖畫或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "ornate-frame-bookstore",
+        "words": {
+          "zh-TW": "相框",
+          "en": "picture frame",
+          "ja": {
+            "text": "額縁",
+            "reading": "がくぶち"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的橘紅色紙片，頂端有一小段圓弧，底端剪成淺淺的叉形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "bookmark-bookstore",
+        "words": {
+          "zh-TW": "書籤",
+          "en": "bookmark",
+          "ja": {
+            "text": "しおり",
+            "reading": "しおり"
+          }
+        }
+      }
+    },
+    {
+      "name": "放大鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形透明鏡片嵌在深色圓框中，短直柄向右下延伸，末端略寬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "magnifying-glass-bookstore",
+        "words": {
+          "zh-TW": "放大鏡",
+          "en": "magnifying glass",
+          "ja": {
+            "text": "虫眼鏡",
+            "reading": "むしめがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "書擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對藍色直角金屬板，底座平坦、背板直立，邊角圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "bookend-bookstore",
+        "words": {
+          "zh-TW": "書擋",
+          "en": "bookend",
+          "ja": {
+            "text": "ブックエンド",
+            "reading": "ブックエンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "地球儀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍綠色圓球嵌在傾斜的深色圓環中，下方接著圓形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "globe-bookstore",
+        "words": {
+          "zh-TW": "地球儀",
+          "en": "globe",
+          "ja": {
+            "text": "地球儀",
+            "reading": "ちきゅうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙漏",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃上下兩端呈圓鼓形，中間收窄相連，底部有一小堆金色細沙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "hourglass-bookstore",
+        "words": {
+          "zh-TW": "沙漏",
+          "en": "hourglass",
+          "ja": {
+            "text": "砂時計",
+            "reading": "すなどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "羽毛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色羽毛斜接在細長黑色筆桿上，筆尖呈金屬三角形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "quill-pen",
+        "words": {
+          "zh-TW": "羽毛筆",
+          "en": "quill pen",
+          "ja": {
+            "text": "羽根ペン",
+            "reading": "はねペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "墨水瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的深藍玻璃瓶，瓶身呈圓角方形，頂部有突起的小瓶口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "inkwell-bookstore",
+        "words": {
+          "zh-TW": "墨水瓶",
+          "en": "inkwell",
+          "ja": {
+            "text": "インク壺",
+            "reading": "インクつぼ"
+          }
+        }
+      }
+    },
+    {
+      "name": "捲軸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張米白色長紙向兩端捲起，露出兩根短圓木軸，紙面沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "scroll-bookstore",
+        "words": {
+          "zh-TW": "捲軸",
+          "en": "scroll",
+          "ja": {
+            "text": "巻物",
+            "reading": "まきもの"
+          }
+        }
+      }
+    },
+    {
+      "name": "算盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形木框內排列多根細橫桿，每根桿上串著一排圓珠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "abacus-bookstore",
+        "words": {
+          "zh-TW": "算盤",
+          "en": "abacus",
+          "ja": {
+            "text": "そろばん",
+            "reading": "そろばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "鎮紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實透明的圓角玻璃塊，裡面封著一片簡單的藍色葉形裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "paperweight-bookstore",
+        "words": {
+          "zh-TW": "鎮紙",
+          "en": "paperweight",
+          "ja": {
+            "text": "ペーパーウェイト",
+            "reading": "ペーパーウェイト"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形木框鐘面有兩根深色指針和淺色底板，沒有數字，立在矮架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "entrance",
+        "itemId": "wall-clock-bookstore",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall clock",
+          "ja": {
+            "text": "掛け時計",
+            "reading": "かけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "成疊小說",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾本厚薄不同的平裝書疊在一起，封面以鮮明色塊和簡單圖案區分，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "stacked-novels",
+        "words": {
+          "zh-TW": "成疊小說",
+          "en": "novels",
+          "ja": {
+            "text": "小説",
+            "reading": "しょうせつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "精裝書",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一本方正厚實的硬殼書，封面是深藍色並帶有細窄金色邊框，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "hardcover-book",
+        "words": {
+          "zh-TW": "精裝書",
+          "en": "hardcover book",
+          "ja": {
+            "text": "ハードカバーの本",
+            "reading": "ハードカバーのほん"
+          }
+        }
+      }
+    },
+    {
+      "name": "平裝書",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一本薄而柔軟的平裝書，淺綠色封面有大型幾何圖案，書頁從側邊露出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "paperback-book",
+        "words": {
+          "zh-TW": "平裝書",
+          "en": "paperback book",
+          "ja": {
+            "text": "ペーパーバック",
+            "reading": "ペーパーバック"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍展示架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "斜面木製小架子托住一本打開的書，兩側有短擋條，架面呈溫暖的棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-display-stand",
+        "words": {
+          "zh-TW": "書籍展示架",
+          "en": "book display stand",
+          "ja": {
+            "text": "本のディスプレイ台",
+            "reading": "ほんのディスプレイだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "書衣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張攤開的布質書衣，深紅色長方形兩側各有內折封套，邊緣有細緻縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-cover",
+        "words": {
+          "zh-TW": "書衣",
+          "en": "book cover",
+          "ja": {
+            "text": "ブックカバー",
+            "reading": "ブックカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "藏書票",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張小型長方形裝飾紙片，中央是植物與卷葉花紋，四周有細框，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "bookplate",
+        "words": {
+          "zh-TW": "藏書票",
+          "en": "bookplate",
+          "ja": {
+            "text": "蔵書票",
+            "reading": "ぞうしょひょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本保護套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的長方形布套，頂端開口並露出淺色內襯，外側有一個圓角縫線口袋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-sleeve",
+        "words": {
+          "zh-TW": "書本保護套",
+          "en": "book sleeve",
+          "ja": {
+            "text": "ブックカバーケース",
+            "reading": "ブックカバーケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "眼鏡盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形硬殼眼鏡盒微微敞開，外殼是霧面深棕色，內襯柔軟且呈淺米色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "reading-glasses-case",
+        "words": {
+          "zh-TW": "眼鏡盒",
+          "en": "glasses case",
+          "ja": {
+            "text": "メガネケース",
+            "reading": "メガネケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本托架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮的木製斜面托架帶有兩個短支腳，表面平滑，前緣設有一道窄擋條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-rest",
+        "words": {
+          "zh-TW": "書本托架",
+          "en": "book rest",
+          "ja": {
+            "text": "ブックレスト",
+            "reading": "ブックレスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀靠墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚實方形靠墊靠在階台旁，橘紅布面有圓角和幾道縫線，中央微微凹陷。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "reading-cushion",
+        "words": {
+          "zh-TW": "閱讀靠墊",
+          "en": "reading cushion",
+          "ja": {
+            "text": "読書クッション",
+            "reading": "どくしょクッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "踏腳凳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮小的木製方凳有兩層寬踏板，四支短腳略向外張，木色明亮且表面平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "step-stool-bookstore",
+        "words": {
+          "zh-TW": "踏腳凳",
+          "en": "step stool",
+          "ja": {
+            "text": "踏み台",
+            "reading": "ふみだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂壓板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩塊厚木板以中央螺桿壓合，板面夾著一本薄冊，兩側伸出短握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-binding-press",
+        "words": {
+          "zh-TW": "裝訂壓板",
+          "en": "bookbinding press",
+          "ja": {
+            "text": "製本プレス",
+            "reading": "せいほんプレス"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍修補膠帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一卷透明修補膠帶裝在扁圓形塑膠軸上，邊緣清晰，旁邊露出短短的帶頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-repair-tape",
+        "words": {
+          "zh-TW": "書籍修補膠帶",
+          "en": "book repair tape",
+          "ja": {
+            "text": "製本テープ",
+            "reading": "せいほんテープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂錐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長金屬尖錐配有圓木握柄，尖端朝外，木柄呈深棕色並帶有光滑弧面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "bookbinding-awl",
+        "words": {
+          "zh-TW": "裝訂錐",
+          "en": "bookbinding awl",
+          "ja": {
+            "text": "製本用目打ち",
+            "reading": "せいほんようめうち"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂線",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一束粗棉線纏成扁平的小圈，米白色線股整齊平行，末端微微散開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "bookbinding-thread",
+        "words": {
+          "zh-TW": "裝訂線",
+          "en": "bookbinding thread",
+          "ja": {
+            "text": "製本糸",
+            "reading": "せいほんいと"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根粗而長的銀色金屬針，圓頭上有大孔，旁邊放著一小段米白色線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "bookbinding-needle",
+        "words": {
+          "zh-TW": "裝訂針",
+          "en": "bookbinding needle",
+          "ja": {
+            "text": "製本針",
+            "reading": "せいほんばり"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺紙骨刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平乳白色工具兩端逐漸變尖，表面光滑微彎，適合壓平紙張摺痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "bookbinding-bone-folder",
+        "words": {
+          "zh-TW": "摺紙骨刀",
+          "en": "bone folder",
+          "ja": {
+            "text": "へら",
+            "reading": "へら"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小片深綠色織布平整攤開，方形邊緣整齊，表面可見細密交錯的布紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-cloth",
+        "words": {
+          "zh-TW": "裝訂布",
+          "en": "book cloth",
+          "ja": {
+            "text": "製本クロス",
+            "reading": "せいほんクロス"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂紙板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片厚實的灰褐色方形紙板上下疊放，直角邊緣俐落，表面平坦無圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "bookbinding-board",
+        "words": {
+          "zh-TW": "裝訂紙板",
+          "en": "bookbinding board",
+          "ja": {
+            "text": "製本ボード",
+            "reading": "せいほんボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍搬運滑車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮長方形金屬平台裝有四個小輪，平台上疊放幾本厚書，側邊有短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-dolly",
+        "words": {
+          "zh-TW": "書籍搬運滑車",
+          "en": "book dolly",
+          "ja": {
+            "text": "ブックドーリー",
+            "reading": "ブックドーリー"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀隔屏",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "三片窄木框以鉸鏈連成折屏，中央嵌著半透明淺色板，屏面沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "reading-screen",
+        "words": {
+          "zh-TW": "閱讀隔屏",
+          "en": "reading screen",
+          "ja": {
+            "text": "読書用パーティション",
+            "reading": "どくしょようパーティション"
+          }
+        }
+      }
+    },
+    {
+      "name": "書角保護套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對小巧的黃銅色三角護角，略帶折邊，並排放置時呈現清楚的金屬反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-corner-protector",
+        "words": {
+          "zh-TW": "書角保護套",
+          "en": "book corner protector",
+          "ja": {
+            "text": "ブックコーナーガード",
+            "reading": "ブックコーナーガード"
+          }
+        }
+      }
+    },
+    {
+      "name": "眼鏡鍊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬鍊兩端接著柔軟套環，彎成淺弧平放，鏈節在光線下微微發亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "reading-glass-chain",
+        "words": {
+          "zh-TW": "眼鏡鍊",
+          "en": "glasses chain",
+          "ja": {
+            "text": "メガネチェーン",
+            "reading": "メガネチェーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝訂夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深色金屬夾具以螺旋柄收緊，兩片平直夾口張開，形狀簡單而容易辨認。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-binding-clamp",
+        "words": {
+          "zh-TW": "裝訂夾",
+          "en": "bookbinding clamp",
+          "ja": {
+            "text": "製本クランプ",
+            "reading": "せいほんクランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "壓印器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型手壓金屬器具有圓形握把和厚實底座，壓面呈花紋浮雕，不含字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "front-shelves",
+        "itemId": "book-embosser",
+        "words": {
+          "zh-TW": "壓印器",
+          "en": "book embosser",
+          "ja": {
+            "text": "蔵書印",
+            "reading": "ぞうしょいん"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀長桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬長的深棕色木桌，桌面平整，四隻方形桌腳穩穩立在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "reading-table",
+        "words": {
+          "zh-TW": "閱讀長桌",
+          "en": "reading table",
+          "ja": {
+            "text": "読書机",
+            "reading": "どくしょづくえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "移動書梯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩側木架連著寬踏板，頂端有小平台，整體呈窄長的梯形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "bookcase-ladder",
+        "words": {
+          "zh-TW": "移動書梯",
+          "en": "library ladder",
+          "ja": {
+            "text": "図書館用はしご",
+            "reading": "としょかんようはしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "還書口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "牆上的深色長方形投入口，外框厚實，旁邊有向內傾斜的金屬擋片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-return-slot",
+        "words": {
+          "zh-TW": "還書口",
+          "en": "book return slot",
+          "ja": {
+            "text": "返却口",
+            "reading": "へんきゃくぐち"
+          }
+        }
+      }
+    },
+    {
+      "name": "借書證",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的小長方卡片，邊角圓滑，表面是素色，沒有圖案或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "library-card-bookstore",
+        "words": {
+          "zh-TW": "借書證",
+          "en": "library card",
+          "ja": {
+            "text": "図書カード",
+            "reading": "としょカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍壓平器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚重木製方框裡有兩塊平壓板，頂部橫桿連著旋轉螺桿和寬把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-press",
+        "words": {
+          "zh-TW": "書籍壓平器",
+          "en": "book press",
+          "ja": {
+            "text": "ブックプレス",
+            "reading": "ブックプレス"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀小隔間",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木製半高圍板形成方正小隔間，前方開口寬敞，內側有平直桌面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "reading-booth",
+        "words": {
+          "zh-TW": "閱讀小隔間",
+          "en": "reading booth",
+          "ja": {
+            "text": "読書ブース",
+            "reading": "どくしょブース"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀艙",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "圓角蛋形外殼立在地面，正面有寬大的拱形開口，內部可見柔軟座面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "reading-pod",
+        "words": {
+          "zh-TW": "閱讀艙",
+          "en": "reading pod",
+          "ja": {
+            "text": "読書ポッド",
+            "reading": "どくしょポッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍修補工具盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的淺色方盒內整齊排著刷子、膠帶卷和小剪刀，外形簡明。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-repair-kit",
+        "words": {
+          "zh-TW": "書籍修補工具盒",
+          "en": "book repair kit",
+          "ja": {
+            "text": "本の修理道具箱",
+            "reading": "ほんのしゅうりどうぐばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "開書器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個弧形金屬夾扣在書頁兩側，中央伸出細長握柄，方便單手翻頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-opener",
+        "words": {
+          "zh-TW": "開書器",
+          "en": "book opener",
+          "ja": {
+            "text": "ブックオープナー",
+            "reading": "ブックオープナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本展示台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型木製三角架托住一本合起的書，前方有兩個短橫檔防止滑落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "bookstand-reading",
+        "words": {
+          "zh-TW": "書本展示台",
+          "en": "book display easel",
+          "ja": {
+            "text": "ブックイーゼル",
+            "reading": "ブックイーゼル"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍乾燥架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色金屬架上排列多道直立窄縫，每道縫裡夾著一本張開的書。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-dryer",
+        "words": {
+          "zh-TW": "書籍乾燥架",
+          "en": "book drying rack",
+          "ja": {
+            "text": "本の乾燥ラック",
+            "reading": "ホンノカンソウラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍壓重器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的圓形黃銅塊，頂部有簡單的凸起握柄，平底穩穩壓住紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-weight",
+        "words": {
+          "zh-TW": "書籍壓重器",
+          "en": "book weight",
+          "ja": {
+            "text": "ブックウェイト",
+            "reading": "ブックウェイト"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍護封",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張包住硬殼書的彩色紙封套，兩側折頁向外翻，中央包覆書脊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-jacket",
+        "words": {
+          "zh-TW": "書籍護封",
+          "en": "dust jacket",
+          "ja": {
+            "text": "ブックジャケット",
+            "reading": "ブックジャケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本固定帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深色彈性寬帶繞成橢圓，旁邊有小小的方形扣件，套在合起的書外。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-rest-strap",
+        "words": {
+          "zh-TW": "書本固定帶",
+          "en": "book strap",
+          "ja": {
+            "text": "ブックバンド",
+            "reading": "ブックバンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "藏書標籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張米白色長方紙片，四角略圓，貼在書本封面中央且完全沒有字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-label",
+        "words": {
+          "zh-TW": "藏書標籤",
+          "en": "book label",
+          "ja": {
+            "text": "蔵書ラベル",
+            "reading": "ゾウショラベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "書袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平布袋攤開成長方形，兩側有短提耳，袋口露出幾本沒有文字的書。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-sling",
+        "words": {
+          "zh-TW": "書袋",
+          "en": "book sling",
+          "ja": {
+            "text": "ブックスリング",
+            "reading": "ブックスリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本支架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金屬線折成兩側弧形支臂，底部有橫桿托住書本，中央留空呈鏤空狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-stand",
+        "words": {
+          "zh-TW": "書本支架",
+          "en": "book stand",
+          "ja": {
+            "text": "ブックスタンド",
+            "reading": "ブックスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "書脊修補器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片短短的金屬壓板由中間鉸鏈連接，張開後呈扁平的書脊形狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-spine-repairer",
+        "words": {
+          "zh-TW": "書脊修補器",
+          "en": "book spine repair tool",
+          "ja": {
+            "text": "背表紙修理具",
+            "reading": "セビョウシシュウリグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "翻頁器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長木柄末端接一個扁平彎曲的薄片，薄片邊緣圓滑，像小小的鏟子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "page-turner",
+        "words": {
+          "zh-TW": "翻頁器",
+          "en": "page turner",
+          "ja": {
+            "text": "ページターナー",
+            "reading": "ページターナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本夾持器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個短金屬夾以彈簧連接，張開時能夾住攤開書本的兩側封面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-holder",
+        "words": {
+          "zh-TW": "書本夾持器",
+          "en": "book holder",
+          "ja": {
+            "text": "ブックホルダー",
+            "reading": "ブックホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀手套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一隻薄棉白手套平放在桌面，五根手指分開，指尖有柔軟的防滑墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "reading-glove",
+        "words": {
+          "zh-TW": "閱讀手套",
+          "en": "reading glove",
+          "ja": {
+            "text": "読書用手袋",
+            "reading": "ドクショヨウテブクロ"
+          }
+        }
+      }
+    },
+    {
+      "name": "書頁潤濕器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓形木柄接著短短的軟毛墊，外形像小刷子，用來輕沾紙頁邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-dampener",
+        "words": {
+          "zh-TW": "書頁潤濕器",
+          "en": "page dampener",
+          "ja": {
+            "text": "ページ加湿器",
+            "reading": "ページカシツキ"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀計時器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓角方形的薄塑膠小器具，頂部有一顆大圓按鈕和短短的旋鈕，沒有標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "reading-timer",
+        "words": {
+          "zh-TW": "閱讀計時器",
+          "en": "reading timer",
+          "ja": {
+            "text": "読書タイマー",
+            "reading": "ドクショタイマー"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本靠枕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深藍色楔形軟枕前端較低、後端較高，表面有幾道平行縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "book-rest-pillow",
+        "words": {
+          "zh-TW": "書本靠枕",
+          "en": "book support pillow",
+          "ja": {
+            "text": "ブッククッション",
+            "reading": "ブッククッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "閱讀腳凳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮長方形木凳有厚實的深綠坐墊，四條短腿微微向外張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "reading-corner",
+        "itemId": "reading-footstool",
+        "words": {
+          "zh-TW": "閱讀腳凳",
+          "en": "reading footstool",
+          "ja": {
+            "text": "読書用フットスツール",
+            "reading": "ドクショヨウフットスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據插針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形金屬底座中央立著細長尖針，幾張白色紙條穿在針上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "receipt-spike-bookstore",
+        "words": {
+          "zh-TW": "收據插針",
+          "en": "receipt spike",
+          "ja": {
+            "text": "レシートスパイク",
+            "reading": "レシートスパイク"
+          }
+        }
+      }
+    },
+    {
+      "name": "存錢筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的陶製小豬，背上有細長投幣縫，圓鼻子與短腳輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "coin-bank",
+        "words": {
+          "zh-TW": "存錢筒",
+          "en": "coin bank",
+          "ja": {
+            "text": "貯金箱",
+            "reading": "ちょきんばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "計價秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮方形電子秤，上方是平坦金屬秤盤，前側有一小片深色顯示窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "price-computing-scale",
+        "words": {
+          "zh-TW": "計價秤",
+          "en": "price computing scale",
+          "ja": {
+            "text": "料金計算はかり",
+            "reading": "りょうきんけいさんはかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "放大檢查燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長直立支架頂端伸出圓形放大鏡，鏡框內圈有一圈乳白燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "magnifying-lamp",
+        "words": {
+          "zh-TW": "放大檢查燈",
+          "en": "magnifying lamp",
+          "ja": {
+            "text": "拡大鏡付きランプ",
+            "reading": "かくだいきょうつきランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍回收箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色長方箱身，頂部有寬大的斜口投入口，正面有簡單書本圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-return-bin",
+        "words": {
+          "zh-TW": "書籍回收箱",
+          "en": "book recycling bin",
+          "ja": {
+            "text": "古本回収ボックス",
+            "reading": "ふるほんかいしゅうボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "單片眼鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "單片圓形透明鏡片嵌在細金色圓框裡，側邊連著短小金屬環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "reading-glass",
+        "words": {
+          "zh-TW": "單片眼鏡",
+          "en": "monocle",
+          "ja": {
+            "text": "片眼鏡",
+            "reading": "かためがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "書籍收納箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮寬的木製方箱，前面有橫向把手凹槽，箱內幾本書直立排列。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-bin",
+        "words": {
+          "zh-TW": "書籍收納箱",
+          "en": "book bin",
+          "ja": {
+            "text": "本収納ボックス",
+            "reading": "ほんしゅうのうボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本造型傘架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "外形像直立厚書本的長方形傘架，頂部開著幾個圓孔，側面有凸起書脊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-umbrella",
+        "words": {
+          "zh-TW": "書本造型傘架",
+          "en": "book-shaped umbrella stand",
+          "ja": {
+            "text": "本型傘立て",
+            "reading": "ほんがたかさたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "雙踏梯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩片金屬梯架在頂端相連，兩側各有寬踏板，張開後呈穩固倒三角形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "step-ladder",
+        "words": {
+          "zh-TW": "雙踏梯",
+          "en": "step ladder",
+          "ja": {
+            "text": "脚立",
+            "reading": "きゃたつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝書木箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺棕木條拼成的方箱，箱口露出幾本彩色書封，兩端各有橢圓提孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "wooden-crate-books",
+        "words": {
+          "zh-TW": "裝書木箱",
+          "en": "wooden book crate",
+          "ja": {
+            "text": "本入り木箱",
+            "reading": "ほんいりきばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "二手書販賣機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的窄身機器，玻璃窗內整齊放著彩色書本，側邊有一個圓形取物口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-vending-machine",
+        "words": {
+          "zh-TW": "二手書販賣機",
+          "en": "book vending machine",
+          "ja": {
+            "text": "古本自動販売機",
+            "reading": "ふるほんじどうはんばいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "書店玻璃門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的透明玻璃門嵌在木框中，中央有一根直立金屬拉把，門後可見室內。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "bookshop-door",
+        "words": {
+          "zh-TW": "書店玻璃門",
+          "en": "bookshop glass door",
+          "ja": {
+            "text": "書店のガラスドア",
+            "reading": "しょてんのガラスドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "書店櫥窗",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的透明玻璃窗嵌在牆面，窗台上擺著幾本封面色彩鮮明的書。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "bookshop-window",
+        "words": {
+          "zh-TW": "書店櫥窗",
+          "en": "bookshop window",
+          "ja": {
+            "text": "書店のショーウィンドウ",
+            "reading": "しょてんのショーウィンドウ"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁掛展示架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩層淺木色橫板固定在牆上，板面向前微斜，各放著幾本封面朝外的書。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "wall-shelf-books",
+        "words": {
+          "zh-TW": "壁掛展示架",
+          "en": "wall book display",
+          "ja": {
+            "text": "壁掛け本棚",
+            "reading": "かべかけほんだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本吊飾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細線懸著數個彩色小書形吊片，連在交錯的細木枝上，輪廓輕巧清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-mobile",
+        "words": {
+          "zh-TW": "書本吊飾",
+          "en": "book mobile",
+          "ja": {
+            "text": "本のモビール",
+            "reading": "ほんのモビール"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌上服務鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮銀色圓形底座上方鼓起半球形金屬罩，頂端有一顆小圓按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-bell",
+        "words": {
+          "zh-TW": "桌上服務鈴",
+          "en": "counter service bell",
+          "ja": {
+            "text": "カウンターベル",
+            "reading": "カウンターベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "木製零錢盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺棕木製扁盤，四角微微翹起，盤內散放幾枚沒有字樣的圓形硬幣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "wooden-coin-tray",
+        "words": {
+          "zh-TW": "木製零錢盤",
+          "en": "wooden coin tray",
+          "ja": {
+            "text": "木製コイントレー",
+            "reading": "もくせいコイントレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "書店圖章",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓木柄連著黑色方形印面，旁邊放著一塊深色印泥墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-stamp",
+        "words": {
+          "zh-TW": "書店圖章",
+          "en": "bookshop stamp",
+          "ja": {
+            "text": "書店スタンプ",
+            "reading": "しょてんスタンプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "印台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁長方形黑色底盒打開一半，裡面露出深藍色柔軟印墊，沒有任何字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "ink-stamp-pad",
+        "words": {
+          "zh-TW": "印台",
+          "en": "stamp pad",
+          "ja": {
+            "text": "スタンプ台",
+            "reading": "スタンプだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "書本防盜器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明塑膠長條套住一本書的邊緣，兩端各有圓形扣件，形狀簡單醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-restraint",
+        "words": {
+          "zh-TW": "書本防盜器",
+          "en": "book security device",
+          "ja": {
+            "text": "書籍用防犯器",
+            "reading": "しょせきようぼうはんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙製購物袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "挺立的牛皮紙方袋，頂端有兩個彎曲紙把手，袋口露出一本彩色書。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "shopping-tote",
+        "words": {
+          "zh-TW": "紙製購物袋",
+          "en": "paper shopping bag",
+          "ja": {
+            "text": "紙製ショッピングバッグ",
+            "reading": "かみせいショッピングバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "折疊書箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色塑膠折疊箱，側面有規則方孔，箱內幾本書直立露出封面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "folding-book-crate",
+        "words": {
+          "zh-TW": "折疊書箱",
+          "en": "folding book crate",
+          "ja": {
+            "text": "折りたたみ本箱",
+            "reading": "おりたたみほんばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "休息椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "簡潔的木製單人椅，方形椅背由三根直木條組成，四支椅腳微向外張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "book-rest-chair",
+        "words": {
+          "zh-TW": "休息椅",
+          "en": "waiting chair",
+          "ja": {
+            "text": "待合椅子",
+            "reading": "まちあいイス"
+          }
+        }
+      }
+    },
+    {
+      "name": "落地擺鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高而窄的木製鐘殼，上方有圓形鐘面，下方玻璃窗內垂著金色擺錘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "bookshop-pendulum-clock",
+        "words": {
+          "zh-TW": "落地擺鐘",
+          "en": "grandfather clock",
+          "ja": {
+            "text": "振り子時計",
+            "reading": "ふりこどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "通風口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆上嵌著淺灰色長方形通風格柵，內部有一排斜斜的平行薄片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "bookstore",
+        "zone": "checkout",
+        "itemId": "bookshop-vent",
+        "words": {
+          "zh-TW": "通風口",
+          "en": "wall vent",
+          "ja": {
+            "text": "換気口",
+            "reading": "かんきこう"
+          }
+        }
+      }
+    }
+  ]
+}
