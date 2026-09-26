@@ -23,7 +23,7 @@ import {
   buildOutlinePrompt, buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, preferNewWords, splitCount, validateElements, wordKey,
   zoneShortfall,
 } from './lib/scene-plan.mjs';
-import { blockedIds, buildStagePrompt, parseStage, pruneStage } from './lib/stage-plan.mjs';
+import { placeScene } from './lib/placement.mjs';
 import { localIso } from './lib/local-time.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
@@ -230,56 +230,6 @@ function tryVoice(sceneId) {
   }
 }
 
-const STAGE_TRIES = 2;
-
-/**
- * 情境規劃（新街區才做；補元素時保留原本的情境，新物品照舊自動排列）。
- * 問 codex → 修整 → 驗證，有問題帶著問題重問；還是不行就不用情境。寫到 content/stages/<scene>.json。
- */
-async function planStage(plan, available, terrain) {
-  let problems = [];
-  for (let i = 0; i < STAGE_TRIES; i++) {
-    try {
-      const raw = await codexText(buildStagePrompt({ plan, available, problems }));
-      const r = parseStage(raw, { plan, available, terrain });
-      problems = r.problems;
-      if (!problems.length) {
-        fs.mkdirSync(P.stages, { recursive: true });
-        writeJson(path.join(P.stages, `${plan.id}.json`), r.stage);
-        log(`情境規劃完成${r.dropped.length ? `，${r.dropped.length} 個物品沒安排到（照舊自動排列）：${r.dropped.join('、')}` : ''}`);
-        return true;
-      }
-    } catch (e) {
-      problems = [e.message.split('\n')[0]];
-    }
-  }
-  log(`情境規劃沒做成，照舊自動排列：${problems.slice(0, 3).join('；')}`);
-  return false;
-}
-
-// 擺放：有情境時先試情境；被擋太多的物件拿出情境（交給自動排列）再試，最多 PRUNE_ROUNDS 輪；
-// 還是不行就刪掉情境檔、整個照舊自動排列，不讓自動擴展卡住
-const PRUNE_ROUNDS = 6;
-function layoutWithFallback(sceneId, args) {
-  const file = path.join(P.stages, `${sceneId}.json`);
-  const layout = () => run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
-  for (let round = 0; ; round++) {
-    try {
-      return layout();
-    } catch (e) {
-      if (!fs.existsSync(file)) throw e;
-      const ids = blockedIds(e.message);
-      if (ids.length && round < PRUNE_ROUNDS) {
-        writeJson(file, pruneStage(readJson(file), ids));
-        log(`情境擺放有物件被擋住，改成自動排列：${ids.join('、')}`);
-        continue;
-      }
-      log(`情境擺放排不下，改用自動排列：${e.message.split('\n')[0]}`);
-      fs.rmSync(file);
-      return layout();
-    }
-  }
-}
 
 /**
  * 手畫核心場景補元素：scene-config 是手寫的（rows、spots、手調的地帶），不重寫；
@@ -315,9 +265,15 @@ async function integrate(plan, settings, { topUp = false, restage = false } = {}
   fs.writeFileSync(P.config, upsertScene(text, plan.id, planToSceneConfig(plan, available), { world, order }));
   log(`scene-config：${plan.id}，${available.length} 個物件，地圖 ${world.width}×${world.height}`);
 
-  // 新街區還沒上線，可以用情境重排（--reset）；補元素時只替新物品排位置
-  const staged = !topUp && !fs.existsSync(path.join(P.stages, `${plan.id}.json`)) && await planStage(plan, available, readJson(P.config).scenes[plan.id].terrain);
-  layoutWithFallback(plan.id, staged || restage ? ['--reset'] : []);
+  // 按實際場景擺放（scripts/lib/placement.mjs）：新街區、重排整個規劃情境再 --reset；補元素只安排新物品，舊的不動
+  await placeScene({
+    plan, available, terrain: readJson(P.config).scenes[plan.id].terrain,
+    mode: topUp ? 'topUp' : restage ? 'restage' : 'new',
+    stageFile: path.join(P.stages, `${plan.id}.json`),
+    ask: codexText,
+    layout: (args) => run('layout', process.execPath, ['scripts/build-layout.mjs', plan.id, ...args]),
+    log,
+  });
   runChecks(plan.id);
   return available.length;
 }
