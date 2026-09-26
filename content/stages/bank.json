@@ -1,0 +1,335 @@
+{
+  "zones": {
+    "front-plaza": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "銀行入口與提款機",
+          "x": [
+            0.06,
+            0.25
+          ],
+          "main": "atm-bank",
+          "beside": [
+            "lamp",
+            "tree-bank"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "等候休憩區",
+          "x": [
+            0.29,
+            0.48
+          ],
+          "main": "bench-bank",
+          "beside": [
+            "planter",
+            "trash-can-bank"
+          ],
+          "front": [
+            "wallet-bank",
+            "key-bank"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "郵務與自行車停放",
+          "x": [
+            0.53,
+            0.73
+          ],
+          "main": "mailbox-bank",
+          "beside": [
+            "bicycle-rack-bank",
+            "bush-bank"
+          ],
+          "front": [
+            "umbrella-bank"
+          ]
+        }
+      ],
+      "sky": {
+        "cloud-bank": 0.5
+      }
+    },
+    "lobby": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "入口與排隊動線",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "main": "door",
+          "wall": [
+            "security-camera-bank"
+          ],
+          "beside": [
+            "floor-mat-bank",
+            "queue-barrier-bank"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "接待服務台",
+          "x": [
+            0.23,
+            0.45
+          ],
+          "fixture": "desk",
+          "on": [
+            "computer",
+            "telephone-bank",
+            "bell-bank",
+            "pen-bank"
+          ],
+          "wall": [
+            "clock-bank",
+            "calendar-bank"
+          ],
+          "beside": [
+            "counter-stool",
+            "plant-pot"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "表單與郵務桌",
+          "x": [
+            0.48,
+            0.68
+          ],
+          "fixture": "desk",
+          "on": [
+            "paper-bank",
+            "stamp",
+            "stapler-bank",
+            "folder-bank"
+          ],
+          "beside": [
+            "wastebasket-bank"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "等候閱讀區",
+          "x": [
+            0.71,
+            0.86
+          ],
+          "fixture": "display",
+          "on": [
+            "globe-bank",
+            "envelope-bank"
+          ],
+          "beside": [
+            "stanchion"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "入口安全設備",
+          "x": [
+            0.45,
+            0.47
+          ],
+          "main": "fire-extinguisher-bank"
+        }
+      ]
+    },
+    "service-hall": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "客戶服務櫃檯",
+          "x": [
+            0.08,
+            0.36
+          ],
+          "main": "service-counter",
+          "on": [
+            "monitor-bank",
+            "keyboard-bank",
+            "mouse-bank",
+            "calculator-bank"
+          ],
+          "wall": [
+            "teller-window"
+          ],
+          "beside": [
+            "coat-rack-bank"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "文書處理桌",
+          "x": [
+            0.39,
+            0.58
+          ],
+          "fixture": "desk",
+          "on": [
+            "scissors-bank",
+            "ruler-bank",
+            "tape-dispenser-bank",
+            "hole-punch-bank"
+          ],
+          "front": [
+            "paperclip",
+            "staple-remover-bank"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "收款與收據工作台",
+          "x": [
+            0.61,
+            0.78
+          ],
+          "fixture": "desk",
+          "on": [
+            "calculator-receipt-printer",
+            "cash-register-bank",
+            "coin",
+            "banknote-bank"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "文件登記桌",
+          "x": [
+            0.39,
+            0.58
+          ],
+          "fixture": "desk",
+          "on": [
+            "clipboard-bank",
+            "card",
+            "water-bottle-bank",
+            "briefcase-lock"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "檔案與公告區",
+          "x": [
+            0.81,
+            0.96
+          ],
+          "main": "filing-cabinet-bank",
+          "wall": [
+            "bulletin-board"
+          ],
+          "beside": [
+            "waste-bin-liner"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "查驗工具",
+          "x": [
+            0.61,
+            0.78
+          ],
+          "front": [
+            "magnifying-glass-bank"
+          ]
+        }
+      ]
+    },
+    "vault-room": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "金庫門與控制轉盤",
+          "x": [
+            0.39,
+            0.61
+          ],
+          "main": "vault-wheel",
+          "wall": [
+            "wall-vent",
+            "pipe-valve"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "貴金屬保管架",
+          "x": [
+            0.06,
+            0.28
+          ],
+          "main": "metal-shelf",
+          "on": [
+            "gold-bar",
+            "safe-deposit-box",
+            "safety-deposit-envelope"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "珠寶清點台",
+          "x": [
+            0.3,
+            0.49
+          ],
+          "fixture": "display",
+          "on": [
+            "gemstone",
+            "pearl",
+            "jewelry-box",
+            "velvet-pouch"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "押運與封存",
+          "x": [
+            0.53,
+            0.72
+          ],
+          "main": "hand-truck-bank",
+          "on": [
+            "security-seal"
+          ],
+          "beside": [
+            "wooden-crate",
+            "treasure-chest"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "維護清潔角",
+          "x": [
+            0.75,
+            0.96
+          ],
+          "main": "folding-ladder",
+          "beside": [
+            "broom-bank",
+            "metal-pipe"
+          ],
+          "front": [
+            "flashlight-bank",
+            "lantern-bank",
+            "dustpan-bank"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "清潔用品箱",
+          "x": [
+            0.75,
+            0.96
+          ],
+          "main": "bucket-bank",
+          "on": [
+            "hard-hat"
+          ]
+        }
+      ]
+    }
+  }
+}

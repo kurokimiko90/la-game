@@ -838,17 +838,17 @@
     "bank": {
       "name": "銀行",
       "icon": "lamp",
-      "zones": {"front-plaza": [9520, 3080, 10820, 3730], "lobby": [10820, 3080, 12120, 3730], "service-hall": [10820, 3730, 12120, 4380], "vault-room": [9520, 3730, 10820, 4380]},
+      "zones": {"front-plaza": [9520, 3080, 12120, 3730], "lobby": [12360, 3080, 14960, 3730], "service-hall": [12360, 3730, 14960, 4380], "vault-room": [9520, 3730, 12120, 4380]},
       "bands": {
         "ground": {"scale": [0.95, 1.05], "override": {"front-plaza": {"top": 3150, "bottom": 3525}, "lobby": {"top": 3320, "bottom": 3710, "gaps": [[3270, 3462]]}, "service-hall": {"top": 3970, "bottom": 4360, "gaps": [[3920, 4140]]}, "vault-room": {"top": 3970, "bottom": 4360}}},
         "sky-front-plaza": {"top": 3230, "bottom": 3380, "zones": ["front-plaza"], "layer": 3, "float": 150},
         "road-front-plaza": {"top": 3610, "bottom": 3680, "zones": ["front-plaza"], "inset": 20},
         "wall-lobby": {"levels": [3220], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-lobby": {"levels": [3258], "zones": ["lobby"], "inset": 50},
-        "surface-lobby": {"levels": [3390], "zones": ["lobby"], "x0": 10970, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 3432},
+        "surface-lobby": {"levels": [3390], "zones": ["lobby"], "x0": 12510, "x1": 14810, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 3432},
         "wall-service-hall": {"levels": [3870], "zones": ["service-hall"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-service-hall": {"levels": [3908], "zones": ["service-hall"], "inset": 50},
-        "surface-service-hall": {"levels": [4040], "zones": ["service-hall"], "x0": 10970, "x1": 11970, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 4110},
+        "surface-service-hall": {"levels": [4040], "zones": ["service-hall"], "x0": 12510, "x1": 14810, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 4110},
         "wall-vault-room": {"levels": [3870], "zones": ["vault-room"], "inset": 60, "scale": [0.85, 0.85]},
         "wallbase-vault-room": {"levels": [3908], "zones": ["vault-room"], "inset": 50}
       },
@@ -901,7 +901,7 @@
       "noFlip": [],
       "motion": {"car-bank": "wobble", "flower-bank": "sway", "tree-bank": "sway", "bush-bank": "sway", "cloud-bank": "drift", "plant-pot": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#ffab91", "x0": 9520, "y0": 3080, "x1": 12120, "y1": 4380, "zones": [{"id": "front-plaza", "x0": 9520, "y0": 3080, "x1": 10820, "y1": 3730, "indoor": false, "floor": "paving", "road": {"y0": 3540, "y1": 3700}}, {"id": "lobby", "x0": 10820, "y0": 3080, "x1": 12120, "y1": 3730, "indoor": true, "floor": "tile", "wallBase": 3260}, {"id": "service-hall", "x0": 10820, "y0": 3730, "x1": 12120, "y1": 4380, "indoor": true, "floor": "carpet", "wallBase": 3910}, {"id": "vault-room", "x0": 9520, "y0": 3730, "x1": 10820, "y1": 4380, "indoor": true, "floor": "tile", "wallBase": 3910}]}
+      "terrain": {"color": "#ffab91", "x0": 9520, "y0": 3080, "x1": 14960, "y1": 4380, "zones": [{"id": "front-plaza", "x0": 9520, "y0": 3080, "x1": 12120, "y1": 3730, "indoor": false, "floor": "paving", "road": {"y0": 3540, "y1": 3700}}, {"id": "lobby", "x0": 12360, "y0": 3080, "x1": 14960, "y1": 3730, "indoor": true, "floor": "tile", "wallBase": 3260}, {"id": "service-hall", "x0": 12360, "y0": 3730, "x1": 14960, "y1": 4380, "indoor": true, "floor": "carpet", "wallBase": 3910}, {"id": "vault-room", "x0": 9520, "y0": 3730, "x1": 12120, "y1": 4380, "indoor": true, "floor": "tile", "wallBase": 3910}]}
     }
   }
 }

@@ -575,6 +575,18 @@
       "score": 1,
       "take": "en-1790388077690.aac",
       "account": "chatgpt1"
+    },
+    "flower-bank": {
+      "heard": "Flowers.",
+      "score": 0.86,
+      "take": "en-1790391920396.aac",
+      "account": "chatgpt1"
+    },
+    "stamp": {
+      "heard": "Stamp.",
+      "score": 1,
+      "take": "en-1790391920396.aac",
+      "account": "chatgpt1"
     }
   }
 }
