@@ -6,6 +6,7 @@
 //   node scripts/auto-expand.mjs              推進一步
 //   node scripts/auto-expand.mjs --status     看目前狀態
 //   node scripts/auto-expand.mjs --unblock    修好問題後，從卡住的步驟重來
+//   node scripts/auto-expand.mjs --restage <scene> [--slot=x,y]   已上線的街區改成佔兩格、情境重排（物件位置會變）
 //
 // 流程：idle →（miko-ws codex 規劃 4 區 + itemsPerScene 個物品）→ generating（miko-ws 生成 SVG，失敗的隔輪重排）
 //       → integrating（同步 SVG、寫 scene-config、擺放、build、音檔、全部測試、commit）→ idle
@@ -15,7 +16,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { nextSlot, worldSize } from './lib/district-kit.mjs';
+import { cellsOf, nextSlot, worldSize } from './lib/district-kit.mjs';
 import { upsertScene } from './lib/config-writer.mjs';
 import { codexText, ensureGenerator, jobProgress, registerJob, requeueFailed } from './lib/miko.mjs';
 import {
@@ -301,7 +302,7 @@ function runChecks(sceneId) {
   run('e2e', 'npm', ['run', 'test:e2e']);
 }
 
-async function integrate(plan, settings, { topUp = false } = {}) {
+async function integrate(plan, settings, { topUp = false, restage = false } = {}) {
   run('sync-svg', process.execPath, ['scripts/sync-svg.mjs']);
   const available = availableSvgs(plan.id);
   if (plan.core) return integrateCore(plan, available);
@@ -316,9 +317,37 @@ async function integrate(plan, settings, { topUp = false } = {}) {
 
   // 新街區還沒上線，可以用情境重排（--reset）；補元素時只替新物品排位置
   const staged = !topUp && !fs.existsSync(path.join(P.stages, `${plan.id}.json`)) && await planStage(plan, available, readJson(P.config).scenes[plan.id].terrain);
-  layoutWithFallback(plan.id, staged ? ['--reset'] : []);
+  layoutWithFallback(plan.id, staged || restage ? ['--reset'] : []);
   runChecks(plan.id);
   return available.length;
+}
+
+/**
+ * 已上線的街區改成佔兩格（可以順便搬到 --slot=x,y），刪掉舊情境、重新規劃情境並 --reset 重排，整合、commit。
+ * 物件位置會全部改變，只給擺放出問題、剛上線的街區用。失敗不動自動擴展的狀態，改到一半的檔案留著看。
+ */
+async function restage(sceneId, slotArg) {
+  const settings = readJson(P.settings);
+  const file = path.join(P.plans, `${sceneId ?? ''}.json`);
+  if (!sceneId || !fs.existsSync(file)) throw new Error(`沒有 content/plans/${sceneId}.json`);
+  const plan = readJson(file);
+  if (plan.core || !plan.slot) throw new Error(`${sceneId} 是手畫的核心場景，不能 restage`);
+  const [x, y] = slotArg ? slotArg.split(',').map(Number) : [plan.slot.x, plan.slot.y];
+  const key = (s) => `${s.x},${s.y}`;
+  const listed = new Map(settings.slots.map((s) => [key(s), s]));
+  const taken = new Set(usedSlots().filter((s) => key(s) !== key(plan.slot)).flatMap(cellsOf).map(key));
+  const cells = cellsOf({ x, y, span: 2 });
+  const bad = cells.find((c) => !listed.has(key(c)) || taken.has(key(c)));
+  if (bad) throw new Error(`${key(bad)} 不是空的 slot，${plan.name} 不能佔 ${key(cells[0])} 和 ${key(cells[1])}`);
+
+  const next = { ...plan, slot: { ...listed.get(key(cells[0])), span: 2 } };
+  writeJson(file, next);
+  fs.rmSync(path.join(P.stages, `${sceneId}.json`), { force: true });
+  log(`restage ${plan.name}：改成佔兩格（${key(cells[0])}、${key(cells[1])}），情境重排`);
+  const count = await integrate(next, settings, { restage: true });
+  appendLog(next, count, 0, '改成兩格、情境重排');
+  commit(`feat: widen ${next.name} district to two slots and restage (${count} items)`, settings);
+  log(`restage ${plan.name} 完成，已 commit`);
 }
 
 function appendLog(plan, count, rounds, note = '自動') {
@@ -448,6 +477,18 @@ async function main() {
     return log(`解除卡住，回到 ${s.resumePhase ?? 'idle'}`);
   }
   if (!acquireLock()) return log('上一次還在跑，略過');
+  const restageAt = args.indexOf('--restage');
+  if (restageAt >= 0) {
+    try {
+      await restage(args[restageAt + 1], args.find((a) => a.startsWith('--slot='))?.slice('--slot='.length));
+    } catch (e) {
+      log(`restage 失敗：${e.message.split('\n')[0]}`);
+      process.exitCode = 1;
+    } finally {
+      fs.rmSync(LOCK_FILE, { force: true });
+    }
+    return;
+  }
   try {
     let afterGenerator = args.includes('--after-generator');
     while (await tick({ afterGenerator })) afterGenerator = false;

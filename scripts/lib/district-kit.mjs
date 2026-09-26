@@ -29,7 +29,7 @@ const spanOf = (slot) => (slot.span === 2 ? 2 : 1);
 export const slotWidth = (slot) => spanOf(slot) * SLOT_SIZE.w + (spanOf(slot) - 1) * STREET_WIDTH;
 
 /** 街區佔用的格子（佔兩格時是左右兩個 slot） */
-const cellsOf = (slot) => (spanOf(slot) === 2 ? [slot, { x: slot.x + SLOT_SIZE.w + STREET_WIDTH, y: slot.y }] : [slot]);
+export const cellsOf = (slot) => (spanOf(slot) === 2 ? [slot, { x: slot.x + SLOT_SIZE.w + STREET_WIDTH, y: slot.y }] : [slot]);
 
 /** slot → 4 個區域矩形 [x0, y0, x1, y1]，順序 = 路線順序 */
 export function zoneRects(slot) {
