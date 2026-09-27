@@ -1,0 +1,414 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "文具店門面與入口",
+          "x": [
+            0.05,
+            0.4
+          ],
+          "fixture": "facade",
+          "door": true,
+          "main": "storefront",
+          "wall": [
+            "display-window"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "櫥窗文具展示",
+          "x": [
+            0.43,
+            0.76
+          ],
+          "fixture": "display",
+          "main": "display-shelf",
+          "on": [
+            "colored-pencil",
+            "marker-pen",
+            "crayon-stationery-store",
+            "notebook-stationery-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "入口盆栽",
+          "x": [
+            0.81,
+            0.96
+          ],
+          "main": "potted-fern"
+        },
+        {
+          "row": "mid",
+          "note": "鉛筆與繪畫用品",
+          "x": [
+            0.08,
+            0.36
+          ],
+          "fixture": "stand",
+          "on": [
+            "pencil-sharpener-stationery-store",
+            "eraser-stationery-store",
+            "ruler-stationery-store",
+            "chalk-stationery-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "手作與紙品小物",
+          "x": [
+            0.39,
+            0.72
+          ],
+          "fixture": "stand",
+          "on": [
+            "paint-roller",
+            "glue-stick-stationery-store",
+            "scissors-stationery-store",
+            "pencil-case-stationery-store"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "壁面文具配件",
+          "x": [
+            0.79,
+            0.96
+          ],
+          "fixture": "facade",
+          "wall": [
+            "push-pin",
+            "index-card",
+            "sticky-note-pad"
+          ]
+        }
+      ]
+    },
+    "front-display": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "紙材展示台",
+          "x": [
+            0.04,
+            0.3
+          ],
+          "fixture": "stand",
+          "on": [
+            "colored-paper",
+            "construction-paper",
+            "origami-paper",
+            "watercolor-paper"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "繪圖紙本展示",
+          "x": [
+            0.33,
+            0.58
+          ],
+          "fixture": "stand",
+          "on": [
+            "drawing-pad",
+            "graph-paper",
+            "tracing-paper",
+            "carbon-paper"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "活頁與文件收納",
+          "x": [
+            0.04,
+            0.31
+          ],
+          "fixture": "display",
+          "on": [
+            "index-divider",
+            "sheet-protector",
+            "ring-binder",
+            "document-wallet"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "資料夾陳列",
+          "x": [
+            0.34,
+            0.58
+          ],
+          "fixture": "display",
+          "on": [
+            "expanding-file",
+            "portfolio",
+            "document-tray",
+            "magazine-file"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "信件與桌面收納",
+          "x": [
+            0.61,
+            0.8
+          ],
+          "fixture": "display",
+          "on": [
+            "letter-tray",
+            "pencil-cup"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "美術手作用品",
+          "x": [
+            0.62,
+            0.83
+          ],
+          "fixture": "stand",
+          "on": [
+            "pencil-board",
+            "craft-knife",
+            "glue-bottle",
+            "watercolor-set"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "水彩與製圖工具",
+          "x": [
+            0.86,
+            0.98
+          ],
+          "fixture": "stand",
+          "on": [
+            "watercolor-brush",
+            "protractor",
+            "set-square"
+          ]
+        }
+      ]
+    },
+    "writing-supplies": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "鋼筆與墨水試寫桌",
+          "x": [
+            0.04,
+            0.29
+          ],
+          "fixture": "desk",
+          "on": [
+            "fountain-pen-stationery-store",
+            "ink-bottle",
+            "pen-stand",
+            "ink-cartridge"
+          ],
+          "beside": [
+            "pen-cleaner"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "日常書寫筆具",
+          "x": [
+            0.32,
+            0.56
+          ],
+          "fixture": "desk",
+          "on": [
+            "gel-pen",
+            "mechanical-pencil",
+            "wooden-pencil",
+            "pen-cap"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "鉛筆配件與修正用品",
+          "x": [
+            0.04,
+            0.29
+          ],
+          "fixture": "desk",
+          "on": [
+            "pencil-grip",
+            "pencil-extender",
+            "pencil-lead-case",
+            "correction-tape"
+          ],
+          "beside": [
+            "correction-fluid"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "毛筆與吸墨用品",
+          "x": [
+            0.32,
+            0.55
+          ],
+          "fixture": "desk",
+          "on": [
+            "ink-brush",
+            "blotting-paper",
+            "paper-fan",
+            "paper-fastener"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "紙張裁切與加工工作桌",
+          "x": [
+            0.59,
+            0.82
+          ],
+          "fixture": "desk",
+          "on": [
+            "paper-trimmer",
+            "paper-embosser",
+            "desktop-paper-rack",
+            "desk-organizer-tray"
+          ],
+          "front": [
+            "paper-scrap"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "櫃台服務與製圖工具",
+          "x": [
+            0.59,
+            0.8
+          ],
+          "fixture": "desk",
+          "on": [
+            "desk-bell",
+            "drawing-compass"
+          ]
+        }
+      ]
+    },
+    "checkout-counter": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "收銀主櫃台",
+          "x": [
+            0.24,
+            0.62
+          ],
+          "fixture": "counter",
+          "main": "cash-wrap-counter",
+          "on": [
+            "cash-register-display",
+            "card-terminal-stationery-store",
+            "receipt-printer-stationery-store"
+          ],
+          "beside": [
+            "cash-counter-stool"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "收銀抽屜與現金處理",
+          "x": [
+            0.65,
+            0.84
+          ],
+          "fixture": "counter",
+          "on": [
+            "coin-tray-stationery-store",
+            "cash-tray-stationery-store",
+            "cash-register-key-stationery-store",
+            "coin-roll-stationery-store"
+          ],
+          "beside": [
+            "receipt-spike-stationery-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "輸送帶與結帳分隔",
+          "x": [
+            0.25,
+            0.52
+          ],
+          "main": "checkout-belt",
+          "beside": [
+            "checkout-divider-stationery-store"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "購物袋與裝袋區",
+          "x": [
+            0.87,
+            0.98
+          ],
+          "fixture": "cabinet",
+          "main": "bagging-rack",
+          "on": [
+            "reusable-shopping-bag",
+            "bag-holder-stationery-store"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "排隊入口",
+          "x": [
+            0.06,
+            0.2
+          ],
+          "main": "queue-stanchion-stationery-store"
+        },
+        {
+          "row": "mid",
+          "note": "取號與收據回收",
+          "x": [
+            0.56,
+            0.73
+          ],
+          "fixture": "stand",
+          "main": "queue-ticket-dispenser-stationery-store",
+          "beside": [
+            "receipt-bin"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "秤重與購物車代幣",
+          "x": [
+            0.76,
+            0.96
+          ],
+          "fixture": "stand",
+          "on": [
+            "parcel-scale-stationery-store",
+            "shopping-cart-token-stationery-store"
+          ],
+          "beside": [
+            "floor-scale-stationery-store"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "價格標示",
+          "x": [
+            0.04,
+            0.2
+          ],
+          "fixture": "board",
+          "wall": [
+            "price-label"
+          ]
+        }
+      ]
+    }
+  }
+}

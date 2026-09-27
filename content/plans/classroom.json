@@ -1,0 +1,16 @@
+{
+  "id": "classroom",
+  "name": "班級教室",
+  "slot": {
+    "x": 3840,
+    "y": 6160,
+    "zone": "civic"
+  },
+  "itemsTarget": 12,
+  "topUp": {
+    "itemsPerScene": 12,
+    "added": 0,
+    "at": "2026-09-27T07:49:42.690Z"
+  },
+  "elements": []
+}

@@ -34,7 +34,14 @@
     {"x": 18040, "y": 0, "zone": "outskirts"},
     {"x": 18040, "y": 1540, "zone": "residential"},
     {"x": 18040, "y": 3080, "zone": "residential"},
-    {"x": 18040, "y": 4620, "zone": "leisure"}
+    {"x": 18040, "y": 4620, "zone": "leisure"},
+    {"x":0,"y":6160,"zone":"neighborhood"},
+    {"x":3840,"y":6160,"zone":"civic"},
+    {"x":6680,"y":6160,"zone":"leisure"},
+    {"x":9520,"y":6160,"zone":"leisure"},
+    {"x":12360,"y":6160,"zone":"neighborhood"},
+    {"x":15200,"y":6160,"zone":"neighborhood"},
+    {"x":18040,"y":6160,"zone":"neighborhood"}
   ],
   "themes": [
     {"id": "station", "name": "車站", "zone": "commercial"},

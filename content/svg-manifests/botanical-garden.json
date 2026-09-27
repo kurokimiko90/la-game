@@ -1,0 +1,265 @@
+{
+  "sceneName": "語言小鎮・植物園",
+  "sceneSlug": "la-botanical-garden",
+  "propStyle": "front-flat",
+  "zones": {
+    "flower-garden": "花卉庭園",
+    "greenhouse": "溫室",
+    "pond": "水生植物池",
+    "woodland": "林蔭步道"
+  },
+  "elements": [
+    {
+      "name": "向日葵",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "向日葵的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "flower-garden",
+        "itemId": "garden-sunflower",
+        "words": {
+          "zh-TW": "向日葵",
+          "en": "sunflower",
+          "ja": {
+            "text": "ひまわり",
+            "reading": "ひまわり"
+          }
+        }
+      }
+    },
+    {
+      "name": "玫瑰",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "玫瑰的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "flower-garden",
+        "itemId": "garden-rose",
+        "words": {
+          "zh-TW": "玫瑰",
+          "en": "rose",
+          "ja": {
+            "text": "バラ",
+            "reading": "ばら"
+          }
+        }
+      }
+    },
+    {
+      "name": "鬱金香",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "鬱金香的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "flower-garden",
+        "itemId": "garden-tulip",
+        "words": {
+          "zh-TW": "鬱金香",
+          "en": "tulip",
+          "ja": {
+            "text": "チューリップ",
+            "reading": "ちゅーりっぷ"
+          }
+        }
+      }
+    },
+    {
+      "name": "仙人掌",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "仙人掌的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "greenhouse",
+        "itemId": "garden-cactus",
+        "words": {
+          "zh-TW": "仙人掌",
+          "en": "cactus",
+          "ja": {
+            "text": "サボテン",
+            "reading": "さぼてん"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘭花",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "蘭花的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "greenhouse",
+        "itemId": "garden-orchid",
+        "words": {
+          "zh-TW": "蘭花",
+          "en": "orchid",
+          "ja": {
+            "text": "蘭",
+            "reading": "らん"
+          }
+        }
+      }
+    },
+    {
+      "name": "豬籠草",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "豬籠草的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "greenhouse",
+        "itemId": "garden-pitcher",
+        "words": {
+          "zh-TW": "豬籠草",
+          "en": "pitcher plant",
+          "ja": {
+            "text": "ウツボカズラ",
+            "reading": "うつぼかずら"
+          }
+        }
+      }
+    },
+    {
+      "name": "蓮花",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "蓮花的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "pond",
+        "itemId": "garden-lotus",
+        "words": {
+          "zh-TW": "蓮花",
+          "en": "lotus",
+          "ja": {
+            "text": "蓮",
+            "reading": "はす"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡蓮",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "睡蓮的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "pond",
+        "itemId": "garden-waterlily",
+        "words": {
+          "zh-TW": "睡蓮",
+          "en": "water lily",
+          "ja": {
+            "text": "睡蓮",
+            "reading": "すいれん"
+          }
+        }
+      }
+    },
+    {
+      "name": "蕨類",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "蕨類的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "pond",
+        "itemId": "garden-fern",
+        "words": {
+          "zh-TW": "蕨類",
+          "en": "fern",
+          "ja": {
+            "text": "シダ",
+            "reading": "しだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹子",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "竹子的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "woodland",
+        "itemId": "garden-bamboo",
+        "words": {
+          "zh-TW": "竹子",
+          "en": "bamboo",
+          "ja": {
+            "text": "竹",
+            "reading": "たけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "盆栽",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "盆栽的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "woodland",
+        "itemId": "garden-bonsai",
+        "words": {
+          "zh-TW": "盆栽",
+          "en": "bonsai",
+          "ja": {
+            "text": "盆栽",
+            "reading": "ぼんさい"
+          }
+        }
+      }
+    },
+    {
+      "name": "棕櫚樹",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "棕櫚樹的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "botanical-garden",
+        "zone": "woodland",
+        "itemId": "garden-palm",
+        "words": {
+          "zh-TW": "棕櫚樹",
+          "en": "palm tree",
+          "ja": {
+            "text": "ヤシの木",
+            "reading": "やしのき"
+          }
+        }
+      }
+    }
+  ]
+}

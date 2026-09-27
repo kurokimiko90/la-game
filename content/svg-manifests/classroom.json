@@ -1,0 +1,265 @@
+{
+  "sceneName": "語言小鎮・班級教室",
+  "sceneSlug": "la-classroom",
+  "propStyle": "front-flat",
+  "zones": {
+    "teacher-area": "講台",
+    "student-area": "座位區",
+    "reading-area": "閱讀角",
+    "math-area": "數學角"
+  },
+  "elements": [
+    {
+      "name": "黑板",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黑板的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "teacher-area",
+        "itemId": "class-blackboard",
+        "words": {
+          "zh-TW": "黑板",
+          "en": "blackboard",
+          "ja": {
+            "text": "黒板",
+            "reading": "こくばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "講桌",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "講桌的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "teacher-area",
+        "itemId": "class-teacherdesk",
+        "words": {
+          "zh-TW": "講桌",
+          "en": "teacher’s desk",
+          "ja": {
+            "text": "教卓",
+            "reading": "きょうたく"
+          }
+        }
+      }
+    },
+    {
+      "name": "地球儀",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "地球儀的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "teacher-area",
+        "itemId": "class-globeclass",
+        "words": {
+          "zh-TW": "地球儀",
+          "en": "globe",
+          "ja": {
+            "text": "地球儀",
+            "reading": "ちきゅうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "課桌",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "課桌的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "student-area",
+        "itemId": "class-studentdesk",
+        "words": {
+          "zh-TW": "課桌",
+          "en": "school desk",
+          "ja": {
+            "text": "学習机",
+            "reading": "がくしゅうづくえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "椅子",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "椅子的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "student-area",
+        "itemId": "class-chairclass",
+        "words": {
+          "zh-TW": "椅子",
+          "en": "chair",
+          "ja": {
+            "text": "椅子",
+            "reading": "いす"
+          }
+        }
+      }
+    },
+    {
+      "name": "書包",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "書包的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "student-area",
+        "itemId": "class-backpack",
+        "words": {
+          "zh-TW": "書包",
+          "en": "school bag",
+          "ja": {
+            "text": "ランドセル",
+            "reading": "らんどせる"
+          }
+        }
+      }
+    },
+    {
+      "name": "課本",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "課本的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "reading-area",
+        "itemId": "class-textbook",
+        "words": {
+          "zh-TW": "課本",
+          "en": "textbook",
+          "ja": {
+            "text": "教科書",
+            "reading": "きょうかしょ"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆記本",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "筆記本的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "reading-area",
+        "itemId": "class-notebookclass",
+        "words": {
+          "zh-TW": "筆記本",
+          "en": "notebook",
+          "ja": {
+            "text": "ノート",
+            "reading": "のーと"
+          }
+        }
+      }
+    },
+    {
+      "name": "鉛筆",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "鉛筆的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "reading-area",
+        "itemId": "class-pencilclass",
+        "words": {
+          "zh-TW": "鉛筆",
+          "en": "pencil",
+          "ja": {
+            "text": "鉛筆",
+            "reading": "えんぴつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "尺",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "尺的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "math-area",
+        "itemId": "class-rulerclass",
+        "words": {
+          "zh-TW": "尺",
+          "en": "ruler",
+          "ja": {
+            "text": "定規",
+            "reading": "じょうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "時鐘",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "時鐘的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "math-area",
+        "itemId": "class-clockclass",
+        "words": {
+          "zh-TW": "時鐘",
+          "en": "clock",
+          "ja": {
+            "text": "時計",
+            "reading": "とけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "算盤",
+      "category": "生物與物品",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "算盤的正面扁平插畫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "classroom",
+        "zone": "math-area",
+        "itemId": "class-abacus",
+        "words": {
+          "zh-TW": "算盤",
+          "en": "abacus",
+          "ja": {
+            "text": "そろばん",
+            "reading": "そろばん"
+          }
+        }
+      }
+    }
+  ]
+}

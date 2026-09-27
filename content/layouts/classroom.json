@@ -1,0 +1,14 @@
+{
+  "class-abacus": { "x": 4703, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": false },
+  "class-backpack": { "x": 6103, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
+  "class-blackboard": { "x": 3977, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
+  "class-chairclass": { "x": 5690, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
+  "class-clockclass": { "x": 4083, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": false },
+  "class-globeclass": { "x": 4803, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": false },
+  "class-notebookclass": { "x": 6003, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": true },
+  "class-pencilclass": { "x": 5724, "y": 7210, "w": 133, "h": 133, "rotate": 0, "flip": false },
+  "class-rulerclass": { "x": 4424, "y": 7210, "w": 133, "h": 133, "rotate": 0, "flip": true },
+  "class-studentdesk": { "x": 5277, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": false },
+  "class-teacherdesk": { "x": 4390, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
+  "class-textbook": { "x": 5383, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": true }
+}

@@ -6,6 +6,9 @@ import supermarket from './supermarket.json';
 import station from './station.json';
 import restaurant from './restaurant.json';
 import school from './school.json';
+import classroom from './classroom.json';
+import zoo from './zoo.json';
+import botanicalGarden from './botanical-garden.json';
 import hospital from './hospital.json';
 import airport from './airport.json';
 import library from './library.json';
@@ -21,5 +24,6 @@ import policeStation from './police-station.json';
 import hairSalon from './hair-salon.json';
 import flowerShop from './flower-shop.json';
 import bookstore from './bookstore.json';
+import stationeryStore from './stationery-store.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop, bookstore };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, classroom, zoo, 'botanical-garden': botanicalGarden, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop, bookstore, 'stationery-store': stationeryStore };

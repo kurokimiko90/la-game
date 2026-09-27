@@ -1,0 +1,16 @@
+{
+  "id": "zoo",
+  "name": "動物園",
+  "slot": {
+    "x": 6680,
+    "y": 6160,
+    "zone": "leisure"
+  },
+  "itemsTarget": 12,
+  "topUp": {
+    "itemsPerScene": 12,
+    "added": 0,
+    "at": "2026-09-27T07:49:42.678Z"
+  },
+  "elements": []
+}

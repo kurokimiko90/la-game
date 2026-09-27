@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・文具店",
+  "sceneSlug": "la-stationery-store",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "front-display": "門市展示區",
+    "writing-supplies": "書寫用品區",
+    "checkout-counter": "結帳櫃台"
+  },
+  "elements": [
+    {
+      "name": "色鉛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的紅色木桿，末端削尖露出鮮紅筆芯，另一端是平整的木頭截面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "colored-pencil",
+        "words": {
+          "zh-TW": "色鉛筆",
+          "en": "colored pencil",
+          "ja": {
+            "text": "色鉛筆",
+            "reading": "いろえんぴつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "膠帶卷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明膠帶捲成扁平圓環，中央露出棕色紙芯，外緣有一小段膠帶翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "tape-roll-stationery-store",
+        "words": {
+          "zh-TW": "膠帶卷",
+          "en": "tape roll",
+          "ja": {
+            "text": "テープ",
+            "reading": "テープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "訂書針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小排銀色細金屬針連成扁平長條，兩端直角彎折，表面帶著微亮光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "staples",
+        "words": {
+          "zh-TW": "訂書針",
+          "en": "staples",
+          "ja": {
+            "text": "ホッチキスの針",
+            "reading": "ホッチキスのはり"
+          }
+        }
+      }
+    },
+    {
+      "name": "小滾筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短絨毛圓筒套在彎曲金屬架上，末端接著藍色塑膠握柄，滾筒表面沾著一抹黃色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "paint-roller",
+        "words": {
+          "zh-TW": "小滾筒",
+          "en": "paint roller",
+          "ja": {
+            "text": "ローラー",
+            "reading": "ローラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "圖釘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小小的紅色圓帽連著細短金屬針，側面可見尖尖的針頭，帽面光滑明亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "push-pin",
+        "words": {
+          "zh-TW": "圖釘",
+          "en": "push pin",
+          "ja": {
+            "text": "画びょう",
+            "reading": "がびょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "索引卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張淺藍色小長方形卡片，四角微圓、表面空白，厚實挺直，不帶任何符號。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "index-card",
+        "words": {
+          "zh-TW": "索引卡",
+          "en": "index card",
+          "ja": {
+            "text": "単語カード",
+            "reading": "たんごカード"
+          }
+        }
+      }
+    },
+    {
+      "name": "便利貼",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一疊明黃色正方形紙片，邊角整齊，最上層微微掀起一角，紙面完全空白。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "sticky-note-pad",
+        "words": {
+          "zh-TW": "便利貼",
+          "en": "sticky note pad",
+          "ja": {
+            "text": "付箋",
+            "reading": "ふせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "展示窗",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的透明玻璃窗嵌在深色方框內，窗後陳列幾支彩色筆，玻璃清澈且沒有字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "display-window",
+        "words": {
+          "zh-TW": "展示窗",
+          "en": "display window",
+          "ja": {
+            "text": "ショーウインドー",
+            "reading": "ショーウインドー"
+          }
+        }
+      }
+    },
+    {
+      "name": "展示架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "靠牆的矮木製層架有三層平板，邊緣略厚，架上整齊擺著色彩繽紛的文具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "display-shelf",
+        "words": {
+          "zh-TW": "展示架",
+          "en": "display shelf",
+          "ja": {
+            "text": "陳列棚",
+            "reading": "ちんれつだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "店面外牆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淺米色平直外牆嵌著玻璃門與大窗，門旁有簡單把手，整面沒有招牌或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "storefront",
+        "words": {
+          "zh-TW": "店面外牆",
+          "en": "storefront",
+          "ja": {
+            "text": "店の正面",
+            "reading": "みせのしょうめん"
+          }
+        }
+      }
+    },
+    {
+      "name": "盆栽蕨類",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一叢翠綠羽狀葉片從陶盆中央向外舒展，葉緣細碎彎曲，整株低矮而蓬鬆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "potted-fern",
+        "words": {
+          "zh-TW": "盆栽蕨類",
+          "en": "potted fern",
+          "ja": {
+            "text": "シダの鉢植え",
+            "reading": "シダのはちうえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "削鉛筆機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的方形塑膠盒，側面有圓形削孔，透明集屑盒裡露出捲曲的木屑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "pencil-sharpener-stationery-store",
+        "words": {
+          "zh-TW": "削鉛筆機",
+          "en": "pencil sharpener",
+          "ja": {
+            "text": "鉛筆削り",
+            "reading": "えんぴつけずり"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡皮擦",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形橡膠塊，邊角微圓，表面平滑，旁邊有一小片捲起的橡皮屑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "eraser-stationery-store",
+        "words": {
+          "zh-TW": "橡皮擦",
+          "en": "eraser",
+          "ja": {
+            "text": "消しゴム",
+            "reading": "けしゴム"
+          }
+        }
+      }
+    },
+    {
+      "name": "彩色筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "粗短的藍色塑膠筆身，兩端各有圓潤筆蓋，筆蓋頂端帶著小突起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "marker-pen",
+        "words": {
+          "zh-TW": "彩色筆",
+          "en": "marker",
+          "ja": {
+            "text": "マーカー",
+            "reading": "マーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "蠟筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的橘色蠟棒，兩端略尖，表面帶有蠟質光澤，旁邊套著一截淺色紙套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "crayon-stationery-store",
+        "words": {
+          "zh-TW": "蠟筆",
+          "en": "crayon",
+          "ja": {
+            "text": "クレヨン",
+            "reading": "クレヨン"
+          }
+        }
+      }
+    },
+    {
+      "name": "粉筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓柱形白色粉筆，兩端平整，表面有粉末質感，旁邊散著少許白色粉屑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "chalk-stationery-store",
+        "words": {
+          "zh-TW": "粉筆",
+          "en": "chalk",
+          "ja": {
+            "text": "チョーク",
+            "reading": "チョーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "尺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長方形塑膠尺，邊緣筆直，中央有狹長凹槽，表面沒有刻度或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "ruler-stationery-store",
+        "words": {
+          "zh-TW": "尺",
+          "en": "ruler",
+          "ja": {
+            "text": "定規",
+            "reading": "じょうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "剪刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片銀色刀刃在中央交叉，末端各有一個圓形握孔，握柄是亮黃色塑膠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "scissors-stationery-store",
+        "words": {
+          "zh-TW": "剪刀",
+          "en": "scissors",
+          "ja": {
+            "text": "はさみ",
+            "reading": "はさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "口紅膠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短胖的圓柱塑膠管，拔開的蓋子露出淡黃色膠體，底部有可旋轉的圓形轉盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "glue-stick-stationery-store",
+        "words": {
+          "zh-TW": "口紅膠",
+          "en": "glue stick",
+          "ja": {
+            "text": "スティックのり",
+            "reading": "スティックのり"
+          }
+        }
+      }
+    },
+    {
+      "name": "膠帶台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮的藍色底座托著透明膠帶卷，前端有鋸齒狀金屬切口，膠帶邊緣微微翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "tape-dispenser-stationery-store",
+        "words": {
+          "zh-TW": "膠帶台",
+          "en": "tape dispenser",
+          "ja": {
+            "text": "テープカッター",
+            "reading": "テープカッター"
+          }
+        }
+      }
+    },
+    {
+      "name": "迴紋針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細銀色金屬線彎成兩層橢圓迴圈，線條光滑，整體扁平且沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "paperclip-stationery-store",
+        "words": {
+          "zh-TW": "迴紋針",
+          "en": "paperclip",
+          "ja": {
+            "text": "ゼムクリップ",
+            "reading": "ゼムクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "長尾夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色三角形夾身上立著兩支細金屬拉柄，拉柄向外張開，夾口微微合起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "binder-clip-stationery-store",
+        "words": {
+          "zh-TW": "長尾夾",
+          "en": "binder clip",
+          "ja": {
+            "text": "ダブルクリップ",
+            "reading": "ダブルクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "訂書機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的紅色長方形機身，前端露出銀色釘嘴，底座平坦，後方有一段弧形握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "stapler-stationery-store",
+        "words": {
+          "zh-TW": "訂書機",
+          "en": "stapler",
+          "ja": {
+            "text": "ホッチキス",
+            "reading": "ホッチキス"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆記本",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "薄薄的綠色長方形本子，封面平滑，側邊露出一疊白紙，左緣有整齊裝訂線圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "notebook-stationery-store",
+        "words": {
+          "zh-TW": "筆記本",
+          "en": "notebook",
+          "ja": {
+            "text": "ノート",
+            "reading": "ノート"
+          }
+        }
+      }
+    },
+    {
+      "name": "鉛筆盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的紫色長方形布袋，拉鍊沿著頂部彎曲延伸，拉鍊頭是一顆小銀色圓片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "entrance",
+        "itemId": "pencil-case-stationery-store",
+        "words": {
+          "zh-TW": "鉛筆盒",
+          "en": "pencil case",
+          "ja": {
+            "text": "筆箱",
+            "reading": "ふでばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "色紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一疊方形的彩色薄紙，邊緣整齊，能看見紅、黃、藍、綠等不同色面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "colored-paper",
+        "words": {
+          "zh-TW": "色紙",
+          "en": "colored paper",
+          "ja": {
+            "text": "色紙",
+            "reading": "いろがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "西卡紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾張厚實的彩色長方紙疊在一起，紙邊平直，顏色鮮明且表面霧面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "construction-paper",
+        "words": {
+          "zh-TW": "西卡紙",
+          "en": "construction paper",
+          "ja": {
+            "text": "色画用紙",
+            "reading": "いろがようし"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小疊薄而方正的彩紙，邊角俐落，最上層是明亮的單一色面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "origami-paper",
+        "words": {
+          "zh-TW": "摺紙",
+          "en": "origami paper",
+          "ja": {
+            "text": "折り紙",
+            "reading": "おりがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水彩紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾張白色厚紙整齊疊放，表面略帶細緻凹凸，紙張邊緣厚實明顯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "watercolor-paper",
+        "words": {
+          "zh-TW": "水彩紙",
+          "en": "watercolor paper",
+          "ja": {
+            "text": "水彩紙",
+            "reading": "すいさいし"
+          }
+        }
+      }
+    },
+    {
+      "name": "素描本",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色紙頁裝訂成厚厚一疊，外緣露出整齊紙層，封面沒有圖案文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "drawing-pad",
+        "words": {
+          "zh-TW": "素描本",
+          "en": "drawing pad",
+          "ja": {
+            "text": "スケッチブック",
+            "reading": "スケッチブック"
+          }
+        }
+      }
+    },
+    {
+      "name": "方格紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一疊白色薄紙，表面有淡淡均勻方格線，紙張四角平整、層次清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "graph-paper",
+        "words": {
+          "zh-TW": "方格紙",
+          "en": "graph paper",
+          "ja": {
+            "text": "方眼紙",
+            "reading": "ほうがんし"
+          }
+        }
+      }
+    },
+    {
+      "name": "描圖紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明的乳白色薄紙疊成方正一疊，後方輪廓隱約透出，紙邊輕薄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "tracing-paper",
+        "words": {
+          "zh-TW": "描圖紙",
+          "en": "tracing paper",
+          "ja": {
+            "text": "トレーシングペーパー",
+            "reading": "トレーシングペーパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "複寫紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾張深藍色薄紙整齊疊放，表面帶淡淡光澤，邊角俐落而平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "carbon-paper",
+        "words": {
+          "zh-TW": "複寫紙",
+          "en": "carbon paper",
+          "ja": {
+            "text": "カーボン紙",
+            "reading": "カーボンし"
+          }
+        }
+      }
+    },
+    {
+      "name": "活頁分隔頁",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一疊彩色長方薄片，側邊凸出幾個不同位置的小耳片，排列整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "index-divider",
+        "words": {
+          "zh-TW": "活頁分隔頁",
+          "en": "binder divider",
+          "ja": {
+            "text": "インデックスシート",
+            "reading": "インデックスシート"
+          }
+        }
+      }
+    },
+    {
+      "name": "活頁資料套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長方形塑膠套疊成一疊，邊緣有細緻封線，頂端留有開口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "sheet-protector",
+        "words": {
+          "zh-TW": "活頁資料套",
+          "en": "sheet protector",
+          "ja": {
+            "text": "クリアポケット",
+            "reading": "クリアポケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "三孔活頁夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "直立的厚封面夾具，打開處可見一排銀色圓環，外殼邊角圓順。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "ring-binder",
+        "words": {
+          "zh-TW": "三孔活頁夾",
+          "en": "ring binder",
+          "ja": {
+            "text": "リングファイル",
+            "reading": "リングファイル"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的半透明塑膠文件袋，長方外形配有翻蓋，邊緣帶有彩色封邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "document-wallet",
+        "words": {
+          "zh-TW": "文件袋",
+          "en": "document wallet",
+          "ja": {
+            "text": "ドキュメントケース",
+            "reading": "ドキュメントケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "風琴夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "可展開的厚紙文件夾，側邊呈手風琴狀折層，頂部露出幾片彩色隔層。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "expanding-file",
+        "words": {
+          "zh-TW": "風琴夾",
+          "en": "expanding file",
+          "ja": {
+            "text": "ドキュメントファイル",
+            "reading": "ドキュメントファイル"
+          }
+        }
+      }
+    },
+    {
+      "name": "作品集資料夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "大型扁平硬殼資料夾，表面素雅，兩側有束帶固定，輪廓寬而方正。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "portfolio",
+        "words": {
+          "zh-TW": "作品集資料夾",
+          "en": "portfolio folder",
+          "ja": {
+            "text": "ポートフォリオ",
+            "reading": "ポートフォリオ"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件收納盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺口長方形收納盤，四周有低矮斜邊，前側開口方便抽取紙張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "document-tray",
+        "words": {
+          "zh-TW": "文件收納盤",
+          "en": "document tray",
+          "ja": {
+            "text": "書類トレー",
+            "reading": "しょるいトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "雜誌收納架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "直立的窄長收納盒，前面有圓弧形凹口，背板較高，側面厚實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "magazine-file",
+        "words": {
+          "zh-TW": "雜誌收納架",
+          "en": "magazine file",
+          "ja": {
+            "text": "マガジンファイル",
+            "reading": "マガジンファイル"
+          }
+        }
+      }
+    },
+    {
+      "name": "信件盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺扁的長方形塑膠盤，兩側有微凸邊緣，內部平滑且呈單一亮色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "letter-tray",
+        "words": {
+          "zh-TW": "信件盤",
+          "en": "letter tray",
+          "ja": {
+            "text": "レタートレー",
+            "reading": "レタートレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓筒形開口容器，筒身色彩鮮明，底部平穩，可直立收納文具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "pencil-cup",
+        "words": {
+          "zh-TW": "筆筒",
+          "en": "pencil cup",
+          "ja": {
+            "text": "ペン立て",
+            "reading": "ペンたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "切割墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的長方形綠色墊板，表面有細密網格，四角圓鈍且邊緣平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "pencil-board",
+        "words": {
+          "zh-TW": "切割墊",
+          "en": "cutting mat",
+          "ja": {
+            "text": "カッターマット",
+            "reading": "カッターマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "美工刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長塑膠刀柄前端露出短小銀色刀片，背側有滑動鈕，外形俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "craft-knife",
+        "words": {
+          "zh-TW": "美工刀",
+          "en": "craft knife",
+          "ja": {
+            "text": "カッターナイフ",
+            "reading": "カッターナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "白膠瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的白色塑膠瓶，頂端有細長尖嘴瓶蓋，瓶身圓潤且底部平穩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "glue-bottle",
+        "words": {
+          "zh-TW": "白膠瓶",
+          "en": "glue bottle",
+          "ja": {
+            "text": "ボンド",
+            "reading": "ボンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "水彩顏料盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的扁平塑膠盒內排著數個彩色方格顏料，盒蓋攤在一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "watercolor-set",
+        "words": {
+          "zh-TW": "水彩顏料盒",
+          "en": "watercolor set",
+          "ja": {
+            "text": "水彩絵の具セット",
+            "reading": "すいさいえのぐセット"
+          }
+        }
+      }
+    },
+    {
+      "name": "水彩筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長木桿末端束著尖細棕色筆毛，中間有亮銀色筆箍，輪廓簡單。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "watercolor-brush",
+        "words": {
+          "zh-TW": "水彩筆",
+          "en": "watercolor brush",
+          "ja": {
+            "text": "水彩筆",
+            "reading": "すいさいふで"
+          }
+        }
+      }
+    },
+    {
+      "name": "量角器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半圓形透明塑膠片，直邊底座平整，弧形外緣清晰，沒有刻度或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "protractor",
+        "words": {
+          "zh-TW": "量角器",
+          "en": "protractor",
+          "ja": {
+            "text": "分度器",
+            "reading": "ぶんどき"
+          }
+        }
+      }
+    },
+    {
+      "name": "三角板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明直角三角形薄板，中央挖出相似三角形孔洞，三條邊俐落清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "front-display",
+        "itemId": "set-square",
+        "words": {
+          "zh-TW": "三角板",
+          "en": "set square",
+          "ja": {
+            "text": "三角定規",
+            "reading": "さんかくじょうぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "中性筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的透明筆桿裡露出彩色墨水管，前端有金屬筆尖，尾端帶小按壓鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "gel-pen",
+        "words": {
+          "zh-TW": "中性筆",
+          "en": "gel pen",
+          "ja": {
+            "text": "ゲルペン",
+            "reading": "ゲルペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "鋼筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深色細長筆身配金屬筆尖，筆蓋頂端有一枚短短的金屬夾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "fountain-pen-stationery-store",
+        "words": {
+          "zh-TW": "鋼筆",
+          "en": "fountain pen",
+          "ja": {
+            "text": "万年筆",
+            "reading": "まんねんひつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動鉛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長筆桿前端伸出細金屬筆管，頂端有按壓鈕，筆身側面帶一枚小夾子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "mechanical-pencil",
+        "words": {
+          "zh-TW": "自動鉛筆",
+          "en": "mechanical pencil",
+          "ja": {
+            "text": "シャープペンシル",
+            "reading": "シャープペンシル"
+          }
+        }
+      }
+    },
+    {
+      "name": "修正帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色扁平塑膠外殼呈水滴形，透明小窗露出兩個轉輪，前端有短短的塗抹頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "correction-tape",
+        "words": {
+          "zh-TW": "修正帶",
+          "en": "correction tape",
+          "ja": {
+            "text": "修正テープ",
+            "reading": "しゅうせいテープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "修正液",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮小的白色瓶身配彩色瓶蓋，瓶蓋連著細長刷柄，瓶口露出小刷頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "correction-fluid",
+        "words": {
+          "zh-TW": "修正液",
+          "en": "correction fluid",
+          "ja": {
+            "text": "修正液",
+            "reading": "しゅうせいえき"
+          }
+        }
+      }
+    },
+    {
+      "name": "墨水瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方圓形小玻璃瓶裝著深藍墨水，寬瓶口配黑色旋蓋，瓶身有清楚的厚玻璃底。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "ink-bottle",
+        "words": {
+          "zh-TW": "墨水瓶",
+          "en": "ink bottle",
+          "ja": {
+            "text": "インク瓶",
+            "reading": "インクびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "木鉛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色六角木桿一端削成尖頭，另一端套著粉紅橡皮頭與銀色金屬箍。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "wooden-pencil",
+        "words": {
+          "zh-TW": "木鉛筆",
+          "en": "wooden pencil",
+          "ja": {
+            "text": "鉛筆",
+            "reading": "えんぴつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆蓋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的圓筒形彩色塑膠蓋，一端封住，側面有細長夾子，開口朝前。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "pen-cap",
+        "words": {
+          "zh-TW": "筆蓋",
+          "en": "pen cap",
+          "ja": {
+            "text": "ペンキャップ",
+            "reading": "ペンキャップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "墨水卡匣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明塑膠小管裡裝著藍色墨水，兩端收窄，一端有短短的插接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "ink-cartridge",
+        "words": {
+          "zh-TW": "墨水卡匣",
+          "en": "ink cartridge",
+          "ja": {
+            "text": "インクカートリッジ",
+            "reading": "インクカートリッジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮的圓形木座上立著一個直立小圓筒，筒口寬敞，側面有一道淺色木紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "pen-stand",
+        "words": {
+          "zh-TW": "筆架",
+          "en": "pen stand",
+          "ja": {
+            "text": "ペンスタンド",
+            "reading": "ペンスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "握筆器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的藍色三角形橡膠套，中間有細長通孔，外側三面微微凹弧。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "pencil-grip",
+        "words": {
+          "zh-TW": "握筆器",
+          "en": "pencil grip",
+          "ja": {
+            "text": "鉛筆グリップ",
+            "reading": "えんぴつグリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鉛筆延長器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長金屬筒前端有小夾環，筒身略粗於鉛筆，尾端開口可插入短鉛筆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "pencil-extender",
+        "words": {
+          "zh-TW": "鉛筆延長器",
+          "en": "pencil extender",
+          "ja": {
+            "text": "鉛筆補助軸",
+            "reading": "えんぴつほじょじく"
+          }
+        }
+      }
+    },
+    {
+      "name": "兩腳釘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形金屬帽下伸出兩條細長扁腳，銀色表面平滑，兩腳向外微張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "paper-fastener",
+        "words": {
+          "zh-TW": "兩腳釘",
+          "en": "paper fastener",
+          "ja": {
+            "text": "ペーパーファスナー",
+            "reading": "ペーパーファスナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆芯盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明塑膠盒裡整齊排著灰色筆芯，滑動式小蓋停在一端。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "pencil-lead-case",
+        "words": {
+          "zh-TW": "筆芯盒",
+          "en": "lead case",
+          "ja": {
+            "text": "芯ケース",
+            "reading": "しんケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "筆尖清潔器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的白色橡膠塊中央有細縫，旁邊附著一片薄薄的深色吸墨布。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "pen-cleaner",
+        "words": {
+          "zh-TW": "筆尖清潔器",
+          "en": "nib cleaner",
+          "ja": {
+            "text": "ペン先クリーナー",
+            "reading": "ペンさきクリーナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮銀色圓頂罩在扁圓底座上，頂端有一顆小按鈕，像迷你金屬鐘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "desk-bell",
+        "words": {
+          "zh-TW": "桌鈴",
+          "en": "desk bell",
+          "ja": {
+            "text": "卓上ベル",
+            "reading": "たくじょうベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "毛筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長竹色筆桿前端束著黑色柔軟筆毛，筆毛收尖，桿尾有小圓環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "ink-brush",
+        "words": {
+          "zh-TW": "毛筆",
+          "en": "calligraphy brush",
+          "ja": {
+            "text": "書道筆",
+            "reading": "しょどうふで"
+          }
+        }
+      }
+    },
+    {
+      "name": "吸墨紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一疊淡粉色厚紙裁成圓角長方形，表面略帶細孔質感，邊緣整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "blotting-paper",
+        "words": {
+          "zh-TW": "吸墨紙",
+          "en": "blotting paper",
+          "ja": {
+            "text": "吸取紙",
+            "reading": "すいとりがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙扇",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓弧形紙面固定在短木柄上，外緣平滑，紙面有簡單的色塊裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "paper-fan",
+        "words": {
+          "zh-TW": "紙扇",
+          "en": "paper fan",
+          "ja": {
+            "text": "紙製うちわ",
+            "reading": "かみせいうちわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圓規",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩根細金屬腿在頂端以圓軸相連，一腿尖銳，另一腿夾著短短的石墨芯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "drawing-compass",
+        "words": {
+          "zh-TW": "圓規",
+          "en": "drawing compass",
+          "ja": {
+            "text": "コンパス",
+            "reading": "コンパス"
+          }
+        }
+      }
+    },
+    {
+      "name": "裁紙器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平長底座帶透明壓條，側邊滑槽裡有一個小型滑動刀片，外形俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "paper-trimmer",
+        "words": {
+          "zh-TW": "裁紙器",
+          "en": "paper trimmer",
+          "ja": {
+            "text": "ペーパートリマー",
+            "reading": "ペーパートリマー"
+          }
+        }
+      }
+    },
+    {
+      "name": "壓凸器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型金屬手壓工具有兩支相對的短柄，前端是一對圓形壓模，外觀像迷你鉗子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "paper-embosser",
+        "words": {
+          "zh-TW": "壓凸器",
+          "en": "paper embosser",
+          "ja": {
+            "text": "エンボッサー",
+            "reading": "エンボッサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌上紙架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立木製框架分成數個狹長隔槽，底部平穩，正面露出一疊彩色紙張邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "desktop-paper-rack",
+        "words": {
+          "zh-TW": "桌上紙架",
+          "en": "desktop paper rack",
+          "ja": {
+            "text": "卓上ペーパーホルダー",
+            "reading": "たくじょうペーパーホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌上收納盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮長方形塑膠托盤分成數個大小不同的格子，邊角圓潤，格內放著小物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "desk-organizer-tray",
+        "words": {
+          "zh-TW": "桌上收納盒",
+          "en": "desk organizer tray",
+          "ja": {
+            "text": "デスクオーガナイザー",
+            "reading": "デスクオーガナイザー"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙屑",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片白色薄紙揉皺成鬆散小團，邊緣參差，旁邊散著一小片平整紙角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "writing-supplies",
+        "itemId": "paper-scrap",
+        "words": {
+          "zh-TW": "紙屑",
+          "en": "paper scrap",
+          "ja": {
+            "text": "紙くず",
+            "reading": "かみくず"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀櫃台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長方形木製櫃台配淺色檯面，正面有一排抽屜與圓形把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-wrap-counter",
+        "words": {
+          "zh-TW": "收銀櫃台",
+          "en": "cash counter",
+          "ja": {
+            "text": "レジカウンター",
+            "reading": "レジカウンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "零錢盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺扁長方形托盤，四角圓滑，中央分成幾格放置硬幣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "coin-tray-stationery-store",
+        "words": {
+          "zh-TW": "零錢盤",
+          "en": "coin tray",
+          "ja": {
+            "text": "コイントレー",
+            "reading": "コイントレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "環保購物袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的長方形布袋，袋口敞開，兩條短提把向上彎起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "reusable-shopping-bag",
+        "words": {
+          "zh-TW": "環保購物袋",
+          "en": "reusable shopping bag",
+          "ja": {
+            "text": "エコバッグ",
+            "reading": "エコバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物袋架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮金屬底座伸出數根彎鉤，鉤尖朝上可掛住袋子提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "bag-holder-stationery-store",
+        "words": {
+          "zh-TW": "購物袋架",
+          "en": "bag holder",
+          "ja": {
+            "text": "バッグホルダー",
+            "reading": "バッグホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "結帳分隔桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的塑膠長方條，兩端圓潤，表面有凸起的握持脊線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "checkout-divider-stationery-store",
+        "words": {
+          "zh-TW": "結帳分隔桿",
+          "en": "checkout divider",
+          "ja": {
+            "text": "仕切りバー",
+            "reading": "しきりバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "排隊柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "沉重圓形底盤上立著細柱，柱頂伸出一條繃直的伸縮帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "queue-stanchion-stationery-store",
+        "words": {
+          "zh-TW": "排隊柱",
+          "en": "queue stanchion",
+          "ja": {
+            "text": "ベルトパーティション",
+            "reading": "ベルトパーティション"
+          }
+        }
+      }
+    },
+    {
+      "name": "硬幣紙卷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓柱形紙筒，兩端折口收緊，外層紙面沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "coin-roll-stationery-store",
+        "words": {
+          "zh-TW": "硬幣紙卷",
+          "en": "coin roll",
+          "ja": {
+            "text": "コインロール",
+            "reading": "コインロール"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "窄長的硬質直立夾，底部有寬底座，中央夾著一張空白紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "receipt-folder-stationery-store",
+        "words": {
+          "zh-TW": "收據夾",
+          "en": "receipt folder",
+          "ja": {
+            "text": "レシートホルダー",
+            "reading": "レシートホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "現金托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺長方形托盤內有幾個分隔小格，一端留有寬闊的平坦區域。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-tray-stationery-store",
+        "words": {
+          "zh-TW": "現金托盤",
+          "en": "cash tray",
+          "ja": {
+            "text": "現金トレー",
+            "reading": "げんきんトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀防滑墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形黑色墊片，表面布滿細小凸點，四角略微圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-register-mat-stationery-store",
+        "words": {
+          "zh-TW": "收銀防滑墊",
+          "en": "cash register mat",
+          "ja": {
+            "text": "レジマット",
+            "reading": "レジマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀機鑰匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短金屬鑰匙連著扁平圓頭，柄端有幾道明顯的齒口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-register-key-stationery-store",
+        "words": {
+          "zh-TW": "收銀機鑰匙",
+          "en": "cash register key",
+          "ja": {
+            "text": "レジの鍵",
+            "reading": "レジのかぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物車代幣",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實圓形金屬片，邊緣帶有淺刻紋，中央保持平滑無字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "shopping-cart-token-stationery-store",
+        "words": {
+          "zh-TW": "購物車代幣",
+          "en": "shopping cart token",
+          "ja": {
+            "text": "カート用コイン",
+            "reading": "カートようコイン"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形軟墊椅面由單根金屬柱支撐，底部展開五支短腳輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-counter-stool",
+        "words": {
+          "zh-TW": "收銀椅",
+          "en": "cashier stool",
+          "ja": {
+            "text": "レジ用スツール",
+            "reading": "レジようスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "落地秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬大的扁平秤台放在低矮底座上，側邊立著短小顯示柱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "floor-scale-stationery-store",
+        "words": {
+          "zh-TW": "落地秤",
+          "en": "floor scale",
+          "ja": {
+            "text": "フロアスケール",
+            "reading": "フロアスケール"
+          }
+        }
+      }
+    },
+    {
+      "name": "包裹秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形金屬秤盤連著低矮底座，側面有一片小型斜立顯示板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "parcel-scale-stationery-store",
+        "words": {
+          "zh-TW": "包裹秤",
+          "en": "parcel scale",
+          "ja": {
+            "text": "荷物用はかり",
+            "reading": "にもつようはかり"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝袋架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長金屬桌架有兩層平台，側邊立著數根直桿撐住袋口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "bagging-rack",
+        "words": {
+          "zh-TW": "裝袋架",
+          "en": "bagging rack",
+          "ja": {
+            "text": "袋詰め台",
+            "reading": "ふくろづめだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "排隊取號機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立窄盒架在短底座上，正面有一個圓形按鈕與紙張出口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "queue-ticket-dispenser-stationery-store",
+        "words": {
+          "zh-TW": "排隊取號機",
+          "en": "queue ticket dispenser",
+          "ja": {
+            "text": "番号札発券機",
+            "reading": "ばんごうふだはっけんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據回收桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型方盒頂部開著狹長投入口，正面有圓角透明視窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "receipt-bin",
+        "words": {
+          "zh-TW": "收據回收桶",
+          "en": "receipt bin",
+          "ja": {
+            "text": "レシート回収箱",
+            "reading": "レシートかいしゅうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "結帳輸送帶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "收銀檯旁的長方形黑色帶面，兩端各有一根短圓柱滾軸。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "checkout-belt",
+        "words": {
+          "zh-TW": "結帳輸送帶",
+          "en": "checkout belt",
+          "ja": {
+            "text": "レジのベルトコンベア",
+            "reading": "レジのベルトコンベア"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀顯示器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型深色螢幕裝在短底座上，螢幕保持全黑且沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-register-display",
+        "words": {
+          "zh-TW": "收銀顯示器",
+          "en": "cash register display",
+          "ja": {
+            "text": "レジ用ディスプレイ",
+            "reading": "レジようディスプレイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "價格標籤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小片長方形紙牌，頂端有圓孔與細繩，紙面保持空白沒有字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "price-label",
+        "words": {
+          "zh-TW": "價格標籤",
+          "en": "price tag",
+          "ja": {
+            "text": "値札",
+            "reading": "ねふだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據插針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形底座中央豎起一根細尖金屬針，針上串著幾張空白紙條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "receipt-spike-stationery-store",
+        "words": {
+          "zh-TW": "收據插針",
+          "en": "receipt spike",
+          "ja": {
+            "text": "レシートスパイク",
+            "reading": "レシートスパイク"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀機抽屜",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平金屬盒拉開露出多格內盤，前面有寬把手與小鎖孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-register-drawer",
+        "words": {
+          "zh-TW": "收銀機抽屜",
+          "en": "cash drawer",
+          "ja": {
+            "text": "キャッシュドロワー",
+            "reading": "キャッシュドロワー"
+          }
+        }
+      }
+    },
+    {
+      "name": "刷卡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "掌心大小的深色斜面機器，帶有按鍵區與突出的刷卡槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "card-terminal-stationery-store",
+        "words": {
+          "zh-TW": "刷卡機",
+          "en": "card terminal",
+          "ja": {
+            "text": "カード端末",
+            "reading": "カードたんまつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據印表機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型方盒印表機，頂部狹縫吐出一截空白窄紙，正面有出紙口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "stationery-store",
+        "zone": "checkout-counter",
+        "itemId": "receipt-printer-stationery-store",
+        "words": {
+          "zh-TW": "收據印表機",
+          "en": "receipt printer",
+          "ja": {
+            "text": "レシートプリンター",
+            "reading": "レシートプリンター"
+          }
+        }
+      }
+    }
+  ]
+}
