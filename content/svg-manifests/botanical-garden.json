@@ -4,16 +4,16 @@
   "propStyle": "front-flat",
   "zones": {
     "flower-garden": "花卉庭園",
-    "greenhouse": "溫室",
+    "greenhouse": "乾燥與濕潤溫室",
     "pond": "水生植物池",
     "woodland": "林蔭步道"
   },
   "elements": [
     {
       "name": "向日葵",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "向日葵的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -32,9 +32,9 @@
     },
     {
       "name": "玫瑰",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "玫瑰的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -53,9 +53,9 @@
     },
     {
       "name": "鬱金香",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "鬱金香的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -74,9 +74,9 @@
     },
     {
       "name": "仙人掌",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "仙人掌的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -95,9 +95,9 @@
     },
     {
       "name": "蘭花",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "蘭花的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -116,9 +116,9 @@
     },
     {
       "name": "豬籠草",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "豬籠草的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -137,9 +137,9 @@
     },
     {
       "name": "蓮花",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "蓮花的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -158,9 +158,9 @@
     },
     {
       "name": "睡蓮",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "睡蓮的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -179,9 +179,9 @@
     },
     {
       "name": "蕨類",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "蕨類的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -200,7 +200,7 @@
     },
     {
       "name": "竹子",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
       "sizeHint": "large",
       "desc": "竹子的正面扁平插畫。",
@@ -221,9 +221,9 @@
     },
     {
       "name": "盆栽",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "盆栽的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -242,7 +242,7 @@
     },
     {
       "name": "棕櫚樹",
-      "category": "生物與物品",
+      "category": "植物",
       "lane": "b",
       "sizeHint": "large",
       "desc": "棕櫚樹的正面扁平插畫。",

@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・我的家",
+  "sceneSlug": "la-home",
+  "propStyle": "front-flat",
+  "zones": {
+    "front-yard": "前院",
+    "living-room": "客廳",
+    "kitchen": "廚房",
+    "bedroom": "臥室"
+  },
+  "elements": [
+    {
+      "name": "門廊秋千",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一張懸掛式雙人木椅，長椅面下有兩條支架，兩側以短鏈條連接上方橫桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "porch-swing",
+        "words": {
+          "zh-TW": "門廊秋千",
+          "en": "porch swing",
+          "ja": {
+            "text": "ポーチスイング",
+            "reading": "ポーチスイング"
+          }
+        }
+      }
+    },
+    {
+      "name": "門鈴按鈕",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "貼在門框旁的小型方形按鈕，中央略微凸起，外圍有簡單圓框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "doorbell-button",
+        "words": {
+          "zh-TW": "門鈴按鈕",
+          "en": "doorbell button",
+          "ja": {
+            "text": "呼び鈴ボタン",
+            "reading": "よびりんボタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "門環",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在前門上的金屬圓環，下方接著短底座，環面能向外掀起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "door-knocker",
+        "words": {
+          "zh-TW": "門環",
+          "en": "door knocker",
+          "ja": {
+            "text": "ドアノッカー",
+            "reading": "ドアノッカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "門牌板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "門旁固定的空白長方形牌板，表面平滑、邊緣略凸，不含文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "house-number-plaque",
+        "words": {
+          "zh-TW": "門牌板",
+          "en": "house plaque",
+          "ja": {
+            "text": "表札",
+            "reading": "ひょうさつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門上花環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "由綠色枝葉圍成的圓環，點綴幾朵小花，掛在前門中央偏上位置。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "door-wreath",
+        "words": {
+          "zh-TW": "門上花環",
+          "en": "door wreath",
+          "ja": {
+            "text": "ドアリース",
+            "reading": "ドアリース"
+          }
+        }
+      }
+    },
+    {
+      "name": "門廊燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "門邊壁掛的小型燈具，有黑色方形外框、透明燈罩與尖頂帽蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "porch-light",
+        "words": {
+          "zh-TW": "門廊燈",
+          "en": "porch light",
+          "ja": {
+            "text": "玄関灯",
+            "reading": "げんかんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋底刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在地面的短毛刷，長方形刷面朝上，兩側有低矮金屬支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "door-mat-brush",
+        "words": {
+          "zh-TW": "鞋底刷",
+          "en": "boot brush",
+          "ja": {
+            "text": "靴底ブラシ",
+            "reading": "くつぞこブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門廊柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "方形白色木柱由地面直立支撐門廊屋頂，柱身有簡潔的上下裝飾線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "porch-post",
+        "words": {
+          "zh-TW": "門廊柱",
+          "en": "porch post",
+          "ja": {
+            "text": "ポーチの柱",
+            "reading": "ポーチのはしら"
+          }
+        }
+      }
+    },
+    {
+      "name": "門廊欄杆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "沿門廊邊緣排列的白色欄杆，由粗扶手與一排細直桿組成。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "porch-railing",
+        "words": {
+          "zh-TW": "門廊欄杆",
+          "en": "porch railing",
+          "ja": {
+            "text": "ポーチの手すり",
+            "reading": "ポーチのてすり"
+          }
+        }
+      }
+    },
+    {
+      "name": "排水管彎頭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "排水管底部向外彎折的短金屬接頭，管口朝向地面外側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "downspout-elbow",
+        "words": {
+          "zh-TW": "排水管彎頭",
+          "en": "downspout elbow",
+          "ja": {
+            "text": "雨どいの曲がり",
+            "reading": "あまどいのまがり"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨鏈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "從屋簷垂下的一串金屬小杯或環圈，末端接近地面，輪廓細長。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "rain-chain-home",
+        "words": {
+          "zh-TW": "雨鏈",
+          "en": "rain chain",
+          "ja": {
+            "text": "鎖樋",
+            "reading": "くさりどい"
+          }
+        }
+      }
+    },
+    {
+      "name": "迎賓石",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓形灰色石塊，表面有不規則斑點與圓潤邊緣，放在門邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "welcome-stone",
+        "words": {
+          "zh-TW": "迎賓石",
+          "en": "welcome stone",
+          "ja": {
+            "text": "飾り石",
+            "reading": "かざりいし"
+          }
+        }
+      }
+    },
+    {
+      "name": "風車飾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "彩色扁平葉片圍繞中央圓軸，插在細杆頂端，葉片呈放射狀排列。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "wind-spinner",
+        "words": {
+          "zh-TW": "風車飾",
+          "en": "wind spinner",
+          "ja": {
+            "text": "風車飾り",
+            "reading": "かざぐるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "草坪邊界條",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一段彎曲的矮型深色塑膠邊條，部分露出地面，用來分隔草坪與步道。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "lawn-edging",
+        "words": {
+          "zh-TW": "草坪邊界條",
+          "en": "lawn edging",
+          "ja": {
+            "text": "芝生の縁取り",
+            "reading": "しばふのふちどり"
+          }
+        }
+      }
+    },
+    {
+      "name": "水管捲盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形側板支架上纏繞綠色水管，中央有手搖把，底部帶短支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "hose-reel-home",
+        "words": {
+          "zh-TW": "水管捲盤",
+          "en": "hose reel",
+          "ja": {
+            "text": "ホースリール",
+            "reading": "ホースリール"
+          }
+        }
+      }
+    },
+    {
+      "name": "草坪灑水器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮小圓盤狀灑水器立在草地上，頂部有短噴頭，周圍分布小出水孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "garden-sprinkler",
+        "words": {
+          "zh-TW": "草坪灑水器",
+          "en": "lawn sprinkler",
+          "ja": {
+            "text": "芝生用スプリンクラー",
+            "reading": "しばふようスプリンクラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨量計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明直立圓筒插在細杆支架上，頂端敞開，外壁沒有刻度或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "rain-gauge-home",
+        "words": {
+          "zh-TW": "雨量計",
+          "en": "rain gauge",
+          "ja": {
+            "text": "雨量計",
+            "reading": "うりょうけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "風向標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "屋頂小杆頂端的金屬箭形片與十字方向架，箭片不帶字母或符號。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "wind-vane",
+        "words": {
+          "zh-TW": "風向標",
+          "en": "weather vane",
+          "ja": {
+            "text": "風見鶏",
+            "reading": "かざみどり"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊籃花盆",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓錐形編織吊籃裝著綠葉與小花，三條細鏈向上聚合懸掛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "hanging-basket",
+        "words": {
+          "zh-TW": "吊籃花盆",
+          "en": "hanging basket",
+          "ja": {
+            "text": "ハンギングバスケット",
+            "reading": "ハンギングバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "窗板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窗戶兩側各一片深綠色木板，板面有平行排列的斜向百葉條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "window-shutter",
+        "words": {
+          "zh-TW": "窗板",
+          "en": "window shutter",
+          "ja": {
+            "text": "窓 shutters",
+            "reading": "まどシャッター"
+          }
+        }
+      }
+    },
+    {
+      "name": "門廊階梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩級寬而低的灰色石階，踏面平坦，前緣有清晰直線邊角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "porch-step",
+        "words": {
+          "zh-TW": "門廊階梯",
+          "en": "porch step",
+          "ja": {
+            "text": "ポーチの段",
+            "reading": "ポーチのだん"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形黑色塑膠盤，四周略高起，底面有規則凸點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "boot-tray",
+        "words": {
+          "zh-TW": "鞋盤",
+          "en": "boot tray",
+          "ja": {
+            "text": "靴置きトレー",
+            "reading": "くつおきトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "庭園溫度計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "窄長木框內有透明管與紅色液柱，固定在門廊柱側，不顯示數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "garden-thermometer",
+        "words": {
+          "zh-TW": "庭園溫度計",
+          "en": "outdoor thermometer",
+          "ja": {
+            "text": "屋外温度計",
+            "reading": "おくがいおんどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "庭園玻璃球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "光滑的彩色玻璃球固定在短矮底座上，球面有柔和色塊反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "garden-globe",
+        "words": {
+          "zh-TW": "庭園玻璃球",
+          "en": "garden globe",
+          "ja": {
+            "text": "ガーデングローブ",
+            "reading": "ガーデングローブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "風向袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "彩色布筒套在圓形支架上，尾端逐漸變窄，橫向飄展在空中。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "front-yard",
+        "itemId": "wind-sock-home",
+        "words": {
+          "zh-TW": "風向袋",
+          "en": "windsock",
+          "ja": {
+            "text": "吹き流し",
+            "reading": "ふきながし"
+          }
+        }
+      }
+    },
+    {
+      "name": "雙人小沙發",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小巧的雙人沙發，圓潤的扶手包住兩個橘色座墊，底下露出短木腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "loveseat",
+        "words": {
+          "zh-TW": "雙人小沙發",
+          "en": "loveseat",
+          "ja": {
+            "text": "ラブシート",
+            "reading": "ラブシート"
+          }
+        }
+      }
+    },
+    {
+      "name": "躺椅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "厚實的單人椅有高椅背和寬扶手，腳前伸出一片深棕色的腳靠板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "recliner",
+        "words": {
+          "zh-TW": "躺椅",
+          "en": "recliner",
+          "ja": {
+            "text": "リクライニングチェア",
+            "reading": "リクライニングチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "搖椅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木製椅身配高椅背與彎弧形底座，兩道弧木在地面前後延伸。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "rocking-chair",
+        "words": {
+          "zh-TW": "搖椅",
+          "en": "rocking-chair",
+          "ja": {
+            "text": "ロッキングチェア",
+            "reading": "ロッキングチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐邊櫃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "矮長木櫃有平坦檯面，正面分成兩扇櫃門與中央抽屜，配小圓把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "sideboard",
+        "words": {
+          "zh-TW": "餐邊櫃",
+          "en": "sideboard",
+          "ja": {
+            "text": "サイドボード",
+            "reading": "サイドボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "電視",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色薄扁長方形螢幕置於窄底座上，正面是深色玻璃面，邊框細窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "television",
+        "words": {
+          "zh-TW": "電視",
+          "en": "television",
+          "ja": {
+            "text": "テレビ",
+            "reading": "テレビ"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓底座上立著細燈柱，頂端罩著米白色梯形燈罩，輪廓簡潔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "table-lamp",
+        "words": {
+          "zh-TW": "桌燈",
+          "en": "table-lamp",
+          "ja": {
+            "text": "テーブルランプ",
+            "reading": "テーブルランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形木框包住白色鐘面，面上只有深色指針與簡單刻度，不含文字數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "wall-clock-home",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall-clock",
+          "ja": {
+            "text": "壁掛け時計",
+            "reading": "かべかけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "相框",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "窄木框包著一幅簡單的彩色風景圖，矩形外框有厚實邊角與支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "picture-frame",
+        "words": {
+          "zh-TW": "相框",
+          "en": "picture-frame",
+          "ja": {
+            "text": "写真立て",
+            "reading": "しゃしんたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "風景畫",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形畫布上有藍色山形、綠色丘陵和橘色夕陽，外圍配細木畫框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "landscape-painting-home",
+        "words": {
+          "zh-TW": "風景畫",
+          "en": "landscape-painting",
+          "ja": {
+            "text": "風景画",
+            "reading": "ふうけいが"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙發毯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "摺疊的黃色軟布毯搭在沙發扶手上，邊緣垂下短短一排流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "throw-blanket",
+        "words": {
+          "zh-TW": "沙發毯",
+          "en": "throw-blanket",
+          "ja": {
+            "text": "ひざ掛け",
+            "reading": "ひざかけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶几",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮木桌有長方形桌面和四支外斜桌腳，桌面光滑，底下留有空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "coffee-table",
+        "words": {
+          "zh-TW": "茶几",
+          "en": "coffee-table",
+          "ja": {
+            "text": "ローテーブル",
+            "reading": "ローテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "黑膠唱片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片黑色圓盤有密集細圈紋，中央是純色圓心，沒有標籤或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "vinyl-record-home",
+        "words": {
+          "zh-TW": "黑膠唱片",
+          "en": "vinyl-record",
+          "ja": {
+            "text": "レコード",
+            "reading": "レコード"
+          }
+        }
+      }
+    },
+    {
+      "name": "地毯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長方形深紅地毯有米色邊框與中央菱形圖案，四角各垂著短流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "floor-rug",
+        "words": {
+          "zh-TW": "地毯",
+          "en": "floor-rug",
+          "ja": {
+            "text": "ラグ",
+            "reading": "ラグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁爐屏風",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色金屬網屏風由三片窄框連接，立在壁爐前方，頂緣略帶弧形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "fireplace-screen",
+        "words": {
+          "zh-TW": "壁爐屏風",
+          "en": "fireplace-screen",
+          "ja": {
+            "text": "暖炉用スクリーン",
+            "reading": "だんろようスクリーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "火鉗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長黑鐵棒一端彎成短鉤，另一端有圓形握柄，斜靠在爐邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "fire-poker-home",
+        "words": {
+          "zh-TW": "火鉗",
+          "en": "fire-poker",
+          "ja": {
+            "text": "火かき棒",
+            "reading": "ひかきぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "木柴籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深褐色藤編籃呈橢圓形，裡面交疊放著幾段短木柴，兩側有提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "log-basket",
+        "words": {
+          "zh-TW": "木柴籃",
+          "en": "log-basket",
+          "ja": {
+            "text": "薪かご",
+            "reading": "まきかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "落地鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高身深木色鐘櫃，上方嵌著圓形鐘面，下方長玻璃窗露出金色鐘擺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "grandfather-clock",
+        "words": {
+          "zh-TW": "落地鐘",
+          "en": "grandfather-clock",
+          "ja": {
+            "text": "柱時計",
+            "reading": "はしらどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "鋼琴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "亮黑色直立鋼琴有平頂琴身，前方露出一排黑白琴鍵，底下有踏板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "piano",
+        "words": {
+          "zh-TW": "鋼琴",
+          "en": "piano",
+          "ja": {
+            "text": "ピアノ",
+            "reading": "ピアノ"
+          }
+        }
+      }
+    },
+    {
+      "name": "樂譜架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色三腳架支撐斜放的長方形板面，板上空白，中央有窄托條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "music-stand",
+        "words": {
+          "zh-TW": "樂譜架",
+          "en": "music-stand",
+          "ja": {
+            "text": "譜面台",
+            "reading": "ふめんだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "吉他架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色金屬支架有兩個向上彎的托臂與後方靠架，底部張開成穩固三腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "guitar-stand",
+        "words": {
+          "zh-TW": "吉他架",
+          "en": "guitar-stand",
+          "ja": {
+            "text": "ギタースタンド",
+            "reading": "ギタースタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "西洋棋盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形棋盤由深淺相間的小格組成，棋子是簡單的黑白立體形狀，無文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "chessboard",
+        "words": {
+          "zh-TW": "西洋棋盤",
+          "en": "chessboard",
+          "ja": {
+            "text": "チェス盤",
+            "reading": "チェスばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "拼圖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片彩色拼圖散開擺放，片邊有凸出與凹入的卡榫，圖案是簡單風景。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "jigsaw-puzzle",
+        "words": {
+          "zh-TW": "拼圖",
+          "en": "jigsaw-puzzle",
+          "ja": {
+            "text": "ジグソーパズル",
+            "reading": "ジグソーパズル"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形淺木盤有低矮凸起邊緣，兩端各開一個短握孔，盤面空著。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "tea-tray",
+        "words": {
+          "zh-TW": "茶盤",
+          "en": "tea-tray",
+          "ja": {
+            "text": "お盆",
+            "reading": "おぼん"
+          }
+        }
+      }
+    },
+    {
+      "name": "書櫃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高身木製書櫃分成數層開放格，格中排列色彩不同的書脊，頂部平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "bookcase-home",
+        "words": {
+          "zh-TW": "書櫃",
+          "en": "bookcase",
+          "ja": {
+            "text": "本棚",
+            "reading": "ほんだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "遙控器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色細長控制器上有一排排圓形按鍵，頂端有小小的深色訊號窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "living-room",
+        "itemId": "remote-control-home",
+        "words": {
+          "zh-TW": "遙控器",
+          "en": "remote-control",
+          "ja": {
+            "text": "リモコン",
+            "reading": "リモコン"
+          }
+        }
+      }
+    },
+    {
+      "name": "微波爐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方正的小型金屬箱，正面有深色方窗與一排圓形按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "microwave",
+        "words": {
+          "zh-TW": "微波爐",
+          "en": "microwave",
+          "ja": {
+            "text": "電子レンジ",
+            "reading": "でんしレンジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓鼓的金屬壺身配彎曲壺嘴、拱形提把與小壺蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "kettle",
+        "words": {
+          "zh-TW": "水壺",
+          "en": "kettle",
+          "ja": {
+            "text": "やかん",
+            "reading": "やかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "電鍋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓角矮箱外型，頂部有掀蓋，正面有簡單的按鍵面板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "rice-cooker",
+        "words": {
+          "zh-TW": "電鍋",
+          "en": "rice cooker",
+          "ja": {
+            "text": "炊飯器",
+            "reading": "すいはんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "瀝水架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬條組成的長方架，分隔槽可直立放置盤子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "dish-rack",
+        "words": {
+          "zh-TW": "瀝水架",
+          "en": "dish rack",
+          "ja": {
+            "text": "水切りラック",
+            "reading": "みずきりラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "單柄鍋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深圓鍋身搭配長把手，頂部蓋著一個帶圓鈕的鍋蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "saucepan",
+        "words": {
+          "zh-TW": "單柄鍋",
+          "en": "saucepan",
+          "ja": {
+            "text": "片手鍋",
+            "reading": "かたてなべ"
+          }
+        }
+      }
+    },
+    {
+      "name": "刨絲器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平金屬板帶有一排排凸起小孔，頂端有圓形握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "grater",
+        "words": {
+          "zh-TW": "刨絲器",
+          "en": "grater",
+          "ja": {
+            "text": "おろし金",
+            "reading": "おろしがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "蒜頭壓泥器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩根金屬長柄以圓軸相連，前端有小圓壓槽與網孔壓板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "garlic-press",
+        "words": {
+          "zh-TW": "蒜頭壓泥器",
+          "en": "garlic press",
+          "ja": {
+            "text": "にんにく絞り器",
+            "reading": "にんにくしぼりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚房計時器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧圓形計時器，正面有大圓旋鈕與簡潔的指針面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "kitchen-timer",
+        "words": {
+          "zh-TW": "廚房計時器",
+          "en": "kitchen timer",
+          "ja": {
+            "text": "キッチンタイマー",
+            "reading": "キッチンタイマー"
+          }
+        }
+      }
+    },
+    {
+      "name": "調味料架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩層小型架子上排著幾個相同圓罐，罐身沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "spice-rack",
+        "words": {
+          "zh-TW": "調味料架",
+          "en": "spice rack",
+          "ja": {
+            "text": "スパイスラック",
+            "reading": "スパイスラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "油壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明瓶身配窄嘴壺蓋，瓶肩圓滑，外形修長。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "oil-bottle",
+        "words": {
+          "zh-TW": "油壺",
+          "en": "oil bottle",
+          "ja": {
+            "text": "オイルボトル",
+            "reading": "オイルボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗碗精按壓瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "窄身直立瓶子上有短按壓頭，瓶身透明並呈現單一色液面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "soap-dispenser",
+        "words": {
+          "zh-TW": "洗碗精按壓瓶",
+          "en": "soap dispenser",
+          "ja": {
+            "text": "食器用洗剤ディスペンサー",
+            "reading": "しょっきようせんざいディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚房椅凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形木座面由三根細長椅腳支撐，沒有靠背與扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "kitchen-stool",
+        "words": {
+          "zh-TW": "廚房椅凳",
+          "en": "kitchen stool",
+          "ja": {
+            "text": "キッチンスツール",
+            "reading": "キッチンスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚房推車",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的雙層推車，兩側有細金屬架與四個小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "kitchen-cart",
+        "words": {
+          "zh-TW": "廚房推車",
+          "en": "kitchen cart",
+          "ja": {
+            "text": "キッチンワゴン",
+            "reading": "キッチンワゴン"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚餘桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓桶身配翻蓋，正面可見一個簡單的腳踏掀蓋板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "trash-can-kitchen",
+        "words": {
+          "zh-TW": "廚餘桶",
+          "en": "kitchen bin",
+          "ja": {
+            "text": "生ごみ入れ",
+            "reading": "なまごみいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚房秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平方形秤身上放著圓形秤盤，正面有小螢幕但沒有字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "kitchen-scale",
+        "words": {
+          "zh-TW": "廚房秤",
+          "en": "kitchen scale",
+          "ja": {
+            "text": "キッチンスケール",
+            "reading": "キッチンスケール"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓角長方盒身配弧形掀蓋，前方有短小握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "breadbox",
+        "words": {
+          "zh-TW": "麵包盒",
+          "en": "breadbox",
+          "ja": {
+            "text": "ブレッドケース",
+            "reading": "ブレッドケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "水果碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺口寬圓碗裝著幾顆不同顏色的完整水果，碗底略窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "fruit-bowl",
+        "words": {
+          "zh-TW": "水果碗",
+          "en": "fruit bowl",
+          "ja": {
+            "text": "フルーツボウル",
+            "reading": "フルーツボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的白色長方櫃體，正面有上下兩扇門與細長把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "refrigerator-home",
+        "words": {
+          "zh-TW": "冰箱",
+          "en": "refrigerator",
+          "ja": {
+            "text": "冷蔵庫",
+            "reading": "れいぞうこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的陶壺身搭配短壺嘴、弧形把手和圓頂壺蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "teapot-home",
+        "words": {
+          "zh-TW": "茶壺",
+          "en": "teapot",
+          "ja": {
+            "text": "ティーポット",
+            "reading": "ティーポット"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "直立的小型電器，上方有濾杯，下方放著透明玻璃壺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "coffee-maker-home",
+        "words": {
+          "zh-TW": "咖啡機",
+          "en": "coffee maker",
+          "ja": {
+            "text": "コーヒーメーカー",
+            "reading": "コーヒーメーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "烤麵包機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的金屬方盒，頂部有兩道吐司槽，側面露出彈起把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "toaster-home",
+        "words": {
+          "zh-TW": "烤麵包機",
+          "en": "toaster",
+          "ja": {
+            "text": "トースター",
+            "reading": "トースター"
+          }
+        }
+      }
+    },
+    {
+      "name": "果汁機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形底座上立著透明高杯，杯蓋中央有一個小圓凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "blender-home",
+        "words": {
+          "zh-TW": "果汁機",
+          "en": "blender",
+          "ja": {
+            "text": "ミキサー",
+            "reading": "ミキサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬克杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的圓筒杯身旁有一個大弧形把手，杯口清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "mug-home",
+        "words": {
+          "zh-TW": "馬克杯",
+          "en": "mug",
+          "ja": {
+            "text": "マグカップ",
+            "reading": "マグカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "砧板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方木板，邊角圓滑，一端有可辨認的握孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "cutting-board-home",
+        "words": {
+          "zh-TW": "砧板",
+          "en": "cutting board",
+          "ja": {
+            "text": "まな板",
+            "reading": "まないた"
+          }
+        }
+      }
+    },
+    {
+      "name": "平底鍋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺圓鍋身連著一根細長把手，鍋面是深色平滑圓盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "kitchen",
+        "itemId": "frying-pan-home",
+        "words": {
+          "zh-TW": "平底鍋",
+          "en": "frying pan",
+          "ja": {
+            "text": "フライパン",
+            "reading": "フライパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "床",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的長方形床墊鋪著淺色床單，床頭有平整的軟墊靠背。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "bed",
+        "words": {
+          "zh-TW": "床",
+          "en": "bed",
+          "ja": {
+            "text": "ベッド",
+            "reading": "ベッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "枕頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟的長方形枕頭，白色布套微微鼓起，邊緣有細縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "pillow",
+        "words": {
+          "zh-TW": "枕頭",
+          "en": "pillow",
+          "ja": {
+            "text": "枕",
+            "reading": "まくら"
+          }
+        }
+      }
+    },
+    {
+      "name": "羽絨被",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "蓬鬆的長方形被子摺成厚厚幾層，表面有柔和的淺藍色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "duvet",
+        "words": {
+          "zh-TW": "羽絨被",
+          "en": "duvet",
+          "ja": {
+            "text": "掛け布団",
+            "reading": "かけぶとん"
+          }
+        }
+      }
+    },
+    {
+      "name": "床頭櫃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小巧的方形木櫃有一個抽屜和四隻短腳，頂面平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "bedside-table",
+        "words": {
+          "zh-TW": "床頭櫃",
+          "en": "bedside table",
+          "ja": {
+            "text": "ナイトテーブル",
+            "reading": "ナイトテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "鬧鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形鬧鐘有兩個小鈴鐺和短腳，正面是深色指針面盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "alarm-clock",
+        "words": {
+          "zh-TW": "鬧鐘",
+          "en": "alarm clock",
+          "ja": {
+            "text": "目覚まし時計",
+            "reading": "めざましどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣櫃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的雙門木衣櫃，兩扇門各有一枚圓形把手，頂部平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "wardrobe",
+        "words": {
+          "zh-TW": "衣櫃",
+          "en": "wardrobe",
+          "ja": {
+            "text": "ワードローブ",
+            "reading": "ワードローブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "五斗櫃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮而寬的木製抽屜櫃，正面排列數個抽屜，每個都有圓把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "dresser",
+        "words": {
+          "zh-TW": "五斗櫃",
+          "en": "dresser",
+          "ja": {
+            "text": "チェスト",
+            "reading": "チェスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細木條組成三角形衣架，頂端彎成金屬掛鉤，輪廓簡單清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "clothes-hanger",
+        "words": {
+          "zh-TW": "衣架",
+          "en": "clothes hanger",
+          "ja": {
+            "text": "ハンガー",
+            "reading": "ハンガー"
+          }
+        }
+      }
+    },
+    {
+      "name": "髒衣籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高筒編織籃身有規律的交錯紋，敞口寬大，兩側各有提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "laundry-hamper",
+        "words": {
+          "zh-TW": "髒衣籃",
+          "en": "laundry hamper",
+          "ja": {
+            "text": "ランドリーバスケット",
+            "reading": "ランドリーバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "床邊腳踏墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小幅橢圓地墊有柔軟短絨，邊緣整齊，中央呈暖色素面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "bedroom-rug",
+        "words": {
+          "zh-TW": "床邊腳踏墊",
+          "en": "bedside rug",
+          "ja": {
+            "text": "ベッドサイドラグ",
+            "reading": "ベッドサイドラグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "穿衣鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高窄的全身鏡立在簡單木框中，底部有兩腳支架，鏡面明亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "floor-mirror",
+        "words": {
+          "zh-TW": "穿衣鏡",
+          "en": "standing mirror",
+          "ja": {
+            "text": "姿見",
+            "reading": "すがたみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "窗簾桿",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的深色金屬桿橫跨窗戶上方，兩端有圓形裝飾端頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "curtain-rod",
+        "words": {
+          "zh-TW": "窗簾桿",
+          "en": "curtain rod",
+          "ja": {
+            "text": "カーテンレール",
+            "reading": "カーテンレール"
+          }
+        }
+      }
+    },
+    {
+      "name": "百葉窗簾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一排水平排列的窄長葉片覆在窗前，色澤均勻，垂直拉繩垂下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "window-blinds",
+        "words": {
+          "zh-TW": "百葉窗簾",
+          "en": "window blinds",
+          "ja": {
+            "text": "ブラインド",
+            "reading": "ブラインド"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊扇拉繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細繩末端繫著小木珠，從高處垂下，珠子呈圓潤的深木色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "ceiling-fan-pull",
+        "words": {
+          "zh-TW": "吊扇拉繩",
+          "en": "ceiling fan pull",
+          "ja": {
+            "text": "シーリングファンのひも",
+            "reading": "シーリングファンのひも"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣物投入口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "牆上的方形金屬小門帶有向外掀開的把手，開口深而整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "laundry-chute",
+        "words": {
+          "zh-TW": "衣物投入口",
+          "en": "laundry chute",
+          "ja": {
+            "text": "ランドリーシュート",
+            "reading": "ランドリーシュート"
+          }
+        }
+      }
+    },
+    {
+      "name": "收納箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮長方形木箱有圓角箱蓋和兩側提環，表面帶有木紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "storage-trunk",
+        "words": {
+          "zh-TW": "收納箱",
+          "en": "storage trunk",
+          "ja": {
+            "text": "収納トランク",
+            "reading": "しゅうのうトランク"
+          }
+        }
+      }
+    },
+    {
+      "name": "拉門軌道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "地板上嵌著一條細長金屬軌道，兩道平行凹槽清晰可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "sliding-door-track",
+        "words": {
+          "zh-TW": "拉門軌道",
+          "en": "sliding door track",
+          "ja": {
+            "text": "引き戸レール",
+            "reading": "ひきどレール"
+          }
+        }
+      }
+    },
+    {
+      "name": "流蘇",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一束短線在頂端束緊，底部散開成柔軟流蘇，顏色鮮明。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "rug-tassel",
+        "words": {
+          "zh-TW": "流蘇",
+          "en": "tassel",
+          "ja": {
+            "text": "タッセル",
+            "reading": "タッセル"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴袍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚實長袍摺成一疊，領口寬大，腰帶鬆鬆繞在衣身旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "robe",
+        "words": {
+          "zh-TW": "浴袍",
+          "en": "bathrobe",
+          "ja": {
+            "text": "バスローブ",
+            "reading": "バスローブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "首飾架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型樹枝狀金屬架有多個彎曲掛枝，底部是平穩圓盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "jewelry-stand",
+        "words": {
+          "zh-TW": "首飾架",
+          "en": "jewelry stand",
+          "ja": {
+            "text": "アクセサリースタンド",
+            "reading": "アクセサリースタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "香水瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃瓶呈方肩短頸造型，頂部有小巧圓形噴頭和亮面瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "perfume-bottle",
+        "words": {
+          "zh-TW": "香水瓶",
+          "en": "perfume bottle",
+          "ja": {
+            "text": "香水瓶",
+            "reading": "こうすいびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "吹風機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "手持電器有圓筒形出風口與垂直握柄，尾端接著捲曲電線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "hair-dryer",
+        "words": {
+          "zh-TW": "吹風機",
+          "en": "hair dryer",
+          "ja": {
+            "text": "ドライヤー",
+            "reading": "ドライヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "針線盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形木盒頂蓋微拱，掀開可見分隔小格，盒邊有金屬扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "sewing-box",
+        "words": {
+          "zh-TW": "針線盒",
+          "en": "sewing box",
+          "ja": {
+            "text": "裁縫箱",
+            "reading": "さいほうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "針插",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "鮮紅色圓鼓布墊插著幾根細針，底部收成一圈，輪廓醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "sewing-pincushion",
+        "words": {
+          "zh-TW": "針插",
+          "en": "pincushion",
+          "ja": {
+            "text": "針山",
+            "reading": "はりやま"
+          }
+        }
+      }
+    },
+    {
+      "name": "裝飾掛畫",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形裝飾畫以幾何色塊組成花樣，套在窄木框內，畫面沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "home",
+        "zone": "bedroom",
+        "itemId": "wall-art",
+        "words": {
+          "zh-TW": "裝飾掛畫",
+          "en": "wall art",
+          "ja": {
+            "text": "壁飾り",
+            "reading": "かべかざり"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -3,15 +3,15 @@
   "sceneSlug": "la-classroom",
   "propStyle": "front-flat",
   "zones": {
-    "teacher-area": "講台",
-    "student-area": "座位區",
+    "teacher-area": "黑板與講台",
+    "student-area": "課桌與中央走道",
     "reading-area": "閱讀角",
     "math-area": "數學角"
   },
   "elements": [
     {
       "name": "黑板",
-      "category": "生物與物品",
+      "category": "設施",
       "lane": "b",
       "sizeHint": "large",
       "desc": "黑板的正面扁平插畫。",
@@ -32,7 +32,7 @@
     },
     {
       "name": "講桌",
-      "category": "生物與物品",
+      "category": "設施",
       "lane": "b",
       "sizeHint": "large",
       "desc": "講桌的正面扁平插畫。",
@@ -53,9 +53,9 @@
     },
     {
       "name": "地球儀",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "地球儀的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -74,7 +74,7 @@
     },
     {
       "name": "課桌",
-      "category": "生物與物品",
+      "category": "設施",
       "lane": "b",
       "sizeHint": "large",
       "desc": "課桌的正面扁平插畫。",
@@ -95,9 +95,9 @@
     },
     {
       "name": "椅子",
-      "category": "生物與物品",
+      "category": "設施",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "椅子的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -116,9 +116,9 @@
     },
     {
       "name": "書包",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "書包的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -137,9 +137,9 @@
     },
     {
       "name": "課本",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "small",
       "desc": "課本的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -158,9 +158,9 @@
     },
     {
       "name": "筆記本",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "small",
       "desc": "筆記本的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -179,9 +179,9 @@
     },
     {
       "name": "鉛筆",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "medium",
+      "sizeHint": "small",
       "desc": "鉛筆的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -200,9 +200,9 @@
     },
     {
       "name": "尺",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "medium",
+      "sizeHint": "small",
       "desc": "尺的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -221,14 +221,14 @@
     },
     {
       "name": "時鐘",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "時鐘的正面扁平插畫。",
       "ref": {
         "project": "la-game",
         "scene": "classroom",
-        "zone": "math-area",
+        "zone": "teacher-area",
         "itemId": "class-clockclass",
         "words": {
           "zh-TW": "時鐘",
@@ -242,9 +242,9 @@
     },
     {
       "name": "算盤",
-      "category": "生物與物品",
+      "category": "教具與文具",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "算盤的正面扁平插畫。",
       "ref": {
         "project": "la-game",

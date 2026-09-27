@@ -1,14 +1,14 @@
 {
-  "garden-bamboo": { "x": 9657, "y": 6960, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "garden-bonsai": { "x": 10070, "y": 6960, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-cactus": { "x": 10957, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-fern": { "x": 11043, "y": 7095, "w": 205, "h": 205, "rotate": 0, "flip": true },
-  "garden-lotus": { "x": 10901, "y": 6825, "w": 195, "h": 195, "rotate": 0, "flip": false },
-  "garden-orchid": { "x": 11370, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-palm": { "x": 10483, "y": 6960, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-pitcher": { "x": 11783, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-rose": { "x": 10070, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "garden-sunflower": { "x": 9657, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-tulip": { "x": 10483, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "garden-waterlily": { "x": 11196, "y": 6825, "w": 195, "h": 195, "rotate": 0, "flip": true }
+  "garden-bamboo": { "x": 9700, "y": 7070, "w": 170, "h": 170, "rotate": 0, "flip": false },
+  "garden-bonsai": { "x": 10093, "y": 7095, "w": 115, "h": 115, "rotate": 0, "flip": false },
+  "garden-cactus": { "x": 10993, "y": 6490, "w": 115, "h": 115, "rotate": 0, "flip": false },
+  "garden-fern": { "x": 11025, "y": 7130, "w": 100, "h": 100, "rotate": 0, "flip": false },
+  "garden-lotus": { "x": 11500, "y": 7060, "w": 120, "h": 120, "rotate": 0, "flip": false },
+  "garden-orchid": { "x": 11378, "y": 6515, "w": 95, "h": 95, "rotate": 0, "flip": false },
+  "garden-palm": { "x": 10440, "y": 7045, "w": 210, "h": 210, "rotate": 0, "flip": false },
+  "garden-pitcher": { "x": 11785, "y": 6475, "w": 110, "h": 110, "rotate": 0, "flip": false },
+  "garden-rose": { "x": 10118, "y": 6495, "w": 105, "h": 105, "rotate": 0, "flip": false },
+  "garden-sunflower": { "x": 9715, "y": 6470, "w": 110, "h": 110, "rotate": 0, "flip": false },
+  "garden-tulip": { "x": 10513, "y": 6460, "w": 85, "h": 85, "rotate": 0, "flip": false },
+  "garden-waterlily": { "x": 11790, "y": 7130, "w": 110, "h": 110, "rotate": 0, "flip": false }
 }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-27T19:04:40.617+09:00",
+  "syncedAt": "2026-09-27T21:43:14.510+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -974,6 +974,204 @@
         "hair-drying-towel"
       ],
       "failed": [],
+      "pending": [],
+      "skippedLaneA": []
+    },
+    {
+      "scene": "home",
+      "slug": "la-home",
+      "synced": [
+        "porch-swing",
+        "doorbell-button",
+        "door-knocker",
+        "house-number-plaque",
+        "door-wreath",
+        "porch-light",
+        "door-mat-brush",
+        "porch-post",
+        "porch-railing",
+        "downspout-elbow",
+        "rain-chain-home",
+        "welcome-stone",
+        "wind-spinner",
+        "lawn-edging",
+        "hose-reel-home",
+        "garden-sprinkler",
+        "rain-gauge-home",
+        "wind-vane",
+        "hanging-basket",
+        "window-shutter",
+        "porch-step",
+        "boot-tray",
+        "garden-thermometer",
+        "garden-globe",
+        "wind-sock-home",
+        "loveseat",
+        "recliner",
+        "rocking-chair",
+        "sideboard",
+        "television",
+        "table-lamp",
+        "wall-clock-home",
+        "picture-frame",
+        "landscape-painting-home",
+        "throw-blanket",
+        "coffee-table",
+        "vinyl-record-home",
+        "floor-rug",
+        "fireplace-screen",
+        "fire-poker-home",
+        "log-basket",
+        "grandfather-clock",
+        "piano",
+        "music-stand",
+        "guitar-stand",
+        "chessboard",
+        "jigsaw-puzzle",
+        "tea-tray",
+        "bookcase-home",
+        "remote-control-home",
+        "microwave",
+        "kettle",
+        "rice-cooker",
+        "dish-rack",
+        "saucepan",
+        "grater",
+        "garlic-press",
+        "kitchen-timer",
+        "spice-rack",
+        "oil-bottle",
+        "soap-dispenser",
+        "kitchen-stool",
+        "kitchen-cart",
+        "trash-can-kitchen",
+        "kitchen-scale",
+        "breadbox",
+        "fruit-bowl",
+        "refrigerator-home",
+        "teapot-home",
+        "coffee-maker-home",
+        "toaster-home",
+        "blender-home",
+        "mug-home",
+        "cutting-board-home",
+        "frying-pan-home",
+        "bed",
+        "pillow",
+        "duvet"
+      ],
+      "failed": [
+        {
+          "itemId": "bedside-table",
+          "elementId": "el-079",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "alarm-clock",
+          "elementId": "el-080",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "wardrobe",
+          "elementId": "el-081",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "dresser",
+          "elementId": "el-082",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "clothes-hanger",
+          "elementId": "el-083",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "laundry-hamper",
+          "elementId": "el-084",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "bedroom-rug",
+          "elementId": "el-085",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "floor-mirror",
+          "elementId": "el-086",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "curtain-rod",
+          "elementId": "el-087",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "window-blinds",
+          "elementId": "el-088",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "ceiling-fan-pull",
+          "elementId": "el-089",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "laundry-chute",
+          "elementId": "el-090",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "storage-trunk",
+          "elementId": "el-091",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "sliding-door-track",
+          "elementId": "el-092",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "rug-tassel",
+          "elementId": "el-093",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "robe",
+          "elementId": "el-094",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "jewelry-stand",
+          "elementId": "el-095",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "perfume-bottle",
+          "elementId": "el-096",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "hair-dryer",
+          "elementId": "el-097",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "sewing-box",
+          "elementId": "el-098",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "sewing-pincushion",
+          "elementId": "el-099",
+          "error": "retry 用盡仍無效"
+        },
+        {
+          "itemId": "wall-art",
+          "elementId": "el-100",
+          "error": "retry 用盡仍無效"
+        }
+      ],
       "pending": [],
       "skippedLaneA": []
     },

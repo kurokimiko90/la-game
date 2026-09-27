@@ -1,6 +1,6 @@
 {
   "world": {"width": 21780, "height": 8500},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -299,12 +299,12 @@
         "computer-monitor": "surface-classroom",
         "keyboard": "surface-classroom",
         "computer-mouse": "surface-classroom",
-        "pencil-sharpener": "surface-classroom",
+        "pencil-sharpener": "surface-library",
         "marker": "surface-classroom",
         "paintbrush": "surface-classroom",
         "paint-palette": "surface-classroom",
-        "stapler": "surface-classroom",
-        "tape-dispenser": "surface-classroom",
+        "stapler": "surface-library",
+        "tape-dispenser": "surface-library",
         "magnifying-glass": "surface-classroom",
         "compass": "surface-classroom",
         "microscope": "surface-classroom",
@@ -323,14 +323,27 @@
         "reading-stand": "surface-library",
         "vase": "surface-library",
         "printer": "wallbase-library",
-        "bookend": "surface-library"
+        "bookend": "surface-library",
+        "pencil": "surface-classroom",
+        "eraser": "surface-classroom",
+        "ruler": "surface-classroom",
+        "pencil-case": "surface-classroom",
+        "crayon": "surface-classroom",
+        "glue-stick": "surface-classroom",
+        "scissors": "surface-classroom",
+        "speed-bump": "road-school-gate",
+        "barrier-arm": "road-school-gate",
+        "bollard": "road-school-gate",
+        "curb": "road-school-gate",
+        "drainage-grate": "road-school-gate"
       },
       "clusters": [["bollard", "barrier-arm"]],
       "loose": ["pencil", "eraser", "ruler", "pencil-case", "crayon", "glue-stick", "scissors", "loafer", "acorn", "twig", "frisbee", "baseball-glove", "chalk", "clipboard", "pine-cone", "leaf", "garbage-bag", "computer-mouse", "pencil-sharpener", "marker", "paintbrush", "paint-palette", "stapler", "tape-dispenser", "magnifying-glass", "compass", "paper", "pen", "bookmark", "rubber-band"],
-      "noFlip": [],
+      "noFlip": ["barrier-arm"],
       "motion": {"raincoat": "sway", "tulip": "sway", "daisy": "sway", "dandelion": "sway", "clover": "sway"},
       "arrange": "auto",
-      "terrain": {"color": "#ffab91", "x0": 3840, "y0": 1540, "x1": 6440, "y1": 2840, "zones": [{"id": "school-gate", "x0": 3840, "y0": 1540, "x1": 5140, "y1": 2190, "indoor": false, "floor": "paving", "road": {"y0": 2000, "y1": 2160}}, {"id": "school-yard", "x0": 5140, "y0": 1540, "x1": 6440, "y1": 2190, "indoor": false, "floor": "grass"}, {"id": "classroom", "x0": 5140, "y0": 2190, "x1": 6440, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}, {"id": "library", "x0": 3840, "y0": 2190, "x1": 5140, "y1": 2840, "indoor": true, "floor": "carpet", "wallBase": 2370}]}
+      "terrain": {"color": "#ffab91", "x0": 3840, "y0": 1540, "x1": 6440, "y1": 2840, "zones": [{"id": "school-gate", "x0": 3840, "y0": 1540, "x1": 5140, "y1": 2190, "indoor": false, "floor": "paving", "road": {"y0": 2000, "y1": 2160}}, {"id": "school-yard", "x0": 5140, "y0": 1540, "x1": 6440, "y1": 2190, "indoor": false, "floor": "grass", "details": [{"id": "campus-walk", "kind": "path", "x0": 5680, "y0": 1540, "x1": 5745, "y1": 2190}, {"id": "school-multi-court", "kind": "court", "x0": 5760, "y0": 1700, "x1": 6370, "y1": 2065}, {"id": "campus-shade", "kind": "canopy", "x0": 5160, "y0": 1560, "x1": 5460, "y1": 1650}]}, {"id": "classroom", "x0": 5140, "y0": 2190, "x1": 6440, "y1": 2840, "indoor": true, "floor": "tile", "wallBase": 2370}, {"id": "library", "x0": 3840, "y0": 2190, "x1": 5140, "y1": 2840, "indoor": true, "floor": "carpet", "wallBase": 2370}]},
+      "spots": {"speed-bump": [4480, 2100], "barrier-arm": [4140, 2030], "bollard": [4320, 2150], "curb": [4800, 2160], "drainage-grate": [4980, 2130], "pine-cone": [5570, 2140], "leaf": [5630, 2165]}
     },
     "hospital": {
       "name": "醫院",
@@ -1275,10 +1288,18 @@
     "classroom": {
       "name": "班級教室",
       "icon": "class-blackboard",
-      "zones": {"teacher-area":[3840,6160,5140,6810],"student-area":[5140,6160,6440,6810],"reading-area":[5140,6810,6440,7460],"math-area":[3840,6810,5140,7460]},
-      "bands": {"ground":{"scale":[0.95,1.05],"override":{"teacher-area":{"top":6400,"bottom":6790},"student-area":{"top":6400,"bottom":6790},"reading-area":{"top":7050,"bottom":7440},"math-area":{"top":7050,"bottom":7440}}},"wall-teacher-area":{"levels":[6300],"zones":["teacher-area"],"inset":60,"scale":[0.85,0.85]},"wallbase-teacher-area":{"levels":[6338],"zones":["teacher-area"],"inset":50},"wall-student-area":{"levels":[6300],"zones":["student-area"],"inset":60,"scale":[0.85,0.85]},"wallbase-student-area":{"levels":[6338],"zones":["student-area"],"inset":50},"wall-reading-area":{"levels":[6950],"zones":["reading-area"],"inset":60,"scale":[0.85,0.85]},"wallbase-reading-area":{"levels":[6988],"zones":["reading-area"],"inset":50},"wall-math-area":{"levels":[6950],"zones":["math-area"],"inset":60,"scale":[0.85,0.85]},"wallbase-math-area":{"levels":[6988],"zones":["math-area"],"inset":50}},
-      "place": {},
-      "terrain": {"color":"#ffab91","x0":3840,"y0":6160,"x1":6440,"y1":7460,"zones":[{"id":"teacher-area","x0":3840,"y0":6160,"x1":5140,"y1":6810,"indoor":true,"floor":"wood","wallBase":6340},{"id":"student-area","x0":5140,"y0":6160,"x1":6440,"y1":6810,"indoor":true,"floor":"wood","wallBase":6340},{"id":"reading-area","x0":5140,"y0":6810,"x1":6440,"y1":7460,"indoor":true,"floor":"carpet","wallBase":6990},{"id":"math-area","x0":3840,"y0":6810,"x1":5140,"y1":7460,"indoor":true,"floor":"tile","wallBase":6990}]},
+      "zones": {"teacher-area": [3840, 6160, 6440, 6520], "student-area": [3840, 6520, 6440, 7080], "reading-area": [3840, 7080, 5140, 7460], "math-area": [5140, 7080, 6440, 7460]},
+      "bands": {
+        "ground": {"scale": [1, 1]},
+        "wall-teacher-area": {"zones": ["teacher-area"], "levels": [6335]},
+        "worktop-reading-area": {"zones": ["reading-area"], "levels": [7285]},
+        "worktop-math-area": {"zones": ["math-area"], "levels": [7285]}
+      },
+      "place": {
+        "class-blackboard": "wall-teacher-area",
+        "class-clockclass": "wall-teacher-area"
+      },
+      "terrain": {"color": "#ffab91", "x0": 3840, "y0": 6160, "x1": 6440, "y1": 7460, "zones": [{"id": "teacher-area", "x0": 3840, "y0": 6160, "x1": 6440, "y1": 6520, "indoor": true, "floor": "wood", "wallBase": 6340, "details": [{"id": "teacher-platform", "kind": "plinth", "x0": 4920, "y0": 6435, "x1": 5380, "y1": 6500, "items": ["class-teacherdesk"]}, {"id": "science-worktop", "kind": "worktop", "x0": 5830, "y0": 6420, "x1": 6110, "y1": 6480, "items": ["class-globeclass"]}]}, {"id": "student-area", "x0": 3840, "y0": 6520, "x1": 6440, "y1": 7080, "indoor": true, "floor": "wood", "wallBase": 6520, "details": [{"id": "class-centre-aisle", "kind": "path", "x0": 4960, "y0": 6520, "x1": 5080, "y1": 7080}, {"id": "class-cross-aisle", "kind": "path", "x0": 3840, "y0": 7030, "x1": 6440, "y1": 7080}, {"id": "class-seating", "kind": "seating", "x0": 5120, "y0": 6550, "x1": 6270, "y1": 6980}]}, {"id": "reading-area", "x0": 3840, "y0": 7080, "x1": 5140, "y1": 7460, "indoor": true, "floor": "carpet", "wallBase": 7080, "details": [{"id": "reading-table", "kind": "worktop", "x0": 3930, "y0": 7225, "x1": 4310, "y1": 7285, "items": ["class-textbook", "class-notebookclass", "class-pencilclass"]}, {"id": "reading-shelves", "kind": "shelf", "x0": 4500, "y0": 7150, "x1": 4860, "y1": 7290}, {"id": "reading-entry", "kind": "path", "x0": 3840, "y0": 7380, "x1": 5140, "y1": 7450}]}, {"id": "math-area", "x0": 5140, "y0": 7080, "x1": 6440, "y1": 7460, "indoor": true, "floor": "wood", "wallBase": 7080, "details": [{"id": "math-worktable", "kind": "worktop", "x0": 5480, "y0": 7225, "x1": 5960, "y1": 7285, "items": ["class-abacus", "class-rulerclass"]}, {"id": "math-storage", "kind": "shelf", "x0": 6110, "y0": 7150, "x1": 6370, "y1": 7290}, {"id": "math-entry", "kind": "path", "x0": 5140, "y0": 7380, "x1": 6440, "y1": 7450}]}], "openPlan": true},
       "arrange": "auto",
       "clusters": [],
       "loose": [],
@@ -1288,28 +1309,46 @@
     "zoo": {
       "name": "動物園",
       "icon": "zoo-lion",
-      "zones": {"savanna":[6680,6160,7980,6810],"forest":[7980,6160,9280,6810],"waterfront":[7980,6810,9280,7460],"bird-garden":[6680,6810,7980,7460]},
-      "bands": {"ground":{"scale":[0.95,1.05],"override":{"savanna":{"top":6230,"bottom":6790},"forest":{"top":6230,"bottom":6790},"waterfront":{"top":6880,"bottom":7440,"x1":8600},"bird-garden":{"top":6880,"bottom":7440}}},"sky-savanna":{"top":6310,"bottom":6460,"zones":["savanna"],"layer":3,"float":150},"sky-forest":{"top":6310,"bottom":6460,"zones":["forest"],"layer":3,"float":150},"sky-waterfront":{"top":6960,"bottom":7110,"zones":["waterfront"],"layer":3,"float":150},"water-waterfront":{"x0":8670,"x1":9190,"top":6990,"bottom":7390,"zones":["waterfront"],"layer":1,"scale":[0.9,0.9]},"sky-bird-garden":{"top":6960,"bottom":7110,"zones":["bird-garden"],"layer":3,"float":150}},
+      "zones": {"savanna": [6680, 6160, 7980, 6810], "forest": [7980, 6160, 9280, 6810], "waterfront": [7980, 6810, 9280, 7460], "bird-garden": [6680, 6810, 7980, 7460]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"savanna": {"top": 6230, "bottom": 6790}, "forest": {"top": 6230, "bottom": 6790}, "waterfront": {"top": 6880, "bottom": 7440, "x1": 8600}, "bird-garden": {"top": 6880, "bottom": 7440}}},
+        "sky-savanna": {"top": 6310, "bottom": 6460, "zones": ["savanna"], "layer": 3, "float": 150},
+        "sky-forest": {"top": 6310, "bottom": 6460, "zones": ["forest"], "layer": 3, "float": 150},
+        "sky-waterfront": {"top": 6960, "bottom": 7110, "zones": ["waterfront"], "layer": 3, "float": 150},
+        "water-waterfront": {"x0": 8670, "x1": 9190, "top": 6990, "bottom": 7390, "zones": ["waterfront"], "layer": 1, "scale": [0.9, 0.9]},
+        "sky-bird-garden": {"top": 6960, "bottom": 7110, "zones": ["bird-garden"], "layer": 3, "float": 150}
+      },
       "place": {},
-      "terrain": {"color":"#a5d6a7","x0":6680,"y0":6160,"x1":9280,"y1":7460,"zones":[{"id":"savanna","x0":6680,"y0":6160,"x1":7980,"y1":6810,"indoor":false,"floor":"grass"},{"id":"forest","x0":7980,"y0":6160,"x1":9280,"y1":6810,"indoor":false,"floor":"grass"},{"id":"waterfront","x0":7980,"y0":6810,"x1":9280,"y1":7460,"indoor":false,"floor":"paving","pool":{"x0":8630,"y0":6920,"x1":9230,"y1":7420}},{"id":"bird-garden","x0":6680,"y0":6810,"x1":7980,"y1":7460,"indoor":false,"floor":"grass"}]},
+      "terrain": {"color": "#a5d6a7", "x0": 6680, "y0": 6160, "x1": 9280, "y1": 7460, "zones": [{"id": "savanna", "x0": 6680, "y0": 6160, "x1": 7980, "y1": 6810, "indoor": false, "floor": "grass", "details": [{"id": "savanna-visitor-walk", "kind": "path", "x0": 6680, "y0": 6700, "x1": 7980, "y1": 6785}, {"id": "savanna-east-walk", "kind": "path", "x0": 7930, "y0": 6160, "x1": 7980, "y1": 6810}, {"id": "lion-habitat", "kind": "habitat", "x0": 6730, "y0": 6240, "x1": 7040, "y1": 6660, "items": ["zoo-lion"], "surface": "sand"}, {"id": "lion-retreat", "kind": "shelter", "x0": 6760, "y0": 6265, "x1": 6895, "y1": 6335}, {"id": "lion-shade", "kind": "canopy", "x0": 6925, "y0": 6265, "x1": 7010, "y1": 6345}, {"id": "elephant-habitat", "kind": "habitat", "x0": 7090, "y0": 6240, "x1": 7430, "y1": 6660, "items": ["zoo-elephant"], "surface": "sand"}, {"id": "elephant-retreat", "kind": "shelter", "x0": 7120, "y0": 6265, "x1": 7310, "y1": 6340}, {"id": "elephant-water", "kind": "pond", "x0": 7320, "y0": 6545, "x1": 7400, "y1": 6625}, {"id": "herbivore-habitat", "kind": "habitat", "x0": 7480, "y0": 6240, "x1": 7910, "y1": 6660, "items": ["zoo-giraffe", "zoo-zebra"], "surface": "grass"}, {"id": "herbivore-shade", "kind": "canopy", "x0": 7515, "y0": 6265, "x1": 7690, "y1": 6380}, {"id": "herbivore-water", "kind": "pond", "x0": 7800, "y0": 6540, "x1": 7880, "y1": 6625}]}, {"id": "forest", "x0": 7980, "y0": 6160, "x1": 9280, "y1": 6810, "indoor": false, "floor": "grass", "details": [{"id": "forest-visitor-walk", "kind": "path", "x0": 7980, "y0": 6700, "x1": 9280, "y1": 6785}, {"id": "forest-east-walk", "kind": "path", "x0": 9230, "y0": 6160, "x1": 9280, "y1": 6810}, {"id": "primate-habitat", "kind": "habitat", "x0": 8035, "y0": 6240, "x1": 8575, "y1": 6660, "items": ["zoo-monkey"], "surface": "grass"}, {"id": "primate-canopy", "kind": "canopy", "x0": 8060, "y0": 6260, "x1": 8275, "y1": 6420}, {"id": "primate-retreat", "kind": "shelter", "x0": 8370, "y0": 6270, "x1": 8540, "y1": 6350}, {"id": "panda-habitat", "kind": "habitat", "x0": 8630, "y0": 6240, "x1": 9210, "y1": 6660, "items": ["zoo-panda"], "surface": "grass"}, {"id": "panda-canopy", "kind": "canopy", "x0": 8680, "y0": 6270, "x1": 8920, "y1": 6410}, {"id": "panda-retreat", "kind": "shelter", "x0": 9000, "y0": 6270, "x1": 9180, "y1": 6360}]}, {"id": "waterfront", "x0": 7980, "y0": 6810, "x1": 9280, "y1": 7460, "indoor": false, "floor": "paving", "details": [{"id": "waterfront-visitor-walk", "kind": "path", "x0": 7980, "y0": 7350, "x1": 9280, "y1": 7435}, {"id": "waterfront-east-walk", "kind": "path", "x0": 9230, "y0": 6810, "x1": 9280, "y1": 7460}, {"id": "penguin-house", "kind": "habitat", "x0": 8035, "y0": 6890, "x1": 8395, "y1": 7310, "items": ["zoo-penguin"], "surface": "rock"}, {"id": "penguin-roof", "kind": "shelter", "x0": 8055, "y0": 6910, "x1": 8370, "y1": 6970}, {"id": "penguin-pool", "kind": "pond", "x0": 8185, "y0": 7110, "x1": 8365, "y1": 7275}, {"id": "turtle-terrarium", "kind": "habitat", "x0": 8440, "y0": 6890, "x1": 8750, "y1": 7310, "items": ["zoo-turtle"], "surface": "sand"}, {"id": "turtle-shelter", "kind": "shelter", "x0": 8465, "y0": 6910, "x1": 8720, "y1": 6965}, {"id": "turtle-pool", "kind": "pond", "x0": 8590, "y0": 7070, "x1": 8715, "y1": 7170}, {"id": "crocodile-habitat", "kind": "habitat", "x0": 8800, "y0": 6890, "x1": 9210, "y1": 7310, "items": ["zoo-crocodile"], "surface": "grass"}, {"id": "crocodile-retreat", "kind": "shelter", "x0": 8830, "y0": 6915, "x1": 9000, "y1": 6980}, {"id": "crocodile-pool", "kind": "pond", "x0": 8835, "y0": 7065, "x1": 9180, "y1": 7275, "items": ["zoo-crocodile"]}]}, {"id": "bird-garden", "x0": 6680, "y0": 6810, "x1": 7980, "y1": 7460, "indoor": false, "floor": "grass", "details": [{"id": "birds-visitor-walk", "kind": "path", "x0": 6680, "y0": 7350, "x1": 7980, "y1": 7435}, {"id": "birds-east-walk", "kind": "path", "x0": 7930, "y0": 6810, "x1": 7980, "y1": 7460}, {"id": "flamingo-habitat", "kind": "habitat", "x0": 6735, "y0": 6890, "x1": 7110, "y1": 7310, "items": ["zoo-flamingo"], "surface": "grass"}, {"id": "flamingo-water", "kind": "pond", "x0": 6760, "y0": 7065, "x1": 7085, "y1": 7275, "items": ["zoo-flamingo"]}, {"id": "flamingo-shade", "kind": "canopy", "x0": 6760, "y0": 6910, "x1": 6950, "y1": 7025}, {"id": "butterfly-garden", "kind": "habitat", "x0": 7160, "y0": 6890, "x1": 7470, "y1": 7310, "items": ["zoo-butterfly"], "surface": "grass"}, {"id": "butterfly-bed", "kind": "bed", "x0": 7190, "y0": 7110, "x1": 7440, "y1": 7270}, {"id": "butterfly-canopy", "kind": "canopy", "x0": 7190, "y0": 6910, "x1": 7425, "y1": 7060}, {"id": "peacock-aviary", "kind": "habitat", "x0": 7520, "y0": 6890, "x1": 7910, "y1": 7310, "items": ["zoo-peacock"], "surface": "grass"}, {"id": "peacock-canopy", "kind": "canopy", "x0": 7550, "y0": 6920, "x1": 7740, "y1": 7050}, {"id": "peacock-shelter", "kind": "shelter", "x0": 7755, "y0": 6915, "x1": 7880, "y1": 6985}]}]},
       "arrange": "auto",
       "clusters": [],
       "loose": [],
       "noFlip": [],
-      "motion": {}
+      "motion": {"zoo-butterfly": "drift", "zoo-flamingo": "sway"}
     },
     "botanical-garden": {
       "name": "植物園",
       "icon": "garden-sunflower",
-      "zones": {"flower-garden":[9520,6160,10820,6810],"greenhouse":[10820,6160,12120,6810],"pond":[10820,6810,12120,7460],"woodland":[9520,6810,10820,7460]},
-      "bands": {"ground":{"scale":[0.95,1.05],"override":{"flower-garden":{"top":6230,"bottom":6790},"greenhouse":{"top":6400,"bottom":6790},"pond":{"top":6880,"bottom":7440,"x1":11440},"woodland":{"top":6880,"bottom":7440}}},"sky-flower-garden":{"top":6310,"bottom":6460,"zones":["flower-garden"],"layer":3,"float":150},"wall-greenhouse":{"levels":[6300],"zones":["greenhouse"],"inset":60,"scale":[0.85,0.85]},"wallbase-greenhouse":{"levels":[6338],"zones":["greenhouse"],"inset":50},"sky-pond":{"top":6960,"bottom":7110,"zones":["pond"],"layer":3,"float":150},"water-pond":{"x0":11510,"x1":12030,"top":6990,"bottom":7390,"zones":["pond"],"layer":1,"scale":[0.9,0.9]},"sky-woodland":{"top":6960,"bottom":7110,"zones":["woodland"],"layer":3,"float":150}},
-      "place": {},
-      "terrain": {"color":"#c5e1a5","x0":9520,"y0":6160,"x1":12120,"y1":7460,"zones":[{"id":"flower-garden","x0":9520,"y0":6160,"x1":10820,"y1":6810,"indoor":false,"floor":"grass"},{"id":"greenhouse","x0":10820,"y0":6160,"x1":12120,"y1":6810,"indoor":true,"floor":"tile","wallBase":6340},{"id":"pond","x0":10820,"y0":6810,"x1":12120,"y1":7460,"indoor":false,"floor":"paving","pool":{"x0":11470,"y0":6920,"x1":12070,"y1":7420}},{"id":"woodland","x0":9520,"y0":6810,"x1":10820,"y1":7460,"indoor":false,"floor":"grass"}]},
+      "zones": {"flower-garden": [9520, 6160, 10820, 6810], "greenhouse": [10820, 6160, 12120, 6810], "pond": [10820, 6810, 12120, 7460], "woodland": [9520, 6810, 10820, 7460]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"flower-garden": {"top": 6230, "bottom": 6790}, "greenhouse": {"top": 6400, "bottom": 6790}, "pond": {"top": 6880, "bottom": 7440, "x1": 11440}, "woodland": {"top": 6880, "bottom": 7440}}},
+        "sky-flower-garden": {"top": 6310, "bottom": 6460, "zones": ["flower-garden"], "layer": 3, "float": 150},
+        "wall-greenhouse": {"levels": [6300], "zones": ["greenhouse"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-greenhouse": {"levels": [6338], "zones": ["greenhouse"], "inset": 50},
+        "sky-pond": {"top": 6960, "bottom": 7110, "zones": ["pond"], "layer": 3, "float": 150},
+        "water-pond": {"zones": ["pond"], "layer": 1, "x0": 11320, "x1": 12030, "top": 6950, "bottom": 7300, "scale": [1, 1]},
+        "sky-woodland": {"top": 6960, "bottom": 7110, "zones": ["woodland"], "layer": 3, "float": 150}
+      },
+      "place": {
+        "garden-lotus": "water-pond",
+        "garden-waterlily": "water-pond"
+      },
+      "terrain": {"color": "#c5e1a5", "x0": 9520, "y0": 6160, "x1": 12120, "y1": 7460, "zones": [{"id": "flower-garden", "x0": 9520, "y0": 6160, "x1": 10820, "y1": 6810, "indoor": false, "floor": "grass", "details": [{"id": "flowers-visitor-walk", "kind": "path", "x0": 9520, "y0": 6700, "x1": 10820, "y1": 6785}, {"id": "flowers-east-walk", "kind": "path", "x0": 10770, "y0": 6160, "x1": 10820, "y1": 6810}, {"id": "sunflower-bed", "kind": "bed", "x0": 9600, "y0": 6340, "x1": 9945, "y1": 6625, "items": ["garden-sunflower"]}, {"id": "rose-bed", "kind": "bed", "x0": 9995, "y0": 6415, "x1": 10340, "y1": 6650, "items": ["garden-rose"]}, {"id": "tulip-bed", "kind": "bed", "x0": 10385, "y0": 6310, "x1": 10720, "y1": 6585, "items": ["garden-tulip"]}, {"id": "flower-border", "kind": "canopy", "x0": 10010, "y0": 6220, "x1": 10300, "y1": 6310}]}, {"id": "greenhouse", "x0": 10820, "y0": 6160, "x1": 12120, "y1": 6810, "indoor": true, "floor": "tile", "wallBase": 6340, "architecture": "greenhouse", "details": [{"id": "greenhouse-aisle", "kind": "path", "x0": 10820, "y0": 6700, "x1": 12120, "y1": 6785}, {"id": "dry-collection", "kind": "bed", "x0": 10900, "y0": 6450, "x1": 11200, "y1": 6655, "items": ["garden-cactus"], "surface": "sand"}, {"id": "orchid-bench", "kind": "worktop", "x0": 11270, "y0": 6550, "x1": 11580, "y1": 6610, "items": ["garden-orchid"]}, {"id": "humid-collection", "kind": "bed", "x0": 11670, "y0": 6435, "x1": 12020, "y1": 6645, "items": ["garden-pitcher"]}]}, {"id": "pond", "x0": 10820, "y0": 6810, "x1": 12120, "y1": 7460, "indoor": false, "floor": "paving", "details": [{"id": "pond-visitor-walk", "kind": "path", "x0": 10820, "y0": 7350, "x1": 12120, "y1": 7435}, {"id": "pond-east-walk", "kind": "path", "x0": 12070, "y0": 6810, "x1": 12120, "y1": 7460}, {"id": "wetland-pond", "kind": "pond", "x0": 11320, "y0": 6950, "x1": 12030, "y1": 7300, "items": ["garden-lotus", "garden-waterlily"]}, {"id": "fern-shade-bed", "kind": "bed", "x0": 10900, "y0": 7035, "x1": 11230, "y1": 7275, "items": ["garden-fern"]}, {"id": "fern-canopy", "kind": "canopy", "x0": 10910, "y0": 6880, "x1": 11220, "y1": 7015}]}, {"id": "woodland", "x0": 9520, "y0": 6810, "x1": 10820, "y1": 7460, "indoor": false, "floor": "grass", "details": [{"id": "woodland-visitor-walk", "kind": "path", "x0": 9520, "y0": 7350, "x1": 10820, "y1": 7435}, {"id": "woodland-east-walk", "kind": "path", "x0": 10770, "y0": 6810, "x1": 10820, "y1": 7460}, {"id": "bamboo-grove", "kind": "bed", "x0": 9600, "y0": 6910, "x1": 9970, "y1": 7290, "items": ["garden-bamboo"]}, {"id": "bonsai-display", "kind": "plinth", "x0": 10045, "y0": 7155, "x1": 10260, "y1": 7210, "items": ["garden-bonsai"]}, {"id": "palm-grove", "kind": "bed", "x0": 10330, "y0": 6910, "x1": 10730, "y1": 7290, "items": ["garden-palm"]}]}]},
       "arrange": "auto",
       "clusters": [],
       "loose": [],
       "noFlip": [],
-      "motion": {}
+      "motion": {"garden-sunflower": "sway", "garden-tulip": "sway", "garden-bamboo": "sway"}
     },
     "stationery-store": {
       "name": "文具店",
@@ -1400,6 +1439,66 @@
       "motion": {"potted-fern": "sway", "reusable-shopping-bag": "sway", "checkout-belt": "wobble"},
       "arrange": "auto",
       "terrain": {"color": "#80cbc4", "x0": 12360, "y0": 6160, "x1": 17800, "y1": 7460, "zones": [{"id": "entrance", "x0": 12360, "y0": 6160, "x1": 14960, "y1": 6810, "indoor": false, "floor": "paving"}, {"id": "front-display", "x0": 15200, "y0": 6160, "x1": 17800, "y1": 6810, "indoor": true, "floor": "tile", "wallBase": 6340}, {"id": "writing-supplies", "x0": 15200, "y0": 6810, "x1": 17800, "y1": 7460, "indoor": true, "floor": "wood", "wallBase": 6990}, {"id": "checkout-counter", "x0": 12360, "y0": 6810, "x1": 14960, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}]}
+    },
+    "home": {
+      "name": "我的家",
+      "icon": "porch-post",
+      "zones": {"front-yard": [0, 6160, 1300, 6810], "living-room": [1300, 6160, 2600, 6810], "kitchen": [1300, 6810, 2600, 7460], "bedroom": [0, 6810, 1300, 7460]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"front-yard": {"top": 6230, "bottom": 6790}, "living-room": {"top": 6400, "bottom": 6790, "gaps": [[6350, 6570]]}, "kitchen": {"top": 7050, "bottom": 7440, "gaps": [[7000, 7192]]}, "bedroom": {"top": 7050, "bottom": 7440}}},
+        "sky-front-yard": {"top": 6310, "bottom": 6460, "zones": ["front-yard"], "layer": 3, "float": 150},
+        "wall-living-room": {"levels": [6300], "zones": ["living-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-living-room": {"levels": [6338], "zones": ["living-room"], "inset": 50},
+        "surface-living-room": {"levels": [6470], "zones": ["living-room"], "x0": 1450, "x1": 2450, "inset": 0, "scale": [0.8, 0.8], "look": "table", "base": 6540},
+        "wall-kitchen": {"levels": [6950], "zones": ["kitchen"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-kitchen": {"levels": [6988], "zones": ["kitchen"], "inset": 50},
+        "surface-kitchen": {"levels": [7120], "zones": ["kitchen"], "x0": 1450, "x1": 2450, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 7162},
+        "wall-bedroom": {"levels": [6950], "zones": ["bedroom"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-bedroom": {"levels": [6988], "zones": ["bedroom"], "inset": 50}
+      },
+      "place": {
+        "wind-sock-home": "sky-front-yard",
+        "television": "wall-living-room",
+        "table-lamp": "surface-living-room",
+        "wall-clock-home": "wall-living-room",
+        "picture-frame": "surface-living-room",
+        "landscape-painting-home": "wall-living-room",
+        "throw-blanket": "surface-living-room",
+        "vinyl-record-home": "surface-living-room",
+        "chessboard": "surface-living-room",
+        "jigsaw-puzzle": "surface-living-room",
+        "tea-tray": "surface-living-room",
+        "bookcase-home": "wallbase-living-room",
+        "remote-control-home": "surface-living-room",
+        "microwave": "surface-kitchen",
+        "kettle": "surface-kitchen",
+        "rice-cooker": "surface-kitchen",
+        "dish-rack": "surface-kitchen",
+        "saucepan": "surface-kitchen",
+        "grater": "surface-kitchen",
+        "garlic-press": "surface-kitchen",
+        "kitchen-timer": "surface-kitchen",
+        "spice-rack": "surface-kitchen",
+        "oil-bottle": "surface-kitchen",
+        "soap-dispenser": "surface-kitchen",
+        "kitchen-scale": "surface-kitchen",
+        "breadbox": "surface-kitchen",
+        "fruit-bowl": "surface-kitchen",
+        "refrigerator-home": "wallbase-kitchen",
+        "teapot-home": "surface-kitchen",
+        "coffee-maker-home": "surface-kitchen",
+        "toaster-home": "surface-kitchen",
+        "blender-home": "surface-kitchen",
+        "mug-home": "surface-kitchen",
+        "cutting-board-home": "surface-kitchen",
+        "frying-pan-home": "surface-kitchen"
+      },
+      "clusters": [["porch-post", "porch-railing", "garden-thermometer"], ["porch-step", "boot-tray"], ["coffee-table", "floor-rug"], ["piano", "music-stand"], ["bed", "pillow", "duvet"]],
+      "loose": ["welcome-stone", "vinyl-record-home", "fire-poker-home", "jigsaw-puzzle", "remote-control-home", "pillow"],
+      "noFlip": [],
+      "motion": {"porch-swing": "sway", "rain-chain-home": "sway", "wind-spinner": "wobble", "garden-sprinkler": "wobble", "wind-vane": "sway", "hanging-basket": "sway", "wind-sock-home": "drift", "throw-blanket": "sway", "kitchen-cart": "wobble"},
+      "arrange": "auto",
+      "terrain": {"color": "#ffab91", "x0": 0, "y0": 6160, "x1": 2600, "y1": 7460, "zones": [{"id": "front-yard", "x0": 0, "y0": 6160, "x1": 1300, "y1": 6810, "indoor": false, "floor": "grass"}, {"id": "living-room", "x0": 1300, "y0": 6160, "x1": 2600, "y1": 6810, "indoor": true, "floor": "wood", "wallBase": 6340}, {"id": "kitchen", "x0": 1300, "y0": 6810, "x1": 2600, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}, {"id": "bedroom", "x0": 0, "y0": 6810, "x1": 1300, "y1": 7460, "indoor": true, "floor": "carpet", "wallBase": 6990}]}
     }
   }
 }

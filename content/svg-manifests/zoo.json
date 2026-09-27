@@ -5,15 +5,15 @@
   "zones": {
     "savanna": "草原展區",
     "forest": "森林展區",
-    "waterfront": "水邊展區",
-    "bird-garden": "鳥類花園"
+    "waterfront": "企鵝館與爬蟲館",
+    "bird-garden": "鳥園與蝴蝶園"
   },
   "elements": [
     {
       "name": "獅子",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "獅子的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -32,7 +32,7 @@
     },
     {
       "name": "大象",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
       "sizeHint": "large",
       "desc": "大象的正面扁平插畫。",
@@ -53,7 +53,7 @@
     },
     {
       "name": "長頸鹿",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
       "sizeHint": "large",
       "desc": "長頸鹿的正面扁平插畫。",
@@ -74,14 +74,14 @@
     },
     {
       "name": "斑馬",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "斑馬的正面扁平插畫。",
       "ref": {
         "project": "la-game",
         "scene": "zoo",
-        "zone": "forest",
+        "zone": "savanna",
         "itemId": "zoo-zebra",
         "words": {
           "zh-TW": "斑馬",
@@ -95,9 +95,9 @@
     },
     {
       "name": "猴子",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "猴子的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -116,9 +116,9 @@
     },
     {
       "name": "熊貓",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "熊貓的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -137,9 +137,9 @@
     },
     {
       "name": "企鵝",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "企鵝的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -158,9 +158,9 @@
     },
     {
       "name": "烏龜",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "small",
       "desc": "烏龜的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -179,9 +179,9 @@
     },
     {
       "name": "鱷魚",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "鱷魚的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -200,9 +200,9 @@
     },
     {
       "name": "紅鶴",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "紅鶴的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -221,9 +221,9 @@
     },
     {
       "name": "蝴蝶",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "medium",
+      "sizeHint": "small",
       "desc": "蝴蝶的正面扁平插畫。",
       "ref": {
         "project": "la-game",
@@ -242,9 +242,9 @@
     },
     {
       "name": "孔雀",
-      "category": "生物與物品",
+      "category": "動物",
       "lane": "b",
-      "sizeHint": "large",
+      "sizeHint": "medium",
       "desc": "孔雀的正面扁平插畫。",
       "ref": {
         "project": "la-game",

@@ -103,10 +103,10 @@
     "itemCount": 12,
     "icon": {
       "viewBox": [
-        0,
-        0,
-        120,
-        120
+        10,
+        14,
+        100,
+        86
       ],
       "body": "<g stroke=\"#34433f\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"14\" y=\"18\" width=\"92\" height=\"67\" rx=\"2\" fill=\"#4d795e\"/><rect x=\"19\" y=\"23\" width=\"82\" height=\"57\" rx=\"0\" fill=\"#32654e\"/><path d=\"M30 63q13-28 25-5 M59 54h25 M25 88h70\" fill=\"none\" stroke-width=\"3\"/><rect x=\"42\" y=\"88\" width=\"36\" height=\"8\" rx=\"1\" fill=\"#b88b68\"/></g>"
     }
@@ -361,6 +361,20 @@
         140
       ],
       "body": "<rect x=\"4\" y=\"5\" width=\"152\" height=\"135\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"12\" y=\"13\" width=\"136\" height=\"119\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"18\" y=\"20\" width=\"124\" height=\"104\" fill=\"#fafafa\"/><rect x=\"28\" y=\"48\" width=\"9\" height=\"67\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"28,48 32,37 37,48\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"51\" y=\"40\" width=\"9\" height=\"75\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"51,40 55,29 60,40\" fill=\"#ffb74d\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"74\" y=\"51\" width=\"9\" height=\"64\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"74,51 78,40 83,51\" fill=\"#f48fb1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"13\" width=\"136\" height=\"6\" fill=\"#ffffff\" opacity=\"0.3\"/>"
+    }
+  },
+  {
+    "id": "home",
+    "name": "我的家",
+    "itemCount": 78,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        140,
+        180
+      ],
+      "body": "<rect x=\"43\" y=\"10\" width=\"54\" height=\"12\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"50\" y=\"22\" width=\"40\" height=\"142\" fill=\"#ffffff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"46\" y=\"34\" width=\"48\" height=\"5\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"46\" y=\"145\" width=\"48\" height=\"6\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"158\" width=\"56\" height=\"12\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"54\" y=\"24\" width=\"6\" height=\"119\" fill=\"#ffffff\" opacity=\"0.3\"/>"
     }
   }
 ]

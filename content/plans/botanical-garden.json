@@ -12,5 +12,157 @@
     "added": 0,
     "at": "2026-09-27T07:49:42.687Z"
   },
-  "elements": []
+  "elements": [
+    {
+      "id": "garden-sunflower",
+      "zone": "flower-garden",
+      "zh": "向日葵",
+      "en": "sunflower",
+      "ja": "ひまわり",
+      "reading": "ひまわり",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-rose",
+      "zone": "flower-garden",
+      "zh": "玫瑰",
+      "en": "rose",
+      "ja": "バラ",
+      "reading": "ばら",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-tulip",
+      "zone": "flower-garden",
+      "zh": "鬱金香",
+      "en": "tulip",
+      "ja": "チューリップ",
+      "reading": "ちゅーりっぷ",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-cactus",
+      "zone": "greenhouse",
+      "zh": "仙人掌",
+      "en": "cactus",
+      "ja": "サボテン",
+      "reading": "さぼてん",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-orchid",
+      "zone": "greenhouse",
+      "zh": "蘭花",
+      "en": "orchid",
+      "ja": "蘭",
+      "reading": "らん",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-pitcher",
+      "zone": "greenhouse",
+      "zh": "豬籠草",
+      "en": "pitcher plant",
+      "ja": "ウツボカズラ",
+      "reading": "うつぼかずら",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-lotus",
+      "zone": "pond",
+      "zh": "蓮花",
+      "en": "lotus",
+      "ja": "蓮",
+      "reading": "はす",
+      "size": "medium",
+      "spot": "water"
+    },
+    {
+      "id": "garden-waterlily",
+      "zone": "pond",
+      "zh": "睡蓮",
+      "en": "water lily",
+      "ja": "睡蓮",
+      "reading": "すいれん",
+      "size": "medium",
+      "spot": "water"
+    },
+    {
+      "id": "garden-fern",
+      "zone": "pond",
+      "zh": "蕨類",
+      "en": "fern",
+      "ja": "シダ",
+      "reading": "しだ",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-bamboo",
+      "zone": "woodland",
+      "zh": "竹子",
+      "en": "bamboo",
+      "ja": "竹",
+      "reading": "たけ",
+      "size": "large",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-bonsai",
+      "zone": "woodland",
+      "zh": "盆栽",
+      "en": "bonsai",
+      "ja": "盆栽",
+      "reading": "ぼんさい",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "garden-palm",
+      "zone": "woodland",
+      "zh": "棕櫚樹",
+      "en": "palm tree",
+      "ja": "ヤシの木",
+      "reading": "やしのき",
+      "size": "large",
+      "spot": "ground"
+    }
+  ],
+  "zones": [
+    {
+      "id": "flower-garden",
+      "name": "花卉庭園",
+      "indoor": false,
+      "floor": "grass",
+      "feature": "none"
+    },
+    {
+      "id": "greenhouse",
+      "name": "乾燥與濕潤溫室",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    },
+    {
+      "id": "pond",
+      "name": "水生植物池",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "woodland",
+      "name": "林蔭步道",
+      "indoor": false,
+      "floor": "grass",
+      "feature": "none"
+    }
+  ],
+  "layoutReference": "docs/scene-review.md"
 }

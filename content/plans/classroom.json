@@ -12,5 +12,157 @@
     "added": 0,
     "at": "2026-09-27T07:49:42.690Z"
   },
-  "elements": []
+  "elements": [
+    {
+      "id": "class-blackboard",
+      "zone": "teacher-area",
+      "zh": "黑板",
+      "en": "blackboard",
+      "ja": "黒板",
+      "reading": "こくばん",
+      "size": "large",
+      "spot": "ground"
+    },
+    {
+      "id": "class-teacherdesk",
+      "zone": "teacher-area",
+      "zh": "講桌",
+      "en": "teacher’s desk",
+      "ja": "教卓",
+      "reading": "きょうたく",
+      "size": "large",
+      "spot": "ground"
+    },
+    {
+      "id": "class-globeclass",
+      "zone": "teacher-area",
+      "zh": "地球儀",
+      "en": "globe",
+      "ja": "地球儀",
+      "reading": "ちきゅうぎ",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "class-studentdesk",
+      "zone": "student-area",
+      "zh": "課桌",
+      "en": "school desk",
+      "ja": "学習机",
+      "reading": "がくしゅうづくえ",
+      "size": "large",
+      "spot": "ground"
+    },
+    {
+      "id": "class-chairclass",
+      "zone": "student-area",
+      "zh": "椅子",
+      "en": "chair",
+      "ja": "椅子",
+      "reading": "いす",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "class-backpack",
+      "zone": "student-area",
+      "zh": "書包",
+      "en": "school bag",
+      "ja": "ランドセル",
+      "reading": "らんどせる",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "class-textbook",
+      "zone": "reading-area",
+      "zh": "課本",
+      "en": "textbook",
+      "ja": "教科書",
+      "reading": "きょうかしょ",
+      "size": "small",
+      "spot": "ground"
+    },
+    {
+      "id": "class-notebookclass",
+      "zone": "reading-area",
+      "zh": "筆記本",
+      "en": "notebook",
+      "ja": "ノート",
+      "reading": "のーと",
+      "size": "small",
+      "spot": "ground"
+    },
+    {
+      "id": "class-pencilclass",
+      "zone": "reading-area",
+      "zh": "鉛筆",
+      "en": "pencil",
+      "ja": "鉛筆",
+      "reading": "えんぴつ",
+      "size": "small",
+      "spot": "ground"
+    },
+    {
+      "id": "class-rulerclass",
+      "zone": "math-area",
+      "zh": "尺",
+      "en": "ruler",
+      "ja": "定規",
+      "reading": "じょうぎ",
+      "size": "small",
+      "spot": "ground"
+    },
+    {
+      "id": "class-clockclass",
+      "zone": "teacher-area",
+      "zh": "時鐘",
+      "en": "clock",
+      "ja": "時計",
+      "reading": "とけい",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "class-abacus",
+      "zone": "math-area",
+      "zh": "算盤",
+      "en": "abacus",
+      "ja": "そろばん",
+      "reading": "そろばん",
+      "size": "medium",
+      "spot": "ground"
+    }
+  ],
+  "zones": [
+    {
+      "id": "teacher-area",
+      "name": "黑板與講台",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "none"
+    },
+    {
+      "id": "student-area",
+      "name": "課桌與中央走道",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "none"
+    },
+    {
+      "id": "reading-area",
+      "name": "閱讀角",
+      "indoor": true,
+      "floor": "carpet",
+      "feature": "none"
+    },
+    {
+      "id": "math-area",
+      "name": "數學角",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "none"
+    }
+  ],
+  "layoutReference": "docs/scene-review.md"
 }

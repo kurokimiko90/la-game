@@ -1,14 +1,14 @@
 {
-  "class-abacus": { "x": 4703, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": false },
-  "class-backpack": { "x": 6103, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "class-blackboard": { "x": 3977, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "class-chairclass": { "x": 5690, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "class-clockclass": { "x": 4083, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": false },
-  "class-globeclass": { "x": 4803, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "class-notebookclass": { "x": 6003, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": true },
-  "class-pencilclass": { "x": 5724, "y": 7210, "w": 133, "h": 133, "rotate": 0, "flip": false },
-  "class-rulerclass": { "x": 4424, "y": 7210, "w": 133, "h": 133, "rotate": 0, "flip": true },
-  "class-studentdesk": { "x": 5277, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "class-teacherdesk": { "x": 4390, "y": 6395, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "class-textbook": { "x": 5383, "y": 6953, "w": 195, "h": 195, "rotate": 0, "flip": true }
+  "class-abacus": { "x": 5578, "y": 7180, "w": 105, "h": 105, "rotate": 0, "flip": false },
+  "class-backpack": { "x": 4793, "y": 6836, "w": 85, "h": 94, "rotate": 0, "flip": false },
+  "class-blackboard": { "x": 5045, "y": 6172, "w": 190, "h": 163, "rotate": 0, "flip": false },
+  "class-chairclass": { "x": 4640, "y": 6840, "w": 100, "h": 125, "rotate": 0, "flip": false },
+  "class-clockclass": { "x": 4458, "y": 6215, "w": 65, "h": 65, "rotate": 0, "flip": false },
+  "class-globeclass": { "x": 5936, "y": 6388, "w": 68, "h": 92, "rotate": 0, "flip": false },
+  "class-notebookclass": { "x": 4109, "y": 7206, "w": 62, "h": 79, "rotate": 0, "flip": false },
+  "class-pencilclass": { "x": 4224, "y": 7245, "w": 32, "h": 40, "rotate": 0, "flip": false },
+  "class-rulerclass": { "x": 5790, "y": 7240, "w": 70, "h": 45, "rotate": 0, "flip": false },
+  "class-studentdesk": { "x": 4580, "y": 6617, "w": 220, "h": 183, "rotate": 0, "flip": false },
+  "class-teacherdesk": { "x": 5050, "y": 6316, "w": 180, "h": 184, "rotate": 0, "flip": false },
+  "class-textbook": { "x": 3975, "y": 7207, "w": 80, "h": 78, "rotate": 0, "flip": false }
 }

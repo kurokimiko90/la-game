@@ -12,5 +12,157 @@
     "added": 0,
     "at": "2026-09-27T07:49:42.678Z"
   },
-  "elements": []
+  "elements": [
+    {
+      "id": "zoo-lion",
+      "zone": "savanna",
+      "zh": "獅子",
+      "en": "lion",
+      "ja": "ライオン",
+      "reading": "らいおん",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-elephant",
+      "zone": "savanna",
+      "zh": "大象",
+      "en": "elephant",
+      "ja": "象",
+      "reading": "ぞう",
+      "size": "large",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-giraffe",
+      "zone": "savanna",
+      "zh": "長頸鹿",
+      "en": "giraffe",
+      "ja": "キリン",
+      "reading": "きりん",
+      "size": "large",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-zebra",
+      "zone": "savanna",
+      "zh": "斑馬",
+      "en": "zebra",
+      "ja": "シマウマ",
+      "reading": "しまうま",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-monkey",
+      "zone": "forest",
+      "zh": "猴子",
+      "en": "monkey",
+      "ja": "猿",
+      "reading": "さる",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-panda",
+      "zone": "forest",
+      "zh": "熊貓",
+      "en": "panda",
+      "ja": "パンダ",
+      "reading": "ぱんだ",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-penguin",
+      "zone": "waterfront",
+      "zh": "企鵝",
+      "en": "penguin",
+      "ja": "ペンギン",
+      "reading": "ぺんぎん",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-turtle",
+      "zone": "waterfront",
+      "zh": "烏龜",
+      "en": "turtle",
+      "ja": "亀",
+      "reading": "かめ",
+      "size": "small",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-crocodile",
+      "zone": "waterfront",
+      "zh": "鱷魚",
+      "en": "crocodile",
+      "ja": "ワニ",
+      "reading": "わに",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-flamingo",
+      "zone": "bird-garden",
+      "zh": "紅鶴",
+      "en": "flamingo",
+      "ja": "フラミンゴ",
+      "reading": "ふらみんご",
+      "size": "medium",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-butterfly",
+      "zone": "bird-garden",
+      "zh": "蝴蝶",
+      "en": "butterfly",
+      "ja": "蝶",
+      "reading": "ちょう",
+      "size": "small",
+      "spot": "ground"
+    },
+    {
+      "id": "zoo-peacock",
+      "zone": "bird-garden",
+      "zh": "孔雀",
+      "en": "peacock",
+      "ja": "クジャク",
+      "reading": "くじゃく",
+      "size": "medium",
+      "spot": "ground"
+    }
+  ],
+  "zones": [
+    {
+      "id": "savanna",
+      "name": "草原展區",
+      "indoor": false,
+      "floor": "grass",
+      "feature": "none"
+    },
+    {
+      "id": "forest",
+      "name": "森林展區",
+      "indoor": false,
+      "floor": "grass",
+      "feature": "none"
+    },
+    {
+      "id": "waterfront",
+      "name": "企鵝館與爬蟲館",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "bird-garden",
+      "name": "鳥園與蝴蝶園",
+      "indoor": false,
+      "floor": "grass",
+      "feature": "none"
+    }
+  ],
+  "layoutReference": "docs/scene-review.md"
 }

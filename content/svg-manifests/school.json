@@ -123,7 +123,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "pencil",
         "words": {
           "zh-TW": "鉛筆",
@@ -144,7 +144,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "eraser",
         "words": {
           "zh-TW": "橡皮擦",
@@ -165,7 +165,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "ruler",
         "words": {
           "zh-TW": "尺",
@@ -186,7 +186,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "pencil-case",
         "words": {
           "zh-TW": "鉛筆盒",
@@ -207,7 +207,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "crayon",
         "words": {
           "zh-TW": "蠟筆",
@@ -228,7 +228,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "glue-stick",
         "words": {
           "zh-TW": "口紅膠",
@@ -249,7 +249,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "school-gate",
+        "zone": "classroom",
         "itemId": "scissors",
         "words": {
           "zh-TW": "剪刀",
@@ -879,7 +879,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "classroom",
+        "zone": "library",
         "itemId": "pencil-sharpener",
         "words": {
           "zh-TW": "削鉛筆機",
@@ -963,7 +963,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "classroom",
+        "zone": "library",
         "itemId": "stapler",
         "words": {
           "zh-TW": "訂書機",
@@ -984,7 +984,7 @@
       "ref": {
         "project": "la-game",
         "scene": "school",
-        "zone": "classroom",
+        "zone": "library",
         "itemId": "tape-dispenser",
         "words": {
           "zh-TW": "膠帶台",

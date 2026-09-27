@@ -1,14 +1,14 @@
 {
-  "zoo-butterfly": { "x": 7264, "y": 7167, "w": 133, "h": 133, "rotate": 0, "flip": false },
-  "zoo-crocodile": { "x": 8203, "y": 7095, "w": 205, "h": 205, "rotate": 0, "flip": true },
-  "zoo-elephant": { "x": 7230, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": true },
-  "zoo-flamingo": { "x": 6923, "y": 6825, "w": 195, "h": 195, "rotate": 0, "flip": false },
-  "zoo-giraffe": { "x": 7643, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "zoo-lion": { "x": 6817, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "zoo-monkey": { "x": 8530, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "zoo-panda": { "x": 8943, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": false },
-  "zoo-peacock": { "x": 7543, "y": 6825, "w": 195, "h": 195, "rotate": 0, "flip": false },
-  "zoo-penguin": { "x": 8061, "y": 6825, "w": 195, "h": 195, "rotate": 0, "flip": true },
-  "zoo-turtle": { "x": 8356, "y": 6825, "w": 195, "h": 195, "rotate": 0, "flip": true },
-  "zoo-zebra": { "x": 8117, "y": 6310, "w": 200, "h": 200, "rotate": 0, "flip": true }
+  "zoo-butterfly": { "x": 7298, "y": 7090, "w": 65, "h": 65, "rotate": 0, "flip": false },
+  "zoo-crocodile": { "x": 8918, "y": 7065, "w": 175, "h": 175, "rotate": 0, "flip": false },
+  "zoo-elephant": { "x": 7148, "y": 6345, "w": 215, "h": 215, "rotate": 0, "flip": false },
+  "zoo-flamingo": { "x": 6873, "y": 7085, "w": 115, "h": 115, "rotate": 0, "flip": false },
+  "zoo-giraffe": { "x": 7528, "y": 6350, "w": 165, "h": 165, "rotate": 0, "flip": false },
+  "zoo-lion": { "x": 6818, "y": 6425, "w": 145, "h": 145, "rotate": 0, "flip": false },
+  "zoo-monkey": { "x": 8273, "y": 6425, "w": 125, "h": 125, "rotate": 0, "flip": false },
+  "zoo-panda": { "x": 8868, "y": 6440, "w": 155, "h": 155, "rotate": 0, "flip": false },
+  "zoo-peacock": { "x": 7650, "y": 7095, "w": 140, "h": 140, "rotate": 0, "flip": false },
+  "zoo-penguin": { "x": 8073, "y": 7070, "w": 115, "h": 115, "rotate": 0, "flip": false },
+  "zoo-turtle": { "x": 8493, "y": 7150, "w": 85, "h": 85, "rotate": 0, "flip": false },
+  "zoo-zebra": { "x": 7708, "y": 6485, "w": 145, "h": 145, "rotate": 0, "flip": false }
 }
