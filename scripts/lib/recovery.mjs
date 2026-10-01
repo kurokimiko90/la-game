@@ -47,3 +47,12 @@ export function resumeIfDue(state, now) {
 }
 
 export const isSkipped = (state, id, kind) => (state.skipped ?? []).some((s) => s.id === id && s.kind === kind);
+
+/**
+ * 閒置（沒有 slot、主題用完、到達上限）時的原因；排程每 30 分鐘叫一次，同樣的原因只記一次 log。
+ * @returns {{ state: object, changed: boolean }}
+ */
+export function idleNotice(state, reason) {
+  if (state.idleReason === reason) return { state, changed: false };
+  return { state: { ...state, idleReason: reason }, changed: true };
+}

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { GIVE_UP_AFTER, backoffMs, isSkipped, onFailure, resumeIfDue } from '../../scripts/lib/recovery.mjs';
+import { GIVE_UP_AFTER, backoffMs, idleNotice, isSkipped, onFailure, resumeIfDue } from '../../scripts/lib/recovery.mjs';
 
 const NOW = Date.parse('2026-09-26T10:00:00+09:00');
 const bank = { theme: { id: 'bank', name: '銀行', zone: 'commercial' }, slot: { x: 9520, y: 3080 } };
@@ -94,5 +94,19 @@ describe('isSkipped', () => {
     expect(isSkipped(state, 'bank', 'topUp')).toBe(false);
     expect(isSkipped(state, 'park', 'topUp')).toBe(true);
     expect(isSkipped({}, 'bank', 'theme')).toBe(false);
+  });
+});
+
+describe('idleNotice', () => {
+  it('同樣的閒置原因只記一次', () => {
+    const first = idleNotice({ phase: 'idle' }, '沒有空的 slot 了');
+    expect(first.changed).toBe(true);
+    expect(first.state.idleReason).toBe('沒有空的 slot 了');
+    const again = idleNotice(first.state, '沒有空的 slot 了');
+    expect(again.changed).toBe(false);
+    expect(again.state).toBe(first.state);
+  });
+  it('原因變了要再記', () => {
+    expect(idleNotice({ idleReason: '沒有空的 slot 了' }, '主題用完了').changed).toBe(true);
   });
 });

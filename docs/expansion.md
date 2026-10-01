@@ -9,14 +9,18 @@
 idle
  │ 挑下一個主題與 slot（content/expansion.json）
  │ miko-ws codex：規劃 4 個區域（室內外、地面、地形特徵）→ 每區 itemsPerScene / 4 個物品（中英日、讀音、描述、位置；至少一半放地上）
- │ 驗證（格式、跨場景不重複、描述不含文字）→ content/plans/<id>.json、content/svg-manifests/<id>.json
+ │ 驗證（格式、跨場景不重複、描述不含文字）
+ │ 單字審核（codex 當語言老師：日文自然度、讀音、台灣中文、場景合理）→ 修正 zh/ja/reading 或丟掉
+ │ → content/plans/<id>.json（套用的修正記在 reviewFixes）、content/svg-manifests/<id>.json
  │ 登記 miko-ws jobs.json
 generating
  │ miko-ws 生成 SVG（背景程序，每批 6 個）
  │ 生成失敗的隔輪退回重排（最多 maxRequeueRounds 輪）；「LLM 判定無合適圖」是永久失敗，不重排
 integrating
  │ sync-svg → 寫 scene-config（區域、地帶、群組、動態、地形）→ 擺放 → build → 音檔
- │ vitest、tsc、eslint、Playwright E2E 全過 → 在本檔第 5 節記一筆 → commit
+ │ vitest、tsc、eslint、Playwright E2E 全過
+ │ 渲染檢查（Chrome 畫每個 SVG：空白、剪影、渲染失敗）→ 列入待人工審（.auto-expand/review-queue.json，不擋 commit）
+ │ → 在本檔第 5 節記一筆 → commit
 idle（下一個場景）
 ```
 
@@ -31,6 +35,12 @@ idle（下一個場景）
   - git 撞到 `index.lock`：有 git 在跑就等 5 秒重試；沒有 git 在跑、鎖放超過 10 分鐘就當殘留刪掉（`scripts/lib/git-lock.mjs`）
   - commit 失敗時 `docs/expansion.md` 的紀錄會拿掉，重試不會一筆變多筆
   - 錯誤在 `.auto-expand/state.json`，各步驟輸出在 `.auto-expand/<步驟>.log`
+- **品質關卡**（2026-10-01 起）：
+  - 單字審核 `scripts/lib/vocab-review.mjs`：修正只能改 zh / ja / reading（圖是照英文畫的，改英文等於換東西）；
+    審核想丟掉超過 20% 就當作審核不可靠，不丟物品只套修正；審核失敗照原樣放行。
+  - 渲染檢查 `scripts/check-svg-render.mjs`（規則在 `scripts/lib/svg-render-check.mjs`）：只抓「畫壞了」，抓不到「畫得不像」。
+    `--status` 會列出待人工審的街區；看圖用 `node scripts/preview-sheet.mjs <scene>`，看完從 `review-queue.json` 刪掉。
+  - 閒置（沒有 slot、主題用完、到上限）同樣的原因只記一次 log。
 - **只 commit 到 `feat/expand-scenes`**，不 push。
 - 物品少於 `minItems`（生成失敗太多）也算失敗。
 
@@ -91,7 +101,9 @@ y4620  機場         │  │          │  │ 圖書館       │  │ 海邊
 ## 4. 已知限制
 
 - 地形是模板，不像前 4 個場景那樣為每個地方量身畫（例如車站沒有站房外觀）。
-- SVG 品質只有機械驗證（miko-ws 驗證器），沒有人看過就 commit。要人工檢查：開著 server 跑 `npm run content:scene-preview`。
+- SVG 像不像描述沒有自動檢查：miko-ws 的 LLM 閘道（`/api/llm/text`）只收文字，要讓 LLM 看圖得先在 miko-ws 加圖片輸入。
+  目前只有渲染檢查 + 待人工審清單。人工檢查：開著 server 跑 `npm run content:scene-preview`。
+- 單字審核本身也會錯（2026-10-01 實測：曾把泳帽判成不屬於健身房、給錯讀音），所以修正記在 plan 的 `reviewFixes` 可追查。
 - 場景越多，整張地圖的物件越多；手機效能還沒實測（見 planning.md 風險表）。
 - codex 忙的時候整批會逾時（2026-09-21 晚上車站 53 個失敗），靠隔輪重排補回來。
 

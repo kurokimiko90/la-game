@@ -26,7 +26,8 @@ import {
 } from './lib/scene-plan.mjs';
 import { placeScene } from './lib/placement.mjs';
 import { localIso } from './lib/local-time.mjs';
-import { isSkipped, onFailure, resumeIfDue } from './lib/recovery.mjs';
+import { idleNotice, isSkipped, onFailure, resumeIfDue } from './lib/recovery.mjs';
+import { MAX_REJECT_RATIO, applyReview, buildReviewPrompt } from './lib/vocab-review.mjs';
 import { isLockError, lockAction } from './lib/git-lock.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
@@ -35,6 +36,7 @@ const STATE_DIR = path.join(ROOT, '.auto-expand');
 const STATE_FILE = path.join(STATE_DIR, 'state.json');
 const LOCK_FILE = path.join(STATE_DIR, 'lock');
 const LOG_FILE = path.join(STATE_DIR, 'auto-expand.log');
+const REVIEW_QUEUE = path.join(STATE_DIR, 'review-queue.json');
 const P = {
   settings: path.join(ROOT, 'content', 'expansion.json'),
   config: path.join(ROOT, 'content', 'scene-config.json'),
@@ -188,6 +190,25 @@ function summarizeRejected(rejected) {
   return [...counts].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${n}`).join('、') || '（codex 沒回物品）';
 }
 
+/**
+ * 單字審核（scripts/lib/vocab-review.mjs）：格式驗證過的物品再請 codex 當語言老師審一次，有修正就套用、改不好的丟掉。
+ * 審核本身失敗（連不上、回的不是 JSON）就照原樣放行，不擋流程。
+ */
+async function reviewVocab(sceneName, elements, zoneList = []) {
+  if (!elements.length) return { ok: elements, fixed: [], rejected: [] };
+  try {
+    const zones = Object.fromEntries(zoneList.map((z) => [z.id, z.name]));
+    const { items } = extractJson(await codexText(buildReviewPrompt({ sceneName, elements, zones })));
+    const r = applyReview(elements, items);
+    if (r.unreliable) log(`單字審核想丟掉的超過 ${MAX_REJECT_RATIO * 100}%，當作審核不可靠：不丟物品，只套用修正`);
+    log(`單字審核：${elements.length} 個，修正 ${r.fixed.length}、丟掉 ${r.rejected.length}${r.rejected.length ? `（${r.rejected.map((x) => `${x.id} ${x.reason}`).join('、').slice(0, 300)}）` : ''}`);
+    return r;
+  } catch (e) {
+    log(`單字審核沒做成，照原樣放行：${e.message.split('\n')[0]}`);
+    return { ok: elements, fixed: [], rejected: [] };
+  }
+}
+
 async function planScene(theme, slot, colorIndex, settings) {
   const config = readJson(P.config);
   log(`規劃 ${theme.name}（${theme.id}），位置 ${slot.x},${slot.y}`);
@@ -203,12 +224,17 @@ async function planScene(theme, slot, colorIndex, settings) {
     elements.push(...r.elements);
     rejected.push(...r.rejected);
   }
+  const review = await reviewVocab(outline.name, elements, outline.zones);
+  elements.splice(0, elements.length, ...review.ok);
+  rejected.push(...review.rejected);
   if (elements.length < settings.minItems) {
     log(`不合格原因：${summarizeRejected(rejected)}`);
     throw Object.assign(new Error(`規劃只得到 ${elements.length} 個合格物品（至少要 ${settings.minItems}）`), { skippable: true });
   }
 
-  const plan = { ...outline, slot, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, createdAt: localIso() };
+  const plan = {
+    ...outline, slot, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, reviewFixes: review.fixed, createdAt: localIso(),
+  };
   writeJson(path.join(P.plans, `${plan.id}.json`), plan);
   const manifestFile = path.join(P.manifests, `${plan.id}.json`);
   writeJson(manifestFile, planToManifest(plan));
@@ -254,10 +280,14 @@ async function planTopUp({ plan, shortfall }, settings) {
     added.push(...r.elements);
     rejected.push(...r.rejected);
   }
+  const review = await reviewVocab(plan.name, added, plan.zones ?? []);
+  added.splice(0, added.length, ...review.ok);
+  rejected.push(...review.rejected);
   const next = {
     ...plan,
     elements: [...plan.elements, ...added],
     rejected: [...(plan.rejected ?? []), ...rejected],
+    reviewFixes: [...(plan.reviewFixes ?? []), ...review.fixed],
     topUp: { itemsPerScene: targetOf(plan, settings), added: added.length, at: localIso() },
   };
   writeJson(path.join(P.plans, `${plan.id}.json`), next);
@@ -292,6 +322,23 @@ function integrateCore(plan, available) {
   return available.length;
 }
 
+/**
+ * 渲染檢查（scripts/check-svg-render.mjs）：抓空白、剪影、渲染失敗的 SVG，連同場景一起進待人工審清單（--status 看得到）。
+ * 只標記、不擋 commit；SVG 像不像 desc 還是要人看（node scripts/preview-sheet.mjs <scene>）。
+ */
+function renderReview(sceneId) {
+  try {
+    const out = path.join(STATE_DIR, 'svg-render.json');
+    run('svg-render', process.execPath, ['scripts/check-svg-render.mjs', sceneId, `--out=${out}`]);
+    const flagged = readJson(out).filter((r) => r.flag).map(({ id, flag }) => ({ id, flag }));
+    const queue = fs.existsSync(REVIEW_QUEUE) ? readJson(REVIEW_QUEUE) : {};
+    writeJson(REVIEW_QUEUE, { ...queue, [sceneId]: { at: localIso(), flagged } });
+    log(`渲染檢查 ${sceneId}：${flagged.length ? flagged.map((f) => `${f.id}（${f.flag}）`).join('、') : '沒有問題'}，已列入待人工審`);
+  } catch (e) {
+    log(`渲染檢查沒做成：${e.message.split('\n')[0]}`);
+  }
+}
+
 function runChecks(sceneId) {
   run('build-scenes', process.execPath, ['scripts/build-scenes.mjs']);
   run('audio', process.execPath, ['scripts/build-audio.mjs']);
@@ -300,6 +347,7 @@ function runChecks(sceneId) {
   run('typecheck', 'npx', ['tsc', '--noEmit']);
   run('lint', 'npx', ['eslint']);
   run('e2e', 'npm', ['run', 'test:e2e']);
+  renderReview(sceneId);
 }
 
 async function integrate(plan, settings, { topUp = false, restage = false } = {}) {
@@ -384,6 +432,14 @@ function reloadPlay() {
 
 // ── 狀態機 ────────────────────────────────────────────────────────────
 
+/** 閒置原因只在第一次（或換了原因）記 log，排程每 30 分鐘叫一次不會洗版 */
+function logIdle(state, reason) {
+  const notice = idleNotice(state, reason);
+  if (!notice.changed) return;
+  saveState(notice.state);
+  log(`${reason}（之後同樣的原因不再記）`);
+}
+
 /**
  * 推進一步。回傳 true 表示下一步不用等排程，可以馬上接著跑（規劃完 → 開始生成、重排失敗 → 重開生成、commit 完 → 下一個）。
  * afterGenerator：由生成器結束後的接續呼叫進來。
@@ -407,7 +463,7 @@ async function tick({ afterGenerator = false } = {}) {
     const topUp = candidates.find((c) => c.plan.id === state.current?.id) ?? candidates[0];
     if (topUp) {
       const { id } = topUp.plan;
-      saveState({ ...state, phase: 'planning', current: { id, topUp: true } });
+      saveState({ ...state, phase: 'planning', current: { id, topUp: true }, idleReason: undefined });
       if (!(await planTopUp(topUp, settings))) {
         saveState({ ...state, phase: 'idle', current: null });
         log(`${id} 沒有補到合格的物品，略過`);
@@ -417,13 +473,13 @@ async function tick({ afterGenerator = false } = {}) {
       return true;
     }
     const config = readJson(P.config);
-    if (state.history.length >= settings.maxScenes) return log(`已完成 ${state.history.length} 個場景，達到上限 ${settings.maxScenes}`);
+    if (state.history.length >= settings.maxScenes) return logIdle(state, `已完成 ${state.history.length} 個場景，達到上限 ${settings.maxScenes}`);
     const theme = state.current?.theme ?? pickTheme(settings, config, state);
     // 物品多（itemsPerScene 超過 wideAbove）的街區佔兩格；找不到相鄰的兩格就退回一格
     const span = settings.itemsPerScene > (settings.wideAbove ?? Infinity) ? 2 : 1;
     const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots(), theme?.zone, span) ?? nextSlot(settings.slots, usedSlots(), theme?.zone);
-    if (!theme || !slot) return log(theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
-    saveState({ ...state, phase: 'planning', current: { theme, slot } });
+    if (!theme || !slot) return logIdle(state, theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
+    saveState({ ...state, phase: 'planning', current: { theme, slot }, idleReason: undefined });
     const plan = await planScene(theme, slot, usedSlots().length, settings);
     saveState({ ...state, phase: 'generating', attempts: undefined, current: { id: plan.id, slug: `la-${plan.id}`, rounds: 0, startedAt: localIso() } });
     return true;
@@ -476,8 +532,11 @@ function printStatus() {
   const s = loadState();
   console.log(JSON.stringify({
     phase: s.phase, current: s.current, error: s.error, attempts: s.attempts, retryAt: s.retryAt && localIso(new Date(s.retryAt)),
-    skipped: (s.skipped ?? []).map((x) => `${x.kind}:${x.id}`), done: s.history.map((h) => `${h.name}(${h.items})`),
+    idle: s.idleReason, skipped: (s.skipped ?? []).map((x) => `${x.kind}:${x.id}`), done: s.history.map((h) => `${h.name}(${h.items})`),
   }, null, 2));
+  const queue = fs.existsSync(REVIEW_QUEUE) ? readJson(REVIEW_QUEUE) : {};
+  const pending = Object.entries(queue).map(([id, q]) => `${id}${q.flagged.length ? `（${q.flagged.map((f) => f.id).join('、')}）` : ''}`);
+  if (pending.length) console.log(`待人工審（node scripts/preview-sheet.mjs <scene> 看圖；看完從 .auto-expand/review-queue.json 刪掉）：${pending.join('、')}`);
   const settings = readJson(P.settings);
   const topUp = topUpCandidates(settings, s).map(({ plan, shortfall }) => `${plan.name} +${shortfall.reduce((n, x) => n + x.need, 0)}`);
   if (topUp.length) console.log(`待補元素（目標 ${settings.itemsPerScene} 個、手畫場景看各自的 itemsTarget，topUp ${settings.topUp ? '開' : '關'}）：${topUp.join('、')}`);
