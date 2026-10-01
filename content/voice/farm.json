@@ -437,6 +437,162 @@
       "score": 1,
       "take": "en-1790876791199.aac",
       "account": "chatgpt1"
+    },
+    "barrel-farm": {
+      "heard": "cask",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stool-farm": {
+      "heard": "Barstools.",
+      "score": 0.89,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "boot-scraper-farm": {
+      "heard": "Boot Scraper.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "horse-trailer": {
+      "heard": "Horse trailer.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "manure-fork": {
+      "heard": "Manure fork.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stable-broom": {
+      "heard": "Stable Broom",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stable-scraper": {
+      "heard": "Manure Scraper",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "hoof-rasp": {
+      "heard": "Hoof rasp.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stable-rake": {
+      "heard": "Stable rake.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stable-mat": {
+      "heard": "Stable mat.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stable-drain-grate": {
+      "heard": "Stable drain grate.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "lambing-pen": {
+      "heard": "Laming pen.",
+      "score": 0.9,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "stable-latch": {
+      "heard": "Install latch.",
+      "score": 0.83,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "shepherds-crook": {
+      "heard": "Shepherd's Crook",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "sheepdog-whistle": {
+      "heard": "Bell, sheepdog whistles.",
+      "score": 0.75,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "salt-lick": {
+      "heard": "Salt Lick.",
+      "score": 1,
+      "take": "en-1790877538451.aac",
+      "account": "chatgpt1"
+    },
+    "spittoon": {
+      "heard": "Spittoon.",
+      "score": 1,
+      "take": "en-1790877660782.aac",
+      "account": "chatgpt1"
+    },
+    "shearing-stand": {
+      "heard": "Tub, shearing stand.",
+      "score": 0.81,
+      "take": "en-1790877660782.aac",
+      "account": "chatgpt1"
+    },
+    "hoof-boot": {
+      "heard": "Hoof boot.",
+      "score": 1,
+      "take": "en-1790877660782.aac",
+      "account": "chatgpt1"
+    },
+    "sheep-bell": {
+      "heard": "Sheep bell.",
+      "score": 1,
+      "take": "en-1790877660782.aac",
+      "account": "chatgpt1"
+    },
+    "stable-muck-tub": {
+      "heard": "MuckTub.",
+      "score": 1,
+      "take": "en-1790877767162.aac",
+      "account": "chatgpt1"
+    },
+    "hay-bale-spear": {
+      "heard": "Bail Spear.",
+      "score": 0.78,
+      "take": "en-1790877767162.aac",
+      "account": "chatgpt1"
+    },
+    "hoof-pick": {
+      "heard": "Hoof pick.",
+      "score": 1,
+      "take": "en-1790877767162.aac",
+      "account": "chatgpt1"
+    },
+    "horseshoe": {
+      "heard": "Horseshoe.",
+      "score": 1,
+      "take": "en-1790877767162.aac",
+      "account": "chatgpt1"
+    },
+    "stall-chain": {
+      "heard": "Stall chain.",
+      "score": 1,
+      "take": "en-1790877767162.aac",
+      "account": "chatgpt1"
+    },
+    "stall-hinge": {
+      "heard": "Stall Hinge.",
+      "score": 1,
+      "take": "en-1790877767162.aac",
+      "account": "chatgpt1"
     }
   }
 }

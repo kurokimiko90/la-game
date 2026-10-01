@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T02:37:59.794+09:00",
+  "syncedAt": "2026-10-02T02:56:46.382+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -863,7 +863,33 @@
         "reed-mace",
         "fishing-rod-farm",
         "fishing-net-farm",
-        "pond-stone-step"
+        "pond-stone-step",
+        "barrel-farm",
+        "spittoon",
+        "boot-scraper-farm",
+        "stool-farm",
+        "manure-fork",
+        "stable-broom",
+        "stable-scraper",
+        "hoof-pick",
+        "hoof-rasp",
+        "horseshoe",
+        "hoof-boot",
+        "stable-muck-tub",
+        "stable-rake",
+        "stall-chain",
+        "stall-hinge",
+        "stable-latch",
+        "stable-mat",
+        "stable-drain-grate",
+        "horse-trailer",
+        "shepherds-crook",
+        "sheep-bell",
+        "lambing-pen",
+        "shearing-stand",
+        "sheepdog-whistle",
+        "salt-lick",
+        "hay-bale-spear"
       ],
       "failed": [
         {

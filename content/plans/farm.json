@@ -1254,6 +1254,396 @@
       "loose": false,
       "motion": null,
       "cluster": "pond"
+    },
+    {
+      "id": "barrel-farm",
+      "zh": "木酒桶",
+      "en": "cask",
+      "ja": "酒樽",
+      "reading": "さかだる",
+      "category": "道具",
+      "size": "medium",
+      "zone": "barn",
+      "spot": "ground",
+      "desc": "矮胖的棕色木桶橫放在地上，桶身有深色金屬箍，兩端是圓形木板。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "spittoon",
+      "zh": "痰盂",
+      "en": "spittoon",
+      "ja": "痰壺",
+      "reading": "たんつぼ",
+      "category": "道具",
+      "size": "small",
+      "zone": "barn",
+      "spot": "ground",
+      "desc": "深綠色金屬製的矮圓桶，頂部有寬圓沿和中央凹口，底部略窄。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "boot-scraper-farm",
+      "zh": "靴底刮泥器",
+      "en": "boot scraper",
+      "ja": "靴底落とし",
+      "reading": "くつぞこおとし",
+      "category": "道具",
+      "size": "small",
+      "zone": "barn",
+      "spot": "ground",
+      "desc": "黑色鑄鐵底座上豎著兩排短金屬刷齒，底座扁平，放在穀倉入口旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stool-farm",
+      "zh": "吧台椅",
+      "en": "bar stool",
+      "ja": "バースツール",
+      "reading": "バースツール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "barn",
+      "spot": "ground",
+      "desc": "高高的圓形木座面下接四根細木腳，腳間有圓形橫桿，靠著吧台排列。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "manure-fork",
+      "zh": "糞叉",
+      "en": "manure fork",
+      "ja": "堆肥フォーク",
+      "reading": "たいひフォーク",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "長木柄連著寬扁金屬叉頭，叉頭有數根細長直齒，靠在棚內地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stable-broom",
+      "zh": "馬廄掃帚",
+      "en": "stable broom",
+      "ja": "馬小屋ほうき",
+      "reading": "うまごやほうき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "木柄下方綁著一束寬扁的棕色硬枝，掃帚頭平貼地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stable-scraper",
+      "zh": "刮糞板",
+      "en": "manure scraper",
+      "ja": "ふん尿かき",
+      "reading": "ふんにょうかき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "短木柄連著寬扁長方形金屬板，板邊平直，工具平放在地上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hoof-pick",
+      "zh": "馬蹄清潔器",
+      "en": "hoof pick",
+      "ja": "蹄ピック",
+      "reading": "ひづめピック",
+      "category": "道具",
+      "size": "small",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "短小金屬柄末端彎成尖鉤，另一端帶著小刷頭，放在地面。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hoof-rasp",
+      "zh": "馬蹄銼刀",
+      "en": "hoof rasp",
+      "ja": "蹄やすり",
+      "reading": "ひづめやすり",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "寬扁長方形金屬銼面帶有粗糙齒紋，兩端接著短握柄。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "horseshoe",
+      "zh": "馬蹄鐵",
+      "en": "horseshoe",
+      "ja": "蹄鉄",
+      "reading": "ていてつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "厚實的深色金屬彎成開口向上的馬蹄形，外沿可見幾個孔洞。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hoof-boot",
+      "zh": "馬蹄護套",
+      "en": "hoof boot",
+      "ja": "蹄ブーツ",
+      "reading": "ひづめブーツ",
+      "category": "道具",
+      "size": "small",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "圓筒狀深色橡膠套，頂端開口寬大，前方有一條固定帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": "horseshoe"
+    },
+    {
+      "id": "stable-muck-tub",
+      "zh": "糞便搬運盆",
+      "en": "muck tub",
+      "ja": "ふん尿運搬たらい",
+      "reading": "ふんにょううんぱんたらい",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "低矮寬口的黑色橡膠盆，盆身厚實略有彈性，空盆放在地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stable-rake",
+      "zh": "馬廄耙",
+      "en": "stable rake",
+      "ja": "馬小屋用の熊手",
+      "reading": "うまごやようのくまで",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "長木柄末端接著一排密集短金屬齒，齒列橫向平直，靠在牆邊地上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stall-chain",
+      "zh": "馬廄鏈條",
+      "en": "stall chain",
+      "ja": "馬房の鎖",
+      "reading": "ばぼうのくさり",
+      "category": "道具",
+      "size": "small",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "一段粗重的深色金屬鏈條鬆散盤成幾圈，鏈節清楚可辨。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stall-hinge",
+      "zh": "馬廄門鉸鏈",
+      "en": "stall hinge",
+      "ja": "馬房の蝶番",
+      "reading": "ばぼうのちょうつがい",
+      "category": "道具",
+      "size": "small",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "厚實的黑色金屬鉸鏈由中央轉軸連接兩片長方形翼板，平放地面。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stable-latch",
+      "zh": "馬廄插銷",
+      "en": "stall latch",
+      "ja": "馬房の掛け金",
+      "reading": "ばぼうのかけがね",
+      "category": "道具",
+      "size": "small",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "一根粗短金屬插桿連著扁平底座與圓形拉環，放在地上。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stable-mat",
+      "zh": "馬廄橡膠墊",
+      "en": "stable mat",
+      "ja": "馬房マット",
+      "reading": "ばぼうマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "厚實方形深灰橡膠墊，表面有規則凸起圓點，平鋪在地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stable-drain-grate",
+      "zh": "馬廄排水格柵",
+      "en": "stable drain grate",
+      "ja": "厩舎の排水格子",
+      "reading": "きゅうしゃのはいすいこうし",
+      "category": "設施",
+      "size": "medium",
+      "zone": "stable",
+      "spot": "ground",
+      "desc": "嵌在地面上的方形深色金屬格柵，由一排平行長孔構成。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "horse-trailer",
+      "zh": "馬匹拖車",
+      "en": "horse trailer",
+      "ja": "馬運車",
+      "reading": "うまうんしゃ",
+      "category": "交通工具",
+      "size": "large",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "長方形的銀灰色拖車，側面有通風窗，後方有一扇寬大的斜坡門。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shepherds-crook",
+      "zh": "牧羊杖",
+      "en": "shepherd's crook",
+      "ja": "羊飼いの杖",
+      "reading": "ひつじかいのつえ",
+      "category": "道具",
+      "size": "small",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "細長的深木色手杖，頂端彎成明顯的鉤形，杖身帶有自然木紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sheep-bell",
+      "zh": "羊鈴",
+      "en": "sheep bell",
+      "ja": "羊鈴",
+      "reading": "ひつじのすず",
+      "category": "道具",
+      "size": "small",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "小巧的黃銅色方鐘，底部開口，頂端有短短的繫環。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "lambing-pen",
+      "zh": "產羔欄",
+      "en": "lambing pen",
+      "ja": "分娩用の囲い",
+      "reading": "ぶんべんようのかこい",
+      "category": "設施",
+      "size": "medium",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "矮矮的木製圍欄圍成方形，入口留有空隙，欄板排列整齊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shearing-stand",
+      "zh": "剪毛架",
+      "en": "shearing stand",
+      "ja": "毛刈り台",
+      "reading": "けがりだい",
+      "category": "設施",
+      "size": "medium",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "穩固的木製平台帶有四根短腳，一端立著兩根直立支架。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sheepdog-whistle",
+      "zh": "牧羊犬哨",
+      "en": "sheepdog whistle",
+      "ja": "牧羊笛",
+      "reading": "ぼくようぶえ",
+      "category": "道具",
+      "size": "small",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "短小的銀色金屬哨子，外形細長，一端有圓孔和小掛環。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "salt-lick",
+      "zh": "舔鹽磚",
+      "en": "salt lick",
+      "ja": "塩ブロック",
+      "reading": "しおブロック",
+      "category": "食物",
+      "size": "small",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "粗糙的淡粉色方磚，邊角略圓，表面有不規則的小凹點。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hay-bale-spear",
+      "zh": "草捆叉",
+      "en": "bale spear",
+      "ja": "ロールベール用スピア",
+      "reading": "ロールベールようスピア",
+      "category": "道具",
+      "size": "medium",
+      "zone": "pasture",
+      "spot": "ground",
+      "desc": "厚實的金屬叉架帶有兩根長尖齒，後方連著短短的安裝座。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1422,6 +1812,31 @@
     {
       "id": "fishing-bobber",
       "reason": "審核：英文與物品不符"
+    },
+    {
+      "id": "wooden-barrel",
+      "reason": "和已有的 cask 太像",
+      "zone": "barn"
+    },
+    {
+      "id": "whiskey-barrel",
+      "reason": "和已有的 barrel tap 太像",
+      "zone": "barn"
+    },
+    {
+      "id": "stable-shovel",
+      "reason": "和已有的 shovel 太像",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-fork",
+      "reason": "和已有的 pitchfork 太像",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-wheelbarrow",
+      "reason": "和已有的 wheelbarrow 太像",
+      "zone": "stable"
     }
   ],
   "reviewFixes": [
@@ -1495,6 +1910,62 @@
       "changes": {
         "zh": "香蒲"
       }
+    },
+    {
+      "id": "spittoon",
+      "issue": "日文是落地煙灰缸",
+      "changes": {
+        "ja": "痰壺",
+        "reading": "たんつぼ"
+      }
+    },
+    {
+      "id": "stable-scraper",
+      "issue": "日文說法不自然",
+      "changes": {
+        "ja": "ふん尿かき",
+        "reading": "ふんにょうかき"
+      }
+    },
+    {
+      "id": "hoof-pick",
+      "issue": "日文說法不自然",
+      "changes": {
+        "ja": "蹄ピック",
+        "reading": "ひづめピック"
+      }
+    },
+    {
+      "id": "stable-rake",
+      "issue": "日文用語生硬",
+      "changes": {
+        "ja": "馬小屋用の熊手",
+        "reading": "うまごやようのくまで"
+      }
+    },
+    {
+      "id": "stall-chain",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "馬房の鎖",
+        "reading": "ばぼうのくさり"
+      }
+    },
+    {
+      "id": "stall-hinge",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "馬房の蝶番",
+        "reading": "ばぼうのちょうつがい"
+      }
+    },
+    {
+      "id": "stable-latch",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "馬房の掛け金",
+        "reading": "ばぼうのかけがね"
+      }
     }
   ],
   "createdAt": "2026-10-02T02:26:04.917+09:00",
@@ -1518,5 +1989,10 @@
         "flowerbed"
       ]
     }
+  },
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 26,
+    "at": "2026-10-02T02:52:52.118+09:00"
   }
 }

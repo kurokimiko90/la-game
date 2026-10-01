@@ -1781,8 +1781,8 @@
         "fishing-float-farm": "water-pasture",
         "duck-decoy": "water-pasture"
       },
-      "clusters": [["barn", "silo"], ["hay-bale", "pitchfork"], ["feed-sack", "grain-scoop"], ["stone-trough", "wooden-bucket"], ["fence-farm", "wooden-post"], ["shovel", "wheelbarrow-farm"], ["wooden-plank-farm", "wooden-crate-farm"], ["pond", "water-sedge", "water-wheel", "wooden-paddle", "water-jar", "water-bowl", "reed-mace", "fishing-rod-farm", "fishing-net-farm", "pond-stone-step"]],
-      "loose": ["milk-can", "grain-scoop", "egg-crate", "wooden-bucket", "watering-can-farm", "spade-farm", "butter-pat", "milk-filter", "curry-comb", "cheese-cloth", "barrel-tap", "sheep-shears", "livestock-ear-tag", "milk-measuring-jar", "livestock-thermometer", "livestock-syringe", "lotus-seed-pod", "wooden-paddle", "fish-hook", "water-jar", "fishing-rod-farm", "fishing-net-farm"],
+      "clusters": [["barn", "silo"], ["hay-bale", "pitchfork"], ["feed-sack", "grain-scoop"], ["stone-trough", "wooden-bucket"], ["fence-farm", "wooden-post"], ["shovel", "wheelbarrow-farm"], ["wooden-plank-farm", "wooden-crate-farm"], ["pond", "water-sedge", "water-wheel", "wooden-paddle", "water-jar", "water-bowl", "reed-mace", "fishing-rod-farm", "fishing-net-farm", "pond-stone-step"], ["horseshoe", "hoof-boot"]],
+      "loose": ["milk-can", "grain-scoop", "egg-crate", "wooden-bucket", "watering-can-farm", "spade-farm", "butter-pat", "milk-filter", "curry-comb", "cheese-cloth", "barrel-tap", "sheep-shears", "livestock-ear-tag", "milk-measuring-jar", "livestock-thermometer", "livestock-syringe", "lotus-seed-pod", "wooden-paddle", "fish-hook", "water-jar", "fishing-rod-farm", "fishing-net-farm", "spittoon", "hoof-pick", "horseshoe", "hoof-boot", "stall-chain", "stall-hinge", "stable-latch", "shepherds-crook", "sheep-bell", "sheepdog-whistle"],
       "noFlip": [],
       "motion": {"windmill": "wobble", "hay-net": "sway", "duckweed": "bob", "water-lily-pad": "bob", "water-hyacinth": "bob", "water-sedge": "sway", "water-wheel": "wobble", "fishing-float-farm": "bob", "duck-decoy": "bob", "reed-mace": "sway"},
       "arrange": "auto",
