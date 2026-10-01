@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・露營區",
+  "sceneSlug": "la-campsite",
+  "propStyle": "front-flat",
+  "zones": {
+    "camp-entrance": "營地入口",
+    "supply-hut": "補給小屋",
+    "picnic-ground": "野餐草地",
+    "tent-site": "帳篷營地"
+  },
+  "elements": [
+    {
+      "name": "折疊桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形淺木色桌面，下方有交叉的金屬桌腳，桌面保持空白。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "folding-table-campsite",
+        "words": {
+          "zh-TW": "折疊桌",
+          "en": "folding table",
+          "ja": {
+            "text": "折りたたみテーブル",
+            "reading": "おりたたみてーぶる"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色布面椅座和椅背，搭配細長交叉金屬椅腳，能折疊收起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camp-chair",
+        "words": {
+          "zh-TW": "露營椅",
+          "en": "camp chair",
+          "ja": {
+            "text": "キャンプチェア",
+            "reading": "きゃんぷちぇあ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營爐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形金屬爐架上有圓形爐頭，旁邊連著短短的旋鈕和瓦斯罐接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-stove",
+        "words": {
+          "zh-TW": "露營爐",
+          "en": "camping stove",
+          "ja": {
+            "text": "キャンプ用コンロ",
+            "reading": "きゃんぷようこんろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "瓦斯罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短胖的銀色金屬圓罐，頂端有小型螺紋接頭，底部平坦可直立。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "gas-canister",
+        "words": {
+          "zh-TW": "瓦斯罐",
+          "en": "gas canister",
+          "ja": {
+            "text": "ガスカートリッジ",
+            "reading": "がすかーとりっじ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營鍋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形銀色金屬鍋，兩側有短把手，鍋蓋中央凸起一個小圓鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-pot",
+        "words": {
+          "zh-TW": "露營鍋",
+          "en": "camping pot",
+          "ja": {
+            "text": "キャンプ鍋",
+            "reading": "きゃんぷなべ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘黃色燈罩外有黑色金屬護架，頂部彎成提把，底座寬而穩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-lantern",
+        "words": {
+          "zh-TW": "露營燈",
+          "en": "camping lantern",
+          "ja": {
+            "text": "ランタン",
+            "reading": "らんたん"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長條形墨綠色厚布睡袋，前端圓弧收口，側邊有一條拉鍊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "sleeping-bag",
+        "words": {
+          "zh-TW": "睡袋",
+          "en": "sleeping bag",
+          "ja": {
+            "text": "寝袋",
+            "reading": "ねぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營睡墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形深藍色泡棉墊，表面有均勻淺凸紋，邊角平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-mat",
+        "words": {
+          "zh-TW": "露營睡墊",
+          "en": "sleeping mat",
+          "ja": {
+            "text": "キャンプマット",
+            "reading": "きゃんぷまっと"
+          }
+        }
+      }
+    },
+    {
+      "name": "帳篷營釘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長銀色金屬釘，一端尖銳，另一端彎成短短的掛繩鉤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "tent-peg",
+        "words": {
+          "zh-TW": "帳篷營釘",
+          "en": "tent peg",
+          "ja": {
+            "text": "テントペグ",
+            "reading": "てんとぺぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "帳篷槌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木製短柄連著方形橡膠槌頭，槌頭兩端平整，握柄末端圓潤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "tent-mallet",
+        "words": {
+          "zh-TW": "帳篷槌",
+          "en": "tent mallet",
+          "ja": {
+            "text": "ペグハンマー",
+            "reading": "ぺぐはんまー"
+          }
+        }
+      }
+    },
+    {
+      "name": "營繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一條細長的橘色編織繩，兩端打結，旁邊附有小型金屬調節片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "guyline",
+        "words": {
+          "zh-TW": "營繩",
+          "en": "guyline",
+          "ja": {
+            "text": "張り綱",
+            "reading": "はりづな"
+          }
+        }
+      }
+    },
+    {
+      "name": "天幕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "折疊成方形的深綠色防水布，布邊有一圈加固縫線和金屬扣眼。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-tarp",
+        "words": {
+          "zh-TW": "天幕",
+          "en": "tarp",
+          "ja": {
+            "text": "タープ",
+            "reading": "たーぷ"
+          }
+        }
+      }
+    },
+    {
+      "name": "折疊拖車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色布槽裝在四輪金屬架上，前方伸出可拉動的長把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "folding-wagon",
+        "words": {
+          "zh-TW": "折疊拖車",
+          "en": "folding wagon",
+          "ja": {
+            "text": "アウトドアワゴン",
+            "reading": "あうとどあわごん"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營拖車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色箱形拖車停在車道旁，前端有黑色牽引桿，側面有圓角窗戶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-trailer",
+        "words": {
+          "zh-TW": "露營拖車",
+          "en": "camper trailer",
+          "ja": {
+            "text": "キャンピングトレーラー",
+            "reading": "きゃんぴんぐとれーらー"
+          }
+        }
+      }
+    },
+    {
+      "name": "皮卡",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深藍色車身有雙排座駕駛艙，後方露出平坦貨斗，四個黑色輪胎清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "pickup-truck",
+        "words": {
+          "zh-TW": "皮卡",
+          "en": "pickup truck",
+          "ja": {
+            "text": "ピックアップトラック",
+            "reading": "ぴっくあっぷとらっく"
+          }
+        }
+      }
+    },
+    {
+      "name": "營火爐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色金屬圓盆架在三根短腳上，盆沿均勻，中央有幾根木柴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "fire-pit",
+        "words": {
+          "zh-TW": "營火爐",
+          "en": "fire pit",
+          "ja": {
+            "text": "焚き火台",
+            "reading": "たきびだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "木炭袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深色厚紙袋裝得鼓鼓的，袋口摺起封住，開口處露出幾塊黑色木炭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "charcoal-bag",
+        "words": {
+          "zh-TW": "木炭袋",
+          "en": "charcoal bag",
+          "ja": {
+            "text": "炭袋",
+            "reading": "すみぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "營火夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支長柄黑色金屬夾子，前端彎成兩片弧形夾爪，握柄末端相連。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "fire-tongs",
+        "words": {
+          "zh-TW": "營火夾",
+          "en": "fire tongs",
+          "ja": {
+            "text": "火ばさみ",
+            "reading": "ひばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "點火器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊方形淺棕色壓製木屑塊，表面乾燥粗糙，邊角略為不規則。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "fire-starter",
+        "words": {
+          "zh-TW": "點火器",
+          "en": "fire starter",
+          "ja": {
+            "text": "着火剤",
+            "reading": "ちゃっかざい"
+          }
+        }
+      }
+    },
+    {
+      "name": "引火木束",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "多根細短的淺色木枝以麻繩束成一把，兩端有清楚的木頭切面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "kindling-bundle",
+        "words": {
+          "zh-TW": "引火木束",
+          "en": "kindling bundle",
+          "ja": {
+            "text": "焚き付け",
+            "reading": "たきつけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓肚水壺有短壺嘴和弧形提把，壺蓋上有小圓形握鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-kettle",
+        "words": {
+          "zh-TW": "露營水壺",
+          "en": "camping kettle",
+          "ja": {
+            "text": "キャンプ用ケトル",
+            "reading": "きゃんぷようけとる"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深綠色搪瓷杯身圓筒形，杯口和側邊把手各有一道白色邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camp-mug",
+        "words": {
+          "zh-TW": "露營杯",
+          "en": "camp mug",
+          "ja": {
+            "text": "キャンプマグ",
+            "reading": "きゃんぷまぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形淺灰色金屬盤，盤緣稍微向上翹起，中央平坦沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camp-plate",
+        "words": {
+          "zh-TW": "露營盤",
+          "en": "camp plate",
+          "ja": {
+            "text": "キャンプ皿",
+            "reading": "きゃんぷざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營叉匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支深色塑膠餐具，一端是淺凹匙面，另一端分成幾根短叉齒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-spork",
+        "words": {
+          "zh-TW": "露營叉匙",
+          "en": "spork",
+          "ja": {
+            "text": "スポーク",
+            "reading": "すぽーく"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營餐具組",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩支銀色金屬餐具並排放置，一支是叉子，另一支是圓頭湯匙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "camp-entrance",
+        "itemId": "camping-cutlery-set",
+        "words": {
+          "zh-TW": "露營餐具組",
+          "en": "cutlery set",
+          "ja": {
+            "text": "カトラリーセット",
+            "reading": "かとらりーせっと"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "大型半透明塑膠桶身，頂部有提把，前方下緣裝著短水龍頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "water-jug",
+        "words": {
+          "zh-TW": "飲水壺",
+          "en": "water jug",
+          "ja": {
+            "text": "ウォータージャグ",
+            "reading": "うぉーたーじゃぐ"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗碗精",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明綠色扁圓瓶身，瓶口有白色按壓頭，瓶內可見亮色液體。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "dish-soap",
+        "words": {
+          "zh-TW": "洗碗精",
+          "en": "dish soap",
+          "ja": {
+            "text": "食器用洗剤",
+            "reading": "しょっきようせんざい"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗碗海綿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色長方形海綿上黏著深綠色粗糙刷洗層，側邊略有厚度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "dish-sponge",
+        "words": {
+          "zh-TW": "洗碗海綿",
+          "en": "dish sponge",
+          "ja": {
+            "text": "食器用スポンジ",
+            "reading": "しょっきようスポンジ"
+          }
+        }
+      }
+    },
+    {
+      "name": "主廚刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "寬大的銀色三角刀刃連著黑色握柄，刀背平直、刀尖略翹。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "chef-knife",
+        "words": {
+          "zh-TW": "主廚刀",
+          "en": "chef knife",
+          "ja": {
+            "text": "シェフナイフ",
+            "reading": "しぇふないふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "開罐器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金屬旋轉式開罐器有短柄、齒輪和圓形切割輪，握柄覆著紅色塑膠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "can-opener",
+        "words": {
+          "zh-TW": "開罐器",
+          "en": "can opener",
+          "ja": {
+            "text": "缶切り",
+            "reading": "かんきり"
+          }
+        }
+      }
+    },
+    {
+      "name": "罐頭豆",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖銀色圓罐，頂部有拉環，罐身印著紅色豆子圖樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "canned-beans",
+        "words": {
+          "zh-TW": "罐頭豆",
+          "en": "canned beans",
+          "ja": {
+            "text": "豆の缶詰",
+            "reading": "まめのかんづめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "罐頭湯",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "高身銀色圓罐，頂部有拉環，罐身印著橘紅色湯碗圖樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "canned-soup",
+        "words": {
+          "zh-TW": "罐頭湯",
+          "en": "canned soup",
+          "ja": {
+            "text": "スープの缶詰",
+            "reading": "スープのかんづめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "義大利麵",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小束乾燥的黃色細長麵條，直挺地並排，兩端整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "pasta",
+        "words": {
+          "zh-TW": "義大利麵",
+          "en": "pasta",
+          "ja": {
+            "text": "パスタ",
+            "reading": "パスタ"
+          }
+        }
+      }
+    },
+    {
+      "name": "米袋",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米白色小布袋鼓起成方形，袋口用繩子束緊，縫線清晰可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "rice-bag",
+        "words": {
+          "zh-TW": "米袋",
+          "en": "bag of rice",
+          "ja": {
+            "text": "米袋",
+            "reading": "こめぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "燕麥片罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "米色圓筒紙罐配紅色塑膠蓋，開口處露出淡褐色燕麥片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "oatmeal-tin",
+        "words": {
+          "zh-TW": "燕麥片罐",
+          "en": "oatmeal tin",
+          "ja": {
+            "text": "オートミール缶",
+            "reading": "オートミールかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "燕麥脆片",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾塊金褐色燕麥脆片結成不規則小團，表面夾著深色果乾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "granola",
+        "words": {
+          "zh-TW": "燕麥脆片",
+          "en": "granola",
+          "ja": {
+            "text": "グラノーラ",
+            "reading": "グラノーラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "花生醬罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓玻璃罐裝著淺褐色醬料，頂部旋著寬大的白色蓋子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "peanut-butter-jar",
+        "words": {
+          "zh-TW": "花生醬罐",
+          "en": "peanut butter jar",
+          "ja": {
+            "text": "ピーナッツバターの瓶",
+            "reading": "ぴーなっつばたーのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "楓糖漿瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "琥珀色玻璃瓶呈扁平水滴形，窄頸上套著黑色旋蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "maple-syrup-bottle",
+        "words": {
+          "zh-TW": "楓糖漿瓶",
+          "en": "maple syrup bottle",
+          "ja": {
+            "text": "メープルシロップの瓶",
+            "reading": "めーぷるしろっぷのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "擠壓蜂蜜瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明小熊形塑膠瓶裝著金黃色蜂蜜，頂部是黃色翻蓋尖嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "honey-squeeze-bottle",
+        "words": {
+          "zh-TW": "擠壓蜂蜜瓶",
+          "en": "honey squeeze bottle",
+          "ja": {
+            "text": "はちみつボトル",
+            "reading": "はちみつボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "棉花糖",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆白色方枕狀棉花糖，表面蓬鬆，邊角柔軟圓潤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "marshmallow",
+        "words": {
+          "zh-TW": "棉花糖",
+          "en": "marshmallow",
+          "ja": {
+            "text": "マシュマロ",
+            "reading": "マシュマロ"
+          }
+        }
+      }
+    },
+    {
+      "name": "巧克力豆",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆深褐色小巧克力豆呈扁平水滴形，散落成一小堆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "chocolate-chip",
+        "words": {
+          "zh-TW": "巧克力豆",
+          "en": "chocolate chips",
+          "ja": {
+            "text": "チョコチップ",
+            "reading": "チョコチップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "可可粉罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓金屬罐配深褐色蓋子，罐口露出細緻的可可粉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "cocoa-tin",
+        "words": {
+          "zh-TW": "可可粉罐",
+          "en": "cocoa tin",
+          "ja": {
+            "text": "ココア缶",
+            "reading": "ココアかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "梅森罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明直筒玻璃罐，瓶口有寬螺紋和銀色雙件式金屬蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "mason-jar",
+        "words": {
+          "zh-TW": "梅森罐",
+          "en": "mason jar",
+          "ja": {
+            "text": "メイソンジャー",
+            "reading": "メイソンジャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "保溫壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的真空保溫瓶配肩帶，金屬瓶身和杯形旋蓋輪廓明顯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "thermos-flask",
+        "words": {
+          "zh-TW": "保溫壺",
+          "en": "thermos flask",
+          "ja": {
+            "text": "水筒",
+            "reading": "すいとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "便當盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形雙層餐盒，亮紅色盒蓋扣著白色盒身，兩側有卡扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "lunchbox",
+        "words": {
+          "zh-TW": "便當盒",
+          "en": "lunchbox",
+          "ja": {
+            "text": "ランチボックス",
+            "reading": "ランチボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "保鮮盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明方形塑膠盒配藍色密封蓋，盒身可見一圈凸起的扣合邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "food-container",
+        "words": {
+          "zh-TW": "保鮮盒",
+          "en": "food container",
+          "ja": {
+            "text": "保存容器",
+            "reading": "ほぞんようき"
+          }
+        }
+      }
+    },
+    {
+      "name": "量匙組",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "四把不同大小的彩色小量匙串在金屬環上，匙面呈圓形凹槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "measuring-spoons",
+        "words": {
+          "zh-TW": "量匙組",
+          "en": "measuring spoons",
+          "ja": {
+            "text": "計量スプーン",
+            "reading": "けいりょうスプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡濾杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色錐形陶製濾杯外壁有一道道直槽，底部開著圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "coffee-filter-campsite",
+        "words": {
+          "zh-TW": "咖啡濾杯",
+          "en": "coffee filter",
+          "ja": {
+            "text": "コーヒードリッパー",
+            "reading": "コーヒードリッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "柴薪束",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾根短粗的褐色木柴用麻繩捆成一束，斷面露出淺色年輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "firewood-bundle",
+        "words": {
+          "zh-TW": "柴薪束",
+          "en": "firewood bundle",
+          "ja": {
+            "text": "薪の束",
+            "reading": "まきのたば"
+          }
+        }
+      }
+    },
+    {
+      "name": "急救箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形硬殼箱，正面有紅色十字標記，邊角圓潤並帶有提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "supply-hut",
+        "itemId": "first-aid-kit-campsite",
+        "words": {
+          "zh-TW": "急救箱",
+          "en": "first aid kit",
+          "ja": {
+            "text": "救急箱",
+            "reading": "きゅうきゅうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺色圓形紙盤帶有壓出的同心圓邊緣，盤面平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "paper-plate",
+        "words": {
+          "zh-TW": "紙盤",
+          "en": "paper-plate",
+          "ja": {
+            "text": "紙皿",
+            "reading": "かみざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "塑膠砧板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形綠色板面帶圓角，短邊有一個可握的橢圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "plastic-cutting-board",
+        "words": {
+          "zh-TW": "塑膠砧板",
+          "en": "cutting-board",
+          "ja": {
+            "text": "まな板",
+            "reading": "まないた"
+          }
+        }
+      }
+    },
+    {
+      "name": "水果刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短而尖的銀色刀刃連著深色握柄，刀身窄小，輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "paring-knife",
+        "words": {
+          "zh-TW": "水果刀",
+          "en": "paring-knife",
+          "ja": {
+            "text": "ペティナイフ",
+            "reading": "ペティナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "西瓜片",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三角形西瓜切片有綠色外皮、紅色果肉和幾顆黑色籽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "watermelon-wedge",
+        "words": {
+          "zh-TW": "西瓜片",
+          "en": "watermelon-wedge",
+          "ja": {
+            "text": "スイカのくし切り",
+            "reading": "スイカのくしぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "草莓",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色心形果實表面點著小籽，尖端朝下，頂端有綠色葉冠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "strawberry",
+        "words": {
+          "zh-TW": "草莓",
+          "en": "strawberry",
+          "ja": {
+            "text": "いちご",
+            "reading": "いちご"
+          }
+        }
+      }
+    },
+    {
+      "name": "藍莓",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆深藍色小圓果聚在一起，每顆頂端都有淺色星形凹痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "blueberries",
+        "words": {
+          "zh-TW": "藍莓",
+          "en": "blueberries",
+          "ja": {
+            "text": "ブルーベリー",
+            "reading": "ブルーベリー"
+          }
+        }
+      }
+    },
+    {
+      "name": "玉米棒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色玉米粒整齊排成長條，兩側包著幾片綠色外葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "corn-cob",
+        "words": {
+          "zh-TW": "玉米棒",
+          "en": "corn-cob",
+          "ja": {
+            "text": "とうもろこし",
+            "reading": "とうもろこし"
+          }
+        }
+      }
+    },
+    {
+      "name": "吐司麵包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形麵包頂部隆起呈金黃色，側面柔軟白亮，切面可見細孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "bread-loaf-campsite",
+        "words": {
+          "zh-TW": "吐司麵包",
+          "en": "loaf-of-bread",
+          "ja": {
+            "text": "食パン",
+            "reading": "しょくパン"
+          }
+        }
+      }
+    },
+    {
+      "name": "番茄醬瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色軟塑膠瓶身上窄下寬，底部有翻蓋式尖嘴瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "ketchup-bottle",
+        "words": {
+          "zh-TW": "番茄醬瓶",
+          "en": "ketchup-bottle",
+          "ja": {
+            "text": "ケチャップボトル",
+            "reading": "ケチャップボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "芥末醬瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色軟塑膠瓶呈倒放式設計，寬底下方有短尖嘴和小蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "mustard-bottle",
+        "words": {
+          "zh-TW": "芥末醬瓶",
+          "en": "mustard-bottle",
+          "ja": {
+            "text": "マスタードボトル",
+            "reading": "マスタードボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "醃黃瓜罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃罐中浸著幾段深綠色小黃瓜，頂部有金屬旋蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "pickle-jar-campsite",
+        "words": {
+          "zh-TW": "醃黃瓜罐",
+          "en": "pickle-jar",
+          "ja": {
+            "text": "ピクルスの瓶",
+            "reading": "ピクルスのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "檸檬片",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片黃色圓形薄片排在一起，切面中央有淡色果肉分隔線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "lemon-slices",
+        "words": {
+          "zh-TW": "檸檬片",
+          "en": "lemon-slice",
+          "ja": {
+            "text": "レモンスライス",
+            "reading": "レモンスライス"
+          }
+        }
+      }
+    },
+    {
+      "name": "果汁紙盒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色長方形紙盒頂端折成斜面，側上方有短小塑膠吸嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "juice-carton",
+        "words": {
+          "zh-TW": "果汁紙盒",
+          "en": "juice-carton",
+          "ja": {
+            "text": "ジュースの紙パック",
+            "reading": "ジュースのかみパック"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色錐台形紙杯杯口寬、杯底窄，外壁沒有圖案或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "paper-cup-campsite",
+        "words": {
+          "zh-TW": "紙杯",
+          "en": "paper-cup",
+          "ja": {
+            "text": "紙コップ",
+            "reading": "かみコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "大湯匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長柄銀色湯匙前端是寬大的橢圓匙面，平放在桌上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "serving-spoon-campsite",
+        "words": {
+          "zh-TW": "大湯匙",
+          "en": "serving-spoon",
+          "ja": {
+            "text": "取り分けスプーン",
+            "reading": "とりわけスプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙拉碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "寬口淺綠色圓碗裝著幾片紅綠蔬菜，碗沿厚實圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "serving-bowl",
+        "words": {
+          "zh-TW": "沙拉碗",
+          "en": "serving-bowl",
+          "ja": {
+            "text": "サラダボウル",
+            "reading": "サラダボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "生菜葉",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片淺綠色皺褶菜葉邊緣起伏，葉脈從短葉柄向外分開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "salad-leaf",
+        "words": {
+          "zh-TW": "生菜葉",
+          "en": "lettuce-leaf",
+          "ja": {
+            "text": "レタスの葉",
+            "reading": "レタスのは"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚房紙巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色紙巾捲成短圓筒，側面露出緊密的層層紙卷。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "paper-towel-roll",
+        "words": {
+          "zh-TW": "廚房紙巾",
+          "en": "paper-towel-roll",
+          "ja": {
+            "text": "キッチンペーパー",
+            "reading": "キッチンペーパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙拉醬瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明短瓶裝著淡黃色醬汁，圓肩瓶身上方有窄口旋蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "salad-dressing-bottle",
+        "words": {
+          "zh-TW": "沙拉醬瓶",
+          "en": "salad-dressing-bottle",
+          "ja": {
+            "text": "ドレッシングボトル",
+            "reading": "ドレッシングボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "芥末醬罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖透明玻璃罐內裝著黃色芥末醬，寬口處旋有金屬蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "mustard-jar",
+        "words": {
+          "zh-TW": "芥末醬罐",
+          "en": "mustard-jar",
+          "ja": {
+            "text": "マスタードの瓶",
+            "reading": "マスタードのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙燈籠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色圓筒紙罩上下有深色圓框，底部露出短短的流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "paper-lantern",
+        "words": {
+          "zh-TW": "紙燈籠",
+          "en": "paper-lantern",
+          "ja": {
+            "text": "ちょうちん",
+            "reading": "ちょうちん"
+          }
+        }
+      }
+    },
+    {
+      "name": "保冷箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍白相間的長方形保冷箱有厚實上蓋、前方扣件和側邊提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "cooler-box",
+        "words": {
+          "zh-TW": "保冷箱",
+          "en": "cooler-box",
+          "ja": {
+            "text": "クーラーボックス",
+            "reading": "クーラーボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "野餐桌布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺色方形布面垂在長桌邊緣，布角有簡單的紅白格紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "picnic-tablecloth",
+        "words": {
+          "zh-TW": "野餐桌布",
+          "en": "tablecloth",
+          "ja": {
+            "text": "テーブルクロス",
+            "reading": "テーブルクロス"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐巾紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾張白色方形紙巾疊在一起，邊角整齊，紙面沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "picnic-napkin",
+        "words": {
+          "zh-TW": "餐巾紙",
+          "en": "napkin",
+          "ja": {
+            "text": "紙ナプキン",
+            "reading": "かみナプキン"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘋果",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓潤果實頂端凹陷，連著一小段棕色果梗與綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "picnic-ground",
+        "itemId": "apple-campsite",
+        "words": {
+          "zh-TW": "蘋果",
+          "en": "apple",
+          "ja": {
+            "text": "りんご",
+            "reading": "りんご"
+          }
+        }
+      }
+    },
+    {
+      "name": "野餐長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深棕色木板組成長椅面和靠背，兩端有粗實的木製支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "picnic-bench",
+        "words": {
+          "zh-TW": "野餐長椅",
+          "en": "picnic bench",
+          "ja": {
+            "text": "ピクニックベンチ",
+            "reading": "ピクニックベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "行軍床",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的長方形折疊床，綠色布面繃在細長的金屬架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-cot",
+        "words": {
+          "zh-TW": "行軍床",
+          "en": "camping cot",
+          "ja": {
+            "text": "キャンプベッド",
+            "reading": "キャンプベッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營桌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺色長方桌面架在細長交叉的金屬桌腳上，可折疊收起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-table",
+        "words": {
+          "zh-TW": "露營桌",
+          "en": "camping table",
+          "ja": {
+            "text": "キャンプテーブル",
+            "reading": "キャンプテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊床",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橘紅色長布兩端收緊成繩圈，低垂成弧形，兩端落在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-hammock",
+        "words": {
+          "zh-TW": "吊床",
+          "en": "hammock",
+          "ja": {
+            "text": "ハンモック",
+            "reading": "ハンモック"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄深灰色金屬鏟頭，鏟面寬而略尖，整支斜靠在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-shovel",
+        "words": {
+          "zh-TW": "露營鏟",
+          "en": "camping shovel",
+          "ja": {
+            "text": "キャンプ用シャベル",
+            "reading": "キャンプようシャベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營斧",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木色短柄連著深灰色楔形斧頭，斧刃寬闊且輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-axe",
+        "words": {
+          "zh-TW": "露營斧",
+          "en": "camping axe",
+          "ja": {
+            "text": "キャンプ用おの",
+            "reading": "キャンプようオノ"
+          }
+        }
+      }
+    },
+    {
+      "name": "折疊鋸",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短小鋸身有一排明顯鋸齒，橘色握柄折在鋸片旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-saw",
+        "words": {
+          "zh-TW": "折疊鋸",
+          "en": "camping saw",
+          "ja": {
+            "text": "折りたたみのこぎり",
+            "reading": "おりたたみのこぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營垃圾桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色方形垃圾桶敞開上蓋，桶身有兩個簡單提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-bin",
+        "words": {
+          "zh-TW": "露營垃圾桶",
+          "en": "camping bin",
+          "ja": {
+            "text": "キャンプ用ごみ箱",
+            "reading": "キャンプようごみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營淋浴器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色直立支架頂端接著圓形蓮蓬頭，底部有寬平的踏板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-shower",
+        "words": {
+          "zh-TW": "露營淋浴器",
+          "en": "camping shower",
+          "ja": {
+            "text": "キャンプシャワー",
+            "reading": "キャンプシャワー"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營馬桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍色箱形便攜馬桶，有圓弧座蓋和寬大的穩固底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "portable-toilet",
+        "words": {
+          "zh-TW": "露營馬桶",
+          "en": "portable toilet",
+          "ja": {
+            "text": "簡易トイレ",
+            "reading": "かんいトイレ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營屏風",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "三片深綠色布面連成折屏，布面繃在細高的支架之間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-screen",
+        "words": {
+          "zh-TW": "露營屏風",
+          "en": "camping screen",
+          "ja": {
+            "text": "キャンプ用スクリーン",
+            "reading": "キャンプようスクリーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "帳篷地布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一片平鋪的深藍色長方形防水布，四角各有金屬扣孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "tent-footprint",
+        "words": {
+          "zh-TW": "帳篷地布",
+          "en": "tent footprint",
+          "ja": {
+            "text": "テント用グランドシート",
+            "reading": "テントようグランドシート"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營凳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "低矮方形布面凳座，架在交叉的黑色金屬腳架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-stool",
+        "words": {
+          "zh-TW": "露營凳",
+          "en": "camping stool",
+          "ja": {
+            "text": "キャンプスツール",
+            "reading": "キャンプスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營收納櫃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺灰色方形布製櫃體有兩層收納格，四角由細管支架撐起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-cupboard",
+        "words": {
+          "zh-TW": "露營收納櫃",
+          "en": "camping cupboard",
+          "ja": {
+            "text": "キャンプ用収納棚",
+            "reading": "キャンプようしゅうのうだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營冰箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色矮箱配藍色掀蓋，側面有提把，前方露出小型散熱格柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-cooler",
+        "words": {
+          "zh-TW": "露營冰箱",
+          "en": "camping cooler",
+          "ja": {
+            "text": "ポータブル冷蔵庫",
+            "reading": "ポータブルれいぞうこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營電風扇",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形護網罩住三片扇葉，橘色底座寬而平穩地放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-fan",
+        "words": {
+          "zh-TW": "露營電風扇",
+          "en": "camping fan",
+          "ja": {
+            "text": "キャンプ用扇風機",
+            "reading": "キャンプようせんぷうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營暖爐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色方形暖爐正面有黑色防護網，底下立著四隻短腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-heater",
+        "words": {
+          "zh-TW": "露營暖爐",
+          "en": "camping heater",
+          "ja": {
+            "text": "キャンプヒーター",
+            "reading": "キャンプヒーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營太陽能板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色長方板面分成整齊格狀，傾斜架在金屬支架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-solar-panel",
+        "words": {
+          "zh-TW": "露營太陽能板",
+          "en": "camping solar panel",
+          "ja": {
+            "text": "キャンプ用ソーラーパネル",
+            "reading": "キャンプようソーラーパネル"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營望遠鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色雙筒望遠鏡有兩個圓形鏡筒和中間的調焦輪，放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-binoculars",
+        "words": {
+          "zh-TW": "露營望遠鏡",
+          "en": "camping binoculars",
+          "ja": {
+            "text": "双眼鏡",
+            "reading": "そうがんきょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營地圖",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "攤開的淡綠色摺頁地圖印有彎曲小路與色塊，沒有文字標記。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-map",
+        "words": {
+          "zh-TW": "露營地圖",
+          "en": "camping map",
+          "ja": {
+            "text": "キャンプ場の地図",
+            "reading": "キャンプじょうのちず"
+          }
+        }
+      }
+    },
+    {
+      "name": "防蚊液",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色小噴瓶有白色噴頭與透明蓋，瓶身沒有標籤文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-bug-repellent",
+        "words": {
+          "zh-TW": "防蚊液",
+          "en": "bug repellent",
+          "ja": {
+            "text": "虫よけスプレー",
+            "reading": "むしよけスプレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營濾水器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明短圓筒接著深灰色濾芯，兩端各有一個粗短接口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-water-filter",
+        "words": {
+          "zh-TW": "露營濾水器",
+          "en": "camping water filter",
+          "ja": {
+            "text": "携帯浄水器",
+            "reading": "けいたいじょうすいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "太陽能營燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "磨砂白色燈罩立在短柱底座上，頂面有一小片深藍色方形板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-solar-light",
+        "words": {
+          "zh-TW": "太陽能營燈",
+          "en": "camping solar light",
+          "ja": {
+            "text": "ソーラーランタン",
+            "reading": "ソーラーランタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "露營踏石",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾塊扁平灰色踏石排成小徑，表面邊緣不規則且略帶泥土色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-flagstone",
+        "words": {
+          "zh-TW": "露營踏石",
+          "en": "camping stepping stone",
+          "ja": {
+            "text": "飛び石",
+            "reading": "とびいし"
+          }
+        }
+      }
+    },
+    {
+      "name": "拔釘器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色短柄連著彎鉤金屬頭，鉤端朝上，平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "campsite",
+        "zone": "tent-site",
+        "itemId": "camping-stake-puller",
+        "words": {
+          "zh-TW": "拔釘器",
+          "en": "tent stake puller",
+          "ja": {
+            "text": "ペグ抜き",
+            "reading": "ペグぬき"
+          }
+        }
+      }
+    }
+  ]
+}

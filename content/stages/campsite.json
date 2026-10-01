@@ -1,0 +1,353 @@
+{
+  "zones": {
+    "camp-entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "營地入口與行李通道",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "fixture": "facade",
+          "door": true,
+          "main": "folding-wagon",
+          "beside": [
+            "camp-chair"
+          ],
+          "front": [
+            "tent-peg",
+            "tent-mallet",
+            "guyline"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "天幕下的炊事桌",
+          "x": [
+            0.24,
+            0.49
+          ],
+          "fixture": "platform",
+          "main": "camping-tarp",
+          "on": [
+            "folding-table-campsite",
+            "camping-stove",
+            "gas-canister",
+            "camping-pot"
+          ],
+          "beside": [
+            "camping-lantern"
+          ],
+          "front": [
+            "camping-kettle"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "營火料理區",
+          "x": [
+            0.55,
+            0.76
+          ],
+          "main": "fire-pit",
+          "on": [
+            "charcoal-bag",
+            "fire-starter",
+            "kindling-bundle",
+            "fire-tongs"
+          ],
+          "beside": [
+            "camp-mug"
+          ],
+          "front": [
+            "camp-plate",
+            "camping-spork",
+            "camping-cutlery-set"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "帳篷休息角",
+          "x": [
+            0.8,
+            0.97
+          ],
+          "fixture": "rug",
+          "main": "sleeping-bag",
+          "on": [
+            "camping-mat"
+          ]
+        }
+      ]
+    },
+    "supply-hut": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "補給與飲水櫃台",
+          "x": [
+            0.04,
+            0.25
+          ],
+          "fixture": "counter",
+          "on": [
+            "water-jug",
+            "thermos-flask",
+            "mason-jar"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "乾糧與早餐層架",
+          "x": [
+            0.29,
+            0.52
+          ],
+          "fixture": "shelf",
+          "on": [
+            "canned-beans",
+            "canned-soup",
+            "pasta",
+            "rice-bag"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "早餐抹醬與熱可可",
+          "x": [
+            0.04,
+            0.26
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "oatmeal-tin",
+            "granola",
+            "peanut-butter-jar",
+            "maple-syrup-bottle"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "甜點與飲品備料桌",
+          "x": [
+            0.3,
+            0.54
+          ],
+          "fixture": "counter",
+          "on": [
+            "honey-squeeze-bottle",
+            "marshmallow",
+            "chocolate-chip",
+            "cocoa-tin"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "餐具清洗與備餐區",
+          "x": [
+            0.57,
+            0.79
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "dish-soap",
+            "dish-sponge",
+            "chef-knife",
+            "can-opener"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "打包與急救用品",
+          "x": [
+            0.82,
+            0.97
+          ],
+          "fixture": "counter",
+          "on": [
+            "lunchbox",
+            "food-container",
+            "measuring-spoons",
+            "coffee-filter-campsite"
+          ],
+          "beside": [
+            "firewood-bundle",
+            "first-aid-kit-campsite"
+          ]
+        }
+      ]
+    },
+    "picnic-ground": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "野餐桌與桌布",
+          "x": [
+            0.08,
+            0.33
+          ],
+          "main": "picnic-tablecloth",
+          "on": [
+            "picnic-napkin"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "沙拉備餐桌",
+          "x": [
+            0.37,
+            0.61
+          ],
+          "front": [
+            "strawberry",
+            "blueberries",
+            "lemon-slices",
+            "plastic-cutting-board",
+            "paring-knife",
+            "serving-bowl",
+            "serving-spoon-campsite"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "冷藏飲品與野餐食材",
+          "x": [
+            0.65,
+            0.84
+          ],
+          "main": "cooler-box",
+          "on": [
+            "juice-carton",
+            "watermelon-wedge",
+            "apple-campsite"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "野餐醬料與配菜",
+          "x": [
+            0.88,
+            0.98
+          ],
+          "front": [
+            "corn-cob",
+            "bread-loaf-campsite",
+            "ketchup-bottle",
+            "mustard-bottle",
+            "pickle-jar-campsite",
+            "mustard-jar"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "草地上的燈籠",
+          "x": [
+            0.03,
+            0.06
+          ],
+          "fixture": "stand",
+          "on": [
+            "paper-lantern"
+          ]
+        }
+      ]
+    },
+    "tent-site": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "帳篷與睡眠區",
+          "x": [
+            0.04,
+            0.25
+          ],
+          "fixture": "platform",
+          "main": "tent-footprint",
+          "on": [
+            "camping-cot",
+            "camping-stool"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "營地休憩長椅",
+          "x": [
+            0.29,
+            0.47
+          ],
+          "main": "picnic-bench",
+          "beside": [
+            "camping-hammock"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "炊事與冷藏收納",
+          "x": [
+            0.51,
+            0.7
+          ],
+          "main": "camping-table",
+          "on": [
+            "camping-cooler",
+            "camping-heater"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "淋浴與如廁隱私區",
+          "x": [
+            0.74,
+            0.96
+          ],
+          "main": "camping-screen",
+          "beside": [
+            "camping-shower",
+            "portable-toilet"
+          ],
+          "front": [
+            "camping-bin"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "營地工具與備品",
+          "x": [
+            0.04,
+            0.24
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "camping-shovel",
+            "camping-axe",
+            "camping-saw",
+            "camping-stake-puller"
+          ],
+          "beside": [
+            "camping-water-filter",
+            "camping-bug-repellent"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "太陽能與營地導航",
+          "x": [
+            0.29,
+            0.48
+          ],
+          "fixture": "stand",
+          "on": [
+            "camping-solar-panel",
+            "camping-map",
+            "camping-binoculars",
+            "camping-solar-light"
+          ],
+          "front": [
+            "camping-flagstone"
+          ]
+        }
+      ]
+    }
+  }
+}

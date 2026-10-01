@@ -1,0 +1,604 @@
+{
+  "en": {
+    "camping-tarp": {
+      "heard": "TARP.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "folding-wagon": {
+      "heard": "Folding Wagon.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "folding-table-campsite": {
+      "heard": "Folding table.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-stove": {
+      "heard": "camping stove,",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "gas-canister": {
+      "heard": "Gas canister.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-pot": {
+      "heard": "Camping pot.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-lantern": {
+      "heard": "Camping Lantern.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camp-chair": {
+      "heard": "Camp chair.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "guyline": {
+      "heard": "GuyLine.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "tent-mallet": {
+      "heard": "Tent mallet.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-kettle": {
+      "heard": "Camping kettle.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "tent-peg": {
+      "heard": "Tent peg.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "water-jug": {
+      "heard": "Water jug.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "dish-soap": {
+      "heard": "Dish soap.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "can-opener": {
+      "heard": "Can opener.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "pasta": {
+      "heard": "Pasta.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "rice-bag": {
+      "heard": "Bag of rice.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "mason-jar": {
+      "heard": "Mason jar.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "thermos-flask": {
+      "heard": "Thermos flask.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "sleeping-bag": {
+      "heard": "Sleeping bag.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-mat": {
+      "heard": "Sleeping mat.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "fire-pit": {
+      "heard": "Fire pit.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "charcoal-bag": {
+      "heard": "Charcoal bag.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "fire-tongs": {
+      "heard": "Fire Tongues.",
+      "score": 0.82,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "fire-starter": {
+      "heard": "Firestarter.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "kindling-bundle": {
+      "heard": "Kindling Bundle?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camp-mug": {
+      "heard": "Camp Mug.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-spork": {
+      "heard": "Spork?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camp-plate": {
+      "heard": "Camp plate.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-cutlery-set": {
+      "heard": "Cutlery set.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "oatmeal-tin": {
+      "heard": "oatmeal tin,",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "granola": {
+      "heard": "Granola?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "peanut-butter-jar": {
+      "heard": "Peanut butter jar.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "maple-syrup-bottle": {
+      "heard": "maple syrup bottle,",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "honey-squeeze-bottle": {
+      "heard": "Honey squeeze bottle?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "marshmallow": {
+      "heard": "Marshmallow.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "chocolate-chip": {
+      "heard": "Chocolate chips.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "cocoa-tin": {
+      "heard": "Cocoa tin.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "lunchbox": {
+      "heard": "Lunchbox.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "food-container": {
+      "heard": "Food container.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "measuring-spoons": {
+      "heard": "Measuring spoons.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-filter-campsite": {
+      "heard": "coffee filter,",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "firewood-bundle": {
+      "heard": "Firewood Bundle.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-trailer": {
+      "heard": "Camper Trailer",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "pickup-truck": {
+      "heard": "Pickup truck.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "paper-plate": {
+      "heard": "Paper plate.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "paper-cup-campsite": {
+      "heard": "Paper cup.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "salad-leaf": {
+      "heard": "Lettuce leaf.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "tent-footprint": {
+      "heard": "Tent footprint.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-table": {
+      "heard": "Camping table.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-screen": {
+      "heard": "Camping screen.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "paper-lantern": {
+      "heard": "Paper Lantern.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-cot": {
+      "heard": "Camping cot?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-stool": {
+      "heard": "Camping stool.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-cooler": {
+      "heard": "Camping cooler.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-heater": {
+      "heard": "Camping Heater",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-solar-panel": {
+      "heard": "Camping solar panel.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-binoculars": {
+      "heard": "Camping binoculars.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-map": {
+      "heard": "Camping map.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-solar-light": {
+      "heard": "Camping solar light.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-shower": {
+      "heard": "Camping shower?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "portable-toilet": {
+      "heard": "Portable toilet?",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "pickle-jar-campsite": {
+      "heard": "Pickle Jar.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "paring-knife": {
+      "heard": "Pairing knife.",
+      "score": 0.92,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "mustard-jar": {
+      "heard": "Mustard Jar.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-cupboard": {
+      "heard": "Camping Cupboard.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "strawberry": {
+      "heard": "Strawberry.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "blueberries": {
+      "heard": "Blueberries.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-flagstone": {
+      "heard": "Boone, Camping Stepping Stone.",
+      "score": 0.8,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "lemon-slices": {
+      "heard": "Lemon slice.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "bread-loaf-campsite": {
+      "heard": "Loaf of bread.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "cooler-box": {
+      "heard": "Cooler box.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "picnic-tablecloth": {
+      "heard": "Tablecloth.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "picnic-bench": {
+      "heard": "Picnic Bench.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "watermelon-wedge": {
+      "heard": "Watermelon Wedge.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "juice-carton": {
+      "heard": "Juice Carton Nap",
+      "score": 0.79,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-axe": {
+      "heard": "Camping Act.",
+      "score": 0.8,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-saw": {
+      "heard": "Camping saw.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-stake-puller": {
+      "heard": "Tent stake puller.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-bug-repellent": {
+      "heard": "Bug repellent.",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "camping-fan": {
+      "heard": "Camping fan!",
+      "score": 1,
+      "take": "en-1790879653743.aac",
+      "account": "chatgpt1"
+    },
+    "dish-sponge": {
+      "heard": "Dish Sponge.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "chef-knife": {
+      "heard": "Chef Knife.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "canned-beans": {
+      "heard": "Canned beans.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "canned-soup": {
+      "heard": "Canned soup.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "first-aid-kit-campsite": {
+      "heard": "First aid kit.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "paper-towel-roll": {
+      "heard": "Paper towel roll.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "salad-dressing-bottle": {
+      "heard": "salad dressing bottle,",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "corn-cob": {
+      "heard": "Corncob.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "plastic-cutting-board": {
+      "heard": "Cutting board.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "ketchup-bottle": {
+      "heard": "Ketchup bottle.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "camping-bin": {
+      "heard": "Camping bin.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "mustard-bottle": {
+      "heard": "Mustard Bottle",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "serving-spoon-campsite": {
+      "heard": "Serving sports.",
+      "score": 0.77,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "picnic-napkin": {
+      "heard": "Napkin.",
+      "score": 1,
+      "take": "en-1790880050097.aac",
+      "account": "chatgpt1"
+    },
+    "serving-bowl": {
+      "heard": "Serving Bowl.",
+      "score": 1,
+      "take": "en-1790880136961.aac",
+      "account": "chatgpt1"
+    },
+    "apple-campsite": {
+      "heard": "Apple.",
+      "score": 1,
+      "take": "en-1790880136961.aac",
+      "account": "chatgpt1"
+    },
+    "camping-shovel": {
+      "heard": "Camping shovel.",
+      "score": 1,
+      "take": "en-1790880136961.aac",
+      "account": "chatgpt1"
+    },
+    "camping-hammock": {
+      "heard": "Hammock.",
+      "score": 1,
+      "take": "en-1790880136961.aac",
+      "account": "chatgpt1"
+    },
+    "camping-water-filter": {
+      "heard": "Camping water filter.",
+      "score": 1,
+      "take": "en-1790880136961.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
