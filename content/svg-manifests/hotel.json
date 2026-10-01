@@ -1,0 +1,2071 @@
+{
+  "sceneName": "語言小鎮・飯店",
+  "sceneSlug": "la-hotel",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "飯店門口",
+    "lobby": "大廳",
+    "guest-floor": "客房走廊",
+    "dining-room": "餐廳區"
+  },
+  "elements": [
+    {
+      "name": "代客泊車櫃檯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的深色木製高台，頂面平坦，底部有穩固的方形底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "valet-podium",
+        "words": {
+          "zh-TW": "代客泊車櫃檯",
+          "en": "valet podium",
+          "ja": {
+            "text": "バレーパーキングの受付台",
+            "reading": "バレーパーキングのうけつけだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "停車繳費機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的灰色金屬機箱，正面有深色螢幕、圓形按鍵和突出的收款口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "parking-pay-station",
+        "words": {
+          "zh-TW": "停車繳費機",
+          "en": "parking pay station",
+          "ja": {
+            "text": "駐車料金精算機",
+            "reading": "ちゅうしゃりょうきんせいさんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "防撞柱套",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "套在短柱外的圓筒形橡膠護套，表面有凸起的橫向紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "bollard-sleeve",
+        "words": {
+          "zh-TW": "防撞柱套",
+          "en": "bollard sleeve",
+          "ja": {
+            "text": "ボラードカバー",
+            "reading": "ボラードカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "路緣斜坡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "灰色混凝土斜面連接高低不同的地面，表面平整，兩側有直邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "curb-ramp",
+        "words": {
+          "zh-TW": "路緣斜坡",
+          "en": "curb ramp",
+          "ja": {
+            "text": "縁石スロープ",
+            "reading": "えんせきスロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "排水溝槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "嵌在地面的長條形排水槽，頂部覆著一排窄縫金屬格柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "drain-channel",
+        "words": {
+          "zh-TW": "排水溝槽",
+          "en": "drain channel",
+          "ja": {
+            "text": "排水溝",
+            "reading": "はいすいこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "停車場柵欄桿",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色長桿橫向伸出，桿身有紅色斜帶，一端連著矮柱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "parking-gate-arm",
+        "words": {
+          "zh-TW": "停車場柵欄桿",
+          "en": "parking gate arm",
+          "ja": {
+            "text": "駐車場ゲートバー",
+            "reading": "ちゅうしゃじょうゲートバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨棚排水管",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "沿雨棚邊緣向下彎折的金屬管，管口朝向地面，外形細長。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "canopy-drain",
+        "words": {
+          "zh-TW": "雨棚排水管",
+          "en": "canopy drainpipe",
+          "ja": {
+            "text": "ひさしの雨どい",
+            "reading": "ひさしのあまどい"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動關門器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "裝在門上方的銀色長方盒體，連著一支細長彎折的金屬臂。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "door-closer-arm",
+        "words": {
+          "zh-TW": "自動關門器",
+          "en": "door closer",
+          "ja": {
+            "text": "ドアクローザー",
+            "reading": "ドアクローザー"
+          }
+        }
+      }
+    },
+    {
+      "name": "入口雨棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "飯店門上方伸出的扁平屋簷，底面平整，邊緣由細柱支撐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "entry-canopy",
+        "words": {
+          "zh-TW": "入口雨棚",
+          "en": "entry canopy",
+          "ja": {
+            "text": "玄関ひさし",
+            "reading": "げんかんひさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "門把手",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在門板上的弧形銀色金屬把手，兩端以圓形底座連接。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "door-handle-hotel",
+        "words": {
+          "zh-TW": "門把手",
+          "en": "door handle",
+          "ja": {
+            "text": "ドアハンドル",
+            "reading": "ドアハンドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "門鉸鏈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "門邊可見的銀色金屬鉸鏈，由兩片長板和中間的圓軸組成。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "door-hinge",
+        "words": {
+          "zh-TW": "門鉸鏈",
+          "en": "door hinge",
+          "ja": {
+            "text": "ドアの蝶番",
+            "reading": "ドアのちょうつがい"
+          }
+        }
+      }
+    },
+    {
+      "name": "入口地毯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "門前平鋪的長方形深色地毯，四邊有窄邊框，表面帶短絨。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "entry-rug",
+        "words": {
+          "zh-TW": "入口地毯",
+          "en": "entry rug",
+          "ja": {
+            "text": "玄関マット",
+            "reading": "げんかんマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "對講機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆上固定的窄長方形灰色面板，上方有小圓孔，下方有方形按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "intercom",
+        "words": {
+          "zh-TW": "對講機",
+          "en": "intercom",
+          "ja": {
+            "text": "インターホン",
+            "reading": "インターホン"
+          }
+        }
+      }
+    },
+    {
+      "name": "無障礙坡道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬闊的灰色斜面從路面升到入口，兩側各有一支平行扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "wheelchair-ramp",
+        "words": {
+          "zh-TW": "無障礙坡道",
+          "en": "wheelchair ramp",
+          "ja": {
+            "text": "車椅子用スロープ",
+            "reading": "くるまいすようスロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門階",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口前的一級灰色石階，頂面平坦，正面有清楚的直角邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "entry-step",
+        "words": {
+          "zh-TW": "門階",
+          "en": "entry step",
+          "ja": {
+            "text": "玄関の段差",
+            "reading": "げんかんのだんさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨棚支柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長的深灰色金屬柱，從地面直立支撐入口上方的雨棚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "canopy-support",
+        "words": {
+          "zh-TW": "雨棚支柱",
+          "en": "canopy support",
+          "ja": {
+            "text": "ひさしの支柱",
+            "reading": "ひさしのしちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的木製座板由四支深色金屬腳架支撐，座面平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "luggage-bench",
+        "words": {
+          "zh-TW": "行李長椅",
+          "en": "luggage bench",
+          "ja": {
+            "text": "荷物置きベンチ",
+            "reading": "にもつおきベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "煙蒂筒",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細高的黑色圓筒立在方形底座上，頂端有窄小的投入口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "ash-bin",
+        "words": {
+          "zh-TW": "煙蒂筒",
+          "en": "ash bin",
+          "ja": {
+            "text": "吸い殻入れ",
+            "reading": "すいがらいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "寵物便袋盒",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在短柱上的綠色小方盒，正面有一道窄縫和向下拉取口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "dog-waste-bin",
+        "words": {
+          "zh-TW": "寵物便袋盒",
+          "en": "dog waste bag dispenser",
+          "ja": {
+            "text": "犬のふん処理袋入れ",
+            "reading": "いぬのふんしょりぶくろいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "停車收費表支柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的灰色金屬立柱，頂部平坦，底部以圓形底板固定在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "parking-meter-post-hotel",
+        "words": {
+          "zh-TW": "停車收費表支柱",
+          "en": "parking meter post",
+          "ja": {
+            "text": "パーキングメーターの支柱",
+            "reading": "パーキングメーターのしちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗車刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄刷子前端有一團長而柔軟的藍色刷毛，外形像扁平掃帚頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "car-wash-brush",
+        "words": {
+          "zh-TW": "洗車刷",
+          "en": "car wash brush",
+          "ja": {
+            "text": "洗車ブラシ",
+            "reading": "せんしゃブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "除冰刮刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短粗的塑膠握柄連著寬扁刮片，刮片一側呈直線薄刃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "ice-scraper",
+        "words": {
+          "zh-TW": "除冰刮刀",
+          "en": "ice scraper",
+          "ja": {
+            "text": "霜取りスクレーパー",
+            "reading": "しもとりスクレーパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "雪鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長柄末端連著寬大的弧形塑膠鏟面，鏟面前緣平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "snow-shovel",
+        "words": {
+          "zh-TW": "雪鏟",
+          "en": "snow shovel",
+          "ja": {
+            "text": "雪かきスコップ",
+            "reading": "ゆきかきスコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "擋風玻璃清洗器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄連著一片長方形海綿墊，外側包著窄窄的橡膠刮條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "windshield-washer",
+        "words": {
+          "zh-TW": "擋風玻璃清洗器",
+          "en": "windshield washer",
+          "ja": {
+            "text": "フロントガラス洗浄機",
+            "reading": "フロントガラスせんじょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "車牌框",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的黑色長方框，中央留空，四角有小圓形固定孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "entrance",
+        "itemId": "license-plate-frame",
+        "words": {
+          "zh-TW": "車牌框",
+          "en": "license plate frame",
+          "ja": {
+            "text": "ナンバープレートフレーム",
+            "reading": "ナンバープレートフレーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "接待櫃檯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "弧形的深色木製櫃檯，正面有一圈淺色飾邊，檯面平整寬闊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-reception-desk",
+        "words": {
+          "zh-TW": "接待櫃檯",
+          "en": "reception desk",
+          "ja": {
+            "text": "フロントデスク",
+            "reading": "フロントデスク"
+          }
+        }
+      }
+    },
+    {
+      "name": "樓梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一段寬闊的木製樓梯向上延伸，兩側有深色扶手，階面呈整齊的橫向梯級。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-staircase",
+        "words": {
+          "zh-TW": "樓梯",
+          "en": "staircase",
+          "ja": {
+            "text": "階段",
+            "reading": "かいだん"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "單盞黃銅吊燈垂在吧台上方，圓錐形燈罩向下開口，內側映著溫暖的光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-pendant-lamp",
+        "words": {
+          "zh-TW": "吊燈",
+          "en": "pendant lamp",
+          "ja": {
+            "text": "ペンダントライト",
+            "reading": "ペンダントライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶几",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮身的長方形木茶几，桌面平坦，四根細直桌腳略微向外張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-coffee-table",
+        "words": {
+          "zh-TW": "茶几",
+          "en": "coffee table",
+          "ja": {
+            "text": "ローテーブル",
+            "reading": "ローテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑰匙盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺棕色橢圓陶盤，邊緣微微翹起，盤底放著幾把金屬鑰匙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-key-bowl",
+        "words": {
+          "zh-TW": "鑰匙盤",
+          "en": "key bowl",
+          "ja": {
+            "text": "鍵入れ",
+            "reading": "かぎいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "檯燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃銅短柱立在圓形底座上，頂端罩著米白色布燈罩，燈罩略向外展開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-table-lamp",
+        "words": {
+          "zh-TW": "檯燈",
+          "en": "table lamp",
+          "ja": {
+            "text": "テーブルランプ",
+            "reading": "テーブルランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "服務鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只亮銀色圓頂金屬鈴放在扁平底座上，中央有短短的按鈕凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-bell",
+        "words": {
+          "zh-TW": "服務鈴",
+          "en": "service bell",
+          "ja": {
+            "text": "呼び鈴",
+            "reading": "よびりん"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌曆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "三角支架撐起一疊空白白紙，紙頁整齊翻折，畫面上沒有數字或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-desk-calendar",
+        "words": {
+          "zh-TW": "桌曆",
+          "en": "desk calendar",
+          "ja": {
+            "text": "卓上カレンダー",
+            "reading": "たくじょうカレンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "房卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張素面的白色塑膠卡片，四角圓滑，中央沒有圖案、文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-keycard",
+        "words": {
+          "zh-TW": "房卡",
+          "en": "key card",
+          "ja": {
+            "text": "カードキー",
+            "reading": "カードキー"
+          }
+        }
+      }
+    },
+    {
+      "name": "糖罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的白色陶瓷糖罐帶圓蓋和短把手，罐身圓潤，旁邊放著一支小匙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-sugar-bowl",
+        "words": {
+          "zh-TW": "糖罐",
+          "en": "sugar bowl",
+          "ja": {
+            "text": "砂糖入れ",
+            "reading": "さとういれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把亮銀色金屬冰夾，兩臂交叉相連，尖端向內彎成短齒，握柄圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-ice-tongs",
+        "words": {
+          "zh-TW": "冰夾",
+          "en": "ice tongs",
+          "ja": {
+            "text": "アイストング",
+            "reading": "アイストング"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方正的黑色咖啡機立在檯面上，正面有圓形沖煮口、接杯托盤和側邊水箱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-coffee-machine",
+        "words": {
+          "zh-TW": "咖啡機",
+          "en": "coffee machine",
+          "ja": {
+            "text": "コーヒーマシン",
+            "reading": "コーヒーマシン"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙發",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬大的深綠色雙人沙發，厚實的椅背和扶手線條圓潤，四隻短木腳露在底下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-sofa",
+        "words": {
+          "zh-TW": "沙發",
+          "en": "sofa",
+          "ja": {
+            "text": "ソファ",
+            "reading": "ソファ"
+          }
+        }
+      }
+    },
+    {
+      "name": "電梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一對銀灰色金屬門嵌在牆邊，門縫筆直，頂端有窄長的深色指示窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-elevator",
+        "words": {
+          "zh-TW": "電梯",
+          "en": "elevator",
+          "ja": {
+            "text": "エレベーター",
+            "reading": "エレベーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形木框掛鐘，乳白色鐘面配深色指針，外圈有厚實的棕色邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-wall-clock",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall clock",
+          "ja": {
+            "text": "掛け時計",
+            "reading": "かけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁爐",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "嵌在牆腳的石砌壁爐，寬大的矩形開口內有橘紅火光，外框由灰色石塊砌成。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-fireplace",
+        "words": {
+          "zh-TW": "壁爐",
+          "en": "fireplace",
+          "ja": {
+            "text": "暖炉",
+            "reading": "だんろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "立燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的黑色立燈立在圓形底座上，頂端有乳白色圓筒燈罩，向下投出暖光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-floor-lamp",
+        "words": {
+          "zh-TW": "立燈",
+          "en": "floor lamp",
+          "ja": {
+            "text": "フロアランプ",
+            "reading": "フロアランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "盆栽植物",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一盆濃綠的闊葉植物種在赭色陶盆裡，幾片大葉向四周舒展，盆身平滑厚實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-potted-plant",
+        "words": {
+          "zh-TW": "盆栽植物",
+          "en": "potted plant",
+          "ja": {
+            "text": "鉢植え",
+            "reading": "はちうえ"
+          }
+        }
+      }
+    },
+    {
+      "name": "窗簾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一幅深藍色厚布窗簾垂在窗邊，布面有柔軟的直向皺褶，底緣整齊落下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-curtain",
+        "words": {
+          "zh-TW": "窗簾",
+          "en": "curtain",
+          "ja": {
+            "text": "カーテン",
+            "reading": "カーテン"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃銅壁燈由彎曲短臂托住乳白色玻璃燈罩，燈罩朝上，背後有圓形底板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-wall-sconce",
+        "words": {
+          "zh-TW": "壁燈",
+          "en": "wall sconce",
+          "ja": {
+            "text": "壁掛けランプ",
+            "reading": "かべかけランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鏡子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一面高大的長方形鏡子，外框是深棕色木雕花紋，鏡面映出淡淡的室內光影。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-mirror",
+        "words": {
+          "zh-TW": "鏡子",
+          "en": "mirror",
+          "ja": {
+            "text": "鏡",
+            "reading": "かがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "風景畫",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木框裡是一幅山湖風景油畫，遠處有青綠山巒，前景是平靜的藍色湖面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-painting",
+        "words": {
+          "zh-TW": "風景畫",
+          "en": "landscape painting",
+          "ja": {
+            "text": "風景画",
+            "reading": "ふうけいが"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊深色木板固定在牆上，兩端由黑色金屬托架支撐，板面簡潔平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-wall-shelf",
+        "words": {
+          "zh-TW": "壁架",
+          "en": "wall shelf",
+          "ja": {
+            "text": "壁棚",
+            "reading": "かべだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "收納櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一座矮身的深木色收納櫃，兩扇門各有小圓把手，頂部檯面平整寬厚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-cabinet",
+        "words": {
+          "zh-TW": "收納櫃",
+          "en": "cabinet",
+          "ja": {
+            "text": "キャビネット",
+            "reading": "キャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "花瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "乳白色陶瓷花瓶，瓶口窄小、肩部圓潤，底部穩重，表面帶細緻光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "lobby",
+        "itemId": "lobby-vase",
+        "words": {
+          "zh-TW": "花瓶",
+          "en": "vase",
+          "ja": {
+            "text": "花瓶",
+            "reading": "かびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "客房門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深棕色平面木門，中央有一塊小型金屬門牌，旁邊裝著圓形門眼。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "guestroom-door",
+        "words": {
+          "zh-TW": "客房門",
+          "en": "guestroom door",
+          "ja": {
+            "text": "客室のドア",
+            "reading": "きゃくしつのドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "製冰機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色直立機箱，上方有深色取冰口，下方設有方形接水盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "ice-machine",
+        "words": {
+          "zh-TW": "製冰機",
+          "en": "ice machine",
+          "ja": {
+            "text": "製氷機",
+            "reading": "せいひょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "火警警報按鈕",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色方盒固定在牆上，正面有突出的拉柄和小透明視窗，沒有任何文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "fire-alarm-pull-station",
+        "words": {
+          "zh-TW": "火警警報按鈕",
+          "en": "fire alarm pull station",
+          "ja": {
+            "text": "火災報知設備の発信機",
+            "reading": "かさいほうちせつびのはっしんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "灑水器噴頭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金屬圓形噴頭嵌在牆面高處，中央有小小的突起和環狀邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "sprinkler-head",
+        "words": {
+          "zh-TW": "灑水器噴頭",
+          "en": "sprinkler head",
+          "ja": {
+            "text": "スプリンクラーヘッド",
+            "reading": "スプリンクラーヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "緊急照明燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形燈盒固定在牆上，兩側各有一顆朝前的圓形燈頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "emergency-light-hotel",
+        "words": {
+          "zh-TW": "緊急照明燈",
+          "en": "emergency light",
+          "ja": {
+            "text": "非常灯",
+            "reading": "ひじょうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "出口燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色長方形燈箱掛在牆上，中央有白色奔跑人形和向右的箭頭圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "exit-light",
+        "words": {
+          "zh-TW": "出口燈",
+          "en": "exit light",
+          "ja": {
+            "text": "誘導灯",
+            "reading": "ゆうどうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "消防灑水管",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "紅色金屬管沿牆面橫向延伸，接著數個短短的垂直支管與圓形接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "sprinkler-pipe",
+        "words": {
+          "zh-TW": "消防灑水管",
+          "en": "sprinkler pipe",
+          "ja": {
+            "text": "スプリンクラー配管",
+            "reading": "スプリンクラーはいかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣滑槽門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "牆面上的方形金屬小門，帶有窄長把手與厚實邊框，門片微微傾斜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "laundry-chute-door",
+        "words": {
+          "zh-TW": "洗衣滑槽門",
+          "en": "laundry chute door",
+          "ja": {
+            "text": "リネンシュートの扉",
+            "reading": "リネンシュートのとびら"
+          }
+        }
+      }
+    },
+    {
+      "name": "布草推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色四輪推車堆著整齊白毛巾，兩側有高扶手，底部露出小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "linen-cart",
+        "words": {
+          "zh-TW": "布草推車",
+          "en": "linen cart",
+          "ja": {
+            "text": "リネンカート",
+            "reading": "リネンカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "客房清潔推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長金屬推車上掛著白布袋，層架放著摺疊毛巾與清潔瓶罐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "housekeeping-cart",
+        "words": {
+          "zh-TW": "客房清潔推車",
+          "en": "housekeeping cart",
+          "ja": {
+            "text": "客室清掃カート",
+            "reading": "きゃくしつせいそうカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "吸塵器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深色直立吸塵器靠牆停放，長柄連著圓弧吸頭，側邊盤著電線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "vacuum-cleaner",
+        "words": {
+          "zh-TW": "吸塵器",
+          "en": "vacuum cleaner",
+          "ja": {
+            "text": "掃除機",
+            "reading": "そうじき"
+          }
+        }
+      }
+    },
+    {
+      "name": "地面濕滑警示錐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黃色三角錐立在地上，底座寬而扁，正面有簡單黑色滑倒圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "wet-floor-cone",
+        "words": {
+          "zh-TW": "地面濕滑警示錐",
+          "en": "wet floor cone",
+          "ja": {
+            "text": "床滑り注意コーン",
+            "reading": "ゆかすべりちゅういコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺疊毛巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾條白色毛巾整齊疊成方塊，邊緣有柔軟絨圈和清楚的摺痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "folded-towel",
+        "words": {
+          "zh-TW": "摺疊毛巾",
+          "en": "folded towel",
+          "ja": {
+            "text": "たたんだタオル",
+            "reading": "たたんだタオル"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一條白色長方形浴巾掛在推車側邊，布面柔軟，底端有短短流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "bath-towel",
+        "words": {
+          "zh-TW": "浴巾",
+          "en": "bath towel",
+          "ja": {
+            "text": "バスタオル",
+            "reading": "バスタオル"
+          }
+        }
+      }
+    },
+    {
+      "name": "布草袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色高筒布袋靠在推車旁，袋口以粗繩束起，布面帶有摺皺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "linen-sack",
+        "words": {
+          "zh-TW": "布草袋",
+          "en": "linen sack",
+          "ja": {
+            "text": "リネン袋",
+            "reading": "リネンぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣精補充機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色直立補充機放在走廊一角，正面有透明儲槽、旋轉出料口與接取盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "laundry-soap-dispenser",
+        "words": {
+          "zh-TW": "洗衣精補充機",
+          "en": "laundry detergent dispenser",
+          "ja": {
+            "text": "洗剤ディスペンサー",
+            "reading": "せんざいディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "客房托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色長方形托盤落在地上，四周有低矮圍邊，兩端各有橢圓形握孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "room-service-tray",
+        "words": {
+          "zh-TW": "客房托盤",
+          "en": "room service tray",
+          "ja": {
+            "text": "ルームサービス用トレー",
+            "reading": "ルームサービスようトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "熨衣板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長熨衣板鋪著淺灰布套，尖端呈圓弧，底下交叉金屬腳可折疊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "ironing-board-hotel",
+        "words": {
+          "zh-TW": "熨衣板",
+          "en": "ironing board",
+          "ja": {
+            "text": "アイロン台",
+            "reading": "アイロンだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色折疊行李架以四條交叉金屬腳支撐，頂部並排著數根寬布帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "folding-luggage-rack",
+        "words": {
+          "zh-TW": "行李架",
+          "en": "folding luggage rack",
+          "ja": {
+            "text": "折りたたみ式荷物ラック",
+            "reading": "おりたたみしきにもつラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "擦鞋機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色矮機器底座上裝著兩個圓形毛刷，後方有直立握桿和小型啟動鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "shoe-polishing-machine",
+        "words": {
+          "zh-TW": "擦鞋機",
+          "en": "shoe polishing machine",
+          "ja": {
+            "text": "靴磨き機",
+            "reading": "くつみがきき"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動販賣機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "直立的紅色機箱，正面有透明展示窗、取物口和圓形按鈕，不見文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "vending-machine-hotel",
+        "words": {
+          "zh-TW": "自動販賣機",
+          "en": "vending machine",
+          "ja": {
+            "text": "自動販売機",
+            "reading": "じどうはんばいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色直立飲水機，頂部放著透明水桶，正面有兩個出水按鈕和接水槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "water-cooler-hotel",
+        "words": {
+          "zh-TW": "飲水機",
+          "en": "water cooler",
+          "ja": {
+            "text": "ウォーターサーバー",
+            "reading": "ウォーターサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "煙霧探測器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓形感測器貼在牆面高處，外圈有細小散熱孔，中央略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "smoke-detector-hotel",
+        "words": {
+          "zh-TW": "煙霧探測器",
+          "en": "smoke detector",
+          "ja": {
+            "text": "煙感知器",
+            "reading": "けむりかんちき"
+          }
+        }
+      }
+    },
+    {
+      "name": "溫控器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色小方盒固定在牆面，中央嵌著深色方形顯示窗，下方有兩顆圓按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "thermostat-hotel",
+        "words": {
+          "zh-TW": "溫控器",
+          "en": "thermostat",
+          "ja": {
+            "text": "温度調節器",
+            "reading": "おんどちょうせつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "帶位台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的深木色櫃台，正面有一扇小櫃門，檯面平整沒有紙張或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "restaurant-host-stand",
+        "words": {
+          "zh-TW": "帶位台",
+          "en": "host stand",
+          "ja": {
+            "text": "案内台",
+            "reading": "あんないだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "自助餐保溫爐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橢圓形銀色金屬鍋架在小底座上，頂部有拱起的翻蓋和短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "buffet-chafer",
+        "words": {
+          "zh-TW": "自助餐保溫爐",
+          "en": "chafing dish",
+          "ja": {
+            "text": "チェーフィングディッシュ",
+            "reading": "チェーフィングディッシュ"
+          }
+        }
+      }
+    },
+    {
+      "name": "長形上菜盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平的白色長橢圓瓷盤，兩端微微翹起，盤面空白。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "serving-platter",
+        "words": {
+          "zh-TW": "長形上菜盤",
+          "en": "serving platter",
+          "ja": {
+            "text": "大皿",
+            "reading": "おおざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙拉碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬口淺圓碗，外側是淡綠色，厚實碗沿清楚可見，碗內空著。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "salad-bowl",
+        "words": {
+          "zh-TW": "沙拉碗",
+          "en": "salad bowl",
+          "ja": {
+            "text": "サラダボウル",
+            "reading": "サラダボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "大湯匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色長柄大匙，圓潤匙面朝上，柄端略寬，平放在桌面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "serving-spoon",
+        "words": {
+          "zh-TW": "大湯匙",
+          "en": "serving spoon",
+          "ja": {
+            "text": "サービングスプーン",
+            "reading": "サービングスプーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "大叉子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色長柄叉子，前端有四根尖齒，柄身平直，平放在桌面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "serving-fork",
+        "words": {
+          "zh-TW": "大叉子",
+          "en": "serving fork",
+          "ja": {
+            "text": "サービングフォーク",
+            "reading": "サービングフォーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "湯盅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓鼓的白色大湯盅，兩側有短耳把，頂上覆著圓拱形蓋子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "soup-tureen",
+        "words": {
+          "zh-TW": "湯盅",
+          "en": "soup tureen",
+          "ja": {
+            "text": "スープポット",
+            "reading": "スープポット"
+          }
+        }
+      }
+    },
+    {
+      "name": "圓形托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺圓形銀色托盤，邊緣向上折起一圈，中央光滑無圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "serving-tray",
+        "words": {
+          "zh-TW": "圓形托盤",
+          "en": "serving tray",
+          "ja": {
+            "text": "丸盆",
+            "reading": "まるぼん"
+          }
+        }
+      }
+    },
+    {
+      "name": "醒酒瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明玻璃瓶底部寬圓、瓶頸細長，頂端有小塞子，瓶身空著。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "wine-decanter",
+        "words": {
+          "zh-TW": "醒酒瓶",
+          "en": "decanter",
+          "ja": {
+            "text": "デカンタ",
+            "reading": "デカンタ"
+          }
+        }
+      }
+    },
+    {
+      "name": "香檳杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明細長的直筒高腳杯，杯身狹長，細杯梗連著扁圓底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "champagne-flute",
+        "words": {
+          "zh-TW": "香檳杯",
+          "en": "champagne flute",
+          "ja": {
+            "text": "シャンパングラス",
+            "reading": "シャンパングラス"
+          }
+        }
+      }
+    },
+    {
+      "name": "玻璃水瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明玻璃壺身呈圓筒形，短壺嘴向外伸出，頂部有寬口與小把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "carafe",
+        "words": {
+          "zh-TW": "玻璃水瓶",
+          "en": "carafe",
+          "ja": {
+            "text": "カラフェ",
+            "reading": "カラフェ"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油罩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明圓頂小罩子配扁平白色底盤，頂端有一顆圓形小把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "butter-dish-cover",
+        "words": {
+          "zh-TW": "奶油罩",
+          "en": "butter dish cover",
+          "ja": {
+            "text": "バターディッシュカバー",
+            "reading": "バターディッシュカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "調味料架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木製方形小架有兩個圓孔，插著無標籤的鹽罐與胡椒罐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "condiment-caddy",
+        "words": {
+          "zh-TW": "調味料架",
+          "en": "condiment caddy",
+          "ja": {
+            "text": "調味料入れ",
+            "reading": "ちょうみりょういれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鹽罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的白色陶瓷小罐，頂部開口呈圓形，旁邊配一把小木匙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "salt-cellar",
+        "words": {
+          "zh-TW": "鹽罐",
+          "en": "salt cellar",
+          "ja": {
+            "text": "塩入れ",
+            "reading": "しおいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "胡椒研磨器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木色胡椒研磨器呈細長瓶狀，腰部略窄，頂端有圓形旋鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "pepper-mill",
+        "words": {
+          "zh-TW": "胡椒研磨器",
+          "en": "pepper mill",
+          "ja": {
+            "text": "ペッパーミル",
+            "reading": "ペッパーミル"
+          }
+        }
+      }
+    },
+    {
+      "name": "油瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明細頸玻璃瓶配尖嘴瓶蓋，瓶身空著，底部圓潤而穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "oil-cruet",
+        "words": {
+          "zh-TW": "油瓶",
+          "en": "oil cruet",
+          "ja": {
+            "text": "オイルボトル",
+            "reading": "オイルボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "醋瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃瓶有圓肚與細長瓶頸，頂端配短尖嘴蓋，瓶身沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "vinegar-cruet",
+        "words": {
+          "zh-TW": "醋瓶",
+          "en": "vinegar cruet",
+          "ja": {
+            "text": "ビネガーボトル",
+            "reading": "ビネガーボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "麵包籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺橢圓藤編籃，交錯編紋清晰，兩側略高的編織邊緣向外張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "bread-basket",
+        "words": {
+          "zh-TW": "麵包籃",
+          "en": "bread basket",
+          "ja": {
+            "text": "パンバスケット",
+            "reading": "パンバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐巾環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色圓環套著一塊折起的白餐巾，環面光滑，沒有刻字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "napkin-ring",
+        "words": {
+          "zh-TW": "餐巾環",
+          "en": "napkin ring",
+          "ja": {
+            "text": "ナプキンリング",
+            "reading": "ナプキンリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "布餐巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形白布折成簡單三角形，布面平整，邊緣有細細的縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "cloth-napkin",
+        "words": {
+          "zh-TW": "布餐巾",
+          "en": "cloth napkin",
+          "ja": {
+            "text": "布ナプキン",
+            "reading": "ぬのナプキン"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌旗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的酒紅色布條沿長桌中央鋪開，兩端垂下少許，沒有花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "table-runner",
+        "words": {
+          "zh-TW": "桌旗",
+          "en": "table runner",
+          "ja": {
+            "text": "テーブルランナー",
+            "reading": "テーブルランナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鹽胡椒罐組",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對透明矮玻璃罐並排放著，金屬蓋各有不同排列的小孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "salt-and-pepper-shakers",
+        "words": {
+          "zh-TW": "鹽胡椒罐組",
+          "en": "salt and pepper shakers",
+          "ja": {
+            "text": "塩こしょう入れ",
+            "reading": "しおこしょういれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "小蠟燭台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃圓杯裡放著一顆白色小蠟燭，杯壁厚實，底部平坦。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "tea-light-holder",
+        "words": {
+          "zh-TW": "小蠟燭台",
+          "en": "tea light holder",
+          "ja": {
+            "text": "ティーライトホルダー",
+            "reading": "ティーライトホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌牌架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬桿立在圓形底座上，頂端是空白夾口，沒有插入牌片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "table-number-stand-hotel",
+        "words": {
+          "zh-TW": "桌牌架",
+          "en": "table number stand",
+          "ja": {
+            "text": "テーブルナンバースタンド",
+            "reading": "テーブルナンバースタンド"
+          }
+        }
+      }
+    }
+  ]
+}

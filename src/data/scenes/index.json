@@ -404,5 +404,19 @@
       ],
       "body": "<ellipse cx=\"70\" cy=\"157\" rx=\"46\" ry=\"16\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"25\" y=\"143\" width=\"90\" height=\"14\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><ellipse cx=\"70\" cy=\"143\" rx=\"45\" ry=\"14\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"65\" y=\"18\" width=\"10\" height=\"126\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"66\" y=\"8\" width=\"8\" height=\"14\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"25\" x2=\"68\" y2=\"136\" stroke=\"#90a4ae\" stroke-width=\"2\"/><ellipse cx=\"70\" cy=\"143\" rx=\"8\" ry=\"3\" fill=\"#37474f\"/>"
     }
+  },
+  {
+    "id": "hotel",
+    "name": "飯店",
+    "itemCount": 98,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        160,
+        140
+      ],
+      "body": "<polygon points=\"8,38 50,38 150,102 150,134 8,134\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"8,38 50,38 150,102 8,102\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"50\" y1=\"38\" x2=\"50\" y2=\"70\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"8\" y1=\"102\" x2=\"150\" y2=\"102\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"12\" y=\"42\" width=\"32\" height=\"4\" fill=\"#fff\" opacity=\"0.25\"/>"
+    }
   }
 ]

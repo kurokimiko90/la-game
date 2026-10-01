@@ -1,0 +1,478 @@
+{
+  "en": {
+    "lobby-pendant-lamp": {
+      "heard": "Pendant lamp.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "canopy-support": {
+      "heard": "Canopy support.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-wall-clock": {
+      "heard": "Wall Clock",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "canopy-drain": {
+      "heard": "Canopy Drain Pipe.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "entry-canopy": {
+      "heard": "Entry canopy.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-painting": {
+      "heard": "Landscape painting.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-wall-sconce": {
+      "heard": "Wall sconce.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "parking-gate-arm": {
+      "heard": "Parking gate arm.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "parking-pay-station": {
+      "heard": "Parking pay station.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "parking-meter-post-hotel": {
+      "heard": "Parking meter post.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-reception-desk": {
+      "heard": "Reception desk.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-staircase": {
+      "heard": "Staircase.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-bell": {
+      "heard": "Service bell.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-sugar-bowl": {
+      "heard": "Sugar Bowl.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-ice-tongs": {
+      "heard": "Ice tongs.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-coffee-machine": {
+      "heard": "Coffee machine.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-wall-shelf": {
+      "heard": "Wall Shelf",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-cabinet": {
+      "heard": "Cabinet.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-potted-plant": {
+      "heard": "Potted plant.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "valet-podium": {
+      "heard": "Valet Podium.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "wheelchair-ramp": {
+      "heard": "Wheelchair ramp.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "entry-step": {
+      "heard": "Entry step.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "entry-rug": {
+      "heard": "Entry Rug",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "bollard-sleeve": {
+      "heard": "Bollard sleeve.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "curb-ramp": {
+      "heard": "curb ramp",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "drain-channel": {
+      "heard": "Drain Channel.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "luggage-bench": {
+      "heard": "Luggage Bench",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "door-closer-arm": {
+      "heard": "Door Closer.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "door-handle-hotel": {
+      "heard": "Door handle.",
+      "score": 1,
+      "take": "en-1790866789626.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-desk-calendar": {
+      "heard": "Desk Calendar.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-keycard": {
+      "heard": "Keycard",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-elevator": {
+      "heard": "Elevator.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "intercom": {
+      "heard": "Intercom.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "door-hinge": {
+      "heard": "DoorHinge.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "car-wash-brush": {
+      "heard": "Car Wash Brush",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "ice-scraper": {
+      "heard": "Ice Scraper.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "windshield-washer": {
+      "heard": "Windshield washer.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "license-plate-frame": {
+      "heard": "license plate frame.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "dog-waste-bin": {
+      "heard": "Dog Waste Bag Dispenser.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-coffee-table": {
+      "heard": "Coffee table.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-fireplace": {
+      "heard": "Fireplace.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-table-lamp": {
+      "heard": "Table lamp.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-floor-lamp": {
+      "heard": "Floor lamp.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "exit-light": {
+      "heard": "Exit light.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "fire-alarm-pull-station": {
+      "heard": "Fire alarm pull station.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "sprinkler-head": {
+      "heard": "Sprinkler heads.",
+      "score": 0.93,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "smoke-detector-hotel": {
+      "heard": "Smoke detector.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "thermostat-hotel": {
+      "heard": "Thermostat.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "guestroom-door": {
+      "heard": "Guestroom door.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "ice-machine": {
+      "heard": "Ice machine.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-chute-door": {
+      "heard": "Laundry chute door.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "restaurant-host-stand": {
+      "heard": "Host Stand.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "buffet-chafer": {
+      "heard": "Chafing dish.",
+      "score": 1,
+      "take": "en-1790866994345.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-vase": {
+      "heard": "Vase.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-sofa": {
+      "heard": "Sofa.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-mirror": {
+      "heard": "Mirror.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "lobby-curtain": {
+      "heard": "Curtain.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "emergency-light-hotel": {
+      "heard": "Emergency light.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "sprinkler-pipe": {
+      "heard": "Sprinkler pipe.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "serving-platter": {
+      "heard": "Serving platter.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "salad-bowl": {
+      "heard": "Salad bowl.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "soup-tureen": {
+      "heard": "soup tureem.",
+      "score": 0.9,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "butter-dish-cover": {
+      "heard": "Butter Dish Cover",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "bread-basket": {
+      "heard": "Breadbasket.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "napkin-ring": {
+      "heard": "Napkin ring.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "cloth-napkin": {
+      "heard": "Cloth napkin.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "linen-cart": {
+      "heard": "Linen cart.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "vending-machine-hotel": {
+      "heard": "Vending machine.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "serving-tray": {
+      "heard": "Serving tray.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "linen-sack": {
+      "heard": "Linen sack.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "water-cooler-hotel": {
+      "heard": "Water cooler.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "housekeeping-cart": {
+      "heard": "Housekeeping cart.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-soap-dispenser": {
+      "heard": "Laundry detergent dispenser.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-polishing-machine": {
+      "heard": "Shoe polishing machines.",
+      "score": 0.95,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "folded-towel": {
+      "heard": "Fold a towel.",
+      "score": 0.82,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "bath-towel": {
+      "heard": "Bath towel.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "room-service-tray": {
+      "heard": "Room service tray.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "wine-decanter": {
+      "heard": "decanter.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    },
+    "champagne-flute": {
+      "heard": "Champagne Flute.",
+      "score": 1,
+      "take": "en-1790867163977.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
