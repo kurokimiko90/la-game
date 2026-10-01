@@ -11,7 +11,8 @@
 // 流程：idle →（miko-ws codex 規劃 4 區 + itemsPerScene 個物品）→ generating（miko-ws 生成 SVG，失敗的隔輪重排）
 //       → integrating（同步 SVG、寫 scene-config、擺放、build、音檔、全部測試、commit）→ idle
 // 補元素（expansion.json 的 topUp）：idle 時先把舊街區每區補到 itemsPerScene 的平均數，走同一套 generating → integrating。
-// 任何一步失敗就停在 blocked，不會一直燒 LLM 額度；錯誤寫在 .auto-expand/state.json。
+// 失敗不會一直停著（scripts/lib/recovery.mjs）：物品不夠就跳過這個主題；其他錯誤停在 blocked、退避後自動重試；
+// 整合連續失敗幾次就放棄這個場景（改到一半的檔案收進 git stash）。錯誤和跳過紀錄在 .auto-expand/state.json。
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
@@ -25,6 +26,8 @@ import {
 } from './lib/scene-plan.mjs';
 import { placeScene } from './lib/placement.mjs';
 import { localIso } from './lib/local-time.mjs';
+import { isSkipped, onFailure, resumeIfDue } from './lib/recovery.mjs';
+import { isLockError, lockAction } from './lib/git-lock.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(SELF), '..');
@@ -43,6 +46,8 @@ const P = {
 };
 const ZONE_TRIES = 3;
 const OVERSAMPLE = 1.5;
+const GIT_TRIES = 6;
+const GIT_WAIT_MS = 5000;
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const writeJson = (file, data) => {
@@ -80,6 +85,38 @@ function run(name, cmd, args) {
   return out;
 }
 
+const sleepSync = (ms) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+
+function lockState() {
+  const file = path.resolve(ROOT, run('git-path', 'git', ['rev-parse', '--git-path', 'index.lock']).trim());
+  const gitRunning = spawnSync('pgrep', ['-x', 'git']).status === 0;
+  try {
+    return { file, exists: true, ageMs: Date.now() - fs.statSync(file).mtimeMs, gitRunning };
+  } catch {
+    return { file, exists: false, ageMs: 0, gitRunning };
+  }
+}
+
+/** git 指令；index.lock 被占用時等一下重試，殘留的鎖（沒有 git 在跑、放超過 10 分鐘）直接刪掉（scripts/lib/git-lock.mjs） */
+function git(name, args) {
+  for (let attempt = 1; ; attempt += 1) {
+    try {
+      return run(name, 'git', args);
+    } catch (e) {
+      if (!isLockError(e.message) || attempt >= GIT_TRIES) throw e;
+      const lock = lockState();
+      const action = lockAction(lock);
+      if (action === 'remove') {
+        fs.rmSync(lock.file, { force: true });
+        log(`刪掉殘留的 index.lock（${Math.round(lock.ageMs / 60e3)} 分鐘前留下、沒有 git 在跑）`);
+      } else if (action === 'wait') {
+        sleepSync(GIT_WAIT_MS);
+      }
+      log(`git ${args[0]} 撞到 index.lock，第 ${attempt} 次重試`);
+    }
+  }
+}
+
 // ── 規劃（miko-ws codex）──────────────────────────────────────────────
 
 /**
@@ -101,9 +138,9 @@ function usedWords(sceneElements = []) {
   return used;
 }
 
-function pickTheme(settings, config) {
+function pickTheme(settings, config, state) {
   const taken = new Set([...config.order, ...(fs.existsSync(P.plans) ? fs.readdirSync(P.plans).map((f) => path.basename(f, '.json')) : [])]);
-  return settings.themes.find((t) => !taken.has(t.id)) ?? null;
+  return settings.themes.find((t) => !taken.has(t.id) && !isSkipped(state, t.id, 'theme') && !isSkipped(state, t.id, 'scene')) ?? null;
 }
 
 function usedSlots() {
@@ -141,6 +178,16 @@ async function planZone({ sceneId, sceneName, zone, count, used, spots, existing
   return { elements, rejected };
 }
 
+/** 不合格原因統計（「英文重複 12、和已有的 x 太像 5」），失敗時寫進 log 才查得到為什麼 */
+function summarizeRejected(rejected) {
+  const counts = new Map();
+  for (const { reason } of rejected) {
+    const key = reason.startsWith('和已有的') ? '和已有的物品太像' : reason;
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  return [...counts].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${n}`).join('、') || '（codex 沒回物品）';
+}
+
 async function planScene(theme, slot, colorIndex, settings) {
   const config = readJson(P.config);
   log(`規劃 ${theme.name}（${theme.id}），位置 ${slot.x},${slot.y}`);
@@ -156,7 +203,10 @@ async function planScene(theme, slot, colorIndex, settings) {
     elements.push(...r.elements);
     rejected.push(...r.rejected);
   }
-  if (elements.length < settings.minItems) throw new Error(`規劃只得到 ${elements.length} 個合格物品（至少要 ${settings.minItems}）`);
+  if (elements.length < settings.minItems) {
+    log(`不合格原因：${summarizeRejected(rejected)}`);
+    throw Object.assign(new Error(`規劃只得到 ${elements.length} 個合格物品（至少要 ${settings.minItems}）`), { skippable: true });
+  }
 
   const plan = { ...outline, slot, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, createdAt: localIso() };
   writeJson(path.join(P.plans, `${plan.id}.json`), plan);
@@ -182,11 +232,11 @@ function availableSvgs(sceneId) {
 const targetOf = (plan, settings) => plan.itemsTarget ?? settings.itemsPerScene;
 
 /** 需要補的街區（依地圖順序）：已上線、還沒照目前的 itemsPerScene 補過、有區域不到目標數 */
-function topUpCandidates(settings) {
+function topUpCandidates(settings, state = loadState()) {
   if (!fs.existsSync(P.plans)) return [];
   const { order } = readJson(P.config);
   return order
-    .filter((id) => fs.existsSync(path.join(P.plans, `${id}.json`)))
+    .filter((id) => fs.existsSync(path.join(P.plans, `${id}.json`)) && !isSkipped(state, id, 'topUp'))
     .map((id) => readJson(path.join(P.plans, `${id}.json`)))
     .filter((plan) => plan.topUp?.itemsPerScene !== targetOf(plan, settings))
     .map((plan) => ({ plan, shortfall: zoneShortfall(plan, availableSvgs(plan.id), targetOf(plan, settings)) }))
@@ -301,22 +351,28 @@ async function restage(sceneId, slotArg) {
   fs.rmSync(path.join(P.stages, `${sceneId}.json`), { force: true });
   log(`restage ${plan.name}：改成佔兩格（${key(cells[0])}、${key(cells[1])}），情境重排`);
   const count = await integrate(next, settings, { restage: true });
-  appendLog(next, count, 0, '改成兩格、情境重排');
-  commit(`feat: widen ${next.name} district to two slots and restage (${count} items)`, settings);
+  commit(`feat: widen ${next.name} district to two slots and restage (${count} items)`, settings, logRow(next, count, 0, '改成兩格、情境重排'));
   log(`restage ${plan.name} 完成，已 commit`);
 }
 
-function appendLog(plan, count, rounds, note = '自動') {
-  const text = fs.readFileSync(P.log, 'utf8');
-  const row = `| ${plan.name}（${plan.id}） | ${localIso().slice(0, 16).replace('T', ' ')} | ${count} | ${rounds} | ${note} |`;
-  fs.writeFileSync(P.log, `${text.trimEnd()}\n${row}\n`);
+/** docs/expansion.md 第 5 節的一筆紀錄 */
+function logRow(plan, count, rounds, note = '自動') {
+  return `| ${plan.name}（${plan.id}） | ${localIso().slice(0, 16).replace('T', ' ')} | ${count} | ${rounds} | ${note} |`;
 }
 
-function commit(title, settings) {
+/** 紀錄寫進 docs/expansion.md 再 commit；commit 失敗就把紀錄拿掉，重試時才不會一筆變多筆 */
+function commit(title, settings, row) {
   const branch = run('git-branch', 'git', ['branch', '--show-current']).trim();
   if (branch !== settings.branch) throw new Error(`目前在 ${branch}，自動擴展只 commit 到 ${settings.branch}`);
-  run('git-add', 'git', ['add', 'content', 'public/svg', 'public/audio', 'src/data/scenes', 'docs/expansion.md']);
-  run('git-commit', 'git', ['commit', '-m', `${title}\n\nauto-expand：miko-ws 規劃與生成 SVG；發音 edge-tts 底稿 + ChatGPT（英語）。`]);
+  const before = fs.readFileSync(P.log, 'utf8');
+  fs.writeFileSync(P.log, `${before.trimEnd()}\n${row}\n`);
+  try {
+    git('git-add', ['add', ...COMMIT_PATHS]);
+    git('git-commit', ['commit', '-m', `${title}\n\nauto-expand：miko-ws 規劃與生成 SVG；發音 edge-tts 底稿 + ChatGPT（英語）。`]);
+  } catch (e) {
+    fs.writeFileSync(P.log, before);
+    throw e;
+  }
   reloadPlay();
 }
 
@@ -334,15 +390,20 @@ function reloadPlay() {
  */
 async function tick({ afterGenerator = false } = {}) {
   const settings = readJson(P.settings);
-  const state = loadState();
-  if (state.phase === 'blocked') {
-    log(`卡住中（${state.blockedAt}）：${state.error.split('\n')[0]}。修好後跑 --unblock`);
+  const loaded = loadState();
+  const state = resumeIfDue(loaded, Date.now());
+  if (!state) {
+    log(`等重試（第 ${loaded.attempts ?? 1} 次失敗，${localIso(new Date(loaded.retryAt))} 再試）：${loaded.error.split('\n')[0]}`);
     return;
+  }
+  if (state !== loaded) {
+    saveState(state);
+    log(`重試 ${state.phase}（之前失敗 ${state.attempts ?? 1} 次）`);
   }
 
   if (state.phase === 'idle' || state.phase === 'planning') {
     // 先補舊街區，再開新場景（正在規劃的新場景不打斷）
-    const candidates = settings.topUp && !state.current?.theme ? topUpCandidates(settings) : [];
+    const candidates = settings.topUp && !state.current?.theme ? topUpCandidates(settings, state) : [];
     const topUp = candidates.find((c) => c.plan.id === state.current?.id) ?? candidates[0];
     if (topUp) {
       const { id } = topUp.plan;
@@ -352,19 +413,19 @@ async function tick({ afterGenerator = false } = {}) {
         log(`${id} 沒有補到合格的物品，略過`);
         return true;
       }
-      saveState({ ...state, phase: 'generating', current: { id, slug: `la-${id}`, rounds: 0, startedAt: localIso(), topUp: true } });
+      saveState({ ...state, phase: 'generating', attempts: undefined, current: { id, slug: `la-${id}`, rounds: 0, startedAt: localIso(), topUp: true } });
       return true;
     }
     const config = readJson(P.config);
     if (state.history.length >= settings.maxScenes) return log(`已完成 ${state.history.length} 個場景，達到上限 ${settings.maxScenes}`);
-    const theme = state.current?.theme ?? pickTheme(settings, config);
+    const theme = state.current?.theme ?? pickTheme(settings, config, state);
     // 物品多（itemsPerScene 超過 wideAbove）的街區佔兩格；找不到相鄰的兩格就退回一格
     const span = settings.itemsPerScene > (settings.wideAbove ?? Infinity) ? 2 : 1;
     const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots(), theme?.zone, span) ?? nextSlot(settings.slots, usedSlots(), theme?.zone);
     if (!theme || !slot) return log(theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
     saveState({ ...state, phase: 'planning', current: { theme, slot } });
     const plan = await planScene(theme, slot, usedSlots().length, settings);
-    saveState({ ...state, phase: 'generating', current: { id: plan.id, slug: `la-${plan.id}`, rounds: 0, startedAt: localIso() } });
+    saveState({ ...state, phase: 'generating', attempts: undefined, current: { id: plan.id, slug: `la-${plan.id}`, rounds: 0, startedAt: localIso() } });
     return true;
   }
 
@@ -387,7 +448,7 @@ async function tick({ afterGenerator = false } = {}) {
         return true;
       }
     }
-    saveState({ ...state, phase: 'integrating' });
+    saveState({ ...state, phase: 'integrating', attempts: undefined });
     log(`${cur.id} 生成結束：done ${p.done}、failed ${p.failed}，開始整合`);
     state.phase = 'integrating';
   }
@@ -398,16 +459,14 @@ async function tick({ afterGenerator = false } = {}) {
     const before = cur.topUp && fs.existsSync(layoutFile) ? Object.keys(readJson(layoutFile)).length : 0;
     const count = await integrate(plan, settings, { topUp: Boolean(cur.topUp) });
     if (cur.topUp) {
-      appendLog(plan, count, cur.rounds, `補元素 +${count - before}`);
-      commit(`feat: add ${count - before} items to ${plan.name} district (${count} total)`, settings);
+      commit(`feat: add ${count - before} items to ${plan.name} district (${count} total)`, settings, logRow(plan, count, cur.rounds, `補元素 +${count - before}`));
       const history = state.history.map((h) => (h.id === plan.id ? { ...h, items: count, toppedUpAt: localIso() } : h));
-      saveState({ phase: 'idle', current: null, history });
+      saveState({ ...state, phase: 'idle', current: null, attempts: undefined, history });
       log(`補完 ${plan.name}：+${count - before}，共 ${count} 個物件，已 commit`);
       return true;
     }
-    appendLog(plan, count, cur.rounds);
-    commit(`feat: add ${plan.name} district (${count} items)`, settings);
-    saveState({ phase: 'idle', current: null, history: [...state.history, { id: plan.id, name: plan.name, items: count, doneAt: localIso() }] });
+    commit(`feat: add ${plan.name} district (${count} items)`, settings, logRow(plan, count, cur.rounds));
+    saveState({ ...state, phase: 'idle', current: null, attempts: undefined, history: [...state.history, { id: plan.id, name: plan.name, items: count, doneAt: localIso() }] });
     log(`完成 ${plan.name}：${count} 個物件，已 commit`);
     return true;
   }
@@ -415,13 +474,38 @@ async function tick({ afterGenerator = false } = {}) {
 
 function printStatus() {
   const s = loadState();
-  console.log(JSON.stringify({ phase: s.phase, current: s.current, error: s.error, done: s.history.map((h) => `${h.name}(${h.items})`) }, null, 2));
+  console.log(JSON.stringify({
+    phase: s.phase, current: s.current, error: s.error, attempts: s.attempts, retryAt: s.retryAt && localIso(new Date(s.retryAt)),
+    skipped: (s.skipped ?? []).map((x) => `${x.kind}:${x.id}`), done: s.history.map((h) => `${h.name}(${h.items})`),
+  }, null, 2));
   const settings = readJson(P.settings);
-  const topUp = topUpCandidates(settings).map(({ plan, shortfall }) => `${plan.name} +${shortfall.reduce((n, x) => n + x.need, 0)}`);
+  const topUp = topUpCandidates(settings, s).map(({ plan, shortfall }) => `${plan.name} +${shortfall.reduce((n, x) => n + x.need, 0)}`);
   if (topUp.length) console.log(`待補元素（目標 ${settings.itemsPerScene} 個、手畫場景看各自的 itemsTarget，topUp ${settings.topUp ? '開' : '關'}）：${topUp.join('、')}`);
   if (s.current?.slug) {
     try { console.log('miko-ws：', jobProgress(s.current.slug)); } catch (e) { console.log(e.message); }
   }
+}
+
+const COMMIT_PATHS = ['content', 'public/svg', 'public/audio', 'src/data/scenes', 'docs/expansion.md'];
+
+function handleFailure(e) {
+  const s = loadState();
+  const { action, state } = onFailure(s, { message: e.message, skippable: Boolean(e.skippable) }, Date.now());
+  const job = s.current?.theme?.name ?? s.current?.id;
+  let stashed = false;
+  if (action === 'abandon') {
+    // 改到一半的檔案收進 stash（可用 git stash list 找回），工作區回到上一個 commit，下一個場景才能乾淨地開始
+    try {
+      git('git-stash', ['stash', 'push', '--include-untracked', '-m', `auto-expand 放棄 ${job}`, '--', ...COMMIT_PATHS]);
+      stashed = true;
+    } catch (err) {
+      log(`收起改到一半的檔案失敗，工作區要手動清：${err.message.split('\n')[0]}`);
+    }
+  }
+  saveState(state);
+  if (action === 'skip') log(`跳過 ${job}：${e.message}。下一輪換下一個`);
+  else if (action === 'abandon') log(`放棄 ${job}（整合連續失敗）：${e.message.split('\n')[0]}。改到一半的檔案${stashed ? '在 git stash' : '還在工作區'}`);
+  else log(`失敗（第 ${state.attempts} 次），${localIso(new Date(state.retryAt))} 自動重試：${e.message}`);
 }
 
 async function main() {
@@ -429,8 +513,8 @@ async function main() {
   if (args.includes('--status')) return printStatus();
   if (args.includes('--unblock')) {
     const s = loadState();
-    saveState({ ...s, phase: s.resumePhase ?? 'idle', error: undefined, blockedAt: undefined, resumePhase: undefined });
-    return log(`解除卡住，回到 ${s.resumePhase ?? 'idle'}`);
+    saveState({ ...resumeIfDue({ ...s, retryAt: undefined }, Date.now()), attempts: undefined });
+    return log(`解除卡住，回到 ${s.resumePhase ?? s.phase}`);
   }
   if (!acquireLock()) return log('上一次還在跑，略過');
   const restageAt = args.indexOf('--restage');
@@ -449,9 +533,7 @@ async function main() {
     let afterGenerator = args.includes('--after-generator');
     while (await tick({ afterGenerator })) afterGenerator = false;
   } catch (e) {
-    const s = loadState();
-    saveState({ ...s, phase: 'blocked', resumePhase: s.phase, error: e.message, blockedAt: localIso() });
-    log(`失敗，停在 blocked：${e.message}`);
+    handleFailure(e);
     process.exitCode = 1;
   } finally {
     fs.rmSync(LOCK_FILE, { force: true });

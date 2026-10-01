@@ -28,6 +28,8 @@ idle（下一個場景）
   - 規劃的合格物品不夠 → 跳過這個主題（記在 state 的 `skipped`，log 會寫不合格原因統計），下一輪換下一個主題
   - 規劃、生成出錯（多半是 miko-ws 連不上）→ 停在 `blocked`，退避後自動重試（30 分、1、2、4、最多 6 小時），不放棄主題
   - 整合連續失敗 3 次 → 放棄這個場景，改到一半的檔案收進 `git stash`（`git stash list` 找得回來）
+  - git 撞到 `index.lock`：有 git 在跑就等 5 秒重試；沒有 git 在跑、鎖放超過 10 分鐘就當殘留刪掉（`scripts/lib/git-lock.mjs`）
+  - commit 失敗時 `docs/expansion.md` 的紀錄會拿掉，重試不會一筆變多筆
   - 錯誤在 `.auto-expand/state.json`，各步驟輸出在 `.auto-expand/<步驟>.log`
 - **只 commit 到 `feat/expand-scenes`**，不 push。
 - 物品少於 `minItems`（生成失敗太多）也算失敗。
@@ -135,3 +137,4 @@ y4620  機場         │  │          │  │ 圖書館       │  │ 海邊
 | 書店（bookstore） | 2026-09-26 16:12 | 100 | 0 | 自動 |
 | 文具店（stationery-store） | 2026-09-27 19:46 | 100 | 0 | 自動 |
 | 我的家（home） | 2026-09-27 21:51 | 78 | 4 | 自動 |
+| 健身房（gym） | 2026-09-28 09:31 | 100 | 0 | 自動整合；殘留的 index.lock 擋住 commit，10-01 手動補 commit |
