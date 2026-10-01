@@ -28,6 +28,7 @@ import { placeScene } from './lib/placement.mjs';
 import { localIso } from './lib/local-time.mjs';
 import { idleNotice, isSkipped, onFailure, resumeIfDue } from './lib/recovery.mjs';
 import { MAX_REJECT_RATIO, applyReview, buildReviewPrompt } from './lib/vocab-review.mjs';
+import { buildVenuePrompt, parseVenue } from '../src/lib/venue.ts';
 import { isLockError, lockAction } from './lib/git-lock.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
@@ -37,6 +38,8 @@ const STATE_FILE = path.join(STATE_DIR, 'state.json');
 const LOCK_FILE = path.join(STATE_DIR, 'lock');
 const LOG_FILE = path.join(STATE_DIR, 'auto-expand.log');
 const REVIEW_QUEUE = path.join(STATE_DIR, 'review-queue.json');
+// commit 後等試玩伺服器換上新版再做構圖審查（scripts/reload-play.mjs 讀這份清單）
+const LAYOUT_PENDING = path.join(STATE_DIR, 'layout-pending.json');
 const P = {
   settings: path.join(ROOT, 'content', 'expansion.json'),
   config: path.join(ROOT, 'content', 'scene-config.json'),
@@ -324,11 +327,13 @@ function integrateCore(plan, available) {
 
 /**
  * 品質檢查（scripts/review-scene.mjs）：渲染檢查 + 自動試玩（點不點得到、手機上多大）+ 看圖驗收（codex 附圖），
- * 結果進待人工審清單（--status 看得到）。只標記、不擋 commit：看圖驗收 2026-10-01 在 gym 校準約七成五準，還不夠自動決定。
+ * 結果進待人工審清單（--status 看得到）。構圖審查要新版的試玩伺服器，排進 layout-pending，reload-play 換版後做。只標記、不擋 commit：看圖驗收 2026-10-01 在 gym 校準約七成五準，還不夠自動決定。
  */
 function qualityReview(sceneId) {
   try {
-    run('review', process.execPath, ['--no-warnings', 'scripts/review-scene.mjs', sceneId]);
+    run('review', process.execPath, ['--no-warnings', 'scripts/review-scene.mjs', sceneId, '--no-layout']);
+    const pending = fs.existsSync(LAYOUT_PENDING) ? readJson(LAYOUT_PENDING) : [];
+    writeJson(LAYOUT_PENDING, [...new Set([...pending, sceneId])]);
     const q = readJson(REVIEW_QUEUE)[sceneId];
     log(`品質檢查 ${sceneId}：標記 ${q.flagged.length} 個${q.flagged.length ? `（${q.flagged.map((f) => f.id).join('、').slice(0, 200)}）` : ''}、長得太像 ${q.similar.length} 組，已列入待人工審`);
   } catch (e) {
@@ -347,12 +352,31 @@ function runChecks(sceneId) {
   qualityReview(sceneId);
 }
 
+/**
+ * 場所結構（src/lib/venue.ts）：新街區沒有手畫的 VENUE_PLANS，請 codex 挑牆面材質和各區地面圖案，存進 plan.venue。
+ * codex 失敗或回的不合法就用預設（parseVenue 一定回得出結果），不擋整合。
+ */
+async function planVenue(plan) {
+  const zones = plan.zones.map((z) => ({ id: z.id, name: z.name, indoor: Boolean(z.indoor) }));
+  let raw = '';
+  try {
+    raw = await codexText(buildVenuePrompt(plan.name, zones));
+  } catch (e) {
+    log(`場所結構沒問到，用預設：${e.message.split('\n')[0]}`);
+  }
+  const next = { ...plan, venue: parseVenue(raw, zones) };
+  writeJson(path.join(P.plans, `${plan.id}.json`), next);
+  log(`場所結構 ${plan.name}：${next.venue.wall}，${Object.entries(next.venue.zones).map(([z, m]) => `${z}=${m.join('+')}`).join('、')}`);
+  return next;
+}
+
 async function integrate(plan, settings, { topUp = false, restage = false } = {}) {
   run('sync-svg', process.execPath, ['scripts/sync-svg.mjs']);
   const available = availableSvgs(plan.id);
   if (plan.core) return integrateCore(plan, available);
   if (available.length < settings.minItems) throw new Error(`${plan.id} 只有 ${available.length} 個 SVG（至少要 ${settings.minItems}）`);
 
+  if (!topUp && !restage && !plan.venue) plan = await planVenue(plan);
   const text = fs.readFileSync(P.config, 'utf8');
   const config = JSON.parse(text);
   const order = config.order.includes(plan.id) ? config.order : [...config.order, plan.id];
@@ -532,7 +556,7 @@ function printStatus() {
     idle: s.idleReason, skipped: (s.skipped ?? []).map((x) => `${x.kind}:${x.id}`), done: s.history.map((h) => `${h.name}(${h.items})`),
   }, null, 2));
   const queue = fs.existsSync(REVIEW_QUEUE) ? readJson(REVIEW_QUEUE) : {};
-  const pending = Object.entries(queue).map(([id, q]) => `${id}（標記 ${q.flagged.length}、太像 ${(q.similar ?? []).length} 組）`);
+  const pending = Object.entries(queue).map(([id, q]) => `${id}（標記 ${q.flagged.length}、太像 ${(q.similar ?? []).length} 組${q.players?.length ? `、玩家常找不到 ${q.players.length}` : ''}${q.layout ? `、構圖 ${q.layout.score}/5` : ''}）`);
   if (pending.length) console.log(`待人工審（細節 .auto-expand/review/<scene>.json、對照表 .auto-expand/review/<scene>-<n>.png；看完從 .auto-expand/review-queue.json 刪掉）：${pending.join('、')}`);
   const settings = readJson(P.settings);
   const topUp = topUpCandidates(settings, s).map(({ plan, shortfall }) => `${plan.name} +${shortfall.reduce((n, x) => n + x.need, 0)}`);

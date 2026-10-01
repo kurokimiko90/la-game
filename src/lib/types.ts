@@ -1,3 +1,4 @@
+import type { VenuePlan } from './venue';
 export type Lang = 'en' | 'ja' | 'zh';
 
 export interface Words {
@@ -106,6 +107,8 @@ export interface DistrictTerrain {
   sharedShell?: boolean;
   /** 場所專屬平面結構；由 scene-site-plan 依街區設定。 */
   structure?: string;
+  /** 牆面材質與各區地面圖案（自動擴展由 codex 挑，src/lib/venue.ts）；手畫過的街區用 VenueStructure.tsx 的 VENUE_PLANS */
+  venue?: VenuePlan;
 }
 
 /** 一個場景 = 小鎮地圖上的一個街區；width/height 是整張地圖的大小，座標都是地圖座標 */

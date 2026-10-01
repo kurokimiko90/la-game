@@ -21,6 +21,7 @@ integrating
  │ vitest、tsc、eslint、Playwright E2E 全過
  │ 品質檢查 scripts/review-scene.mjs → 列入待人工審（.auto-expand/review-queue.json，不擋 commit）
  │   渲染檢查（空白、剪影、渲染失敗）、自動試玩（點不點得到、手機上多大）、看圖驗收（codex 附圖：像不像、哪些太像）
+ │   構圖審查排進 .auto-expand/layout-pending.json：commit 後 reload-play 換上新版伺服器再截圖給 codex 評 1–5 分
  │ → 在本檔第 5 節記一筆 → commit
 idle（下一個場景）
 ```
@@ -45,6 +46,10 @@ idle（下一個場景）
   - 看圖驗收 `scripts/lib/visual-review.mjs`：每 20 個物件拼一張編號對照表，附圖給 miko-ws 的 codex（`codexText(prompt, { images })` →
     miko-ws `codex exec --image`），問每格像不像描述、哪些長得太像。一個街區約 5 次呼叫、8 分鐘。
     2026-10-01 在 gym 校準（以人工看圖為準，樣本 1 個街區）：標記的約七成五同意、漏掉約三成，所以只進清單、不擋 commit、不自動重畫。
+  - 構圖審查 `scripts/lib/layout-review.mjs`：在試玩伺服器上把每個區域縮放、置中截圖（`.auto-expand/review/<scene>-zone-<id>.png`），
+    4 張一次給 codex，問擺放合不合理、給 1–5 分。gym 同一份截圖兩次給了 3 分和 2 分，問題描述對錯參半，只當參考。
+  - 玩家數據：遊戲裡記每個物件找了多久、點錯、提示、揭曉（`src/lib/playstats.ts`，本機 localStorage），`/stats` 看最難找的並匯出；
+    `node --no-warnings scripts/import-play-stats.mjs <匯出檔>` 匯入後，玩家常找不到的物件列進待人工審清單。
   - `--status` 列出待人工審的街區；細節在 `.auto-expand/review/<scene>.json`，對照表 `.auto-expand/review/<scene>-<n>.png`，
     看完從 `review-queue.json` 刪掉。手動跑：`node scripts/review-scene.mjs <scene> [--no-vision]`。
   - 閒置（沒有 slot、主題用完、到上限）同樣的原因只記一次 log。
@@ -108,7 +113,7 @@ y4620  機場         │  │          │  │ 圖書館       │  │ 海邊
 ## 4. 已知限制
 
 - 地形是模板，不像前 4 個場景那樣為每個地方量身畫（例如車站沒有站房外觀）。
-- 看圖驗收準確度只有約七成五（見上），擺放合不合理（整個街區的構圖）還沒有自動判斷，要人看 `npm run content:scene-preview`。
+- 看圖驗收準確度只有約七成五、構圖審查分數不穩定（見上），都只進清單，不自動重畫或重排。
 - 看圖驗收依賴 miko-ws 的附圖支援（`src/skills/course/brains/index.js` 的 `sendMessageFresh(prompt, { images })`，2026-10-01 加）。
 - 單字審核本身也會錯（2026-10-01 實測：曾把泳帽判成不屬於健身房、給錯讀音），所以修正記在 plan 的 `reviewFixes` 可追查。
 - 場景越多，整張地圖的物件越多；手機效能還沒實測（見 planning.md 風險表）。

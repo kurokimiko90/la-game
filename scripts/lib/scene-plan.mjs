@@ -250,7 +250,7 @@ export function planToSceneConfig(plan, available) {
     noFlip: [],
     motion,
     arrange: 'auto',
-    terrain: district.terrain,
+    terrain: plan.venue ? { ...district.terrain, venue: plan.venue } : district.terrain,
   };
 }
 

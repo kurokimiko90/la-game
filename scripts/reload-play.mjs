@@ -2,6 +2,7 @@
 // 兩個 build 目錄輪流用（.next-play / .next-play-b）：build 到沒在用的那個，成功才停掉舊的、用新的啟動，
 // build 期間舊的照常能玩；build 失敗就不動正在跑的伺服器。
 // 自動擴展 commit 完在背景叫它；也可以手動跑：node scripts/reload-play.mjs
+// 換版後順便做 auto-expand 排進 .auto-expand/layout-pending.json 的構圖審查（要新版才看得到新街區）。
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
@@ -15,6 +16,8 @@ const LIVE_FILE = path.join(STATE_DIR, 'play-dist');
 const LOCK = path.join(STATE_DIR, 'reload-play.lock');
 const LOG = path.join(STATE_DIR, 'play.log');
 const PORT_FREE_TIMEOUT_MS = 15_000;
+const SERVER_UP_TIMEOUT_MS = 60_000;
+const LAYOUT_PENDING = path.join(STATE_DIR, 'layout-pending.json');
 
 const stamp = () => new Date().toISOString();
 const note = (msg) => fs.appendFileSync(LOG, `[${stamp()}] reload-play：${msg}\n`);
@@ -44,6 +47,28 @@ async function stopServer() {
   if (listeners().length) throw new Error(`port ${PORT} 停不掉`);
 }
 
+/** 新版伺服器起來後，做 auto-expand 排進來的構圖審查（scripts/review-scene.mjs --layout-only）；失敗留在清單裡下次再做 */
+async function layoutReviews(out) {
+  if (!fs.existsSync(LAYOUT_PENDING)) return;
+  const until = Date.now() + SERVER_UP_TIMEOUT_MS;
+  while (Date.now() < until) {
+    try {
+      if ((await fetch(`http://localhost:${PORT}/`)).ok) break;
+    } catch { /* 還沒起來 */ }
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+  for (const sceneId of JSON.parse(fs.readFileSync(LAYOUT_PENDING, 'utf8'))) {
+    const r = spawnSync(process.execPath, ['--no-warnings', 'scripts/review-scene.mjs', sceneId, '--layout-only'], { cwd: ROOT, stdio: ['ignore', out, out] });
+    if (r.status !== 0) {
+      note(`構圖審查 ${sceneId} 失敗（exit ${r.status}），留到下次`);
+      continue;
+    }
+    const left = JSON.parse(fs.readFileSync(LAYOUT_PENDING, 'utf8')).filter((id) => id !== sceneId);
+    fs.writeFileSync(LAYOUT_PENDING, JSON.stringify(left));
+    note(`構圖審查 ${sceneId} 完成`);
+  }
+}
+
 async function main() {
   fs.mkdirSync(STATE_DIR, { recursive: true });
   if (!acquireLock()) return note('上一次還在跑，略過');
@@ -60,6 +85,7 @@ async function main() {
     }).unref();
     fs.writeFileSync(LIVE_FILE, next);
     note(`已用 ${next} 重啟 http://localhost:${PORT}`);
+    await layoutReviews(out);
   } finally {
     fs.rmSync(LOCK, { force: true });
   }

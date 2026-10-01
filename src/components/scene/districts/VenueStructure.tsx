@@ -1,18 +1,9 @@
 import type { DistrictTerrain, TerrainZone } from '@/lib/types';
+import type { Motif, VenuePlan, WallStyle } from '@/lib/venue';
 
 // 建築輪廓只佔背景；可點物件仍由 stage 與 layout 決定。每個場所明確列出
 // 自己的功能帶，避免把相同的四格牆線套在所有街區上。
-type Motif =
-  | 'arrival' | 'concourse' | 'platform' | 'dining' | 'kitchen' | 'terrace'
-  | 'triage' | 'waiting' | 'dispensary' | 'apron' | 'checkin' | 'security' | 'boarding'
-  | 'reading' | 'stacks' | 'service' | 'sorting' | 'garage' | 'operations'
-  | 'display' | 'shopseating' | 'boardwalk' | 'shores' | 'fitting' | 'showroom'
-  | 'cinema' | 'vault' | 'gallery' | 'workshop' | 'evidence' | 'training'
-  | 'salon' | 'wash' | 'flowerbed' | 'bouquet' | 'stationery' | 'exercise' | 'pooldeck';
-
-type WallStyle = 'glass' | 'clinical' | 'brick' | 'warm' | 'wood' | 'cinema' | 'stone' | 'salon' | 'garden' | 'industrial';
-type VenuePlan = { accent: string; wall: WallStyle; zones: Record<string, readonly Motif[]> };
-
+// 牆面材質與地面圖案的清單在 src/lib/venue.ts（自動擴展的新街區由 codex 從那裡挑，存在 terrain.venue）
 export const VENUE_PLANS: Record<string, VenuePlan> = {
   station: { accent: '#b79a55', wall: 'glass', zones: { plaza: ['arrival'], 'ticket-hall': ['concourse'], gates: ['security'], platform: ['platform'] } },
   restaurant: { accent: '#b98b65', wall: 'warm', zones: { entrance: ['terrace'], 'dining-hall': ['dining'], 'open-kitchen': ['kitchen'], 'dessert-stand': ['service'] } },
@@ -241,7 +232,7 @@ function ZoneStructure({ zone, motifs, accent }: { zone: TerrainZone; motifs: re
 }
 
 export function VenueStructure({ terrain, sceneId }: { terrain: DistrictTerrain; sceneId?: string }) {
-  const plan = sceneId ? VENUE_PLANS[sceneId] : undefined;
+  const plan = (sceneId ? VENUE_PLANS[sceneId] : undefined) ?? terrain.venue;
   if (!plan) return null;
   return <g data-venue-structure={sceneId} pointerEvents="none">
     {terrain.zones.map((zone) => <VenueWall key={`${zone.id}-wall`} zone={zone} style={plan.wall} />)}
