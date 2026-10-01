@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { GameScreen } from '@/components/game/GameScreen';
 import { getScene, SCENE_ORDER } from '@/lib/scenes';
 
-// 只有四個固定場景，其餘網址一律 404
+// 只允許已產生的場景網址，其餘一律 404。
 export const dynamicParams = false;
 
 export function generateStaticParams() {

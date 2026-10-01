@@ -28,7 +28,7 @@ describe('單字紀錄', () => {
 describe('解鎖規則', () => {
   test('一開始開放前 FREE_SCENE_COUNT 個場景', () => {
     const order = Array.from({ length: FREE_SCENE_COUNT + 2 }, (_, i) => `s${i}`);
-    expect(FREE_SCENE_COUNT).toBe(8);
+    expect(FREE_SCENE_COUNT).toBe(11);
     for (const id of order.slice(0, FREE_SCENE_COUNT)) expect(isSceneUnlocked(DEFAULT_PROGRESS, id, order)).toBe(true);
     expect(isSceneUnlocked(DEFAULT_PROGRESS, order[FREE_SCENE_COUNT], order)).toBe(false);
     expect(isSceneUnlocked(DEFAULT_PROGRESS, 'unknown', order)).toBe(false);

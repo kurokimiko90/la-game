@@ -162,6 +162,20 @@
 - SVG 重生後長寬比變了：build 會保留寬度和底線，自動重算高度。
 - `npm run content:layout -- <scene> --reset` 會整個重排。**場景上線後不要用**，因為玩家記住的位置會全部改變。
 
+### 2.5 真實場所與擺放約束（2026-09-27）
+
+四個場景的參考來源、比較與驗收方式見 [場景修訂紀錄](scene-review.md)。新增場景先定入口、走道、功能區及物件依附關係，再安排單字。不要為填滿地面而要求固定比例的 ground 物件。
+
+`terrain.zones[].details` 可定義 `path`、`walkway`、`queue`、`habitat`、`bed`、`pond`、`canopy`、`shelter`、`court`、`worktop`、`shelf`、`plinth`、`seating`。每筆包含唯一 `id` 與 `x0/y0/x1/y1`；`items` 是必須落在此範圍內的物件 id。座標與物件共用地圖座標；判斷點為物件底線中心。`path` 會拒絕底線中心在走道內的目標；`walkway` 與 `queue` 則是低對比的背景動線，不限制目標，讓既有鎖定位置能逐步改善。其他範圍透過 `items` 明確指定。`worktop` 的 `y1` 表示承托底線。
+
+內容建置會呼叫 `checkSitePlan` 檢查上述約束，但不替代視覺檢查。`terrain.openPlan: true` 共用外牆，適用同一間教室內的不同學習區。
+
+每個有 `terrain` 的自動街區必須至少有一種明確配置：`content/stages/<scene>.json` 的情境分組，或 `terrain.zones[].details` 的實際場地分區。內容建置會拒絕兩者皆缺少的街區，避免新增場景退回平均散排。
+
+`scripts/lib/scene-site-plan.mjs` 會在讀取設定時，替尚未手工細分的街區加入服務區排隊欄、候位區座椅，以及戶外植栽、遮蔭、月台或訓練場。已手寫 `details` 的區域及動物園、植物園、學校、教室、住家不會被覆寫。
+
+自動街區另由 `VenueStructure.tsx` 定義逐場所、逐功能區的地面輪廓與牆面材質；其 `VENUE_PLANS` 必須覆蓋該街區所有區域，單元測試會檢查。`GeneratedDistrict.tsx` 的 `IndoorEnvelope` 只沿室內區域外緣畫牆，在室內外接縫留下入口。新增場景時應先設計這份場所結構，再排目標物。
+
 ## 3. 動態
 
 ### 3.1 物件動態（`scripts/lib/motion.mjs` + `globals.css` 的 `.motion--*`）

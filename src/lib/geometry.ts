@@ -12,6 +12,15 @@ export interface Size {
   height: number;
 }
 
+/** 地圖範圍：x -left..width、y -top..height；遠景畫在負座標，街區座標不用動 */
+export interface World extends Size {
+  left?: number;
+  top?: number;
+}
+
+const fullWidth = (world: World) => world.width + (world.left ?? 0);
+const fullHeight = (world: World) => world.height + (world.top ?? 0);
+
 /** 預設縮放時，畫面高度看到的地圖單位（物件大小和以前單一場景時差不多） */
 export const VIEW_HEIGHT = 900;
 /** 最多放大到預設的幾倍 */
@@ -22,8 +31,8 @@ export function defaultScale(container: Size): number {
 }
 
 /** 整張地圖剛好放進畫面的縮放（「看整個小鎮」） */
-export function fitScale(container: Size, world: Size): number {
-  return Math.min(container.width / world.width, container.height / world.height);
+export function fitScale(container: Size, world: World): number {
+  return Math.min(container.width / fullWidth(world), container.height / fullHeight(world));
 }
 
 // 內容比容器大：不讓邊緣露出來；比容器小：可以在容器內拖動，但不超出容器（縮小後也拉得動）
@@ -34,21 +43,23 @@ function clampAxis(t: number, containerLen: number, contentLen: number): number 
 }
 
 /** 縮放限制在「看見整張地圖」到「預設的 MAX_ZOOM 倍」；地圖比畫面大時不露出邊緣，比畫面小時不超出畫面 */
-export function clampView(view: View, container: Size, world: Size): View {
+export function clampView(view: View, container: Size, world: World): View {
   const base = defaultScale(container);
   const lo = Math.min(fitScale(container, world), base);
   const scale = Math.min(Math.max(view.scale, lo), base * MAX_ZOOM);
   return {
     scale,
-    tx: clampAxis(view.tx, container.width, world.width * scale),
-    ty: clampAxis(view.ty, container.height, world.height * scale),
+    // 限制的是地圖左緣（x = -left）在畫面上的位置
+    tx: clampAxis(view.tx - (world.left ?? 0) * scale, container.width, fullWidth(world) * scale) + (world.left ?? 0) * scale,
+    // 限制的是地圖上緣（y = -top）在畫面上的位置
+    ty: clampAxis(view.ty - (world.top ?? 0) * scale, container.height, fullHeight(world) * scale) + (world.top ?? 0) * scale,
   };
 }
 
 /** 「看整個小鎮」：整張地圖放進畫面並置中 */
-export function wholeView(container: Size, world: Size): View {
+export function wholeView(container: Size, world: World): View {
   const scale = fitScale(container, world);
-  return { scale, tx: (container.width - world.width * scale) / 2, ty: (container.height - world.height * scale) / 2 };
+  return { scale, tx: (container.width - fullWidth(world) * scale) / 2 + (world.left ?? 0) * scale, ty: (container.height - fullHeight(world) * scale) / 2 + (world.top ?? 0) * scale };
 }
 
 /** 以螢幕上的 anchor 為中心縮放（滾輪、雙指） */
@@ -62,7 +73,7 @@ export function toScene(view: View, p: Point): Point {
 }
 
 /** 讓場景上的某點置中 */
-export function centerOn(view: View, target: Point, container: Size, scene: Size): View {
+export function centerOn(view: View, target: Point, container: Size, scene: World): View {
   return clampView({ scale: view.scale, tx: container.width / 2 - target.x * view.scale, ty: container.height / 2 - target.y * view.scale }, container, scene);
 }
 

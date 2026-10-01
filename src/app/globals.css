@@ -109,6 +109,16 @@ ruby rt {
   3%, 97% { opacity: 1; }
   100% { transform: translate(var(--dx), var(--dy)); opacity: 0; }
 }
+/* 雲慢慢飄（距離由 --drift 給）、瀑布的水往下流（虛線位移） */
+.amb-drift { animation-name: a-drift; }
+@keyframes a-drift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(var(--drift)); }
+}
+.amb-flow { animation-name: a-flow; animation-timing-function: linear; }
+@keyframes a-flow {
+  to { stroke-dashoffset: -120; }
+}
 @keyframes a-shimmer {
   0%, 100% { transform: translateX(-14px); opacity: 0.35; }
   50% { transform: translateX(14px); opacity: 1; }

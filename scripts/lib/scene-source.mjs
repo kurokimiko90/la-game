@@ -7,13 +7,14 @@ import { contentTop } from './svg-bounds.mjs';
 import { validateSceneConfig } from './scene-config.mjs';
 import { resolveBand } from './layout.mjs';
 import { stageScene, validateStage } from './staging.mjs';
+import { applySceneSitePlan } from './scene-site-plan.mjs';
 
 export function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
 export function loadSceneConfig(root) {
-  return readJson(path.join(root, 'content', 'scene-config.json'));
+  return applySceneSitePlan(readJson(path.join(root, 'content', 'scene-config.json')));
 }
 
 /**

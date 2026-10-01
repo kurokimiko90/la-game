@@ -8,6 +8,7 @@ import { TownStrip } from './TownStrip';
 import { TownMinimap } from './TownMinimap';
 import { WorldBackground, worldSections } from './WorldBackground';
 import { keyIntent, primaryButtonChange, wheelIntent, type ViewIntent } from '@/lib/controls';
+import { EDGE } from '@/lib/city';
 import { clampView, centerOn, defaultScale, itemAtPoint, toScene, wholeView, zoomAt, type View, type Size } from '@/lib/geometry';
 import { districtAt, districtBounds, type Rect, type Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
@@ -84,7 +85,8 @@ export function TownCanvas({
   const initialFocusRef = useRef(initialFocus);
   const pointers = useRef(new Map<number, Point>());
   const gesture = useRef<Gesture | null>(null);
-  const townSize = useMemo(() => ({ width: town.width, height: town.height }), [town.width, town.height]);
+  // 北側山景與西側林地畫在負座標，鏡頭可以看到那裡（街區座標不動）
+  const townSize = useMemo(() => ({ width: town.width, height: town.height, top: EDGE.north, left: EDGE.west }), [town.width, town.height]);
   // 北邊的街區先畫：跨街區交界時，南邊（比較靠前）的物件蓋在上面
   const districts = useMemo(() => [...town.districts].sort((a, b) => districtBounds(a).y0 - districtBounds(b).y0), [town]);
 

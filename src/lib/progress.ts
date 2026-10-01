@@ -64,7 +64,7 @@ export function isStageCleared(p: Progress, sceneId: string, stageId: number): b
 }
 
 /** 一開始就開放的場景數（小鎮路線上的前幾個） */
-export const FREE_SCENE_COUNT = 8;
+export const FREE_SCENE_COUNT = 11;
 
 /** 場景依小鎮路線解鎖：前 freeCount 個一開始就開放，之後前一個場景過了階段 1 才開下一個 */
 export function isSceneUnlocked(p: Progress, sceneId: string, order: readonly string[], freeCount = FREE_SCENE_COUNT): boolean {

@@ -1,0 +1,47 @@
+{
+  "zones": {
+    "front-yard": {
+      "sets": [
+        { "note": "門廊正門", "row": "back", "x": [0.28, 0.62], "fixture": "facade", "door": true, "wall": ["doorbell-button", "door-knocker"] },
+        { "note": "門廊外牆與照明", "row": "back", "x": [0.70, 0.98], "fixture": "facade", "wall": ["porch-light"], "beside": ["rain-chain-home"] },
+        { "note": "門廊座位與踏階", "row": "mid", "x": [0.05, 0.42], "main": "porch-swing", "beside": ["porch-post", "porch-railing"], "front": ["porch-step", "boot-tray", "door-mat-brush"] },
+        { "note": "排水與迎賓石", "row": "back", "x": [0.02, 0.16], "main": "downspout-elbow", "front": ["welcome-stone"] },
+        { "note": "草坪澆灌角", "row": "mid", "x": [0.46, 0.73], "main": "hose-reel-home", "beside": ["garden-sprinkler", "rain-gauge-home"], "front": ["garden-globe", "wind-spinner"] },
+        { "note": "庭園氣象", "row": "back", "x": [0.74, 0.90], "main": "wind-vane" }
+      ]
+    },
+    "living-room": {
+      "sets": [
+        { "note": "影音與餐邊櫃", "row": "back", "x": [0.03, 0.32], "main": "sideboard", "wall": ["television"], "on": ["remote-control-home", "picture-frame", "vinyl-record-home"] },
+        { "note": "沙發與茶几", "row": "mid", "x": [0.05, 0.42], "main": "loveseat", "beside": ["coffee-table"], "on": ["throw-blanket"] },
+        { "note": "壁爐休憩角", "row": "back", "x": [0.40, 0.62], "main": "fireplace-screen", "beside": ["fire-poker-home", "log-basket"] },
+        { "note": "地毯留白區", "row": "front", "x": [0.44, 0.58], "main": "floor-rug" },
+        { "note": "鋼琴角", "row": "back", "x": [0.64, 0.98], "main": "piano", "beside": ["music-stand", "guitar-stand"] },
+        { "note": "閱讀座椅與書櫃", "row": "mid", "x": [0.60, 0.96], "main": "recliner", "beside": ["rocking-chair", "grandfather-clock"], "wall": ["bookcase-home"] }
+      ]
+    },
+    "kitchen": {
+      "sets": [
+        { "note": "冰箱與早餐台", "row": "back", "x": [0.03, 0.27], "main": "refrigerator-home", "beside": ["kitchen-stool"] },
+        { "note": "咖啡與烘焙檯", "row": "back", "x": [0.29, 0.58], "fixture": "counter", "on": ["coffee-maker-home", "teapot-home", "mug-home", "toaster-home"] },
+        { "note": "備料檯", "row": "mid", "x": [0.03, 0.34], "fixture": "counter", "on": ["cutting-board-home", "kitchen-scale", "breadbox", "fruit-bowl"] },
+        { "note": "烹飪檯", "row": "mid", "x": [0.37, 0.68], "fixture": "counter", "on": ["rice-cooker", "kettle", "saucepan", "frying-pan-home"] },
+        { "note": "水槽與調味檯", "row": "back", "x": [0.61, 0.97], "fixture": "counter", "on": ["dish-rack", "soap-dispenser", "spice-rack", "oil-bottle"] },
+        { "note": "料理工具推車", "row": "front", "x": [0.07, 0.39], "main": "kitchen-cart" },
+        { "note": "廚餘桶", "row": "front", "x": [0.70, 0.91], "main": "trash-can-kitchen" }
+      ]
+    },
+    "bedroom": {
+      "sets": [
+        { "note": "床與寢具", "row": "mid", "x": [0.18, 0.80], "main": "bed", "on": ["pillow", "duvet"] }
+      ]
+    }
+  },
+  "scale": {
+    "porch-post": 0.8,
+    "porch-railing": 0.8,
+    "refrigerator-home": 1.1,
+    "piano": 1.08,
+    "bed": 1.15
+  }
+}

@@ -12,6 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
+import { EDGE_SIZE } from './lib/district-kit.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'docs', 'scene-preview');
@@ -26,6 +27,8 @@ function districtBounds(scene) {
 async function main() {
   const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'scene-config.json'), 'utf8'));
   const { width: W, height: H } = config.world;
+  const N = EDGE_SIZE.north;
+  const L = EDGE_SIZE.west;
   try {
     await fetch(BASE);
   } catch {
@@ -34,8 +37,8 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const browser = await chromium.launch({ channel: 'chrome' });
   try {
-    // 視窗接近地圖大小，「看整個小鎮」時縮放接近 1:1
-    const page = await browser.newPage({ viewport: { width: W, height: H + 110 }, reducedMotion: 'reduce' });
+    // 地圖太大（兩萬多寬）Chrome 截不了，視窗固定 5400 寬
+    const page = await browser.newPage({ viewport: { width: 5400, height: Math.round((5400 * (H + N)) / (W + L)) + 110 }, reducedMotion: 'reduce' });
     await page.goto(`${BASE}/`);
     await page.getByLabel('測試用：解鎖全部場景與關卡').check();
     await page.goto(`${BASE}/scene/${config.order[0]}`);
@@ -46,11 +49,12 @@ async function main() {
     const box = await page.locator('[aria-label^="小鎮"]').boundingBox();
     if (!box) throw new Error('找不到畫布');
     // 和 geometry.ts 的 fitScale / clampView 一致：縮到剛好放進畫面，置中
-    const scale = Math.min(box.width / W, box.height / H);
-    const ox = box.x + (box.width - W * scale) / 2;
-    const oy = box.y + (box.height - H * scale) / 2;
+    // 北側山景和西側林地在負座標；ox / oy 是街區 (0, 0) 在畫面的位置
+    const scale = Math.min(box.width / (W + L), box.height / (H + N));
+    const ox = box.x + (box.width - (W + L) * scale) / 2 + L * scale;
+    const oy = box.y + (box.height - (H + N) * scale) / 2 + N * scale;
     const town = path.join(OUT_DIR, 'town.png');
-    await page.screenshot({ path: town, clip: { x: ox, y: oy, width: W * scale, height: H * scale } });
+    await page.screenshot({ path: town, clip: { x: ox - L * scale, y: oy - N * scale, width: (W + L) * scale, height: (H + N) * scale } });
     console.log(`town → ${path.relative(ROOT, town)}`);
 
     for (const sceneId of config.order) {

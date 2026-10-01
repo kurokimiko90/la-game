@@ -130,7 +130,8 @@ describe('buildZonePrompt', () => {
     expect(p).not.toContain('sky（');
     expect(p).toContain('bench, cup');
     expect(p).toContain('18 個');
-    expect(p).toContain('至少 9 個是 ground');
+    expect(p).toContain('依真實用途選位置');
+    expect(p).not.toContain('至少 9 個是 ground');
     expect(p).not.toContain('已經有');
   });
 

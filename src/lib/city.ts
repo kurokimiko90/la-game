@@ -1,11 +1,13 @@
 // 城市路網：街區之間的街道、路口、河上的橋、空地、地圖邊緣（東側丘陵、南側海岸）。純函式，WorldBackground 只負責畫。
 // 規劃見 docs/city-plan.md。格線要和 scripts/lib/district-kit.mjs 的 slot 一致（tests/unit/city.test.ts 會檢查）：
 //
-//   核心（手畫 3600×2600） │街│ slot │街│ slot │街│ … │環│ 丘陵
+//   北側山脈（y < 0）
+//   ╔══════ 北環路 ═════════════════════════════════════════╗
+//   林地 │西環│ 核心（手畫 3600×2600） │街│ slot │街│ … │環│ 山區
 //   ══════ 街 ══════════════╪══╪══════╪══╪══════╪══╪   │  │
 //   站前廣場（核心南側）     │  │ slot │  │ slot │  │   │  │
 //   slot（車站）…           │  │      │  │      │  │   │  │
-//   ════════════════════ 濱海環路 ═══════════════════════╧══╧═══
+//   ╚═══════════════════ 濱海環路 ═══════════════════════╧══╧═══
 //   沙灘、海
 import type { Rect, Town } from './town';
 
@@ -14,8 +16,8 @@ export const SLOT = { w: 2600, h: 1300 };
 /** 街道寬（含兩側人行道） */
 export const STREET = 240;
 export const SIDEWALK = 50;
-/** 環路外的地圖邊緣 */
-export const EDGE = { east: 900, south: 800 };
+/** 環路外的地圖邊緣；north / west 畫在負座標，街區座標不用動 */
+export const EDGE = { east: 900, south: 800, north: 1400, west: 1100 };
 /** 河（核心東側往南流到海）：含西岸步道 */
 export const RIVER = { x0: 2600, x1: 2940 };
 
@@ -45,8 +47,12 @@ export interface City {
   vacant: Rect[];
   /** 海岸線（沙灘上緣）、海的上緣 */
   coast: { sand: number; sea: number };
-  /** 東側丘陵的左緣 */
+  /** 東側山區的左緣 */
   hills: number;
+  /** 北側山區：上緣（地圖最上面）、山腳（北環路的北緣） */
+  mountains: { top: number; foot: number };
+  /** 西側林地：地圖左緣與西環路的外緣 */
+  west: { edge: number; foot: number };
 }
 
 const overlap = (a: Rect, b: Rect): Rect | null => {
@@ -89,8 +95,10 @@ export function buildCity(districts: readonly Rect[]): City {
       streets.push({ id: `h${j}`, dir: 'h', kind: 'avenue', x0: 0, x1: w, y0: top, y1: rowY(j) });
     }
   }
-  streets.push({ id: 'ring-e', dir: 'v', kind: 'ring', x0: w, x1: w + STREET, y0: 0, y1: h + STREET });
-  streets.push({ id: 'ring-s', dir: 'h', kind: 'ring', x0: 0, x1: w + STREET, y0: h, y1: h + STREET });
+  streets.push({ id: 'ring-n', dir: 'h', kind: 'ring', x0: -STREET, x1: w + STREET, y0: -STREET, y1: 0 });
+  streets.push({ id: 'ring-w', dir: 'v', kind: 'ring', x0: -STREET, x1: 0, y0: -STREET, y1: h + STREET });
+  streets.push({ id: 'ring-e', dir: 'v', kind: 'ring', x0: w, x1: w + STREET, y0: -STREET, y1: h + STREET });
+  streets.push({ id: 'ring-s', dir: 'h', kind: 'ring', x0: -STREET, x1: w + STREET, y0: h, y1: h + STREET });
 
   const roads = streets.filter((s) => s.kind !== 'plaza');
   const crossings: Rect[] = [];
@@ -107,7 +115,7 @@ export function buildCity(districts: readonly Rect[]): City {
     : null;
 
   const bridges = roads
-    .filter((s) => s.dir === 'h' && s.x0 < RIVER.x1 && s.x1 > RIVER.x0)
+    .filter((s) => s.dir === 'h' && s.y0 >= 0 && s.x0 < RIVER.x1 && s.x1 > RIVER.x0)
     .map((s) => ({ x0: RIVER.x0 + 70, x1: RIVER.x1 + 20, y0: s.y0, y1: s.y1 }));
 
   const vacant: Rect[] = [];
@@ -128,6 +136,8 @@ export function buildCity(districts: readonly Rect[]): City {
     vacant,
     coast: { sand: h + STREET, sea: h + STREET + 150 },
     hills: w + STREET,
+    mountains: { top: -EDGE.north, foot: -STREET },
+    west: { edge: -EDGE.west, foot: -STREET },
   };
 }
 

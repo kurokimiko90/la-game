@@ -12,6 +12,7 @@ import { fileURLToPath } from 'node:url';
 import { checkLayout, depthOf, resolveBand } from './lib/layout.mjs';
 import { checkMotionBudget, motionParams } from './lib/motion.mjs';
 import { layoutFile, loadSceneConfig, loadSceneSource, loadStage, lockedPlacements } from './lib/scene-source.mjs';
+import { checkSitePlan } from './lib/site-plan.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'scenes');
@@ -45,8 +46,16 @@ function buildScene(world, source, placements, obstacles) {
   const missing = items.filter((it) => !placements.some((p) => p.id === it.id)).map((it) => it.id);
   if (missing.length) throw new Error(`${sceneId}：這些物件還沒有位置：${missing.join(', ')}，先跑 npm run content:layout -- ${sceneId}`);
 
-  const problems = checkLayout({ zones, items, placements, obstacles });
+  const problems = [
+    ...checkLayout({ zones, items, placements, obstacles }),
+    ...checkSitePlan({ terrain: sceneConfig.terrain, items, placements }),
+  ];
   if (problems.length) throw new Error(`${sceneId} 擺放沒過檢查（改 ${path.relative(ROOT, file)} 或加 --reset 重排）：\n  ${problems.join('\n  ')}`);
+  const stage = loadStage(ROOT, source);
+  const hasSiteContext = sceneConfig.terrain?.zones.some((z) => z.details?.length);
+  if (sceneConfig.terrain && !stage && !hasSiteContext) {
+    throw new Error(`${sceneId} 缺少情境配置：請建立 content/stages/${sceneId}.json，或在 terrain.zones[].details 定義實際場地與動線`);
+  }
   const motion = sceneConfig.motion ?? {};
   checkMotionBudget(motion, items.length);
 
@@ -59,7 +68,7 @@ function buildScene(world, source, placements, obstacles) {
     width: world.width,
     height: world.height,
     zones: zones.map(({ id, name, x0, y0, x1, y1 }) => ({ id, name, x0, y0, x1, y1 })),
-    surfaces: surfacesOf(sceneConfig.bands, zones, loadStage(ROOT, source)),
+    surfaces: surfacesOf(sceneConfig.bands, zones, stage),
     items: ordered.map(({ id, x, y, w, h, rotate = 0, flip = false, float = 0 }) => {
       const it = byId.get(id);
       return {

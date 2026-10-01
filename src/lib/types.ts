@@ -74,6 +74,21 @@ export interface TerrainZone {
   road?: { y0: number; y1: number };
   track?: { y0: number; y1: number };
   pool?: { x0: number; y0: number; x1: number; y1: number };
+  /** 參考實際場地的地面分區與家具；同時供 build 檢查物件的落點。 */
+  details?: SiteFeature[];
+  architecture?: 'greenhouse';
+}
+
+export interface SiteFeature {
+  id: string;
+  kind: 'path' | 'walkway' | 'queue' | 'habitat' | 'bed' | 'pond' | 'canopy' | 'shelter' | 'court' | 'worktop' | 'shelf' | 'plinth' | 'seating';
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  surface?: 'grass' | 'sand' | 'rock' | 'mulch';
+  /** 物件底線中心必須落在這個範圍，避免水生植物回到乾地、動物離開棲地。 */
+  items?: string[];
 }
 
 /** 自動產生的街區地形（手畫的場景沒有這個欄位，地形在 WorldBackground.tsx） */
@@ -85,6 +100,12 @@ export interface DistrictTerrain {
   x1: number;
   y1: number;
   zones: TerrainZone[];
+  /** 同一間教室的功能區共用外牆，內部不畫成四間獨立房間。 */
+  openPlan?: boolean;
+  /** 同一座公共場所共用外牆；區域以地板和功能帶區分，不切成四間盒子。 */
+  sharedShell?: boolean;
+  /** 場所專屬平面結構；由 scene-site-plan 依街區設定。 */
+  structure?: string;
 }
 
 /** 一個場景 = 小鎮地圖上的一個街區；width/height 是整張地圖的大小，座標都是地圖座標 */

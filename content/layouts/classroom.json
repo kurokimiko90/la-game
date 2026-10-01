@@ -1,7 +1,7 @@
 {
   "class-abacus": { "x": 5578, "y": 7180, "w": 105, "h": 105, "rotate": 0, "flip": false },
   "class-backpack": { "x": 4793, "y": 6836, "w": 85, "h": 94, "rotate": 0, "flip": false },
-  "class-blackboard": { "x": 5045, "y": 6172, "w": 190, "h": 163, "rotate": 0, "flip": false },
+  "class-blackboard": { "x": 4960, "y": 6175, "w": 360, "h": 150, "rotate": 0, "flip": false },
   "class-chairclass": { "x": 4640, "y": 6840, "w": 100, "h": 125, "rotate": 0, "flip": false },
   "class-clockclass": { "x": 4458, "y": 6215, "w": 65, "h": 65, "rotate": 0, "flip": false },
   "class-globeclass": { "x": 5936, "y": 6388, "w": 68, "h": 92, "rotate": 0, "flip": false },

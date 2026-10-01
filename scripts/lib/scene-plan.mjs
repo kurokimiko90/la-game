@@ -94,11 +94,10 @@ export function parseOutline(raw, { theme, usedZoneIds = [] }) {
 
 /**
  * spots：這次只收這些位置（補元素時只要 ground）；existing：區域裡已經有的物品 { id, zh }，新的要和它們不同、可以搭配。
- * 可以放別的位置時，至少一半要放地上：不然 LLM 常把東西全擺在牆上和檯面上，地板空一大片。
+ * 位置依實際用途選擇；空出的地板是走道，不用以地面物件配額填滿。
  */
 export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, spots = allowedSpots(zone), existing = [], townEn = [] }) {
   const spotText = spots.map((s) => `${s}（${s === 'surface' ? `放在${FEATURE_TEXT[zone.feature].slice(1)}上` : SPOT_TEXT[s]}）`).join(' | ');
-  const minGround = spots.length > 1 && spots.includes('ground') ? Math.ceil(count / 2) : 0;
   return [
     `語言學習找物遊戲《記憶小鎮》，街區「${sceneName}」裡的區域「${zone.name}」（${zone.indoor ? '室內' : '室外'}，${FEATURE_TEXT[zone.feature]}）。`,
     ...(existing.length ? [`這個街區已經有：${existing.map((e) => `${e.zh}（${e.id}）`).join('、')}。列出完全不同的東西：不要它們的零件、配件、同類變體或換個說法（已有噴泉就不要噴水柱、噴泉水池；已有購物籃就不要手提籃）。`] : []),
@@ -112,7 +111,8 @@ export function buildZonePrompt({ sceneName, zone, count, avoidEn, maxMotion, sp
     '   zh：繁體中文（台灣用語）；en：英文單字（小寫）；ja：日文常用說法；reading：只用平假名或片假名的讀音',
     `   category：${CATEGORIES.join(' | ')}`,
     '   size：small（手拿得起）| medium（家具、腳踏車大小）| large（建築、車輛、大型設備）',
-    `   spot：${spotText}${minGround ? `；至少 ${minGround} 個是 ground` : ''}`,
+    `   spot：${spotText}`,
+    '   依真實用途選位置：文具和餐具放檯面、時鐘掛牆、水生植物在水中；保留地面作通道。若這次只允許 ground，選適合落地的物件，不要把小文具放地上湊數。',
     '   desc：繁體中文 20–60 字，正面平視的外觀：主要形狀、顏色、一兩個一眼能認出的特徵。不要寫數字或英文字母。',
     '   loose：true = 散落在地上、可以歪倒的小東西',
     `   motion：null，或 sway（植物、布料輕擺）| wobble（會震動的機器、車輛）| bob（水上、空中浮動）| drift（風箏飄移）；最多 ${maxMotion} 個不是 null`,
@@ -271,4 +271,3 @@ export function zoneShortfall(plan, available, itemsPerScene) {
     return { zone, have, need: Math.max(0, target[i] - have) };
   });
 }
-

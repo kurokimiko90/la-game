@@ -9,7 +9,7 @@
 // ⚠️ 這裡的座標（道路、河、牆）要和 content/scene-config.json 的區域與地帶一致；改地圖時兩邊一起改。
 // 規範（docs/scene-standard.md）：重複元素用 scatter 抖動、每個區域都有背景動態、不畫像單字物品的東西。
 import { memo, type ReactNode } from 'react';
-import { buildCity, districtRects } from '@/lib/city';
+import { buildCity, districtRects, EDGE } from '@/lib/city';
 import { scatter } from '@/lib/scatter';
 import type { Rect, Town } from '@/lib/town';
 import { Glow, HangSwing, SwayTufts, WaterShimmer } from './Ambient';
@@ -250,7 +250,7 @@ function WorldBackgroundImpl({ town, activeSections }: WorldBackgroundProps) {
   return (
     <>
       {cityShadowDefs}
-      <rect width={town.width} height={town.height} fill="#b7d98b" />
+      <rect x={-EDGE.west} width={town.width + EDGE.west} height={town.height} fill="#b7d98b" />
       <CityEdges city={city} world={world} />
       {section('park', <Park />)}
       {section('shops', <Shops />)}
@@ -261,7 +261,7 @@ function WorldBackgroundImpl({ town, activeSections }: WorldBackgroundProps) {
       {section('east', <EastBank height={city.coast.sand} />)}
       <CityStreets city={city} section={section} />
       <DistrictShadows rects={shadows} />
-      {town.districts.map((d) => d.scene.terrain && <g key={d.scene.id}>{section(genKey(d.scene.id), <GeneratedDistrict terrain={d.scene.terrain} />)}</g>)}
+      {town.districts.map((d) => d.scene.terrain && <g key={d.scene.id}>{section(genKey(d.scene.id), <GeneratedDistrict terrain={d.scene.terrain} sceneId={d.scene.id} />)}</g>)}
       {town.districts.map((d) => <Surfaces key={d.scene.id} surfaces={d.scene.surfaces} />)}
     </>
   );

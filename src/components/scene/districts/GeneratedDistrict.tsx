@@ -5,6 +5,8 @@ import type { ReactNode } from 'react';
 import { scatter } from '@/lib/scatter';
 import type { DistrictTerrain, TerrainZone } from '@/lib/types';
 import { Glow, SwayTufts, WaterShimmer } from '../Ambient';
+import { SiteFeatures } from './SiteFeatures';
+import { VenueStructure } from './VenueStructure';
 
 const range = (n: number) => Array.from({ length: Math.max(0, n) }, (_, i) => i);
 
@@ -19,7 +21,7 @@ const FLOOR: Record<TerrainZone['floor'], { fill: string; line: string }> = {
 };
 const WALL = { face: '#fff3e0', base: '#bcaaa4' };
 
-function Floor({ z }: { z: TerrainZone }) {
+function Floor({ z, shared = false }: { z: TerrainZone; shared?: boolean }) {
   const { fill, line } = FLOOR[z.floor];
   const top = z.wallBase ?? z.y0;
   const w = z.x1 - z.x0;
@@ -47,8 +49,9 @@ function Floor({ z }: { z: TerrainZone }) {
   }
   return (
     <g>
-      <rect x={z.x0} y={top} width={w} height={h} fill={fill} />
-      {pattern}
+      <rect x={z.x0} y={top} width={w} height={h} fill={shared && z.indoor ? '#e9e8e2' : fill} />
+      {shared && z.indoor && <rect x={z.x0 + 24} y={top + 20} width={w - 48} height={h - 40} rx={45} fill={fill} opacity={.72} />}
+      <g opacity={shared && z.indoor ? .55 : 1}>{pattern}</g>
     </g>
   );
 }
@@ -59,28 +62,35 @@ function Floor({ z }: { z: TerrainZone }) {
  */
 const SECTION = { cut: '#5d4037', edge: '#8d6e63', roof: 26, side: 22, front: 12 };
 
-function BackWall({ z, roof }: { z: TerrainZone; roof: string }) {
+function BackWall({ z, roof, shared = false }: { z: TerrainZone; roof: string; shared?: boolean }) {
   if (!z.wallBase) return null;
   const w = z.x1 - z.x0;
   const top = z.y0 + SECTION.roof;
   return (
     <g>
-      <rect x={z.x0} y={top} width={w} height={z.wallBase - top} fill={WALL.face} />
+      <rect x={z.x0} y={top} width={w} height={z.wallBase - top} fill={z.architecture === 'greenhouse' ? '#cee3dc' : WALL.face} />
+      {z.architecture === 'greenhouse' && range(Math.floor(w / 130)).map((i) => (
+        <rect key={i} x={z.x0 + i * 130 + 30} y={top + 16} width={100} height={z.wallBase! - top - 35} fill="#e1f0e9" stroke="#9ab7ac" strokeWidth={4} />
+      ))}
       <rect x={z.x0} y={z.wallBase - 10} width={w} height={10} fill={WALL.base} />
       {/* 地板靠後牆、兩側牆的陰影 */}
       <rect x={z.x0} y={z.wallBase} width={w} height={56} fill="url(#city-shade-down)" />
-      <rect x={z.x0 + SECTION.side} y={top} width={34} height={z.y1 - top} fill="url(#city-shade-right)" />
-      <rect x={z.x1 - SECTION.side - 34} y={top} width={34} height={z.y1 - top} fill="url(#city-shade-left)" />
+      {!shared && <>
+        <rect x={z.x0 + SECTION.side} y={top} width={34} height={z.y1 - top} fill="url(#city-shade-right)" />
+        <rect x={z.x1 - SECTION.side - 34} y={top} width={34} height={z.y1 - top} fill="url(#city-shade-left)" />
+      </>}
       {/* 切開的屋頂板（上緣露出屋瓦顏色）、兩側外牆、前緣矮牆 */}
-      <rect x={z.x0} y={z.y0} width={w} height={SECTION.roof} fill={SECTION.cut} />
-      <rect x={z.x0} y={z.y0} width={w} height={9} fill={roof} />
-      {[z.x0, z.x1 - SECTION.side].map((x) => (
-        <g key={x}>
-          <rect x={x} y={z.y0} width={SECTION.side} height={z.y1 - z.y0} fill={SECTION.cut} />
-          <rect x={x === z.x0 ? x + SECTION.side - 4 : x} y={top} width={4} height={z.y1 - top} fill={SECTION.edge} />
-        </g>
-      ))}
-      <rect x={z.x0} y={z.y1 - SECTION.front} width={w} height={SECTION.front} fill={SECTION.cut} />
+      {!shared && <>
+        <rect x={z.x0} y={z.y0} width={w} height={SECTION.roof} fill={SECTION.cut} />
+        <rect x={z.x0} y={z.y0} width={w} height={9} fill={roof} />
+        {[z.x0, z.x1 - SECTION.side].map((x) => (
+          <g key={x}>
+            <rect x={x} y={z.y0} width={SECTION.side} height={z.y1 - z.y0} fill={SECTION.cut} />
+            <rect x={x === z.x0 ? x + SECTION.side - 4 : x} y={top} width={4} height={z.y1 - top} fill={SECTION.edge} />
+          </g>
+        ))}
+        <rect x={z.x0} y={z.y1 - SECTION.front} width={w} height={SECTION.front} fill={SECTION.cut} />
+      </>}
       {[0.2, 0.5, 0.8].map((t, i) => (
         <Glow key={t} dur={4.5 + i * 0.7} phase={(z.x0 % 7) / 7 + i * 0.3}>
           <rect x={z.x0 + w * t - 14} y={top + 16} width={28} height={12} rx={4} fill="#fff59d" stroke="#e0e0e0" strokeWidth={2} />
@@ -88,6 +98,38 @@ function BackWall({ z, roof }: { z: TerrainZone; roof: string }) {
       ))}
     </g>
   );
+}
+
+function IndoorEnvelope({ terrain }: { terrain: DistrictTerrain }) {
+  const zones = terrain.zones;
+  const joins = (z: TerrainZone, side: 'top' | 'bottom' | 'left' | 'right') => zones.find((other) => other !== z && (
+    side === 'top' ? other.y1 === z.y0 && other.x0 < z.x1 && other.x1 > z.x0
+      : side === 'bottom' ? other.y0 === z.y1 && other.x0 < z.x1 && other.x1 > z.x0
+        : side === 'left' ? other.x1 === z.x0 && other.y0 < z.y1 && other.y1 > z.y0
+          : other.x0 === z.x1 && other.y0 < z.y1 && other.y1 > z.y0
+  ));
+  return <g pointerEvents="none">{zones.filter((z) => z.indoor).map((z) => {
+    const top = joins(z, 'top'); const bottom = joins(z, 'bottom');
+    const left = joins(z, 'left'); const right = joins(z, 'right');
+    const w = z.x1 - z.x0; const h = z.y1 - z.y0;
+    const horizontal = (y: number, gap: boolean, thick: number, fill: string) => gap ? <>
+      <rect x={z.x0} y={y} width={w * .42} height={thick} fill={fill} />
+      <rect x={z.x0 + w * .58} y={y} width={w * .42} height={thick} fill={fill} />
+    </> : <rect x={z.x0} y={y} width={w} height={thick} fill={fill} />;
+    const vertical = (x: number, gap: boolean) => gap ? <>
+      <rect x={x} y={z.y0} width={SECTION.side} height={h * .39} fill={SECTION.cut} />
+      <rect x={x} y={z.y0 + h * .67} width={SECTION.side} height={h * .33} fill={SECTION.cut} />
+    </> : <rect x={x} y={z.y0} width={SECTION.side} height={h} fill={SECTION.cut} />;
+    return <g key={z.id}>
+      {!top?.indoor && <>
+        {horizontal(z.y0, Boolean(top), SECTION.roof, SECTION.cut)}
+        {horizontal(z.y0, Boolean(top), 9, terrain.color)}
+      </>}
+      {!bottom?.indoor && horizontal(z.y1 - SECTION.front, Boolean(bottom), SECTION.front, SECTION.cut)}
+      {!left?.indoor && vertical(z.x0, Boolean(left))}
+      {!right?.indoor && vertical(z.x1 - SECTION.side, Boolean(right))}
+    </g>;
+  })}</g>;
 }
 
 function Road({ z }: { z: TerrainZone }) {
@@ -172,7 +214,7 @@ function Doors({ zones }: { zones: readonly TerrainZone[] }) {
   return <g>{out}</g>;
 }
 
-export function GeneratedDistrict({ terrain }: { terrain: DistrictTerrain }) {
+export function GeneratedDistrict({ terrain, sceneId }: { terrain: DistrictTerrain; sceneId?: string }) {
   const { x0, y0, x1, y1 } = terrain;
   return (
     <g>
@@ -180,15 +222,24 @@ export function GeneratedDistrict({ terrain }: { terrain: DistrictTerrain }) {
       <rect x={x0} y={y0} width={x1 - x0} height={y1 - y0} fill="#d7ccc8" />
       {terrain.zones.map((z) => (
         <g key={z.id}>
-          <Floor z={z} />
-          <BackWall z={z} roof={terrain.color} />
+          <Floor z={z} shared={terrain.sharedShell} />
+          {!terrain.openPlan && <BackWall z={z} roof={terrain.color} shared={terrain.sharedShell} />}
           <Road z={z} />
           <Track z={z} />
           <Pool z={z} />
-          <OutdoorAmbient z={z} />
+          {(!z.details || z.details.some((feature) => feature.kind === 'walkway' || feature.kind === 'queue')) && (
+            <OutdoorAmbient z={z} />
+          )}
+          {z.details && <SiteFeatures features={z.details} />}
         </g>
       ))}
-      <Doors zones={terrain.zones} />
+      {terrain.openPlan ? <>
+        <BackWall z={{ id: 'room', x0, y0, x1, y1, indoor: true, floor: 'wood', wallBase: y0 + 180 }} roof={terrain.color} />
+        <rect x={x0 + 110} y={y1 - 15} width={160} height={18} fill="#dcb98f" />
+      </> : <>
+        {terrain.sharedShell && <><VenueStructure terrain={terrain} sceneId={terrain.structure ?? sceneId} /><IndoorEnvelope terrain={terrain} /></>}
+        {!terrain.sharedShell && <Doors zones={terrain.zones} />}
+      </>}
     </g>
   );
 }

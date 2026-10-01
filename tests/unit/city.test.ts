@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { buildCity, colX, CORE, rowY, SLOT, STREET } from '@/lib/city';
+import { buildCity, colX, CORE, EDGE, rowY, SLOT, STREET } from '@/lib/city';
 import type { Rect } from '@/lib/town';
 
 const core: Rect = { x0: 0, y0: 0, x1: CORE.w, y1: CORE.h };
@@ -32,6 +32,16 @@ describe('buildCity', () => {
     expect(city.inner).toEqual({ w: colX(1) + SLOT.w, h: rowY(2) + SLOT.h });
     expect(city.coast.sand).toBe(city.inner.h + STREET);
     expect(city.hills).toBe(city.inner.w + STREET);
+  });
+
+  test('北緣和西緣：環路貼著街區，山與林地在外側；北環路不在河上所以沒有橋', () => {
+    const north = city.streets.find((s) => s.id === 'ring-n');
+    expect(north).toMatchObject({ dir: 'h', x0: -STREET, x1: city.inner.w + STREET, y0: -STREET, y1: 0 });
+    expect(city.streets.find((s) => s.id === 'ring-w')).toMatchObject({ dir: 'v', x0: -STREET, x1: 0, y0: -STREET, y1: city.inner.h + STREET });
+    expect(city.streets.find((s) => s.id === 'ring-e')?.y0).toBe(-STREET);
+    expect(city.bridges.every((b) => b.y0 >= 0)).toBe(true);
+    expect(city.mountains).toEqual({ top: -EDGE.north, foot: -STREET });
+    expect(city.west).toEqual({ edge: -EDGE.west, foot: -STREET });
   });
 
   test('沒有街區的格子是空地', () => {

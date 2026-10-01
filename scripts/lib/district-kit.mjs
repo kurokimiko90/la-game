@@ -8,7 +8,7 @@
 export const SLOT_SIZE = { w: 2600, h: 1300 };
 // 城市格線（src/lib/city.ts 用同一組數字畫路網，tests/unit/district-kit.test.mjs 檢查一致）：slot 之間留街道，外圍一圈環路 + 地圖邊緣
 export const STREET_WIDTH = 240;
-export const EDGE_SIZE = { east: 900, south: 800 };
+export const EDGE_SIZE = { east: 900, south: 800, north: 1400, west: 1100 }; // north / west 畫在負座標，不算進 worldSize
 export const FLOORS = { indoor: ['tile', 'wood', 'carpet'], outdoor: ['grass', 'paving', 'sand', 'concrete'] };
 export const SURFACE_LOOKS = { counter: 'cafe-counter', table: 'table', stand: 'stand', chiller: 'chiller', checkout: 'checkout' };
 const OUTDOOR_ONLY = ['road', 'track', 'water'];

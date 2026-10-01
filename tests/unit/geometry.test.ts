@@ -34,6 +34,28 @@ describe('defaultScale / fitScale / clampView', () => {
     const origin = clampView({ scale: 0.5, tx: 50, ty: 50 }, container, scene);
     expect(origin).toEqual({ scale: 0.5, tx: 0, ty: 0 });
   });
+
+  test('地圖北緣在 y < 0（top）：可以往上看到 -top，整張圖含北緣一起置中', () => {
+    const world = { ...scene, top: 1000 };
+    const up = clampView({ scale: 0.5, tx: 0, ty: 9999 }, container, world);
+    expect(up.ty).toBe(1000 * 0.5);
+    const down = clampView({ scale: 0.5, tx: 0, ty: -99999 }, container, world);
+    expect(down.ty).toBe(450 - 3000 * 0.5);
+    expect(fitScale(container, world)).toBe(Math.min(800 / 4000, 450 / 4000));
+    const v = wholeView(container, world);
+    expect(v.ty - 1000 * v.scale).toBeCloseTo((450 - 4000 * v.scale) / 2);
+  });
+
+  test('西緣在 x < 0（left）：可拖到林地，整張圖含西緣一起置中', () => {
+    const world = { ...scene, left: 1000 };
+    const left = clampView({ scale: 0.5, tx: 9999, ty: 0 }, container, world);
+    expect(left.tx).toBe(1000 * 0.5);
+    const right = clampView({ scale: 0.5, tx: -99999, ty: 0 }, container, world);
+    expect(right.tx).toBe(800 - 4000 * 0.5);
+    expect(fitScale(container, world)).toBe(Math.min(800 / 5000, 450 / 3000));
+    const v = wholeView(container, world);
+    expect(v.tx - 1000 * v.scale).toBeCloseTo((800 - 5000 * v.scale) / 2);
+  });
 });
 
 describe('zoomAt / toScene', () => {
