@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "play": "NEXT_DIST_DIR=.next-play next build && NEXT_DIST_DIR=.next-play next start -p 3220",
+    "play:bg": "node scripts/reload-play.mjs",
     "lint": "eslint",
     "content:scenes": "node scripts/build-scenes.mjs",
     "content:audio": "node scripts/build-audio.mjs",

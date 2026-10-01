@@ -19,6 +19,7 @@ npm run dev               # 開發（固定 3220）
 npm run build && npm start
 npm run play              # 試玩用 production（build 到 .next-play、開在 3220）；自動擴展重建 .next 不會弄壞它
                           # 本專案固定只用 3220：dev 和 play 一次只開一個，平常開 play
+npm run play:bg           # 同上但背景常駐（detached，關掉終端機也不停；跟自動擴展共用 reload-play.mjs）
 npm test                  # Vitest（src/lib、scripts/lib）
 npm run test:coverage
 npm run test:e2e          # next build + Playwright
