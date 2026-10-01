@@ -140,12 +140,14 @@ async function layoutReview(sceneId, scene, items) {
   const browser = await chromium.launch({ channel: 'chrome' });
   const files = [];
   try {
-    const page = await browser.newPage({ viewport: { width: 1600, height: 1000 }, reducedMotion: 'reduce' });
+    // 寬一點：佔兩格的街區每區 2720 寬，1600 寬的視窗縮下來物件只剩十幾 px（2026-10-01 游泳池被評「物品看不到」）
+    const page = await browser.newPage({ viewport: { width: 2400, height: 1100 }, reducedMotion: 'reduce' });
     await page.goto(`${BASE}/`);
     await page.getByLabel('測試用：解鎖全部場景與關卡').check();
     await page.goto(`${BASE}/scene/${sceneId}`);
     await page.getByRole('button', { name: /自由探索/ }).click();
-    await page.addStyleTag({ content: '[data-ui="overlay"]{display:none!important}' });
+    // 選單、單字卡（拖曳起點按在物件上會跳出來）都不要入鏡
+    await page.addStyleTag({ content: '[data-ui="overlay"],[role="status"]{display:none!important}' });
     await page.waitForTimeout(500);
     for (const zone of scene.zones) {
       const file = path.join(OUT_DIR, `${sceneId}-zone-${zone.id}.png`);
