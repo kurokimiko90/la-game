@@ -2066,6 +2066,48 @@
           }
         }
       }
+    },
+    {
+      "name": "行李秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型手提秤有圓形刻度盤、短握把和金屬掛鉤，外殼是亮黃色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "guest-floor",
+        "itemId": "luggage-scale-hotel",
+        "words": {
+          "zh-TW": "行李秤",
+          "en": "luggage scale",
+          "ja": {
+            "text": "ラゲッジスケール",
+            "reading": "ラゲッジスケール"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的長方形木桌面由四條深色桌腳支撐，桌面乾淨平整，沒有擺放餐具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hotel",
+        "zone": "dining-room",
+        "itemId": "dining-table-hotel",
+        "words": {
+          "zh-TW": "餐桌",
+          "en": "dining table",
+          "ja": {
+            "text": "ダイニングテーブル",
+            "reading": "ダイニングテーブル"
+          }
+        }
+      }
     }
   ]
 }

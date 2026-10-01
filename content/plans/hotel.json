@@ -1509,6 +1509,36 @@
       "loose": false,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "luggage-scale-hotel",
+      "zh": "行李秤",
+      "en": "luggage scale",
+      "ja": "ラゲッジスケール",
+      "reading": "ラゲッジスケール",
+      "category": "道具",
+      "size": "small",
+      "zone": "guest-floor",
+      "spot": "ground",
+      "desc": "小型手提秤有圓形刻度盤、短握把和金屬掛鉤，外殼是亮黃色。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dining-table-hotel",
+      "zh": "餐桌",
+      "en": "dining table",
+      "ja": "ダイニングテーブル",
+      "reading": "ダイニングテーブル",
+      "category": "設施",
+      "size": "large",
+      "zone": "dining-room",
+      "spot": "ground",
+      "desc": "寬大的長方形木桌面由四條深色桌腳支撐，桌面乾淨平整，沒有擺放餐具。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1710,5 +1740,10 @@
         "shopseating"
       ]
     }
+  },
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 2,
+    "at": "2026-10-02T00:13:05.029+09:00"
   }
 }

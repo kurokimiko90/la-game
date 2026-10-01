@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T23:57:39.181+09:00",
+  "syncedAt": "2026-10-02T00:13:41.945+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -1486,7 +1486,9 @@
         "table-runner",
         "salt-and-pepper-shakers",
         "tea-light-holder",
-        "table-number-stand-hotel"
+        "table-number-stand-hotel",
+        "luggage-scale-hotel",
+        "dining-table-hotel"
       ],
       "failed": [],
       "pending": [],

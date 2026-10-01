@@ -1662,7 +1662,7 @@
         "table-number-stand-hotel": "surface-dining-room"
       },
       "clusters": [["lobby-sofa", "lobby-coffee-table", "lobby-floor-lamp"], ["linen-cart", "folded-towel"], ["housekeeping-cart", "bath-towel", "linen-sack"]],
-      "loose": ["car-wash-brush", "ice-scraper", "windshield-washer", "license-plate-frame", "lobby-bell", "lobby-keycard", "lobby-ice-tongs", "folded-towel", "room-service-tray"],
+      "loose": ["car-wash-brush", "ice-scraper", "windshield-washer", "license-plate-frame", "lobby-bell", "lobby-keycard", "lobby-ice-tongs", "folded-towel", "room-service-tray", "luggage-scale-hotel"],
       "noFlip": [],
       "motion": {"lobby-coffee-machine": "wobble", "lobby-potted-plant": "sway", "lobby-curtain": "sway", "bath-towel": "sway", "shoe-polishing-machine": "wobble", "table-runner": "sway"},
       "arrange": "auto",

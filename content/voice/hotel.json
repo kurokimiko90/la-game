@@ -473,6 +473,102 @@
       "score": 1,
       "take": "en-1790867163977.aac",
       "account": "chatgpt1"
+    },
+    "table-number-stand-hotel": {
+      "heard": "Table number stand.",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "luggage-scale-hotel": {
+      "heard": "Luggage Scale",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "pepper-mill": {
+      "heard": "Peppermill",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "oil-cruet": {
+      "heard": "oil cruet",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "salt-and-pepper-shakers": {
+      "heard": "Salt and pepper shakers.",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "tea-light-holder": {
+      "heard": "tea light holder",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "vacuum-cleaner": {
+      "heard": "Cone vacuum cleaner.",
+      "score": 0.76,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "folding-luggage-rack": {
+      "heard": "Folding luggage rack.",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "ironing-board-hotel": {
+      "heard": "ironing board",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "dining-table-hotel": {
+      "heard": "Dining table.",
+      "score": 1,
+      "take": "en-1790867641796.aac",
+      "account": "chatgpt2"
+    },
+    "snow-shovel": {
+      "heard": "Ben Snow Shovel.",
+      "score": 0.77,
+      "take": "en-1790867830247.aac",
+      "account": "chatgpt1"
+    },
+    "condiment-caddy": {
+      "heard": "Condiment caddy?",
+      "score": 1,
+      "take": "en-1790867830247.aac",
+      "account": "chatgpt1"
+    },
+    "salt-cellar": {
+      "heard": "Salt Cellar.",
+      "score": 1,
+      "take": "en-1790867830247.aac",
+      "account": "chatgpt1"
+    },
+    "vinegar-cruet": {
+      "heard": "Vinegar cruet.",
+      "score": 1,
+      "take": "en-1790867830247.aac",
+      "account": "chatgpt1"
+    },
+    "table-runner": {
+      "heard": "TableRunner Wet.",
+      "score": 0.79,
+      "take": "en-1790867830247.aac",
+      "account": "chatgpt1"
+    },
+    "wet-floor-cone": {
+      "heard": "Floor Cone",
+      "score": 0.75,
+      "take": "en-1790867830247.aac",
+      "account": "chatgpt1"
     }
   }
 }

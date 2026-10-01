@@ -59,6 +59,59 @@
             "dog-waste-bin",
             "license-plate-frame"
           ]
+        },
+        {
+          "row": "back",
+          "note": "飯店入口門扇與五金",
+          "x": [
+            0.05,
+            0.25
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "door-closer-arm",
+            "door-handle-hotel",
+            "door-hinge"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "雨棚結構與排水",
+          "x": [
+            0.28,
+            0.48
+          ],
+          "main": "entry-canopy",
+          "beside": [
+            "canopy-support",
+            "canopy-drain"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "代客泊車服務點",
+          "x": [
+            0.72,
+            0.9
+          ],
+          "main": "valet-podium",
+          "beside": [
+            "ash-bin"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "洗車與除冰工具",
+          "x": [
+            0.38,
+            0.58
+          ],
+          "main": "luggage-bench",
+          "on": [
+            "car-wash-brush",
+            "ice-scraper"
+          ]
         }
       ]
     },
@@ -235,6 +288,39 @@
           "on": [
             "room-service-tray"
           ]
+        },
+        {
+          "row": "back",
+          "note": "走廊消防灑水管線",
+          "x": [
+            0.31,
+            0.33
+          ],
+          "main": "sprinkler-pipe",
+          "on": [
+            "sprinkler-head"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "走廊煙霧與溫控設備",
+          "x": [
+            0.63,
+            0.66
+          ],
+          "wall": [
+            "smoke-detector-hotel",
+            "thermostat-hotel"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "旅客行李秤重處",
+          "x": [
+            0.32,
+            0.35
+          ],
+          "main": "luggage-scale-hotel"
         }
       ]
     },
@@ -341,6 +427,15 @@
             "champagne-flute",
             "carafe"
           ]
+        },
+        {
+          "row": "front",
+          "note": "餐桌用餐座位",
+          "x": [
+            0.38,
+            0.66
+          ],
+          "main": "dining-table-hotel"
         }
       ]
     }
