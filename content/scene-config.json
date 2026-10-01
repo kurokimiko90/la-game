@@ -1,6 +1,6 @@
 {
   "world": {"width": 21780, "height": 11580},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool", "hotel", "amusement-park"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool", "hotel", "amusement-park", "hot-spring"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -1693,6 +1693,54 @@
       "motion": {"ride-car": "wobble", "bumper-car": "wobble", "ride-control-box": "wobble", "pool-shade-canopy": "sway", "pool-lane-float": "bob", "pool-float-ring": "bob", "pool-float-disc": "bob"},
       "arrange": "auto",
       "terrain": {"color": "#f48fb1", "x0": 9520, "y0": 9240, "x1": 14960, "y1": 10540, "zones": [{"id": "entrance", "x0": 9520, "y0": 9240, "x1": 12120, "y1": 9890, "indoor": false, "floor": "paving"}, {"id": "midway", "x0": 12360, "y0": 9240, "x1": 14960, "y1": 9890, "indoor": false, "floor": "concrete", "road": {"y0": 9700, "y1": 9860}}, {"id": "carousel-hall", "x0": 12360, "y0": 9890, "x1": 14960, "y1": 10540, "indoor": true, "floor": "wood", "wallBase": 10070}, {"id": "water-ride", "x0": 9520, "y0": 9890, "x1": 12120, "y1": 10540, "indoor": false, "floor": "concrete", "pool": {"x0": 10820, "y0": 10000, "x1": 12070, "y1": 10500}}], "venue": {"accent": "#7fae9b", "wall": "warm", "zones": {"entrance": ["arrival", "concourse"], "midway": ["boardwalk", "shopseating"], "carousel-hall": ["gallery", "cinema"], "water-ride": ["pooldeck", "shores"]}}}
+    },
+    "hot-spring": {
+      "name": "溫泉旅館",
+      "icon": "stone-pillar",
+      "zones": {"entrance": [15200, 9240, 17800, 9890], "lobby": [18040, 9240, 20640, 9890], "bathing-area": [18040, 9890, 20640, 10540], "guest-room": [15200, 9890, 17800, 10540]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 9310, "bottom": 9870}, "lobby": {"top": 9480, "bottom": 9870, "gaps": [[9430, 9622]]}, "bathing-area": {"top": 10130, "bottom": 10520}, "guest-room": {"top": 10130, "bottom": 10520}}},
+        "sky-entrance": {"top": 9390, "bottom": 9540, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-lobby": {"levels": [9380], "zones": ["lobby"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-lobby": {"levels": [9418], "zones": ["lobby"], "inset": 50},
+        "surface-lobby": {"levels": [9550], "zones": ["lobby"], "x0": 18190, "x1": 20490, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 9592},
+        "wall-bathing-area": {"levels": [10030], "zones": ["bathing-area"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-bathing-area": {"levels": [10068], "zones": ["bathing-area"], "inset": 50},
+        "wall-guest-room": {"levels": [10030], "zones": ["guest-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-guest-room": {"levels": [10068], "zones": ["guest-room"], "inset": 50}
+      },
+      "place": {
+        "wooden-reception-counter": "wallbase-lobby",
+        "key-tag": "surface-lobby",
+        "key-card": "surface-lobby",
+        "business-card-holder": "surface-lobby",
+        "stamp-pad": "surface-lobby",
+        "desk-bell-hot-spring": "surface-lobby",
+        "service-bell": "surface-lobby",
+        "incense-holder": "surface-lobby",
+        "incense-burner": "surface-lobby",
+        "tea-cup-hot-spring": "surface-lobby",
+        "tea-caddy": "surface-lobby",
+        "sake-bottle": "surface-lobby",
+        "sake-cup": "surface-lobby",
+        "milk-pitcher": "surface-lobby",
+        "napkin-holder-hot-spring": "surface-lobby",
+        "biscuit": "surface-lobby",
+        "rice-cracker": "surface-lobby",
+        "plum": "surface-lobby",
+        "rice-bowl": "surface-lobby",
+        "soy-sauce-dish": "surface-lobby",
+        "fountain-pen-hot-spring": "surface-lobby",
+        "paperweight-hot-spring": "surface-lobby",
+        "chest-of-drawers": "wallbase-guest-room",
+        "wardrobe-hot-spring": "wallbase-guest-room"
+      },
+      "clusters": [["stone-basin", "bamboo-ladle"], ["shower-head-hot-spring", "shower-hose"], ["shampoo-bottle-hot-spring", "conditioner-bottle-hot-spring", "body-wash-bottle"], ["bath-stool", "washbasin"], ["low-table", "floor-cushion", "footstool"], ["futon", "bedside-cabinet", "bedside-table-hot-spring"]],
+      "loose": ["wooden-clogs", "bamboo-ladle", "bamboo-basket", "stone-bowl", "bamboo-tube", "key-tag", "key-card", "service-bell", "biscuit", "rice-cracker", "plum", "fountain-pen-hot-spring", "paperweight-hot-spring", "shower-head-hot-spring", "soap-dish", "washcloth", "washbasin", "bath-slipper", "clothes-hanger-hot-spring", "robe-belt", "floor-cushion", "door-wedge", "clothes-brush-hot-spring", "shoehorn-hot-spring"],
+      "noFlip": [],
+      "motion": {"dehumidifier": "wobble", "fan": "wobble"},
+      "arrange": "auto",
+      "terrain": {"color": "#90caf9", "x0": 15200, "y0": 9240, "x1": 20640, "y1": 10540, "zones": [{"id": "entrance", "x0": 15200, "y0": 9240, "x1": 17800, "y1": 9890, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 18040, "y0": 9240, "x1": 20640, "y1": 9890, "indoor": true, "floor": "tile", "wallBase": 9420}, {"id": "bathing-area", "x0": 18040, "y0": 9890, "x1": 20640, "y1": 10540, "indoor": true, "floor": "tile", "wallBase": 10070}, {"id": "guest-room", "x0": 15200, "y0": 9890, "x1": 17800, "y1": 10540, "indoor": true, "floor": "wood", "wallBase": 10070}], "venue": {"accent": "#7fae9b", "wall": "wood", "zones": {"entrance": ["arrival", "terrace"], "lobby": ["concourse", "waiting"], "bathing-area": ["wash", "pooldeck"], "guest-room": ["reading", "salon"]}}}
     }
   }
 }

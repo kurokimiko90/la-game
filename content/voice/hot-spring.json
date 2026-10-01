@@ -1,0 +1,496 @@
+{
+  "en": {
+    "fountain-pen-hot-spring": {
+      "heard": "Fountain Pen.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stamp-pad": {
+      "heard": "Stamped",
+      "score": 0.75,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "paperweight-hot-spring": {
+      "heard": "Pad paperweight.",
+      "score": 0.79,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-sign": {
+      "heard": "Wooden sign.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stone-wall": {
+      "heard": "Stonewall.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-reception-counter": {
+      "heard": "Reception counter.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-gate": {
+      "heard": "wooden gate",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stone-pillar": {
+      "heard": "Stone Pillar.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-fence": {
+      "heard": "Bamboo Fence.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stone-stairs": {
+      "heard": "Stone Steps",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-plank": {
+      "heard": "Wooden Plank",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "key-tag": {
+      "heard": "Key tag.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "key-card": {
+      "heard": "Keycard.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "business-card-holder": {
+      "heard": "Business card holder.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "desk-bell-hot-spring": {
+      "heard": "Duskbell.",
+      "score": 0.88,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "service-bell": {
+      "heard": "Service bell.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-fence": {
+      "heard": "Wooden fence.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stone-post-hot-spring": {
+      "heard": "Stonegate Post.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-barrel": {
+      "heard": "Wooden Barrel.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stone-basin": {
+      "heard": "Stone Basin.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-bench": {
+      "heard": "Wooden bench.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-ladle": {
+      "heard": "Bamboo ladle.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-basket": {
+      "heard": "Bamboo Basket.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-tube": {
+      "heard": "Bamboo Tube.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "stone-bowl": {
+      "heard": "Stone Bowl.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-clogs": {
+      "heard": "Wooden clogs.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "incense-burner": {
+      "heard": "Incense burner.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "incense-holder": {
+      "heard": "Incense Holder.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "tea-cup-hot-spring": {
+      "heard": "Teacup.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "tea-caddy": {
+      "heard": "T-Caddy.",
+      "score": 0.75,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "biscuit": {
+      "heard": "Biscuit.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "rice-cracker": {
+      "heard": "Rice Cracker",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "robe-belt": {
+      "heard": "Robe Belt.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "footstool": {
+      "heard": "Footstool.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "chest-of-drawers": {
+      "heard": "Chest of drawers.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "bedside-cabinet": {
+      "heard": "Bedside cabinet.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "standing-mirror": {
+      "heard": "Standing mirror.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "dehumidifier": {
+      "heard": "or dehumidifier.",
+      "score": 0.86,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "room-divider": {
+      "heard": "Room Divider",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "folding-screen-hot-spring": {
+      "heard": "Folding screen.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "floor-cushion": {
+      "heard": "Floor Cushion.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "washcloth": {
+      "heard": "Washcloth.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "foot-washing-basin": {
+      "heard": "foot washing basin,",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "hair-dryer-hot-spring": {
+      "heard": "Hairdryer.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "door-wedge": {
+      "heard": "Door wedged.",
+      "score": 0.9,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "bath-slipper": {
+      "heard": "Bath Slipper",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-cleaning-mat": {
+      "heard": "Shoe cleaning mat.",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "floor-drain-hot-spring": {
+      "heard": "Floor Drain",
+      "score": 1,
+      "take": "en-1790873357975.aac",
+      "account": "chatgpt1"
+    },
+    "milk-pitcher": {
+      "heard": "Milk Pitcher",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "napkin-holder-hot-spring": {
+      "heard": "Napkin holder.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "stone-lantern": {
+      "heard": "Stone Lantern",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "stone-stool": {
+      "heard": "Stone stool.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-screen": {
+      "heard": "Bamboo screen.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "rice-bowl": {
+      "heard": "Rice Bowl.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "soy-sauce-dish": {
+      "heard": "Soy sauce dish.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "plum": {
+      "heard": "Plum.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-bathtub": {
+      "heard": "Wooden bathtub.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "shower-hose": {
+      "heard": "Shower hose.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "privacy-screen-hot-spring": {
+      "heard": "Privacy screen.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "futon": {
+      "heard": "Futon.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "wardrobe-hot-spring": {
+      "heard": "Wardrobe.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "shower-head-hot-spring": {
+      "heard": "Showerhead.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "shampoo-bottle-hot-spring": {
+      "heard": "Dish Shampoo Bottle.",
+      "score": 0.76,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "conditioner-bottle-hot-spring": {
+      "heard": "Conditioner bottle.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "clothes-brush-hot-spring": {
+      "heard": "Close brush.",
+      "score": 0.75,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "clothes-hanger-hot-spring": {
+      "heard": "Clothes hanger.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "bath-stool": {
+      "heard": "Bathstool.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-stool": {
+      "heard": "Wooden stool.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "washbasin": {
+      "heard": "Wash Basin.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "bedside-table-hot-spring": {
+      "heard": "Bedside table.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "body-wash-bottle": {
+      "heard": "Body Wash Bottle.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-duckboard": {
+      "heard": "Wooden Duck Board.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "low-table": {
+      "heard": "Low table.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "slipper-rack": {
+      "heard": "Slipper rack.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "waste-bin": {
+      "heard": "Waste bin.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "suitcase-hot-spring": {
+      "heard": "Suitcase.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "fan": {
+      "heard": "Fan.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "heater": {
+      "heard": "Heater.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-basket-hot-spring": {
+      "heard": "Laundry basket.",
+      "score": 1,
+      "take": "en-1790873844317.aac",
+      "account": "chatgpt1"
+    },
+    "sake-bottle": {
+      "heard": "Sake bottle, cup.",
+      "score": 0.77,
+      "take": "en-1790874014115.aac",
+      "account": "chatgpt1"
+    },
+    "soap-dish": {
+      "heard": "Soap dish?",
+      "score": 1,
+      "take": "en-1790874014115.aac",
+      "account": "chatgpt1"
+    },
+    "bathroom-scale-hot-spring": {
+      "heard": "Bathroom scale.",
+      "score": 1,
+      "take": "en-1790874014115.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

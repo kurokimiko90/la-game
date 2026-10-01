@@ -1,0 +1,324 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "旅館入口門面",
+          "x": [
+            0,
+            0.38
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "stone-wall",
+            "wooden-sign"
+          ],
+          "beside": [
+            "stone-pillar"
+          ],
+          "front": [
+            "stone-stairs"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "木門與柵欄",
+          "x": [
+            0.4,
+            0.72
+          ],
+          "main": "wooden-gate",
+          "beside": [
+            "bamboo-fence"
+          ],
+          "front": [
+            "wooden-plank"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "迎賓手水處",
+          "x": [
+            0.05,
+            0.3
+          ],
+          "main": "stone-basin",
+          "on": [
+            "bamboo-ladle"
+          ],
+          "beside": [
+            "stone-lantern",
+            "bamboo-tube"
+          ],
+          "front": [
+            "stone-bowl"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "等候休息區",
+          "x": [
+            0.34,
+            0.58
+          ],
+          "main": "wooden-bench",
+          "beside": [
+            "stone-stool",
+            "bamboo-screen"
+          ],
+          "front": [
+            "wooden-clogs"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "庭院備品角",
+          "x": [
+            0.76,
+            0.96
+          ],
+          "main": "wooden-barrel",
+          "on": [
+            "bamboo-basket"
+          ]
+        }
+      ]
+    },
+    "lobby": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "接待櫃台",
+          "x": [
+            0.24,
+            0.58
+          ],
+          "fixture": "counter",
+          "main": "wooden-reception-counter",
+          "on": [
+            "key-tag",
+            "key-card",
+            "business-card-holder",
+            "desk-bell-hot-spring"
+          ],
+          "wall": [
+            "stamp-pad",
+            "fountain-pen-hot-spring",
+            "paperweight-hot-spring"
+          ],
+          "beside": [
+            "service-bell"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "迎賓茶點桌",
+          "x": [
+            0.04,
+            0.25
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "tea-cup-hot-spring",
+            "tea-caddy",
+            "biscuit",
+            "rice-cracker"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "茶酒備品櫃",
+          "x": [
+            0.64,
+            0.83
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "sake-bottle",
+            "sake-cup",
+            "milk-pitcher",
+            "napkin-holder-hot-spring"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "香爐迎賓角",
+          "x": [
+            0.7,
+            0.94
+          ],
+          "main": "incense-burner",
+          "on": [
+            "incense-holder"
+          ],
+          "beside": [
+            "rice-bowl"
+          ],
+          "front": [
+            "soy-sauce-dish",
+            "plum"
+          ]
+        }
+      ]
+    },
+    "bathing-area": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "木浴桶",
+          "x": [
+            0.05,
+            0.3
+          ],
+          "main": "wooden-bathtub",
+          "beside": [
+            "wooden-stool"
+          ],
+          "front": [
+            "wooden-duckboard"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "淋浴洗身區",
+          "x": [
+            0.34,
+            0.62
+          ],
+          "main": "shower-hose",
+          "on": [
+            "shower-head-hot-spring",
+            "soap-dish",
+            "shampoo-bottle-hot-spring",
+            "conditioner-bottle-hot-spring"
+          ],
+          "beside": [
+            "bath-stool",
+            "washbasin"
+          ],
+          "front": [
+            "body-wash-bottle"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "更衣屏風與衣物",
+          "x": [
+            0.68,
+            0.94
+          ],
+          "main": "privacy-screen-hot-spring",
+          "on": [
+            "robe-belt"
+          ],
+          "beside": [
+            "clothes-hanger-hot-spring"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "浴前整理區",
+          "x": [
+            0.08,
+            0.29
+          ],
+          "main": "foot-washing-basin",
+          "beside": [
+            "bath-mat",
+            "bath-slipper"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "盥洗吹整區",
+          "x": [
+            0.68,
+            0.91
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "hair-dryer-hot-spring",
+            "bathroom-scale-hot-spring"
+          ],
+          "front": [
+            "floor-drain-hot-spring"
+          ]
+        }
+      ]
+    },
+    "guest-room": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "鋪設客用床鋪",
+          "x": [
+            0.05,
+            0.34
+          ],
+          "main": "futon",
+          "on": [
+            "footstool"
+          ],
+          "beside": [
+            "bedside-cabinet",
+            "bedside-table-hot-spring"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "客房茶席",
+          "x": [
+            0.38,
+            0.62
+          ],
+          "fixture": "rug",
+          "main": "low-table",
+          "on": [
+            "floor-cushion"
+          ],
+          "front": [
+            "waste-bin"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "衣物收納區",
+          "x": [
+            0.68,
+            0.94
+          ],
+          "main": "wardrobe-hot-spring",
+          "on": [
+            "clothes-brush-hot-spring"
+          ],
+          "beside": [
+            "chest-of-drawers",
+            "standing-mirror"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "入口行李整理",
+          "x": [
+            0.04,
+            0.25
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "shoehorn-hot-spring",
+            "door-wedge"
+          ],
+          "beside": [
+            "slipper-rack",
+            "shoe-cleaning-mat"
+          ],
+          "front": [
+            "suitcase-hot-spring"
+          ]
+        }
+      ]
+    }
+  }
+}

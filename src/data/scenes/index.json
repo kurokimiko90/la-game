@@ -432,5 +432,19 @@
       ],
       "body": "<rect x=\"8\" y=\"92\" width=\"30\" height=\"88\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"122\" y=\"92\" width=\"30\" height=\"88\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"22,96 22,70 29,48 43,29 62,17 80,13 98,17 117,29 131,48 138,70 138,96 119,96 119,72 112,53 99,39 80,32 61,39 48,53 41,72 41,96\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"8\" y=\"92\" width=\"30\" height=\"7\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"122\" y=\"92\" width=\"30\" height=\"7\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"96\" width=\"76\" height=\"84\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"8\" y=\"92\" width=\"30\" height=\"6\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
+  },
+  {
+    "id": "hot-spring",
+    "name": "溫泉旅館",
+    "itemCount": 85,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        140,
+        180
+      ],
+      "body": "<rect x=\"20\" y=\"156\" width=\"100\" height=\"24\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"28\" y=\"148\" width=\"84\" height=\"10\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"30\" width=\"56\" height=\"118\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"42\" y=\"30\" width=\"56\" height=\"9\" fill=\"#fff\" opacity=\"0.25\"/><rect x=\"35\" y=\"24\" width=\"70\" height=\"9\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/>"
+    }
   }
 ]

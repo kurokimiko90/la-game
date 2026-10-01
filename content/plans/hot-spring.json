@@ -1,0 +1,1604 @@
+{
+  "id": "hot-spring",
+  "name": "溫泉旅館",
+  "zones": [
+    {
+      "id": "entrance",
+      "name": "入口",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "lobby",
+      "name": "接待大廳",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "counter"
+    },
+    {
+      "id": "bathing-area",
+      "name": "浴場",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "none"
+    },
+    {
+      "id": "guest-room",
+      "name": "客房",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "none"
+    }
+  ],
+  "slot": {
+    "x": 15200,
+    "y": 9240,
+    "zone": "leisure",
+    "span": 2
+  },
+  "colorIndex": 27,
+  "icon": "stone-pillar",
+  "elements": [
+    {
+      "id": "wooden-sign",
+      "zh": "木牌",
+      "en": "wooden sign",
+      "ja": "木製看板",
+      "reading": "もくせいかんばん",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一塊深棕色直立木板嵌在兩根短木柱間，表面沒有文字或圖案。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-lantern",
+      "zh": "石燈籠",
+      "en": "stone lantern",
+      "ja": "石灯籠",
+      "reading": "いしどうろう",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "灰色石燈籠由方形底座、細長燈身和層疊屋頂組成，頂端有小石珠。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-barrel",
+      "zh": "木桶",
+      "en": "wooden barrel",
+      "ja": "木桶",
+      "reading": "きおけ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深棕色圓柱木桶以多條木板拼成，外圈有兩道黑色金屬箍。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-clogs",
+      "zh": "木屐",
+      "en": "wooden clogs",
+      "ja": "下駄",
+      "reading": "げた",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一雙棕色木底鞋，各有兩根高起的木齒和黑色布帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-basin",
+      "zh": "石製手水鉢",
+      "en": "stone basin",
+      "ja": "手水鉢",
+      "reading": "ちょうずばち",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "矮胖的灰色石盆，圓口厚邊，中央盛著一小汪清水。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bamboo-ladle",
+      "zh": "竹杓子",
+      "en": "bamboo ladle",
+      "ja": "柄杓",
+      "reading": "ひしゃく",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺褐色竹柄連著圓弧形小勺，長柄斜靠在石盆旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": "stone-basin"
+    },
+    {
+      "id": "stone-pillar",
+      "zh": "石柱",
+      "en": "stone pillar",
+      "ja": "石柱",
+      "reading": "せきちゅう",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺灰色方形石柱立在厚實底座上，柱身簡潔平直，頂部平坦。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-fence",
+      "zh": "木柵",
+      "en": "wooden fence",
+      "ja": "木の柵",
+      "reading": "きのさく",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一段深棕色木柵由多根直立木條和兩道橫木組成，頂端平齊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-wall",
+      "zh": "石牆",
+      "en": "stone wall",
+      "ja": "石垣",
+      "reading": "いしがき",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "低矮的灰色石牆由大小不一的方石堆疊，石縫深色而清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bamboo-basket",
+      "zh": "竹籃",
+      "en": "bamboo basket",
+      "ja": "竹かご",
+      "reading": "たけかご",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "淺黃色編織竹籃呈圓筒形，粗竹提把高高拱起。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-post-hot-spring",
+      "zh": "石製門柱",
+      "en": "stone gatepost",
+      "ja": "石の門柱",
+      "reading": "いしのもんちゅう",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一對灰色方石柱各立在寬底座上，頂端嵌著圓潤的石帽。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-gate",
+      "zh": "木門",
+      "en": "wooden gate",
+      "ja": "木戸",
+      "reading": "きど",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深棕色雙扇木門由厚木板拼成，中央有兩個黑色金屬把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-stairs",
+      "zh": "石階",
+      "en": "stone steps",
+      "ja": "石段",
+      "reading": "いしだん",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "三層寬闊灰色石階由下往上逐步升高，方正踏面邊緣略為磨圓。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-plank",
+      "zh": "木板",
+      "en": "wooden plank",
+      "ja": "木の板",
+      "reading": "きのいた",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一片長方形深棕木板平放地面，兩端平直，表面有清楚木紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bamboo-screen",
+      "zh": "竹屏風",
+      "en": "bamboo screen",
+      "ja": "竹の目隠し",
+      "reading": "たけのめかくし",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一面高高的竹編屏障由細長綠竹交錯綁成，邊框是深色木條。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-bench",
+      "zh": "木長凳",
+      "en": "wooden bench",
+      "ja": "ベンチ",
+      "reading": "ベンチ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "棕色木椅有平直椅面和低矮椅背，兩側由厚木腳穩穩支撐。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-stool",
+      "zh": "石凳",
+      "en": "stone stool",
+      "ja": "石のベンチ",
+      "reading": "いしのベンチ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "矮小的灰色石凳由厚圓座面和單根短柱腳組成，底部較寬。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "stone-bowl",
+      "zh": "石碗",
+      "en": "stone bowl",
+      "ja": "石の鉢",
+      "reading": "いしのはち",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深灰色淺口石碗外壁厚實，圓形碗口向上，底部平穩寬大。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bamboo-tube",
+      "zh": "竹筒",
+      "en": "bamboo tube",
+      "ja": "竹筒",
+      "reading": "たけづつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "一段短短的綠竹筒平放地面，兩端有深色圓形竹節。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bamboo-fence",
+      "zh": "竹籬笆",
+      "en": "bamboo fence",
+      "ja": "竹の柵",
+      "reading": "たけのさく",
+      "category": "設施",
+      "size": "large",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "綠色竹竿水平交疊成低矮籬笆，交接處以深色繩索綁緊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-reception-counter",
+      "zh": "木製接待櫃檯",
+      "en": "reception-counter",
+      "ja": "フロントカウンター",
+      "reading": "フロントカウンター",
+      "category": "設施",
+      "size": "large",
+      "zone": "lobby",
+      "spot": "wallbase",
+      "desc": "深色木製的長方形櫃檯，正面有整齊的木框線條，檯面寬闊平直。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "key-tag",
+      "zh": "鑰匙牌",
+      "en": "key-tag",
+      "ja": "キータグ",
+      "reading": "キータグ",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "小巧的木製圓牌穿在金屬鑰匙圈上，表面光滑，沒有文字或數字。",
+      "loose": true,
+      "motion": null,
+      "cluster": "key"
+    },
+    {
+      "id": "key-card",
+      "zh": "房卡",
+      "en": "key-card",
+      "ja": "ルームキー",
+      "reading": "ルームキー",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "一張素色長方形塑膠卡片，邊角圓滑，表面沒有文字、數字或圖案。",
+      "loose": true,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "business-card-holder",
+      "zh": "名片盒",
+      "en": "business-card-holder",
+      "ja": "名刺立て",
+      "reading": "めいしたて",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "扁平的深色長方形盒子，翻蓋微微掀開，露出一疊空白卡片。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "stamp-pad",
+      "zh": "印泥盒",
+      "en": "stamp-pad",
+      "ja": "スタンプ台",
+      "reading": "スタンプだい",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "扁平的方形盒子掀開上蓋，裡面露出一塊深紅色軟墊。",
+      "loose": false,
+      "motion": null,
+      "cluster": "stamp"
+    },
+    {
+      "id": "desk-bell-hot-spring",
+      "zh": "櫃檯鈴",
+      "en": "desk-bell",
+      "ja": "呼び鈴",
+      "reading": "よびりん",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "亮銀色圓頂金屬鈴，底座平穩，頂端有一顆小圓按鈕。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "service-bell",
+      "zh": "手鈴",
+      "en": "service-bell",
+      "ja": "卓上ベル",
+      "reading": "たくじょうベル",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "小型金屬手鈴有圓頂鐘身與短木柄，頂部繫著一個小吊環。",
+      "loose": true,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "incense-holder",
+      "zh": "線香座",
+      "en": "incense-holder",
+      "ja": "香立て",
+      "reading": "こうたて",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "小巧的陶製底座配著細長金屬插孔，旁邊可見一支直立線香。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "incense-burner",
+      "zh": "香爐",
+      "en": "incense-burner",
+      "ja": "香炉",
+      "reading": "こうろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "圓潤的青銅小爐有三隻短腳與鏤空蓋子，頂端沒有明顯煙霧。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "tea-cup-hot-spring",
+      "zh": "茶杯",
+      "en": "tea-cup",
+      "ja": "湯のみ",
+      "reading": "ゆのみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "素雅的白色陶杯呈短圓筒形，杯口平整，外壁有淡藍色細紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "teapot"
+    },
+    {
+      "id": "tea-caddy",
+      "zh": "茶葉罐",
+      "en": "tea-caddy",
+      "ja": "茶筒",
+      "reading": "ちゃづつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "矮矮的圓柱形金屬罐配緊密蓋子，外層是素色漆面。",
+      "loose": false,
+      "motion": null,
+      "cluster": "teapot"
+    },
+    {
+      "id": "sake-bottle",
+      "zh": "清酒瓶",
+      "en": "sake-bottle",
+      "ja": "とっくり",
+      "reading": "とっくり",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "乳白色陶製小酒瓶身細口窄，肩部圓鼓，瓶口平滑無標籤。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "sake-cup",
+      "zh": "清酒杯",
+      "en": "sake-cup",
+      "ja": "おちょこ",
+      "reading": "おちょこ",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "一只小巧無把的白瓷杯，杯身矮而圓，邊口微微向外展開。",
+      "loose": false,
+      "motion": null,
+      "cluster": "sake-bottle"
+    },
+    {
+      "id": "milk-pitcher",
+      "zh": "牛奶壺",
+      "en": "milk-pitcher",
+      "ja": "ミルクピッチャー",
+      "reading": "ミルクピッチャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "迷你白瓷壺有尖尖倒口與圓弧小把，壺身光滑無圖案。",
+      "loose": false,
+      "motion": null,
+      "cluster": "teapot"
+    },
+    {
+      "id": "napkin-holder-hot-spring",
+      "zh": "餐巾架",
+      "en": "napkin-holder",
+      "ja": "ナプキン立て",
+      "reading": "ナプキンたて",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "兩片彎曲金屬板固定在底座上，中間夾著一疊白色方餐巾。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wooden-reception-counter"
+    },
+    {
+      "id": "biscuit",
+      "zh": "餅乾",
+      "en": "biscuit",
+      "ja": "ビスケット",
+      "reading": "ビスケット",
+      "category": "食物",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "一片金黃色方形餅乾，表面有整齊小孔，邊緣略帶波浪。",
+      "loose": true,
+      "motion": null,
+      "cluster": "tea-tray"
+    },
+    {
+      "id": "rice-cracker",
+      "zh": "仙貝",
+      "en": "rice-cracker",
+      "ja": "せんべい",
+      "reading": "せんべい",
+      "category": "食物",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "一片圓形烤米果呈淡褐色，表面有烘烤斑點並裹著薄亮醬色。",
+      "loose": true,
+      "motion": null,
+      "cluster": "tea-tray"
+    },
+    {
+      "id": "plum",
+      "zh": "梅子",
+      "en": "plum",
+      "ja": "梅",
+      "reading": "うめ",
+      "category": "食物",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "一顆圓潤深紅紫色梅子，表皮光滑，側面有一道淺淺的果縫。",
+      "loose": true,
+      "motion": null,
+      "cluster": "tea-tray"
+    },
+    {
+      "id": "rice-bowl",
+      "zh": "飯碗",
+      "en": "rice-bowl",
+      "ja": "茶碗",
+      "reading": "ちゃわん",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "小巧的白瓷圓碗帶淡藍色環紋，碗口較寬，底部收成短足。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tea-tray"
+    },
+    {
+      "id": "soy-sauce-dish",
+      "zh": "醬油碟",
+      "en": "soy-sauce-dish",
+      "ja": "醤油皿",
+      "reading": "しょうゆざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "一只白色陶製淺碟呈圓角方形，中央微凹，邊沿薄而平整。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tea-tray"
+    },
+    {
+      "id": "fountain-pen-hot-spring",
+      "zh": "鋼筆",
+      "en": "fountain-pen",
+      "ja": "万年筆",
+      "reading": "まんねんひつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "黑色細長鋼筆，筆身有亮銀色筆夾與尖細金屬筆尖。",
+      "loose": true,
+      "motion": null,
+      "cluster": "reservation-book"
+    },
+    {
+      "id": "paperweight-hot-spring",
+      "zh": "紙鎮",
+      "en": "paperweight",
+      "ja": "ペーパーウェイト",
+      "reading": "ペーパーウェイト",
+      "category": "道具",
+      "size": "small",
+      "zone": "lobby",
+      "spot": "surface",
+      "desc": "透明玻璃製的圓潤半球，底部映著淡淡青綠色光澤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "reservation-book"
+    },
+    {
+      "id": "wooden-bathtub",
+      "zh": "木浴桶",
+      "en": "wooden-bathtub",
+      "ja": "木の浴槽",
+      "reading": "きのよくそう",
+      "category": "設施",
+      "size": "large",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "深色木板圍成的長方形浴桶，桶沿寬厚，外側有幾道深色箍圈。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shower-head-hot-spring",
+      "zh": "蓮蓬頭",
+      "en": "shower-head",
+      "ja": "シャワーヘッド",
+      "reading": "シャワーヘッド",
+      "category": "設施",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "銀色圓盤形噴頭接著短彎管，盤面有整齊的小孔，放在地面一側。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shower-hose",
+      "zh": "淋浴軟管",
+      "en": "shower-hose",
+      "ja": "シャワーホース",
+      "reading": "シャワーホース",
+      "category": "道具",
+      "size": "medium",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "銀灰色柔軟長管盤成幾圈，兩端各有短金屬接頭，平放在地上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "shower-head-hot-spring"
+    },
+    {
+      "id": "soap-dish",
+      "zh": "肥皂盤",
+      "en": "soap-dish",
+      "ja": "石けん皿",
+      "reading": "せっけんざら",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "白色淺盤呈橢圓形，邊緣微微翹起，中央有幾道排水槽。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shampoo-bottle-hot-spring",
+      "zh": "洗髮精瓶",
+      "en": "shampoo-bottle",
+      "ja": "シャンプーボトル",
+      "reading": "シャンプーボトル",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "細長透明瓶身裝著琥珀色液體，頂部有黑色按壓頭，瓶身沒有標籤。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "conditioner-bottle-hot-spring",
+      "zh": "潤髮乳瓶",
+      "en": "conditioner-bottle",
+      "ja": "コンディショナーボトル",
+      "reading": "コンディショナーボトル",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "矮胖白色塑膠瓶，肩部圓潤，頂端有深色翻蓋，瓶面沒有字樣。",
+      "loose": false,
+      "motion": null,
+      "cluster": "shampoo-bottle-hot-spring"
+    },
+    {
+      "id": "body-wash-bottle",
+      "zh": "沐浴乳瓶",
+      "en": "body-wash-bottle",
+      "ja": "ボディソープボトル",
+      "reading": "ボディソープボトル",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "圓柱透明瓶盛著淡粉色液體，瓶口裝有白色按壓頭，外表沒有文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "shampoo-bottle-hot-spring"
+    },
+    {
+      "id": "washcloth",
+      "zh": "沐浴巾",
+      "en": "washcloth",
+      "ja": "ボディタオル",
+      "reading": "ボディタオル",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "淺藍色長方形網布折成幾層，表面有細密交錯的網格紋理。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bath-stool",
+      "zh": "洗澡椅",
+      "en": "bath-stool",
+      "ja": "風呂いす",
+      "reading": "ふろいす",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "低矮的圓形白色塑膠椅面，四隻短腿向外張開，椅面中央有排水孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "washbasin",
+      "zh": "洗臉盆",
+      "en": "washbasin",
+      "ja": "洗面器",
+      "reading": "せんめんき",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "淺圓形白色塑膠盆，盆口寬大，側邊有一小段平直握邊。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bath-stool"
+    },
+    {
+      "id": "bath-mat",
+      "zh": "浴室腳踏墊",
+      "en": "bath-mat",
+      "ja": "バスマット",
+      "reading": "バスマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "長方形米色厚墊，表面有密集短絨，四周以深色布邊收口。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-stool",
+      "zh": "木凳",
+      "en": "wooden-stool",
+      "ja": "木の腰掛け",
+      "reading": "きのこしかけ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "方形深棕木凳有厚實平坦的座面，四支短木腳略向外張。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bath-slipper",
+      "zh": "浴室拖鞋",
+      "en": "bath-slipper",
+      "ja": "風呂用スリッパ",
+      "reading": "ふろようスリッパ",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "一雙淺藍色防水拖鞋，圓頭鞋底平坦，鞋面有寬弧形帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "clothes-hanger-hot-spring",
+      "zh": "衣架",
+      "en": "clothes-hanger",
+      "ja": "ハンガー",
+      "reading": "ハンガー",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "木製三角衣架平放在地面，頂端有彎曲金屬掛鉤，橫桿筆直。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "privacy-screen-hot-spring",
+      "zh": "更衣屏風",
+      "en": "privacy-screen",
+      "ja": "目隠しパーティション",
+      "reading": "めかくしパーティション",
+      "category": "設施",
+      "size": "large",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "三片淺棕色木框屏板以折頁相連，展開成弧形，板面素淨無圖案。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "foot-washing-basin",
+      "zh": "洗腳盆",
+      "en": "foot-washing-basin",
+      "ja": "足洗い桶",
+      "reading": "あしあらいおけ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "矮圓形石製淺盆，盆沿厚實，內側平滑，底部略窄。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wooden-duckboard",
+      "zh": "浴室木地板",
+      "en": "wooden-duckboard",
+      "ja": "すのこ",
+      "reading": "すのこ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "長方形木條踏板由多根窄木條平行排列，底下留有整齊縫隙。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "floor-drain-hot-spring",
+      "zh": "地板排水孔",
+      "en": "floor-drain",
+      "ja": "床排水口",
+      "reading": "ゆかはいすいこう",
+      "category": "設施",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "方形銀色金屬排水蓋嵌在地面，表面排列平行細縫，邊框方正。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bathroom-scale-hot-spring",
+      "zh": "體重計",
+      "en": "bathroom-scale",
+      "ja": "体重計",
+      "reading": "たいじゅうけい",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "扁平方形白色體重計，四角圓滑，頂面有透明小顯示窗但沒有數字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hair-dryer-hot-spring",
+      "zh": "吹風機",
+      "en": "hair-dryer",
+      "ja": "ドライヤー",
+      "reading": "ドライヤー",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "白色吹風機有短圓筒出風口與下垂手柄，側面露出深色進風格柵。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "robe-belt",
+      "zh": "浴袍腰帶",
+      "en": "robe-belt",
+      "ja": "バスローブのベルト",
+      "reading": "バスローブのベルト",
+      "category": "道具",
+      "size": "small",
+      "zone": "bathing-area",
+      "spot": "ground",
+      "desc": "白色布腰帶盤成鬆散橢圓，兩端平直，布面有柔軟細紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "bathrobe"
+    },
+    {
+      "id": "futon",
+      "zh": "日式床墊",
+      "en": "futon",
+      "ja": "布団",
+      "reading": "ふとん",
+      "category": "道具",
+      "size": "large",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "厚實的長方形床墊鋪在地上，米白色布面帶著簡潔的深色滾邊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "low-table",
+      "zh": "矮桌",
+      "en": "low table",
+      "ja": "座卓",
+      "reading": "ざたく",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "短桌腳支撐寬大的方形木桌面，木色溫暖，外形低矮穩固。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "floor-cushion",
+      "zh": "坐墊",
+      "en": "floor cushion",
+      "ja": "座布団",
+      "reading": "ざぶとん",
+      "category": "道具",
+      "size": "small",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "方形厚坐墊，布面呈靛藍色，四角微鼓，邊緣縫有細窄滾邊。",
+      "loose": true,
+      "motion": null,
+      "cluster": "low-table"
+    },
+    {
+      "id": "chest-of-drawers",
+      "zh": "抽屜櫃",
+      "en": "chest of drawers",
+      "ja": "整理たんす",
+      "reading": "せいりたんす",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "wallbase",
+      "desc": "矮木櫃正面排列數個抽屜，每格有一枚小圓把手，木紋清楚溫潤。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "slipper-rack",
+      "zh": "拖鞋架",
+      "en": "slipper rack",
+      "ja": "スリッパラック",
+      "reading": "スリッパラック",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "細長木架有數層橫桿，空架靠牆放置，線條簡潔，底部有穩固支腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dehumidifier",
+      "zh": "除濕機",
+      "en": "dehumidifier",
+      "ja": "除湿機",
+      "reading": "じょしつき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "矮胖的白色機器前方有寬格柵與透明集水盒，頂部平整，四角圓滑。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": null
+    },
+    {
+      "id": "fan",
+      "zh": "電風扇",
+      "en": "fan",
+      "ja": "扇風機",
+      "reading": "せんぷうき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "圓形護網罩住三片寬扇葉，細長支柱連著圓底座，整體為白色。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": null
+    },
+    {
+      "id": "heater",
+      "zh": "暖氣機",
+      "en": "heater",
+      "ja": "ヒーター",
+      "reading": "ヒーター",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "扁長方形暖氣機有多道垂直散熱片與短支腳，外殼呈乳白色。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "room-divider",
+      "zh": "室內隔屏",
+      "en": "room divider",
+      "ja": "ついたて",
+      "reading": "ついたて",
+      "category": "道具",
+      "size": "large",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "兩片窄木框以鉸鏈相連並稍微折起，形成穩定遮擋，表面是淡米色。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "footstool",
+      "zh": "腳凳",
+      "en": "footstool",
+      "ja": "足置き",
+      "reading": "あしおき",
+      "category": "設施",
+      "size": "small",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "矮小方凳以四根短木腳支撐，坐面覆著深藍布墊，外形厚實簡單。",
+      "loose": false,
+      "motion": null,
+      "cluster": "low-table"
+    },
+    {
+      "id": "door-wedge",
+      "zh": "門擋",
+      "en": "door wedge",
+      "ja": "ドアストッパー",
+      "reading": "ドアストッパー",
+      "category": "道具",
+      "size": "small",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "楔形橡膠門擋呈深灰色，斜面向上，底部有防滑紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "waste-bin",
+      "zh": "垃圾桶",
+      "en": "waste bin",
+      "ja": "ごみ箱",
+      "reading": "ごみばこ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "方形木製垃圾桶帶有翻蓋與短腳，深棕色表面平整，輪廓俐落。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "clothes-brush-hot-spring",
+      "zh": "衣物刷",
+      "en": "clothes brush",
+      "ja": "洋服ブラシ",
+      "reading": "ようふくブラシ",
+      "category": "道具",
+      "size": "small",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "橢圓木柄底面排著整齊短毛，弧形握柄突出，木色偏淺。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shoe-cleaning-mat",
+      "zh": "擦鞋墊",
+      "en": "shoe cleaning mat",
+      "ja": "靴拭きマット",
+      "reading": "くつふきマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "扁長矩形粗纖維墊呈深褐色，表面有密集短刷毛，平放在入口旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bedside-cabinet",
+      "zh": "床頭櫃",
+      "en": "bedside cabinet",
+      "ja": "ベッドサイドキャビネット",
+      "reading": "ベッドサイドキャビネット",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "方正木櫃由四根短腳撐起，上層抽屜有圓把手，下層留有開放空間。",
+      "loose": false,
+      "motion": null,
+      "cluster": "futon"
+    },
+    {
+      "id": "folding-screen-hot-spring",
+      "zh": "摺疊屏風",
+      "en": "folding screen",
+      "ja": "屏風",
+      "reading": "びょうぶ",
+      "category": "道具",
+      "size": "large",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "數片高窄木框以暗色鉸鏈相連，展開成微彎的屏障，表面是素雅淡色。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wardrobe-hot-spring",
+      "zh": "衣櫃",
+      "en": "wardrobe",
+      "ja": "クローゼット",
+      "reading": "クローゼット",
+      "category": "設施",
+      "size": "large",
+      "zone": "guest-room",
+      "spot": "wallbase",
+      "desc": "高大的深棕木櫃有兩扇平整櫃門與圓形把手，底部短腳穩穩立地。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bedside-table-hot-spring",
+      "zh": "床邊桌",
+      "en": "bedside table",
+      "ja": "ナイトテーブル",
+      "reading": "ナイトテーブル",
+      "category": "設施",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "小巧方形木桌配短桌腳與單層抽屜，放在床墊旁，桌面保持空曠。",
+      "loose": false,
+      "motion": null,
+      "cluster": "futon"
+    },
+    {
+      "id": "laundry-basket-hot-spring",
+      "zh": "洗衣籃",
+      "en": "laundry basket",
+      "ja": "洗濯かご",
+      "reading": "せんたくかご",
+      "category": "道具",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "橢圓形藤編籃有兩個堅固提耳，籃身淺褐，編織孔隙清晰可見。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "suitcase-hot-spring",
+      "zh": "行李箱",
+      "en": "suitcase",
+      "ja": "スーツケース",
+      "reading": "スーツケース",
+      "category": "道具",
+      "size": "medium",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "直立的硬殼行李箱呈深紅色，四角圓潤，側面有伸縮拉桿與小輪子。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shoehorn-hot-spring",
+      "zh": "鞋拔",
+      "en": "shoehorn",
+      "ja": "靴べら",
+      "reading": "くつべら",
+      "category": "道具",
+      "size": "small",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "長柄彎曲的木製鞋拔斜靠在牆邊，頂端有圓孔，表面呈淺褐色。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "standing-mirror",
+      "zh": "立鏡",
+      "en": "standing mirror",
+      "ja": "姿見",
+      "reading": "すがたみ",
+      "category": "設施",
+      "size": "large",
+      "zone": "guest-room",
+      "spot": "ground",
+      "desc": "窄長矩形鏡面嵌在深色木框中，兩側支架使鏡子穩穩立在地面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    }
+  ],
+  "rejected": [
+    {
+      "id": "wooden-bucket",
+      "reason": "和已有的 wooden barrel 太像",
+      "zone": "entrance"
+    },
+    {
+      "id": "wooden-clogs-rack",
+      "reason": "和已有的 wooden clogs 太像",
+      "zone": "entrance"
+    },
+    {
+      "id": "wooden-clog",
+      "reason": "英文重複",
+      "zone": "entrance"
+    },
+    {
+      "id": "key",
+      "reason": "和已有的 key-rack 太像",
+      "zone": "lobby"
+    },
+    {
+      "id": "bar-soap",
+      "reason": "和已有的 soap-dish 太像",
+      "zone": "bathing-area"
+    },
+    {
+      "id": "bath-towel",
+      "reason": "和已有的 washcloth 太像",
+      "zone": "bathing-area"
+    },
+    {
+      "id": "wooden-bucket",
+      "reason": "和已有的 wooden barrel 太像",
+      "zone": "bathing-area"
+    },
+    {
+      "id": "wooden-sandal",
+      "reason": "和已有的 wooden clogs 太像",
+      "zone": "bathing-area"
+    },
+    {
+      "id": "hair-dryer-stand",
+      "reason": "和已有的 hair-dryer 太像",
+      "zone": "bathing-area"
+    },
+    {
+      "id": "fan-heater",
+      "reason": "和已有的 fan 太像",
+      "zone": "guest-room"
+    },
+    {
+      "id": "wastebasket",
+      "reason": "和已有的 waste bin 太像",
+      "zone": "guest-room"
+    },
+    {
+      "id": "slippers",
+      "reason": "和已有的 bath-slipper 太像",
+      "zone": "guest-room"
+    },
+    {
+      "id": "wooden-pestle",
+      "reason": "審核：浴旅入口不常見"
+    },
+    {
+      "id": "wooden-ladle",
+      "reason": "審核：浴旅入口不常見"
+    },
+    {
+      "id": "wooden-clapper",
+      "reason": "審核：浴旅入口不常見"
+    },
+    {
+      "id": "stone-bollard",
+      "reason": "審核：英文過於專業罕見"
+    },
+    {
+      "id": "wooden-club",
+      "reason": "審核：浴旅入口不常見"
+    },
+    {
+      "id": "key-rack",
+      "reason": "審核：英文應用常見說法"
+    },
+    {
+      "id": "reservation-book",
+      "reason": "審核：英文應用常見說法"
+    },
+    {
+      "id": "citrus",
+      "reason": "審核：英文範圍過廣"
+    },
+    {
+      "id": "bath-ladle",
+      "reason": "審核：英文物件與日文不符"
+    },
+    {
+      "id": "laundry-tongs-hot-spring",
+      "reason": "審核：英文指洗衣夾且不常見"
+    },
+    {
+      "id": "hair-brush-hot-spring",
+      "reason": "審核：英文與日文物件不同"
+    },
+    {
+      "id": "laundry-scoop",
+      "reason": "審核：浴場不會出現"
+    },
+    {
+      "id": "chest",
+      "reason": "審核：英文與中日文物件不同"
+    },
+    {
+      "id": "shoe-dryer",
+      "reason": "審核：客房一般不會有烘鞋機"
+    },
+    {
+      "id": "umbrella-stand-hot-spring",
+      "reason": "審核：客房不會出現"
+    }
+  ],
+  "reviewFixes": [
+    {
+      "id": "stone-basin",
+      "issue": "中文不是常用說法",
+      "changes": {
+        "zh": "石製手水鉢"
+      }
+    },
+    {
+      "id": "bamboo-ladle",
+      "issue": "中文用詞不自然",
+      "changes": {
+        "zh": "竹杓子"
+      }
+    },
+    {
+      "id": "wooden-fence",
+      "issue": "中文用詞不自然",
+      "changes": {
+        "zh": "木柵"
+      }
+    },
+    {
+      "id": "stone-post-hot-spring",
+      "issue": "中日文不自然",
+      "changes": {
+        "zh": "石製門柱",
+        "ja": "石の門柱",
+        "reading": "いしのもんちゅう"
+      }
+    },
+    {
+      "id": "bamboo-screen",
+      "issue": "日文是竹籬笆",
+      "changes": {
+        "ja": "竹の目隠し",
+        "reading": "たけのめかくし"
+      }
+    },
+    {
+      "id": "wooden-bench",
+      "issue": "中文用詞不自然",
+      "changes": {
+        "zh": "木長凳",
+        "ja": "ベンチ",
+        "reading": "ベンチ"
+      }
+    },
+    {
+      "id": "stone-stool",
+      "issue": "日文較不自然",
+      "changes": {
+        "ja": "石のベンチ",
+        "reading": "いしのベンチ"
+      }
+    },
+    {
+      "id": "bamboo-fence",
+      "issue": "中文用詞不自然",
+      "changes": {
+        "zh": "竹籬笆"
+      }
+    },
+    {
+      "id": "key-tag",
+      "issue": "日文指鑰匙圈",
+      "changes": {
+        "ja": "キータグ",
+        "reading": "キータグ"
+      }
+    },
+    {
+      "id": "business-card-holder",
+      "issue": "日文不符物品",
+      "changes": {
+        "ja": "名刺立て",
+        "reading": "めいしたて"
+      }
+    },
+    {
+      "id": "service-bell",
+      "issue": "日文不是常見說法",
+      "changes": {
+        "ja": "卓上ベル",
+        "reading": "たくじょうベル"
+      }
+    },
+    {
+      "id": "milk-pitcher",
+      "issue": "中文誤指奶精壺",
+      "changes": {
+        "zh": "牛奶壺"
+      }
+    },
+    {
+      "id": "rice-cracker",
+      "issue": "中文不夠常用",
+      "changes": {
+        "zh": "仙貝"
+      }
+    },
+    {
+      "id": "wooden-stool",
+      "issue": "日文讀音不符",
+      "changes": {
+        "reading": "きのこしかけ"
+      }
+    },
+    {
+      "id": "chest-of-drawers",
+      "issue": "日文只指抽屜",
+      "changes": {
+        "ja": "整理たんす",
+        "reading": "せいりたんす"
+      }
+    },
+    {
+      "id": "waste-bin",
+      "issue": "中文與日文未指有蓋垃圾桶",
+      "changes": {
+        "zh": "垃圾桶"
+      }
+    },
+    {
+      "id": "bedside-cabinet",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "ベッドサイドキャビネット",
+        "reading": "ベッドサイドキャビネット"
+      }
+    },
+    {
+      "id": "wardrobe-hot-spring",
+      "issue": "日文罕見且不自然",
+      "changes": {
+        "ja": "クローゼット",
+        "reading": "クローゼット"
+      }
+    }
+  ],
+  "createdAt": "2026-10-02T01:25:44.269+09:00",
+  "venue": {
+    "accent": "#7fae9b",
+    "wall": "wood",
+    "zones": {
+      "entrance": [
+        "arrival",
+        "terrace"
+      ],
+      "lobby": [
+        "concourse",
+        "waiting"
+      ],
+      "bathing-area": [
+        "wash",
+        "pooldeck"
+      ],
+      "guest-room": [
+        "reading",
+        "salon"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1798 @@
+{
+  "sceneName": "語言小鎮・溫泉旅館",
+  "sceneSlug": "la-hot-spring",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "lobby": "接待大廳",
+    "bathing-area": "浴場",
+    "guest-room": "客房"
+  },
+  "elements": [
+    {
+      "name": "木牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一塊深棕色直立木板嵌在兩根短木柱間，表面沒有文字或圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-sign",
+        "words": {
+          "zh-TW": "木牌",
+          "en": "wooden sign",
+          "ja": {
+            "text": "木製看板",
+            "reading": "もくせいかんばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "石燈籠",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色石燈籠由方形底座、細長燈身和層疊屋頂組成，頂端有小石珠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-lantern",
+        "words": {
+          "zh-TW": "石燈籠",
+          "en": "stone lantern",
+          "ja": {
+            "text": "石灯籠",
+            "reading": "いしどうろう"
+          }
+        }
+      }
+    },
+    {
+      "name": "木桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深棕色圓柱木桶以多條木板拼成，外圈有兩道黑色金屬箍。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-barrel",
+        "words": {
+          "zh-TW": "木桶",
+          "en": "wooden barrel",
+          "ja": {
+            "text": "木桶",
+            "reading": "きおけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "木屐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙棕色木底鞋，各有兩根高起的木齒和黑色布帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-clogs",
+        "words": {
+          "zh-TW": "木屐",
+          "en": "wooden clogs",
+          "ja": {
+            "text": "下駄",
+            "reading": "げた"
+          }
+        }
+      }
+    },
+    {
+      "name": "石製手水鉢",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的灰色石盆，圓口厚邊，中央盛著一小汪清水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-basin",
+        "words": {
+          "zh-TW": "石製手水鉢",
+          "en": "stone basin",
+          "ja": {
+            "text": "手水鉢",
+            "reading": "ちょうずばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹杓子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺褐色竹柄連著圓弧形小勺，長柄斜靠在石盆旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "bamboo-ladle",
+        "words": {
+          "zh-TW": "竹杓子",
+          "en": "bamboo ladle",
+          "ja": {
+            "text": "柄杓",
+            "reading": "ひしゃく"
+          }
+        }
+      }
+    },
+    {
+      "name": "石柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淺灰色方形石柱立在厚實底座上，柱身簡潔平直，頂部平坦。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-pillar",
+        "words": {
+          "zh-TW": "石柱",
+          "en": "stone pillar",
+          "ja": {
+            "text": "石柱",
+            "reading": "せきちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "木柵",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一段深棕色木柵由多根直立木條和兩道橫木組成，頂端平齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-fence",
+        "words": {
+          "zh-TW": "木柵",
+          "en": "wooden fence",
+          "ja": {
+            "text": "木の柵",
+            "reading": "きのさく"
+          }
+        }
+      }
+    },
+    {
+      "name": "石牆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "低矮的灰色石牆由大小不一的方石堆疊，石縫深色而清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-wall",
+        "words": {
+          "zh-TW": "石牆",
+          "en": "stone wall",
+          "ja": {
+            "text": "石垣",
+            "reading": "いしがき"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺黃色編織竹籃呈圓筒形，粗竹提把高高拱起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "bamboo-basket",
+        "words": {
+          "zh-TW": "竹籃",
+          "en": "bamboo basket",
+          "ja": {
+            "text": "竹かご",
+            "reading": "たけかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "石製門柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一對灰色方石柱各立在寬底座上，頂端嵌著圓潤的石帽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-post-hot-spring",
+        "words": {
+          "zh-TW": "石製門柱",
+          "en": "stone gatepost",
+          "ja": {
+            "text": "石の門柱",
+            "reading": "いしのもんちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "木門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深棕色雙扇木門由厚木板拼成，中央有兩個黑色金屬把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-gate",
+        "words": {
+          "zh-TW": "木門",
+          "en": "wooden gate",
+          "ja": {
+            "text": "木戸",
+            "reading": "きど"
+          }
+        }
+      }
+    },
+    {
+      "name": "石階",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "三層寬闊灰色石階由下往上逐步升高，方正踏面邊緣略為磨圓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-stairs",
+        "words": {
+          "zh-TW": "石階",
+          "en": "stone steps",
+          "ja": {
+            "text": "石段",
+            "reading": "いしだん"
+          }
+        }
+      }
+    },
+    {
+      "name": "木板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一片長方形深棕木板平放地面，兩端平直，表面有清楚木紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-plank",
+        "words": {
+          "zh-TW": "木板",
+          "en": "wooden plank",
+          "ja": {
+            "text": "木の板",
+            "reading": "きのいた"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹屏風",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一面高高的竹編屏障由細長綠竹交錯綁成，邊框是深色木條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "bamboo-screen",
+        "words": {
+          "zh-TW": "竹屏風",
+          "en": "bamboo screen",
+          "ja": {
+            "text": "竹の目隠し",
+            "reading": "たけのめかくし"
+          }
+        }
+      }
+    },
+    {
+      "name": "木長凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色木椅有平直椅面和低矮椅背，兩側由厚木腳穩穩支撐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-bench",
+        "words": {
+          "zh-TW": "木長凳",
+          "en": "wooden bench",
+          "ja": {
+            "text": "ベンチ",
+            "reading": "ベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "石凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮小的灰色石凳由厚圓座面和單根短柱腳組成，底部較寬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-stool",
+        "words": {
+          "zh-TW": "石凳",
+          "en": "stone stool",
+          "ja": {
+            "text": "石のベンチ",
+            "reading": "いしのベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "石碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深灰色淺口石碗外壁厚實，圓形碗口向上，底部平穩寬大。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-bowl",
+        "words": {
+          "zh-TW": "石碗",
+          "en": "stone bowl",
+          "ja": {
+            "text": "石の鉢",
+            "reading": "いしのはち"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一段短短的綠竹筒平放地面，兩端有深色圓形竹節。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "bamboo-tube",
+        "words": {
+          "zh-TW": "竹筒",
+          "en": "bamboo tube",
+          "ja": {
+            "text": "竹筒",
+            "reading": "たけづつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "竹籬笆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "綠色竹竿水平交疊成低矮籬笆，交接處以深色繩索綁緊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "bamboo-fence",
+        "words": {
+          "zh-TW": "竹籬笆",
+          "en": "bamboo fence",
+          "ja": {
+            "text": "竹の柵",
+            "reading": "たけのさく"
+          }
+        }
+      }
+    },
+    {
+      "name": "木製接待櫃檯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深色木製的長方形櫃檯，正面有整齊的木框線條，檯面寬闊平直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "wooden-reception-counter",
+        "words": {
+          "zh-TW": "木製接待櫃檯",
+          "en": "reception-counter",
+          "ja": {
+            "text": "フロントカウンター",
+            "reading": "フロントカウンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "鑰匙牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的木製圓牌穿在金屬鑰匙圈上，表面光滑，沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "key-tag",
+        "words": {
+          "zh-TW": "鑰匙牌",
+          "en": "key-tag",
+          "ja": {
+            "text": "キータグ",
+            "reading": "キータグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "房卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張素色長方形塑膠卡片，邊角圓滑，表面沒有文字、數字或圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "key-card",
+        "words": {
+          "zh-TW": "房卡",
+          "en": "key-card",
+          "ja": {
+            "text": "ルームキー",
+            "reading": "ルームキー"
+          }
+        }
+      }
+    },
+    {
+      "name": "名片盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的深色長方形盒子，翻蓋微微掀開，露出一疊空白卡片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "business-card-holder",
+        "words": {
+          "zh-TW": "名片盒",
+          "en": "business-card-holder",
+          "ja": {
+            "text": "名刺立て",
+            "reading": "めいしたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "印泥盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的方形盒子掀開上蓋，裡面露出一塊深紅色軟墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "stamp-pad",
+        "words": {
+          "zh-TW": "印泥盒",
+          "en": "stamp-pad",
+          "ja": {
+            "text": "スタンプ台",
+            "reading": "スタンプだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "櫃檯鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮銀色圓頂金屬鈴，底座平穩，頂端有一顆小圓按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "desk-bell-hot-spring",
+        "words": {
+          "zh-TW": "櫃檯鈴",
+          "en": "desk-bell",
+          "ja": {
+            "text": "呼び鈴",
+            "reading": "よびりん"
+          }
+        }
+      }
+    },
+    {
+      "name": "手鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型金屬手鈴有圓頂鐘身與短木柄，頂部繫著一個小吊環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "service-bell",
+        "words": {
+          "zh-TW": "手鈴",
+          "en": "service-bell",
+          "ja": {
+            "text": "卓上ベル",
+            "reading": "たくじょうベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "線香座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的陶製底座配著細長金屬插孔，旁邊可見一支直立線香。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "incense-holder",
+        "words": {
+          "zh-TW": "線香座",
+          "en": "incense-holder",
+          "ja": {
+            "text": "香立て",
+            "reading": "こうたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "香爐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的青銅小爐有三隻短腳與鏤空蓋子，頂端沒有明顯煙霧。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "incense-burner",
+        "words": {
+          "zh-TW": "香爐",
+          "en": "incense-burner",
+          "ja": {
+            "text": "香炉",
+            "reading": "こうろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "素雅的白色陶杯呈短圓筒形，杯口平整，外壁有淡藍色細紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "tea-cup-hot-spring",
+        "words": {
+          "zh-TW": "茶杯",
+          "en": "tea-cup",
+          "ja": {
+            "text": "湯のみ",
+            "reading": "ゆのみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶葉罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮矮的圓柱形金屬罐配緊密蓋子，外層是素色漆面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "tea-caddy",
+        "words": {
+          "zh-TW": "茶葉罐",
+          "en": "tea-caddy",
+          "ja": {
+            "text": "茶筒",
+            "reading": "ちゃづつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "清酒瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "乳白色陶製小酒瓶身細口窄，肩部圓鼓，瓶口平滑無標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "sake-bottle",
+        "words": {
+          "zh-TW": "清酒瓶",
+          "en": "sake-bottle",
+          "ja": {
+            "text": "とっくり",
+            "reading": "とっくり"
+          }
+        }
+      }
+    },
+    {
+      "name": "清酒杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只小巧無把的白瓷杯，杯身矮而圓，邊口微微向外展開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "sake-cup",
+        "words": {
+          "zh-TW": "清酒杯",
+          "en": "sake-cup",
+          "ja": {
+            "text": "おちょこ",
+            "reading": "おちょこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛奶壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "迷你白瓷壺有尖尖倒口與圓弧小把，壺身光滑無圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "milk-pitcher",
+        "words": {
+          "zh-TW": "牛奶壺",
+          "en": "milk-pitcher",
+          "ja": {
+            "text": "ミルクピッチャー",
+            "reading": "ミルクピッチャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐巾架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片彎曲金屬板固定在底座上，中間夾著一疊白色方餐巾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "napkin-holder-hot-spring",
+        "words": {
+          "zh-TW": "餐巾架",
+          "en": "napkin-holder",
+          "ja": {
+            "text": "ナプキン立て",
+            "reading": "ナプキンたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "餅乾",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片金黃色方形餅乾，表面有整齊小孔，邊緣略帶波浪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "biscuit",
+        "words": {
+          "zh-TW": "餅乾",
+          "en": "biscuit",
+          "ja": {
+            "text": "ビスケット",
+            "reading": "ビスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "仙貝",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片圓形烤米果呈淡褐色，表面有烘烤斑點並裹著薄亮醬色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "rice-cracker",
+        "words": {
+          "zh-TW": "仙貝",
+          "en": "rice-cracker",
+          "ja": {
+            "text": "せんべい",
+            "reading": "せんべい"
+          }
+        }
+      }
+    },
+    {
+      "name": "梅子",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆圓潤深紅紫色梅子，表皮光滑，側面有一道淺淺的果縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "plum",
+        "words": {
+          "zh-TW": "梅子",
+          "en": "plum",
+          "ja": {
+            "text": "梅",
+            "reading": "うめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "飯碗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的白瓷圓碗帶淡藍色環紋，碗口較寬，底部收成短足。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "rice-bowl",
+        "words": {
+          "zh-TW": "飯碗",
+          "en": "rice-bowl",
+          "ja": {
+            "text": "茶碗",
+            "reading": "ちゃわん"
+          }
+        }
+      }
+    },
+    {
+      "name": "醬油碟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只白色陶製淺碟呈圓角方形，中央微凹，邊沿薄而平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "soy-sauce-dish",
+        "words": {
+          "zh-TW": "醬油碟",
+          "en": "soy-sauce-dish",
+          "ja": {
+            "text": "醤油皿",
+            "reading": "しょうゆざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "鋼筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色細長鋼筆，筆身有亮銀色筆夾與尖細金屬筆尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "fountain-pen-hot-spring",
+        "words": {
+          "zh-TW": "鋼筆",
+          "en": "fountain-pen",
+          "ja": {
+            "text": "万年筆",
+            "reading": "まんねんひつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙鎮",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃製的圓潤半球，底部映著淡淡青綠色光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "paperweight-hot-spring",
+        "words": {
+          "zh-TW": "紙鎮",
+          "en": "paperweight",
+          "ja": {
+            "text": "ペーパーウェイト",
+            "reading": "ペーパーウェイト"
+          }
+        }
+      }
+    },
+    {
+      "name": "木浴桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "深色木板圍成的長方形浴桶，桶沿寬厚，外側有幾道深色箍圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "wooden-bathtub",
+        "words": {
+          "zh-TW": "木浴桶",
+          "en": "wooden-bathtub",
+          "ja": {
+            "text": "木の浴槽",
+            "reading": "きのよくそう"
+          }
+        }
+      }
+    },
+    {
+      "name": "蓮蓬頭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓盤形噴頭接著短彎管，盤面有整齊的小孔，放在地面一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "shower-head-hot-spring",
+        "words": {
+          "zh-TW": "蓮蓬頭",
+          "en": "shower-head",
+          "ja": {
+            "text": "シャワーヘッド",
+            "reading": "シャワーヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "淋浴軟管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀灰色柔軟長管盤成幾圈，兩端各有短金屬接頭，平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "shower-hose",
+        "words": {
+          "zh-TW": "淋浴軟管",
+          "en": "shower-hose",
+          "ja": {
+            "text": "シャワーホース",
+            "reading": "シャワーホース"
+          }
+        }
+      }
+    },
+    {
+      "name": "肥皂盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色淺盤呈橢圓形，邊緣微微翹起，中央有幾道排水槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "soap-dish",
+        "words": {
+          "zh-TW": "肥皂盤",
+          "en": "soap-dish",
+          "ja": {
+            "text": "石けん皿",
+            "reading": "せっけんざら"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗髮精瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長透明瓶身裝著琥珀色液體，頂部有黑色按壓頭，瓶身沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "shampoo-bottle-hot-spring",
+        "words": {
+          "zh-TW": "洗髮精瓶",
+          "en": "shampoo-bottle",
+          "ja": {
+            "text": "シャンプーボトル",
+            "reading": "シャンプーボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "潤髮乳瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖白色塑膠瓶，肩部圓潤，頂端有深色翻蓋，瓶面沒有字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "conditioner-bottle-hot-spring",
+        "words": {
+          "zh-TW": "潤髮乳瓶",
+          "en": "conditioner-bottle",
+          "ja": {
+            "text": "コンディショナーボトル",
+            "reading": "コンディショナーボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "沐浴乳瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓柱透明瓶盛著淡粉色液體，瓶口裝有白色按壓頭，外表沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "body-wash-bottle",
+        "words": {
+          "zh-TW": "沐浴乳瓶",
+          "en": "body-wash-bottle",
+          "ja": {
+            "text": "ボディソープボトル",
+            "reading": "ボディソープボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "沐浴巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺藍色長方形網布折成幾層，表面有細密交錯的網格紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "washcloth",
+        "words": {
+          "zh-TW": "沐浴巾",
+          "en": "washcloth",
+          "ja": {
+            "text": "ボディタオル",
+            "reading": "ボディタオル"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗澡椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的圓形白色塑膠椅面，四隻短腿向外張開，椅面中央有排水孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "bath-stool",
+        "words": {
+          "zh-TW": "洗澡椅",
+          "en": "bath-stool",
+          "ja": {
+            "text": "風呂いす",
+            "reading": "ふろいす"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗臉盆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺圓形白色塑膠盆，盆口寬大，側邊有一小段平直握邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "washbasin",
+        "words": {
+          "zh-TW": "洗臉盆",
+          "en": "washbasin",
+          "ja": {
+            "text": "洗面器",
+            "reading": "せんめんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴室腳踏墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形米色厚墊，表面有密集短絨，四周以深色布邊收口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "bath-mat",
+        "words": {
+          "zh-TW": "浴室腳踏墊",
+          "en": "bath-mat",
+          "ja": {
+            "text": "バスマット",
+            "reading": "バスマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "木凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形深棕木凳有厚實平坦的座面，四支短木腳略向外張。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "wooden-stool",
+        "words": {
+          "zh-TW": "木凳",
+          "en": "wooden-stool",
+          "ja": {
+            "text": "木の腰掛け",
+            "reading": "きのこしかけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴室拖鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙淺藍色防水拖鞋，圓頭鞋底平坦，鞋面有寬弧形帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "bath-slipper",
+        "words": {
+          "zh-TW": "浴室拖鞋",
+          "en": "bath-slipper",
+          "ja": {
+            "text": "風呂用スリッパ",
+            "reading": "ふろようスリッパ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "木製三角衣架平放在地面，頂端有彎曲金屬掛鉤，橫桿筆直。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "clothes-hanger-hot-spring",
+        "words": {
+          "zh-TW": "衣架",
+          "en": "clothes-hanger",
+          "ja": {
+            "text": "ハンガー",
+            "reading": "ハンガー"
+          }
+        }
+      }
+    },
+    {
+      "name": "更衣屏風",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "三片淺棕色木框屏板以折頁相連，展開成弧形，板面素淨無圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "privacy-screen-hot-spring",
+        "words": {
+          "zh-TW": "更衣屏風",
+          "en": "privacy-screen",
+          "ja": {
+            "text": "目隠しパーティション",
+            "reading": "めかくしパーティション"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗腳盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮圓形石製淺盆，盆沿厚實，內側平滑，底部略窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "foot-washing-basin",
+        "words": {
+          "zh-TW": "洗腳盆",
+          "en": "foot-washing-basin",
+          "ja": {
+            "text": "足洗い桶",
+            "reading": "あしあらいおけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴室木地板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形木條踏板由多根窄木條平行排列，底下留有整齊縫隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "wooden-duckboard",
+        "words": {
+          "zh-TW": "浴室木地板",
+          "en": "wooden-duckboard",
+          "ja": {
+            "text": "すのこ",
+            "reading": "すのこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "地板排水孔",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形銀色金屬排水蓋嵌在地面，表面排列平行細縫，邊框方正。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "floor-drain-hot-spring",
+        "words": {
+          "zh-TW": "地板排水孔",
+          "en": "floor-drain",
+          "ja": {
+            "text": "床排水口",
+            "reading": "ゆかはいすいこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "體重計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平方形白色體重計，四角圓滑，頂面有透明小顯示窗但沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "bathroom-scale-hot-spring",
+        "words": {
+          "zh-TW": "體重計",
+          "en": "bathroom-scale",
+          "ja": {
+            "text": "体重計",
+            "reading": "たいじゅうけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "吹風機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色吹風機有短圓筒出風口與下垂手柄，側面露出深色進風格柵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "hair-dryer-hot-spring",
+        "words": {
+          "zh-TW": "吹風機",
+          "en": "hair-dryer",
+          "ja": {
+            "text": "ドライヤー",
+            "reading": "ドライヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴袍腰帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色布腰帶盤成鬆散橢圓，兩端平直，布面有柔軟細紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "robe-belt",
+        "words": {
+          "zh-TW": "浴袍腰帶",
+          "en": "robe-belt",
+          "ja": {
+            "text": "バスローブのベルト",
+            "reading": "バスローブのベルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "日式床墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "厚實的長方形床墊鋪在地上，米白色布面帶著簡潔的深色滾邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "futon",
+        "words": {
+          "zh-TW": "日式床墊",
+          "en": "futon",
+          "ja": {
+            "text": "布団",
+            "reading": "ふとん"
+          }
+        }
+      }
+    },
+    {
+      "name": "矮桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "短桌腳支撐寬大的方形木桌面，木色溫暖，外形低矮穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "low-table",
+        "words": {
+          "zh-TW": "矮桌",
+          "en": "low table",
+          "ja": {
+            "text": "座卓",
+            "reading": "ざたく"
+          }
+        }
+      }
+    },
+    {
+      "name": "坐墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方形厚坐墊，布面呈靛藍色，四角微鼓，邊緣縫有細窄滾邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "floor-cushion",
+        "words": {
+          "zh-TW": "坐墊",
+          "en": "floor cushion",
+          "ja": {
+            "text": "座布団",
+            "reading": "ざぶとん"
+          }
+        }
+      }
+    },
+    {
+      "name": "抽屜櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮木櫃正面排列數個抽屜，每格有一枚小圓把手，木紋清楚溫潤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "chest-of-drawers",
+        "words": {
+          "zh-TW": "抽屜櫃",
+          "en": "chest of drawers",
+          "ja": {
+            "text": "整理たんす",
+            "reading": "せいりたんす"
+          }
+        }
+      }
+    },
+    {
+      "name": "拖鞋架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長木架有數層橫桿，空架靠牆放置，線條簡潔，底部有穩固支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "slipper-rack",
+        "words": {
+          "zh-TW": "拖鞋架",
+          "en": "slipper rack",
+          "ja": {
+            "text": "スリッパラック",
+            "reading": "スリッパラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "除濕機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的白色機器前方有寬格柵與透明集水盒，頂部平整，四角圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "dehumidifier",
+        "words": {
+          "zh-TW": "除濕機",
+          "en": "dehumidifier",
+          "ja": {
+            "text": "除湿機",
+            "reading": "じょしつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "電風扇",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形護網罩住三片寬扇葉，細長支柱連著圓底座，整體為白色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "fan",
+        "words": {
+          "zh-TW": "電風扇",
+          "en": "fan",
+          "ja": {
+            "text": "扇風機",
+            "reading": "せんぷうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "暖氣機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁長方形暖氣機有多道垂直散熱片與短支腳，外殼呈乳白色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "heater",
+        "words": {
+          "zh-TW": "暖氣機",
+          "en": "heater",
+          "ja": {
+            "text": "ヒーター",
+            "reading": "ヒーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "室內隔屏",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩片窄木框以鉸鏈相連並稍微折起，形成穩定遮擋，表面是淡米色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "room-divider",
+        "words": {
+          "zh-TW": "室內隔屏",
+          "en": "room divider",
+          "ja": {
+            "text": "ついたて",
+            "reading": "ついたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮小方凳以四根短木腳支撐，坐面覆著深藍布墊，外形厚實簡單。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "footstool",
+        "words": {
+          "zh-TW": "腳凳",
+          "en": "footstool",
+          "ja": {
+            "text": "足置き",
+            "reading": "あしおき"
+          }
+        }
+      }
+    },
+    {
+      "name": "門擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "楔形橡膠門擋呈深灰色，斜面向上，底部有防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "door-wedge",
+        "words": {
+          "zh-TW": "門擋",
+          "en": "door wedge",
+          "ja": {
+            "text": "ドアストッパー",
+            "reading": "ドアストッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形木製垃圾桶帶有翻蓋與短腳，深棕色表面平整，輪廓俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "waste-bin",
+        "words": {
+          "zh-TW": "垃圾桶",
+          "en": "waste bin",
+          "ja": {
+            "text": "ごみ箱",
+            "reading": "ごみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣物刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓木柄底面排著整齊短毛，弧形握柄突出，木色偏淺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "clothes-brush-hot-spring",
+        "words": {
+          "zh-TW": "衣物刷",
+          "en": "clothes brush",
+          "ja": {
+            "text": "洋服ブラシ",
+            "reading": "ようふくブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "擦鞋墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁長矩形粗纖維墊呈深褐色，表面有密集短刷毛，平放在入口旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "shoe-cleaning-mat",
+        "words": {
+          "zh-TW": "擦鞋墊",
+          "en": "shoe cleaning mat",
+          "ja": {
+            "text": "靴拭きマット",
+            "reading": "くつふきマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "床頭櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方正木櫃由四根短腳撐起，上層抽屜有圓把手，下層留有開放空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "bedside-cabinet",
+        "words": {
+          "zh-TW": "床頭櫃",
+          "en": "bedside cabinet",
+          "ja": {
+            "text": "ベッドサイドキャビネット",
+            "reading": "ベッドサイドキャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺疊屏風",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "數片高窄木框以暗色鉸鏈相連，展開成微彎的屏障，表面是素雅淡色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "folding-screen-hot-spring",
+        "words": {
+          "zh-TW": "摺疊屏風",
+          "en": "folding screen",
+          "ja": {
+            "text": "屏風",
+            "reading": "びょうぶ"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的深棕木櫃有兩扇平整櫃門與圓形把手，底部短腳穩穩立地。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "wardrobe-hot-spring",
+        "words": {
+          "zh-TW": "衣櫃",
+          "en": "wardrobe",
+          "ja": {
+            "text": "クローゼット",
+            "reading": "クローゼット"
+          }
+        }
+      }
+    },
+    {
+      "name": "床邊桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小巧方形木桌配短桌腳與單層抽屜，放在床墊旁，桌面保持空曠。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "bedside-table-hot-spring",
+        "words": {
+          "zh-TW": "床邊桌",
+          "en": "bedside table",
+          "ja": {
+            "text": "ナイトテーブル",
+            "reading": "ナイトテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橢圓形藤編籃有兩個堅固提耳，籃身淺褐，編織孔隙清晰可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "laundry-basket-hot-spring",
+        "words": {
+          "zh-TW": "洗衣籃",
+          "en": "laundry basket",
+          "ja": {
+            "text": "洗濯かご",
+            "reading": "せんたくかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的硬殼行李箱呈深紅色，四角圓潤，側面有伸縮拉桿與小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "suitcase-hot-spring",
+        "words": {
+          "zh-TW": "行李箱",
+          "en": "suitcase",
+          "ja": {
+            "text": "スーツケース",
+            "reading": "スーツケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋拔",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長柄彎曲的木製鞋拔斜靠在牆邊，頂端有圓孔，表面呈淺褐色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "shoehorn-hot-spring",
+        "words": {
+          "zh-TW": "鞋拔",
+          "en": "shoehorn",
+          "ja": {
+            "text": "靴べら",
+            "reading": "くつべら"
+          }
+        }
+      }
+    },
+    {
+      "name": "立鏡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "窄長矩形鏡面嵌在深色木框中，兩側支架使鏡子穩穩立在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "standing-mirror",
+        "words": {
+          "zh-TW": "立鏡",
+          "en": "standing mirror",
+          "ja": {
+            "text": "姿見",
+            "reading": "すがたみ"
+          }
+        }
+      }
+    }
+  ]
+}
