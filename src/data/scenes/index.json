@@ -474,5 +474,19 @@
       ],
       "body": "<polygon points=\"8,24 152,24 152,136 8,136\" fill=\"#388e3c\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"16,32 144,32 144,128 16,128\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"16\" y1=\"38\" x2=\"144\" y2=\"38\" stroke=\"#d7a86e\" stroke-width=\"1.5\"/><line x1=\"16\" y1=\"122\" x2=\"144\" y2=\"122\" stroke=\"#d7a86e\" stroke-width=\"1.5\"/><circle cx=\"18\" cy=\"40\" r=\"4\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"40\" r=\"4\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"18\" cy=\"120\" r=\"4\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"120\" r=\"4\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"28\" width=\"120\" height=\"5\" fill=\"#ffffff\" opacity=\"0.25\"/>"
     }
+  },
+  {
+    "id": "electronics-store",
+    "name": "家電行",
+    "itemCount": 79,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        150,
+        180
+      ],
+      "body": "<rect x=\"8\" y=\"4\" width=\"134\" height=\"176\" rx=\"8\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"14\" y=\"12\" width=\"122\" height=\"28\" rx=\"3\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"122\" cy=\"26\" r=\"5\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"26\" r=\"3\" fill=\"#fdd835\"/><circle cx=\"75\" cy=\"108\" r=\"48\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><circle cx=\"75\" cy=\"108\" r=\"38\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"1.5\"/><ellipse cx=\"75\" cy=\"108\" rx=\"26\" ry=\"30\" fill=\"#90a4ae\"/><rect x=\"12\" y=\"6\" width=\"126\" height=\"5\" fill=\"#ffffff\" opacity=\"0.25\"/>"
+    }
   }
 ]

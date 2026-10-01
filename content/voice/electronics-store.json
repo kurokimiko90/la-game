@@ -1,0 +1,478 @@
+{
+  "en": {
+    "air-conditioner-electronics-store": {
+      "heard": "Air conditioner.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "washing-machine": {
+      "heard": "Washing machine.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "air-purifier-electronics-store": {
+      "heard": "Air purifier.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "television-electronics-store": {
+      "heard": "Television.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "refrigerator-electronics-store": {
+      "heard": "Refrigerator.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "floor-fan-electronics-store": {
+      "heard": "Floor fan.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "rice-dispenser": {
+      "heard": "Rice Dispenser.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "food-dehydrator": {
+      "heard": "Food dehydrator.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-mixer": {
+      "heard": "Electric Mixer",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "hand-mixer": {
+      "heard": "Immersion Blender.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-can-opener": {
+      "heard": "Electric can opener.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-lunchbox": {
+      "heard": "Electric lunch.",
+      "score": 0.81,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "vacuum-sealer": {
+      "heard": "Vacuum sealer.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-food-chopper": {
+      "heard": "Food processor.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "stand-mixer": {
+      "heard": "Stand mixer.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-knife-sharpener": {
+      "heard": "Electric knife sharpener.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-wine-opener": {
+      "heard": "Electric Wine Opener.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-egg-cooker": {
+      "heard": "Egg cooker.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "vacuum-cleaner-electronics-store": {
+      "heard": "Vacuum cleaner.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "rice-cooker-electronics-store": {
+      "heard": "Rice cooker.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "kitchen-timer-electronics-store": {
+      "heard": "Kitchen timer.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "kitchen-scale-electronics-store": {
+      "heard": "Kitchen scale.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-maker-electronics-store": {
+      "heard": "Coffee maker.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-grinder-electronics-store": {
+      "heard": "Coffee Grindr.",
+      "score": 0.92,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-kettle": {
+      "heard": "Electric kettle.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-yogurt-maker": {
+      "heard": "Yogurt Maker.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "induction-cooktop": {
+      "heard": "Induction cooktop.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-grill": {
+      "heard": "Electric Grill",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "humidifier-electronics-store": {
+      "heard": "Dehumidifier.",
+      "score": 0.83,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-shaver": {
+      "heard": "Electric shaver.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-toothbrush": {
+      "heard": "Electric Toothbrush",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-fan-heater": {
+      "heard": "Ceramic fan heater.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-fly-swatter": {
+      "heard": "Electric flyswatter",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "hair-straightener-electronics-store": {
+      "heard": "Hair straightener.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "electric-lamp": {
+      "heard": "Desk Lamp.",
+      "score": 1,
+      "take": "en-1790881885976.aac",
+      "account": "chatgpt1"
+    },
+    "bread-maker": {
+      "heard": "Breadmaker.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-steamer": {
+      "heard": "Electric steamer.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-pressure-cooker": {
+      "heard": "Electric pressure cooker.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-juicer": {
+      "heard": "Electric juicer.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-deep-fryer": {
+      "heard": "Electric Deep Fryer.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-skillet": {
+      "heard": "Electric skillet.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-fondue-pot": {
+      "heard": "Fondue pot.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-pasta-maker": {
+      "heard": "Electric pasta maker.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-coffee-roaster": {
+      "heard": "Coffee Roaster.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-ice-shaver": {
+      "heard": "Ice shaver.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "range-hood-electronics-store": {
+      "heard": "Rangehood.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "light-bulb": {
+      "heard": "Light bulb.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "electric-sewing-machine": {
+      "heard": "Electric sewing machine.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "water-dispenser-electronics-store": {
+      "heard": "Water dispenser.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "ice-maker-electronics-store": {
+      "heard": "Ice maker.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "dehumidifier-electronics-store": {
+      "heard": "Dehumidifier.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "battery": {
+      "heard": "Battery.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "coin-roll-dispenser": {
+      "heard": "Coinroll Dispenser.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "barcode-label-roll": {
+      "heard": "Barcode labels.",
+      "score": 0.75,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "coin-tray-electronics-store": {
+      "heard": "CoinTray",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-spike-electronics-store": {
+      "heard": "Receipt spike.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "cash-counter": {
+      "heard": "Cash counter.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-cart-electronics-store": {
+      "heard": "Shopping cart.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "microwave-oven": {
+      "heard": "Microwave Oven",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "dish-drying-rack": {
+      "heard": "Dish Drying Cabinet",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "space-heater": {
+      "heard": "Space heater.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "price-labeler-electronics-store": {
+      "heard": "Price Labeler.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "bagging-platform": {
+      "heard": "Bagging platform.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-roll-dispenser": {
+      "heard": "Receipt roll dispenser.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "barcode-scanner-electronics-store": {
+      "heard": "Barcode scanner.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-bag-electronics-store": {
+      "heard": "Shopping bag.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "cash-tray-electronics-store": {
+      "heard": "Cash Tray.",
+      "score": 1,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "checkout-divider-electronics-store": {
+      "heard": "Rust. Check out Divider.",
+      "score": 0.79,
+      "take": "en-1790882187356.aac",
+      "account": "chatgpt1"
+    },
+    "dishwasher-electronics-store": {
+      "heard": "Dishwasher.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "power-strip": {
+      "heard": "Power Strip.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "plug-adapter": {
+      "heard": "Plug Adapt",
+      "score": 0.82,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "electric-blanket": {
+      "heard": "Electric blanket.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "shopping-basket-stack": {
+      "heard": "Stack of shopping baskets.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "price-tag-electronics-store": {
+      "heard": "Price tag.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-folder-electronics-store": {
+      "heard": "Receipt folder.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "receipt-bin-electronics-store": {
+      "heard": "Receipt bin.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "cashier-footrest": {
+      "heard": "Cashier footrest.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "queue-ticket-dispenser-electronics-store": {
+      "heard": "Cue Ticket Dispenser.",
+      "score": 0.85,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    },
+    "checkout-lane-divider": {
+      "heard": "Check out Lane Divider.",
+      "score": 1,
+      "take": "en-1790882361115.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
