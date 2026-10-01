@@ -1736,9 +1736,9 @@
         "wardrobe-hot-spring": "wallbase-guest-room"
       },
       "clusters": [["stone-basin", "bamboo-ladle"], ["shower-head-hot-spring", "shower-hose"], ["shampoo-bottle-hot-spring", "conditioner-bottle-hot-spring", "body-wash-bottle"], ["bath-stool", "washbasin"], ["low-table", "floor-cushion", "footstool"], ["futon", "bedside-cabinet", "bedside-table-hot-spring"]],
-      "loose": ["wooden-clogs", "bamboo-ladle", "bamboo-basket", "stone-bowl", "bamboo-tube", "key-tag", "key-card", "service-bell", "biscuit", "rice-cracker", "plum", "fountain-pen-hot-spring", "paperweight-hot-spring", "shower-head-hot-spring", "soap-dish", "washcloth", "washbasin", "bath-slipper", "clothes-hanger-hot-spring", "robe-belt", "floor-cushion", "door-wedge", "clothes-brush-hot-spring", "shoehorn-hot-spring"],
+      "loose": ["wooden-clogs", "bamboo-ladle", "bamboo-basket", "stone-bowl", "bamboo-tube", "key-tag", "key-card", "service-bell", "biscuit", "rice-cracker", "plum", "fountain-pen-hot-spring", "paperweight-hot-spring", "shower-head-hot-spring", "soap-dish", "washcloth", "washbasin", "bath-slipper", "clothes-hanger-hot-spring", "robe-belt", "floor-cushion", "door-wedge", "clothes-brush-hot-spring", "shoehorn-hot-spring", "bath-thermometer", "back-scrubber"],
       "noFlip": [],
-      "motion": {"dehumidifier": "wobble", "fan": "wobble"},
+      "motion": {"dehumidifier": "wobble", "fan": "wobble", "wooden-flower-box": "sway"},
       "arrange": "auto",
       "terrain": {"color": "#90caf9", "x0": 15200, "y0": 9240, "x1": 20640, "y1": 10540, "zones": [{"id": "entrance", "x0": 15200, "y0": 9240, "x1": 17800, "y1": 9890, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 18040, "y0": 9240, "x1": 20640, "y1": 9890, "indoor": true, "floor": "tile", "wallBase": 9420}, {"id": "bathing-area", "x0": 18040, "y0": 9890, "x1": 20640, "y1": 10540, "indoor": true, "floor": "tile", "wallBase": 10070}, {"id": "guest-room", "x0": 15200, "y0": 9890, "x1": 17800, "y1": 10540, "indoor": true, "floor": "wood", "wallBase": 10070}], "venue": {"accent": "#7fae9b", "wall": "wood", "zones": {"entrance": ["arrival", "terrace"], "lobby": ["concourse", "waiting"], "bathing-area": ["wash", "pooldeck"], "guest-room": ["reading", "salon"]}}}
     }

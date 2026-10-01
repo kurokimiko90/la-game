@@ -491,6 +491,90 @@
       "score": 1,
       "take": "en-1790874014115.aac",
       "account": "chatgpt1"
+    },
+    "wooden-flower-box": {
+      "heard": "Wooden flower box.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "sake-cup": {
+      "heard": "Sake cup.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "bamboo-planter": {
+      "heard": "Bamboo planter.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-signboard-stand": {
+      "heard": "Wooden notice sand.",
+      "score": 0.94,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "luggage-rack": {
+      "heard": "Luggage Rack",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "stone-water-trough": {
+      "heard": "Stonewater Trough.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "onsen-boiler": {
+      "heard": "Boiler.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "water-heater-tank": {
+      "heard": "Water tank.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "bath-mat": {
+      "heard": "Bath mat.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "bath-thermometer": {
+      "heard": "Thermometer.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "back-scrubber": {
+      "heard": "Backscrubber.",
+      "score": 1,
+      "take": "en-1790874667572.aac",
+      "account": "chatgpt1"
+    },
+    "tatami-mat": {
+      "heard": "Tatami.",
+      "score": 1,
+      "take": "en-1790874750782.aac",
+      "account": "chatgpt1"
+    },
+    "hibachi": {
+      "heard": "Hibachi.",
+      "score": 1,
+      "take": "en-1790874750782.aac",
+      "account": "chatgpt1"
+    },
+    "shoehorn-hot-spring": {
+      "heard": "Shoehorn.",
+      "score": 1,
+      "take": "en-1790874800477.aac",
+      "account": "chatgpt1"
     }
   }
 }

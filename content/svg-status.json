@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T01:46:57.248+09:00",
+  "syncedAt": "2026-10-02T02:08:59.782+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -1593,7 +1593,19 @@
         "laundry-basket-hot-spring",
         "suitcase-hot-spring",
         "shoehorn-hot-spring",
-        "standing-mirror"
+        "standing-mirror",
+        "bamboo-planter",
+        "stone-water-trough",
+        "wooden-signboard-stand",
+        "wooden-flower-box",
+        "luggage-rack",
+        "onsen-boiler",
+        "water-heater-tank",
+        "bath-thermometer",
+        "back-scrubber",
+        "tatami-mat",
+        "irori",
+        "hibachi"
       ],
       "failed": [],
       "pending": [],

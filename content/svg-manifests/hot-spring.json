@@ -1793,6 +1793,258 @@
           }
         }
       }
+    },
+    {
+      "name": "竹製花盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的圓筒形竹編容器，頂部敞開，深褐色竹條交錯編織，裡面長著綠色植物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "bamboo-planter",
+        "words": {
+          "zh-TW": "竹製花盆",
+          "en": "bamboo planter",
+          "ja": {
+            "text": "竹の植木鉢",
+            "reading": "たけのうえきばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "石製水槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形灰色石槽立在矮腳座上，槽口敞開，內有清水，厚實邊緣帶有鑿刻痕跡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "stone-water-trough",
+        "words": {
+          "zh-TW": "石製水槽",
+          "en": "stone water trough",
+          "ja": {
+            "text": "石の水槽",
+            "reading": "いしのみずぶね"
+          }
+        }
+      }
+    },
+    {
+      "name": "木製告示架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根木腳支起一塊空白長方形木板，板面沒有字畫，邊框厚實，底部橫木連接支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-signboard-stand",
+        "words": {
+          "zh-TW": "木製告示架",
+          "en": "wooden notice stand",
+          "ja": {
+            "text": "木製の掲示板",
+            "reading": "もくせいのけいじばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "木製花箱",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形棕色木箱直接放在地上，箱沿略高，裡面種著一排綠葉與幾朵白色小花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "entrance",
+        "itemId": "wooden-flower-box",
+        "words": {
+          "zh-TW": "木製花箱",
+          "en": "wooden flower box",
+          "ja": {
+            "text": "木製プランター",
+            "reading": "もくせいプランター"
+          }
+        }
+      }
+    },
+    {
+      "name": "行李架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "折疊式金屬架由交叉細桿支撐，上方平行排列深色橫桿，底部有穩固腳架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "lobby",
+        "itemId": "luggage-rack",
+        "words": {
+          "zh-TW": "行李架",
+          "en": "luggage-rack",
+          "ja": {
+            "text": "荷物ラック",
+            "reading": "にもつラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "溫泉鍋爐",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "大型直立金屬圓筒，表面呈灰色，側邊接著粗短的管線與圓形壓力表。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "onsen-boiler",
+        "words": {
+          "zh-TW": "溫泉鍋爐",
+          "en": "boiler",
+          "ja": {
+            "text": "ボイラー",
+            "reading": "ボイラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "熱水儲水桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高身不鏽鋼圓柱桶，頂部略呈圓弧，底部有穩固支腳與一段短管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "water-heater-tank",
+        "words": {
+          "zh-TW": "熱水儲水桶",
+          "en": "water tank",
+          "ja": {
+            "text": "貯湯タンク",
+            "reading": "ちょとうタンク"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴場溫度計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的白色溫度計直立靠在牆邊，透明管內有醒目的紅色液柱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "bath-thermometer",
+        "words": {
+          "zh-TW": "浴場溫度計",
+          "en": "thermometer",
+          "ja": {
+            "text": "浴場の温度計",
+            "reading": "よくじょうのおんどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "長柄搓澡刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長柄淺棕色刷子，柄端有圓孔，頂部是一塊長方形刷頭，密布短而深色的刷毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "bathing-area",
+        "itemId": "back-scrubber",
+        "words": {
+          "zh-TW": "長柄搓澡刷",
+          "en": "back scrubber",
+          "ja": {
+            "text": "背中ブラシ",
+            "reading": "せなかぶらし"
+          }
+        }
+      }
+    },
+    {
+      "name": "榻榻米",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淡黃綠色的長方形草編地墊，表面有細密平行編紋，邊緣包著深色布條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "tatami-mat",
+        "words": {
+          "zh-TW": "榻榻米",
+          "en": "tatami",
+          "ja": {
+            "text": "畳",
+            "reading": "たたみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圍爐裏",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形木框圍著一口深色爐坑，爐內有橙紅炭火與幾塊灰白木炭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "irori",
+        "words": {
+          "zh-TW": "圍爐裏",
+          "en": "irori",
+          "ja": {
+            "text": "囲炉裏",
+            "reading": "いろり"
+          }
+        }
+      }
+    },
+    {
+      "name": "火盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的圓形陶製盆器，外壁帶有藍白花紋，敞口內可見一層灰燼與炭塊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hot-spring",
+        "zone": "guest-room",
+        "itemId": "hibachi",
+        "words": {
+          "zh-TW": "火盆",
+          "en": "hibachi",
+          "ja": {
+            "text": "火鉢",
+            "reading": "ひばち"
+          }
+        }
+      }
     }
   ]
 }
