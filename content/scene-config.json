@@ -1,6 +1,6 @@
 {
   "world": {"width": 21780, "height": 11580},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool", "hotel"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool", "hotel", "amusement-park"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -1667,6 +1667,32 @@
       "motion": {"lobby-coffee-machine": "wobble", "lobby-potted-plant": "sway", "lobby-curtain": "sway", "bath-towel": "sway", "shoe-polishing-machine": "wobble", "table-runner": "sway"},
       "arrange": "auto",
       "terrain": {"color": "#ffe082", "x0": 3840, "y0": 9240, "x1": 9280, "y1": 10540, "zones": [{"id": "entrance", "x0": 3840, "y0": 9240, "x1": 6440, "y1": 9890, "indoor": false, "floor": "paving", "road": {"y0": 9700, "y1": 9860}}, {"id": "lobby", "x0": 6680, "y0": 9240, "x1": 9280, "y1": 9890, "indoor": true, "floor": "tile", "wallBase": 9420}, {"id": "guest-floor", "x0": 6680, "y0": 9890, "x1": 9280, "y1": 10540, "indoor": true, "floor": "carpet", "wallBase": 10070}, {"id": "dining-room", "x0": 3840, "y0": 9890, "x1": 6440, "y1": 10540, "indoor": true, "floor": "wood", "wallBase": 10070}], "venue": {"accent": "#8aac8b", "wall": "warm", "zones": {"entrance": ["arrival", "terrace"], "lobby": ["concourse", "checkin"], "guest-floor": ["waiting", "reading"], "dining-room": ["dining", "shopseating"]}}}
+    },
+    "amusement-park": {
+      "name": "遊樂園",
+      "icon": "entry-arch",
+      "zones": {"entrance": [9520, 9240, 12120, 9890], "midway": [12360, 9240, 14960, 9890], "carousel-hall": [12360, 9890, 14960, 10540], "water-ride": [9520, 9890, 12120, 10540]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 9310, "bottom": 9870}, "midway": {"top": 9310, "bottom": 9685}, "carousel-hall": {"top": 10130, "bottom": 10520}, "water-ride": {"top": 9960, "bottom": 10520, "x1": 10790}}},
+        "sky-entrance": {"top": 9390, "bottom": 9540, "zones": ["entrance"], "layer": 3, "float": 150},
+        "sky-midway": {"top": 9390, "bottom": 9540, "zones": ["midway"], "layer": 3, "float": 150},
+        "road-midway": {"top": 9770, "bottom": 9840, "zones": ["midway"], "inset": 20},
+        "wall-carousel-hall": {"levels": [10030], "zones": ["carousel-hall"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-carousel-hall": {"levels": [10068], "zones": ["carousel-hall"], "inset": 50},
+        "sky-water-ride": {"top": 10040, "bottom": 10190, "zones": ["water-ride"], "layer": 3, "float": 150},
+        "water-water-ride": {"x0": 10860, "x1": 12030, "top": 10070, "bottom": 10470, "zones": ["water-ride"], "layer": 1, "scale": [0.9, 0.9]}
+      },
+      "place": {
+        "pool-lane-float": "water-water-ride",
+        "pool-float-ring": "water-water-ride",
+        "pool-float-disc": "water-water-ride"
+      },
+      "clusters": [["ice-cream-cart", "ice-cream-scoop", "candy-apple"], ["ride-car", "bumper-car", "ride-rail"], ["prize-wheel", "rubber-duck", "prize-plush"], ["skee-ball-lane", "bowling-pin"], ["hockey-stick", "hockey-puck"], ["carousel-double-seat", "carousel-safety-bar"]],
+      "loose": ["balloon-weight", "ice-cream-scoop", "candy-apple", "rubber-duck", "prize-plush", "confetti", "hockey-puck", "jumping-rope", "bubble-wand", "paper-airplane", "carousel-bell", "carousel-wind-up-key", "carousel-rosette", "carousel-ribbon-bow", "carousel-feather-plume", "carousel-grease-gun", "carousel-adjustable-wrench", "carousel-cleaning-brush", "carousel-cleaning-bucket", "swim-earplugs", "pool-vacuum-head-amusement-park", "pool-thermometer-amusement-park", "pool-test-kit-amusement-park", "pool-kickboard", "pool-pull-buoy", "swim-paddle-amusement-park", "swim-cap-amusement-park", "nose-clip-amusement-park", "pool-float-belt", "arm-float-amusement-park"],
+      "noFlip": [],
+      "motion": {"ride-car": "wobble", "bumper-car": "wobble", "ride-control-box": "wobble", "pool-shade-canopy": "sway", "pool-lane-float": "bob", "pool-float-ring": "bob", "pool-float-disc": "bob"},
+      "arrange": "auto",
+      "terrain": {"color": "#f48fb1", "x0": 9520, "y0": 9240, "x1": 14960, "y1": 10540, "zones": [{"id": "entrance", "x0": 9520, "y0": 9240, "x1": 12120, "y1": 9890, "indoor": false, "floor": "paving"}, {"id": "midway", "x0": 12360, "y0": 9240, "x1": 14960, "y1": 9890, "indoor": false, "floor": "concrete", "road": {"y0": 9700, "y1": 9860}}, {"id": "carousel-hall", "x0": 12360, "y0": 9890, "x1": 14960, "y1": 10540, "indoor": true, "floor": "wood", "wallBase": 10070}, {"id": "water-ride", "x0": 9520, "y0": 9890, "x1": 12120, "y1": 10540, "indoor": false, "floor": "concrete", "pool": {"x0": 10820, "y0": 10000, "x1": 12070, "y1": 10500}}], "venue": {"accent": "#7fae9b", "wall": "warm", "zones": {"entrance": ["arrival", "concourse"], "midway": ["boardwalk", "shopseating"], "carousel-hall": ["gallery", "cinema"], "water-ride": ["pooldeck", "shores"]}}}
     }
   }
 }

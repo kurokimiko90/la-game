@@ -1,0 +1,466 @@
+{
+  "en": {
+    "pool-float-ring": {
+      "heard": "Swim ring.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "pool-float-disc": {
+      "heard": "Swim Float Disc.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "pool-lane-float": {
+      "heard": "Lane Marker Float.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "sandwich-board-amusement-park": {
+      "heard": "Sandwich board.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "paper-airplane": {
+      "heard": "Paper airplane.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "ride-rail": {
+      "heard": "RideRail.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "entry-arch": {
+      "heard": "Entry Arch",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "arcade-game-cabinet": {
+      "heard": "Arcade Game Cabinet",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "ring-toss-stand": {
+      "heard": "Ring toss stand.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "photo-booth": {
+      "heard": "Photo booth.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "basketball-hoop": {
+      "heard": "Basketball Hoop.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "bowling-pin": {
+      "heard": "Bowling pin.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "dartboard": {
+      "heard": "Dartboard.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "claw-machine": {
+      "heard": "Claw machine.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "vending-machine-amusement-park": {
+      "heard": "Vending Machine",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "fortune-teller-machine": {
+      "heard": "Fortune Teller Machine",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "entry-gate": {
+      "heard": "Entry gate.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "skee-ball-lane": {
+      "heard": "Ski Ball Lane",
+      "score": 0.83,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "ticket-booth-amusement-park": {
+      "heard": "Ticket booth.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "pinwheel": {
+      "heard": "Pinwheel.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "miniature-train": {
+      "heard": "Miniature train.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "parked-go-kart": {
+      "heard": "Parked Go-Kart.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "trampoline": {
+      "heard": "trampoline,",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "pedal-boat": {
+      "heard": "Pedal Boat",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "coin-operated-horse": {
+      "heard": "Coin-operated horse.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "miniature-golf-club": {
+      "heard": "Miniature Golf Club.",
+      "score": 1,
+      "take": "en-1790870340776.aac",
+      "account": "chatgpt1"
+    },
+    "miniature-golf-hole": {
+      "heard": "Miniature golf hole.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "skateboard-ramp": {
+      "heard": "Skateboard ramp.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "flagpole-base-amusement-park": {
+      "heard": "Flagpole-based.",
+      "score": 0.92,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "ferris-wheel-gondola": {
+      "heard": "Ferris Wheel Gondola.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "ride-car": {
+      "heard": "Ride car.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "bumper-car": {
+      "heard": "Bumper car.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "ride-control-box": {
+      "heard": "Ride Control Box.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "candy-floss-cart": {
+      "heard": "Candy Floss Cart",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "ice-cream-cart": {
+      "heard": "Ice cream cart.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-platform": {
+      "heard": "Carousel Platform.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "prize-wheel": {
+      "heard": "Prize wheel.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "ice-cream-scoop": {
+      "heard": "Ice cream scoop.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "candy-apple": {
+      "heard": "Candy Apple.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-canopy": {
+      "heard": "Carousel Canopy",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-pole": {
+      "heard": "Carousel Pole",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-duck": {
+      "heard": "Rubber Duck.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "prize-plush": {
+      "heard": "Plush prize.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "popcorn-cart": {
+      "heard": "Popcorn cart.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "confetti": {
+      "heard": "Confetti.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "hockey-stick": {
+      "heard": "Hockey stick.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "hockey-puck": {
+      "heard": "Cocky puck.",
+      "score": 0.8,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "jumping-rope": {
+      "heard": "Jumping rope.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "bubble-wand": {
+      "heard": "Bubble wand.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "balloon-weight": {
+      "heard": "Balloon weight.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "pool-overflow-grate-amusement-park": {
+      "heard": "Pool overflow great.",
+      "score": 0.88,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-star-lamp": {
+      "heard": "Starlamp.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-rosette": {
+      "heard": "Rosette.",
+      "score": 1,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "pool-shade-canopy": {
+      "heard": "Panel, pool shade canopy.",
+      "score": 0.75,
+      "take": "en-1790870498534.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-mirror-ball": {
+      "heard": "Mirrorball.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-ride-control": {
+      "heard": "Ride control panel.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-cover-reel-amusement-park": {
+      "heard": "Pool Cover Reel Life",
+      "score": 0.76,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-rescue-tube": {
+      "heard": "Rescue Tube.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-test-kit-amusement-park": {
+      "heard": "Pool Test Kit",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-clock-amusement-park": {
+      "heard": "Clock.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "waterpark-turnstile": {
+      "heard": "Turnstile.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-skimmer-net": {
+      "heard": "Pool skimmer.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-brush-amusement-park": {
+      "heard": "Pool brush.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-edge-marker-amusement-park": {
+      "heard": "Pool edge marker.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-entrance-gate": {
+      "heard": "Ride Entrance Gate.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-bell": {
+      "heard": "Handbell.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-wind-up-key": {
+      "heard": "Windup key.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-pull-buoy": {
+      "heard": "Pool buoy.",
+      "score": 0.75,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "swim-paddle-amusement-park": {
+      "heard": "Swim paddle.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "swim-cap-amusement-park": {
+      "heard": "Swimcap.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "nose-clip-amusement-park": {
+      "heard": "Nose clip.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "pool-float-belt": {
+      "heard": "Swim float belt.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "arm-float-amusement-park": {
+      "heard": "Armfloat.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-safety-chain": {
+      "heard": "Safety chain.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-ribbon-bow": {
+      "heard": "ribbon bow,",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-cleaning-brush": {
+      "heard": "Cleaning brush.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-cleaning-bucket": {
+      "heard": "Cleaning bucket.",
+      "score": 1,
+      "take": "en-1790870648742.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

@@ -1,0 +1,2071 @@
+{
+  "sceneName": "語言小鎮・遊樂園",
+  "sceneSlug": "la-amusement-park",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "midway": "遊戲街",
+    "carousel-hall": "旋轉木馬",
+    "water-ride": "水上樂園"
+  },
+  "elements": [
+    {
+      "name": "入口拱門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的圓弧形拱門，表面塗成鮮紅與亮黃色，兩側有厚實的方形支柱。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "entry-arch",
+        "words": {
+          "zh-TW": "入口拱門",
+          "en": "entry arch",
+          "ja": {
+            "text": "アーチ",
+            "reading": "アーチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "入口柵門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩扇深藍色金屬柵門向外打開，門片由直條和粗框組成，底部有輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "entry-gate",
+        "words": {
+          "zh-TW": "入口柵門",
+          "en": "entry gate",
+          "ja": {
+            "text": "入口ゲート",
+            "reading": "いりぐちゲート"
+          }
+        }
+      }
+    },
+    {
+      "name": "立式展示架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩片木板以頂端鉸鏈相連，張開後呈倒立三角形，板面留白且沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "sandwich-board-amusement-park",
+        "words": {
+          "zh-TW": "立式展示架",
+          "en": "sandwich board",
+          "ja": {
+            "text": "スタンド看板",
+            "reading": "スタンドかんばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "旗桿底座",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚重的黑色圓形底座，中央插著一根細長銀色直桿，底部寬闊穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "flagpole-base-amusement-park",
+        "words": {
+          "zh-TW": "旗桿底座",
+          "en": "flagpole base",
+          "ja": {
+            "text": "旗竿の台座",
+            "reading": "はたざおのだいざ"
+          }
+        }
+      }
+    },
+    {
+      "name": "氣球重錘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色小圓錐形重錘，頂端繫著一條細白線，底部平坦能穩穩放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "balloon-weight",
+        "words": {
+          "zh-TW": "氣球重錘",
+          "en": "balloon weight",
+          "ja": {
+            "text": "風船用おもり",
+            "reading": "ふうせんようおもり"
+          }
+        }
+      }
+    },
+    {
+      "name": "棉花糖推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "粉紅色小推車有圓頂玻璃罩、白色車身和四個黑色小輪子，側面伸出推把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "candy-floss-cart",
+        "words": {
+          "zh-TW": "棉花糖推車",
+          "en": "candy floss cart",
+          "ja": {
+            "text": "わたあめワゴン",
+            "reading": "わたあめワゴン"
+          }
+        }
+      }
+    },
+    {
+      "name": "爆米花推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅白相間的方形小車上方罩著透明玻璃箱，箱內堆著金黃色爆米花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "popcorn-cart",
+        "words": {
+          "zh-TW": "爆米花推車",
+          "en": "popcorn cart",
+          "ja": {
+            "text": "ポップコーンワゴン",
+            "reading": "ポップコーンワゴン"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰淇淋推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍白色小型推車有圓頂遮棚、玻璃展示窗和四個小輪子，側面有彎曲把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ice-cream-cart",
+        "words": {
+          "zh-TW": "冰淇淋推車",
+          "en": "ice cream cart",
+          "ja": {
+            "text": "アイスクリームカート",
+            "reading": "アイスクリームカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "冰淇淋勺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色圓勺連著短柄，勺內裝著一球粉紅色冰淇淋，柄尾有小扳片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ice-cream-scoop",
+        "words": {
+          "zh-TW": "冰淇淋勺",
+          "en": "ice cream scoop",
+          "ja": {
+            "text": "アイスクリームディッシャー",
+            "reading": "アイスクリームディッシャー"
+          }
+        }
+      }
+    },
+    {
+      "name": "糖蘋果",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆亮紅色圓蘋果裹著透明糖衣，底部插有一根短木棒，表面有高光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "candy-apple",
+        "words": {
+          "zh-TW": "糖蘋果",
+          "en": "candy apple",
+          "ja": {
+            "text": "りんご飴",
+            "reading": "りんごあめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬馬匹",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色馬形木雕立在金色直桿旁，鬃毛和尾巴以藍色弧線雕出，底座圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "carousel-horse",
+        "words": {
+          "zh-TW": "旋轉木馬馬匹",
+          "en": "carousel horse",
+          "ja": {
+            "text": "メリーゴーラウンドの馬",
+            "reading": "メリーゴーラウンドのうま"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬頂篷",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "大型圓形頂篷呈放射狀分成紅、黃、藍色扇形，外沿垂著短短的金色流蘇。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "carousel-canopy",
+        "words": {
+          "zh-TW": "旋轉木馬頂篷",
+          "en": "carousel canopy",
+          "ja": {
+            "text": "メリーゴーラウンドの屋根",
+            "reading": "メリーゴーラウンドのやね"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬立柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "粗大的金色圓柱從地面直立伸向頂篷，表面有簡單的紅藍色環形裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "carousel-pole",
+        "words": {
+          "zh-TW": "旋轉木馬立柱",
+          "en": "carousel pole",
+          "ja": {
+            "text": "メリーゴーラウンドの柱",
+            "reading": "メリーゴーラウンドのはしら"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬平台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的圓形平台邊緣有金色包邊，地板以深藍和奶油白色塊交替排列。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "carousel-platform",
+        "words": {
+          "zh-TW": "旋轉木馬平台",
+          "en": "carousel platform",
+          "ja": {
+            "text": "メリーゴーラウンドの床",
+            "reading": "メリーゴーラウンドのゆか"
+          }
+        }
+      }
+    },
+    {
+      "name": "摩天輪車廂",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一個紅色小吊艙停在地面，頂部以短金屬臂連接圓環，兩側各有方形窗戶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ferris-wheel-gondola",
+        "words": {
+          "zh-TW": "摩天輪車廂",
+          "en": "ferris wheel gondola",
+          "ja": {
+            "text": "観覧車のゴンドラ",
+            "reading": "かんらんしゃのゴンドラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "遊樂設施車廂",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一台黃色單人遊樂車停在地面，車身圓潤低矮，前端有黑色保險桿和兩個小輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ride-car",
+        "words": {
+          "zh-TW": "遊樂設施車廂",
+          "en": "ride car",
+          "ja": {
+            "text": "アトラクションの乗り物",
+            "reading": "アトラクションののりもの"
+          }
+        }
+      }
+    },
+    {
+      "name": "碰碰車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "亮綠色低矮小車有圓形車身、黑色軟質保險圈、短方向盤和四個小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "bumper-car",
+        "words": {
+          "zh-TW": "碰碰車",
+          "en": "bumper car",
+          "ja": {
+            "text": "バンパーカー",
+            "reading": "バンパーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "遊樂設施軌道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩條粗厚的銀色金屬軌道並排彎曲，固定在短短的深色支架上，延伸向一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ride-rail",
+        "words": {
+          "zh-TW": "遊樂設施軌道",
+          "en": "ride rail",
+          "ja": {
+            "text": "レール",
+            "reading": "レール"
+          }
+        }
+      }
+    },
+    {
+      "name": "遊樂設施控制箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮矮的黃色金屬箱立在粗柱上，頂面有紅色圓鈕和黑色搖桿，側面有通風孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ride-control-box",
+        "words": {
+          "zh-TW": "遊樂設施控制箱",
+          "en": "ride control box",
+          "ja": {
+            "text": "アトラクションの操作盤",
+            "reading": "アトラクションのそうさばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "抽獎轉盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的圓形彩色轉盤分成多塊鮮豔色面，中心有圓鈕，頂端固定小指針。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "prize-wheel",
+        "words": {
+          "zh-TW": "抽獎轉盤",
+          "en": "prize wheel",
+          "ja": {
+            "text": "ルーレット盤",
+            "reading": "ルーレットばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡皮鴨",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色橡膠小鴨有圓圓身體、扁平橘色嘴和兩顆黑眼睛，底部平穩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "rubber-duck",
+        "words": {
+          "zh-TW": "橡皮鴨",
+          "en": "rubber duck",
+          "ja": {
+            "text": "あひるのおもちゃ",
+            "reading": "あひるのおもちゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "毛絨獎品",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一團紫色柔軟毛絨獎品，外形是圓球配兩隻短耳朵和四個小爪，沒有臉部細節。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "prize-plush",
+        "words": {
+          "zh-TW": "毛絨獎品",
+          "en": "plush prize",
+          "ja": {
+            "text": "ぬいぐるみ",
+            "reading": "ぬいぐるみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "彩紙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片綠、紅、黃的小紙片散落成一小堆，每片都是簡單的圓形或方形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "confetti",
+        "words": {
+          "zh-TW": "彩紙",
+          "en": "confetti",
+          "ja": {
+            "text": "紙吹雪",
+            "reading": "かみふぶき"
+          }
+        }
+      }
+    },
+    {
+      "name": "售票亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "小巧的方形亭子，屋頂有紅白相間的條紋，正面開著一扇帶窗框的窗口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "ticket-booth-amusement-park",
+        "words": {
+          "zh-TW": "售票亭",
+          "en": "ticket booth",
+          "ja": {
+            "text": "チケットブース",
+            "reading": "チケットブース"
+          }
+        }
+      }
+    },
+    {
+      "name": "街機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的彩色機箱配凸出的操作台，正面有彩色圖案和圓形按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "arcade-game-cabinet",
+        "words": {
+          "zh-TW": "街機",
+          "en": "arcade-game-cabinet",
+          "ja": {
+            "text": "アーケードゲーム機",
+            "reading": "アーケードゲームき"
+          }
+        }
+      }
+    },
+    {
+      "name": "夾娃娃機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形透明櫃體下接彩色底座，裡面散放著幾個鮮豔的小球。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "claw-machine",
+        "words": {
+          "zh-TW": "夾娃娃機",
+          "en": "claw-machine",
+          "ja": {
+            "text": "クレーンゲーム機",
+            "reading": "クレーンゲームき"
+          }
+        }
+      }
+    },
+    {
+      "name": "自動販賣機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "高而窄的彩色機身正面有一排圓形按鈕，下方留有取物口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "vending-machine-amusement-park",
+        "words": {
+          "zh-TW": "自動販賣機",
+          "en": "vending-machine",
+          "ja": {
+            "text": "自動販売機",
+            "reading": "じどうはんばいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "套圈攤架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮方形木架上豎著多根彩色短柱，柱子頂端露出圓形套環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "ring-toss-stand",
+        "words": {
+          "zh-TW": "套圈攤架",
+          "en": "ring-toss-stand",
+          "ja": {
+            "text": "輪投げ台",
+            "reading": "わなげだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "占卜機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓頂小機器立在厚底座上，前面有透明圓窗和突出的取物槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "fortune-teller-machine",
+        "words": {
+          "zh-TW": "占卜機",
+          "en": "fortune-teller-machine",
+          "ja": {
+            "text": "占い機",
+            "reading": "うらないき"
+          }
+        }
+      }
+    },
+    {
+      "name": "大頭貼機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的彩色封閉機台，正面有寬大的開口、座椅和側邊小螢幕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "photo-booth",
+        "words": {
+          "zh-TW": "大頭貼機",
+          "en": "photo-booth",
+          "ja": {
+            "text": "プリントシール機",
+            "reading": "プリントシールき"
+          }
+        }
+      }
+    },
+    {
+      "name": "遊園小火車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "鮮豔小火車頭連著兩節敞篷車廂，車輪清楚露在車身下方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "miniature-train",
+        "words": {
+          "zh-TW": "遊園小火車",
+          "en": "miniature-train",
+          "ja": {
+            "text": "遊園地のミニ列車",
+            "reading": "ゆうえんちのみにれっしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏船",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平小船有兩個圓形踏板和高起的船頭，船身塗成亮色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "pedal-boat",
+        "words": {
+          "zh-TW": "腳踏船",
+          "en": "pedal-boat",
+          "ja": {
+            "text": "足こぎボート",
+            "reading": "あしこぎボート"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡丁車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮小車露出四個輪子，前方有圓形方向盤和醒目的車鼻。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "parked-go-kart",
+        "words": {
+          "zh-TW": "卡丁車",
+          "en": "parked-go-kart",
+          "ja": {
+            "text": "ゴーカート",
+            "reading": "ゴーカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "投幣搖搖馬",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "彩色馬形座椅固定在寬底座上，底部有一對弧形搖桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "coin-operated-horse",
+        "words": {
+          "zh-TW": "投幣搖搖馬",
+          "en": "coin-operated-horse",
+          "ja": {
+            "text": "コイン式ロッキングホース",
+            "reading": "コインしきロッキングホース"
+          }
+        }
+      }
+    },
+    {
+      "name": "迷你高爾夫球洞",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊綠色小草墊中央開著圓洞，旁邊立著短短的彩色旗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "miniature-golf-hole",
+        "words": {
+          "zh-TW": "迷你高爾夫球洞",
+          "en": "miniature-golf-hole",
+          "ja": {
+            "text": "ミニゴルフのホール",
+            "reading": "ミニゴルフのホール"
+          }
+        }
+      }
+    },
+    {
+      "name": "迷你高爾夫球桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長金屬桿下端接著扁平斜角桿頭，握把包著鮮明色帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "miniature-golf-club",
+        "words": {
+          "zh-TW": "迷你高爾夫球桿",
+          "en": "miniature-golf-club",
+          "ja": {
+            "text": "ミニゴルフクラブ",
+            "reading": "ミニゴルフクラブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑板坡道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬闊木製坡面兩端向上彎起，側面可見厚實的三角支撐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "skateboard-ramp",
+        "words": {
+          "zh-TW": "滑板坡道",
+          "en": "skateboard-ramp",
+          "ja": {
+            "text": "スケートボードランプ",
+            "reading": "スケートボードランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蹦床",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形深色彈跳網繃在金屬圓框上，底下由多根短腳支撐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "trampoline",
+        "words": {
+          "zh-TW": "蹦床",
+          "en": "trampoline",
+          "ja": {
+            "text": "トランポリン",
+            "reading": "トランポリン"
+          }
+        }
+      }
+    },
+    {
+      "name": "籃球架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高直立支架頂端伸出方形籃板，前方掛著橘色圓框和網子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "basketball-hoop",
+        "words": {
+          "zh-TW": "籃球架",
+          "en": "basketball-hoop",
+          "ja": {
+            "text": "バスケットゴール",
+            "reading": "バスケットゴール"
+          }
+        }
+      }
+    },
+    {
+      "name": "滾球遊戲道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長條木製斜坡末端立著多個圓形洞口，兩側有高起的擋板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "skee-ball-lane",
+        "words": {
+          "zh-TW": "滾球遊戲道",
+          "en": "skee-ball-lane",
+          "ja": {
+            "text": "スキーボールのレーン",
+            "reading": "スキーボールのレーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "保齡球瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色細長瓶身上端收窄，頸部繞著一圈鮮紅色帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "bowling-pin",
+        "words": {
+          "zh-TW": "保齡球瓶",
+          "en": "bowling-pin",
+          "ja": {
+            "text": "ボウリングピン",
+            "reading": "ボウリングピン"
+          }
+        }
+      }
+    },
+    {
+      "name": "飛鏢靶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形靶面分成放射狀彩色扇區，中心有小圓點，外圈套著金屬環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "dartboard",
+        "words": {
+          "zh-TW": "飛鏢靶",
+          "en": "dartboard",
+          "ja": {
+            "text": "ダーツボード",
+            "reading": "ダーツボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "曲棍球桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長直桿底端彎成扁平鉤形，桿身以兩種鮮明顏色分段。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "hockey-stick",
+        "words": {
+          "zh-TW": "曲棍球桿",
+          "en": "hockey-stick",
+          "ja": {
+            "text": "ホッケースティック",
+            "reading": "ホッケースティック"
+          }
+        }
+      }
+    },
+    {
+      "name": "曲棍球冰球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓黑色橡膠圓盤側面有細密紋路，平放在地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "hockey-puck",
+        "words": {
+          "zh-TW": "曲棍球冰球",
+          "en": "hockey-puck",
+          "ja": {
+            "text": "ホッケーパック",
+            "reading": "ホッケーパック"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩支短握把連著一條鬆弛彎曲的細繩，繩子攤在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "jumping-rope",
+        "words": {
+          "zh-TW": "跳繩",
+          "en": "jumping-rope",
+          "ja": {
+            "text": "縄跳び",
+            "reading": "なわとび"
+          }
+        }
+      }
+    },
+    {
+      "name": "吹泡泡棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長塑膠棒頂端有圓形吹泡圈，握柄呈亮色，平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "bubble-wand",
+        "words": {
+          "zh-TW": "吹泡泡棒",
+          "en": "bubble-wand",
+          "ja": {
+            "text": "シャボン玉スティック",
+            "reading": "シャボンだまスティック"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙飛機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色紙張折成尖頭三角機身，兩側對稱機翼平整展開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "paper-airplane",
+        "words": {
+          "zh-TW": "紙飛機",
+          "en": "paper-airplane",
+          "ja": {
+            "text": "紙飛行機",
+            "reading": "かみひこうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "風車",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "四片彩色三角葉片圍著中心圓點，固定在一根短直柄上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "pinwheel",
+        "words": {
+          "zh-TW": "風車",
+          "en": "pinwheel",
+          "ja": {
+            "text": "風車",
+            "reading": "かざぐるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬中心軸",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根高聳的圓柱立在旋轉木馬中央，表面漆成紅白相間的直條紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-center-pole",
+        "words": {
+          "zh-TW": "旋轉木馬中心軸",
+          "en": "center pole",
+          "ja": {
+            "text": "中央支柱",
+            "reading": "ちゅうおうしちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬控制台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮小的長方形控制台立在支架上，面板有幾顆彩色按鈕和一個粗大的控制桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-ride-control",
+        "words": {
+          "zh-TW": "旋轉木馬控制台",
+          "en": "ride control panel",
+          "ja": {
+            "text": "操作パネル",
+            "reading": "そうさパネル"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬入口閘門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一扇腰高的金屬閘門，兩側有直立欄杆，中間以一根橫桿擋住入口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-entrance-gate",
+        "words": {
+          "zh-TW": "旋轉木馬入口閘門",
+          "en": "ride entrance gate",
+          "ja": {
+            "text": "乗り場ゲート",
+            "reading": "のりばゲート"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉木馬排隊柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的金屬立柱底部帶圓盤，頂端連著一段紅色繩索引導遊客排隊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-queue-post",
+        "words": {
+          "zh-TW": "旋轉木馬排隊柱",
+          "en": "queue post",
+          "ja": {
+            "text": "順番待ちポール",
+            "reading": "じゅんばんまちポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "操作員椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一張簡單的木椅，方形椅面配直挺椅背和四支細長椅腳，漆成深藍色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-operator-stool",
+        "words": {
+          "zh-TW": "操作員椅",
+          "en": "operator chair",
+          "ja": {
+            "text": "係員用いす",
+            "reading": "かかりいんよういす"
+          }
+        }
+      }
+    },
+    {
+      "name": "天鵝座椅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色天鵝造型的單人座椅，長頸向上彎起，橘色扁嘴前伸，座位藏在背上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-swan-seat",
+        "words": {
+          "zh-TW": "天鵝座椅",
+          "en": "swan seat",
+          "ja": {
+            "text": "白鳥の乗り物",
+            "reading": "はくちょうののりもの"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬車座艙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一節華麗的金色馬車座艙，兩側有小輪子和彎曲扶手，深紅色座位露在上方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-chariot-seat",
+        "words": {
+          "zh-TW": "馬車座艙",
+          "en": "chariot seat",
+          "ja": {
+            "text": "馬車型ゴンドラ",
+            "reading": "ばしゃがたゴンドラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雙人座椅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩個相連的紅色馬鞍形座位並排固定，前方各有一支短把手供乘客握住。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-double-seat",
+        "words": {
+          "zh-TW": "雙人座椅",
+          "en": "double seat",
+          "ja": {
+            "text": "二人乗りの座席",
+            "reading": "ふたりのりのざせき"
+          }
+        }
+      }
+    },
+    {
+      "name": "安全壓桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一根粗厚的弧形金屬橫桿，兩端帶有固定接頭，表面包覆柔軟的紅色墊層。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-safety-bar",
+        "words": {
+          "zh-TW": "安全壓桿",
+          "en": "safety bar",
+          "ja": {
+            "text": "安全バー",
+            "reading": "あんぜんバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "黃銅環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個圓形黃銅環掛在細桿末端，表面金黃發亮，是旋轉時伸手可取的遊戲道具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-brass-ring",
+        "words": {
+          "zh-TW": "黃銅環",
+          "en": "brass ring",
+          "ja": {
+            "text": "真ちゅうの輪",
+            "reading": "しんちゅうのわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "安全鏈條",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一段粗短的銀色金屬鏈，兩端各有扣環，垂落在登乘台的邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-safety-chain",
+        "words": {
+          "zh-TW": "安全鏈條",
+          "en": "safety chain",
+          "ja": {
+            "text": "安全チェーン",
+            "reading": "あんぜんチェーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "登乘梯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一座矮小的兩階金屬梯，寬踏板漆成紅色，兩側有穩固的扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-step-ladder",
+        "words": {
+          "zh-TW": "登乘梯",
+          "en": "boarding ladder",
+          "ja": {
+            "text": "乗降用はしご",
+            "reading": "じょうこうようはしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "鏡球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆銀色球體鑲滿細小方形鏡片，表面閃亮，懸在旋轉木馬上方的短支架間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-mirror-ball",
+        "words": {
+          "zh-TW": "鏡球",
+          "en": "mirror ball",
+          "ja": {
+            "text": "ミラーボール",
+            "reading": "ミラーボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "星形燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一盞五角星形的金色燈，乳白色燈罩嵌在中央，固定在旋轉木馬周邊的短柱上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-star-lamp",
+        "words": {
+          "zh-TW": "星形燈",
+          "en": "star lamp",
+          "ja": {
+            "text": "星形ランプ",
+            "reading": "ほしがたランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "手搖鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只小巧的金色手搖鈴，圓形鈴身接著短柄，柄尾有一顆圓潤的握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-bell",
+        "words": {
+          "zh-TW": "手搖鈴",
+          "en": "hand bell",
+          "ja": {
+            "text": "手持ちベル",
+            "reading": "てもちベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "發條鑰匙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一支銀色發條鑰匙，短軸頂端連著兩片圓耳狀把手，末端是方形齒輪頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-wind-up-key",
+        "words": {
+          "zh-TW": "發條鑰匙",
+          "en": "wind-up key",
+          "ja": {
+            "text": "ぜんまい鍵",
+            "reading": "ぜんまいかぎ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玫瑰花結",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一枚圓形的紅金布質徽章，中央皺摺收成花朵形，底下垂著兩條短緞帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-rosette",
+        "words": {
+          "zh-TW": "玫瑰花結",
+          "en": "rosette",
+          "ja": {
+            "text": "ロゼット",
+            "reading": "ロゼット"
+          }
+        }
+      }
+    },
+    {
+      "name": "緞帶蝴蝶結",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個亮紅色緞帶蝴蝶結，左右兩個圓弧布瓣下方垂著短尾，中央打結厚實。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-ribbon-bow",
+        "words": {
+          "zh-TW": "緞帶蝴蝶結",
+          "en": "ribbon bow",
+          "ja": {
+            "text": "リボンの蝶結び",
+            "reading": "リボンのちょうむすび"
+          }
+        }
+      }
+    },
+    {
+      "name": "羽飾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾根潔白羽毛束成扇形，羽軸細長，末端柔軟蓬鬆，插在小型金色底座上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-feather-plume",
+        "words": {
+          "zh-TW": "羽飾",
+          "en": "feather plume",
+          "ja": {
+            "text": "羽飾り",
+            "reading": "はねかざり"
+          }
+        }
+      }
+    },
+    {
+      "name": "電纜捲盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一個黑色圓盤繞著粗電纜，安裝在低矮的金屬架上，側邊露出短短的插頭線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-cable-reel",
+        "words": {
+          "zh-TW": "電纜捲盤",
+          "en": "cable reel",
+          "ja": {
+            "text": "ケーブルリール",
+            "reading": "ケーブルリール"
+          }
+        }
+      }
+    },
+    {
+      "name": "黃油槍",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把短柄金屬注油槍，前端接著細長噴嘴，握把旁有橘色扳機。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-grease-gun",
+        "words": {
+          "zh-TW": "黃油槍",
+          "en": "grease gun",
+          "ja": {
+            "text": "グリースガン",
+            "reading": "グリースガン"
+          }
+        }
+      }
+    },
+    {
+      "name": "活動扳手",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把銀色活動扳手，開口鉗頭帶可轉動的調節螺帽，長柄尾端略微收窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-adjustable-wrench",
+        "words": {
+          "zh-TW": "活動扳手",
+          "en": "adjustable wrench",
+          "ja": {
+            "text": "モンキーレンチ",
+            "reading": "モンキーレンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "清潔刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把短柄硬毛刷，木色握柄連著一排黑色刷毛，刷頭呈扁平長方形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-cleaning-brush",
+        "words": {
+          "zh-TW": "清潔刷",
+          "en": "cleaning brush",
+          "ja": {
+            "text": "清掃ブラシ",
+            "reading": "せいそうブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "清潔桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一只黃色圓桶帶著半圓形提把，桶身上寬下窄，桶口露出深色內壁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-cleaning-bucket",
+        "words": {
+          "zh-TW": "清潔桶",
+          "en": "cleaning bucket",
+          "ja": {
+            "text": "掃除用バケツ",
+            "reading": "そうじようバケツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "安全錐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個橘色圓錐形安全錐立在方形黑色底座上，錐尖圓鈍，錐身有一圈白色反光帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "carousel-safety-cone",
+        "words": {
+          "zh-TW": "安全錐",
+          "en": "safety cone",
+          "ja": {
+            "text": "カラーコーン",
+            "reading": "カラーコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳耳塞",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對淡藍色小耳塞，各有圓潤耳塞頭和短短的連接柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "swim-earplugs",
+        "words": {
+          "zh-TW": "游泳耳塞",
+          "en": "swim earplugs",
+          "ja": {
+            "text": "水泳用耳栓",
+            "reading": "すいえいようみみせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池遮陽棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "四角形的藍色遮陽布張在金屬框架上，布面中央略微下凹。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-shade-canopy",
+        "words": {
+          "zh-TW": "泳池遮陽棚",
+          "en": "pool shade canopy",
+          "ja": {
+            "text": "プール用シェード",
+            "reading": "プールようシェード"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉閘門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "腰高的金屬立柱上伸出三根水平橫桿，形成可旋轉的通行閘門。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "waterpark-turnstile",
+        "words": {
+          "zh-TW": "旋轉閘門",
+          "en": "turnstile",
+          "ja": {
+            "text": "回転ゲート",
+            "reading": "かいてんゲート"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池時鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形藍色外框包住白色鐘面，面上只有粗短指針和細刻度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "poolside-clock-amusement-park",
+        "words": {
+          "zh-TW": "泳池時鐘",
+          "en": "clock",
+          "ja": {
+            "text": "時計",
+            "reading": "とけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅白相間的厚圓環，外側繞著一條細繩，中央留有圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-lifebuoy",
+        "words": {
+          "zh-TW": "救生圈",
+          "en": "lifebuoy",
+          "ja": {
+            "text": "救命浮輪",
+            "reading": "きゅうめいふうりん"
+          }
+        }
+      }
+    },
+    {
+      "name": "救援浮標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的橘紅色泡棉浮具，兩端圓鈍，旁邊繫著一條黑色帶子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-rescue-tube",
+        "words": {
+          "zh-TW": "救援浮標",
+          "en": "rescue tube",
+          "ja": {
+            "text": "レスキューチューブ",
+            "reading": "レスキューチューブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池撈網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長柄末端裝著扁平的橢圓網框，框上繃著細密的藍色網面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-skimmer-net",
+        "words": {
+          "zh-TW": "泳池撈網",
+          "en": "pool skimmer",
+          "ja": {
+            "text": "プール用ネット",
+            "reading": "プールようネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池吸塵頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形的藍色刷頭，底面有一排短刷毛，頂部接著圓形接口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-vacuum-head-amusement-park",
+        "words": {
+          "zh-TW": "泳池吸塵頭",
+          "en": "pool vacuum head",
+          "ja": {
+            "text": "プール用掃除ヘッド",
+            "reading": "プールようそうじヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬扁的藍色刷頭連著長直柄，刷頭底面排列一排深色硬刷毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-brush-amusement-park",
+        "words": {
+          "zh-TW": "泳池刷",
+          "en": "pool brush",
+          "ja": {
+            "text": "プールブラシ",
+            "reading": "プールブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池溫度計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的白色防水外殼中有紅色液柱，頂端露出一小段掛繩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-thermometer-amusement-park",
+        "words": {
+          "zh-TW": "泳池溫度計",
+          "en": "pool thermometer",
+          "ja": {
+            "text": "プール用温度計",
+            "reading": "プールようおんどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池測試盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明扁盒裡放著幾支細管和一排彩色試紙，盒蓋呈淺藍色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-test-kit-amusement-park",
+        "words": {
+          "zh-TW": "泳池測試盒",
+          "en": "pool test kit",
+          "ja": {
+            "text": "プール水検査キット",
+            "reading": "プールすいけんさキット"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池遮布捲軸",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩側金屬支架架著一根粗圓軸，軸上整齊捲著大片藍色防水布。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-cover-reel-amusement-park",
+        "words": {
+          "zh-TW": "泳池遮布捲軸",
+          "en": "pool cover reel",
+          "ja": {
+            "text": "プールカバー巻き取り器",
+            "reading": "プールカバーまきとりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池溢水格柵",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "沿池邊鋪設的窄長白色塑膠格柵，表面有平行排列的細縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-overflow-grate-amusement-park",
+        "words": {
+          "zh-TW": "泳池溢水格柵",
+          "en": "pool overflow grate",
+          "ja": {
+            "text": "プールの排水溝ふた",
+            "reading": "プールのはいすいこうふた"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池排水蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "貼地的圓形金屬蓋，表面均勻分布小孔，外圈略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-drain-cover-amusement-park",
+        "words": {
+          "zh-TW": "泳池排水蓋",
+          "en": "pool drain cover",
+          "ja": {
+            "text": "プール排水口カバー",
+            "reading": "プールはいすいこうカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "池邊防滑標記",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "貼在池邊地面的黃色短條，表面有凸起的平行防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-edge-marker-amusement-park",
+        "words": {
+          "zh-TW": "池邊防滑標記",
+          "en": "pool edge marker",
+          "ja": {
+            "text": "プール縁の滑り止め",
+            "reading": "プールべりのすべりどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳道浮標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一串紅白交替的圓盤浮子沿著細繩排列，漂在池面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-lane-float",
+        "words": {
+          "zh-TW": "泳道浮標",
+          "en": "lane marker float",
+          "ja": {
+            "text": "コースロープのフロート",
+            "reading": "コースロープのフロート"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳浮板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的藍色泡棉板，前端略窄、兩側圓弧，板面有兩個握孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-kickboard",
+        "words": {
+          "zh-TW": "游泳浮板",
+          "en": "kickboard",
+          "ja": {
+            "text": "ビート板",
+            "reading": "ビートばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳夾腿浮具",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紫色泡棉製成的雙瓣形浮具，中間收窄，兩端厚實圓潤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-pull-buoy",
+        "words": {
+          "zh-TW": "游泳夾腿浮具",
+          "en": "pull buoy",
+          "ja": {
+            "text": "プルブイ",
+            "reading": "プルブイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳划手板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對扁平的橘色塑膠手板，各有數個圓孔和黑色固定帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "swim-paddle-amusement-park",
+        "words": {
+          "zh-TW": "游泳划手板",
+          "en": "swim paddle",
+          "ja": {
+            "text": "パドル",
+            "reading": "パドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "柔軟貼頭的亮黃色橢圓帽，表面光滑，邊緣略微向內收。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "swim-cap-amusement-park",
+        "words": {
+          "zh-TW": "泳帽",
+          "en": "swim cap",
+          "ja": {
+            "text": "スイムキャップ",
+            "reading": "スイムキャップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鼻夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的銀色弧形金屬夾，兩端各有柔軟的白色墊片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "nose-clip-amusement-park",
+        "words": {
+          "zh-TW": "鼻夾",
+          "en": "nose clip",
+          "ja": {
+            "text": "ノーズクリップ",
+            "reading": "ノーズクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳浮力腰帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一串黃色泡棉方塊以細帶串起，兩端有黑色插扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-float-belt",
+        "words": {
+          "zh-TW": "游泳浮力腰帶",
+          "en": "swim float belt",
+          "ja": {
+            "text": "浮力ベルト",
+            "reading": "ふりょくベルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "手臂浮圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個橘色充氣環並排放著，表面有細小充氣閥和熱封接縫。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "arm-float-amusement-park",
+        "words": {
+          "zh-TW": "手臂浮圈",
+          "en": "arm float",
+          "ja": {
+            "text": "アームリング",
+            "reading": "アームリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "亮紫色充氣圓環漂在水面上，外圈有一道白色接縫和氣嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-float-ring",
+        "words": {
+          "zh-TW": "游泳圈",
+          "en": "swim ring",
+          "ja": {
+            "text": "浮き輪",
+            "reading": "うきわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "浮水圓墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁圓形的綠色泡棉浮墊漂在水面，邊緣厚實，中央有小圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "water-ride",
+        "itemId": "pool-float-disc",
+        "words": {
+          "zh-TW": "浮水圓墊",
+          "en": "swim float disc",
+          "ja": {
+            "text": "浮き板",
+            "reading": "うきいた"
+          }
+        }
+      }
+    }
+  ]
+}
