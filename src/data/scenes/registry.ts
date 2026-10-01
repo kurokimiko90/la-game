@@ -27,5 +27,6 @@ import bookstore from './bookstore.json';
 import stationeryStore from './stationery-store.json';
 import home from './home.json';
 import gym from './gym.json';
+import swimmingPool from './swimming-pool.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, classroom, zoo, 'botanical-garden': botanicalGarden, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop, bookstore, 'stationery-store': stationeryStore, home, gym };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, classroom, zoo, 'botanical-garden': botanicalGarden, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop, bookstore, 'stationery-store': stationeryStore, home, gym, 'swimming-pool': swimmingPool };

@@ -390,5 +390,19 @@
       ],
       "body": "<rect x=\"55\" y=\"12\" width=\"30\" height=\"142\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"60\" y=\"18\" width=\"7\" height=\"130\" fill=\"#fff\" opacity=\"0.25\"/><rect x=\"22\" y=\"148\" width=\"96\" height=\"20\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"14\" y=\"165\" width=\"112\" height=\"13\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"53\" y=\"10\" width=\"34\" height=\"8\" fill=\"#37474f\"/>"
     }
+  },
+  {
+    "id": "swimming-pool",
+    "name": "游泳池",
+    "itemCount": 83,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        140,
+        180
+      ],
+      "body": "<ellipse cx=\"70\" cy=\"157\" rx=\"46\" ry=\"16\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"25\" y=\"143\" width=\"90\" height=\"14\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><ellipse cx=\"70\" cy=\"143\" rx=\"45\" ry=\"14\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"65\" y=\"18\" width=\"10\" height=\"126\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"66\" y=\"8\" width=\"8\" height=\"14\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"25\" x2=\"68\" y2=\"136\" stroke=\"#90a4ae\" stroke-width=\"2\"/><ellipse cx=\"70\" cy=\"143\" rx=\"8\" ry=\"3\" fill=\"#37474f\"/>"
+    }
   }
 ]

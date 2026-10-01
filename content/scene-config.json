@@ -1,6 +1,6 @@
 {
-  "world": {"width": 21780, "height": 8500},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym"],
+  "world": {"width": 21780, "height": 10040},
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -1544,6 +1544,51 @@
       "motion": {"standing-fan-gym": "wobble", "treadmill": "wobble", "elliptical-trainer": "wobble", "stationary-bike": "wobble", "rowing-machine": "wobble", "stair-climber": "wobble", "spin-bike": "wobble"},
       "arrange": "auto",
       "terrain": {"color": "#9fa8da", "x0": 18040, "y0": 6160, "x1": 20640, "y1": 7460, "zones": [{"id": "entrance", "x0": 18040, "y0": 6160, "x1": 19340, "y1": 6810, "indoor": false, "floor": "paving"}, {"id": "reception", "x0": 19340, "y0": 6160, "x1": 20640, "y1": 6810, "indoor": true, "floor": "tile", "wallBase": 6340}, {"id": "cardio-floor", "x0": 19340, "y0": 6810, "x1": 20640, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}, {"id": "poolside", "x0": 18040, "y0": 6810, "x1": 19340, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}]}
+    },
+    "swimming-pool": {
+      "name": "游泳池",
+      "icon": "shade-pole",
+      "zones": {"pool-entrance": [3840, 7700, 6440, 8350], "changing-room": [6680, 7700, 9280, 8350], "indoor-pool": [6680, 8350, 9280, 9000], "outdoor-pool": [3840, 8350, 6440, 9000]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"pool-entrance": {"top": 7770, "bottom": 8330}, "changing-room": {"top": 7940, "bottom": 8330, "gaps": [[7890, 8082]]}, "indoor-pool": {"top": 8590, "bottom": 8980}, "outdoor-pool": {"top": 8420, "bottom": 8980, "x1": 5110}}},
+        "sky-pool-entrance": {"top": 7850, "bottom": 8000, "zones": ["pool-entrance"], "layer": 3, "float": 150},
+        "wall-changing-room": {"levels": [7840], "zones": ["changing-room"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-changing-room": {"levels": [7878], "zones": ["changing-room"], "inset": 50},
+        "surface-changing-room": {"levels": [8010], "zones": ["changing-room"], "x0": 6830, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 8052},
+        "wall-indoor-pool": {"levels": [8490], "zones": ["indoor-pool"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-indoor-pool": {"levels": [8528], "zones": ["indoor-pool"], "inset": 50},
+        "sky-outdoor-pool": {"top": 8500, "bottom": 8650, "zones": ["outdoor-pool"], "layer": 3, "float": 150},
+        "water-outdoor-pool": {"x0": 5180, "x1": 6350, "top": 8530, "bottom": 8930, "zones": ["outdoor-pool"], "layer": 1, "scale": [0.9, 0.9]}
+      },
+      "place": {
+        "swimsuit-spinner": "wallbase-changing-room",
+        "hair-dryer-stand": "wall-changing-room",
+        "paper-towel-dispenser": "wall-changing-room",
+        "ventilation-fan": "wall-changing-room",
+        "wall-mirror": "wall-changing-room",
+        "nail-brush": "surface-changing-room",
+        "clothes-peg-swimming-pool": "surface-changing-room",
+        "sewing-kit": "surface-changing-room",
+        "small-towel": "surface-changing-room",
+        "bathrobe-hook": "wall-changing-room",
+        "earplug-case": "surface-changing-room",
+        "waterproof-phone-pouch": "surface-changing-room",
+        "locker-swimming-pool": "wallbase-changing-room",
+        "clothes-hanger-swimming-pool": "surface-changing-room",
+        "hand-dryer": "wall-changing-room",
+        "soap-dispenser-swimming-pool": "wall-changing-room",
+        "hand-sanitizer-dispenser-swimming-pool": "wall-changing-room",
+        "pool-float-mattress": "water-outdoor-pool",
+        "swim-float-disc": "water-outdoor-pool",
+        "poolside-floating-cup-holder": "water-outdoor-pool",
+        "poolside-lane-marker": "water-outdoor-pool"
+      },
+      "clusters": [["pool-gate", "gate-latch"], ["pool-cleaning-cart", "pool-brush-head"]],
+      "loose": ["shower-sandals", "rubber-clog", "wet-clothes-bag", "sunscreen-tube", "deck-brush", "pool-brush-head", "laundry-bag-swimming-pool", "nail-brush", "clothes-peg-swimming-pool", "small-towel", "waterproof-phone-pouch", "clothes-hanger-swimming-pool", "pool-shower-head", "pull-buoy-swimming-pool", "swim-paddle-swimming-pool", "arm-float-swimming-pool", "swim-float-belt-swimming-pool", "pool-thermometer-swimming-pool", "pool-test-kit-swimming-pool", "poolside-sunscreen-bottle", "poolside-waterproof-watch", "poolside-water-sample-bottle"],
+      "noFlip": [],
+      "motion": {"shade-canopy": "sway", "ventilation-fan": "wobble", "pool-float-mattress": "bob", "swim-float-disc": "bob", "poolside-cabana": "sway", "poolside-plant-pot": "sway", "poolside-floating-cup-holder": "bob", "poolside-lane-marker": "bob"},
+      "arrange": "auto",
+      "terrain": {"color": "#c5e1a5", "x0": 3840, "y0": 7700, "x1": 9280, "y1": 9000, "zones": [{"id": "pool-entrance", "x0": 3840, "y0": 7700, "x1": 6440, "y1": 8350, "indoor": false, "floor": "paving"}, {"id": "changing-room", "x0": 6680, "y0": 7700, "x1": 9280, "y1": 8350, "indoor": true, "floor": "tile", "wallBase": 7880}, {"id": "indoor-pool", "x0": 6680, "y0": 8350, "x1": 9280, "y1": 9000, "indoor": true, "floor": "tile", "wallBase": 8530}, {"id": "outdoor-pool", "x0": 3840, "y0": 8350, "x1": 6440, "y1": 9000, "indoor": false, "floor": "concrete", "pool": {"x0": 5140, "y0": 8460, "x1": 6390, "y1": 8960}}], "venue": {"accent": "#8aac8b", "wall": "glass", "zones": {"pool-entrance": ["arrival", "pooldeck"], "changing-room": ["fitting", "wash"], "indoor-pool": ["pooldeck", "exercise"], "outdoor-pool": ["pooldeck", "shores"]}}}
     }
   }
 }

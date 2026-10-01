@@ -1,0 +1,502 @@
+{
+  "en": {
+    "pool-float-mattress": {
+      "heard": "Pool Float.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-lane-marker": {
+      "heard": "Lane Marker Float",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "swim-float-disc": {
+      "heard": "swim float disk,",
+      "score": 0.92,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "bathrobe-hook": {
+      "heard": "Robe hook.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "wall-mirror": {
+      "heard": "Wall mirror.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "shade-pole": {
+      "heard": "Sunshade Pole.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "pool-cleaning-cart": {
+      "heard": "Cleaning cart.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "gate-latch": {
+      "heard": "Gate Latch",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "shade-canopy": {
+      "heard": "Shade Canopy",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "sunshade-base": {
+      "heard": "Sunshade Base.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "rope-barrier-post": {
+      "heard": "Rope Barrier Post.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "wet-clothes-bag": {
+      "heard": "Wet clothes bag.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "sunscreen-tube": {
+      "heard": "sunscreen tube,",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-floor-tile": {
+      "heard": "Rubber floor tile.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "small-towel": {
+      "heard": "Hand towel.",
+      "score": 1,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "waterproof-phone-pouch": {
+      "heard": "Case, waterproof phone pouch.",
+      "score": 0.83,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "pool-entry-shower": {
+      "heard": "Dual outdoor shower.",
+      "score": 0.76,
+      "take": "en-1790863209102.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-floating-cup-holder": {
+      "heard": "Floating cup holder.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "ventilation-fan": {
+      "heard": "Ventilation fan.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "pool-gate": {
+      "heard": "Pool gate.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "deck-brush": {
+      "heard": "Deck Brush.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "pool-brush-head": {
+      "heard": "Pull brush head.",
+      "score": 0.85,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "locker-swimming-pool": {
+      "heard": "Locker.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "hair-dryer-stand": {
+      "heard": "Hairdryer holder.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "earplug-case": {
+      "heard": "Earplug case.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "clothes-hanger-swimming-pool": {
+      "heard": "clothes hanger,",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "soap-dispenser-swimming-pool": {
+      "heard": "soap dispenser,",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "hand-sanitizer-dispenser-swimming-pool": {
+      "heard": "Hand sanitizer dispenser.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "pool-entry-mat": {
+      "heard": "non-slip mat,",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "privacy-screen-swimming-pool": {
+      "heard": "Folding screen.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "changing-stool-swimming-pool": {
+      "heard": "Changing stool.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "rubber-clog": {
+      "heard": "Rubber clogged.",
+      "score": 0.77,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "swimsuit-spinner": {
+      "heard": "swimsuit spinner,",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "paper-towel-dispenser": {
+      "heard": "paper towel dispenser,",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "nail-brush": {
+      "heard": "Nail brush.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "clothes-peg-swimming-pool": {
+      "heard": "clothespin.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "sewing-kit": {
+      "heard": "Sewing Kit",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "hand-dryer": {
+      "heard": "Hand dryer.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "wastebasket-swimming-pool": {
+      "heard": "Wastebasket.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-table": {
+      "heard": "poolside table",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-plant-pot": {
+      "heard": "Potted palm.",
+      "score": 1,
+      "take": "en-1790863320780.aac",
+      "account": "chatgpt1"
+    },
+    "pool-shower-hose": {
+      "heard": "Shower hose.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "foot-wash-brush": {
+      "heard": "foot brush,",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "foot-rinse-basin": {
+      "heard": "foot rinse basin,",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "shower-sandals": {
+      "heard": "Shower sandal.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-bag-swimming-pool": {
+      "heard": "Laundry bag.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-pool-vacuum-hose": {
+      "heard": "Pool vacuum hose.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-cabana": {
+      "heard": "Paul Cabana,",
+      "score": 0.8,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-waterproof-bin": {
+      "heard": "Waterproof storage box.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-pool-rake": {
+      "heard": "Pool leaf rake.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-planter": {
+      "heard": "Large planter.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "lifeguard-chair-swimming-pool": {
+      "heard": "Lifeguard chair.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "swim-ring": {
+      "heard": "Swim ring,",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "arm-float-swimming-pool": {
+      "heard": "Arm Float.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "rescue-hook-swimming-pool": {
+      "heard": "Rescue hook.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "rescue-pole-swimming-pool": {
+      "heard": "Rescue poll.",
+      "score": 0.9,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "water-slide": {
+      "heard": "Water slide.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "diving-platform": {
+      "heard": "Diving Platform.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-windbreak": {
+      "heard": "Pool Windbreak",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "diving-board": {
+      "heard": "Diving boards.",
+      "score": 0.92,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "pool-cover": {
+      "heard": "Pool cover?",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "pool-noodle": {
+      "heard": "pool noodle,",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "pool-clock": {
+      "heard": "Pool clock.",
+      "score": 1,
+      "take": "en-1790863427816.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-clock": {
+      "heard": "Cool wall clock.",
+      "score": 0.92,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-water-sample-bottle": {
+      "heard": "water sample bottle,",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-thermometer-swimming-pool": {
+      "heard": "pool thermometer,",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-test-kit-swimming-pool": {
+      "heard": "Pool Test Kit",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-vacuum-head-swimming-pool": {
+      "heard": "Pull vacuum head.",
+      "score": 0.86,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-skimmer-swimming-pool": {
+      "heard": "Boy, pool skimmer.",
+      "score": 0.79,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "lane-rope-swimming-pool": {
+      "heard": "Lane Rope?",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "waterproof-speaker": {
+      "heard": "Waterproof speaker?",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-sunscreen-bottle": {
+      "heard": "sunscreen bottle,",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-waterproof-watch": {
+      "heard": "Waterproof Watch.",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-chair": {
+      "heard": "Pool chair.",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-ladder-swimming-pool": {
+      "heard": "Pool Ladder.",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-shower-head": {
+      "heard": "Pool shower head.",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "swim-float-belt-swimming-pool": {
+      "heard": "Swim float belt.",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pull-buoy-swimming-pool": {
+      "heard": "Pull buoy.",
+      "score": 1,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "pool-overflow-grate-swimming-pool": {
+      "heard": "Pool overflow great.",
+      "score": 0.88,
+      "take": "en-1790864180888.aac",
+      "account": "chatgpt1"
+    },
+    "lifebuoy": {
+      "heard": "Lifeboy.",
+      "score": 0.88,
+      "take": "en-1790864275232.aac",
+      "account": "chatgpt1"
+    },
+    "lounger": {
+      "heard": "Lounger.",
+      "score": 1,
+      "take": "en-1790864275232.aac",
+      "account": "chatgpt1"
+    },
+    "kickboard-swimming-pool": {
+      "heard": "Kickboard.",
+      "score": 1,
+      "take": "en-1790864275232.aac",
+      "account": "chatgpt1"
+    },
+    "swim-paddle-swimming-pool": {
+      "heard": "swim paddle,",
+      "score": 1,
+      "take": "en-1790864275232.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

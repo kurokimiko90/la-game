@@ -1,0 +1,251 @@
+{
+  "zones": {
+    "pool-entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "入口閘門與止滑通道",
+          "x": [
+            0.08,
+            0.36
+          ],
+          "fixture": "facade",
+          "door": true,
+          "main": "pool-gate",
+          "on": [
+            "gate-latch"
+          ],
+          "front": [
+            "rubber-floor-tile",
+            "pool-entry-mat"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "入池前沖洗區",
+          "x": [
+            0.4,
+            0.67
+          ],
+          "main": "pool-entry-shower",
+          "on": [
+            "pool-shower-hose"
+          ],
+          "beside": [
+            "foot-rinse-basin",
+            "rope-barrier-post"
+          ],
+          "front": [
+            "foot-wash-brush",
+            "shower-sandals"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "遮陽等候處",
+          "x": [
+            0.7,
+            0.94
+          ],
+          "main": "shade-pole",
+          "on": [
+            "shade-canopy"
+          ],
+          "beside": [
+            "sunshade-base",
+            "pool-cleaning-cart"
+          ],
+          "front": [
+            "wet-clothes-bag",
+            "sunscreen-tube",
+            "rubber-clog"
+          ]
+        }
+      ]
+    },
+    "changing-room": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "置物與更衣區",
+          "x": [
+            0.05,
+            0.35
+          ],
+          "main": "locker-swimming-pool",
+          "on": [
+            "laundry-bag-swimming-pool",
+            "clothes-hanger-swimming-pool",
+            "bathrobe-hook",
+            "earplug-case"
+          ],
+          "beside": [
+            "changing-stool-swimming-pool",
+            "privacy-screen-swimming-pool"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "洗手與整理區",
+          "x": [
+            0.39,
+            0.68
+          ],
+          "fixture": "counter",
+          "on": [
+            "soap-dispenser-swimming-pool",
+            "hand-sanitizer-dispenser-swimming-pool",
+            "paper-towel-dispenser",
+            "small-towel"
+          ],
+          "wall": [
+            "wall-mirror",
+            "ventilation-fan"
+          ],
+          "beside": [
+            "hand-dryer",
+            "wastebasket-swimming-pool"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "泳衣整理區",
+          "x": [
+            0.72,
+            0.95
+          ],
+          "main": "swimsuit-spinner",
+          "on": [
+            "nail-brush",
+            "sewing-kit",
+            "clothes-peg-swimming-pool"
+          ],
+          "beside": [
+            "hair-dryer-stand"
+          ]
+        }
+      ]
+    },
+    "indoor-pool": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "救生觀察站",
+          "x": [
+            0.39,
+            0.64
+          ],
+          "main": "lifeguard-chair-swimming-pool",
+          "on": [
+            "rescue-hook-swimming-pool"
+          ],
+          "beside": [
+            "rescue-pole-swimming-pool",
+            "lifebuoy"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "池邊休息區",
+          "x": [
+            0.69,
+            0.95
+          ],
+          "main": "lounger",
+          "on": [
+            "kickboard-swimming-pool",
+            "swim-paddle-swimming-pool"
+          ],
+          "beside": [
+            "pool-shower-head"
+          ],
+          "front": [
+            "swim-ring",
+            "arm-float-swimming-pool",
+            "swim-float-belt-swimming-pool"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "水質維護工具",
+          "x": [
+            0.67,
+            0.95
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "pool-thermometer-swimming-pool",
+            "pool-test-kit-swimming-pool"
+          ],
+          "beside": [
+            "pool-skimmer-swimming-pool",
+            "pool-vacuum-head-swimming-pool"
+          ]
+        }
+      ]
+    },
+    "outdoor-pool": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "跳水區",
+          "x": [
+            0.04,
+            0.31
+          ],
+          "main": "diving-platform",
+          "beside": [
+            "diving-board",
+            "pool-clock"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "滑水道入口",
+          "x": [
+            0.35,
+            0.57
+          ],
+          "main": "water-slide",
+          "beside": [
+            "poolside-clock"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "涼亭休息區",
+          "x": [
+            0.62,
+            0.84
+          ],
+          "main": "poolside-cabana",
+          "on": [
+            "poolside-table",
+            "poolside-sunscreen-bottle",
+            "poolside-waterproof-watch",
+            "waterproof-speaker"
+          ],
+          "beside": [
+            "poolside-planter"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "池畔維護區",
+          "x": [
+            0.87,
+            0.98
+          ],
+          "main": "poolside-windbreak",
+          "beside": [
+            "poolside-waterproof-bin"
+          ],
+          "front": [
+            "poolside-pool-rake",
+            "poolside-water-sample-bottle"
+          ]
+        }
+      ]
+    }
+  }
+}

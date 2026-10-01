@@ -1,0 +1,1756 @@
+{
+  "sceneName": "語言小鎮・游泳池",
+  "sceneSlug": "la-swimming-pool",
+  "propStyle": "front-flat",
+  "zones": {
+    "pool-entrance": "泳池入口",
+    "changing-room": "更衣室",
+    "indoor-pool": "室內泳池",
+    "outdoor-pool": "戶外泳池"
+  },
+  "elements": [
+    {
+      "name": "淋浴拖鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一雙厚底橡膠拖鞋，鞋面寬闊，表面有凸起的防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "shower-sandals",
+        "words": {
+          "zh-TW": "淋浴拖鞋",
+          "en": "shower sandal",
+          "ja": {
+            "text": "シャワーサンダル",
+            "reading": "シャワーサンダル"
+          }
+        }
+      }
+    },
+    {
+      "name": "沖身淋浴器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色直立金屬管頂端彎向下方，末端裝著圓形花灑頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "pool-entry-shower",
+        "words": {
+          "zh-TW": "沖身淋浴器",
+          "en": "outdoor shower",
+          "ja": {
+            "text": "屋外シャワー",
+            "reading": "おくがいシャワー"
+          }
+        }
+      }
+    },
+    {
+      "name": "沖腳盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮而寬的圓形淺盆，藍色塑膠盆沿厚實，盆底平坦。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "foot-rinse-basin",
+        "words": {
+          "zh-TW": "沖腳盆",
+          "en": "foot rinse basin",
+          "ja": {
+            "text": "足洗い桶",
+            "reading": "あしあらいおけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色金屬柵門由直條欄杆組成，中央有方形門閂和圓形把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "pool-gate",
+        "words": {
+          "zh-TW": "泳池門",
+          "en": "pool gate",
+          "ja": {
+            "text": "プールゲート",
+            "reading": "プールゲート"
+          }
+        }
+      }
+    },
+    {
+      "name": "門閂",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色金屬扣件由短柄和方形扣環組成，固定在柵門邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "gate-latch",
+        "words": {
+          "zh-TW": "門閂",
+          "en": "gate latch",
+          "ja": {
+            "text": "門の掛け金",
+            "reading": "もんのかけがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "橡膠地磚",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色方形厚墊，表面布滿凸起圓點，四邊平直整齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "rubber-floor-tile",
+        "words": {
+          "zh-TW": "橡膠地磚",
+          "en": "rubber floor tile",
+          "ja": {
+            "text": "ゴム製床タイル",
+            "reading": "ゴムせいゆかタイル"
+          }
+        }
+      }
+    },
+    {
+      "name": "洞洞鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一隻亮藍色包頭橡膠鞋，鞋面開著多個圓孔，後跟有活動帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "rubber-clog",
+        "words": {
+          "zh-TW": "洞洞鞋",
+          "en": "rubber clog",
+          "ja": {
+            "text": "クロッグサンダル",
+            "reading": "クロッグサンダル"
+          }
+        }
+      }
+    },
+    {
+      "name": "止滑踏墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形綠色橡膠墊，表面有平行凸紋，邊緣厚實且略微翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "pool-entry-mat",
+        "words": {
+          "zh-TW": "止滑踏墊",
+          "en": "non-slip mat",
+          "ja": {
+            "text": "滑り止めマット",
+            "reading": "すべりどめマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "濕衣袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明藍色軟袋扁平地攤開，袋口有一條醒目的白色拉鍊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "wet-clothes-bag",
+        "words": {
+          "zh-TW": "濕衣袋",
+          "en": "wet clothes bag",
+          "ja": {
+            "text": "濡れ物袋",
+            "reading": "ぬれものぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "防曬乳軟管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色軟管上端扁平封口，下方有白色翻蓋，管身沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "sunscreen-tube",
+        "words": {
+          "zh-TW": "防曬乳軟管",
+          "en": "sunscreen tube",
+          "ja": {
+            "text": "日焼け止めチューブ",
+            "reading": "ひやけどめチューブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮陽傘底座",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形深灰色厚重底座，中央凸起短管，側邊有兩個握孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "sunshade-base",
+        "words": {
+          "zh-TW": "遮陽傘底座",
+          "en": "sunshade base",
+          "ja": {
+            "text": "パラソルベース",
+            "reading": "パラソルベース"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮陽傘柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色直立金屬柱插在圓形底座中，頂端露出短短的接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "shade-pole",
+        "words": {
+          "zh-TW": "遮陽傘柱",
+          "en": "sunshade pole",
+          "ja": {
+            "text": "パラソルポール",
+            "reading": "パラソルポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮陽篷",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "展開的藍白相間布面呈寬大的四角形，由高處支架撐開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "shade-canopy",
+        "words": {
+          "zh-TW": "遮陽篷",
+          "en": "shade canopy",
+          "ja": {
+            "text": "日よけシェード",
+            "reading": "ひよけシェード"
+          }
+        }
+      }
+    },
+    {
+      "name": "淋浴軟管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色波紋軟管盤成一圈，兩端各有圓形金屬接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "pool-shower-hose",
+        "words": {
+          "zh-TW": "淋浴軟管",
+          "en": "shower hose",
+          "ja": {
+            "text": "シャワーホース",
+            "reading": "シャワーホース"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗腳刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形白色刷板固定在矮底座上，表面一排排直立短刷毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "foot-wash-brush",
+        "words": {
+          "zh-TW": "洗腳刷",
+          "en": "foot brush",
+          "ja": {
+            "text": "足洗いブラシ",
+            "reading": "あしあらいブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "隔離繩柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色細柱立在圓盤底座上，頂端有一圈固定繩子的圓環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "rope-barrier-post",
+        "words": {
+          "zh-TW": "隔離繩柱",
+          "en": "rope barrier post",
+          "ja": {
+            "text": "ロープポール",
+            "reading": "ロープポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "地板刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長柄藍色刷子斜靠在地上，寬大的刷頭有密集白色硬毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "deck-brush",
+        "words": {
+          "zh-TW": "地板刷",
+          "en": "deck brush",
+          "ja": {
+            "text": "デッキブラシ",
+            "reading": "デッキブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "清潔推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黃色窄型推車有兩個黑色輪子、長握把和兩層平坦置物板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "pool-cleaning-cart",
+        "words": {
+          "zh-TW": "清潔推車",
+          "en": "cleaning cart",
+          "ja": {
+            "text": "清掃カート",
+            "reading": "せいそうカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池刷頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半圓形藍色刷頭底部密布短刷毛，兩端有小型固定扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "pool-entrance",
+        "itemId": "pool-brush-head",
+        "words": {
+          "zh-TW": "泳池刷頭",
+          "en": "pool brush head",
+          "ja": {
+            "text": "プールブラシヘッド",
+            "reading": "プールブラシヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳衣脫水機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的白色圓筒機身，頂部有圓形開口，正面下方設有小型控制面板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "swimsuit-spinner",
+        "words": {
+          "zh-TW": "泳衣脫水機",
+          "en": "swimsuit spinner",
+          "ja": {
+            "text": "水着脱水機",
+            "reading": "みずぎだっすいき"
+          }
+        }
+      }
+    },
+    {
+      "name": "更衣凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮矮的長方形塑膠椅面，四支短腳向外張開，椅面呈淺灰色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "changing-stool-swimming-pool",
+        "words": {
+          "zh-TW": "更衣凳",
+          "en": "changing stool",
+          "ja": {
+            "text": "更衣用スツール",
+            "reading": "こういようスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "屏風隔板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "三片相連的淡藍色直立板片以折角排列，板面平整，底部有短腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "privacy-screen-swimming-pool",
+        "words": {
+          "zh-TW": "屏風隔板",
+          "en": "folding screen",
+          "ja": {
+            "text": "ついたて",
+            "reading": "ついたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗衣袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明白色網布袋呈扁長形，頂端有拉鍊和小拉片，袋內可見衣物輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "laundry-bag-swimming-pool",
+        "words": {
+          "zh-TW": "洗衣袋",
+          "en": "laundry bag",
+          "ja": {
+            "text": "洗濯物入れ",
+            "reading": "せんたくものいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "吹風機架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在牆上的白色圓環支架，中央空出圓孔，旁邊有短短的電線座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "hair-dryer-stand",
+        "words": {
+          "zh-TW": "吹風機架",
+          "en": "hair dryer holder",
+          "ja": {
+            "text": "ドライヤーホルダー",
+            "reading": "ドライヤーホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "擦手紙 dispenser",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "壁掛式白色長方盒，正面有窄長出紙口，露出一小截白紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "paper-towel-dispenser",
+        "words": {
+          "zh-TW": "擦手紙 dispenser",
+          "en": "paper towel dispenser",
+          "ja": {
+            "text": "ペーパータオルホルダー",
+            "reading": "ペーパータオルホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "抽風扇",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形白色外框內嵌四片彎曲扇葉，中央是圓形護罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "ventilation-fan",
+        "words": {
+          "zh-TW": "抽風扇",
+          "en": "ventilation fan",
+          "ja": {
+            "text": "換気扇",
+            "reading": "かんきせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁鏡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高大的長方形鏡面鑲在窄銀色邊框裡，正面映出淡淡的藍灰色光澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "wall-mirror",
+        "words": {
+          "zh-TW": "壁鏡",
+          "en": "wall mirror",
+          "ja": {
+            "text": "壁掛け鏡",
+            "reading": "かべかけかがみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "指甲刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的橢圓形塑膠刷座上立著一排白色硬刷毛，兩端圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "nail-brush",
+        "words": {
+          "zh-TW": "指甲刷",
+          "en": "nail brush",
+          "ja": {
+            "text": "爪ブラシ",
+            "reading": "つめブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "曬衣夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片淺木色窄夾片以金屬彈簧連在一起，前端呈尖嘴狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "clothes-peg-swimming-pool",
+        "words": {
+          "zh-TW": "曬衣夾",
+          "en": "clothespin",
+          "ja": {
+            "text": "洗濯ばさみ",
+            "reading": "せんたくばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "縫紉工具組",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的淺綠色小盒內有幾顆圓鈕扣和細線軸，盒蓋向後翻起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "sewing-kit",
+        "words": {
+          "zh-TW": "縫紉工具組",
+          "en": "sewing kit",
+          "ja": {
+            "text": "裁縫セット",
+            "reading": "さいほうセット"
+          }
+        }
+      }
+    },
+    {
+      "name": "小毛巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "折成方形的淡黃色棉毛巾，邊緣有細密織紋和一圈窄邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "small-towel",
+        "words": {
+          "zh-TW": "小毛巾",
+          "en": "hand towel",
+          "ja": {
+            "text": "ハンドタオル",
+            "reading": "ハンドタオル"
+          }
+        }
+      }
+    },
+    {
+      "name": "浴袍掛鉤",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色金屬單鉤從圓形底座向外彎出，鉤尖朝上，固定在牆面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "bathrobe-hook",
+        "words": {
+          "zh-TW": "浴袍掛鉤",
+          "en": "robe hook",
+          "ja": {
+            "text": "バスローブフック",
+            "reading": "バスローブフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "耳塞盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明小圓盒內放著一對橘色泡棉耳塞，盒蓋中央有凸起圓鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "earplug-case",
+        "words": {
+          "zh-TW": "耳塞盒",
+          "en": "earplug case",
+          "ja": {
+            "text": "耳栓ケース",
+            "reading": "みみせんケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "防水手機袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長方軟袋上方有粗厚的藍色密封夾條，袋角繫著短掛繩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "waterproof-phone-pouch",
+        "words": {
+          "zh-TW": "防水手機袋",
+          "en": "waterproof phone pouch",
+          "ja": {
+            "text": "防水スマホケース",
+            "reading": "ぼうすいスマホケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "置物櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一排高大的藍色金屬櫃門，每扇門都有通風孔和圓形鎖孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "locker-swimming-pool",
+        "words": {
+          "zh-TW": "置物櫃",
+          "en": "locker",
+          "ja": {
+            "text": "ロッカー",
+            "reading": "ロッカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的白色塑膠衣架，中央掛鉤向上彎曲，兩側斜伸成三角形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "clothes-hanger-swimming-pool",
+        "words": {
+          "zh-TW": "衣架",
+          "en": "clothes hanger",
+          "ja": {
+            "text": "ハンガー",
+            "reading": "ハンガー"
+          }
+        }
+      }
+    },
+    {
+      "name": "烘手機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色壁掛長方機身，中央有深色凹槽，底部開口朝下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "hand-dryer",
+        "words": {
+          "zh-TW": "烘手機",
+          "en": "hand dryer",
+          "ja": {
+            "text": "ハンドドライヤー",
+            "reading": "ハンドドライヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "洗手乳按壓瓶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明小瓶裝在白色壁掛架上，底部有短按壓頭，瓶內呈淡藍色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "soap-dispenser-swimming-pool",
+        "words": {
+          "zh-TW": "洗手乳按壓瓶",
+          "en": "soap dispenser",
+          "ja": {
+            "text": "ソープディスペンサー",
+            "reading": "ソープディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾洗手按壓器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色壁掛盒體下方伸出短按壓桿，底部有接液的小托盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "hand-sanitizer-dispenser-swimming-pool",
+        "words": {
+          "zh-TW": "乾洗手按壓器",
+          "en": "hand sanitizer dispenser",
+          "ja": {
+            "text": "手指消毒液ディスペンサー",
+            "reading": "しゅししょうどくえきディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓柱形灰色塑膠桶，桶口敞開，側面有一圈深色邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "changing-room",
+        "itemId": "wastebasket-swimming-pool",
+        "words": {
+          "zh-TW": "垃圾桶",
+          "en": "wastebasket",
+          "ja": {
+            "text": "ごみ箱",
+            "reading": "ごみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "藍色塑膠椅面帶有多道透氣縫隙，四支椅腳向外微張，椅背略向後傾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "poolside-chair",
+        "words": {
+          "zh-TW": "泳池椅",
+          "en": "pool chair",
+          "ja": {
+            "text": "プールチェア",
+            "reading": "プールチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "躺椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色長形椅身有可調角度的窄靠背，四支細腳架起低矮座面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "lounger",
+        "words": {
+          "zh-TW": "躺椅",
+          "en": "lounger",
+          "ja": {
+            "text": "プールサイドチェア",
+            "reading": "プールサイドチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生員椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高高的白色架台頂端有紅色座椅，兩側梯級通往上方小平台。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "lifeguard-chair-swimming-pool",
+        "words": {
+          "zh-TW": "救生員椅",
+          "en": "lifeguard chair",
+          "ja": {
+            "text": "監視員用チェア",
+            "reading": "かんしいんようチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池池蓋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "折疊成厚長方形的藍色防水布，邊緣有白色包邊與數個固定孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-cover",
+        "words": {
+          "zh-TW": "泳池池蓋",
+          "en": "pool cover",
+          "ja": {
+            "text": "プールカバー",
+            "reading": "プールカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "泡棉浮條",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一根彎成弧形的長條泡棉，表面鮮黃色，兩端平整切齊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-noodle",
+        "words": {
+          "zh-TW": "泡棉浮條",
+          "en": "pool noodle",
+          "ja": {
+            "text": "ヌードル",
+            "reading": "ヌードル"
+          }
+        }
+      }
+    },
+    {
+      "name": "淋浴蓮蓬頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓盤形銀色蓮蓬頭連著短彎管，正面布滿均勻的小出水孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-shower-head",
+        "words": {
+          "zh-TW": "淋浴蓮蓬頭",
+          "en": "pool shower head",
+          "ja": {
+            "text": "シャワーヘッド",
+            "reading": "シャワーヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根彎曲的不鏽鋼扶手連著數根橫向踏桿，底端帶固定腳座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-ladder-swimming-pool",
+        "words": {
+          "zh-TW": "泳池梯",
+          "en": "pool ladder",
+          "ja": {
+            "text": "プールラダー",
+            "reading": "プールラダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳道分隔線",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一長串藍白相間的圓形浮片穿在細繩上，兩端各有金屬扣環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "lane-rope-swimming-pool",
+        "words": {
+          "zh-TW": "泳道分隔線",
+          "en": "lane rope",
+          "ja": {
+            "text": "コースロープ",
+            "reading": "コースロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "浮板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一片扁平的橘色泡棉板，兩側向內收腰，頂端有兩個圓弧凹口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "kickboard-swimming-pool",
+        "words": {
+          "zh-TW": "浮板",
+          "en": "kickboard",
+          "ja": {
+            "text": "ビート板",
+            "reading": "ビートばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "浮筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紫色泡棉製成的雙葉形浮筒，中間窄、兩端圓厚，表面平滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pull-buoy-swimming-pool",
+        "words": {
+          "zh-TW": "浮筒",
+          "en": "pull buoy",
+          "ja": {
+            "text": "プルブイ",
+            "reading": "プルブイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "划水掌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對扁平的黃色掌形塑膠板，各有指孔與腕帶，邊緣略微翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "swim-paddle-swimming-pool",
+        "words": {
+          "zh-TW": "划水掌",
+          "en": "swim paddle",
+          "ja": {
+            "text": "パドル",
+            "reading": "パドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅白相間的厚圓環形充氣圈，中央留有大孔，表面帶著亮面反光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "swim-ring",
+        "words": {
+          "zh-TW": "游泳圈",
+          "en": "swim ring",
+          "ja": {
+            "text": "浮き輪",
+            "reading": "うきわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "臂圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對橘色小型充氣環，圓角長方形外形，中間有穿手臂的開口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "arm-float-swimming-pool",
+        "words": {
+          "zh-TW": "臂圈",
+          "en": "arm float",
+          "ja": {
+            "text": "アームリング",
+            "reading": "アームリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳浮力腰帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "藍色腰帶串著數塊厚實泡棉浮塊，前方有黑色插扣與調節帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "swim-float-belt-swimming-pool",
+        "words": {
+          "zh-TW": "游泳浮力腰帶",
+          "en": "swim float belt",
+          "ja": {
+            "text": "浮力ベルト",
+            "reading": "ふりょくベルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長柄末端裝著粗大的紅色彎鉤，鉤尖向內彎，握把有防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "rescue-hook-swimming-pool",
+        "words": {
+          "zh-TW": "救生鉤",
+          "en": "rescue hook",
+          "ja": {
+            "text": "レスキューフック",
+            "reading": "レスキューフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根細長的白色伸縮桿，頂端有紅色環形握鉤，底端有黑色握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "rescue-pole-swimming-pool",
+        "words": {
+          "zh-TW": "救生桿",
+          "en": "rescue pole",
+          "ja": {
+            "text": "救助棒",
+            "reading": "きゅうじょぼう"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色圓環上有四段紅色區塊，外圈纏著細繩，旁邊連著一小段繩尾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "lifebuoy",
+        "words": {
+          "zh-TW": "救生圈",
+          "en": "lifebuoy",
+          "ja": {
+            "text": "救命浮輪",
+            "reading": "きゅうめいふりん"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池撈網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長柄前端接著扁平的深藍色網框，框內張開細密網布，形似大網勺。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-skimmer-swimming-pool",
+        "words": {
+          "zh-TW": "泳池撈網",
+          "en": "pool skimmer",
+          "ja": {
+            "text": "プール用ネット",
+            "reading": "プールようネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池吸塵器吸頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁寬的藍色吸頭底部排列短刷毛，頂部接有圓形軟管接口與小滾輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-vacuum-head-swimming-pool",
+        "words": {
+          "zh-TW": "泳池吸塵器吸頭",
+          "en": "pool vacuum head",
+          "ja": {
+            "text": "プールクリーナーヘッド",
+            "reading": "プールクリーナーヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池溫度計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色橢圓外殼中嵌著紅色液柱與刻度線，頂端有一圈藍色浮環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-thermometer-swimming-pool",
+        "words": {
+          "zh-TW": "泳池溫度計",
+          "en": "pool thermometer",
+          "ja": {
+            "text": "プール用温度計",
+            "reading": "プールようおんどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池水質檢測盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明雙管測試器放在打開的白色小盒旁，管內有不同顏色的液體色塊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-test-kit-swimming-pool",
+        "words": {
+          "zh-TW": "泳池水質檢測盒",
+          "en": "pool test kit",
+          "ja": {
+            "text": "プール水質検査キット",
+            "reading": "プールすいしつけんさキット"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池溢水溝蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一段白色長方形格柵板，平行狹縫排列整齊，邊緣有圓角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "indoor-pool",
+        "itemId": "pool-overflow-grate-swimming-pool",
+        "words": {
+          "zh-TW": "泳池溢水溝蓋",
+          "en": "pool overflow grate",
+          "ja": {
+            "text": "プールの排水溝のふた",
+            "reading": "プールのはいすいこうのふた"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳水板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長而窄的藍色板面架在兩根金屬支架上，前端稍微向上翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "diving-board",
+        "words": {
+          "zh-TW": "跳水板",
+          "en": "diving board",
+          "ja": {
+            "text": "飛び込み板",
+            "reading": "とびこみいた"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池時鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色錶面配粗黑指針，外圍是醒目的藍色防水框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "pool-clock",
+        "words": {
+          "zh-TW": "泳池時鐘",
+          "en": "pool clock",
+          "ja": {
+            "text": "プール時計",
+            "reading": "ぷーるどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑水道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "彎曲的亮黃色滑道架在高處支架上，末端向下延伸到池邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "water-slide",
+        "words": {
+          "zh-TW": "滑水道",
+          "en": "water slide",
+          "ja": {
+            "text": "ウォータースライダー",
+            "reading": "うぉーたーすらいだー"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳水台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高高的方形平台由金屬階梯支撐，頂端伸出平坦的跳水板面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "diving-platform",
+        "words": {
+          "zh-TW": "跳水台",
+          "en": "diving platform",
+          "ja": {
+            "text": "飛び込み台",
+            "reading": "とびこみだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池浮床",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形的亮粉紅充氣墊浮在水面，四角圓潤，邊緣有凸起氣室。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "pool-float-mattress",
+        "words": {
+          "zh-TW": "泳池浮床",
+          "en": "pool float",
+          "ja": {
+            "text": "浮きマット",
+            "reading": "うきマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "防水喇叭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的圓角長方形喇叭有黑色網面與鮮黃色外殼，頂部帶提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "waterproof-speaker",
+        "words": {
+          "zh-TW": "防水喇叭",
+          "en": "waterproof speaker",
+          "ja": {
+            "text": "防水スピーカー",
+            "reading": "ぼうすいすぴーかー"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳浮力盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的圓形藍色浮力盤漂在水上，中央有圓孔，邊緣略微起伏。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "swim-float-disc",
+        "words": {
+          "zh-TW": "游泳浮力盤",
+          "en": "swim float disc",
+          "ja": {
+            "text": "スイムディスク",
+            "reading": "すいむでぃすく"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池邊桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形白色桌面由一根粗柱支撐，底部是穩固的圓盤底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-table",
+        "words": {
+          "zh-TW": "泳池邊桌",
+          "en": "poolside table",
+          "ja": {
+            "text": "プールサイドテーブル",
+            "reading": "ぷーるさいどてーぶる"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池涼亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "方形開放式休息棚有白色布頂和四根細柱，側邊垂著半幅布簾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-cabana",
+        "words": {
+          "zh-TW": "泳池涼亭",
+          "en": "pool cabana",
+          "ja": {
+            "text": "プールカバナ",
+            "reading": "ぷーるかばな"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池壁掛時鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "大圓形防水時鐘固定在牆面，白色錶面配深藍外框和粗指針。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-clock",
+        "words": {
+          "zh-TW": "泳池壁掛時鐘",
+          "en": "pool wall clock",
+          "ja": {
+            "text": "プールの時計",
+            "reading": "ぷーるのとけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "棕櫚盆栽",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖陶盆裡長出粗直樹幹，頂端展開一圈長而彎垂的綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-plant-pot",
+        "words": {
+          "zh-TW": "棕櫚盆栽",
+          "en": "potted palm",
+          "ja": {
+            "text": "鉢植えのヤシ",
+            "reading": "はちうえのやし"
+          }
+        }
+      }
+    },
+    {
+      "name": "大型花槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬大的長方形灰色花槽，槽口露出深色土面，周邊有厚實邊框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-planter",
+        "words": {
+          "zh-TW": "大型花槽",
+          "en": "large planter",
+          "ja": {
+            "text": "大型プランター",
+            "reading": "おおがたぷらんたー"
+          }
+        }
+      }
+    },
+    {
+      "name": "防風屏",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "半透明的淡藍色長板固定在兩根短柱間，底部有寬大的穩固腳座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-windbreak",
+        "words": {
+          "zh-TW": "防風屏",
+          "en": "pool windbreak",
+          "ja": {
+            "text": "プール用風よけ",
+            "reading": "ぷーるようかぜよけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "防曬乳瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色扁圓塑膠瓶配橘色翻蓋，瓶身沒有標籤，肩部圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-sunscreen-bottle",
+        "words": {
+          "zh-TW": "防曬乳瓶",
+          "en": "sunscreen bottle",
+          "ja": {
+            "text": "日焼け止めボトル",
+            "reading": "ひやけどめぼとる"
+          }
+        }
+      }
+    },
+    {
+      "name": "漂浮飲料杯架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮黃色環形泡棉架漂在水面，中央嵌著一個圓形杯槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-floating-cup-holder",
+        "words": {
+          "zh-TW": "漂浮飲料杯架",
+          "en": "floating cup holder",
+          "ja": {
+            "text": "浮かぶドリンクホルダー",
+            "reading": "うかぶどりんくほるだー"
+          }
+        }
+      }
+    },
+    {
+      "name": "防水手錶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形黑色錶面配寬藍色橡膠錶帶，錶殼厚實並有側邊按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-waterproof-watch",
+        "words": {
+          "zh-TW": "防水手錶",
+          "en": "waterproof watch",
+          "ja": {
+            "text": "防水腕時計",
+            "reading": "ぼうすいうでどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳道標記浮球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短粗的橘色圓柱浮球漂在水面，頂部有小圓孔，側面帶環狀凹槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-lane-marker",
+        "words": {
+          "zh-TW": "泳道標記浮球",
+          "en": "lane marker float",
+          "ja": {
+            "text": "コースマーカーフロート",
+            "reading": "こーすまーかーふろーと"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池吸塵軟管",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一條粗藍色波紋軟管盤成一圈，兩端各有圓形接頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-pool-vacuum-hose",
+        "words": {
+          "zh-TW": "泳池吸塵軟管",
+          "en": "pool vacuum hose",
+          "ja": {
+            "text": "プール掃除機のホース",
+            "reading": "ぷーるそうじきのほーす"
+          }
+        }
+      }
+    },
+    {
+      "name": "防水收納箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的藍色長方形塑膠箱配緊扣式厚蓋，四角圓潤且箱身防水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-waterproof-bin",
+        "words": {
+          "zh-TW": "防水收納箱",
+          "en": "waterproof storage box",
+          "ja": {
+            "text": "防水収納ボックス",
+            "reading": "ぼうすいしゅうのうぼっくす"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池撈葉耙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長柄末端裝著寬扁的綠色塑膠梳齒頭，外型像細齒耙子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-pool-rake",
+        "words": {
+          "zh-TW": "泳池撈葉耙",
+          "en": "pool leaf rake",
+          "ja": {
+            "text": "プール用の落ち葉取り網",
+            "reading": "プールようのおちばとりあみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水質採樣瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明細長瓶身配白色旋蓋，瓶肩圓滑，沒有標籤或刻度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "swimming-pool",
+        "zone": "outdoor-pool",
+        "itemId": "poolside-water-sample-bottle",
+        "words": {
+          "zh-TW": "水質採樣瓶",
+          "en": "water sample bottle",
+          "ja": {
+            "text": "採水ボトル",
+            "reading": "さいすいぼとる"
+          }
+        }
+      }
+    }
+  ]
+}
