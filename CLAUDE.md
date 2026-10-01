@@ -11,6 +11,7 @@
 - Next.js 16（App Router）+ React 19 + TypeScript + Tailwind v4
 - 單元測試 Vitest；E2E Playwright（用本機 Chrome，`channel: 'chrome'`）
 - 無後端：進度存 localStorage（`src/components/ProgressProvider.tsx`，讀取時用 `parseProgress` 驗證）
+- 玩家數據另存一個 key（`src/lib/playstats.ts`、`src/components/playStatsStore.ts`），`/stats` 匯出，`scripts/import-play-stats.mjs` 匯入給品質檢查
 
 ## Commands
 

@@ -297,3 +297,21 @@ test('記憶挑戰：物品隱形，點在原位置才算找到；點錯三次�
   await expect(page.getByRole('status')).toContainText('找到了');
   await expect(page.getByText('4. 記憶挑戰 · 2 / 10')).toBeVisible();
 });
+
+test('遊玩紀錄：列出最難找的物品，可以匯出', async ({ page }) => {
+  await page.goto('/stats');
+  await expect(page.getByText('還沒有足夠的紀錄')).toBeVisible();
+  const hard = park.items[0];
+  const easy = park.items[1];
+  await page.evaluate(([h, e]) => {
+    const stat = (asked: number, wrong: number, revealed: number) => ({ asked, found: asked - revealed, wrong, hints: 0, revealed, findMs: 4000 });
+    window.localStorage.setItem('memory-town:play-stats', JSON.stringify({ version: 1, items: { [`park/${h}`]: stat(3, 4, 2), [`park/${e}`]: stat(3, 0, 0) } }));
+  }, [hard.id, easy.id]);
+  await page.reload();
+  const rows = page.locator('ol > li');
+  await expect(rows).toHaveCount(2);
+  await expect(rows.first()).toContainText('點錯 4');
+  const download = page.waitForEvent('download');
+  await page.getByRole('button', { name: '匯出' }).click();
+  expect((await download).suggestedFilename()).toMatch(/^memory-town-play-stats-.*\.json$/);
+});

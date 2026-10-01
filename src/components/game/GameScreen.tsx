@@ -1,12 +1,13 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ChevronLeft, Lightbulb } from 'lucide-react';
 import { TownCanvas, type FocusRequest, type SceneClick } from '../scene/TownCanvas';
 import { useProgress } from '../ProgressProvider';
 import { LangToggle } from '../LangToggle';
 import { useLater } from '../useLater';
+import { trackPlay } from '../playStatsStore';
 import { TaskPanel } from './TaskPanel';
 import { WordPopup } from './WordPopup';
 import { StageMenu } from './StageMenu';
@@ -17,6 +18,7 @@ import {
 } from '@/lib/stages';
 import { isSceneUnlocked, recordStageClear, recordWordFound, recordWordSeen, wordKey } from '@/lib/progress';
 import { isNearItem } from '@/lib/geometry';
+import { recordFind, recordHint, recordRevealed, recordWrong } from '@/lib/playstats';
 import { playWord, stopAudio } from '@/lib/audio';
 import { createRng } from '@/lib/rng';
 import { SCENE_ORDER, TOWN } from '@/lib/scenes';
@@ -58,6 +60,8 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
   const [flashId, setFlashId] = useState<string | null>(null);
   const [focus, setFocus] = useState<FocusRequest | null>(null);
   const [toast, setToast] = useState<{ text: string; key: number } | null>(null);
+  // 玩家數據：上一次找到（或開局）的時間，找到下一個時算花了多久
+  const findSinceRef = useRef(0);
 
   const lockedSceneIds = useMemo(() => new Set(SCENE_ORDER.filter((id) => !isSceneUnlocked(progress, id, SCENE_ORDER))), [progress]);
   // 要求的街區還沒解鎖 → 改用路線上最後一個已解鎖的
@@ -110,6 +114,7 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
   const startStage = (stage: StageDef) => {
     resetOverlays();
     const state = createStageState(stage, itemIds, createRng(Date.now()), Date.now());
+    findSinceRef.current = state.startedAt;
     setPhase({ kind: 'play', sceneId: scene.id, stage, state });
     if (stage.sequential) later(() => say(state.targets[0]), 500);
   };
@@ -149,6 +154,23 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
     }
   };
 
+  /** 玩家數據（src/lib/playstats.ts）：target = 點之前的目標（依序模式才有），點錯才算到它頭上 */
+  const trackEvents = (sceneId: string, target: string | null, events: StageEvent[], now: number) => {
+    for (const ev of events) {
+      if (ev.type === 'found') {
+        trackPlay((s) => recordFind(s, wordKey(sceneId, ev.itemId), now - findSinceRef.current));
+        findSinceRef.current = now;
+      } else if (ev.type === 'not-target' && target) {
+        trackPlay((s) => recordWrong(s, wordKey(sceneId, target)));
+      } else if (ev.type === 'miss') {
+        trackPlay((s) => recordWrong(s, wordKey(sceneId, ev.targetId)));
+      } else if (ev.type === 'revealed') {
+        trackPlay((s) => recordRevealed(s, wordKey(sceneId, ev.itemId)));
+        findSinceRef.current = now;
+      }
+    }
+  };
+
   const lockedMessage = (sceneId: string) => `「${districtOf(TOWN, sceneId)?.scene.name}」還沒解鎖：先完成「${UNLOCK_HINTS.get(sceneId)}」的看圖找`;
 
   const onSceneClick = ({ itemId, sceneId, locked, scenePoint, localPoint }: SceneClick) => {
@@ -175,7 +197,9 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
       showToast('這裡沒有物品，再找找看');
       return;
     }
-    const { state: next, events } = clickItem(state, stage, hit, Date.now());
+    const now = Date.now();
+    const { state: next, events } = clickItem(state, stage, hit, now);
+    trackEvents(phase.sceneId, currentTarget(state, stage), events, now);
     setPhase({ ...phase, state: next });
     handleEvents(phase.sceneId, stage, next, events, localPoint);
   };
@@ -188,6 +212,7 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
     const zone = hintKey ? TOWN.zones.get(hintKey) : undefined;
     if (!item || !hintKey || !zone) return;
     setPhase({ ...phase, state: next });
+    trackPlay((s) => recordHint(s, wordKey(item.sceneId, item.id)));
     setHintZoneKey(hintKey);
     setFocus({ ...rectCenter(zone), key: Date.now() });
     later(() => setHintZoneKey((z) => (z === hintKey ? null : z)), HINT_MS);

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { BookOpen, Lock } from 'lucide-react';
+import { BookOpen, ChartNoAxesColumn, Lock } from 'lucide-react';
 import { useProgress } from '../ProgressProvider';
 import { LangToggle } from '../LangToggle';
 import { SvgArt } from '../SvgArt';
@@ -88,6 +88,13 @@ export function HomeScreen() {
           <span>
             <span className="block font-bold">詞彙本</span>
             <span className="block text-xs text-muted">已認識 {wordCount} / {total} 個單字</span>
+          </span>
+        </Link>
+        <Link href="/stats" className="flex items-center gap-3 rounded-2xl bg-white px-5 py-4 shadow-sm ring-1 ring-black/5 hover:ring-brand">
+          <ChartNoAxesColumn className="text-brand" />
+          <span>
+            <span className="block font-bold">遊玩紀錄</span>
+            <span className="block text-xs text-muted">哪些物品最難找</span>
           </span>
         </Link>
         <Toggle label="測試用：解鎖全部場景與關卡" checked={settings.unlockAll} onChange={(v) => set({ unlockAll: v })} />
