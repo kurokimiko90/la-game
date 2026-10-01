@@ -1,6 +1,6 @@
 {
   "world": {"width": 21780, "height": 8500},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home"],
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -1499,6 +1499,51 @@
       "motion": {"porch-swing": "sway", "rain-chain-home": "sway", "wind-spinner": "wobble", "garden-sprinkler": "wobble", "wind-vane": "sway", "hanging-basket": "sway", "wind-sock-home": "drift", "throw-blanket": "sway", "kitchen-cart": "wobble"},
       "arrange": "auto",
       "terrain": {"color": "#ffab91", "x0": 0, "y0": 6160, "x1": 2600, "y1": 7460, "zones": [{"id": "front-yard", "x0": 0, "y0": 6160, "x1": 1300, "y1": 6810, "indoor": false, "floor": "grass"}, {"id": "living-room", "x0": 1300, "y0": 6160, "x1": 2600, "y1": 6810, "indoor": true, "floor": "wood", "wallBase": 6340}, {"id": "kitchen", "x0": 1300, "y0": 6810, "x1": 2600, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}, {"id": "bedroom", "x0": 0, "y0": 6810, "x1": 1300, "y1": 7460, "indoor": true, "floor": "carpet", "wallBase": 6990}]}
+    },
+    "gym": {
+      "name": "健身房",
+      "icon": "canopy-post",
+      "zones": {"entrance": [18040, 6160, 19340, 6810], "reception": [19340, 6160, 20640, 6810], "cardio-floor": [19340, 6810, 20640, 7460], "poolside": [18040, 6810, 19340, 7460]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"entrance": {"top": 6230, "bottom": 6790}, "reception": {"top": 6400, "bottom": 6790, "gaps": [[6350, 6542]]}, "cardio-floor": {"top": 7050, "bottom": 7440}, "poolside": {"top": 7050, "bottom": 7440}}},
+        "sky-entrance": {"top": 6310, "bottom": 6460, "zones": ["entrance"], "layer": 3, "float": 150},
+        "wall-reception": {"levels": [6300], "zones": ["reception"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-reception": {"levels": [6338], "zones": ["reception"], "inset": 50},
+        "surface-reception": {"levels": [6470], "zones": ["reception"], "x0": 19490, "x1": 20490, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 6512},
+        "wall-cardio-floor": {"levels": [6950], "zones": ["cardio-floor"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-cardio-floor": {"levels": [6988], "zones": ["cardio-floor"], "inset": 50},
+        "wall-poolside": {"levels": [6950], "zones": ["poolside"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-poolside": {"levels": [6988], "zones": ["poolside"], "inset": 50}
+      },
+      "place": {
+        "water-dispenser": "wallbase-reception",
+        "membership-card-reader": "surface-reception",
+        "wall-mirror-gym": "wall-reception",
+        "hand-sanitizer-gym": "surface-reception",
+        "paper-towel-roll-gym": "surface-reception",
+        "hand-dryer-gym": "wall-reception",
+        "wall-vent-gym": "wall-reception",
+        "ceiling-speaker-gym": "wall-reception",
+        "shoe-rack-gym": "wallbase-reception",
+        "wall-clock-gym": "wall-reception",
+        "wall-shelf-gym": "wall-reception",
+        "fire-extinguisher-gym": "wall-reception",
+        "first-aid-kit-gym": "surface-reception",
+        "tissue-box-gym": "surface-reception",
+        "spray-bottle-gym": "surface-reception",
+        "thermostat-gym": "wall-reception",
+        "light-switch-gym": "wall-reception",
+        "power-outlet-gym": "wall-reception",
+        "security-camera-gym": "wall-reception",
+        "wall-calendar-gym": "wall-reception",
+        "clipboard-gym": "surface-reception"
+      },
+      "clusters": [],
+      "loose": ["training-cone", "hand-grip", "resistance-band", "dumbbell-gym", "kettlebell-gym", "jump-rope-gym", "pilates-ring", "ab-roller", "push-up-bars", "ankle-weights", "wrist-weights", "suspension-trainer", "step-counter", "heart-rate-monitor", "fitness-watch", "exercise-band", "foam-block", "exercise-disc", "kickboard", "pull-buoy", "swim-paddle", "swim-cap", "swim-goggles", "nose-clip", "ear-plug", "swim-float-belt", "arm-float", "pool-vacuum-head", "pool-thermometer"],
+      "noFlip": [],
+      "motion": {"standing-fan-gym": "wobble", "treadmill": "wobble", "elliptical-trainer": "wobble", "stationary-bike": "wobble", "rowing-machine": "wobble", "stair-climber": "wobble", "spin-bike": "wobble"},
+      "arrange": "auto",
+      "terrain": {"color": "#9fa8da", "x0": 18040, "y0": 6160, "x1": 20640, "y1": 7460, "zones": [{"id": "entrance", "x0": 18040, "y0": 6160, "x1": 19340, "y1": 6810, "indoor": false, "floor": "paving"}, {"id": "reception", "x0": 19340, "y0": 6160, "x1": 20640, "y1": 6810, "indoor": true, "floor": "tile", "wallBase": 6340}, {"id": "cardio-floor", "x0": 19340, "y0": 6810, "x1": 20640, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}, {"id": "poolside", "x0": 18040, "y0": 6810, "x1": 19340, "y1": 7460, "indoor": true, "floor": "tile", "wallBase": 6990}]}
     }
   }
 }

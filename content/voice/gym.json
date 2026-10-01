@@ -1,0 +1,598 @@
+{
+  "en": {
+    "wall-clock-gym": {
+      "heard": "Wall Clock.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "wall-calendar-gym": {
+      "heard": "Wall calendar.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "wall-mirror-gym": {
+      "heard": "Full-length mirror",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "wall-vent-gym": {
+      "heard": "AirVent.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "thermostat-gym": {
+      "heard": "Thermostat.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "light-switch-gym": {
+      "heard": "Light switch.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "barbell-gym": {
+      "heard": "Barbell.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "agility-ladder-gym": {
+      "heard": "Agility Ladder.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "ceiling-speaker-gym": {
+      "heard": "Ceiling speaker.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "wall-shelf-gym": {
+      "heard": "Wall shelf.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "power-outlet-gym": {
+      "heard": "Power Outlet.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "security-camera-gym": {
+      "heard": "Security camera.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "awning-gym": {
+      "heard": "Awning.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "canopy-post": {
+      "heard": "Canopy Post.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "membership-card-reader": {
+      "heard": "Membership card reader.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "clipboard-gym": {
+      "heard": "Clipboard.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "first-aid-kit-gym": {
+      "heard": "First Aid Kit",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "fire-extinguisher-gym": {
+      "heard": "Fire extinguisher.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "spray-bottle-gym": {
+      "heard": "spray bottle,",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "kick-scooter-gym": {
+      "heard": "Kick Scooter.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "foam-roller-gym": {
+      "heard": "Foam roller.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "hand-sanitizer-gym": {
+      "heard": "Hand sanitizer.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "paper-towel-roll-gym": {
+      "heard": "Paper towel roll.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "hurdle-gym": {
+      "heard": "Hurdle.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "reception-sofa": {
+      "heard": "So far.",
+      "score": 0.8,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "water-dispenser": {
+      "heard": "Water dispensers.",
+      "score": 0.93,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "tissue-box-gym": {
+      "heard": "Tissuebox.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "hand-dryer-gym": {
+      "heard": "Hand dryers.",
+      "score": 0.9,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "standing-fan-gym": {
+      "heard": "Standing fan.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-cover-dispenser": {
+      "heard": "Shoe cover dispenser.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "bike-shelter": {
+      "heard": "Bike shelter.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pull-up-bar": {
+      "heard": "Pull-up bar.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "treadmill": {
+      "heard": "Treadmill.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-ladder": {
+      "heard": "Pool Ladder.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pull-buoy": {
+      "heard": "Pull B-Way.",
+      "score": 0.75,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "swim-cap": {
+      "heard": "Swimcap.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "stationary-bike": {
+      "heard": "stationary bike",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "rescue-hook": {
+      "heard": "Rescue Hook",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "wrist-weights": {
+      "heard": "Wrist weights.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "inflatable-ring": {
+      "heard": "Swim ring.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "elliptical-trainer": {
+      "heard": "Elliptical Trainer.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "lane-rope": {
+      "heard": "Lane wrote,",
+      "score": 0.78,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "swim-goggles": {
+      "heard": "Swim goggles.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "rescue-pole": {
+      "heard": "Rescue poll.",
+      "score": 0.9,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "stair-climber": {
+      "heard": "StairClimber",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "ab-roller": {
+      "heard": "Ab Roller.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "rowing-machine": {
+      "heard": "Rowing machines.",
+      "score": 0.93,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "spin-bike": {
+      "heard": "BinBike.",
+      "score": 0.75,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "step-platform": {
+      "heard": "Boy, Step Platform.",
+      "score": 0.8,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "exercise-band": {
+      "heard": "Exercise band.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "foam-block": {
+      "heard": "Foam block.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "aerobic-step": {
+      "heard": "Aerobic step.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "weighted-vest": {
+      "heard": "Weighted vest?",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "swim-float-belt": {
+      "heard": "swim float belt",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "arm-float": {
+      "heard": "Arm Float",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-skimmer": {
+      "heard": "Pool skimmer?",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-vacuum-head": {
+      "heard": "Pull vacuum head.",
+      "score": 0.86,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-brush": {
+      "heard": "Pool brush.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-thermometer": {
+      "heard": "Pool thermometer.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-test-kit": {
+      "heard": "Pool Test Kit",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "exercise-disc": {
+      "heard": "Exercise disc.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-cover-reel": {
+      "heard": "Pool Cover Reel.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "suspension-trainer": {
+      "heard": "Suspension trainer.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "balance-board": {
+      "heard": "Balance Board.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-drain-cover": {
+      "heard": "pool drain cover,",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-overflow-grate": {
+      "heard": "Pool overflow, great.",
+      "score": 0.88,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "pool-edge-marker": {
+      "heard": "Pull edge marker.",
+      "score": 0.86,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "plyo-box": {
+      "heard": "Plyobox.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "push-up-bars": {
+      "heard": "Push-up bars.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "ankle-weights": {
+      "heard": "Ankle weights.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "step-counter": {
+      "heard": "Pedometer.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "heart-rate-monitor": {
+      "heard": "Heart rate monitor.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "fitness-watch": {
+      "heard": "Fitness Watch.",
+      "score": 1,
+      "take": "en-1790549901298.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-rack-gym": {
+      "heard": "Shoe Rack.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "coat-rack-gym": {
+      "heard": "Coat Rack",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "shoe-cleaner": {
+      "heard": "Shoe cleaner.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "electric-bicycle": {
+      "heard": "Electric bicycle.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "gym-bag": {
+      "heard": "Gym bag.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "yoga-mat": {
+      "heard": "Yoga mat.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "gym-timer": {
+      "heard": "Jim Timer.",
+      "score": 0.75,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "turnstile-gym": {
+      "heard": "Turnstile.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "drinking-fountain-gym": {
+      "heard": "Drinking fountain. Wait.",
+      "score": 0.8,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-ball-gym": {
+      "heard": "Medicine Ball.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "training-cone": {
+      "heard": "Training Cone.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "hand-grip": {
+      "heard": "Hand Grip",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "resistance-band": {
+      "heard": "Resistance band.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "dumbbell-gym": {
+      "heard": "Dumbbell.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "rescue-tube": {
+      "heard": "Rescue Tube",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "lifeguard-ring": {
+      "heard": "Lifeboy.",
+      "score": 0.88,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "exercise-mat": {
+      "heard": "Exercise map.",
+      "score": 0.91,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "pilates-ring": {
+      "heard": "Pilates ring.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "battle-rope": {
+      "heard": "Battle rope.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "nose-clip": {
+      "heard": "Noseclip.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "swim-paddle": {
+      "heard": "Swim paddle.",
+      "score": 1,
+      "take": "en-1790550235611.aac",
+      "account": "chatgpt1"
+    },
+    "weight-plate-gym": {
+      "heard": "Weight plate?",
+      "score": 1,
+      "take": "en-1790550329562.aac",
+      "account": "chatgpt1"
+    },
+    "ear-plug": {
+      "heard": "Earplug.",
+      "score": 1,
+      "take": "en-1790550329562.aac",
+      "account": "chatgpt1"
+    },
+    "kickboard": {
+      "heard": "Kickboard.",
+      "score": 1,
+      "take": "en-1790550329562.aac",
+      "account": "chatgpt1"
+    },
+    "kettlebell-gym": {
+      "heard": "Kettlebell.",
+      "score": 1,
+      "take": "en-1790555309622.aac",
+      "account": "chatgpt1"
+    },
+    "jump-rope-gym": {
+      "heard": "Jump rope!",
+      "score": 1,
+      "take": "en-1790555309622.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

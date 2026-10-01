@@ -1,0 +1,300 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "入口遮雨棚與招牌",
+          "x": [
+            0.08,
+            0.32
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "gym-sign"
+          ],
+          "beside": [
+            "canopy-post"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "自行車與滑板車停放區",
+          "x": [
+            0.36,
+            0.62
+          ],
+          "main": "bike-shelter",
+          "on": [
+            "electric-bicycle"
+          ],
+          "beside": [
+            "kick-scooter-gym"
+          ]
+        }
+      ]
+    },
+    "reception": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "會員報到櫃台",
+          "x": [
+            0.3,
+            0.68
+          ],
+          "fixture": "counter",
+          "on": [
+            "membership-card-reader",
+            "clipboard-gym"
+          ],
+          "beside": [
+            "hand-sanitizer-gym"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "入口鞋套與鞋架",
+          "x": [
+            0.03,
+            0.26
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "shoe-cover-dispenser"
+          ],
+          "beside": [
+            "shoe-rack-gym"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "等候休息區",
+          "x": [
+            0.72,
+            0.97
+          ],
+          "main": "reception-sofa",
+          "beside": [
+            "coat-rack-gym"
+          ],
+          "front": [
+            "tissue-box-gym"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "飲水與清潔用品",
+          "x": [
+            0.72,
+            0.96
+          ],
+          "main": "water-dispenser",
+          "on": [
+            "paper-towel-roll-gym"
+          ],
+          "beside": [
+            "spray-bottle-gym"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "洗手設備",
+          "x": [
+            0.28,
+            0.48
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "hand-dryer-gym"
+          ],
+          "wall": [
+            "wall-mirror-gym",
+            "wall-shelf-gym"
+          ],
+          "beside": [
+            "fire-extinguisher-gym",
+            "first-aid-kit-gym"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "室內環境控制",
+          "x": [
+            0.05,
+            0.26
+          ],
+          "wall": [
+            "wall-vent-gym",
+            "thermostat-gym",
+            "light-switch-gym"
+          ],
+          "beside": [
+            "security-camera-gym",
+            "power-outlet-gym"
+          ],
+          "front": [
+            "ceiling-speaker-gym"
+          ]
+        }
+      ]
+    },
+    "cardio-floor": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "地面有氧與平衡練習",
+          "x": [
+            0.05,
+            0.34
+          ],
+          "fixture": "rug",
+          "on": [
+            "exercise-mat",
+            "step-platform",
+            "balance-board",
+            "aerobic-step"
+          ],
+          "front": [
+            "plyo-box"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "負重與穿戴輔具",
+          "x": [
+            0.39,
+            0.64
+          ],
+          "fixture": "stand",
+          "on": [
+            "weighted-vest"
+          ],
+          "front": [
+            "step-counter",
+            "heart-rate-monitor",
+            "fitness-watch"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "核心訓練小器材",
+          "x": [
+            0.69,
+            0.96
+          ],
+          "fixture": "rug",
+          "on": [
+            "pilates-ring",
+            "ab-roller",
+            "push-up-bars",
+            "exercise-disc"
+          ],
+          "beside": [
+            "foam-block",
+            "exercise-band"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "懸吊與戰繩訓練點",
+          "x": [
+            0.72,
+            0.96
+          ],
+          "main": "battle-rope",
+          "wall": [
+            "suspension-trainer"
+          ]
+        }
+      ]
+    },
+    "poolside": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "泳道分隔與池蓋設備",
+          "x": [
+            0.26,
+            0.52
+          ],
+          "main": "pool-cover-reel",
+          "on": [
+            "lane-rope"
+          ],
+          "front": [
+            "pool-drain-cover"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "泳具自助取用台",
+          "x": [
+            0.04,
+            0.32
+          ],
+          "fixture": "stand",
+          "on": [
+            "kickboard",
+            "pull-buoy",
+            "swim-paddle",
+            "swim-cap"
+          ],
+          "front": [
+            "swim-goggles",
+            "nose-clip",
+            "ear-plug"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "浮具與救生用品",
+          "x": [
+            0.56,
+            0.79
+          ],
+          "fixture": "shelf",
+          "on": [
+            "arm-float"
+          ],
+          "beside": [
+            "rescue-tube",
+            "swim-float-belt"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "救生員救援器材",
+          "x": [
+            0.65,
+            0.96
+          ],
+          "fixture": "stand",
+          "on": [
+            "rescue-hook",
+            "rescue-pole"
+          ],
+          "beside": [
+            "pool-skimmer",
+            "pool-brush"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "泳池維護檢測台",
+          "x": [
+            0.36,
+            0.61
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "pool-test-kit",
+            "pool-thermometer",
+            "pool-vacuum-head"
+          ]
+        }
+      ]
+    }
+  }
+}

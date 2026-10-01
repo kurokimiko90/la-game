@@ -1,0 +1,2113 @@
+{
+  "sceneName": "語言小鎮・健身房",
+  "sceneSlug": "la-gym",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "入口",
+    "reception": "接待區",
+    "cardio-floor": "有氧區",
+    "poolside": "泳池區"
+  },
+  "elements": [
+    {
+      "name": "健身房標誌牌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形牌面固定在低矮立架上，只有簡單的槓鈴圖案，沒有文字或數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "gym-sign",
+        "words": {
+          "zh-TW": "健身房標誌牌",
+          "en": "gym sign",
+          "ja": {
+            "text": "ジムの看板",
+            "reading": "ジムのかんばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "棚柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根直立的方形金屬柱，底部有寬大的固定底座，支撐入口遮雨棚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "canopy-post",
+        "words": {
+          "zh-TW": "棚柱",
+          "en": "canopy post",
+          "ja": {
+            "text": "屋根の柱",
+            "reading": "やねのはしら"
+          }
+        }
+      }
+    },
+    {
+      "name": "自行車棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "小型開放式棚架，有平坦屋頂和兩側支柱，下方留有整齊的停車空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "bike-shelter",
+        "words": {
+          "zh-TW": "自行車棚",
+          "en": "bike shelter",
+          "ja": {
+            "text": "駐輪場の屋根",
+            "reading": "ちゅうりんじょうのやね"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋底清潔機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平金屬底座上有兩排黑色刷毛，旁邊立著短把手，供人踩踏清潔鞋底。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "shoe-cleaner",
+        "words": {
+          "zh-TW": "鞋底清潔機",
+          "en": "shoe cleaner",
+          "ja": {
+            "text": "靴底洗浄機",
+            "reading": "くつぞこせんじょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "電動自行車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "外形像一般自行車，車架下方裝著醒目的長方形電池盒，兩個車輪並排停放。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "electric-bicycle",
+        "words": {
+          "zh-TW": "電動自行車",
+          "en": "electric bicycle",
+          "ja": {
+            "text": "電動自転車",
+            "reading": "でんどうじてんしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "健身包",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形軟包有兩條提把和一條肩背帶，側邊帶著圓形口袋，放在入口旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "gym-bag",
+        "words": {
+          "zh-TW": "健身包",
+          "en": "gym bag",
+          "ja": {
+            "text": "ジムバッグ",
+            "reading": "ジムバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "瑜伽墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長條形厚墊捲成圓筒，外面繞著一條固定帶，兩端露出整齊的卷層。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "yoga-mat",
+        "words": {
+          "zh-TW": "瑜伽墊",
+          "en": "yoga mat",
+          "ja": {
+            "text": "ヨガマット",
+            "reading": "ヨガマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "訓練角錐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "鮮橘色的中空錐形塑膠標誌，底部寬而平，尖端朝上立在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "training-cone",
+        "words": {
+          "zh-TW": "訓練角錐",
+          "en": "training cone",
+          "ja": {
+            "text": "トレーニングコーン",
+            "reading": "トレーニングコーン"
+          }
+        }
+      }
+    },
+    {
+      "name": "單槓",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根水平金屬桿固定在兩根粗立柱頂端，兩側底座寬大，穩穩立於入口地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "pull-up-bar",
+        "words": {
+          "zh-TW": "單槓",
+          "en": "pull-up bar",
+          "ja": {
+            "text": "懸垂バー",
+            "reading": "けんすいバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "握力器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩支彎曲握柄以小彈簧相連，形狀像張開的鉗子，放在訓練用品旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "hand-grip",
+        "words": {
+          "zh-TW": "握力器",
+          "en": "hand grip",
+          "ja": {
+            "text": "ハンドグリップ",
+            "reading": "ハンドグリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "彈力帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條寬扁有彈性的彩色帶子，鬆鬆地捲成幾圈，放在地面一角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "resistance-band",
+        "words": {
+          "zh-TW": "彈力帶",
+          "en": "resistance band",
+          "ja": {
+            "text": "トレーニングチューブ",
+            "reading": "トレーニングチューブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "訓練計時器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚實的方形電子計時器置於矮腳架上，正面只有無字的深色顯示窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "gym-timer",
+        "words": {
+          "zh-TW": "訓練計時器",
+          "en": "gym timer",
+          "ja": {
+            "text": "トレーニングタイマー",
+            "reading": "トレーニングタイマー"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉閘門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "腰部高度的金屬圓柱立在地面，伸出三根水平金屬桿，供人推轉通行。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "turnstile-gym",
+        "words": {
+          "zh-TW": "旋轉閘門",
+          "en": "turnstile",
+          "ja": {
+            "text": "回転式改札機",
+            "reading": "かいてんしきかいさつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "遮雨棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口上方伸出的寬大布棚，呈半圓弧形，邊緣有整齊的波浪布邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "awning-gym",
+        "words": {
+          "zh-TW": "遮雨棚",
+          "en": "awning",
+          "ja": {
+            "text": "オーニング",
+            "reading": "オーニング"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮矮的金屬飲水台，頂部有斜面水盆和彎曲水龍頭，底座穩穩立在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "drinking-fountain-gym",
+        "words": {
+          "zh-TW": "飲水台",
+          "en": "drinking fountain",
+          "ja": {
+            "text": "水飲み場",
+            "reading": "みずのみば"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑板車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩個小輪連著窄踏板，前方立著長車桿和橫把手，車身斜靠在入口一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "kick-scooter-gym",
+        "words": {
+          "zh-TW": "滑板車",
+          "en": "kick scooter",
+          "ja": {
+            "text": "キックボード",
+            "reading": "キックボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "滾筒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "短而粗的圓柱形泡棉筒，表面布滿規則凸點，側放在入口的地面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "foam-roller-gym",
+        "words": {
+          "zh-TW": "滾筒",
+          "en": "foam roller",
+          "ja": {
+            "text": "フォームローラー",
+            "reading": "フォームローラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "啞鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短金屬握把連著兩端圓形重量塊，黑色表面微微反光，平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "dumbbell-gym",
+        "words": {
+          "zh-TW": "啞鈴",
+          "en": "dumbbell",
+          "ja": {
+            "text": "ダンベル",
+            "reading": "ダンベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "壺鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "沉重的圓球狀金屬器材頂部有粗大的弧形握把，底部平坦能穩穩站立。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "kettlebell-gym",
+        "words": {
+          "zh-TW": "壺鈴",
+          "en": "kettlebell",
+          "ja": {
+            "text": "ケトルベル",
+            "reading": "ケトルベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "槓鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根長直金屬桿兩端套著厚圓形槓片，整支水平放在低矮支架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "barbell-gym",
+        "words": {
+          "zh-TW": "槓鈴",
+          "en": "barbell",
+          "ja": {
+            "text": "バーベル",
+            "reading": "バーベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "槓片",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "厚重的圓形黑色鐵片中央有大圓孔，直立靠在槓鈴支架旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "weight-plate-gym",
+        "words": {
+          "zh-TW": "槓片",
+          "en": "weight plate",
+          "ja": {
+            "text": "ウェイトプレート",
+            "reading": "ウェイトプレート"
+          }
+        }
+      }
+    },
+    {
+      "name": "健身球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "結實的圓球表面帶有細小顆粒紋路，色彩鮮明，單獨放在入口地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "medicine-ball-gym",
+        "words": {
+          "zh-TW": "健身球",
+          "en": "medicine ball",
+          "ja": {
+            "text": "メディシンボール",
+            "reading": "メディシンボール"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個短握把連著一條細繩，繩身在地面彎成寬鬆的弧形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "jump-rope-gym",
+        "words": {
+          "zh-TW": "跳繩",
+          "en": "jump rope",
+          "ja": {
+            "text": "縄跳び",
+            "reading": "なわとび"
+          }
+        }
+      }
+    },
+    {
+      "name": "敏捷梯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩條平行扁帶之間連著多根橫帶，平鋪在地面形成一格格訓練步道。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "agility-ladder-gym",
+        "words": {
+          "zh-TW": "敏捷梯",
+          "en": "agility ladder",
+          "ja": {
+            "text": "ラダー",
+            "reading": "ラダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "訓練跨欄",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩個短腳架撐起一根水平橫桿，整體低矮輕巧，擺在入口外側地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "entrance",
+        "itemId": "hurdle-gym",
+        "words": {
+          "zh-TW": "訓練跨欄",
+          "en": "hurdle",
+          "ja": {
+            "text": "ハードル",
+            "reading": "ハードル"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色直立機身上方有透明水桶，正面有兩個出水按鈕和接水槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "water-dispenser",
+        "words": {
+          "zh-TW": "飲水機",
+          "en": "water dispenser",
+          "ja": {
+            "text": "ウォーターサーバー",
+            "reading": "ウォーターサーバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋套機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀灰色矮機器有弧形踏入口和寬大的底座，頂部露出一卷藍色鞋套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "shoe-cover-dispenser",
+        "words": {
+          "zh-TW": "鞋套機",
+          "en": "shoe cover dispenser",
+          "ja": {
+            "text": "シューズカバー装着機",
+            "reading": "シューズカバーそうちゃくき"
+          }
+        }
+      }
+    },
+    {
+      "name": "會員卡感應器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的黑色斜面讀卡器，表面有一塊發亮的感應區和圓形狀態燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "membership-card-reader",
+        "words": {
+          "zh-TW": "會員卡感應器",
+          "en": "membership card reader",
+          "ja": {
+            "text": "会員カードリーダー",
+            "reading": "かいいんカードリーダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "全身鏡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高而窄的長方形鏡面嵌在深色細框裡，映出明亮的室內輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "wall-mirror-gym",
+        "words": {
+          "zh-TW": "全身鏡",
+          "en": "full-length mirror",
+          "ja": {
+            "text": "姿見",
+            "reading": "すがたみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾洗手",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明小瓶裝著淡藍色凝膠，瓶口有白色按壓頭和細長吸管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "hand-sanitizer-gym",
+        "words": {
+          "zh-TW": "乾洗手",
+          "en": "hand sanitizer",
+          "ja": {
+            "text": "手指消毒液",
+            "reading": "てゆびしょうどくえき"
+          }
+        }
+      }
+    },
+    {
+      "name": "廚房紙巾捲",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一卷白色厚紙巾套在直立架上，側面呈現清楚的捲層紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "paper-towel-roll-gym",
+        "words": {
+          "zh-TW": "廚房紙巾捲",
+          "en": "paper towel roll",
+          "ja": {
+            "text": "キッチンペーパー",
+            "reading": "キッチンペーパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "烘手機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色壁掛機身下方開著弧形吹風口，外殼圓滑且有感應區。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "hand-dryer-gym",
+        "words": {
+          "zh-TW": "烘手機",
+          "en": "hand dryer",
+          "ja": {
+            "text": "ハンドドライヤー",
+            "reading": "ハンドドライヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "通風口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形白色通風面板由一排排平行百葉片組成，外框簡潔平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "wall-vent-gym",
+        "words": {
+          "zh-TW": "通風口",
+          "en": "air vent",
+          "ja": {
+            "text": "換気口",
+            "reading": "かんきこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "天花板喇叭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色喇叭面板嵌在高處，表面布滿細小規則的圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "ceiling-speaker-gym",
+        "words": {
+          "zh-TW": "天花板喇叭",
+          "en": "ceiling speaker",
+          "ja": {
+            "text": "天井スピーカー",
+            "reading": "てんじょうスピーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "立扇",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色圓形網罩包住三片扇葉，長支柱連接寬圓底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "standing-fan-gym",
+        "words": {
+          "zh-TW": "立扇",
+          "en": "standing fan",
+          "ja": {
+            "text": "扇風機",
+            "reading": "せんぷうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙發",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的雙人沙發，深藍色布面搭配寬厚扶手和四支短木腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "reception-sofa",
+        "words": {
+          "zh-TW": "沙發",
+          "en": "sofa",
+          "ja": {
+            "text": "ソファ",
+            "reading": "ソファ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的黑色金屬架分成數層，格子狀層板留有整齊的擺鞋空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "shoe-rack-gym",
+        "words": {
+          "zh-TW": "鞋架",
+          "en": "shoe rack",
+          "ja": {
+            "text": "靴棚",
+            "reading": "くつだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長的木製立柱頂端分出數支彎鉤，圓形底盤穩穩立在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "coat-rack-gym",
+        "words": {
+          "zh-TW": "衣帽架",
+          "en": "coat rack",
+          "ja": {
+            "text": "コートラック",
+            "reading": "コートラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白底掛鐘配黑色外框和兩根指針，邊緣有簡單刻度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "wall-clock-gym",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall clock",
+          "ja": {
+            "text": "壁掛け時計",
+            "reading": "かべかけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一片厚實的淺木色層板由兩個黑色支架托住，邊緣平直俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "wall-shelf-gym",
+        "words": {
+          "zh-TW": "壁架",
+          "en": "wall shelf",
+          "ja": {
+            "text": "壁棚",
+            "reading": "かべだな"
+          }
+        }
+      }
+    },
+    {
+      "name": "滅火器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色圓筒瓶身配黑色軟管和金屬壓把，掛在牆面支架上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "fire-extinguisher-gym",
+        "words": {
+          "zh-TW": "滅火器",
+          "en": "fire extinguisher",
+          "ja": {
+            "text": "消火器",
+            "reading": "しょうかき"
+          }
+        }
+      }
+    },
+    {
+      "name": "急救箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形硬盒有紅色十字圖案和提把，盒蓋中央清楚醒目。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "first-aid-kit-gym",
+        "words": {
+          "zh-TW": "急救箱",
+          "en": "first aid kit",
+          "ja": {
+            "text": "救急箱",
+            "reading": "きゅうきゅうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "面紙盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長方形淺色紙盒頂部開著橢圓抽口，一張白色面紙從中露出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "tissue-box-gym",
+        "words": {
+          "zh-TW": "面紙盒",
+          "en": "tissue box",
+          "ja": {
+            "text": "ティッシュボックス",
+            "reading": "ティッシュボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "噴霧瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明塑膠瓶裡裝著淡色液體，頂端有白色扳機噴頭和短噴嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "spray-bottle-gym",
+        "words": {
+          "zh-TW": "噴霧瓶",
+          "en": "spray bottle",
+          "ja": {
+            "text": "スプレーボトル",
+            "reading": "スプレーボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "溫度控制器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型白色方盒裝在牆上，中央有圓形旋鈕和簡單的色塊指示。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "thermostat-gym",
+        "words": {
+          "zh-TW": "溫度控制器",
+          "en": "thermostat",
+          "ja": {
+            "text": "温度調節器",
+            "reading": "おんどちょうせつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "電燈開關",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形底板中央凸起一枚扁平翹板，邊角圓滑清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "light-switch-gym",
+        "words": {
+          "zh-TW": "電燈開關",
+          "en": "light switch",
+          "ja": {
+            "text": "照明スイッチ",
+            "reading": "しょうめいスイッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "插座",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形插座面板上有兩個直立插孔和一個圓形接地孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "power-outlet-gym",
+        "words": {
+          "zh-TW": "插座",
+          "en": "power outlet",
+          "ja": {
+            "text": "コンセント",
+            "reading": "コンセント"
+          }
+        }
+      }
+    },
+    {
+      "name": "監視攝影機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色短筒攝影機固定在黑色支架上，前端有深色圓形鏡頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "security-camera-gym",
+        "words": {
+          "zh-TW": "監視攝影機",
+          "en": "security camera",
+          "ja": {
+            "text": "防犯カメラ",
+            "reading": "ぼうはんカメラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "月曆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "薄薄的月曆掛在牆上，白色頁面搭配寬色塊和簡單格線圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "wall-calendar-gym",
+        "words": {
+          "zh-TW": "月曆",
+          "en": "wall calendar",
+          "ja": {
+            "text": "壁掛けカレンダー",
+            "reading": "かべかけカレンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "板夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "硬挺的長方形板面上夾著空白紙張，頂端有寬大的金屬夾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "reception",
+        "itemId": "clipboard-gym",
+        "words": {
+          "zh-TW": "板夾",
+          "en": "clipboard",
+          "ja": {
+            "text": "クリップボード",
+            "reading": "クリップボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "跑步機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "黑色寬皮帶安裝在低矮的灰色機架上，前方有弧形扶手和小型控制面板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "treadmill",
+        "words": {
+          "zh-TW": "跑步機",
+          "en": "treadmill",
+          "ja": {
+            "text": "ランニングマシン",
+            "reading": "ランニングマシン"
+          }
+        }
+      }
+    },
+    {
+      "name": "橢圓機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩個大型腳踏板連著圓形飛輪，左右各有一支高聳的活動握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "elliptical-trainer",
+        "words": {
+          "zh-TW": "橢圓機",
+          "en": "elliptical trainer",
+          "ja": {
+            "text": "クロストレーナー",
+            "reading": "クロストレーナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "飛輪健身車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "固定在底座上的黑色自行車架，配有高座墊、踏板、把手和前方圓形飛輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "stationary-bike",
+        "words": {
+          "zh-TW": "飛輪健身車",
+          "en": "stationary bike",
+          "ja": {
+            "text": "エアロバイク",
+            "reading": "エアロバイク"
+          }
+        }
+      }
+    },
+    {
+      "name": "划船機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長條低矮滑軌上有可移動座椅，前端帶有腳踏板和連接把手的拉繩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "rowing-machine",
+        "words": {
+          "zh-TW": "划船機",
+          "en": "rowing machine",
+          "ja": {
+            "text": "ローイングマシン",
+            "reading": "ローイングマシン"
+          }
+        }
+      }
+    },
+    {
+      "name": "階梯機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "直立機架上排列著一級級黑色踏板，兩側有長扶手和上方控制面板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "stair-climber",
+        "words": {
+          "zh-TW": "階梯機",
+          "en": "stair climber",
+          "ja": {
+            "text": "ステアクライマー",
+            "reading": "ステアクライマー"
+          }
+        }
+      }
+    },
+    {
+      "name": "飛輪車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "低矮金屬車架支起前方厚圓飛輪，搭配高座墊、彎把和腳踏板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "spin-bike",
+        "words": {
+          "zh-TW": "飛輪車",
+          "en": "spin bike",
+          "ja": {
+            "text": "スピンバイク",
+            "reading": "スピンバイク"
+          }
+        }
+      }
+    },
+    {
+      "name": "踏板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "扁平長方形塑膠踏台，表面有防滑紋路，兩端略微翹起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "step-platform",
+        "words": {
+          "zh-TW": "踏板",
+          "en": "step platform",
+          "ja": {
+            "text": "ステップ台",
+            "reading": "ステップだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "平衡板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橢圓形木板底下接著一個圓柱形支點，板面有深色防滑條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "balance-board",
+        "words": {
+          "zh-TW": "平衡板",
+          "en": "balance board",
+          "ja": {
+            "text": "バランスボード",
+            "reading": "バランスボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "有氧踏台",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬扁矩形踏台以亮色塑膠製成，頂面有防滑凸紋，底下帶有短支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "aerobic-step",
+        "words": {
+          "zh-TW": "有氧踏台",
+          "en": "aerobic step",
+          "ja": {
+            "text": "エアロビクスステップ",
+            "reading": "エアロビクスステップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "運動墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形深色軟墊平鋪地面，表面平滑，邊緣厚實並帶有圓角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "exercise-mat",
+        "words": {
+          "zh-TW": "運動墊",
+          "en": "exercise mat",
+          "ja": {
+            "text": "エクササイズマット",
+            "reading": "エクササイズマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "皮拉提斯環",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色圓環兩側各有一個短軟墊把手，環身細而有彈性。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "pilates-ring",
+        "words": {
+          "zh-TW": "皮拉提斯環",
+          "en": "pilates ring",
+          "ja": {
+            "text": "ピラティスリング",
+            "reading": "ピラティスリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "健腹輪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一個黑色小輪子穿過橫向金屬軸，兩端各有短握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "ab-roller",
+        "words": {
+          "zh-TW": "健腹輪",
+          "en": "ab roller",
+          "ja": {
+            "text": "腹筋ローラー",
+            "reading": "ふっきんローラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "伏地挺身架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩支低矮的弧形金屬支架各有橫向握桿，底部附黑色防滑墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "push-up-bars",
+        "words": {
+          "zh-TW": "伏地挺身架",
+          "en": "push-up bars",
+          "ja": {
+            "text": "プッシュアップバー",
+            "reading": "プッシュアップバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踝負重帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對短而厚的深色布帶，各自縫有細長分隔袋並帶著黏扣帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "ankle-weights",
+        "words": {
+          "zh-TW": "腳踝負重帶",
+          "en": "ankle weights",
+          "ja": {
+            "text": "アンクルウェイト",
+            "reading": "アンクルウェイト"
+          }
+        }
+      }
+    },
+    {
+      "name": "腕部負重帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對窄短的加重布環，表面有縫線分格，末端附著固定用的黏扣帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "wrist-weights",
+        "words": {
+          "zh-TW": "腕部負重帶",
+          "en": "wrist weights",
+          "ja": {
+            "text": "リストウェイト",
+            "reading": "リストウェイト"
+          }
+        }
+      }
+    },
+    {
+      "name": "負重背心",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色無袖背心外形厚實，胸前排列著數個方形加重袋，兩側有固定帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "weighted-vest",
+        "words": {
+          "zh-TW": "負重背心",
+          "en": "weighted vest",
+          "ja": {
+            "text": "ウェイトベスト",
+            "reading": "ウェイトベスト"
+          }
+        }
+      }
+    },
+    {
+      "name": "懸吊訓練帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩條黑色織帶末端各有泡棉握把與腳環，帶身收成鬆散的環狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "suspension-trainer",
+        "words": {
+          "zh-TW": "懸吊訓練帶",
+          "en": "suspension trainer",
+          "ja": {
+            "text": "サスペンショントレーナー",
+            "reading": "サスペンショントレーナー"
+          }
+        }
+      }
+    },
+    {
+      "name": "戰繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "粗厚黑色長繩盤成兩圈，末端各有一小段彩色握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "battle-rope",
+        "words": {
+          "zh-TW": "戰繩",
+          "en": "battle rope",
+          "ja": {
+            "text": "バトルロープ",
+            "reading": "バトルロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "計步器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型方形電子器材有灰色外殼、圓角和單色螢幕，側邊帶著夾扣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "step-counter",
+        "words": {
+          "zh-TW": "計步器",
+          "en": "pedometer",
+          "ja": {
+            "text": "歩数計",
+            "reading": "ほすうけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "心率監測器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的黑色方形感測器有光滑面板，旁邊連著一條柔軟的彈性胸帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "heart-rate-monitor",
+        "words": {
+          "zh-TW": "心率監測器",
+          "en": "heart rate monitor",
+          "ja": {
+            "text": "心拍計",
+            "reading": "しんぱくけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "運動手錶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色方形錶面配有寬錶帶，邊框略厚，螢幕呈現簡單彩色圖形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "fitness-watch",
+        "words": {
+          "zh-TW": "運動手錶",
+          "en": "fitness watch",
+          "ja": {
+            "text": "スポーツウォッチ",
+            "reading": "スポーツウォッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "運動彈力圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條彩色扁平橡膠帶盤成鬆圈，帶身寬而薄，兩端平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "exercise-band",
+        "words": {
+          "zh-TW": "運動彈力圈",
+          "en": "exercise band",
+          "ja": {
+            "text": "エクササイズバンド",
+            "reading": "エクササイズバンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "跳箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方正厚實的軟包立方體，表面由深淺不同的布料拼接，邊角平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "plyo-box",
+        "words": {
+          "zh-TW": "跳箱",
+          "en": "plyo box",
+          "ja": {
+            "text": "プライオボックス",
+            "reading": "プライオボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "瑜伽磚",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮紫色長方體泡棉磚質地柔軟，六個面平整，四角略帶弧度。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "foam-block",
+        "words": {
+          "zh-TW": "瑜伽磚",
+          "en": "foam block",
+          "ja": {
+            "text": "ヨガブロック",
+            "reading": "ヨガブロック"
+          }
+        }
+      }
+    },
+    {
+      "name": "旋轉盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對扁圓形塑膠盤上下疊放，表面帶有放射狀防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "cardio-floor",
+        "itemId": "exercise-disc",
+        "words": {
+          "zh-TW": "旋轉盤",
+          "en": "exercise disc",
+          "ja": {
+            "text": "ツイストボード",
+            "reading": "ツイストボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "兩根銀色弧形扶手連著數級橫踏桿，底端落在池邊地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-ladder",
+        "words": {
+          "zh-TW": "泳池梯",
+          "en": "pool ladder",
+          "ja": {
+            "text": "プールはしご",
+            "reading": "プールはしご"
+          }
+        }
+      }
+    },
+    {
+      "name": "水道分隔繩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一條由藍白相間圓盤串成的長繩，彎曲盤放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "lane-rope",
+        "words": {
+          "zh-TW": "水道分隔繩",
+          "en": "lane rope",
+          "ja": {
+            "text": "コースロープ",
+            "reading": "コースロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "浮板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平長方形泡棉板，邊角圓滑，表面是亮橘色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "kickboard",
+        "words": {
+          "zh-TW": "浮板",
+          "en": "kickboard",
+          "ja": {
+            "text": "ビート板",
+            "reading": "ビートばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "夾腿浮球",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紫色泡棉製成兩端圓鼓、中間收窄的啞鈴形浮具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pull-buoy",
+        "words": {
+          "zh-TW": "夾腿浮球",
+          "en": "pull buoy",
+          "ja": {
+            "text": "プルブイ",
+            "reading": "プルブイ"
+          }
+        }
+      }
+    },
+    {
+      "name": "划手掌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對扁平藍色塑膠掌形板，各有幾條固定手指的短帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "swim-paddle",
+        "words": {
+          "zh-TW": "划手掌",
+          "en": "swim paddle",
+          "ja": {
+            "text": "パドル",
+            "reading": "パドル"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳帽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一頂桃紅色圓滑橡膠帽，帽口微微翻起，獨自放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "swim-cap",
+        "words": {
+          "zh-TW": "泳帽",
+          "en": "swim cap",
+          "ja": {
+            "text": "スイムキャップ",
+            "reading": "スイムキャップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩個透明藍色圓角鏡框以短鼻橋相連，外側接著彈性頭帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "swim-goggles",
+        "words": {
+          "zh-TW": "泳鏡",
+          "en": "swim goggles",
+          "ja": {
+            "text": "ゴーグル",
+            "reading": "ゴーグル"
+          }
+        }
+      }
+    },
+    {
+      "name": "鼻夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小巧的銀色弧形夾子，兩端包著柔軟的藍色墊片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "nose-clip",
+        "words": {
+          "zh-TW": "鼻夾",
+          "en": "nose clip",
+          "ja": {
+            "text": "ノーズクリップ",
+            "reading": "ノーズクリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "耳塞",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對亮黃色小耳塞，各有圓錐形軟塞與短短的拉柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "ear-plug",
+        "words": {
+          "zh-TW": "耳塞",
+          "en": "ear plug",
+          "ja": {
+            "text": "耳栓",
+            "reading": "みみせん"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳浮力腰帶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一條鮮黃色泡棉浮帶，中央有寬扣環，彎成鬆鬆的圓弧。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "swim-float-belt",
+        "words": {
+          "zh-TW": "游泳浮力腰帶",
+          "en": "swim float belt",
+          "ja": {
+            "text": "浮力ベルト",
+            "reading": "ふりょくベルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "手臂浮圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對橘色充氣圓環，中央各有圓孔，表面沒有圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "arm-float",
+        "words": {
+          "zh-TW": "手臂浮圈",
+          "en": "arm float",
+          "ja": {
+            "text": "アームリング",
+            "reading": "アームリング"
+          }
+        }
+      }
+    },
+    {
+      "name": "游泳圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "大型紅白相間的充氣圓環平放在地面，中央留有圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "inflatable-ring",
+        "words": {
+          "zh-TW": "游泳圈",
+          "en": "swim ring",
+          "ja": {
+            "text": "浮き輪",
+            "reading": "うきわ"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生浮標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色長橢圓泡棉浮標，兩端圓鈍，側邊連著一條黑色繫帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "rescue-tube",
+        "words": {
+          "zh-TW": "救生浮標",
+          "en": "rescue tube",
+          "ja": {
+            "text": "レスキューチューブ",
+            "reading": "レスキューチューブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "救援鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一根白色長桿頂端彎成寬大的橘色鉤形，平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "rescue-hook",
+        "words": {
+          "zh-TW": "救援鉤",
+          "en": "rescue hook",
+          "ja": {
+            "text": "レスキューフック",
+            "reading": "レスキューフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "救援伸縮桿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一根黃色長桿，前端有大環形握把，收合後斜靠在牆邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "rescue-pole",
+        "words": {
+          "zh-TW": "救援伸縮桿",
+          "en": "rescue pole",
+          "ja": {
+            "text": "レスキューポール",
+            "reading": "レスキューポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "救生圈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅白分段的厚實圓形浮圈，外圈繞著細繩，平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "lifeguard-ring",
+        "words": {
+          "zh-TW": "救生圈",
+          "en": "lifebuoy",
+          "ja": {
+            "text": "救命浮環",
+            "reading": "きゅうめいふかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池撈網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長桿前端接著淺藍色扁平網框，網面平貼在框內。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-skimmer",
+        "words": {
+          "zh-TW": "泳池撈網",
+          "en": "pool skimmer",
+          "ja": {
+            "text": "プール用ネット",
+            "reading": "プールようネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池吸塵頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平藍色矩形刷頭底面帶短刷毛，中央凸起圓管接口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-vacuum-head",
+        "words": {
+          "zh-TW": "泳池吸塵頭",
+          "en": "pool vacuum head",
+          "ja": {
+            "text": "プールクリーナーヘッド",
+            "reading": "プールクリーナーヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "寬幅長方形刷頭接著長桿，刷毛是一排深藍色短齒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-brush",
+        "words": {
+          "zh-TW": "泳池刷",
+          "en": "pool brush",
+          "ja": {
+            "text": "プールブラシ",
+            "reading": "プールブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池溫度計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色橢圓浮體中央嵌著一條紅色細刻度管，平放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-thermometer",
+        "words": {
+          "zh-TW": "泳池溫度計",
+          "en": "pool thermometer",
+          "ja": {
+            "text": "プール用温度計",
+            "reading": "プールようおんどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池水質試劑盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "打開的白色塑膠盒內整齊排著幾支透明小試管和瓶罐。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-test-kit",
+        "words": {
+          "zh-TW": "泳池水質試劑盒",
+          "en": "pool test kit",
+          "ja": {
+            "text": "水質検査キット",
+            "reading": "すいしつけんさキット"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池池蓋捲軸",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩個寬底座支撐一根橫向金屬捲軸，軸上纏著藍色池蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-cover-reel",
+        "words": {
+          "zh-TW": "泳池池蓋捲軸",
+          "en": "pool cover reel",
+          "ja": {
+            "text": "プールカバー巻き取り機",
+            "reading": "プールカバーまきとりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池溢水溝蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一條狹長白色格柵蓋板，表面有整齊平行的細長縫隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-overflow-grate",
+        "words": {
+          "zh-TW": "泳池溢水溝蓋",
+          "en": "pool overflow grate",
+          "ja": {
+            "text": "プール排水溝グレーチング",
+            "reading": "プールはいすいこうグレーチング"
+          }
+        }
+      }
+    },
+    {
+      "name": "泳池排水蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形不鏽鋼地面蓋板上排列著同心圓狀小孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-drain-cover",
+        "words": {
+          "zh-TW": "泳池排水蓋",
+          "en": "pool drain cover",
+          "ja": {
+            "text": "プール排水口カバー",
+            "reading": "プールはいすいこうカバー"
+          }
+        }
+      }
+    },
+    {
+      "name": "池緣防滑標記塊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊小型藍色防滑方塊，表面有凸起的點狀紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "gym",
+        "zone": "poolside",
+        "itemId": "pool-edge-marker",
+        "words": {
+          "zh-TW": "池緣防滑標記塊",
+          "en": "pool edge marker",
+          "ja": {
+            "text": "プールエッジマーカー",
+            "reading": "プールエッジマーカー"
+          }
+        }
+      }
+    }
+  ]
+}
