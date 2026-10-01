@@ -497,6 +497,90 @@
       "score": 1,
       "take": "en-1790864275232.aac",
       "account": "chatgpt1"
+    },
+    "shower-drain": {
+      "heard": "Shower drain.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "pool-shoe-scraper": {
+      "heard": "Shoescraper.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "changing-room-bench": {
+      "heard": "Bench.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "laundry-hamper-swimming-pool": {
+      "heard": "Laundry hamper.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "footbath-stool": {
+      "heard": "foot bath stool,",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "drain-plunger": {
+      "heard": "Drain Plunger.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "pool-shower-timer": {
+      "heard": "Shower timer.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "bathroom-scale": {
+      "heard": "Bathroom scale.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-shower-stall": {
+      "heard": "Shower stall.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "pool-gutter": {
+      "heard": "Pool gutter.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "poolside-water-ski": {
+      "heard": "Water ski.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "lifeguard-rescue-tube": {
+      "heard": "Rescue Tube.",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "starting-block-handle": {
+      "heard": "Starting block handle?",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
+    },
+    "pool-drain-cover-swimming-pool": {
+      "heard": "pool drain cover,",
+      "score": 1,
+      "take": "en-1790864814327.aac",
+      "account": "chatgpt1"
     }
   }
 }

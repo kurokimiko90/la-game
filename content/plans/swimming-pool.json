@@ -1284,6 +1284,216 @@
       "loose": true,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "shower-drain",
+      "zh": "淋浴排水溝",
+      "en": "shower drain",
+      "ja": "排水溝",
+      "reading": "はいすいこう",
+      "category": "設施",
+      "size": "medium",
+      "zone": "pool-entrance",
+      "spot": "ground",
+      "desc": "一條嵌在地面的長方形金屬溝蓋，表面有整齊的平行縫隙。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "footbath-stool",
+      "zh": "洗腳凳",
+      "en": "footbath stool",
+      "ja": "足洗い台",
+      "reading": "あしあらいだい",
+      "category": "設施",
+      "size": "small",
+      "zone": "pool-entrance",
+      "spot": "ground",
+      "desc": "矮小的方形塑膠踏台，頂面有防滑凸點，四隻短腳穩穩落地。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "drain-plunger",
+      "zh": "通水孔疏通器",
+      "en": "drain plunger",
+      "ja": "排水口用ラバーカップ",
+      "reading": "はいすいこうようラバーカップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "pool-entrance",
+      "spot": "ground",
+      "desc": "一個紅色橡膠吸盤接著短木柄，吸盤朝下立在地面。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pool-shower-timer",
+      "zh": "淋浴計時器",
+      "en": "shower timer",
+      "ja": "シャワータイマー",
+      "reading": "シャワータイマー",
+      "category": "設施",
+      "size": "small",
+      "zone": "pool-entrance",
+      "spot": "ground",
+      "desc": "圓形防水計時器有粗厚外框與透明面板，底下帶著寬穩的落地底座。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pool-shoe-scraper",
+      "zh": "鞋底刮泥板",
+      "en": "shoe scraper",
+      "ja": "靴底クリーナー",
+      "reading": "くつぞこクリーナー",
+      "category": "設施",
+      "size": "medium",
+      "zone": "pool-entrance",
+      "spot": "ground",
+      "desc": "扁平的金屬底板上立著一排粗短刷毛，兩側有弧形支架供鞋底擦過。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bathroom-scale",
+      "zh": "體重計",
+      "en": "bathroom scale",
+      "ja": "体重計",
+      "reading": "たいじゅうけい",
+      "category": "道具",
+      "size": "small",
+      "zone": "changing-room",
+      "spot": "ground",
+      "desc": "扁平方形白色秤台，四角有深色防滑墊，表面沒有刻度或文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "changing-room-bench",
+      "zh": "長椅",
+      "en": "bench",
+      "ja": "ベンチ",
+      "reading": "ベンチ",
+      "category": "設施",
+      "size": "medium",
+      "zone": "changing-room",
+      "spot": "ground",
+      "desc": "長方形木製椅面架在兩組深色金屬椅腳上，表面有清楚的木紋。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "laundry-hamper-swimming-pool",
+      "zh": "洗衣籃",
+      "en": "laundry hamper",
+      "ja": "ランドリーバスケット",
+      "reading": "ランドリーバスケット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "changing-room",
+      "spot": "ground",
+      "desc": "高身的長方形塑膠籃，側面有一排排通風孔，頂部敞開。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pool-gutter",
+      "zh": "泳池溢水槽",
+      "en": "pool gutter",
+      "ja": "プールのオーバーフロー溝",
+      "reading": "プールのオーバーフローこう",
+      "category": "設施",
+      "size": "large",
+      "zone": "indoor-pool",
+      "spot": "ground",
+      "desc": "沿泳池邊緣延伸的窄長溝槽，槽口有規律的格狀開孔，貼著池壁排列。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "starting-block-handle",
+      "zh": "出發台扶手",
+      "en": "starting block handle",
+      "ja": "スタート台の手すり",
+      "reading": "スタートだいのてすり",
+      "category": "道具",
+      "size": "small",
+      "zone": "indoor-pool",
+      "spot": "ground",
+      "desc": "兩根短金屬扶桿固定在出發台兩側，向上彎成圓角，表面光滑發亮。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pool-drain-cover-swimming-pool",
+      "zh": "泳池排水蓋",
+      "en": "pool drain cover",
+      "ja": "プールの排水口カバー",
+      "reading": "プールのはいすいこうカバー",
+      "category": "設施",
+      "size": "small",
+      "zone": "indoor-pool",
+      "spot": "ground",
+      "desc": "扁平圓形的白色蓋板，表面排列著一圈圈小孔，嵌在泳池底部。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "poolside-shower-stall",
+      "zh": "戶外淋浴隔間",
+      "en": "shower stall",
+      "ja": "シャワーブース",
+      "reading": "シャワーブース",
+      "category": "設施",
+      "size": "large",
+      "zone": "outdoor-pool",
+      "spot": "ground",
+      "desc": "三面淺藍色不透明隔板圍成開口隔間，地面有圓形排水孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "poolside-water-ski",
+      "zh": "滑水橇",
+      "en": "waterski",
+      "ja": "水上スキー板",
+      "reading": "すいじょうスキーいた",
+      "category": "道具",
+      "size": "medium",
+      "zone": "outdoor-pool",
+      "spot": "ground",
+      "desc": "細長的亮黃色板身前端翹起，尾端有一個深色固定腳套。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "lifeguard-rescue-tube",
+      "zh": "救生浮管",
+      "en": "rescue tube",
+      "ja": "レスキューチューブ",
+      "reading": "レスキューチューブ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "outdoor-pool",
+      "spot": "ground",
+      "desc": "長條形的橘紅色泡棉浮管，兩端圓鈍，中央繫著一條黑色肩帶。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1399,6 +1609,33 @@
     {
       "id": "poolside-water-squirter",
       "reason": "審核：日文指水槍，未必是噴水玩具"
+    },
+    {
+      "id": "clothes-drying-rack",
+      "reason": "和已有的 clothes hanger 太像",
+      "zone": "changing-room"
+    },
+    {
+      "id": "starting-block",
+      "reason": "和已有的 starting block handle 太像",
+      "zone": "indoor-pool"
+    },
+    {
+      "id": "poolside-lifebuoy-cabinet",
+      "reason": "和已有的 lifebuoy 太像",
+      "zone": "outdoor-pool"
+    },
+    {
+      "id": "rubber-threshold",
+      "reason": "審核：英文與中文物品不符"
+    },
+    {
+      "id": "waste-bin",
+      "reason": "審核：英文與中文物品不符"
+    },
+    {
+      "id": "poolside-palm-leaf-umbrella",
+      "reason": "審核：英文應為棕櫚葉傘棚"
     }
   ],
   "reviewFixes": [
@@ -1556,6 +1793,29 @@
         "ja": "プール用の落ち葉取り網",
         "reading": "プールようのおちばとりあみ"
       }
+    },
+    {
+      "id": "footbath-stool",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "足洗い台",
+        "reading": "あしあらいだい"
+      }
+    },
+    {
+      "id": "pool-gutter",
+      "issue": "日文應指溢水槽",
+      "changes": {
+        "ja": "プールのオーバーフロー溝",
+        "reading": "プールのオーバーフローこう"
+      }
+    },
+    {
+      "id": "poolside-water-ski",
+      "issue": "中文應為滑水橇",
+      "changes": {
+        "zh": "滑水橇"
+      }
     }
   ],
   "createdAt": "2026-10-01T22:43:32.166+09:00",
@@ -1580,5 +1840,10 @@
         "shores"
       ]
     }
+  },
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 14,
+    "at": "2026-10-01T23:23:03.161+09:00"
   }
 }

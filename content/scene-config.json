@@ -1584,7 +1584,7 @@
         "poolside-lane-marker": "water-outdoor-pool"
       },
       "clusters": [["pool-gate", "gate-latch"], ["pool-cleaning-cart", "pool-brush-head"]],
-      "loose": ["shower-sandals", "rubber-clog", "wet-clothes-bag", "sunscreen-tube", "deck-brush", "pool-brush-head", "laundry-bag-swimming-pool", "nail-brush", "clothes-peg-swimming-pool", "small-towel", "waterproof-phone-pouch", "clothes-hanger-swimming-pool", "pool-shower-head", "pull-buoy-swimming-pool", "swim-paddle-swimming-pool", "arm-float-swimming-pool", "swim-float-belt-swimming-pool", "pool-thermometer-swimming-pool", "pool-test-kit-swimming-pool", "poolside-sunscreen-bottle", "poolside-waterproof-watch", "poolside-water-sample-bottle"],
+      "loose": ["shower-sandals", "rubber-clog", "wet-clothes-bag", "sunscreen-tube", "deck-brush", "pool-brush-head", "laundry-bag-swimming-pool", "nail-brush", "clothes-peg-swimming-pool", "small-towel", "waterproof-phone-pouch", "clothes-hanger-swimming-pool", "pool-shower-head", "pull-buoy-swimming-pool", "swim-paddle-swimming-pool", "arm-float-swimming-pool", "swim-float-belt-swimming-pool", "pool-thermometer-swimming-pool", "pool-test-kit-swimming-pool", "poolside-sunscreen-bottle", "poolside-waterproof-watch", "poolside-water-sample-bottle", "drain-plunger"],
       "noFlip": [],
       "motion": {"shade-canopy": "sway", "ventilation-fan": "wobble", "pool-float-mattress": "bob", "swim-float-disc": "bob", "poolside-cabana": "sway", "poolside-plant-pot": "sway", "poolside-floating-cup-holder": "bob", "poolside-lane-marker": "bob"},
       "arrange": "auto",

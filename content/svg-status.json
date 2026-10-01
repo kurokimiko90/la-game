@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T23:15:12.982+09:00",
+  "syncedAt": "2026-10-01T23:25:25.569+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -2617,7 +2617,21 @@
         "poolside-pool-vacuum-hose",
         "poolside-waterproof-bin",
         "poolside-pool-rake",
-        "poolside-water-sample-bottle"
+        "poolside-water-sample-bottle",
+        "shower-drain",
+        "footbath-stool",
+        "drain-plunger",
+        "pool-shower-timer",
+        "pool-shoe-scraper",
+        "bathroom-scale",
+        "changing-room-bench",
+        "laundry-hamper-swimming-pool",
+        "pool-gutter",
+        "starting-block-handle",
+        "pool-drain-cover-swimming-pool",
+        "poolside-shower-stall",
+        "poolside-water-ski",
+        "lifeguard-rescue-tube"
       ],
       "failed": [],
       "pending": [],
