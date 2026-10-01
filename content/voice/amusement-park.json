@@ -461,6 +461,138 @@
       "score": 1,
       "take": "en-1790870648742.aac",
       "account": "chatgpt1"
+    },
+    "traffic-barricade": {
+      "heard": "Barricade.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "drum-amusement-park": {
+      "heard": "Drum.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "flower-bed-edging": {
+      "heard": "Flower bed edging.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-operator-stool": {
+      "heard": "Boy, operator chair.",
+      "score": 0.81,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-step-ladder": {
+      "heard": "Boarding Ladder.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "swim-earplugs": {
+      "heard": "Swim earplugs.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "pool-kickboard": {
+      "heard": "Kickboard.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-brass-ring": {
+      "heard": "Brass Ring.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-center-pole": {
+      "heard": "Center Pole.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "octagonal-pavilion": {
+      "heard": "Pavilion.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-adjustable-wrench": {
+      "heard": "Gun adjustable wrench.",
+      "score": 0.84,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-chariot-seat": {
+      "heard": "Chariot Seat",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-safety-bar": {
+      "heard": "Safety bar.",
+      "score": 1,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-feather-plume": {
+      "heard": "Cone. Feather plume.",
+      "score": 0.75,
+      "take": "en-1790871084233.aac",
+      "account": "chatgpt1"
+    },
+    "pool-lifebuoy": {
+      "heard": "Lifeboy.",
+      "score": 0.88,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-grease-gun": {
+      "heard": "Grease gun.",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-cable-reel": {
+      "heard": "Cable reel?",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-double-seat": {
+      "heard": "Double seat.",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "pool-vacuum-head-amusement-park": {
+      "heard": "Pool vacuum head.",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "pool-thermometer-amusement-park": {
+      "heard": "Pool thermometer.",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "pool-drain-cover-amusement-park": {
+      "heard": "pool drain cover,",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
+    },
+    "carousel-safety-cone": {
+      "heard": "Safety Cone.",
+      "score": 1,
+      "take": "en-1790871196095.aac",
+      "account": "chatgpt1"
     }
   }
 }

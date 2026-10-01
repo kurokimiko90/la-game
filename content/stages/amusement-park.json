@@ -73,6 +73,64 @@
           "front": [
             "confetti"
           ]
+        },
+        {
+          "row": "back",
+          "note": "摩天輪與遊樂設施車廂",
+          "x": [
+            0.28,
+            0.57
+          ],
+          "main": "ride-rail",
+          "beside": [
+            "ferris-wheel-gondola",
+            "ride-car"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "碰碰車與操作控制",
+          "x": [
+            0.61,
+            0.8
+          ],
+          "main": "bumper-car",
+          "beside": [
+            "ride-control-box"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "入口旗幟與氣球",
+          "x": [
+            0.04,
+            0.2
+          ],
+          "main": "flagpole-base-amusement-park",
+          "beside": [
+            "balloon-weight"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "遊樂園花圃",
+          "x": [
+            0.25,
+            0.4
+          ],
+          "fixture": "planter",
+          "on": [
+            "flower-bed-edging"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "小鼓表演",
+          "x": [
+            0.68,
+            0.8
+          ],
+          "main": "drum-amusement-park"
         }
       ]
     },
@@ -190,6 +248,36 @@
             "hockey-puck",
             "jumping-rope"
           ]
+        },
+        {
+          "row": "front",
+          "note": "泡泡與風車玩具",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "main": "bubble-wand",
+          "beside": [
+            "pinwheel"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "紙飛機遊戲",
+          "x": [
+            0.22,
+            0.38
+          ],
+          "main": "paper-airplane"
+        },
+        {
+          "row": "front",
+          "note": "道路安全護欄",
+          "x": [
+            0.42,
+            0.58
+          ],
+          "main": "traffic-barricade"
         }
       ]
     },
@@ -277,6 +365,27 @@
             "carousel-safety-cone",
             "carousel-feather-plume"
           ]
+        },
+        {
+          "row": "front",
+          "note": "旋轉木馬乘坐安全裝置",
+          "x": [
+            0.04,
+            0.2
+          ],
+          "main": "carousel-safety-bar",
+          "beside": [
+            "carousel-brass-ring"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "八角亭休息區",
+          "x": [
+            0.03,
+            0.22
+          ],
+          "main": "octagonal-pavilion"
         }
       ]
     },
@@ -363,6 +472,18 @@
             "pool-pull-buoy",
             "pool-float-belt",
             "arm-float-amusement-park"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "泳池底部清潔設備",
+          "x": [
+            0.03,
+            0.23
+          ],
+          "main": "pool-vacuum-head-amusement-park",
+          "beside": [
+            "pool-brush-amusement-park"
           ]
         }
       ]

@@ -2066,6 +2066,90 @@
           }
         }
       }
+    },
+    {
+      "name": "花圃邊框",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的圓角木框圍成長方形，木板呈淺棕色，框內可種植花草。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "flower-bed-edging",
+        "words": {
+          "zh-TW": "花圃邊框",
+          "en": "flower-bed-edging",
+          "ja": {
+            "text": "花壇の縁",
+            "reading": "かだんのふち"
+          }
+        }
+      }
+    },
+    {
+      "name": "鼓",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色圓筒鼓身兩側繃著淺色鼓面，外圈有金屬扣件，直立放在地上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "entrance",
+        "itemId": "drum-amusement-park",
+        "words": {
+          "zh-TW": "鼓",
+          "en": "drum",
+          "ja": {
+            "text": "ドラム",
+            "reading": "ドラム"
+          }
+        }
+      }
+    },
+    {
+      "name": "交通護欄",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一座橘白相間的低矮護欄，橫向長板架在兩個穩固的腳座上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "midway",
+        "itemId": "traffic-barricade",
+        "words": {
+          "zh-TW": "交通護欄",
+          "en": "barricade",
+          "ja": {
+            "text": "バリケード",
+            "reading": "バリケード"
+          }
+        }
+      }
+    },
+    {
+      "name": "八角亭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "八根細柱撐起八角形屋頂，柱間敞開，屋頂邊緣帶有彩色裝飾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "amusement-park",
+        "zone": "carousel-hall",
+        "itemId": "octagonal-pavilion",
+        "words": {
+          "zh-TW": "八角亭",
+          "en": "pavilion",
+          "ja": {
+            "text": "東屋",
+            "reading": "あずまや"
+          }
+        }
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T00:55:35.431+09:00",
+  "syncedAt": "2026-10-02T01:10:58.665+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -198,7 +198,11 @@
         "pool-float-belt",
         "arm-float-amusement-park",
         "pool-float-ring",
-        "pool-float-disc"
+        "pool-float-disc",
+        "flower-bed-edging",
+        "drum-amusement-park",
+        "traffic-barricade",
+        "octagonal-pavilion"
       ],
       "failed": [
         {
