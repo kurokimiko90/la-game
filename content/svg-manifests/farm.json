@@ -1,0 +1,1714 @@
+{
+  "sceneName": "語言小鎮・農場",
+  "sceneSlug": "la-farm",
+  "propStyle": "front-flat",
+  "zones": {
+    "farmyard": "農場入口",
+    "barn": "穀倉",
+    "stable": "牲口棚",
+    "pasture": "牧場"
+  },
+  "elements": [
+    {
+      "name": "農場門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "兩片深棕色木柵門向中間合起，橫木交疊固定，旁邊有金屬門閂。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "farm-gate",
+        "words": {
+          "zh-TW": "農場門",
+          "en": "farm gate",
+          "ja": {
+            "text": "農場の門",
+            "reading": "のうじょうのもん"
+          }
+        }
+      }
+    },
+    {
+      "name": "農舍",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "小型淺黃色木屋有紅褐色斜屋頂、方窗與木門，屋前連著短階梯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "farmhouse",
+        "words": {
+          "zh-TW": "農舍",
+          "en": "farmhouse",
+          "ja": {
+            "text": "農家",
+            "reading": "のうか"
+          }
+        }
+      }
+    },
+    {
+      "name": "穀倉",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "紅色長方形木建築配深灰雙扇大門，屋頂呈高聳三角形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "barn",
+        "words": {
+          "zh-TW": "穀倉",
+          "en": "barn",
+          "ja": {
+            "text": "納屋",
+            "reading": "なや"
+          }
+        }
+      }
+    },
+    {
+      "name": "筒倉",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "高聳的銀灰色圓筒形儲存塔，頂部有圓弧形屋頂與窄窄的側梯。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "silo",
+        "words": {
+          "zh-TW": "筒倉",
+          "en": "silo",
+          "ja": {
+            "text": "サイロ",
+            "reading": "サイロ"
+          }
+        }
+      }
+    },
+    {
+      "name": "風車",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "小型白色塔狀風車立在支架上，四片寬葉片從中央輪軸向外伸展。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "windmill",
+        "words": {
+          "zh-TW": "風車",
+          "en": "windmill",
+          "ja": {
+            "text": "風車",
+            "reading": "ふうしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形深灰色槽體由四根短腳支撐，槽口敞開，兩端略呈圓角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "water-trough",
+        "words": {
+          "zh-TW": "飲水槽",
+          "en": "water trough",
+          "ja": {
+            "text": "水飲み桶",
+            "reading": "みずのみおけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾草捆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "金黃色長方形乾草捆以兩道細繩綁緊，側面露出蓬鬆的草梗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "hay-bale",
+        "words": {
+          "zh-TW": "乾草捆",
+          "en": "hay bale",
+          "ja": {
+            "text": "干し草の俵",
+            "reading": "ほしくさのたわら"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾草叉",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長木柄末端接著黑色金屬叉頭，幾根尖齒平行向前伸出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "pitchfork",
+        "words": {
+          "zh-TW": "乾草叉",
+          "en": "pitchfork",
+          "ja": {
+            "text": "干し草用フォーク",
+            "reading": "ほしくさようフォーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "鏟子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木柄末端連著寬扁的深灰色鏟面，鏟面尖端略圓，邊緣微微上翹。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "shovel",
+        "words": {
+          "zh-TW": "鏟子",
+          "en": "shovel",
+          "ja": {
+            "text": "シャベル",
+            "reading": "シャベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛奶桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色金屬桶身窄口收束，頂部有圓蓋與兩側弧形提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "milk-can",
+        "words": {
+          "zh-TW": "牛奶桶",
+          "en": "milk can",
+          "ja": {
+            "text": "ミルク缶",
+            "reading": "ミルクかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "飼料袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "米白色布袋裝得鼓鼓的，袋口束緊，側面可見摺痕與粗織布紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "feed-sack",
+        "words": {
+          "zh-TW": "飼料袋",
+          "en": "feed sack",
+          "ja": {
+            "text": "飼料袋",
+            "reading": "しりょうぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "穀物勺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短柄連著深碗狀金屬勺頭，銀灰色勺面寬大，適合舀取穀物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "grain-scoop",
+        "words": {
+          "zh-TW": "穀物勺",
+          "en": "grain scoop",
+          "ja": {
+            "text": "穀物用スコップ",
+            "reading": "こくもつようスコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺褐色紙漿盒打開後露出一排圓形凹槽，盒蓋邊緣呈波浪形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "egg-crate",
+        "words": {
+          "zh-TW": "蛋箱",
+          "en": "egg crate",
+          "ja": {
+            "text": "卵の箱",
+            "reading": "たまごのはこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾草堆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "金黃色乾草堆成寬大的圓頂形，底部蓬鬆散開，表面有層層草梗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "haystack",
+        "words": {
+          "zh-TW": "乾草堆",
+          "en": "haystack",
+          "ja": {
+            "text": "干し草の山",
+            "reading": "ほしくさのやま"
+          }
+        }
+      }
+    },
+    {
+      "name": "石槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "灰色長方形石槽厚重結實，槽口敞開，外側有粗糙斑駁的石紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "stone-trough",
+        "words": {
+          "zh-TW": "石槽",
+          "en": "stone trough",
+          "ja": {
+            "text": "石の水槽",
+            "reading": "いしのみずおけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "木桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮圓木桶由窄木板拼成，外側套著金屬箍，兩邊連著提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "wooden-bucket",
+        "words": {
+          "zh-TW": "木桶",
+          "en": "wooden bucket",
+          "ja": {
+            "text": "木のバケツ",
+            "reading": "きのバケツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "圍籬",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一排淺棕色木板直立排列，頂端平整，木板間留有細窄空隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "fence-farm",
+        "words": {
+          "zh-TW": "圍籬",
+          "en": "fence",
+          "ja": {
+            "text": "フェンス",
+            "reading": "フェンス"
+          }
+        }
+      }
+    },
+    {
+      "name": "木柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "粗短的方形木柱直立在地面，表面有深淺不一的木紋與斜切頂端。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "wooden-post",
+        "words": {
+          "zh-TW": "木柱",
+          "en": "wooden post",
+          "ja": {
+            "text": "木の柱",
+            "reading": "きのはしら"
+          }
+        }
+      }
+    },
+    {
+      "name": "門閂",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀灰色金屬扣件由短柄與環扣組成，橫跨兩片木門邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "gate-latch-farm",
+        "words": {
+          "zh-TW": "門閂",
+          "en": "gate latch",
+          "ja": {
+            "text": "門の掛け金",
+            "reading": "もんのかけがね"
+          }
+        }
+      }
+    },
+    {
+      "name": "手推車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "單輪手推車有綠色金屬斗槽、兩支木把手與一個黑色橡膠輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "wheelbarrow-farm",
+        "words": {
+          "zh-TW": "手推車",
+          "en": "wheelbarrow",
+          "ja": {
+            "text": "手押し車",
+            "reading": "ておしぐるま"
+          }
+        }
+      }
+    },
+    {
+      "name": "澆水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色壺身帶弧形提把與細長壺嘴，壺嘴末端有圓形灑水頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "watering-can-farm",
+        "words": {
+          "zh-TW": "澆水壺",
+          "en": "watering can",
+          "ja": {
+            "text": "じょうろ",
+            "reading": "じょうろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "藤籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺棕色藤條編成圓筒形籃身，籃口寬大，兩側各有一個粗編提把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "basket-farm",
+        "words": {
+          "zh-TW": "藤籃",
+          "en": "basket",
+          "ja": {
+            "text": "かご",
+            "reading": "かご"
+          }
+        }
+      }
+    },
+    {
+      "name": "木板",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長條形淺棕木板平放地面，兩端方正，表面可見深色木紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "wooden-plank-farm",
+        "words": {
+          "zh-TW": "木板",
+          "en": "wooden plank",
+          "ja": {
+            "text": "木の板",
+            "reading": "きのいた"
+          }
+        }
+      }
+    },
+    {
+      "name": "木箱",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方形木條箱的四面留有寬縫，箱內空空的，角落以較深色木條加固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "wooden-crate-farm",
+        "words": {
+          "zh-TW": "木箱",
+          "en": "wooden crate",
+          "ja": {
+            "text": "木箱",
+            "reading": "きばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "園藝鏟",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短木柄接著窄長的深灰色鏟片，鏟片前端尖銳，兩側稍微上彎。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "farmyard",
+        "itemId": "spade-farm",
+        "words": {
+          "zh-TW": "園藝鏟",
+          "en": "spade",
+          "ja": {
+            "text": "スコップ",
+            "reading": "スコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "吊草鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色鐵鉤固定在短木柄上，彎曲尖端朝上，常掛在穀倉牆邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "hay-hook",
+        "words": {
+          "zh-TW": "吊草鉤",
+          "en": "hay hook",
+          "ja": {
+            "text": "干し草用フック",
+            "reading": "ほしくさようフック"
+          }
+        }
+      }
+    },
+    {
+      "name": "穀物篩",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淺棕色圓形木框中繃著細密金屬網，邊緣有磨損痕跡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "grain-sieve",
+        "words": {
+          "zh-TW": "穀物篩",
+          "en": "grain sieve",
+          "ja": {
+            "text": "穀物ふるい",
+            "reading": "こくもつふるい"
+          }
+        }
+      }
+    },
+    {
+      "name": "穀物箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "方形木製儲存箱有厚實斜頂與前方小開口，木板呈深棕色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "grain-bin",
+        "words": {
+          "zh-TW": "穀物箱",
+          "en": "grain bin",
+          "ja": {
+            "text": "穀物保管箱",
+            "reading": "こくもつほかんばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "穀物溜槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一段斜向下的深色木槽固定在牆上，末端有短短的方形出口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "grain-chute",
+        "words": {
+          "zh-TW": "穀物溜槽",
+          "en": "grain chute",
+          "ja": {
+            "text": "穀物シュート",
+            "reading": "こくもつシュート"
+          }
+        }
+      }
+    },
+    {
+      "name": "牧草網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "粗麻繩編成菱格網袋，袋口綁在牆邊木鉤上，裡面塞著少量乾草。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "hay-net",
+        "words": {
+          "zh-TW": "牧草網",
+          "en": "hay net",
+          "ja": {
+            "text": "干し草ネット",
+            "reading": "ほしくさネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "擠乳矮凳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮矮的三腳木凳，圓形座面磨得發亮，腿部向外微微張開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "milking-stool",
+        "words": {
+          "zh-TW": "擠乳矮凳",
+          "en": "milking stool",
+          "ja": {
+            "text": "搾乳用スツール",
+            "reading": "さくにゅうようスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司壓模",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木製方框夾著圓形模具，上方有螺旋壓桿與寬扁握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "cheese-press",
+        "words": {
+          "zh-TW": "起司壓模",
+          "en": "cheese press",
+          "ja": {
+            "text": "チーズプレス",
+            "reading": "チーズプレス"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油攪拌桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄口木桶上裝著直立木柄，頂端是圓形握把，桶身有深色箍圈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "butter-churn",
+        "words": {
+          "zh-TW": "奶油攪拌桶",
+          "en": "butter churn",
+          "ja": {
+            "text": "バター攪拌器",
+            "reading": "バターかくはんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油塊",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "方方的淡黃色奶油塊放在小木板上，表面留有平滑刀痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "butter-pat",
+        "words": {
+          "zh-TW": "奶油塊",
+          "en": "butter pat",
+          "ja": {
+            "text": "バターの小片",
+            "reading": "バターのしょうへん"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油分離器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色圓筒機身立在矮底座上，側面有小搖柄與兩個短出液嘴。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "cream-separator",
+        "words": {
+          "zh-TW": "奶油分離器",
+          "en": "cream separator",
+          "ja": {
+            "text": "クリームセパレーター",
+            "reading": "クリームセパレーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛奶濾布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形棉布折成厚厚一疊，邊緣有細密織紋與柔軟垂角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "milk-filter",
+        "words": {
+          "zh-TW": "牛奶濾布",
+          "en": "milk filter cloth",
+          "ja": {
+            "text": "ミルク用ろ布",
+            "reading": "ミルクようろふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "烙印鐵",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長鐵柄末端接著簡單彎曲的金屬圖形頭，整件呈暗黑色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "cattle-branding-iron",
+        "words": {
+          "zh-TW": "烙印鐵",
+          "en": "branding iron",
+          "ja": {
+            "text": "焼き印",
+            "reading": "やきいん"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬刷",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形木背板上排列整齊的短金屬齒，背面有皮革手帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "curry-comb",
+        "words": {
+          "zh-TW": "馬刷",
+          "en": "curry comb",
+          "ja": {
+            "text": "馬用ブラシ",
+            "reading": "うまようブラシ"
+          }
+        }
+      }
+    },
+    {
+      "name": "飼料槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形木槽架在兩隻矮腳上，內側空著，邊緣有粗糙木紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "feed-trough",
+        "words": {
+          "zh-TW": "飼料槽",
+          "en": "feed trough",
+          "ja": {
+            "text": "飼い葉おけ",
+            "reading": "かいばおけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾草架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深棕色木框固定在牆面，前方有幾根斜向木條形成開口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "hay-rack",
+        "words": {
+          "zh-TW": "乾草架",
+          "en": "hay rack",
+          "ja": {
+            "text": "干し草ラック",
+            "reading": "ほしくさラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "穀物麻袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "鼓起的粗麻布袋口以繩子束緊，表面可見交錯的米色纖維紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "grain-sack",
+        "words": {
+          "zh-TW": "穀物麻袋",
+          "en": "grain sack",
+          "ja": {
+            "text": "穀物袋",
+            "reading": "こくもつぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "飼料桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的深綠色金屬桶有圓形桶蓋與側邊提把，表面略帶刮痕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "feed-bin",
+        "words": {
+          "zh-TW": "飼料桶",
+          "en": "feed bin",
+          "ja": {
+            "text": "飼料入れ",
+            "reading": "しりょういれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋黃蛋白分離器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色小瓷器像淺碗，兩側有短短的支耳，中央帶細縫排液口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "egg-separator",
+        "words": {
+          "zh-TW": "蛋黃蛋白分離器",
+          "en": "egg separator",
+          "ja": {
+            "text": "卵黄分離器",
+            "reading": "らんおうぶんりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司布",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "薄薄的白色方布帶有稀疏網眼，四角柔軟下垂，布面透出細緻織紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "cheese-cloth",
+        "words": {
+          "zh-TW": "起司布",
+          "en": "cheesecloth",
+          "ja": {
+            "text": "チーズクロス",
+            "reading": "チーズクロス"
+          }
+        }
+      }
+    },
+    {
+      "name": "木製龍頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短短的深棕色木栓橫插在木桶側壁，末端有小圓形旋柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "wooden-spigot",
+        "words": {
+          "zh-TW": "木製龍頭",
+          "en": "wooden spigot",
+          "ja": {
+            "text": "木製の蛇口",
+            "reading": "もくせいのじゃぐち"
+          }
+        }
+      }
+    },
+    {
+      "name": "桶龍頭",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短金屬管接著圓形旋柄，末端向下彎，整體呈暗銅色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "barn",
+        "itemId": "barrel-tap",
+        "words": {
+          "zh-TW": "桶龍頭",
+          "en": "barrel tap",
+          "ja": {
+            "text": "樽の蛇口",
+            "reading": "たるのじゃぐち"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛欄板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一片深灰色金屬欄板，粗直桿焊成長方格，兩端有厚實的直立框架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "cattle-panel",
+        "words": {
+          "zh-TW": "牛欄板",
+          "en": "cattle panel",
+          "ja": {
+            "text": "牛用柵",
+            "reading": "うしようさく"
+          }
+        }
+      }
+    },
+    {
+      "name": "小牛屋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "白色塑膠小屋呈圓弧頂棚形，前方有寬大的黑色開口，旁邊連著矮矮的圍欄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "calf-hutch",
+        "words": {
+          "zh-TW": "小牛屋",
+          "en": "calf hutch",
+          "ja": {
+            "text": "子牛小屋",
+            "reading": "こうしごや"
+          }
+        }
+      }
+    },
+    {
+      "name": "剪羊毛剪",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片細長銀色刀刃連成弧形，末端彎成兩個圓環握柄，外形像大型剪刀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "sheep-shears",
+        "words": {
+          "zh-TW": "剪羊毛剪",
+          "en": "sheep shears",
+          "ja": {
+            "text": "羊毛刈りばさみ",
+            "reading": "ようもうかりばさみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牲畜秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "低矮方形金屬秤台四周有粗欄杆，前端立著一根短柱，頂部裝有圓形錶盤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "livestock-scale",
+        "words": {
+          "zh-TW": "牲畜秤",
+          "en": "livestock scale",
+          "ja": {
+            "text": "家畜用体重計",
+            "reading": "かちくようたいじゅうけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "牲畜耳標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一對黃色扁平塑膠牌呈圓角三角形，頂端有短短的扣合柱，表面沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "livestock-ear-tag",
+        "words": {
+          "zh-TW": "牲畜耳標",
+          "en": "livestock ear tag",
+          "ja": {
+            "text": "家畜用耳標",
+            "reading": "かちくようじひょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "糞肥撒佈器",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "綠色拖車有兩個粗黑輪胎，車斗後方露出一排深色旋轉齒輪與直立防護架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "manure-spreader",
+        "words": {
+          "zh-TW": "糞肥撒佈器",
+          "en": "manure spreader",
+          "ja": {
+            "text": "肥料散布機",
+            "reading": "ひりょうさんぷき"
+          }
+        }
+      }
+    },
+    {
+      "name": "牲畜拖車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "銀灰色長方形拖車架在四個黑輪上，側面有通風欄孔，後方有向下斜伸的裝卸坡板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "livestock-trailer",
+        "words": {
+          "zh-TW": "牲畜拖車",
+          "en": "livestock trailer",
+          "ja": {
+            "text": "家畜運搬車",
+            "reading": "かちくうんぱんしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "擠乳機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色金屬桶上接著四個透明杯狀吸頭，粗黑軟管盤繞在側面，底部有兩個小輪子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "milking-machine",
+        "words": {
+          "zh-TW": "擠乳機",
+          "en": "milking machine",
+          "ja": {
+            "text": "搾乳機",
+            "reading": "さくにゅうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛奶量杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明直筒玻璃杯有厚底與短把手，杯身帶著細小刻線但沒有文字，頂部是寬圓杯口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "milk-measuring-jar",
+        "words": {
+          "zh-TW": "牛奶量杯",
+          "en": "milk measuring jar",
+          "ja": {
+            "text": "ミルク計量カップ",
+            "reading": "ミルクけいりょうカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牲畜體溫計",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長銀色金屬棒末端連著白色圓形錶盤，錶面只有黑色短刻線與指針，沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "livestock-thermometer",
+        "words": {
+          "zh-TW": "牲畜體溫計",
+          "en": "livestock thermometer",
+          "ja": {
+            "text": "家畜用体温計",
+            "reading": "かちくようたいおんけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "牲畜注射器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明細筒接著長金屬針頭，尾端有寬圓按柄與兩側指環，筒身只有刻線而沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "stable",
+        "itemId": "livestock-syringe",
+        "words": {
+          "zh-TW": "牲畜注射器",
+          "en": "livestock syringe",
+          "ja": {
+            "text": "家畜用注射器",
+            "reading": "かちくようちゅうしゃき"
+          }
+        }
+      }
+    },
+    {
+      "name": "池塘",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "橢圓形淺藍水面，邊緣圍著不規則的深灰色石頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "pond",
+        "words": {
+          "zh-TW": "池塘",
+          "en": "pond",
+          "ja": {
+            "text": "池",
+            "reading": "いけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "浮萍",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾片鮮綠色圓葉密集漂在水面，葉片細小，沒有明顯花朵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "duckweed",
+        "words": {
+          "zh-TW": "浮萍",
+          "en": "duckweed",
+          "ja": {
+            "text": "浮き草",
+            "reading": "うきくさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "睡蓮葉",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "寬大的圓形綠葉浮在水面，葉片一側有明顯的狹長缺口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-lily-pad",
+        "words": {
+          "zh-TW": "睡蓮葉",
+          "en": "lily pad",
+          "ja": {
+            "text": "ハスの葉",
+            "reading": "はすのは"
+          }
+        }
+      }
+    },
+    {
+      "name": "蓮蓬",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色倒錐形蓮蓬，頂面有幾個圓孔，柄端朝下。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "lotus-seed-pod",
+        "words": {
+          "zh-TW": "蓮蓬",
+          "en": "lotus seed pod",
+          "ja": {
+            "text": "ハスの実",
+            "reading": "はすのみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "布袋蓮",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一簇亮綠色橢圓葉長在膨大的葉柄上，頂端開著淡紫色花穗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-hyacinth",
+        "words": {
+          "zh-TW": "布袋蓮",
+          "en": "water hyacinth",
+          "ja": {
+            "text": "ホテイアオイ",
+            "reading": "ほていあおい"
+          }
+        }
+      }
+    },
+    {
+      "name": "莎草",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "成叢的細長翠綠葉片向上伸展，頂端有細小的褐色穗子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-sedge",
+        "words": {
+          "zh-TW": "莎草",
+          "en": "sedge",
+          "ja": {
+            "text": "カヤツリグサ",
+            "reading": "かやつりぐさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水黽",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長黑色身體配六條纖細長腳，張開貼在水面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-strider",
+        "words": {
+          "zh-TW": "水黽",
+          "en": "water strider",
+          "ja": {
+            "text": "アメンボ",
+            "reading": "あめんぼ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蝌蚪",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一顆圓潤的黑色小頭連著細長尾巴，側面可見小小的眼點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "tadpole",
+        "words": {
+          "zh-TW": "蝌蚪",
+          "en": "tadpole",
+          "ja": {
+            "text": "おたまじゃくし",
+            "reading": "おたまじゃくし"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛙卵",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一團透明膠狀圓球黏在一起，每顆中央都有一個深色小點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "frogspawn",
+        "words": {
+          "zh-TW": "蛙卵",
+          "en": "frogspawn",
+          "ja": {
+            "text": "カエルの卵",
+            "reading": "かえるのたまご"
+          }
+        }
+      }
+    },
+    {
+      "name": "青蛙",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "綠色圓身青蛙蹲伏著，兩側有突出的眼睛和彎曲的後腿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "frog",
+        "words": {
+          "zh-TW": "青蛙",
+          "en": "frog",
+          "ja": {
+            "text": "カエル",
+            "reading": "かえる"
+          }
+        }
+      }
+    },
+    {
+      "name": "蝸牛殼",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕褐色圓錐殼表面有清楚的螺旋紋，殼口朝向一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "snail-shell",
+        "words": {
+          "zh-TW": "蝸牛殼",
+          "en": "snail shell",
+          "ja": {
+            "text": "カタツムリの殻",
+            "reading": "かたつむりのから"
+          }
+        }
+      }
+    },
+    {
+      "name": "蚊子",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "極細的黑色身體帶著六條細腳和一對透明窄翅。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "mosquito",
+        "words": {
+          "zh-TW": "蚊子",
+          "en": "mosquito",
+          "ja": {
+            "text": "蚊",
+            "reading": "か"
+          }
+        }
+      }
+    },
+    {
+      "name": "水車",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "棕色圓形木輪由中心軸和放射狀葉板組成，架在水邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-wheel",
+        "words": {
+          "zh-TW": "水車",
+          "en": "water wheel",
+          "ja": {
+            "text": "水車",
+            "reading": "すいしゃ"
+          }
+        }
+      }
+    },
+    {
+      "name": "木槳",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "長柄末端接著寬扁橢圓槳葉，整支是淺棕色木頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "wooden-paddle",
+        "words": {
+          "zh-TW": "木槳",
+          "en": "wooden paddle",
+          "ja": {
+            "text": "木のパドル",
+            "reading": "きのぱどる"
+          }
+        }
+      }
+    },
+    {
+      "name": "釣魚浮標",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅白相間的細長浮標直立露出水面，下端浸在池水裡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "fishing-float-farm",
+        "words": {
+          "zh-TW": "釣魚浮標",
+          "en": "fishing float",
+          "ja": {
+            "text": "釣り浮き",
+            "reading": "つりうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "魚鉤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀灰色金屬鉤彎成尖銳的弧形，尾端有圓形繫線環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "fish-hook",
+        "words": {
+          "zh-TW": "魚鉤",
+          "en": "fish hook",
+          "ja": {
+            "text": "釣り針",
+            "reading": "つりばり"
+          }
+        }
+      }
+    },
+    {
+      "name": "陶水罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "赭紅色陶罐有圓鼓罐身、短頸和寬口，表面沒有花紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-jar",
+        "words": {
+          "zh-TW": "陶水罐",
+          "en": "water jar",
+          "ja": {
+            "text": "水がめ",
+            "reading": "みずがめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "木製浮水誘餌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "簡化的棕色木製鴨形浮具，表面平滑，底部露出水面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "duck-decoy",
+        "words": {
+          "zh-TW": "木製浮水誘餌",
+          "en": "duck decoy",
+          "ja": {
+            "text": "木製のカモ型おとり",
+            "reading": "もくせいのかもがたおとり"
+          }
+        }
+      }
+    },
+    {
+      "name": "陶製水盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "寬口淺盆呈灰藍色，厚實圓形盆沿包住平坦內底。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "water-bowl",
+        "words": {
+          "zh-TW": "陶製水盆",
+          "en": "water bowl",
+          "ja": {
+            "text": "水鉢",
+            "reading": "みずばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "香蒲",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "幾根筆直的細長綠葉之間，立著深褐色細柱狀的穗子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "reed-mace",
+        "words": {
+          "zh-TW": "香蒲",
+          "en": "cattail",
+          "ja": {
+            "text": "ガマ",
+            "reading": "がま"
+          }
+        }
+      }
+    },
+    {
+      "name": "蜻蜓",
+      "category": "自然",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長藍綠色身體兩側展開四片透明翅膀，翅脈清晰。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "dragonfly-farm",
+        "words": {
+          "zh-TW": "蜻蜓",
+          "en": "dragonfly",
+          "ja": {
+            "text": "トンボ",
+            "reading": "とんぼ"
+          }
+        }
+      }
+    },
+    {
+      "name": "釣竿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長深棕色竿身微微彎曲，末端垂著一條細線和小浮標。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "fishing-rod-farm",
+        "words": {
+          "zh-TW": "釣竿",
+          "en": "fishing rod",
+          "ja": {
+            "text": "釣り竿",
+            "reading": "つりざお"
+          }
+        }
+      }
+    },
+    {
+      "name": "撈魚網",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形細網固定在短木柄末端，網袋呈淺灰色半球狀。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "fishing-net-farm",
+        "words": {
+          "zh-TW": "撈魚網",
+          "en": "fishing net",
+          "ja": {
+            "text": "魚とり網",
+            "reading": "さかなとりあみ"
+          }
+        }
+      }
+    },
+    {
+      "name": "踏水石",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾塊扁平灰色圓石沿著池邊排成間隔清楚的踏步。",
+      "ref": {
+        "project": "la-game",
+        "scene": "farm",
+        "zone": "pasture",
+        "itemId": "pond-stone-step",
+        "words": {
+          "zh-TW": "踏水石",
+          "en": "stepping stone",
+          "ja": {
+            "text": "飛び石",
+            "reading": "とびいし"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "zones": {
+    "farmyard": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "農場入口與農舍門面",
+          "x": [
+            0.02,
+            0.22
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "farm-gate",
+            "gate-latch-farm",
+            "wooden-post"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "穀倉與穀物收納",
+          "x": [
+            0.25,
+            0.44
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "barn"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "筒倉與風車",
+          "x": [
+            0.47,
+            0.68
+          ],
+          "main": "silo",
+          "on": [
+            "feed-sack",
+            "grain-scoop"
+          ],
+          "beside": [
+            "windmill"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "牲畜飲水區",
+          "x": [
+            0.04,
+            0.23
+          ],
+          "main": "water-trough",
+          "on": [
+            "watering-can-farm"
+          ],
+          "beside": [
+            "wooden-bucket"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "乾草堆與搬運工具",
+          "x": [
+            0.27,
+            0.48
+          ],
+          "main": "haystack",
+          "beside": [
+            "pitchfork",
+            "shovel"
+          ],
+          "front": [
+            "hay-bale",
+            "wheelbarrow-farm"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "農具與物資暫放",
+          "x": [
+            0.52,
+            0.75
+          ],
+          "fixture": "platform",
+          "on": [
+            "milk-can",
+            "egg-crate",
+            "wooden-crate-farm",
+            "wooden-plank-farm"
+          ],
+          "beside": [
+            "basket-farm",
+            "spade-farm"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "圍籬旁的石槽",
+          "x": [
+            0.74,
+            0.97
+          ],
+          "main": "fence-farm",
+          "beside": [
+            "stone-trough"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "農舍門面",
+          "x": [
+            0.69,
+            0.73
+          ],
+          "fixture": "facade",
+          "door": true,
+          "wall": [
+            "farmhouse"
+          ]
+        }
+      ]
+    },
+    "barn": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "穀物入倉與篩選",
+          "x": [
+            0.03,
+            0.27
+          ],
+          "fixture": "shelf",
+          "on": [
+            "grain-sieve",
+            "grain-sack",
+            "grain-chute"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "穀物儲存",
+          "x": [
+            0.3,
+            0.49
+          ],
+          "main": "grain-bin"
+        },
+        {
+          "row": "back",
+          "note": "乾草吊掛與飼料架",
+          "x": [
+            0.52,
+            0.72
+          ],
+          "fixture": "shelf",
+          "on": [
+            "hay-hook",
+            "hay-net",
+            "hay-rack",
+            "feed-bin"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "牲畜餵食區",
+          "x": [
+            0.04,
+            0.24
+          ],
+          "main": "feed-trough",
+          "on": [
+            "curry-comb"
+          ],
+          "beside": [
+            "milking-stool"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "乳品加工桌",
+          "x": [
+            0.28,
+            0.52
+          ],
+          "fixture": "desk",
+          "on": [
+            "cheese-press",
+            "butter-churn",
+            "cream-separator",
+            "milk-filter"
+          ],
+          "front": [
+            "butter-pat",
+            "cheese-cloth"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "起司與奶油封桶",
+          "x": [
+            0.56,
+            0.77
+          ],
+          "fixture": "counter",
+          "on": [
+            "wooden-spigot",
+            "barrel-tap"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "分蛋工作台",
+          "x": [
+            0.76,
+            0.96
+          ],
+          "fixture": "desk",
+          "on": [
+            "egg-separator"
+          ],
+          "beside": [
+            "cattle-branding-iron"
+          ]
+        }
+      ]
+    },
+    "stable": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "牛欄與小牛休息區",
+          "x": [
+            0.03,
+            0.28
+          ],
+          "main": "cattle-panel",
+          "beside": [
+            "calf-hutch"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "牲畜檢查與稱重",
+          "x": [
+            0.32,
+            0.54
+          ],
+          "main": "livestock-scale",
+          "on": [
+            "livestock-ear-tag"
+          ],
+          "beside": [
+            "livestock-thermometer",
+            "livestock-syringe"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "擠乳區",
+          "x": [
+            0.04,
+            0.26
+          ],
+          "main": "milking-machine",
+          "on": [
+            "milk-measuring-jar"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "剪羊毛工作台",
+          "x": [
+            0.3,
+            0.49
+          ],
+          "fixture": "desk",
+          "on": [
+            "sheep-shears"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "糞肥整理與裝載",
+          "x": [
+            0.58,
+            0.81
+          ],
+          "main": "manure-spreader"
+        },
+        {
+          "row": "back",
+          "note": "牲畜運送出口",
+          "x": [
+            0.84,
+            0.98
+          ],
+          "main": "livestock-trailer"
+        }
+      ]
+    },
+    "pasture": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "池塘與水生植物",
+          "x": [
+            0.04,
+            0.32
+          ],
+          "main": "pond",
+          "on": [
+            "lotus-seed-pod",
+            "water-sedge",
+            "reed-mace"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "水車與引水處",
+          "x": [
+            0.36,
+            0.55
+          ],
+          "main": "water-wheel",
+          "beside": [
+            "wooden-paddle"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "池邊釣魚點",
+          "x": [
+            0.59,
+            0.79
+          ],
+          "main": "fishing-rod-farm",
+          "on": [
+            "water-jar"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "踏水石與飲水點",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "main": "pond-stone-step",
+          "beside": [
+            "water-bowl"
+          ]
+        }
+      ]
+    }
+  }
+}

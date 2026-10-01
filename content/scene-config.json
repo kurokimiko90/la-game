@@ -1,6 +1,6 @@
 {
-  "world": {"width": 21780, "height": 11580},
-  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool", "hotel", "amusement-park", "hot-spring"],
+  "world": {"width": 21780, "height": 13120},
+  "order": ["park", "street", "riverside", "supermarket", "station", "restaurant", "school", "classroom", "zoo", "botanical-garden", "hospital", "airport", "library", "post-office", "fire-station", "bakery", "beach", "clothing-store", "movie-theater", "bank", "museum", "police-station", "hair-salon", "flower-shop", "bookstore", "stationery-store", "home", "gym", "swimming-pool", "hotel", "amusement-park", "hot-spring", "farm"],
   "scenes": {
     "park": {
       "name": "公園",
@@ -1741,6 +1741,52 @@
       "motion": {"dehumidifier": "wobble", "fan": "wobble", "wooden-flower-box": "sway"},
       "arrange": "auto",
       "terrain": {"color": "#90caf9", "x0": 15200, "y0": 9240, "x1": 20640, "y1": 10540, "zones": [{"id": "entrance", "x0": 15200, "y0": 9240, "x1": 17800, "y1": 9890, "indoor": false, "floor": "paving"}, {"id": "lobby", "x0": 18040, "y0": 9240, "x1": 20640, "y1": 9890, "indoor": true, "floor": "tile", "wallBase": 9420}, {"id": "bathing-area", "x0": 18040, "y0": 9890, "x1": 20640, "y1": 10540, "indoor": true, "floor": "tile", "wallBase": 10070}, {"id": "guest-room", "x0": 15200, "y0": 9890, "x1": 17800, "y1": 10540, "indoor": true, "floor": "wood", "wallBase": 10070}], "venue": {"accent": "#7fae9b", "wall": "wood", "zones": {"entrance": ["arrival", "terrace"], "lobby": ["concourse", "waiting"], "bathing-area": ["wash", "pooldeck"], "guest-room": ["reading", "salon"]}}}
+    },
+    "farm": {
+      "name": "農場",
+      "icon": "farm-gate",
+      "zones": {"farmyard": [3840, 10780, 6440, 11430], "barn": [6680, 10780, 9280, 11430], "stable": [6680, 11430, 9280, 12080], "pasture": [3840, 11430, 6440, 12080]},
+      "bands": {
+        "ground": {"scale": [0.95, 1.05], "override": {"farmyard": {"top": 10850, "bottom": 11225}, "barn": {"top": 11020, "bottom": 11410, "gaps": [[10970, 11162]]}, "stable": {"top": 11670, "bottom": 12060}, "pasture": {"top": 11500, "bottom": 12060, "x1": 5110}}},
+        "sky-farmyard": {"top": 10930, "bottom": 11080, "zones": ["farmyard"], "layer": 3, "float": 150},
+        "road-farmyard": {"top": 11310, "bottom": 11380, "zones": ["farmyard"], "inset": 20},
+        "wall-barn": {"levels": [10920], "zones": ["barn"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-barn": {"levels": [10958], "zones": ["barn"], "inset": 50},
+        "surface-barn": {"levels": [11090], "zones": ["barn"], "x0": 6830, "x1": 9130, "inset": 0, "scale": [0.8, 0.8], "look": "cafe-counter", "base": 11132},
+        "wall-stable": {"levels": [11570], "zones": ["stable"], "inset": 60, "scale": [0.85, 0.85]},
+        "wallbase-stable": {"levels": [11608], "zones": ["stable"], "inset": 50},
+        "sky-pasture": {"top": 11580, "bottom": 11730, "zones": ["pasture"], "layer": 3, "float": 150},
+        "water-pasture": {"x0": 5180, "x1": 6350, "top": 11610, "bottom": 12010, "zones": ["pasture"], "layer": 1, "scale": [0.9, 0.9]}
+      },
+      "place": {
+        "hay-hook": "wall-barn",
+        "grain-sieve": "wall-barn",
+        "grain-bin": "wallbase-barn",
+        "grain-chute": "wall-barn",
+        "hay-net": "wall-barn",
+        "cheese-press": "surface-barn",
+        "butter-pat": "surface-barn",
+        "cream-separator": "surface-barn",
+        "milk-filter": "surface-barn",
+        "cattle-branding-iron": "wall-barn",
+        "curry-comb": "surface-barn",
+        "hay-rack": "wall-barn",
+        "egg-separator": "surface-barn",
+        "cheese-cloth": "surface-barn",
+        "wooden-spigot": "wall-barn",
+        "barrel-tap": "surface-barn",
+        "duckweed": "water-pasture",
+        "water-lily-pad": "water-pasture",
+        "water-hyacinth": "water-pasture",
+        "fishing-float-farm": "water-pasture",
+        "duck-decoy": "water-pasture"
+      },
+      "clusters": [["barn", "silo"], ["hay-bale", "pitchfork"], ["feed-sack", "grain-scoop"], ["stone-trough", "wooden-bucket"], ["fence-farm", "wooden-post"], ["shovel", "wheelbarrow-farm"], ["wooden-plank-farm", "wooden-crate-farm"], ["pond", "water-sedge", "water-wheel", "wooden-paddle", "water-jar", "water-bowl", "reed-mace", "fishing-rod-farm", "fishing-net-farm", "pond-stone-step"]],
+      "loose": ["milk-can", "grain-scoop", "egg-crate", "wooden-bucket", "watering-can-farm", "spade-farm", "butter-pat", "milk-filter", "curry-comb", "cheese-cloth", "barrel-tap", "sheep-shears", "livestock-ear-tag", "milk-measuring-jar", "livestock-thermometer", "livestock-syringe", "lotus-seed-pod", "wooden-paddle", "fish-hook", "water-jar", "fishing-rod-farm", "fishing-net-farm"],
+      "noFlip": [],
+      "motion": {"windmill": "wobble", "hay-net": "sway", "duckweed": "bob", "water-lily-pad": "bob", "water-hyacinth": "bob", "water-sedge": "sway", "water-wheel": "wobble", "fishing-float-farm": "bob", "duck-decoy": "bob", "reed-mace": "sway"},
+      "arrange": "auto",
+      "terrain": {"color": "#bcaaa4", "x0": 3840, "y0": 10780, "x1": 9280, "y1": 12080, "zones": [{"id": "farmyard", "x0": 3840, "y0": 10780, "x1": 6440, "y1": 11430, "indoor": false, "floor": "paving", "road": {"y0": 11240, "y1": 11400}}, {"id": "barn", "x0": 6680, "y0": 10780, "x1": 9280, "y1": 11430, "indoor": true, "floor": "wood", "wallBase": 10960}, {"id": "stable", "x0": 6680, "y0": 11430, "x1": 9280, "y1": 12080, "indoor": true, "floor": "tile", "wallBase": 11610}, {"id": "pasture", "x0": 3840, "y0": 11430, "x1": 6440, "y1": 12080, "indoor": false, "floor": "grass", "pool": {"x0": 5140, "y0": 11540, "x1": 6390, "y1": 12040}}], "venue": {"accent": "#9caf88", "wall": "wood", "zones": {"farmyard": ["arrival", "flowerbed"], "barn": ["workshop"], "stable": ["wash", "service"], "pasture": ["exercise", "flowerbed"]}}}
     }
   }
 }

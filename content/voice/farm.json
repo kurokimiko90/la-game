@@ -1,0 +1,442 @@
+{
+  "en": {
+    "water-hyacinth": {
+      "heard": "Water hyacinth.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "fishing-float-farm": {
+      "heard": "Fishing Float",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "duck-decoy": {
+      "heard": "Duck Decoy.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "duckweed": {
+      "heard": "Duckweed.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "farm-gate": {
+      "heard": "FarmGate.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-post": {
+      "heard": "Wooden post.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "farmhouse": {
+      "heard": "Farmhouse.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "gate-latch-farm": {
+      "heard": "Gate Latch",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "silo": {
+      "heard": "Silo.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "fence-farm": {
+      "heard": "Fence",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "feed-sack": {
+      "heard": "FeedSack.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "grain-scoop": {
+      "heard": "Green Scoop.",
+      "score": 0.8,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "stone-trough": {
+      "heard": "Stone trough.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "windmill": {
+      "heard": "Windmill.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "grain-bin": {
+      "heard": "Grain bin.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "hay-hook": {
+      "heard": "Hey, Hook.",
+      "score": 0.86,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "grain-sieve": {
+      "heard": "Green sieve.",
+      "score": 0.8,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "hay-rack": {
+      "heard": "Hey, Rack.",
+      "score": 0.86,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "grain-sack": {
+      "heard": "Green Sack.",
+      "score": 0.78,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "feed-bin": {
+      "heard": "Feedbin.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "egg-separator": {
+      "heard": "Egg separator.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "cattle-branding-iron": {
+      "heard": "Branding iron.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "haystack": {
+      "heard": "Haystack.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-plank-farm": {
+      "heard": "Wooden Plank",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-crate-farm": {
+      "heard": "Wooden Crate.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "pitchfork": {
+      "heard": "Pitchfork.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "shovel": {
+      "heard": "Shovel.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-bucket": {
+      "heard": "Wooden Bucket.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "basket-farm": {
+      "heard": "Basket.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "feed-trough": {
+      "heard": "Feed Trough.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "cheese-press": {
+      "heard": "Cheese press.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "butter-churn": {
+      "heard": "Butter churn.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "cream-separator": {
+      "heard": "Cream separator.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "milk-filter": {
+      "heard": "Milk filter cloth.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "curry-comb": {
+      "heard": "Currycomb.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-spigot": {
+      "heard": "Wooden spigot.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "barrel-tap": {
+      "heard": "Barrel tap.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "milking-stool": {
+      "heard": "Milking stool.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "water-wheel": {
+      "heard": "Waterwheel.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "lotus-seed-pod": {
+      "heard": "Lotus Seed Pod.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "cattle-panel": {
+      "heard": "Cattle panel.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "livestock-ear-tag": {
+      "heard": "Livestock ear tag.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "calf-hutch": {
+      "heard": "Calf hutch.",
+      "score": 1,
+      "take": "en-1790876392404.aac",
+      "account": "chatgpt1"
+    },
+    "water-lily-pad": {
+      "heard": "Lilypad.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "barn": {
+      "heard": "Barn.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "water-trough": {
+      "heard": "Water trough.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "milk-can": {
+      "heard": "Milk can.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "egg-crate": {
+      "heard": "Egg Crate",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "watering-can-farm": {
+      "heard": "watering can.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "spade-farm": {
+      "heard": "Spade.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "wheelbarrow-farm": {
+      "heard": "Wheelbarrow.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "cheese-cloth": {
+      "heard": "Cheesecloth.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "butter-pat": {
+      "heard": "Butter Pat.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "pond": {
+      "heard": "Pond",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "water-sedge": {
+      "heard": "Sedge.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "fishing-net-farm": {
+      "heard": "Fishing net.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "livestock-scale": {
+      "heard": "Livestock scale.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "manure-spreader": {
+      "heard": "Manure Spreader.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "livestock-trailer": {
+      "heard": "Livestock trailer.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "livestock-thermometer": {
+      "heard": "Livestock thermometer.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "livestock-syringe": {
+      "heard": "Livestock syringe.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "fish-hook": {
+      "heard": "Fishhook.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "fishing-rod-farm": {
+      "heard": "Fishing rod.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "water-jar": {
+      "heard": "A water jar.",
+      "score": 0.89,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "water-bowl": {
+      "heard": "Water Bowl.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "milking-machine": {
+      "heard": "Milking machine.",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "milk-measuring-jar": {
+      "heard": "Milk Measuring Jar",
+      "score": 1,
+      "take": "en-1790876680195.aac",
+      "account": "chatgpt1"
+    },
+    "hay-net": {
+      "heard": "Hey net!",
+      "score": 0.83,
+      "take": "en-1790876791199.aac",
+      "account": "chatgpt1"
+    },
+    "hay-bale": {
+      "heard": "Hey, Bale.",
+      "score": 0.86,
+      "take": "en-1790876791199.aac",
+      "account": "chatgpt1"
+    },
+    "reed-mace": {
+      "heard": "Catail.",
+      "score": 0.86,
+      "take": "en-1790876791199.aac",
+      "account": "chatgpt1"
+    },
+    "wooden-paddle": {
+      "heard": "Wooden paddles.",
+      "score": 0.92,
+      "take": "en-1790876791199.aac",
+      "account": "chatgpt1"
+    },
+    "pond-stone-step": {
+      "heard": "Stepping stone.",
+      "score": 1,
+      "take": "en-1790876791199.aac",
+      "account": "chatgpt1"
+    },
+    "sheep-shears": {
+      "heard": "Sheep shears.",
+      "score": 1,
+      "take": "en-1790876791199.aac",
+      "account": "chatgpt1"
+    }
+  }
+}

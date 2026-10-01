@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-02T02:08:59.782+09:00",
+  "syncedAt": "2026-10-02T02:37:59.794+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -783,6 +783,125 @@
         "shoe-measuring-device"
       ],
       "failed": [],
+      "pending": [],
+      "skippedLaneA": []
+    },
+    {
+      "scene": "farm",
+      "slug": "la-farm",
+      "synced": [
+        "farm-gate",
+        "farmhouse",
+        "barn",
+        "silo",
+        "windmill",
+        "water-trough",
+        "hay-bale",
+        "pitchfork",
+        "shovel",
+        "milk-can",
+        "feed-sack",
+        "grain-scoop",
+        "egg-crate",
+        "haystack",
+        "stone-trough",
+        "wooden-bucket",
+        "fence-farm",
+        "wooden-post",
+        "gate-latch-farm",
+        "wheelbarrow-farm",
+        "watering-can-farm",
+        "basket-farm",
+        "wooden-plank-farm",
+        "wooden-crate-farm",
+        "spade-farm",
+        "hay-hook",
+        "grain-sieve",
+        "grain-bin",
+        "grain-chute",
+        "hay-net",
+        "milking-stool",
+        "cheese-press",
+        "butter-churn",
+        "butter-pat",
+        "cream-separator",
+        "milk-filter",
+        "cattle-branding-iron",
+        "curry-comb",
+        "feed-trough",
+        "hay-rack",
+        "grain-sack",
+        "feed-bin",
+        "egg-separator",
+        "cheese-cloth",
+        "wooden-spigot",
+        "barrel-tap",
+        "cattle-panel",
+        "calf-hutch",
+        "sheep-shears",
+        "livestock-scale",
+        "livestock-ear-tag",
+        "manure-spreader",
+        "livestock-trailer",
+        "milking-machine",
+        "milk-measuring-jar",
+        "livestock-thermometer",
+        "livestock-syringe",
+        "pond",
+        "duckweed",
+        "water-lily-pad",
+        "lotus-seed-pod",
+        "water-hyacinth",
+        "water-sedge",
+        "water-wheel",
+        "wooden-paddle",
+        "fishing-float-farm",
+        "fish-hook",
+        "water-jar",
+        "duck-decoy",
+        "water-bowl",
+        "reed-mace",
+        "fishing-rod-farm",
+        "fishing-net-farm",
+        "pond-stone-step"
+      ],
+      "failed": [
+        {
+          "itemId": "water-strider",
+          "elementId": "el-064",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "tadpole",
+          "elementId": "el-065",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "frogspawn",
+          "elementId": "el-066",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "frog",
+          "elementId": "el-067",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "snail-shell",
+          "elementId": "el-068",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "mosquito",
+          "elementId": "el-069",
+          "error": "llm 判定無合適圖"
+        },
+        {
+          "itemId": "dragonfly-farm",
+          "elementId": "el-078",
+          "error": "llm 判定無合適圖"
+        }
+      ],
       "pending": [],
       "skippedLaneA": []
     },
