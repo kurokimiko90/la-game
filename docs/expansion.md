@@ -19,7 +19,8 @@ generating
 integrating
  │ sync-svg → 寫 scene-config（區域、地帶、群組、動態、地形）→ 擺放 → build → 音檔
  │ vitest、tsc、eslint、Playwright E2E 全過
- │ 渲染檢查（Chrome 畫每個 SVG：空白、剪影、渲染失敗）→ 列入待人工審（.auto-expand/review-queue.json，不擋 commit）
+ │ 品質檢查 scripts/review-scene.mjs → 列入待人工審（.auto-expand/review-queue.json，不擋 commit）
+ │   渲染檢查（空白、剪影、渲染失敗）、自動試玩（點不點得到、手機上多大）、看圖驗收（codex 附圖：像不像、哪些太像）
  │ → 在本檔第 5 節記一筆 → commit
 idle（下一個場景）
 ```
@@ -38,8 +39,14 @@ idle（下一個場景）
 - **品質關卡**（2026-10-01 起）：
   - 單字審核 `scripts/lib/vocab-review.mjs`：修正只能改 zh / ja / reading（圖是照英文畫的，改英文等於換東西）；
     審核想丟掉超過 20% 就當作審核不可靠，不丟物品只套修正；審核失敗照原樣放行。
-  - 渲染檢查 `scripts/check-svg-render.mjs`（規則在 `scripts/lib/svg-render-check.mjs`）：只抓「畫壞了」，抓不到「畫得不像」。
-    `--status` 會列出待人工審的街區；看圖用 `node scripts/preview-sheet.mjs <scene>`，看完從 `review-queue.json` 刪掉。
+  - 渲染檢查 `scripts/check-svg-render.mjs`（規則在 `scripts/lib/svg-render-check.mjs`）：只抓「畫壞了」。
+  - 自動試玩 `scripts/lib/playtest.mjs`：用遊戲本身的點擊判定（`itemAtPoint`，重疊時小的優先）和手機預設縮放，
+    標出點得到不到 30%、手機上短邊不到 24px 的物件。2026-10-01 全部 2140 個物件都沒標到（最差 41%、25px），目前是防退步用。
+  - 看圖驗收 `scripts/lib/visual-review.mjs`：每 20 個物件拼一張編號對照表，附圖給 miko-ws 的 codex（`codexText(prompt, { images })` →
+    miko-ws `codex exec --image`），問每格像不像描述、哪些長得太像。一個街區約 5 次呼叫、8 分鐘。
+    2026-10-01 在 gym 校準（以人工看圖為準，樣本 1 個街區）：標記的約七成五同意、漏掉約三成，所以只進清單、不擋 commit、不自動重畫。
+  - `--status` 列出待人工審的街區；細節在 `.auto-expand/review/<scene>.json`，對照表 `.auto-expand/review/<scene>-<n>.png`，
+    看完從 `review-queue.json` 刪掉。手動跑：`node scripts/review-scene.mjs <scene> [--no-vision]`。
   - 閒置（沒有 slot、主題用完、到上限）同樣的原因只記一次 log。
 - **只 commit 到 `feat/expand-scenes`**，不 push。
 - 物品少於 `minItems`（生成失敗太多）也算失敗。
@@ -101,8 +108,8 @@ y4620  機場         │  │          │  │ 圖書館       │  │ 海邊
 ## 4. 已知限制
 
 - 地形是模板，不像前 4 個場景那樣為每個地方量身畫（例如車站沒有站房外觀）。
-- SVG 像不像描述沒有自動檢查：miko-ws 的 LLM 閘道（`/api/llm/text`）只收文字，要讓 LLM 看圖得先在 miko-ws 加圖片輸入。
-  目前只有渲染檢查 + 待人工審清單。人工檢查：開著 server 跑 `npm run content:scene-preview`。
+- 看圖驗收準確度只有約七成五（見上），擺放合不合理（整個街區的構圖）還沒有自動判斷，要人看 `npm run content:scene-preview`。
+- 看圖驗收依賴 miko-ws 的附圖支援（`src/skills/course/brains/index.js` 的 `sendMessageFresh(prompt, { images })`，2026-10-01 加）。
 - 單字審核本身也會錯（2026-10-01 實測：曾把泳帽判成不屬於健身房、給錯讀音），所以修正記在 plan 的 `reviewFixes` 可追查。
 - 場景越多，整張地圖的物件越多；手機效能還沒實測（見 planning.md 風險表）。
 - codex 忙的時候整批會逾時（2026-09-21 晚上車站 53 個失敗），靠隔輪重排補回來。

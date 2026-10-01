@@ -45,11 +45,12 @@ export async function gptVoice(text, outputPath) {
 }
 
 /** codex 文字生成（miko-ws 指揮中心排隊，只走 codex） */
-export async function codexText(prompt) {
+/** images：附圖的絕對路徑（miko-ws 轉成 codex exec --image），看圖驗收用 */
+export async function codexText(prompt, { images } = {}) {
   const client = lib('lib/llm-center-client.js');
   await client.ensureReady();
   // 規劃用 gpt-5.6-luna 最低的推理強度（low）省 codex 額度
-  return client.runCodexText(prompt, { project: 'la-game', reasoningEffort: 'low', deadlineMs: CODEX_DEADLINE_MS });
+  return client.runCodexText(prompt, { project: 'la-game', reasoningEffort: 'low', deadlineMs: CODEX_DEADLINE_MS, images });
 }
 
 /** 在 miko-ws 的 jobs.json 登記一個場景（已登記就不重複） */

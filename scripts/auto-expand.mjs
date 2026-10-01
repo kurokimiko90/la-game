@@ -323,19 +323,16 @@ function integrateCore(plan, available) {
 }
 
 /**
- * 渲染檢查（scripts/check-svg-render.mjs）：抓空白、剪影、渲染失敗的 SVG，連同場景一起進待人工審清單（--status 看得到）。
- * 只標記、不擋 commit；SVG 像不像 desc 還是要人看（node scripts/preview-sheet.mjs <scene>）。
+ * 品質檢查（scripts/review-scene.mjs）：渲染檢查 + 自動試玩（點不點得到、手機上多大）+ 看圖驗收（codex 附圖），
+ * 結果進待人工審清單（--status 看得到）。只標記、不擋 commit：看圖驗收 2026-10-01 在 gym 校準約七成五準，還不夠自動決定。
  */
-function renderReview(sceneId) {
+function qualityReview(sceneId) {
   try {
-    const out = path.join(STATE_DIR, 'svg-render.json');
-    run('svg-render', process.execPath, ['scripts/check-svg-render.mjs', sceneId, `--out=${out}`]);
-    const flagged = readJson(out).filter((r) => r.flag).map(({ id, flag }) => ({ id, flag }));
-    const queue = fs.existsSync(REVIEW_QUEUE) ? readJson(REVIEW_QUEUE) : {};
-    writeJson(REVIEW_QUEUE, { ...queue, [sceneId]: { at: localIso(), flagged } });
-    log(`渲染檢查 ${sceneId}：${flagged.length ? flagged.map((f) => `${f.id}（${f.flag}）`).join('、') : '沒有問題'}，已列入待人工審`);
+    run('review', process.execPath, ['--no-warnings', 'scripts/review-scene.mjs', sceneId]);
+    const q = readJson(REVIEW_QUEUE)[sceneId];
+    log(`品質檢查 ${sceneId}：標記 ${q.flagged.length} 個${q.flagged.length ? `（${q.flagged.map((f) => f.id).join('、').slice(0, 200)}）` : ''}、長得太像 ${q.similar.length} 組，已列入待人工審`);
   } catch (e) {
-    log(`渲染檢查沒做成：${e.message.split('\n')[0]}`);
+    log(`品質檢查沒做成：${e.message.split('\n')[0]}`);
   }
 }
 
@@ -347,7 +344,7 @@ function runChecks(sceneId) {
   run('typecheck', 'npx', ['tsc', '--noEmit']);
   run('lint', 'npx', ['eslint']);
   run('e2e', 'npm', ['run', 'test:e2e']);
-  renderReview(sceneId);
+  qualityReview(sceneId);
 }
 
 async function integrate(plan, settings, { topUp = false, restage = false } = {}) {
@@ -535,8 +532,8 @@ function printStatus() {
     idle: s.idleReason, skipped: (s.skipped ?? []).map((x) => `${x.kind}:${x.id}`), done: s.history.map((h) => `${h.name}(${h.items})`),
   }, null, 2));
   const queue = fs.existsSync(REVIEW_QUEUE) ? readJson(REVIEW_QUEUE) : {};
-  const pending = Object.entries(queue).map(([id, q]) => `${id}${q.flagged.length ? `（${q.flagged.map((f) => f.id).join('、')}）` : ''}`);
-  if (pending.length) console.log(`待人工審（node scripts/preview-sheet.mjs <scene> 看圖；看完從 .auto-expand/review-queue.json 刪掉）：${pending.join('、')}`);
+  const pending = Object.entries(queue).map(([id, q]) => `${id}（標記 ${q.flagged.length}、太像 ${(q.similar ?? []).length} 組）`);
+  if (pending.length) console.log(`待人工審（細節 .auto-expand/review/<scene>.json、對照表 .auto-expand/review/<scene>-<n>.png；看完從 .auto-expand/review-queue.json 刪掉）：${pending.join('、')}`);
   const settings = readJson(P.settings);
   const topUp = topUpCandidates(settings, s).map(({ plan, shortfall }) => `${plan.name} +${shortfall.reduce((n, x) => n + x.need, 0)}`);
   if (topUp.length) console.log(`待補元素（目標 ${settings.itemsPerScene} 個、手畫場景看各自的 itemsTarget，topUp ${settings.topUp ? '開' : '關'}）：${topUp.join('、')}`);

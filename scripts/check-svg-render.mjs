@@ -44,7 +44,7 @@ async function measure({ svg, size }) {
 }
 
 /** 清洗後的 SVG 是給內嵌用的，沒有 xmlns；當成圖片載入要補上，尺寸照 viewBox */
-function asImage(svg) {
+export function asImage(svg) {
   const [, , w, h] = (svg.match(/viewBox="([^"]+)"/)?.[1] ?? '0 0 100 100').trim().split(/[\s,]+/).map(Number);
   return svg.replace(/^<svg\b(?![^>]*xmlns=)/, `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"`);
 }
