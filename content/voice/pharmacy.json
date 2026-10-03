@@ -1,0 +1,574 @@
+{
+  "en": {
+    "wall-clock-pharmacy": {
+      "heard": "Wall clock.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "cross": {
+      "heard": "Cross.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "reception-desk": {
+      "heard": "Reception desk.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "eye-drops": {
+      "heard": "Eye drops.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "ointment-jar": {
+      "heard": "Ointment Jar",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-tube": {
+      "heard": "Medicine tube.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "blister-pack-pharmacy": {
+      "heard": "Blister Pack.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "walking-cane": {
+      "heard": "Walking cane.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "herbal-tea-bag": {
+      "heard": "Herbal teabag.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "pulse-oximeter-pharmacy": {
+      "heard": "Pulse oximeter.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "tongue-depressor-pharmacy": {
+      "heard": "Tongue depressor.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "wall-shelf-pharmacy": {
+      "heard": "Wall Shelf.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "hand-sanitizer-dispenser-pharmacy": {
+      "heard": "Hand sanitizer dispenser.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "stethoscope-pharmacy": {
+      "heard": "Stethoscope.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "cotton-ball-pharmacy": {
+      "heard": "Cottonball.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "tweezers-pharmacy": {
+      "heard": "Tweezers.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "contact-lens-case-pharmacy": {
+      "heard": "Contact Lens Case.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "lozenge": {
+      "heard": "Lozenge.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "bandage-roll": {
+      "heard": "Bandage roll.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medical-tape": {
+      "heard": "Medical tape.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "hot-water-bottle": {
+      "heard": "hot water bottle.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-dropper": {
+      "heard": "Medicine dropper.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "pill-cutter-pharmacy": {
+      "heard": "Pill Cutter",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "pill-organizer": {
+      "heard": "Pill Organizer.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "crutch-tip": {
+      "heard": "Crutch tip.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medical-scissors": {
+      "heard": "Medical scissors.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "instant-cold-pack": {
+      "heard": "Instant cold pack.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "nasal-spray": {
+      "heard": "nasal spray.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "waiting-chair": {
+      "heard": "Waiting chair.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "electric-kettle-pharmacy": {
+      "heard": "Electric kettle.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "tea-strainer-pharmacy": {
+      "heard": "Tea strainer.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "sugar-tongs": {
+      "heard": "Sugar Tongues.",
+      "score": 0.83,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "coffee-beans": {
+      "heard": "Coffee beans.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "tissue-box-pharmacy": {
+      "heard": "Tissue Box.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "paper-towel-dispenser-pharmacy": {
+      "heard": "Paper towel dispenser.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "wastebasket-pharmacy": {
+      "heard": "Wastebasket.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "soap-dispenser-pharmacy": {
+      "heard": "Soap dispenser.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-cooler-box": {
+      "heard": "Medicine Cooler Box.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "prescription-bag": {
+      "heard": "Prescription bag.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-box": {
+      "heard": "Medicine Bot.",
+      "score": 0.91,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "nasal-irrigator": {
+      "heard": "Nasal Irrigator",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-dropper-bottle": {
+      "heard": "Dropper bottle.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "temperature-controller": {
+      "heard": "Temperature controller,",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "reusable-cold-pack": {
+      "heard": "reusable cold pack,",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "tea-spoon": {
+      "heard": "teaspoon,",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "coiled-phone-cord": {
+      "heard": "Coiled phone cord.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "water-glass-pharmacy": {
+      "heard": "Water glass.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "desk-calendar": {
+      "heard": "Dusk Calendar.",
+      "score": 0.92,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "desk-clock-pharmacy": {
+      "heard": "Dust Clock.",
+      "score": 0.78,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "reading-glasses-pharmacy": {
+      "heard": "Reading glasses.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "magnifying-glass-pharmacy": {
+      "heard": "Magnifying glass.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medical-waste-bin": {
+      "heard": "Medical waste bin.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-jar": {
+      "heard": "Medicine Jar.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-spatula": {
+      "heard": "Medicine spatula.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-mortar": {
+      "heard": "Medicine mortar.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-pestle": {
+      "heard": "Medicine Pestle.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "disposable-glove-box": {
+      "heard": "Disposable glove box.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-supply-tray": {
+      "heard": "Medicine Tray.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "paper-tray": {
+      "heard": "Paper Tray.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "paperweight-glass": {
+      "heard": "Glass paperweight.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "eraser-pharmacy": {
+      "heard": "Eraser.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "paper-clips": {
+      "heard": "Paperclips.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "binder-clip-pharmacy": {
+      "heard": "Binder Clip.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "sharps-container": {
+      "heard": "Sharps container.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "ruler-pharmacy": {
+      "heard": "RULER",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "guest-chair": {
+      "heard": "Guest chair.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "office-chair": {
+      "heard": "Office chair.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "pill-bottle-cap": {
+      "heard": "Medicine Bottle Cap.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "safety-pin-pharmacy": {
+      "heard": "Safety pin.",
+      "score": 1,
+      "take": "en-1790893631664.aac",
+      "account": "chatgpt1"
+    },
+    "cough-drop": {
+      "heard": "Cough drop.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "blood-pressure-monitor-pharmacy": {
+      "heard": "Blood pressure monitor.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "otoscope-pharmacy": {
+      "heard": "Otoscope.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "cotton-swab-pharmacy": {
+      "heard": "Cotton swab.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "air-purifier-pharmacy": {
+      "heard": "air purifier.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "refrigerator-pharmacy": {
+      "heard": "Refrigerator.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "gauze-pad": {
+      "heard": "Gauze Pad.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "adhesive-bandage": {
+      "heard": "Adhesive bandage.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "medicine-spoon": {
+      "heard": "Medicine Spoon.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "eye-wash-cup": {
+      "heard": "Eyewash Cup.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "desk-fan": {
+      "heard": "Desk fan.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "desk-lamp-pharmacy": {
+      "heard": "Desk Lamp.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "document-folder": {
+      "heard": "Document folder.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "consultation-table": {
+      "heard": "Consultation table.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "cotton-roll": {
+      "heard": "Cotton roll.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "desk-organizer-pharmacy": {
+      "heard": "Desk Organizer",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "sticky-note-pad-pharmacy": {
+      "heard": "Thicky Notepad.",
+      "score": 0.85,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "fountain-pen-pharmacy": {
+      "heard": "fountain pen.",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "mechanical-pencil-pharmacy": {
+      "heard": "mechanical pencil,",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "highlighter-pharmacy": {
+      "heard": "highlighter",
+      "score": 1,
+      "take": "en-1790894011965.aac",
+      "account": "chatgpt2"
+    },
+    "elastic-bandage": {
+      "heard": "Elastic bandage.",
+      "score": 1,
+      "take": "en-1790894234080.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-cup": {
+      "heard": "Medicine Cup.",
+      "score": 1,
+      "take": "en-1790894234080.aac",
+      "account": "chatgpt1"
+    },
+    "suppository": {
+      "heard": "suppository,",
+      "score": 1,
+      "take": "en-1790894234080.aac",
+      "account": "chatgpt1"
+    },
+    "ampoule": {
+      "heard": "Ampoule.",
+      "score": 1,
+      "take": "en-1790894234080.aac",
+      "account": "chatgpt1"
+    },
+    "medicine-funnel": {
+      "heard": "Medicine Funnel.",
+      "score": 1,
+      "take": "en-1790894234080.aac",
+      "account": "chatgpt1"
+    },
+    "water-pitcher": {
+      "heard": "Water Pitcher.",
+      "score": 1,
+      "take": "en-1790894234080.aac",
+      "account": "chatgpt1"
+    }
+  }
+}
