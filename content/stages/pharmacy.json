@@ -73,6 +73,36 @@
             "ointment-jar",
             "medicine-tube"
           ]
+        },
+        {
+          "row": "back",
+          "note": "感冒舒緩用品",
+          "x": [
+            0.34,
+            0.52
+          ],
+          "fixture": "stand",
+          "on": [
+            "nasal-spray",
+            "eye-drops",
+            "lozenge",
+            "cough-drop"
+          ],
+          "beside": [
+            "walking-frame"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "草本茶飲補充",
+          "x": [
+            0.73,
+            0.9
+          ],
+          "fixture": "stand",
+          "on": [
+            "herbal-tea-bag"
+          ]
         }
       ]
     },
@@ -260,6 +290,28 @@
           "on": [
             "eye-wash-cup",
             "nasal-irrigator"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "行動輔具停放",
+          "x": [
+            0.64,
+            0.7
+          ],
+          "main": "mobility-scooter"
+        },
+        {
+          "row": "front",
+          "note": "護膝護踝用品",
+          "x": [
+            0.38,
+            0.62
+          ],
+          "fixture": "stand",
+          "on": [
+            "knee-brace",
+            "ankle-brace"
           ]
         }
       ]

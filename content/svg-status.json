@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-03T16:13:35.899+09:00",
+  "syncedAt": "2026-10-03T16:18:59.485+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -2550,7 +2550,12 @@
         "eraser-pharmacy",
         "ruler-pharmacy",
         "paper-clips",
-        "binder-clip-pharmacy"
+        "binder-clip-pharmacy",
+        "walking-frame",
+        "walking-boot",
+        "mobility-scooter",
+        "knee-brace",
+        "ankle-brace"
       ],
       "failed": [],
       "pending": [],

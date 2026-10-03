@@ -569,6 +569,36 @@
       "score": 1,
       "take": "en-1790894234080.aac",
       "account": "chatgpt1"
+    },
+    "walking-frame": {
+      "heard": "Walking frame.",
+      "score": 1,
+      "take": "en-1791011979516.aac",
+      "account": "chatgpt3"
+    },
+    "walking-boot": {
+      "heard": "I'm walking boot.",
+      "score": 0.85,
+      "take": "en-1791011979516.aac",
+      "account": "chatgpt3"
+    },
+    "mobility-scooter": {
+      "heard": "mobility scooter,",
+      "score": 1,
+      "take": "en-1791011979516.aac",
+      "account": "chatgpt3"
+    },
+    "knee-brace": {
+      "heard": "Knee brace.",
+      "score": 1,
+      "take": "en-1791011979516.aac",
+      "account": "chatgpt3"
+    },
+    "ankle-brace": {
+      "heard": "Ankle brace.",
+      "score": 1,
+      "take": "en-1791011979516.aac",
+      "account": "chatgpt3"
     }
   }
 }

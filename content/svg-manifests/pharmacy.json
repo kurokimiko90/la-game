@@ -2003,6 +2003,111 @@
           }
         }
       }
+    },
+    {
+      "name": "助行器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色金屬管彎成四腳框架，兩側有黑色握把，底端套著深灰色橡膠腳墊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "pharmacy",
+        "zone": "entrance",
+        "itemId": "walking-frame",
+        "words": {
+          "zh-TW": "助行器",
+          "en": "walking-frame",
+          "ja": {
+            "text": "歩行器",
+            "reading": "ほこうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "護具靴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深棕色高筒靴，鞋底厚實，鞋面有繫緊的鞋帶與圓潤鞋頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "pharmacy",
+        "zone": "front-shop",
+        "itemId": "walking-boot",
+        "words": {
+          "zh-TW": "護具靴",
+          "en": "walking boot",
+          "ja": {
+            "text": "ウォーキングブーツ",
+            "reading": "ウォーキングブーツ"
+          }
+        }
+      }
+    },
+    {
+      "name": "電動代步車",
+      "category": "交通工具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的四輪代步車，前方有寬大的踏板和一支帶把手的轉向桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "pharmacy",
+        "zone": "medicine-aisle",
+        "itemId": "mobility-scooter",
+        "words": {
+          "zh-TW": "電動代步車",
+          "en": "mobility scooter",
+          "ja": {
+            "text": "電動カート",
+            "reading": "でんどうカート"
+          }
+        }
+      }
+    },
+    {
+      "name": "護膝",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色弧形布套，中間有圓形開口，兩側帶有寬寬的黏扣帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "pharmacy",
+        "zone": "medicine-aisle",
+        "itemId": "knee-brace",
+        "words": {
+          "zh-TW": "護膝",
+          "en": "knee brace",
+          "ja": {
+            "text": "膝サポーター",
+            "reading": "ひざサポーター"
+          }
+        }
+      }
+    },
+    {
+      "name": "護踝",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深藍色厚布套包住腳踝的位置，兩端露出腳掌和腳跟，表面有交叉束帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "pharmacy",
+        "zone": "medicine-aisle",
+        "itemId": "ankle-brace",
+        "words": {
+          "zh-TW": "護踝",
+          "en": "ankle brace",
+          "ja": {
+            "text": "足首サポーター",
+            "reading": "あしくびサポーター"
+          }
+        }
+      }
     }
   ]
 }

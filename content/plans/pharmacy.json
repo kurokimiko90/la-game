@@ -1464,6 +1464,81 @@
       "loose": true,
       "motion": null,
       "cluster": "consultation-table"
+    },
+    {
+      "id": "walking-frame",
+      "zh": "助行器",
+      "en": "walking-frame",
+      "ja": "歩行器",
+      "reading": "ほこうき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "銀色金屬管彎成四腳框架，兩側有黑色握把，底端套著深灰色橡膠腳墊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "walking-boot",
+      "zh": "護具靴",
+      "en": "walking boot",
+      "ja": "ウォーキングブーツ",
+      "reading": "ウォーキングブーツ",
+      "category": "道具",
+      "size": "small",
+      "zone": "front-shop",
+      "spot": "ground",
+      "desc": "深棕色高筒靴，鞋底厚實，鞋面有繫緊的鞋帶與圓潤鞋頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "mobility-scooter",
+      "zh": "電動代步車",
+      "en": "mobility scooter",
+      "ja": "電動カート",
+      "reading": "でんどうカート",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "medicine-aisle",
+      "spot": "ground",
+      "desc": "低矮的四輪代步車，前方有寬大的踏板和一支帶把手的轉向桿。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "knee-brace",
+      "zh": "護膝",
+      "en": "knee brace",
+      "ja": "膝サポーター",
+      "reading": "ひざサポーター",
+      "category": "道具",
+      "size": "small",
+      "zone": "medicine-aisle",
+      "spot": "ground",
+      "desc": "黑色弧形布套，中間有圓形開口，兩側帶有寬寬的黏扣帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "ankle-brace",
+      "zh": "護踝",
+      "en": "ankle brace",
+      "ja": "足首サポーター",
+      "reading": "あしくびサポーター",
+      "category": "道具",
+      "size": "small",
+      "zone": "medicine-aisle",
+      "spot": "ground",
+      "desc": "深藍色厚布套包住腳踝的位置，兩端露出腳掌和腳跟，表面有交叉束帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1531,9 +1606,22 @@
     {
       "id": "medicine-spill-kit",
       "reason": "審核：藥品清理包非一般藥局常見物品"
+    },
+    {
+      "id": "walker-basket",
+      "reason": "和已有的 walking-frame 太像",
+      "zone": "medicine-aisle"
     }
   ],
-  "reviewFixes": [],
+  "reviewFixes": [
+    {
+      "id": "walking-boot",
+      "issue": "繁中較常說「護具靴」",
+      "changes": {
+        "zh": "護具靴"
+      }
+    }
+  ],
   "createdAt": "2026-10-02T07:07:18.296+09:00",
   "venue": {
     "accent": "#8aac8b",
@@ -1555,5 +1643,10 @@
         "service"
       ]
     }
+  },
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 5,
+    "at": "2026-10-03T16:18:01.018+09:00"
   }
 }
