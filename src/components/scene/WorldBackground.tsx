@@ -33,7 +33,7 @@ const RIVER_TOP = 400;
 
 const genKey = (sceneId: string) => `gen:${sceneId}`;
 
-/** 背景分區：畫面外的分區暫停背景動畫（TownCanvas 算出哪些分區看得到）；河和東岸一路延伸到地圖南緣 */
+/** 背景分區：畫面外的分區暫停背景動畫、離畫面遠的整個不畫（TownCanvas 算出哪些分區看得到）；河和東岸一路延伸到地圖南緣 */
 export function worldSections(town: Town): Record<string, Rect> {
   const sections: Record<string, Rect> = {
     park: { x0: 0, y0: 0, x1: 2600, y1: 1130 },
@@ -236,11 +236,14 @@ interface WorldBackgroundProps {
   town: Town;
   /** 看得到的分區（逗號分隔的 SECTIONS key；用字串讓 memo 只在分區變動時重畫） */
   activeSections: string;
+  /** 要渲染的分區（同上格式）；不在裡面的分區整個不畫 */
+  renderedSections: string;
 }
 
-function WorldBackgroundImpl({ town, activeSections }: WorldBackgroundProps) {
+function WorldBackgroundImpl({ town, activeSections, renderedSections }: WorldBackgroundProps) {
   const active = new Set(activeSections.split(','));
-  const section = (key: string, node: ReactNode) => <g className={active.has(key) ? undefined : 'district--idle'}>{node}</g>;
+  const rendered = new Set(renderedSections.split(','));
+  const section = (key: string, node: ReactNode) => (rendered.has(key) ? <g className={active.has(key) ? undefined : 'district--idle'}>{node}</g> : null);
   const city = buildCity(districtRects(town));
   const world = { width: town.width, height: town.height };
   const shadows = [

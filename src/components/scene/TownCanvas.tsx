@@ -10,7 +10,7 @@ import { WorldBackground, worldSections } from './WorldBackground';
 import { keyIntent, primaryButtonChange, wheelIntent, type ViewIntent } from '@/lib/controls';
 import { EDGE } from '@/lib/city';
 import { clampView, centerOn, defaultScale, itemAtPoint, toScene, wholeView, zoomAt, type View, type Size } from '@/lib/geometry';
-import { districtAt, districtBounds, type Rect, type Town } from '@/lib/town';
+import { districtAt, districtBounds, expandRect, intersects, type Rect, type Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
 
 export interface SceneClick {
@@ -56,6 +56,8 @@ const HIT_SLOP_PX = 10;
 const FOCUS_MS = 450;
 /** 畫面外多遠還算「看得到」（動畫不暫停） */
 const IDLE_MARGIN = 300;
+/** 畫面外超過這個比例（畫面寬高的倍數）的街區與背景分區不渲染：街區多了以後全畫會卡（幾萬個 SVG 節點） */
+const RENDER_MARGIN = 0.75;
 const EMPTY: ReadonlySet<string> = new Set();
 
 interface Gesture {
@@ -69,7 +71,6 @@ interface Gesture {
 
 const dist = (a: Point, b: Point) => Math.hypot(a.x - b.x, a.y - b.y);
 const mid = (a: Point, b: Point) => ({ x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 });
-const intersects = (a: Rect, b: Rect) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
 
 export function TownCanvas({
   town, activeSceneId, lockedSceneIds, unlockHints, foundIds, hideUnfound = false, flashId = null, hintZoneKey = null, focus,
@@ -268,7 +269,10 @@ export function TownCanvas({
     x1: (size.width - view.tx) / view.scale + IDLE_MARGIN,
     y1: (size.height - view.ty) / view.scale + IDLE_MARGIN,
   } : null;
-  const activeSections = visible ? Object.entries(sections).filter(([, r]) => intersects(r, visible)).map(([k]) => k).join(',') : '';
+  const near = visible ? expandRect(visible, RENDER_MARGIN) : null;
+  const sectionsIn = (r: Rect | null) => (r ? Object.entries(sections).filter(([, s]) => intersects(s, r)).map(([k]) => k).join(',') : '');
+  const activeSections = sectionsIn(visible);
+  const renderedSections = sectionsIn(near);
 
   return (
     <div
@@ -290,9 +294,10 @@ export function TownCanvas({
               transition: animating ? `transform ${FOCUS_MS}ms ease` : undefined,
             }}
           >
-            <g pointerEvents="none"><WorldBackground town={town} activeSections={activeSections} /></g>
+            <g pointerEvents="none"><WorldBackground town={town} activeSections={activeSections} renderedSections={renderedSections} /></g>
             {districts.map((d) => {
               const active = d.scene.id === activeSceneId;
+              if (!active && !(near && intersects(districtBounds(d), near))) return null;
               return (
                 <DistrictLayer
                   key={d.scene.id}

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { buildTown, districtAt, districtBounds, zoneKey } from '@/lib/town';
+import { buildTown, districtAt, districtBounds, expandRect, intersects, zoneKey } from '@/lib/town';
 import type { SceneData, SceneItem, Zone } from '@/lib/types';
 
 const item = (id: string, zone: string, x: number): SceneItem => ({
@@ -40,5 +40,18 @@ describe('districtAt', () => {
 
   test('地圖外回傳 null', () => {
     expect(districtAt(town, { x: -5, y: 10 })).toBeNull();
+  });
+});
+
+describe('expandRect / intersects（畫面外的街區不渲染）', () => {
+  const r = { x0: 100, y0: 100, x1: 300, y1: 200 };
+  test('expandRect 每邊外擴各自比例的寬高', () => {
+    expect(expandRect(r, 0.5)).toEqual({ x0: 0, y0: 50, x1: 400, y1: 250 });
+    expect(expandRect(r, 0)).toEqual(r);
+  });
+  test('intersects：重疊才算，只碰到邊不算', () => {
+    expect(intersects(r, { x0: 250, y0: 150, x1: 500, y1: 500 })).toBe(true);
+    expect(intersects(r, { x0: 300, y0: 100, x1: 400, y1: 200 })).toBe(false);
+    expect(intersects(r, { x0: 0, y0: 0, x1: 50, y1: 50 })).toBe(false);
   });
 });

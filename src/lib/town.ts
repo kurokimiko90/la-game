@@ -34,6 +34,16 @@ export const zoneKey = (sceneId: string, zoneId: string) => `${sceneId}:${zoneId
 
 export const rectCenter = (r: Rect): Point => ({ x: (r.x0 + r.x1) / 2, y: (r.y0 + r.y1) / 2 });
 
+/** 兩個矩形有重疊（只碰到邊不算） */
+export const intersects = (a: Rect, b: Rect) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
+
+/** 每邊各外擴 ratio × 寬 / 高 */
+export function expandRect(r: Rect, ratio: number): Rect {
+  const mx = (r.x1 - r.x0) * ratio;
+  const my = (r.y1 - r.y0) * ratio;
+  return { x0: r.x0 - mx, y0: r.y0 - my, x1: r.x1 + mx, y1: r.y1 + my };
+}
+
 export function buildTown(scenes: readonly SceneData[]): Town {
   const items = new Map<string, TownItem>();
   const zones = new Map<string, TownZone>();

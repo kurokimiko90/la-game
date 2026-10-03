@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronLeft, Volume2 } from 'lucide-react';
+import { ChevronDown, ChevronLeft, Volume2 } from 'lucide-react';
 import { useProgress } from '../ProgressProvider';
 import { LangToggle } from '../LangToggle';
 import { SvgArt } from '../SvgArt';
@@ -23,6 +23,9 @@ export function VocabScreen() {
   const { progress } = useProgress();
   const { lang, showTranslation, showReading } = progress.settings;
   const [filter, setFilter] = useState<Filter>('all');
+  // 還沒點過任何單字的場景預設收起來：場景多了以後全部展開有幾萬個節點，頁面會卡
+  const [expanded, setExpanded] = useState<ReadonlySet<string>>(new Set());
+  const toggle = (id: string) => setExpanded((s) => (s.has(id) ? new Set([...s].filter((x) => x !== id)) : new Set([...s, id])));
   const scenes = allScenes();
 
   return (
@@ -50,13 +53,21 @@ export function VocabScreen() {
           .filter(({ record }) => filter === 'all' || (filter === 'seen' ? record?.seen : record?.found))
           .sort((a, b) => a.item.zone.localeCompare(b.item.zone));
         const seenCount = scene.items.filter((it) => progress.words[wordKey(scene.id, it.id)]?.seen).length;
+        const open = seenCount > 0 || expanded.has(scene.id);
+        const heading = <>{scene.name}<span className="text-sm font-normal text-muted">{seenCount} / {scene.items.length}</span></>;
         return (
           <section key={scene.id} className="mt-8">
-            <h2 className="flex items-baseline justify-between text-lg font-bold">
-              {scene.name}
-              <span className="text-sm font-normal text-muted">{seenCount} / {scene.items.length}</span>
-            </h2>
-            {items.length === 0 ? (
+            {seenCount > 0 ? (
+              <h2 className="flex items-baseline justify-between text-lg font-bold">{heading}</h2>
+            ) : (
+              <h2 className="text-lg font-bold">
+                <button type="button" aria-expanded={open} onClick={() => toggle(scene.id)} className="flex w-full items-baseline gap-2 text-left">
+                  <ChevronDown size={16} className={`shrink-0 self-center text-muted transition-transform ${open ? '' : '-rotate-90'}`} />
+                  <span className="flex flex-1 items-baseline justify-between">{heading}</span>
+                </button>
+              </h2>
+            )}
+            {!open ? null : items.length === 0 ? (
               <p className="mt-2 text-sm text-muted">這裡還沒有單字。</p>
             ) : (
               <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">

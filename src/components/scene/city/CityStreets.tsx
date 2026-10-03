@@ -194,8 +194,8 @@ export function CityStreets({ city, section }: { city: City; section: (key: stri
   const roads = city.streets.filter((s) => s.kind !== 'plaza');
   return (
     <g>
-      {city.streets.filter((s) => s.kind === 'plaza').map((s) => <Plaza key={s.id} s={s} />)}
-      {roads.map((s) => <StreetBase key={s.id} s={s} avoid={avoid} />)}
+      {city.streets.filter((s) => s.kind === 'plaza').map((s) => <g key={s.id}>{section(streetKey(s.id), <Plaza s={s} />)}</g>)}
+      {roads.map((s) => <g key={s.id}>{section(streetKey(s.id), <StreetBase s={s} avoid={avoid} />)}</g>)}
       {city.crossings.map((r) => <Crossing key={`${r.x0},${r.y0}`} r={r} />)}
       {city.roundabout && <Roundabout r={city.roundabout} />}
       {city.bridges.map((r) => <Bridge key={`${r.x0},${r.y0}`} r={r} />)}
