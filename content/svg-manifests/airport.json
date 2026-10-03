@@ -46,7 +46,7 @@
           "en": "shuttle",
           "ja": {
             "text": "シャトルバス",
-            "reading": "しゃとるばす"
+            "reading": "シャトルバス"
           }
         }
       }
@@ -64,10 +64,10 @@
         "itemId": "luggage-cart",
         "words": {
           "zh-TW": "行李推車",
-          "en": "luggage-cart",
+          "en": "luggage cart",
           "ja": {
             "text": "手荷物カート",
-            "reading": "てにもつかーと"
+            "reading": "てにもつカート"
           }
         }
       }
@@ -85,10 +85,10 @@
         "itemId": "duffel-bag",
         "words": {
           "zh-TW": "旅行袋",
-          "en": "duffel-bag",
+          "en": "duffel bag",
           "ja": {
             "text": "ボストンバッグ",
-            "reading": "ぼすとんばっぐ"
+            "reading": "ボストンバッグ"
           }
         }
       }
@@ -106,10 +106,10 @@
         "itemId": "revolving-door",
         "words": {
           "zh-TW": "旋轉門",
-          "en": "revolving-door",
+          "en": "revolving door",
           "ja": {
             "text": "回転ドア",
-            "reading": "かいてんどあ"
+            "reading": "かいてんドア"
           }
         }
       }
@@ -148,10 +148,10 @@
         "itemId": "aircraft-tug",
         "words": {
           "zh-TW": "飛機牽引車",
-          "en": "aircraft-tug",
+          "en": "aircraft tug",
           "ja": {
             "text": "トーイングトラクター",
-            "reading": "とーいんぐとらくたー"
+            "reading": "トーイングトラクター"
           }
         }
       }
@@ -169,10 +169,10 @@
         "itemId": "baggage-conveyor",
         "words": {
           "zh-TW": "行李輸送帶",
-          "en": "baggage-conveyor",
+          "en": "baggage conveyor",
           "ja": {
             "text": "手荷物コンベヤー",
-            "reading": "てにもつこんべやー"
+            "reading": "てにもつコンベヤー"
           }
         }
       }
@@ -190,10 +190,10 @@
         "itemId": "jet-bridge",
         "words": {
           "zh-TW": "登機空橋",
-          "en": "jet-bridge",
+          "en": "jet bridge",
           "ja": {
             "text": "ボーディングブリッジ",
-            "reading": "ぼーでぃんぐぶりっじ"
+            "reading": "ボーディングブリッジ"
           }
         }
       }
@@ -214,7 +214,7 @@
           "en": "holdall",
           "ja": {
             "text": "ボストンバッグ",
-            "reading": "ぼすとんばっぐ"
+            "reading": "ボストンバッグ"
           }
         }
       }
@@ -232,10 +232,10 @@
         "itemId": "travel-pillow",
         "words": {
           "zh-TW": "旅行枕",
-          "en": "travel-pillow",
+          "en": "travel pillow",
           "ja": {
             "text": "トラベルピロー",
-            "reading": "とらべるぴろー"
+            "reading": "トラベルピロー"
           }
         }
       }
@@ -253,7 +253,7 @@
         "itemId": "luggage-tag",
         "words": {
           "zh-TW": "行李牌",
-          "en": "luggage-tag",
+          "en": "luggage tag",
           "ja": {
             "text": "荷札",
             "reading": "にふだ"
@@ -274,10 +274,10 @@
         "itemId": "safety-vest",
         "words": {
           "zh-TW": "反光背心",
-          "en": "safety-vest",
+          "en": "safety vest",
           "ja": {
             "text": "安全ベスト",
-            "reading": "あんぜんべすと"
+            "reading": "あんぜんベスト"
           }
         }
       }
@@ -295,7 +295,7 @@
         "itemId": "wheel-chock",
         "words": {
           "zh-TW": "輪擋",
-          "en": "wheel-chock",
+          "en": "wheel chock",
           "ja": {
             "text": "車輪止め",
             "reading": "しゃりんどめ"
@@ -316,10 +316,10 @@
         "itemId": "aircraft-stairs",
         "words": {
           "zh-TW": "登機梯",
-          "en": "aircraft-stairs",
+          "en": "aircraft stairs",
           "ja": {
             "text": "タラップ",
-            "reading": "たらっぷ"
+            "reading": "タラップ"
           }
         }
       }
@@ -337,10 +337,10 @@
         "itemId": "fuel-hose",
         "words": {
           "zh-TW": "加油軟管",
-          "en": "fuel-hose",
+          "en": "fuel hose",
           "ja": {
             "text": "給油ホース",
-            "reading": "きゅうゆほーす"
+            "reading": "きゅうゆホース"
           }
         }
       }
@@ -400,7 +400,7 @@
         "itemId": "ceiling-light",
         "words": {
           "zh-TW": "天花板燈",
-          "en": "ceiling-light",
+          "en": "ceiling light",
           "ja": {
             "text": "シーリングライト",
             "reading": "シーリングライト"
@@ -421,7 +421,7 @@
         "itemId": "queue-stanchion",
         "words": {
           "zh-TW": "排隊柱",
-          "en": "queue-stanchion",
+          "en": "queue stanchion",
           "ja": {
             "text": "ロープパーティションポール",
             "reading": "ロープパーティションポール"
@@ -442,7 +442,7 @@
         "itemId": "belt-barrier",
         "words": {
           "zh-TW": "排隊帶",
-          "en": "belt-barrier",
+          "en": "belt barrier",
           "ja": {
             "text": "ベルトパーティション",
             "reading": "ベルトパーティション"
@@ -463,7 +463,7 @@
         "itemId": "brochure-holder",
         "words": {
           "zh-TW": "資料架",
-          "en": "brochure-holder",
+          "en": "brochure holder",
           "ja": {
             "text": "パンフレットスタンド",
             "reading": "パンフレットスタンド"
@@ -484,7 +484,7 @@
         "itemId": "floor-mat",
         "words": {
           "zh-TW": "地墊",
-          "en": "floor-mat",
+          "en": "floor mat",
           "ja": {
             "text": "フロアマット",
             "reading": "フロアマット"
@@ -505,7 +505,7 @@
         "itemId": "floor-sign",
         "words": {
           "zh-TW": "立式指示牌",
-          "en": "floor-sign",
+          "en": "floor sign",
           "ja": {
             "text": "フロアサイン",
             "reading": "フロアサイン"
@@ -547,7 +547,7 @@
         "itemId": "bar-stool-cushion",
         "words": {
           "zh-TW": "吧台坐墊",
-          "en": "bar-stool-cushion",
+          "en": "bar stool cushion",
           "ja": {
             "text": "バースツールクッション",
             "reading": "バースツールクッション"
@@ -568,7 +568,7 @@
         "itemId": "bottle-opener",
         "words": {
           "zh-TW": "開瓶器",
-          "en": "bottle-opener",
+          "en": "bottle opener",
           "ja": {
             "text": "栓抜き",
             "reading": "せんぬき"
@@ -694,7 +694,7 @@
         "itemId": "boarding-pass",
         "words": {
           "zh-TW": "登機證",
-          "en": "boarding-pass",
+          "en": "boarding pass",
           "ja": {
             "text": "搭乗券",
             "reading": "とうじょうけん"
@@ -715,7 +715,7 @@
         "itemId": "cocktail-shaker",
         "words": {
           "zh-TW": "調酒器",
-          "en": "cocktail-shaker",
+          "en": "cocktail shaker",
           "ja": {
             "text": "シェイカー",
             "reading": "シェイカー"
@@ -757,7 +757,7 @@
         "itemId": "bar-towel",
         "words": {
           "zh-TW": "吧台巾",
-          "en": "bar-towel",
+          "en": "bar towel",
           "ja": {
             "text": "バータオル",
             "reading": "バータオル"
@@ -778,10 +778,10 @@
         "itemId": "metal-detector",
         "words": {
           "zh-TW": "金屬探測門",
-          "en": "metal-detector",
+          "en": "metal detector",
           "ja": {
             "text": "金属探知ゲート",
-            "reading": "きんぞくたんちげーと"
+            "reading": "きんぞくたんちゲート"
           }
         }
       }
@@ -799,10 +799,10 @@
         "itemId": "x-ray-machine",
         "words": {
           "zh-TW": "Ｘ光檢查機",
-          "en": "x-ray-machine",
+          "en": "x-ray machine",
           "ja": {
             "text": "エックス線検査機",
-            "reading": "えっくすせんけんさき"
+            "reading": "エックスせんけんさき"
           }
         }
       }
@@ -820,10 +820,10 @@
         "itemId": "security-wand",
         "words": {
           "zh-TW": "手持金屬探測器",
-          "en": "security-wand",
+          "en": "security wand",
           "ja": {
             "text": "ハンディ金属探知機",
-            "reading": "はんでぃきんぞくたんちき"
+            "reading": "ハンディきんぞくたんちき"
           }
         }
       }
@@ -841,10 +841,10 @@
         "itemId": "body-scanner",
         "words": {
           "zh-TW": "人體掃描器",
-          "en": "body-scanner",
+          "en": "body scanner",
           "ja": {
             "text": "ボディースキャナー",
-            "reading": "ぼでぃーすきゃなー"
+            "reading": "ボディースキャナー"
           }
         }
       }
@@ -862,7 +862,7 @@
         "itemId": "sliding-door",
         "words": {
           "zh-TW": "滑門",
-          "en": "sliding-door",
+          "en": "sliding door",
           "ja": {
             "text": "引き戸",
             "reading": "ひきど"
@@ -883,10 +883,10 @@
         "itemId": "conveyor-belt",
         "words": {
           "zh-TW": "輸送帶",
-          "en": "conveyor-belt",
+          "en": "conveyor belt",
           "ja": {
             "text": "コンベヤーベルト",
-            "reading": "こんべやーべると"
+            "reading": "コンベヤーベルト"
           }
         }
       }
@@ -904,10 +904,10 @@
         "itemId": "plastic-box",
         "words": {
           "zh-TW": "塑膠盒",
-          "en": "plastic-box",
+          "en": "plastic box",
           "ja": {
             "text": "プラスチックケース",
-            "reading": "ぷらすちっくけーす"
+            "reading": "プラスチックケース"
           }
         }
       }
@@ -928,7 +928,7 @@
           "en": "tablet",
           "ja": {
             "text": "タブレット",
-            "reading": "たぶれっと"
+            "reading": "タブレット"
           }
         }
       }
@@ -970,7 +970,7 @@
           "en": "necklace",
           "ja": {
             "text": "ネックレス",
-            "reading": "ねっくれす"
+            "reading": "ネックレス"
           }
         }
       }
@@ -991,7 +991,7 @@
           "en": "bracelet",
           "ja": {
             "text": "ブレスレット",
-            "reading": "ぶれすれっと"
+            "reading": "ブレスレット"
           }
         }
       }
@@ -1012,7 +1012,7 @@
           "en": "belt",
           "ja": {
             "text": "ベルト",
-            "reading": "べると"
+            "reading": "ベルト"
           }
         }
       }
@@ -1033,7 +1033,7 @@
           "en": "jacket",
           "ja": {
             "text": "ジャケット",
-            "reading": "じゃけっと"
+            "reading": "ジャケット"
           }
         }
       }
@@ -1072,7 +1072,7 @@
         "itemId": "hair-clip",
         "words": {
           "zh-TW": "髮夾",
-          "en": "hair-clip",
+          "en": "hair clip",
           "ja": {
             "text": "ヘアクリップ",
             "reading": "ヘアクリップ"
@@ -1093,7 +1093,7 @@
         "itemId": "luggage-strap",
         "words": {
           "zh-TW": "行李帶",
-          "en": "luggage-strap",
+          "en": "luggage strap",
           "ja": {
             "text": "スーツケースベルト",
             "reading": "スーツケースベルト"
@@ -1219,7 +1219,7 @@
         "itemId": "display-pedestal",
         "words": {
           "zh-TW": "展示台",
-          "en": "display-pedestal",
+          "en": "display pedestal",
           "ja": {
             "text": "展示台",
             "reading": "てんじだい"
@@ -1240,7 +1240,7 @@
         "itemId": "display-case",
         "words": {
           "zh-TW": "展示櫃",
-          "en": "display-case",
+          "en": "display case",
           "ja": {
             "text": "ショーケース",
             "reading": "ショーケース"
@@ -1261,7 +1261,7 @@
         "itemId": "power-bank",
         "words": {
           "zh-TW": "行動電源",
-          "en": "power-bank",
+          "en": "power bank",
           "ja": {
             "text": "モバイルバッテリー",
             "reading": "モバイルバッテリー"
@@ -1282,7 +1282,7 @@
         "itemId": "charging-cable",
         "words": {
           "zh-TW": "充電線",
-          "en": "charging-cable",
+          "en": "charging cable",
           "ja": {
             "text": "充電ケーブル",
             "reading": "じゅうでんケーブル"
@@ -1387,7 +1387,7 @@
         "itemId": "granola-bar",
         "words": {
           "zh-TW": "燕麥棒",
-          "en": "granola-bar",
+          "en": "granola bar",
           "ja": {
             "text": "グラノーラバー",
             "reading": "グラノーラバー"
@@ -1408,7 +1408,7 @@
         "itemId": "wall-panel",
         "words": {
           "zh-TW": "牆面板",
-          "en": "wall-panel",
+          "en": "wall panel",
           "ja": {
             "text": "壁パネル",
             "reading": "かべパネル"
@@ -1471,7 +1471,7 @@
         "itemId": "toiletry-bag",
         "words": {
           "zh-TW": "盥洗包",
-          "en": "toiletry-bag",
+          "en": "toiletry bag",
           "ja": {
             "text": "トイレタリーバッグ",
             "reading": "トイレタリーバッグ"
@@ -1492,7 +1492,7 @@
         "itemId": "luggage-scale",
         "words": {
           "zh-TW": "行李秤",
-          "en": "luggage-scale",
+          "en": "luggage scale",
           "ja": {
             "text": "荷物用はかり",
             "reading": "にもつようはかり"
@@ -1513,7 +1513,7 @@
         "itemId": "car-door",
         "words": {
           "zh-TW": "車門",
-          "en": "car-door",
+          "en": "car door",
           "ja": {
             "text": "車のドア",
             "reading": "くるまのドア"
@@ -1534,7 +1534,7 @@
         "itemId": "luggage-trolley",
         "words": {
           "zh-TW": "行李拖車",
-          "en": "luggage-trolley",
+          "en": "luggage trolley",
           "ja": {
             "text": "荷物用トレーラー",
             "reading": "にもつようトレーラー"
@@ -1555,7 +1555,7 @@
         "itemId": "parking-ticket-machine",
         "words": {
           "zh-TW": "停車繳費機",
-          "en": "parking-ticket-machine",
+          "en": "parking ticket machine",
           "ja": {
             "text": "駐車券精算機",
             "reading": "ちゅうしゃけんせいさんき"
@@ -1597,7 +1597,7 @@
         "itemId": "travel-mug",
         "words": {
           "zh-TW": "隨行杯",
-          "en": "travel-mug",
+          "en": "travel mug",
           "ja": {
             "text": "タンブラー",
             "reading": "タンブラー"
@@ -1618,7 +1618,7 @@
         "itemId": "check-in-kiosk",
         "words": {
           "zh-TW": "自助報到機",
-          "en": "check-in-kiosk",
+          "en": "check-in kiosk",
           "ja": {
             "text": "自動チェックイン機",
             "reading": "じどうチェックインき"
@@ -1681,7 +1681,7 @@
         "itemId": "shoe-cover",
         "words": {
           "zh-TW": "鞋套",
-          "en": "shoe-cover",
+          "en": "shoe cover",
           "ja": {
             "text": "シューズカバー",
             "reading": "シューズカバー"
@@ -1744,7 +1744,7 @@
         "itemId": "plastic-tub",
         "words": {
           "zh-TW": "塑膠收納箱",
-          "en": "plastic-tub",
+          "en": "plastic tub",
           "ja": {
             "text": "プラスチックケース",
             "reading": "プラスチックケース"
@@ -1765,7 +1765,7 @@
         "itemId": "shoe-rack",
         "words": {
           "zh-TW": "鞋架",
-          "en": "shoe-rack",
+          "en": "shoe rack",
           "ja": {
             "text": "靴置き",
             "reading": "くつおき"
@@ -1807,7 +1807,7 @@
         "itemId": "sleep-mask",
         "words": {
           "zh-TW": "眼罩",
-          "en": "sleep-mask",
+          "en": "sleep mask",
           "ja": {
             "text": "アイマスク",
             "reading": "アイマスク"
@@ -1828,7 +1828,7 @@
         "itemId": "neck-pillow",
         "words": {
           "zh-TW": "頸枕",
-          "en": "neck-pillow",
+          "en": "neck pillow",
           "ja": {
             "text": "ネックピロー",
             "reading": "ネックピロー"
@@ -1870,7 +1870,7 @@
         "itemId": "eye-mask-case",
         "words": {
           "zh-TW": "眼罩收納盒",
-          "en": "eye-mask-case",
+          "en": "eye mask case",
           "ja": {
             "text": "アイマスクケース",
             "reading": "アイマスクケース"

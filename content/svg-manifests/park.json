@@ -67,7 +67,7 @@
           "en": "trash can",
           "ja": {
             "text": "ゴミ箱",
-            "reading": "ごみばこ"
+            "reading": "ゴミばこ"
           }
         }
       }
@@ -841,7 +841,7 @@
         "itemId": "garden-glove",
         "words": {
           "zh-TW": "園藝手套",
-          "en": "gardening-glove",
+          "en": "gardening glove",
           "ja": {
             "text": "園芸用手袋",
             "reading": "えんげいようてぶくろ"
@@ -862,7 +862,7 @@
         "itemId": "pruning-shears",
         "words": {
           "zh-TW": "修枝剪",
-          "en": "pruning-shears",
+          "en": "pruning shears",
           "ja": {
             "text": "剪定ばさみ",
             "reading": "せんていばさみ"
@@ -883,7 +883,7 @@
         "itemId": "watering-can",
         "words": {
           "zh-TW": "澆水壺",
-          "en": "watering-can",
+          "en": "watering can",
           "ja": {
             "text": "じょうろ",
             "reading": "じょうろ"
@@ -946,7 +946,7 @@
         "itemId": "compost-bin",
         "words": {
           "zh-TW": "堆肥箱",
-          "en": "compost-bin",
+          "en": "compost bin",
           "ja": {
             "text": "コンポスト容器",
             "reading": "コンポストようき"
@@ -967,7 +967,7 @@
         "itemId": "garden-trowel",
         "words": {
           "zh-TW": "園藝鏟",
-          "en": "garden-trowel",
+          "en": "garden trowel",
           "ja": {
             "text": "移植ごて",
             "reading": "いしょくごて"
@@ -1219,7 +1219,7 @@
         "itemId": "fishing-line",
         "words": {
           "zh-TW": "魚線",
-          "en": "fishing-line",
+          "en": "fishing line",
           "ja": {
             "text": "釣り糸",
             "reading": "つりいと"
@@ -1240,7 +1240,7 @@
         "itemId": "lily-pad",
         "words": {
           "zh-TW": "睡蓮葉",
-          "en": "lily-pad",
+          "en": "lily pad",
           "ja": {
             "text": "ハスの葉",
             "reading": "ハスのは"
@@ -1261,7 +1261,7 @@
         "itemId": "water-lily",
         "words": {
           "zh-TW": "睡蓮",
-          "en": "water-lily",
+          "en": "water lily",
           "ja": {
             "text": "スイレン",
             "reading": "スイレン"
@@ -1303,7 +1303,7 @@
         "itemId": "water-ripple",
         "words": {
           "zh-TW": "水波紋",
-          "en": "water-ripple",
+          "en": "water ripple",
           "ja": {
             "text": "水の波紋",
             "reading": "みずのはもん"
@@ -1324,7 +1324,7 @@
         "itemId": "fishing-float",
         "words": {
           "zh-TW": "釣魚浮標",
-          "en": "fishing-float",
+          "en": "fishing float",
           "ja": {
             "text": "釣り浮き",
             "reading": "つりうき"

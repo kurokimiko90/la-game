@@ -1264,7 +1264,7 @@
           "en": "lily pad",
           "ja": {
             "text": "ハスの葉",
-            "reading": "はすのは"
+            "reading": "ハスのは"
           }
         }
       }
@@ -1285,7 +1285,7 @@
           "en": "lotus seed pod",
           "ja": {
             "text": "ハスの実",
-            "reading": "はすのみ"
+            "reading": "ハスのみ"
           }
         }
       }
@@ -1306,7 +1306,7 @@
           "en": "water hyacinth",
           "ja": {
             "text": "ホテイアオイ",
-            "reading": "ほていあおい"
+            "reading": "ホテイアオイ"
           }
         }
       }
@@ -1327,7 +1327,7 @@
           "en": "sedge",
           "ja": {
             "text": "カヤツリグサ",
-            "reading": "かやつりぐさ"
+            "reading": "カヤツリグサ"
           }
         }
       }
@@ -1348,7 +1348,7 @@
           "en": "water strider",
           "ja": {
             "text": "アメンボ",
-            "reading": "あめんぼ"
+            "reading": "アメンボ"
           }
         }
       }
@@ -1390,7 +1390,7 @@
           "en": "frogspawn",
           "ja": {
             "text": "カエルの卵",
-            "reading": "かえるのたまご"
+            "reading": "カエルのたまご"
           }
         }
       }
@@ -1411,7 +1411,7 @@
           "en": "frog",
           "ja": {
             "text": "カエル",
-            "reading": "かえる"
+            "reading": "カエル"
           }
         }
       }
@@ -1432,7 +1432,7 @@
           "en": "snail shell",
           "ja": {
             "text": "カタツムリの殻",
-            "reading": "かたつむりのから"
+            "reading": "カタツムリのから"
           }
         }
       }
@@ -1495,7 +1495,7 @@
           "en": "wooden paddle",
           "ja": {
             "text": "木のパドル",
-            "reading": "きのぱどる"
+            "reading": "きのパドル"
           }
         }
       }
@@ -1579,7 +1579,7 @@
           "en": "duck decoy",
           "ja": {
             "text": "木製のカモ型おとり",
-            "reading": "もくせいのかもがたおとり"
+            "reading": "もくせいのカモがたおとり"
           }
         }
       }
@@ -1621,7 +1621,7 @@
           "en": "cattail",
           "ja": {
             "text": "ガマ",
-            "reading": "がま"
+            "reading": "ガマ"
           }
         }
       }
@@ -1642,7 +1642,7 @@
           "en": "dragonfly",
           "ja": {
             "text": "トンボ",
-            "reading": "とんぼ"
+            "reading": "トンボ"
           }
         }
       }

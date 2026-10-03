@@ -447,7 +447,7 @@
     {
       "id": "rocking-chair",
       "zh": "搖椅",
-      "en": "rocking-chair",
+      "en": "rocking chair",
       "ja": "ロッキングチェア",
       "reading": "ロッキングチェア",
       "category": "道具",
@@ -492,7 +492,7 @@
     {
       "id": "table-lamp",
       "zh": "桌燈",
-      "en": "table-lamp",
+      "en": "table lamp",
       "ja": "テーブルランプ",
       "reading": "テーブルランプ",
       "category": "道具",
@@ -507,7 +507,7 @@
     {
       "id": "wall-clock-home",
       "zh": "掛鐘",
-      "en": "wall-clock",
+      "en": "wall clock",
       "ja": "壁掛け時計",
       "reading": "かべかけどけい",
       "category": "道具",
@@ -522,7 +522,7 @@
     {
       "id": "picture-frame",
       "zh": "相框",
-      "en": "picture-frame",
+      "en": "picture frame",
       "ja": "写真立て",
       "reading": "しゃしんたて",
       "category": "道具",
@@ -537,7 +537,7 @@
     {
       "id": "landscape-painting-home",
       "zh": "風景畫",
-      "en": "landscape-painting",
+      "en": "landscape painting",
       "ja": "風景画",
       "reading": "ふうけいが",
       "category": "道具",
@@ -552,7 +552,7 @@
     {
       "id": "throw-blanket",
       "zh": "沙發毯",
-      "en": "throw-blanket",
+      "en": "throw blanket",
       "ja": "ひざ掛け",
       "reading": "ひざかけ",
       "category": "道具",
@@ -567,7 +567,7 @@
     {
       "id": "coffee-table",
       "zh": "茶几",
-      "en": "coffee-table",
+      "en": "coffee table",
       "ja": "ローテーブル",
       "reading": "ローテーブル",
       "category": "道具",
@@ -582,7 +582,7 @@
     {
       "id": "vinyl-record-home",
       "zh": "黑膠唱片",
-      "en": "vinyl-record",
+      "en": "vinyl record",
       "ja": "レコード",
       "reading": "レコード",
       "category": "道具",
@@ -597,7 +597,7 @@
     {
       "id": "floor-rug",
       "zh": "地毯",
-      "en": "floor-rug",
+      "en": "floor rug",
       "ja": "ラグ",
       "reading": "ラグ",
       "category": "道具",
@@ -612,7 +612,7 @@
     {
       "id": "fireplace-screen",
       "zh": "壁爐屏風",
-      "en": "fireplace-screen",
+      "en": "fireplace screen",
       "ja": "暖炉用スクリーン",
       "reading": "だんろようスクリーン",
       "category": "道具",
@@ -627,7 +627,7 @@
     {
       "id": "fire-poker-home",
       "zh": "火鉗",
-      "en": "fire-poker",
+      "en": "fire poker",
       "ja": "火かき棒",
       "reading": "ひかきぼう",
       "category": "道具",
@@ -642,7 +642,7 @@
     {
       "id": "log-basket",
       "zh": "木柴籃",
-      "en": "log-basket",
+      "en": "log basket",
       "ja": "薪かご",
       "reading": "まきかご",
       "category": "道具",
@@ -657,7 +657,7 @@
     {
       "id": "grandfather-clock",
       "zh": "落地鐘",
-      "en": "grandfather-clock",
+      "en": "grandfather clock",
       "ja": "柱時計",
       "reading": "はしらどけい",
       "category": "道具",
@@ -687,7 +687,7 @@
     {
       "id": "music-stand",
       "zh": "樂譜架",
-      "en": "music-stand",
+      "en": "music stand",
       "ja": "譜面台",
       "reading": "ふめんだい",
       "category": "道具",
@@ -702,7 +702,7 @@
     {
       "id": "guitar-stand",
       "zh": "吉他架",
-      "en": "guitar-stand",
+      "en": "guitar stand",
       "ja": "ギタースタンド",
       "reading": "ギタースタンド",
       "category": "道具",
@@ -732,7 +732,7 @@
     {
       "id": "jigsaw-puzzle",
       "zh": "拼圖",
-      "en": "jigsaw-puzzle",
+      "en": "jigsaw puzzle",
       "ja": "ジグソーパズル",
       "reading": "ジグソーパズル",
       "category": "道具",
@@ -747,7 +747,7 @@
     {
       "id": "tea-tray",
       "zh": "茶盤",
-      "en": "tea-tray",
+      "en": "tea tray",
       "ja": "お盆",
       "reading": "おぼん",
       "category": "道具",
@@ -777,7 +777,7 @@
     {
       "id": "remote-control-home",
       "zh": "遙控器",
-      "en": "remote-control",
+      "en": "remote control",
       "ja": "リモコン",
       "reading": "リモコン",
       "category": "道具",

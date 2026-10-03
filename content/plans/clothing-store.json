@@ -43,7 +43,7 @@
     {
       "id": "facade-bracket",
       "zh": "遮棚支架",
-      "en": "canopy-bracket",
+      "en": "canopy bracket",
       "ja": "ひさしの金具",
       "reading": "ひさしのかなぐ",
       "category": "設施",
@@ -58,7 +58,7 @@
     {
       "id": "clothing-rack",
       "zh": "衣架桿",
-      "en": "clothing-rack",
+      "en": "clothing rack",
       "ja": "ハンガーラック",
       "reading": "ハンガーラック",
       "category": "道具",
@@ -133,7 +133,7 @@
     {
       "id": "shoe-brush",
       "zh": "鞋刷",
-      "en": "shoe-brush",
+      "en": "shoe brush",
       "ja": "靴ブラシ",
       "reading": "くつブラシ",
       "category": "道具",
@@ -148,7 +148,7 @@
     {
       "id": "shoe-polish",
       "zh": "鞋油",
-      "en": "shoe-polish",
+      "en": "shoe polish",
       "ja": "靴クリーム",
       "reading": "くつクリーム",
       "category": "道具",
@@ -163,7 +163,7 @@
     {
       "id": "full-length-mirror",
       "zh": "穿衣鏡",
-      "en": "full-length-mirror",
+      "en": "full-length mirror",
       "ja": "姿見",
       "reading": "すがたみ",
       "category": "設施",
@@ -178,7 +178,7 @@
     {
       "id": "clothing-bag",
       "zh": "衣物防塵袋",
-      "en": "garment-bag",
+      "en": "garment bag",
       "ja": "衣類カバー",
       "reading": "いるいカバー",
       "category": "道具",
@@ -193,7 +193,7 @@
     {
       "id": "standee",
       "zh": "服飾展示架",
-      "en": "clothing-stand",
+      "en": "clothing stand",
       "ja": "ディスプレイスタンド",
       "reading": "ディスプレイスタンド",
       "category": "道具",
@@ -208,7 +208,7 @@
     {
       "id": "folding-screen",
       "zh": "折疊屏風",
-      "en": "folding-screen",
+      "en": "folding screen",
       "ja": "ついたて",
       "reading": "ついたて",
       "category": "道具",
@@ -268,7 +268,7 @@
     {
       "id": "sewing-machine",
       "zh": "縫紉機",
-      "en": "sewing-machine",
+      "en": "sewing machine",
       "ja": "ミシン",
       "reading": "ミシン",
       "category": "道具",
@@ -283,7 +283,7 @@
     {
       "id": "fabric-roll",
       "zh": "布卷",
-      "en": "fabric-roll",
+      "en": "fabric roll",
       "ja": "布ロール",
       "reading": "ぬのロール",
       "category": "道具",
@@ -298,7 +298,7 @@
     {
       "id": "measuring-tape",
       "zh": "捲尺",
-      "en": "tape-measure",
+      "en": "tape measure",
       "ja": "メジャー",
       "reading": "メジャー",
       "category": "道具",
@@ -313,7 +313,7 @@
     {
       "id": "shoe-tree",
       "zh": "鞋撐",
-      "en": "shoe-tree",
+      "en": "shoe tree",
       "ja": "シューキーパー",
       "reading": "シューキーパー",
       "category": "道具",
@@ -343,7 +343,7 @@
     {
       "id": "clothes-hamper",
       "zh": "衣物籃",
-      "en": "clothes-hamper",
+      "en": "clothes hamper",
       "ja": "ランドリーバスケット",
       "reading": "ランドリーバスケット",
       "category": "道具",
@@ -358,7 +358,7 @@
     {
       "id": "sewing-scissors",
       "zh": "裁縫剪刀",
-      "en": "sewing-scissors",
+      "en": "sewing scissors",
       "ja": "裁ちばさみ",
       "reading": "たちばさみ",
       "category": "道具",
@@ -373,7 +373,7 @@
     {
       "id": "fabric-swatch",
       "zh": "布樣",
-      "en": "fabric-swatch",
+      "en": "fabric swatch",
       "ja": "生地見本",
       "reading": "きじみほん",
       "category": "道具",
@@ -388,7 +388,7 @@
     {
       "id": "clothes-peg",
       "zh": "曬衣夾",
-      "en": "clothes-peg",
+      "en": "clothes peg",
       "ja": "洗濯ばさみ",
       "reading": "せんたくばさみ",
       "category": "道具",
@@ -463,7 +463,7 @@
     {
       "id": "necklace-box",
       "zh": "首飾盒",
-      "en": "jewelry-box",
+      "en": "jewelry box",
       "ja": "ジュエリーボックス",
       "reading": "ジュエリーボックス",
       "category": "道具",
@@ -478,7 +478,7 @@
     {
       "id": "bow-tie",
       "zh": "領結",
-      "en": "bow-tie",
+      "en": "bow tie",
       "ja": "蝶ネクタイ",
       "reading": "ちょうネクタイ",
       "category": "道具",
@@ -523,7 +523,7 @@
     {
       "id": "high-heels",
       "zh": "高跟鞋",
-      "en": "high-heels",
+      "en": "high heels",
       "ja": "ハイヒール",
       "reading": "ハイヒール",
       "category": "道具",
@@ -538,7 +538,7 @@
     {
       "id": "boot-jack",
       "zh": "脫靴器",
-      "en": "boot-jack",
+      "en": "boot jack",
       "ja": "ブーツジャック",
       "reading": "ブーツジャック",
       "category": "道具",
@@ -553,7 +553,7 @@
     {
       "id": "laundry-detergent",
       "zh": "洗衣精",
-      "en": "laundry-detergent",
+      "en": "laundry detergent",
       "ja": "洗濯洗剤",
       "reading": "せんたくせんざい",
       "category": "道具",
@@ -583,7 +583,7 @@
     {
       "id": "ironing-board",
       "zh": "熨衣板",
-      "en": "ironing-board",
+      "en": "ironing board",
       "ja": "アイロン台",
       "reading": "アイロンだい",
       "category": "道具",
@@ -598,7 +598,7 @@
     {
       "id": "hand-mirror",
       "zh": "手持鏡",
-      "en": "hand-mirror",
+      "en": "hand mirror",
       "ja": "手鏡",
       "reading": "てかがみ",
       "category": "道具",
@@ -628,7 +628,7 @@
     {
       "id": "hat-stand",
       "zh": "帽架",
-      "en": "hat-stand",
+      "en": "hat stand",
       "ja": "帽子掛け",
       "reading": "ぼうしかけ",
       "category": "設施",
@@ -703,7 +703,7 @@
     {
       "id": "laundry-basket",
       "zh": "洗衣籃",
-      "en": "laundry-basket",
+      "en": "laundry basket",
       "ja": "洗濯かご",
       "reading": "せんたくかご",
       "category": "道具",
@@ -718,7 +718,7 @@
     {
       "id": "belt-buckle",
       "zh": "皮帶扣",
-      "en": "belt-buckle",
+      "en": "belt buckle",
       "ja": "ベルトのバックル",
       "reading": "ベルトのバックル",
       "category": "道具",
@@ -733,7 +733,7 @@
     {
       "id": "laundry-tag",
       "zh": "洗衣標籤",
-      "en": "laundry-tag",
+      "en": "laundry tag",
       "ja": "洗濯表示タグ",
       "reading": "せんたくひょうじタグ",
       "category": "道具",
@@ -748,7 +748,7 @@
     {
       "id": "clothes-brush",
       "zh": "衣物刷",
-      "en": "clothes-brush",
+      "en": "clothes brush",
       "ja": "洋服ブラシ",
       "reading": "ようふくブラシ",
       "category": "道具",
@@ -778,7 +778,7 @@
     {
       "id": "garment-steamer",
       "zh": "掛燙機",
-      "en": "garment-steamer",
+      "en": "garment steamer",
       "ja": "衣類スチーマー",
       "reading": "いるいスチーマー",
       "category": "道具",
@@ -793,7 +793,7 @@
     {
       "id": "laundry-bag",
       "zh": "洗衣袋",
-      "en": "laundry-bag",
+      "en": "laundry bag",
       "ja": "ランドリーバッグ",
       "reading": "ランドリーバッグ",
       "category": "道具",
@@ -808,7 +808,7 @@
     {
       "id": "changing-stool",
       "zh": "試衣凳",
-      "en": "changing-stool",
+      "en": "changing stool",
       "ja": "試着用スツール",
       "reading": "しちゃくようスツール",
       "category": "道具",
@@ -823,7 +823,7 @@
     {
       "id": "shoe-bench",
       "zh": "穿鞋長凳",
-      "en": "shoe-bench",
+      "en": "shoe bench",
       "ja": "腰掛けベンチ",
       "reading": "こしかけベンチ",
       "category": "道具",
@@ -838,7 +838,7 @@
     {
       "id": "fabric-measuring-tape",
       "zh": "裁縫軟尺",
-      "en": "fabric-measuring-tape",
+      "en": "fabric measuring tape",
       "ja": "洋裁用メジャー",
       "reading": "ようさいようメジャー",
       "category": "道具",
@@ -853,7 +853,7 @@
     {
       "id": "privacy-curtain",
       "zh": "試衣簾",
-      "en": "privacy-curtain",
+      "en": "privacy curtain",
       "ja": "試着室カーテン",
       "reading": "しちゃくしつカーテン",
       "category": "道具",
@@ -868,7 +868,7 @@
     {
       "id": "shoe-polishing-cloth",
       "zh": "擦鞋布",
-      "en": "shoe-polishing-cloth",
+      "en": "shoe polishing cloth",
       "ja": "靴磨きクロス",
       "reading": "くつみがきクロス",
       "category": "道具",
@@ -883,7 +883,7 @@
     {
       "id": "garment-cover",
       "zh": "衣物套",
-      "en": "garment-cover",
+      "en": "garment cover",
       "ja": "洋服カバー",
       "reading": "ようふくカバー",
       "category": "道具",
@@ -898,7 +898,7 @@
     {
       "id": "full-length-mirror-frame",
       "zh": "鏡框",
-      "en": "mirror-frame",
+      "en": "mirror frame",
       "ja": "鏡の額縁",
       "reading": "かがみのがくぶち",
       "category": "道具",
@@ -913,7 +913,7 @@
     {
       "id": "handbag-mirror",
       "zh": "化妝鏡",
-      "en": "compact-mirror",
+      "en": "compact mirror",
       "ja": "コンパクトミラー",
       "reading": "コンパクトミラー",
       "category": "道具",
@@ -928,7 +928,7 @@
     {
       "id": "scarf-ring",
       "zh": "圍巾環",
-      "en": "scarf-ring",
+      "en": "scarf ring",
       "ja": "スカーフリング",
       "reading": "スカーフリング",
       "category": "道具",
@@ -943,7 +943,7 @@
     {
       "id": "shoehorn-stand",
       "zh": "鞋拔架",
-      "en": "shoehorn-stand",
+      "en": "shoehorn stand",
       "ja": "靴べらスタンド",
       "reading": "くつべらスタンド",
       "category": "道具",
@@ -1003,7 +1003,7 @@
     {
       "id": "price-gun",
       "zh": "標價槍",
-      "en": "price-gun",
+      "en": "price gun",
       "ja": "値付けガン",
       "reading": "ねづけガン",
       "category": "道具",
@@ -1018,7 +1018,7 @@
     {
       "id": "receipt-spike",
       "zh": "收據插針",
-      "en": "receipt-spike",
+      "en": "receipt spike",
       "ja": "伝票差し",
       "reading": "でんぴょうさし",
       "category": "道具",
@@ -1033,7 +1033,7 @@
     {
       "id": "shopping-bag-holder",
       "zh": "購物袋架",
-      "en": "shopping-bag-holder",
+      "en": "shopping bag holder",
       "ja": "買い物袋ホルダー",
       "reading": "かいものぶくろホルダー",
       "category": "道具",
@@ -1048,7 +1048,7 @@
     {
       "id": "folding-wallet",
       "zh": "短夾",
-      "en": "folding-wallet",
+      "en": "folding wallet",
       "ja": "二つ折り財布",
       "reading": "ふたつおりさいふ",
       "category": "道具",
@@ -1063,7 +1063,7 @@
     {
       "id": "garment-tag",
       "zh": "吊牌",
-      "en": "garment-tag",
+      "en": "garment tag",
       "ja": "下げ札",
       "reading": "さげふだ",
       "category": "道具",
@@ -1078,7 +1078,7 @@
     {
       "id": "coat-check-token",
       "zh": "寄物牌",
-      "en": "coat-check-token",
+      "en": "coat check token",
       "ja": "預かり札",
       "reading": "あずかりふだ",
       "category": "道具",
@@ -1228,7 +1228,7 @@
     {
       "id": "cash-register-key",
       "zh": "收銀機鑰匙",
-      "en": "cash-register-key",
+      "en": "cash register key",
       "ja": "レジの鍵",
       "reading": "レジのかぎ",
       "category": "道具",
@@ -1243,7 +1243,7 @@
     {
       "id": "coin-roll",
       "zh": "硬幣捲",
-      "en": "coin-roll",
+      "en": "coin roll",
       "ja": "硬貨ロール",
       "reading": "こうかロール",
       "category": "道具",
@@ -1258,7 +1258,7 @@
     {
       "id": "price-labeler",
       "zh": "標價標籤器",
-      "en": "price-labeler",
+      "en": "price labeler",
       "ja": "値札ラベラー",
       "reading": "ねふだラベラー",
       "category": "道具",
@@ -1273,7 +1273,7 @@
     {
       "id": "cash-register-mat",
       "zh": "收銀台墊",
-      "en": "cash-register-mat",
+      "en": "cash register mat",
       "ja": "レジマット",
       "reading": "レジマット",
       "category": "道具",
@@ -1288,7 +1288,7 @@
     {
       "id": "receipt-folder",
       "zh": "收據夾",
-      "en": "receipt-folder",
+      "en": "receipt folder",
       "ja": "レシートホルダー",
       "reading": "レシートホルダー",
       "category": "道具",
@@ -1303,7 +1303,7 @@
     {
       "id": "size-ring",
       "zh": "尺寸環",
-      "en": "size-ring",
+      "en": "size ring",
       "ja": "サイズリング",
       "reading": "サイズリング",
       "category": "道具",
@@ -1318,7 +1318,7 @@
     {
       "id": "cash-tray",
       "zh": "收銀托盤",
-      "en": "cash-tray",
+      "en": "cash tray",
       "ja": "キャッシュトレイ",
       "reading": "キャッシュトレイ",
       "category": "道具",
@@ -1333,7 +1333,7 @@
     {
       "id": "scarf-pin",
       "zh": "圍巾別針",
-      "en": "scarf-pin",
+      "en": "scarf pin",
       "ja": "スカーフピン",
       "reading": "スカーフピン",
       "category": "道具",

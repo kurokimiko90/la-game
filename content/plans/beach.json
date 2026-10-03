@@ -43,7 +43,7 @@
     {
       "id": "lifeguard-chair",
       "zh": "救生員椅",
-      "en": "lifeguard-chair",
+      "en": "lifeguard chair",
       "ja": "監視台",
       "reading": "かんしたい",
       "category": "設施",
@@ -73,7 +73,7 @@
     {
       "id": "foot-wash",
       "zh": "洗腳台",
-      "en": "foot-wash",
+      "en": "foot wash",
       "ja": "足洗い場",
       "reading": "あしあらいば",
       "category": "設施",
@@ -133,7 +133,7 @@
     {
       "id": "swim-fins",
       "zh": "蛙鞋",
-      "en": "swim-fins",
+      "en": "swim fins",
       "ja": "フィン",
       "reading": "フィン",
       "category": "道具",
@@ -148,7 +148,7 @@
     {
       "id": "beach-chair",
       "zh": "沙灘椅",
-      "en": "beach-chair",
+      "en": "beach chair",
       "ja": "ビーチチェア",
       "reading": "ビーチチェア",
       "category": "道具",
@@ -163,7 +163,7 @@
     {
       "id": "folding-table",
       "zh": "折疊桌",
-      "en": "folding-table",
+      "en": "folding table",
       "ja": "折りたたみテーブル",
       "reading": "おりたたみテーブル",
       "category": "道具",
@@ -193,7 +193,7 @@
     {
       "id": "beach-ball",
       "zh": "沙灘球",
-      "en": "beach-ball",
+      "en": "beach ball",
       "ja": "ビーチボール",
       "reading": "ビーチボール",
       "category": "道具",
@@ -208,7 +208,7 @@
     {
       "id": "sandcastle-mold",
       "zh": "沙堡模具",
-      "en": "sandcastle-mold",
+      "en": "sandcastle mold",
       "ja": "砂型",
       "reading": "すながた",
       "category": "道具",
@@ -268,7 +268,7 @@
     {
       "id": "palm-tree",
       "zh": "棕櫚樹",
-      "en": "palm-tree",
+      "en": "palm tree",
       "ja": "ヤシの木",
       "reading": "ヤシのき",
       "category": "植物",
@@ -283,7 +283,7 @@
     {
       "id": "seashell-wind-chime",
       "zh": "貝殼風鈴",
-      "en": "seashell-wind-chime",
+      "en": "seashell wind chime",
       "ja": "貝殻の風鈴",
       "reading": "かいがらのふうりん",
       "category": "道具",
@@ -298,7 +298,7 @@
     {
       "id": "electric-scooter",
       "zh": "電動滑板車",
-      "en": "electric-scooter",
+      "en": "electric scooter",
       "ja": "電動キックボード",
       "reading": "でんどうキックボード",
       "category": "交通工具",
@@ -313,7 +313,7 @@
     {
       "id": "parking-post",
       "zh": "停車樁",
-      "en": "parking-post",
+      "en": "parking post",
       "ja": "車止め",
       "reading": "くるまどめ",
       "category": "設施",
@@ -328,7 +328,7 @@
     {
       "id": "parking-block",
       "zh": "停車擋",
-      "en": "parking-block",
+      "en": "parking block",
       "ja": "輪止め",
       "reading": "わどめ",
       "category": "設施",
@@ -343,7 +343,7 @@
     {
       "id": "road-marker",
       "zh": "道路反光標記",
-      "en": "road-marker",
+      "en": "road marker",
       "ja": "道路鋲",
       "reading": "どうろびょう",
       "category": "設施",
@@ -358,7 +358,7 @@
     {
       "id": "beach-towel",
       "zh": "沙灘巾",
-      "en": "beach-towel",
+      "en": "beach towel",
       "ja": "ビーチタオル",
       "reading": "ビーチタオル",
       "category": "道具",
@@ -733,7 +733,7 @@
     {
       "id": "water-scope",
       "zh": "水下觀察鏡",
-      "en": "water-scope",
+      "en": "water scope",
       "ja": "水中スコープ",
       "reading": "すいちゅうスコープ",
       "category": "道具",
@@ -748,7 +748,7 @@
     {
       "id": "sand-dollar",
       "zh": "沙錢",
-      "en": "sand-dollar",
+      "en": "sand dollar",
       "ja": "カシパン",
       "reading": "カシパン",
       "category": "自然",
@@ -763,7 +763,7 @@
     {
       "id": "tide-pool-marker",
       "zh": "潮池標記牌",
-      "en": "tide-pool-marker",
+      "en": "tide pool marker",
       "ja": "潮だまりの目印",
       "reading": "しおだまりのめじるし",
       "category": "道具",
@@ -778,7 +778,7 @@
     {
       "id": "water-pail",
       "zh": "提水桶",
-      "en": "water-pail",
+      "en": "water pail",
       "ja": "バケツ",
       "reading": "バケツ",
       "category": "道具",
@@ -793,7 +793,7 @@
     {
       "id": "shell-brush",
       "zh": "貝殼刷",
-      "en": "shell-brush",
+      "en": "shell brush",
       "ja": "貝がらブラシ",
       "reading": "かいがらブラシ",
       "category": "道具",
@@ -808,7 +808,7 @@
     {
       "id": "sand-sifter",
       "zh": "篩砂網",
-      "en": "sand-sifter",
+      "en": "sand sifter",
       "ja": "砂ふるい",
       "reading": "すなふるい",
       "category": "道具",
@@ -823,7 +823,7 @@
     {
       "id": "sea-anemone",
       "zh": "海葵",
-      "en": "sea-anemone",
+      "en": "sea anemone",
       "ja": "イソギンチャク",
       "reading": "イソギンチャク",
       "category": "自然",
@@ -838,7 +838,7 @@
     {
       "id": "waterproof-bin",
       "zh": "防水收納盒",
-      "en": "waterproof-bin",
+      "en": "waterproof bin",
       "ja": "防水収納ケース",
       "reading": "ぼうすいしゅうのうケース",
       "category": "道具",
@@ -853,7 +853,7 @@
     {
       "id": "tide-pool-ladder",
       "zh": "池邊小梯",
-      "en": "tide-pool-ladder",
+      "en": "tide pool ladder",
       "ja": "潮だまり用の小さなはしご",
       "reading": "しおだまりようのちいさなはしご",
       "category": "道具",
@@ -868,7 +868,7 @@
     {
       "id": "rock-pool-chart",
       "zh": "潮池圖卡",
-      "en": "rock-pool-chart",
+      "en": "rock pool chart",
       "ja": "磯の生き物カード",
       "reading": "いそのいきものカード",
       "category": "道具",
@@ -883,7 +883,7 @@
     {
       "id": "sea-glass-bottle",
       "zh": "海玻璃瓶",
-      "en": "sea-glass-bottle",
+      "en": "sea glass bottle",
       "ja": "シーグラス瓶",
       "reading": "シーグラスびん",
       "category": "道具",
@@ -898,7 +898,7 @@
     {
       "id": "tide-pool-sandals",
       "zh": "涉水涼鞋",
-      "en": "tide-pool-sandals",
+      "en": "tide pool sandals",
       "ja": "マリンシューズ",
       "reading": "マリンシューズ",
       "category": "道具",
@@ -1183,7 +1183,7 @@
     {
       "id": "beer-tap",
       "zh": "啤酒龍頭",
-      "en": "beer-tap",
+      "en": "beer tap",
       "ja": "ビールサーバーの注ぎ口",
       "reading": "ビールサーバーのつぎぐち",
       "category": "道具",
@@ -1213,7 +1213,7 @@
     {
       "id": "record-player",
       "zh": "唱片機",
-      "en": "record-player",
+      "en": "record player",
       "ja": "レコードプレーヤー",
       "reading": "レコードプレーヤー",
       "category": "道具",
@@ -1243,7 +1243,7 @@
     {
       "id": "poker-chip",
       "zh": "籌碼",
-      "en": "poker-chip",
+      "en": "poker chip",
       "ja": "ポーカーチップ",
       "reading": "ポーカーチップ",
       "category": "道具",
@@ -1393,7 +1393,7 @@
     {
       "id": "coastal-shelter",
       "zh": "海濱涼亭",
-      "en": "coastal-shelter",
+      "en": "coastal shelter",
       "ja": "東屋",
       "reading": "あずまや",
       "category": "設施",
@@ -1423,7 +1423,7 @@
     {
       "id": "driftwood-piece",
       "zh": "小塊漂流木",
-      "en": "driftwood-piece",
+      "en": "driftwood piece",
       "ja": "流木",
       "reading": "りゅうぼく",
       "category": "自然",
@@ -1438,7 +1438,7 @@
     {
       "id": "dry-leaf",
       "zh": "乾葉",
-      "en": "dry-leaf",
+      "en": "dry leaf",
       "ja": "枯れ葉",
       "reading": "かれは",
       "category": "植物",

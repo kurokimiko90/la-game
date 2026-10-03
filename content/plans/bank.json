@@ -898,7 +898,7 @@
     {
       "id": "tape-dispenser-bank",
       "zh": "膠帶台",
-      "en": "tape-dispenser",
+      "en": "tape dispenser",
       "ja": "テープカッター",
       "reading": "テープカッター",
       "category": "道具",
@@ -913,7 +913,7 @@
     {
       "id": "hole-punch-bank",
       "zh": "打孔機",
-      "en": "hole-punch",
+      "en": "hole punch",
       "ja": "穴あけパンチ",
       "reading": "あなあけパンチ",
       "category": "道具",
@@ -943,7 +943,7 @@
     {
       "id": "calculator-receipt-printer",
       "zh": "收據機",
-      "en": "receipt-printer",
+      "en": "receipt printer",
       "ja": "レシートプリンター",
       "reading": "レシートプリンター",
       "category": "道具",
@@ -958,7 +958,7 @@
     {
       "id": "cash-register-bank",
       "zh": "收銀機",
-      "en": "cash-register",
+      "en": "cash register",
       "ja": "レジスター",
       "reading": "レジスター",
       "category": "道具",
@@ -1018,7 +1018,7 @@
     {
       "id": "magnifying-glass-bank",
       "zh": "放大鏡",
-      "en": "magnifying-glass",
+      "en": "magnifying glass",
       "ja": "虫眼鏡",
       "reading": "むしめがね",
       "category": "道具",
@@ -1033,7 +1033,7 @@
     {
       "id": "staple-remover-bank",
       "zh": "拔釘器",
-      "en": "staple-remover",
+      "en": "staple remover",
       "ja": "リムーバー",
       "reading": "リムーバー",
       "category": "道具",
@@ -1048,7 +1048,7 @@
     {
       "id": "coat-rack-bank",
       "zh": "衣帽架",
-      "en": "coat-rack",
+      "en": "coat rack",
       "ja": "コートハンガー",
       "reading": "コートハンガー",
       "category": "設施",
@@ -1063,7 +1063,7 @@
     {
       "id": "filing-cabinet-bank",
       "zh": "文件櫃",
-      "en": "filing-cabinet",
+      "en": "filing cabinet",
       "ja": "キャビネット",
       "reading": "キャビネット",
       "category": "設施",
@@ -1078,7 +1078,7 @@
     {
       "id": "water-bottle-bank",
       "zh": "水壺",
-      "en": "water-bottle",
+      "en": "water bottle",
       "ja": "水筒",
       "reading": "すいとう",
       "category": "道具",
@@ -1093,7 +1093,7 @@
     {
       "id": "briefcase-lock",
       "zh": "密碼鎖",
-      "en": "combination-lock",
+      "en": "combination lock",
       "ja": "ダイヤル錠",
       "reading": "ダイヤルじょう",
       "category": "道具",
@@ -1108,7 +1108,7 @@
     {
       "id": "waste-bin-liner",
       "zh": "垃圾袋",
-      "en": "trash-bag",
+      "en": "trash bag",
       "ja": "ごみ袋",
       "reading": "ごみぶくろ",
       "category": "道具",

@@ -53,6 +53,11 @@ describe('validateElements', () => {
     expect(used.en.has('teacup')).toBe(true);
   });
 
+  it('英文的 id 式連字號換成空白、讀音跟寫法對齊（codex 常這樣回）', () => {
+    const { ok } = validateElements([el({ id: 'tea-cup', en: 'Tea-Cup', ja: 'ティーカップ', reading: 'てぃーかっぷ' })], { zone: zones[1], used: freshUsed() });
+    expect(ok[0]).toMatchObject({ en: 'tea cup', reading: 'ティーカップ' });
+  });
+
   it('限定位置時，其他位置一律退回地上', () => {
     const { ok } = validateElements([el({ spot: 'surface' })], { zone: zones[1], used: freshUsed(), spots: ['ground'] });
     expect(ok[0].spot).toBe('ground');

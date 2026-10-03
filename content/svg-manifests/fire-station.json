@@ -22,7 +22,7 @@
         "itemId": "fire-engine",
         "words": {
           "zh-TW": "消防車",
-          "en": "fire-engine",
+          "en": "fire engine",
           "ja": {
             "text": "消防車",
             "reading": "しょうぼうしゃ"
@@ -43,7 +43,7 @@
         "itemId": "fire-hose",
         "words": {
           "zh-TW": "消防水帶",
-          "en": "fire-hose",
+          "en": "fire hose",
           "ja": {
             "text": "消防ホース",
             "reading": "しょうぼうホース"
@@ -64,7 +64,7 @@
         "itemId": "hose-nozzle",
         "words": {
           "zh-TW": "水帶噴嘴",
-          "en": "hose-nozzle",
+          "en": "hose nozzle",
           "ja": {
             "text": "ホースノズル",
             "reading": "ホースノズル"
@@ -85,7 +85,7 @@
         "itemId": "fire-helmet",
         "words": {
           "zh-TW": "消防頭盔",
-          "en": "fire-helmet",
+          "en": "fire helmet",
           "ja": {
             "text": "消防ヘルメット",
             "reading": "しょうぼうヘルメット"
@@ -127,7 +127,7 @@
         "itemId": "hose-reel",
         "words": {
           "zh-TW": "水帶捲盤",
-          "en": "hose-reel",
+          "en": "hose reel",
           "ja": {
             "text": "ホースリール",
             "reading": "ホースリール"
@@ -148,7 +148,7 @@
         "itemId": "fire-bucket",
         "words": {
           "zh-TW": "消防水桶",
-          "en": "fire-bucket",
+          "en": "fire bucket",
           "ja": {
             "text": "消防バケツ",
             "reading": "しょうぼうバケツ"
@@ -169,7 +169,7 @@
         "itemId": "fire-extinguisher-hose",
         "words": {
           "zh-TW": "滅火器軟管",
-          "en": "extinguisher-hose",
+          "en": "extinguisher hose",
           "ja": {
             "text": "消火器ホース",
             "reading": "しょうかきホース"
@@ -190,7 +190,7 @@
         "itemId": "fire-alarm-bell",
         "words": {
           "zh-TW": "消防警鈴",
-          "en": "fire-alarm-bell",
+          "en": "fire alarm bell",
           "ja": {
             "text": "火災警報ベル",
             "reading": "かさいけいほうベル"
@@ -211,7 +211,7 @@
         "itemId": "drain-grate",
         "words": {
           "zh-TW": "排水溝蓋",
-          "en": "drain-grate",
+          "en": "drain grate",
           "ja": {
             "text": "排水溝のふた",
             "reading": "はいすいこうのふた"
@@ -274,7 +274,7 @@
         "itemId": "hose-coupling",
         "words": {
           "zh-TW": "水帶接頭",
-          "en": "hose-coupling",
+          "en": "hose coupling",
           "ja": {
             "text": "ホースカップリング",
             "reading": "ホースカップリング"
@@ -295,7 +295,7 @@
         "itemId": "fire-station-shutter",
         "words": {
           "zh-TW": "車庫鐵捲門",
-          "en": "fire-station-shutter",
+          "en": "fire station shutter",
           "ja": {
             "text": "車庫シャッター",
             "reading": "しゃこシャッター"
@@ -316,7 +316,7 @@
         "itemId": "fire-station-window",
         "words": {
           "zh-TW": "車庫窗戶",
-          "en": "fire-station-window",
+          "en": "fire station window",
           "ja": {
             "text": "車庫の窓",
             "reading": "しゃこのまど"
@@ -337,7 +337,7 @@
         "itemId": "fire-station-flag",
         "words": {
           "zh-TW": "消防局旗幟",
-          "en": "fire-station-flag",
+          "en": "fire station flag",
           "ja": {
             "text": "消防署の旗",
             "reading": "しょうぼうしょのはた"
@@ -379,7 +379,7 @@
         "itemId": "fire-station-door",
         "words": {
           "zh-TW": "側門",
-          "en": "side-door",
+          "en": "side door",
           "ja": {
             "text": "勝手口",
             "reading": "かってぐち"
@@ -484,7 +484,7 @@
         "itemId": "fire-pole",
         "words": {
           "zh-TW": "消防滑竿",
-          "en": "fire-pole",
+          "en": "fire pole",
           "ja": {
             "text": "消防士用すべり棒",
             "reading": "しょうぼうしようすべりぼう"
@@ -505,7 +505,7 @@
         "itemId": "fire-boot",
         "words": {
           "zh-TW": "消防靴",
-          "en": "fire-boot",
+          "en": "fire boot",
           "ja": {
             "text": "消防ブーツ",
             "reading": "しょうぼうブーツ"
@@ -526,7 +526,7 @@
         "itemId": "fire-blanket",
         "words": {
           "zh-TW": "防火毯",
-          "en": "fire-blanket",
+          "en": "fire blanket",
           "ja": {
             "text": "防火ブランケット",
             "reading": "ぼうかブランケット"
@@ -547,7 +547,7 @@
         "itemId": "fire-engine-seat",
         "words": {
           "zh-TW": "消防車座椅",
-          "en": "fire-engine-seat",
+          "en": "fire engine seat",
           "ja": {
             "text": "消防車の座席",
             "reading": "しょうぼうしゃのざせき"
@@ -568,7 +568,7 @@
         "itemId": "steering-wheel",
         "words": {
           "zh-TW": "方向盤",
-          "en": "steering-wheel",
+          "en": "steering wheel",
           "ja": {
             "text": "ハンドル",
             "reading": "ハンドル"
@@ -610,7 +610,7 @@
         "itemId": "rearview-mirror",
         "words": {
           "zh-TW": "後視鏡",
-          "en": "rearview-mirror",
+          "en": "rearview mirror",
           "ja": {
             "text": "バックミラー",
             "reading": "バックミラー"
@@ -631,7 +631,7 @@
         "itemId": "windshield-wiper",
         "words": {
           "zh-TW": "雨刷",
-          "en": "windshield-wiper",
+          "en": "windshield wiper",
           "ja": {
             "text": "ワイパー",
             "reading": "ワイパー"
@@ -652,7 +652,7 @@
         "itemId": "fire-engine-door",
         "words": {
           "zh-TW": "消防車車門",
-          "en": "fire-engine-door",
+          "en": "fire engine door",
           "ja": {
             "text": "消防車のドア",
             "reading": "しょうぼうしゃのドア"
@@ -673,7 +673,7 @@
         "itemId": "side-mirror",
         "words": {
           "zh-TW": "車側後視鏡",
-          "en": "side-mirror",
+          "en": "side mirror",
           "ja": {
             "text": "サイドミラー",
             "reading": "サイドミラー"
@@ -715,7 +715,7 @@
         "itemId": "spare-wheel",
         "words": {
           "zh-TW": "備胎",
-          "en": "spare-wheel",
+          "en": "spare wheel",
           "ja": {
             "text": "スペアタイヤ",
             "reading": "スペアタイヤ"
@@ -736,7 +736,7 @@
         "itemId": "wheel-wrench",
         "words": {
           "zh-TW": "輪胎扳手",
-          "en": "wheel-wrench",
+          "en": "wheel wrench",
           "ja": {
             "text": "ホイールレンチ",
             "reading": "ホイールレンチ"
@@ -778,7 +778,7 @@
         "itemId": "bolt-cutter",
         "words": {
           "zh-TW": "斷線鉗",
-          "en": "bolt-cutter",
+          "en": "bolt cutter",
           "ja": {
             "text": "ボルトカッター",
             "reading": "ボルトカッター"
@@ -841,7 +841,7 @@
         "itemId": "ladder-hook",
         "words": {
           "zh-TW": "梯鉤",
-          "en": "ladder-hook",
+          "en": "ladder hook",
           "ja": {
             "text": "梯子フック",
             "reading": "はしごフック"
@@ -862,7 +862,7 @@
         "itemId": "hose-bridge",
         "words": {
           "zh-TW": "水帶跨橋",
-          "en": "hose-bridge",
+          "en": "hose bridge",
           "ja": {
             "text": "ホースブリッジ",
             "reading": "ホースブリッジ"
@@ -883,7 +883,7 @@
         "itemId": "fire-nozzle",
         "words": {
           "zh-TW": "消防水帶噴嘴",
-          "en": "fire-nozzle",
+          "en": "fire nozzle",
           "ja": {
             "text": "消防ノズル",
             "reading": "しょうぼうノズル"
@@ -904,7 +904,7 @@
         "itemId": "hose-cabinet",
         "words": {
           "zh-TW": "水帶櫃",
-          "en": "hose-cabinet",
+          "en": "hose cabinet",
           "ja": {
             "text": "ホース収納箱",
             "reading": "ホースしゅうのうばこ"
@@ -925,7 +925,7 @@
         "itemId": "fire-gloves",
         "words": {
           "zh-TW": "消防手套",
-          "en": "fire-gloves",
+          "en": "fire gloves",
           "ja": {
             "text": "消防用手袋",
             "reading": "しょうぼうようてぶくろ"
@@ -946,7 +946,7 @@
         "itemId": "fire-goggles",
         "words": {
           "zh-TW": "消防護目鏡",
-          "en": "fire-goggles",
+          "en": "fire goggles",
           "ja": {
             "text": "消防ゴーグル",
             "reading": "しょうぼうゴーグル"
@@ -967,7 +967,7 @@
         "itemId": "fire-helmet-visor",
         "words": {
           "zh-TW": "消防頭盔面罩",
-          "en": "fire-helmet-visor",
+          "en": "fire helmet visor",
           "ja": {
             "text": "消防ヘルメットのシールド",
             "reading": "しょうぼうヘルメットのシールド"
@@ -988,7 +988,7 @@
         "itemId": "breathing-apparatus",
         "words": {
           "zh-TW": "空氣呼吸器",
-          "en": "breathing-apparatus",
+          "en": "breathing apparatus",
           "ja": {
             "text": "空気呼吸器",
             "reading": "くうきこきゅうき"
@@ -1009,7 +1009,7 @@
         "itemId": "fire-mask",
         "words": {
           "zh-TW": "消防面罩",
-          "en": "fire-mask",
+          "en": "fire mask",
           "ja": {
             "text": "防火マスク",
             "reading": "ぼうかマスク"
@@ -1030,7 +1030,7 @@
         "itemId": "fire-radio",
         "words": {
           "zh-TW": "消防無線電",
-          "en": "fire-radio",
+          "en": "fire radio",
           "ja": {
             "text": "消防無線機",
             "reading": "しょうぼうむせんき"
@@ -1051,7 +1051,7 @@
         "itemId": "radio-microphone",
         "words": {
           "zh-TW": "無線電麥克風",
-          "en": "radio-microphone",
+          "en": "radio microphone",
           "ja": {
             "text": "無線機マイク",
             "reading": "むせんきマイク"
@@ -1072,7 +1072,7 @@
         "itemId": "fire-helmet-lamp",
         "words": {
           "zh-TW": "消防頭盔燈",
-          "en": "fire-helmet-lamp",
+          "en": "fire helmet lamp",
           "ja": {
             "text": "ヘルメットライト",
             "reading": "ヘルメットライト"
@@ -1093,7 +1093,7 @@
         "itemId": "fire-helmet-shield",
         "words": {
           "zh-TW": "消防頭盔護目鏡",
-          "en": "fire-helmet-shield",
+          "en": "fire helmet shield",
           "ja": {
             "text": "ヘルメットシールド",
             "reading": "ヘルメットシールド"
@@ -1114,7 +1114,7 @@
         "itemId": "fire-hood",
         "words": {
           "zh-TW": "消防頭套",
-          "en": "fire-hood",
+          "en": "fire hood",
           "ja": {
             "text": "防火フード",
             "reading": "ぼうかフード"
@@ -1135,7 +1135,7 @@
         "itemId": "fire-jacket",
         "words": {
           "zh-TW": "消防外套",
-          "en": "fire-jacket",
+          "en": "fire jacket",
           "ja": {
             "text": "消防服",
             "reading": "しょうぼうふく"
@@ -1156,7 +1156,7 @@
         "itemId": "fire-trousers",
         "words": {
           "zh-TW": "消防褲",
-          "en": "fire-trousers",
+          "en": "fire trousers",
           "ja": {
             "text": "消防ズボン",
             "reading": "しょうぼうズボン"
@@ -1177,7 +1177,7 @@
         "itemId": "fire-belt",
         "words": {
           "zh-TW": "消防腰帶",
-          "en": "fire-belt",
+          "en": "fire belt",
           "ja": {
             "text": "消防用ベルト",
             "reading": "しょうぼうようベルト"
@@ -1198,7 +1198,7 @@
         "itemId": "fire-harness",
         "words": {
           "zh-TW": "消防安全吊帶",
-          "en": "fire-harness",
+          "en": "fire harness",
           "ja": {
             "text": "消防用ハーネス",
             "reading": "しょうぼうようハーネス"
@@ -1219,7 +1219,7 @@
         "itemId": "fire-rope",
         "words": {
           "zh-TW": "消防救援繩",
-          "en": "fire-rope",
+          "en": "fire rope",
           "ja": {
             "text": "救助ロープ",
             "reading": "きゅうじょロープ"
@@ -1261,7 +1261,7 @@
         "itemId": "fire-pickaxe",
         "words": {
           "zh-TW": "消防破壞斧",
-          "en": "fire-pickaxe",
+          "en": "fire pickaxe",
           "ja": {
             "text": "消防用ピッケル",
             "reading": "しょうぼうようピッケル"
@@ -1282,7 +1282,7 @@
         "itemId": "fire-cutter",
         "words": {
           "zh-TW": "消防剪切器",
-          "en": "fire-cutter",
+          "en": "fire cutter",
           "ja": {
             "text": "油圧カッター",
             "reading": "ゆあつカッター"
@@ -1303,7 +1303,7 @@
         "itemId": "fire-spreader",
         "words": {
           "zh-TW": "消防撐開器",
-          "en": "fire-spreader",
+          "en": "fire spreader",
           "ja": {
             "text": "油圧スプレッダー",
             "reading": "ゆあつスプレッダー"
@@ -1324,7 +1324,7 @@
         "itemId": "fire-ram",
         "words": {
           "zh-TW": "消防破門器",
-          "en": "fire-ram",
+          "en": "fire ram",
           "ja": {
             "text": "破壊器具",
             "reading": "はかいきぐ"
@@ -1345,7 +1345,7 @@
         "itemId": "fire-hook",
         "words": {
           "zh-TW": "消防鉤",
-          "en": "fire-hook",
+          "en": "fire hook",
           "ja": {
             "text": "消防用フック",
             "reading": "しょうぼうようフック"
@@ -1366,7 +1366,7 @@
         "itemId": "fire-shovel",
         "words": {
           "zh-TW": "消防鏟",
-          "en": "fire-shovel",
+          "en": "fire shovel",
           "ja": {
             "text": "消防用シャベル",
             "reading": "しょうぼうようシャベル"
@@ -1387,7 +1387,7 @@
         "itemId": "fire-rake",
         "words": {
           "zh-TW": "消防耙",
-          "en": "fire-rake",
+          "en": "fire rake",
           "ja": {
             "text": "消防用レーキ",
             "reading": "しょうぼうようレーキ"
@@ -1408,7 +1408,7 @@
         "itemId": "fire-saw",
         "words": {
           "zh-TW": "消防鏈鋸",
-          "en": "fire-saw",
+          "en": "fire saw",
           "ja": {
             "text": "チェーンソー",
             "reading": "チェーンソー"
@@ -1429,7 +1429,7 @@
         "itemId": "rescue-basket",
         "words": {
           "zh-TW": "救援籃",
-          "en": "rescue-basket",
+          "en": "rescue basket",
           "ja": {
             "text": "救助バスケット",
             "reading": "きゅうじょバスケット"
@@ -1450,7 +1450,7 @@
         "itemId": "oxygen-mask",
         "words": {
           "zh-TW": "氧氣面罩",
-          "en": "oxygen-mask",
+          "en": "oxygen mask",
           "ja": {
             "text": "酸素マスク",
             "reading": "さんそマスク"
@@ -1618,7 +1618,7 @@
         "itemId": "fire-blanket-case",
         "words": {
           "zh-TW": "消防毯箱",
-          "en": "fire-blanket-case",
+          "en": "fire blanket case",
           "ja": {
             "text": "防火毛布ケース",
             "reading": "ぼうかもうふケース"
@@ -1639,7 +1639,7 @@
         "itemId": "fire-alarm-panel",
         "words": {
           "zh-TW": "火警控制盤",
-          "en": "fire-alarm-panel",
+          "en": "fire alarm panel",
           "ja": {
             "text": "火災報知盤",
             "reading": "かさいほうちばん"
@@ -1702,7 +1702,7 @@
         "itemId": "hose-reel-cart",
         "words": {
           "zh-TW": "水帶推車",
-          "en": "hose-reel-cart",
+          "en": "hose reel cart",
           "ja": {
             "text": "ホースリールカート",
             "reading": "ホースリールカート"

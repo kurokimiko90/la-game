@@ -1219,7 +1219,7 @@
         "itemId": "tape-dispenser-bank",
         "words": {
           "zh-TW": "膠帶台",
-          "en": "tape-dispenser",
+          "en": "tape dispenser",
           "ja": {
             "text": "テープカッター",
             "reading": "テープカッター"
@@ -1240,7 +1240,7 @@
         "itemId": "hole-punch-bank",
         "words": {
           "zh-TW": "打孔機",
-          "en": "hole-punch",
+          "en": "hole punch",
           "ja": {
             "text": "穴あけパンチ",
             "reading": "あなあけパンチ"
@@ -1282,7 +1282,7 @@
         "itemId": "calculator-receipt-printer",
         "words": {
           "zh-TW": "收據機",
-          "en": "receipt-printer",
+          "en": "receipt printer",
           "ja": {
             "text": "レシートプリンター",
             "reading": "レシートプリンター"
@@ -1303,7 +1303,7 @@
         "itemId": "cash-register-bank",
         "words": {
           "zh-TW": "收銀機",
-          "en": "cash-register",
+          "en": "cash register",
           "ja": {
             "text": "レジスター",
             "reading": "レジスター"
@@ -1387,7 +1387,7 @@
         "itemId": "magnifying-glass-bank",
         "words": {
           "zh-TW": "放大鏡",
-          "en": "magnifying-glass",
+          "en": "magnifying glass",
           "ja": {
             "text": "虫眼鏡",
             "reading": "むしめがね"
@@ -1408,7 +1408,7 @@
         "itemId": "staple-remover-bank",
         "words": {
           "zh-TW": "拔釘器",
-          "en": "staple-remover",
+          "en": "staple remover",
           "ja": {
             "text": "リムーバー",
             "reading": "リムーバー"
@@ -1429,7 +1429,7 @@
         "itemId": "coat-rack-bank",
         "words": {
           "zh-TW": "衣帽架",
-          "en": "coat-rack",
+          "en": "coat rack",
           "ja": {
             "text": "コートハンガー",
             "reading": "コートハンガー"
@@ -1450,7 +1450,7 @@
         "itemId": "filing-cabinet-bank",
         "words": {
           "zh-TW": "文件櫃",
-          "en": "filing-cabinet",
+          "en": "filing cabinet",
           "ja": {
             "text": "キャビネット",
             "reading": "キャビネット"
@@ -1471,7 +1471,7 @@
         "itemId": "water-bottle-bank",
         "words": {
           "zh-TW": "水壺",
-          "en": "water-bottle",
+          "en": "water bottle",
           "ja": {
             "text": "水筒",
             "reading": "すいとう"
@@ -1492,7 +1492,7 @@
         "itemId": "briefcase-lock",
         "words": {
           "zh-TW": "密碼鎖",
-          "en": "combination-lock",
+          "en": "combination lock",
           "ja": {
             "text": "ダイヤル錠",
             "reading": "ダイヤルじょう"
@@ -1513,7 +1513,7 @@
         "itemId": "waste-bin-liner",
         "words": {
           "zh-TW": "垃圾袋",
-          "en": "trash-bag",
+          "en": "trash bag",
           "ja": {
             "text": "ごみ袋",
             "reading": "ごみぶくろ"

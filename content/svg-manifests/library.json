@@ -22,7 +22,7 @@
         "itemId": "door-handle",
         "words": {
           "zh-TW": "門把手",
-          "en": "door-handle",
+          "en": "door handle",
           "ja": {
             "text": "ドアハンドル",
             "reading": "ドアハンドル"
@@ -67,7 +67,7 @@
           "en": "hinge",
           "ja": {
             "text": "ちょうつがい",
-            "reading": "チョウツガイ"
+            "reading": "ちょうつがい"
           }
         }
       }
@@ -85,7 +85,7 @@
         "itemId": "door-closer",
         "words": {
           "zh-TW": "閉門器",
-          "en": "door-closer",
+          "en": "door closer",
           "ja": {
             "text": "ドアクローザー",
             "reading": "ドアクローザー"
@@ -109,7 +109,7 @@
           "en": "threshold",
           "ja": {
             "text": "しきい",
-            "reading": "シキイ"
+            "reading": "しきい"
           }
         }
       }
@@ -172,7 +172,7 @@
           "en": "brick",
           "ja": {
             "text": "れんが",
-            "reading": "レンガ"
+            "reading": "れんが"
           }
         }
       }
@@ -190,7 +190,7 @@
         "itemId": "paving-slab",
         "words": {
           "zh-TW": "鋪路石板",
-          "en": "paving-slab",
+          "en": "paving slab",
           "ja": {
             "text": "敷石",
             "reading": "シキイシ"
@@ -253,7 +253,7 @@
         "itemId": "rain-chain",
         "words": {
           "zh-TW": "雨鏈",
-          "en": "rain-chain",
+          "en": "rain chain",
           "ja": {
             "text": "鎖樋",
             "reading": "クサリドイ"
@@ -316,7 +316,7 @@
         "itemId": "door-frame",
         "words": {
           "zh-TW": "門框",
-          "en": "door-frame",
+          "en": "door frame",
           "ja": {
             "text": "ドアフレーム",
             "reading": "ドアフレーム"
@@ -337,7 +337,7 @@
         "itemId": "wall-bracket",
         "words": {
           "zh-TW": "壁掛支架",
-          "en": "wall-bracket",
+          "en": "wall bracket",
           "ja": {
             "text": "壁付け金具",
             "reading": "カベツケカナグ"
@@ -400,7 +400,7 @@
         "itemId": "rubber-stamp",
         "words": {
           "zh-TW": "印章",
-          "en": "rubber-stamp",
+          "en": "rubber stamp",
           "ja": {
             "text": "スタンプ",
             "reading": "スタンプ"
@@ -421,7 +421,7 @@
         "itemId": "ink-pad",
         "words": {
           "zh-TW": "印台",
-          "en": "ink-pad",
+          "en": "ink pad",
           "ja": {
             "text": "朱肉",
             "reading": "しゅにく"
@@ -442,7 +442,7 @@
         "itemId": "paper-clip",
         "words": {
           "zh-TW": "迴紋針",
-          "en": "paper-clip",
+          "en": "paper clip",
           "ja": {
             "text": "クリップ",
             "reading": "クリップ"
@@ -463,7 +463,7 @@
         "itemId": "binder-clip",
         "words": {
           "zh-TW": "長尾夾",
-          "en": "binder-clip",
+          "en": "binder clip",
           "ja": {
             "text": "ダブルクリップ",
             "reading": "ダブルクリップ"
@@ -484,7 +484,7 @@
         "itemId": "hole-punch",
         "words": {
           "zh-TW": "打孔機",
-          "en": "hole-punch",
+          "en": "hole punch",
           "ja": {
             "text": "穴あけパンチ",
             "reading": "あなあけパンチ"
@@ -547,7 +547,7 @@
         "itemId": "document-shredder",
         "words": {
           "zh-TW": "碎紙機",
-          "en": "document-shredder",
+          "en": "document shredder",
           "ja": {
             "text": "シュレッダー",
             "reading": "シュレッダー"
@@ -568,7 +568,7 @@
         "itemId": "card-reader",
         "words": {
           "zh-TW": "卡片讀取器",
-          "en": "card-reader",
+          "en": "card reader",
           "ja": {
             "text": "カードリーダー",
             "reading": "カードリーダー"
@@ -589,7 +589,7 @@
         "itemId": "book-scanner",
         "words": {
           "zh-TW": "書籍掃描器",
-          "en": "book-scanner",
+          "en": "book scanner",
           "ja": {
             "text": "ブックスキャナー",
             "reading": "ブックスキャナー"
@@ -610,7 +610,7 @@
         "itemId": "filing-tray",
         "words": {
           "zh-TW": "文件盤",
-          "en": "filing-tray",
+          "en": "filing tray",
           "ja": {
             "text": "書類トレー",
             "reading": "しょるいトレー"
@@ -631,7 +631,7 @@
         "itemId": "water-cooler",
         "words": {
           "zh-TW": "飲水機",
-          "en": "water-cooler",
+          "en": "water cooler",
           "ja": {
             "text": "ウォーターサーバー",
             "reading": "ウォーターサーバー"
@@ -652,7 +652,7 @@
         "itemId": "floor-lamp",
         "words": {
           "zh-TW": "立燈",
-          "en": "floor-lamp",
+          "en": "floor lamp",
           "ja": {
             "text": "フロアランプ",
             "reading": "フロアランプ"
@@ -673,7 +673,7 @@
         "itemId": "wall-shelf",
         "words": {
           "zh-TW": "壁架",
-          "en": "wall-shelf",
+          "en": "wall shelf",
           "ja": {
             "text": "壁棚",
             "reading": "かべだな"
@@ -694,7 +694,7 @@
         "itemId": "staple-remover",
         "words": {
           "zh-TW": "起釘器",
-          "en": "staple-remover",
+          "en": "staple remover",
           "ja": {
             "text": "ホッチキスリムーバー",
             "reading": "ホッチキスリムーバー"
@@ -736,7 +736,7 @@
         "itemId": "hand-truck",
         "words": {
           "zh-TW": "手推車",
-          "en": "hand-truck",
+          "en": "hand truck",
           "ja": {
             "text": "台車",
             "reading": "だいしゃ"
@@ -757,7 +757,7 @@
         "itemId": "reading-lamp",
         "words": {
           "zh-TW": "閱讀燈",
-          "en": "reading-lamp",
+          "en": "reading lamp",
           "ja": {
             "text": "読書ランプ",
             "reading": "どくしょランプ"
@@ -841,7 +841,7 @@
         "itemId": "sticky-note",
         "words": {
           "zh-TW": "便利貼",
-          "en": "sticky-note",
+          "en": "sticky note",
           "ja": {
             "text": "付箋",
             "reading": "ふせん"
@@ -883,7 +883,7 @@
         "itemId": "glasses-case",
         "words": {
           "zh-TW": "眼鏡盒",
-          "en": "glasses-case",
+          "en": "glasses case",
           "ja": {
             "text": "眼鏡ケース",
             "reading": "めがねケース"
@@ -904,7 +904,7 @@
         "itemId": "page-holder",
         "words": {
           "zh-TW": "頁面固定夾",
-          "en": "page-holder",
+          "en": "page holder",
           "ja": {
             "text": "ページホルダー",
             "reading": "ページホルダー"
@@ -925,7 +925,7 @@
         "itemId": "library-card",
         "words": {
           "zh-TW": "借書卡",
-          "en": "library-card",
+          "en": "library card",
           "ja": {
             "text": "図書カード",
             "reading": "としょカード"
@@ -946,7 +946,7 @@
         "itemId": "card-holder",
         "words": {
           "zh-TW": "卡片座",
-          "en": "card-holder",
+          "en": "card holder",
           "ja": {
             "text": "カード立て",
             "reading": "カードたて"
@@ -988,7 +988,7 @@
         "itemId": "magnifying-lens",
         "words": {
           "zh-TW": "放大鏡片",
-          "en": "magnifying-lens",
+          "en": "magnifying lens",
           "ja": {
             "text": "拡大レンズ",
             "reading": "かくだいレンズ"
@@ -1030,7 +1030,7 @@
         "itemId": "coat-hook",
         "words": {
           "zh-TW": "衣帽鉤",
-          "en": "coat-hook",
+          "en": "coat hook",
           "ja": {
             "text": "コートフック",
             "reading": "コートフック"
@@ -1072,7 +1072,7 @@
         "itemId": "foot-cushion",
         "words": {
           "zh-TW": "腳墊",
-          "en": "foot-cushion",
+          "en": "foot cushion",
           "ja": {
             "text": "足まくら",
             "reading": "あしまくら"
@@ -1093,7 +1093,7 @@
         "itemId": "book-cart",
         "words": {
           "zh-TW": "書車",
-          "en": "book-cart",
+          "en": "book cart",
           "ja": {
             "text": "ブックカート",
             "reading": "ブックカート"
@@ -1135,7 +1135,7 @@
         "itemId": "reading-glasses",
         "words": {
           "zh-TW": "老花眼鏡",
-          "en": "reading-glasses",
+          "en": "reading glasses",
           "ja": {
             "text": "老眼鏡",
             "reading": "ろうがんきょう"
@@ -1156,10 +1156,10 @@
         "itemId": "ceiling-fan",
         "words": {
           "zh-TW": "吊扇",
-          "en": "ceiling-fan",
+          "en": "ceiling fan",
           "ja": {
             "text": "シーリングファン",
-            "reading": "しーりんぐふぁん"
+            "reading": "シーリングファン"
           }
         }
       }
@@ -1177,7 +1177,7 @@
         "itemId": "light-fixture",
         "words": {
           "zh-TW": "燈具",
-          "en": "light-fixture",
+          "en": "light fixture",
           "ja": {
             "text": "照明器具",
             "reading": "しょうめいきぐ"
@@ -1201,7 +1201,7 @@
           "en": "doorstop",
           "ja": {
             "text": "ドアストッパー",
-            "reading": "どあすとっぱー"
+            "reading": "ドアストッパー"
           }
         }
       }
@@ -1222,7 +1222,7 @@
           "en": "hook",
           "ja": {
             "text": "フック",
-            "reading": "ふっく"
+            "reading": "フック"
           }
         }
       }
@@ -1408,7 +1408,7 @@
         "itemId": "card-catalog",
         "words": {
           "zh-TW": "卡片目錄櫃",
-          "en": "card-catalog",
+          "en": "card catalog",
           "ja": {
             "text": "カード目録棚",
             "reading": "カードもくろくだな"
@@ -1429,7 +1429,7 @@
         "itemId": "keyhole-cover",
         "words": {
           "zh-TW": "鎖孔蓋",
-          "en": "keyhole-cover",
+          "en": "keyhole cover",
           "ja": {
             "text": "鍵穴カバー",
             "reading": "かぎあなカバー"
@@ -1450,7 +1450,7 @@
         "itemId": "door-sill",
         "words": {
           "zh-TW": "門底擋水條",
-          "en": "door-sill",
+          "en": "door sill",
           "ja": {
             "text": "ドア下部の水切り",
             "reading": "ドアかぶのミズキリ"
@@ -1471,7 +1471,7 @@
         "itemId": "keyhole-escutcheon",
         "words": {
           "zh-TW": "鎖孔飾片",
-          "en": "keyhole-escutcheon",
+          "en": "keyhole escutcheon",
           "ja": {
             "text": "鍵穴プレート",
             "reading": "かぎあなプレート"
@@ -1492,7 +1492,7 @@
         "itemId": "door-sweep",
         "words": {
           "zh-TW": "門底密封條",
-          "en": "door-sweep",
+          "en": "door sweep",
           "ja": {
             "text": "ドア下部シール",
             "reading": "ドアかぶシール"
@@ -1513,7 +1513,7 @@
         "itemId": "boot-scraper",
         "words": {
           "zh-TW": "鞋底刮泥器",
-          "en": "boot-scraper",
+          "en": "boot scraper",
           "ja": {
             "text": "靴底ブラシ",
             "reading": "くつぞこブラシ"
@@ -1534,7 +1534,7 @@
         "itemId": "doorstop-wedge",
         "words": {
           "zh-TW": "門擋楔",
-          "en": "doorstop-wedge",
+          "en": "doorstop wedge",
           "ja": {
             "text": "ドアストッパー",
             "reading": "ドアストッパー"
@@ -1555,7 +1555,7 @@
         "itemId": "accessibility-ramp",
         "words": {
           "zh-TW": "無障礙斜坡",
-          "en": "accessibility-ramp",
+          "en": "accessibility ramp",
           "ja": {
             "text": "スロープ",
             "reading": "スロープ"
@@ -1576,7 +1576,7 @@
         "itemId": "door-mat",
         "words": {
           "zh-TW": "門口地墊",
-          "en": "door-mat",
+          "en": "door mat",
           "ja": {
             "text": "玄関マット",
             "reading": "げんかんマット"
@@ -1597,7 +1597,7 @@
         "itemId": "desk-chair",
         "words": {
           "zh-TW": "辦公椅",
-          "en": "office-chair",
+          "en": "office chair",
           "ja": {
             "text": "オフィスチェア",
             "reading": "オフィスチェア"
@@ -1618,7 +1618,7 @@
         "itemId": "desk-organizer",
         "words": {
           "zh-TW": "桌上收納架",
-          "en": "desk-organizer",
+          "en": "desk organizer",
           "ja": {
             "text": "デスクオーガナイザー",
             "reading": "デスクオーガナイザー"
@@ -1639,7 +1639,7 @@
         "itemId": "queue-barrier",
         "words": {
           "zh-TW": "排隊欄柱",
-          "en": "queue-barrier",
+          "en": "queue barrier",
           "ja": {
             "text": "ベルトパーテーション",
             "reading": "ベルトパーテーション"
@@ -1660,7 +1660,7 @@
         "itemId": "document-holder",
         "words": {
           "zh-TW": "文件架",
-          "en": "document-holder",
+          "en": "document holder",
           "ja": {
             "text": "書類立て",
             "reading": "しょるいたて"
@@ -1681,7 +1681,7 @@
         "itemId": "key-cabinet",
         "words": {
           "zh-TW": "鑰匙櫃",
-          "en": "key-cabinet",
+          "en": "key cabinet",
           "ja": {
             "text": "鍵付きキャビネット",
             "reading": "かぎつきキャビネット"
@@ -1702,7 +1702,7 @@
         "itemId": "date-stamp",
         "words": {
           "zh-TW": "日期章",
-          "en": "date-stamp",
+          "en": "date stamp",
           "ja": {
             "text": "日付印",
             "reading": "ひづけいん"
@@ -1723,7 +1723,7 @@
         "itemId": "book-light",
         "words": {
           "zh-TW": "書燈",
-          "en": "book-light",
+          "en": "book light",
           "ja": {
             "text": "ブックライト",
             "reading": "ブックライト"
@@ -1744,7 +1744,7 @@
         "itemId": "globe-stand",
         "words": {
           "zh-TW": "地球儀底座",
-          "en": "globe-stand",
+          "en": "globe stand",
           "ja": {
             "text": "地球儀スタンド",
             "reading": "ちきゅうぎスタンド"
@@ -1786,7 +1786,7 @@
         "itemId": "fountain-pen",
         "words": {
           "zh-TW": "鋼筆",
-          "en": "fountain-pen",
+          "en": "fountain pen",
           "ja": {
             "text": "万年筆",
             "reading": "まんねんひつ"
@@ -1807,7 +1807,7 @@
         "itemId": "desk-clock",
         "words": {
           "zh-TW": "桌上鐘",
-          "en": "desk-clock",
+          "en": "desk clock",
           "ja": {
             "text": "置き時計",
             "reading": "おきどけい"
@@ -1849,7 +1849,7 @@
         "itemId": "open-book",
         "words": {
           "zh-TW": "攤開的書",
-          "en": "open-book",
+          "en": "open book",
           "ja": {
             "text": "開いた本",
             "reading": "ひらいたほん"

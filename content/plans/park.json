@@ -62,7 +62,7 @@
       "zh": "垃圾桶",
       "en": "trash can",
       "ja": "ゴミ箱",
-      "reading": "ごみばこ",
+      "reading": "ゴミばこ",
       "category": "設施",
       "size": "small",
       "desc": "綠色圓筒垃圾桶，頂部有蓋，蓋下一道黑色投入口。"
@@ -472,7 +472,7 @@
     {
       "id": "garden-glove",
       "zh": "園藝手套",
-      "en": "gardening-glove",
+      "en": "gardening glove",
       "ja": "園芸用手袋",
       "reading": "えんげいようてぶくろ",
       "category": "道具",
@@ -487,7 +487,7 @@
     {
       "id": "pruning-shears",
       "zh": "修枝剪",
-      "en": "pruning-shears",
+      "en": "pruning shears",
       "ja": "剪定ばさみ",
       "reading": "せんていばさみ",
       "category": "道具",
@@ -502,7 +502,7 @@
     {
       "id": "watering-can",
       "zh": "澆水壺",
-      "en": "watering-can",
+      "en": "watering can",
       "ja": "じょうろ",
       "reading": "じょうろ",
       "category": "道具",
@@ -547,7 +547,7 @@
     {
       "id": "compost-bin",
       "zh": "堆肥箱",
-      "en": "compost-bin",
+      "en": "compost bin",
       "ja": "コンポスト容器",
       "reading": "コンポストようき",
       "category": "設施",
@@ -562,7 +562,7 @@
     {
       "id": "garden-trowel",
       "zh": "園藝鏟",
-      "en": "garden-trowel",
+      "en": "garden trowel",
       "ja": "移植ごて",
       "reading": "いしょくごて",
       "category": "道具",
@@ -742,7 +742,7 @@
     {
       "id": "fishing-line",
       "zh": "魚線",
-      "en": "fishing-line",
+      "en": "fishing line",
       "ja": "釣り糸",
       "reading": "つりいと",
       "category": "道具",
@@ -757,7 +757,7 @@
     {
       "id": "lily-pad",
       "zh": "睡蓮葉",
-      "en": "lily-pad",
+      "en": "lily pad",
       "ja": "ハスの葉",
       "reading": "ハスのは",
       "category": "植物",
@@ -772,7 +772,7 @@
     {
       "id": "water-lily",
       "zh": "睡蓮",
-      "en": "water-lily",
+      "en": "water lily",
       "ja": "スイレン",
       "reading": "スイレン",
       "category": "植物",
@@ -802,7 +802,7 @@
     {
       "id": "water-ripple",
       "zh": "水波紋",
-      "en": "water-ripple",
+      "en": "water ripple",
       "ja": "水の波紋",
       "reading": "みずのはもん",
       "category": "自然",
@@ -817,7 +817,7 @@
     {
       "id": "fishing-float",
       "zh": "釣魚浮標",
-      "en": "fishing-float",
+      "en": "fishing float",
       "ja": "釣り浮き",
       "reading": "つりうき",
       "category": "道具",

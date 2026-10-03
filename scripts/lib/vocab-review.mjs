@@ -1,6 +1,7 @@
 // 單字審核：規劃（scene-plan 的格式驗證）通過後，再請 LLM 當語言老師審一次內容。
 // 審的是格式驗證看不出來的：日文是不是最自然的說法、讀音對不對、中文是不是台灣常用說法、這個場景裡會不會真的看到。
 // 有修正就套用，沒修正的不合格物品丟掉；審核自己沒回到的物品照留（審核失誤不擋整個流程）。
+import { normalizeReading } from './word-normalize.mjs';
 
 /** 審核丟掉超過這個比例就當作審核本身不可靠（實測會因為區域不理想丟掉一半），只套用修正、不丟物品 */
 export const MAX_REJECT_RATIO = 0.2;
@@ -65,7 +66,8 @@ export function applyReview(elements, verdicts) {
     const issue = String(v.issue ?? '不合適').trim().slice(0, 40);
     const changes = validFix(v.fix);
     if (changes) {
-      ok.push({ ...e, ...changes });
+      const next = { ...e, ...changes };
+      ok.push({ ...next, reading: normalizeReading(next.ja, next.reading) });
       fixed.push({ id: e.id, issue, changes });
     } else {
       rejected.push({ id: e.id, reason: `審核：${issue}` });

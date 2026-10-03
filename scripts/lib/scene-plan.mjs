@@ -3,6 +3,7 @@
 // LLM 的輸出不可信：每個欄位都驗證，不合格的物品丟掉並記下原因，不讓一個壞物品弄壞整個場景。純函式。
 import { allowedSpots, buildDistrict, normalizeZone } from './district-kit.mjs';
 import { MAX_MOTION_RATIO, MOTION_PRESETS } from './motion.mjs';
+import { normalizeEn, normalizeReading } from './word-normalize.mjs';
 
 export const CATEGORIES = ['設施', '交通工具', '道具', '食物', '植物', '自然'];
 export const SIZES = ['small', 'medium', 'large'];
@@ -137,7 +138,7 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone),
   for (const raw of Array.isArray(list) ? list : []) {
     if (ok.length >= limit) break;
     const e = raw ?? {};
-    const en = String(e.en ?? '').trim().toLowerCase();
+    const en = normalizeEn(e.en ?? '');
     const id = sceneId && used.ids.has(e.id) ? `${e.id}-${sceneId}` : e.id;
     const reason = (() => {
       if (!ID_RE.test(e.id)) return 'id 格式不對';
@@ -163,7 +164,7 @@ export function validateElements(list, { zone, used, spots = allowedSpots(zone),
     }
     if (id !== e.id) renamed.set(e.id, id);
     const item = {
-      id, zh: e.zh.trim(), en, ja: e.ja.trim(), reading: e.reading.trim(), category: e.category, size: e.size,
+      id, zh: e.zh.trim(), en, ja: e.ja.trim(), reading: normalizeReading(e.ja, e.reading), category: e.category, size: e.size,
       zone: zone.id, spot: spots.includes(e.spot) ? e.spot : 'ground', desc: String(e.desc).trim(),
       loose: e.loose === true && e.size === 'small',
       motion: MOTION_PRESETS[e.motion] ? e.motion : null,

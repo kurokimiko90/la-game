@@ -22,7 +22,7 @@
         "itemId": "lifeguard-chair",
         "words": {
           "zh-TW": "救生員椅",
-          "en": "lifeguard-chair",
+          "en": "lifeguard chair",
           "ja": {
             "text": "監視台",
             "reading": "かんしたい"
@@ -64,7 +64,7 @@
         "itemId": "foot-wash",
         "words": {
           "zh-TW": "洗腳台",
-          "en": "foot-wash",
+          "en": "foot wash",
           "ja": {
             "text": "足洗い場",
             "reading": "あしあらいば"
@@ -148,7 +148,7 @@
         "itemId": "swim-fins",
         "words": {
           "zh-TW": "蛙鞋",
-          "en": "swim-fins",
+          "en": "swim fins",
           "ja": {
             "text": "フィン",
             "reading": "フィン"
@@ -169,7 +169,7 @@
         "itemId": "beach-chair",
         "words": {
           "zh-TW": "沙灘椅",
-          "en": "beach-chair",
+          "en": "beach chair",
           "ja": {
             "text": "ビーチチェア",
             "reading": "ビーチチェア"
@@ -190,7 +190,7 @@
         "itemId": "folding-table",
         "words": {
           "zh-TW": "折疊桌",
-          "en": "folding-table",
+          "en": "folding table",
           "ja": {
             "text": "折りたたみテーブル",
             "reading": "おりたたみテーブル"
@@ -232,7 +232,7 @@
         "itemId": "beach-ball",
         "words": {
           "zh-TW": "沙灘球",
-          "en": "beach-ball",
+          "en": "beach ball",
           "ja": {
             "text": "ビーチボール",
             "reading": "ビーチボール"
@@ -253,7 +253,7 @@
         "itemId": "sandcastle-mold",
         "words": {
           "zh-TW": "沙堡模具",
-          "en": "sandcastle-mold",
+          "en": "sandcastle mold",
           "ja": {
             "text": "砂型",
             "reading": "すながた"
@@ -337,7 +337,7 @@
         "itemId": "palm-tree",
         "words": {
           "zh-TW": "棕櫚樹",
-          "en": "palm-tree",
+          "en": "palm tree",
           "ja": {
             "text": "ヤシの木",
             "reading": "ヤシのき"
@@ -358,7 +358,7 @@
         "itemId": "seashell-wind-chime",
         "words": {
           "zh-TW": "貝殼風鈴",
-          "en": "seashell-wind-chime",
+          "en": "seashell wind chime",
           "ja": {
             "text": "貝殻の風鈴",
             "reading": "かいがらのふうりん"
@@ -379,7 +379,7 @@
         "itemId": "electric-scooter",
         "words": {
           "zh-TW": "電動滑板車",
-          "en": "electric-scooter",
+          "en": "electric scooter",
           "ja": {
             "text": "電動キックボード",
             "reading": "でんどうキックボード"
@@ -400,7 +400,7 @@
         "itemId": "parking-post",
         "words": {
           "zh-TW": "停車樁",
-          "en": "parking-post",
+          "en": "parking post",
           "ja": {
             "text": "車止め",
             "reading": "くるまどめ"
@@ -421,7 +421,7 @@
         "itemId": "parking-block",
         "words": {
           "zh-TW": "停車擋",
-          "en": "parking-block",
+          "en": "parking block",
           "ja": {
             "text": "輪止め",
             "reading": "わどめ"
@@ -442,7 +442,7 @@
         "itemId": "road-marker",
         "words": {
           "zh-TW": "道路反光標記",
-          "en": "road-marker",
+          "en": "road marker",
           "ja": {
             "text": "道路鋲",
             "reading": "どうろびょう"
@@ -463,7 +463,7 @@
         "itemId": "beach-towel",
         "words": {
           "zh-TW": "沙灘巾",
-          "en": "beach-towel",
+          "en": "beach towel",
           "ja": {
             "text": "ビーチタオル",
             "reading": "ビーチタオル"
@@ -988,7 +988,7 @@
         "itemId": "water-scope",
         "words": {
           "zh-TW": "水下觀察鏡",
-          "en": "water-scope",
+          "en": "water scope",
           "ja": {
             "text": "水中スコープ",
             "reading": "すいちゅうスコープ"
@@ -1009,7 +1009,7 @@
         "itemId": "sand-dollar",
         "words": {
           "zh-TW": "沙錢",
-          "en": "sand-dollar",
+          "en": "sand dollar",
           "ja": {
             "text": "カシパン",
             "reading": "カシパン"
@@ -1030,7 +1030,7 @@
         "itemId": "tide-pool-marker",
         "words": {
           "zh-TW": "潮池標記牌",
-          "en": "tide-pool-marker",
+          "en": "tide pool marker",
           "ja": {
             "text": "潮だまりの目印",
             "reading": "しおだまりのめじるし"
@@ -1051,7 +1051,7 @@
         "itemId": "water-pail",
         "words": {
           "zh-TW": "提水桶",
-          "en": "water-pail",
+          "en": "water pail",
           "ja": {
             "text": "バケツ",
             "reading": "バケツ"
@@ -1072,7 +1072,7 @@
         "itemId": "shell-brush",
         "words": {
           "zh-TW": "貝殼刷",
-          "en": "shell-brush",
+          "en": "shell brush",
           "ja": {
             "text": "貝がらブラシ",
             "reading": "かいがらブラシ"
@@ -1093,7 +1093,7 @@
         "itemId": "sand-sifter",
         "words": {
           "zh-TW": "篩砂網",
-          "en": "sand-sifter",
+          "en": "sand sifter",
           "ja": {
             "text": "砂ふるい",
             "reading": "すなふるい"
@@ -1114,7 +1114,7 @@
         "itemId": "sea-anemone",
         "words": {
           "zh-TW": "海葵",
-          "en": "sea-anemone",
+          "en": "sea anemone",
           "ja": {
             "text": "イソギンチャク",
             "reading": "イソギンチャク"
@@ -1135,7 +1135,7 @@
         "itemId": "waterproof-bin",
         "words": {
           "zh-TW": "防水收納盒",
-          "en": "waterproof-bin",
+          "en": "waterproof bin",
           "ja": {
             "text": "防水収納ケース",
             "reading": "ぼうすいしゅうのうケース"
@@ -1156,7 +1156,7 @@
         "itemId": "tide-pool-ladder",
         "words": {
           "zh-TW": "池邊小梯",
-          "en": "tide-pool-ladder",
+          "en": "tide pool ladder",
           "ja": {
             "text": "潮だまり用の小さなはしご",
             "reading": "しおだまりようのちいさなはしご"
@@ -1177,7 +1177,7 @@
         "itemId": "rock-pool-chart",
         "words": {
           "zh-TW": "潮池圖卡",
-          "en": "rock-pool-chart",
+          "en": "rock pool chart",
           "ja": {
             "text": "磯の生き物カード",
             "reading": "いそのいきものカード"
@@ -1198,7 +1198,7 @@
         "itemId": "sea-glass-bottle",
         "words": {
           "zh-TW": "海玻璃瓶",
-          "en": "sea-glass-bottle",
+          "en": "sea glass bottle",
           "ja": {
             "text": "シーグラス瓶",
             "reading": "シーグラスびん"
@@ -1219,7 +1219,7 @@
         "itemId": "tide-pool-sandals",
         "words": {
           "zh-TW": "涉水涼鞋",
-          "en": "tide-pool-sandals",
+          "en": "tide pool sandals",
           "ja": {
             "text": "マリンシューズ",
             "reading": "マリンシューズ"
@@ -1618,7 +1618,7 @@
         "itemId": "beer-tap",
         "words": {
           "zh-TW": "啤酒龍頭",
-          "en": "beer-tap",
+          "en": "beer tap",
           "ja": {
             "text": "ビールサーバーの注ぎ口",
             "reading": "ビールサーバーのつぎぐち"
@@ -1660,7 +1660,7 @@
         "itemId": "record-player",
         "words": {
           "zh-TW": "唱片機",
-          "en": "record-player",
+          "en": "record player",
           "ja": {
             "text": "レコードプレーヤー",
             "reading": "レコードプレーヤー"
@@ -1702,7 +1702,7 @@
         "itemId": "poker-chip",
         "words": {
           "zh-TW": "籌碼",
-          "en": "poker-chip",
+          "en": "poker chip",
           "ja": {
             "text": "ポーカーチップ",
             "reading": "ポーカーチップ"
@@ -1912,7 +1912,7 @@
         "itemId": "coastal-shelter",
         "words": {
           "zh-TW": "海濱涼亭",
-          "en": "coastal-shelter",
+          "en": "coastal shelter",
           "ja": {
             "text": "東屋",
             "reading": "あずまや"
@@ -1954,7 +1954,7 @@
         "itemId": "driftwood-piece",
         "words": {
           "zh-TW": "小塊漂流木",
-          "en": "driftwood-piece",
+          "en": "driftwood piece",
           "ja": {
             "text": "流木",
             "reading": "りゅうぼく"
@@ -1975,7 +1975,7 @@
         "itemId": "dry-leaf",
         "words": {
           "zh-TW": "乾葉",
-          "en": "dry-leaf",
+          "en": "dry leaf",
           "ja": {
             "text": "枯れ葉",
             "reading": "かれは"

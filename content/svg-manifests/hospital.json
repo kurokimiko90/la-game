@@ -46,7 +46,7 @@
           "en": "helicopter",
           "ja": {
             "text": "ヘリコプター",
-            "reading": "へりこぷたー"
+            "reading": "ヘリコプター"
           }
         }
       }
@@ -67,7 +67,7 @@
           "en": "doorknob",
           "ja": {
             "text": "ドアノブ",
-            "reading": "どあのぶ"
+            "reading": "ドアノブ"
           }
         }
       }
@@ -88,7 +88,7 @@
           "en": "hand sanitizer dispenser",
           "ja": {
             "text": "消毒液ディスペンサー",
-            "reading": "しょうどくえきでぃすぺんさー"
+            "reading": "しょうどくえきディスペンサー"
           }
         }
       }
@@ -109,7 +109,7 @@
           "en": "stretcher",
           "ja": {
             "text": "ストレッチャー",
-            "reading": "すとれっちゃー"
+            "reading": "ストレッチャー"
           }
         }
       }
@@ -256,7 +256,7 @@
           "en": "parking meter",
           "ja": {
             "text": "パーキングメーター",
-            "reading": "ぱーきんぐめーたー"
+            "reading": "パーキングメーター"
           }
         }
       }
@@ -277,7 +277,7 @@
           "en": "ramp",
           "ja": {
             "text": "スロープ",
-            "reading": "すろーぷ"
+            "reading": "スロープ"
           }
         }
       }
@@ -298,7 +298,7 @@
           "en": "oxygen cylinder",
           "ja": {
             "text": "酸素ボンベ",
-            "reading": "さんそぼんべ"
+            "reading": "さんそボンベ"
           }
         }
       }
@@ -340,7 +340,7 @@
           "en": "lavender",
           "ja": {
             "text": "ラベンダー",
-            "reading": "らべんだー"
+            "reading": "ラベンダー"
           }
         }
       }
@@ -421,7 +421,7 @@
         "itemId": "coat-rack",
         "words": {
           "zh-TW": "衣帽架",
-          "en": "coat-rack",
+          "en": "coat rack",
           "ja": {
             "text": "コートラック",
             "reading": "コートラック"
@@ -463,7 +463,7 @@
         "itemId": "air-vent",
         "words": {
           "zh-TW": "通風口",
-          "en": "air-vent",
+          "en": "air vent",
           "ja": {
             "text": "通気口",
             "reading": "つうきこう"
@@ -484,7 +484,7 @@
         "itemId": "fire-alarm",
         "words": {
           "zh-TW": "火警警報器",
-          "en": "fire-alarm",
+          "en": "fire alarm",
           "ja": {
             "text": "火災警報器",
             "reading": "かさいけいほうき"
@@ -526,7 +526,7 @@
         "itemId": "reception-bell",
         "words": {
           "zh-TW": "服務鈴",
-          "en": "reception-bell",
+          "en": "reception bell",
           "ja": {
             "text": "呼び鈴",
             "reading": "よびりん"
@@ -568,7 +568,7 @@
         "itemId": "coffee-bean",
         "words": {
           "zh-TW": "咖啡豆",
-          "en": "coffee-bean",
+          "en": "coffee bean",
           "ja": {
             "text": "コーヒー豆",
             "reading": "コーヒーまめ"
@@ -589,7 +589,7 @@
         "itemId": "tea-bag",
         "words": {
           "zh-TW": "茶包",
-          "en": "tea-bag",
+          "en": "tea bag",
           "ja": {
             "text": "ティーバッグ",
             "reading": "ティーバッグ"
@@ -610,7 +610,7 @@
         "itemId": "sugar-cube",
         "words": {
           "zh-TW": "方糖",
-          "en": "sugar-cube",
+          "en": "sugar cube",
           "ja": {
             "text": "角砂糖",
             "reading": "かくざとう"
@@ -652,7 +652,7 @@
         "itemId": "medical-trolley",
         "words": {
           "zh-TW": "醫療推車",
-          "en": "medical-trolley",
+          "en": "medical trolley",
           "ja": {
             "text": "医療ワゴン",
             "reading": "いりょうワゴン"
@@ -694,7 +694,7 @@
         "itemId": "blood-pressure-monitor",
         "words": {
           "zh-TW": "血壓計",
-          "en": "blood-pressure-monitor",
+          "en": "blood pressure monitor",
           "ja": {
             "text": "血圧計",
             "reading": "けつあつけい"
@@ -1051,7 +1051,7 @@
         "itemId": "tissue-box",
         "words": {
           "zh-TW": "面紙盒",
-          "en": "tissue-box",
+          "en": "tissue box",
           "ja": {
             "text": "ティッシュボックス",
             "reading": "ティッシュボックス"
@@ -1072,7 +1072,7 @@
         "itemId": "remote-control",
         "words": {
           "zh-TW": "遙控器",
-          "en": "remote-control",
+          "en": "remote control",
           "ja": {
             "text": "リモコン",
             "reading": "リモコン"
@@ -1093,7 +1093,7 @@
         "itemId": "toy-block",
         "words": {
           "zh-TW": "積木",
-          "en": "toy-block",
+          "en": "toy block",
           "ja": {
             "text": "つみき",
             "reading": "つみき"
@@ -1471,7 +1471,7 @@
         "itemId": "air-freshener",
         "words": {
           "zh-TW": "芳香劑",
-          "en": "air-freshener",
+          "en": "air freshener",
           "ja": {
             "text": "芳香剤",
             "reading": "ほうこうざい"
@@ -1492,7 +1492,7 @@
         "itemId": "ceiling-speaker",
         "words": {
           "zh-TW": "天花板喇叭",
-          "en": "ceiling-speaker",
+          "en": "ceiling speaker",
           "ja": {
             "text": "天井スピーカー",
             "reading": "てんじょうスピーカー"
@@ -1513,7 +1513,7 @@
         "itemId": "coffee-filter",
         "words": {
           "zh-TW": "咖啡濾紙",
-          "en": "coffee-filter",
+          "en": "coffee filter",
           "ja": {
             "text": "コーヒーフィルター",
             "reading": "コーヒーフィルター"
@@ -1534,7 +1534,7 @@
         "itemId": "tea-strainer",
         "words": {
           "zh-TW": "茶濾網",
-          "en": "tea-strainer",
+          "en": "tea strainer",
           "ja": {
             "text": "茶こし",
             "reading": "ちゃこし"
@@ -1555,7 +1555,7 @@
         "itemId": "sugar-bowl",
         "words": {
           "zh-TW": "糖罐",
-          "en": "sugar-bowl",
+          "en": "sugar bowl",
           "ja": {
             "text": "シュガーポット",
             "reading": "シュガーポット"
@@ -1576,7 +1576,7 @@
         "itemId": "coffee-stirrer",
         "words": {
           "zh-TW": "咖啡攪拌棒",
-          "en": "coffee-stirrer",
+          "en": "coffee stirrer",
           "ja": {
             "text": "コーヒーマドラー",
             "reading": "コーヒーマドラー"
@@ -1597,7 +1597,7 @@
         "itemId": "paper-towel",
         "words": {
           "zh-TW": "紙巾",
-          "en": "paper-towel",
+          "en": "paper towel",
           "ja": {
             "text": "ペーパータオル",
             "reading": "ペーパータオル"
@@ -1618,7 +1618,7 @@
         "itemId": "pulse-oximeter",
         "words": {
           "zh-TW": "血氧機",
-          "en": "pulse-oximeter",
+          "en": "pulse oximeter",
           "ja": {
             "text": "パルスオキシメーター",
             "reading": "パルスオキシメーター"
@@ -1681,7 +1681,7 @@
         "itemId": "coat-hanger",
         "words": {
           "zh-TW": "衣架",
-          "en": "coat-hanger",
+          "en": "coat hanger",
           "ja": {
             "text": "ハンガー",
             "reading": "ハンガー"
@@ -1702,7 +1702,7 @@
         "itemId": "recycling-bin",
         "words": {
           "zh-TW": "回收桶",
-          "en": "recycling-bin",
+          "en": "recycling bin",
           "ja": {
             "text": "リサイクルボックス",
             "reading": "リサイクルボックス"
@@ -1723,7 +1723,7 @@
         "itemId": "blood-glucose-meter",
         "words": {
           "zh-TW": "血糖機",
-          "en": "blood-glucose-meter",
+          "en": "blood glucose meter",
           "ja": {
             "text": "血糖測定器",
             "reading": "けっとうそくていき"
@@ -1744,7 +1744,7 @@
         "itemId": "face-shield",
         "words": {
           "zh-TW": "面罩",
-          "en": "face-shield",
+          "en": "face shield",
           "ja": {
             "text": "フェイスシールド",
             "reading": "フェイスシールド"
@@ -1765,7 +1765,7 @@
         "itemId": "tongue-depressor",
         "words": {
           "zh-TW": "壓舌板",
-          "en": "tongue-depressor",
+          "en": "tongue depressor",
           "ja": {
             "text": "舌圧子",
             "reading": "ぜつあつし"
@@ -1786,7 +1786,7 @@
         "itemId": "pill-cutter",
         "words": {
           "zh-TW": "藥丸切割器",
-          "en": "pill-cutter",
+          "en": "pill cutter",
           "ja": {
             "text": "ピルカッター",
             "reading": "ピルカッター"
@@ -1807,7 +1807,7 @@
         "itemId": "nail-clipper",
         "words": {
           "zh-TW": "指甲剪",
-          "en": "nail-clipper",
+          "en": "nail clipper",
           "ja": {
             "text": "爪切り",
             "reading": "つめきり"
@@ -1828,7 +1828,7 @@
         "itemId": "nail-file",
         "words": {
           "zh-TW": "指甲銼",
-          "en": "nail-file",
+          "en": "nail file",
           "ja": {
             "text": "爪やすり",
             "reading": "つめやすり"
@@ -1849,7 +1849,7 @@
         "itemId": "safety-pin",
         "words": {
           "zh-TW": "安全別針",
-          "en": "safety-pin",
+          "en": "safety pin",
           "ja": {
             "text": "安全ピン",
             "reading": "あんぜんピン"
@@ -1891,7 +1891,7 @@
         "itemId": "hair-tie",
         "words": {
           "zh-TW": "髮圈",
-          "en": "hair-tie",
+          "en": "hair tie",
           "ja": {
             "text": "ヘアゴム",
             "reading": "ヘアゴム"
@@ -1912,7 +1912,7 @@
         "itemId": "lip-balm",
         "words": {
           "zh-TW": "護唇膏",
-          "en": "lip-balm",
+          "en": "lip balm",
           "ja": {
             "text": "リップクリーム",
             "reading": "リップクリーム"
@@ -1933,7 +1933,7 @@
         "itemId": "blister-pack",
         "words": {
           "zh-TW": "鋁箔藥板",
-          "en": "blister-pack",
+          "en": "blister pack",
           "ja": {
             "text": "錠剤シート",
             "reading": "じょうざいシート"

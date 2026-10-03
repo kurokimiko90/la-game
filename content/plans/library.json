@@ -41,7 +41,7 @@
     {
       "id": "door-handle",
       "zh": "門把手",
-      "en": "door-handle",
+      "en": "door handle",
       "ja": "ドアハンドル",
       "reading": "ドアハンドル",
       "category": "道具",
@@ -73,7 +73,7 @@
       "zh": "鉸鏈",
       "en": "hinge",
       "ja": "ちょうつがい",
-      "reading": "チョウツガイ",
+      "reading": "ちょうつがい",
       "category": "道具",
       "size": "small",
       "zone": "entrance",
@@ -86,7 +86,7 @@
     {
       "id": "door-closer",
       "zh": "閉門器",
-      "en": "door-closer",
+      "en": "door closer",
       "ja": "ドアクローザー",
       "reading": "ドアクローザー",
       "category": "設施",
@@ -103,7 +103,7 @@
       "zh": "門檻",
       "en": "threshold",
       "ja": "しきい",
-      "reading": "シキイ",
+      "reading": "しきい",
       "category": "設施",
       "size": "medium",
       "zone": "entrance",
@@ -148,7 +148,7 @@
       "zh": "磚塊",
       "en": "brick",
       "ja": "れんが",
-      "reading": "レンガ",
+      "reading": "れんが",
       "category": "設施",
       "size": "small",
       "zone": "entrance",
@@ -161,7 +161,7 @@
     {
       "id": "paving-slab",
       "zh": "鋪路石板",
-      "en": "paving-slab",
+      "en": "paving slab",
       "ja": "敷石",
       "reading": "シキイシ",
       "category": "設施",
@@ -206,7 +206,7 @@
     {
       "id": "rain-chain",
       "zh": "雨鏈",
-      "en": "rain-chain",
+      "en": "rain chain",
       "ja": "鎖樋",
       "reading": "クサリドイ",
       "category": "設施",
@@ -251,7 +251,7 @@
     {
       "id": "door-frame",
       "zh": "門框",
-      "en": "door-frame",
+      "en": "door frame",
       "ja": "ドアフレーム",
       "reading": "ドアフレーム",
       "category": "設施",
@@ -266,7 +266,7 @@
     {
       "id": "wall-bracket",
       "zh": "壁掛支架",
-      "en": "wall-bracket",
+      "en": "wall bracket",
       "ja": "壁付け金具",
       "reading": "カベツケカナグ",
       "category": "設施",
@@ -311,7 +311,7 @@
     {
       "id": "rubber-stamp",
       "zh": "印章",
-      "en": "rubber-stamp",
+      "en": "rubber stamp",
       "ja": "スタンプ",
       "reading": "スタンプ",
       "category": "道具",
@@ -326,7 +326,7 @@
     {
       "id": "ink-pad",
       "zh": "印台",
-      "en": "ink-pad",
+      "en": "ink pad",
       "ja": "朱肉",
       "reading": "しゅにく",
       "category": "道具",
@@ -341,7 +341,7 @@
     {
       "id": "paper-clip",
       "zh": "迴紋針",
-      "en": "paper-clip",
+      "en": "paper clip",
       "ja": "クリップ",
       "reading": "クリップ",
       "category": "道具",
@@ -356,7 +356,7 @@
     {
       "id": "binder-clip",
       "zh": "長尾夾",
-      "en": "binder-clip",
+      "en": "binder clip",
       "ja": "ダブルクリップ",
       "reading": "ダブルクリップ",
       "category": "道具",
@@ -371,7 +371,7 @@
     {
       "id": "hole-punch",
       "zh": "打孔機",
-      "en": "hole-punch",
+      "en": "hole punch",
       "ja": "穴あけパンチ",
       "reading": "あなあけパンチ",
       "category": "道具",
@@ -416,7 +416,7 @@
     {
       "id": "document-shredder",
       "zh": "碎紙機",
-      "en": "document-shredder",
+      "en": "document shredder",
       "ja": "シュレッダー",
       "reading": "シュレッダー",
       "category": "道具",
@@ -431,7 +431,7 @@
     {
       "id": "card-reader",
       "zh": "卡片讀取器",
-      "en": "card-reader",
+      "en": "card reader",
       "ja": "カードリーダー",
       "reading": "カードリーダー",
       "category": "道具",
@@ -446,7 +446,7 @@
     {
       "id": "book-scanner",
       "zh": "書籍掃描器",
-      "en": "book-scanner",
+      "en": "book scanner",
       "ja": "ブックスキャナー",
       "reading": "ブックスキャナー",
       "category": "道具",
@@ -461,7 +461,7 @@
     {
       "id": "filing-tray",
       "zh": "文件盤",
-      "en": "filing-tray",
+      "en": "filing tray",
       "ja": "書類トレー",
       "reading": "しょるいトレー",
       "category": "道具",
@@ -476,7 +476,7 @@
     {
       "id": "water-cooler",
       "zh": "飲水機",
-      "en": "water-cooler",
+      "en": "water cooler",
       "ja": "ウォーターサーバー",
       "reading": "ウォーターサーバー",
       "category": "設施",
@@ -491,7 +491,7 @@
     {
       "id": "floor-lamp",
       "zh": "立燈",
-      "en": "floor-lamp",
+      "en": "floor lamp",
       "ja": "フロアランプ",
       "reading": "フロアランプ",
       "category": "設施",
@@ -506,7 +506,7 @@
     {
       "id": "wall-shelf",
       "zh": "壁架",
-      "en": "wall-shelf",
+      "en": "wall shelf",
       "ja": "壁棚",
       "reading": "かべだな",
       "category": "設施",
@@ -521,7 +521,7 @@
     {
       "id": "staple-remover",
       "zh": "起釘器",
-      "en": "staple-remover",
+      "en": "staple remover",
       "ja": "ホッチキスリムーバー",
       "reading": "ホッチキスリムーバー",
       "category": "道具",
@@ -551,7 +551,7 @@
     {
       "id": "hand-truck",
       "zh": "手推車",
-      "en": "hand-truck",
+      "en": "hand truck",
       "ja": "台車",
       "reading": "だいしゃ",
       "category": "道具",
@@ -566,7 +566,7 @@
     {
       "id": "reading-lamp",
       "zh": "閱讀燈",
-      "en": "reading-lamp",
+      "en": "reading lamp",
       "ja": "読書ランプ",
       "reading": "どくしょランプ",
       "category": "道具",
@@ -626,7 +626,7 @@
     {
       "id": "sticky-note",
       "zh": "便利貼",
-      "en": "sticky-note",
+      "en": "sticky note",
       "ja": "付箋",
       "reading": "ふせん",
       "category": "道具",
@@ -656,7 +656,7 @@
     {
       "id": "glasses-case",
       "zh": "眼鏡盒",
-      "en": "glasses-case",
+      "en": "glasses case",
       "ja": "眼鏡ケース",
       "reading": "めがねケース",
       "category": "道具",
@@ -671,7 +671,7 @@
     {
       "id": "page-holder",
       "zh": "頁面固定夾",
-      "en": "page-holder",
+      "en": "page holder",
       "ja": "ページホルダー",
       "reading": "ページホルダー",
       "category": "道具",
@@ -686,7 +686,7 @@
     {
       "id": "library-card",
       "zh": "借書卡",
-      "en": "library-card",
+      "en": "library card",
       "ja": "図書カード",
       "reading": "としょカード",
       "category": "道具",
@@ -701,7 +701,7 @@
     {
       "id": "card-holder",
       "zh": "卡片座",
-      "en": "card-holder",
+      "en": "card holder",
       "ja": "カード立て",
       "reading": "カードたて",
       "category": "道具",
@@ -731,7 +731,7 @@
     {
       "id": "magnifying-lens",
       "zh": "放大鏡片",
-      "en": "magnifying-lens",
+      "en": "magnifying lens",
       "ja": "拡大レンズ",
       "reading": "かくだいレンズ",
       "category": "道具",
@@ -761,7 +761,7 @@
     {
       "id": "coat-hook",
       "zh": "衣帽鉤",
-      "en": "coat-hook",
+      "en": "coat hook",
       "ja": "コートフック",
       "reading": "コートフック",
       "category": "設施",
@@ -791,7 +791,7 @@
     {
       "id": "foot-cushion",
       "zh": "腳墊",
-      "en": "foot-cushion",
+      "en": "foot cushion",
       "ja": "足まくら",
       "reading": "あしまくら",
       "category": "設施",
@@ -806,7 +806,7 @@
     {
       "id": "book-cart",
       "zh": "書車",
-      "en": "book-cart",
+      "en": "book cart",
       "ja": "ブックカート",
       "reading": "ブックカート",
       "category": "道具",
@@ -836,7 +836,7 @@
     {
       "id": "reading-glasses",
       "zh": "老花眼鏡",
-      "en": "reading-glasses",
+      "en": "reading glasses",
       "ja": "老眼鏡",
       "reading": "ろうがんきょう",
       "category": "道具",
@@ -851,9 +851,9 @@
     {
       "id": "ceiling-fan",
       "zh": "吊扇",
-      "en": "ceiling-fan",
+      "en": "ceiling fan",
       "ja": "シーリングファン",
-      "reading": "しーりんぐふぁん",
+      "reading": "シーリングファン",
       "category": "設施",
       "size": "large",
       "zone": "reading-room",
@@ -866,7 +866,7 @@
     {
       "id": "light-fixture",
       "zh": "燈具",
-      "en": "light-fixture",
+      "en": "light fixture",
       "ja": "照明器具",
       "reading": "しょうめいきぐ",
       "category": "設施",
@@ -883,7 +883,7 @@
       "zh": "門擋",
       "en": "doorstop",
       "ja": "ドアストッパー",
-      "reading": "どあすとっぱー",
+      "reading": "ドアストッパー",
       "category": "道具",
       "size": "small",
       "zone": "reading-room",
@@ -898,7 +898,7 @@
       "zh": "掛鉤",
       "en": "hook",
       "ja": "フック",
-      "reading": "ふっく",
+      "reading": "フック",
       "category": "道具",
       "size": "small",
       "zone": "reading-room",
@@ -1031,7 +1031,7 @@
     {
       "id": "card-catalog",
       "zh": "卡片目錄櫃",
-      "en": "card-catalog",
+      "en": "card catalog",
       "ja": "カード目録棚",
       "reading": "カードもくろくだな",
       "category": "設施",
@@ -1046,7 +1046,7 @@
     {
       "id": "keyhole-cover",
       "zh": "鎖孔蓋",
-      "en": "keyhole-cover",
+      "en": "keyhole cover",
       "ja": "鍵穴カバー",
       "reading": "かぎあなカバー",
       "category": "設施",
@@ -1061,7 +1061,7 @@
     {
       "id": "door-sill",
       "zh": "門底擋水條",
-      "en": "door-sill",
+      "en": "door sill",
       "ja": "ドア下部の水切り",
       "reading": "ドアかぶのミズキリ",
       "category": "設施",
@@ -1076,7 +1076,7 @@
     {
       "id": "keyhole-escutcheon",
       "zh": "鎖孔飾片",
-      "en": "keyhole-escutcheon",
+      "en": "keyhole escutcheon",
       "ja": "鍵穴プレート",
       "reading": "かぎあなプレート",
       "category": "設施",
@@ -1091,7 +1091,7 @@
     {
       "id": "door-sweep",
       "zh": "門底密封條",
-      "en": "door-sweep",
+      "en": "door sweep",
       "ja": "ドア下部シール",
       "reading": "ドアかぶシール",
       "category": "設施",
@@ -1106,7 +1106,7 @@
     {
       "id": "boot-scraper",
       "zh": "鞋底刮泥器",
-      "en": "boot-scraper",
+      "en": "boot scraper",
       "ja": "靴底ブラシ",
       "reading": "くつぞこブラシ",
       "category": "設施",
@@ -1121,7 +1121,7 @@
     {
       "id": "doorstop-wedge",
       "zh": "門擋楔",
-      "en": "doorstop-wedge",
+      "en": "doorstop wedge",
       "ja": "ドアストッパー",
       "reading": "ドアストッパー",
       "category": "道具",
@@ -1136,7 +1136,7 @@
     {
       "id": "accessibility-ramp",
       "zh": "無障礙斜坡",
-      "en": "accessibility-ramp",
+      "en": "accessibility ramp",
       "ja": "スロープ",
       "reading": "スロープ",
       "category": "設施",
@@ -1151,7 +1151,7 @@
     {
       "id": "door-mat",
       "zh": "門口地墊",
-      "en": "door-mat",
+      "en": "door mat",
       "ja": "玄関マット",
       "reading": "げんかんマット",
       "category": "道具",
@@ -1166,7 +1166,7 @@
     {
       "id": "desk-chair",
       "zh": "辦公椅",
-      "en": "office-chair",
+      "en": "office chair",
       "ja": "オフィスチェア",
       "reading": "オフィスチェア",
       "category": "設施",
@@ -1181,7 +1181,7 @@
     {
       "id": "desk-organizer",
       "zh": "桌上收納架",
-      "en": "desk-organizer",
+      "en": "desk organizer",
       "ja": "デスクオーガナイザー",
       "reading": "デスクオーガナイザー",
       "category": "道具",
@@ -1196,7 +1196,7 @@
     {
       "id": "queue-barrier",
       "zh": "排隊欄柱",
-      "en": "queue-barrier",
+      "en": "queue barrier",
       "ja": "ベルトパーテーション",
       "reading": "ベルトパーテーション",
       "category": "設施",
@@ -1211,7 +1211,7 @@
     {
       "id": "document-holder",
       "zh": "文件架",
-      "en": "document-holder",
+      "en": "document holder",
       "ja": "書類立て",
       "reading": "しょるいたて",
       "category": "道具",
@@ -1226,7 +1226,7 @@
     {
       "id": "key-cabinet",
       "zh": "鑰匙櫃",
-      "en": "key-cabinet",
+      "en": "key cabinet",
       "ja": "鍵付きキャビネット",
       "reading": "かぎつきキャビネット",
       "category": "設施",
@@ -1241,7 +1241,7 @@
     {
       "id": "date-stamp",
       "zh": "日期章",
-      "en": "date-stamp",
+      "en": "date stamp",
       "ja": "日付印",
       "reading": "ひづけいん",
       "category": "道具",
@@ -1256,7 +1256,7 @@
     {
       "id": "book-light",
       "zh": "書燈",
-      "en": "book-light",
+      "en": "book light",
       "ja": "ブックライト",
       "reading": "ブックライト",
       "category": "道具",
@@ -1271,7 +1271,7 @@
     {
       "id": "globe-stand",
       "zh": "地球儀底座",
-      "en": "globe-stand",
+      "en": "globe stand",
       "ja": "地球儀スタンド",
       "reading": "ちきゅうぎスタンド",
       "category": "道具",
@@ -1301,7 +1301,7 @@
     {
       "id": "fountain-pen",
       "zh": "鋼筆",
-      "en": "fountain-pen",
+      "en": "fountain pen",
       "ja": "万年筆",
       "reading": "まんねんひつ",
       "category": "道具",
@@ -1316,7 +1316,7 @@
     {
       "id": "desk-clock",
       "zh": "桌上鐘",
-      "en": "desk-clock",
+      "en": "desk clock",
       "ja": "置き時計",
       "reading": "おきどけい",
       "category": "道具",
@@ -1346,7 +1346,7 @@
     {
       "id": "open-book",
       "zh": "攤開的書",
-      "en": "open-book",
+      "en": "open book",
       "ja": "開いた本",
       "reading": "ひらいたほん",
       "category": "道具",

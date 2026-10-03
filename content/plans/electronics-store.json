@@ -43,7 +43,7 @@
     {
       "id": "washing-machine",
       "zh": "洗衣機",
-      "en": "washing-machine",
+      "en": "washing machine",
       "ja": "洗濯機",
       "reading": "せんたくき",
       "category": "道具",
@@ -58,7 +58,7 @@
     {
       "id": "rice-cooker-electronics-store",
       "zh": "電子鍋",
-      "en": "rice-cooker",
+      "en": "rice cooker",
       "ja": "炊飯器",
       "reading": "すいはんき",
       "category": "道具",
@@ -73,7 +73,7 @@
     {
       "id": "vacuum-cleaner-electronics-store",
       "zh": "吸塵器",
-      "en": "vacuum-cleaner",
+      "en": "vacuum cleaner",
       "ja": "掃除機",
       "reading": "そうじき",
       "category": "道具",
@@ -88,7 +88,7 @@
     {
       "id": "floor-fan-electronics-store",
       "zh": "電風扇",
-      "en": "floor-fan",
+      "en": "floor fan",
       "ja": "扇風機",
       "reading": "せんぷうき",
       "category": "道具",
@@ -103,7 +103,7 @@
     {
       "id": "air-conditioner-electronics-store",
       "zh": "冷氣機",
-      "en": "air-conditioner",
+      "en": "air conditioner",
       "ja": "エアコン",
       "reading": "エアコン",
       "category": "道具",
@@ -118,7 +118,7 @@
     {
       "id": "air-purifier-electronics-store",
       "zh": "空氣清淨機",
-      "en": "air-purifier",
+      "en": "air purifier",
       "ja": "空気清浄機",
       "reading": "くうきせいじょうき",
       "category": "道具",
@@ -133,7 +133,7 @@
     {
       "id": "kitchen-timer-electronics-store",
       "zh": "廚房計時器",
-      "en": "kitchen-timer",
+      "en": "kitchen timer",
       "ja": "キッチンタイマー",
       "reading": "キッチンタイマー",
       "category": "道具",
@@ -148,7 +148,7 @@
     {
       "id": "kitchen-scale-electronics-store",
       "zh": "廚房秤",
-      "en": "kitchen-scale",
+      "en": "kitchen scale",
       "ja": "キッチンスケール",
       "reading": "キッチンスケール",
       "category": "道具",
@@ -163,7 +163,7 @@
     {
       "id": "coffee-maker-electronics-store",
       "zh": "咖啡機",
-      "en": "coffee-maker",
+      "en": "coffee maker",
       "ja": "コーヒーメーカー",
       "reading": "コーヒーメーカー",
       "category": "道具",
@@ -178,7 +178,7 @@
     {
       "id": "coffee-grinder-electronics-store",
       "zh": "咖啡磨豆機",
-      "en": "coffee-grinder",
+      "en": "coffee grinder",
       "ja": "コーヒーミル",
       "reading": "コーヒーミル",
       "category": "道具",
@@ -193,7 +193,7 @@
     {
       "id": "electric-kettle",
       "zh": "快煮壺",
-      "en": "electric-kettle",
+      "en": "electric kettle",
       "ja": "電気ケトル",
       "reading": "でんきケトル",
       "category": "道具",

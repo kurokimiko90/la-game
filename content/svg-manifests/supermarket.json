@@ -799,7 +799,7 @@
         "itemId": "shopping-list",
         "words": {
           "zh-TW": "購物清單",
-          "en": "shopping-list",
+          "en": "shopping list",
           "ja": {
             "text": "買い物リスト",
             "reading": "かいものリスト"
@@ -820,7 +820,7 @@
         "itemId": "produce-mister",
         "words": {
           "zh-TW": "蔬果噴霧器",
-          "en": "produce-mister",
+          "en": "produce mister",
           "ja": {
             "text": "野菜ミスト装置",
             "reading": "やさいミストそうち"
@@ -844,7 +844,7 @@
           "en": "pumpkin",
           "ja": {
             "text": "かぼちゃ",
-            "reading": "カボチャ"
+            "reading": "かぼちゃ"
           }
         }
       }
@@ -886,7 +886,7 @@
           "en": "cucumber",
           "ja": {
             "text": "きゅうり",
-            "reading": "キュウリ"
+            "reading": "きゅうり"
           }
         }
       }
@@ -907,7 +907,7 @@
           "en": "eggplant",
           "ja": {
             "text": "なす",
-            "reading": "ナス"
+            "reading": "なす"
           }
         }
       }
@@ -1030,7 +1030,7 @@
         "itemId": "checkout-divider",
         "words": {
           "zh-TW": "收銀台隔板",
-          "en": "checkout-divider",
+          "en": "checkout divider",
           "ja": {
             "text": "仕切り板",
             "reading": "しきりいた"
@@ -1051,7 +1051,7 @@
         "itemId": "coin-tray",
         "words": {
           "zh-TW": "硬幣盤",
-          "en": "coin-tray",
+          "en": "coin tray",
           "ja": {
             "text": "コイントレー",
             "reading": "コイントレー"
@@ -1072,7 +1072,7 @@
         "itemId": "reusable-bag",
         "words": {
           "zh-TW": "環保購物袋",
-          "en": "reusable-bag",
+          "en": "reusable bag",
           "ja": {
             "text": "エコバッグ",
             "reading": "エコバッグ"
@@ -1093,7 +1093,7 @@
         "itemId": "shopping-cart-token",
         "words": {
           "zh-TW": "購物車代幣",
-          "en": "shopping-cart-token",
+          "en": "shopping cart token",
           "ja": {
             "text": "カートトークン",
             "reading": "カートトークン"
@@ -1114,7 +1114,7 @@
         "itemId": "bag-holder",
         "words": {
           "zh-TW": "提袋架",
-          "en": "bag-holder",
+          "en": "bag holder",
           "ja": {
             "text": "袋掛け",
             "reading": "ふくろかけ"

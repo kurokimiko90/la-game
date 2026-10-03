@@ -19,7 +19,7 @@
       "zh": "獅子",
       "en": "lion",
       "ja": "ライオン",
-      "reading": "らいおん",
+      "reading": "ライオン",
       "size": "medium",
       "spot": "ground"
     },
@@ -39,7 +39,7 @@
       "zh": "長頸鹿",
       "en": "giraffe",
       "ja": "キリン",
-      "reading": "きりん",
+      "reading": "キリン",
       "size": "large",
       "spot": "ground"
     },
@@ -49,7 +49,7 @@
       "zh": "斑馬",
       "en": "zebra",
       "ja": "シマウマ",
-      "reading": "しまうま",
+      "reading": "シマウマ",
       "size": "medium",
       "spot": "ground"
     },
@@ -69,7 +69,7 @@
       "zh": "熊貓",
       "en": "panda",
       "ja": "パンダ",
-      "reading": "ぱんだ",
+      "reading": "パンダ",
       "size": "medium",
       "spot": "ground"
     },
@@ -79,7 +79,7 @@
       "zh": "企鵝",
       "en": "penguin",
       "ja": "ペンギン",
-      "reading": "ぺんぎん",
+      "reading": "ペンギン",
       "size": "medium",
       "spot": "ground"
     },
@@ -99,7 +99,7 @@
       "zh": "鱷魚",
       "en": "crocodile",
       "ja": "ワニ",
-      "reading": "わに",
+      "reading": "ワニ",
       "size": "medium",
       "spot": "ground"
     },
@@ -109,7 +109,7 @@
       "zh": "紅鶴",
       "en": "flamingo",
       "ja": "フラミンゴ",
-      "reading": "ふらみんご",
+      "reading": "フラミンゴ",
       "size": "medium",
       "spot": "ground"
     },
@@ -129,7 +129,7 @@
       "zh": "孔雀",
       "en": "peacock",
       "ja": "クジャク",
-      "reading": "くじゃく",
+      "reading": "クジャク",
       "size": "medium",
       "spot": "ground"
     }

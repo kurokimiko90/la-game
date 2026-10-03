@@ -25,7 +25,8 @@ describe('applyReview', () => {
 
   it('不 ok、有合格的修正：套用修正後留下', () => {
     const r = applyReview(elements, [{ id: 'b', ok: false, issue: '日文不自然', fix: { ja: '鉄アレイ', reading: 'てつあれい' } }]);
-    expect(r.ok.find((e) => e.id === 'b')).toMatchObject({ ja: '鉄アレイ', reading: 'てつあれい', zh: '啞鈴' });
+    // 讀音跟寫法對齊：寫法裡的片假名在讀音裡保留片假名
+    expect(r.ok.find((e) => e.id === 'b')).toMatchObject({ ja: '鉄アレイ', reading: 'てつアレイ', zh: '啞鈴' });
     expect(r.fixed).toEqual([{ id: 'b', issue: '日文不自然', changes: { ja: '鉄アレイ', reading: 'てつあれい' } }]);
   });
 

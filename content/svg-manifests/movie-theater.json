@@ -193,7 +193,7 @@
           "en": "car battery",
           "ja": {
             "text": "車のバッテリー",
-            "reading": "くるまのばってりー"
+            "reading": "くるまのバッテリー"
           }
         }
       }
@@ -214,7 +214,7 @@
           "en": "windshield",
           "ja": {
             "text": "フロントガラス",
-            "reading": "ふろんとがらす"
+            "reading": "フロントガラス"
           }
         }
       }
@@ -442,7 +442,7 @@
         "itemId": "ticket-roll",
         "words": {
           "zh-TW": "票卷",
-          "en": "ticket-roll",
+          "en": "ticket roll",
           "ja": {
             "text": "チケットロール",
             "reading": "チケットロール"
@@ -463,7 +463,7 @@
         "itemId": "soda-can",
         "words": {
           "zh-TW": "汽水罐",
-          "en": "soda-can",
+          "en": "soda can",
           "ja": {
             "text": "炭酸飲料の缶",
             "reading": "たんさんいんりょうのかん"
@@ -484,7 +484,7 @@
         "itemId": "soda-cup",
         "words": {
           "zh-TW": "汽水杯",
-          "en": "soda-cup",
+          "en": "soda cup",
           "ja": {
             "text": "ドリンクカップ",
             "reading": "ドリンクカップ"
@@ -505,7 +505,7 @@
         "itemId": "candy-wrapper",
         "words": {
           "zh-TW": "糖果包裝紙",
-          "en": "candy-wrapper",
+          "en": "candy wrapper",
           "ja": {
             "text": "キャンディの包み紙",
             "reading": "キャンディのつつみがみ"
@@ -547,7 +547,7 @@
         "itemId": "red-carpet",
         "words": {
           "zh-TW": "紅地毯",
-          "en": "red-carpet",
+          "en": "red carpet",
           "ja": {
             "text": "レッドカーペット",
             "reading": "レッドカーペット"
@@ -568,7 +568,7 @@
         "itemId": "velvet-rope",
         "words": {
           "zh-TW": "紅絨繩",
-          "en": "velvet-rope",
+          "en": "velvet rope",
           "ja": {
             "text": "ベルベットロープ",
             "reading": "ベルベットロープ"
@@ -589,7 +589,7 @@
         "itemId": "film-camera",
         "words": {
           "zh-TW": "攝影機",
-          "en": "film-camera",
+          "en": "film camera",
           "ja": {
             "text": "フィルムカメラ",
             "reading": "フィルムカメラ"
@@ -610,7 +610,7 @@
         "itemId": "director-chair",
         "words": {
           "zh-TW": "導演椅",
-          "en": "director-chair",
+          "en": "director chair",
           "ja": {
             "text": "ディレクターチェア",
             "reading": "ディレクターチェア"
@@ -631,7 +631,7 @@
         "itemId": "film-canister",
         "words": {
           "zh-TW": "膠卷罐",
-          "en": "film-canister",
+          "en": "film canister",
           "ja": {
             "text": "フィルム缶",
             "reading": "フィルムかん"
@@ -652,7 +652,7 @@
         "itemId": "ticket-stub",
         "words": {
           "zh-TW": "票根",
-          "en": "ticket-stub",
+          "en": "ticket stub",
           "ja": {
             "text": "半券",
             "reading": "はんけん"
@@ -673,7 +673,7 @@
         "itemId": "soda-bottle",
         "words": {
           "zh-TW": "汽水瓶",
-          "en": "soda-bottle",
+          "en": "soda bottle",
           "ja": {
             "text": "ソーダボトル",
             "reading": "ソーダボトル"
@@ -694,7 +694,7 @@
         "itemId": "ice-cream-cone",
         "words": {
           "zh-TW": "冰淇淋甜筒",
-          "en": "ice-cream-cone",
+          "en": "ice cream cone",
           "ja": {
             "text": "アイスクリームコーン",
             "reading": "アイスクリームコーン"
@@ -715,7 +715,7 @@
         "itemId": "candy-box",
         "words": {
           "zh-TW": "糖果盒",
-          "en": "candy-box",
+          "en": "candy box",
           "ja": {
             "text": "キャンディーボックス",
             "reading": "キャンディーボックス"
@@ -736,7 +736,7 @@
         "itemId": "soda-fountain",
         "words": {
           "zh-TW": "汽水龍頭",
-          "en": "soda-fountain",
+          "en": "soda fountain",
           "ja": {
             "text": "ソーダディスペンサー",
             "reading": "ソーダディスペンサー"
@@ -757,7 +757,7 @@
         "itemId": "film-poster-frame",
         "words": {
           "zh-TW": "電影海報框",
-          "en": "film-poster-frame",
+          "en": "film poster frame",
           "ja": {
             "text": "ポスター額縁",
             "reading": "ポスターがくぶち"
@@ -778,7 +778,7 @@
         "itemId": "folding-seat",
         "words": {
           "zh-TW": "折疊座椅",
-          "en": "folding-seat",
+          "en": "folding seat",
           "ja": {
             "text": "折りたたみ座席",
             "reading": "おりたたみざせき"
@@ -799,7 +799,7 @@
         "itemId": "seat-number-plate",
         "words": {
           "zh-TW": "座位牌",
-          "en": "seat-plate",
+          "en": "seat plate",
           "ja": {
             "text": "座席プレート",
             "reading": "ざせきプレート"
@@ -820,7 +820,7 @@
         "itemId": "cup-holder",
         "words": {
           "zh-TW": "杯架",
-          "en": "cup-holder",
+          "en": "cup holder",
           "ja": {
             "text": "カップホルダー",
             "reading": "カップホルダー"
@@ -841,7 +841,7 @@
         "itemId": "seat-cushion",
         "words": {
           "zh-TW": "座墊",
-          "en": "seat-cushion",
+          "en": "seat cushion",
           "ja": {
             "text": "座布団",
             "reading": "ざぶとん"
@@ -862,7 +862,7 @@
         "itemId": "aisle-light",
         "words": {
           "zh-TW": "階梯燈",
-          "en": "aisle-light",
+          "en": "aisle light",
           "ja": {
             "text": "足元灯",
             "reading": "あしもととう"
@@ -883,7 +883,7 @@
         "itemId": "exit-door",
         "words": {
           "zh-TW": "出口門",
-          "en": "exit-door",
+          "en": "exit door",
           "ja": {
             "text": "出口ドア",
             "reading": "でぐちドア"
@@ -904,7 +904,7 @@
         "itemId": "floor-speaker",
         "words": {
           "zh-TW": "落地喇叭",
-          "en": "floor-speaker",
+          "en": "floor speaker",
           "ja": {
             "text": "フロアスピーカー",
             "reading": "フロアスピーカー"
@@ -925,7 +925,7 @@
         "itemId": "laser-pointer",
         "words": {
           "zh-TW": "雷射筆",
-          "en": "laser-pointer",
+          "en": "laser pointer",
           "ja": {
             "text": "レーザーポインター",
             "reading": "レーザーポインター"
@@ -946,7 +946,7 @@
         "itemId": "coiled-cable",
         "words": {
           "zh-TW": "盤繞電線",
-          "en": "coiled-cable",
+          "en": "coiled cable",
           "ja": {
             "text": "巻き取りケーブル",
             "reading": "まきとりケーブル"
@@ -967,7 +967,7 @@
         "itemId": "handheld-fan",
         "words": {
           "zh-TW": "手持電風扇",
-          "en": "handheld-fan",
+          "en": "handheld fan",
           "ja": {
             "text": "ハンディファン",
             "reading": "ハンディファン"
@@ -988,7 +988,7 @@
         "itemId": "electric-cable-reel",
         "words": {
           "zh-TW": "電纜捲盤",
-          "en": "electric-cable-reel",
+          "en": "electric cable reel",
           "ja": {
             "text": "コードリール",
             "reading": "コードリール"
@@ -1009,7 +1009,7 @@
         "itemId": "step-stool",
         "words": {
           "zh-TW": "踏凳",
-          "en": "step-stool",
+          "en": "step stool",
           "ja": {
             "text": "踏み台",
             "reading": "ふみだい"
@@ -1030,7 +1030,7 @@
         "itemId": "soft-toy",
         "words": {
           "zh-TW": "毛絨玩具",
-          "en": "soft-toy",
+          "en": "soft toy",
           "ja": {
             "text": "ぬいぐるみ",
             "reading": "ぬいぐるみ"
@@ -1198,7 +1198,7 @@
         "itemId": "curtain-tieback",
         "words": {
           "zh-TW": "窗簾束帶",
-          "en": "curtain-tieback",
+          "en": "curtain tieback",
           "ja": {
             "text": "カーテンタッセル",
             "reading": "カーテンタッセル"
@@ -1219,7 +1219,7 @@
         "itemId": "glow-stick",
         "words": {
           "zh-TW": "螢光棒",
-          "en": "glow-stick",
+          "en": "glow stick",
           "ja": {
             "text": "ケミカルライト",
             "reading": "ケミカルライト"
@@ -1786,7 +1786,7 @@
         "itemId": "bollard-light",
         "words": {
           "zh-TW": "矮柱燈",
-          "en": "bollard-light",
+          "en": "bollard light",
           "ja": {
             "text": "ボラードライト",
             "reading": "ボラードライト"
@@ -1807,7 +1807,7 @@
         "itemId": "wheelie-bin",
         "words": {
           "zh-TW": "有輪垃圾桶",
-          "en": "wheelie-bin",
+          "en": "wheelie bin",
           "ja": {
             "text": "キャスター付きゴミ箱",
             "reading": "キャスターつきゴミばこ"
@@ -1849,7 +1849,7 @@
         "itemId": "citrus-squeezer",
         "words": {
           "zh-TW": "檸檬榨汁器",
-          "en": "citrus-squeezer",
+          "en": "citrus squeezer",
           "ja": {
             "text": "レモン絞り器",
             "reading": "レモンしぼりき"
@@ -1870,7 +1870,7 @@
         "itemId": "ice-tongs",
         "words": {
           "zh-TW": "冰夾",
-          "en": "ice-tongs",
+          "en": "ice tongs",
           "ja": {
             "text": "アイストング",
             "reading": "アイストング"
@@ -1891,7 +1891,7 @@
         "itemId": "retractable-screen",
         "words": {
           "zh-TW": "捲軸式銀幕",
-          "en": "retractable-screen",
+          "en": "retractable screen",
           "ja": {
             "text": "巻き上げ式スクリーン",
             "reading": "まきあげしきスクリーン"
@@ -1912,7 +1912,7 @@
         "itemId": "sundae-dish",
         "words": {
           "zh-TW": "聖代盤",
-          "en": "sundae-dish",
+          "en": "sundae dish",
           "ja": {
             "text": "パフェ皿",
             "reading": "パフェざら"

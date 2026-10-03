@@ -22,7 +22,7 @@
         "itemId": "washing-machine",
         "words": {
           "zh-TW": "洗衣機",
-          "en": "washing-machine",
+          "en": "washing machine",
           "ja": {
             "text": "洗濯機",
             "reading": "せんたくき"
@@ -43,7 +43,7 @@
         "itemId": "rice-cooker-electronics-store",
         "words": {
           "zh-TW": "電子鍋",
-          "en": "rice-cooker",
+          "en": "rice cooker",
           "ja": {
             "text": "炊飯器",
             "reading": "すいはんき"
@@ -64,7 +64,7 @@
         "itemId": "vacuum-cleaner-electronics-store",
         "words": {
           "zh-TW": "吸塵器",
-          "en": "vacuum-cleaner",
+          "en": "vacuum cleaner",
           "ja": {
             "text": "掃除機",
             "reading": "そうじき"
@@ -85,7 +85,7 @@
         "itemId": "floor-fan-electronics-store",
         "words": {
           "zh-TW": "電風扇",
-          "en": "floor-fan",
+          "en": "floor fan",
           "ja": {
             "text": "扇風機",
             "reading": "せんぷうき"
@@ -106,7 +106,7 @@
         "itemId": "air-conditioner-electronics-store",
         "words": {
           "zh-TW": "冷氣機",
-          "en": "air-conditioner",
+          "en": "air conditioner",
           "ja": {
             "text": "エアコン",
             "reading": "エアコン"
@@ -127,7 +127,7 @@
         "itemId": "air-purifier-electronics-store",
         "words": {
           "zh-TW": "空氣清淨機",
-          "en": "air-purifier",
+          "en": "air purifier",
           "ja": {
             "text": "空気清浄機",
             "reading": "くうきせいじょうき"
@@ -148,7 +148,7 @@
         "itemId": "kitchen-timer-electronics-store",
         "words": {
           "zh-TW": "廚房計時器",
-          "en": "kitchen-timer",
+          "en": "kitchen timer",
           "ja": {
             "text": "キッチンタイマー",
             "reading": "キッチンタイマー"
@@ -169,7 +169,7 @@
         "itemId": "kitchen-scale-electronics-store",
         "words": {
           "zh-TW": "廚房秤",
-          "en": "kitchen-scale",
+          "en": "kitchen scale",
           "ja": {
             "text": "キッチンスケール",
             "reading": "キッチンスケール"
@@ -190,7 +190,7 @@
         "itemId": "coffee-maker-electronics-store",
         "words": {
           "zh-TW": "咖啡機",
-          "en": "coffee-maker",
+          "en": "coffee maker",
           "ja": {
             "text": "コーヒーメーカー",
             "reading": "コーヒーメーカー"
@@ -211,7 +211,7 @@
         "itemId": "coffee-grinder-electronics-store",
         "words": {
           "zh-TW": "咖啡磨豆機",
-          "en": "coffee-grinder",
+          "en": "coffee grinder",
           "ja": {
             "text": "コーヒーミル",
             "reading": "コーヒーミル"
@@ -232,7 +232,7 @@
         "itemId": "electric-kettle",
         "words": {
           "zh-TW": "快煮壺",
-          "en": "electric-kettle",
+          "en": "electric kettle",
           "ja": {
             "text": "電気ケトル",
             "reading": "でんきケトル"

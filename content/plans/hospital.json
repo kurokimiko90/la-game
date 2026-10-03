@@ -58,7 +58,7 @@
       "zh": "直升機",
       "en": "helicopter",
       "ja": "ヘリコプター",
-      "reading": "へりこぷたー",
+      "reading": "ヘリコプター",
       "category": "交通工具",
       "size": "large",
       "zone": "entrance",
@@ -73,7 +73,7 @@
       "zh": "門把",
       "en": "doorknob",
       "ja": "ドアノブ",
-      "reading": "どあのぶ",
+      "reading": "ドアノブ",
       "category": "道具",
       "size": "small",
       "zone": "entrance",
@@ -88,7 +88,7 @@
       "zh": "洗手液機",
       "en": "hand sanitizer dispenser",
       "ja": "消毒液ディスペンサー",
-      "reading": "しょうどくえきでぃすぺんさー",
+      "reading": "しょうどくえきディスペンサー",
       "category": "設施",
       "size": "medium",
       "zone": "entrance",
@@ -103,7 +103,7 @@
       "zh": "擔架",
       "en": "stretcher",
       "ja": "ストレッチャー",
-      "reading": "すとれっちゃー",
+      "reading": "ストレッチャー",
       "category": "道具",
       "size": "medium",
       "zone": "entrance",
@@ -208,7 +208,7 @@
       "zh": "停車計時器",
       "en": "parking meter",
       "ja": "パーキングメーター",
-      "reading": "ぱーきんぐめーたー",
+      "reading": "パーキングメーター",
       "category": "設施",
       "size": "medium",
       "zone": "entrance",
@@ -223,7 +223,7 @@
       "zh": "坡道",
       "en": "ramp",
       "ja": "スロープ",
-      "reading": "すろーぷ",
+      "reading": "スロープ",
       "category": "設施",
       "size": "large",
       "zone": "entrance",
@@ -238,7 +238,7 @@
       "zh": "氧氣筒",
       "en": "oxygen cylinder",
       "ja": "酸素ボンベ",
-      "reading": "さんそぼんべ",
+      "reading": "さんそボンベ",
       "category": "道具",
       "size": "medium",
       "zone": "entrance",
@@ -268,7 +268,7 @@
       "zh": "薰衣草",
       "en": "lavender",
       "ja": "ラベンダー",
-      "reading": "らべんだー",
+      "reading": "ラベンダー",
       "category": "植物",
       "size": "small",
       "zone": "entrance",
@@ -326,7 +326,7 @@
     {
       "id": "coat-rack",
       "zh": "衣帽架",
-      "en": "coat-rack",
+      "en": "coat rack",
       "ja": "コートラック",
       "reading": "コートラック",
       "category": "設施",
@@ -356,7 +356,7 @@
     {
       "id": "air-vent",
       "zh": "通風口",
-      "en": "air-vent",
+      "en": "air vent",
       "ja": "通気口",
       "reading": "つうきこう",
       "category": "設施",
@@ -371,7 +371,7 @@
     {
       "id": "fire-alarm",
       "zh": "火警警報器",
-      "en": "fire-alarm",
+      "en": "fire alarm",
       "ja": "火災警報器",
       "reading": "かさいけいほうき",
       "category": "設施",
@@ -401,7 +401,7 @@
     {
       "id": "reception-bell",
       "zh": "服務鈴",
-      "en": "reception-bell",
+      "en": "reception bell",
       "ja": "呼び鈴",
       "reading": "よびりん",
       "category": "道具",
@@ -431,7 +431,7 @@
     {
       "id": "coffee-bean",
       "zh": "咖啡豆",
-      "en": "coffee-bean",
+      "en": "coffee bean",
       "ja": "コーヒー豆",
       "reading": "コーヒーまめ",
       "category": "食物",
@@ -446,7 +446,7 @@
     {
       "id": "tea-bag",
       "zh": "茶包",
-      "en": "tea-bag",
+      "en": "tea bag",
       "ja": "ティーバッグ",
       "reading": "ティーバッグ",
       "category": "食物",
@@ -461,7 +461,7 @@
     {
       "id": "sugar-cube",
       "zh": "方糖",
-      "en": "sugar-cube",
+      "en": "sugar cube",
       "ja": "角砂糖",
       "reading": "かくざとう",
       "category": "食物",
@@ -491,7 +491,7 @@
     {
       "id": "medical-trolley",
       "zh": "醫療推車",
-      "en": "medical-trolley",
+      "en": "medical trolley",
       "ja": "医療ワゴン",
       "reading": "いりょうワゴン",
       "category": "道具",
@@ -521,7 +521,7 @@
     {
       "id": "blood-pressure-monitor",
       "zh": "血壓計",
-      "en": "blood-pressure-monitor",
+      "en": "blood pressure monitor",
       "ja": "血圧計",
       "reading": "けつあつけい",
       "category": "道具",
@@ -776,7 +776,7 @@
     {
       "id": "tissue-box",
       "zh": "面紙盒",
-      "en": "tissue-box",
+      "en": "tissue box",
       "ja": "ティッシュボックス",
       "reading": "ティッシュボックス",
       "category": "道具",
@@ -791,7 +791,7 @@
     {
       "id": "remote-control",
       "zh": "遙控器",
-      "en": "remote-control",
+      "en": "remote control",
       "ja": "リモコン",
       "reading": "リモコン",
       "category": "道具",
@@ -806,7 +806,7 @@
     {
       "id": "toy-block",
       "zh": "積木",
-      "en": "toy-block",
+      "en": "toy block",
       "ja": "つみき",
       "reading": "つみき",
       "category": "道具",
@@ -1076,7 +1076,7 @@
     {
       "id": "air-freshener",
       "zh": "芳香劑",
-      "en": "air-freshener",
+      "en": "air freshener",
       "ja": "芳香剤",
       "reading": "ほうこうざい",
       "category": "道具",
@@ -1091,7 +1091,7 @@
     {
       "id": "ceiling-speaker",
       "zh": "天花板喇叭",
-      "en": "ceiling-speaker",
+      "en": "ceiling speaker",
       "ja": "天井スピーカー",
       "reading": "てんじょうスピーカー",
       "category": "設施",
@@ -1106,7 +1106,7 @@
     {
       "id": "coffee-filter",
       "zh": "咖啡濾紙",
-      "en": "coffee-filter",
+      "en": "coffee filter",
       "ja": "コーヒーフィルター",
       "reading": "コーヒーフィルター",
       "category": "道具",
@@ -1121,7 +1121,7 @@
     {
       "id": "tea-strainer",
       "zh": "茶濾網",
-      "en": "tea-strainer",
+      "en": "tea strainer",
       "ja": "茶こし",
       "reading": "ちゃこし",
       "category": "道具",
@@ -1136,7 +1136,7 @@
     {
       "id": "sugar-bowl",
       "zh": "糖罐",
-      "en": "sugar-bowl",
+      "en": "sugar bowl",
       "ja": "シュガーポット",
       "reading": "シュガーポット",
       "category": "道具",
@@ -1151,7 +1151,7 @@
     {
       "id": "coffee-stirrer",
       "zh": "咖啡攪拌棒",
-      "en": "coffee-stirrer",
+      "en": "coffee stirrer",
       "ja": "コーヒーマドラー",
       "reading": "コーヒーマドラー",
       "category": "道具",
@@ -1166,7 +1166,7 @@
     {
       "id": "paper-towel",
       "zh": "紙巾",
-      "en": "paper-towel",
+      "en": "paper towel",
       "ja": "ペーパータオル",
       "reading": "ペーパータオル",
       "category": "道具",
@@ -1181,7 +1181,7 @@
     {
       "id": "pulse-oximeter",
       "zh": "血氧機",
-      "en": "pulse-oximeter",
+      "en": "pulse oximeter",
       "ja": "パルスオキシメーター",
       "reading": "パルスオキシメーター",
       "category": "道具",
@@ -1226,7 +1226,7 @@
     {
       "id": "coat-hanger",
       "zh": "衣架",
-      "en": "coat-hanger",
+      "en": "coat hanger",
       "ja": "ハンガー",
       "reading": "ハンガー",
       "category": "道具",
@@ -1241,7 +1241,7 @@
     {
       "id": "recycling-bin",
       "zh": "回收桶",
-      "en": "recycling-bin",
+      "en": "recycling bin",
       "ja": "リサイクルボックス",
       "reading": "リサイクルボックス",
       "category": "設施",
@@ -1256,7 +1256,7 @@
     {
       "id": "blood-glucose-meter",
       "zh": "血糖機",
-      "en": "blood-glucose-meter",
+      "en": "blood glucose meter",
       "ja": "血糖測定器",
       "reading": "けっとうそくていき",
       "category": "道具",
@@ -1271,7 +1271,7 @@
     {
       "id": "face-shield",
       "zh": "面罩",
-      "en": "face-shield",
+      "en": "face shield",
       "ja": "フェイスシールド",
       "reading": "フェイスシールド",
       "category": "道具",
@@ -1286,7 +1286,7 @@
     {
       "id": "tongue-depressor",
       "zh": "壓舌板",
-      "en": "tongue-depressor",
+      "en": "tongue depressor",
       "ja": "舌圧子",
       "reading": "ぜつあつし",
       "category": "道具",
@@ -1301,7 +1301,7 @@
     {
       "id": "pill-cutter",
       "zh": "藥丸切割器",
-      "en": "pill-cutter",
+      "en": "pill cutter",
       "ja": "ピルカッター",
       "reading": "ピルカッター",
       "category": "道具",
@@ -1316,7 +1316,7 @@
     {
       "id": "nail-clipper",
       "zh": "指甲剪",
-      "en": "nail-clipper",
+      "en": "nail clipper",
       "ja": "爪切り",
       "reading": "つめきり",
       "category": "道具",
@@ -1331,7 +1331,7 @@
     {
       "id": "nail-file",
       "zh": "指甲銼",
-      "en": "nail-file",
+      "en": "nail file",
       "ja": "爪やすり",
       "reading": "つめやすり",
       "category": "道具",
@@ -1346,7 +1346,7 @@
     {
       "id": "safety-pin",
       "zh": "安全別針",
-      "en": "safety-pin",
+      "en": "safety pin",
       "ja": "安全ピン",
       "reading": "あんぜんピン",
       "category": "道具",
@@ -1376,7 +1376,7 @@
     {
       "id": "hair-tie",
       "zh": "髮圈",
-      "en": "hair-tie",
+      "en": "hair tie",
       "ja": "ヘアゴム",
       "reading": "ヘアゴム",
       "category": "道具",
@@ -1391,7 +1391,7 @@
     {
       "id": "lip-balm",
       "zh": "護唇膏",
-      "en": "lip-balm",
+      "en": "lip balm",
       "ja": "リップクリーム",
       "reading": "リップクリーム",
       "category": "道具",
@@ -1406,7 +1406,7 @@
     {
       "id": "blister-pack",
       "zh": "鋁箔藥板",
-      "en": "blister-pack",
+      "en": "blister pack",
       "ja": "錠剤シート",
       "reading": "じょうざいシート",
       "category": "道具",

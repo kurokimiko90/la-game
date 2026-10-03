@@ -64,7 +64,7 @@
         "itemId": "postage-stamp",
         "words": {
           "zh-TW": "郵票",
-          "en": "postage-stamp",
+          "en": "postage stamp",
           "ja": {
             "text": "切手",
             "reading": "きって"
@@ -106,7 +106,7 @@
         "itemId": "flagpole-base",
         "words": {
           "zh-TW": "旗桿底座",
-          "en": "flagpole-base",
+          "en": "flagpole base",
           "ja": {
             "text": "旗竿の台座",
             "reading": "はたざおのだいざ"
@@ -211,7 +211,7 @@
         "itemId": "wind-sock",
         "words": {
           "zh-TW": "風向袋",
-          "en": "wind-sock",
+          "en": "wind sock",
           "ja": {
             "text": "吹き流し",
             "reading": "ふきながし"
@@ -232,7 +232,7 @@
         "itemId": "sandwich-board",
         "words": {
           "zh-TW": "立牌",
-          "en": "sandwich-board",
+          "en": "sandwich board",
           "ja": {
             "text": "立て看板",
             "reading": "たてかんばん"
@@ -253,7 +253,7 @@
         "itemId": "awning-frame",
         "words": {
           "zh-TW": "遮雨棚架",
-          "en": "awning-frame",
+          "en": "awning frame",
           "ja": {
             "text": "ひさし枠",
             "reading": "ひさしわく"
@@ -274,7 +274,7 @@
         "itemId": "post-hole",
         "words": {
           "zh-TW": "郵筒投入口",
-          "en": "post-hole",
+          "en": "post hole",
           "ja": {
             "text": "郵便差入口",
             "reading": "ゆうびんさしいれぐち"
@@ -295,7 +295,7 @@
         "itemId": "rain-gauge",
         "words": {
           "zh-TW": "雨量計",
-          "en": "rain-gauge",
+          "en": "rain gauge",
           "ja": {
             "text": "雨量計",
             "reading": "うりょうけい"
@@ -400,7 +400,7 @@
         "itemId": "mail-slot",
         "words": {
           "zh-TW": "投信口",
-          "en": "mail-slot",
+          "en": "mail slot",
           "ja": {
             "text": "郵便受け口",
             "reading": "ゆうびんうけぐち"
@@ -421,10 +421,10 @@
         "itemId": "letter-opener",
         "words": {
           "zh-TW": "拆信刀",
-          "en": "letter-opener",
+          "en": "letter opener",
           "ja": {
             "text": "レターオープナー",
-            "reading": "れたーおーぷんあー"
+            "reading": "レターオープナー"
           }
         }
       }
@@ -442,7 +442,7 @@
         "itemId": "postal-tube",
         "words": {
           "zh-TW": "郵寄筒",
-          "en": "postal-tube",
+          "en": "postal tube",
           "ja": {
             "text": "郵送筒",
             "reading": "ゆうそうとう"
@@ -463,7 +463,7 @@
         "itemId": "sorting-bin",
         "words": {
           "zh-TW": "分信箱",
-          "en": "sorting-bin",
+          "en": "sorting bin",
           "ja": {
             "text": "仕分け箱",
             "reading": "しわけばこ"
@@ -484,7 +484,7 @@
         "itemId": "twine-spool",
         "words": {
           "zh-TW": "麻繩線軸",
-          "en": "twine-spool",
+          "en": "twine spool",
           "ja": {
             "text": "ひも巻き",
             "reading": "ひもまき"
@@ -505,10 +505,10 @@
         "itemId": "label-roll",
         "words": {
           "zh-TW": "標籤捲",
-          "en": "label-roll",
+          "en": "label roll",
           "ja": {
             "text": "ラベルロール",
-            "reading": "らべるろーる"
+            "reading": "ラベルロール"
           }
         }
       }
@@ -526,10 +526,10 @@
         "itemId": "mail-tray",
         "words": {
           "zh-TW": "郵件盤",
-          "en": "mail-tray",
+          "en": "mail tray",
           "ja": {
             "text": "郵便トレー",
-            "reading": "ゆうびんとれー"
+            "reading": "ゆうびんトレー"
           }
         }
       }
@@ -547,10 +547,10 @@
         "itemId": "rubber-glove",
         "words": {
           "zh-TW": "橡膠手套",
-          "en": "rubber-glove",
+          "en": "rubber glove",
           "ja": {
             "text": "ゴム手袋",
-            "reading": "ごむてぶくろ"
+            "reading": "ゴムてぶくろ"
           }
         }
       }
@@ -568,10 +568,10 @@
         "itemId": "packing-tape-roll",
         "words": {
           "zh-TW": "封箱膠帶捲",
-          "en": "packing-tape-roll",
+          "en": "packing tape roll",
           "ja": {
             "text": "梱包テープ",
-            "reading": "こんぽうてーぷ"
+            "reading": "こんぽうテープ"
           }
         }
       }
@@ -589,10 +589,10 @@
         "itemId": "tape-cutter",
         "words": {
           "zh-TW": "膠帶切台",
-          "en": "tape-cutter",
+          "en": "tape cutter",
           "ja": {
             "text": "テープカッター",
-            "reading": "てーぷかったー"
+            "reading": "テープカッター"
           }
         }
       }
@@ -610,7 +610,7 @@
         "itemId": "mailing-tube-cap",
         "words": {
           "zh-TW": "郵寄筒蓋",
-          "en": "mailing-tube-cap",
+          "en": "mailing tube cap",
           "ja": {
             "text": "筒のふた",
             "reading": "つつのふた"
@@ -634,7 +634,7 @@
           "en": "turnstile",
           "ja": {
             "text": "回転ゲート",
-            "reading": "かいてんげーと"
+            "reading": "かいてんゲート"
           }
         }
       }
@@ -652,7 +652,7 @@
         "itemId": "service-hatch",
         "words": {
           "zh-TW": "服務窗口",
-          "en": "service-hatch",
+          "en": "service hatch",
           "ja": {
             "text": "受付口",
             "reading": "うけつけぐち"
@@ -673,7 +673,7 @@
         "itemId": "counter-screen",
         "words": {
           "zh-TW": "防護隔板",
-          "en": "counter-screen",
+          "en": "counter screen",
           "ja": {
             "text": "飛沫防止板",
             "reading": "ひまつぼうしばん"
@@ -694,10 +694,10 @@
         "itemId": "parcel-chute",
         "words": {
           "zh-TW": "包裹滑槽",
-          "en": "parcel-chute",
+          "en": "parcel chute",
           "ja": {
             "text": "荷物シュート",
-            "reading": "にもつしゅーと"
+            "reading": "にもつシュート"
           }
         }
       }
@@ -715,7 +715,7 @@
         "itemId": "floor-scale",
         "words": {
           "zh-TW": "地磅",
-          "en": "floor-scale",
+          "en": "floor scale",
           "ja": {
             "text": "床ばかり",
             "reading": "ゆかばかり"
@@ -736,7 +736,7 @@
         "itemId": "mail-sack",
         "words": {
           "zh-TW": "郵件袋",
-          "en": "mail-sack",
+          "en": "mail sack",
           "ja": {
             "text": "郵便袋",
             "reading": "ゆうびんぶくろ"
@@ -799,7 +799,7 @@
         "itemId": "mail-sorter",
         "words": {
           "zh-TW": "郵件分類架",
-          "en": "mail-sorter",
+          "en": "mail sorter",
           "ja": {
             "text": "メールソーター",
             "reading": "メールソーター"
@@ -820,7 +820,7 @@
         "itemId": "parcel-locker",
         "words": {
           "zh-TW": "包裹櫃",
-          "en": "parcel-locker",
+          "en": "parcel locker",
           "ja": {
             "text": "宅配ボックス",
             "reading": "たくはいボックス"
@@ -841,7 +841,7 @@
         "itemId": "packing-tape",
         "words": {
           "zh-TW": "封箱膠帶",
-          "en": "packing-tape",
+          "en": "packing tape",
           "ja": {
             "text": "梱包テープ",
             "reading": "こんぽうテープ"
@@ -862,7 +862,7 @@
         "itemId": "bubble-wrap",
         "words": {
           "zh-TW": "氣泡紙",
-          "en": "bubble-wrap",
+          "en": "bubble wrap",
           "ja": {
             "text": "エアキャップ",
             "reading": "エアキャップ"
@@ -904,7 +904,7 @@
         "itemId": "mail-tray-rack",
         "words": {
           "zh-TW": "郵件托盤架",
-          "en": "tray-rack",
+          "en": "tray rack",
           "ja": {
             "text": "トレーラック",
             "reading": "トレーラック"
@@ -925,7 +925,7 @@
         "itemId": "mailing-tube",
         "words": {
           "zh-TW": "郵寄紙筒",
-          "en": "mailing-tube",
+          "en": "mailing tube",
           "ja": {
             "text": "郵送筒",
             "reading": "ゆうそうとう"
@@ -946,7 +946,7 @@
         "itemId": "queue-ticket-dispenser",
         "words": {
           "zh-TW": "取號機",
-          "en": "queue-ticket-dispenser",
+          "en": "queue ticket dispenser",
           "ja": {
             "text": "整理券発行機",
             "reading": "せいりけんはっこうき"
@@ -967,7 +967,7 @@
         "itemId": "folding-stool",
         "words": {
           "zh-TW": "折疊凳",
-          "en": "folding-stool",
+          "en": "folding stool",
           "ja": {
             "text": "折りたたみ椅子",
             "reading": "おりたたみいす"
@@ -988,7 +988,7 @@
         "itemId": "mail-cart",
         "words": {
           "zh-TW": "郵件推車",
-          "en": "mail-cart",
+          "en": "mail cart",
           "ja": {
             "text": "メールカート",
             "reading": "メールカート"
@@ -1072,7 +1072,7 @@
         "itemId": "mail-chute",
         "words": {
           "zh-TW": "郵件滑槽",
-          "en": "mail-chute",
+          "en": "mail chute",
           "ja": {
             "text": "メールシュート",
             "reading": "メールシュート"
@@ -1093,7 +1093,7 @@
         "itemId": "sticker-sheet",
         "words": {
           "zh-TW": "貼紙簿",
-          "en": "sticker-sheet",
+          "en": "sticker sheet",
           "ja": {
             "text": "シールシート",
             "reading": "シールシート"
@@ -1114,7 +1114,7 @@
         "itemId": "box-cutter",
         "words": {
           "zh-TW": "美工刀",
-          "en": "box-cutter",
+          "en": "box cutter",
           "ja": {
             "text": "カッターナイフ",
             "reading": "カッターナイフ"
@@ -1156,7 +1156,7 @@
         "itemId": "pallet-jack",
         "words": {
           "zh-TW": "油壓板車",
-          "en": "pallet-jack",
+          "en": "pallet jack",
           "ja": {
             "text": "ハンドパレット",
             "reading": "ハンドパレット"
@@ -1177,7 +1177,7 @@
         "itemId": "rolling-cart",
         "words": {
           "zh-TW": "推車",
-          "en": "rolling-cart",
+          "en": "rolling cart",
           "ja": {
             "text": "ワゴン",
             "reading": "ワゴン"
@@ -1198,7 +1198,7 @@
         "itemId": "plastic-tote",
         "words": {
           "zh-TW": "塑膠周轉箱",
-          "en": "plastic-tote",
+          "en": "plastic tote",
           "ja": {
             "text": "コンテナボックス",
             "reading": "コンテナボックス"
@@ -1219,7 +1219,7 @@
         "itemId": "mail-tub",
         "words": {
           "zh-TW": "郵件桶",
-          "en": "mail-tub",
+          "en": "mail tub",
           "ja": {
             "text": "メールバケット",
             "reading": "メールバケット"
@@ -1261,7 +1261,7 @@
         "itemId": "work-boots",
         "words": {
           "zh-TW": "工作靴",
-          "en": "work-boots",
+          "en": "work boots",
           "ja": {
             "text": "ワークブーツ",
             "reading": "ワークブーツ"
@@ -1282,7 +1282,7 @@
         "itemId": "safety-goggles",
         "words": {
           "zh-TW": "護目鏡",
-          "en": "safety-goggles",
+          "en": "safety goggles",
           "ja": {
             "text": "保護メガネ",
             "reading": "ほごメガネ"
@@ -1303,7 +1303,7 @@
         "itemId": "work-gloves",
         "words": {
           "zh-TW": "工作手套",
-          "en": "work-gloves",
+          "en": "work gloves",
           "ja": {
             "text": "作業用手袋",
             "reading": "さぎょうようてぶくろ"
@@ -1345,7 +1345,7 @@
         "itemId": "tape-roll",
         "words": {
           "zh-TW": "膠帶捲",
-          "en": "tape-roll",
+          "en": "tape roll",
           "ja": {
             "text": "テープロール",
             "reading": "テープロール"
@@ -1408,7 +1408,7 @@
         "itemId": "sorting-chute",
         "words": {
           "zh-TW": "分揀滑槽",
-          "en": "sorting-chute",
+          "en": "sorting chute",
           "ja": {
             "text": "仕分けシュート",
             "reading": "しわけシュート"
@@ -1429,7 +1429,7 @@
         "itemId": "emergency-light",
         "words": {
           "zh-TW": "緊急照明燈",
-          "en": "emergency-light",
+          "en": "emergency light",
           "ja": {
             "text": "非常灯",
             "reading": "ひじょうとう"
@@ -1450,7 +1450,7 @@
         "itemId": "work-apron",
         "words": {
           "zh-TW": "工作圍裙",
-          "en": "work-apron",
+          "en": "work apron",
           "ja": {
             "text": "作業用エプロン",
             "reading": "さぎょうようエプロン"
@@ -1492,7 +1492,7 @@
         "itemId": "post-office-door",
         "words": {
           "zh-TW": "郵局大門",
-          "en": "post-office-door",
+          "en": "post office door",
           "ja": {
             "text": "郵便局のドア",
             "reading": "ゆうびんきょくのドア"
@@ -1513,7 +1513,7 @@
         "itemId": "postage-meter",
         "words": {
           "zh-TW": "郵資機",
-          "en": "postage-meter",
+          "en": "postage meter",
           "ja": {
             "text": "郵便料金計器",
             "reading": "ゆうびんりょうきんけいき"
@@ -1534,7 +1534,7 @@
         "itemId": "parcel-scale",
         "words": {
           "zh-TW": "包裹秤",
-          "en": "parcel-scale",
+          "en": "parcel scale",
           "ja": {
             "text": "荷物用はかり",
             "reading": "にもつようはかり"
@@ -1555,7 +1555,7 @@
         "itemId": "mailbox-flag",
         "words": {
           "zh-TW": "郵筒旗標",
-          "en": "mailbox-flag",
+          "en": "mailbox flag",
           "ja": {
             "text": "郵便ポストの旗",
             "reading": "ゆうびんポストのはた"
@@ -1576,7 +1576,7 @@
         "itemId": "paper-label",
         "words": {
           "zh-TW": "包裹標籤",
-          "en": "paper-label",
+          "en": "paper label",
           "ja": {
             "text": "荷札",
             "reading": "にふだ"
@@ -1597,7 +1597,7 @@
         "itemId": "letter-box",
         "words": {
           "zh-TW": "信件回收箱",
-          "en": "letter-box",
+          "en": "letter box",
           "ja": {
             "text": "郵便ポスト",
             "reading": "ゆうびんポスト"
@@ -1618,7 +1618,7 @@
         "itemId": "postage-label",
         "words": {
           "zh-TW": "郵資標籤",
-          "en": "postage-label",
+          "en": "postage label",
           "ja": {
             "text": "郵便ラベル",
             "reading": "ゆうびんラベル"
@@ -1639,7 +1639,7 @@
         "itemId": "postal-scale",
         "words": {
           "zh-TW": "郵件秤",
-          "en": "postal-scale",
+          "en": "postal scale",
           "ja": {
             "text": "郵便はかり",
             "reading": "ゆうびんはかり"
@@ -1660,7 +1660,7 @@
         "itemId": "parcel-box",
         "words": {
           "zh-TW": "包裹箱",
-          "en": "parcel-box",
+          "en": "parcel box",
           "ja": {
             "text": "小包箱",
             "reading": "こづつみばこ"
@@ -1681,7 +1681,7 @@
         "itemId": "envelope-opener",
         "words": {
           "zh-TW": "信封開口器",
-          "en": "envelope-opener",
+          "en": "envelope opener",
           "ja": {
             "text": "レターオープナー",
             "reading": "レターオープナー"
@@ -1702,7 +1702,7 @@
         "itemId": "parcel-hook",
         "words": {
           "zh-TW": "包裹鉤",
-          "en": "parcel-hook",
+          "en": "parcel hook",
           "ja": {
             "text": "荷物フック",
             "reading": "にもつフック"
@@ -1723,7 +1723,7 @@
         "itemId": "string-cutter",
         "words": {
           "zh-TW": "割繩器",
-          "en": "string-cutter",
+          "en": "string cutter",
           "ja": {
             "text": "ひも切り",
             "reading": "ひもきり"
@@ -1744,7 +1744,7 @@
         "itemId": "scale-pan",
         "words": {
           "zh-TW": "秤盤",
-          "en": "scale-pan",
+          "en": "scale pan",
           "ja": {
             "text": "はかり皿",
             "reading": "はかりざら"
@@ -1765,7 +1765,7 @@
         "itemId": "wax-seal",
         "words": {
           "zh-TW": "封蠟",
-          "en": "wax-seal",
+          "en": "wax seal",
           "ja": {
             "text": "封ろう",
             "reading": "ふうろう"
@@ -1786,7 +1786,7 @@
         "itemId": "scotch-tape",
         "words": {
           "zh-TW": "透明膠帶",
-          "en": "scotch-tape",
+          "en": "scotch tape",
           "ja": {
             "text": "セロハンテープ",
             "reading": "セロハンテープ"
@@ -1807,7 +1807,7 @@
         "itemId": "twist-tie",
         "words": {
           "zh-TW": "束線帶",
-          "en": "twist-tie",
+          "en": "twist tie",
           "ja": {
             "text": "ビニタイ",
             "reading": "ビニタイ"
@@ -1828,7 +1828,7 @@
         "itemId": "letter-scale",
         "words": {
           "zh-TW": "信件秤",
-          "en": "letter-scale",
+          "en": "letter scale",
           "ja": {
             "text": "レタースケール",
             "reading": "レタースケール"

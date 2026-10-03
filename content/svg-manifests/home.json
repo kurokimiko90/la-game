@@ -589,7 +589,7 @@
         "itemId": "rocking-chair",
         "words": {
           "zh-TW": "搖椅",
-          "en": "rocking-chair",
+          "en": "rocking chair",
           "ja": {
             "text": "ロッキングチェア",
             "reading": "ロッキングチェア"
@@ -652,7 +652,7 @@
         "itemId": "table-lamp",
         "words": {
           "zh-TW": "桌燈",
-          "en": "table-lamp",
+          "en": "table lamp",
           "ja": {
             "text": "テーブルランプ",
             "reading": "テーブルランプ"
@@ -673,7 +673,7 @@
         "itemId": "wall-clock-home",
         "words": {
           "zh-TW": "掛鐘",
-          "en": "wall-clock",
+          "en": "wall clock",
           "ja": {
             "text": "壁掛け時計",
             "reading": "かべかけどけい"
@@ -694,7 +694,7 @@
         "itemId": "picture-frame",
         "words": {
           "zh-TW": "相框",
-          "en": "picture-frame",
+          "en": "picture frame",
           "ja": {
             "text": "写真立て",
             "reading": "しゃしんたて"
@@ -715,7 +715,7 @@
         "itemId": "landscape-painting-home",
         "words": {
           "zh-TW": "風景畫",
-          "en": "landscape-painting",
+          "en": "landscape painting",
           "ja": {
             "text": "風景画",
             "reading": "ふうけいが"
@@ -736,7 +736,7 @@
         "itemId": "throw-blanket",
         "words": {
           "zh-TW": "沙發毯",
-          "en": "throw-blanket",
+          "en": "throw blanket",
           "ja": {
             "text": "ひざ掛け",
             "reading": "ひざかけ"
@@ -757,7 +757,7 @@
         "itemId": "coffee-table",
         "words": {
           "zh-TW": "茶几",
-          "en": "coffee-table",
+          "en": "coffee table",
           "ja": {
             "text": "ローテーブル",
             "reading": "ローテーブル"
@@ -778,7 +778,7 @@
         "itemId": "vinyl-record-home",
         "words": {
           "zh-TW": "黑膠唱片",
-          "en": "vinyl-record",
+          "en": "vinyl record",
           "ja": {
             "text": "レコード",
             "reading": "レコード"
@@ -799,7 +799,7 @@
         "itemId": "floor-rug",
         "words": {
           "zh-TW": "地毯",
-          "en": "floor-rug",
+          "en": "floor rug",
           "ja": {
             "text": "ラグ",
             "reading": "ラグ"
@@ -820,7 +820,7 @@
         "itemId": "fireplace-screen",
         "words": {
           "zh-TW": "壁爐屏風",
-          "en": "fireplace-screen",
+          "en": "fireplace screen",
           "ja": {
             "text": "暖炉用スクリーン",
             "reading": "だんろようスクリーン"
@@ -841,7 +841,7 @@
         "itemId": "fire-poker-home",
         "words": {
           "zh-TW": "火鉗",
-          "en": "fire-poker",
+          "en": "fire poker",
           "ja": {
             "text": "火かき棒",
             "reading": "ひかきぼう"
@@ -862,7 +862,7 @@
         "itemId": "log-basket",
         "words": {
           "zh-TW": "木柴籃",
-          "en": "log-basket",
+          "en": "log basket",
           "ja": {
             "text": "薪かご",
             "reading": "まきかご"
@@ -883,7 +883,7 @@
         "itemId": "grandfather-clock",
         "words": {
           "zh-TW": "落地鐘",
-          "en": "grandfather-clock",
+          "en": "grandfather clock",
           "ja": {
             "text": "柱時計",
             "reading": "はしらどけい"
@@ -925,7 +925,7 @@
         "itemId": "music-stand",
         "words": {
           "zh-TW": "樂譜架",
-          "en": "music-stand",
+          "en": "music stand",
           "ja": {
             "text": "譜面台",
             "reading": "ふめんだい"
@@ -946,7 +946,7 @@
         "itemId": "guitar-stand",
         "words": {
           "zh-TW": "吉他架",
-          "en": "guitar-stand",
+          "en": "guitar stand",
           "ja": {
             "text": "ギタースタンド",
             "reading": "ギタースタンド"
@@ -988,7 +988,7 @@
         "itemId": "jigsaw-puzzle",
         "words": {
           "zh-TW": "拼圖",
-          "en": "jigsaw-puzzle",
+          "en": "jigsaw puzzle",
           "ja": {
             "text": "ジグソーパズル",
             "reading": "ジグソーパズル"
@@ -1009,7 +1009,7 @@
         "itemId": "tea-tray",
         "words": {
           "zh-TW": "茶盤",
-          "en": "tea-tray",
+          "en": "tea tray",
           "ja": {
             "text": "お盆",
             "reading": "おぼん"
@@ -1051,7 +1051,7 @@
         "itemId": "remote-control-home",
         "words": {
           "zh-TW": "遙控器",
-          "en": "remote-control",
+          "en": "remote control",
           "ja": {
             "text": "リモコン",
             "reading": "リモコン"

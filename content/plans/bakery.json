@@ -343,7 +343,7 @@
       "zh": "麵包屑",
       "en": "bread crumb",
       "ja": "パンくず",
-      "reading": "パンクズ",
+      "reading": "パンくず",
       "category": "食物",
       "size": "small",
       "zone": "entrance",
@@ -596,7 +596,7 @@
     {
       "id": "butter-knife",
       "zh": "奶油刀",
-      "en": "butter-knife",
+      "en": "butter knife",
       "ja": "バターナイフ",
       "reading": "バターナイフ",
       "category": "道具",
@@ -611,7 +611,7 @@
     {
       "id": "jam-jar",
       "zh": "果醬罐",
-      "en": "jam-jar",
+      "en": "jam jar",
       "ja": "ジャムの瓶",
       "reading": "ジャムのびん",
       "category": "道具",
@@ -626,7 +626,7 @@
     {
       "id": "honey-jar",
       "zh": "蜂蜜罐",
-      "en": "honey-jar",
+      "en": "honey jar",
       "ja": "はちみつの瓶",
       "reading": "はちみつのびん",
       "category": "道具",
@@ -641,7 +641,7 @@
     {
       "id": "butter-dish",
       "zh": "奶油盒",
-      "en": "butter-dish",
+      "en": "butter dish",
       "ja": "バターケース",
       "reading": "バターケース",
       "category": "道具",
@@ -656,7 +656,7 @@
     {
       "id": "cheese-wedge",
       "zh": "起司楔",
-      "en": "cheese-wedge",
+      "en": "cheese wedge",
       "ja": "チーズのくさび",
       "reading": "チーズのくさび",
       "category": "食物",
@@ -686,7 +686,7 @@
     {
       "id": "garlic-clove",
       "zh": "蒜瓣",
-      "en": "garlic-clove",
+      "en": "garlic clove",
       "ja": "にんにく",
       "reading": "にんにく",
       "category": "食物",
@@ -716,7 +716,7 @@
     {
       "id": "sesame-seeds",
       "zh": "芝麻",
-      "en": "sesame-seeds",
+      "en": "sesame seeds",
       "ja": "ごま",
       "reading": "ごま",
       "category": "食物",
@@ -731,7 +731,7 @@
     {
       "id": "bread-clip",
       "zh": "封口夾",
-      "en": "bread-clip",
+      "en": "bread clip",
       "ja": "バッグ・クロージャー",
       "reading": "バッグ・クロージャー",
       "category": "道具",
@@ -746,7 +746,7 @@
     {
       "id": "bread-crate",
       "zh": "麵包周轉箱",
-      "en": "bread-crate",
+      "en": "bread crate",
       "ja": "パン用コンテナ",
       "reading": "パンようコンテナ",
       "category": "道具",
@@ -1151,7 +1151,7 @@
     {
       "id": "doorstep-brush",
       "zh": "門口刷",
-      "en": "doorstep-brush",
+      "en": "doorstep brush",
       "ja": "玄関ブラシ",
       "reading": "げんかんブラシ",
       "category": "道具",
@@ -1166,7 +1166,7 @@
     {
       "id": "bread-tin",
       "zh": "吐司模",
-      "en": "bread-tin",
+      "en": "bread tin",
       "ja": "食パン型",
       "reading": "しょくパンがた",
       "category": "道具",
@@ -1196,7 +1196,7 @@
     {
       "id": "toothpick-holder",
       "zh": "牙籤筒",
-      "en": "toothpick-holder",
+      "en": "toothpick holder",
       "ja": "つまようじ入れ",
       "reading": "つまようじいれ",
       "category": "道具",
@@ -1211,7 +1211,7 @@
     {
       "id": "water-glass",
       "zh": "水杯",
-      "en": "water-glass",
+      "en": "water glass",
       "ja": "水用グラス",
       "reading": "みずようグラス",
       "category": "道具",

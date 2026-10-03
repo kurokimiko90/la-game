@@ -71,7 +71,7 @@
     {
       "id": "postage-stamp",
       "zh": "郵票",
-      "en": "postage-stamp",
+      "en": "postage stamp",
       "ja": "切手",
       "reading": "きって",
       "category": "道具",
@@ -101,7 +101,7 @@
     {
       "id": "flagpole-base",
       "zh": "旗桿底座",
-      "en": "flagpole-base",
+      "en": "flagpole base",
       "ja": "旗竿の台座",
       "reading": "はたざおのだいざ",
       "category": "設施",
@@ -176,7 +176,7 @@
     {
       "id": "wind-sock",
       "zh": "風向袋",
-      "en": "wind-sock",
+      "en": "wind sock",
       "ja": "吹き流し",
       "reading": "ふきながし",
       "category": "設施",
@@ -191,7 +191,7 @@
     {
       "id": "sandwich-board",
       "zh": "立牌",
-      "en": "sandwich-board",
+      "en": "sandwich board",
       "ja": "立て看板",
       "reading": "たてかんばん",
       "category": "設施",
@@ -206,7 +206,7 @@
     {
       "id": "awning-frame",
       "zh": "遮雨棚架",
-      "en": "awning-frame",
+      "en": "awning frame",
       "ja": "ひさし枠",
       "reading": "ひさしわく",
       "category": "設施",
@@ -221,7 +221,7 @@
     {
       "id": "post-hole",
       "zh": "郵筒投入口",
-      "en": "post-hole",
+      "en": "post hole",
       "ja": "郵便差入口",
       "reading": "ゆうびんさしいれぐち",
       "category": "設施",
@@ -236,7 +236,7 @@
     {
       "id": "rain-gauge",
       "zh": "雨量計",
-      "en": "rain-gauge",
+      "en": "rain gauge",
       "ja": "雨量計",
       "reading": "うりょうけい",
       "category": "道具",
@@ -311,7 +311,7 @@
     {
       "id": "mail-slot",
       "zh": "投信口",
-      "en": "mail-slot",
+      "en": "mail slot",
       "ja": "郵便受け口",
       "reading": "ゆうびんうけぐち",
       "category": "設施",
@@ -326,9 +326,9 @@
     {
       "id": "letter-opener",
       "zh": "拆信刀",
-      "en": "letter-opener",
+      "en": "letter opener",
       "ja": "レターオープナー",
-      "reading": "れたーおーぷんあー",
+      "reading": "レターオープナー",
       "category": "道具",
       "size": "small",
       "zone": "service-hall",
@@ -341,7 +341,7 @@
     {
       "id": "postal-tube",
       "zh": "郵寄筒",
-      "en": "postal-tube",
+      "en": "postal tube",
       "ja": "郵送筒",
       "reading": "ゆうそうとう",
       "category": "道具",
@@ -356,7 +356,7 @@
     {
       "id": "sorting-bin",
       "zh": "分信箱",
-      "en": "sorting-bin",
+      "en": "sorting bin",
       "ja": "仕分け箱",
       "reading": "しわけばこ",
       "category": "道具",
@@ -371,7 +371,7 @@
     {
       "id": "twine-spool",
       "zh": "麻繩線軸",
-      "en": "twine-spool",
+      "en": "twine spool",
       "ja": "ひも巻き",
       "reading": "ひもまき",
       "category": "道具",
@@ -386,9 +386,9 @@
     {
       "id": "label-roll",
       "zh": "標籤捲",
-      "en": "label-roll",
+      "en": "label roll",
       "ja": "ラベルロール",
-      "reading": "らべるろーる",
+      "reading": "ラベルロール",
       "category": "道具",
       "size": "small",
       "zone": "service-hall",
@@ -401,9 +401,9 @@
     {
       "id": "mail-tray",
       "zh": "郵件盤",
-      "en": "mail-tray",
+      "en": "mail tray",
       "ja": "郵便トレー",
-      "reading": "ゆうびんとれー",
+      "reading": "ゆうびんトレー",
       "category": "道具",
       "size": "medium",
       "zone": "service-hall",
@@ -416,9 +416,9 @@
     {
       "id": "rubber-glove",
       "zh": "橡膠手套",
-      "en": "rubber-glove",
+      "en": "rubber glove",
       "ja": "ゴム手袋",
-      "reading": "ごむてぶくろ",
+      "reading": "ゴムてぶくろ",
       "category": "道具",
       "size": "small",
       "zone": "service-hall",
@@ -431,9 +431,9 @@
     {
       "id": "packing-tape-roll",
       "zh": "封箱膠帶捲",
-      "en": "packing-tape-roll",
+      "en": "packing tape roll",
       "ja": "梱包テープ",
-      "reading": "こんぽうてーぷ",
+      "reading": "こんぽうテープ",
       "category": "道具",
       "size": "small",
       "zone": "service-hall",
@@ -446,9 +446,9 @@
     {
       "id": "tape-cutter",
       "zh": "膠帶切台",
-      "en": "tape-cutter",
+      "en": "tape cutter",
       "ja": "テープカッター",
-      "reading": "てーぷかったー",
+      "reading": "テープカッター",
       "category": "道具",
       "size": "small",
       "zone": "service-hall",
@@ -461,7 +461,7 @@
     {
       "id": "mailing-tube-cap",
       "zh": "郵寄筒蓋",
-      "en": "mailing-tube-cap",
+      "en": "mailing tube cap",
       "ja": "筒のふた",
       "reading": "つつのふた",
       "category": "道具",
@@ -478,7 +478,7 @@
       "zh": "旋轉閘門",
       "en": "turnstile",
       "ja": "回転ゲート",
-      "reading": "かいてんげーと",
+      "reading": "かいてんゲート",
       "category": "設施",
       "size": "medium",
       "zone": "service-hall",
@@ -491,7 +491,7 @@
     {
       "id": "service-hatch",
       "zh": "服務窗口",
-      "en": "service-hatch",
+      "en": "service hatch",
       "ja": "受付口",
       "reading": "うけつけぐち",
       "category": "設施",
@@ -506,7 +506,7 @@
     {
       "id": "counter-screen",
       "zh": "防護隔板",
-      "en": "counter-screen",
+      "en": "counter screen",
       "ja": "飛沫防止板",
       "reading": "ひまつぼうしばん",
       "category": "設施",
@@ -521,9 +521,9 @@
     {
       "id": "parcel-chute",
       "zh": "包裹滑槽",
-      "en": "parcel-chute",
+      "en": "parcel chute",
       "ja": "荷物シュート",
-      "reading": "にもつしゅーと",
+      "reading": "にもつシュート",
       "category": "設施",
       "size": "large",
       "zone": "service-hall",
@@ -536,7 +536,7 @@
     {
       "id": "floor-scale",
       "zh": "地磅",
-      "en": "floor-scale",
+      "en": "floor scale",
       "ja": "床ばかり",
       "reading": "ゆかばかり",
       "category": "道具",
@@ -551,7 +551,7 @@
     {
       "id": "mail-sack",
       "zh": "郵件袋",
-      "en": "mail-sack",
+      "en": "mail sack",
       "ja": "郵便袋",
       "reading": "ゆうびんぶくろ",
       "category": "道具",
@@ -596,7 +596,7 @@
     {
       "id": "mail-sorter",
       "zh": "郵件分類架",
-      "en": "mail-sorter",
+      "en": "mail sorter",
       "ja": "メールソーター",
       "reading": "メールソーター",
       "category": "道具",
@@ -611,7 +611,7 @@
     {
       "id": "parcel-locker",
       "zh": "包裹櫃",
-      "en": "parcel-locker",
+      "en": "parcel locker",
       "ja": "宅配ボックス",
       "reading": "たくはいボックス",
       "category": "設施",
@@ -626,7 +626,7 @@
     {
       "id": "packing-tape",
       "zh": "封箱膠帶",
-      "en": "packing-tape",
+      "en": "packing tape",
       "ja": "梱包テープ",
       "reading": "こんぽうテープ",
       "category": "道具",
@@ -641,7 +641,7 @@
     {
       "id": "bubble-wrap",
       "zh": "氣泡紙",
-      "en": "bubble-wrap",
+      "en": "bubble wrap",
       "ja": "エアキャップ",
       "reading": "エアキャップ",
       "category": "道具",
@@ -671,7 +671,7 @@
     {
       "id": "mail-tray-rack",
       "zh": "郵件托盤架",
-      "en": "tray-rack",
+      "en": "tray rack",
       "ja": "トレーラック",
       "reading": "トレーラック",
       "category": "道具",
@@ -686,7 +686,7 @@
     {
       "id": "mailing-tube",
       "zh": "郵寄紙筒",
-      "en": "mailing-tube",
+      "en": "mailing tube",
       "ja": "郵送筒",
       "reading": "ゆうそうとう",
       "category": "道具",
@@ -701,7 +701,7 @@
     {
       "id": "queue-ticket-dispenser",
       "zh": "取號機",
-      "en": "queue-ticket-dispenser",
+      "en": "queue ticket dispenser",
       "ja": "整理券発行機",
       "reading": "せいりけんはっこうき",
       "category": "設施",
@@ -716,7 +716,7 @@
     {
       "id": "folding-stool",
       "zh": "折疊凳",
-      "en": "folding-stool",
+      "en": "folding stool",
       "ja": "折りたたみ椅子",
       "reading": "おりたたみいす",
       "category": "設施",
@@ -731,7 +731,7 @@
     {
       "id": "mail-cart",
       "zh": "郵件推車",
-      "en": "mail-cart",
+      "en": "mail cart",
       "ja": "メールカート",
       "reading": "メールカート",
       "category": "交通工具",
@@ -791,7 +791,7 @@
     {
       "id": "mail-chute",
       "zh": "郵件滑槽",
-      "en": "mail-chute",
+      "en": "mail chute",
       "ja": "メールシュート",
       "reading": "メールシュート",
       "category": "設施",
@@ -806,7 +806,7 @@
     {
       "id": "sticker-sheet",
       "zh": "貼紙簿",
-      "en": "sticker-sheet",
+      "en": "sticker sheet",
       "ja": "シールシート",
       "reading": "シールシート",
       "category": "道具",
@@ -821,7 +821,7 @@
     {
       "id": "box-cutter",
       "zh": "美工刀",
-      "en": "box-cutter",
+      "en": "box cutter",
       "ja": "カッターナイフ",
       "reading": "カッターナイフ",
       "category": "道具",
@@ -851,7 +851,7 @@
     {
       "id": "pallet-jack",
       "zh": "油壓板車",
-      "en": "pallet-jack",
+      "en": "pallet jack",
       "ja": "ハンドパレット",
       "reading": "ハンドパレット",
       "category": "道具",
@@ -866,7 +866,7 @@
     {
       "id": "rolling-cart",
       "zh": "推車",
-      "en": "rolling-cart",
+      "en": "rolling cart",
       "ja": "ワゴン",
       "reading": "ワゴン",
       "category": "道具",
@@ -881,7 +881,7 @@
     {
       "id": "plastic-tote",
       "zh": "塑膠周轉箱",
-      "en": "plastic-tote",
+      "en": "plastic tote",
       "ja": "コンテナボックス",
       "reading": "コンテナボックス",
       "category": "道具",
@@ -896,7 +896,7 @@
     {
       "id": "mail-tub",
       "zh": "郵件桶",
-      "en": "mail-tub",
+      "en": "mail tub",
       "ja": "メールバケット",
       "reading": "メールバケット",
       "category": "道具",
@@ -926,7 +926,7 @@
     {
       "id": "work-boots",
       "zh": "工作靴",
-      "en": "work-boots",
+      "en": "work boots",
       "ja": "ワークブーツ",
       "reading": "ワークブーツ",
       "category": "道具",
@@ -941,7 +941,7 @@
     {
       "id": "safety-goggles",
       "zh": "護目鏡",
-      "en": "safety-goggles",
+      "en": "safety goggles",
       "ja": "保護メガネ",
       "reading": "ほごメガネ",
       "category": "道具",
@@ -956,7 +956,7 @@
     {
       "id": "work-gloves",
       "zh": "工作手套",
-      "en": "work-gloves",
+      "en": "work gloves",
       "ja": "作業用手袋",
       "reading": "さぎょうようてぶくろ",
       "category": "道具",
@@ -986,7 +986,7 @@
     {
       "id": "tape-roll",
       "zh": "膠帶捲",
-      "en": "tape-roll",
+      "en": "tape roll",
       "ja": "テープロール",
       "reading": "テープロール",
       "category": "道具",
@@ -1031,7 +1031,7 @@
     {
       "id": "sorting-chute",
       "zh": "分揀滑槽",
-      "en": "sorting-chute",
+      "en": "sorting chute",
       "ja": "仕分けシュート",
       "reading": "しわけシュート",
       "category": "設施",
@@ -1046,7 +1046,7 @@
     {
       "id": "emergency-light",
       "zh": "緊急照明燈",
-      "en": "emergency-light",
+      "en": "emergency light",
       "ja": "非常灯",
       "reading": "ひじょうとう",
       "category": "設施",
@@ -1061,7 +1061,7 @@
     {
       "id": "work-apron",
       "zh": "工作圍裙",
-      "en": "work-apron",
+      "en": "work apron",
       "ja": "作業用エプロン",
       "reading": "さぎょうようエプロン",
       "category": "道具",
@@ -1091,7 +1091,7 @@
     {
       "id": "post-office-door",
       "zh": "郵局大門",
-      "en": "post-office-door",
+      "en": "post office door",
       "ja": "郵便局のドア",
       "reading": "ゆうびんきょくのドア",
       "category": "設施",
@@ -1106,7 +1106,7 @@
     {
       "id": "postage-meter",
       "zh": "郵資機",
-      "en": "postage-meter",
+      "en": "postage meter",
       "ja": "郵便料金計器",
       "reading": "ゆうびんりょうきんけいき",
       "category": "道具",
@@ -1121,7 +1121,7 @@
     {
       "id": "parcel-scale",
       "zh": "包裹秤",
-      "en": "parcel-scale",
+      "en": "parcel scale",
       "ja": "荷物用はかり",
       "reading": "にもつようはかり",
       "category": "道具",
@@ -1136,7 +1136,7 @@
     {
       "id": "mailbox-flag",
       "zh": "郵筒旗標",
-      "en": "mailbox-flag",
+      "en": "mailbox flag",
       "ja": "郵便ポストの旗",
       "reading": "ゆうびんポストのはた",
       "category": "道具",
@@ -1151,7 +1151,7 @@
     {
       "id": "paper-label",
       "zh": "包裹標籤",
-      "en": "paper-label",
+      "en": "paper label",
       "ja": "荷札",
       "reading": "にふだ",
       "category": "道具",
@@ -1166,7 +1166,7 @@
     {
       "id": "letter-box",
       "zh": "信件回收箱",
-      "en": "letter-box",
+      "en": "letter box",
       "ja": "郵便ポスト",
       "reading": "ゆうびんポスト",
       "category": "設施",
@@ -1181,7 +1181,7 @@
     {
       "id": "postage-label",
       "zh": "郵資標籤",
-      "en": "postage-label",
+      "en": "postage label",
       "ja": "郵便ラベル",
       "reading": "ゆうびんラベル",
       "category": "道具",
@@ -1196,7 +1196,7 @@
     {
       "id": "postal-scale",
       "zh": "郵件秤",
-      "en": "postal-scale",
+      "en": "postal scale",
       "ja": "郵便はかり",
       "reading": "ゆうびんはかり",
       "category": "道具",
@@ -1211,7 +1211,7 @@
     {
       "id": "parcel-box",
       "zh": "包裹箱",
-      "en": "parcel-box",
+      "en": "parcel box",
       "ja": "小包箱",
       "reading": "こづつみばこ",
       "category": "道具",
@@ -1226,7 +1226,7 @@
     {
       "id": "envelope-opener",
       "zh": "信封開口器",
-      "en": "envelope-opener",
+      "en": "envelope opener",
       "ja": "レターオープナー",
       "reading": "レターオープナー",
       "category": "道具",
@@ -1241,7 +1241,7 @@
     {
       "id": "parcel-hook",
       "zh": "包裹鉤",
-      "en": "parcel-hook",
+      "en": "parcel hook",
       "ja": "荷物フック",
       "reading": "にもつフック",
       "category": "道具",
@@ -1256,7 +1256,7 @@
     {
       "id": "string-cutter",
       "zh": "割繩器",
-      "en": "string-cutter",
+      "en": "string cutter",
       "ja": "ひも切り",
       "reading": "ひもきり",
       "category": "道具",
@@ -1271,7 +1271,7 @@
     {
       "id": "scale-pan",
       "zh": "秤盤",
-      "en": "scale-pan",
+      "en": "scale pan",
       "ja": "はかり皿",
       "reading": "はかりざら",
       "category": "道具",
@@ -1286,7 +1286,7 @@
     {
       "id": "wax-seal",
       "zh": "封蠟",
-      "en": "wax-seal",
+      "en": "wax seal",
       "ja": "封ろう",
       "reading": "ふうろう",
       "category": "道具",
@@ -1301,7 +1301,7 @@
     {
       "id": "scotch-tape",
       "zh": "透明膠帶",
-      "en": "scotch-tape",
+      "en": "scotch tape",
       "ja": "セロハンテープ",
       "reading": "セロハンテープ",
       "category": "道具",
@@ -1316,7 +1316,7 @@
     {
       "id": "twist-tie",
       "zh": "束線帶",
-      "en": "twist-tie",
+      "en": "twist tie",
       "ja": "ビニタイ",
       "reading": "ビニタイ",
       "category": "道具",
@@ -1331,7 +1331,7 @@
     {
       "id": "letter-scale",
       "zh": "信件秤",
-      "en": "letter-scale",
+      "en": "letter scale",
       "ja": "レタースケール",
       "reading": "レタースケール",
       "category": "道具",

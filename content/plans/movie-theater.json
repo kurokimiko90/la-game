@@ -165,7 +165,7 @@
       "zh": "汽車電池",
       "en": "car battery",
       "ja": "車のバッテリー",
-      "reading": "くるまのばってりー",
+      "reading": "くるまのバッテリー",
       "category": "道具",
       "size": "small",
       "zone": "entrance",
@@ -180,7 +180,7 @@
       "zh": "擋風玻璃",
       "en": "windshield",
       "ja": "フロントガラス",
-      "reading": "ふろんとがらす",
+      "reading": "フロントガラス",
       "category": "道具",
       "size": "medium",
       "zone": "entrance",
@@ -343,7 +343,7 @@
     {
       "id": "ticket-roll",
       "zh": "票卷",
-      "en": "ticket-roll",
+      "en": "ticket roll",
       "ja": "チケットロール",
       "reading": "チケットロール",
       "category": "道具",
@@ -358,7 +358,7 @@
     {
       "id": "soda-can",
       "zh": "汽水罐",
-      "en": "soda-can",
+      "en": "soda can",
       "ja": "炭酸飲料の缶",
       "reading": "たんさんいんりょうのかん",
       "category": "食物",
@@ -373,7 +373,7 @@
     {
       "id": "soda-cup",
       "zh": "汽水杯",
-      "en": "soda-cup",
+      "en": "soda cup",
       "ja": "ドリンクカップ",
       "reading": "ドリンクカップ",
       "category": "食物",
@@ -388,7 +388,7 @@
     {
       "id": "candy-wrapper",
       "zh": "糖果包裝紙",
-      "en": "candy-wrapper",
+      "en": "candy wrapper",
       "ja": "キャンディの包み紙",
       "reading": "キャンディのつつみがみ",
       "category": "道具",
@@ -418,7 +418,7 @@
     {
       "id": "red-carpet",
       "zh": "紅地毯",
-      "en": "red-carpet",
+      "en": "red carpet",
       "ja": "レッドカーペット",
       "reading": "レッドカーペット",
       "category": "道具",
@@ -433,7 +433,7 @@
     {
       "id": "velvet-rope",
       "zh": "紅絨繩",
-      "en": "velvet-rope",
+      "en": "velvet rope",
       "ja": "ベルベットロープ",
       "reading": "ベルベットロープ",
       "category": "道具",
@@ -448,7 +448,7 @@
     {
       "id": "film-camera",
       "zh": "攝影機",
-      "en": "film-camera",
+      "en": "film camera",
       "ja": "フィルムカメラ",
       "reading": "フィルムカメラ",
       "category": "道具",
@@ -463,7 +463,7 @@
     {
       "id": "director-chair",
       "zh": "導演椅",
-      "en": "director-chair",
+      "en": "director chair",
       "ja": "ディレクターチェア",
       "reading": "ディレクターチェア",
       "category": "設施",
@@ -478,7 +478,7 @@
     {
       "id": "film-canister",
       "zh": "膠卷罐",
-      "en": "film-canister",
+      "en": "film canister",
       "ja": "フィルム缶",
       "reading": "フィルムかん",
       "category": "道具",
@@ -493,7 +493,7 @@
     {
       "id": "ticket-stub",
       "zh": "票根",
-      "en": "ticket-stub",
+      "en": "ticket stub",
       "ja": "半券",
       "reading": "はんけん",
       "category": "道具",
@@ -508,7 +508,7 @@
     {
       "id": "soda-bottle",
       "zh": "汽水瓶",
-      "en": "soda-bottle",
+      "en": "soda bottle",
       "ja": "ソーダボトル",
       "reading": "ソーダボトル",
       "category": "食物",
@@ -523,7 +523,7 @@
     {
       "id": "ice-cream-cone",
       "zh": "冰淇淋甜筒",
-      "en": "ice-cream-cone",
+      "en": "ice cream cone",
       "ja": "アイスクリームコーン",
       "reading": "アイスクリームコーン",
       "category": "食物",
@@ -538,7 +538,7 @@
     {
       "id": "candy-box",
       "zh": "糖果盒",
-      "en": "candy-box",
+      "en": "candy box",
       "ja": "キャンディーボックス",
       "reading": "キャンディーボックス",
       "category": "食物",
@@ -553,7 +553,7 @@
     {
       "id": "soda-fountain",
       "zh": "汽水龍頭",
-      "en": "soda-fountain",
+      "en": "soda fountain",
       "ja": "ソーダディスペンサー",
       "reading": "ソーダディスペンサー",
       "category": "設施",
@@ -568,7 +568,7 @@
     {
       "id": "film-poster-frame",
       "zh": "電影海報框",
-      "en": "film-poster-frame",
+      "en": "film poster frame",
       "ja": "ポスター額縁",
       "reading": "ポスターがくぶち",
       "category": "道具",
@@ -583,7 +583,7 @@
     {
       "id": "folding-seat",
       "zh": "折疊座椅",
-      "en": "folding-seat",
+      "en": "folding seat",
       "ja": "折りたたみ座席",
       "reading": "おりたたみざせき",
       "category": "設施",
@@ -598,7 +598,7 @@
     {
       "id": "seat-number-plate",
       "zh": "座位牌",
-      "en": "seat-plate",
+      "en": "seat plate",
       "ja": "座席プレート",
       "reading": "ざせきプレート",
       "category": "道具",
@@ -613,7 +613,7 @@
     {
       "id": "cup-holder",
       "zh": "杯架",
-      "en": "cup-holder",
+      "en": "cup holder",
       "ja": "カップホルダー",
       "reading": "カップホルダー",
       "category": "設施",
@@ -628,7 +628,7 @@
     {
       "id": "seat-cushion",
       "zh": "座墊",
-      "en": "seat-cushion",
+      "en": "seat cushion",
       "ja": "座布団",
       "reading": "ざぶとん",
       "category": "道具",
@@ -643,7 +643,7 @@
     {
       "id": "aisle-light",
       "zh": "階梯燈",
-      "en": "aisle-light",
+      "en": "aisle light",
       "ja": "足元灯",
       "reading": "あしもととう",
       "category": "設施",
@@ -658,7 +658,7 @@
     {
       "id": "exit-door",
       "zh": "出口門",
-      "en": "exit-door",
+      "en": "exit door",
       "ja": "出口ドア",
       "reading": "でぐちドア",
       "category": "設施",
@@ -673,7 +673,7 @@
     {
       "id": "floor-speaker",
       "zh": "落地喇叭",
-      "en": "floor-speaker",
+      "en": "floor speaker",
       "ja": "フロアスピーカー",
       "reading": "フロアスピーカー",
       "category": "設施",
@@ -688,7 +688,7 @@
     {
       "id": "laser-pointer",
       "zh": "雷射筆",
-      "en": "laser-pointer",
+      "en": "laser pointer",
       "ja": "レーザーポインター",
       "reading": "レーザーポインター",
       "category": "道具",
@@ -703,7 +703,7 @@
     {
       "id": "coiled-cable",
       "zh": "盤繞電線",
-      "en": "coiled-cable",
+      "en": "coiled cable",
       "ja": "巻き取りケーブル",
       "reading": "まきとりケーブル",
       "category": "道具",
@@ -718,7 +718,7 @@
     {
       "id": "handheld-fan",
       "zh": "手持電風扇",
-      "en": "handheld-fan",
+      "en": "handheld fan",
       "ja": "ハンディファン",
       "reading": "ハンディファン",
       "category": "道具",
@@ -733,7 +733,7 @@
     {
       "id": "electric-cable-reel",
       "zh": "電纜捲盤",
-      "en": "electric-cable-reel",
+      "en": "electric cable reel",
       "ja": "コードリール",
       "reading": "コードリール",
       "category": "道具",
@@ -748,7 +748,7 @@
     {
       "id": "step-stool",
       "zh": "踏凳",
-      "en": "step-stool",
+      "en": "step stool",
       "ja": "踏み台",
       "reading": "ふみだい",
       "category": "設施",
@@ -763,7 +763,7 @@
     {
       "id": "soft-toy",
       "zh": "毛絨玩具",
-      "en": "soft-toy",
+      "en": "soft toy",
       "ja": "ぬいぐるみ",
       "reading": "ぬいぐるみ",
       "category": "道具",
@@ -883,7 +883,7 @@
     {
       "id": "curtain-tieback",
       "zh": "窗簾束帶",
-      "en": "curtain-tieback",
+      "en": "curtain tieback",
       "ja": "カーテンタッセル",
       "reading": "カーテンタッセル",
       "category": "道具",
@@ -898,7 +898,7 @@
     {
       "id": "glow-stick",
       "zh": "螢光棒",
-      "en": "glow-stick",
+      "en": "glow stick",
       "ja": "ケミカルライト",
       "reading": "ケミカルライト",
       "category": "道具",
@@ -1303,7 +1303,7 @@
     {
       "id": "bollard-light",
       "zh": "矮柱燈",
-      "en": "bollard-light",
+      "en": "bollard light",
       "ja": "ボラードライト",
       "reading": "ボラードライト",
       "category": "設施",
@@ -1318,7 +1318,7 @@
     {
       "id": "wheelie-bin",
       "zh": "有輪垃圾桶",
-      "en": "wheelie-bin",
+      "en": "wheelie bin",
       "ja": "キャスター付きゴミ箱",
       "reading": "キャスターつきゴミばこ",
       "category": "設施",
@@ -1348,7 +1348,7 @@
     {
       "id": "citrus-squeezer",
       "zh": "檸檬榨汁器",
-      "en": "citrus-squeezer",
+      "en": "citrus squeezer",
       "ja": "レモン絞り器",
       "reading": "レモンしぼりき",
       "category": "道具",
@@ -1363,7 +1363,7 @@
     {
       "id": "ice-tongs",
       "zh": "冰夾",
-      "en": "ice-tongs",
+      "en": "ice tongs",
       "ja": "アイストング",
       "reading": "アイストング",
       "category": "道具",
@@ -1378,7 +1378,7 @@
     {
       "id": "retractable-screen",
       "zh": "捲軸式銀幕",
-      "en": "retractable-screen",
+      "en": "retractable screen",
       "ja": "巻き上げ式スクリーン",
       "reading": "まきあげしきスクリーン",
       "category": "設施",
@@ -1393,7 +1393,7 @@
     {
       "id": "sundae-dish",
       "zh": "聖代盤",
-      "en": "sundae-dish",
+      "en": "sundae dish",
       "ja": "パフェ皿",
       "reading": "パフェざら",
       "category": "道具",

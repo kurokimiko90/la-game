@@ -41,7 +41,7 @@
     {
       "id": "fire-engine",
       "zh": "消防車",
-      "en": "fire-engine",
+      "en": "fire engine",
       "ja": "消防車",
       "reading": "しょうぼうしゃ",
       "category": "交通工具",
@@ -56,7 +56,7 @@
     {
       "id": "fire-hose",
       "zh": "消防水帶",
-      "en": "fire-hose",
+      "en": "fire hose",
       "ja": "消防ホース",
       "reading": "しょうぼうホース",
       "category": "道具",
@@ -71,7 +71,7 @@
     {
       "id": "hose-nozzle",
       "zh": "水帶噴嘴",
-      "en": "hose-nozzle",
+      "en": "hose nozzle",
       "ja": "ホースノズル",
       "reading": "ホースノズル",
       "category": "道具",
@@ -86,7 +86,7 @@
     {
       "id": "fire-helmet",
       "zh": "消防頭盔",
-      "en": "fire-helmet",
+      "en": "fire helmet",
       "ja": "消防ヘルメット",
       "reading": "しょうぼうヘルメット",
       "category": "道具",
@@ -116,7 +116,7 @@
     {
       "id": "hose-reel",
       "zh": "水帶捲盤",
-      "en": "hose-reel",
+      "en": "hose reel",
       "ja": "ホースリール",
       "reading": "ホースリール",
       "category": "道具",
@@ -131,7 +131,7 @@
     {
       "id": "fire-bucket",
       "zh": "消防水桶",
-      "en": "fire-bucket",
+      "en": "fire bucket",
       "ja": "消防バケツ",
       "reading": "しょうぼうバケツ",
       "category": "道具",
@@ -146,7 +146,7 @@
     {
       "id": "fire-extinguisher-hose",
       "zh": "滅火器軟管",
-      "en": "extinguisher-hose",
+      "en": "extinguisher hose",
       "ja": "消火器ホース",
       "reading": "しょうかきホース",
       "category": "道具",
@@ -161,7 +161,7 @@
     {
       "id": "fire-alarm-bell",
       "zh": "消防警鈴",
-      "en": "fire-alarm-bell",
+      "en": "fire alarm bell",
       "ja": "火災警報ベル",
       "reading": "かさいけいほうベル",
       "category": "設施",
@@ -176,7 +176,7 @@
     {
       "id": "drain-grate",
       "zh": "排水溝蓋",
-      "en": "drain-grate",
+      "en": "drain grate",
       "ja": "排水溝のふた",
       "reading": "はいすいこうのふた",
       "category": "設施",
@@ -221,7 +221,7 @@
     {
       "id": "hose-coupling",
       "zh": "水帶接頭",
-      "en": "hose-coupling",
+      "en": "hose coupling",
       "ja": "ホースカップリング",
       "reading": "ホースカップリング",
       "category": "道具",
@@ -236,7 +236,7 @@
     {
       "id": "fire-station-shutter",
       "zh": "車庫鐵捲門",
-      "en": "fire-station-shutter",
+      "en": "fire station shutter",
       "ja": "車庫シャッター",
       "reading": "しゃこシャッター",
       "category": "設施",
@@ -251,7 +251,7 @@
     {
       "id": "fire-station-window",
       "zh": "車庫窗戶",
-      "en": "fire-station-window",
+      "en": "fire station window",
       "ja": "車庫の窓",
       "reading": "しゃこのまど",
       "category": "設施",
@@ -266,7 +266,7 @@
     {
       "id": "fire-station-flag",
       "zh": "消防局旗幟",
-      "en": "fire-station-flag",
+      "en": "fire station flag",
       "ja": "消防署の旗",
       "reading": "しょうぼうしょのはた",
       "category": "道具",
@@ -296,7 +296,7 @@
     {
       "id": "fire-station-door",
       "zh": "側門",
-      "en": "side-door",
+      "en": "side door",
       "ja": "勝手口",
       "reading": "かってぐち",
       "category": "設施",
@@ -371,7 +371,7 @@
     {
       "id": "fire-pole",
       "zh": "消防滑竿",
-      "en": "fire-pole",
+      "en": "fire pole",
       "ja": "消防士用すべり棒",
       "reading": "しょうぼうしようすべりぼう",
       "category": "設施",
@@ -386,7 +386,7 @@
     {
       "id": "fire-boot",
       "zh": "消防靴",
-      "en": "fire-boot",
+      "en": "fire boot",
       "ja": "消防ブーツ",
       "reading": "しょうぼうブーツ",
       "category": "道具",
@@ -401,7 +401,7 @@
     {
       "id": "fire-blanket",
       "zh": "防火毯",
-      "en": "fire-blanket",
+      "en": "fire blanket",
       "ja": "防火ブランケット",
       "reading": "ぼうかブランケット",
       "category": "道具",
@@ -416,7 +416,7 @@
     {
       "id": "fire-engine-seat",
       "zh": "消防車座椅",
-      "en": "fire-engine-seat",
+      "en": "fire engine seat",
       "ja": "消防車の座席",
       "reading": "しょうぼうしゃのざせき",
       "category": "道具",
@@ -431,7 +431,7 @@
     {
       "id": "steering-wheel",
       "zh": "方向盤",
-      "en": "steering-wheel",
+      "en": "steering wheel",
       "ja": "ハンドル",
       "reading": "ハンドル",
       "category": "道具",
@@ -461,7 +461,7 @@
     {
       "id": "rearview-mirror",
       "zh": "後視鏡",
-      "en": "rearview-mirror",
+      "en": "rearview mirror",
       "ja": "バックミラー",
       "reading": "バックミラー",
       "category": "道具",
@@ -476,7 +476,7 @@
     {
       "id": "windshield-wiper",
       "zh": "雨刷",
-      "en": "windshield-wiper",
+      "en": "windshield wiper",
       "ja": "ワイパー",
       "reading": "ワイパー",
       "category": "道具",
@@ -491,7 +491,7 @@
     {
       "id": "fire-engine-door",
       "zh": "消防車車門",
-      "en": "fire-engine-door",
+      "en": "fire engine door",
       "ja": "消防車のドア",
       "reading": "しょうぼうしゃのドア",
       "category": "交通工具",
@@ -506,7 +506,7 @@
     {
       "id": "side-mirror",
       "zh": "車側後視鏡",
-      "en": "side-mirror",
+      "en": "side mirror",
       "ja": "サイドミラー",
       "reading": "サイドミラー",
       "category": "道具",
@@ -536,7 +536,7 @@
     {
       "id": "spare-wheel",
       "zh": "備胎",
-      "en": "spare-wheel",
+      "en": "spare wheel",
       "ja": "スペアタイヤ",
       "reading": "スペアタイヤ",
       "category": "交通工具",
@@ -551,7 +551,7 @@
     {
       "id": "wheel-wrench",
       "zh": "輪胎扳手",
-      "en": "wheel-wrench",
+      "en": "wheel wrench",
       "ja": "ホイールレンチ",
       "reading": "ホイールレンチ",
       "category": "道具",
@@ -581,7 +581,7 @@
     {
       "id": "bolt-cutter",
       "zh": "斷線鉗",
-      "en": "bolt-cutter",
+      "en": "bolt cutter",
       "ja": "ボルトカッター",
       "reading": "ボルトカッター",
       "category": "道具",
@@ -626,7 +626,7 @@
     {
       "id": "ladder-hook",
       "zh": "梯鉤",
-      "en": "ladder-hook",
+      "en": "ladder hook",
       "ja": "梯子フック",
       "reading": "はしごフック",
       "category": "道具",
@@ -641,7 +641,7 @@
     {
       "id": "hose-bridge",
       "zh": "水帶跨橋",
-      "en": "hose-bridge",
+      "en": "hose bridge",
       "ja": "ホースブリッジ",
       "reading": "ホースブリッジ",
       "category": "道具",
@@ -656,7 +656,7 @@
     {
       "id": "fire-nozzle",
       "zh": "消防水帶噴嘴",
-      "en": "fire-nozzle",
+      "en": "fire nozzle",
       "ja": "消防ノズル",
       "reading": "しょうぼうノズル",
       "category": "道具",
@@ -671,7 +671,7 @@
     {
       "id": "hose-cabinet",
       "zh": "水帶櫃",
-      "en": "hose-cabinet",
+      "en": "hose cabinet",
       "ja": "ホース収納箱",
       "reading": "ホースしゅうのうばこ",
       "category": "道具",
@@ -686,7 +686,7 @@
     {
       "id": "fire-gloves",
       "zh": "消防手套",
-      "en": "fire-gloves",
+      "en": "fire gloves",
       "ja": "消防用手袋",
       "reading": "しょうぼうようてぶくろ",
       "category": "道具",
@@ -701,7 +701,7 @@
     {
       "id": "fire-goggles",
       "zh": "消防護目鏡",
-      "en": "fire-goggles",
+      "en": "fire goggles",
       "ja": "消防ゴーグル",
       "reading": "しょうぼうゴーグル",
       "category": "道具",
@@ -716,7 +716,7 @@
     {
       "id": "fire-helmet-visor",
       "zh": "消防頭盔面罩",
-      "en": "fire-helmet-visor",
+      "en": "fire helmet visor",
       "ja": "消防ヘルメットのシールド",
       "reading": "しょうぼうヘルメットのシールド",
       "category": "道具",
@@ -731,7 +731,7 @@
     {
       "id": "breathing-apparatus",
       "zh": "空氣呼吸器",
-      "en": "breathing-apparatus",
+      "en": "breathing apparatus",
       "ja": "空気呼吸器",
       "reading": "くうきこきゅうき",
       "category": "道具",
@@ -746,7 +746,7 @@
     {
       "id": "fire-mask",
       "zh": "消防面罩",
-      "en": "fire-mask",
+      "en": "fire mask",
       "ja": "防火マスク",
       "reading": "ぼうかマスク",
       "category": "道具",
@@ -761,7 +761,7 @@
     {
       "id": "fire-radio",
       "zh": "消防無線電",
-      "en": "fire-radio",
+      "en": "fire radio",
       "ja": "消防無線機",
       "reading": "しょうぼうむせんき",
       "category": "道具",
@@ -776,7 +776,7 @@
     {
       "id": "radio-microphone",
       "zh": "無線電麥克風",
-      "en": "radio-microphone",
+      "en": "radio microphone",
       "ja": "無線機マイク",
       "reading": "むせんきマイク",
       "category": "道具",
@@ -791,7 +791,7 @@
     {
       "id": "fire-helmet-lamp",
       "zh": "消防頭盔燈",
-      "en": "fire-helmet-lamp",
+      "en": "fire helmet lamp",
       "ja": "ヘルメットライト",
       "reading": "ヘルメットライト",
       "category": "道具",
@@ -806,7 +806,7 @@
     {
       "id": "fire-helmet-shield",
       "zh": "消防頭盔護目鏡",
-      "en": "fire-helmet-shield",
+      "en": "fire helmet shield",
       "ja": "ヘルメットシールド",
       "reading": "ヘルメットシールド",
       "category": "道具",
@@ -821,7 +821,7 @@
     {
       "id": "fire-hood",
       "zh": "消防頭套",
-      "en": "fire-hood",
+      "en": "fire hood",
       "ja": "防火フード",
       "reading": "ぼうかフード",
       "category": "道具",
@@ -836,7 +836,7 @@
     {
       "id": "fire-jacket",
       "zh": "消防外套",
-      "en": "fire-jacket",
+      "en": "fire jacket",
       "ja": "消防服",
       "reading": "しょうぼうふく",
       "category": "道具",
@@ -851,7 +851,7 @@
     {
       "id": "fire-trousers",
       "zh": "消防褲",
-      "en": "fire-trousers",
+      "en": "fire trousers",
       "ja": "消防ズボン",
       "reading": "しょうぼうズボン",
       "category": "道具",
@@ -866,7 +866,7 @@
     {
       "id": "fire-belt",
       "zh": "消防腰帶",
-      "en": "fire-belt",
+      "en": "fire belt",
       "ja": "消防用ベルト",
       "reading": "しょうぼうようベルト",
       "category": "道具",
@@ -881,7 +881,7 @@
     {
       "id": "fire-harness",
       "zh": "消防安全吊帶",
-      "en": "fire-harness",
+      "en": "fire harness",
       "ja": "消防用ハーネス",
       "reading": "しょうぼうようハーネス",
       "category": "道具",
@@ -896,7 +896,7 @@
     {
       "id": "fire-rope",
       "zh": "消防救援繩",
-      "en": "fire-rope",
+      "en": "fire rope",
       "ja": "救助ロープ",
       "reading": "きゅうじょロープ",
       "category": "道具",
@@ -926,7 +926,7 @@
     {
       "id": "fire-pickaxe",
       "zh": "消防破壞斧",
-      "en": "fire-pickaxe",
+      "en": "fire pickaxe",
       "ja": "消防用ピッケル",
       "reading": "しょうぼうようピッケル",
       "category": "道具",
@@ -941,7 +941,7 @@
     {
       "id": "fire-cutter",
       "zh": "消防剪切器",
-      "en": "fire-cutter",
+      "en": "fire cutter",
       "ja": "油圧カッター",
       "reading": "ゆあつカッター",
       "category": "道具",
@@ -956,7 +956,7 @@
     {
       "id": "fire-spreader",
       "zh": "消防撐開器",
-      "en": "fire-spreader",
+      "en": "fire spreader",
       "ja": "油圧スプレッダー",
       "reading": "ゆあつスプレッダー",
       "category": "道具",
@@ -971,7 +971,7 @@
     {
       "id": "fire-ram",
       "zh": "消防破門器",
-      "en": "fire-ram",
+      "en": "fire ram",
       "ja": "破壊器具",
       "reading": "はかいきぐ",
       "category": "道具",
@@ -986,7 +986,7 @@
     {
       "id": "fire-hook",
       "zh": "消防鉤",
-      "en": "fire-hook",
+      "en": "fire hook",
       "ja": "消防用フック",
       "reading": "しょうぼうようフック",
       "category": "道具",
@@ -1001,7 +1001,7 @@
     {
       "id": "fire-shovel",
       "zh": "消防鏟",
-      "en": "fire-shovel",
+      "en": "fire shovel",
       "ja": "消防用シャベル",
       "reading": "しょうぼうようシャベル",
       "category": "道具",
@@ -1016,7 +1016,7 @@
     {
       "id": "fire-rake",
       "zh": "消防耙",
-      "en": "fire-rake",
+      "en": "fire rake",
       "ja": "消防用レーキ",
       "reading": "しょうぼうようレーキ",
       "category": "道具",
@@ -1031,7 +1031,7 @@
     {
       "id": "fire-saw",
       "zh": "消防鏈鋸",
-      "en": "fire-saw",
+      "en": "fire saw",
       "ja": "チェーンソー",
       "reading": "チェーンソー",
       "category": "道具",
@@ -1046,7 +1046,7 @@
     {
       "id": "rescue-basket",
       "zh": "救援籃",
-      "en": "rescue-basket",
+      "en": "rescue basket",
       "ja": "救助バスケット",
       "reading": "きゅうじょバスケット",
       "category": "道具",
@@ -1061,7 +1061,7 @@
     {
       "id": "oxygen-mask",
       "zh": "氧氣面罩",
-      "en": "oxygen-mask",
+      "en": "oxygen mask",
       "ja": "酸素マスク",
       "reading": "さんそマスク",
       "category": "道具",
@@ -1181,7 +1181,7 @@
     {
       "id": "fire-blanket-case",
       "zh": "消防毯箱",
-      "en": "fire-blanket-case",
+      "en": "fire blanket case",
       "ja": "防火毛布ケース",
       "reading": "ぼうかもうふケース",
       "category": "道具",
@@ -1196,7 +1196,7 @@
     {
       "id": "fire-alarm-panel",
       "zh": "火警控制盤",
-      "en": "fire-alarm-panel",
+      "en": "fire alarm panel",
       "ja": "火災報知盤",
       "reading": "かさいほうちばん",
       "category": "道具",
@@ -1241,7 +1241,7 @@
     {
       "id": "hose-reel-cart",
       "zh": "水帶推車",
-      "en": "hose-reel-cart",
+      "en": "hose reel cart",
       "ja": "ホースリールカート",
       "reading": "ホースリールカート",
       "category": "道具",

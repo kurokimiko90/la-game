@@ -22,7 +22,7 @@
         "itemId": "facade-bracket",
         "words": {
           "zh-TW": "遮棚支架",
-          "en": "canopy-bracket",
+          "en": "canopy bracket",
           "ja": {
             "text": "ひさしの金具",
             "reading": "ひさしのかなぐ"
@@ -43,7 +43,7 @@
         "itemId": "clothing-rack",
         "words": {
           "zh-TW": "衣架桿",
-          "en": "clothing-rack",
+          "en": "clothing rack",
           "ja": {
             "text": "ハンガーラック",
             "reading": "ハンガーラック"
@@ -148,7 +148,7 @@
         "itemId": "shoe-brush",
         "words": {
           "zh-TW": "鞋刷",
-          "en": "shoe-brush",
+          "en": "shoe brush",
           "ja": {
             "text": "靴ブラシ",
             "reading": "くつブラシ"
@@ -169,7 +169,7 @@
         "itemId": "shoe-polish",
         "words": {
           "zh-TW": "鞋油",
-          "en": "shoe-polish",
+          "en": "shoe polish",
           "ja": {
             "text": "靴クリーム",
             "reading": "くつクリーム"
@@ -190,7 +190,7 @@
         "itemId": "full-length-mirror",
         "words": {
           "zh-TW": "穿衣鏡",
-          "en": "full-length-mirror",
+          "en": "full-length mirror",
           "ja": {
             "text": "姿見",
             "reading": "すがたみ"
@@ -211,7 +211,7 @@
         "itemId": "clothing-bag",
         "words": {
           "zh-TW": "衣物防塵袋",
-          "en": "garment-bag",
+          "en": "garment bag",
           "ja": {
             "text": "衣類カバー",
             "reading": "いるいカバー"
@@ -232,7 +232,7 @@
         "itemId": "standee",
         "words": {
           "zh-TW": "服飾展示架",
-          "en": "clothing-stand",
+          "en": "clothing stand",
           "ja": {
             "text": "ディスプレイスタンド",
             "reading": "ディスプレイスタンド"
@@ -253,7 +253,7 @@
         "itemId": "folding-screen",
         "words": {
           "zh-TW": "折疊屏風",
-          "en": "folding-screen",
+          "en": "folding screen",
           "ja": {
             "text": "ついたて",
             "reading": "ついたて"
@@ -337,7 +337,7 @@
         "itemId": "sewing-machine",
         "words": {
           "zh-TW": "縫紉機",
-          "en": "sewing-machine",
+          "en": "sewing machine",
           "ja": {
             "text": "ミシン",
             "reading": "ミシン"
@@ -358,7 +358,7 @@
         "itemId": "fabric-roll",
         "words": {
           "zh-TW": "布卷",
-          "en": "fabric-roll",
+          "en": "fabric roll",
           "ja": {
             "text": "布ロール",
             "reading": "ぬのロール"
@@ -379,7 +379,7 @@
         "itemId": "measuring-tape",
         "words": {
           "zh-TW": "捲尺",
-          "en": "tape-measure",
+          "en": "tape measure",
           "ja": {
             "text": "メジャー",
             "reading": "メジャー"
@@ -400,7 +400,7 @@
         "itemId": "shoe-tree",
         "words": {
           "zh-TW": "鞋撐",
-          "en": "shoe-tree",
+          "en": "shoe tree",
           "ja": {
             "text": "シューキーパー",
             "reading": "シューキーパー"
@@ -442,7 +442,7 @@
         "itemId": "clothes-hamper",
         "words": {
           "zh-TW": "衣物籃",
-          "en": "clothes-hamper",
+          "en": "clothes hamper",
           "ja": {
             "text": "ランドリーバスケット",
             "reading": "ランドリーバスケット"
@@ -463,7 +463,7 @@
         "itemId": "sewing-scissors",
         "words": {
           "zh-TW": "裁縫剪刀",
-          "en": "sewing-scissors",
+          "en": "sewing scissors",
           "ja": {
             "text": "裁ちばさみ",
             "reading": "たちばさみ"
@@ -484,7 +484,7 @@
         "itemId": "fabric-swatch",
         "words": {
           "zh-TW": "布樣",
-          "en": "fabric-swatch",
+          "en": "fabric swatch",
           "ja": {
             "text": "生地見本",
             "reading": "きじみほん"
@@ -505,7 +505,7 @@
         "itemId": "clothes-peg",
         "words": {
           "zh-TW": "曬衣夾",
-          "en": "clothes-peg",
+          "en": "clothes peg",
           "ja": {
             "text": "洗濯ばさみ",
             "reading": "せんたくばさみ"
@@ -610,7 +610,7 @@
         "itemId": "necklace-box",
         "words": {
           "zh-TW": "首飾盒",
-          "en": "jewelry-box",
+          "en": "jewelry box",
           "ja": {
             "text": "ジュエリーボックス",
             "reading": "ジュエリーボックス"
@@ -631,7 +631,7 @@
         "itemId": "bow-tie",
         "words": {
           "zh-TW": "領結",
-          "en": "bow-tie",
+          "en": "bow tie",
           "ja": {
             "text": "蝶ネクタイ",
             "reading": "ちょうネクタイ"
@@ -694,7 +694,7 @@
         "itemId": "high-heels",
         "words": {
           "zh-TW": "高跟鞋",
-          "en": "high-heels",
+          "en": "high heels",
           "ja": {
             "text": "ハイヒール",
             "reading": "ハイヒール"
@@ -715,7 +715,7 @@
         "itemId": "boot-jack",
         "words": {
           "zh-TW": "脫靴器",
-          "en": "boot-jack",
+          "en": "boot jack",
           "ja": {
             "text": "ブーツジャック",
             "reading": "ブーツジャック"
@@ -736,7 +736,7 @@
         "itemId": "laundry-detergent",
         "words": {
           "zh-TW": "洗衣精",
-          "en": "laundry-detergent",
+          "en": "laundry detergent",
           "ja": {
             "text": "洗濯洗剤",
             "reading": "せんたくせんざい"
@@ -778,7 +778,7 @@
         "itemId": "ironing-board",
         "words": {
           "zh-TW": "熨衣板",
-          "en": "ironing-board",
+          "en": "ironing board",
           "ja": {
             "text": "アイロン台",
             "reading": "アイロンだい"
@@ -799,7 +799,7 @@
         "itemId": "hand-mirror",
         "words": {
           "zh-TW": "手持鏡",
-          "en": "hand-mirror",
+          "en": "hand mirror",
           "ja": {
             "text": "手鏡",
             "reading": "てかがみ"
@@ -841,7 +841,7 @@
         "itemId": "hat-stand",
         "words": {
           "zh-TW": "帽架",
-          "en": "hat-stand",
+          "en": "hat stand",
           "ja": {
             "text": "帽子掛け",
             "reading": "ぼうしかけ"
@@ -946,7 +946,7 @@
         "itemId": "laundry-basket",
         "words": {
           "zh-TW": "洗衣籃",
-          "en": "laundry-basket",
+          "en": "laundry basket",
           "ja": {
             "text": "洗濯かご",
             "reading": "せんたくかご"
@@ -967,7 +967,7 @@
         "itemId": "belt-buckle",
         "words": {
           "zh-TW": "皮帶扣",
-          "en": "belt-buckle",
+          "en": "belt buckle",
           "ja": {
             "text": "ベルトのバックル",
             "reading": "ベルトのバックル"
@@ -988,7 +988,7 @@
         "itemId": "laundry-tag",
         "words": {
           "zh-TW": "洗衣標籤",
-          "en": "laundry-tag",
+          "en": "laundry tag",
           "ja": {
             "text": "洗濯表示タグ",
             "reading": "せんたくひょうじタグ"
@@ -1009,7 +1009,7 @@
         "itemId": "clothes-brush",
         "words": {
           "zh-TW": "衣物刷",
-          "en": "clothes-brush",
+          "en": "clothes brush",
           "ja": {
             "text": "洋服ブラシ",
             "reading": "ようふくブラシ"
@@ -1051,7 +1051,7 @@
         "itemId": "garment-steamer",
         "words": {
           "zh-TW": "掛燙機",
-          "en": "garment-steamer",
+          "en": "garment steamer",
           "ja": {
             "text": "衣類スチーマー",
             "reading": "いるいスチーマー"
@@ -1072,7 +1072,7 @@
         "itemId": "laundry-bag",
         "words": {
           "zh-TW": "洗衣袋",
-          "en": "laundry-bag",
+          "en": "laundry bag",
           "ja": {
             "text": "ランドリーバッグ",
             "reading": "ランドリーバッグ"
@@ -1093,7 +1093,7 @@
         "itemId": "changing-stool",
         "words": {
           "zh-TW": "試衣凳",
-          "en": "changing-stool",
+          "en": "changing stool",
           "ja": {
             "text": "試着用スツール",
             "reading": "しちゃくようスツール"
@@ -1114,7 +1114,7 @@
         "itemId": "shoe-bench",
         "words": {
           "zh-TW": "穿鞋長凳",
-          "en": "shoe-bench",
+          "en": "shoe bench",
           "ja": {
             "text": "腰掛けベンチ",
             "reading": "こしかけベンチ"
@@ -1135,7 +1135,7 @@
         "itemId": "fabric-measuring-tape",
         "words": {
           "zh-TW": "裁縫軟尺",
-          "en": "fabric-measuring-tape",
+          "en": "fabric measuring tape",
           "ja": {
             "text": "洋裁用メジャー",
             "reading": "ようさいようメジャー"
@@ -1156,7 +1156,7 @@
         "itemId": "privacy-curtain",
         "words": {
           "zh-TW": "試衣簾",
-          "en": "privacy-curtain",
+          "en": "privacy curtain",
           "ja": {
             "text": "試着室カーテン",
             "reading": "しちゃくしつカーテン"
@@ -1177,7 +1177,7 @@
         "itemId": "shoe-polishing-cloth",
         "words": {
           "zh-TW": "擦鞋布",
-          "en": "shoe-polishing-cloth",
+          "en": "shoe polishing cloth",
           "ja": {
             "text": "靴磨きクロス",
             "reading": "くつみがきクロス"
@@ -1198,7 +1198,7 @@
         "itemId": "garment-cover",
         "words": {
           "zh-TW": "衣物套",
-          "en": "garment-cover",
+          "en": "garment cover",
           "ja": {
             "text": "洋服カバー",
             "reading": "ようふくカバー"
@@ -1219,7 +1219,7 @@
         "itemId": "full-length-mirror-frame",
         "words": {
           "zh-TW": "鏡框",
-          "en": "mirror-frame",
+          "en": "mirror frame",
           "ja": {
             "text": "鏡の額縁",
             "reading": "かがみのがくぶち"
@@ -1240,7 +1240,7 @@
         "itemId": "handbag-mirror",
         "words": {
           "zh-TW": "化妝鏡",
-          "en": "compact-mirror",
+          "en": "compact mirror",
           "ja": {
             "text": "コンパクトミラー",
             "reading": "コンパクトミラー"
@@ -1261,7 +1261,7 @@
         "itemId": "scarf-ring",
         "words": {
           "zh-TW": "圍巾環",
-          "en": "scarf-ring",
+          "en": "scarf ring",
           "ja": {
             "text": "スカーフリング",
             "reading": "スカーフリング"
@@ -1282,7 +1282,7 @@
         "itemId": "shoehorn-stand",
         "words": {
           "zh-TW": "鞋拔架",
-          "en": "shoehorn-stand",
+          "en": "shoehorn stand",
           "ja": {
             "text": "靴べらスタンド",
             "reading": "くつべらスタンド"
@@ -1366,7 +1366,7 @@
         "itemId": "price-gun",
         "words": {
           "zh-TW": "標價槍",
-          "en": "price-gun",
+          "en": "price gun",
           "ja": {
             "text": "値付けガン",
             "reading": "ねづけガン"
@@ -1387,7 +1387,7 @@
         "itemId": "receipt-spike",
         "words": {
           "zh-TW": "收據插針",
-          "en": "receipt-spike",
+          "en": "receipt spike",
           "ja": {
             "text": "伝票差し",
             "reading": "でんぴょうさし"
@@ -1408,7 +1408,7 @@
         "itemId": "shopping-bag-holder",
         "words": {
           "zh-TW": "購物袋架",
-          "en": "shopping-bag-holder",
+          "en": "shopping bag holder",
           "ja": {
             "text": "買い物袋ホルダー",
             "reading": "かいものぶくろホルダー"
@@ -1429,7 +1429,7 @@
         "itemId": "folding-wallet",
         "words": {
           "zh-TW": "短夾",
-          "en": "folding-wallet",
+          "en": "folding wallet",
           "ja": {
             "text": "二つ折り財布",
             "reading": "ふたつおりさいふ"
@@ -1450,7 +1450,7 @@
         "itemId": "garment-tag",
         "words": {
           "zh-TW": "吊牌",
-          "en": "garment-tag",
+          "en": "garment tag",
           "ja": {
             "text": "下げ札",
             "reading": "さげふだ"
@@ -1471,7 +1471,7 @@
         "itemId": "coat-check-token",
         "words": {
           "zh-TW": "寄物牌",
-          "en": "coat-check-token",
+          "en": "coat check token",
           "ja": {
             "text": "預かり札",
             "reading": "あずかりふだ"
@@ -1681,7 +1681,7 @@
         "itemId": "cash-register-key",
         "words": {
           "zh-TW": "收銀機鑰匙",
-          "en": "cash-register-key",
+          "en": "cash register key",
           "ja": {
             "text": "レジの鍵",
             "reading": "レジのかぎ"
@@ -1702,7 +1702,7 @@
         "itemId": "coin-roll",
         "words": {
           "zh-TW": "硬幣捲",
-          "en": "coin-roll",
+          "en": "coin roll",
           "ja": {
             "text": "硬貨ロール",
             "reading": "こうかロール"
@@ -1723,7 +1723,7 @@
         "itemId": "price-labeler",
         "words": {
           "zh-TW": "標價標籤器",
-          "en": "price-labeler",
+          "en": "price labeler",
           "ja": {
             "text": "値札ラベラー",
             "reading": "ねふだラベラー"
@@ -1744,7 +1744,7 @@
         "itemId": "cash-register-mat",
         "words": {
           "zh-TW": "收銀台墊",
-          "en": "cash-register-mat",
+          "en": "cash register mat",
           "ja": {
             "text": "レジマット",
             "reading": "レジマット"
@@ -1765,7 +1765,7 @@
         "itemId": "receipt-folder",
         "words": {
           "zh-TW": "收據夾",
-          "en": "receipt-folder",
+          "en": "receipt folder",
           "ja": {
             "text": "レシートホルダー",
             "reading": "レシートホルダー"
@@ -1786,7 +1786,7 @@
         "itemId": "size-ring",
         "words": {
           "zh-TW": "尺寸環",
-          "en": "size-ring",
+          "en": "size ring",
           "ja": {
             "text": "サイズリング",
             "reading": "サイズリング"
@@ -1807,7 +1807,7 @@
         "itemId": "cash-tray",
         "words": {
           "zh-TW": "收銀托盤",
-          "en": "cash-tray",
+          "en": "cash tray",
           "ja": {
             "text": "キャッシュトレイ",
             "reading": "キャッシュトレイ"
@@ -1828,7 +1828,7 @@
         "itemId": "scarf-pin",
         "words": {
           "zh-TW": "圍巾別針",
-          "en": "scarf-pin",
+          "en": "scarf pin",
           "ja": {
             "text": "スカーフピン",
             "reading": "スカーフピン"

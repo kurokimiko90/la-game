@@ -445,7 +445,7 @@
           "en": "bread crumb",
           "ja": {
             "text": "パンくず",
-            "reading": "パンクズ"
+            "reading": "パンくず"
           }
         }
       }
@@ -799,7 +799,7 @@
         "itemId": "butter-knife",
         "words": {
           "zh-TW": "奶油刀",
-          "en": "butter-knife",
+          "en": "butter knife",
           "ja": {
             "text": "バターナイフ",
             "reading": "バターナイフ"
@@ -820,7 +820,7 @@
         "itemId": "jam-jar",
         "words": {
           "zh-TW": "果醬罐",
-          "en": "jam-jar",
+          "en": "jam jar",
           "ja": {
             "text": "ジャムの瓶",
             "reading": "ジャムのびん"
@@ -841,7 +841,7 @@
         "itemId": "honey-jar",
         "words": {
           "zh-TW": "蜂蜜罐",
-          "en": "honey-jar",
+          "en": "honey jar",
           "ja": {
             "text": "はちみつの瓶",
             "reading": "はちみつのびん"
@@ -862,7 +862,7 @@
         "itemId": "butter-dish",
         "words": {
           "zh-TW": "奶油盒",
-          "en": "butter-dish",
+          "en": "butter dish",
           "ja": {
             "text": "バターケース",
             "reading": "バターケース"
@@ -883,7 +883,7 @@
         "itemId": "cheese-wedge",
         "words": {
           "zh-TW": "起司楔",
-          "en": "cheese-wedge",
+          "en": "cheese wedge",
           "ja": {
             "text": "チーズのくさび",
             "reading": "チーズのくさび"
@@ -925,7 +925,7 @@
         "itemId": "garlic-clove",
         "words": {
           "zh-TW": "蒜瓣",
-          "en": "garlic-clove",
+          "en": "garlic clove",
           "ja": {
             "text": "にんにく",
             "reading": "にんにく"
@@ -967,7 +967,7 @@
         "itemId": "sesame-seeds",
         "words": {
           "zh-TW": "芝麻",
-          "en": "sesame-seeds",
+          "en": "sesame seeds",
           "ja": {
             "text": "ごま",
             "reading": "ごま"
@@ -988,7 +988,7 @@
         "itemId": "bread-clip",
         "words": {
           "zh-TW": "封口夾",
-          "en": "bread-clip",
+          "en": "bread clip",
           "ja": {
             "text": "バッグ・クロージャー",
             "reading": "バッグ・クロージャー"
@@ -1009,7 +1009,7 @@
         "itemId": "bread-crate",
         "words": {
           "zh-TW": "麵包周轉箱",
-          "en": "bread-crate",
+          "en": "bread crate",
           "ja": {
             "text": "パン用コンテナ",
             "reading": "パンようコンテナ"
@@ -1576,7 +1576,7 @@
         "itemId": "doorstep-brush",
         "words": {
           "zh-TW": "門口刷",
-          "en": "doorstep-brush",
+          "en": "doorstep brush",
           "ja": {
             "text": "玄関ブラシ",
             "reading": "げんかんブラシ"
@@ -1597,7 +1597,7 @@
         "itemId": "bread-tin",
         "words": {
           "zh-TW": "吐司模",
-          "en": "bread-tin",
+          "en": "bread tin",
           "ja": {
             "text": "食パン型",
             "reading": "しょくパンがた"
@@ -1639,7 +1639,7 @@
         "itemId": "toothpick-holder",
         "words": {
           "zh-TW": "牙籤筒",
-          "en": "toothpick-holder",
+          "en": "toothpick holder",
           "ja": {
             "text": "つまようじ入れ",
             "reading": "つまようじいれ"
@@ -1660,7 +1660,7 @@
         "itemId": "water-glass",
         "words": {
           "zh-TW": "水杯",
-          "en": "water-glass",
+          "en": "water glass",
           "ja": {
             "text": "水用グラス",
             "reading": "みずようグラス"

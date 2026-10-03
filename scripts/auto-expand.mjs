@@ -30,6 +30,7 @@ import { idleNotice, isSkipped, onFailure, resumeIfDue } from './lib/recovery.mj
 import { MAX_REJECT_RATIO, applyReview, buildReviewPrompt } from './lib/vocab-review.mjs';
 import { buildVenuePrompt, parseVenue } from '../src/lib/venue.ts';
 import { isLockError, lockAction } from './lib/git-lock.mjs';
+import { buildDiagnosisPrompt, diagnosisReport, markDiagnosed, notifyTelegram, relatedLogs, shouldDiagnose, telegramSummary } from './lib/diagnose.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(SELF), '..');
@@ -39,6 +40,8 @@ const LOCK_FILE = path.join(STATE_DIR, 'lock');
 const LOG_FILE = path.join(STATE_DIR, 'auto-expand.log');
 const REVIEW_QUEUE = path.join(STATE_DIR, 'review-queue.json');
 // commit 後等試玩伺服器換上新版再做構圖審查（scripts/reload-play.mjs 讀這份清單）
+// 整合失敗的診斷報告（scripts/lib/diagnose.mjs）
+const DIAGNOSIS_DIR = path.join(STATE_DIR, 'diagnosis');
 const LAYOUT_PENDING = path.join(STATE_DIR, 'layout-pending.json');
 const P = {
   settings: path.join(ROOT, 'content', 'expansion.json'),
@@ -568,9 +571,36 @@ function printStatus() {
 
 const COMMIT_PATHS = ['content', 'public/svg', 'public/audio', 'src/data/scenes', 'docs/expansion.md'];
 
-function handleFailure(e) {
+/**
+ * 整合失敗：請 codex（唯讀）讀 log 和程式碼找原因，報告寫進 .auto-expand/diagnosis/、Telegram 通知。只診斷不修。
+ * 診斷本身失敗只記 log，不影響原本的重試／放棄。
+ * @returns {Promise<boolean>} 有沒有診斷（同一個錯誤只診斷一次）
+ */
+async function diagnose(s, e) {
+  if (!shouldDiagnose(s, { message: e.message, skippable: Boolean(e.skippable) })) return false;
+  const sceneId = s.current.id;
+  const planFile = path.join(P.plans, `${sceneId}.json`);
+  const sceneName = fs.existsSync(planFile) ? readJson(planFile).name : sceneId;
+  try {
+    log(`診斷 ${sceneName} 的整合失敗（codex 唯讀）…`);
+    const answer = await codexText(buildDiagnosisPrompt({ root: ROOT, sceneId, sceneName, error: e.message, logs: relatedLogs(ROOT, e.message) }));
+    const file = path.join(DIAGNOSIS_DIR, `${sceneId}-${localIso().replace(/[:.]/g, '-')}.md`);
+    fs.mkdirSync(DIAGNOSIS_DIR, { recursive: true });
+    fs.writeFileSync(file, diagnosisReport({ sceneId, sceneName, error: e.message, at: localIso(), answer }));
+    const sent = await notifyTelegram(telegramSummary({ sceneName, answer, file }));
+    log(`診斷報告：${path.relative(ROOT, file)}（Telegram ${sent ? '已通知' : '沒送出：沒設定 TELEGRAM_TOKEN / ADMIN_ID 或送不出去'}）`);
+  } catch (err) {
+    log(`診斷沒做成：${err.message.split('\n')[0]}`);
+  }
+  return true;
+}
+
+async function handleFailure(e) {
   const s = loadState();
-  const { action, state } = onFailure(s, { message: e.message, skippable: Boolean(e.skippable) }, Date.now());
+  const diagnosed = await diagnose(s, e);
+  const failed = onFailure(s, { message: e.message, skippable: Boolean(e.skippable) }, Date.now());
+  const { action } = failed;
+  const state = diagnosed ? markDiagnosed(failed.state, e.message) : failed.state;
   const job = s.current?.theme?.name ?? s.current?.id;
   let stashed = false;
   if (action === 'abandon') {
@@ -613,7 +643,7 @@ async function main() {
     let afterGenerator = args.includes('--after-generator');
     while (await tick({ afterGenerator })) afterGenerator = false;
   } catch (e) {
-    handleFailure(e);
+    await handleFailure(e);
     process.exitCode = 1;
   } finally {
     fs.rmSync(LOCK_FILE, { force: true });

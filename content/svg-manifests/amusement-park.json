@@ -526,7 +526,7 @@
         "itemId": "arcade-game-cabinet",
         "words": {
           "zh-TW": "街機",
-          "en": "arcade-game-cabinet",
+          "en": "arcade game cabinet",
           "ja": {
             "text": "アーケードゲーム機",
             "reading": "アーケードゲームき"
@@ -547,7 +547,7 @@
         "itemId": "claw-machine",
         "words": {
           "zh-TW": "夾娃娃機",
-          "en": "claw-machine",
+          "en": "claw machine",
           "ja": {
             "text": "クレーンゲーム機",
             "reading": "クレーンゲームき"
@@ -568,7 +568,7 @@
         "itemId": "vending-machine-amusement-park",
         "words": {
           "zh-TW": "自動販賣機",
-          "en": "vending-machine",
+          "en": "vending machine",
           "ja": {
             "text": "自動販売機",
             "reading": "じどうはんばいき"
@@ -589,7 +589,7 @@
         "itemId": "ring-toss-stand",
         "words": {
           "zh-TW": "套圈攤架",
-          "en": "ring-toss-stand",
+          "en": "ring toss stand",
           "ja": {
             "text": "輪投げ台",
             "reading": "わなげだい"
@@ -610,7 +610,7 @@
         "itemId": "fortune-teller-machine",
         "words": {
           "zh-TW": "占卜機",
-          "en": "fortune-teller-machine",
+          "en": "fortune teller machine",
           "ja": {
             "text": "占い機",
             "reading": "うらないき"
@@ -631,7 +631,7 @@
         "itemId": "photo-booth",
         "words": {
           "zh-TW": "大頭貼機",
-          "en": "photo-booth",
+          "en": "photo booth",
           "ja": {
             "text": "プリントシール機",
             "reading": "プリントシールき"
@@ -652,10 +652,10 @@
         "itemId": "miniature-train",
         "words": {
           "zh-TW": "遊園小火車",
-          "en": "miniature-train",
+          "en": "miniature train",
           "ja": {
             "text": "遊園地のミニ列車",
-            "reading": "ゆうえんちのみにれっしゃ"
+            "reading": "ゆうえんちのミニれっしゃ"
           }
         }
       }
@@ -673,7 +673,7 @@
         "itemId": "pedal-boat",
         "words": {
           "zh-TW": "腳踏船",
-          "en": "pedal-boat",
+          "en": "pedal boat",
           "ja": {
             "text": "足こぎボート",
             "reading": "あしこぎボート"
@@ -694,7 +694,7 @@
         "itemId": "parked-go-kart",
         "words": {
           "zh-TW": "卡丁車",
-          "en": "parked-go-kart",
+          "en": "parked go-kart",
           "ja": {
             "text": "ゴーカート",
             "reading": "ゴーカート"
@@ -715,7 +715,7 @@
         "itemId": "coin-operated-horse",
         "words": {
           "zh-TW": "投幣搖搖馬",
-          "en": "coin-operated-horse",
+          "en": "coin-operated horse",
           "ja": {
             "text": "コイン式ロッキングホース",
             "reading": "コインしきロッキングホース"
@@ -736,7 +736,7 @@
         "itemId": "miniature-golf-hole",
         "words": {
           "zh-TW": "迷你高爾夫球洞",
-          "en": "miniature-golf-hole",
+          "en": "miniature golf hole",
           "ja": {
             "text": "ミニゴルフのホール",
             "reading": "ミニゴルフのホール"
@@ -757,7 +757,7 @@
         "itemId": "miniature-golf-club",
         "words": {
           "zh-TW": "迷你高爾夫球桿",
-          "en": "miniature-golf-club",
+          "en": "miniature golf club",
           "ja": {
             "text": "ミニゴルフクラブ",
             "reading": "ミニゴルフクラブ"
@@ -778,7 +778,7 @@
         "itemId": "skateboard-ramp",
         "words": {
           "zh-TW": "滑板坡道",
-          "en": "skateboard-ramp",
+          "en": "skateboard ramp",
           "ja": {
             "text": "スケートボードランプ",
             "reading": "スケートボードランプ"
@@ -820,7 +820,7 @@
         "itemId": "basketball-hoop",
         "words": {
           "zh-TW": "籃球架",
-          "en": "basketball-hoop",
+          "en": "basketball hoop",
           "ja": {
             "text": "バスケットゴール",
             "reading": "バスケットゴール"
@@ -841,7 +841,7 @@
         "itemId": "skee-ball-lane",
         "words": {
           "zh-TW": "滾球遊戲道",
-          "en": "skee-ball-lane",
+          "en": "skee ball lane",
           "ja": {
             "text": "スキーボールのレーン",
             "reading": "スキーボールのレーン"
@@ -862,7 +862,7 @@
         "itemId": "bowling-pin",
         "words": {
           "zh-TW": "保齡球瓶",
-          "en": "bowling-pin",
+          "en": "bowling pin",
           "ja": {
             "text": "ボウリングピン",
             "reading": "ボウリングピン"
@@ -904,7 +904,7 @@
         "itemId": "hockey-stick",
         "words": {
           "zh-TW": "曲棍球桿",
-          "en": "hockey-stick",
+          "en": "hockey stick",
           "ja": {
             "text": "ホッケースティック",
             "reading": "ホッケースティック"
@@ -925,7 +925,7 @@
         "itemId": "hockey-puck",
         "words": {
           "zh-TW": "曲棍球冰球",
-          "en": "hockey-puck",
+          "en": "hockey puck",
           "ja": {
             "text": "ホッケーパック",
             "reading": "ホッケーパック"
@@ -946,7 +946,7 @@
         "itemId": "jumping-rope",
         "words": {
           "zh-TW": "跳繩",
-          "en": "jumping-rope",
+          "en": "jumping rope",
           "ja": {
             "text": "縄跳び",
             "reading": "なわとび"
@@ -967,7 +967,7 @@
         "itemId": "bubble-wand",
         "words": {
           "zh-TW": "吹泡泡棒",
-          "en": "bubble-wand",
+          "en": "bubble wand",
           "ja": {
             "text": "シャボン玉スティック",
             "reading": "シャボンだまスティック"
@@ -988,7 +988,7 @@
         "itemId": "paper-airplane",
         "words": {
           "zh-TW": "紙飛機",
-          "en": "paper-airplane",
+          "en": "paper airplane",
           "ja": {
             "text": "紙飛行機",
             "reading": "かみひこうき"
@@ -2080,7 +2080,7 @@
         "itemId": "flower-bed-edging",
         "words": {
           "zh-TW": "花圃邊框",
-          "en": "flower-bed-edging",
+          "en": "flower bed edging",
           "ja": {
             "text": "花壇の縁",
             "reading": "かだんのふち"

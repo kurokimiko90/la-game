@@ -151,7 +151,7 @@
           "en": "eraser",
           "ja": {
             "text": "消しゴム",
-            "reading": "けしごむ"
+            "reading": "けしゴム"
           }
         }
       }
@@ -1138,7 +1138,7 @@
           "en": "desk lamp",
           "ja": {
             "text": "デスクライト",
-            "reading": "ですくらいと"
+            "reading": "デスクライト"
           }
         }
       }
@@ -1159,7 +1159,7 @@
           "en": "notebook",
           "ja": {
             "text": "ノート",
-            "reading": "のーと"
+            "reading": "ノート"
           }
         }
       }
@@ -1180,7 +1180,7 @@
           "en": "pen",
           "ja": {
             "text": "ボールペン",
-            "reading": "ぼーるぺん"
+            "reading": "ボールペン"
           }
         }
       }
@@ -1201,7 +1201,7 @@
           "en": "folder",
           "ja": {
             "text": "ファイル",
-            "reading": "ふぁいる"
+            "reading": "ファイル"
           }
         }
       }
@@ -1285,7 +1285,7 @@
           "en": "radio",
           "ja": {
             "text": "ラジオ",
-            "reading": "らじお"
+            "reading": "ラジオ"
           }
         }
       }
@@ -1306,7 +1306,7 @@
           "en": "cassette tape",
           "ja": {
             "text": "カセットテープ",
-            "reading": "かせっとてーぷ"
+            "reading": "カセットテープ"
           }
         }
       }
@@ -1327,7 +1327,7 @@
           "en": "vinyl record",
           "ja": {
             "text": "レコード",
-            "reading": "れこーど"
+            "reading": "レコード"
           }
         }
       }
@@ -1348,7 +1348,7 @@
           "en": "typewriter",
           "ja": {
             "text": "タイプライター",
-            "reading": "たいぷらいたー"
+            "reading": "タイプライター"
           }
         }
       }
@@ -1369,7 +1369,7 @@
           "en": "rubber band",
           "ja": {
             "text": "輪ゴム",
-            "reading": "わごむ"
+            "reading": "わゴム"
           }
         }
       }
@@ -1453,7 +1453,7 @@
           "en": "printer",
           "ja": {
             "text": "プリンター",
-            "reading": "ぷりんたー"
+            "reading": "プリンター"
           }
         }
       }

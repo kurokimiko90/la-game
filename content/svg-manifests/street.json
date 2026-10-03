@@ -337,7 +337,7 @@
         "itemId": "atm",
         "words": {
           "zh-TW": "提款機",
-          "en": "ATM",
+          "en": "atm",
           "ja": {
             "text": "ATM",
             "reading": "エーティーエム"
@@ -883,7 +883,7 @@
         "itemId": "pedestrian-signal",
         "words": {
           "zh-TW": "行人號誌",
-          "en": "pedestrian-signal",
+          "en": "pedestrian signal",
           "ja": {
             "text": "歩行者用信号",
             "reading": "ほこうしゃようしんごう"
@@ -1198,7 +1198,7 @@
         "itemId": "bus-ticket",
         "words": {
           "zh-TW": "公車票",
-          "en": "bus-ticket",
+          "en": "bus ticket",
           "ja": {
             "text": "バスの乗車券",
             "reading": "バスのじょうしゃけん"
@@ -1219,7 +1219,7 @@
         "itemId": "bus-route-map",
         "words": {
           "zh-TW": "公車路線圖",
-          "en": "route-map",
+          "en": "route map",
           "ja": {
             "text": "路線図",
             "reading": "ろせんず"
@@ -1240,7 +1240,7 @@
         "itemId": "bus-stop-bench",
         "words": {
           "zh-TW": "候車長椅",
-          "en": "bus-bench",
+          "en": "bus bench",
           "ja": {
             "text": "バス停のベンチ",
             "reading": "バスていのベンチ"

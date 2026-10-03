@@ -37,6 +37,11 @@ idle（下一個場景）
   - git 撞到 `index.lock`：有 git 在跑就等 5 秒重試；沒有 git 在跑、鎖放超過 10 分鐘就當殘留刪掉（`scripts/lib/git-lock.mjs`）
   - commit 失敗時 `docs/expansion.md` 的紀錄會拿掉，重試不會一筆變多筆
   - 錯誤在 `.auto-expand/state.json`，各步驟輸出在 `.auto-expand/<步驟>.log`
+  - 整合失敗會先**診斷**（`scripts/lib/diagnose.mjs`，2026-10-04 起）：請 codex（miko-ws 指揮中心，唯讀 sandbox）讀錯誤、log、`test-results/` 和程式碼，
+    寫「原因／建議修法／信心」到 `.auto-expand/diagnosis/<scene>-<時間>.md`，再用 miko-ws 的 Telegram bot（`TELEGRAM_TOKEN`、`ADMIN_ID`）通知。
+    只診斷不改檔（會自己改程式的 agent 沒有授權）；同一個場景同一個錯誤只診斷一次；診斷失敗不影響重試／放棄
+- **單字正規化**（`scripts/lib/word-normalize.mjs`）：規劃和單字審核都會把英文裡 id 式的連字號換成空白（`air-conditioner` → `air conditioner`，
+  `check-in`、`x-ray` 這類本來就有連字號的保留），日語讀音跟寫法對齊（純假名的詞讀音＝寫法；有漢字的詞，片假名部分在讀音裡保留片假名）
 - **品質關卡**（2026-10-01 起）：
   - 單字審核 `scripts/lib/vocab-review.mjs`：修正只能改 zh / ja / reading（圖是照英文畫的，改英文等於換東西）；
     審核想丟掉超過 20% 就當作審核不可靠，不丟物品只套修正；審核失敗照原樣放行。

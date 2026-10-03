@@ -29,7 +29,7 @@
       "zh": "玫瑰",
       "en": "rose",
       "ja": "バラ",
-      "reading": "ばら",
+      "reading": "バラ",
       "size": "medium",
       "spot": "ground"
     },
@@ -39,7 +39,7 @@
       "zh": "鬱金香",
       "en": "tulip",
       "ja": "チューリップ",
-      "reading": "ちゅーりっぷ",
+      "reading": "チューリップ",
       "size": "medium",
       "spot": "ground"
     },
@@ -49,7 +49,7 @@
       "zh": "仙人掌",
       "en": "cactus",
       "ja": "サボテン",
-      "reading": "さぼてん",
+      "reading": "サボテン",
       "size": "medium",
       "spot": "ground"
     },
@@ -69,7 +69,7 @@
       "zh": "豬籠草",
       "en": "pitcher plant",
       "ja": "ウツボカズラ",
-      "reading": "うつぼかずら",
+      "reading": "ウツボカズラ",
       "size": "medium",
       "spot": "ground"
     },
@@ -99,7 +99,7 @@
       "zh": "蕨類",
       "en": "fern",
       "ja": "シダ",
-      "reading": "しだ",
+      "reading": "シダ",
       "size": "medium",
       "spot": "ground"
     },
@@ -129,7 +129,7 @@
       "zh": "棕櫚樹",
       "en": "palm tree",
       "ja": "ヤシの木",
-      "reading": "やしのき",
+      "reading": "ヤシのき",
       "size": "large",
       "spot": "ground"
     }

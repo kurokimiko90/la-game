@@ -403,7 +403,7 @@
     {
       "id": "arcade-game-cabinet",
       "zh": "街機",
-      "en": "arcade-game-cabinet",
+      "en": "arcade game cabinet",
       "ja": "アーケードゲーム機",
       "reading": "アーケードゲームき",
       "category": "設施",
@@ -418,7 +418,7 @@
     {
       "id": "claw-machine",
       "zh": "夾娃娃機",
-      "en": "claw-machine",
+      "en": "claw machine",
       "ja": "クレーンゲーム機",
       "reading": "クレーンゲームき",
       "category": "設施",
@@ -433,7 +433,7 @@
     {
       "id": "vending-machine-amusement-park",
       "zh": "自動販賣機",
-      "en": "vending-machine",
+      "en": "vending machine",
       "ja": "自動販売機",
       "reading": "じどうはんばいき",
       "category": "設施",
@@ -448,7 +448,7 @@
     {
       "id": "ring-toss-stand",
       "zh": "套圈攤架",
-      "en": "ring-toss-stand",
+      "en": "ring toss stand",
       "ja": "輪投げ台",
       "reading": "わなげだい",
       "category": "設施",
@@ -463,7 +463,7 @@
     {
       "id": "fortune-teller-machine",
       "zh": "占卜機",
-      "en": "fortune-teller-machine",
+      "en": "fortune teller machine",
       "ja": "占い機",
       "reading": "うらないき",
       "category": "設施",
@@ -478,7 +478,7 @@
     {
       "id": "photo-booth",
       "zh": "大頭貼機",
-      "en": "photo-booth",
+      "en": "photo booth",
       "ja": "プリントシール機",
       "reading": "プリントシールき",
       "category": "設施",
@@ -493,9 +493,9 @@
     {
       "id": "miniature-train",
       "zh": "遊園小火車",
-      "en": "miniature-train",
+      "en": "miniature train",
       "ja": "遊園地のミニ列車",
-      "reading": "ゆうえんちのみにれっしゃ",
+      "reading": "ゆうえんちのミニれっしゃ",
       "category": "交通工具",
       "size": "medium",
       "zone": "midway",
@@ -508,7 +508,7 @@
     {
       "id": "pedal-boat",
       "zh": "腳踏船",
-      "en": "pedal-boat",
+      "en": "pedal boat",
       "ja": "足こぎボート",
       "reading": "あしこぎボート",
       "category": "交通工具",
@@ -523,7 +523,7 @@
     {
       "id": "parked-go-kart",
       "zh": "卡丁車",
-      "en": "parked-go-kart",
+      "en": "parked go-kart",
       "ja": "ゴーカート",
       "reading": "ゴーカート",
       "category": "交通工具",
@@ -538,7 +538,7 @@
     {
       "id": "coin-operated-horse",
       "zh": "投幣搖搖馬",
-      "en": "coin-operated-horse",
+      "en": "coin-operated horse",
       "ja": "コイン式ロッキングホース",
       "reading": "コインしきロッキングホース",
       "category": "設施",
@@ -553,7 +553,7 @@
     {
       "id": "miniature-golf-hole",
       "zh": "迷你高爾夫球洞",
-      "en": "miniature-golf-hole",
+      "en": "miniature golf hole",
       "ja": "ミニゴルフのホール",
       "reading": "ミニゴルフのホール",
       "category": "道具",
@@ -568,7 +568,7 @@
     {
       "id": "miniature-golf-club",
       "zh": "迷你高爾夫球桿",
-      "en": "miniature-golf-club",
+      "en": "miniature golf club",
       "ja": "ミニゴルフクラブ",
       "reading": "ミニゴルフクラブ",
       "category": "道具",
@@ -583,7 +583,7 @@
     {
       "id": "skateboard-ramp",
       "zh": "滑板坡道",
-      "en": "skateboard-ramp",
+      "en": "skateboard ramp",
       "ja": "スケートボードランプ",
       "reading": "スケートボードランプ",
       "category": "設施",
@@ -613,7 +613,7 @@
     {
       "id": "basketball-hoop",
       "zh": "籃球架",
-      "en": "basketball-hoop",
+      "en": "basketball hoop",
       "ja": "バスケットゴール",
       "reading": "バスケットゴール",
       "category": "設施",
@@ -628,7 +628,7 @@
     {
       "id": "skee-ball-lane",
       "zh": "滾球遊戲道",
-      "en": "skee-ball-lane",
+      "en": "skee ball lane",
       "ja": "スキーボールのレーン",
       "reading": "スキーボールのレーン",
       "category": "設施",
@@ -643,7 +643,7 @@
     {
       "id": "bowling-pin",
       "zh": "保齡球瓶",
-      "en": "bowling-pin",
+      "en": "bowling pin",
       "ja": "ボウリングピン",
       "reading": "ボウリングピン",
       "category": "道具",
@@ -673,7 +673,7 @@
     {
       "id": "hockey-stick",
       "zh": "曲棍球桿",
-      "en": "hockey-stick",
+      "en": "hockey stick",
       "ja": "ホッケースティック",
       "reading": "ホッケースティック",
       "category": "道具",
@@ -688,7 +688,7 @@
     {
       "id": "hockey-puck",
       "zh": "曲棍球冰球",
-      "en": "hockey-puck",
+      "en": "hockey puck",
       "ja": "ホッケーパック",
       "reading": "ホッケーパック",
       "category": "道具",
@@ -703,7 +703,7 @@
     {
       "id": "jumping-rope",
       "zh": "跳繩",
-      "en": "jumping-rope",
+      "en": "jumping rope",
       "ja": "縄跳び",
       "reading": "なわとび",
       "category": "道具",
@@ -718,7 +718,7 @@
     {
       "id": "bubble-wand",
       "zh": "吹泡泡棒",
-      "en": "bubble-wand",
+      "en": "bubble wand",
       "ja": "シャボン玉スティック",
       "reading": "シャボンだまスティック",
       "category": "道具",
@@ -733,7 +733,7 @@
     {
       "id": "paper-airplane",
       "zh": "紙飛機",
-      "en": "paper-airplane",
+      "en": "paper airplane",
       "ja": "紙飛行機",
       "reading": "かみひこうき",
       "category": "道具",
@@ -1513,7 +1513,7 @@
     {
       "id": "flower-bed-edging",
       "zh": "花圃邊框",
-      "en": "flower-bed-edging",
+      "en": "flower bed edging",
       "ja": "花壇の縁",
       "reading": "かだんのふち",
       "category": "設施",

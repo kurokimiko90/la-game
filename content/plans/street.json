@@ -203,7 +203,7 @@
       "id": "atm",
       "zone": "shops",
       "zh": "提款機",
-      "en": "ATM",
+      "en": "atm",
       "ja": "ATM",
       "reading": "エーティーエム",
       "category": "設施",
@@ -507,7 +507,7 @@
     {
       "id": "pedestrian-signal",
       "zh": "行人號誌",
-      "en": "pedestrian-signal",
+      "en": "pedestrian signal",
       "ja": "歩行者用信号",
       "reading": "ほこうしゃようしんごう",
       "category": "設施",
@@ -732,7 +732,7 @@
     {
       "id": "bus-ticket",
       "zh": "公車票",
-      "en": "bus-ticket",
+      "en": "bus ticket",
       "ja": "バスの乗車券",
       "reading": "バスのじょうしゃけん",
       "category": "道具",
@@ -747,7 +747,7 @@
     {
       "id": "bus-route-map",
       "zh": "公車路線圖",
-      "en": "route-map",
+      "en": "route map",
       "ja": "路線図",
       "reading": "ろせんず",
       "category": "道具",
@@ -762,7 +762,7 @@
     {
       "id": "bus-stop-bench",
       "zh": "候車長椅",
-      "en": "bus-bench",
+      "en": "bus bench",
       "ja": "バス停のベンチ",
       "reading": "バスていのベンチ",
       "category": "設施",

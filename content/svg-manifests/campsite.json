@@ -25,7 +25,7 @@
           "en": "folding table",
           "ja": {
             "text": "折りたたみテーブル",
-            "reading": "おりたたみてーぶる"
+            "reading": "おりたたみテーブル"
           }
         }
       }
@@ -46,7 +46,7 @@
           "en": "camp chair",
           "ja": {
             "text": "キャンプチェア",
-            "reading": "きゃんぷちぇあ"
+            "reading": "キャンプチェア"
           }
         }
       }
@@ -67,7 +67,7 @@
           "en": "camping stove",
           "ja": {
             "text": "キャンプ用コンロ",
-            "reading": "きゃんぷようこんろ"
+            "reading": "キャンプようコンロ"
           }
         }
       }
@@ -88,7 +88,7 @@
           "en": "gas canister",
           "ja": {
             "text": "ガスカートリッジ",
-            "reading": "がすかーとりっじ"
+            "reading": "ガスカートリッジ"
           }
         }
       }
@@ -109,7 +109,7 @@
           "en": "camping pot",
           "ja": {
             "text": "キャンプ鍋",
-            "reading": "きゃんぷなべ"
+            "reading": "キャンプなべ"
           }
         }
       }
@@ -130,7 +130,7 @@
           "en": "camping lantern",
           "ja": {
             "text": "ランタン",
-            "reading": "らんたん"
+            "reading": "ランタン"
           }
         }
       }
@@ -172,7 +172,7 @@
           "en": "sleeping mat",
           "ja": {
             "text": "キャンプマット",
-            "reading": "きゃんぷまっと"
+            "reading": "キャンプマット"
           }
         }
       }
@@ -193,7 +193,7 @@
           "en": "tent peg",
           "ja": {
             "text": "テントペグ",
-            "reading": "てんとぺぐ"
+            "reading": "テントペグ"
           }
         }
       }
@@ -214,7 +214,7 @@
           "en": "tent mallet",
           "ja": {
             "text": "ペグハンマー",
-            "reading": "ぺぐはんまー"
+            "reading": "ペグハンマー"
           }
         }
       }
@@ -256,7 +256,7 @@
           "en": "tarp",
           "ja": {
             "text": "タープ",
-            "reading": "たーぷ"
+            "reading": "タープ"
           }
         }
       }
@@ -277,7 +277,7 @@
           "en": "folding wagon",
           "ja": {
             "text": "アウトドアワゴン",
-            "reading": "あうとどあわごん"
+            "reading": "アウトドアワゴン"
           }
         }
       }
@@ -298,7 +298,7 @@
           "en": "camper trailer",
           "ja": {
             "text": "キャンピングトレーラー",
-            "reading": "きゃんぴんぐとれーらー"
+            "reading": "キャンピングトレーラー"
           }
         }
       }
@@ -319,7 +319,7 @@
           "en": "pickup truck",
           "ja": {
             "text": "ピックアップトラック",
-            "reading": "ぴっくあっぷとらっく"
+            "reading": "ピックアップトラック"
           }
         }
       }
@@ -445,7 +445,7 @@
           "en": "camping kettle",
           "ja": {
             "text": "キャンプ用ケトル",
-            "reading": "きゃんぷようけとる"
+            "reading": "キャンプようケトル"
           }
         }
       }
@@ -466,7 +466,7 @@
           "en": "camp mug",
           "ja": {
             "text": "キャンプマグ",
-            "reading": "きゃんぷまぐ"
+            "reading": "キャンプマグ"
           }
         }
       }
@@ -487,7 +487,7 @@
           "en": "camp plate",
           "ja": {
             "text": "キャンプ皿",
-            "reading": "きゃんぷざら"
+            "reading": "キャンプざら"
           }
         }
       }
@@ -508,7 +508,7 @@
           "en": "spork",
           "ja": {
             "text": "スポーク",
-            "reading": "すぽーく"
+            "reading": "スポーク"
           }
         }
       }
@@ -529,7 +529,7 @@
           "en": "cutlery set",
           "ja": {
             "text": "カトラリーセット",
-            "reading": "かとらりーせっと"
+            "reading": "カトラリーセット"
           }
         }
       }
@@ -550,7 +550,7 @@
           "en": "water jug",
           "ja": {
             "text": "ウォータージャグ",
-            "reading": "うぉーたーじゃぐ"
+            "reading": "ウォータージャグ"
           }
         }
       }
@@ -613,7 +613,7 @@
           "en": "chef knife",
           "ja": {
             "text": "シェフナイフ",
-            "reading": "しぇふないふ"
+            "reading": "シェフナイフ"
           }
         }
       }
@@ -781,7 +781,7 @@
           "en": "peanut butter jar",
           "ja": {
             "text": "ピーナッツバターの瓶",
-            "reading": "ぴーなっつばたーのびん"
+            "reading": "ピーナッツバターのびん"
           }
         }
       }
@@ -802,7 +802,7 @@
           "en": "maple syrup bottle",
           "ja": {
             "text": "メープルシロップの瓶",
-            "reading": "めーぷるしろっぷのびん"
+            "reading": "メープルシロップのびん"
           }
         }
       }
@@ -1072,7 +1072,7 @@
         "itemId": "paper-plate",
         "words": {
           "zh-TW": "紙盤",
-          "en": "paper-plate",
+          "en": "paper plate",
           "ja": {
             "text": "紙皿",
             "reading": "かみざら"
@@ -1093,7 +1093,7 @@
         "itemId": "plastic-cutting-board",
         "words": {
           "zh-TW": "塑膠砧板",
-          "en": "cutting-board",
+          "en": "cutting board",
           "ja": {
             "text": "まな板",
             "reading": "まないた"
@@ -1114,7 +1114,7 @@
         "itemId": "paring-knife",
         "words": {
           "zh-TW": "水果刀",
-          "en": "paring-knife",
+          "en": "paring knife",
           "ja": {
             "text": "ペティナイフ",
             "reading": "ペティナイフ"
@@ -1135,7 +1135,7 @@
         "itemId": "watermelon-wedge",
         "words": {
           "zh-TW": "西瓜片",
-          "en": "watermelon-wedge",
+          "en": "watermelon wedge",
           "ja": {
             "text": "スイカのくし切り",
             "reading": "スイカのくしぎり"
@@ -1198,7 +1198,7 @@
         "itemId": "corn-cob",
         "words": {
           "zh-TW": "玉米棒",
-          "en": "corn-cob",
+          "en": "corn cob",
           "ja": {
             "text": "とうもろこし",
             "reading": "とうもろこし"
@@ -1219,7 +1219,7 @@
         "itemId": "bread-loaf-campsite",
         "words": {
           "zh-TW": "吐司麵包",
-          "en": "loaf-of-bread",
+          "en": "loaf of bread",
           "ja": {
             "text": "食パン",
             "reading": "しょくパン"
@@ -1240,7 +1240,7 @@
         "itemId": "ketchup-bottle",
         "words": {
           "zh-TW": "番茄醬瓶",
-          "en": "ketchup-bottle",
+          "en": "ketchup bottle",
           "ja": {
             "text": "ケチャップボトル",
             "reading": "ケチャップボトル"
@@ -1261,7 +1261,7 @@
         "itemId": "mustard-bottle",
         "words": {
           "zh-TW": "芥末醬瓶",
-          "en": "mustard-bottle",
+          "en": "mustard bottle",
           "ja": {
             "text": "マスタードボトル",
             "reading": "マスタードボトル"
@@ -1282,7 +1282,7 @@
         "itemId": "pickle-jar-campsite",
         "words": {
           "zh-TW": "醃黃瓜罐",
-          "en": "pickle-jar",
+          "en": "pickle jar",
           "ja": {
             "text": "ピクルスの瓶",
             "reading": "ピクルスのびん"
@@ -1303,7 +1303,7 @@
         "itemId": "lemon-slices",
         "words": {
           "zh-TW": "檸檬片",
-          "en": "lemon-slice",
+          "en": "lemon slice",
           "ja": {
             "text": "レモンスライス",
             "reading": "レモンスライス"
@@ -1324,7 +1324,7 @@
         "itemId": "juice-carton",
         "words": {
           "zh-TW": "果汁紙盒",
-          "en": "juice-carton",
+          "en": "juice carton",
           "ja": {
             "text": "ジュースの紙パック",
             "reading": "ジュースのかみパック"
@@ -1345,7 +1345,7 @@
         "itemId": "paper-cup-campsite",
         "words": {
           "zh-TW": "紙杯",
-          "en": "paper-cup",
+          "en": "paper cup",
           "ja": {
             "text": "紙コップ",
             "reading": "かみコップ"
@@ -1366,7 +1366,7 @@
         "itemId": "serving-spoon-campsite",
         "words": {
           "zh-TW": "大湯匙",
-          "en": "serving-spoon",
+          "en": "serving spoon",
           "ja": {
             "text": "取り分けスプーン",
             "reading": "とりわけスプーン"
@@ -1387,7 +1387,7 @@
         "itemId": "serving-bowl",
         "words": {
           "zh-TW": "沙拉碗",
-          "en": "serving-bowl",
+          "en": "serving bowl",
           "ja": {
             "text": "サラダボウル",
             "reading": "サラダボウル"
@@ -1408,7 +1408,7 @@
         "itemId": "salad-leaf",
         "words": {
           "zh-TW": "生菜葉",
-          "en": "lettuce-leaf",
+          "en": "lettuce leaf",
           "ja": {
             "text": "レタスの葉",
             "reading": "レタスのは"
@@ -1429,7 +1429,7 @@
         "itemId": "paper-towel-roll",
         "words": {
           "zh-TW": "廚房紙巾",
-          "en": "paper-towel-roll",
+          "en": "paper towel roll",
           "ja": {
             "text": "キッチンペーパー",
             "reading": "キッチンペーパー"
@@ -1450,7 +1450,7 @@
         "itemId": "salad-dressing-bottle",
         "words": {
           "zh-TW": "沙拉醬瓶",
-          "en": "salad-dressing-bottle",
+          "en": "salad dressing bottle",
           "ja": {
             "text": "ドレッシングボトル",
             "reading": "ドレッシングボトル"
@@ -1471,7 +1471,7 @@
         "itemId": "mustard-jar",
         "words": {
           "zh-TW": "芥末醬罐",
-          "en": "mustard-jar",
+          "en": "mustard jar",
           "ja": {
             "text": "マスタードの瓶",
             "reading": "マスタードのびん"
@@ -1492,7 +1492,7 @@
         "itemId": "paper-lantern",
         "words": {
           "zh-TW": "紙燈籠",
-          "en": "paper-lantern",
+          "en": "paper lantern",
           "ja": {
             "text": "ちょうちん",
             "reading": "ちょうちん"
@@ -1513,7 +1513,7 @@
         "itemId": "cooler-box",
         "words": {
           "zh-TW": "保冷箱",
-          "en": "cooler-box",
+          "en": "cooler box",
           "ja": {
             "text": "クーラーボックス",
             "reading": "クーラーボックス"
