@@ -226,6 +226,12 @@ describe('layoutScene 錨點（rows / spots）', () => {
     expect(byId.lamp).toMatchObject({ x: 10, y: 10 });
   });
 
+  test('錨點太靠區域邊緣時，物件往內推、不超出區域', () => {
+    const byId = placeAll({ spots: { cat: [995, 500], cup: [500, 300], hat: [5, 400] } });
+    expect(checkLayout({ zones, items: its, placements: Object.values(byId) })).toEqual([]);
+    expect(bottom(byId.cat)).toBe(500);
+  });
+
   test('錨點物件互相擋太多時報錯', () => {
     const rows = [{ points: [[100, 700], [700, 700]], items: ['lamp', 'bin', null] }];
     expect(() => placeAll({ rows, spots: { sign: [205, 700], cat: [850, 500], cup: [500, 300] } })).toThrow(/sign|lamp/);

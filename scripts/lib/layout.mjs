@@ -205,7 +205,9 @@ export function anchorPoints(rows = [], spots = {}) {
 function anchoredBox(item, band, anchor) {
   const [ax, ay] = Array.isArray(anchor) ? anchor : [anchor.x, anchor.y];
   const { w, h } = itemSize(item.viewBox, item.sizeHint, Array.isArray(anchor) ? scaleAt(band, ay) : anchor.scale);
-  return { x: Math.round(ax - w / 2), y: Math.round(ay - h), w, h };
+  // 錨點太靠邊時往內推，物件左右不出區域（和隨機候選位置同一個範圍）
+  const x = Math.min(Math.max(ax - w / 2, band.x0), band.x0 + Math.max(0, band.x1 - band.x0 - w));
+  return { x: Math.round(x), y: Math.round(ay - h), w, h };
 }
 
 // ---- 自動排列 ----
