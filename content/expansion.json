@@ -5,7 +5,7 @@
   "wideAbove": 80,
   "topUp": true,
   "maxRequeueRounds": 4,
-  "maxScenes": 30,
+  "maxScenes": 40,
   "core": {"width": 3600, "height": 2600},
   "grid": {"street": 240, "note": "slot 之間留 240 的街道（src/lib/city.ts）；zone = 土地使用分區，新主題優先放同分區的 slot（docs/city-plan.md §5）；itemsPerScene 超過 wideAbove 的街區佔同一列左右相鄰的兩個 slot"},
   "slots": [
@@ -94,6 +94,16 @@
     {"id": "farm", "name": "農場", "zone": "outskirts"},
     {"id": "campsite", "name": "露營區", "zone": "outskirts"},
     {"id": "electronics-store", "name": "家電行", "zone": "commercial"},
-    {"id": "pharmacy", "name": "藥局", "zone": "neighborhood"}
+    {"id": "pharmacy", "name": "藥局", "zone": "neighborhood"},
+    {"id": "convenience-store", "name": "便利商店", "zone": "neighborhood"},
+    {"id": "cafe", "name": "咖啡廳", "zone": "commercial"},
+    {"id": "hardware-store", "name": "五金行", "zone": "commercial"},
+    {"id": "dental-clinic", "name": "牙醫診所", "zone": "neighborhood"},
+    {"id": "laundromat", "name": "自助洗衣店", "zone": "residential"},
+    {"id": "pet-shop", "name": "寵物店", "zone": "neighborhood"},
+    {"id": "music-classroom", "name": "音樂教室", "zone": "civic"},
+    {"id": "art-studio", "name": "美術教室", "zone": "civic"},
+    {"id": "fishing-port", "name": "漁港", "zone": "outskirts"},
+    {"id": "aquarium", "name": "水族館", "zone": "leisure"}
   ]
 }
