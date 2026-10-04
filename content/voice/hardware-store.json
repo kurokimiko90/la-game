@@ -479,6 +479,96 @@
       "score": 1,
       "take": "en-1791085768110.aac",
       "account": "chatgpt2"
+    },
+    "wheel-chock-hardware-store": {
+      "heard": "Wheelchalk.",
+      "score": 0.8,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "gutter-trough": {
+      "heard": "Planting trough.",
+      "score": 1,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "drill-bit": {
+      "heard": "Drillbit.",
+      "score": 1,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "furniture-glide": {
+      "heard": "Furniture Glide.",
+      "score": 1,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "air-compressor": {
+      "heard": "air compressor bolt",
+      "score": 0.76,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "screwdriver": {
+      "heard": "Screwdriver.",
+      "score": 1,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "putty-knife": {
+      "heard": "key putty knife.",
+      "score": 0.77,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "utility-knife-hardware-store": {
+      "heard": "Utility knife.",
+      "score": 1,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "shop-stool": {
+      "heard": "Shopstool.",
+      "score": 1,
+      "take": "en-1791094318710.aac",
+      "account": "chatgpt2"
+    },
+    "dustpan-hardware-store": {
+      "heard": "Dustpan.",
+      "score": 1,
+      "take": "en-1791094457398.aac",
+      "account": "chatgpt3"
+    },
+    "leaf-rake": {
+      "heard": "Leaf Rake",
+      "score": 1,
+      "take": "en-1791094457398.aac",
+      "account": "chatgpt3"
+    },
+    "bolt": {
+      "heard": "Bolt.",
+      "score": 1,
+      "take": "en-1791094457398.aac",
+      "account": "chatgpt3"
+    },
+    "folding-workbench": {
+      "heard": "Folding worked",
+      "score": 0.75,
+      "take": "en-1791094457398.aac",
+      "account": "chatgpt3"
+    },
+    "pliers": {
+      "heard": "Pliers.",
+      "score": 1,
+      "take": "en-1791094457398.aac",
+      "account": "chatgpt3"
+    },
+    "hex-key": {
+      "heard": "Hex key.",
+      "score": 1,
+      "take": "en-1791094457398.aac",
+      "account": "chatgpt3"
     }
   }
 }

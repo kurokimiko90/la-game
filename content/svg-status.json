@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-04T12:32:36.090+09:00",
+  "syncedAt": "2026-10-04T15:11:21.711+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -1651,7 +1651,13 @@
         "felt-pad",
         "cabinet-knob",
         "weatherstrip",
-        "toolbox-organizer"
+        "toolbox-organizer",
+        "wheel-chock-hardware-store",
+        "gutter-trough",
+        "folding-workbench",
+        "shop-vacuum",
+        "air-compressor",
+        "shop-stool"
       ],
       "failed": [],
       "pending": [],

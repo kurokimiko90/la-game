@@ -1449,6 +1449,96 @@
       "loose": false,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "wheel-chock-hardware-store",
+      "zh": "輪擋",
+      "en": "wheel chock",
+      "ja": "輪止め",
+      "reading": "わどめ",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "黃色楔形橡膠塊，斜面上有數道粗紋，常放在停靠車輛的輪胎旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "gutter-trough",
+      "zh": "種植槽",
+      "en": "planting trough",
+      "ja": "植木鉢",
+      "reading": "うえきばち",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "ground",
+      "desc": "長方形的深綠色種植槽，邊緣厚實，槽內露出深色土面。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "folding-workbench",
+      "zh": "折疊工作桌",
+      "en": "folding workbench",
+      "ja": "折りたたみ作業台",
+      "reading": "おりたたみさぎょうだい",
+      "category": "設施",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "ground",
+      "desc": "長方形木桌面搭配交叉折疊金屬桌腳，桌面留有工作空間。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shop-vacuum",
+      "zh": "工業吸塵器",
+      "en": "shop vacuum",
+      "ja": "乾湿両用掃除機",
+      "reading": "かんしつりょうようそうじき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "ground",
+      "desc": "圓筒形桶身裝在矮輪座上，頂部有提把與粗短吸塵管。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "air-compressor",
+      "zh": "空氣壓縮機",
+      "en": "air compressor",
+      "ja": "エアコンプレッサー",
+      "reading": "エアコンプレッサー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "ground",
+      "desc": "橫放的圓柱形金屬氣桶架在兩輪支架上，旁邊連著小型馬達。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shop-stool",
+      "zh": "工作圓凳",
+      "en": "shop stool",
+      "ja": "作業用スツール",
+      "reading": "さぎょうようスツール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "ground",
+      "desc": "圓形厚墊座面由四支金屬腳撐起，座下有一圈連接橫桿。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
     }
   ],
   "rejected": [
@@ -1565,6 +1655,11 @@
     {
       "id": "chisel",
       "reason": "審核：英文與物品標籤不一致"
+    },
+    {
+      "id": "folding-sawhorse",
+      "reason": "和已有的 sawhorse 太像",
+      "zone": "storefront"
     }
   ],
   "reviewFixes": [
@@ -1722,6 +1817,15 @@
         "ja": "家具用フェルト",
         "reading": "かぐようふぇると"
       }
+    },
+    {
+      "id": "gutter-trough",
+      "issue": "中文不自然；英文與圖意不符",
+      "changes": {
+        "zh": "種植槽",
+        "ja": "植木鉢",
+        "reading": "うえきばち"
+      }
     }
   ],
   "createdAt": "2026-10-04T03:02:48.851+09:00",
@@ -1746,5 +1850,10 @@
         "display"
       ]
     }
+  },
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 6,
+    "at": "2026-10-04T12:56:56.134+09:00"
   }
 }

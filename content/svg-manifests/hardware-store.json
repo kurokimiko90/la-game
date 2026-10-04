@@ -1982,6 +1982,132 @@
           }
         }
       }
+    },
+    {
+      "name": "輪擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黃色楔形橡膠塊，斜面上有數道粗紋，常放在停靠車輛的輪胎旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hardware-store",
+        "zone": "storefront",
+        "itemId": "wheel-chock-hardware-store",
+        "words": {
+          "zh-TW": "輪擋",
+          "en": "wheel chock",
+          "ja": {
+            "text": "輪止め",
+            "reading": "わどめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "種植槽",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形的深綠色種植槽，邊緣厚實，槽內露出深色土面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hardware-store",
+        "zone": "garden-supplies",
+        "itemId": "gutter-trough",
+        "words": {
+          "zh-TW": "種植槽",
+          "en": "planting trough",
+          "ja": {
+            "text": "植木鉢",
+            "reading": "うえきばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "折疊工作桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "長方形木桌面搭配交叉折疊金屬桌腳，桌面留有工作空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hardware-store",
+        "zone": "tools",
+        "itemId": "folding-workbench",
+        "words": {
+          "zh-TW": "折疊工作桌",
+          "en": "folding workbench",
+          "ja": {
+            "text": "折りたたみ作業台",
+            "reading": "おりたたみさぎょうだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "工業吸塵器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓筒形桶身裝在矮輪座上，頂部有提把與粗短吸塵管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hardware-store",
+        "zone": "tools",
+        "itemId": "shop-vacuum",
+        "words": {
+          "zh-TW": "工業吸塵器",
+          "en": "shop vacuum",
+          "ja": {
+            "text": "乾湿両用掃除機",
+            "reading": "かんしつりょうようそうじき"
+          }
+        }
+      }
+    },
+    {
+      "name": "空氣壓縮機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橫放的圓柱形金屬氣桶架在兩輪支架上，旁邊連著小型馬達。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hardware-store",
+        "zone": "tools",
+        "itemId": "air-compressor",
+        "words": {
+          "zh-TW": "空氣壓縮機",
+          "en": "air compressor",
+          "ja": {
+            "text": "エアコンプレッサー",
+            "reading": "エアコンプレッサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "工作圓凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形厚墊座面由四支金屬腳撐起，座下有一圈連接橫桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "hardware-store",
+        "zone": "tools",
+        "itemId": "shop-stool",
+        "words": {
+          "zh-TW": "工作圓凳",
+          "en": "shop stool",
+          "ja": {
+            "text": "作業用スツール",
+            "reading": "さぎょうようスツール"
+          }
+        }
+      }
     }
   ]
 }

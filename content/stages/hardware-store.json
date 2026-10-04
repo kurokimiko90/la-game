@@ -85,6 +85,30 @@
             "hand-trowel",
             "brick-trowel"
           ]
+        },
+        {
+          "row": "back",
+          "note": "園藝剪展示",
+          "x": [
+            0.18,
+            0.27
+          ],
+          "fixture": "display",
+          "on": [
+            "garden-shears"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "輪擋用品",
+          "x": [
+            0.79,
+            0.96
+          ],
+          "fixture": "stand",
+          "on": [
+            "wheel-chock-hardware-store"
+          ]
         }
       ]
     },
@@ -161,6 +185,42 @@
             "hanging-planter-hardware-store",
             "hanging-basket-hardware-store"
           ]
+        },
+        {
+          "row": "mid",
+          "note": "長柄工具收納",
+          "x": [
+            0.03,
+            0.22
+          ],
+          "fixture": "stand",
+          "on": [
+            "garden-spade",
+            "garden-hoe",
+            "leaf-rake"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "花箱與種植槽展示",
+          "x": [
+            0.71,
+            0.98
+          ],
+          "fixture": "stand",
+          "on": [
+            "window-box-hardware-store",
+            "gutter-trough"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "花架陳列",
+          "x": [
+            0.25,
+            0.45
+          ],
+          "main": "plant-stand-hardware-store"
         }
       ]
     },
@@ -247,6 +307,36 @@
             "washer",
             "paint-stir-stick"
           ]
+        },
+        {
+          "row": "mid",
+          "note": "折疊工作桌",
+          "x": [
+            0.25,
+            0.46
+          ],
+          "main": "folding-workbench"
+        },
+        {
+          "row": "back",
+          "note": "吸塵與空壓設備",
+          "x": [
+            0.73,
+            0.96
+          ],
+          "main": "shop-vacuum",
+          "beside": [
+            "air-compressor"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "工作圓凳",
+          "x": [
+            0.03,
+            0.23
+          ],
+          "main": "shop-stool"
         }
       ]
     },
@@ -342,6 +432,20 @@
             "cabinet-knob",
             "felt-pad",
             "weatherstrip"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "壁虎螺栓螺帽零件整理",
+          "x": [
+            0.03,
+            0.23
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "wall-anchor",
+            "bolt",
+            "nut"
           ]
         }
       ]
