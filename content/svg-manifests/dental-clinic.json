@@ -1,0 +1,1840 @@
+{
+  "sceneName": "語言小鎮・牙醫診所",
+  "sceneSlug": "la-dental-clinic",
+  "propStyle": "front-flat",
+  "zones": {
+    "clinic-entrance": "診所入口",
+    "reception": "掛號櫃台",
+    "waiting-room": "候診區",
+    "treatment-room": "診療室"
+  },
+  "elements": [
+    {
+      "name": "牙科診所",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淺色外牆搭配玻璃入口，門旁有一小段斜坡與低矮花台。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "dental-clinic",
+        "words": {
+          "zh-TW": "牙科診所",
+          "en": "dental clinic",
+          "ja": {
+            "text": "歯科医院",
+            "reading": "しかいいん"
+          }
+        }
+      }
+    },
+    {
+      "name": "入口門",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "一扇帶大塊透明玻璃的入口門，深色門框清楚勾出長方形輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "entry-door",
+        "words": {
+          "zh-TW": "入口門",
+          "en": "entry door",
+          "ja": {
+            "text": "入口ドア",
+            "reading": "いりぐちドア"
+          }
+        }
+      }
+    },
+    {
+      "name": "常綠灌木",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "花台裡一叢圓潤濃密的綠色灌木，細小葉片層層疊疊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "evergreen-shrub",
+        "words": {
+          "zh-TW": "常綠灌木",
+          "en": "evergreen shrub",
+          "ja": {
+            "text": "常緑低木",
+            "reading": "じょうりょくていぼく"
+          }
+        }
+      }
+    },
+    {
+      "name": "開花植物",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "盆裡一株矮小綠葉植物，頂端有幾朵明亮色的小花。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "flowering-plant",
+        "words": {
+          "zh-TW": "開花植物",
+          "en": "flowering plant",
+          "ja": {
+            "text": "花の咲く植物",
+            "reading": "はなのさくしょくぶつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "入口雨棚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口上方伸出的扁平遮雨棚，邊緣俐落，底面有幾盞小燈。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "entry-canopy-dental-clinic",
+        "words": {
+          "zh-TW": "入口雨棚",
+          "en": "entry canopy",
+          "ja": {
+            "text": "入口ひさし",
+            "reading": "いりぐちひさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "無障礙坡道",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "沿著入口階梯旁升高的灰色斜坡，兩側有矮矮的防滑邊緣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "wheelchair-ramp-dental-clinic",
+        "words": {
+          "zh-TW": "無障礙坡道",
+          "en": "wheelchair ramp",
+          "ja": {
+            "text": "車いす用スロープ",
+            "reading": "くるまいすようスロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "扶手",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "沿著坡道延伸的金屬扶手，兩根直立支柱撐起平滑的橫桿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "handrail-dental-clinic",
+        "words": {
+          "zh-TW": "扶手",
+          "en": "handrail",
+          "ja": {
+            "text": "手すり",
+            "reading": "てすり"
+          }
+        }
+      }
+    },
+    {
+      "name": "入口階梯",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "入口前一兩階寬闊的灰色台階，邊緣平直，表面略帶粗糙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "entry-step-dental-clinic",
+        "words": {
+          "zh-TW": "入口階梯",
+          "en": "entry step",
+          "ja": {
+            "text": "玄関の段差",
+            "reading": "げんかんのだんさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "門鈴按鈕",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在入口側牆上的小型圓形按鈕，外圈是金屬色，中央平滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "doorbell-button-dental-clinic",
+        "words": {
+          "zh-TW": "門鈴按鈕",
+          "en": "doorbell button",
+          "ja": {
+            "text": "呼び鈴ボタン",
+            "reading": "よびりんボタン"
+          }
+        }
+      }
+    },
+    {
+      "name": "對講機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "入口牆邊的窄長方形裝置，上方有小鏡頭，下方排列幾個圓形按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "intercom-dental-clinic",
+        "words": {
+          "zh-TW": "對講機",
+          "en": "intercom",
+          "ja": {
+            "text": "インターホン",
+            "reading": "インターホン"
+          }
+        }
+      }
+    },
+    {
+      "name": "門廊燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "門旁牆面固定的方形燈罩，乳白色燈面包在深色外框裡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "porch-light-dental-clinic",
+        "words": {
+          "zh-TW": "門廊燈",
+          "en": "porch light",
+          "ja": {
+            "text": "玄関灯",
+            "reading": "げんかんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "門把",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "固定在玻璃門上的短金屬把手，微微彎曲，末端圓滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "door-handle-dental-clinic",
+        "words": {
+          "zh-TW": "門把",
+          "en": "door handle",
+          "ja": {
+            "text": "ドアノブ",
+            "reading": "ドアノブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "楔形門擋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "放在門邊地面的橡膠楔子，前端低而薄，後端較高，表面有防滑紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "doorstop-wedge-dental-clinic",
+        "words": {
+          "zh-TW": "楔形門擋",
+          "en": "doorstop wedge",
+          "ja": {
+            "text": "くさび形ドアストッパー",
+            "reading": "くさびがたドアストッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "門墊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "入口前的扁平長方形墊子，深色纖維表面帶有粗粗的刷塵紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "door-mat-dental-clinic",
+        "words": {
+          "zh-TW": "門墊",
+          "en": "door mat",
+          "ja": {
+            "text": "玄関マット",
+            "reading": "げんかんマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "傘架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "門旁的高筒形架子，深色金屬外殼上有幾個直條孔洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "umbrella-stand-dental-clinic",
+        "words": {
+          "zh-TW": "傘架",
+          "en": "umbrella stand",
+          "ja": {
+            "text": "傘立て",
+            "reading": "かさたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "花盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "入口旁的低矮長方形花盆，外壁是淺灰色，盆土上冒出幾片綠葉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "planter-dental-clinic",
+        "words": {
+          "zh-TW": "花盆",
+          "en": "planter",
+          "ja": {
+            "text": "プランター",
+            "reading": "プランター"
+          }
+        }
+      }
+    },
+    {
+      "name": "石柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "入口兩側的方形淺灰石柱，柱身平整，頂端略寬形成簡單柱帽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "stone-pillar-dental-clinic",
+        "words": {
+          "zh-TW": "石柱",
+          "en": "stone pillar",
+          "ja": {
+            "text": "石柱",
+            "reading": "せきちゅう"
+          }
+        }
+      }
+    },
+    {
+      "name": "監視攝影機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "裝在入口牆角的白色小攝影機，短圓筒鏡頭朝向門外。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "security-camera-dental-clinic",
+        "words": {
+          "zh-TW": "監視攝影機",
+          "en": "security camera",
+          "ja": {
+            "text": "防犯カメラ",
+            "reading": "ぼうはんカメラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "落水管",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "沿著外牆垂直延伸的深色方管，靠近地面處彎向外側排水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "downspout-dental-clinic",
+        "words": {
+          "zh-TW": "落水管",
+          "en": "downspout",
+          "ja": {
+            "text": "縦樋",
+            "reading": "たてどい"
+          }
+        }
+      }
+    },
+    {
+      "name": "屋簷排水槽",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "沿入口雨棚外緣延伸的窄長金屬槽，兩端連接垂直落水管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "gutter-dental-clinic",
+        "words": {
+          "zh-TW": "屋簷排水槽",
+          "en": "gutter",
+          "ja": {
+            "text": "雨どい",
+            "reading": "あまどい"
+          }
+        }
+      }
+    },
+    {
+      "name": "排水溝蓋",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "坡道邊地面的長方形金屬格柵，平行細縫排列，嵌在淺淺的水溝上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "drain-grate-dental-clinic",
+        "words": {
+          "zh-TW": "排水溝蓋",
+          "en": "drain grate",
+          "ja": {
+            "text": "排水溝のふた",
+            "reading": "はいすいこうのふた"
+          }
+        }
+      }
+    },
+    {
+      "name": "鋪面磚",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "入口通道上的方形灰色鋪面磚，邊緣整齊，表面有淡淡的石紋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "paving-slab-dental-clinic",
+        "words": {
+          "zh-TW": "鋪面磚",
+          "en": "paving slab",
+          "ja": {
+            "text": "敷石",
+            "reading": "しきいし"
+          }
+        }
+      }
+    },
+    {
+      "name": "路緣斜坡",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "人行道邊緣降低形成的短斜坡，灰色路面平順接到街道路面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "curb-ramp-dental-clinic",
+        "words": {
+          "zh-TW": "路緣斜坡",
+          "en": "curb ramp",
+          "ja": {
+            "text": "縁石スロープ",
+            "reading": "えんせきスロープ"
+          }
+        }
+      }
+    },
+    {
+      "name": "候診長椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一張三人座的淺灰色長椅，連成一體的椅面與椅背架在金屬腳上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "waiting-bench",
+        "words": {
+          "zh-TW": "候診長椅",
+          "en": "waiting bench",
+          "ja": {
+            "text": "待合ベンチ",
+            "reading": "まちあいベンチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "面紙架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形壁掛盒底部開著一道抽取縫，露出一小角白面紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "tissue-dispenser",
+        "words": {
+          "zh-TW": "面紙架",
+          "en": "tissue dispenser",
+          "ja": {
+            "text": "ティッシュケース",
+            "reading": "ティッシュケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科掛號櫃台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "淺木色的直線櫃台，正面有一排窄抽屜，檯面寬而平整。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "reception-desk-dental-clinic",
+        "words": {
+          "zh-TW": "牙科掛號櫃台",
+          "en": "reception desk",
+          "ja": {
+            "text": "受付カウンター",
+            "reading": "うけつけカウンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "電腦螢幕",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色長方形螢幕立在短底座上，螢幕表面平滑，邊框細窄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "computer-monitor-dental-clinic",
+        "words": {
+          "zh-TW": "電腦螢幕",
+          "en": "monitor",
+          "ja": {
+            "text": "モニター",
+            "reading": "モニター"
+          }
+        }
+      }
+    },
+    {
+      "name": "鍵盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的黑色長方形鍵盤，表面排列著許多整齊的小方形按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "keyboard-dental-clinic",
+        "words": {
+          "zh-TW": "鍵盤",
+          "en": "keyboard",
+          "ja": {
+            "text": "キーボード",
+            "reading": "キーボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "滑鼠",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色橢圓形滑鼠，前端分成左右兩片按鍵，中間有一個小滾輪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "mouse-dental-clinic",
+        "words": {
+          "zh-TW": "滑鼠",
+          "en": "mouse",
+          "ja": {
+            "text": "マウス",
+            "reading": "マウス"
+          }
+        }
+      }
+    },
+    {
+      "name": "電話",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色桌上電話有斜立的按鍵底座，旁邊放著弧形聽筒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "telephone-dental-clinic",
+        "words": {
+          "zh-TW": "電話",
+          "en": "telephone",
+          "ja": {
+            "text": "電話機",
+            "reading": "でんわき"
+          }
+        }
+      }
+    },
+    {
+      "name": "櫃台鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金色圓頂鈴身安在小圓底座上，頂端有一顆突起的按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "desk-bell-dental-clinic",
+        "words": {
+          "zh-TW": "櫃台鈴",
+          "en": "desk bell",
+          "ja": {
+            "text": "卓上ベル",
+            "reading": "たくじょうベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "感應卡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一張薄薄的白色長方卡片，表面空白，角落有一小塊深色感應區。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "key-card-dental-clinic",
+        "words": {
+          "zh-TW": "感應卡",
+          "en": "key card",
+          "ja": {
+            "text": "カードキー",
+            "reading": "カードキー"
+          }
+        }
+      }
+    },
+    {
+      "name": "預約簿",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的深藍色硬皮簿冊，封面平整，側邊露出一疊白色紙頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "appointment-book-dental-clinic",
+        "words": {
+          "zh-TW": "預約簿",
+          "en": "appointment book",
+          "ja": {
+            "text": "予約帳",
+            "reading": "よやくちょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "板夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色硬板上方夾著一張空白白紙，頂端有寬大的銀色金屬夾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "clipboard-dental-clinic",
+        "words": {
+          "zh-TW": "板夾",
+          "en": "clipboard",
+          "ja": {
+            "text": "クリップボード",
+            "reading": "クリップボード"
+          }
+        }
+      }
+    },
+    {
+      "name": "文件盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺灰色的扁長方托盤，四周有低矮邊框，裡面疊著幾張空白紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "paper-tray-dental-clinic",
+        "words": {
+          "zh-TW": "文件盤",
+          "en": "paper tray",
+          "ja": {
+            "text": "書類トレー",
+            "reading": "しょるいトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "原子筆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的藍色原子筆，筆身光滑，頂端有筆夾，末端露出尖細筆頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "pen-dental-clinic",
+        "words": {
+          "zh-TW": "原子筆",
+          "en": "pen",
+          "ja": {
+            "text": "ボールペン",
+            "reading": "ボールペン"
+          }
+        }
+      }
+    },
+    {
+      "name": "訂書機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色短胖的金屬訂書機，上蓋略微隆起，前端有窄窄的出釘口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "stapler-dental-clinic",
+        "words": {
+          "zh-TW": "訂書機",
+          "en": "stapler",
+          "ja": {
+            "text": "ホチキス",
+            "reading": "ホチキス"
+          }
+        }
+      }
+    },
+    {
+      "name": "計算機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色掌上計算機呈扁平長方形，上方有小螢幕，下方排列圓角按鍵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "calculator-dental-clinic",
+        "words": {
+          "zh-TW": "計算機",
+          "en": "calculator",
+          "ja": {
+            "text": "電卓",
+            "reading": "でんたく"
+          }
+        }
+      }
+    },
+    {
+      "name": "迴紋針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色細金屬線彎成雙層長橢圓形，外框纖細，中心留有空隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "paperclip-dental-clinic",
+        "words": {
+          "zh-TW": "迴紋針",
+          "en": "paperclip",
+          "ja": {
+            "text": "クリップ",
+            "reading": "クリップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "名片架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明壓克力製的斜口小盒，裡面插著幾張沒有文字的白色卡片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "business-card-holder-dental-clinic",
+        "words": {
+          "zh-TW": "名片架",
+          "en": "business card holder",
+          "ja": {
+            "text": "名刺スタンド",
+            "reading": "めいしスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "面紙盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方紙盒頂部開著橢圓形抽取口，一張白面紙從中央露出。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "tissue-box-dental-clinic",
+        "words": {
+          "zh-TW": "面紙盒",
+          "en": "tissue box",
+          "ja": {
+            "text": "ティッシュボックス",
+            "reading": "ティッシュボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "乾洗手",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明短瓶裝著淡藍色凝膠，瓶口裝有白色按壓頭，底部較寬。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "hand-sanitizer",
+        "words": {
+          "zh-TW": "乾洗手",
+          "en": "hand sanitizer",
+          "ja": {
+            "text": "手指消毒液",
+            "reading": "てゆびしょうどくえき"
+          }
+        }
+      }
+    },
+    {
+      "name": "資料架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明直立式窄盒，前面有開口，裡面整齊插著幾張空白折頁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "brochure-holder-dental-clinic",
+        "words": {
+          "zh-TW": "資料架",
+          "en": "brochure holder",
+          "ja": {
+            "text": "パンフレットスタンド",
+            "reading": "パンフレットスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "號碼牌機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色方形小機器正面有寬大的取紙口，旁邊凸出一顆圓形按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "queue-ticket-dispenser-dental-clinic",
+        "words": {
+          "zh-TW": "號碼牌機",
+          "en": "queue ticket dispenser",
+          "ja": {
+            "text": "番号札発券機",
+            "reading": "ばんごうふだはっけんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "刷卡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深灰色手持刷卡機有斜面按鍵和小螢幕，底端留著狹長插卡槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "card-terminal-dental-clinic",
+        "words": {
+          "zh-TW": "刷卡機",
+          "en": "card terminal",
+          "ja": {
+            "text": "カード決済端末",
+            "reading": "カードけっさいたんまつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀抽屜",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色扁平金屬抽屜拉開一半，內部分成數個整齊的小格。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "cash-drawer-dental-clinic",
+        "words": {
+          "zh-TW": "收銀抽屜",
+          "en": "cash drawer",
+          "ja": {
+            "text": "キャッシュドロワー",
+            "reading": "キャッシュドロワー"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據印表機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方盒狀小印表機，頂部有一道出紙縫，露出一截空白紙條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "receipt-printer-dental-clinic",
+        "words": {
+          "zh-TW": "收據印表機",
+          "en": "receipt printer",
+          "ja": {
+            "text": "レシートプリンター",
+            "reading": "レシートプリンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "桌曆",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型三角形立架托著一疊空白白紙，頂端由一排金屬環穿起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "reception",
+        "itemId": "desk-calendar-dental-clinic",
+        "words": {
+          "zh-TW": "桌曆",
+          "en": "desk calendar",
+          "ja": {
+            "text": "卓上カレンダー",
+            "reading": "たくじょうカレンダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙齒保健海報",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "淡藍底色的長方形海報，中央畫著一顆白色牙齒和綠色牙刷，四周有簡單泡泡圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-poster",
+        "words": {
+          "zh-TW": "牙齒保健海報",
+          "en": "dental health poster",
+          "ja": {
+            "text": "歯の健康ポスター",
+            "reading": "はのけんこうポスター"
+          }
+        }
+      }
+    },
+    {
+      "name": "飲水機桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "透明的大型塑膠水桶倒扣在飲水機頂部，桶身圓鼓、底部收窄，內有淡藍色的水。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "water-cooler-bottle",
+        "words": {
+          "zh-TW": "飲水機桶",
+          "en": "water cooler bottle",
+          "ja": {
+            "text": "ウォーターサーバー用ボトル",
+            "reading": "ウォーターサーバーようボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "雜誌架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色金屬落地架有三層斜放的淺盤，每層整齊插著幾本色彩鮮明、封面無字的雜誌。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "magazine-rack",
+        "words": {
+          "zh-TW": "雜誌架",
+          "en": "magazine rack",
+          "ja": {
+            "text": "マガジンラック",
+            "reading": "マガジンラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "立式衣帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深色木製直桿立在圓形底座上，頂端向外伸出數根彎曲掛鉤，造型簡潔穩固。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "coat-stand",
+        "words": {
+          "zh-TW": "立式衣帽架",
+          "en": "coat stand",
+          "ja": {
+            "text": "コートスタンド",
+            "reading": "コートスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "落地植物",
+      "category": "植物",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一株枝葉向上舒展的綠色觀葉植物，長橢圓葉片從幾根細枝伸出，種在矮陶盆裡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "floor-plant",
+        "words": {
+          "zh-TW": "落地植物",
+          "en": "floor plant",
+          "ja": {
+            "text": "観葉植物",
+            "reading": "かんようしょくぶつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨傘除水機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的深灰色直立機箱頂部有一個大圓形開口，前方設有接水槽和短短的排水管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "umbrella-dryer",
+        "words": {
+          "zh-TW": "雨傘除水機",
+          "en": "umbrella dryer",
+          "ja": {
+            "text": "傘の水切り機",
+            "reading": "かさのみずきりき"
+          }
+        }
+      }
+    },
+    {
+      "name": "消毒踏墊",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "一塊長方形淺藍色吸水踏墊平鋪地面，表面有細密網格紋，邊緣包著深藍滾邊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "floor-mat-disinfectant",
+        "words": {
+          "zh-TW": "消毒踏墊",
+          "en": "disinfectant mat",
+          "ja": {
+            "text": "消毒マット",
+            "reading": "しょうどくマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "鞋套回收桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色窄高方桶立在地面，頂部有投入口，側面開著一個小視窗，裡面可見淡藍色鞋套。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "shoe-cover-bin",
+        "words": {
+          "zh-TW": "鞋套回收桶",
+          "en": "shoe cover bin",
+          "ja": {
+            "text": "シューズカバー回収箱",
+            "reading": "シューズカバーかいしゅうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "告示牌底座",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色沉重的平底座上插著一根短金屬桿，頂端以夾具固定一片空白透明板。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "floor-sign-holder",
+        "words": {
+          "zh-TW": "告示牌底座",
+          "en": "floor sign holder",
+          "ja": {
+            "text": "床置き表示板スタンド",
+            "reading": "ゆかおきひょうじばんスタンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "牆面防撞護條",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "牆面腰部固定著一條水平的淺灰色圓角護條，表面平滑連續，兩端以小圓帽收尾。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-protection-rail",
+        "words": {
+          "zh-TW": "牆面防撞護條",
+          "en": "wall protection rail",
+          "ja": {
+            "text": "壁面保護レール",
+            "reading": "へきめんほごレール"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色鐘面配深藍外框，中央有兩根黑色指針與細刻度，沒有數字或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-clock-dental-clinic",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall clock",
+          "ja": {
+            "text": "壁掛け時計",
+            "reading": "かべかけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "溫度控制器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色方形溫度控制器固定在牆面，正面有一個圓形旋鈕和幾道簡單刻線，沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-thermostat",
+        "words": {
+          "zh-TW": "溫度控制器",
+          "en": "thermostat",
+          "ja": {
+            "text": "温度調節器",
+            "reading": "おんどちょうせつき"
+          }
+        }
+      }
+    },
+    {
+      "name": "空氣清淨機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色直立長方機身正面有大片細格柵，頂面開著出風口，底部帶有短短的支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "air-purifier-dental-clinic",
+        "words": {
+          "zh-TW": "空氣清淨機",
+          "en": "air purifier",
+          "ja": {
+            "text": "空気清浄機",
+            "reading": "くうきせいじょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "立扇",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色圓形護網裡有三片扇葉，細長支柱連著圓底座，扇頭微微朝上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "standing-fan",
+        "words": {
+          "zh-TW": "立扇",
+          "en": "standing fan",
+          "ja": {
+            "text": "扇風機",
+            "reading": "せんぷうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "通風口",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆面上的長方形白色通風格柵，由一排平行斜葉片組成，外框平整俐落。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-vent-dental-clinic",
+        "words": {
+          "zh-TW": "通風口",
+          "en": "wall vent",
+          "ja": {
+            "text": "換気口",
+            "reading": "かんきこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "火警拉扣",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "紅色方盒固定在牆上，正面有一個突出的拉柄和透明保護蓋，外觀醒目易辨。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "fire-alarm-pull",
+        "words": {
+          "zh-TW": "火警拉扣",
+          "en": "fire alarm pull station",
+          "ja": {
+            "text": "火災報知器の発信機",
+            "reading": "かさいほうちきのはっしんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "灑水頭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "天花板邊緣露出一個小型金屬灑水頭，短管末端有薄片狀噴頭和細小支架。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "sprinkler-head-dental-clinic",
+        "words": {
+          "zh-TW": "灑水頭",
+          "en": "sprinkler head",
+          "ja": {
+            "text": "スプリンクラーヘッド",
+            "reading": "スプリンクラーヘッド"
+          }
+        }
+      }
+    },
+    {
+      "name": "煙霧偵測器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓盤狀偵測器貼在天花板，外圈開著一圈細縫，中央有小小的深色感應孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "smoke-detector-dental-clinic",
+        "words": {
+          "zh-TW": "煙霧偵測器",
+          "en": "smoke detector",
+          "ja": {
+            "text": "煙感知器",
+            "reading": "けむりかんちき"
+          }
+        }
+      }
+    },
+    {
+      "name": "緊急照明燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方形燈盒固定在高處，正面有兩個圓形燈頭，燈面發出柔和的淡黃色光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "emergency-light-dental-clinic",
+        "words": {
+          "zh-TW": "緊急照明燈",
+          "en": "emergency light",
+          "ja": {
+            "text": "非常灯",
+            "reading": "ひじょうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "滅火器箱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色窄高的金屬箱靠牆放置，正面是透明窗格，可看見裡面紅色滅火器的輪廓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "fire-extinguisher-cabinet-dental-clinic",
+        "words": {
+          "zh-TW": "滅火器箱",
+          "en": "fire extinguisher cabinet",
+          "ja": {
+            "text": "消火器収納箱",
+            "reading": "しょうかきしゅうのうばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "簡潔的白色壁燈有扁圓燈罩和短短的金屬底座，向上投出一片溫暖的光。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-sconce-dental-clinic",
+        "words": {
+          "zh-TW": "壁燈",
+          "en": "wall sconce",
+          "ja": {
+            "text": "壁付け照明",
+            "reading": "かべつけしょうめい"
+          }
+        }
+      }
+    },
+    {
+      "name": "天花板喇叭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色喇叭嵌在天花板，正面布滿細密小孔，外圈有一圈平滑的圓框。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "ceiling-speaker-dental-clinic",
+        "words": {
+          "zh-TW": "天花板喇叭",
+          "en": "ceiling speaker",
+          "ja": {
+            "text": "天井スピーカー",
+            "reading": "てんじょうスピーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "地板排水孔",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "地面上的方形不鏽鋼排水蓋，表面排列著整齊長孔，四周嵌在淺灰色地磚內。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "floor-drain-dental-clinic",
+        "words": {
+          "zh-TW": "地板排水孔",
+          "en": "floor drain",
+          "ja": {
+            "text": "床排水口",
+            "reading": "ゆかはいすいこう"
+          }
+        }
+      }
+    },
+    {
+      "name": "牆面護板",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "牆下半部覆著一整片淺灰色平滑護板，表面沒有圖案，頂端以細窄收邊條收口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "wall-panel-dental-clinic",
+        "words": {
+          "zh-TW": "牆面護板",
+          "en": "wall panel",
+          "ja": {
+            "text": "壁面パネル",
+            "reading": "へきめんパネル"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科診療椅",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "可躺式椅背搭配厚實坐墊，旁邊連著可調整高度的金屬底座。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-chair",
+        "words": {
+          "zh-TW": "牙科診療椅",
+          "en": "dental chair",
+          "ja": {
+            "text": "歯科診療台",
+            "reading": "しかしんりょうだい"
+          }
+        }
+      }
+    },
+    {
+      "name": "診療燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形燈頭由彎曲支臂支撐，正面排列數個小燈面，方便照亮口腔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "operating-light",
+        "words": {
+          "zh-TW": "診療燈",
+          "en": "operating light",
+          "ja": {
+            "text": "診療灯",
+            "reading": "しんりょうとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "口鏡",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬柄末端裝著一面小圓鏡，鏡面朝向正前方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-mirror",
+        "words": {
+          "zh-TW": "口鏡",
+          "en": "dental mirror",
+          "ja": {
+            "text": "歯鏡",
+            "reading": "しきょう"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科探針",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長金屬柄的前端彎成尖鉤，另一端有便於握持的粗紋把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-probe",
+        "words": {
+          "zh-TW": "牙科探針",
+          "en": "dental probe",
+          "ja": {
+            "text": "探針",
+            "reading": "たんしん"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科鑷子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片細長金屬臂在尾端相連，前端尖細，合攏時能夾住小物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-tweezers",
+        "words": {
+          "zh-TW": "牙科鑷子",
+          "en": "dental tweezers",
+          "ja": {
+            "text": "歯科用ピンセット",
+            "reading": "しかようピンセット"
+          }
+        }
+      }
+    },
+    {
+      "name": "拔牙鉗",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金屬鉗身有兩支彎曲握柄，前端張開成一對弧形夾爪。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-forceps",
+        "words": {
+          "zh-TW": "拔牙鉗",
+          "en": "dental forceps",
+          "ja": {
+            "text": "抜歯鉗子",
+            "reading": "ばっしかんし"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科刮治器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細金屬柄的兩端各有彎曲尖頭，握柄刻有防滑紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-scaler",
+        "words": {
+          "zh-TW": "牙科刮治器",
+          "en": "dental scaler",
+          "ja": {
+            "text": "スケーラー",
+            "reading": "スケーラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科注射器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓筒狀金屬器具，前端細長，尾端有兩個指環和可推動的柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-syringe",
+        "words": {
+          "zh-TW": "牙科注射器",
+          "en": "dental syringe",
+          "ja": {
+            "text": "歯科用注射器",
+            "reading": "しかようちゅうしゃき"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科圍兜",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一片扁平的淡藍色防水紙布，頂端有圓弧領口，兩側帶有繫帶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-bib",
+        "words": {
+          "zh-TW": "牙科圍兜",
+          "en": "dental bib",
+          "ja": {
+            "text": "歯科用エプロン",
+            "reading": "しかようエプロン"
+          }
+        }
+      }
+    },
+    {
+      "name": "漱口杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明的小塑膠杯，杯口圓形、杯身略呈錐形，側面沒有把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-cup",
+        "words": {
+          "zh-TW": "漱口杯",
+          "en": "rinsing cup",
+          "ja": {
+            "text": "うがい用コップ",
+            "reading": "うがいようコップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科器械櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色窄身櫃體帶有數個平整抽屜與櫃門，底部是穩固的短腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-cabinet",
+        "words": {
+          "zh-TW": "牙科器械櫃",
+          "en": "dental cabinet",
+          "ja": {
+            "text": "歯科キャビネット",
+            "reading": "しかキャビネット"
+          }
+        }
+      }
+    },
+    {
+      "name": "器械托盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺金屬長方盤，四周有低矮圓邊，平整盤面可放置診療器具。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-tray",
+        "words": {
+          "zh-TW": "器械托盤",
+          "en": "dental instrument tray",
+          "ja": {
+            "text": "歯科用トレー",
+            "reading": "しかようトレー"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙齒模型",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "上下兩排白色立體牙齒裝在紅色牙齦底座上，可張開呈現咬合面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-model",
+        "words": {
+          "zh-TW": "牙齒模型",
+          "en": "dental model",
+          "ja": {
+            "text": "歯列模型",
+            "reading": "しれつもけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙刷模型",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "放大的塑膠牙刷模型，長柄末端排列短刷毛，刷頭方向朝上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "toothbrush-model",
+        "words": {
+          "zh-TW": "牙刷模型",
+          "en": "toothbrush model",
+          "ja": {
+            "text": "歯ブラシ模型",
+            "reading": "はブラシもけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙線",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一小段白色細線繞成鬆散圓圈，線身纖細而平滑。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-floss",
+        "words": {
+          "zh-TW": "牙線",
+          "en": "dental floss",
+          "ja": {
+            "text": "デンタルフロス",
+            "reading": "デンタルフロス"
+          }
+        }
+      }
+    }
+  ]
+}

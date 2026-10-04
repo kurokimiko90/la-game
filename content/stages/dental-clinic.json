@@ -1,0 +1,281 @@
+{
+  "zones": {
+    "clinic-entrance": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "臨街綠化",
+          "x": [
+            0.03,
+            0.2
+          ],
+          "main": "evergreen-shrub",
+          "beside": [
+            "flowering-plant"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "鋪面與排水",
+          "x": [
+            0.82,
+            0.97
+          ],
+          "fixture": "platform",
+          "on": [
+            "paving-slab-dental-clinic",
+            "drain-grate-dental-clinic"
+          ]
+        }
+      ]
+    },
+    "reception": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "掛號櫃台與電腦作業區",
+          "x": [
+            0.2,
+            0.74
+          ],
+          "fixture": "counter",
+          "main": "reception-desk-dental-clinic",
+          "on": [
+            "computer-monitor-dental-clinic",
+            "keyboard-dental-clinic",
+            "mouse-dental-clinic",
+            "telephone-dental-clinic"
+          ],
+          "beside": [
+            "cash-drawer-dental-clinic"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "預約與文件整理",
+          "x": [
+            0.22,
+            0.48
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "appointment-book-dental-clinic",
+            "clipboard-dental-clinic",
+            "paper-tray-dental-clinic",
+            "desk-calendar-dental-clinic"
+          ],
+          "beside": [
+            "stapler-dental-clinic",
+            "calculator-dental-clinic"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "付款與收據",
+          "x": [
+            0.52,
+            0.76
+          ],
+          "fixture": "counter",
+          "on": [
+            "card-terminal-dental-clinic",
+            "receipt-printer-dental-clinic",
+            "desk-bell-dental-clinic",
+            "key-card-dental-clinic"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "候診座位與衛生用品",
+          "x": [
+            0.03,
+            0.17
+          ],
+          "main": "waiting-bench",
+          "on": [
+            "tissue-dispenser",
+            "tissue-box-dental-clinic"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "診所資料與名片",
+          "x": [
+            0.79,
+            0.97
+          ],
+          "fixture": "shelf",
+          "on": [
+            "brochure-holder-dental-clinic",
+            "hand-sanitizer"
+          ],
+          "front": [
+            "paperclip-dental-clinic"
+          ]
+        }
+      ]
+    },
+    "waiting-room": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "候診座椅與保健資訊",
+          "x": [
+            0.2,
+            0.52
+          ],
+          "main": "wall-panel-dental-clinic",
+          "wall": [
+            "wall-poster",
+            "wall-clock-dental-clinic",
+            "wall-thermostat"
+          ],
+          "beside": [
+            "wall-protection-rail"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "飲水與閱讀角",
+          "x": [
+            0.56,
+            0.78
+          ],
+          "fixture": "stand",
+          "on": [
+            "water-cooler-bottle",
+            "magazine-rack"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "入口雨具與鞋套",
+          "x": [
+            0.03,
+            0.18
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "umbrella-dryer"
+          ],
+          "beside": [
+            "floor-mat-disinfectant"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "牆面環境與安全設備",
+          "x": [
+            0.55,
+            0.79
+          ],
+          "fixture": "board",
+          "wall": [
+            "wall-vent-dental-clinic",
+            "wall-sconce-dental-clinic",
+            "fire-alarm-pull"
+          ],
+          "front": [
+            "fire-extinguisher-cabinet-dental-clinic"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "天花板與地面維護設備",
+          "x": [
+            0.03,
+            0.17
+          ],
+          "fixture": "platform",
+          "on": [
+            "sprinkler-head-dental-clinic",
+            "smoke-detector-dental-clinic",
+            "emergency-light-dental-clinic",
+            "ceiling-speaker-dental-clinic"
+          ],
+          "front": [
+            "floor-drain-dental-clinic"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "衣帽暫放",
+          "x": [
+            0.2,
+            0.34
+          ],
+          "main": "coat-stand"
+        }
+      ]
+    },
+    "treatment-room": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "診療椅與照明",
+          "x": [
+            0.25,
+            0.68
+          ],
+          "main": "dental-chair",
+          "on": [
+            "operating-light",
+            "dental-cup"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "器械準備台",
+          "x": [
+            0.04,
+            0.36
+          ],
+          "fixture": "counter",
+          "on": [
+            "dental-tray",
+            "dental-mirror",
+            "dental-probe",
+            "dental-tweezers"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "拔牙與清潔器械",
+          "x": [
+            0.4,
+            0.68
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "dental-forceps",
+            "dental-scaler",
+            "dental-syringe"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "口腔衛教模型",
+          "x": [
+            0.72,
+            0.96
+          ],
+          "fixture": "shelf",
+          "on": [
+            "dental-model",
+            "toothbrush-model",
+            "dental-floss"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "器械櫃與工作側邊",
+          "x": [
+            0.72,
+            0.96
+          ],
+          "main": "dental-cabinet"
+        }
+      ]
+    }
+  }
+}
