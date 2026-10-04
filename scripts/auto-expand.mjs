@@ -37,11 +37,13 @@ const ROOT = path.resolve(path.dirname(SELF), '..');
 const STATE_DIR = path.join(ROOT, '.auto-expand');
 const STATE_FILE = path.join(STATE_DIR, 'state.json');
 const LOCK_FILE = path.join(STATE_DIR, 'lock');
+// 暫停到某時刻：檔案內容是 ISO 時間，排程 tick 在那之前直接略過（手動 --status 等不受影響）
+const PAUSE_FILE = path.join(STATE_DIR, 'pause-until');
 const LOG_FILE = path.join(STATE_DIR, 'auto-expand.log');
-const REVIEW_QUEUE = path.join(STATE_DIR, 'review-queue.json');
-// commit 後等試玩伺服器換上新版再做構圖審查（scripts/reload-play.mjs 讀這份清單）
 // 整合失敗的診斷報告（scripts/lib/diagnose.mjs）
 const DIAGNOSIS_DIR = path.join(STATE_DIR, 'diagnosis');
+const REVIEW_QUEUE = path.join(STATE_DIR, 'review-queue.json');
+// commit 後等試玩伺服器換上新版再做構圖審查（scripts/reload-play.mjs 讀這份清單）
 const LAYOUT_PENDING = path.join(STATE_DIR, 'layout-pending.json');
 const P = {
   settings: path.join(ROOT, 'content', 'expansion.json'),
@@ -626,6 +628,8 @@ async function main() {
     saveState({ ...resumeIfDue({ ...s, retryAt: undefined }, Date.now()), attempts: undefined });
     return log(`解除卡住，回到 ${s.resumePhase ?? s.phase}`);
   }
+  const pauseUntil = fs.existsSync(PAUSE_FILE) ? Date.parse(fs.readFileSync(PAUSE_FILE, 'utf8').trim()) : NaN;
+  if (Date.now() < pauseUntil) return log(`暫停中（到 ${new Date(pauseUntil).toISOString()}），略過`);
   if (!acquireLock()) return log('上一次還在跑，略過');
   const restageAt = args.indexOf('--restage');
   if (restageAt >= 0) {

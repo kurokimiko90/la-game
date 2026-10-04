@@ -172,6 +172,21 @@ function Pool({ z }: { z: TerrainZone }) {
   );
 }
 
+/** 兩格寬街區中間保留的是同一場所內的步行連接帶，不再延續成穿越場地的車道。 */
+function InternalConnector({ terrain }: { terrain: DistrictTerrain }) {
+  const xs = [...new Set(terrain.zones.flatMap((z) => [z.x0, z.x1]))].sort((a, b) => a - b);
+  const gap = xs.slice(0, -1).map((x, i) => [x, xs[i + 1]] as const)
+    .find(([a, b]) => b - a >= 80 && terrain.zones.some((z) => z.x1 === a) && terrain.zones.some((z) => z.x0 === b));
+  if (!gap) return null;
+  const [x0, x1] = gap;
+  const mid = (x0 + x1) / 2;
+  return <g pointerEvents="none" data-internal-connector="walkway">
+    <rect x={x0} y={terrain.y0} width={x1 - x0} height={terrain.y1 - terrain.y0} fill="#eee5d5" />
+    <path d={`M${mid} ${terrain.y0 + 45}V${terrain.y1 - 45}`} stroke="#cbbda7" strokeWidth={7} strokeDasharray="34 24" opacity={.78} />
+    <path d={`M${x0 + 28} ${terrain.y0}V${terrain.y1}M${x1 - 28} ${terrain.y0}V${terrain.y1}`} stroke="#d8cbb7" strokeWidth={4} />
+  </g>;
+}
+
 /** 室外：上緣兩個花台，草叢會動（背景動態）；草地另外散一些草叢 */
 function OutdoorAmbient({ z }: { z: TerrainZone }) {
   if (z.indoor) return null;
@@ -233,11 +248,13 @@ export function GeneratedDistrict({ terrain, sceneId }: { terrain: DistrictTerra
           {z.details && <SiteFeatures features={z.details} />}
         </g>
       ))}
+      <InternalConnector terrain={terrain} />
+      <VenueStructure terrain={terrain} sceneId={terrain.structure ?? sceneId} />
       {terrain.openPlan ? <>
         <BackWall z={{ id: 'room', x0, y0, x1, y1, indoor: true, floor: 'wood', wallBase: y0 + 180 }} roof={terrain.color} />
         <rect x={x0 + 110} y={y1 - 15} width={160} height={18} fill="#dcb98f" />
       </> : <>
-        {terrain.sharedShell && <><VenueStructure terrain={terrain} sceneId={terrain.structure ?? sceneId} /><IndoorEnvelope terrain={terrain} /></>}
+        {terrain.sharedShell && <IndoorEnvelope terrain={terrain} />}
         {!terrain.sharedShell && <Doors zones={terrain.zones} />}
       </>}
     </g>

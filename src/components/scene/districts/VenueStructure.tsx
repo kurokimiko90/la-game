@@ -23,7 +23,19 @@ export const VENUE_PLANS: Record<string, VenuePlan> = {
   'flower-shop': { accent: '#8da976', wall: 'garden', zones: { 'front-garden': ['flowerbed'], 'flower-display': ['display'], 'bouquet-counter': ['bouquet'], 'plant-corner': ['flowerbed'] } },
   bookstore: { accent: '#ae926d', wall: 'wood', zones: { entrance: ['arrival'], 'front-shelves': ['stacks'], 'reading-corner': ['reading'], checkout: ['service'] } },
   'stationery-store': { accent: '#91a5bd', wall: 'glass', zones: { entrance: ['arrival'], 'front-display': ['display'], 'writing-supplies': ['stationery'], 'checkout-counter': ['service'] } },
-  gym: { accent: '#8aac8b', wall: 'industrial', zones: { entrance: ['arrival'], reception: ['service'], 'cardio-floor': ['exercise'], poolside: ['pooldeck'] } },
+  gym: { accent: '#668b7b', wall: 'industrial', zones: { entrance: ['arrival', 'strength'], reception: ['service'], 'cardio-floor': ['exercise', 'strength'], poolside: ['swim-lanes', 'pooldeck'] } },
+  pharmacy: { accent: '#6f9f88', wall: 'clinical', zones: { entrance: ['arrival', 'retail'], 'front-shop': ['retail', 'waiting'], 'medicine-aisle': ['dispensary', 'stacks'], 'consultation-room': ['consultation'] } },
+  'electronics-store': { accent: '#718da8', wall: 'glass', zones: { storefront: ['arrival', 'display'], showroom: ['retail', 'showroom'], 'appliance-aisle': ['retail', 'stacks'], checkout: ['service', 'concourse'] } },
+  campsite: { accent: '#6f8f69', wall: 'wood', zones: { 'camp-entrance': ['arrival', 'camp-pitch'], 'supply-hut': ['service', 'stacks'], 'picnic-ground': ['dining', 'terrace'], 'tent-site': ['camp-pitch'] } },
+  farm: { accent: '#8c744f', wall: 'wood', zones: { farmyard: ['arrival', 'operations'], barn: ['workshop', 'stacks'], stable: ['operations', 'paddock'], pasture: ['paddock', 'shores'] } },
+  'hot-spring': { accent: '#668f88', wall: 'wood', zones: { entrance: ['arrival', 'genkan'], lobby: ['service', 'waiting'], 'bathing-area': ['wash', 'pooldeck'], 'guest-room': ['bedroom', 'reading'] } },
+  'amusement-park': { accent: '#b56e87', wall: 'warm', zones: { entrance: ['arrival', 'concourse'], midway: ['boardwalk', 'ride'], 'carousel-hall': ['ride'], 'water-ride': ['ride', 'shores'] } },
+  hotel: { accent: '#9c7b55', wall: 'warm', zones: { entrance: ['arrival', 'apron'], lobby: ['checkin', 'waiting'], 'guest-floor': ['hotel-corridor'], 'dining-room': ['dining', 'service'] } },
+  'swimming-pool': { accent: '#4c8ba3', wall: 'glass', zones: { 'pool-entrance': ['arrival', 'wash'], 'changing-room': ['fitting', 'wash'], 'indoor-pool': ['swim-lanes', 'pooldeck'], 'outdoor-pool': ['swim-lanes', 'pooldeck'] } },
+};
+
+const HAND_BUILT_PLANS: Record<string, VenuePlan> = {
+  home: { accent: '#a57962', wall: 'warm', zones: { 'front-yard': ['arrival', 'flowerbed'], 'living-room': ['reading'], kitchen: ['kitchen'], bedroom: ['bedroom'] } },
 };
 
 const WALL_COLORS: Record<WallStyle, { face: string; trim: string }> = {
@@ -227,12 +239,65 @@ function ZoneStructure({ zone, motifs, accent }: { zone: TerrainZone; motifs: re
         {rect('non-slip', .09, .28, .82, .52, '#cae2e3', .37, 18)}
         {repeat(7, i => line(`drain${i}`, .14 + i * .12, .77, .20 + i * .12, .77, 4))}
       </g>;
+      case 'retail': return <g key={key}>
+        {repeat(4, i => rect(`bay${i}`, .08 + i * .23, .30, .16, .34, '#d9e2df', .35, 8))}
+        {line('cross-aisle', .06, .76, .94, .76, 8, '42 18')}
+      </g>;
+      case 'consultation': return <g key={key}>
+        {rect('private-room', .14, .28, .72, .50, '#dce7e2', .46, 28)}
+        {line('privacy', .14, .43, .86, .43, 7, '20 13')}
+        {rect('turning-space', .39, .52, .22, .22, '#f5f1e8', .70, 55)}
+      </g>;
+      case 'camp-pitch': return <g key={key}>
+        {repeat(3, i => <g key={i}>
+          {rect(`pad${i}`, .06 + i * .31, .25, .27, .50, '#c9d1ae', .42, 36)}
+          {line(`edge${i}`, .09 + i * .31, .68, .30 + i * .31, .68, 5, '16 13')}
+        </g>)}
+      </g>;
+      case 'paddock': return <g key={key}>
+        {rect('field', .06, .22, .88, .58, '#b9cb94', .32, 35)}
+        {repeat(4, i => line(`rail${i}`, .08, .27 + i * .14, .92, .27 + i * .14, 5, '38 16'))}
+        {line('service-lane', .50, .23, .50, .80, 8)}
+      </g>;
+      case 'genkan': return <g key={key}>
+        {rect('stone-step', .22, .54, .56, .20, '#c7beb0', .56, 8)}
+        {line('threshold', .18, .48, .82, .48, 9)}
+        {repeat(5, i => rect(`shoe${i}`, .28 + i * .10, .61, .06, .08, '#866d55', .30, 10))}
+      </g>;
+      case 'ride': return <g key={key}>
+        {rect('safety-zone', .12, .25, .76, .52, '#e8d9df', .34, 80)}
+        <ellipse cx={X(.5)} cy={Y(.51)} rx={w * .26} ry={h * .22} fill="none" stroke={accent} strokeWidth={7} strokeDasharray="24 16" opacity={.42} />
+        {line('queue-gate', .16, .79, .84, .79, 7, '18 13')}
+      </g>;
+      case 'hotel-corridor': return <g key={key}>
+        {rect('corridor', .08, .43, .84, .31, '#d9d3c9', .48, 45)}
+        {repeat(5, i => rect(`door${i}`, .08 + i * .18, .22, .12, .18, '#a88969', .30, 8))}
+        {line('egress', .10, .79, .90, .79, 5, '32 16')}
+      </g>;
+      case 'swim-lanes': return <g key={key}>
+        {rect('water', .08, .25, .84, .51, '#91cbdc', .50, 22)}
+        {repeat(4, i => line(`lane${i}`, .11, .32 + i * .11, .89, .32 + i * .11, 5, '18 10'))}
+        {repeat(5, i => rect(`block${i}`, .12 + i * .17, .18, .09, .08, '#e8ece8', .62, 4))}
+      </g>;
+      case 'strength': return <g key={key}>
+        {repeat(3, i => rect(`station${i}`, .09 + i * .30, .28, .22, .43, '#c6d2d0', .36, 18))}
+        {repeat(5, i => <circle key={i} cx={X(.16 + i * .17)} cy={Y(.77)} r={10} fill={accent} opacity={.34} />)}
+      </g>;
+      case 'bedroom': return <g key={key}>
+        {rect('bed-clearance', .08, .30, .48, .45, '#e5ddd8', .52, 24)}
+        <rect x={X(.64)} y={Y(.27)} width={w * .25} height={h * .18} rx={8} fill="#bda58f" opacity={.30} stroke={accent} strokeWidth={5} />
+        {repeat(3, i => line(`wardrobe-door${i}`, .64 + i * .083, .28, .64 + i * .083, .44, 3))}
+        {rect('dressing-zone', .64, .50, .25, .24, '#eee7df', .62, 45)}
+        <ellipse cx={X(.765)} cy={Y(.62)} rx={w * .09} ry={h * .08} fill="none" stroke={accent} strokeWidth={5} opacity={.34} />
+        {rect('bedside-niche', .49, .39, .08, .18, '#c9b7a7', .35, 8)}
+        {line('clear-path', .58, .25, .58, .80, 6, '24 16')}
+      </g>;
     }
   })}</g>;
 }
 
 export function VenueStructure({ terrain, sceneId }: { terrain: DistrictTerrain; sceneId?: string }) {
-  const plan = (sceneId ? VENUE_PLANS[sceneId] : undefined) ?? terrain.venue;
+  const plan = (sceneId ? VENUE_PLANS[sceneId] ?? HAND_BUILT_PLANS[sceneId] : undefined) ?? terrain.venue;
   if (!plan) return null;
   return <g data-venue-structure={sceneId} pointerEvents="none">
     {terrain.zones.map((zone) => <VenueWall key={`${zone.id}-wall`} zone={zone} style={plan.wall} />)}

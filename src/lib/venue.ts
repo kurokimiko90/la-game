@@ -9,6 +9,8 @@ export const MOTIFS = [
   'display', 'shopseating', 'boardwalk', 'shores', 'fitting', 'showroom',
   'cinema', 'vault', 'gallery', 'workshop', 'evidence', 'training',
   'salon', 'wash', 'flowerbed', 'bouquet', 'stationery', 'exercise', 'pooldeck',
+  'retail', 'consultation', 'camp-pitch', 'paddock', 'genkan', 'ride',
+  'hotel-corridor', 'swim-lanes', 'strength', 'bedroom',
 ] as const;
 export type Motif = (typeof MOTIFS)[number];
 
