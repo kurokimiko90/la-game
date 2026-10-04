@@ -1,0 +1,484 @@
+{
+  "en": {
+    "garden-spade": {
+      "heard": "Garden Spade.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "metal-pail": {
+      "heard": "Metal pale.",
+      "score": 0.78,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "concrete-block": {
+      "heard": "Concrete block.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "roof-shingle": {
+      "heard": "Roof shingles.",
+      "score": 0.92,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "ceramic-tile": {
+      "heard": "Ceramic tile.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "metal-grate": {
+      "heard": "Metal great.",
+      "score": 0.8,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "garden-thermometer-hardware-store": {
+      "heard": "Pool. Garden thermometer.",
+      "score": 0.81,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "garden-fork-hardware-store": {
+      "heard": "Garden Fork.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "seed-tray-hardware-store": {
+      "heard": "Xeed Tray",
+      "score": 0.88,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "plant-tie-hardware-store": {
+      "heard": "Plant tie.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "watering-can-hardware-store": {
+      "heard": "Water in can.",
+      "score": 0.91,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "bamboo-cane-hardware-store": {
+      "heard": "Bamboo cane.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "drainpipe-elbow": {
+      "heard": "Drain pipe elbow.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "plant-support-ring-hardware-store": {
+      "heard": "Plant support.",
+      "score": 0.75,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "garden-shears": {
+      "heard": "Garden shears.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "extension-cord": {
+      "heard": "extension cord,",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "paint-scraper": {
+      "heard": "Paint scraper.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "hand-trowel": {
+      "heard": "for hand trowel.",
+      "score": 0.77,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "brick-trowel": {
+      "heard": "Brick Trow.",
+      "score": 0.82,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "potting-mat": {
+      "heard": "Potting Matt.",
+      "score": 0.91,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "garden-wheelbarrow": {
+      "heard": "Garden Wheelbarrow.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "hand-cultivator": {
+      "heard": "Hand Cultivator.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "caulking-gun": {
+      "heard": "Caulking gun.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "sandpaper": {
+      "heard": "Sandpaper.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "caulk-smoothing-tool": {
+      "heard": "Caulk finishing tool, grout",
+      "score": 0.78,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "notched-trowel": {
+      "heard": "Notched trowel.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "cabinet-knob": {
+      "heard": "Pad cabinet knob.",
+      "score": 0.79,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "weatherstrip": {
+      "heard": "weatherstripped,",
+      "score": 0.8,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "toolbox-organizer": {
+      "heard": "parts organizer",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "paint-sprayer": {
+      "heard": "paint sprayer,",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "nail": {
+      "heard": "Nail.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "washer": {
+      "heard": "Washer.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "paint-stir-stick": {
+      "heard": "Paint Stir Stick.",
+      "score": 1,
+      "take": "en-1791085034183.aac",
+      "account": "chatgpt2"
+    },
+    "twine-spool-hardware-store": {
+      "heard": "garden twine spool,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "push-broom": {
+      "heard": "Push broom.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "window-box-hardware-store": {
+      "heard": "window box",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "sawhorse": {
+      "heard": "Sawhorse.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hand-saw": {
+      "heard": "handsaw.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hand-plane": {
+      "heard": "hand plane",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "paint-can": {
+      "heard": "Paint can.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "paint-tray": {
+      "heard": "paint tray,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "sprinkler-head-hardware-store": {
+      "heard": "sprinkler head,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "wood-chisel-hardware-store": {
+      "heard": "Wood chisel.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "paintbrush-hardware-store": {
+      "heard": "paintbrush,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "paint-roller-hardware-store": {
+      "heard": "Paint roller.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "flower-pot-hardware-store": {
+      "heard": "Flower pot.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "garden-sprayer": {
+      "heard": "garden sprayer,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "garden-sieve-hardware-store": {
+      "heard": "Garden sieved.",
+      "score": 0.92,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "watering-globe-hardware-store": {
+      "heard": "Watering Globe.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "garden-gate-hardware-store": {
+      "heard": "Garden Gate.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hanging-basket-hardware-store": {
+      "heard": "Hanging basket.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hanging-planter-hardware-store": {
+      "heard": "Hanging planter.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "wire-brush": {
+      "heard": "Wirebrush.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "clamp": {
+      "heard": "Clamp.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hacksaw": {
+      "heard": "Hacksaw.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "level": {
+      "heard": "Level.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hand-drill": {
+      "heard": "Hand drill.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "safety-goggles-hardware-store": {
+      "heard": "safety goggles,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "dust-mask": {
+      "heard": "Dust Mask.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "earmuffs": {
+      "heard": "Earmuffs.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "safety-glasses": {
+      "heard": "Safety glasses.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "wood-stain-can": {
+      "heard": "Would stain can",
+      "score": 0.85,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "varnish-can": {
+      "heard": "Varnish can.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "paint-sample-fan": {
+      "heard": "paint color fan,",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "tool-belt": {
+      "heard": "Tool belt.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "work-apron-hardware-store": {
+      "heard": "Work April.",
+      "score": 0.78,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "metal-bracket": {
+      "heard": "Metal Bracket",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "wood-dowel": {
+      "heard": "Wood dowel.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "wall-anchor": {
+      "heard": "Wall Anchor.",
+      "score": 1,
+      "take": "en-1791085452224.aac",
+      "account": "chatgpt2"
+    },
+    "hose-reel-hardware-store": {
+      "heard": "Hose reel.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "plant-mister-hardware-store": {
+      "heard": "Plant mister.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "bulb-planter-hardware-store": {
+      "heard": "Bulb planter.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "plant-stand-hardware-store": {
+      "heard": "Plant stand.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "vise": {
+      "heard": "Vice.",
+      "score": 0.75,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "hand-file": {
+      "heard": "handful.",
+      "score": 0.75,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "paint-mixer": {
+      "heard": "paint mixer,",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "work-gloves-hardware-store": {
+      "heard": "Work gloves.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "knee-pads": {
+      "heard": "Knee pads.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "grout-float": {
+      "heard": "Grout float.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    },
+    "felt-pad": {
+      "heard": "FeltPad.",
+      "score": 1,
+      "take": "en-1791085768110.aac",
+      "account": "chatgpt2"
+    }
+  }
+}

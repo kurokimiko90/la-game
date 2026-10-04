@@ -1,0 +1,1750 @@
+{
+  "id": "hardware-store",
+  "name": "五金行",
+  "zones": [
+    {
+      "id": "storefront",
+      "name": "店門口",
+      "indoor": false,
+      "floor": "concrete",
+      "feature": "road"
+    },
+    {
+      "id": "garden-supplies",
+      "name": "園藝區",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "stand"
+    },
+    {
+      "id": "tools",
+      "name": "工具區",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "counter"
+    },
+    {
+      "id": "checkout",
+      "name": "結帳區",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "checkout"
+    }
+  ],
+  "slot": {
+    "x": 15200,
+    "y": 10780,
+    "zone": "outskirts",
+    "span": 2
+  },
+  "colorIndex": 32,
+  "icon": "metal-pail",
+  "elements": [
+    {
+      "id": "metal-pail",
+      "zh": "鐵桶",
+      "en": "metal pail",
+      "ja": "金属バケツ",
+      "reading": "きんぞくバケツ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "銀灰色圓柱形鐵桶，桶口外翻一圈，兩側接著弧形金屬提把。",
+      "loose": false,
+      "motion": null,
+      "cluster": "push-broom"
+    },
+    {
+      "id": "push-broom",
+      "zh": "長柄掃帚",
+      "en": "push broom",
+      "ja": "ほうき",
+      "reading": "ほうき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "寬扁的深色刷頭接著一根長木柄，刷毛整齊排列在底部。",
+      "loose": false,
+      "motion": null,
+      "cluster": "metal-pail"
+    },
+    {
+      "id": "hand-saw",
+      "zh": "手鋸",
+      "en": "hand saw",
+      "ja": "のこぎり",
+      "reading": "のこぎり",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "三角形薄鋼鋸片帶著一排鋸齒，末端接著紅色弧形握柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sawhorse"
+    },
+    {
+      "id": "sawhorse",
+      "zh": "鋸木架",
+      "en": "sawhorse",
+      "ja": "ソーホース",
+      "reading": "ソーホース",
+      "category": "設施",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "兩組交叉木腳撐起一根橫木，外形像矮小的鋸木支架。",
+      "loose": false,
+      "motion": null,
+      "cluster": "hand-saw"
+    },
+    {
+      "id": "hand-plane",
+      "zh": "手刨",
+      "en": "hand plane",
+      "ja": "かんな",
+      "reading": "かんな",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "深色長方形木製底座，中央露出一片短而平直的金屬刀刃。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sawhorse"
+    },
+    {
+      "id": "paint-can",
+      "zh": "油漆罐",
+      "en": "paint can",
+      "ja": "ペンキ缶",
+      "reading": "ペンキかん",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "矮胖的圓形金屬罐，頂部有小提把，罐口蓋著平圓形金屬蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "paintbrush"
+    },
+    {
+      "id": "paint-tray",
+      "zh": "油漆盤",
+      "en": "paint tray",
+      "ja": "ペイントトレー",
+      "reading": "ペイントトレー",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "淺灰色長方形塑膠盤，一端有凹槽，另一端是帶紋路的斜面。",
+      "loose": true,
+      "motion": null,
+      "cluster": "paint-roller"
+    },
+    {
+      "id": "garden-shears",
+      "zh": "園藝剪",
+      "en": "garden shears",
+      "ja": "園芸ばさみ",
+      "reading": "えんげいばさみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "兩片交叉的銀色刀刃連著紅色橢圓握把，中央有圓形轉軸。",
+      "loose": true,
+      "motion": null,
+      "cluster": "flower-pot"
+    },
+    {
+      "id": "concrete-block",
+      "zh": "水泥磚",
+      "en": "concrete block",
+      "ja": "コンクリートブロック",
+      "reading": "コンクリートブロック",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "灰色長方體水泥塊，頂面有兩個方形穿孔，表面粗糙多孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": "brick"
+    },
+    {
+      "id": "roof-shingle",
+      "zh": "屋瓦",
+      "en": "roof shingle",
+      "ja": "屋根材",
+      "reading": "やねざい",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "扁平的深灰色長方形瓦片，一端圓弧收邊，表面帶細緻顆粒。",
+      "loose": true,
+      "motion": null,
+      "cluster": "wooden-plank"
+    },
+    {
+      "id": "ceramic-tile",
+      "zh": "磁磚",
+      "en": "ceramic tile",
+      "ja": "タイル",
+      "reading": "タイル",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "一片方形淺米色陶瓷磚，表面平滑，邊緣有窄窄的深色釉線。",
+      "loose": true,
+      "motion": null,
+      "cluster": "brick"
+    },
+    {
+      "id": "metal-grate",
+      "zh": "金屬格柵",
+      "en": "metal grate",
+      "ja": "金属製の格子",
+      "reading": "きんぞくせいのこうし",
+      "category": "設施",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "長方形黑鐵格柵由一排平行金屬條交錯組成，四周有厚框。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "drainpipe-elbow",
+      "zh": "排水管彎頭",
+      "en": "drainpipe elbow",
+      "ja": "排水管用エルボ",
+      "reading": "はいすいかんようエルボ",
+      "category": "設施",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "灰色粗短管件呈直角彎曲，兩端有外擴接頭，管口清楚可見。",
+      "loose": true,
+      "motion": null,
+      "cluster": "metal-grate"
+    },
+    {
+      "id": "extension-cord",
+      "zh": "延長線",
+      "en": "extension cord",
+      "ja": "延長コード",
+      "reading": "えんちょうコード",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "橘色電線盤成鬆鬆一圈，一端接著黑色插頭，另一端有插座頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": "power-strip"
+    },
+    {
+      "id": "hand-trowel",
+      "zh": "手鏟",
+      "en": "hand trowel",
+      "ja": "移植ごて",
+      "reading": "いしょくごて",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "窄長的銀色鏟頭逐漸收尖，後方連著短木柄，握柄末端圓潤。",
+      "loose": true,
+      "motion": null,
+      "cluster": "flower-pot"
+    },
+    {
+      "id": "brick-trowel",
+      "zh": "泥刀",
+      "en": "brick trowel",
+      "ja": "レンガ鏝",
+      "reading": "レンガごて",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "寬三角形鋼製刀片接著彎曲木柄，刀片中央有一條淺色反光。",
+      "loose": true,
+      "motion": null,
+      "cluster": "brick"
+    },
+    {
+      "id": "paint-scraper",
+      "zh": "刮漆刀",
+      "en": "paint scraper",
+      "ja": "スクレーパー",
+      "reading": "スクレーパー",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "寬而扁的銀色刮片裝在短紅色握柄上，刃口平直微微外露。",
+      "loose": true,
+      "motion": null,
+      "cluster": "paint-can"
+    },
+    {
+      "id": "dustpan-hardware-store",
+      "zh": "畚斗",
+      "en": "dustpan",
+      "ja": "ちりとり",
+      "reading": "ちりとり",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "扁平的梯形接塵斗，前緣貼地，後方有一根短柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": "push-broom"
+    },
+    {
+      "id": "hose-reel-hardware-store",
+      "zh": "水管架",
+      "en": "hose reel",
+      "ja": "ホースリール",
+      "reading": "ホースリール",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "深綠色圓形捲軸裝在黑色支架上，側邊有轉動手把。",
+      "loose": false,
+      "motion": null,
+      "cluster": "garden-hose"
+    },
+    {
+      "id": "sprinkler-head-hardware-store",
+      "zh": "灑水器",
+      "en": "sprinkler head",
+      "ja": "散水ノズル",
+      "reading": "さんすいノズル",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "短小的黃銅噴頭接在黑色底座上，頂部有一圈細小出水孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": "garden-hose"
+    },
+    {
+      "id": "wood-chisel-hardware-store",
+      "zh": "木工鑿",
+      "en": "wood chisel",
+      "ja": "のみ",
+      "reading": "のみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "細長的鋼製刀身末端是平口刃，另一端接著粗短的木柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": "sawhorse"
+    },
+    {
+      "id": "paintbrush-hardware-store",
+      "zh": "油漆刷",
+      "en": "paintbrush",
+      "ja": "ペンキ刷毛",
+      "reading": "ペンキはけ",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "扁平木柄前端嵌著一束寬刷毛，刷毛根部包著銀色金屬箍。",
+      "loose": true,
+      "motion": null,
+      "cluster": "paint-can"
+    },
+    {
+      "id": "paint-roller-hardware-store",
+      "zh": "油漆滾筒",
+      "en": "paint roller",
+      "ja": "ペンキローラー",
+      "reading": "ペンキローラー",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "白色圓筒刷套裝在彎曲金屬架上，末端接著短塑膠握柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": "paint-can"
+    },
+    {
+      "id": "flower-pot-hardware-store",
+      "zh": "花盆",
+      "en": "flower pot",
+      "ja": "植木鉢",
+      "reading": "うえきばち",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "赭紅色圓錐形陶盆，盆口寬而平，盆身下窄並有小排水孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": "garden-shears"
+    },
+    {
+      "id": "garden-spade",
+      "zh": "園藝鏟",
+      "en": "garden spade",
+      "ja": "スコップ",
+      "reading": "スコップ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "寬而扁平的深灰色金屬鏟頭，接著一根直木柄，柄頂有橫向握把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-hoe",
+      "zh": "鋤頭",
+      "en": "hoe",
+      "ja": "鍬",
+      "reading": "くわ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "長木柄末端裝著一片扁平的深色金屬刀片，刀片與柄呈直角。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "leaf-rake",
+      "zh": "耙子",
+      "en": "leaf rake",
+      "ja": "熊手",
+      "reading": "くまで",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "長直木柄連著扇形金屬耙頭，耙頭有一排細長彎齒。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-wheelbarrow",
+      "zh": "園藝手推車",
+      "en": "garden wheelbarrow",
+      "ja": "園芸用一輪車",
+      "reading": "えんげいよういちりんしゃ",
+      "category": "交通工具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "ground",
+      "desc": "綠色淺斗安在兩根長把手上，前方有一個黑色橡膠輪，後方有支腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hand-cultivator",
+      "zh": "手耙",
+      "en": "hand cultivator",
+      "ja": "手鍬",
+      "reading": "てぐわ",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "短木柄末端有三根彎曲的金屬爪，爪齒向前伸出並排成扇形。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "twine-spool-hardware-store",
+      "zh": "園藝麻繩捲",
+      "en": "garden twine spool",
+      "ja": "園芸用麻ひも",
+      "reading": "えんげいようあさひも",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "一圈圈纏著粗糙淺棕色麻繩的圓柱紙軸，繩頭垂出一小段。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-sprayer",
+      "zh": "園藝噴霧器",
+      "en": "garden sprayer",
+      "ja": "園芸用噴霧器",
+      "reading": "えんげいようふんむき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "ground",
+      "desc": "白色圓筒壓力桶背著黑色肩帶，頂部有手壓把和細長噴管。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-thermometer-hardware-store",
+      "zh": "園藝溫度計",
+      "en": "garden thermometer",
+      "ja": "園芸用温度計",
+      "reading": "えんげいようおんどけい",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "窄長白色溫度計插在綠色尖腳架上，透明細管內有紅色液柱，沒有數字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-gate-hardware-store",
+      "zh": "庭園小門",
+      "en": "garden gate",
+      "ja": "ガーデンゲート",
+      "reading": "ガーデンゲート",
+      "category": "設施",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "ground",
+      "desc": "黑色鍛鐵單扇小門有圓弧頂框和直條欄杆，中央是一個簡單金屬門閂。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-fork-hardware-store",
+      "zh": "園藝叉",
+      "en": "garden fork",
+      "ja": "ガーデンフォーク",
+      "reading": "ガーデンフォーク",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "長木柄末端連著四根粗短的深灰色金屬叉齒，叉齒略向前彎。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bulb-planter-hardware-store",
+      "zh": "球根種植器",
+      "en": "bulb planter",
+      "ja": "球根植え",
+      "reading": "きゅうこんうえ",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "銀灰色的圓筒形挖土器，筒身有尖底和側邊開口，頂端帶短握把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "garden-sieve-hardware-store",
+      "zh": "園藝篩網",
+      "en": "garden sieve",
+      "ja": "園芸ふるい",
+      "reading": "えんげいふるい",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "淺圓形木框底部繃著細密金屬網，外緣有厚實的木製圓環。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "watering-can-hardware-store",
+      "zh": "澆花壺",
+      "en": "watering can",
+      "ja": "じょうろ",
+      "reading": "じょうろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "圓鼓的綠色金屬壺身帶拱形提把，側面接著長彎嘴和寬圓灑水頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "plant-mister-hardware-store",
+      "zh": "噴霧瓶",
+      "en": "plant mister",
+      "ja": "霧吹き",
+      "reading": "きりふき",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "透明小瓶上裝著深綠色按壓噴頭，噴頭前端有細長噴嘴。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "watering-globe-hardware-store",
+      "zh": "自動澆水球",
+      "en": "watering globe",
+      "ja": "自動水やり器",
+      "reading": "じどうみずやりき",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "透明藍色玻璃球連著細長尖嘴，球身圓潤，尖嘴朝下插入盆土。",
+      "loose": false,
+      "motion": null,
+      "cluster": "flower-pot-hardware-store"
+    },
+    {
+      "id": "hanging-planter-hardware-store",
+      "zh": "吊盆",
+      "en": "hanging planter",
+      "ja": "ハンギングプランター",
+      "reading": "ハンギングプランター",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "圓口淺褐色編織盆，外側垂著三條細繩，頂端聚成吊掛環。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "window-box-hardware-store",
+      "zh": "窗台花箱",
+      "en": "window box",
+      "ja": "ウィンドウボックス",
+      "reading": "ウィンドウボックス",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "長方形的深綠色花箱，兩側有簡單金屬固定耳，箱內盛著深色土壤。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "seed-tray-hardware-store",
+      "zh": "育苗盤",
+      "en": "seed tray",
+      "ja": "育苗トレー",
+      "reading": "いくびょうトレー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "扁平黑色長方形塑膠盤，底部排列許多小方格，邊緣略高便於拿取。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "plant-stand-hardware-store",
+      "zh": "花架",
+      "en": "plant stand",
+      "ja": "フラワースタンド",
+      "reading": "フラワースタンド",
+      "category": "設施",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "ground",
+      "desc": "黑色細金屬架有三層圓形托盤，四根彎曲支腳向外張開穩穩立地。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hanging-basket-hardware-store",
+      "zh": "吊籃",
+      "en": "hanging basket",
+      "ja": "ハンギングバスケット",
+      "reading": "ハンギングバスケット",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "半球形深棕色金屬網籃，三條細鏈從邊緣向上連到吊環。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "potting-mat",
+      "zh": "換盆墊",
+      "en": "potting mat",
+      "ja": "植え替えマット",
+      "reading": "うえかえマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "攤平的深綠色方形防水布，四角各有一枚扣子，邊緣微微翹起。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "plant-tie-hardware-store",
+      "zh": "植物綁帶",
+      "en": "plant tie",
+      "ja": "園芸用結束バンド",
+      "reading": "えんげいようけっそくバンド",
+      "category": "道具",
+      "size": "small",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "一小捲柔軟的綠色塑膠綁帶，捲面平整，末端露出短短一截。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "plant-support-ring-hardware-store",
+      "zh": "植物支撐圈",
+      "en": "plant support ring",
+      "ja": "支柱リング",
+      "reading": "しちゅうリング",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "綠色金屬環固定在一根直立細桿頂端，環上有短短的開口鉤。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bamboo-cane-hardware-store",
+      "zh": "園藝竹竿",
+      "en": "bamboo cane",
+      "ja": "園芸用支柱",
+      "reading": "えんげいようしちゅう",
+      "category": "道具",
+      "size": "medium",
+      "zone": "garden-supplies",
+      "spot": "surface",
+      "desc": "一根筆直的淡黃綠色竹竿，表面有一圈圈清楚的節點。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hammer",
+      "zh": "鐵鎚",
+      "en": "hammer",
+      "ja": "ハンマー",
+      "reading": "ハンマー",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "木製長柄連著深灰色金屬槌頭，槌頭一端扁平，另一端微微分叉。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "screwdriver",
+      "zh": "螺絲起子",
+      "en": "screwdriver",
+      "ja": "ドライバー",
+      "reading": "ドライバー",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "細長金屬桿接著紅色圓柱握柄，前端是扁平的一字形刀頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pliers",
+      "zh": "鉗子",
+      "en": "pliers",
+      "ja": "ペンチ",
+      "reading": "ペンチ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "兩支深灰色金屬鉗臂以圓形接點相連，末端各有一截紅色握柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hex-key",
+      "zh": "六角扳手",
+      "en": "hex key",
+      "ja": "六角レンチ",
+      "reading": "ろっかくレンチ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "深灰色金屬棒彎成直角，兩端都是短短的六角形插頭。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "clamp",
+      "zh": "木工夾",
+      "en": "clamp",
+      "ja": "クランプ",
+      "reading": "クランプ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "黑色金屬夾架呈方形，側邊有一支帶圓柄的螺旋壓桿。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "putty-knife",
+      "zh": "批土刀",
+      "en": "putty knife",
+      "ja": "パテベラ",
+      "reading": "パテベラ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "寬扁的銀色金屬刀片連著短木柄，刀片前端平直而略帶弧度。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "utility-knife-hardware-store",
+      "zh": "美工刀",
+      "en": "utility knife",
+      "ja": "カッターナイフ",
+      "reading": "カッターナイフ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "黃色扁長刀身露出一小截銀色滑動刀片，背面有黑色推鈕。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hacksaw",
+      "zh": "鋼鋸",
+      "en": "hacksaw",
+      "ja": "金切りのこぎり",
+      "reading": "かなきりのこぎり",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "紅色弓形鋸架張著細長鋸片，一端有粗厚的黑色握把。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "level",
+      "zh": "水平尺",
+      "en": "level",
+      "ja": "水平器",
+      "reading": "すいへいき",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "黃色長方形尺身中央嵌著透明小窗，窗內有一顆醒目的綠色氣泡。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hand-drill",
+      "zh": "手搖鑽",
+      "en": "hand drill",
+      "ja": "ハンドドリル",
+      "reading": "ハンドドリル",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "紅色手柄連著金屬齒輪架，側邊有圓形搖柄，前端夾著細鑽頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "vise",
+      "zh": "桌上虎鉗",
+      "en": "vise",
+      "ja": "万力",
+      "reading": "まんりき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "藍色鑄鐵底座上有兩片平行夾爪，前方伸出一支帶圓柄的金屬螺桿。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "nail",
+      "zh": "鐵釘",
+      "en": "nail",
+      "ja": "釘",
+      "reading": "くぎ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "一根細長銀灰色金屬釘，尖端銳利，另一端有扁圓形釘帽。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "washer",
+      "zh": "墊圈",
+      "en": "washer",
+      "ja": "ワッシャー",
+      "reading": "ワッシャー",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "扁平銀灰色金屬圓片，正中央有一個邊緣整齊的圓孔。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "caulking-gun",
+      "zh": "填縫膠槍",
+      "en": "caulking gun",
+      "ja": "コーキングガン",
+      "reading": "コーキングガン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "黑色金屬框架托著長圓膠筒，後方有扳機握柄，前端伸出細長尖嘴。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sandpaper",
+      "zh": "砂紙",
+      "en": "sandpaper",
+      "ja": "紙やすり",
+      "reading": "かみやすり",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "一張棕褐色長方形粗糙紙片，表面有均勻細密的砂粒質感。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wire-brush",
+      "zh": "鋼絲刷",
+      "en": "wire brush",
+      "ja": "ワイヤーブラシ",
+      "reading": "ワイヤーブラシ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "短木柄前端固定一排密集的銀色硬鋼絲，刷頭呈扁長方形。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hand-file",
+      "zh": "金屬銼刀",
+      "en": "hand file",
+      "ja": "金属やすり",
+      "reading": "きんぞくやすり",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "細長銀灰色金屬銼身佈滿交錯刻紋，一端接著黑色圓柱握柄。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wood-dowel",
+      "zh": "木圓棒",
+      "en": "wood dowel",
+      "ja": "木ダボ",
+      "reading": "もくダボ",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "一根淺木色光滑圓柱木棒，兩端平整，表面沒有孔洞或紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wood-glue",
+      "zh": "木工膠",
+      "en": "wood glue",
+      "ja": "木工用接着剤",
+      "reading": "もっこうようせっちゃくざい",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "不透明白色膠水裝在矮胖塑膠瓶裡，瓶口有細尖嘴和紅色旋蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "paint-stir-stick",
+      "zh": "油漆攪拌棒",
+      "en": "paint stir stick",
+      "ja": "ペンキかき混ぜ棒",
+      "reading": "ペンキかきまぜぼう",
+      "category": "道具",
+      "size": "small",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "一根淺木色扁平細長棒，末端略寬，表面平滑且沒有文字。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "paint-sprayer",
+      "zh": "噴漆器",
+      "en": "paint sprayer",
+      "ja": "塗装用スプレー",
+      "reading": "とそうようスプレー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "tools",
+      "spot": "surface",
+      "desc": "藍色握柄連著短槍形噴頭，頂部裝有小型白色漆杯，前端是圓形噴嘴。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "safety-goggles-hardware-store",
+      "zh": "護目鏡",
+      "en": "safety goggles",
+      "ja": "保護ゴーグル",
+      "reading": "ほごゴーグル",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "透明弧形鏡片外圈包著厚實黑色軟膠，兩側連有寬扁的黑色彈性頭帶。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "dust-mask",
+      "zh": "防塵口罩",
+      "en": "dust mask",
+      "ja": "防じんマスク",
+      "reading": "ぼうじんマスク",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "白色摺疊式口罩中央鼓起，兩側各伸出一條細白耳帶，表面有柔和摺線。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "earmuffs",
+      "zh": "防噪耳罩",
+      "en": "earmuffs",
+      "ja": "イヤーマフ",
+      "reading": "イヤーマフ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "兩個厚圓形黑色耳罩由寬弧形頭箍連接，耳罩外側各有一圈亮色邊框。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "work-apron-hardware-store",
+      "zh": "工作圍裙",
+      "en": "work apron",
+      "ja": "作業用エプロン",
+      "reading": "さぎょうようエプロン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "checkout",
+      "spot": "wall",
+      "desc": "深藍色厚布圍裙有方形胸片、繫帶和兩個大口袋，掛起時布料自然垂落。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": null
+    },
+    {
+      "id": "tool-belt",
+      "zh": "工具腰帶",
+      "en": "tool belt",
+      "ja": "ツールベルト",
+      "reading": "ツールベルト",
+      "category": "道具",
+      "size": "medium",
+      "zone": "checkout",
+      "spot": "wall",
+      "desc": "棕色寬皮帶上縫著數個深色布袋和小隔層，金屬扣環在一端閃亮。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "work-gloves-hardware-store",
+      "zh": "工作手套",
+      "en": "work gloves",
+      "ja": "作業用手袋",
+      "reading": "さぎょうようてぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "一雙厚實棕色手套並排放著，掌面有深色止滑紋，手腕處帶有束口。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "safety-glasses",
+      "zh": "安全眼鏡",
+      "en": "safety glasses",
+      "ja": "保護メガネ",
+      "reading": "ほごメガネ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "透明長方形鏡片由細黑框包住，兩側鏡腳向後伸展，鼻樑處有小小支架。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "knee-pads",
+      "zh": "護膝",
+      "en": "knee pads",
+      "ja": "膝当て",
+      "reading": "ひざあて",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "一對黑色弧面護膝外殼帶有凸起防撞紋，兩側各有寬帶與扣環。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "wood-stain-can",
+      "zh": "木器染色劑罐",
+      "en": "wood stain can",
+      "ja": "木部用ステイン缶",
+      "reading": "もくぶようステインかん",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "矮圓金屬罐呈深棕色，配有銀色扁平蓋和小小的側邊凸沿。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "varnish-can",
+      "zh": "木器亮光漆罐",
+      "en": "varnish can",
+      "ja": "ニス缶",
+      "reading": "ニスかん",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "圓柱形淺金色金屬罐配銀灰色蓋子，罐身帶有光亮的琥珀色裝飾色塊。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "paint-sample-fan",
+      "zh": "色票扇",
+      "en": "paint color fan",
+      "ja": "色見本ファン",
+      "reading": "いろみほんファン",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "一疊扇形展開的彩色薄片由金屬鉚釘串起，從淡黃、粉紅到藍綠漸層排列。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "paint-mixer",
+      "zh": "油漆攪拌器",
+      "en": "paint mixer",
+      "ja": "ペンキ攪拌機",
+      "reading": "ペンキかくはんき",
+      "category": "道具",
+      "size": "medium",
+      "zone": "checkout",
+      "spot": "ground",
+      "desc": "黑色電動手持機身連著長金屬攪拌桿，末端有圓形籠狀攪拌頭，直立靠牆放置。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "caulk-smoothing-tool",
+      "zh": "填縫刮刀",
+      "en": "caulk finishing tool",
+      "ja": "コーキングヘラ",
+      "reading": "コーキングヘラ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "短柄工具前端是柔軟的三角形橡膠刮片，柄身呈深藍色，邊緣圓滑。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "grout-float",
+      "zh": "填縫抹板",
+      "en": "grout float",
+      "ja": "目地ゴテ",
+      "reading": "めじゴテ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "寬扁矩形橡膠板固定在短握柄下方，板面呈深灰色，四角略為圓鈍。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "notched-trowel",
+      "zh": "齒形抹刀",
+      "en": "notched trowel",
+      "ja": "くし目鏝",
+      "reading": "くしめごて",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "扁平金屬刀片一側排列整齊齒口，短木柄呈淺棕色，外形像小手鏟。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "wall-anchor",
+      "zh": "壁虎",
+      "en": "wall anchor",
+      "ja": "アンカー",
+      "reading": "アンカー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "短小的白色塑膠套管有縱向分叉與細密凸紋，前端略尖，形狀一眼可辨。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "bolt",
+      "zh": "螺栓",
+      "en": "bolt",
+      "ja": "ボルト",
+      "reading": "ボルト",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "粗短銀色金屬桿一端帶六角凸頭，另一端是鈍平切面，表面有清楚螺紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "nut",
+      "zh": "螺帽",
+      "en": "nut",
+      "ja": "ナット",
+      "reading": "ナット",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "厚實六角形銀色金屬環中央有圓孔，外側平面俐落，孔內可見螺紋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "drill-bit",
+      "zh": "鑽頭",
+      "en": "drill bit",
+      "ja": "ドリルビット",
+      "reading": "ドリルビット",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "細長銀色金屬桿前端有尖銳螺旋刃，尾端平直，沿身可見一圈圈溝槽。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "metal-bracket",
+      "zh": "金屬角碼",
+      "en": "metal bracket",
+      "ja": "金属ブラケット",
+      "reading": "きんぞくブラケット",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "銀灰色金屬片折成直角，兩側各有圓形螺絲孔，邊緣平直且厚實。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "furniture-glide",
+      "zh": "家具腳墊",
+      "en": "furniture glide",
+      "ja": "家具用フェルト",
+      "reading": "かぐようフェルト",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "圓形白色塑膠墊中央凸起短釘，底面平滑，外圈略厚，呈簡潔小圓片狀。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "felt-pad",
+      "zh": "毛氈墊",
+      "en": "felt pad",
+      "ja": "フェルトパッド",
+      "reading": "フェルトパッド",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "幾片深灰色圓形毛氈片疊放在一起，表面絨毛細短，邊緣柔軟平整。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "cabinet-knob",
+      "zh": "櫥櫃把手",
+      "en": "cabinet knob",
+      "ja": "家具用つまみ",
+      "reading": "かぐようつまみ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "一顆圓潤銀色金屬旋鈕連著短柱形底座，表面光滑並帶柔和高光。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "weatherstrip",
+      "zh": "門縫密封條",
+      "en": "weatherstrip",
+      "ja": "すきまテープ",
+      "reading": "すきまテープ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout",
+      "spot": "surface",
+      "desc": "一段灰色柔軟泡棉條捲成小圈，切面呈扁長方形，外緣蓬鬆有彈性。",
+      "loose": true,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "toolbox-organizer",
+      "zh": "零件收納盒",
+      "en": "parts organizer",
+      "ja": "パーツケース",
+      "reading": "パーツケース",
+      "category": "道具",
+      "size": "medium",
+      "zone": "checkout",
+      "spot": "ground",
+      "desc": "扁平黑色塑膠盒有透明上蓋和多個分隔小格，前方兩個扣子牢牢扣住。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    }
+  ],
+  "rejected": [
+    {
+      "id": "cinder-block",
+      "reason": "和已有的 concrete block 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "metal-sawhorse",
+      "reason": "和已有的 sawhorse 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "garden-hose",
+      "reason": "和已有的 drainpipe elbow 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "garden-hose",
+      "reason": "和已有的 drainpipe elbow 太像",
+      "zone": "garden-supplies"
+    },
+    {
+      "id": "hose-nozzle",
+      "reason": "和已有的 sprinkler head 太像",
+      "zone": "garden-supplies"
+    },
+    {
+      "id": "watering-globe",
+      "reason": "id 重複",
+      "zone": "garden-supplies"
+    },
+    {
+      "id": "screw",
+      "reason": "和已有的 screwdriver 太像",
+      "zone": "tools"
+    },
+    {
+      "id": "paint-can-opener",
+      "reason": "和已有的 paint can 太像",
+      "zone": "tools"
+    },
+    {
+      "id": "putty",
+      "reason": "和已有的 putty-knife 太像",
+      "zone": "tools"
+    },
+    {
+      "id": "paint-can",
+      "reason": "中文重複",
+      "zone": "tools"
+    },
+    {
+      "id": "paint-can-opener",
+      "reason": "和已有的 paint can 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "putty",
+      "reason": "和已有的 putty-knife 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "paint-can-lid",
+      "reason": "和已有的 paint can 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "tile-spacer",
+      "reason": "和已有的 ceramic tile 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "tile-cutter",
+      "reason": "和已有的 ceramic tile 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "screw",
+      "reason": "和已有的 screwdriver 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "screwdriver-bit",
+      "reason": "和已有的 screwdriver 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "drill-bit-set",
+      "reason": "和已有的 drill bit 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "metal-bucket",
+      "reason": "審核：英文與物品不符"
+    },
+    {
+      "id": "dibber-hardware-store",
+      "reason": "審核：英文較罕見"
+    },
+    {
+      "id": "adjustable-spanner",
+      "reason": "審核：英文偏英式且拼法不自然"
+    },
+    {
+      "id": "carpenter-square",
+      "reason": "審核：英文應為carpenter’s square"
+    },
+    {
+      "id": "caulk-tube",
+      "reason": "審核：英文不自然"
+    },
+    {
+      "id": "chisel",
+      "reason": "審核：英文與物品標籤不一致"
+    }
+  ],
+  "reviewFixes": [
+    {
+      "id": "sawhorse",
+      "issue": "中文不自然",
+      "changes": {
+        "zh": "鋸木架"
+      }
+    },
+    {
+      "id": "hand-plane",
+      "issue": "中文不自然",
+      "changes": {
+        "zh": "手刨"
+      }
+    },
+    {
+      "id": "roof-shingle",
+      "issue": "日文誤指屋頂板",
+      "changes": {
+        "ja": "屋根材",
+        "reading": "やねざい"
+      }
+    },
+    {
+      "id": "metal-grate",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "金属製の格子",
+        "reading": "きんぞくせいのこうし"
+      }
+    },
+    {
+      "id": "drainpipe-elbow",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "排水管用エルボ",
+        "reading": "はいすいかんようえるぼ"
+      }
+    },
+    {
+      "id": "brick-trowel",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "レンガ鏝",
+        "reading": "れんがごて"
+      }
+    },
+    {
+      "id": "dustpan-hardware-store",
+      "issue": "中文用語不自然",
+      "changes": {
+        "zh": "畚斗"
+      }
+    },
+    {
+      "id": "wood-chisel-hardware-store",
+      "issue": "日文應標訓讀",
+      "changes": {
+        "reading": "のみ"
+      }
+    },
+    {
+      "id": "garden-spade",
+      "issue": "日文不常用",
+      "changes": {
+        "ja": "スコップ",
+        "reading": "すこっぷ"
+      }
+    },
+    {
+      "id": "hand-cultivator",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "手鍬",
+        "reading": "てぐわ"
+      }
+    },
+    {
+      "id": "bulb-planter-hardware-store",
+      "issue": "日文用語不自然",
+      "changes": {
+        "ja": "球根植え",
+        "reading": "きゅうこんうえ"
+      }
+    },
+    {
+      "id": "watering-globe-hardware-store",
+      "issue": "日文誤指手套",
+      "changes": {
+        "ja": "自動水やり器",
+        "reading": "じどうみずやりき"
+      }
+    },
+    {
+      "id": "plant-tie-hardware-store",
+      "issue": "日文誤指束線帶",
+      "changes": {
+        "ja": "園芸用結束バンド",
+        "reading": "えんげいようけっそくばんど"
+      }
+    },
+    {
+      "id": "pliers",
+      "issue": "中文應為鉗子類工具",
+      "changes": {
+        "zh": "鉗子"
+      }
+    },
+    {
+      "id": "paint-sprayer",
+      "issue": "日文指噴槍，非噴漆器",
+      "changes": {
+        "ja": "塗装用スプレー",
+        "reading": "とそうようすぷれー"
+      }
+    },
+    {
+      "id": "paint-sample-fan",
+      "issue": "日文指色樣冊",
+      "changes": {
+        "ja": "色見本ファン",
+        "reading": "いろみほんふぁん"
+      }
+    },
+    {
+      "id": "grout-float",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "目地ゴテ",
+        "reading": "めじごて"
+      }
+    },
+    {
+      "id": "wall-anchor",
+      "issue": "日文名稱不自然",
+      "changes": {
+        "ja": "アンカー",
+        "reading": "あんかー"
+      }
+    },
+    {
+      "id": "metal-bracket",
+      "issue": "日文過於籠統",
+      "changes": {
+        "ja": "金属ブラケット",
+        "reading": "きんぞくぶらけっと"
+      }
+    },
+    {
+      "id": "furniture-glide",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "家具用フェルト",
+        "reading": "かぐようふぇると"
+      }
+    }
+  ],
+  "createdAt": "2026-10-04T03:02:48.851+09:00",
+  "venue": {
+    "accent": "#8aac8b",
+    "wall": "wood",
+    "zones": {
+      "storefront": [
+        "retail",
+        "arrival"
+      ],
+      "garden-supplies": [
+        "flowerbed",
+        "terrace"
+      ],
+      "tools": [
+        "workshop",
+        "garage"
+      ],
+      "checkout": [
+        "service",
+        "display"
+      ]
+    }
+  }
+}

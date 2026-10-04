@@ -1,0 +1,350 @@
+{
+  "zones": {
+    "storefront": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "入口清掃與回收",
+          "x": [
+            0.02,
+            0.17
+          ],
+          "fixture": "facade",
+          "main": "metal-pail",
+          "beside": [
+            "push-broom",
+            "dustpan-hardware-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "木料切削示範",
+          "x": [
+            0.2,
+            0.36
+          ],
+          "main": "sawhorse",
+          "on": [
+            "hand-saw",
+            "hand-plane",
+            "wood-chisel-hardware-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "油漆與刮除用品",
+          "x": [
+            0.39,
+            0.55
+          ],
+          "fixture": "stand",
+          "on": [
+            "paint-can",
+            "paint-tray",
+            "paintbrush-hardware-store",
+            "paint-roller-hardware-store"
+          ],
+          "front": [
+            "paint-scraper"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "建材樣品陳列",
+          "x": [
+            0.58,
+            0.76
+          ],
+          "fixture": "stand",
+          "on": [
+            "concrete-block",
+            "roof-shingle",
+            "ceramic-tile",
+            "metal-grate"
+          ],
+          "beside": [
+            "drainpipe-elbow"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "戶外水管與灌溉用品",
+          "x": [
+            0.79,
+            0.98
+          ],
+          "main": "hose-reel-hardware-store",
+          "on": [
+            "sprinkler-head-hardware-store"
+          ],
+          "beside": [
+            "extension-cord",
+            "flower-pot-hardware-store"
+          ],
+          "front": [
+            "hand-trowel",
+            "brick-trowel"
+          ]
+        }
+      ]
+    },
+    "garden-supplies": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "長柄園藝工具展示",
+          "x": [
+            0.02,
+            0.22
+          ],
+          "fixture": "stand",
+          "on": [
+            "garden-fork-hardware-store"
+          ],
+          "beside": [
+            "bamboo-cane-hardware-store",
+            "plant-support-ring-hardware-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "推車與土壤整理",
+          "x": [
+            0.25,
+            0.45
+          ],
+          "main": "garden-wheelbarrow",
+          "on": [
+            "garden-sieve-hardware-store",
+            "hand-cultivator"
+          ],
+          "beside": [
+            "garden-gate-hardware-store"
+          ],
+          "front": [
+            "bulb-planter-hardware-store"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "育苗與播種工作台",
+          "x": [
+            0.48,
+            0.68
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "seed-tray-hardware-store",
+            "twine-spool-hardware-store",
+            "plant-tie-hardware-store",
+            "garden-thermometer-hardware-store"
+          ],
+          "beside": [
+            "watering-can-hardware-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "換盆與澆灌用品",
+          "x": [
+            0.71,
+            0.98
+          ],
+          "fixture": "stand",
+          "main": "potting-mat",
+          "on": [
+            "garden-sprayer",
+            "plant-mister-hardware-store",
+            "watering-globe-hardware-store"
+          ],
+          "beside": [
+            "hanging-planter-hardware-store",
+            "hanging-basket-hardware-store"
+          ]
+        }
+      ]
+    },
+    "tools": {
+      "sets": [
+        {
+          "row": "mid",
+          "note": "手工具選購台",
+          "x": [
+            0.03,
+            0.23
+          ],
+          "fixture": "counter",
+          "on": [
+            "hammer",
+            "screwdriver",
+            "pliers",
+            "hex-key"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "木工夾持與手鑽工作桌",
+          "x": [
+            0.26,
+            0.47
+          ],
+          "fixture": "desk",
+          "on": [
+            "clamp",
+            "hand-drill",
+            "vise",
+            "wood-glue"
+          ],
+          "beside": [
+            "wood-dowel"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "鋸切與測量工具牆架",
+          "x": [
+            0.5,
+            0.7
+          ],
+          "fixture": "shelf",
+          "on": [
+            "hacksaw",
+            "level",
+            "hand-file"
+          ],
+          "wall": [
+            "wire-brush"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "填補與表面修整用品",
+          "x": [
+            0.73,
+            0.98
+          ],
+          "fixture": "display",
+          "on": [
+            "putty-knife",
+            "utility-knife-hardware-store",
+            "caulking-gun",
+            "sandpaper"
+          ],
+          "beside": [
+            "paint-sprayer"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "五金零件與油漆攪拌",
+          "x": [
+            0.35,
+            0.62
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "nail",
+            "washer",
+            "paint-stir-stick"
+          ]
+        }
+      ]
+    },
+    "checkout": {
+      "sets": [
+        {
+          "row": "back",
+          "note": "個人防護用品展示",
+          "x": [
+            0.03,
+            0.23
+          ],
+          "fixture": "display",
+          "on": [
+            "safety-goggles-hardware-store",
+            "dust-mask",
+            "earmuffs",
+            "safety-glasses"
+          ],
+          "beside": [
+            "work-apron-hardware-store",
+            "tool-belt"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "工作服與護膝",
+          "x": [
+            0.26,
+            0.44
+          ],
+          "fixture": "stand",
+          "on": [
+            "work-gloves-hardware-store",
+            "knee-pads"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "木器塗裝與配色諮詢",
+          "x": [
+            0.47,
+            0.66
+          ],
+          "fixture": "counter",
+          "on": [
+            "wood-stain-can",
+            "varnish-can",
+            "paint-sample-fan",
+            "paint-mixer"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "磁磚填縫工具",
+          "x": [
+            0.69,
+            0.83
+          ],
+          "fixture": "display",
+          "on": [
+            "caulk-smoothing-tool",
+            "grout-float",
+            "notched-trowel"
+          ]
+        },
+        {
+          "row": "back",
+          "note": "安裝五金零件結帳",
+          "x": [
+            0.86,
+            0.98
+          ],
+          "fixture": "counter",
+          "on": [
+            "drill-bit"
+          ],
+          "beside": [
+            "metal-bracket",
+            "furniture-glide"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "櫥櫃修繕零件整理",
+          "x": [
+            0.47,
+            0.66
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "toolbox-organizer",
+            "cabinet-knob",
+            "felt-pad",
+            "weatherstrip"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -502,5 +502,19 @@
       ],
       "body": "<rect x=\"8\" y=\"3\" width=\"124\" height=\"177\" rx=\"4\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"13\" y=\"8\" width=\"114\" height=\"4\" fill=\"#ffffff\" opacity=\"0.3\"/><line x1=\"9\" y1=\"117\" x2=\"131\" y2=\"117\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"101\" y1=\"30\" x2=\"101\" y2=\"91\" stroke=\"#90a4ae\" stroke-width=\"5\"/><line x1=\"101\" y1=\"133\" x2=\"101\" y2=\"164\" stroke=\"#90a4ae\" stroke-width=\"5\"/><rect x=\"16\" y=\"15\" width=\"4\" height=\"95\" fill=\"#ffffff\" opacity=\"0.3\"/>"
     }
+  },
+  {
+    "id": "hardware-store",
+    "name": "五金行",
+    "itemCount": 94,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "body": "<path d=\"M20 25 L25 96 L75 96 L80 25 Z\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><ellipse cx=\"50\" cy=\"25\" rx=\"30\" ry=\"7\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><ellipse cx=\"50\" cy=\"25\" rx=\"23\" ry=\"3\" fill=\"#90a4ae\"/><path d=\"M30 24 L30 12 L36 7 L64 7 L70 12 L70 24\" fill=\"none\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"24\" y=\"36\" width=\"4\" height=\"50\" fill=\"#fff\" opacity=\"0.25\"/>"
+    }
   }
 ]
