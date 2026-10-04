@@ -1343,6 +1343,201 @@
       "loose": true,
       "motion": null,
       "cluster": null
+    },
+    {
+      "id": "rubber-boot",
+      "zh": "雨鞋",
+      "en": "rubber boot",
+      "ja": "長靴",
+      "reading": "ながぐつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "clinic-entrance",
+      "spot": "ground",
+      "desc": "亮黃色的高筒雨鞋，鞋口寬大，圓潤鞋頭微微向上翹。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "drain-snake",
+      "zh": "通管器",
+      "en": "drain snake",
+      "ja": "排水管の詰まり取り",
+      "reading": "はいすいかんのつまりとり",
+      "category": "道具",
+      "size": "medium",
+      "zone": "clinic-entrance",
+      "spot": "ground",
+      "desc": "盤成一圈的細長金屬彈簧線，一端帶有短短的紅色握柄。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "magazine-basket",
+      "zh": "雜誌籃",
+      "en": "magazine basket",
+      "ja": "マガジンバスケット",
+      "reading": "マガジンバスケット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "waiting-room",
+      "spot": "ground",
+      "desc": "矮胖的藤編籃子呈長方形，兩側有弧形提把，籃身留有交錯編織的縫隙。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dental-foot-control",
+      "zh": "腳踏開關",
+      "en": "foot pedal",
+      "ja": "フットスイッチ",
+      "reading": "フットスイッチ",
+      "category": "道具",
+      "size": "small",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "扁平的灰色金屬踏板裝在矮底座上，旁邊連著一條黑色電線。",
+      "loose": true,
+      "motion": null,
+      "cluster": "dental-chair"
+    },
+    {
+      "id": "dental-suction-unit",
+      "zh": "牙科吸唾器",
+      "en": "suction unit",
+      "ja": "バキューム",
+      "reading": "バキューム",
+      "category": "設施",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "窄長的白色立式底座旁掛著兩條透明彎管，管端各有小吸頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dental-chair"
+    },
+    {
+      "id": "dental-lead-apron",
+      "zh": "牙科鉛圍裙",
+      "en": "lead apron",
+      "ja": "鉛エプロン",
+      "reading": "なまりエプロン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "深藍色厚重圍裙攤在地上，肩部寬厚，胸前有大片平滑護片。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dental-x-ray-machine"
+    },
+    {
+      "id": "dental-curing-light",
+      "zh": "牙科固化燈",
+      "en": "curing light",
+      "ja": "歯科用ライト",
+      "reading": "しかようライト",
+      "category": "道具",
+      "size": "small",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "白色手持長柄連著短短的彎頭，頭端有一圈藍色透明燈罩。",
+      "loose": true,
+      "motion": null,
+      "cluster": "dental-chair"
+    },
+    {
+      "id": "dental-amalgamator",
+      "zh": "牙科材料混合器",
+      "en": "amalgamator",
+      "ja": "歯科用ミキサー",
+      "reading": "しかようミキサー",
+      "category": "設施",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "小型白色方盒立在寬底座上，正面有圓形透明防護蓋和短夾臂。",
+      "loose": false,
+      "motion": "wobble",
+      "cluster": null
+    },
+    {
+      "id": "dental-sterilizer",
+      "zh": "牙科高壓滅菌器",
+      "en": "sterilizer",
+      "ja": "歯科用滅菌器",
+      "reading": "しかようめっきんき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "銀白色箱形機器配有厚圓門，門中央有深色玻璃窗和粗把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "dental-ultrasonic-cleaner",
+      "zh": "牙科超音波清洗機",
+      "en": "ultrasonic cleaner",
+      "ja": "超音波洗浄器",
+      "reading": "ちょうおんぱせんじょうき",
+      "category": "設施",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "不鏽鋼長方形水槽嵌在白色矮機身上，槽內放著金屬網籃。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dental-sterilizer"
+    },
+    {
+      "id": "dental-rubber-dam-frame",
+      "zh": "牙科橡皮障架",
+      "en": "rubber dam frame",
+      "ja": "ラバーダムフレーム",
+      "reading": "ラバーダムフレーム",
+      "category": "道具",
+      "size": "small",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "薄銀色金屬框呈橢圓形，外緣排列小孔，整體平放在地面。",
+      "loose": true,
+      "motion": null,
+      "cluster": "dental-chair"
+    },
+    {
+      "id": "dental-stool",
+      "zh": "牙科圓凳",
+      "en": "stool",
+      "ja": "歯科用スツール",
+      "reading": "しかようスツール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "圓形黑色軟墊椅面下接銀色升降柱，底部有五根帶小輪的支腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dental-chair"
+    },
+    {
+      "id": "dental-spittoon",
+      "zh": "牙科吐水盆",
+      "en": "spittoon",
+      "ja": "歯科用スピットン",
+      "reading": "しかようスピットン",
+      "category": "設施",
+      "size": "medium",
+      "zone": "treatment-room",
+      "spot": "ground",
+      "desc": "白色陶瓷弧形盆固定在短柱上，盆沿有彎曲的沖水管。",
+      "loose": false,
+      "motion": null,
+      "cluster": "dental-chair"
     }
   ],
   "rejected": [
@@ -1432,6 +1627,40 @@
         "ja": "名刺スタンド",
         "reading": "めいしスタンド"
       }
+    },
+    {
+      "id": "drain-snake",
+      "issue": "診所少見，過於罕見",
+      "changes": {
+        "zh": "通管器",
+        "ja": "排水管の詰まり取り",
+        "reading": "はいすいかんのつまりとり"
+      }
+    },
+    {
+      "id": "dental-foot-control",
+      "issue": "英文應為牙科腳踏控制器",
+      "changes": {
+        "zh": "腳踏開關",
+        "ja": "フットスイッチ",
+        "reading": "ふっとすいっち"
+      }
+    },
+    {
+      "id": "dental-suction-unit",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "バキューム",
+        "reading": "ばきゅーむ"
+      }
+    },
+    {
+      "id": "dental-curing-light",
+      "issue": "日文過於專業",
+      "changes": {
+        "ja": "歯科用ライト",
+        "reading": "しかようらいと"
+      }
     }
   ],
   "createdAt": "2026-10-04T15:28:21.632+09:00",
@@ -1456,5 +1685,10 @@
         "consultation"
       ]
     }
+  },
+  "topUp": {
+    "itemsPerScene": 100,
+    "added": 13,
+    "at": "2026-10-04T15:53:43.647+09:00"
   }
 }

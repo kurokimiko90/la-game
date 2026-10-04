@@ -1835,6 +1835,279 @@
           }
         }
       }
+    },
+    {
+      "name": "雨鞋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮黃色的高筒雨鞋，鞋口寬大，圓潤鞋頭微微向上翹。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "rubber-boot",
+        "words": {
+          "zh-TW": "雨鞋",
+          "en": "rubber boot",
+          "ja": {
+            "text": "長靴",
+            "reading": "ながぐつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "通管器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "盤成一圈的細長金屬彈簧線，一端帶有短短的紅色握柄。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "clinic-entrance",
+        "itemId": "drain-snake",
+        "words": {
+          "zh-TW": "通管器",
+          "en": "drain snake",
+          "ja": {
+            "text": "排水管の詰まり取り",
+            "reading": "はいすいかんのつまりとり"
+          }
+        }
+      }
+    },
+    {
+      "name": "雜誌籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮胖的藤編籃子呈長方形，兩側有弧形提把，籃身留有交錯編織的縫隙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "waiting-room",
+        "itemId": "magazine-basket",
+        "words": {
+          "zh-TW": "雜誌籃",
+          "en": "magazine basket",
+          "ja": {
+            "text": "マガジンバスケット",
+            "reading": "マガジンバスケット"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳踏開關",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的灰色金屬踏板裝在矮底座上，旁邊連著一條黑色電線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-foot-control",
+        "words": {
+          "zh-TW": "腳踏開關",
+          "en": "foot pedal",
+          "ja": {
+            "text": "フットスイッチ",
+            "reading": "フットスイッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科吸唾器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長的白色立式底座旁掛著兩條透明彎管，管端各有小吸頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-suction-unit",
+        "words": {
+          "zh-TW": "牙科吸唾器",
+          "en": "suction unit",
+          "ja": {
+            "text": "バキューム",
+            "reading": "バキューム"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科鉛圍裙",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色厚重圍裙攤在地上，肩部寬厚，胸前有大片平滑護片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-lead-apron",
+        "words": {
+          "zh-TW": "牙科鉛圍裙",
+          "en": "lead apron",
+          "ja": {
+            "text": "鉛エプロン",
+            "reading": "なまりエプロン"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科固化燈",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色手持長柄連著短短的彎頭，頭端有一圈藍色透明燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-curing-light",
+        "words": {
+          "zh-TW": "牙科固化燈",
+          "en": "curing light",
+          "ja": {
+            "text": "歯科用ライト",
+            "reading": "しかようライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科材料混合器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小型白色方盒立在寬底座上，正面有圓形透明防護蓋和短夾臂。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-amalgamator",
+        "words": {
+          "zh-TW": "牙科材料混合器",
+          "en": "amalgamator",
+          "ja": {
+            "text": "歯科用ミキサー",
+            "reading": "しかようミキサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科高壓滅菌器",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀白色箱形機器配有厚圓門，門中央有深色玻璃窗和粗把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-sterilizer",
+        "words": {
+          "zh-TW": "牙科高壓滅菌器",
+          "en": "sterilizer",
+          "ja": {
+            "text": "歯科用滅菌器",
+            "reading": "しかようめっきんき"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科超音波清洗機",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "不鏽鋼長方形水槽嵌在白色矮機身上，槽內放著金屬網籃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-ultrasonic-cleaner",
+        "words": {
+          "zh-TW": "牙科超音波清洗機",
+          "en": "ultrasonic cleaner",
+          "ja": {
+            "text": "超音波洗浄器",
+            "reading": "ちょうおんぱせんじょうき"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科橡皮障架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "薄銀色金屬框呈橢圓形，外緣排列小孔，整體平放在地面。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-rubber-dam-frame",
+        "words": {
+          "zh-TW": "牙科橡皮障架",
+          "en": "rubber dam frame",
+          "ja": {
+            "text": "ラバーダムフレーム",
+            "reading": "ラバーダムフレーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科圓凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形黑色軟墊椅面下接銀色升降柱，底部有五根帶小輪的支腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-stool",
+        "words": {
+          "zh-TW": "牙科圓凳",
+          "en": "stool",
+          "ja": {
+            "text": "歯科用スツール",
+            "reading": "しかようスツール"
+          }
+        }
+      }
+    },
+    {
+      "name": "牙科吐水盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "白色陶瓷弧形盆固定在短柱上，盆沿有彎曲的沖水管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "dental-clinic",
+        "zone": "treatment-room",
+        "itemId": "dental-spittoon",
+        "words": {
+          "zh-TW": "牙科吐水盆",
+          "en": "spittoon",
+          "ja": {
+            "text": "歯科用スピットン",
+            "reading": "しかようスピットン"
+          }
+        }
+      }
     }
   ]
 }

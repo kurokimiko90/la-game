@@ -2191,10 +2191,10 @@
         "toothbrush-model": "surface-treatment-room",
         "dental-floss": "surface-treatment-room"
       },
-      "clusters": [["wheelchair-ramp-dental-clinic", "handrail-dental-clinic"], ["entry-door", "door-handle-dental-clinic", "doorstop-wedge-dental-clinic", "door-mat-dental-clinic"], ["downspout-dental-clinic", "gutter-dental-clinic"]],
-      "loose": ["doorstop-wedge-dental-clinic", "key-card-dental-clinic", "pen-dental-clinic", "paperclip-dental-clinic", "dental-mirror", "dental-probe", "dental-tweezers", "dental-forceps", "dental-scaler", "dental-syringe", "dental-bib", "dental-cup", "dental-floss"],
+      "clusters": [["wheelchair-ramp-dental-clinic", "handrail-dental-clinic"], ["entry-door", "door-handle-dental-clinic", "doorstop-wedge-dental-clinic", "door-mat-dental-clinic"], ["downspout-dental-clinic", "gutter-dental-clinic"], ["dental-chair", "dental-foot-control", "dental-suction-unit", "dental-curing-light", "dental-rubber-dam-frame", "dental-stool", "dental-spittoon"], ["dental-sterilizer", "dental-ultrasonic-cleaner"]],
+      "loose": ["doorstop-wedge-dental-clinic", "key-card-dental-clinic", "pen-dental-clinic", "paperclip-dental-clinic", "dental-mirror", "dental-probe", "dental-tweezers", "dental-forceps", "dental-scaler", "dental-syringe", "dental-bib", "dental-cup", "dental-floss", "rubber-boot", "dental-foot-control", "dental-curing-light", "dental-rubber-dam-frame"],
       "noFlip": [],
-      "motion": {"evergreen-shrub": "sway", "flowering-plant": "sway", "floor-plant": "sway", "air-purifier-dental-clinic": "wobble", "standing-fan": "wobble", "dental-bib": "sway"},
+      "motion": {"evergreen-shrub": "sway", "flowering-plant": "sway", "floor-plant": "sway", "air-purifier-dental-clinic": "wobble", "standing-fan": "wobble", "dental-bib": "sway", "dental-amalgamator": "wobble"},
       "arrange": "auto",
       "terrain": {"color": "#9fa8da", "x0": 0, "y0": 7700, "x1": 2600, "y1": 9000, "zones": [{"id": "clinic-entrance", "x0": 0, "y0": 7700, "x1": 1300, "y1": 8350, "indoor": false, "floor": "paving"}, {"id": "reception", "x0": 1300, "y0": 7700, "x1": 2600, "y1": 8350, "indoor": true, "floor": "tile", "wallBase": 7880}, {"id": "waiting-room", "x0": 1300, "y0": 8350, "x1": 2600, "y1": 9000, "indoor": true, "floor": "carpet", "wallBase": 8530}, {"id": "treatment-room", "x0": 0, "y0": 8350, "x1": 1300, "y1": 9000, "indoor": true, "floor": "tile", "wallBase": 8530}], "venue": {"accent": "#8aac8b", "wall": "clinical", "zones": {"clinic-entrance": ["arrival", "terrace"], "reception": ["checkin", "service"], "waiting-room": ["waiting", "reading"], "treatment-room": ["triage", "consultation"]}}}
     }

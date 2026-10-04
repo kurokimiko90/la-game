@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-04T15:40:49.926+09:00",
+  "syncedAt": "2026-10-04T18:12:25.410+09:00",
   "scenes": [
     {
       "scene": "airport",
@@ -985,7 +985,20 @@
         "dental-tray",
         "dental-model",
         "toothbrush-model",
-        "dental-floss"
+        "dental-floss",
+        "rubber-boot",
+        "drain-snake",
+        "magazine-basket",
+        "dental-foot-control",
+        "dental-suction-unit",
+        "dental-lead-apron",
+        "dental-curing-light",
+        "dental-amalgamator",
+        "dental-sterilizer",
+        "dental-ultrasonic-cleaner",
+        "dental-rubber-dam-frame",
+        "dental-stool",
+        "dental-spittoon"
       ],
       "failed": [],
       "pending": [],

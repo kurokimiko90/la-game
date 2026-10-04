@@ -1,0 +1,316 @@
+{
+  "en": {
+    "security-camera-dental-clinic": {
+      "heard": "Security Camera.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "reception-desk-dental-clinic": {
+      "heard": "Reception desk.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "doorstop-wedge-dental-clinic": {
+      "heard": "Doorstop wedged.",
+      "score": 0.93,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "dental-clinic": {
+      "heard": "dental clinic,",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "entry-door": {
+      "heard": "Entry door.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "entry-canopy-dental-clinic": {
+      "heard": "Entry Canopy.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "wheelchair-ramp-dental-clinic": {
+      "heard": "Wheelchair ramp.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "handrail-dental-clinic": {
+      "heard": "Handrail.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "door-handle-dental-clinic": {
+      "heard": "Door handle.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "door-mat-dental-clinic": {
+      "heard": "Doormat.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "computer-monitor-dental-clinic": {
+      "heard": "monitor.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "keyboard-dental-clinic": {
+      "heard": "Keyboard",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "mouse-dental-clinic": {
+      "heard": "Mouse.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "telephone-dental-clinic": {
+      "heard": "telephone,",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "hand-sanitizer": {
+      "heard": "Hand sanitizer.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "brochure-holder-dental-clinic": {
+      "heard": "Brochure holder.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "cash-drawer-dental-clinic": {
+      "heard": "cash drawer",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "paperclip-dental-clinic": {
+      "heard": "Paperclip.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "stone-pillar-dental-clinic": {
+      "heard": "Stone Pillar.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "gutter-dental-clinic": {
+      "heard": "gutter.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "pen-dental-clinic": {
+      "heard": "Pen.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "business-card-holder-dental-clinic": {
+      "heard": "business cardholder.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "queue-ticket-dispenser-dental-clinic": {
+      "heard": "Cue ticket dispenser.",
+      "score": 0.85,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "downspout-dental-clinic": {
+      "heard": "Downspout.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "evergreen-shrub": {
+      "heard": "Evergreen shrub.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "flowering-plant": {
+      "heard": "Flowering plant.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "entry-step-dental-clinic": {
+      "heard": "entry step",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "umbrella-stand-dental-clinic": {
+      "heard": "Umbrella stand.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "waiting-bench": {
+      "heard": "waiting bench.",
+      "score": 1,
+      "take": "en-1791105194809.aac",
+      "account": "chatgpt2"
+    },
+    "curb-ramp-dental-clinic": {
+      "heard": "curb ramp.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "appointment-book-dental-clinic": {
+      "heard": "appointment book.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "clipboard-dental-clinic": {
+      "heard": "Clipboard.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "paper-tray-dental-clinic": {
+      "heard": "Paper tray.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "desk-calendar-dental-clinic": {
+      "heard": "Desk Calendar.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "stapler-dental-clinic": {
+      "heard": "staplers.",
+      "score": 0.88,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "calculator-dental-clinic": {
+      "heard": "calculator.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "doorbell-button-dental-clinic": {
+      "heard": "Doorbell button.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "intercom-dental-clinic": {
+      "heard": "Intercom.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "porch-light-dental-clinic": {
+      "heard": "Porch light.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "drain-grate-dental-clinic": {
+      "heard": "Drain grate.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "paving-slab-dental-clinic": {
+      "heard": "Paving Slab",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "drain-snake": {
+      "heard": "Drain Snake.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "wall-clock-dental-clinic": {
+      "heard": "Wall Clock.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "wall-vent-dental-clinic": {
+      "heard": "Wall vent.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "wall-poster": {
+      "heard": "Dental Health Poster.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "wall-thermostat": {
+      "heard": "Thermostat.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "wall-sconce-dental-clinic": {
+      "heard": "wall sconce",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "fire-alarm-pull": {
+      "heard": "Fire alarm pull station.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "wall-panel-dental-clinic": {
+      "heard": "Wall panel.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "sprinkler-head-dental-clinic": {
+      "heard": "Sprinkler heads.",
+      "score": 0.93,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "smoke-detector-dental-clinic": {
+      "heard": "Smoke detector.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    },
+    "emergency-light-dental-clinic": {
+      "heard": "Emergency light.",
+      "score": 1,
+      "take": "en-1791105382615.aac",
+      "account": "chatgpt2"
+    }
+  }
+}

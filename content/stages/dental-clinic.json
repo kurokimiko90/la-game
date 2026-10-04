@@ -26,6 +26,67 @@
             "paving-slab-dental-clinic",
             "drain-grate-dental-clinic"
           ]
+        },
+        {
+          "row": "back",
+          "note": "診所入口門面",
+          "x": [
+            0.22,
+            0.62
+          ],
+          "fixture": "facade",
+          "main": "dental-clinic",
+          "wall": [
+            "entry-door",
+            "entry-canopy-dental-clinic",
+            "doorbell-button-dental-clinic"
+          ],
+          "beside": [
+            "stone-pillar-dental-clinic",
+            "downspout-dental-clinic"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "無障礙入口坡道與階梯",
+          "x": [
+            0.25,
+            0.56
+          ],
+          "main": "wheelchair-ramp-dental-clinic",
+          "beside": [
+            "handrail-dental-clinic",
+            "entry-step-dental-clinic"
+          ]
+        },
+        {
+          "row": "mid",
+          "note": "門前雨具與入門清潔",
+          "x": [
+            0.62,
+            0.8
+          ],
+          "main": "umbrella-stand-dental-clinic",
+          "beside": [
+            "planter-dental-clinic"
+          ],
+          "front": [
+            "door-mat-dental-clinic",
+            "doorstop-wedge-dental-clinic",
+            "rubber-boot"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "路緣排水維護",
+          "x": [
+            0.22,
+            0.78
+          ],
+          "main": "curb-ramp-dental-clinic",
+          "beside": [
+            "drain-snake"
+          ]
         }
       ]
     },
@@ -111,6 +172,31 @@
           ],
           "front": [
             "paperclip-dental-clinic"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "掛號書寫與取號",
+          "x": [
+            0.2,
+            0.74
+          ],
+          "fixture": "counter",
+          "on": [
+            "pen-dental-clinic",
+            "queue-ticket-dispenser-dental-clinic"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "名片取用",
+          "x": [
+            0.79,
+            0.97
+          ],
+          "fixture": "display",
+          "on": [
+            "business-card-holder-dental-clinic"
           ]
         }
       ]
@@ -205,6 +291,34 @@
             0.34
           ],
           "main": "coat-stand"
+        },
+        {
+          "row": "front",
+          "note": "候診區綠植與空氣循環",
+          "x": [
+            0.2,
+            0.52
+          ],
+          "main": "floor-plant",
+          "beside": [
+            "air-purifier-dental-clinic",
+            "standing-fan"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "鞋套回收與閱讀物",
+          "x": [
+            0.56,
+            0.9
+          ],
+          "main": "shoe-cover-bin",
+          "beside": [
+            "magazine-basket"
+          ],
+          "front": [
+            "floor-sign-holder"
+          ]
         }
       ]
     },
@@ -274,6 +388,46 @@
             0.96
           ],
           "main": "dental-cabinet"
+        },
+        {
+          "row": "mid",
+          "note": "診療椅用品與固化設備",
+          "x": [
+            0.04,
+            0.22
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "dental-bib",
+            "dental-curing-light",
+            "dental-rubber-dam-frame"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "材料處理與器械消毒",
+          "x": [
+            0.72,
+            0.96
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "dental-amalgamator",
+            "dental-sterilizer",
+            "dental-ultrasonic-cleaner"
+          ]
+        },
+        {
+          "row": "front",
+          "note": "防護裝備與醫師座椅",
+          "x": [
+            0.25,
+            0.68
+          ],
+          "main": "dental-stool",
+          "beside": [
+            "dental-lead-apron"
+          ]
         }
       ]
     }
