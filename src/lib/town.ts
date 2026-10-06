@@ -1,6 +1,6 @@
 // 小鎮：一張 2D 地圖，每個場景是地圖上的一個「街區」（district），由幾個矩形區域組成。
 // 場景資料已經是地圖座標；這裡把所有場景的物件、區域集中起來，給平移、提示、記憶挑戰判定使用。
-import type { Point, SceneData, SceneItem, Zone } from './types';
+import type { ItemCopy, Point, SceneData, SceneItem, Zone } from './types';
 
 export interface District {
   scene: SceneData;
@@ -82,4 +82,33 @@ export function districtAt(town: Town, p: Point): District | null {
 
 export function districtOf(town: Town, sceneId: string): District | undefined {
   return town.districts.find((d) => d.scene.id === sceneId);
+}
+
+/** 繪製清單：原物件和複本依 build 算好的順序交錯（copy 有值 = 這一筆畫的是複本，位置用 copy 的） */
+export interface DrawEntry {
+  item: SceneItem;
+  copy: ItemCopy | null;
+}
+
+export function drawList(scene: SceneData): DrawEntry[] {
+  const byId = new Map(scene.items.map((it) => [it.id, it]));
+  const copies = (scene.copies ?? []).filter((c) => byId.has(c.of));
+  const out: DrawEntry[] = [];
+  let k = 0;
+  scene.items.forEach((item, i) => {
+    for (; k < copies.length && copies[k].at <= i; k++) out.push({ item: byId.get(copies[k].of)!, copy: copies[k] });
+    out.push({ item, copy: null });
+  });
+  for (; k < copies.length; k++) out.push({ item: byId.get(copies[k].of)!, copy: copies[k] });
+  return out;
+}
+
+/** 點擊判定用的外框：原物件加上複本（複本的 id 換成原物件的，點到複本 = 點到原物件） */
+export function hitBoxes(scene: SceneData): SceneItem[] {
+  const byId = new Map(scene.items.map((it) => [it.id, it]));
+  const copies = (scene.copies ?? []).flatMap((c) => {
+    const it = byId.get(c.of);
+    return it ? [{ ...it, x: c.x, y: c.y, w: c.w, h: c.h, rotate: c.rotate, flip: c.flip }] : [];
+  });
+  return [...scene.items, ...copies];
 }

@@ -1,6 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import park from '../../src/data/scenes/park.json';
 import street from '../../src/data/scenes/street.json';
+import hardwareStore from '../../src/data/scenes/hardware-store.json';
 import sceneIndex from '../../src/data/scenes/index.json';
 import { FREE_SCENE_COUNT } from '../../src/lib/progress';
 
@@ -64,6 +65,28 @@ test('首頁：一開始就開放前 FREE_SCENE_COUNT 個場景', async ({ page 
     await expect(page.getByRole('link', { name: new RegExp(s.name) })).toBeVisible();
   }
   // TODO: 場景超過 FREE_SCENE_COUNT 個後，補測第 FREE_SCENE_COUNT+1 個鎖著、點了會提示解鎖條件
+});
+
+test('重複擺放：點到複本等於點到原物件，顯示同一個單字', async ({ page }) => {
+  await unlockAll(page);
+  await page.goto('/scene/hardware-store');
+  await page.getByRole('button', { name: /自由探索/ }).click();
+  await page.waitForTimeout(300);
+  const point = await page.evaluate(() => {
+    for (const el of document.querySelectorAll('[data-copy-of]')) {
+      const r = el.getBoundingClientRect();
+      const x = r.x + r.width / 2;
+      const y = r.y + r.height / 2;
+      if (x < 200 || y < 100 || x > window.innerWidth - 100 || y > window.innerHeight - 100) continue;
+      const hit = document.elementFromPoint(x, y)?.closest('[data-copy-of]');
+      if (hit === el) return { x, y, of: el.getAttribute('data-copy-of')! };
+    }
+    return null;
+  });
+  expect(point, '畫面上找不到可點的複本').not.toBeNull();
+  await page.mouse.click(point!.x, point!.y);
+  const original = hardwareStore.items.find((i) => i.id === point!.of)!;
+  await expect(page.getByRole('status')).toContainText(original.words.en);
 });
 
 test('小鎮：所有場景在同一張地圖，點小地圖切換街區', async ({ page }) => {

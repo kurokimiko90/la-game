@@ -263,12 +263,14 @@ export function stageZone({ sceneId, zone, stage, items, scale = {} }) {
 
 /**
  * 整個場景的情境 → 錨點與家具（只處理 stage 裡有的區域）。
- * @returns {{ anchors: Map<string, { x: number, y: number, scale: number, tilt: boolean }>, fixtures: object[], zones: Set<string> }}
+ * walls：掛在牆上的物件（不重複擺放，scripts/lib/copies.mjs）
+ * @returns {{ anchors: Map<string, { x: number, y: number, scale: number, tilt: boolean }>, fixtures: object[], zones: Set<string>, walls: Set<string> }}
  */
 export function stageScene({ sceneId, terrain, stage, items }) {
   const anchors = new Map();
   const fixtures = [];
   const zones = new Set();
+  const walls = new Set(Object.values(stage.zones ?? {}).flatMap((zs) => (zs.sets ?? []).flatMap((set) => set.wall ?? [])));
   for (const tz of terrain.zones) {
     const zs = stage.zones?.[tz.id];
     if (!zs) continue;
@@ -277,7 +279,7 @@ export function stageScene({ sceneId, terrain, stage, items }) {
     for (const [id, a] of r.anchors) anchors.set(id, a);
     fixtures.push(...r.fixtures);
   }
-  return { anchors, fixtures, zones };
+  return { anchors, fixtures, zones, walls };
 }
 
 const isFrac = (n) => typeof n === 'number' && n >= 0 && n <= 1;

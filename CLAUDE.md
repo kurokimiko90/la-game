@@ -46,6 +46,7 @@ public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 ```
 
 - 元素生成後的「按實際場景擺放」（情境規劃 + 擺放 + 排不下的退路）：`scripts/lib/placement.mjs`，手動跑 `npm run content:place -- <scene>`
+- 重複擺放：自動擴展的街區在 `content:layout` 時補複本（`<id>#<n>`，存在 layouts，`scripts/lib/copies.mjs`）：檯面補滿、小東西旁再放幾份，點複本 = 點原物件；`--refill` 只重產複本
 - 擺放演算法：`scripts/lib/layout.mjs`；動態參數：`scripts/lib/motion.mjs`；設定檢查：`scripts/lib/scene-config.mjs`；SVG 白名單：`scripts/lib/svg-sanitize.mjs`
 - 預覽整張地圖與各街區：開著 `npm run dev` 再跑 `npm run content:scene-preview` → `docs/scene-preview/`
 - 地形座標（道路、河、牆）在 `WorldBackground.tsx`，要和 scene-config 的區域、地帶一致，改地圖時兩邊一起改

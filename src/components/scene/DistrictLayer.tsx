@@ -3,7 +3,7 @@
 import { memo } from 'react';
 import { Lock } from 'lucide-react';
 import { SceneItemNode } from './SceneItemNode';
-import { districtBounds, rectCenter, zoneKey, type District } from '@/lib/town';
+import { districtBounds, drawList, rectCenter, zoneKey, type District } from '@/lib/town';
 
 interface DistrictLayerProps {
   district: District;
@@ -31,11 +31,12 @@ function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfo
         <rect x={hintZone.x0} y={hintZone.y0} width={hintZone.x1 - hintZone.x0} height={hintZone.y1 - hintZone.y0} fill="#ffb300" className="zone-hint" pointerEvents="none" />
       )}
       <g pointerEvents={locked ? 'none' : undefined}>
-        {scene.items.map((item) => {
+        {drawList(scene).map(({ item, copy }) => {
+          // 複本和原物件同一個狀態（找到、隱形、閃爍）
           const isFound = found.has(item.id);
           const cls = ['scene-item', isFound && 'scene-item--found', hideUnfound && !isFound && 'scene-item--hidden', flashId === item.id && 'scene-item--flash']
             .filter(Boolean).join(' ');
-          return <SceneItemNode key={item.id} item={item} className={cls} />;
+          return <SceneItemNode key={copy?.id ?? item.id} item={item} copy={copy} className={cls} />;
         })}
       </g>
       {locked && (

@@ -7,6 +7,7 @@ import { contentTop } from './svg-bounds.mjs';
 import { validateSceneConfig } from './scene-config.mjs';
 import { resolveBand } from './layout.mjs';
 import { stageScene, validateStage } from './staging.mjs';
+import { copyOf, siteAllows } from './copies.mjs';
 import { applySceneSitePlan } from './scene-site-plan.mjs';
 
 export function readJson(file) {
@@ -101,4 +102,35 @@ export function loadStage(root, source) {
   const problems = validateStage({ stage, zoneOf: Object.fromEntries(items.map((it) => [it.id, it.zone])), terrain: sceneConfig.terrain, words });
   if (problems.length) throw new Error(`${path.relative(root, file)} 有問題：\n  ${problems.join('\n  ')}`);
   return stageScene({ sceneId, terrain: sceneConfig.terrain, stage, items: new Map(items.map((it) => [it.id, it])) });
+}
+
+/** 鎖定檔裡的複本（`<原 id>#<n>`，scripts/lib/copies.mjs）；原物件已經不在場景裡的複本丟掉 */
+export function lockedCopies(root, source) {
+  const file = layoutFile(root, source.sceneId);
+  if (!fs.existsSync(file)) return [];
+  const ids = new Set(source.items.map((it) => it.id));
+  return Object.entries(readJson(file))
+    .filter(([id]) => ids.has(copyOf(id) ?? ''))
+    .map(([id, pos]) => ({ id, of: copyOf(id), ...pos }));
+}
+
+/** 不複製的物件：會動的、飄在空中的、掛在牆上的（情境的 wall 或 wall 地帶） */
+export function copyExclusions(sceneConfig, stage, items) {
+  const wallBand = (id) => (sceneConfig.place?.[id] ?? '').startsWith('wall');
+  const staged = stage?.walls ?? new Set();
+  return new Set(items.filter((it) => sceneConfig.motion?.[it.id] || wallBand(it.id) || staged.has(it.id)).map((it) => it.id)
+    .concat(Object.entries(sceneConfig.bands ?? {}).filter(([, b]) => b.float).flatMap(([name]) => Object.entries(sceneConfig.place ?? {}).filter(([, n]) => n === name).map(([id]) => id))));
+}
+
+export { siteAllows };
+
+// 有 look 的地帶 = 背景要畫出來的檯面（蔬果台、冷藏櫃、收銀台、吧台、餐桌、碼頭）
+// 有情境擺放的區域改畫情境裡的家具（staging.mjs），不畫地帶的檯面
+export function surfacesOf(bands, zones, stage) {
+  const staged = stage?.zones ?? new Set();
+  const fromBands = Object.entries(bands).filter(([, b]) => b.look).flatMap(([name, b]) => zones.filter((z) => !staged.has(z.id)).flatMap((z) => {
+    const r = resolveBand(bands, name, z);
+    return r ? [{ look: b.look, zone: z.id, x0: r.x0, x1: r.x1, levels: r.levels ?? [r.top], base: b.base ?? r.bottom + 60 }] : [];
+  }));
+  return [...fromBands, ...(stage?.fixtures ?? [])];
 }

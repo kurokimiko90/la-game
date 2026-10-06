@@ -10,7 +10,7 @@ import { WorldBackground, worldSections } from './WorldBackground';
 import { keyIntent, primaryButtonChange, wheelIntent, type ViewIntent } from '@/lib/controls';
 import { EDGE } from '@/lib/city';
 import { clampView, centerOn, defaultScale, itemAtPoint, toScene, wholeView, zoomAt, type View, type Size } from '@/lib/geometry';
-import { districtAt, districtBounds, expandRect, intersects, type Rect, type Town } from '@/lib/town';
+import { districtAt, districtBounds, expandRect, hitBoxes, intersects, type Rect, type Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
 
 export interface SceneClick {
@@ -233,7 +233,7 @@ export function TownCanvas({
     const scene = districts.find((d) => d.scene.id === sceneId)?.scene;
     if (!scene) return null;
     const hidden = (itemId: string) => hideUnfound && sceneId === activeSceneId && !found.has(itemId);
-    return itemAtPoint(scene.items.filter((it) => !hidden(it.id)), sp, HIT_SLOP_PX / viewRef.current.scale)?.id ?? null;
+    return itemAtPoint(hitBoxes(scene).filter((it) => !hidden(it.id)), sp, HIT_SLOP_PX / viewRef.current.scale)?.id ?? null;
   };
 
   const endPointer = (e: React.PointerEvent) => {
@@ -254,8 +254,9 @@ export function TownCanvas({
     const sp = toScene(viewRef.current, lp);
     const sceneId = districtAt(town, sp)?.scene.id ?? null;
     const locked = sceneId !== null && lockedSceneIds.has(sceneId);
-    const target = !locked && g.target instanceof Element ? g.target.closest('[data-item-id]') : null;
-    const itemId = target?.getAttribute('data-item-id') ?? (locked || !sceneId ? null : nearbyItemId(sceneId, sp));
+    // 點到複本（data-copy-of）= 點到原物件
+    const target = !locked && g.target instanceof Element ? g.target.closest('[data-item-id],[data-copy-of]') : null;
+    const itemId = target?.getAttribute('data-item-id') ?? target?.getAttribute('data-copy-of') ?? (locked || !sceneId ? null : nearbyItemId(sceneId, sp));
     const id = Date.now();
     setRipples((r) => [...r, { ...sp, id }]);
     window.setTimeout(() => setRipples((r) => r.filter((x) => x.id !== id)), 600);

@@ -111,6 +111,22 @@ export interface DistrictTerrain {
   venue?: VenuePlan;
 }
 
+/** 重複擺放：同一個物品在場景裡的另一份（scripts/lib/copies.mjs）。點到它 = 點到原物件 */
+export interface ItemCopy {
+  /** `<原 id>#<n>` */
+  id: string;
+  /** 原物件 id */
+  of: string;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  rotate: number;
+  flip: boolean;
+  /** 畫在 items 的第幾個物件之前（= 前面有幾個原物件） */
+  at: number;
+}
+
 /** 一個場景 = 小鎮地圖上的一個街區；width/height 是整張地圖的大小，座標都是地圖座標 */
 export interface SceneData {
   id: string;
@@ -121,6 +137,8 @@ export interface SceneData {
   surfaces: Surface[];
   /** 陣列順序 = 繪製順序 */
   items: SceneItem[];
+  /** 重複擺放的複本（沒有就省略） */
+  copies?: ItemCopy[];
   terrain?: DistrictTerrain;
 }
 

@@ -9,24 +9,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { checkLayout, depthOf, resolveBand } from './lib/layout.mjs';
+import { checkLayout, depthOf } from './lib/layout.mjs';
 import { checkMotionBudget, motionParams } from './lib/motion.mjs';
-import { layoutFile, loadSceneConfig, loadSceneSource, loadStage, lockedPlacements } from './lib/scene-source.mjs';
+import { layoutFile, loadSceneConfig, loadSceneSource, loadStage, lockedCopies, lockedPlacements, surfacesOf } from './lib/scene-source.mjs';
 import { checkSitePlan } from './lib/site-plan.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'scenes');
-
-// 有 look 的地帶 = 背景要畫出來的檯面（蔬果台、冷藏櫃、收銀台、吧台、餐桌、碼頭）
-// 有情境擺放的區域改畫情境裡的家具（staging.mjs），不畫地帶的檯面
-function surfacesOf(bands, zones, stage) {
-  const staged = stage?.zones ?? new Set();
-  const fromBands = Object.entries(bands).filter(([, b]) => b.look).flatMap(([name, b]) => zones.filter((z) => !staged.has(z.id)).flatMap((z) => {
-    const r = resolveBand(bands, name, z);
-    return r ? [{ look: b.look, zone: z.id, x0: r.x0, x1: r.x1, levels: r.levels ?? [r.top], base: b.base ?? r.bottom + 60 }] : [];
-  }));
-  return [...fromBands, ...(stage?.fixtures ?? [])];
-}
 
 function checkWorld(world, sources) {
   const all = sources.flatMap((s) => s.zones.map((z) => ({ ...z, sceneId: s.sceneId })));
@@ -40,14 +29,32 @@ function checkWorld(world, sources) {
   if (problems.length) throw new Error(`地圖區域有問題：\n  ${problems.join('\n  ')}`);
 }
 
-function buildScene(world, source, placements, obstacles) {
+// 複本（scripts/lib/copies.mjs）：底線在原物件的區域內；繪製順序和原物件一樣依 layer、深度
+function placeCopies(copies, placements, zones, items) {
+  const byId = new Map(placements.map((p) => [p.id, p]));
+  const zoneOf = new Map(items.map((it) => [it.id, zones.find((z) => z.id === it.zone)]));
+  const problems = [];
+  const placed = copies.map((c) => {
+    const z = zoneOf.get(c.of);
+    const b = c.y + c.h;
+    if (c.x < z.x0 || c.x + c.w > z.x1 || b < z.y0 || b > z.y1) problems.push(`${c.id}：超出區域 ${z.id}`);
+    const orig = byId.get(c.of);
+    return { ...c, layer: orig.layer, float: orig.float };
+  });
+  return { placed, problems };
+}
+
+function buildScene(world, source, placements, obstacles, copies) {
   const { sceneId, sceneConfig, zones, items } = source;
   const file = layoutFile(ROOT, sceneId);
   const missing = items.filter((it) => !placements.some((p) => p.id === it.id)).map((it) => it.id);
   if (missing.length) throw new Error(`${sceneId}：這些物件還沒有位置：${missing.join(', ')}，先跑 npm run content:layout -- ${sceneId}`);
 
+  const { placed: copyPlaced, problems: copyProblems } = placeCopies(copies, placements, zones, items);
   const problems = [
-    ...checkLayout({ zones, items, placements, obstacles }),
+    ...copyProblems,
+    // 複本當成障礙物一起算遮擋：原物件被複本擋住也不行
+    ...checkLayout({ zones, items, placements, obstacles: [...obstacles, ...copyPlaced] }),
     ...checkSitePlan({ terrain: sceneConfig.terrain, items, placements }),
   ];
   if (problems.length) throw new Error(`${sceneId} 擺放沒過檢查（改 ${path.relative(ROOT, file)} 或加 --reset 重排）：\n  ${problems.join('\n  ')}`);
@@ -62,6 +69,14 @@ function buildScene(world, source, placements, obstacles) {
   const byId = new Map(items.map((it) => [it.id, it]));
   // 陣列順序 = 繪製順序（後面的蓋在前面上）：先依 layer，同層依深度由上到下（放在檯面上的東西跟著宿主）
   const ordered = [...placements].sort((a, b) => a.layer - b.layer || depthOf(a) - depthOf(b));
+  // 複本記住畫在第幾個原物件之後（at），畫面上和原物件交錯畫
+  const all = [...placements, ...copyPlaced].sort((a, b) => a.layer - b.layer || depthOf(a) - depthOf(b));
+  let drawn = 0;
+  const copyOut = all.flatMap((p) => {
+    if (!p.of) { drawn++; return []; }
+    const { id, of, x, y, w, h, rotate = 0, flip = false } = p;
+    return [{ id, of, x, y, w, h, rotate, flip, at: drawn }];
+  });
   return {
     id: sceneId,
     name: sceneConfig.name,
@@ -78,6 +93,7 @@ function buildScene(world, source, placements, obstacles) {
         ...(motion[id] ? { motion: motionParams(sceneId, id, motion[id]) } : {}),
       };
     }),
+    ...(copyOut.length ? { copies: copyOut } : {}),
     // 自動擴展的街區才有：地形照這份畫（src/components/scene/districts/GeneratedDistrict.tsx）
     ...(sceneConfig.terrain ? { terrain: sceneConfig.terrain } : {}),
   };
@@ -112,7 +128,7 @@ function main() {
   for (const source of sources) {
     const { sceneId } = source;
     const obstacles = [...placementsOf].filter(([id]) => id !== sceneId).flatMap(([, list]) => list);
-    const scene = buildScene(world, source, placementsOf.get(sceneId), obstacles);
+    const scene = buildScene(world, source, placementsOf.get(sceneId), obstacles, lockedCopies(ROOT, source));
     // 所有場景在同一張畫布上，物件 id 必須全域唯一
     for (const it of scene.items) {
       if (seen.has(it.id)) throw new Error(`物件 id ${it.id} 在 ${seen.get(it.id)} 和 ${sceneId} 重複`);
@@ -123,7 +139,7 @@ function main() {
     fs.writeFileSync(path.join(OUT_DIR, `${sceneId}.json`), `${JSON.stringify(scene)}\n`);
     index.push({ id: sceneId, name: scene.name, itemCount: scene.items.length, icon: { viewBox: icon.viewBox, body: icon.body } });
     const moving = scene.items.filter((it) => it.motion).length;
-    console.log(`${sceneId}: ${scene.items.length} 個物件、${moving} 個會動${source.skipped.length ? `，略過（無 SVG）：${source.skipped.join(', ')}` : ''}`);
+    console.log(`${sceneId}: ${scene.items.length} 個物件${scene.copies ? `（另有 ${scene.copies.length} 個重複擺放）` : ''}、${moving} 個會動${source.skipped.length ? `，略過（無 SVG）：${source.skipped.join(', ')}` : ''}`);
   }
   fs.writeFileSync(path.join(OUT_DIR, 'index.json'), `${JSON.stringify(index, null, 2)}\n`);
   fs.writeFileSync(path.join(OUT_DIR, 'registry.ts'), registrySource(index.map((s) => s.id)));

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { buildTown, districtAt, districtBounds, expandRect, intersects, zoneKey } from '@/lib/town';
+import { buildTown, districtAt, districtBounds, drawList, expandRect, hitBoxes, intersects, zoneKey } from '@/lib/town';
 import type { SceneData, SceneItem, Zone } from '@/lib/types';
 
 const item = (id: string, zone: string, x: number): SceneItem => ({
@@ -53,5 +53,21 @@ describe('expandRect / intersects（畫面外的街區不渲染）', () => {
     expect(intersects(r, { x0: 250, y0: 150, x1: 500, y1: 500 })).toBe(true);
     expect(intersects(r, { x0: 300, y0: 100, x1: 400, y1: 200 })).toBe(false);
     expect(intersects(r, { x0: 0, y0: 0, x1: 50, y1: 50 })).toBe(false);
+  });
+});
+
+describe('複本', () => {
+  const copy = (of: string, n: number, x: number, at: number) => ({ id: `${of}#${n}`, of, x, y: 500, w: 50, h: 50, rotate: 0, flip: false, at });
+  const s = { ...scene('a', [z('z1', 0, 0, 1000, 500)], [item('apple', 'z1', 100), item('pear', 'z1', 300)]), copies: [copy('pear', 2, 360, 0), copy('apple', 2, 160, 2), copy('ghost', 2, 0, 1)] };
+
+  test('drawList：複本照 at 插在原物件之間，原物件不在了的複本不畫', () => {
+    expect(drawList(s).map((e) => e.copy?.id ?? e.item.id)).toEqual(['pear#2', 'apple', 'pear', 'apple#2']);
+    expect(drawList(s)[0].item.id).toBe('pear');
+  });
+
+  test('hitBoxes：複本用原物件的 id、自己的位置', () => {
+    const boxes = hitBoxes(s);
+    expect(boxes.filter((b) => b.id === 'apple').map((b) => b.x)).toEqual([100, 160]);
+    expect(boxes.some((b) => b.id === 'ghost')).toBe(false);
   });
 });
