@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { BookOpen, ChartNoAxesColumn, Lock } from 'lucide-react';
+import { BookOpen, Box, ChartNoAxesColumn, Lock } from 'lucide-react';
 import { useProgress } from '../ProgressProvider';
 import { LangToggle } from '../LangToggle';
 import { SvgArt } from '../SvgArt';
@@ -88,6 +88,13 @@ export function HomeScreen() {
           <span>
             <span className="block font-bold">詞彙本</span>
             <span className="block text-xs text-muted">已認識 {wordCount} / {total} 個單字</span>
+          </span>
+        </Link>
+        <Link href="/city3d" className="flex items-center gap-3 rounded-2xl bg-white px-5 py-4 shadow-sm ring-1 ring-black/5 hover:ring-brand">
+          <Box className="text-brand" />
+          <span>
+            <span className="block font-bold">銀座 3D（試作）</span>
+            <span className="block text-xs text-muted">在立體街道上找商業街的物品</span>
           </span>
         </Link>
         <Link href="/stats" className="flex items-center gap-3 rounded-2xl bg-white px-5 py-4 shadow-sm ring-1 ring-black/5 hover:ring-brand">

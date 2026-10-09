@@ -61,6 +61,14 @@ public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 - 規劃結果在 `content/plans/<scene>.json`（manifest 由它產生）；狀態與紀錄在 `.auto-expand/`（不進 git）
 - `src/data/scenes/registry.ts` 由 build-scenes 產生，新場景不用改 `src/lib/scenes.ts`
 
+## 3D 城市（試作，見 `docs/city3d.md`）
+
+- `/city3d`：商業街的 56 個物品擺在真實銀座（OSM）的中央通り上，第一人稱找東西；和 2D 並存、共用關卡／進度／發音
+- 物品模型是「積木」資料（`src/lib/city3d/model-dsl.ts` 格式、`src/data/city3d/street-models.ts`），顏色只能用 `PALETTE`（= 2D SVG 色票）
+- 擺放用街道座標 u/v（`src/data/city3d/ginza-street.ts`）；`/city3d?view=u,v,lookU,lookV` 直接看某處（截圖用）
+- 畫風：卡通著色 + 墨線描邊（`src/components/city3d/toon.ts`）；不要換成寫實材質
+- 地圖資料 ODbL：畫面要保留 © OpenStreetMap contributors 標示
+
 ## Key Constraints
 
 - 遊戲規則是純函式（`src/lib/stages.ts`、`progress.ts`、`geometry.ts`、`town.ts`），UI 只呼叫；新規則先寫單元測試

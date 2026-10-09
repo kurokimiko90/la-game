@@ -5,6 +5,7 @@
 - 25 個街區，包含動物園、植物園、學校與獨立的班級教室
 - 多種關卡 + 自由探索，提示、星級、解鎖
 - 無後端，進度存在瀏覽器 localStorage
+- 3D 試作：`/city3d` 在真實東京銀座街道上找「商業街」的物品（[docs/city3d.md](docs/city3d.md)）
 
 ## 技術
 
@@ -38,7 +39,8 @@ SVG 素材與發音錄音的生成依賴作者本機的 miko-ws 工具鏈，不�
 - [docs/scene-standard.md](docs/scene-standard.md) — 場景製作標準
 - [docs/svg-assets.md](docs/svg-assets.md) — 素材產線
 - [docs/expansion.md](docs/expansion.md) — 自動擴展
+- [docs/city3d.md](docs/city3d.md) — 3D 城市（銀座試作）
 
 ## License
 
-程式碼以 [MIT](LICENSE) 授權。
+程式碼以 [MIT](LICENSE) 授權。`public/city3d/ginza/` 的地圖資料 © OpenStreetMap contributors，ODbL 1.0。
