@@ -1,24 +1,24 @@
 // 銀座城市：OSM 建築擠出、道路地面、天空。移植自 Ginza 專案（web/city.js、web/sky.js），
 // 配色改成 la-game 2D 小鎮的粉彩色、牆面用卡通著色，物件放上去才不會像兩種畫風拼貼。
 // 2026-10-09 同步 Ginza 更新：加入道路帶狀面（buildRoads）；店面見 ginzaStreetscape.ts、車流人流見 ginzaLife.ts。
+// 2026-10-10 同步：中央通り上下行車道寬度修正、車道虛線、外側路緣、過街線（有標記才畫斑馬線）。
 // 地圖資料 © OpenStreetMap contributors（ODbL 1.0），見 public/city3d/ginza/ATTRIBUTION.md。
 import * as THREE from 'three';
 import type { Bounds, CityBuilding, Ring } from '@/lib/city3d/collision';
 import { toonMaterial } from './toon';
 import type { ClockTowerData } from './ginzaClockTower';
 import { PALETTE } from '@/lib/city3d/model-dsl';
+import { curbTriangles, isMajorRoad, type Road } from '@/lib/city3d/road-layout';
 
-export interface Road {
-  kind: string;
-  width: number;
-  points: [number, number][];
-}
+export type { Road } from '@/lib/city3d/road-layout';
 
 export interface CityData {
   origin: [number, number];
   bounds: Bounds;
   buildings: CityBuilding[];
   clock?: ClockTowerData;
+  /** OSM 店家招牌點；植栽避開店門口用 */
+  signs?: { x: number; z: number; kind?: string }[];
 }
 
 const FLOOR = 3.4;
@@ -26,7 +26,7 @@ const BAY = 2.6;
 const WINDOW_TILE = 4;
 /** 2D 小鎮房子的牆色 */
 const WALLS = ['#cfd8dc', '#d7ccc8', '#ffe0b2', '#e0e0e0', '#bcaaa4', '#c5cae9', '#f5f5f5', '#b0bec5', '#ffccbc'];
-const GROUND = { paving: '#e9e3d7', road: '#8f9ba3', walk: '#efe9dd', footprint: '#bdb5a8', lane: 'rgba(250,250,250,0.9)' };
+const GROUND = { paving: '#e9e3d7', road: '#a2a8ad', walk: '#efe9dd', footprint: '#bdb5a8', lane: 'rgba(250,250,250,0.9)' };
 const WALK_KINDS = new Set(['footway', 'steps', 'path', 'cycleway', 'pedestrian']);
 
 function mulberry(seed: number) {
@@ -188,6 +188,7 @@ function groundTexture(roads: readonly Road[], buildings: readonly CityBuilding[
   ctx.lineJoin = 'round';
   const order = [...roads].sort((a, b) => a.width - b.width);
   for (const road of order) {
+    if (road.crossing) continue; // 過街線在車道上，不畫成人行道
     ctx.strokeStyle = WALK_KINDS.has(road.kind) ? GROUND.walk : GROUND.road;
     ctx.lineWidth = Math.max(1.5, road.width * scale);
     trace(ctx, road.points, px);
@@ -196,7 +197,7 @@ function groundTexture(roads: readonly Road[], buildings: readonly CityBuilding[
   ctx.setLineDash([3 * scale, 5 * scale]);
   ctx.strokeStyle = GROUND.lane;
   ctx.lineWidth = Math.max(1, 0.2 * scale);
-  for (const road of order.filter((r) => r.width >= 11)) {
+  for (const road of order.filter(isMajorRoad)) {
     trace(ctx, road.points, px);
     ctx.stroke();
   }
@@ -237,12 +238,30 @@ void main() {
   gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
   gl_Position.z = gl_Position.w;
 }`;
-const SKY_FRAGMENT = `
-uniform vec3 top; uniform vec3 horizon;
+const SKY_FRAGMENT = /* glsl */`
+uniform vec3 top; uniform vec3 horizon; uniform float time;
 varying vec3 vDir;
+float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+float noise(vec2 p) {
+  vec2 i = floor(p), f = fract(p);
+  f = f * f * (3.0 - 2.0 * f);
+  return mix(mix(hash(i), hash(i + vec2(1, 0)), f.x), mix(hash(i + vec2(0, 1)), hash(i + vec2(1, 1)), f.x), f.y);
+}
+float fbm(vec2 p) {
+  float v = 0.0, a = 0.5;
+  for (int i = 0; i < 4; i++) { v += a * noise(p); p *= 2.03; a *= 0.5; }
+  return v;
+}
 void main() {
   float h = clamp(vDir.y, 0.0, 1.0);
-  gl_FragColor = vec4(mix(horizon, top, pow(h, 0.6)), 1.0);
+  vec3 sky = mix(horizon, top, pow(h, 0.6));
+  // 卡通雲：投影到天頂平面取雜訊，邊緣用很窄的 smoothstep 切出平塗色塊；底部再疊一層淺灰藍當陰影
+  vec2 uv = vDir.xz / (vDir.y + 0.12) * 1.3 + vec2(time * 0.004, time * 0.0015);
+  float n = fbm(uv);
+  float cloud = smoothstep(0.56, 0.585, n) * smoothstep(0.03, 0.18, vDir.y);
+  float shade = smoothstep(0.56, 0.585, fbm(uv + vec2(0.035, 0.05)));
+  vec3 cloudColor = mix(vec3(0.84, 0.9, 0.97), vec3(1.0), shade);
+  gl_FragColor = vec4(mix(sky, cloudColor, cloud), 1.0);
   #include <colorspace_fragment>
 }`;
 
@@ -251,7 +270,7 @@ function buildSky() {
   const mesh = new THREE.Mesh(
     new THREE.SphereGeometry(5000, 32, 16),
     new THREE.ShaderMaterial({
-      uniforms: { top: { value: new THREE.Color('#81d4fa') }, horizon: { value: new THREE.Color('#e1f5fe') } },
+      uniforms: { top: { value: new THREE.Color('#4fc3f7') }, horizon: { value: new THREE.Color('#dff4ff') }, time: { value: 0 } },
       vertexShader: SKY_VERTEX, fragmentShader: SKY_FRAGMENT, side: THREE.BackSide, depthWrite: false, fog: false,
     }),
   );
@@ -289,6 +308,22 @@ function pushDashes(buf: number[], points: [number, number][], y: number, skip: 
   }
 }
 
+/** 斑馬線：沿過街線每 1 m 一條 0.45 m 白帶（OSM 有明確標線標記才畫） */
+function pushZebra(buf: number[], road: Road, skip: (x: number, z: number) => boolean) {
+  let carry = 0.2;
+  for (let i = 1; i < road.points.length; i++) {
+    const a = road.points[i - 1], b = road.points[i];
+    const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    if (length < 0.01) continue;
+    for (let s = carry; s < length; s += 1.0) {
+      const e = Math.min(length, s + 0.45);
+      pushRibbon(buf, [[a[0] + ((b[0] - a[0]) * s) / length, a[1] + ((b[1] - a[1]) * s) / length],
+        [a[0] + ((b[0] - a[0]) * e) / length, a[1] + ((b[1] - a[1]) * e) / length]], road.width, 0.045, skip, false);
+    }
+    carry = (((carry - length) % 1) + 1) % 1;
+  }
+}
+
 function flatMesh(positions: number[], color: string, offset: number): THREE.Mesh {
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
@@ -308,13 +343,19 @@ function flatMesh(positions: number[], color: string, offset: number): THREE.Mes
 function buildRoads(roads: readonly Road[], skip: (x: number, z: number) => boolean): THREE.Group {
   const asphalt: number[] = [], walkway: number[] = [], lines: number[] = [];
   for (const road of roads) {
+    if (road.crossing) {
+      if (road.marked) pushZebra(lines, road, skip);
+      continue;
+    }
     const walk = WALK_KINDS.has(road.kind);
     if (walk) pushRibbon(walkway, road.points, Math.max(1.6, road.width), 0.02, skip);
     else pushRibbon(asphalt, road.points, road.width, 0.03, skip);
-    if (road.width >= 11 && !walk) pushDashes(lines, road.points, 0.04, skip);
+    if (isMajorRoad(road) && !walk) pushDashes(lines, road.points, 0.04, skip);
   }
   const group = new THREE.Group();
   group.add(flatMesh(walkway, GROUND.walk, -1), flatMesh(asphalt, GROUND.road, -2), flatMesh(lines, '#fafafa', -3));
+  // 實照可見的淺灰路緣石，只畫在上下行分開路段的人行道側
+  group.add(flatMesh(curbTriangles(roads, skip), PALETTE.light, -3));
   return group;
 }
 

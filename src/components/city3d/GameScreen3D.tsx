@@ -4,7 +4,7 @@
 // 只把 TownCanvas 換成 CityWorld。進度 key 相同，2D 學過的字在 3D 也算數。
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ChevronLeft, Lightbulb, Map as MapIcon, Footprints } from 'lucide-react';
+import { ChevronLeft, Lightbulb, Map as MapIcon, Footprints, Headphones } from 'lucide-react';
 import { useProgress } from '../ProgressProvider';
 import { LangToggle } from '../LangToggle';
 import { useLater } from '../useLater';
@@ -13,7 +13,8 @@ import { TaskPanel } from '../game/TaskPanel';
 import { WordPopup } from '../game/WordPopup';
 import { StageMenu } from '../game/StageMenu';
 import { StageResult } from '../game/StageResult';
-import { CityWorld, type PickEvent, type ViewMode } from './CityWorld';
+import { CityWorld, type PickEvent, type TourEvent, type ViewMode } from './CityWorld';
+import { TourCard } from './TourCard';
 import {
   RECALL_MAX_MISSES, clickItem, createStageState, currentTarget, starsFor, takeHint,
   type StageDef, type StageEvent, type StageState,
@@ -27,6 +28,7 @@ import { districtOf } from '@/lib/town';
 import type { Point } from '@/lib/types';
 import { GINZA_STREET } from '@/data/city3d/ginza-street';
 import { STREET_FIXTURES, STREET_MODELS } from '@/data/city3d/street-models';
+import { GINZA_TOUR } from '@/data/city3d/ginza-tour';
 
 type Phase =
   | { kind: 'menu' }
@@ -53,12 +55,16 @@ export function GameScreen3D() {
   const hostRef = useRef<HTMLDivElement>(null);
   const worldRef = useRef<CityWorld | null>(null);
   const pickRef = useRef<(e: PickEvent) => void>(() => {});
+  const tourRef = useRef<(e: TourEvent | null) => void>(() => {});
+  const tourShotRef = useRef('');
   const findSinceRef = useRef(0);
   const [phase, setPhase] = useState<Phase>({ kind: 'menu' });
   const [mode, setMode] = useState<ViewMode>('walk');
   const [loading, setLoading] = useState<string>('loading');
   const [popup, setPopup] = useState<Popup | null>(null);
   const [toast, setToast] = useState<{ text: string; key: number } | null>(null);
+  const [tour, setTour] = useState<TourEvent | null>(null);
+  const [fadeKey, setFadeKey] = useState(0);
 
   // 3D 世界只建一次；點選事件透過 ref 轉給最新的 handler
   useEffect(() => {
@@ -66,7 +72,7 @@ export function GameScreen3D() {
     if (!host) return;
     let world: CityWorld | null = null;
     let cancelled = false;
-    CityWorld.create({ container: host, set: GINZA_STREET, models: STREET_MODELS, fixtures: STREET_FIXTURES, onPick: (e) => pickRef.current(e) })
+    CityWorld.create({ container: host, set: GINZA_STREET, models: STREET_MODELS, fixtures: STREET_FIXTURES, onPick: (e) => pickRef.current(e), tour: GINZA_TOUR, onTour: (e) => tourRef.current(e) })
       .then((w) => {
         if (cancelled) return w.dispose();
         world = w;
@@ -87,7 +93,10 @@ export function GameScreen3D() {
 
   const stageView = phase.kind === 'play' || phase.kind === 'result' ? phase : null;
   useEffect(() => {
-    worldRef.current?.setFound(stageView?.state.found ?? [], stageView?.stage.mode === 'recall');
+    const recall = stageView?.stage.mode === 'recall';
+    worldRef.current?.setFound(stageView?.state.found ?? [], recall);
+    // 記憶挑戰點空地 = 作答，不能拿來走路
+    worldRef.current?.setTapToWalk(!recall);
   }, [stageView, loading]);
 
   const say = useCallback((itemId: string) => {
@@ -114,6 +123,7 @@ export function GameScreen3D() {
   }, [say, update, later, scene.id]);
 
   const resetOverlays = () => {
+    worldRef.current?.endTour();
     setPopup(null);
     setToast(null);
     worldRef.current?.showBeacon(null);
@@ -154,6 +164,7 @@ export function GameScreen3D() {
     for (const ev of events) {
       if (ev.type === 'found') {
         worldRef.current?.showBeacon(null);
+        worldRef.current?.cheer();
         showWord(ev.itemId, point, true);
         const upcoming = stage.sequential ? currentTarget(next, stage) : null;
         if (upcoming && next.finishedAt === null) later(() => say(upcoming), NEXT_TARGET_DELAY_MS);
@@ -190,7 +201,7 @@ export function GameScreen3D() {
       const target = currentTarget(state, stage);
       hit = target && nearIds.includes(target) ? target : null;
     } else if (!hit) {
-      showToast('這裡沒有物品，再找找看');
+      // 點到空地 = 小人走過去（CityWorld 處理）
       return;
     }
     const now = Date.now();
@@ -200,9 +211,41 @@ export function GameScreen3D() {
     handleEvents(stage, next, events, point);
   };
 
+  // 導覽：念到新的物品就跳單字卡並發音（算「看過」，和自由探索點物品一樣）
+  const onTour = (e: TourEvent | null) => {
+    setTour(e);
+    if (!e) {
+      tourShotRef.current = '';
+      return;
+    }
+    if (e.state.cut && e.state.phase === 'turning' && tourShotRef.current !== `cut:${e.state.index}`) {
+      tourShotRef.current = `cut:${e.state.index}`;
+      setFadeKey(Date.now());
+    }
+    const shotKey = `${e.state.index}:${e.shot}`;
+    if (e.itemId && tourShotRef.current !== shotKey) {
+      tourShotRef.current = shotKey;
+      const itemId = e.itemId;
+      worldRef.current?.bounceItem(itemId);
+      // 鏡頭還在轉向，等它大致對準再取畫面位置，單字卡才會在物品旁邊
+      later(() => {
+        const point = worldRef.current?.screenPointOf(itemId);
+        if (point && tourShotRef.current === shotKey) showWord(itemId, point, false);
+      }, 350);
+    }
+  };
+
   useEffect(() => {
     pickRef.current = onPick;
+    tourRef.current = onTour;
   });
+
+  const startGuidedTour = () => {
+    resetOverlays();
+    setMode('walk');
+    setPhase({ kind: 'explore' });
+    worldRef.current?.startTour();
+  };
 
   const onHint = () => {
     if (phase.kind !== 'play') return;
@@ -252,6 +295,12 @@ export function GameScreen3D() {
           className="flex items-center gap-1 rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand">
           {mode === 'walk' ? <><MapIcon size={16} /> 鳥瞰</> : <><Footprints size={16} /> 漫遊</>}
         </button>
+        {(phase.kind === 'menu' || phase.kind === 'explore') && !tour && loading === 'ready' && (
+          <button type="button" onClick={startGuidedTour} aria-label="聽讀導覽"
+            className="flex items-center gap-1 rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand">
+            <Headphones size={16} /> 導覽
+          </button>
+        )}
         {playing && (
           <button type="button" onClick={onHint} disabled={playing.state.hintsUsed >= playing.stage.hints}
             className="flex items-center gap-1 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-semibold text-ink disabled:opacity-40">
@@ -263,6 +312,8 @@ export function GameScreen3D() {
 
       <main className="relative min-h-0 flex-1 overflow-hidden bg-[#e1f5fe]">
         <div ref={hostRef} className="absolute inset-0" />
+        {/* 畫面四周微暗，視線集中在中央的小人和物品 */}
+        <div className="pointer-events-none absolute inset-0 z-[5] bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(55,71,79,0.22)_100%)]" />
         {loading !== 'ready' && (
           <div className="absolute inset-0 z-30 grid place-items-center bg-paper/80 text-muted">
             {loading === 'loading' ? '正在建構銀座…' : loading}
@@ -277,10 +328,15 @@ export function GameScreen3D() {
             <div className="rounded-full bg-ink/85 px-4 py-2 text-sm font-semibold text-white shadow-lg">{toast.text}</div>
           </div>
         )}
-        {mode === 'walk' && loading === 'ready' && (
+        {fadeKey > 0 && <div key={fadeKey} className="tour-fade pointer-events-none absolute inset-0 z-30 bg-paper" />}
+        {tour && (
+          <TourCard tour={tour} zones={scene.zones} itemsById={itemsById} lang={lang} showReading={showReading}
+            onCommand={(cmd) => worldRef.current?.tourCommand(cmd)} onClose={() => worldRef.current?.endTour()} />
+        )}
+        {mode === 'walk' && loading === 'ready' && !tour && (
           <>
             <div className="pointer-events-none absolute bottom-3 left-3 z-10 hidden rounded-full bg-ink/70 px-3 py-1.5 text-xs text-white sm:block">
-              WASD／方向鍵 走路 · Shift 跑 · 拖曳 轉頭 · 點物品 聽發音
+              點地面 走過去 · WASD／方向鍵 走路 · Shift 跑 · 拖曳 轉鏡頭 · 滾輪 遠近 · 點物品 聽發音
             </div>
             <div className="absolute bottom-3 right-3 z-10 grid grid-cols-3 gap-1 sm:hidden">
               {TOUCH_KEYS.map(([code, label, col]) => (

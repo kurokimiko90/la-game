@@ -1,4 +1,5 @@
 import { describe, expect, test } from 'vitest';
+import { carveRooms } from '@/lib/city3d/rooms';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { createCollider, type Bounds, type CityBuilding } from '@/lib/city3d/collision';
@@ -107,10 +108,11 @@ describe('商業街 3D 資料', () => {
     }
   });
 
-  test('在真實銀座地圖上：物件、家具和出生點都不在建築裡', () => {
+  test('在真實銀座地圖上：物件、家具和出生點都不在建築裡（店內除外）', () => {
     const city = JSON.parse(readFileSync(path.join(__dirname, '../../public/city3d/ginza/city.json'), 'utf8')) as { buildings: CityBuilding[]; bounds: Bounds };
-    const collider = createCollider(city.buildings, city.bounds);
-    const { frame } = GINZA_STREET;
+    const { frame, rooms } = GINZA_STREET;
+    // 店內的物件放在挖空的一樓裡
+    const collider = createCollider(carveRooms(city.buildings, frame, rooms), city.bounds);
     for (const spot of [...GINZA_STREET.items, ...GINZA_STREET.fixtures, GINZA_STREET.spawn]) {
       const [x, z] = toWorld(frame, spot.u, spot.v);
       const label = String('id' in spot ? spot.id : 'model' in spot ? spot.model : 'spawn');

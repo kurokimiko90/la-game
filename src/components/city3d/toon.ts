@@ -3,6 +3,13 @@ import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { mergeGeometries, mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { PALETTE, type Model3D, type Part } from '@/lib/city3d/model-dsl';
+import { curveGLSL } from '@/lib/city3d/curvature';
+
+// 所有內建材質共用的 project_vertex 加上「滾筒世界」彎曲（見 lib/city3d/curvature.ts）；自訂 shader 各自插 curveGLSL
+const PROJECT = 'gl_Position = projectionMatrix * mvPosition;';
+if (!THREE.ShaderChunk.project_vertex.includes('cameraPosition.y')) {
+  THREE.ShaderChunk.project_vertex = THREE.ShaderChunk.project_vertex.replace(PROJECT, `${curveGLSL('mvPosition')}\n${PROJECT}`);
+}
 
 export const OUTLINE = { ink: '#37474f', hover: '#ffb300', found: '#00796b' } as const;
 
@@ -11,7 +18,7 @@ let gradient: THREE.DataTexture | null = null;
 /** 三階明暗（亮面、中間調、暗面），不做連續漸層 */
 export function toonGradient(): THREE.DataTexture {
   if (gradient) return gradient;
-  gradient = new THREE.DataTexture(new Uint8Array([110, 190, 255]), 3, 1, THREE.RedFormat);
+  gradient = new THREE.DataTexture(new Uint8Array([150, 212, 255]), 3, 1, THREE.RedFormat);
   gradient.minFilter = gradient.magFilter = THREE.NearestFilter;
   gradient.generateMipmaps = false;
   gradient.needsUpdate = true;
@@ -22,13 +29,14 @@ export function toonMaterial(params: THREE.MeshToonMaterialParameters = {}): THR
   return new THREE.MeshToonMaterial({ gradientMap: toonGradient(), ...params });
 }
 
-const OUTLINE_VERTEX = `
+const OUTLINE_VERTEX = /* glsl */`
 uniform float width;
 void main() {
   vec4 mv = modelViewMatrix * vec4(position, 1.0);
   vec3 n = normalize(normalMatrix * normal);
   // 依距離放大，畫面上的線寬大致固定
   mv.xyz += n * width * clamp(-mv.z, 0.6, 60.0);
+  ${curveGLSL('mv')}
   gl_Position = projectionMatrix * mv;
 }`;
 const OUTLINE_FRAGMENT = `
@@ -58,7 +66,7 @@ function partGeometry(part: Part): THREE.BufferGeometry {
       break;
     }
     case 'cyl': g = new THREE.CylinderGeometry(part.r1, part.r0, part.h, part.seg ?? 16); break;
-    case 'sph': g = new THREE.SphereGeometry(part.rad, 16, 12); break;
+    case 'sph': g = new THREE.SphereGeometry(part.rad, part.seg ?? 16, Math.round((part.seg ?? 16) * 0.75)); break;
     case 'cone': g = new THREE.ConeGeometry(part.rad, part.h, part.seg ?? 16); break;
     case 'tor': g = new THREE.TorusGeometry(part.R, part.t, 8, 24, part.arc ?? Math.PI * 2); break;
   }

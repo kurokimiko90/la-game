@@ -21,6 +21,8 @@ export const PALETTE = {
   indigo: '#5c6bc0',
   glass: '#b3e5fc',
   cream: '#fff3e0',
+  /** 只給角色（玩家小人）的膚色；2D 物件沒有人物，所以 SVG 色票裡沒有 */
+  skin: '#ffe0c7',
 } as const;
 
 export type ColorKey = keyof typeof PALETTE;
@@ -37,7 +39,7 @@ interface PartBase {
 export type Part =
   | (PartBase & { s: 'box'; size: Vec3; round?: number })
   | (PartBase & { s: 'cyl'; r0: number; r1: number; h: number; seg?: number })
-  | (PartBase & { s: 'sph'; rad: number; scale?: Vec3 })
+  | (PartBase & { s: 'sph'; rad: number; scale?: Vec3; seg?: number })
   | (PartBase & { s: 'cone'; rad: number; h: number; seg?: number })
   | (PartBase & { s: 'tor'; R: number; t: number; arc?: number });
 

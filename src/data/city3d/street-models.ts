@@ -4,29 +4,52 @@ import { box, cone, cyl, sph, tor, type ColorKey, type Model3D, type Part } from
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
 const M = (parts: Part[], outline = true): Model3D => ({ parts, outline });
-const wheel = (r: number, w: number, x: number, z: number): Part => cyl(r, w, x, r, z, 'ink', { r: [90, 0, 0] });
+/** 輪子：圓柱轉 90° 後中心在 y + h/2，要往下補半個輪寬，輪胎才會貼地 */
+const wheel = (r: number, w: number, x: number, z: number): Part => cyl(r, w, x, r - w / 2, z, 'ink', { r: [90, 0, 0] });
+const hub = (r: number, w: number, x: number, z: number): Part => cyl(r * 0.5, w + 0.02, x, r - (w + 0.02) / 2, z, 'light', { r: [90, 0, 0] });
 
+/** 小汽車：車身 + 車廂，前後擋風玻璃、左右各兩片側窗（中間留車柱）、車燈、保險桿、輪框 */
 function vehicle(len: number, body: ColorKey, cabin: ColorKey, extra: Part[]): Part[] {
+  const cx = -len * 0.06, cw = len * 0.56;
+  const axle = len * 0.32;
   return [
-    box(len, 0.7, 1.7, 0, 0.3, 0, body, { round: 0.18 }),
-    box(len * 0.55, 0.62, 1.5, -len * 0.05, 0.95, 0, cabin, { round: 0.14 }),
-    box(len * 0.5, 0.42, 1.54, -len * 0.05, 1.05, 0, 'glass', { round: 0.08 }),
-    wheel(0.33, 0.24, len * 0.32, 0.78), wheel(0.33, 0.24, -len * 0.32, 0.78),
-    wheel(0.33, 0.24, len * 0.32, -0.78), wheel(0.33, 0.24, -len * 0.32, -0.78),
-    box(0.06, 0.16, 0.36, len / 2, 0.62, 0.55, 'white'), box(0.06, 0.16, 0.36, len / 2, 0.62, -0.55, 'white'),
-    box(0.06, 0.14, 0.3, -len / 2, 0.66, 0.6, 'red'), box(0.06, 0.14, 0.3, -len / 2, 0.66, -0.6, 'red'),
+    ...[axle, -axle].flatMap((x) => [0.78, -0.78].flatMap((z) => [wheel(0.34, 0.26, x, z), hub(0.34, 0.26, x, z)])),
+    box(len * 0.96, 0.16, 1.66, 0, 0.2, 0, 'ink', { round: 0.06 }),
+    box(len, 0.6, 1.72, 0, 0.28, 0, body, { round: 0.24 }),
+    box(cw, 0.6, 1.52, cx, 0.84, 0, cabin, { round: 0.22 }),
+    // 擋風玻璃、後窗
+    box(0.05, 0.4, 1.3, cx + cw / 2 + 0.005, 0.94, 0, 'glass'),
+    box(0.05, 0.36, 1.3, cx - cw / 2 - 0.005, 0.96, 0, 'glass'),
+    // 側窗：前後兩片，中間是 B 柱
+    ...[0.765, -0.765].flatMap((z) => [
+      box(cw * 0.4, 0.36, 0.04, cx + cw * 0.22, 0.96, z, 'glass'),
+      box(cw * 0.36, 0.36, 0.04, cx - cw * 0.22, 0.96, z, 'glass'),
+      box(0.12, 0.1, 0.12, cx + cw * 0.42, 0.86, z * 1.14, body, { round: 0.03 }),
+    ]),
+    // 車燈、尾燈、水箱罩、保險桿
+    sph(0.12, len / 2 - 0.03, 0.62, 0.58, 'cream', { scale: [0.45, 0.9, 1.3] }),
+    sph(0.12, len / 2 - 0.03, 0.62, -0.58, 'cream', { scale: [0.45, 0.9, 1.3] }),
+    box(0.06, 0.14, 0.32, -len / 2, 0.62, 0.58, 'red', { round: 0.03 }),
+    box(0.06, 0.14, 0.32, -len / 2, 0.62, -0.58, 'red', { round: 0.03 }),
+    box(0.04, 0.12, 0.62, len / 2 - 0.005, 0.5, 0, 'ink'),
+    box(0.14, 0.18, 1.66, len / 2 - 0.02, 0.24, 0, 'light', { round: 0.06 }),
+    box(0.14, 0.18, 1.66, -len / 2 + 0.02, 0.24, 0, 'light', { round: 0.06 }),
     ...extra,
   ];
 }
 
 export const STREET_MODELS: Record<string, Model3D> = {
   // ── 路口 ──
+  // 日本的橫式紅綠燈：淺色燈箱、每顆燈上方有遮陽帽，燈箱用支架掛在柱子旁
   'traffic-light': M([
-    cyl(0.07, 4.4, 0, 0, 0, 'grey'),
-    box(1.1, 0.38, 0.3, 0, 4.25, 0.05, 'ink', { round: 0.08 }),
+    cyl(0.08, 4.5, 0, 0, 0, 'grey'),
+    sph(0.09, 0, 4.5, 0, 'grey'),
+    box(0.1, 0.1, 0.3, 0, 4.25, 0.02, 'grey'),
+    box(1.15, 0.4, 0.22, 0, 4.1, 0.2, 'light', { round: 0.1 }),
+    box(1.05, 0.32, 0.02, 0, 4.14, 0.315, 'ink', { round: 0.05 }),
     ...(['green', 'yellow', 'red'] as const).flatMap((c, i) => [
-      cyl(0.12, 0.06, -0.33 + i * 0.33, 4.44, 0.22, c, { r: [90, 0, 0] }),
-      box(0.3, 0.04, 0.14, -0.33 + i * 0.33, 4.58, 0.27, 'ink'),
+      cyl(0.12, 0.04, -0.34 + i * 0.34, 4.3, 0.33, c, { r: [90, 0, 0], seg: 20 }),
+      box(0.3, 0.03, 0.16, -0.34 + i * 0.34, 4.46, 0.39, 'light', { r: [-10, 0, 0] }),
     ]),
   ]),
   'pedestrian-signal': M([
@@ -90,17 +113,23 @@ export const STREET_MODELS: Record<string, Model3D> = {
   crosswalk: M(range(11).map((i) => box(3.2, 0.02, 0.5, 0, 0.01, -9 + i * 1.8, 'white')), false),
   car: M(vehicle(4.1, 'blue', 'blue', [])),
   taxi: M(vehicle(4.3, 'white', 'white', [
-    box(4.32, 0.1, 1.72, 0, 0.62, 0, 'blue'),
-    box(0.5, 0.2, 0.3, -0.2, 1.57, 0, 'yellow', { round: 0.05 }),
+    box(4.32, 0.08, 1.74, 0, 0.76, 0, 'blue'),
+    box(0.5, 0.2, 0.3, -0.26, 1.43, 0, 'yellow', { round: 0.05 }),
   ])),
+  // 速克達：圓弧的後車身、前擋板、龍頭（大燈在龍頭上）
   scooter: M([
-    wheel(0.24, 0.12, 0.62, 0), wheel(0.24, 0.12, -0.6, 0),
-    box(1.0, 0.18, 0.34, 0, 0.3, 0, 'white', { round: 0.08 }),
-    box(0.6, 0.36, 0.4, -0.3, 0.42, 0, 'white', { round: 0.12 }),
-    box(0.62, 0.1, 0.36, -0.3, 0.8, 0, 'ink', { round: 0.05 }),
-    box(0.16, 0.7, 0.4, 0.55, 0.32, 0, 'white', { round: 0.06, r: [0, 0, -15] }),
-    cyl(0.03, 0.6, 0.62, 1.05, 0, 'ink', { r: [90, 0, 0] }),
-    sph(0.07, 0.72, 0.85, 0, 'yellow'),
+    wheel(0.24, 0.12, 0.62, 0), wheel(0.24, 0.12, -0.55, 0), hub(0.24, 0.12, 0.62, 0), hub(0.24, 0.12, -0.55, 0),
+    box(0.9, 0.1, 0.36, 0.02, 0.22, 0, 'white', { round: 0.04 }),
+    sph(0.3, -0.42, 0.5, 0, 'white', { scale: [1.35, 0.8, 0.72] }),
+    box(0.62, 0.1, 0.3, -0.36, 0.7, 0, 'ink', { round: 0.05 }),
+    sph(0.2, 0.62, 0.48, 0, 'white', { scale: [1.15, 0.45, 0.55] }),
+    box(0.14, 0.66, 0.42, 0.48, 0.24, 0, 'white', { round: 0.06, r: [0, 0, -12] }),
+    cyl(0.035, 0.42, 0.6, 0.82, 0, 'grey', { r: [0, 0, -12] }),
+    box(0.18, 0.14, 0.26, 0.64, 1.14, 0, 'white', { round: 0.06 }),
+    cyl(0.025, 0.64, 0.6, 1.24 - 0.32, 0, 'grey', { r: [90, 0, 0] }),
+    sph(0.04, 0.6, 1.24, 0.32, 'ink'), sph(0.04, 0.6, 1.24, -0.32, 'ink'),
+    sph(0.065, 0.74, 1.2, 0, 'yellow', { scale: [0.6, 1, 1] }),
+    box(0.06, 0.08, 0.16, -0.78, 0.6, 0, 'red', { round: 0.02 }),
   ]),
 
   // ── 商店 ──
@@ -394,7 +423,9 @@ export const STREET_MODELS: Record<string, Model3D> = {
     box(7.4, 0.85, 2.44, -0.3, 1.55, 0, 'glass', { round: 0.05 }),
     box(0.06, 1.2, 2.0, 4.2, 1.2, 0, 'glass'),
     box(0.06, 0.25, 1.4, 4.22, 2.4, 0, 'green'),
-    ...[3.0, -2.8].flatMap((x) => [wheel(0.48, 0.3, x, 1.1), wheel(0.48, 0.3, x, -1.1)]),
+    ...[3.0, -2.8].flatMap((x) => [1.1, -1.1].flatMap((z) => [wheel(0.48, 0.3, x, z), hub(0.48, 0.3, x, z)])),
+    // 側窗之間的車柱
+    ...range(6).map((i) => box(0.14, 0.85, 2.46, -3.5 + i * 1.3, 1.55, 0, 'blue')),
     box(0.06, 0.18, 0.4, 4.22, 0.6, 0.85, 'white'), box(0.06, 0.18, 0.4, 4.22, 0.6, -0.85, 'white'),
   ]),
   backpack: M([
@@ -441,20 +472,39 @@ export const STREET_FIXTURES: Record<string, Model3D> = {
     box(0.42, 0.4, 0.04, 0, 0.5, -0.19, 'grey', { round: 0.02 }),
     ...[[-0.18, -0.18], [0.18, -0.18], [-0.18, 0.18], [0.18, 0.18]].map(([x, z]) => cyl(0.02, 0.45, x, 0, z, 'ink')),
   ]),
+  // 行道樹：樹穴鐵格柵 + 短樹幹 + 幾團圓樹冠（卡通風）
   'fx-tree': M([
-    box(1.1, 0.1, 1.1, 0, 0, 0, 'brown'),
-    cyl(0.12, 2.4, 0, 0, 0, 'brown', { top: 0.09 }),
-    sph(1.15, 0, 3.2, 0, 'green', { scale: [1, 0.9, 1] }),
-    sph(0.8, 0.6, 2.7, 0.3, 'dgreen'), sph(0.75, -0.55, 2.8, -0.2, 'dgreen'),
+    box(1.2, 0.04, 1.2, 0, 0, 0, 'ink'),
+    ...range(5).map((i) => box(1.04, 0.045, 0.1, 0, 0, -0.4 + i * 0.2, 'grey')),
+    cyl(0.13, 2.1, 0, 0, 0, 'brown', { top: 0.09 }),
+    cyl(0.05, 0.6, 0.15, 1.7, 0, 'brown', { r: [0, 0, -40] }),
+    cyl(0.05, 0.6, -0.12, 1.8, 0.05, 'brown', { r: [30, 0, 35] }),
+    sph(0.95, 0, 3.05, 0, 'green'),
+    sph(0.72, 0.7, 2.7, 0.15, 'green'),
+    sph(0.7, -0.68, 2.75, -0.1, 'dgreen'),
+    sph(0.62, 0.1, 2.55, 0.62, 'dgreen'),
+    sph(0.6, -0.15, 2.6, -0.62, 'green'),
+    sph(0.55, 0.2, 3.7, -0.1, 'green'),
   ]),
   'fx-curb': M([box(10, 0.14, 0.3, 0, 0, 0, 'light')]),
   // OSM 的中央通り是上下行兩條 22 m 寬的線，地面貼圖會把人行道塗成車道色；這段街道另鋪人行道地磚
+  // 銀座的人行道：米色長條石板交錯鋪（1 m × 0.53 m），縫是淺灰色，遠看不會變成格子花。一塊 fixture 5 m 長
   'fx-sidewalk': M([
-    box(10, 0.03, 5.7, 0, 0, 0, 'light'),
-    ...range(10).map((i) => box(0.025, 0.032, 5.7, -4.5 + i, 0, 0, 'grey')),
+    box(5, 0.03, 5.7, 0, 0, 0, 'light'),
+    ...range(10).flatMap((j) => range(6).map((i) => {
+      const start = -3 + i + (j % 2) * 0.5;
+      return { x0: Math.max(-2.5, start), x1: Math.min(2.5, start + 1), z: -2.565 + j * 0.57 };
+    }).filter(({ x0, x1 }) => x1 - x0 > 0.1)
+      .map(({ x0, x1, z }) => box(x1 - x0 - 0.04, 0.032, 0.53, (x0 + x1) / 2, 0, z, 'cream'))),
   ], false),
+  // 石材花台：灰色槽 + 淺色壓頂 + 土 + 高低不一的灌木與小花
   'fx-planter': M([
-    box(1.6, 0.45, 0.5, 0, 0, 0, 'light', { round: 0.04 }),
-    ...range(4).map((i) => sph(0.26, -0.6 + i * 0.4, 0.55, 0, 'green', { scale: [1, 0.8, 1] })),
+    box(1.6, 0.5, 0.55, 0, 0, 0, 'grey', { round: 0.04 }),
+    box(1.7, 0.06, 0.65, 0, 0.47, 0, 'light', { round: 0.02 }),
+    box(1.5, 0.04, 0.45, 0, 0.49, 0, 'brown'),
+    ...([[-0.55, 0.3, 'green'], [-0.15, 0.36, 'dgreen'], [0.25, 0.32, 'green'], [0.6, 0.27, 'dgreen']] as const)
+      .map(([x, r, c]) => sph(r, x, 0.62, 0, c, { scale: [1, 0.85, 0.75] })),
+    ...([[-0.4, 'pink'], [0, 'yellow'], [0.4, 'white'], [-0.7, 'white'], [0.72, 'pink']] as const)
+      .map(([x, c], i) => sph(0.07, x, 0.86 + (i % 2) * 0.06, 0.12 - (i % 3) * 0.08, c)),
   ]),
 };

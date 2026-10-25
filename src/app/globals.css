@@ -179,3 +179,12 @@ ruby rt {
 @media (prefers-reduced-motion: reduce) {
   .amb-drive { display: none; }
 }
+
+/* 3D 導覽傳送：從底色淡出 */
+.tour-fade {
+  animation: tour-fade 0.6s ease-out forwards;
+}
+@keyframes tour-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

@@ -14,6 +14,22 @@ export interface CityBuilding {
   holes?: Ring[];
 }
 
+/** 地面小物（花壇等）：按 heading 旋轉的長方形；沒有半寬／半長時用 radius 的正方形 */
+export interface Obstacle {
+  x: number;
+  z: number;
+  radius: number;
+  heading: number;
+  halfWidth?: number;
+  halfLength?: number;
+}
+
+export function insideObstacle(p: Obstacle, x: number, z: number): boolean {
+  if (!p.halfWidth || !p.halfLength) return Math.abs(x - p.x) <= p.radius && Math.abs(z - p.z) <= p.radius;
+  const c = Math.cos(p.heading), s = Math.sin(p.heading), dx = x - p.x, dz = z - p.z;
+  return Math.abs(dx * c - dz * s) <= p.halfWidth && Math.abs(dx * s + dz * c) <= p.halfLength;
+}
+
 export interface Collider {
   buildingAt(x: number, z: number): string | null;
   blocked(x: number, z: number): boolean;
@@ -55,7 +71,7 @@ function ringBox(ring: Ring): Bounds {
   return [minX, minZ, maxX, maxZ];
 }
 
-export function createCollider(buildings: readonly CityBuilding[], bounds: Bounds): Collider {
+export function createCollider(buildings: readonly CityBuilding[], bounds: Bounds, obstacles: readonly Obstacle[] = []): Collider {
   const grid = new Map<string, Solid[]>();
   const solids: Solid[] = buildings
     .filter((b) => (b.base ?? 0) < ELEVATED_BASE)
@@ -83,7 +99,7 @@ export function createCollider(buildings: readonly CityBuilding[], bounds: Bound
 
   function blocked(x: number, z: number): boolean {
     if (x <= bounds[0] || z <= bounds[1] || x >= bounds[2] || z >= bounds[3]) return true;
-    return buildingAt(x, z) !== null;
+    return buildingAt(x, z) !== null || obstacles.some((p) => insideObstacle(p, x, z));
   }
 
   function blockedCircle(x: number, z: number, radius: number): boolean {

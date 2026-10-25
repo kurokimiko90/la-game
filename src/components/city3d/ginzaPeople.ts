@@ -6,8 +6,9 @@ import { toonGradient } from './toon';
 
 const PART = { skin: 0, top: 1, bottom: 2, hair: 3, shoes: 4 };
 const LIMB = { none: 0, leftLeg: 1, rightLeg: 2, leftArm: 3, rightArm: 4 };
-const HIP = 0.88;
-const SHOULDER = 1.42;
+// Q 版比例（和玩家小人一樣頭大身小，約 1.3 m 高）
+const HIP = 0.32;
+const SHOULDER = 0.66;
 
 const TOPS = [PALETTE.red, PALETTE.blue, PALETTE.green, PALETTE.yellow, PALETTE.orange, PALETTE.white, PALETTE.pink, PALETTE.indigo, PALETTE.tan, PALETTE.purple];
 const BOTTOMS = [PALETTE.ink, PALETTE.indigo, PALETTE.brown, PALETTE.grey, PALETTE.tan, '#455a64'];
@@ -21,18 +22,20 @@ function parts(): Piece[] {
   const list: Piece[] = [];
   const add = (geometry: THREE.BufferGeometry, part: number, limb = LIMB.none, pivot = 0) => list.push({ geometry, part, limb, pivot });
   for (const [side, limb] of [[-1, LIMB.leftLeg], [1, LIMB.rightLeg]]) {
-    add(capsule(0.072, 0.7).translate(side * 0.095, 0.48, 0), PART.bottom, limb, HIP);
-    add(new THREE.BoxGeometry(0.11, 0.07, 0.25).translate(side * 0.095, 0.04, -0.04), PART.shoes, limb, HIP);
+    add(capsule(0.06, 0.16).translate(side * 0.085, 0.2, 0), PART.bottom, limb, HIP);
+    add(new THREE.SphereGeometry(0.075, 8, 6).scale(1, 0.7, 1.35).translate(side * 0.085, 0.05, 0.03), PART.shoes, limb, HIP);
   }
   for (const [side, limb] of [[-1, LIMB.leftArm], [1, LIMB.rightArm]]) {
-    add(capsule(0.052, 0.48).translate(side * 0.235, 1.12, 0), PART.top, limb, SHOULDER);
-    add(new THREE.SphereGeometry(0.048, 6, 4).translate(side * 0.235, 0.83, 0), PART.skin, limb, SHOULDER);
+    add(capsule(0.045, 0.16).translate(side * 0.2, 0.53, 0), PART.top, limb, SHOULDER);
+    add(new THREE.SphereGeometry(0.052, 8, 6).translate(side * 0.2, 0.4, 0), PART.skin, limb, SHOULDER);
   }
-  add(capsule(0.165, 0.36).scale(1, 1, 0.6).translate(0, 1.16, 0), PART.top);
-  add(new THREE.CylinderGeometry(0.17, 0.15, 0.2, 8).scale(1, 1, 0.65).translate(0, 0.86, 0), PART.bottom); // 腰部
-  add(new THREE.CylinderGeometry(0.048, 0.052, 0.1, 6).translate(0, 1.47, 0), PART.skin);
-  add(new THREE.SphereGeometry(0.105, 10, 8).scale(0.95, 1.12, 1).translate(0, 1.6, 0), PART.skin);
-  add(new THREE.SphereGeometry(0.112, 10, 6, 0, Math.PI * 2, 0, Math.PI * 0.55).scale(0.97, 1.1, 1.04).translate(0, 1.62, 0.012), PART.hair);
+  // 鐘形上衣 + 短褲
+  add(new THREE.CylinderGeometry(0.14, 0.2, 0.32, 12).translate(0, 0.52, 0), PART.top);
+  add(new THREE.CylinderGeometry(0.2, 0.19, 0.09, 12).translate(0, 0.33, 0), PART.bottom);
+  // 大頭 + 頭髮蓋住上半 + 一對黑豆眼（借用鞋子的深色）
+  add(new THREE.SphereGeometry(0.27, 16, 12).scale(1.05, 0.96, 1).translate(0, 0.95, 0), PART.skin);
+  add(new THREE.SphereGeometry(0.285, 16, 8, 0, Math.PI * 2, 0, Math.PI * 0.52).scale(1.05, 1, 1.03).translate(0, 0.99, -0.02), PART.hair);
+  for (const side of [-1, 1]) add(new THREE.SphereGeometry(0.036, 8, 6).scale(0.8, 1.2, 0.5).translate(side * 0.095, 0.93, 0.255), PART.shoes);
   return list;
 }
 
