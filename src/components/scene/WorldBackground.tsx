@@ -1,18 +1,25 @@
-// 小鎮地圖背景（3/4 俯視地面，地圖座標 3600×2600）。純裝飾、不可點擊，不放文字。
-// 場景之間靠地形自然銜接：公園的步道通到商業街、湖水流進河、商店街南邊就是超市。
+// 小鎮地圖背景（3/4 俯視地面）。純裝飾、不可點擊，不放文字。
+// 地圖分兩大塊：北邊是戶外街景（y < town.outdoorHeight），南邊是室內區（所有建築的室內剖面，districts/IndoorBlock.tsx）。
+// 手畫的核心（前 4 個場景）：公園的步道通到商業街、湖水流進河、商業街南邊是超市門面和停車場。
 //
-//   公園（左上）       │ 河（湖水往南流）│ 河邊東岸（右側，由北到南：橋 → 碼頭 → 露天座位 → 河岸步道）
-//   商店建築 + 商業街  │                 │
-//   超市（無屋頂剖面） │                 │
+//   公園（左上）           │ 河（湖水往南流）│ 河邊東岸 │ 東區：沿街地塊（自動擴展街區的戶外區域）+ 大街
+//   商店建築 + 商業街      │                 │          │
+//   超市門面 + 停車場      │                 │          │
+//   沿街地塊 + 大街        │                 │          │
+//   ───────────── 室內區：超市、各街區的建築剖面 ─────────────
 //
 // ⚠️ 這裡的座標（道路、河、牆）要和 content/scene-config.json 的區域與地帶一致；改地圖時兩邊一起改。
 // 規範（docs/scene-standard.md）：重複元素用 scatter 抖動、每個區域都有背景動態、不畫像單字物品的東西。
 import { memo, type ReactNode } from 'react';
 import { scatter } from '@/lib/scatter';
 import type { Rect, Town } from '@/lib/town';
+import type { DistrictTerrain } from '@/lib/types';
 import { Glow, HangSwing, SwayTufts, WaterShimmer } from './Ambient';
 import { Surfaces } from './Surfaces';
 import { GeneratedDistrict } from './districts/GeneratedDistrict';
+import { IndoorGround, IndoorShells } from './districts/IndoorBlock';
+import { SupermarketFront, TownStreets } from './districts/TownStreets';
+import { COLORS } from './TownMinimap';
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
 
@@ -23,25 +30,44 @@ const LAKE = { cx: 2280, cy: 470, rx: 300, ry: 230 };
 const SHOPS = { x0: 650, x1: 1950, roof: 760, facade: 880, base: 1130 };
 const STREET = { x1: 2600, walkN: 1130, road: 1255, roadEnd: 1505, walkS: 1640 };
 const MARKET = { x1: 2600, wall: 1700, wallFace: 1722, floor: 1895, south: 2575 };
-// 手畫的核心範圍（前 4 個場景）；之後自動擴展的街區往南、往東加（districts/GeneratedDistrict.tsx）
+// 手畫的核心範圍（前 4 個場景）；自動擴展街區的戶外地塊在東邊和南邊、室內在室內區（districts/*）
 const CORE = { w: 3600, h: 2600 };
+// 超市的室內原本畫在 (0, STREET.walkS)，現在整塊搬到室內區：用 entrance 區域的位置算出位移
+const MARKET_ORIGIN = { x: 0, y: 1640 };
+
+function marketShift(town: Town) {
+  const z = town.districts.find((d) => d.scene.id === 'supermarket')?.scene.zones.find((q) => q.id === 'entrance');
+  return z ? { dx: z.x0 - MARKET_ORIGIN.x, dy: z.y0 - MARKET_ORIGIN.y } : { dx: 0, dy: 0 };
+}
 const RIVER_TOP = 400;
 
-const genKey = (sceneId: string) => `gen:${sceneId}`;
+const genKey = (sceneId: string, indoor: boolean) => `gen:${sceneId}:${indoor ? 'in' : 'out'}`;
+const partZones = (terrain: DistrictTerrain, indoor: boolean) => terrain.zones.filter((z) => z.indoor === indoor);
+const rectOf = (zs: readonly { x0: number; y0: number; x1: number; y1: number }[]): Rect => ({
+  x0: Math.min(...zs.map((z) => z.x0)), y0: Math.min(...zs.map((z) => z.y0)), x1: Math.max(...zs.map((z) => z.x1)), y1: Math.max(...zs.map((z) => z.y1)),
+});
 
-/** 背景分區：畫面外的分區暫停背景動畫（TownCanvas 算出哪些分區看得到）；河和東岸一路延伸到地圖南緣 */
+/** 背景分區：畫面外的分區暫停背景動畫（TownCanvas 算出哪些分區看得到）；河和東岸一路延伸到戶外街景的南緣 */
 export function worldSections(town: Town): Record<string, Rect> {
+  const { dx, dy } = marketShift(town);
   const sections: Record<string, Rect> = {
     park: { x0: 0, y0: 0, x1: 2600, y1: 1130 },
     shops: { x0: 650, y0: 760, x1: 1950, y1: 1130 },
     street: { x0: 0, y0: 1130, x1: 2600, y1: 1640 },
-    market: { x0: 0, y0: 1640, x1: 2600, y1: 2600 },
-    river: { x0: 2600, y0: 0, x1: 2935, y1: town.height },
-    east: { x0: 2935, y0: 0, x1: 3600, y1: town.height },
+    market: { x0: 0, y0: 1640, x1: 2600, y1: CORE.h },
+    'market-in': { x0: dx, y0: MARKET_ORIGIN.y + dy, x1: 2600 + dx, y1: CORE.h + dy },
+    river: { x0: 2600, y0: 0, x1: 2935, y1: town.outdoorHeight },
+    east: { x0: 2935, y0: 0, x1: 3600, y1: town.outdoorHeight },
+    indoor: { x0: 0, y0: town.outdoorHeight, x1: town.width, y1: town.outdoorHeight + 60 },
   };
+  town.streets.forEach(([x0, y0, x1, y1], i) => { sections[`avenue:${i}`] = { x0, y0, x1, y1 }; });
   for (const d of town.districts) {
     const t = d.scene.terrain;
-    if (t) sections[genKey(d.scene.id)] = { x0: t.x0, y0: t.y0, x1: t.x1, y1: t.y1 };
+    if (!t) continue;
+    for (const indoor of [false, true]) {
+      const zs = partZones(t, indoor);
+      if (zs.length) sections[genKey(d.scene.id, indoor)] = rectOf(zs);
+    }
   }
   return sections;
 }
@@ -149,11 +175,14 @@ function Street() {
   );
 }
 
+/** 超市室內（無屋頂剖面）：座標照原本畫在 (0, 1640)，整塊平移到室內區 */
 function Supermarket({ town }: { town: Town }) {
   const market = town.districts.find((d) => d.scene.id === 'supermarket')?.scene;
   const signColors = ['#90caf9', '#a5d6a7', '#b3e5fc', '#ffcc80'];
+  const { dx, dy } = marketShift(town);
+  const zones = market?.zones.map((z) => ({ ...z, x0: z.x0 - dx, x1: z.x1 - dx }));
   return (
-    <g>
+    <g transform={`translate(${dx} ${dy})`}>
       <rect x={0} y={STREET.walkS} width={MARKET.x1} height={MARKET.wall - STREET.walkS} fill="#d7ccc8" />
       <rect x={0} y={MARKET.wall} width={MARKET.x1} height={MARKET.wallFace - MARKET.wall} fill="#8d6e63" />
       <rect x={0} y={MARKET.wallFace} width={MARKET.x1} height={MARKET.floor - MARKET.wallFace} fill="#fff8e1" />
@@ -167,7 +196,7 @@ function Supermarket({ town }: { town: Town }) {
       <rect x={MARKET.x1 - 22} y={MARKET.wall} width={22} height={CORE.h - MARKET.wall} fill="#8d6e63" />
       <rect x={0} y={MARKET.south} width={MARKET.x1} height={CORE.h - MARKET.south} fill="#8d6e63" />
       {/* 後牆上的區域吊牌與壁燈 */}
-      {market?.zones.map((z, i) => {
+      {zones?.map((z, i) => {
         const cx = (z.x0 + z.x1) / 2;
         return (
           <g key={z.id}>
@@ -242,10 +271,21 @@ function WorldBackgroundImpl({ town, activeSections }: WorldBackgroundProps) {
       {section('park', <Park />)}
       {section('shops', <Shops />)}
       {section('street', <Street />)}
-      {section('market', <Supermarket town={town} />)}
-      {section('river', <River height={town.height} />)}
-      {section('east', <EastBank height={town.height} />)}
-      {town.districts.map((d) => d.scene.terrain && <g key={d.scene.id}>{section(genKey(d.scene.id), <GeneratedDistrict terrain={d.scene.terrain} />)}</g>)}
+      {section('market', <SupermarketFront x0={0} y0={STREET.walkS} x1={MARKET.x1} y1={CORE.h} />)}
+      {section('river', <River height={town.outdoorHeight} />)}
+      {section('east', <EastBank height={town.outdoorHeight} />)}
+      {town.streets.map((r, i) => <g key={r.join(',')}>{section(`avenue:${i}`, <TownStreets streets={[r]} />)}</g>)}
+      {section('indoor', <IndoorGround town={town} />)}
+      {section('market-in', <Supermarket town={town} />)}
+      {town.districts.map((d) => {
+        const t = d.scene.terrain;
+        if (!t) return null;
+        return [false, true].map((indoor) => {
+          const zs = partZones(t, indoor);
+          return zs.length ? <g key={genKey(d.scene.id, indoor)}>{section(genKey(d.scene.id, indoor), <GeneratedDistrict terrain={{ ...t, zones: zs }} />)}</g> : null;
+        });
+      })}
+      <IndoorShells town={town} colors={COLORS} />
       {town.districts.map((d) => <Surfaces key={d.scene.id} surfaces={d.scene.surfaces} />)}
     </>
   );

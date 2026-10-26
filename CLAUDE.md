@@ -4,6 +4,7 @@
 
 沉浸式語言找物遊戲：在小鎮裡找東西、點物品聽發音（英語 / 日語），物品位置固定，用空間記單字。
 所有場景是同一張 2D 小鎮地圖上的街區（3/4 俯視地面 + 正面直立物件；地形在 `src/components/scene/WorldBackground.tsx`），`/scene/<id>` 是「目前街區」。
+地圖北邊是戶外街景、南邊是室內區：街區的戶外區域在沿街地塊、室內區域合成室內區的一棟建築（配置 `scripts/lib/town-plan.mjs`，設定 `content/expansion.json` 的 `town`）。
 規劃見 `docs/planning.md`，素材產線見 `docs/svg-assets.md`。
 
 ## Tech Stack
@@ -33,6 +34,7 @@ content/svg-manifests/*.json   單字（中/英/日+讀音）、物品描述 ←
         │ miko-ws 場景素材工廠生成 SVG → npm run content:sync-svg
 public/svg/<scene>/<itemId>.svg
 content/scene-config.json      地圖大小、各區域在地圖上的矩形、地帶、成群、散落、動態
+content/stages/<scene>.json    情境擺放（自動擴展的街區）：每區拆成櫃台、座位區…等情境，物件放在家具上 / 牆上 / 旁邊
         │ npm run content:layout -- <scene>（只替沒有位置的物件擺放；--reset 整個重排）
 content/layouts/<scene>.json   鎖定的位置（可手改，build 只讀它）
         │ npm run content:scenes（白名單清洗 SVG + 檢查擺放/動態/id 重複）
@@ -42,7 +44,7 @@ src/data/scenes/<scene>.json   遊戲讀的資料（產出物）
 public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 ```
 
-- 擺放演算法：`scripts/lib/layout.mjs`；動態參數：`scripts/lib/motion.mjs`；設定檢查：`scripts/lib/scene-config.mjs`；SVG 白名單：`scripts/lib/svg-sanitize.mjs`
+- 擺放演算法：`scripts/lib/layout.mjs`；情境擺放：`scripts/lib/staging.mjs`（家具畫法 `src/components/scene/Fixtures.tsx`）；動態參數：`scripts/lib/motion.mjs`；設定檢查：`scripts/lib/scene-config.mjs`；SVG 白名單：`scripts/lib/svg-sanitize.mjs`
 - 預覽整張地圖與各街區：開著 `npm run dev` 再跑 `npm run content:scene-preview` → `docs/scene-preview/`
 - 地形座標（道路、河、牆）在 `WorldBackground.tsx`，要和 scene-config 的區域、地帶一致，改地圖時兩邊一起改
 - 物件 SVG 會被內嵌（點擊範圍 = 形狀），所以一定要經過白名單清洗；不要繞過 build-scenes 直接用 SVG
@@ -51,7 +53,7 @@ public/audio/<en|ja|zh>/<scene>/<itemId>.mp3
 ## 自動擴展（新場景全自動，見 `docs/expansion.md`）
 
 - `scripts/auto-expand.mjs` 由 miko-ws runtime 的 `LaGameExpandScheduler` 每 30 分鐘推進一步（miko-ws `.env` 的 `LA_GAME_EXPAND_ENABLED`）：miko-ws codex 規劃場景與單字表 → miko-ws 生成 SVG → 整合、測試、commit 到 `feat/expand-scenes`
-- 新場景用街區模板（`scripts/lib/district-kit.mjs` + `src/components/scene/districts/GeneratedDistrict.tsx`），不手畫地形；主題與地圖 slot 在 `content/expansion.json`
+- 新場景用街區模板（`scripts/lib/district-kit.mjs` + `src/components/scene/districts/GeneratedDistrict.tsx`），不手畫地形；主題與地圖配置（`town`）在 `content/expansion.json`
 - 規劃結果在 `content/plans/<scene>.json`（manifest 由它產生）；狀態與紀錄在 `.auto-expand/`（不進 git）
 - `src/data/scenes/registry.ts` 由 build-scenes 產生，新場景不用改 `src/lib/scenes.ts`
 

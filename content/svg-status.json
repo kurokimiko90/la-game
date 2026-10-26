@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T07:12:13.361Z",
+  "syncedAt": "2026-09-23T07:32:17.833Z",
   "scenes": [
     {
       "scene": "airport",
@@ -176,7 +176,24 @@
         "cash-drawer",
         "cake-slice",
         "pastry-tray",
-        "card-terminal"
+        "card-terminal",
+        "doorstep-brush",
+        "bread-tin",
+        "tablecloth",
+        "toothpick-holder",
+        "water-glass",
+        "sugar-packet",
+        "coffee-cup",
+        "tea-cup",
+        "milk-jug",
+        "napkin-dispenser",
+        "tip-jar",
+        "cake-server",
+        "receipt-roll",
+        "loyalty-card",
+        "coffee-spoon",
+        "coffee-pot",
+        "cake-fork"
       ],
       "failed": [],
       "pending": [],

@@ -2,14 +2,14 @@
 
 // 小鎮畫布：一張 2D 地圖，拖曳平移；滾輪 / 雙指 / 按鈕 / 鍵盤縮放（最小可以看到整個小鎮）。
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { Minus, Plus, Maximize } from 'lucide-react';
+import { DoorOpen, Minus, Plus, Maximize, Trees } from 'lucide-react';
 import { DistrictLayer } from './DistrictLayer';
 import { TownStrip } from './TownStrip';
 import { TownMinimap } from './TownMinimap';
 import { WorldBackground, worldSections } from './WorldBackground';
 import { keyIntent, primaryButtonChange, wheelIntent, type ViewIntent } from '@/lib/controls';
 import { clampView, centerOn, defaultScale, itemAtPoint, toScene, wholeView, zoomAt, type View, type Size } from '@/lib/geometry';
-import { districtAt, districtBounds, type Rect, type Town } from '@/lib/town';
+import { districtAt, districtOf, districtParts, partSwitch, type Rect, type Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
 
 export interface SceneClick {
@@ -86,7 +86,7 @@ export function TownCanvas({
   const gesture = useRef<Gesture | null>(null);
   const townSize = useMemo(() => ({ width: town.width, height: town.height }), [town.width, town.height]);
   // 北邊的街區先畫：跨街區交界時，南邊（比較靠前）的物件蓋在上面
-  const districts = useMemo(() => [...town.districts].sort((a, b) => districtBounds(a).y0 - districtBounds(b).y0), [town]);
+  const districts = useMemo(() => [...town.districts].sort((a, b) => districtParts(a)[0].bounds.y0 - districtParts(b)[0].bounds.y0), [town]);
 
   const applyView = useCallback((next: View) => {
     const s = sizeRef.current;
@@ -267,6 +267,9 @@ export function TownCanvas({
     y1: (size.height - view.ty) / view.scale + IDLE_MARGIN,
   } : null;
   const activeSections = visible ? Object.entries(sections).filter(([, r]) => intersects(r, visible)).map(([k]) => k).join(',') : '';
+  // 進出建築：目前街區的戶外和室內分在地圖北、南兩處，按鈕把鏡頭移到另一部分
+  const activeDistrict = districtOf(town, activeSceneId);
+  const doorway = activeDistrict && size ? partSwitch(activeDistrict, toScene(view, { x: size.width / 2, y: size.height / 2 }), town.outdoorHeight) : null;
 
   return (
     <div
@@ -295,7 +298,7 @@ export function TownCanvas({
                 <DistrictLayer
                   key={d.scene.id}
                   district={d}
-                  idle={!visible || !intersects(districtBounds(d), visible)}
+                  idle={!visible || !districtParts(d).some((p) => intersects(p.bounds, visible))}
                   locked={lockedSceneIds.has(d.scene.id)}
                   unlockHint={unlockHints.get(d.scene.id) ?? null}
                   found={active ? found : EMPTY}
@@ -318,6 +321,15 @@ export function TownCanvas({
         <ZoomButton label="看整個小鎮" shortcut="0" onClick={showWholeTown}><Maximize size={18} /></ZoomButton>
       </div>
 
+      {doorway && (
+        <div data-ui="overlay" className="absolute left-3 top-14 z-40" onPointerDown={(e) => e.stopPropagation()}>
+          <button type="button" onClick={() => jumpTo(doorway.target)}
+            className="flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium text-ink shadow ring-1 ring-black/5 hover:bg-white">
+            {doorway.toIndoor ? <DoorOpen size={14} aria-hidden /> : <Trees size={14} aria-hidden />}
+            {doorway.toIndoor ? `進入室內：${doorway.zoneName}` : `回到戶外：${doorway.zoneName}`}
+          </button>
+        </div>
+      )}
       <TownStrip town={town} activeSceneId={activeSceneId} lockedSceneIds={lockedSceneIds} hintZoneKey={hintZoneKey} onDistrict={onDistrict} onJumpTo={jumpTo} />
       {size && <TownMinimap town={town} view={view} size={size} activeSceneId={activeSceneId} lockedSceneIds={lockedSceneIds} onJumpTo={jumpTo} />}
       {children}

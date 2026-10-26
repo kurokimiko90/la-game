@@ -97,7 +97,7 @@ describe('buildZonePrompt', () => {
 
 describe('planToManifest / planToSceneConfig', () => {
   const plan = {
-    id: 'cafe', name: '咖啡館', slot: { x: 3600, y: 0 }, colorIndex: 2, icon: 'espresso-machine', zones,
+    id: 'cafe', name: '咖啡館', rects: [[3600, 0, 4900, 650], [100, 3700, 1400, 4350], [1400, 3700, 2700, 4350], [4900, 0, 6200, 650]], colorIndex: 2, icon: 'espresso-machine', zones,
     elements: [
       el({ id: 'espresso-machine', zh: '咖啡機器', en: 'espresso machine', size: 'large', zone: 'bar', spot: 'wallbase', motion: 'wobble' }),
       el({ zone: 'bar', spot: 'surface', loose: true }),

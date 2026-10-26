@@ -7,7 +7,7 @@
 
 ```
 idle
- │ 挑下一個主題與 slot（content/expansion.json）
+ │ 挑下一個主題（content/expansion.json）；規劃完分配地塊與室內建築位置（town-plan.mjs）
  │ miko-ws codex：規劃 4 個區域（室內外、地面、地形特徵）→ 每區 itemsPerScene / 4 個物品（中英日、讀音、描述、位置；至少一半放地上）
  │ 驗證（格式、跨場景不重複、描述不含文字）→ content/plans/<id>.json、content/svg-manifests/<id>.json
  │ 登記 miko-ws jobs.json
@@ -44,8 +44,8 @@ tail -f .auto-expand/auto-expand.log
 
 ## 2. 街區模板（`scripts/lib/district-kit.mjs`）
 
-每個新場景佔一個 slot（2600×1300），切成 2×2 個區域，路線順時針（左上 → 右上 → 右下 → 左下）。
-LLM 只從列舉值裡選，幾何由模板算：
+每個新場景 4 個區域（各 1300×650），第 1 個是戶外（門口），戶外共 1–2 個、其他是室內（`parseOutline` 強制）。
+戶外區域放北邊街景的沿街地塊，室內區域合成南邊室內區的一棟建築（見 §3）。LLM 只從列舉值裡選，幾何由模板算：
 
 | 欄位 | 可選 |
 | --- | --- |
@@ -56,24 +56,19 @@ LLM 只從列舉值裡選，幾何由模板算：
 
 **自動排列**：`planToSceneConfig` 產生的設定帶 `"arrange": "auto"`，擺放時依地形和物件大小自動排（規則見 `docs/scene-standard.md` §2.2）。排不進整齊位置的物件改成隨機，並在 `content:layout` 印出 ⚠️，不會卡住流程。補元素時新物件會避開已鎖定的物件排。
 
+**情境擺放**：整合新街區時先請 codex 產生 `content/stages/<scene>.json`（見 `docs/scene-standard.md` §2.3），失敗就退回自動排列。
+
 地形由 `src/components/scene/districts/GeneratedDistrict.tsx` 照場景 JSON 的 `terrain` 畫；手畫的前 4 個場景不受影響。
 新場景不用改程式：`build-scenes` 會產生 `src/data/scenes/registry.ts`，小地圖顏色也在 `terrain` 裡。
 
 ## 3. 地圖
 
-```
-x:  0 ─────────── 2600 ─ 2935 ── 3600 ──────── 6200 ──────── 8800 ─────── 11400
-y0     公園             │河│ 河邊東岸 │ slot 2    │ slot 7    │ slot 14
-       商業街           │  │          ├───────────┤           │
-y1300                   │  │          │ slot 3    │ slot 8    │ slot 15
-       超市             │  │          │           │           │
-y2600  車站（slot 1）    │  │ 河岸步道  │ slot 4    │ slot 9    │ slot 16
-y3900  slot 5           │  │  延伸    │ slot 6    │ slot 10   │ slot 17
-y5200  slot 11          │  │          │ slot 12   │ slot 13   │ slot 18
-```
+北邊是戶外街景、南邊是室內區（`docs/scene-standard.md` §1 有地圖）。配置在 `scripts/lib/town-plan.mjs`，設定在 `content/expansion.json` 的 `town`：
 
-- slot 順序和主題清單在 `content/expansion.json`，要更多場景就往裡面加。
-- 地圖大小自動算（核心範圍 + 已用的 slot）。河和東岸步道一路延伸到地圖南緣。
+- `outdoorRows`：戶外地塊的列（`x0`、`y`、`cols`），每列南邊有一條大街（背景會畫，空的列也畫）。同一個場景的地塊放在同一列、相鄰；依列的順序找第一個放得下的。地塊不夠時加欄（`cols`）或加列。
+- `indoor`：室內區的範圍（`x0`、`y0`、`width`）、建築間距 `gap`、列距 `rowGap`、和戶外之間的間隔 `gapAbove`。每個場景的室內房間合成一棟建築，接在最後一棟後面，寬度不夠就換下一列。
+- 地圖大小自動算（所有區域與大街的外框），寫進 scene-config 的 `world`（含 `outdoorHeight`、`streets`）。
+- 位置寫在 `content/plans/<scene>.json` 的 `rects`（依區域順序）。2026-09-23 從 2×2 slot 搬過來，用 `node scripts/migrate-town.mjs`：整區平移鎖定檔，區域內的相對位置不變。
 - 既有場景的座標不動；已上線的場景不要 `content:layout --reset`。
 
 ## 4. 已知限制
@@ -101,3 +96,4 @@ y5200  slot 11          │  │          │ slot 12   │ slot 13   │ slot 1
 | 消防局（fire-station） | 2026-09-23 06:41 | 80 | 0 | 自動 |
 | 消防局（fire-station） | 2026-09-23 06:53 | 84 | 0 | 補元素 +4 |
 | 麵包店（bakery） | 2026-09-23 07:19 | 74 | 0 | 自動 |
+| 麵包店（bakery） | 2026-09-23 07:33 | 91 | 0 | 補元素 +17 |

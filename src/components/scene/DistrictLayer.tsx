@@ -3,7 +3,7 @@
 import { memo } from 'react';
 import { Lock } from 'lucide-react';
 import { SceneItemNode } from './SceneItemNode';
-import { districtBounds, rectCenter, zoneKey, type District } from '@/lib/town';
+import { districtParts, rectCenter, zoneKey, type District } from '@/lib/town';
 
 interface DistrictLayerProps {
   district: District;
@@ -21,7 +21,8 @@ interface DistrictLayerProps {
 function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfound, flashId, hintZoneKey }: DistrictLayerProps) {
   const { scene } = district;
   const hintZone = scene.zones.find((z) => zoneKey(scene.id, z.id) === hintZoneKey);
-  const center = rectCenter(districtBounds(district));
+  // 戶外和室內分在兩處：鎖頭和說明每一部分各畫一個
+  const centers = districtParts(district).map((p) => rectCenter(p.bounds));
   return (
     <g className={idle ? 'district district--idle' : 'district'} data-scene-id={scene.id}>
       {hideUnfound && scene.zones.map((z) => (
@@ -41,9 +42,13 @@ function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfo
       {locked && (
         <g pointerEvents="none">
           {scene.zones.map((z) => <rect key={z.id} x={z.x0} y={z.y0} width={z.x1 - z.x0} height={z.y1 - z.y0} fill="#f6f2e9" opacity={0.82} />)}
-          <Lock x={center.x - 36} y={center.y - 120} width={72} height={72} color="#607d8b" strokeWidth={2} />
-          <text x={center.x} y={center.y} textAnchor="middle" fontSize={40} fontWeight={700} fill="#263238">{scene.name}</text>
-          {unlockHint && <text x={center.x} y={center.y + 52} textAnchor="middle" fontSize={26} fill="#607d8b">完成「{unlockHint}」的看圖找後解鎖</text>}
+          {centers.map((center) => (
+            <g key={`${center.x},${center.y}`}>
+              <Lock x={center.x - 36} y={center.y - 120} width={72} height={72} color="#607d8b" strokeWidth={2} />
+              <text x={center.x} y={center.y} textAnchor="middle" fontSize={40} fontWeight={700} fill="#263238">{scene.name}</text>
+              {unlockHint && <text x={center.x} y={center.y + 52} textAnchor="middle" fontSize={26} fill="#607d8b">完成「{unlockHint}」的看圖找後解鎖</text>}
+            </g>
+          ))}
         </g>
       )}
     </g>

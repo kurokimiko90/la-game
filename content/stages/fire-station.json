@@ -1,0 +1,394 @@
+{
+  "zones": {
+    "front-yard": {
+      "sets": [
+        {
+          "note": "車庫鐵捲門",
+          "row": "back",
+          "x": [
+            0.02,
+            0.46
+          ],
+          "fixture": "facade",
+          "main": "fire-station-shutter",
+          "wall": [
+            "fire-alarm-bell"
+          ]
+        },
+        {
+          "note": "側門",
+          "row": "back",
+          "x": [
+            0.46,
+            0.7
+          ],
+          "fixture": "facade",
+          "main": "fire-station-door",
+          "wall": [
+            "fire-station-window"
+          ]
+        },
+        {
+          "note": "滑竿與排水管",
+          "row": "back",
+          "x": [
+            0.7,
+            0.98
+          ],
+          "fixture": "facade",
+          "main": "fire-pole",
+          "wall": [
+            "fire-station-gutter"
+          ]
+        },
+        {
+          "note": "水帶捲盤",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "main": "hose-reel",
+          "on": [
+            "hose-nozzle",
+            "hose-coupling"
+          ],
+          "beside": [
+            "fire-hose"
+          ]
+        },
+        {
+          "note": "側門台階",
+          "row": "mid",
+          "x": [
+            0.46,
+            0.66
+          ],
+          "main": "fire-station-steps"
+        },
+        {
+          "note": "裝備整理櫃",
+          "row": "mid",
+          "x": [
+            0.7,
+            0.97
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "fire-helmet",
+            "axe",
+            "toolbox",
+            "fire-station-wrench",
+            "fire-blanket"
+          ],
+          "beside": [
+            "fire-bucket"
+          ]
+        },
+        {
+          "note": "排水溝蓋",
+          "row": "front",
+          "x": [
+            0.03,
+            0.22
+          ],
+          "main": "drain-grate"
+        },
+        {
+          "note": "交通錐",
+          "row": "front",
+          "x": [
+            0.3,
+            0.44
+          ],
+          "main": "fire-station-cone"
+        },
+        {
+          "note": "散落的裝備",
+          "row": "front",
+          "x": [
+            0.5,
+            0.9
+          ],
+          "front": [
+            "spade",
+            "fire-boot",
+            "fire-extinguisher-hose"
+          ]
+        }
+      ],
+      "sky": {
+        "fire-station-flag": [
+          0.38,
+          0.42
+        ],
+        "smoke": [
+          0.84,
+          0.12
+        ]
+      }
+    },
+    "garage": {
+      "sets": [
+        {
+          "note": "水帶櫃",
+          "row": "back",
+          "x": [
+            0.02,
+            0.22
+          ],
+          "main": "hose-cabinet"
+        },
+        {
+          "note": "工具掛板",
+          "row": "back",
+          "x": [
+            0.24,
+            0.6
+          ],
+          "fixture": "board",
+          "wall": [
+            "bolt-cutter",
+            "crowbar",
+            "sledgehammer",
+            "ladder-hook"
+          ]
+        },
+        {
+          "note": "零件架",
+          "row": "back",
+          "x": [
+            0.62,
+            0.98
+          ],
+          "fixture": "shelf",
+          "on": [
+            "rearview-mirror",
+            "side-mirror",
+            "hubcap",
+            "windshield-wiper",
+            "steering-wheel"
+          ]
+        },
+        {
+          "note": "拆下的座椅",
+          "row": "mid",
+          "x": [
+            0.02,
+            0.27
+          ],
+          "main": "fire-engine-seat",
+          "on": [
+            "fire-helmet-visor",
+            "fire-goggles",
+            "fire-gloves"
+          ]
+        },
+        {
+          "note": "工作檯",
+          "row": "mid",
+          "x": [
+            0.31,
+            0.58
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "wheel-wrench",
+            "jack",
+            "fire-nozzle"
+          ]
+        },
+        {
+          "note": "維修中的車門",
+          "row": "mid",
+          "x": [
+            0.63,
+            0.97
+          ],
+          "main": "fire-engine-door",
+          "beside": [
+            "dashboard"
+          ]
+        },
+        {
+          "note": "水帶跨橋",
+          "row": "front",
+          "x": [
+            0.3,
+            0.56
+          ],
+          "main": "hose-bridge"
+        },
+        {
+          "note": "備胎",
+          "row": "front",
+          "x": [
+            0.64,
+            0.96
+          ],
+          "main": "spare-wheel",
+          "beside": [
+            "hose-reel-cart"
+          ]
+        }
+      ]
+    },
+    "equipment-room": {
+      "sets": [
+        {
+          "note": "消防衣掛牆",
+          "row": "back",
+          "x": [
+            0.02,
+            0.4
+          ],
+          "fixture": "board",
+          "wall": [
+            "fire-jacket",
+            "fire-trousers",
+            "fire-harness"
+          ]
+        },
+        {
+          "note": "頭盔配件櫃",
+          "row": "back",
+          "x": [
+            0.03,
+            0.39
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "fire-helmet-lamp",
+            "fire-helmet-shield",
+            "fire-hood",
+            "fire-belt"
+          ]
+        },
+        {
+          "note": "破壞工具掛牆",
+          "row": "back",
+          "x": [
+            0.42,
+            0.98
+          ],
+          "fixture": "board",
+          "wall": [
+            "fire-pickaxe",
+            "fire-hook",
+            "fire-shovel",
+            "fire-rake"
+          ]
+        },
+        {
+          "note": "通訊與呼吸器材櫃",
+          "row": "back",
+          "x": [
+            0.44,
+            0.97
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "fire-mask",
+            "oxygen-mask",
+            "fire-radio",
+            "radio-microphone",
+            "carabiner",
+            "fire-rope"
+          ]
+        },
+        {
+          "note": "空氣呼吸器",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.34
+          ],
+          "main": "breathing-apparatus",
+          "beside": [
+            "rescue-basket"
+          ]
+        },
+        {
+          "note": "救援工具平台",
+          "row": "mid",
+          "x": [
+            0.4,
+            0.96
+          ],
+          "fixture": "platform",
+          "on": [
+            "fire-cutter",
+            "fire-spreader",
+            "fire-ram",
+            "fire-saw"
+          ]
+        }
+      ]
+    },
+    "dispatch-room": {
+      "sets": [
+        {
+          "note": "防火門",
+          "row": "back",
+          "x": [
+            0.02,
+            0.2
+          ],
+          "main": "fire-door"
+        },
+        {
+          "note": "文件櫃",
+          "row": "back",
+          "x": [
+            0.22,
+            0.4
+          ],
+          "main": "filing-cabinet"
+        },
+        {
+          "note": "牆上設備",
+          "row": "back",
+          "x": [
+            0.42,
+            0.98
+          ],
+          "wall": [
+            "clock-face",
+            "fire-alarm-panel",
+            "speaker",
+            "siren",
+            "fire-blanket-case"
+          ]
+        },
+        {
+          "note": "派遣台",
+          "row": "mid",
+          "x": [
+            0.08,
+            0.9
+          ],
+          "fixture": "desk",
+          "on": [
+            "monitor",
+            "dispatch-console",
+            "radio-console",
+            "desk-phone",
+            "flashlight-battery"
+          ]
+        },
+        {
+          "note": "地面排水孔",
+          "row": "front",
+          "x": [
+            0.08,
+            0.3
+          ],
+          "main": "floor-drain",
+          "beside": [
+            "boots"
+          ]
+        }
+      ]
+    }
+  }
+}

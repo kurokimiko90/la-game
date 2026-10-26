@@ -44,7 +44,7 @@ export function buildOutlinePrompt({ theme, existingScenes }) {
   return [
     '你在幫語言學習找物遊戲《記憶小鎮》設計一個新街區。玩家在 2D 小鎮地圖上找東西，點物品會顯示單字並播放英語、日語發音。',
     `新街區主題：「${theme.name}」（id 用 ${theme.id}）。小鎮已經有：${existingScenes.join('、')}。`,
-    '把街區分成剛好 4 個區域，依玩家走的路線排序（第 1 個是入口）。每個區域：',
+    '把街區分成剛好 4 個區域，依玩家走的路線排序（第 1 個是入口）。第 1 個一定是室外（門口），室外總共 1–2 個，其他是室內（小鎮的戶外街景和室內區是分開的兩大塊）。每個區域：',
     '- id：英文小寫 kebab-case',
     '- name：繁體中文 2–5 個字',
     '- indoor：true 或 false',
@@ -68,7 +68,18 @@ export function parseOutline(raw, { theme, usedZoneIds = [] }) {
     const name = typeof z.name === 'string' && CJK_RE.test(z.name) ? z.name.trim().slice(0, 8) : `區域${i + 1}`;
     return normalizeZone({ ...z, id, name });
   });
-  return { id: theme.id, name: theme.name, zones: clean };
+  return { id: theme.id, name: theme.name, zones: toOutdoorRule(clean) };
+}
+
+// 戶外 1–2 個、第 1 個是戶外（門口）：戶外街景和室內區分開放，一個街區在街上最多佔 2 塊地（town-plan.mjs）
+const MAX_OUTDOOR = 2;
+function toOutdoorRule(zones) {
+  let outdoor = 0;
+  return zones.map((z, i) => {
+    const wantOutdoor = i === 0 || (!z.indoor && outdoor < MAX_OUTDOOR);
+    if (wantOutdoor) outdoor++;
+    return wantOutdoor === !z.indoor ? z : normalizeZone({ ...z, indoor: !wantOutdoor });
+  });
 }
 
 /**
@@ -167,7 +178,7 @@ export function planToSceneConfig(plan, available) {
   const has = new Set(available);
   const elements = plan.elements.filter((e) => has.has(e.id));
   if (!elements.length) throw new Error(`${plan.id}：沒有任何物件有 SVG`);
-  const district = buildDistrict({ slot: plan.slot, zones: plan.zones, elements, colorIndex: plan.colorIndex ?? 0 });
+  const district = buildDistrict({ rects: plan.rects, zones: plan.zones, elements, colorIndex: plan.colorIndex ?? 0 });
 
   const byId = new Map(elements.map((e) => [e.id, e]));
   const onGround = (e) => !district.place[e.id];

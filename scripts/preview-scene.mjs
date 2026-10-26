@@ -18,9 +18,14 @@ const OUT_DIR = path.join(ROOT, 'docs', 'scene-preview');
 const BASE = process.env.PREVIEW_URL || 'http://localhost:3000';
 const PAD = 40;
 
-function districtBounds(scene) {
-  const zs = scene.zones;
-  return { x0: Math.min(...zs.map((z) => z.x0)), y0: Math.min(...zs.map((z) => z.y0)), x1: Math.max(...zs.map((z) => z.x1)), y1: Math.max(...zs.map((z) => z.y1)) };
+const boundsOf = (zs) => ({ x0: Math.min(...zs.map((z) => z.x0)), y0: Math.min(...zs.map((z) => z.y0)), x1: Math.max(...zs.map((z) => z.x1)), y1: Math.max(...zs.map((z) => z.y1)) });
+
+// 戶外、室內分在地圖北、南兩處：各截一張（<scene>.png、<scene>-indoor.png；只有一部分時只截 <scene>.png）
+function parts(scene) {
+  const out = scene.zones.filter((z) => !z.indoor);
+  const inside = scene.zones.filter((z) => z.indoor);
+  if (!out.length || !inside.length) return [{ suffix: '', b: boundsOf(scene.zones) }];
+  return [{ suffix: '', b: boundsOf(out) }, { suffix: '-indoor', b: boundsOf(inside) }];
 }
 
 async function main() {
@@ -55,15 +60,16 @@ async function main() {
 
     for (const sceneId of config.order) {
       const scene = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'scenes', `${sceneId}.json`), 'utf8'));
-      const b = districtBounds(scene);
-      const x0 = Math.max(0, b.x0 - PAD);
-      const y0 = Math.max(0, b.y0 - PAD);
-      const out = path.join(OUT_DIR, `${sceneId}.png`);
-      await page.screenshot({
-        path: out,
-        clip: { x: ox + x0 * scale, y: oy + y0 * scale, width: (Math.min(W, b.x1 + PAD) - x0) * scale, height: (Math.min(H, b.y1 + PAD) - y0) * scale },
-      });
-      console.log(`${sceneId} → ${path.relative(ROOT, out)}`);
+      for (const { suffix, b } of parts(scene)) {
+        const x0 = Math.max(0, b.x0 - PAD);
+        const y0 = Math.max(0, b.y0 - PAD);
+        const out = path.join(OUT_DIR, `${sceneId}${suffix}.png`);
+        await page.screenshot({
+          path: out,
+          clip: { x: ox + x0 * scale, y: oy + y0 * scale, width: (Math.min(W, b.x1 + PAD) - x0) * scale, height: (Math.min(H, b.y1 + PAD) - y0) * scale },
+        });
+        console.log(`${sceneId}${suffix} → ${path.relative(ROOT, out)}`);
+      }
     }
   } finally {
     await browser.close();

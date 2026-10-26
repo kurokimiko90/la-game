@@ -4,7 +4,7 @@ import type { Town } from '@/lib/town';
 import type { Point } from '@/lib/types';
 
 const WIDTH = 150;
-const COLORS: Record<string, string> = { park: '#9ccc65', street: '#b0bec5', riverside: '#81d4fa', supermarket: '#ffcc80' };
+export const COLORS: Record<string, string> = { park: '#9ccc65', street: '#b0bec5', riverside: '#81d4fa', supermarket: '#ffcc80' };
 const FALLBACK = '#e0e0e0';
 
 interface TownMinimapProps {

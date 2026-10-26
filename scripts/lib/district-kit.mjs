@@ -1,10 +1,9 @@
-// 自動擴展的街區模板：一個 slot（2600×1300）切成 2×2 個區域，路線順時針（左上 → 右上 → 右下 → 左下）。
-// 每個區域有「室內 / 室外」、地面材質、最多一種地形特徵。從這些資料算出：
+// 自動擴展的街區模板：4 個區域，每個 1300×650。戶外區域放在北邊的沿街地塊、室內區域合成南邊室內區的一棟建築，
+// 位置由 town-plan.mjs 分配（rects，依區域順序）。每個區域有「室內 / 室外」、地面材質、最多一種地形特徵。從這些資料算出：
 //   - scene-config 的 zones / bands / place（擺放用，和手寫的場景同一套格式）
 //   - terrain：畫地形用的幾何（build 時寫進場景 JSON，由 GeneratedDistrict.tsx 畫）
 // 幾何只在這裡算一次，地形和擺放才不會對不上。純函式，不讀檔。
 
-export const SLOT_SIZE = { w: 2600, h: 1300 };
 export const FLOORS = { indoor: ['tile', 'wood', 'carpet'], outdoor: ['grass', 'paving', 'sand', 'concrete'] };
 export const SURFACE_LOOKS = { counter: 'cafe-counter', table: 'table', stand: 'stand', chiller: 'chiller', checkout: 'checkout' };
 const OUTDOOR_ONLY = ['road', 'track', 'water'];
@@ -18,19 +17,6 @@ const GROUND_TOP = { indoor: 240, outdoor: 70 };
 const ROAD = { top: 190, bottom: 30 }; // 距下緣
 const TRACK = { top: 160, rail: 40 };
 const SKY = { top: 150, bottom: 300 };
-
-/** slot → 4 個區域矩形 [x0, y0, x1, y1]，順序 = 路線順序 */
-export function zoneRects(slot) {
-  const { x, y } = slot;
-  const w = SLOT_SIZE.w / 2;
-  const h = SLOT_SIZE.h / 2;
-  return [
-    [x, y, x + w, y + h],
-    [x + w, y, x + 2 * w, y + h],
-    [x + w, y + h, x + 2 * w, y + 2 * h],
-    [x, y + h, x + w, y + 2 * h],
-  ];
-}
 
 /** 規劃裡的區域設定 → 合法值（不合法的欄位換成預設，不丟錯：LLM 的輸出不可信） */
 export function normalizeZone(spec) {
@@ -103,12 +89,13 @@ function groundOverride(geo) {
 }
 
 /**
- * @param {{ slot: {x: number, y: number}, zones: object[], elements: Array<{ id: string, zone: string, spot?: string }>, colorIndex?: number }} input
+ * @param {{ rects: number[][], zones: object[], elements: Array<{ id: string, zone: string, spot?: string }>, colorIndex?: number }} input
+ *   rects：每個區域在地圖上的矩形 [x0, y0, x1, y1]，依區域順序（town-plan.mjs 的 placeDistrict）
  * @returns {{ zones: Record<string, number[]>, bands: object, place: Record<string, string>, terrain: object }}
  */
-export function buildDistrict({ slot, zones: zoneSpecs, elements, colorIndex = 0 }) {
+export function buildDistrict({ rects, zones: zoneSpecs, elements, colorIndex = 0 }) {
   if (zoneSpecs.length !== 4) throw new Error(`街區要剛好 4 個區域，收到 ${zoneSpecs.length} 個`);
-  const rects = zoneRects(slot);
+  if (!Array.isArray(rects) || rects.length !== zoneSpecs.length) throw new Error('每個區域都要有地圖位置（rects）');
   const zones = zoneSpecs.map(normalizeZone);
   const geos = zones.map((z, i) => zoneGeometry(rects[i], z));
 
@@ -123,14 +110,15 @@ export function buildDistrict({ slot, zones: zoneSpecs, elements, colorIndex = 0
     place[el.id] = `${el.spot}-${zone.id}`;
   }
 
-  const [x0, y0] = [slot.x, slot.y];
+  // 外框：所有區域（戶外與室內分在兩處，外框只給小地圖、預覽用）
+  const [x0, y0, x1, y1] = [Math.min(...rects.map((r) => r[0])), Math.min(...rects.map((r) => r[1])), Math.max(...rects.map((r) => r[2])), Math.max(...rects.map((r) => r[3]))];
   return {
     zones: Object.fromEntries(zones.map((z, i) => [z.id, rects[i]])),
     bands,
     place,
     terrain: {
       color: MAP_COLORS[colorIndex % MAP_COLORS.length],
-      x0, y0, x1: x0 + SLOT_SIZE.w, y1: y0 + SLOT_SIZE.h,
+      x0, y0, x1, y1,
       zones: zones.map((z, i) => {
         const [zx0, zy0, zx1, zy1] = rects[i];
         const g = geos[i];
@@ -143,19 +131,5 @@ export function buildDistrict({ slot, zones: zoneSpecs, elements, colorIndex = 0
         };
       }),
     },
-  };
-}
-
-/** 已用的 slot 之外，依序找下一個空的 */
-export function nextSlot(slots, usedSlots) {
-  const used = new Set(usedSlots.map((s) => `${s.x},${s.y}`));
-  return slots.find((s) => !used.has(`${s.x},${s.y}`)) ?? null;
-}
-
-/** 地圖大小 = 原本的核心範圍 + 所有已用 slot 的外框 */
-export function worldSize(core, usedSlots) {
-  return {
-    width: Math.max(core.width, ...usedSlots.map((s) => s.x + SLOT_SIZE.w)),
-    height: Math.max(core.height, ...usedSlots.map((s) => s.y + SLOT_SIZE.h)),
   };
 }

@@ -1,6 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import park from '../../src/data/scenes/park.json';
 import street from '../../src/data/scenes/street.json';
+import hospital from '../../src/data/scenes/hospital.json';
 import sceneIndex from '../../src/data/scenes/index.json';
 import { FREE_SCENE_COUNT } from '../../src/lib/progress';
 
@@ -76,6 +77,21 @@ test('小鎮：所有場景在同一張地圖，點小地圖切換街區', async
   const mailbox = street.items.find((i) => i.id === 'mailbox')!;
   await clickItem(page, 'mailbox', mailbox.zone, street as SceneJson);
   await expect(page.getByRole('status')).toContainText('mailbox');
+});
+
+test('小鎮分區：門口在北邊街景、室內在南邊，按鈕進出建築並點得到室內的物品', async ({ page }) => {
+  await unlockAll(page);
+  await page.goto('/scene/hospital');
+  await page.getByRole('button', { name: /自由探索/ }).click();
+  const lobby = zoneName('lobby', hospital as unknown as SceneJson);
+  await page.getByRole('button', { name: `進入室內：${lobby}` }).click();
+  await expect(page.getByRole('button', { name: /回到戶外/ })).toBeVisible();
+  const telephone = hospital.items.find((i) => i.id === 'telephone')!;
+  expect(telephone.y).toBeGreaterThan(hospital.outdoorHeight);
+  await clickItem(page, 'telephone', telephone.zone, hospital as unknown as SceneJson);
+  await expect(page.getByRole('status')).toContainText('telephone');
+  await page.getByRole('button', { name: /回到戶外/ }).click();
+  await expect(page.getByRole('button', { name: /進入室內/ })).toBeVisible();
 });
 
 test('小鎮：滾輪縮放；+ / - / 0 快捷鍵不用先點地圖', async ({ page }) => {

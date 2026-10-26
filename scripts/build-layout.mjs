@@ -11,7 +11,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { layoutScene } from './lib/layout.mjs';
-import { formatLayout, layoutFile, loadSceneConfig, loadSceneSource, lockedPlacements, readJson } from './lib/scene-source.mjs';
+import { formatLayout, layoutFile, loadSceneConfig, loadSceneSource, loadStage, lockedPlacements, readJson } from './lib/scene-source.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -24,12 +24,14 @@ function buildLayout(source, reset, obstacles) {
   const locked = Object.fromEntries(Object.entries(previous).filter(([id]) => ids.has(id)));
 
   const warnings = [];
+  const stage = loadStage(ROOT, source);
   const placed = layoutScene({
+    staged: stage?.anchors,
     sceneId, zones, items, locked, obstacles, warnings, arrange: sceneConfig.arrange,
     bands: sceneConfig.bands, place: sceneConfig.place, clusters: sceneConfig.clusters,
     loose: sceneConfig.loose, noFlip: sceneConfig.noFlip, rows: sceneConfig.rows, spots: sceneConfig.spots,
   });
-  const layout = Object.fromEntries(placed.map(({ id, x, y, w, h, rotate, flip }) => [id, { x, y, w, h, rotate, flip }]));
+  const layout = Object.fromEntries(placed.map(({ id, x, y, w, h, rotate, flip, depth }) => [id, { x, y, w, h, rotate, flip, ...(depth === undefined ? {} : { depth }) }]));
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, formatLayout(layout));
 

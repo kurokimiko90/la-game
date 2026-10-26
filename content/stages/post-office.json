@@ -1,0 +1,447 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "note": "郵局外牆與遮雨棚",
+          "row": "back",
+          "x": [
+            0.02,
+            0.4
+          ],
+          "fixture": "facade",
+          "main": "awning-frame",
+          "wall": [
+            "post-hole"
+          ]
+        },
+        {
+          "note": "郵局大門",
+          "row": "back",
+          "x": [
+            0.4,
+            0.6
+          ],
+          "fixture": "facade",
+          "main": "post-office-door"
+        },
+        {
+          "note": "右側外牆",
+          "row": "back",
+          "x": [
+            0.6,
+            0.98
+          ],
+          "fixture": "facade"
+        },
+        {
+          "note": "信件回收箱",
+          "row": "back",
+          "x": [
+            0.64,
+            0.8
+          ],
+          "main": "letter-box",
+          "on": [
+            "mailbox-flag"
+          ]
+        },
+        {
+          "note": "戶外寄件台",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.4
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "parcel",
+            "parcel-scale",
+            "postage-meter",
+            "paper-label",
+            "postage-label",
+            "postage-stamp"
+          ]
+        },
+        {
+          "note": "旗桿",
+          "row": "mid",
+          "x": [
+            0.62,
+            0.97
+          ],
+          "main": "flagpole-base",
+          "beside": [
+            "basket",
+            "mailbag"
+          ]
+        },
+        {
+          "note": "水窪",
+          "row": "front",
+          "x": [
+            0.04,
+            0.3
+          ],
+          "main": "puddle",
+          "front": [
+            "pebble"
+          ]
+        },
+        {
+          "note": "立牌",
+          "row": "front",
+          "x": [
+            0.4,
+            0.58
+          ],
+          "main": "sandwich-board"
+        },
+        {
+          "note": "路邊花台",
+          "row": "front",
+          "x": [
+            0.66,
+            0.97
+          ],
+          "fixture": "planter",
+          "on": [
+            "flower",
+            "weed",
+            "moss",
+            "rain-gauge"
+          ]
+        }
+      ],
+      "sky": {
+        "cloud": [
+          0.35,
+          0.08
+        ],
+        "raindrop": [
+          0.62,
+          0.08
+        ],
+        "rainbow": [
+          0.9,
+          0.08
+        ],
+        "wind-sock": [
+          0.52,
+          0.44
+        ]
+      }
+    },
+    "service-hall": {
+      "sets": [
+        {
+          "note": "服務窗口",
+          "row": "back",
+          "x": [
+            0.02,
+            0.24
+          ],
+          "main": "service-hatch"
+        },
+        {
+          "note": "包裹滑槽",
+          "row": "back",
+          "x": [
+            0.26,
+            0.44
+          ],
+          "main": "parcel-chute"
+        },
+        {
+          "note": "投信口與掛鉤",
+          "row": "back",
+          "x": [
+            0.46,
+            0.62
+          ],
+          "wall": [
+            "mail-slot",
+            "parcel-hook"
+          ]
+        },
+        {
+          "note": "分信箱",
+          "row": "back",
+          "x": [
+            0.64,
+            0.8
+          ],
+          "main": "sorting-bin",
+          "on": [
+            "mail-tray"
+          ]
+        },
+        {
+          "note": "郵件袋",
+          "row": "back",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "main": "mail-sack"
+        },
+        {
+          "note": "郵務櫃台",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.58
+          ],
+          "fixture": "counter",
+          "on": [
+            "counter-screen",
+            "postal-scale",
+            "letter",
+            "letter-opener",
+            "envelope-opener",
+            "label-roll",
+            "tape-cutter",
+            "packing-tape-roll"
+          ],
+          "beside": [
+            "floor-scale"
+          ]
+        },
+        {
+          "note": "寄件耗材櫃",
+          "row": "mid",
+          "x": [
+            0.63,
+            0.97
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "postal-tube",
+            "mailing-tube-cap",
+            "twine-spool",
+            "rubber-glove"
+          ],
+          "beside": [
+            "parcel-box"
+          ]
+        },
+        {
+          "note": "旋轉閘門",
+          "row": "front",
+          "x": [
+            0.4,
+            0.6
+          ],
+          "main": "turnstile"
+        }
+      ]
+    },
+    "waiting-area": {
+      "sets": [
+        {
+          "note": "包裹櫃",
+          "row": "back",
+          "x": [
+            0.02,
+            0.26
+          ],
+          "main": "parcel-locker"
+        },
+        {
+          "note": "郵件滑槽",
+          "row": "back",
+          "x": [
+            0.28,
+            0.44
+          ],
+          "main": "mail-chute"
+        },
+        {
+          "note": "郵件分類架",
+          "row": "back",
+          "x": [
+            0.46,
+            0.62
+          ],
+          "main": "mail-sorter"
+        },
+        {
+          "note": "置物架",
+          "row": "back",
+          "x": [
+            0.64,
+            0.8
+          ],
+          "main": "rack",
+          "on": [
+            "sticker-sheet",
+            "sticker"
+          ]
+        },
+        {
+          "note": "托盤架",
+          "row": "back",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "main": "mail-tray-rack",
+          "on": [
+            "letter-scale",
+            "scale-pan"
+          ]
+        },
+        {
+          "note": "取號機",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.3
+          ],
+          "main": "queue-ticket-dispenser",
+          "beside": [
+            "folding-stool"
+          ]
+        },
+        {
+          "note": "包裝台",
+          "row": "mid",
+          "x": [
+            0.34,
+            0.8
+          ],
+          "fixture": "desk",
+          "on": [
+            "packing-tape",
+            "bubble-wrap",
+            "twine",
+            "box-cutter",
+            "string-cutter",
+            "scotch-tape",
+            "twist-tie",
+            "staple",
+            "wax-seal"
+          ],
+          "beside": [
+            "mailing-tube"
+          ]
+        },
+        {
+          "note": "郵件推車",
+          "row": "mid",
+          "x": [
+            0.83,
+            0.98
+          ],
+          "main": "mail-cart"
+        },
+        {
+          "note": "麻袋",
+          "row": "front",
+          "x": [
+            0.6,
+            0.8
+          ],
+          "main": "sack"
+        }
+      ]
+    },
+    "sorting-room": {
+      "sets": [
+        {
+          "note": "分揀滑槽",
+          "row": "back",
+          "x": [
+            0.02,
+            0.3
+          ],
+          "main": "sorting-chute"
+        },
+        {
+          "note": "工作服掛牆",
+          "row": "back",
+          "x": [
+            0.32,
+            0.5
+          ],
+          "wall": [
+            "emergency-light",
+            "work-apron",
+            "overalls"
+          ]
+        },
+        {
+          "note": "棧板貨物",
+          "row": "back",
+          "x": [
+            0.52,
+            0.72
+          ],
+          "main": "pallet",
+          "on": [
+            "plastic-tote",
+            "mail-tub"
+          ]
+        },
+        {
+          "note": "裝備櫃",
+          "row": "back",
+          "x": [
+            0.74,
+            0.98
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "safety-goggles",
+            "work-gloves"
+          ],
+          "beside": [
+            "work-boots"
+          ]
+        },
+        {
+          "note": "分揀桌",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.52
+          ],
+          "fixture": "desk",
+          "on": [
+            "scanner",
+            "notepad",
+            "tape-roll",
+            "glue",
+            "glue-brush",
+            "label",
+            "parcel-tray"
+          ],
+          "beside": [
+            "work-light"
+          ]
+        },
+        {
+          "note": "搬運",
+          "row": "mid",
+          "x": [
+            0.58,
+            0.96
+          ],
+          "main": "pallet-jack",
+          "beside": [
+            "rolling-cart"
+          ]
+        },
+        {
+          "note": "橡膠墊",
+          "row": "front",
+          "x": [
+            0.3,
+            0.55
+          ],
+          "main": "rubber-mat"
+        }
+      ]
+    }
+  }
+}

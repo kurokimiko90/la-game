@@ -128,7 +128,9 @@ export function visibleRatio(box, covers) {
   return visible / (N * N);
 }
 
-const drawOrder = (a, b) => a.layer - b.layer || (a.y + a.h) - (b.y + b.h);
+// 繪製順序：先依 layer，同層依深度（預設 = 底線；放在檯面上的東西用宿主的深度，見 staging.mjs）
+export const depthOf = (p) => p.depth ?? p.y + p.h;
+const drawOrder = (a, b) => a.layer - b.layer || depthOf(a) - depthOf(b);
 
 // 每個物件的可見比例（只算畫在它後面、也就是蓋在它上面的物件）
 function visibility(placements) {
@@ -199,8 +201,10 @@ export function anchorPoints(rows = [], spots = {}) {
   return out;
 }
 
-function anchoredBox(item, band, [ax, ay]) {
-  const { w, h } = itemSize(item.viewBox, item.sizeHint, scaleAt(band, ay));
+// 錨點：[x, y]（rows / spots，縮放照地帶）或 { x, y, scale, tilt }（情境擺放算好的縮放）
+function anchoredBox(item, band, anchor) {
+  const [ax, ay] = Array.isArray(anchor) ? anchor : [anchor.x, anchor.y];
+  const { w, h } = itemSize(item.viewBox, item.sizeHint, Array.isArray(anchor) ? scaleAt(band, ay) : anchor.scale);
   return { x: Math.round(ax - w / 2), y: Math.round(ay - h), w, h };
 }
 
@@ -350,9 +354,9 @@ function layoutZone({ sceneId, zone, zoneItems, bands, place, hostOf, loose, noF
   const byId = new Map();
 
   for (const item of zoneItems.filter((it) => locked[it.id])) {
-    const { x, y, w, h, rotate = 0, flip = false } = locked[item.id];
+    const { x, y, w, h, rotate = 0, flip = false, depth } = locked[item.id];
     const band = bandFor(bands, place, item, zone);
-    const p = { id: item.id, x, y, w, h, rotate, flip, layer: band.layer, float: band.float, fixed: true };
+    const p = { id: item.id, x, y, w, h, rotate, flip, layer: band.layer, float: band.float, fixed: true, ...(depth === undefined ? {} : { depth }) };
     placed.push(p);
     byId.set(item.id, p);
   }
@@ -374,9 +378,12 @@ function layoutZone({ sceneId, zone, zoneItems, bands, place, hostOf, loose, noF
         if (!best || s < best.s) best = { box, s };
       }
     }
-    const rotate = loose.has(item.id) ? Math.round((rng() * 2 - 1) * MAX_TILT) : 0;
+    // 情境擺放裡只有前面地上的物件可以歪倒（放在檯面上、掛在牆上的不歪）
+    const anchor = anchors.get(item.id);
+    const canTilt = loose.has(item.id) && (!anchor || Array.isArray(anchor) || anchor.tilt);
+    const rotate = canTilt ? Math.round((rng() * 2 - 1) * MAX_TILT) : 0;
     const flip = noFlip.has(item.id) ? false : rng() < 0.5;
-    const p = { id: item.id, ...best.box, rotate, flip, layer: band.layer, float: band.float, fixed: false };
+    const p = { id: item.id, ...best.box, rotate, flip, layer: band.layer, float: band.float, fixed: false, ...(anchor?.depth === undefined ? {} : { depth: anchor.depth }) };
     placed.push(p);
     byId.set(item.id, p);
   }
@@ -412,14 +419,16 @@ function arrangeZone({ zone, zoneItems, sceneId, bands, place, hostOf, locked, a
  *           items: Array<{ id: string, zone: string, sizeHint: string, viewBox: number[] }>,
  *           bands?: object, place?: Record<string, string>, clusters?: string[][], loose?: string[], noFlip?: string[],
  *           rows?: Array<{ points: number[][], items: Array<string | null> }>, spots?: Record<string, number[]>, arrange?: 'auto',
+ *           staged?: Map<string, { x: number, y: number, scale: number, tilt: boolean }>,
  *           locked?: Record<string, { x: number, y: number, w: number, h: number, rotate?: number, flip?: boolean }>,
  *           obstacles?: Array<{ x: number, y: number, w: number, h: number, layer: number }> }} input
  *   obstacles：其他場景已經擺好的物件（地圖座標），會避開並一起檢查可見比例
  *   warnings：自動排列退回隨機的區域會記在這裡（呼叫端印出來）
+ *   staged：情境擺放（scripts/lib/staging.mjs）算好的錨點，優先於 rows / spots
  * @returns {Array<{ id: string, x: number, y: number, w: number, h: number, rotate: number, flip: boolean, layer: number, float: number }>} 繪製順序
  */
-export function layoutScene({ sceneId, zones, items, bands = { ground: {} }, place = {}, clusters = [], loose = [], noFlip = [], rows = [], spots = {}, arrange, locked = {}, obstacles = [], warnings = [] }) {
-  const anchors = anchorPoints(rows, spots);
+export function layoutScene({ sceneId, zones, items, bands = { ground: {} }, place = {}, clusters = [], loose = [], noFlip = [], rows = [], spots = {}, arrange, staged = new Map(), locked = {}, obstacles = [], warnings = [] }) {
+  const anchors = new Map([...anchorPoints(rows, spots), ...staged]);
   const hostOf = new Map(clusters.flatMap(([host, ...members]) => members.map((m) => [m, host])));
   const looseSet = new Set(loose);
   const noFlipSet = new Set(noFlip);
@@ -444,10 +453,10 @@ export function layoutScene({ sceneId, zones, items, bands = { ground: {} }, pla
       last = tryAnchors(anchors);
     }
     if (last.failing.length) {
-      const list = last.failing.map(({ p, ratio }) => `${p.id}（露出 ${Math.round(ratio * 100)}%）`).join('、');
+      const list = last.failing.map(({ p, ratio, covers }) => `${p.id}（露出 ${Math.round(ratio * 100)}%，被 ${covers.map((c) => c.id).join('、')} 擋住）`).join('、');
       throw new Error(`${sceneId}/${zone.id}：試了 ${MAX_ATTEMPTS} 次仍有物件被擋太多：${list}`);
     }
-    result.push(...last.placed.map(({ id, x, y, w, h, rotate, flip, layer, float }) => ({ id, x, y, w, h, rotate, flip, layer, float })));
+    result.push(...last.placed.map(({ id, x, y, w, h, rotate, flip, layer, float, depth }) => ({ id, x, y, w, h, rotate, flip, layer, float, ...(depth === undefined ? {} : { depth }) })));
   }
   return result.sort(drawOrder);
 }

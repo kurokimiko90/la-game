@@ -1,0 +1,47 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        { "note": "醫院左翼門面", "row": "back", "x": [0.02, 0.4], "fixture": "facade" },
+        { "note": "自動門", "row": "back", "x": [0.4, 0.6], "fixture": "facade", "door": true, "wall": ["doorknob"] },
+        { "note": "右翼門面", "row": "back", "x": [0.6, 0.98], "fixture": "facade" },
+        { "note": "下車處遮雨棚", "row": "back", "x": [0.05, 0.32], "main": "canopy" },
+        { "note": "門邊消毒", "row": "back", "x": [0.33, 0.42], "main": "hand-sanitizer-dispenser" },
+        { "note": "無障礙坡道接門口", "row": "back", "x": [0.6, 0.82], "main": "ramp" },
+        { "note": "檢傷桌", "row": "mid", "x": [0.04, 0.3], "fixture": "desk", "on": ["thermometer", "syringe", "bandage"] },
+        { "note": "待命的擔架", "row": "mid", "x": [0.34, 0.66], "main": "stretcher", "on": ["first-aid-kit"], "beside": ["oxygen-cylinder", "crutch"], "front": ["cane"] },
+        { "note": "花台", "row": "mid", "x": [0.72, 0.97], "fixture": "planter", "on": ["sunflower", "lavender"] },
+        { "note": "路邊停車格", "row": "front", "x": [0.84, 0.94], "main": "parking-meter" }
+      ]
+    },
+    "lobby": {
+      "sets": [
+        { "note": "衣帽架", "row": "back", "x": [0.02, 0.15], "main": "coat-rack" },
+        { "note": "牆上設備", "row": "back", "x": [0.15, 0.3], "wall": ["fire-alarm", "air-vent", "ceiling-speaker"] },
+        { "note": "掛號櫃台", "row": "back", "x": [0.3, 0.62], "main": "counter", "on": ["telephone", "reception-bell", "air-freshener"] },
+        { "note": "茶水區", "row": "back", "x": [0.66, 0.98], "fixture": "shelf", "on": ["thermos", "coffee-bean", "coffee-filter", "tea-bag", "tea-strainer", "paper-towel", "sugar-bowl", "sugar-cube", "coffee-stirrer", "straw", "coaster", "lemon"] },
+        { "note": "沙發角", "row": "mid", "x": [0.05, 0.4], "fixture": "rug", "main": "sofa", "beside": ["plant"] },
+        { "note": "推車", "row": "front", "x": [0.6, 0.9], "main": "medical-trolley", "on": ["stethoscope"], "beside": ["blood-pressure-monitor"] }
+      ]
+    },
+    "waiting-area": {
+      "sets": [
+        { "note": "門邊開關", "row": "back", "x": [0.02, 0.17], "wall": ["light-switch", "power-outlet", "coat-hanger", "smoke-detector"] },
+        { "note": "暖氣", "row": "back", "x": [0.17, 0.38], "main": "radiator", "wall": ["thermostat"] },
+        { "note": "回收角", "row": "back", "x": [0.42, 0.56], "main": "recycling-bin" },
+        { "note": "耗材架", "row": "back", "x": [0.6, 0.98], "fixture": "shelf", "on": ["vial", "test-tube", "cotton-swab", "gauze-roll", "tongue-depressor", "face-shield"] },
+        { "note": "候診茶几", "row": "mid", "x": [0.06, 0.48], "fixture": "desk", "on": ["tissue-box", "remote-control", "hearing-aid"], "beside": ["humidifier", "walker"], "front": ["toy-block"] },
+        { "note": "護理站", "row": "mid", "x": [0.6, 0.95], "fixture": "desk", "on": ["pulse-oximeter", "otoscope", "blood-glucose-meter", "medicine-bottle", "pillbox", "inhaler"] }
+      ]
+    },
+    "pharmacy": {
+      "sets": [
+        { "note": "藥品冷藏櫃", "row": "back", "x": [0.02, 0.18], "main": "refrigerator" },
+        { "note": "盥洗用品架", "row": "back", "x": [0.21, 0.6], "fixture": "shelf", "on": ["toothbrush", "toothpaste", "soap", "razor", "comb", "deodorant", "sunscreen", "hairbrush", "hair-tie", "lip-balm"] },
+        { "note": "小物架", "row": "back", "x": [0.63, 0.98], "fixture": "shelf", "on": ["cotton-pad", "cotton-ball", "tweezers", "earplug", "contact-lens-case", "nail-clipper", "nail-file", "safety-pin"] },
+        { "note": "藥師玻璃櫃", "row": "mid", "x": [0.28, 0.78], "fixture": "display", "on": ["pill", "capsule", "blister-pack", "pill-cutter", "ointment-tube", "ice-pack"] }
+      ]
+    }
+  },
+  "scale": { "counter": 1.4, "doorknob": 0.6, "canopy": 1.1 }
+}

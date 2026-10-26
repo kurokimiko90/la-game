@@ -1,0 +1,350 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "note": "麵包店外牆",
+          "row": "back",
+          "x": [
+            0.02,
+            0.4
+          ],
+          "fixture": "facade"
+        },
+        {
+          "note": "店門",
+          "row": "back",
+          "x": [
+            0.4,
+            0.6
+          ],
+          "fixture": "facade",
+          "door": true
+        },
+        {
+          "note": "右側外牆",
+          "row": "back",
+          "x": [
+            0.6,
+            0.98
+          ],
+          "fixture": "facade",
+          "wall": [
+            "oven-thermometer"
+          ]
+        },
+        {
+          "note": "街道指示牌",
+          "row": "back",
+          "x": [
+            0.03,
+            0.18
+          ],
+          "main": "street-sign"
+        },
+        {
+          "note": "麵粉袋",
+          "row": "back",
+          "x": [
+            0.64,
+            0.82
+          ],
+          "main": "flour-sack",
+          "beside": [
+            "wheat-flour"
+          ],
+          "front": [
+            "doorstep-brush"
+          ]
+        },
+        {
+          "note": "門口麵包攤",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.44
+          ],
+          "fixture": "counter",
+          "on": [
+            "breadbasket",
+            "bread-loaf",
+            "pretzel-bun",
+            "poppy-seed-roll",
+            "bread-knife"
+          ]
+        },
+        {
+          "note": "烘焙示範桌",
+          "row": "mid",
+          "x": [
+            0.5,
+            0.97
+          ],
+          "fixture": "desk",
+          "on": [
+            "bakery-tray",
+            "flour-bowl",
+            "measuring-cup",
+            "yeast-jar",
+            "pastry-brush",
+            "wooden-spoon",
+            "oven-mitt",
+            "bread-tin"
+          ],
+          "beside": [
+            "cooling-rack"
+          ]
+        },
+        {
+          "note": "鋪路石",
+          "row": "front",
+          "x": [
+            0.04,
+            0.3
+          ],
+          "main": "paving-stone",
+          "front": [
+            "maple-leaf",
+            "wheat-stalk"
+          ]
+        },
+        {
+          "note": "購物袋",
+          "row": "front",
+          "x": [
+            0.4,
+            0.56
+          ],
+          "main": "shopping-bag"
+        },
+        {
+          "note": "掃麵包屑",
+          "row": "front",
+          "x": [
+            0.66,
+            0.9
+          ],
+          "main": "hand-broom",
+          "front": [
+            "bread-crumb"
+          ]
+        }
+      ]
+    },
+    "display-area": {
+      "sets": [
+        {
+          "note": "大麵包架",
+          "row": "back",
+          "x": [
+            0.02,
+            0.48
+          ],
+          "fixture": "shelf",
+          "on": [
+            "baguette",
+            "rye-bread",
+            "focaccia",
+            "breadstick",
+            "pita",
+            "bread-slice"
+          ]
+        },
+        {
+          "note": "抹醬與配料架",
+          "row": "back",
+          "x": [
+            0.52,
+            0.98
+          ],
+          "fixture": "shelf",
+          "on": [
+            "jam-jar",
+            "honey-jar",
+            "butter-dish",
+            "cheese-wedge",
+            "olive",
+            "garlic-clove",
+            "walnut",
+            "sesame-seeds"
+          ]
+        },
+        {
+          "note": "現烤麵包台",
+          "row": "mid",
+          "x": [
+            0.04,
+            0.52
+          ],
+          "fixture": "stand",
+          "on": [
+            "bread-roll",
+            "bagel",
+            "cinnamon-roll",
+            "danish-pastry",
+            "pain-au-chocolat",
+            "brioche",
+            "cheese-bread",
+            "garlic-bread"
+          ]
+        },
+        {
+          "note": "包裝台",
+          "row": "mid",
+          "x": [
+            0.58,
+            0.96
+          ],
+          "fixture": "counter",
+          "on": [
+            "butter-knife",
+            "bread-clip"
+          ],
+          "beside": [
+            "bread-crate"
+          ]
+        }
+      ]
+    },
+    "seating-area": {
+      "sets": [
+        {
+          "note": "靠牆長凳",
+          "row": "back",
+          "x": [
+            0.02,
+            0.34
+          ],
+          "main": "bench-seat"
+        },
+        {
+          "note": "送餐推車",
+          "row": "back",
+          "x": [
+            0.38,
+            0.56
+          ],
+          "main": "serving-cart",
+          "on": [
+            "cream-pitcher",
+            "pepper-grinder"
+          ]
+        },
+        {
+          "note": "親子座",
+          "row": "back",
+          "x": [
+            0.6,
+            0.98
+          ],
+          "main": "high-chair",
+          "on": [
+            "highchair-tray",
+            "highchair-cushion"
+          ],
+          "beside": [
+            "baby-stroller"
+          ],
+          "front": [
+            "highchair-footrest"
+          ]
+        },
+        {
+          "note": "餐桌",
+          "row": "mid",
+          "x": [
+            0.04,
+            0.56
+          ],
+          "main": "dining-table",
+          "on": [
+            "soup-bowl",
+            "drinking-glass",
+            "water-glass",
+            "toothpick-holder",
+            "sugar-packet"
+          ],
+          "beside": [
+            "dining-chair"
+          ]
+        },
+        {
+          "note": "餐具櫃",
+          "row": "mid",
+          "x": [
+            0.62,
+            0.97
+          ],
+          "fixture": "cabinet",
+          "on": [
+            "dining-tray",
+            "bread-plate",
+            "fork-holder",
+            "teaspoon",
+            "dinner-knife",
+            "dinner-spoon",
+            "side-plate",
+            "table-number-stand",
+            "tablecloth"
+          ]
+        }
+      ]
+    },
+    "checkout-counter": {
+      "sets": [
+        {
+          "note": "咖啡茶飲架",
+          "row": "back",
+          "x": [
+            0.03,
+            0.5
+          ],
+          "fixture": "shelf",
+          "on": [
+            "coffee-pot",
+            "coffee-cup",
+            "tea-cup",
+            "milk-jug",
+            "coffee-spoon",
+            "napkin-dispenser"
+          ]
+        },
+        {
+          "note": "蛋糕冷藏櫃",
+          "row": "back",
+          "x": [
+            0.55,
+            0.95
+          ],
+          "fixture": "display",
+          "on": [
+            "pastry-tray",
+            "cake-slice",
+            "cake-server",
+            "cake-fork"
+          ]
+        },
+        {
+          "note": "結帳櫃台",
+          "row": "mid",
+          "x": [
+            0.1,
+            0.66
+          ],
+          "fixture": "counter",
+          "on": [
+            "receipt-printer",
+            "cash-drawer",
+            "card-terminal",
+            "receipt-roll",
+            "loyalty-card",
+            "tip-jar"
+          ]
+        }
+      ]
+    }
+  },
+  "scale": {
+    "dining-table": 1.3
+  }
+}

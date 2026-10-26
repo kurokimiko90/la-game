@@ -58,6 +58,8 @@ export interface Zone {
   y0: number;
   x1: number;
   y1: number;
+  /** 室內區域在南邊的室內區，戶外區域在北邊的街景 */
+  indoor: boolean;
 }
 
 /** 自動產生的街區的一個區域（scripts/lib/district-kit.mjs 算好的地形幾何） */
@@ -93,6 +95,10 @@ export interface SceneData {
   name: string;
   width: number;
   height: number;
+  /** 這個 y 以北是戶外街景，以南是室內區 */
+  outdoorHeight: number;
+  /** 戶外地塊之間的大街 [x0, y0, x1, y1]（整張地圖共用） */
+  streets: number[][];
   zones: Zone[];
   surfaces: Surface[];
   /** 陣列順序 = 繪製順序 */

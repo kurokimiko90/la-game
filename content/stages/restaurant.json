@@ -1,0 +1,356 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        {
+          "note": "門柱",
+          "row": "back",
+          "x": [
+            0.02,
+            0.15
+          ],
+          "main": "pillar"
+        },
+        {
+          "note": "露台圍欄",
+          "row": "back",
+          "x": [
+            0.18,
+            0.5
+          ],
+          "main": "fence"
+        },
+        {
+          "note": "裝飾木桶",
+          "row": "back",
+          "x": [
+            0.54,
+            0.7
+          ],
+          "main": "barrel",
+          "on": [
+            "lantern"
+          ]
+        },
+        {
+          "note": "外送廂型車",
+          "row": "back",
+          "x": [
+            0.73,
+            0.98
+          ],
+          "main": "delivery-van"
+        },
+        {
+          "note": "花台",
+          "row": "mid",
+          "x": [
+            0.03,
+            0.29
+          ],
+          "fixture": "planter",
+          "on": [
+            "rose",
+            "fern"
+          ],
+          "beside": [
+            "pot"
+          ]
+        },
+        {
+          "note": "露天座位",
+          "row": "mid",
+          "x": [
+            0.34,
+            0.66
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "tray",
+            "bowl",
+            "fork",
+            "spoon"
+          ],
+          "beside": [
+            "chair"
+          ]
+        },
+        {
+          "note": "外送機車",
+          "row": "mid",
+          "x": [
+            0.71,
+            0.97
+          ],
+          "main": "motorcycle"
+        },
+        {
+          "note": "人孔蓋",
+          "row": "front",
+          "x": [
+            0.04,
+            0.24
+          ],
+          "main": "manhole-cover"
+        },
+        {
+          "note": "門墊",
+          "row": "front",
+          "x": [
+            0.34,
+            0.54
+          ],
+          "main": "doormat"
+        },
+        {
+          "note": "排水孔與地磚",
+          "row": "front",
+          "x": [
+            0.62,
+            0.86
+          ],
+          "main": "drain",
+          "beside": [
+            "tile"
+          ]
+        }
+      ]
+    },
+    "dining-hall": {
+      "sets": [
+        {
+          "note": "窗戶與窗簾",
+          "row": "back",
+          "x": [
+            0.03,
+            0.36
+          ],
+          "wall": [
+            "window",
+            "curtain"
+          ]
+        },
+        {
+          "note": "餐具櫃",
+          "row": "back",
+          "x": [
+            0.4,
+            0.58
+          ],
+          "main": "cabinet",
+          "on": [
+            "napkin-holder",
+            "toothpick"
+          ]
+        },
+        {
+          "note": "空氣清淨機",
+          "row": "back",
+          "x": [
+            0.62,
+            0.76
+          ],
+          "main": "air-purifier"
+        },
+        {
+          "note": "鏡子與壁燈",
+          "row": "back",
+          "x": [
+            0.78,
+            0.98
+          ],
+          "wall": [
+            "mirror",
+            "wall-lamp"
+          ]
+        },
+        {
+          "note": "雙人桌",
+          "row": "mid",
+          "x": [
+            0.05,
+            0.46
+          ],
+          "fixture": "cloth-table",
+          "on": [
+            "placemat",
+            "knife",
+            "chopsticks",
+            "cup",
+            "saucer"
+          ],
+          "beside": [
+            "stool"
+          ]
+        },
+        {
+          "note": "調味料桌",
+          "row": "mid",
+          "x": [
+            0.54,
+            0.94
+          ],
+          "fixture": "desk",
+          "on": [
+            "salt-shaker",
+            "pepper-shaker",
+            "soy-sauce-bottle",
+            "napkin"
+          ]
+        }
+      ]
+    },
+    "open-kitchen": {
+      "sets": [
+        {
+          "note": "烤箱",
+          "row": "back",
+          "x": [
+            0.02,
+            0.19
+          ],
+          "main": "oven"
+        },
+        {
+          "note": "爐台與抽油煙機",
+          "row": "back",
+          "x": [
+            0.2,
+            0.42
+          ],
+          "main": "stove",
+          "wall": [
+            "range-hood"
+          ],
+          "over": true
+        },
+        {
+          "note": "水槽",
+          "row": "back",
+          "x": [
+            0.43,
+            0.6
+          ],
+          "main": "sink"
+        },
+        {
+          "note": "洗碗機",
+          "row": "back",
+          "x": [
+            0.61,
+            0.77
+          ],
+          "main": "dishwasher"
+        },
+        {
+          "note": "掛圍裙",
+          "row": "back",
+          "x": [
+            0.79,
+            0.98
+          ],
+          "wall": [
+            "apron"
+          ]
+        },
+        {
+          "note": "備料台",
+          "row": "mid",
+          "x": [
+            0.04,
+            0.47
+          ],
+          "fixture": "counter",
+          "on": [
+            "cutting-board",
+            "onion",
+            "rolling-pin",
+            "whisk",
+            "colander"
+          ]
+        },
+        {
+          "note": "出餐台",
+          "row": "mid",
+          "x": [
+            0.53,
+            0.96
+          ],
+          "fixture": "counter",
+          "on": [
+            "blender",
+            "toaster",
+            "frying-pan",
+            "spatula",
+            "ladle",
+            "tongs"
+          ]
+        }
+      ]
+    },
+    "dessert-stand": {
+      "sets": [
+        {
+          "note": "花台",
+          "row": "back",
+          "x": [
+            0.06,
+            0.4
+          ],
+          "fixture": "planter"
+        },
+        {
+          "note": "花台",
+          "row": "back",
+          "x": [
+            0.6,
+            0.94
+          ],
+          "fixture": "planter"
+        },
+        {
+          "note": "糕點陳列台",
+          "row": "mid",
+          "x": [
+            0.04,
+            0.47
+          ],
+          "fixture": "stand",
+          "on": [
+            "donut",
+            "muffin",
+            "pie",
+            "tart",
+            "pudding",
+            "parfait",
+            "macaron",
+            "waffle"
+          ]
+        },
+        {
+          "note": "冷藏甜點櫃",
+          "row": "mid",
+          "x": [
+            0.53,
+            0.96
+          ],
+          "fixture": "display",
+          "on": [
+            "pancake",
+            "churro",
+            "croissant",
+            "cream-puff",
+            "brownie",
+            "scone",
+            "meringue",
+            "cupcake",
+            "popsicle"
+          ]
+        }
+      ]
+    }
+  },
+  "scale": {
+    "stove": 0.65
+  }
+}

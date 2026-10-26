@@ -134,11 +134,8 @@ function OutdoorAmbient({ z }: { z: TerrainZone }) {
 }
 
 export function GeneratedDistrict({ terrain }: { terrain: DistrictTerrain }) {
-  const { x0, y0, x1, y1 } = terrain;
   return (
     <g>
-      {/* 街區外圍的人行道，和相鄰街區、河岸步道接在一起 */}
-      <rect x={x0} y={y0} width={x1 - x0} height={y1 - y0} fill="#d7ccc8" />
       {terrain.zones.map((z) => (
         <g key={z.id}>
           <Floor z={z} />

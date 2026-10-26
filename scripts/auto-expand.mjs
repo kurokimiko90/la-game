@@ -15,13 +15,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { nextSlot, worldSize } from './lib/district-kit.mjs';
+import { placeDistrict, townOccupancy, worldFor } from './lib/town-plan.mjs';
 import { upsertScene } from './lib/config-writer.mjs';
 import { codexText, ensureGenerator, jobProgress, registerJob, requeueFailed } from './lib/miko.mjs';
 import {
   buildOutlinePrompt, buildZonePrompt, extractJson, parseOutline, planToManifest, planToSceneConfig, splitCount, validateElements, wordKey,
   zoneShortfall,
 } from './lib/scene-plan.mjs';
+import { buildStagePrompt, parseStage } from './lib/stage-plan.mjs';
 
 const SELF = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(SELF), '..');
@@ -34,6 +35,7 @@ const P = {
   config: path.join(ROOT, 'content', 'scene-config.json'),
   manifests: path.join(ROOT, 'content', 'svg-manifests'),
   plans: path.join(ROOT, 'content', 'plans'),
+  stages: path.join(ROOT, 'content', 'stages'),
   svg: path.join(ROOT, 'public', 'svg'),
   log: path.join(ROOT, 'docs', 'expansion.md'),
 };
@@ -94,9 +96,23 @@ function pickTheme(settings, config) {
   return settings.themes.find((t) => !taken.has(t.id)) ?? null;
 }
 
-function usedSlots() {
+function allPlans() {
   if (!fs.existsSync(P.plans)) return [];
-  return fs.readdirSync(P.plans).map((f) => readJson(path.join(P.plans, f)).slot);
+  return fs.readdirSync(P.plans).map((f) => readJson(path.join(P.plans, f)));
+}
+
+/**
+ * 地圖上已經有的區域：scene-config 的所有場景 + 已規劃、還沒整合的街區（plans 的 rects）。
+ * 戶外 / 室內：生成街區看地形或規劃，手畫的看場景的 indoor。
+ */
+function townScenes() {
+  const config = readJson(P.config);
+  const scenes = config.order.map((id) => {
+    const cfg = config.scenes[id];
+    return { zones: Object.entries(cfg.zones).map(([zid, rect]) => ({ rect, indoor: cfg.terrain?.zones.find((z) => z.id === zid)?.indoor ?? cfg.indoor === true })) };
+  });
+  const pending = allPlans().filter((p) => !config.order.includes(p.id) && p.rects);
+  return [...scenes, ...pending.map((p) => ({ zones: p.zones.map((z, i) => ({ rect: p.rects[i], indoor: z.indoor })) }))];
 }
 
 /** 一個區域問 codex 要 count 個物品（最多 ZONE_TRIES 次），驗證通過的收下。existing：區域裡已經有的物品 */
@@ -123,11 +139,14 @@ async function planZone({ sceneName, zone, count, used, spots, existing = [] }) 
   return { elements, rejected };
 }
 
-async function planScene(theme, slot, colorIndex, settings) {
+async function planScene(theme, colorIndex, settings) {
   const config = readJson(P.config);
-  log(`規劃 ${theme.name}（${theme.id}），位置 ${slot.x},${slot.y}`);
+  log(`規劃 ${theme.name}（${theme.id}）`);
   const outline = parseOutline(await codexText(buildOutlinePrompt({ theme, existingScenes: config.order.map((id) => config.scenes[id].name) })), { theme });
   log(`區域：${outline.zones.map((z) => `${z.name}(${z.indoor ? '室內' : '室外'}/${z.floor}/${z.feature})`).join('、')}`);
+  // 戶外區域拿北邊沿街的空地塊、室內區域合成南邊室內區的一棟建築（town-plan.mjs）
+  const { rects } = placeDistrict(outline.zones, { ...townOccupancy(townScenes()), town: settings.town });
+  log(`位置：${outline.zones.map((z, i) => `${z.name} ${rects[i].slice(0, 2).join(',')}`).join('、')}`);
 
   const used = usedWords();
   const counts = splitCount(settings.itemsPerScene, outline.zones.length);
@@ -140,7 +159,7 @@ async function planScene(theme, slot, colorIndex, settings) {
   }
   if (elements.length < settings.minItems) throw new Error(`規劃只得到 ${elements.length} 個合格物品（至少要 ${settings.minItems}）`);
 
-  const plan = { ...outline, slot, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, createdAt: new Date().toISOString() };
+  const plan = { ...outline, rects, colorIndex, icon: (elements.find((e) => e.size === 'large') ?? elements[0]).id, elements, rejected, createdAt: new Date().toISOString() };
   writeJson(path.join(P.plans, `${plan.id}.json`), plan);
   const manifestFile = path.join(P.manifests, `${plan.id}.json`);
   writeJson(manifestFile, planToManifest(plan));
@@ -210,7 +229,46 @@ function tryVoice(sceneId) {
   }
 }
 
-function integrate(plan, settings) {
+const STAGE_TRIES = 2;
+
+/**
+ * 情境規劃（新街區才做；補元素時保留原本的情境，新物品照舊自動排列）。
+ * 問 codex → 修整 → 驗證，有問題帶著問題重問；還是不行就不用情境。寫到 content/stages/<scene>.json。
+ */
+async function planStage(plan, available, terrain) {
+  let problems = [];
+  for (let i = 0; i < STAGE_TRIES; i++) {
+    try {
+      const raw = await codexText(buildStagePrompt({ plan, available, problems }));
+      const r = parseStage(raw, { plan, available, terrain });
+      problems = r.problems;
+      if (!problems.length) {
+        writeJson(path.join(P.stages, `${plan.id}.json`), r.stage);
+        log(`情境規劃完成${r.dropped.length ? `，${r.dropped.length} 個物品沒安排到（照舊自動排列）：${r.dropped.join('、')}` : ''}`);
+        return true;
+      }
+    } catch (e) {
+      problems = [e.message.split('\n')[0]];
+    }
+  }
+  log(`情境規劃沒做成，照舊自動排列：${problems.slice(0, 3).join('；')}`);
+  return false;
+}
+
+// 擺放：有情境時先試情境，排不下（被擋太多）就刪掉情境檔、照舊自動排列，不讓自動擴展卡住
+function layoutWithFallback(sceneId, args) {
+  try {
+    run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
+  } catch (e) {
+    const file = path.join(P.stages, `${sceneId}.json`);
+    if (!fs.existsSync(file)) throw e;
+    log(`情境擺放排不下，改用自動排列：${e.message.split('\n')[0]}`);
+    fs.rmSync(file);
+    run('layout', process.execPath, ['scripts/build-layout.mjs', sceneId, ...args]);
+  }
+}
+
+async function integrate(plan, settings, { topUp = false } = {}) {
   run('sync-svg', process.execPath, ['scripts/sync-svg.mjs']);
   const available = availableSvgs(plan.id);
   if (available.length < settings.minItems) throw new Error(`${plan.id} 只有 ${available.length} 個 SVG（至少要 ${settings.minItems}）`);
@@ -218,11 +276,12 @@ function integrate(plan, settings) {
   const text = fs.readFileSync(P.config, 'utf8');
   const config = JSON.parse(text);
   const order = config.order.includes(plan.id) ? config.order : [...config.order, plan.id];
-  const world = worldSize(settings.core, usedSlots());
+  const world = worldFor(townScenes().flatMap((s) => s.zones.map((z) => z.rect)), settings.town);
   fs.writeFileSync(P.config, upsertScene(text, plan.id, planToSceneConfig(plan, available), { world, order }));
   log(`scene-config：${plan.id}，${available.length} 個物件，地圖 ${world.width}×${world.height}`);
 
-  run('layout', process.execPath, ['scripts/build-layout.mjs', plan.id]);
+  const staged = !topUp && !fs.existsSync(path.join(P.stages, `${plan.id}.json`)) && await planStage(plan, available, readJson(P.config).scenes[plan.id].terrain);
+  layoutWithFallback(plan.id, staged ? ['--reset'] : []);
   run('build-scenes', process.execPath, ['scripts/build-scenes.mjs']);
   run('audio', process.execPath, ['scripts/build-audio.mjs']);
   tryVoice(plan.id);
@@ -278,10 +337,9 @@ async function tick({ afterGenerator = false } = {}) {
     const config = readJson(P.config);
     if (state.history.length >= settings.maxScenes) return log(`已完成 ${state.history.length} 個場景，達到上限 ${settings.maxScenes}`);
     const theme = state.current?.theme ?? pickTheme(settings, config);
-    const slot = state.current?.slot ?? nextSlot(settings.slots, usedSlots());
-    if (!theme || !slot) return log(theme ? '沒有空的 slot 了（content/expansion.json 加 slots）' : '主題用完了（content/expansion.json 加 themes）');
-    saveState({ ...state, phase: 'planning', current: { theme, slot } });
-    const plan = await planScene(theme, slot, usedSlots().length, settings);
+    if (!theme) return log('主題用完了（content/expansion.json 加 themes）');
+    saveState({ ...state, phase: 'planning', current: { theme } });
+    const plan = await planScene(theme, allPlans().length, settings);
     saveState({ ...state, phase: 'generating', current: { id: plan.id, slug: `la-${plan.id}`, rounds: 0, startedAt: new Date().toISOString() } });
     return true;
   }
@@ -314,7 +372,7 @@ async function tick({ afterGenerator = false } = {}) {
     const plan = readJson(path.join(P.plans, `${cur.id}.json`));
     const layoutFile = path.join(ROOT, 'content', 'layouts', `${plan.id}.json`);
     const before = cur.topUp && fs.existsSync(layoutFile) ? Object.keys(readJson(layoutFile)).length : 0;
-    const count = integrate(plan, settings);
+    const count = await integrate(plan, settings, { topUp: Boolean(cur.topUp) });
     if (cur.topUp) {
       appendLog(plan, count, cur.rounds, `補元素 +${count - before}`);
       commit(`feat: add ${count - before} items to ${plan.name} district (${count} total)`, settings);
