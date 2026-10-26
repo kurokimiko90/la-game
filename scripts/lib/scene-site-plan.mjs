@@ -15,6 +15,16 @@ const queueZones = new Set(['ticket-hall', 'gates', 'check-in-hall', 'security-c
 const seatingZones = new Set(['dining-hall', 'waiting-area', 'reading-room', 'seating-area', 'departure-gate', 'reading-corner', 'screening-room', 'poolside']);
 const gardenZones = new Set(['front-garden', 'sculpture-garden', 'boardwalk', 'training-yard', 'front-yard', 'front-plaza']);
 
+const LANE_GAP = 15;
+
+/** 地面結構不能壓到車道 / 鐵軌：底部超過時整塊往上移到它們上方 */
+function clearOfLane(zone, f) {
+  const lane = zone.road ?? zone.track;
+  if (!lane || f.y1 <= lane.y0 - LANE_GAP) return f;
+  const y1 = lane.y0 - LANE_GAP;
+  return { ...f, y0: f.y0 - (f.y1 - y1), y1 };
+}
+
 function detailsFor(zone) {
   const features = [];
   // 戶外入口採用步道；室內的通行空白由分組與地板保留，避免每間房都長得一樣。
@@ -30,7 +40,7 @@ function detailsFor(zone) {
   if (zone.id === 'tide-pool' && !zone.pool) features.push(rect(zone, 'observation-pool', 'pond', .50, .22, .91, .70));
   if (zone.id === 'training-yard') features.push(rect(zone, 'training-court', 'court', .33, .24, .63, .68));
   if (zone.id === 'platform') features.push(rect(zone, 'platform-walk', 'walkway', .05, .70, .95, .80));
-  return features;
+  return features.map((f) => clearOfLane(zone, f));
 }
 
 /** 將共通的動線加在尚未有手寫細節的自動街區。手寫場景永遠優先。 */

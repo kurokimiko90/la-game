@@ -1,9 +1,10 @@
 // 小鎮裡的一個街區：物件 + 提示區域 + 記憶挑戰的暗幕 + 未解鎖的霧（背景由 WorldBackground 統一畫）。
 // memo：平移時只有 idle 會變，其他街區不必重畫；idle（在畫面外）時暫停動畫。
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 import { Lock } from 'lucide-react';
 import { SceneItemNode } from './SceneItemNode';
 import { districtBounds, drawList, rectCenter, zoneKey, type District } from '@/lib/town';
+import { restingOnOthers } from '@/lib/shadows';
 
 interface DistrictLayerProps {
   district: District;
@@ -22,6 +23,9 @@ function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfo
   const { scene } = district;
   const hintZone = scene.zones.find((z) => zoneKey(scene.id, z.id) === hintZoneKey);
   const center = rectCenter(districtBounds(district));
+  const entries = useMemo(() => drawList(scene), [scene]);
+  // 掛在牆上、在空中、疊在別的物件上的東西不畫接地影（影子會飄在半空）
+  const stacked = useMemo(() => restingOnOthers(entries.map(({ item, copy }) => ({ ...(copy ?? item), key: copy?.id ?? item.id }))), [entries]);
   return (
     <g className={idle ? 'district district--idle' : 'district'} data-scene-id={scene.id}>
       {hideUnfound && scene.zones.map((z) => (
@@ -31,12 +35,13 @@ function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfo
         <rect x={hintZone.x0} y={hintZone.y0} width={hintZone.x1 - hintZone.x0} height={hintZone.y1 - hintZone.y0} fill="#ffb300" className="zone-hint" pointerEvents="none" />
       )}
       <g pointerEvents={locked ? 'none' : undefined}>
-        {drawList(scene).map(({ item, copy }) => {
+        {entries.map(({ item, copy }) => {
           // 複本和原物件同一個狀態（找到、隱形、閃爍）
           const isFound = found.has(item.id);
-          const cls = ['scene-item', isFound && 'scene-item--found', hideUnfound && !isFound && 'scene-item--hidden', flashId === item.id && 'scene-item--flash']
+          const hidden = hideUnfound && !isFound;
+          const cls = ['scene-item', isFound && 'scene-item--found', hidden && 'scene-item--hidden', flashId === item.id && 'scene-item--flash']
             .filter(Boolean).join(' ');
-          return <SceneItemNode key={copy?.id ?? item.id} item={item} copy={copy} className={cls} />;
+          return <SceneItemNode key={copy?.id ?? item.id} item={item} copy={copy} className={cls} shadow={!hidden && !item.mount && !stacked.has(copy?.id ?? item.id)} />;
         })}
       </g>
       {locked && (

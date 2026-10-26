@@ -13,6 +13,7 @@ import { checkLayout, depthOf } from './lib/layout.mjs';
 import { checkMotionBudget, motionParams } from './lib/motion.mjs';
 import { layoutFile, loadSceneConfig, loadSceneSource, loadStage, lockedCopies, lockedPlacements, surfacesOf } from './lib/scene-source.mjs';
 import { checkSitePlan } from './lib/site-plan.mjs';
+import { mountOf } from './lib/mount.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'scenes');
@@ -86,10 +87,12 @@ function buildScene(world, source, placements, obstacles, copies) {
     surfaces: surfacesOf(sceneConfig.bands, zones, stage),
     items: ordered.map(({ id, x, y, w, h, rotate = 0, flip = false, float = 0 }) => {
       const it = byId.get(id);
+      const mount = mountOf(sceneConfig.place?.[id]);
       return {
         id, zone: it.zone, category: it.category, words: it.words, viewBox: it.viewBox, body: it.body,
         x, y, w, h, rotate, flip,
         ...(float ? { float } : {}),
+        ...(mount ? { mount } : {}),
         ...(motion[id] ? { motion: motionParams(sceneId, id, motion[id]) } : {}),
       };
     }),

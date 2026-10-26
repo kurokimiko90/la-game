@@ -4,6 +4,7 @@
 import type { ReactNode } from 'react';
 import type { Surface } from '@/lib/types';
 import { FIXTURE_LOOKS } from './Fixtures';
+import { SlabShading } from './SlabShading';
 
 const DEPTH = 55; // 檯面頂的深度
 const PAD = 24; // 檯面比物件可放範圍左右多出的寬度
@@ -16,15 +17,17 @@ interface BoxProps {
   top: string;
   front: string;
   stroke: string;
+  castShadow?: boolean;
   children?: ReactNode;
 }
 
-function Box({ x0, x1, level, base, top, front, stroke, children }: BoxProps) {
+function Box({ x0, x1, level, base, top, front, stroke, castShadow, children }: BoxProps) {
   return (
     <g>
       <rect x={x0} y={level} width={x1 - x0} height={base - level} fill={front} stroke={stroke} strokeWidth={3} />
       <rect x={x0} y={level - DEPTH} width={x1 - x0} height={DEPTH} fill={top} stroke={stroke} strokeWidth={3} />
       {children}
+      <SlabShading x0={x0} x1={x1} top={level - DEPTH} level={level} bottom={base} castShadow={castShadow} />
     </g>
   );
 }
@@ -35,8 +38,8 @@ function Stand({ s }: { s: Surface }) {
   const [x0, x1] = [s.x0 - PAD, s.x1 + PAD];
   return (
     <g>
-      {levels.map((y) => (
-        <Box key={y} x0={x0} x1={x1} level={y} base={s.base} top="#c8a27a" front="#d7b48a" stroke="#6d4c41">
+      {levels.map((y, i) => (
+        <Box key={y} x0={x0} x1={x1} level={y} base={s.base} castShadow={i === levels.length - 1} top="#c8a27a" front="#d7b48a" stroke="#6d4c41">
           {Array.from({ length: Math.floor((x1 - x0) / 110) }, (_, k) => (
             <line key={k} x1={x0 + (k + 1) * 110} y1={y} x2={x0 + (k + 1) * 110} y2={s.base} stroke="#8d6e63" strokeWidth={2} opacity={0.5} />
           ))}

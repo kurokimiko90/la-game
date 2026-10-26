@@ -179,3 +179,16 @@ ruby rt {
 @media (prefers-reduced-motion: reduce) {
   .amb-drive { display: none; }
 }
+
+/* 點擊 Q 彈的那一層（src/components/scene/itemPop.ts）：以物件底部為支點縮放 */
+.item-pop {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+/* 小鎮的光線：左上方暖光、四周微暗（像在看一個小小的立體模型） */
+.town-light {
+  background:
+    radial-gradient(ellipse 70% 60% at 18% 0%, rgba(255, 241, 204, 0.32), rgba(255, 241, 204, 0) 70%),
+    radial-gradient(ellipse 85% 80% at 50% 50%, rgba(62, 39, 35, 0) 60%, rgba(62, 39, 35, 0.24) 100%);
+}

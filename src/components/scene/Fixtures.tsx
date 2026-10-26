@@ -4,6 +4,7 @@
 import type { ReactNode } from 'react';
 import type { Surface } from '@/lib/types';
 import { Glow, SwayTufts } from './Ambient';
+import { SlabShading } from './SlabShading';
 
 const range = (n: number) => Array.from({ length: Math.max(0, n) }, (_, i) => i);
 
@@ -16,14 +17,17 @@ interface TopProps {
   top: string;
   face: string;
   stroke: string;
+  /** 落地的 y（有腳的桌子比正面下緣低） */
+  ground?: number;
 }
 
 /** 檯面頂（深度 depth）+ 正面（從 level 往下 front 高） */
-function Slab({ x0, x1, level, depth, front, top, face, stroke }: TopProps) {
+function Slab({ x0, x1, level, depth, front, top, face, stroke, ground }: TopProps) {
   return (
     <g>
       <rect x={x0} y={level - depth} width={x1 - x0} height={depth} fill={top} stroke={stroke} strokeWidth={3} />
       <rect x={x0} y={level} width={x1 - x0} height={front} fill={face} stroke={stroke} strokeWidth={3} />
+      <SlabShading x0={x0} x1={x1} top={level - depth} level={level} bottom={level + front} ground={ground} />
     </g>
   );
 }
@@ -36,7 +40,7 @@ function Desk({ s }: { s: Surface }) {
   return (
     <g>
       {[s.x0 + 8, s.x1 - 20].map((x) => <rect key={x} x={x} y={level + apron} width={12} height={s.base - level - apron} fill={WOOD.stroke} />)}
-      <Slab x0={s.x0} x1={s.x1} level={level} depth={50} front={apron} {...WOOD} />
+      <Slab x0={s.x0} x1={s.x1} level={level} depth={50} front={apron} ground={s.base} {...WOOD} />
     </g>
   );
 }

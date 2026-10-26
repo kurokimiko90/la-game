@@ -71,7 +71,9 @@ function VenueWall({ zone, style }: { zone: TerrainZone; style: WallStyle }) {
 
 function ZoneStructure({ zone, motifs, accent }: { zone: TerrainZone; motifs: readonly Motif[]; accent: string }) {
   const x = zone.x0; const y = zone.y0;
-  const w = zone.x1 - x; const h = zone.y1 - y;
+  // 有車道 / 鐵軌的區域：標示只畫在它們上方的地面，不蓋到路面
+  const bottom = zone.road?.y0 ?? zone.track?.y0 ?? zone.y1;
+  const w = zone.x1 - x; const h = bottom - y;
   const X = (n: number) => x + w * n;
   const Y = (n: number) => y + h * n;
   const rect = (key: string, a: number, b: number, c: number, d: number, fill = accent, opacity = .18, radius = 12) =>
@@ -79,7 +81,8 @@ function ZoneStructure({ zone, motifs, accent }: { zone: TerrainZone; motifs: re
   const line = (key: string, a: number, b: number, c: number, d: number, width = 8, dash?: string) =>
     <path key={key} d={`M${X(a)} ${Y(b)}L${X(c)} ${Y(d)}`} stroke={accent} strokeWidth={width} strokeDasharray={dash} opacity={.48} fill="none" />;
   const repeat = (n: number, draw: (i: number) => React.ReactNode) => Array.from({ length: n }, (_, i) => draw(i));
-  return <g data-venue-zone={zone.id} pointerEvents="none">{motifs.map((motif, index) => {
+  // 地面標示壓淡：讀得出功能分區就好，太實會像沒做完的 UI 方塊
+  return <g data-venue-zone={zone.id} pointerEvents="none" opacity={0.6}>{motifs.map((motif, index) => {
     const key = `${zone.id}-${motif}-${index}`;
     switch (motif) {
       case 'arrival': return <g key={key}>

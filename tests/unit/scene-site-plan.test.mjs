@@ -25,4 +25,16 @@ describe('automatic district site plans', () => {
     expect(planned.scenes.zoo.terrain.sharedShell).toBeUndefined();
     expect(planned.scenes.home.terrain.zones[0].details).toBe(custom);
   });
+  test('keeps walkways above the road and the track', () => {
+    const config = { scenes: {
+      hospital: { terrain: { zones: [{ ...zone('entrance'), road: { y0: 420, y1: 570 } }] } },
+      station: { terrain: { zones: [{ ...zone('platform'), track: { y0: 440, y1: 600 } }] } },
+    } };
+    const planned = applySceneSitePlan(config);
+    const [walk] = planned.scenes.hospital.terrain.zones[0].details;
+    expect(walk.y1).toBeLessThanOrEqual(420 - 15);
+    expect(walk.y1 - walk.y0).toBe(Math.round(600 * .86) - Math.round(600 * .72));
+    const platformWalk = planned.scenes.station.terrain.zones[0].details.find((f) => f.kind === 'walkway');
+    expect(platformWalk.y1).toBeLessThanOrEqual(440 - 15);
+  });
 });

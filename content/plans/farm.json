@@ -6,7 +6,7 @@
       "id": "farmyard",
       "name": "農場入口",
       "indoor": false,
-      "floor": "paving",
+      "floor": "sand",
       "feature": "road"
     },
     {

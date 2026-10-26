@@ -25,6 +25,8 @@ export interface SceneItem {
   flip: boolean;
   /** 飄在空中的高度（風箏、氣球）：地上畫影子 */
   float?: number;
+  /** 掛在牆上 / 在空中（scripts/lib/mount.mjs）：不畫接地影 */
+  mount?: 'wall' | 'air';
   motion?: ItemMotion;
 }
 

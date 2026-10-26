@@ -70,7 +70,7 @@ export function buildOutlinePrompt({ theme, existingScenes }) {
     '- id：英文小寫 kebab-case',
     '- name：繁體中文 2–5 個字',
     '- indoor：true 或 false',
-    '- floor：室內只能是 tile | wood | carpet；室外只能是 grass | paving | sand | concrete',
+    '- floor：室內只能是 tile | wood | carpet；室外只能是 grass | paving | sand | concrete | wood（木棧道、露台）',
     '- feature：none | road（車道）| track（鐵軌）| water（水池）| counter（吧台）| table（長桌）| stand（階梯陳列台）| chiller（冷藏櫃）| checkout（收銀台）。road / track / water 只能在室外；4 個區域的 feature 盡量不同，至少 2 個不是 none。',
     '只回傳 JSON，不要其他文字：',
     `{"id":"${theme.id}","name":"${theme.name}","zones":[{"id":"entrance","name":"入口","indoor":false,"floor":"paving","feature":"none"}]}`,

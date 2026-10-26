@@ -4,6 +4,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Minus, Plus, Maximize } from 'lucide-react';
 import { DistrictLayer } from './DistrictLayer';
+import { itemShadowDefs } from './SceneItemNode';
+import { popItem } from './itemPop';
 import { TownStrip } from './TownStrip';
 import { TownMinimap } from './TownMinimap';
 import { WorldBackground, worldSections } from './WorldBackground';
@@ -257,6 +259,7 @@ export function TownCanvas({
     // 點到複本（data-copy-of）= 點到原物件
     const target = !locked && g.target instanceof Element ? g.target.closest('[data-item-id],[data-copy-of]') : null;
     const itemId = target?.getAttribute('data-item-id') ?? target?.getAttribute('data-copy-of') ?? (locked || !sceneId ? null : nearbyItemId(sceneId, sp));
+    if (itemId) popItem(target ?? containerRef.current?.querySelector(`[data-item-id="${CSS.escape(itemId)}"]`) ?? null);
     const id = Date.now();
     setRipples((r) => [...r, { ...sp, id }]);
     window.setTimeout(() => setRipples((r) => r.filter((x) => x.id !== id)), 600);
@@ -288,6 +291,7 @@ export function TownCanvas({
     >
       {size && (
         <svg width={size.width} height={size.height} className="block">
+          {itemShadowDefs}
           <g
             style={{
               transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.scale})`,
@@ -319,6 +323,9 @@ export function TownCanvas({
           </g>
         </svg>
       )}
+
+      {/* 光線：左上方的暖光 + 四周微暗，讓整個小鎮像在一個小盒子裡（純疊色，不擋點擊） */}
+      <div aria-hidden className="town-light pointer-events-none absolute inset-0" />
 
       <div data-ui="overlay" className="absolute right-3 top-1/2 flex -translate-y-1/2 flex-col gap-2" onPointerDown={(e) => e.stopPropagation()}>
         <ZoomButton label="放大" shortcut="滾輪上 / +" onClick={() => zoomBy(1.3)}><Plus size={18} /></ZoomButton>
