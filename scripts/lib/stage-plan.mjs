@@ -9,7 +9,7 @@ import { zoneRects } from './district-kit.mjs';
 export const SLOT_CAP = { on: 4, wall: 3, beside: 2, front: 3 };
 
 const FIXTURE_TEXT = {
-  desk: '書桌 / 工作桌（有桌腳）', counter: '實心長櫃台', cabinet: '矮櫃', display: '玻璃展示櫃', shelf: '靠牆開放層架（兩層，只能 back、室內）',
+  desk: '書桌 / 工作桌（有桌腳）', counter: '實心長櫃台', cabinet: '矮櫃', display: '玻璃展示櫃', shelf: '靠牆開放層架（兩層，只能 back、室內）', cooler: '靠牆玻璃門冷藏櫃（兩層，只能 back、室內；飲料、乳品、冷藏鮮食）',
   stand: '階梯陳列台（兩層）', 'cloth-table': '鋪桌布的長桌', rug: '地毯（主體物件站在上面）', platform: '木平台', planter: '長條花台（植物放 on）',
   board: '牆上布告板（只能 back、室內，物品放 wall）', facade: '建築門面（只能 back、室外，物品放 wall；加 "door": true 畫出入口）',
 };
@@ -61,7 +61,8 @@ export function buildStagePrompt({ plan, available, problems = [], existing = nu
     '- front：散在這組前面地上的東西（掉在地上的小物）。',
     '- note：這組是什麼（繁體中文，例如「掛號櫃台」）。',
     `數量上限：每組 on 最多 ${SLOT_CAP.on} 個、wall 最多 ${SLOT_CAP.wall} 個、beside 最多 ${SLOT_CAP.beside} 個、front 最多 ${SLOT_CAP.front} 個；東西多就多開幾組，不要全堆在同一張桌上。`,
-    '規則：每個列出的物品剛好出現一次；小東西不要單獨放在地上，要放在合理的家具上；大設備靠牆；同類的東西放一起（例如文具都在同一張桌上）。',
+    '規則：每個物品最多出現一次；小東西不要單獨放在地上，要放在合理的家具上；大設備靠牆；同類的東西放一起（例如文具都在同一張桌上）。',
+    '在真實的這種場所裡找不到合理位置的物品（建築零件、碎屑、不屬於這種場所的東西）就不要安排：沒安排的物品會從場景移除，不要為了全部用上而硬塞。',
     '空間要能實際使用：入口接通走道、走道連到功能區；書桌朝教學面，器材在球場邊，植物按水分和光照環境分區。保留家具間距，不要為了填滿空白把元素平均撒開；大型設備和手持小物應有明顯尺寸差。',
     '',
     ...(existing ? ['這個街區已經擺好了，只安排下面列出的新物品：開新的組放在各排空著的範圍，只回傳新的組。', ''] : []),

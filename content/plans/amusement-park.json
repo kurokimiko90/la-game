@@ -18,7 +18,7 @@
     },
     {
       "id": "carousel-hall",
-      "name": "旋轉木馬",
+      "name": "室內遊樂館",
       "indoor": true,
       "floor": "wood",
       "feature": "none"
@@ -54,66 +54,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "entry-gate",
-      "zh": "入口柵門",
-      "en": "entry gate",
-      "ja": "入口ゲート",
-      "reading": "いりぐちゲート",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "兩扇深藍色金屬柵門向外打開，門片由直條和粗框組成，底部有輪子。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "sandwich-board-amusement-park",
-      "zh": "立式展示架",
-      "en": "sandwich board",
-      "ja": "スタンド看板",
-      "reading": "スタンドかんばん",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "兩片木板以頂端鉸鏈相連，張開後呈倒立三角形，板面留白且沒有文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": "map-board"
-    },
-    {
-      "id": "flagpole-base-amusement-park",
-      "zh": "旗桿底座",
-      "en": "flagpole base",
-      "ja": "旗竿の台座",
-      "reading": "はたざおのだいざ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "厚重的黑色圓形底座，中央插著一根細長銀色直桿，底部寬闊穩固。",
-      "loose": false,
-      "motion": null,
-      "cluster": "flag"
-    },
-    {
-      "id": "balloon-weight",
-      "zh": "氣球重錘",
-      "en": "balloon weight",
-      "ja": "風船用おもり",
-      "reading": "ふうせんようおもり",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "金色小圓錐形重錘，頂端繫著一條細白線，底部平坦能穩穩放在地上。",
-      "loose": true,
-      "motion": null,
-      "cluster": "balloon"
     },
     {
       "id": "candy-floss-cart",
@@ -161,21 +101,6 @@
       "cluster": null
     },
     {
-      "id": "ice-cream-scoop",
-      "zh": "冰淇淋勺",
-      "en": "ice cream scoop",
-      "ja": "アイスクリームディッシャー",
-      "reading": "アイスクリームディッシャー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "銀色圓勺連著短柄，勺內裝著一球粉紅色冰淇淋，柄尾有小扳片。",
-      "loose": true,
-      "motion": null,
-      "cluster": "ice-cream-cart"
-    },
-    {
       "id": "candy-apple",
       "zh": "糖蘋果",
       "en": "candy apple",
@@ -198,86 +123,11 @@
       "reading": "メリーゴーラウンドのうま",
       "category": "道具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "carousel-hall",
       "spot": "ground",
       "desc": "白色馬形木雕立在金色直桿旁，鬃毛和尾巴以藍色弧線雕出，底座圓滑。",
       "loose": false,
       "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-canopy",
-      "zh": "旋轉木馬頂篷",
-      "en": "carousel canopy",
-      "ja": "メリーゴーラウンドの屋根",
-      "reading": "メリーゴーラウンドのやね",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "大型圓形頂篷呈放射狀分成紅、黃、藍色扇形，外沿垂著短短的金色流蘇。",
-      "loose": false,
-      "motion": null,
-      "cluster": "carousel-horse"
-    },
-    {
-      "id": "carousel-pole",
-      "zh": "旋轉木馬立柱",
-      "en": "carousel pole",
-      "ja": "メリーゴーラウンドの柱",
-      "reading": "メリーゴーラウンドのはしら",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "粗大的金色圓柱從地面直立伸向頂篷，表面有簡單的紅藍色環形裝飾。",
-      "loose": false,
-      "motion": null,
-      "cluster": "carousel-canopy"
-    },
-    {
-      "id": "carousel-platform",
-      "zh": "旋轉木馬平台",
-      "en": "carousel platform",
-      "ja": "メリーゴーラウンドの床",
-      "reading": "メリーゴーラウンドのゆか",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "寬大的圓形平台邊緣有金色包邊，地板以深藍和奶油白色塊交替排列。",
-      "loose": false,
-      "motion": null,
-      "cluster": "carousel-pole"
-    },
-    {
-      "id": "ferris-wheel-gondola",
-      "zh": "摩天輪車廂",
-      "en": "ferris wheel gondola",
-      "ja": "観覧車のゴンドラ",
-      "reading": "かんらんしゃのゴンドラ",
-      "category": "交通工具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一個紅色小吊艙停在地面，頂部以短金屬臂連接圓環，兩側各有方形窗戶。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ride-car",
-      "zh": "遊樂設施車廂",
-      "en": "ride car",
-      "ja": "アトラクションの乗り物",
-      "reading": "アトラクションののりもの",
-      "category": "交通工具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一台黃色單人遊樂車停在地面，車身圓潤低矮，前端有黑色保險桿和兩個小輪。",
-      "loose": false,
-      "motion": "wobble",
       "cluster": null
     },
     {
@@ -288,42 +138,12 @@
       "reading": "バンパーカー",
       "category": "交通工具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "midway",
       "spot": "ground",
       "desc": "亮綠色低矮小車有圓形車身、黑色軟質保險圈、短方向盤和四個小輪子。",
       "loose": false,
       "motion": "wobble",
       "cluster": "ride-car"
-    },
-    {
-      "id": "ride-rail",
-      "zh": "遊樂設施軌道",
-      "en": "ride rail",
-      "ja": "レール",
-      "reading": "レール",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "兩條粗厚的銀色金屬軌道並排彎曲，固定在短短的深色支架上，延伸向一側。",
-      "loose": false,
-      "motion": null,
-      "cluster": "ride-car"
-    },
-    {
-      "id": "ride-control-box",
-      "zh": "遊樂設施控制箱",
-      "en": "ride control box",
-      "ja": "アトラクションの操作盤",
-      "reading": "アトラクションのそうさばん",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "矮矮的黃色金屬箱立在粗柱上，頂面有紅色圓鈕和黑色搖桿，側面有通風孔。",
-      "loose": false,
-      "motion": "wobble",
-      "cluster": "ride-rail"
     },
     {
       "id": "prize-wheel",
@@ -333,7 +153,7 @@
       "reading": "ルーレットばん",
       "category": "道具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "midway",
       "spot": "ground",
       "desc": "直立的圓形彩色轉盤分成多塊鮮豔色面，中心有圓鈕，頂端固定小指針。",
       "loose": false,
@@ -348,7 +168,7 @@
       "reading": "あひるのおもちゃ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "midway",
       "spot": "ground",
       "desc": "黃色橡膠小鴨有圓圓身體、扁平橘色嘴和兩顆黑眼睛，底部平穩。",
       "loose": true,
@@ -363,27 +183,12 @@
       "reading": "ぬいぐるみ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "midway",
       "spot": "ground",
       "desc": "一團紫色柔軟毛絨獎品，外形是圓球配兩隻短耳朵和四個小爪，沒有臉部細節。",
       "loose": true,
       "motion": null,
       "cluster": "prize-wheel"
-    },
-    {
-      "id": "confetti",
-      "zh": "彩紙",
-      "en": "confetti",
-      "ja": "紙吹雪",
-      "reading": "かみふぶき",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "幾片綠、紅、黃的小紙片散落成一小堆，每片都是簡單的圓形或方形。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "ticket-booth-amusement-park",
@@ -408,7 +213,7 @@
       "reading": "アーケードゲームき",
       "category": "設施",
       "size": "medium",
-      "zone": "midway",
+      "zone": "carousel-hall",
       "spot": "ground",
       "desc": "直立的彩色機箱配凸出的操作台，正面有彩色圖案和圓形按鈕。",
       "loose": false,
@@ -423,7 +228,7 @@
       "reading": "クレーンゲームき",
       "category": "設施",
       "size": "medium",
-      "zone": "midway",
+      "zone": "carousel-hall",
       "spot": "ground",
       "desc": "方形透明櫃體下接彩色底座，裡面散放著幾個鮮豔的小球。",
       "loose": false,
@@ -438,7 +243,7 @@
       "reading": "じどうはんばいき",
       "category": "設施",
       "size": "medium",
-      "zone": "midway",
+      "zone": "carousel-hall",
       "spot": "ground",
       "desc": "高而窄的彩色機身正面有一排圓形按鈕，下方留有取物口。",
       "loose": false,
@@ -461,21 +266,6 @@
       "cluster": null
     },
     {
-      "id": "fortune-teller-machine",
-      "zh": "占卜機",
-      "en": "fortune-teller-machine",
-      "ja": "占い機",
-      "reading": "うらないき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "圓頂小機器立在厚底座上，前面有透明圓窗和突出的取物槽。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "photo-booth",
       "zh": "大頭貼機",
       "en": "photo-booth",
@@ -483,7 +273,7 @@
       "reading": "プリントシールき",
       "category": "設施",
       "size": "large",
-      "zone": "midway",
+      "zone": "carousel-hall",
       "spot": "ground",
       "desc": "高大的彩色封閉機台，正面有寬大的開口、座椅和側邊小螢幕。",
       "loose": false,
@@ -513,7 +303,7 @@
       "reading": "あしこぎボート",
       "category": "交通工具",
       "size": "medium",
-      "zone": "midway",
+      "zone": "water-ride",
       "spot": "ground",
       "desc": "扁平小船有兩個圓形踏板和高起的船頭，船身塗成亮色。",
       "loose": false,
@@ -543,69 +333,9 @@
       "reading": "コインしきロッキングホース",
       "category": "設施",
       "size": "medium",
-      "zone": "midway",
+      "zone": "carousel-hall",
       "spot": "ground",
       "desc": "彩色馬形座椅固定在寬底座上，底部有一對弧形搖桿。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "miniature-golf-hole",
-      "zh": "迷你高爾夫球洞",
-      "en": "miniature-golf-hole",
-      "ja": "ミニゴルフのホール",
-      "reading": "ミニゴルフのホール",
-      "category": "道具",
-      "size": "small",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "一塊綠色小草墊中央開著圓洞，旁邊立著短短的彩色旗。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "miniature-golf-club",
-      "zh": "迷你高爾夫球桿",
-      "en": "miniature-golf-club",
-      "ja": "ミニゴルフクラブ",
-      "reading": "ミニゴルフクラブ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "細長金屬桿下端接著扁平斜角桿頭，握把包著鮮明色帶。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "skateboard-ramp",
-      "zh": "滑板坡道",
-      "en": "skateboard-ramp",
-      "ja": "スケートボードランプ",
-      "reading": "スケートボードランプ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "寬闊木製坡面兩端向上彎起，側面可見厚實的三角支撐。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "trampoline",
-      "zh": "蹦床",
-      "en": "trampoline",
-      "ja": "トランポリン",
-      "reading": "トランポリン",
-      "category": "設施",
-      "size": "medium",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "圓形深色彈跳網繃在金屬圓框上，底下由多根短腳支撐。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -641,21 +371,6 @@
       "cluster": null
     },
     {
-      "id": "bowling-pin",
-      "zh": "保齡球瓶",
-      "en": "bowling-pin",
-      "ja": "ボウリングピン",
-      "reading": "ボウリングピン",
-      "category": "道具",
-      "size": "small",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "白色細長瓶身上端收窄，頸部繞著一圈鮮紅色帶。",
-      "loose": false,
-      "motion": null,
-      "cluster": "skee-ball-lane"
-    },
-    {
       "id": "dartboard",
       "zh": "飛鏢靶",
       "en": "dartboard",
@@ -671,51 +386,6 @@
       "cluster": null
     },
     {
-      "id": "hockey-stick",
-      "zh": "曲棍球桿",
-      "en": "hockey-stick",
-      "ja": "ホッケースティック",
-      "reading": "ホッケースティック",
-      "category": "道具",
-      "size": "medium",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "細長直桿底端彎成扁平鉤形，桿身以兩種鮮明顏色分段。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hockey-puck",
-      "zh": "曲棍球冰球",
-      "en": "hockey-puck",
-      "ja": "ホッケーパック",
-      "reading": "ホッケーパック",
-      "category": "道具",
-      "size": "small",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "扁圓黑色橡膠圓盤側面有細密紋路，平放在地面上。",
-      "loose": true,
-      "motion": null,
-      "cluster": "hockey-stick"
-    },
-    {
-      "id": "jumping-rope",
-      "zh": "跳繩",
-      "en": "jumping-rope",
-      "ja": "縄跳び",
-      "reading": "なわとび",
-      "category": "道具",
-      "size": "small",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "兩支短握把連著一條鬆弛彎曲的細繩，繩子攤在地上。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "bubble-wand",
       "zh": "吹泡泡棒",
       "en": "bubble-wand",
@@ -726,21 +396,6 @@
       "zone": "midway",
       "spot": "ground",
       "desc": "細長塑膠棒頂端有圓形吹泡圈，握柄呈亮色，平放在地上。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "paper-airplane",
-      "zh": "紙飛機",
-      "en": "paper-airplane",
-      "ja": "紙飛行機",
-      "reading": "かみひこうき",
-      "category": "道具",
-      "size": "small",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "白色紙張折成尖頭三角機身，兩側對稱機翼平整展開。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -761,21 +416,6 @@
       "cluster": null
     },
     {
-      "id": "carousel-center-pole",
-      "zh": "旋轉木馬中心軸",
-      "en": "center pole",
-      "ja": "中央支柱",
-      "reading": "ちゅうおうしちゅう",
-      "category": "設施",
-      "size": "large",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一根高聳的圓柱立在旋轉木馬中央，表面漆成紅白相間的直條紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "carousel-ride-control",
       "zh": "旋轉木馬控制台",
       "en": "ride control panel",
@@ -791,21 +431,6 @@
       "cluster": null
     },
     {
-      "id": "carousel-entrance-gate",
-      "zh": "旋轉木馬入口閘門",
-      "en": "ride entrance gate",
-      "ja": "乗り場ゲート",
-      "reading": "のりばゲート",
-      "category": "設施",
-      "size": "medium",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一扇腰高的金屬閘門，兩側有直立欄杆，中間以一根橫桿擋住入口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "carousel-queue-post",
       "zh": "旋轉木馬排隊柱",
       "en": "queue post",
@@ -816,21 +441,6 @@
       "zone": "carousel-hall",
       "spot": "ground",
       "desc": "細長的金屬立柱底部帶圓盤，頂端連著一段紅色繩索引導遊客排隊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-operator-stool",
-      "zh": "操作員椅",
-      "en": "operator chair",
-      "ja": "係員用いす",
-      "reading": "かかりいんよういす",
-      "category": "設施",
-      "size": "medium",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一張簡單的木椅，方形椅面配直挺椅背和四支細長椅腳，漆成深藍色。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -866,81 +476,6 @@
       "cluster": null
     },
     {
-      "id": "carousel-double-seat",
-      "zh": "雙人座椅",
-      "en": "double seat",
-      "ja": "二人乗りの座席",
-      "reading": "ふたりのりのざせき",
-      "category": "道具",
-      "size": "medium",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "兩個相連的紅色馬鞍形座位並排固定，前方各有一支短把手供乘客握住。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-safety-bar",
-      "zh": "安全壓桿",
-      "en": "safety bar",
-      "ja": "安全バー",
-      "reading": "あんぜんバー",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一根粗厚的弧形金屬橫桿，兩端帶有固定接頭，表面包覆柔軟的紅色墊層。",
-      "loose": false,
-      "motion": null,
-      "cluster": "carousel-double-seat"
-    },
-    {
-      "id": "carousel-brass-ring",
-      "zh": "黃銅環",
-      "en": "brass ring",
-      "ja": "真ちゅうの輪",
-      "reading": "しんちゅうのわ",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一個圓形黃銅環掛在細桿末端，表面金黃發亮，是旋轉時伸手可取的遊戲道具。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-safety-chain",
-      "zh": "安全鏈條",
-      "en": "safety chain",
-      "ja": "安全チェーン",
-      "reading": "あんぜんチェーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一段粗短的銀色金屬鏈，兩端各有扣環，垂落在登乘台的邊緣。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-step-ladder",
-      "zh": "登乘梯",
-      "en": "boarding ladder",
-      "ja": "乗降用はしご",
-      "reading": "じょうこうようはしご",
-      "category": "道具",
-      "size": "medium",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一座矮小的兩階金屬梯，寬踏板漆成紅色，兩側有穩固的扶手。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "carousel-mirror-ball",
       "zh": "鏡球",
       "en": "mirror ball",
@@ -952,201 +487,6 @@
       "spot": "ground",
       "desc": "一顆銀色球體鑲滿細小方形鏡片，表面閃亮，懸在旋轉木馬上方的短支架間。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-star-lamp",
-      "zh": "星形燈",
-      "en": "star lamp",
-      "ja": "星形ランプ",
-      "reading": "ほしがたランプ",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一盞五角星形的金色燈，乳白色燈罩嵌在中央，固定在旋轉木馬周邊的短柱上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-bell",
-      "zh": "手搖鈴",
-      "en": "hand bell",
-      "ja": "手持ちベル",
-      "reading": "てもちベル",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一只小巧的金色手搖鈴，圓形鈴身接著短柄，柄尾有一顆圓潤的握把。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-wind-up-key",
-      "zh": "發條鑰匙",
-      "en": "wind-up key",
-      "ja": "ぜんまい鍵",
-      "reading": "ぜんまいかぎ",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一支銀色發條鑰匙，短軸頂端連著兩片圓耳狀把手，末端是方形齒輪頭。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-rosette",
-      "zh": "玫瑰花結",
-      "en": "rosette",
-      "ja": "ロゼット",
-      "reading": "ロゼット",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一枚圓形的紅金布質徽章，中央皺摺收成花朵形，底下垂著兩條短緞帶。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-ribbon-bow",
-      "zh": "緞帶蝴蝶結",
-      "en": "ribbon bow",
-      "ja": "リボンの蝶結び",
-      "reading": "リボンのちょうむすび",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一個亮紅色緞帶蝴蝶結，左右兩個圓弧布瓣下方垂著短尾，中央打結厚實。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-feather-plume",
-      "zh": "羽飾",
-      "en": "feather plume",
-      "ja": "羽飾り",
-      "reading": "はねかざり",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "幾根潔白羽毛束成扇形，羽軸細長，末端柔軟蓬鬆，插在小型金色底座上。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-cable-reel",
-      "zh": "電纜捲盤",
-      "en": "cable reel",
-      "ja": "ケーブルリール",
-      "reading": "ケーブルリール",
-      "category": "道具",
-      "size": "medium",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一個黑色圓盤繞著粗電纜，安裝在低矮的金屬架上，側邊露出短短的插頭線。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-grease-gun",
-      "zh": "黃油槍",
-      "en": "grease gun",
-      "ja": "グリースガン",
-      "reading": "グリースガン",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一把短柄金屬注油槍，前端接著細長噴嘴，握把旁有橘色扳機。",
-      "loose": true,
-      "motion": null,
-      "cluster": "carousel-toolbox"
-    },
-    {
-      "id": "carousel-adjustable-wrench",
-      "zh": "活動扳手",
-      "en": "adjustable wrench",
-      "ja": "モンキーレンチ",
-      "reading": "モンキーレンチ",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一把銀色活動扳手，開口鉗頭帶可轉動的調節螺帽，長柄尾端略微收窄。",
-      "loose": true,
-      "motion": null,
-      "cluster": "carousel-toolbox"
-    },
-    {
-      "id": "carousel-cleaning-brush",
-      "zh": "清潔刷",
-      "en": "cleaning brush",
-      "ja": "清掃ブラシ",
-      "reading": "せいそうブラシ",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一把短柄硬毛刷，木色握柄連著一排黑色刷毛，刷頭呈扁平長方形。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-cleaning-bucket",
-      "zh": "清潔桶",
-      "en": "cleaning bucket",
-      "ja": "掃除用バケツ",
-      "reading": "そうじようバケツ",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一只黃色圓桶帶著半圓形提把，桶身上寬下窄，桶口露出深色內壁。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carousel-safety-cone",
-      "zh": "安全錐",
-      "en": "safety cone",
-      "ja": "カラーコーン",
-      "reading": "カラーコーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "一個橘色圓錐形安全錐立在方形黑色底座上，錐尖圓鈍，錐身有一圈白色反光帶。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "swim-earplugs",
-      "zh": "游泳耳塞",
-      "en": "swim earplugs",
-      "ja": "水泳用耳栓",
-      "reading": "すいえいようみみせん",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "一對淡藍色小耳塞，各有圓潤耳塞頭和短短的連接柄。",
-      "loose": true,
       "motion": null,
       "cluster": null
     },
@@ -1166,36 +506,6 @@
       "cluster": null
     },
     {
-      "id": "waterpark-turnstile",
-      "zh": "旋轉閘門",
-      "en": "turnstile",
-      "ja": "回転ゲート",
-      "reading": "かいてんゲート",
-      "category": "設施",
-      "size": "medium",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "腰高的金屬立柱上伸出三根水平橫桿，形成可旋轉的通行閘門。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "poolside-clock-amusement-park",
-      "zh": "泳池時鐘",
-      "en": "clock",
-      "ja": "時計",
-      "reading": "とけい",
-      "category": "設施",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "圓形藍色外框包住白色鐘面，面上只有粗短指針和細刻度。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "pool-lifebuoy",
       "zh": "救生圈",
       "en": "lifebuoy",
@@ -1208,171 +518,6 @@
       "desc": "紅白相間的厚圓環，外側繞著一條細繩，中央留有圓孔。",
       "loose": false,
       "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-rescue-tube",
-      "zh": "救援浮標",
-      "en": "rescue tube",
-      "ja": "レスキューチューブ",
-      "reading": "レスキューチューブ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "細長的橘紅色泡棉浮具，兩端圓鈍，旁邊繫著一條黑色帶子。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-skimmer-net",
-      "zh": "泳池撈網",
-      "en": "pool skimmer",
-      "ja": "プール用ネット",
-      "reading": "プールようネット",
-      "category": "道具",
-      "size": "medium",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "長柄末端裝著扁平的橢圓網框，框上繃著細密的藍色網面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-vacuum-head-amusement-park",
-      "zh": "泳池吸塵頭",
-      "en": "pool vacuum head",
-      "ja": "プール用掃除ヘッド",
-      "reading": "プールようそうじヘッド",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "扁平長方形的藍色刷頭，底面有一排短刷毛，頂部接著圓形接口。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-brush-amusement-park",
-      "zh": "泳池刷",
-      "en": "pool brush",
-      "ja": "プールブラシ",
-      "reading": "プールブラシ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "寬扁的藍色刷頭連著長直柄，刷頭底面排列一排深色硬刷毛。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-thermometer-amusement-park",
-      "zh": "泳池溫度計",
-      "en": "pool thermometer",
-      "ja": "プール用温度計",
-      "reading": "プールようおんどけい",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "細長的白色防水外殼中有紅色液柱，頂端露出一小段掛繩。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-test-kit-amusement-park",
-      "zh": "泳池測試盒",
-      "en": "pool test kit",
-      "ja": "プール水検査キット",
-      "reading": "プールすいけんさキット",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "透明扁盒裡放著幾支細管和一排彩色試紙，盒蓋呈淺藍色。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-cover-reel-amusement-park",
-      "zh": "泳池遮布捲軸",
-      "en": "pool cover reel",
-      "ja": "プールカバー巻き取り器",
-      "reading": "プールカバーまきとりき",
-      "category": "設施",
-      "size": "large",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "兩側金屬支架架著一根粗圓軸，軸上整齊捲著大片藍色防水布。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-overflow-grate-amusement-park",
-      "zh": "泳池溢水格柵",
-      "en": "pool overflow grate",
-      "ja": "プールの排水溝ふた",
-      "reading": "プールのはいすいこうふた",
-      "category": "設施",
-      "size": "medium",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "沿池邊鋪設的窄長白色塑膠格柵，表面有平行排列的細縫。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-drain-cover-amusement-park",
-      "zh": "泳池排水蓋",
-      "en": "pool drain cover",
-      "ja": "プール排水口カバー",
-      "reading": "プールはいすいこうカバー",
-      "category": "設施",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "貼地的圓形金屬蓋，表面均勻分布小孔，外圈略微凸起。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-edge-marker-amusement-park",
-      "zh": "池邊防滑標記",
-      "en": "pool edge marker",
-      "ja": "プール縁の滑り止め",
-      "reading": "プールべりのすべりどめ",
-      "category": "設施",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "貼在池邊地面的黃色短條，表面有凸起的平行防滑紋路。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-lane-float",
-      "zh": "泳道浮標",
-      "en": "lane marker float",
-      "ja": "コースロープのフロート",
-      "reading": "コースロープのフロート",
-      "category": "道具",
-      "size": "medium",
-      "zone": "water-ride",
-      "spot": "water",
-      "desc": "一串紅白交替的圓盤浮子沿著細繩排列，漂在池面上。",
-      "loose": false,
-      "motion": "bob",
       "cluster": null
     },
     {
@@ -1391,36 +536,6 @@
       "cluster": null
     },
     {
-      "id": "pool-pull-buoy",
-      "zh": "游泳夾腿浮具",
-      "en": "pull buoy",
-      "ja": "プルブイ",
-      "reading": "プルブイ",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "紫色泡棉製成的雙瓣形浮具，中間收窄，兩端厚實圓潤。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "swim-paddle-amusement-park",
-      "zh": "游泳划手板",
-      "en": "swim paddle",
-      "ja": "パドル",
-      "reading": "パドル",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "一對扁平的橘色塑膠手板，各有數個圓孔和黑色固定帶。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "swim-cap-amusement-park",
       "zh": "泳帽",
       "en": "swim cap",
@@ -1431,36 +546,6 @@
       "zone": "water-ride",
       "spot": "ground",
       "desc": "柔軟貼頭的亮黃色橢圓帽，表面光滑，邊緣略微向內收。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "nose-clip-amusement-park",
-      "zh": "鼻夾",
-      "en": "nose clip",
-      "ja": "ノーズクリップ",
-      "reading": "ノーズクリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "小巧的銀色弧形金屬夾，兩端各有柔軟的白色墊片。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pool-float-belt",
-      "zh": "游泳浮力腰帶",
-      "en": "swim float belt",
-      "ja": "浮力ベルト",
-      "reading": "ふりょくベルト",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "ground",
-      "desc": "一串黃色泡棉方塊以細帶串起，兩端有黑色插扣。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -1493,81 +578,6 @@
       "desc": "亮紫色充氣圓環漂在水面上，外圈有一道白色接縫和氣嘴。",
       "loose": false,
       "motion": "bob",
-      "cluster": null
-    },
-    {
-      "id": "pool-float-disc",
-      "zh": "浮水圓墊",
-      "en": "swim float disc",
-      "ja": "浮き板",
-      "reading": "うきいた",
-      "category": "道具",
-      "size": "small",
-      "zone": "water-ride",
-      "spot": "water",
-      "desc": "扁圓形的綠色泡棉浮墊漂在水面，邊緣厚實，中央有小圓孔。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": null
-    },
-    {
-      "id": "flower-bed-edging",
-      "zh": "花圃邊框",
-      "en": "flower-bed-edging",
-      "ja": "花壇の縁",
-      "reading": "かだんのふち",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "低矮的圓角木框圍成長方形，木板呈淺棕色，框內可種植花草。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "drum-amusement-park",
-      "zh": "鼓",
-      "en": "drum",
-      "ja": "ドラム",
-      "reading": "ドラム",
-      "category": "道具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "紅色圓筒鼓身兩側繃著淺色鼓面，外圈有金屬扣件，直立放在地上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "traffic-barricade",
-      "zh": "交通護欄",
-      "en": "barricade",
-      "ja": "バリケード",
-      "reading": "バリケード",
-      "category": "道具",
-      "size": "medium",
-      "zone": "midway",
-      "spot": "ground",
-      "desc": "一座橘白相間的低矮護欄，橫向長板架在兩個穩固的腳座上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "octagonal-pavilion",
-      "zh": "八角亭",
-      "en": "pavilion",
-      "ja": "東屋",
-      "reading": "あずまや",
-      "category": "設施",
-      "size": "large",
-      "zone": "carousel-hall",
-      "spot": "ground",
-      "desc": "八根細柱撐起八角形屋頂，柱間敞開，屋頂邊緣帶有彩色裝飾。",
-      "loose": false,
-      "motion": null,
       "cluster": null
     }
   ],
@@ -1619,6 +629,336 @@
     {
       "id": "carnival-game-stand",
       "reason": "審核：英文 ID 不符，日文是射擊攤"
+    },
+    {
+      "id": "entry-gate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "sandwich-board-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "flagpole-base-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "balloon-weight",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ice-cream-scoop",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "carousel-canopy",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "carousel-pole",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "carousel-platform",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ferris-wheel-gondola",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ride-car",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ride-rail",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ride-control-box",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "confetti",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "fortune-teller-machine",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "miniature-golf-hole",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "miniature-golf-club",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "skateboard-ramp",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "trampoline",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "bowling-pin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "hockey-stick",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "hockey-puck",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "jumping-rope",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "paper-airplane",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "carousel-center-pole",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-entrance-gate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-operator-stool",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-double-seat",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-safety-bar",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-brass-ring",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-safety-chain",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-step-ladder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-star-lamp",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-bell",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-wind-up-key",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-rosette",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-ribbon-bow",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-feather-plume",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-cable-reel",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-grease-gun",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-adjustable-wrench",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-cleaning-brush",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-cleaning-bucket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "carousel-safety-cone",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
+    },
+    {
+      "id": "swim-earplugs",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "waterpark-turnstile",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "poolside-clock-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-rescue-tube",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-skimmer-net",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-vacuum-head-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-brush-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-thermometer-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-test-kit-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-cover-reel-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-overflow-grate-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-drain-cover-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-edge-marker-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-lane-float",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-pull-buoy",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "swim-paddle-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "nose-clip-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-float-belt",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "pool-float-disc",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "water-ride"
+    },
+    {
+      "id": "flower-bed-edging",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "drum-amusement-park",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-barricade",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "midway"
+    },
+    {
+      "id": "octagonal-pavilion",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "carousel-hall"
     }
   ],
   "reviewFixes": [
@@ -1662,8 +1002,10 @@
     }
   },
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 34,
     "added": 4,
-    "at": "2026-10-02T01:10:06.459+09:00"
-  }
+    "at": "2026-10-02T01:10:06.459+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 34
 }

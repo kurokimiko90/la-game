@@ -4,16 +4,43 @@
       "sets": [
         {
           "row": "back",
-          "note": "入口門面與空調展示",
           "x": [
             0.02,
-            0.26
+            0.98
           ],
           "fixture": "facade",
           "door": true,
-          "main": "air-purifier-electronics-store",
+          "note": "店面與自動門",
           "wall": [
             "air-conditioner-electronics-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.03,
+            0.31
+          ],
+          "fixture": "stand",
+          "note": "門口特價花車：廚房小家電",
+          "on": [
+            "rice-cooker-electronics-store",
+            "electric-kettle",
+            "coffee-maker-electronics-store",
+            "coffee-grinder-electronics-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.72,
+            0.97
+          ],
+          "fixture": "stand",
+          "note": "門口特價花車：料理小物",
+          "on": [
+            "kitchen-timer-electronics-store",
+            "kitchen-scale-electronics-store"
           ],
           "beside": [
             "floor-fan-electronics-store"
@@ -21,107 +48,49 @@
         },
         {
           "row": "back",
-          "note": "大型洗衣家電展示",
           "x": [
-            0.29,
-            0.48
+            0.36,
+            0.42
           ],
-          "main": "washing-machine",
-          "beside": [
-            "refrigerator-electronics-store"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "廚房小家電試用桌",
-          "x": [
-            0.08,
-            0.34
-          ],
-          "fixture": "display",
-          "on": [
-            "rice-cooker-electronics-store",
-            "kitchen-timer-electronics-store",
-            "kitchen-scale-electronics-store"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "咖啡與熱飲展示",
-          "x": [
-            0.39,
-            0.63
-          ],
-          "fixture": "display",
-          "on": [
-            "coffee-maker-electronics-store",
-            "coffee-grinder-electronics-store",
-            "electric-kettle"
-          ]
+          "note": "門口促銷看板",
+          "main": "floor-standing-sign-holder"
         },
         {
           "row": "back",
-          "note": "影音家電櫥窗",
           "x": [
-            0.55,
-            0.76
+            0.56,
+            0.61
           ],
-          "fixture": "display",
-          "on": [
-            "television-electronics-store"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "清潔用品展示",
-          "x": [
-            0.69,
-            0.9
-          ],
-          "main": "vacuum-cleaner-electronics-store"
+          "note": "門邊雨傘架",
+          "main": "umbrella-stand-electronics-store"
         }
       ]
     },
     "showroom": {
       "sets": [
         {
-          "row": "mid",
-          "note": "料理台與煎煮展示",
-          "x": [
-            0.03,
-            0.25
-          ],
-          "fixture": "stand",
-          "on": [
-            "induction-cooktop",
-            "electric-grill",
-            "electric-skillet",
-            "electric-fondue-pot"
-          ]
-        },
-        {
           "row": "back",
-          "note": "備餐與米食家電",
           "x": [
-            0.03,
-            0.26
+            0.02,
+            0.24
           ],
           "fixture": "shelf",
+          "note": "電鍋與蒸煮",
           "on": [
-            "rice-dispenser",
-            "electric-lunchbox",
             "electric-pressure-cooker",
-            "electric-steamer"
+            "electric-steamer",
+            "rice-dispenser",
+            "electric-lunchbox"
           ]
         },
         {
           "row": "back",
-          "note": "烘焙與攪拌展示",
           "x": [
-            0.3,
-            0.51
+            0.27,
+            0.49
           ],
-          "fixture": "display",
+          "fixture": "shelf",
+          "note": "烘焙與攪拌",
           "on": [
             "bread-maker",
             "stand-mixer",
@@ -130,56 +99,63 @@
           ]
         },
         {
-          "row": "mid",
-          "note": "飲品與咖啡器具",
+          "row": "back",
           "x": [
-            0.29,
-            0.52
+            0.52,
+            0.74
           ],
-          "fixture": "stand",
+          "fixture": "shelf",
+          "note": "食物處理",
           "on": [
+            "electric-food-chopper",
             "electric-juicer",
-            "electric-coffee-roaster",
-            "electric-ice-shaver"
+            "vacuum-sealer",
+            "food-dehydrator"
           ]
         },
         {
           "row": "back",
-          "note": "食品保存與處理",
           "x": [
-            0.55,
-            0.77
+            0.77,
+            0.98
           ],
-          "fixture": "display",
+          "fixture": "shelf",
+          "note": "咖啡與點心",
           "on": [
-            "vacuum-sealer",
-            "electric-food-chopper",
-            "food-dehydrator",
-            "electric-can-opener"
+            "electric-coffee-roaster",
+            "electric-ice-shaver",
+            "electric-yogurt-maker",
+            "electric-egg-cooker"
           ]
         },
         {
           "row": "mid",
-          "note": "小型料理器具",
           "x": [
-            0.56,
-            0.78
+            0.06,
+            0.4
           ],
-          "fixture": "stand",
+          "fixture": "display",
+          "note": "煎煮試用島台",
           "on": [
-            "electric-pasta-maker",
+            "induction-cooktop",
+            "electric-grill",
+            "electric-skillet",
             "electric-deep-fryer"
           ]
         },
         {
-          "row": "back",
-          "note": "磨刀與料理配件",
+          "row": "mid",
           "x": [
-            0.81,
-            0.97
+            0.58,
+            0.92
           ],
-          "fixture": "shelf",
+          "fixture": "display",
+          "note": "料理小工具島台",
           "on": [
+            "electric-pasta-maker",
+            "electric-fondue-pot",
+            "electric-can-opener",
+            "electric-wine-opener",
             "electric-knife-sharpener"
           ]
         }
@@ -189,121 +165,118 @@
       "sets": [
         {
           "row": "back",
-          "note": "廚房大型家電牆",
           "x": [
             0.02,
-            0.2
+            0.12
           ],
-          "main": "dishwasher-electronics-store",
+          "note": "冰箱展示",
+          "main": "refrigerator-electronics-store"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.13,
+            0.23
+          ],
+          "note": "洗衣機展示",
+          "main": "washing-machine"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.24,
+            0.34
+          ],
+          "note": "洗碗機展示",
+          "main": "dishwasher-electronics-store"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.36,
+            0.62
+          ],
+          "fixture": "cabinet",
+          "note": "廚房家電展示櫃",
+          "on": [
+            "microwave-oven",
+            "ice-maker-electronics-store",
+            "dish-drying-rack"
+          ],
           "wall": [
             "range-hood-electronics-store"
           ]
         },
         {
           "row": "back",
-          "note": "飲水與製冰設備",
           "x": [
-            0.23,
-            0.42
+            0.64,
+            0.73
           ],
-          "fixture": "display",
-          "on": [
-            "water-dispenser-electronics-store",
-            "ice-maker-electronics-store"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "微波與烘碗展示台",
-          "x": [
-            0.03,
-            0.23
-          ],
-          "fixture": "counter",
-          "on": [
-            "microwave-oven",
-            "dish-drying-rack"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "季節性暖房家電",
-          "x": [
-            0.28,
-            0.47
-          ],
-          "fixture": "display",
-          "on": [
-            "space-heater",
-            "electric-fan-heater"
-          ]
+          "note": "飲水機",
+          "main": "water-dispenser-electronics-store"
         },
         {
           "row": "back",
-          "note": "電力配件與燈泡",
           "x": [
-            0.47,
-            0.63
+            0.76,
+            0.98
           ],
           "fixture": "shelf",
+          "note": "電池燈泡與配件",
           "on": [
             "power-strip",
             "plug-adapter",
             "light-bulb",
-            "battery"
+            "battery",
+            "electric-fly-swatter"
           ]
         },
         {
           "row": "mid",
-          "note": "個人清潔與照明用品",
           "x": [
-            0.53,
-            0.71
+            0.04,
+            0.36
           ],
-          "fixture": "display",
-          "on": [
-            "electric-shaver",
-            "electric-toothbrush",
-            "electric-lamp",
-            "hair-straightener-electronics-store"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "衣物照護與縫紉",
-          "x": [
-            0.67,
-            0.83
-          ],
-          "fixture": "display",
-          "on": [
-            "electric-sewing-machine",
-            "electric-blanket"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "室內空氣調節",
-          "x": [
-            0.86,
-            0.98
-          ],
-          "fixture": "display",
+          "fixture": "platform",
+          "note": "季節空調家電展示台",
           "on": [
             "dehumidifier-electronics-store",
+            "air-purifier-electronics-store",
+            "space-heater",
+            "electric-fan-heater",
             "humidifier-electronics-store"
           ]
         },
         {
           "row": "mid",
-          "note": "防蚊用品",
           "x": [
-            0.76,
-            0.91
+            0.42,
+            0.62
           ],
-          "fixture": "stand",
+          "fixture": "display",
+          "note": "個人美容家電",
           "on": [
-            "electric-fly-swatter"
+            "electric-shaver",
+            "electric-toothbrush",
+            "hair-straightener-electronics-store",
+            "electric-lamp"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.68,
+            0.94
+          ],
+          "fixture": "cloth-table",
+          "note": "寢具與縫紉",
+          "on": [
+            "electric-blanket",
+            "electric-sewing-machine"
+          ],
+          "beside": [
+            "vacuum-cleaner-electronics-store"
           ]
         }
       ]
@@ -311,114 +284,71 @@
     "checkout": {
       "sets": [
         {
-          "row": "mid",
-          "note": "收銀櫃台與掃描結帳",
-          "x": [
-            0.25,
-            0.61
-          ],
-          "fixture": "counter",
-          "on": [
-            "barcode-scanner-electronics-store",
-            "cash-tray-electronics-store",
-            "receipt-roll-dispenser",
-            "price-labeler-electronics-store"
-          ],
-          "beside": [
-            "cashier-footrest"
-          ]
-        },
-        {
           "row": "back",
-          "note": "收銀耗材與點鈔",
-          "x": [
-            0.25,
-            0.43
-          ],
-          "fixture": "shelf",
-          "on": [
-            "coin-roll-dispenser",
-            "barcode-label-roll",
-            "receipt-spike-electronics-store",
-            "receipt-folder-electronics-store"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "裝袋與購物袋補給",
-          "x": [
-            0.65,
-            0.85
-          ],
-          "fixture": "counter",
-          "on": [
-            "bagging-platform",
-            "shopping-bag-electronics-store"
-          ],
-          "beside": [
-            "receipt-bin-electronics-store"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "購物籃與推車停放",
           "x": [
             0.03,
-            0.22
-          ],
-          "fixture": "stand",
-          "on": [
-            "shopping-basket-stack"
-          ],
-          "beside": [
-            "shopping-cart-electronics-store"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "排隊入口與分流",
-          "x": [
-            0.31,
-            0.68
-          ],
-          "main": "queue-ticket-dispenser-electronics-store",
-          "beside": [
-            "checkout-lane-divider"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "結帳道分隔",
-          "x": [
-            0.73,
-            0.91
-          ],
-          "main": "checkout-divider-electronics-store"
-        },
-        {
-          "row": "back",
-          "note": "價格標籤整理",
-          "x": [
-            0.46,
-            0.61
-          ],
-          "fixture": "desk",
-          "on": [
-            "price-tag-electronics-store",
-            "coin-tray-electronics-store"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "收據與結帳備品",
-          "x": [
-            0.65,
-            0.83
+            0.42
           ],
           "fixture": "cabinet",
+          "note": "影音展示電視櫃",
           "on": [
-            "cash-counter"
+            "television-electronics-store",
+            "portable-record-player"
+          ],
+          "beside": [
+            "floor-standing-radio"
           ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.5,
+            0.74
+          ],
+          "fixture": "shelf",
+          "note": "櫃台後的標價備品",
+          "on": [
+            "price-labeler-electronics-store",
+            "barcode-label-roll",
+            "price-tag-electronics-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.45,
+            0.8
+          ],
+          "fixture": "counter",
+          "note": "收銀櫃台",
+          "on": [
+            "barcode-scanner-electronics-store",
+            "cash-counter",
+            "cash-tray-electronics-store",
+            "receipt-roll-dispenser",
+            "shopping-bag-electronics-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.84,
+            0.98
+          ],
+          "note": "推車與購物籃",
+          "main": "shopping-cart-electronics-store",
+          "beside": [
+            "shopping-basket-stack"
+          ]
+        },
+        {
+          "row": "front",
+          "x": [
+            0.5,
+            0.62
+          ],
+          "note": "排隊動線",
+          "main": "checkout-lane-divider"
         }
       ]
     }

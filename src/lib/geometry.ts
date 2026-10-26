@@ -102,3 +102,30 @@ export function itemTransform(item: Pick<SceneItem, 'x' | 'y' | 'w' | 'h' | 'rot
   const by = item.y + item.h;
   return `translate(${cx} ${by}) rotate(${item.rotate}) scale(${item.flip ? -1 : 1} 1) translate(${-cx} ${-by})`;
 }
+
+interface ZoneRect {
+  id: string;
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+}
+
+/**
+ * 進場鏡頭的中心：物品最多的區域裡，物品中心的平均。入口區常常是空的人行道，對準它一進來什麼都看不到。
+ * 沒有物品時用第一個區域的中心。
+ */
+export function sceneFocus(zones: ZoneRect[], items: Pick<SceneItem, 'zone' | 'x' | 'y' | 'w' | 'h'>[]): Point {
+  const counts = new Map<string, number>();
+  for (const it of items) counts.set(it.zone, (counts.get(it.zone) ?? 0) + 1);
+  const busiest = zones.reduce<ZoneRect | null>((best, z) => ((counts.get(z.id) ?? 0) > (best ? counts.get(best.id) ?? 0 : 0) ? z : best), null);
+  if (!busiest) {
+    const z = zones[0];
+    return { x: (z.x0 + z.x1) / 2, y: (z.y0 + z.y1) / 2 };
+  }
+  const inZone = items.filter((it) => it.zone === busiest.id);
+  return {
+    x: Math.round(inZone.reduce((t, it) => t + it.x + it.w / 2, 0) / inZone.length),
+    y: Math.round(inZone.reduce((t, it) => t + it.y + it.h / 2, 0) / inZone.length),
+  };
+}

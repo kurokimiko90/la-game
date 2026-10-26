@@ -31,27 +31,6 @@
       }
     },
     {
-      "name": "支柱",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "兩根細長的深灰色金屬柱直立在地面，頂端有圓形帽蓋，柱身平滑。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "support-post",
-        "words": {
-          "zh-TW": "支柱",
-          "en": "post",
-          "ja": {
-            "text": "支柱",
-            "reading": "しちゅう"
-          }
-        }
-      }
-    },
-    {
       "name": "售票亭",
       "category": "設施",
       "lane": "b",
@@ -68,48 +47,6 @@
           "ja": {
             "text": "チケット売り場",
             "reading": "チケットうりば"
-          }
-        }
-      }
-    },
-    {
-      "name": "售票窗口",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "方形窗口嵌在亭子正面，四周是深色窗框，玻璃裡沒有任何文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "ticket-window",
-        "words": {
-          "zh-TW": "售票窗口",
-          "en": "ticket window",
-          "ja": {
-            "text": "チケット窓口",
-            "reading": "チケットまどぐち"
-          }
-        }
-      }
-    },
-    {
-      "name": "票卷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一卷淡黃色紙帶捲成圓筒，外端稍微掀起，表面完全空白。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "ticket-roll-museum",
-        "words": {
-          "zh-TW": "票卷",
-          "en": "ticket roll",
-          "ja": {
-            "text": "チケットロール",
-            "reading": "チケットロール"
           }
         }
       }
@@ -136,90 +73,6 @@
       }
     },
     {
-      "name": "方向箭頭牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "藍色實心箭頭固定在短木樁上，箭頭尖端明確朝向一側，沒有文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "direction-arrow",
-        "words": {
-          "zh-TW": "方向箭頭牌",
-          "en": "arrow sign",
-          "ja": {
-            "text": "矢印板",
-            "reading": "やじるしいた"
-          }
-        }
-      }
-    },
-    {
-      "name": "圓柱",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "高大的白色圓柱立在入口兩側，柱頂有簡單的方形柱頭與細環紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "museum-column",
-        "words": {
-          "zh-TW": "圓柱",
-          "en": "column",
-          "ja": {
-            "text": "円柱",
-            "reading": "えんちゅう"
-          }
-        }
-      }
-    },
-    {
-      "name": "石拱門",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "灰白色石塊砌成弧形門框，兩端落在地面，中央留出寬敞通道。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "stone-arch",
-        "words": {
-          "zh-TW": "石拱門",
-          "en": "stone arch",
-          "ja": {
-            "text": "石のアーチ",
-            "reading": "いしのアーチ"
-          }
-        }
-      }
-    },
-    {
-      "name": "萬壽菊",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "橘黃色圓球花朵長在短綠莖上，周圍有深綠色細裂葉片。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "marigold",
-        "words": {
-          "zh-TW": "萬壽菊",
-          "en": "marigold",
-          "ja": {
-            "text": "マリーゴールド",
-            "reading": "マリーゴールド"
-          }
-        }
-      }
-    },
-    {
       "name": "修剪灌木",
       "category": "植物",
       "lane": "b",
@@ -236,27 +89,6 @@
           "ja": {
             "text": "トピアリー",
             "reading": "トピアリー"
-          }
-        }
-      }
-    },
-    {
-      "name": "矮樹籬",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "一排修剪整齊的深綠灌木形成低矮長牆，頂面平坦、側邊蓬鬆。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "hedge",
-        "words": {
-          "zh-TW": "矮樹籬",
-          "en": "hedge",
-          "ja": {
-            "text": "生け垣",
-            "reading": "いけがき"
           }
         }
       }
@@ -283,48 +115,6 @@
       }
     },
     {
-      "name": "樹樁",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "矮粗的棕色圓木樁頂部平切，切面有深淺相間的木紋圈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "tree-stump",
-        "words": {
-          "zh-TW": "樹樁",
-          "en": "tree stump",
-          "ja": {
-            "text": "切り株",
-            "reading": "きりかぶ"
-          }
-        }
-      }
-    },
-    {
-      "name": "木製指示柱",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "粗木柱上伸出兩片空白木箭頭板，一片朝左、一片朝右，沒有刻字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "wooden-signpost",
-        "words": {
-          "zh-TW": "木製指示柱",
-          "en": "signpost",
-          "ja": {
-            "text": "道しるべ",
-            "reading": "みちしるべ"
-          }
-        }
-      }
-    },
-    {
       "name": "繩索欄杆",
       "category": "設施",
       "lane": "b",
@@ -333,7 +123,7 @@
       "ref": {
         "project": "la-game",
         "scene": "museum",
-        "zone": "entrance",
+        "zone": "main-gallery",
         "itemId": "rope-barrier",
         "words": {
           "zh-TW": "繩索欄杆",
@@ -375,7 +165,7 @@
       "ref": {
         "project": "la-game",
         "scene": "museum",
-        "zone": "entrance",
+        "zone": "sculpture-garden",
         "itemId": "sculpture-plinth",
         "words": {
           "zh-TW": "展示底座",
@@ -396,7 +186,7 @@
       "ref": {
         "project": "la-game",
         "scene": "museum",
-        "zone": "entrance",
+        "zone": "sculpture-garden",
         "itemId": "stone-sphere",
         "words": {
           "zh-TW": "石球",
@@ -404,48 +194,6 @@
           "ja": {
             "text": "石の球",
             "reading": "いしのたま"
-          }
-        }
-      }
-    },
-    {
-      "name": "火炬燈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黑色金屬彎臂托住一盞琥珀色玻璃燈，燈罩呈上窄下寬的形狀。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "wall-torch",
-        "words": {
-          "zh-TW": "火炬燈",
-          "en": "wall torch",
-          "ja": {
-            "text": "壁付けランプ",
-            "reading": "かべつけランプ"
-          }
-        }
-      }
-    },
-    {
-      "name": "鍛鐵門",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "黑色鐵條組成雙扇門，頂端有彎曲尖角與圓形裝飾，中央留有縫隙。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "wrought-iron-gate",
-        "words": {
-          "zh-TW": "鍛鐵門",
-          "en": "wrought iron gate",
-          "ja": {
-            "text": "鉄製門",
-            "reading": "てつせいもん"
           }
         }
       }
@@ -472,27 +220,6 @@
       }
     },
     {
-      "name": "排水格柵",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "深灰色長方金屬格板嵌在地面，表面排列整齊的窄長縫隙。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "drain-grate-museum",
-        "words": {
-          "zh-TW": "排水格柵",
-          "en": "drain grate",
-          "ja": {
-            "text": "排水溝の格子",
-            "reading": "はいすいこうのこうし"
-          }
-        }
-      }
-    },
-    {
       "name": "石甕",
       "category": "道具",
       "lane": "b",
@@ -501,7 +228,7 @@
       "ref": {
         "project": "la-game",
         "scene": "museum",
-        "zone": "entrance",
+        "zone": "sculpture-garden",
         "itemId": "stone-urn",
         "words": {
           "zh-TW": "石甕",
@@ -509,27 +236,6 @@
           "ja": {
             "text": "石の壺",
             "reading": "いしのつぼ"
-          }
-        }
-      }
-    },
-    {
-      "name": "鵝卵石",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "灰褐色圓形石塊表面略扁，邊緣不規則，帶有幾道淺色紋理。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "entrance",
-        "itemId": "cobblestone",
-        "words": {
-          "zh-TW": "鵝卵石",
-          "en": "cobblestone",
-          "ja": {
-            "text": "丸石",
-            "reading": "まるいし"
           }
         }
       }
@@ -598,384 +304,6 @@
       }
     },
     {
-      "name": "雕塑繩",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一段粗繩呈弧形垂掛，兩端有金屬扣環，纖維紋理清楚可辨。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "sculpture-rope",
-        "words": {
-          "zh-TW": "雕塑繩",
-          "en": "sculpture rope",
-          "ja": {
-            "text": "展示用ロープ",
-            "reading": "てんじようロープ"
-          }
-        }
-      }
-    },
-    {
-      "name": "水管噴嘴",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短金屬噴嘴前端略寬，後方有握柄與扳片，接管處呈圓形接口。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "watering-hose-nozzle",
-        "words": {
-          "zh-TW": "水管噴嘴",
-          "en": "hose nozzle",
-          "ja": {
-            "text": "ホースノズル",
-            "reading": "ホースノズル"
-          }
-        }
-      }
-    },
-    {
-      "name": "園藝水管",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "綠色橡膠軟管盤成幾圈，管身平滑，末端露出圓形接頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "garden-hose",
-        "words": {
-          "zh-TW": "園藝水管",
-          "en": "garden hose",
-          "ja": {
-            "text": "散水ホース",
-            "reading": "さんすいホース"
-          }
-        }
-      }
-    },
-    {
-      "name": "澆水壺",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓筒壺身帶拱形提把和細長壺嘴，壺嘴末端有圓形灑水頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "watering-can-spout",
-        "words": {
-          "zh-TW": "澆水壺",
-          "en": "watering can",
-          "ja": {
-            "text": "じょうろ",
-            "reading": "じょうろ"
-          }
-        }
-      }
-    },
-    {
-      "name": "園藝鏟",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短木柄連著彎曲的金屬鏟片，鏟面尖端向前，邊緣清楚俐落。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "garden-trowel-museum",
-        "words": {
-          "zh-TW": "園藝鏟",
-          "en": "garden trowel",
-          "ja": {
-            "text": "移植ごて",
-            "reading": "いしょくごて"
-          }
-        }
-      }
-    },
-    {
-      "name": "修枝剪",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "兩個深色握柄以金屬軸相連，彎月形刀刃張開，輪廓簡潔明顯。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "pruning-shears-museum",
-        "words": {
-          "zh-TW": "修枝剪",
-          "en": "pruning shears",
-          "ja": {
-            "text": "剪定ばさみ",
-            "reading": "せんていばさみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "園藝手套",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一雙厚布手套並排放置，五指輪廓分明，掌面有深色防滑點。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "gloves-museum",
-        "words": {
-          "zh-TW": "園藝手套",
-          "en": "gardening gloves",
-          "ja": {
-            "text": "園芸用手袋",
-            "reading": "えんげいようてぶくろ"
-          }
-        }
-      }
-    },
-    {
-      "name": "育苗盤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁平長方形塑膠盤分成整齊小格，盤沿略高，顏色為深綠色。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "watering-tray",
-        "words": {
-          "zh-TW": "育苗盤",
-          "en": "seed tray",
-          "ja": {
-            "text": "育苗トレー",
-            "reading": "いくびょうトレー"
-          }
-        }
-      }
-    },
-    {
-      "name": "植物標籤牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一支細長塑膠插牌上端平直、下端尖細，牌面空白沒有文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "plant-label",
-        "words": {
-          "zh-TW": "植物標籤牌",
-          "en": "plant label",
-          "ja": {
-            "text": "園芸ラベル",
-            "reading": "えんげいラベル"
-          }
-        }
-      }
-    },
-    {
-      "name": "園藝推車",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "淺斗推車有兩個大輪子和一對長把手，車斗呈矩形，邊角圓滑。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "garden-cart",
-        "words": {
-          "zh-TW": "園藝推車",
-          "en": "garden cart",
-          "ja": {
-            "text": "ガーデンカート",
-            "reading": "ガーデンカート"
-          }
-        }
-      }
-    },
-    {
-      "name": "獨輪手推車",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "金屬車斗前端裝一個大輪，後方有兩根長把手與支腳，側面輪廓醒目。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "wheelbarrow",
-        "words": {
-          "zh-TW": "獨輪手推車",
-          "en": "wheelbarrow",
-          "ja": {
-            "text": "手押し車",
-            "reading": "ておしぐるま"
-          }
-        }
-      }
-    },
-    {
-      "name": "園藝耙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長木柄接著一排細長金屬齒，齒尖朝下排列，橫向耙頭形狀明顯。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "garden-rake",
-        "words": {
-          "zh-TW": "園藝耙",
-          "en": "garden rake",
-          "ja": {
-            "text": "熊手",
-            "reading": "くまで"
-          }
-        }
-      }
-    },
-    {
-      "name": "落葉袋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "鼓起的棕色紙袋開口微張，袋身有摺痕，頂部露出幾片乾葉。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "leaf-bag",
-        "words": {
-          "zh-TW": "落葉袋",
-          "en": "leaf bag",
-          "ja": {
-            "text": "落ち葉袋",
-            "reading": "おちばぶくろ"
-          }
-        }
-      }
-    },
-    {
-      "name": "堆肥箱",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "方形深綠色箱體有掀蓋和通風縫，正面下方帶小門，邊角平整。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "compost-bin-museum",
-        "words": {
-          "zh-TW": "堆肥箱",
-          "en": "compost bin",
-          "ja": {
-            "text": "コンポスト容器",
-            "reading": "コンポストようき"
-          }
-        }
-      }
-    },
-    {
-      "name": "園藝叉",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長木柄末端有四根筆直金屬叉齒，叉頭朝上，形狀像窄窄的叉子。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "garden-fork",
-        "words": {
-          "zh-TW": "園藝叉",
-          "en": "garden fork",
-          "ja": {
-            "text": "ガーデンフォーク",
-            "reading": "ガーデンフォーク"
-          }
-        }
-      }
-    },
-    {
-      "name": "石臼",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "厚重的圓形石槽置於矮石座上，中央凹陷成碗狀，表面帶灰色斑紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "stone-mortar",
-        "words": {
-          "zh-TW": "石臼",
-          "en": "stone mortar",
-          "ja": {
-            "text": "石臼",
-            "reading": "いしうす"
-          }
-        }
-      }
-    },
-    {
-      "name": "風鈴",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小巧玻璃鈴身下垂一片長方形紙垂，細繩繫在上方，輪廓輕巧。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "wind-chime",
-        "words": {
-          "zh-TW": "風鈴",
-          "en": "wind chime",
-          "ja": {
-            "text": "風鈴",
-            "reading": "ふうりん"
-          }
-        }
-      }
-    },
-    {
-      "name": "遮陽帽",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "寬圓帽沿連著淺棕色圓頂，帽身有編織紋路，側面輪廓清晰。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "sunhat",
-        "words": {
-          "zh-TW": "遮陽帽",
-          "en": "sun hat",
-          "ja": {
-            "text": "麦わら帽子",
-            "reading": "むぎわらぼうし"
-          }
-        }
-      }
-    },
-    {
       "name": "野餐桌",
       "category": "設施",
       "lane": "b",
@@ -992,27 +320,6 @@
           "ja": {
             "text": "ピクニックテーブル",
             "reading": "ピクニックテーブル"
-          }
-        }
-      }
-    },
-    {
-      "name": "踏腳石",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁平不規則圓形石片帶灰褐色表面，邊緣略粗糙，正面平坦。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "stone-step",
-        "words": {
-          "zh-TW": "踏腳石",
-          "en": "stepping stone",
-          "ja": {
-            "text": "飛び石",
-            "reading": "とびいし"
           }
         }
       }
@@ -1039,90 +346,6 @@
       }
     },
     {
-      "name": "蓮蓬",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "橢圓形綠色蓮蓬朝上，圓孔排列在凸起表面，短柄末端略彎。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "sculpture-garden",
-        "itemId": "lotus-pod",
-        "words": {
-          "zh-TW": "蓮蓬",
-          "en": "lotus pod",
-          "ja": {
-            "text": "ハスの実",
-            "reading": "ハスのみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "馬賽克地磚",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "幾何形狀的小塊石磚拼成一片方磚，帶有深藍、乳白與赭紅交錯的簡單圖案。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "main-gallery",
-        "itemId": "mosaic-floor",
-        "words": {
-          "zh-TW": "馬賽克地磚",
-          "en": "mosaic tile",
-          "ja": {
-            "text": "モザイクタイル",
-            "reading": "モザイクタイル"
-          }
-        }
-      }
-    },
-    {
-      "name": "天鵝絨帷幕",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "深紅色厚布從上方垂下，兩側向外束起，布面有柔軟的垂褶與金色邊飾。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "main-gallery",
-        "itemId": "velvet-curtain",
-        "words": {
-          "zh-TW": "天鵝絨帷幕",
-          "en": "velvet curtain",
-          "ja": {
-            "text": "ベルベットカーテン",
-            "reading": "ベルベットカーテン"
-          }
-        }
-      }
-    },
-    {
-      "name": "天花板圓飾",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "乳白色圓盤帶有同心圓浮雕與簡潔葉片花紋，中央留有平滑的小圓面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "main-gallery",
-        "itemId": "ceiling-medallion",
-        "words": {
-          "zh-TW": "天花板圓飾",
-          "en": "ceiling medallion",
-          "ja": {
-            "text": "天井メダリオン",
-            "reading": "てんじょうメダリオン"
-          }
-        }
-      }
-    },
-    {
       "name": "壁燈",
       "category": "設施",
       "lane": "b",
@@ -1139,27 +362,6 @@
           "ja": {
             "text": "ブラケットライト",
             "reading": "ブラケットライト"
-          }
-        }
-      }
-    },
-    {
-      "name": "雕花畫框",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "金色長方形木框四角有捲葉雕花，內側留著平整的深色空框，不含文字或人物圖像。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "main-gallery",
-        "itemId": "ornate-frame",
-        "words": {
-          "zh-TW": "雕花畫框",
-          "en": "ornate frame",
-          "ja": {
-            "text": "装飾額縁",
-            "reading": "そうしょくがくぶち"
           }
         }
       }
@@ -1223,48 +425,6 @@
           "ja": {
             "text": "タペストリー",
             "reading": "タペストリー"
-          }
-        }
-      }
-    },
-    {
-      "name": "展品說明牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小小的乳白色長方板立在透明支架上，表面空白，邊緣有細窄的金色框線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "main-gallery",
-        "itemId": "sculpture-label",
-        "words": {
-          "zh-TW": "展品說明牌",
-          "en": "display label",
-          "ja": {
-            "text": "展示ラベル",
-            "reading": "てんじラベル"
-          }
-        }
-      }
-    },
-    {
-      "name": "玻璃罩",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明圓頂罩住小型展品，頂部有圓鈕，底下接著一圈深色圓形底盤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "main-gallery",
-        "itemId": "glass-cloche",
-        "words": {
-          "zh-TW": "玻璃罩",
-          "en": "glass cloche",
-          "ja": {
-            "text": "ガラスドーム",
-            "reading": "ガラスドーム"
           }
         }
       }
@@ -1404,7 +564,7 @@
       "ref": {
         "project": "la-game",
         "scene": "museum",
-        "zone": "main-gallery",
+        "zone": "art-workshop",
         "itemId": "easel",
         "words": {
           "zh-TW": "畫架",
@@ -1627,132 +787,6 @@
       }
     },
     {
-      "name": "陶土壓片機",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "兩支平行滾筒架在矮桌上，側邊伸出一支長柄，底座是深色木架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "slab-roller",
-        "words": {
-          "zh-TW": "陶土壓片機",
-          "en": "slab roller",
-          "ja": {
-            "text": "スラブローラー",
-            "reading": "スラブローラー"
-          }
-        }
-      }
-    },
-    {
-      "name": "擠土器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短胖的金屬筒身前端有圓形模口，側邊接著一支可轉動的長柄。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "clay-extruder",
-        "words": {
-          "zh-TW": "擠土器",
-          "en": "clay extruder",
-          "ja": {
-            "text": "粘土押出器",
-            "reading": "ねんどおしだしき"
-          }
-        }
-      }
-    },
-    {
-      "name": "雕塑環刀",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長木柄前端彎出一個橢圓金屬環，輪廓簡潔，環口清楚可見。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "sculpting-loop-tool",
-        "words": {
-          "zh-TW": "雕塑環刀",
-          "en": "sculpting loop tool",
-          "ja": {
-            "text": "彫刻用ループツール",
-            "reading": "ちょうこくようループツール"
-          }
-        }
-      }
-    },
-    {
-      "name": "陶土切割線",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一條細金屬線繃在兩個短木柄之間，整體呈扁平的弓形。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "wire-clay-cutter",
-        "words": {
-          "zh-TW": "陶土切割線",
-          "en": "wire clay cutter",
-          "ja": {
-            "text": "粘土カッター",
-            "reading": "ねんどカッター"
-          }
-        }
-      }
-    },
-    {
-      "name": "修坯片",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "薄薄的扁平木片一端較寬，邊緣微彎，表面是淺棕色。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "pottery-rib",
-        "words": {
-          "zh-TW": "修坯片",
-          "en": "pottery rib",
-          "ja": {
-            "text": "成形ベラ",
-            "reading": "せいけいベラ"
-          }
-        }
-      }
-    },
-    {
-      "name": "陶藝針",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長尖針固定在短木柄上，金屬針尖向外伸出，形狀像小錐子。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "needle-tool",
-        "words": {
-          "zh-TW": "陶藝針",
-          "en": "needle tool",
-          "ja": {
-            "text": "陶芸針",
-            "reading": "とうげいばり"
-          }
-        }
-      }
-    },
-    {
       "name": "木槌",
       "category": "道具",
       "lane": "b",
@@ -1790,27 +824,6 @@
           "ja": {
             "text": "木工用のみ",
             "reading": "もっこうようのみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "木雕圓鑿",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "彎弧形金屬刃接著短木柄，刃口呈淺凹弧線，外形細長。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "carving-gouge",
-        "words": {
-          "zh-TW": "木雕圓鑿",
-          "en": "carving gouge",
-          "ja": {
-            "text": "丸のみ",
-            "reading": "まるのみ"
           }
         }
       }
@@ -1879,132 +892,6 @@
       }
     },
     {
-      "name": "版畫滾筒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短圓橡膠滾筒兩側連著細軸與握柄，整體呈水平長條形。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "brayer",
-        "words": {
-          "zh-TW": "版畫滾筒",
-          "en": "brayer",
-          "ja": {
-            "text": "版画ローラー",
-            "reading": "はんがローラー"
-          }
-        }
-      }
-    },
-    {
-      "name": "油墨滾輪",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色窄滾筒裝在兩支弧形側架中間，頂端有一根短握柄。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "ink-roller",
-        "words": {
-          "zh-TW": "油墨滾輪",
-          "en": "ink roller",
-          "ja": {
-            "text": "インクローラー",
-            "reading": "インクローラー"
-          }
-        }
-      }
-    },
-    {
-      "name": "版畫刻刀",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短木柄前端固定一枚彎曲的小鋼刀，刀口朝上，形狀像窄窄的鉤子。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "linocut-tool",
-        "words": {
-          "zh-TW": "版畫刻刀",
-          "en": "linocut tool",
-          "ja": {
-            "text": "版画用彫刻刀",
-            "reading": "はんがようちょうこくとう"
-          }
-        }
-      }
-    },
-    {
-      "name": "版畫機",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "沉重的深色金屬架裡夾著平板，側邊有大圓輪與長柄。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "printing-press",
-        "words": {
-          "zh-TW": "版畫機",
-          "en": "printing press",
-          "ja": {
-            "text": "版画プレス機",
-            "reading": "はんがプレスき"
-          }
-        }
-      }
-    },
-    {
-      "name": "絹印網框",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長方形木框繃著細密白網，四邊木條厚實，中央沒有圖案或文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "screen-printing-frame",
-        "words": {
-          "zh-TW": "絹印網框",
-          "en": "screen printing frame",
-          "ja": {
-            "text": "シルクスクリーン枠",
-            "reading": "シルクスクリーンわく"
-          }
-        }
-      }
-    },
-    {
-      "name": "版畫橡膠板",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "厚實方形的赭紅色軟板，邊緣平整，正面是一整片空白表面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "linoleum-block",
-        "words": {
-          "zh-TW": "版畫橡膠板",
-          "en": "linoleum block",
-          "ja": {
-            "text": "リノリウム版",
-            "reading": "リノリウムばん"
-          }
-        }
-      }
-    },
-    {
       "name": "鏤空模板",
       "category": "道具",
       "lane": "b",
@@ -2026,27 +913,6 @@
       }
     },
     {
-      "name": "裁紙刀",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "扁平長方形底板上有一條直尺邊，側邊連著可抬起的長刀臂。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "paper-cutter",
-        "words": {
-          "zh-TW": "裁紙刀",
-          "en": "paper cutter",
-          "ja": {
-            "text": "ペーパーカッター",
-            "reading": "ペーパーカッター"
-          }
-        }
-      }
-    },
-    {
       "name": "畫布",
       "category": "道具",
       "lane": "b",
@@ -2063,48 +929,6 @@
           "ja": {
             "text": "キャンバス",
             "reading": "キャンバス"
-          }
-        }
-      }
-    },
-    {
-      "name": "石膏模具",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "兩片灰白色厚模具合成一個圓形外殼，邊緣有清楚的接合線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "plaster-mold",
-        "words": {
-          "zh-TW": "石膏模具",
-          "en": "plaster mold",
-          "ja": {
-            "text": "石こう型",
-            "reading": "せっこうがた"
-          }
-        }
-      }
-    },
-    {
-      "name": "作品晾架",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "高高的金屬架有多層水平網格，每層留有寬敞空隙，架腳穩固。",
-      "ref": {
-        "project": "la-game",
-        "scene": "museum",
-        "zone": "art-workshop",
-        "itemId": "drying-rack",
-        "words": {
-          "zh-TW": "作品晾架",
-          "en": "art drying rack",
-          "ja": {
-            "text": "作品乾燥ラック",
-            "reading": "さくひんかんそうラック"
           }
         }
       }

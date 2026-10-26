@@ -4,133 +4,51 @@
       "sets": [
         {
           "row": "back",
-          "note": "入口與售票",
           "x": [
-            0.02,
-            0.26
-          ],
-          "fixture": "facade",
-          "door": true,
-          "main": "entry-arch",
-          "wall": [
-            "sandwich-board-amusement-park"
-          ],
-          "beside": [
-            "entry-gate",
-            "ticket-booth-amusement-park"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "旋轉木馬",
-          "x": [
-            0.43,
+            0.36,
             0.64
           ],
-          "main": "carousel-platform",
-          "on": [
-            "carousel-canopy",
-            "carousel-pole"
-          ]
+          "note": "入口拱門",
+          "main": "entry-arch"
         },
         {
-          "row": "mid",
-          "note": "棉花糖與爆米花攤",
+          "row": "back",
           "x": [
-            0.03,
+            0.06,
             0.2
           ],
-          "main": "candy-floss-cart",
-          "beside": [
-            "popcorn-cart"
-          ]
+          "note": "售票亭",
+          "main": "ticket-booth-amusement-park"
         },
         {
           "row": "mid",
-          "note": "冰淇淋攤與糖果",
-          "x": [
-            0.23,
-            0.39
-          ],
-          "main": "ice-cream-cart",
-          "on": [
-            "ice-cream-scoop",
-            "candy-apple"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "抽獎遊戲",
-          "x": [
-            0.67,
-            0.84
-          ],
-          "main": "prize-wheel",
-          "on": [
-            "rubber-duck",
-            "prize-plush"
-          ],
-          "front": [
-            "confetti"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "摩天輪與遊樂設施車廂",
-          "x": [
-            0.28,
-            0.57
-          ],
-          "main": "ride-rail",
-          "beside": [
-            "ferris-wheel-gondola",
-            "ride-car"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "碰碰車與操作控制",
-          "x": [
-            0.61,
-            0.8
-          ],
-          "main": "bumper-car",
-          "beside": [
-            "ride-control-box"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "入口旗幟與氣球",
           "x": [
             0.04,
             0.2
           ],
-          "main": "flagpole-base-amusement-park",
-          "beside": [
-            "balloon-weight"
-          ]
+          "note": "棉花糖推車",
+          "main": "candy-floss-cart"
         },
         {
-          "row": "front",
-          "note": "遊樂園花圃",
+          "row": "mid",
           "x": [
-            0.25,
-            0.4
-          ],
-          "fixture": "planter",
-          "on": [
-            "flower-bed-edging"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "小鼓表演",
-          "x": [
-            0.68,
+            0.66,
             0.8
           ],
-          "main": "drum-amusement-park"
+          "note": "爆米花推車",
+          "main": "popcorn-cart"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "note": "冰淇淋推車",
+          "main": "ice-cream-cart",
+          "front": [
+            "candy-apple"
+          ]
         }
       ]
     },
@@ -138,254 +56,152 @@
       "sets": [
         {
           "row": "back",
-          "note": "街機遊戲區",
           "x": [
-            0.03,
-            0.18
-          ],
-          "main": "arcade-game-cabinet",
-          "beside": [
-            "claw-machine"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "遊園服務與拍照",
-          "x": [
-            0.21,
-            0.37
-          ],
-          "main": "photo-booth",
-          "beside": [
-            "vending-machine-amusement-park"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "套圈與占卜攤",
-          "x": [
-            0.4,
-            0.55
-          ],
-          "main": "ring-toss-stand",
-          "beside": [
-            "fortune-teller-machine"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "小火車與腳踏船",
-          "x": [
-            0.03,
-            0.2
-          ],
-          "main": "miniature-train",
-          "beside": [
-            "pedal-boat"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "卡丁車與投幣搖搖馬",
-          "x": [
-            0.23,
-            0.39
-          ],
-          "main": "parked-go-kart",
-          "beside": [
-            "coin-operated-horse"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "迷你高爾夫",
-          "x": [
-            0.42,
-            0.57
-          ],
-          "main": "miniature-golf-hole",
-          "beside": [
-            "miniature-golf-club"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "滑板與蹦床",
-          "x": [
-            0.6,
-            0.76
-          ],
-          "main": "skateboard-ramp",
-          "beside": [
-            "trampoline"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "球類遊戲區",
-          "x": [
-            0.59,
+            0.54,
             0.78
           ],
-          "main": "basketball-hoop",
+          "note": "套圈圈攤",
+          "main": "ring-toss-stand",
           "on": [
-            "bowling-pin",
+            "prize-plush",
+            "rubber-duck"
+          ],
+          "beside": [
+            "prize-wheel"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "note": "投籃機",
+          "main": "basketball-hoop",
+          "beside": [
             "dartboard"
-          ],
-          "beside": [
-            "skee-ball-lane"
           ]
         },
         {
           "row": "front",
-          "note": "即興玩耍的小物",
           "x": [
-            0.81,
-            0.96
+            0.04,
+            0.3
           ],
+          "note": "滾球遊戲",
+          "main": "skee-ball-lane"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.56,
+            0.74
+          ],
+          "note": "碰碰車",
+          "main": "bumper-car"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.8,
+            0.98
+          ],
+          "note": "遊園小火車",
+          "main": "miniature-train"
+        },
+        {
+          "row": "front",
+          "x": [
+            0.4,
+            0.7
+          ],
+          "note": "小玩具",
           "front": [
-            "hockey-stick",
-            "hockey-puck",
-            "jumping-rope"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "泡泡與風車玩具",
-          "x": [
-            0.03,
-            0.2
-          ],
-          "main": "bubble-wand",
-          "beside": [
+            "bubble-wand",
             "pinwheel"
           ]
-        },
-        {
-          "row": "front",
-          "note": "紙飛機遊戲",
-          "x": [
-            0.22,
-            0.38
-          ],
-          "main": "paper-airplane"
-        },
-        {
-          "row": "front",
-          "note": "道路安全護欄",
-          "x": [
-            0.42,
-            0.58
-          ],
-          "main": "traffic-barricade"
         }
       ]
     },
     "carousel-hall": {
       "sets": [
         {
-          "row": "mid",
-          "note": "旋轉木馬中心與座艙",
+          "row": "back",
           "x": [
-            0.25,
-            0.65
+            0.02,
+            0.14
           ],
-          "main": "carousel-center-pole",
-          "on": [
-            "carousel-safety-chain"
-          ],
-          "beside": [
-            "carousel-chariot-seat",
-            "carousel-double-seat"
-          ]
+          "note": "夾娃娃機",
+          "main": "claw-machine"
         },
         {
           "row": "back",
-          "note": "入口與排隊動線",
           "x": [
-            0.03,
-            0.22
+            0.16,
+            0.28
           ],
-          "main": "carousel-entrance-gate",
-          "beside": [
-            "carousel-queue-post",
-            "carousel-step-ladder"
-          ]
+          "note": "街機",
+          "main": "arcade-game-cabinet"
         },
         {
           "row": "back",
-          "note": "操作員控制區",
           "x": [
-            0.72,
-            0.95
+            0.3,
+            0.44
           ],
-          "fixture": "desk",
-          "main": "carousel-ride-control",
-          "on": [
-            "carousel-bell",
-            "carousel-wind-up-key"
-          ],
-          "beside": [
-            "carousel-operator-stool"
-          ]
+          "note": "大頭貼機",
+          "main": "photo-booth"
         },
         {
           "row": "back",
-          "note": "裝飾與燈光",
           "x": [
-            0.24,
-            0.43
+            0.48,
+            0.6
           ],
-          "fixture": "board",
+          "note": "自動販賣機",
+          "main": "vending-machine-amusement-park",
           "wall": [
-            "carousel-mirror-ball",
-            "carousel-star-lamp",
-            "carousel-rosette"
+            "carousel-mirror-ball"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.64,
+            0.98
+          ],
+          "fixture": "platform",
+          "note": "兒童旋轉座椅",
+          "on": [
+            "carousel-chariot-seat"
           ]
         },
         {
           "row": "mid",
-          "note": "備品與維修工具",
           "x": [
-            0.68,
-            0.88
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "carousel-grease-gun",
-            "carousel-adjustable-wrench",
-            "carousel-cleaning-brush",
-            "carousel-ribbon-bow"
-          ],
-          "beside": [
-            "carousel-cable-reel",
-            "carousel-cleaning-bucket"
-          ],
-          "front": [
-            "carousel-safety-cone",
-            "carousel-feather-plume"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "旋轉木馬乘坐安全裝置",
-          "x": [
-            0.04,
+            0.06,
             0.2
           ],
-          "main": "carousel-safety-bar",
-          "beside": [
-            "carousel-brass-ring"
-          ]
+          "note": "投幣搖搖馬",
+          "main": "coin-operated-horse"
         },
         {
           "row": "mid",
-          "note": "八角亭休息區",
           "x": [
-            0.03,
-            0.22
+            0.66,
+            0.8
           ],
-          "main": "octagonal-pavilion"
+          "note": "操作台",
+          "main": "carousel-ride-control"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.84,
+            0.96
+          ],
+          "note": "排隊柱",
+          "main": "carousel-queue-post"
         }
       ]
     },
@@ -393,97 +209,26 @@
       "sets": [
         {
           "row": "back",
-          "note": "泳池入口與遮陽休息區",
           "x": [
-            0.03,
-            0.23
+            0.02,
+            0.3
           ],
-          "main": "pool-shade-canopy",
-          "beside": [
-            "waterpark-turnstile",
-            "poolside-clock-amusement-park"
-          ]
+          "note": "遮陽棚",
+          "main": "pool-shade-canopy"
         },
         {
-          "row": "back",
-          "note": "救生設備站",
+          "row": "mid",
           "x": [
-            0.27,
-            0.43
+            0.04,
+            0.46
           ],
           "fixture": "stand",
+          "note": "泳具租借架",
           "on": [
             "pool-lifebuoy",
-            "pool-rescue-tube"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "池水清潔與水質檢查",
-          "x": [
-            0.47,
-            0.65
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "pool-test-kit-amusement-park"
-          ],
-          "beside": [
-            "pool-skimmer-net"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "泳池邊緣與遮布設備",
-          "x": [
-            0.69,
-            0.96
-          ],
-          "main": "pool-cover-reel-amusement-park",
-          "front": [
-            "pool-edge-marker-amusement-park"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "游泳訓練用品",
-          "x": [
-            0.27,
-            0.48
-          ],
-          "fixture": "cloth-table",
-          "on": [
-            "swim-earplugs",
-            "swim-cap-amusement-park",
-            "nose-clip-amusement-park",
-            "swim-paddle-amusement-park"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "浮具與踢水用品",
-          "x": [
-            0.53,
-            0.75
-          ],
-          "fixture": "stand",
-          "on": [
             "pool-kickboard",
-            "pool-pull-buoy",
-            "pool-float-belt",
-            "arm-float-amusement-park"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "泳池底部清潔設備",
-          "x": [
-            0.03,
-            0.23
-          ],
-          "main": "pool-vacuum-head-amusement-park",
-          "beside": [
-            "pool-brush-amusement-park"
+            "arm-float-amusement-park",
+            "swim-cap-amusement-park"
           ]
         }
       ]

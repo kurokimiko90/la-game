@@ -3,10 +3,10 @@
   "sceneSlug": "la-beach",
   "propStyle": "front-flat",
   "zones": {
-    "entrance": "沙灘入口",
+    "entrance": "沙灘",
     "boardwalk": "海濱步道",
     "tide-pool": "潮池區",
-    "snack-shack": "海邊小屋"
+    "snack-shack": "海灘小屋與租借"
   },
   "elements": [
     {
@@ -39,7 +39,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "boardwalk",
         "itemId": "shower",
         "words": {
           "zh-TW": "淋浴器",
@@ -60,7 +60,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "boardwalk",
         "itemId": "foot-wash",
         "words": {
           "zh-TW": "洗腳台",
@@ -81,7 +81,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "snack-shack",
         "itemId": "surfboard",
         "words": {
           "zh-TW": "衝浪板",
@@ -102,7 +102,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "snack-shack",
         "itemId": "snorkel",
         "words": {
           "zh-TW": "呼吸管",
@@ -123,7 +123,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "snack-shack",
         "itemId": "goggles",
         "words": {
           "zh-TW": "泳鏡",
@@ -144,7 +144,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "snack-shack",
         "itemId": "swim-fins",
         "words": {
           "zh-TW": "蛙鞋",
@@ -173,27 +173,6 @@
           "ja": {
             "text": "ビーチチェア",
             "reading": "ビーチチェア"
-          }
-        }
-      }
-    },
-    {
-      "name": "折疊桌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "白色長方桌面架在兩組交叉金屬腳上，桌面邊緣平直，腳架可折起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "entrance",
-        "itemId": "folding-table",
-        "words": {
-          "zh-TW": "折疊桌",
-          "en": "folding-table",
-          "ja": {
-            "text": "折りたたみテーブル",
-            "reading": "おりたたみテーブル"
           }
         }
       }
@@ -354,7 +333,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "snack-shack",
         "itemId": "seashell-wind-chime",
         "words": {
           "zh-TW": "貝殼風鈴",
@@ -362,90 +341,6 @@
           "ja": {
             "text": "貝殻の風鈴",
             "reading": "かいがらのふうりん"
-          }
-        }
-      }
-    },
-    {
-      "name": "電動滑板車",
-      "category": "交通工具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黑色窄踏板下裝著兩個小輪，直立車桿連著橫向把手，前方有小燈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "entrance",
-        "itemId": "electric-scooter",
-        "words": {
-          "zh-TW": "電動滑板車",
-          "en": "electric-scooter",
-          "ja": {
-            "text": "電動キックボード",
-            "reading": "でんどうキックボード"
-          }
-        }
-      }
-    },
-    {
-      "name": "停車樁",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "矮短的圓柱形金屬樁，頂端圓潤，漆成醒目的黃黑相間條紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "entrance",
-        "itemId": "parking-post",
-        "words": {
-          "zh-TW": "停車樁",
-          "en": "parking-post",
-          "ja": {
-            "text": "車止め",
-            "reading": "くるまどめ"
-          }
-        }
-      }
-    },
-    {
-      "name": "停車擋",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "貼著地面的長條混凝土塊，外形低矮，表面有黃黑斜紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "entrance",
-        "itemId": "parking-block",
-        "words": {
-          "zh-TW": "停車擋",
-          "en": "parking-block",
-          "ja": {
-            "text": "輪止め",
-            "reading": "わどめ"
-          }
-        }
-      }
-    },
-    {
-      "name": "道路反光標記",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "貼在地面的扁圓形金屬標記，銀灰外框包著明亮的黃色反光面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "entrance",
-        "itemId": "road-marker",
-        "words": {
-          "zh-TW": "道路反光標記",
-          "en": "road-marker",
-          "ja": {
-            "text": "道路鋲",
-            "reading": "どうろびょう"
           }
         }
       }
@@ -522,7 +417,7 @@
       "ref": {
         "project": "la-game",
         "scene": "beach",
-        "zone": "entrance",
+        "zone": "snack-shack",
         "itemId": "snorkel-mask",
         "words": {
           "zh-TW": "潛水面罩",
@@ -598,48 +493,6 @@
       }
     },
     {
-      "name": "相機腳架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黑色伸縮支架由中央柱和三根向外張開的細腳組成，頂端有小平台。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "camera-tripod",
-        "words": {
-          "zh-TW": "相機腳架",
-          "en": "camera tripod",
-          "ja": {
-            "text": "カメラ三脚",
-            "reading": "カメラさんきゃく"
-          }
-        }
-      }
-    },
-    {
-      "name": "枯枝",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "灰褐色細長枯枝有兩個分岔，表面粗糙並帶著幾段淺色磨痕。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "driftwood-branch",
-        "words": {
-          "zh-TW": "枯枝",
-          "en": "branch",
-          "ja": {
-            "text": "小枝",
-            "reading": "こえだ"
-          }
-        }
-      }
-    },
-    {
       "name": "海濱草",
       "category": "植物",
       "lane": "b",
@@ -656,48 +509,6 @@
           "ja": {
             "text": "ハマニンニク",
             "reading": "ハマニンニク"
-          }
-        }
-      }
-    },
-    {
-      "name": "海濱刺芹",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "貼地的深綠色圓裂葉叢中伸出細莖，頂端聚成一顆淡紫色小花球。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "sea-holly",
-        "words": {
-          "zh-TW": "海濱刺芹",
-          "en": "sea holly",
-          "ja": {
-            "text": "ハマボウフウ",
-            "reading": "ハマボウフウ"
-          }
-        }
-      }
-    },
-    {
-      "name": "草穗",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細直綠莖頂端長著一支金棕色穗狀花序，穗粒排列緊密並微微下垂。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "coastal-grass-seedhead",
-        "words": {
-          "zh-TW": "草穗",
-          "en": "grass seed head",
-          "ja": {
-            "text": "草の穂",
-            "reading": "くさのほ"
           }
         }
       }
@@ -766,27 +577,6 @@
       }
     },
     {
-      "name": "觀察盒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明方形淺盒，上緣有厚厚的藍色框，盒底平整，能看見空空的內部。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "tide-pool-guide",
-        "words": {
-          "zh-TW": "觀察盒",
-          "en": "viewing box",
-          "ja": {
-            "text": "観察ケース",
-            "reading": "かんさつケース"
-          }
-        }
-      }
-    },
-    {
       "name": "岩石",
       "category": "自然",
       "lane": "b",
@@ -824,27 +614,6 @@
           "ja": {
             "text": "シーグラス",
             "reading": "シーグラス"
-          }
-        }
-      }
-    },
-    {
-      "name": "木樁",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "一根粗短的褐色木柱立在池邊，頂端平平的，表面有幾道深色木紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "tide-pool-sign-post",
-        "words": {
-          "zh-TW": "木樁",
-          "en": "wooden post",
-          "ja": {
-            "text": "木の杭",
-            "reading": "きのくい"
           }
         }
       }
@@ -892,69 +661,6 @@
       }
     },
     {
-      "name": "防水盒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明扁平方盒，邊緣有橘色密封圈，側面扣著一個短短的卡扣。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "waterproof-case",
-        "words": {
-          "zh-TW": "防水盒",
-          "en": "waterproof case",
-          "ja": {
-            "text": "防水ケース",
-            "reading": "ぼうすいケース"
-          }
-        }
-      }
-    },
-    {
-      "name": "蘆葦",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "幾根細長綠色莖稈直立成簇，頂端長著棕色毛絮狀穗子，葉片向旁伸展。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "reed",
-        "words": {
-          "zh-TW": "蘆葦",
-          "en": "reed",
-          "ja": {
-            "text": "アシ",
-            "reading": "アシ"
-          }
-        }
-      }
-    },
-    {
-      "name": "海濱馬鞍藤",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "低矮藤蔓貼地伸展，圓心形綠葉旁開著淡粉紫色喇叭花，花瓣向外展開。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "sea-lavender",
-        "words": {
-          "zh-TW": "海濱馬鞍藤",
-          "en": "beach morning glory",
-          "ja": {
-            "text": "ハマヒルガオ",
-            "reading": "ハマヒルガオ"
-          }
-        }
-      }
-    },
-    {
       "name": "浮標",
       "category": "道具",
       "lane": "b",
@@ -971,27 +677,6 @@
           "ja": {
             "text": "ブイ",
             "reading": "ブイ"
-          }
-        }
-      }
-    },
-    {
-      "name": "水下觀察鏡",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短粗的藍色圓筒，前端有透明圓形鏡片，側邊連著一個扁平握把。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "water-scope",
-        "words": {
-          "zh-TW": "水下觀察鏡",
-          "en": "water-scope",
-          "ja": {
-            "text": "水中スコープ",
-            "reading": "すいちゅうスコープ"
           }
         }
       }
@@ -1018,27 +703,6 @@
       }
     },
     {
-      "name": "潮池標記牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "紅白相間的短木棒，頂端是圓鈍形，底部尖細，插在池邊砂地上。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "tide-pool-marker",
-        "words": {
-          "zh-TW": "潮池標記牌",
-          "en": "tide-pool-marker",
-          "ja": {
-            "text": "潮だまりの目印",
-            "reading": "しおだまりのめじるし"
-          }
-        }
-      }
-    },
-    {
       "name": "提水桶",
       "category": "道具",
       "lane": "b",
@@ -1060,48 +724,6 @@
       }
     },
     {
-      "name": "貝殼刷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短木柄末端固定一簇淺棕色刷毛，刷頭略呈橢圓形，旁邊放著貝殼。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "shell-brush",
-        "words": {
-          "zh-TW": "貝殼刷",
-          "en": "shell-brush",
-          "ja": {
-            "text": "貝がらブラシ",
-            "reading": "かいがらブラシ"
-          }
-        }
-      }
-    },
-    {
-      "name": "篩砂網",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "淺藍色圓框繃著細密網面，兩側有短握柄，框內留著少量細砂。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "sand-sifter",
-        "words": {
-          "zh-TW": "篩砂網",
-          "en": "sand-sifter",
-          "ja": {
-            "text": "砂ふるい",
-            "reading": "すなふるい"
-          }
-        }
-      }
-    },
-    {
       "name": "海葵",
       "category": "自然",
       "lane": "b",
@@ -1118,90 +740,6 @@
           "ja": {
             "text": "イソギンチャク",
             "reading": "イソギンチャク"
-          }
-        }
-      }
-    },
-    {
-      "name": "防水收納盒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明扁方盒配亮黃色卡扣，盒蓋邊緣有粗厚密封圈，旁邊放著防水盒。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "waterproof-bin",
-        "words": {
-          "zh-TW": "防水收納盒",
-          "en": "waterproof-bin",
-          "ja": {
-            "text": "防水収納ケース",
-            "reading": "ぼうすいしゅうのうケース"
-          }
-        }
-      }
-    },
-    {
-      "name": "池邊小梯",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "兩根淺木色直桿由三根橫桿連接，底端穩穩踩在石岸上，靠著池邊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "tide-pool-ladder",
-        "words": {
-          "zh-TW": "池邊小梯",
-          "en": "tide-pool-ladder",
-          "ja": {
-            "text": "潮だまり用の小さなはしご",
-            "reading": "しおだまりようのちいさなはしご"
-          }
-        }
-      }
-    },
-    {
-      "name": "潮池圖卡",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一張橫向的淡藍色硬卡片，正面畫著幾個彩色貝殼和海星圖案，四角圓滑。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "rock-pool-chart",
-        "words": {
-          "zh-TW": "潮池圖卡",
-          "en": "rock-pool-chart",
-          "ja": {
-            "text": "磯の生き物カード",
-            "reading": "いそのいきものカード"
-          }
-        }
-      }
-    },
-    {
-      "name": "海玻璃瓶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明矮玻璃瓶，瓶身裝著幾顆磨圓的綠色與淡藍色海玻璃，寬口配著木塞。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "sea-glass-bottle",
-        "words": {
-          "zh-TW": "海玻璃瓶",
-          "en": "sea-glass-bottle",
-          "ja": {
-            "text": "シーグラス瓶",
-            "reading": "シーグラスびん"
           }
         }
       }
@@ -1333,132 +871,6 @@
       }
     },
     {
-      "name": "壁爐",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "深棕石砌壁爐有方形黑色爐口，上方突出厚實的木製爐台。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "fireplace",
-        "words": {
-          "zh-TW": "壁爐",
-          "en": "fireplace",
-          "ja": {
-            "text": "暖炉",
-            "reading": "だんろ"
-          }
-        }
-      }
-    },
-    {
-      "name": "木柴",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "兩截短粗棕色木柴交疊擺放，圓形切面露出淺色年輪。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "wood-log",
-        "words": {
-          "zh-TW": "木柴",
-          "en": "log",
-          "ja": {
-            "text": "薪",
-            "reading": "まき"
-          }
-        }
-      }
-    },
-    {
-      "name": "柴籃",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "深棕色橢圓編織籃裝著幾截木柴，兩側各有一個粗把手。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "firewood-basket",
-        "words": {
-          "zh-TW": "柴籃",
-          "en": "firewood basket",
-          "ja": {
-            "text": "薪かご",
-            "reading": "まきかご"
-          }
-        }
-      }
-    },
-    {
-      "name": "燭台",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黃銅色金屬燭台有圓形底盤、細長立柱和淺碟形托座。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "candle-holder",
-        "words": {
-          "zh-TW": "燭台",
-          "en": "candle holder",
-          "ja": {
-            "text": "キャンドルスタンド",
-            "reading": "キャンドルスタンド"
-          }
-        }
-      }
-    },
-    {
-      "name": "吧台檯面",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "深棕色長方形木檯面，正面有厚實的直立木板，沿牆延伸成一字形吧台。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "bartop",
-        "words": {
-          "zh-TW": "吧台檯面",
-          "en": "bar top",
-          "ja": {
-            "text": "カウンターの天板",
-            "reading": "カウンターのてんばん"
-          }
-        }
-      }
-    },
-    {
-      "name": "吧台椅腳踏桿",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "金屬椅腳中段橫接一圈細長圓桿，呈銀灰色，形成清楚的環狀踏腳處。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "bar-stool-footrest",
-        "words": {
-          "zh-TW": "吧台椅腳踏桿",
-          "en": "bar stool footrest",
-          "ja": {
-            "text": "カウンターチェアの足置き",
-            "reading": "カウンターチェアのあしおき"
-          }
-        }
-      }
-    },
-    {
       "name": "吧台櫃",
       "category": "設施",
       "lane": "b",
@@ -1501,27 +913,6 @@
       }
     },
     {
-      "name": "吧匙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長銀色金屬匙柄，一端有小匙勺，另一端有扁平小圓盤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "bar-spoon",
-        "words": {
-          "zh-TW": "吧匙",
-          "en": "bar spoon",
-          "ja": {
-            "text": "バースプーン",
-            "reading": "バースプーン"
-          }
-        }
-      }
-    },
-    {
       "name": "雞尾酒杯",
       "category": "道具",
       "lane": "b",
@@ -1538,48 +929,6 @@
           "ja": {
             "text": "カクテルグラス",
             "reading": "カクテルグラス"
-          }
-        }
-      }
-    },
-    {
-      "name": "火鉗",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黑色細長金屬桿，一端彎成短鉤，另一端有小圓握柄，靠在壁爐旁。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "fire-poker",
-        "words": {
-          "zh-TW": "火鉗",
-          "en": "fire poker",
-          "ja": {
-            "text": "火かき棒",
-            "reading": "ひかきぼう"
-          }
-        }
-      }
-    },
-    {
-      "name": "風箱",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "深棕木柄夾著摺疊的黑色皮風囊，前端接短金屬噴嘴，放在壁爐邊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "bellows",
-        "words": {
-          "zh-TW": "風箱",
-          "en": "bellows",
-          "ja": {
-            "text": "ふいご",
-            "reading": "ふいご"
           }
         }
       }
@@ -1622,90 +971,6 @@
           "ja": {
             "text": "ビールサーバーの注ぎ口",
             "reading": "ビールサーバーのつぎぐち"
-          }
-        }
-      }
-    },
-    {
-      "name": "煙灰缸",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "淺而寬的圓形玻璃碟，厚實的透明邊緣有幾個放煙的位置。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "ashtray",
-        "words": {
-          "zh-TW": "煙灰缸",
-          "en": "ashtray",
-          "ja": {
-            "text": "灰皿",
-            "reading": "はいざら"
-          }
-        }
-      }
-    },
-    {
-      "name": "唱片機",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "方形木色機箱上有一片黑色圓盤，旁邊伸出細長的金屬唱臂。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "record-player",
-        "words": {
-          "zh-TW": "唱片機",
-          "en": "record-player",
-          "ja": {
-            "text": "レコードプレーヤー",
-            "reading": "レコードプレーヤー"
-          }
-        }
-      }
-    },
-    {
-      "name": "柴火",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "幾段短粗的棕色木柴交疊成小堆，斷面呈淺色圓形並帶有年輪。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "firewood",
-        "words": {
-          "zh-TW": "柴火",
-          "en": "firewood",
-          "ja": {
-            "text": "薪",
-            "reading": "まき"
-          }
-        }
-      }
-    },
-    {
-      "name": "籌碼",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "幾枚扁平圓形籌碼散落地面，紅藍相間，外圈有簡單的白色短條。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "poker-chip",
-        "words": {
-          "zh-TW": "籌碼",
-          "en": "poker-chip",
-          "ja": {
-            "text": "ポーカーチップ",
-            "reading": "ポーカーチップ"
           }
         }
       }
@@ -1774,90 +1039,6 @@
       }
     },
     {
-      "name": "相機鏡頭",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色短圓筒前端嵌著一圈玻璃，筒身有兩道凸起的調整環。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "camera-lens",
-        "words": {
-          "zh-TW": "相機鏡頭",
-          "en": "camera lens",
-          "ja": {
-            "text": "カメラレンズ",
-            "reading": "カメラレンズ"
-          }
-        }
-      }
-    },
-    {
-      "name": "鏡頭蓋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁平的黑色圓蓋，邊緣有一圈細紋，中央略微凸起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "lens-cap",
-        "words": {
-          "zh-TW": "鏡頭蓋",
-          "en": "lens cap",
-          "ja": {
-            "text": "レンズキャップ",
-            "reading": "レンズキャップ"
-          }
-        }
-      }
-    },
-    {
-      "name": "相機包",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "深灰色長方軟包有厚實圓角、短提把與兩個扣合的外袋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "camera-bag",
-        "words": {
-          "zh-TW": "相機包",
-          "en": "camera bag",
-          "ja": {
-            "text": "カメラバッグ",
-            "reading": "カメラバッグ"
-          }
-        }
-      }
-    },
-    {
-      "name": "望遠鏡袋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "深藍色軟質橢圓袋身，頂端有短拉鍊，側邊接著細肩帶。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "binocular-case",
-        "words": {
-          "zh-TW": "望遠鏡袋",
-          "en": "binocular case",
-          "ja": {
-            "text": "双眼鏡ケース",
-            "reading": "そうがんきょうケース"
-          }
-        }
-      }
-    },
-    {
       "name": "貝殼項鍊",
       "category": "道具",
       "lane": "b",
@@ -1874,27 +1055,6 @@
           "ja": {
             "text": "貝殻のネックレス",
             "reading": "かいがらのネックレス"
-          }
-        }
-      }
-    },
-    {
-      "name": "漂流木枝幹",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "灰褐色粗木段表面乾燥粗糙，兩端不平，側面伸出短短的斷枝。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "driftwood-log",
-        "words": {
-          "zh-TW": "漂流木枝幹",
-          "en": "driftwood log",
-          "ja": {
-            "text": "流木",
-            "reading": "りゅうぼく"
           }
         }
       }
@@ -1937,90 +1097,6 @@
           "ja": {
             "text": "ヨット",
             "reading": "ヨット"
-          }
-        }
-      }
-    },
-    {
-      "name": "小塊漂流木",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "淺褐色短木塊表面粗糙，一端分出兩根彎曲的小枝。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "driftwood-piece",
-        "words": {
-          "zh-TW": "小塊漂流木",
-          "en": "driftwood-piece",
-          "ja": {
-            "text": "流木",
-            "reading": "りゅうぼく"
-          }
-        }
-      }
-    },
-    {
-      "name": "乾葉",
-      "category": "植物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一片黃褐色的扁平葉片，中央粗葉脈清楚，邊緣微捲。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "boardwalk",
-        "itemId": "dry-leaf",
-        "words": {
-          "zh-TW": "乾葉",
-          "en": "dry-leaf",
-          "ja": {
-            "text": "枯れ葉",
-            "reading": "かれは"
-          }
-        }
-      }
-    },
-    {
-      "name": "石英",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一塊乳白色半透明的小石英，表面有幾個尖角，側面透出淡淡的光澤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "tide-pool",
-        "itemId": "quartz",
-        "words": {
-          "zh-TW": "石英",
-          "en": "quartz",
-          "ja": {
-            "text": "石英",
-            "reading": "せきえい"
-          }
-        }
-      }
-    },
-    {
-      "name": "瓶塞",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短短的圓柱形棕色軟木塞，表面有細小孔洞，一端略寬。",
-      "ref": {
-        "project": "la-game",
-        "scene": "beach",
-        "zone": "snack-shack",
-        "itemId": "bottle-cork",
-        "words": {
-          "zh-TW": "瓶塞",
-          "en": "cork",
-          "ja": {
-            "text": "コルク栓",
-            "reading": "コルクせん"
           }
         }
       }

@@ -1,0 +1,1161 @@
+{
+  "id": "cafe",
+  "name": "咖啡廳",
+  "zones": [
+    {
+      "id": "entrance",
+      "name": "店門口",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "patio",
+      "name": "戶外座位",
+      "indoor": false,
+      "floor": "concrete",
+      "feature": "table"
+    },
+    {
+      "id": "counter",
+      "name": "點餐吧台",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "counter"
+    },
+    {
+      "id": "lounge",
+      "name": "沙發休憩區",
+      "indoor": true,
+      "floor": "wood",
+      "feature": "none"
+    }
+  ],
+  "slot": {
+    "x": 0,
+    "y": 7700,
+    "zone": "neighborhood"
+  },
+  "colorIndex": 33,
+  "icon": "table-umbrella",
+  "elements": [
+    {
+      "id": "stacking-chair",
+      "zh": "堆疊椅",
+      "en": "stacking chair",
+      "ja": "スタッキングチェア",
+      "reading": "スタッキングチェア",
+      "category": "設施",
+      "size": "medium",
+      "zone": "patio",
+      "spot": "ground",
+      "desc": "簡潔的戶外椅子，椅背有弧度，椅面與椅腳是深綠色塑料，四條細金屬腳接地。",
+      "loose": false,
+      "motion": null,
+      "cluster": "long-table"
+    },
+    {
+      "id": "table-umbrella",
+      "zh": "庭園傘",
+      "en": "patio umbrella",
+      "ja": "ガーデンパラソル",
+      "reading": "ガーデンパラソル",
+      "category": "設施",
+      "size": "large",
+      "zone": "patio",
+      "spot": "ground",
+      "desc": "圓形米白傘面由中央細柱撐起，傘面分成數片，柱腳立在桌旁，不遮住地面通道。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "long-table"
+    },
+    {
+      "id": "table-knife",
+      "zh": "餐刀",
+      "en": "table knife",
+      "ja": "テーブルナイフ",
+      "reading": "テーブルナイフ",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "銀色餐刀有平直握柄與圓鈍刀尖，刀身一側帶細小鋸齒，放在盤子旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": "ceramic-plate"
+    },
+    {
+      "id": "honey-jar-cafe",
+      "zh": "蜂蜜罐",
+      "en": "honey jar",
+      "ja": "はちみつの瓶",
+      "reading": "はちみつのびん",
+      "category": "食物",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "矮胖透明玻璃罐裝著金黃色蜂蜜，寬口上蓋著木色旋蓋，沒有標籤。",
+      "loose": false,
+      "motion": null,
+      "cluster": "long-table"
+    },
+    {
+      "id": "jam-jar-cafe",
+      "zh": "果醬罐",
+      "en": "jam jar",
+      "ja": "ジャムの瓶",
+      "reading": "ジャムのびん",
+      "category": "食物",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "小玻璃罐裡裝著紅色果醬，罐口旋著淺色金屬蓋，瓶身沒有文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "honey-jar-cafe"
+    },
+    {
+      "id": "butter-dish-cafe",
+      "zh": "奶油碟",
+      "en": "butter dish",
+      "ja": "バターケース",
+      "reading": "バターケース",
+      "category": "食物",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "橢圓形白瓷奶油盒配著低矮蓋子，盤中露出一塊淡黃色奶油。",
+      "loose": false,
+      "motion": null,
+      "cluster": "ceramic-plate"
+    },
+    {
+      "id": "cheese-wedge-cafe",
+      "zh": "起司楔塊",
+      "en": "cheese wedge",
+      "ja": "くさび形のチーズ",
+      "reading": "くさびがたのちーず",
+      "category": "食物",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "一塊淡黃色三角楔形起司，切面平滑，外側有薄薄的橘色外皮。",
+      "loose": true,
+      "motion": null,
+      "cluster": "ceramic-plate"
+    },
+    {
+      "id": "terracotta-pot",
+      "zh": "陶盆",
+      "en": "terracotta pot",
+      "ja": "テラコッタ鉢",
+      "reading": "テラコッタばち",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "圓筒狀橘紅色陶盆，盆口向上略寬，表面有粗糙陶土質感，置於桌旁。",
+      "loose": false,
+      "motion": null,
+      "cluster": "stacking-chair"
+    },
+    {
+      "id": "long-table-cafe",
+      "zh": "長桌",
+      "en": "long table",
+      "ja": "長テーブル",
+      "reading": "ながテーブル",
+      "category": "設施",
+      "size": "large",
+      "zone": "patio",
+      "spot": "ground",
+      "desc": "長方形木桌面架在兩組粗木桌腳上，表面呈淺棕色，桌邊平直，桌下留有通行空間。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "ceramic-plate-cafe",
+      "zh": "陶瓷盤",
+      "en": "ceramic plate",
+      "ja": "陶器の皿",
+      "reading": "とうきのさら",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "圓形白色陶瓷盤，邊緣微微翹起，表面光滑，盤面沒有圖案或文字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "long-table-cafe"
+    },
+    {
+      "id": "fork-cafe",
+      "zh": "叉子",
+      "en": "fork",
+      "ja": "フォーク",
+      "reading": "フォーク",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "銀色金屬餐叉，細長握柄末端分成四根尖齒，平放在桌面上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "ceramic-plate-cafe"
+    },
+    {
+      "id": "cloth-napkin-cafe",
+      "zh": "布餐巾",
+      "en": "cloth napkin",
+      "ja": "布ナプキン",
+      "reading": "ぬのナプキン",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "折成方形的淺藍色布餐巾，布面有柔軟摺痕，放在盤子一側。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "ceramic-plate-cafe"
+    },
+    {
+      "id": "salt-shaker-cafe",
+      "zh": "鹽罐",
+      "en": "salt shaker",
+      "ja": "塩入れ",
+      "reading": "しおいれ",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "透明矮玻璃罐裝著白色鹽粒，頂部有銀色金屬蓋和幾個小孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": "long-table-cafe"
+    },
+    {
+      "id": "pepper-shaker-cafe",
+      "zh": "胡椒罐",
+      "en": "pepper shaker",
+      "ja": "こしょう入れ",
+      "reading": "こしょういれ",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "透明矮玻璃罐裡裝著深色胡椒粒，頂部是帶小孔的銀色金屬蓋。",
+      "loose": false,
+      "motion": null,
+      "cluster": "salt-shaker-cafe"
+    },
+    {
+      "id": "sugar-bowl-cafe",
+      "zh": "糖罐",
+      "en": "sugar bowl",
+      "ja": "シュガーボウル",
+      "reading": "シュガーボウル",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "白色圓腹小瓷罐配有蓋子和短柄小匙，外觀素雅，放在桌子中央。",
+      "loose": false,
+      "motion": null,
+      "cluster": "long-table-cafe"
+    },
+    {
+      "id": "water-pitcher-cafe",
+      "zh": "水壺",
+      "en": "water pitcher",
+      "ja": "水差し",
+      "reading": "みずさし",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "透明玻璃水壺有寬口、弧形把手與尖嘴，瓶身沒有花紋，擺在桌面上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "long-table-cafe"
+    },
+    {
+      "id": "saucer-cafe",
+      "zh": "茶托",
+      "en": "saucer",
+      "ja": "ソーサー",
+      "reading": "ソーサー",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "小型圓形白瓷碟，中央有淺淺凹槽，邊緣微翹，平放在桌上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tea-cup"
+    },
+    {
+      "id": "tea-cup-cafe",
+      "zh": "茶杯",
+      "en": "tea cup",
+      "ja": "ティーカップ",
+      "reading": "ティーカップ",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "白色陶瓷茶杯有圓弧杯身和小把手，杯口朝上，放在茶碟上。",
+      "loose": false,
+      "motion": null,
+      "cluster": "saucer-cafe"
+    },
+    {
+      "id": "teapot-cafe",
+      "zh": "茶壺",
+      "en": "teapot",
+      "ja": "ティーポット",
+      "reading": "ティーポット",
+      "category": "道具",
+      "size": "small",
+      "zone": "patio",
+      "spot": "surface",
+      "desc": "圓潤的白瓷茶壺帶有短壺嘴、拱形把手和圓蓋，放在桌面中央。",
+      "loose": false,
+      "motion": null,
+      "cluster": "tea-cup-cafe"
+    },
+    {
+      "id": "coffee-scale",
+      "zh": "咖啡電子秤",
+      "en": "coffee scale",
+      "ja": "コーヒースケール",
+      "reading": "コーヒースケール",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "扁平的黑色方形秤台，正面有小螢幕和幾個圓形按鈕。",
+      "loose": false,
+      "motion": null,
+      "cluster": "coffee-machine"
+    },
+    {
+      "id": "syrup-bottle",
+      "zh": "糖漿瓶",
+      "en": "syrup bottle",
+      "ja": "シロップボトル",
+      "reading": "シロップボトル",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "高身透明方瓶裝著琥珀色糖漿，瓶口有黑色壓頭和細長導管。",
+      "loose": false,
+      "motion": null,
+      "cluster": "coffee-syrup-pump"
+    },
+    {
+      "id": "coffee-dripper",
+      "zh": "手沖濾杯",
+      "en": "coffee dripper",
+      "ja": "コーヒードリッパー",
+      "reading": "コーヒードリッパー",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "白色錐形杯身有明顯縱向肋紋，下方開口，側面帶小耳把。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-machine"
+    },
+    {
+      "id": "pour-over-kettle",
+      "zh": "細口手沖壺",
+      "en": "gooseneck kettle",
+      "ja": "細口ケトル",
+      "reading": "ほそぐちケトル",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "圓潤的不鏽鋼壺身伸出細長彎嘴，頂部有黑色圓鈕壺蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-machine"
+    },
+    {
+      "id": "coffee-tin",
+      "zh": "咖啡罐",
+      "en": "coffee tin",
+      "ja": "コーヒー缶",
+      "reading": "コーヒーカン",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "矮胖的圓柱形鐵罐，深褐色罐身配金屬色蓋，罐口露出咖啡粉。",
+      "loose": false,
+      "motion": null,
+      "cluster": "coffee-canister"
+    },
+    {
+      "id": "cup-sleeve",
+      "zh": "杯套",
+      "en": "cup sleeve",
+      "ja": "カップスリーブ",
+      "reading": "カップスリーブ",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "棕色瓦楞紙捲成短筒，側邊接縫明顯，內側留有套杯的空間。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-machine"
+    },
+    {
+      "id": "coffee-stirrer-cafe",
+      "zh": "咖啡攪拌棒",
+      "en": "coffee stirrer",
+      "ja": "マドラー",
+      "reading": "マドラー",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "細長的淺木色平棒，末端微圓，旁邊靠著幾根同樣的木棒。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-machine"
+    },
+    {
+      "id": "coffee-sugar-cubes",
+      "zh": "方糖",
+      "en": "sugar cubes",
+      "ja": "角砂糖",
+      "reading": "カクザトウ",
+      "category": "食物",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "幾顆潔白的小方塊整齊疊放，邊角略圓，旁邊散落一兩顆。",
+      "loose": true,
+      "motion": null,
+      "cluster": "coffee-sugar-packet"
+    },
+    {
+      "id": "coffee-cup-dispenser",
+      "zh": "紙杯架",
+      "en": "cup dispenser",
+      "ja": "カップディスペンサー",
+      "reading": "カップディスペンサー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "counter",
+      "spot": "wall",
+      "desc": "直立的透明圓筒壁架裡裝著一疊白紙杯，底部開口露出最下一只杯口。",
+      "loose": false,
+      "motion": null,
+      "cluster": "coffee-cup-stack"
+    },
+    {
+      "id": "coffee-lid-dispenser",
+      "zh": "杯蓋架",
+      "en": "lid dispenser",
+      "ja": "ふたディスペンサー",
+      "reading": "フタディスペンサー",
+      "category": "道具",
+      "size": "medium",
+      "zone": "counter",
+      "spot": "wall",
+      "desc": "窄長透明壁掛筒內疊著白色圓杯蓋，底端有一道取蓋開口。",
+      "loose": false,
+      "motion": null,
+      "cluster": "paper-cup-lid-cafe"
+    },
+    {
+      "id": "coffee-counter-bell",
+      "zh": "櫃檯鈴",
+      "en": "counter bell",
+      "ja": "カウンターベル",
+      "reading": "カウンターベル",
+      "category": "道具",
+      "size": "small",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "亮銀色圓底座上立著小圓頂，頂部有一顆短按鈕，旁邊伸出平薄彈片。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "coffee-machine",
+      "zh": "咖啡機",
+      "en": "coffee machine",
+      "ja": "コーヒーマシン",
+      "reading": "コーヒーマシン",
+      "category": "道具",
+      "size": "medium",
+      "zone": "counter",
+      "spot": "surface",
+      "desc": "方正的銀色機身，前方有黑色沖煮頭、圓形壓力錶和一對短把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "magazine-rack",
+      "zh": "雜誌架",
+      "en": "magazine rack",
+      "ja": "マガジンラック",
+      "reading": "マガジンラック",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "黑色金屬落地架有數個向前傾斜的淺層，裡面放著無字彩色封面的雜誌。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "magazine-stack",
+      "zh": "雜誌疊",
+      "en": "magazine stack",
+      "ja": "雑誌の束",
+      "reading": "ざっしのたば",
+      "category": "道具",
+      "size": "small",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "幾本薄雜誌整齊疊成一小疊，彩色封面交錯露出，邊緣呈現密集紙頁線條。",
+      "loose": false,
+      "motion": null,
+      "cluster": "magazine-rack"
+    },
+    {
+      "id": "beanbag-chair",
+      "zh": "懶骨頭",
+      "en": "beanbag chair",
+      "ja": "ビーズクッション",
+      "reading": "ビーズクッション",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "橘黃色梨形軟椅鼓鼓地坐在地上，頂端收窄，表面有柔軟布料的細縫線。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "folded-umbrella",
+      "zh": "摺疊傘",
+      "en": "folded umbrella",
+      "ja": "折りたたみ傘",
+      "reading": "おりたたみがさ",
+      "category": "道具",
+      "size": "small",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "收起的深紫色摺疊傘，尖端朝下，彎曲手柄和束帶清楚可見。",
+      "loose": true,
+      "motion": null,
+      "cluster": "umbrella-stand"
+    },
+    {
+      "id": "lounge-sofa",
+      "zh": "沙發",
+      "en": "sofa",
+      "ja": "ソファ",
+      "reading": "ソファ",
+      "category": "設施",
+      "size": "large",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "寬大的深綠色長沙發，厚實坐墊連成一排，兩側有低矮方形扶手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "coffee-table-cafe",
+      "zh": "茶几",
+      "en": "coffee table",
+      "ja": "コーヒーテーブル",
+      "reading": "コーヒーテーブル",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "矮矮的圓形木桌，淺棕色桌面平整，下面有三支向外張開的細桌腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": "lounge-sofa"
+    },
+    {
+      "id": "side-table-cafe",
+      "zh": "邊桌",
+      "en": "side table",
+      "ja": "サイドテーブル",
+      "reading": "サイドテーブル",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "小巧方形木邊桌，深色桌面配四支細直桌腳，桌面邊緣略微凸起。",
+      "loose": false,
+      "motion": null,
+      "cluster": "lounge-sofa"
+    },
+    {
+      "id": "floor-lamp-cafe",
+      "zh": "落地燈",
+      "en": "floor lamp",
+      "ja": "フロアランプ",
+      "reading": "フロアランプ",
+      "category": "設施",
+      "size": "large",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "細長黑色燈柱立在圓形底座上，頂端有向下彎曲的弧形燈罩。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "ottoman-cafe",
+      "zh": "腳凳",
+      "en": "ottoman",
+      "ja": "オットマン",
+      "reading": "オットマン",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "低矮長方形腳凳，灰藍色軟墊包覆四側，底下露出短短的木腳。",
+      "loose": false,
+      "motion": null,
+      "cluster": "lounge-sofa"
+    },
+    {
+      "id": "coat-rack-cafe",
+      "zh": "衣帽架",
+      "en": "coat rack",
+      "ja": "コートラック",
+      "reading": "コートラック",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "木製直立衣帽架有多支彎曲掛鉤，三腳底座穩穩立在地上，掛鉤上沒有物品。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "umbrella-stand-cafe",
+      "zh": "傘架",
+      "en": "umbrella stand",
+      "ja": "傘立て",
+      "reading": "かさたて",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "深藍色圓筒傘架有開口頂緣和窄窄的接水底盤，表面帶有直向凹槽。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wastebasket-cafe",
+      "zh": "垃圾桶",
+      "en": "wastebasket",
+      "ja": "くずかご",
+      "reading": "くずかご",
+      "category": "設施",
+      "size": "medium",
+      "zone": "entrance",
+      "spot": "ground",
+      "desc": "細長圓筒形編織垃圾桶，淺棕色藤條一圈圈交錯，頂端敞開。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "tissue-box-cafe",
+      "zh": "面紙盒",
+      "en": "tissue box",
+      "ja": "ティッシュボックス",
+      "reading": "ティッシュボックス",
+      "category": "道具",
+      "size": "small",
+      "zone": "lounge",
+      "spot": "ground",
+      "desc": "淺綠色長方紙盒，頂部開口抽出一張白色薄面紙，盒身沒有印字。",
+      "loose": false,
+      "motion": null,
+      "cluster": "wastebasket-cafe"
+    },
+    {
+      "id": "wall-clock-cafe",
+      "zh": "掛鐘",
+      "en": "wall clock",
+      "ja": "壁掛け時計",
+      "reading": "かべかけどけい",
+      "category": "設施",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "wall",
+      "desc": "圓形淺木色掛鐘，白色錶面有深色指針和簡單刻度，沒有數字。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "wall-sconce-cafe",
+      "zh": "壁燈",
+      "en": "wall sconce",
+      "ja": "ブラケットライト",
+      "reading": "ブラケットライト",
+      "category": "設施",
+      "size": "small",
+      "zone": "lounge",
+      "spot": "wall",
+      "desc": "乳白色半圓燈罩朝上固定在小型黑色底座上，燈光柔和地向牆面散開。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "landscape-painting-cafe",
+      "zh": "風景畫",
+      "en": "landscape painting",
+      "ja": "風景画",
+      "reading": "ふうけいが",
+      "category": "道具",
+      "size": "medium",
+      "zone": "lounge",
+      "spot": "wall",
+      "desc": "木框方形風景畫，畫著綠色山丘和淡藍天空，不含文字或人物。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    }
+  ],
+  "rejected": [
+    {
+      "id": "seed",
+      "reason": "和已有的 seed-pod 太像",
+      "zone": "entrance"
+    },
+    {
+      "id": "coffee-syrup-rack",
+      "reason": "和已有的 syrup bottle 太像",
+      "zone": "counter"
+    },
+    {
+      "id": "coffee-pod-holder",
+      "reason": "和已有的 coffee pod 太像",
+      "zone": "counter"
+    },
+    {
+      "id": "magazine",
+      "reason": "和已有的 magazine rack 太像",
+      "zone": "lounge"
+    },
+    {
+      "id": "slipper",
+      "reason": "和已有的 pair of slippers 太像",
+      "zone": "lounge"
+    },
+    {
+      "id": "fallen-berry",
+      "reason": "審核：英文指落地漿果，現有譯名泛指果實"
+    },
+    {
+      "id": "fallen-seed-head",
+      "reason": "審核：英文不自然，物件過於罕見"
+    },
+    {
+      "id": "coffee-grinder-hopper",
+      "reason": "審核：專業部件，英文不常用"
+    },
+    {
+      "id": "portafilter",
+      "reason": "審核：專業器具且英日文較少見"
+    },
+    {
+      "id": "knock-box",
+      "reason": "審核：專業器具且英日文較少見"
+    },
+    {
+      "id": "coffee-tamper-mat",
+      "reason": "審核：專業器具且英文不常用"
+    },
+    {
+      "id": "cocoa-powder-shaker",
+      "reason": "審核：英文物件命名不自然"
+    },
+    {
+      "id": "latte-art-pen",
+      "reason": "審核：專業且少見的工具"
+    },
+    {
+      "id": "coffee-cup-carrier",
+      "reason": "審核：日文多指杯套，非外帶杯架"
+    },
+    {
+      "id": "parking-space-marker",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "wheel-stop-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "drain-channel-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "tactile-paving",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "curb-stone",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "paving-brick",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "manhole-cover-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "metal-grate",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "rubber-mat-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "sandbag",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "wooden-plank-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "pine-cone-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "moss-patch",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "fallen-branch-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "wood-chip",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "fallen-petal",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "acorn-cap",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "seed-pod",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "maple-seed",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "acorn-shell",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "flower-bud",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "dry-grass-tuft",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "drain-grate-cafe",
+      "reason": "退役：路面零件或落葉碎屑，不是可找的物品",
+      "zone": "entrance"
+    },
+    {
+      "id": "grape-cluster",
+      "reason": "退役：不屬於咖啡廳座位區",
+      "zone": "patio"
+    },
+    {
+      "id": "cherry-tomato",
+      "reason": "退役：不屬於咖啡廳座位區",
+      "zone": "patio"
+    },
+    {
+      "id": "outdoor-cushion",
+      "reason": "退役：不屬於咖啡廳座位區",
+      "zone": "patio"
+    },
+    {
+      "id": "hand-fan",
+      "reason": "退役：不屬於咖啡廳座位區",
+      "zone": "patio"
+    },
+    {
+      "id": "tablecloth-clip",
+      "reason": "退役：不屬於咖啡廳座位區",
+      "zone": "patio"
+    },
+    {
+      "id": "serving-spoon-cafe",
+      "reason": "退役：不屬於咖啡廳座位區",
+      "zone": "patio"
+    },
+    {
+      "id": "coffee-syrup-pump",
+      "reason": "退役：零件或和別的物品重複",
+      "zone": "counter"
+    },
+    {
+      "id": "coffee-filter-holder",
+      "reason": "退役：零件或和別的物品重複",
+      "zone": "counter"
+    },
+    {
+      "id": "coffee-bean-tray",
+      "reason": "退役：零件或和別的物品重複",
+      "zone": "counter"
+    },
+    {
+      "id": "coffee-pod",
+      "reason": "退役：零件或和別的物品重複",
+      "zone": "counter"
+    },
+    {
+      "id": "paper-cup-lid-cafe",
+      "reason": "退役：零件或和別的物品重複",
+      "zone": "counter"
+    },
+    {
+      "id": "coffee-counter-display",
+      "reason": "退役：零件或和別的物品重複",
+      "zone": "counter"
+    },
+    {
+      "id": "slipper-pair",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "cuckoo-clock",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "storage-cabinet",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "coat-closet",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "floor-cushion-cafe",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "wall-shelf-cafe",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "wall-thermostat",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "power-outlet-cafe",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    },
+    {
+      "id": "light-switch-cafe",
+      "reason": "退役：住家物品或建築零件",
+      "zone": "lounge"
+    }
+  ],
+  "reviewFixes": [
+    {
+      "id": "parking-space-marker",
+      "issue": "英文不自然，物品也少見",
+      "changes": {
+        "zh": "停車格標線",
+        "ja": "駐車枠の表示",
+        "reading": "ちゅうしゃわくのひょうじ"
+      }
+    },
+    {
+      "id": "fallen-branch-cafe",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "落ちた枝",
+        "reading": "おちたえだ"
+      }
+    },
+    {
+      "id": "wood-chip",
+      "issue": "中日文指木片，非木屑片",
+      "changes": {
+        "zh": "木屑",
+        "ja": "木くず",
+        "reading": "きくず"
+      }
+    },
+    {
+      "id": "dry-grass-tuft",
+      "issue": "英文指草叢，譯名缺少叢",
+      "changes": {
+        "zh": "枯草叢",
+        "ja": "枯れ草の茂み",
+        "reading": "かれくさのしげみ"
+      }
+    },
+    {
+      "id": "butter-dish-cafe",
+      "issue": "中文應用台灣常用語",
+      "changes": {
+        "zh": "奶油碟"
+      }
+    },
+    {
+      "id": "cheese-wedge-cafe",
+      "issue": "日文直譯不自然",
+      "changes": {
+        "ja": "くさび形のチーズ",
+        "reading": "くさびがたのちーず"
+      }
+    },
+    {
+      "id": "hand-fan",
+      "issue": "中文應為手持扇",
+      "changes": {
+        "zh": "手持扇"
+      }
+    },
+    {
+      "id": "serving-spoon-cafe",
+      "issue": "中文不自然",
+      "changes": {
+        "zh": "公用匙"
+      }
+    },
+    {
+      "id": "cloth-napkin-cafe",
+      "issue": "中文不自然",
+      "changes": {
+        "zh": "布餐巾"
+      }
+    },
+    {
+      "id": "saucer-cafe",
+      "issue": "台灣常稱茶托",
+      "changes": {
+        "zh": "茶托"
+      }
+    },
+    {
+      "id": "pour-over-kettle",
+      "issue": "英文可用；日文讀音應用片假名讀法",
+      "changes": {
+        "ja": "細口ケトル",
+        "reading": "ほそぐちケトル"
+      }
+    },
+    {
+      "id": "coffee-tin",
+      "issue": "英文指咖啡罐，中文限定咖啡粉罐",
+      "changes": {
+        "zh": "咖啡罐"
+      }
+    },
+    {
+      "id": "paper-cup-lid-cafe",
+      "issue": "日文讀音混用片假名與平假名",
+      "changes": {
+        "reading": "かみカップのふた"
+      }
+    }
+  ],
+  "createdAt": "2026-10-03T23:01:59.554+09:00",
+  "venue": {
+    "accent": "#8aac8b",
+    "wall": "warm",
+    "zones": {
+      "entrance": [
+        "arrival",
+        "boardwalk"
+      ],
+      "patio": [
+        "terrace",
+        "dining"
+      ],
+      "counter": [
+        "kitchen",
+        "service"
+      ],
+      "lounge": [
+        "reading",
+        "waiting"
+      ]
+    }
+  },
+  "itemsTarget": 47,
+  "topUp": {
+    "itemsPerScene": 47,
+    "curatedAt": "2026-10-04"
+  }
+}

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { defaultScale, fitScale, clampView, zoomAt, toScene, centerOn, isNearItem, itemAtPoint, itemTransform, wholeView, MAX_ZOOM, VIEW_HEIGHT } from '@/lib/geometry';
+import { defaultScale, fitScale, clampView, zoomAt, toScene, centerOn, isNearItem, itemAtPoint, itemTransform, wholeView, sceneFocus, MAX_ZOOM, VIEW_HEIGHT } from '@/lib/geometry';
 
 const scene = { width: 4000, height: 3000 };
 const container = { width: 800, height: 450 };
@@ -120,5 +120,22 @@ describe('itemAtPoint（點在形狀空隙時的後備判定）', () => {
   test('外框外擴 pad 以內也算；超出就沒有', () => {
     expect(itemAtPoint([bench], { x: 590, y: 120 }, 12)?.id).toBe('bench');
     expect(itemAtPoint([bench], { x: 580, y: 120 }, 12)).toBeNull();
+  });
+});
+
+describe('sceneFocus', () => {
+  const zones = [
+    { id: 'entrance', x0: 0, y0: 0, x1: 1000, y1: 500 },
+    { id: 'shop', x0: 1000, y0: 0, x1: 2000, y1: 500 },
+  ];
+  const item = (zone: string, x: number, y: number) => ({ zone, x, y, w: 100, h: 100 });
+
+  test('進場鏡頭對準物品最多的區域，取那些物品的重心（不是入口的空地）', () => {
+    const items = [item('entrance', 100, 100), item('shop', 1100, 100), item('shop', 1500, 300)];
+    expect(sceneFocus(zones, items)).toEqual({ x: 1350, y: 250 });
+  });
+
+  test('沒有物品：第一個區域的中心', () => {
+    expect(sceneFocus(zones, [])).toEqual({ x: 500, y: 250 });
   });
 });

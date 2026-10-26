@@ -4,34 +4,46 @@
       "sets": [
         {
           "row": "back",
-          "note": "入口遮雨棚與招牌",
           "x": [
-            0.08,
-            0.32
+            0.02,
+            0.98
           ],
           "fixture": "facade",
           "door": true,
+          "note": "健身房門面",
           "wall": [
             "gym-sign"
-          ],
-          "beside": [
-            "canopy-post"
           ]
         },
         {
-          "row": "back",
-          "note": "自行車與滑板車停放區",
+          "row": "mid",
           "x": [
-            0.36,
-            0.62
+            0.04,
+            0.4
           ],
-          "main": "bike-shelter",
-          "on": [
-            "electric-bicycle"
-          ],
+          "note": "自行車與滑板車停放",
+          "main": "electric-bicycle",
           "beside": [
             "kick-scooter-gym"
           ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.6,
+            0.74
+          ],
+          "note": "飲水台",
+          "main": "drinking-fountain-gym"
+        },
+        {
+          "row": "front",
+          "x": [
+            0.78,
+            0.94
+          ],
+          "note": "會員的健身包",
+          "main": "gym-bag"
         }
       ]
     },
@@ -39,173 +51,143 @@
       "sets": [
         {
           "row": "back",
-          "note": "會員報到櫃台",
           "x": [
-            0.3,
-            0.68
+            0.02,
+            0.16
+          ],
+          "note": "鞋架",
+          "main": "shoe-rack-gym"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.2,
+            0.32
+          ],
+          "note": "飲水機",
+          "main": "water-dispenser"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.36,
+            0.8
           ],
           "fixture": "counter",
+          "note": "櫃台",
           "on": [
             "membership-card-reader",
-            "clipboard-gym"
-          ],
-          "beside": [
-            "hand-sanitizer-gym"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "入口鞋套與鞋架",
-          "x": [
-            0.03,
-            0.26
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "shoe-cover-dispenser"
-          ],
-          "beside": [
-            "shoe-rack-gym"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "等候休息區",
-          "x": [
-            0.72,
-            0.97
-          ],
-          "main": "reception-sofa",
-          "beside": [
-            "coat-rack-gym"
-          ],
-          "front": [
-            "tissue-box-gym"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "飲水與清潔用品",
-          "x": [
-            0.72,
-            0.96
-          ],
-          "main": "water-dispenser",
-          "on": [
-            "paper-towel-roll-gym"
-          ],
-          "beside": [
+            "hand-sanitizer-gym",
+            "first-aid-kit-gym",
             "spray-bottle-gym"
+          ],
+          "wall": [
+            "wall-clock-gym",
+            "fire-extinguisher-gym"
           ]
         },
         {
           "row": "mid",
-          "note": "洗手設備",
           "x": [
-            0.28,
-            0.48
+            0.04,
+            0.4
           ],
-          "fixture": "cabinet",
-          "on": [
-            "hand-dryer-gym"
-          ],
-          "wall": [
-            "wall-mirror-gym",
-            "wall-shelf-gym"
-          ],
-          "beside": [
-            "fire-extinguisher-gym",
-            "first-aid-kit-gym"
-          ]
+          "note": "休息沙發",
+          "main": "reception-sofa"
         },
         {
-          "row": "back",
-          "note": "室內環境控制",
+          "row": "mid",
           "x": [
-            0.05,
-            0.26
+            0.6,
+            0.8
           ],
-          "wall": [
-            "wall-vent-gym",
-            "thermostat-gym",
-            "light-switch-gym"
-          ],
-          "beside": [
-            "security-camera-gym",
-            "power-outlet-gym"
-          ],
-          "front": [
-            "ceiling-speaker-gym"
-          ]
+          "note": "入場閘門",
+          "main": "turnstile-gym"
         }
       ]
     },
     "cardio-floor": {
       "sets": [
         {
-          "row": "mid",
-          "note": "地面有氧與平衡練習",
+          "row": "back",
           "x": [
-            0.05,
-            0.34
+            0.02,
+            0.22
           ],
-          "fixture": "rug",
-          "on": [
-            "exercise-mat",
-            "step-platform",
-            "balance-board",
-            "aerobic-step"
-          ],
-          "front": [
-            "plyo-box"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "負重與穿戴輔具",
-          "x": [
-            0.39,
-            0.64
-          ],
-          "fixture": "stand",
-          "on": [
-            "weighted-vest"
-          ],
-          "front": [
-            "step-counter",
-            "heart-rate-monitor",
-            "fitness-watch"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "核心訓練小器材",
-          "x": [
-            0.69,
-            0.96
-          ],
-          "fixture": "rug",
-          "on": [
-            "pilates-ring",
-            "ab-roller",
-            "push-up-bars",
-            "exercise-disc"
-          ],
-          "beside": [
-            "foam-block",
-            "exercise-band"
-          ]
+          "note": "跑步機",
+          "main": "treadmill"
         },
         {
           "row": "back",
-          "note": "懸吊與戰繩訓練點",
           "x": [
-            0.72,
-            0.96
+            0.25,
+            0.43
           ],
-          "main": "battle-rope",
-          "wall": [
-            "suspension-trainer"
+          "note": "橢圓機",
+          "main": "elliptical-trainer"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.46,
+            0.62
+          ],
+          "note": "健身車",
+          "main": "stationary-bike"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.65,
+            0.8
+          ],
+          "note": "階梯機",
+          "main": "stair-climber"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "note": "划船機",
+          "main": "rowing-machine"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.04,
+            0.46
+          ],
+          "fixture": "rug",
+          "note": "伸展墊區",
+          "main": "exercise-mat",
+          "beside": [
+            "yoga-mat",
+            "aerobic-step"
+          ],
+          "front": [
+            "foam-block",
+            "pilates-ring"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.52,
+            0.94
+          ],
+          "fixture": "cabinet",
+          "note": "小器材櫃",
+          "on": [
+            "foam-roller-gym",
+            "ab-roller",
+            "push-up-bars",
+            "jump-rope-gym",
+            "resistance-band"
+          ],
+          "beside": [
+            "balance-board"
           ]
         }
       ]
@@ -214,84 +196,77 @@
       "sets": [
         {
           "row": "back",
-          "note": "泳道分隔與池蓋設備",
           "x": [
-            0.26,
-            0.52
+            0.02,
+            0.2
           ],
-          "main": "pool-cover-reel",
-          "on": [
-            "lane-rope"
-          ],
-          "front": [
-            "pool-drain-cover"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "泳具自助取用台",
-          "x": [
-            0.04,
-            0.32
-          ],
-          "fixture": "stand",
-          "on": [
-            "kickboard",
-            "pull-buoy",
-            "swim-paddle",
-            "swim-cap"
-          ],
-          "front": [
-            "swim-goggles",
-            "nose-clip",
-            "ear-plug"
-          ]
+          "note": "引體向上架",
+          "main": "pull-up-bar"
         },
         {
           "row": "back",
-          "note": "浮具與救生用品",
           "x": [
-            0.56,
-            0.79
+            0.24,
+            0.6
           ],
           "fixture": "shelf",
+          "note": "啞鈴與壺鈴架",
           "on": [
-            "arm-float"
-          ],
-          "beside": [
-            "rescue-tube",
-            "swim-float-belt"
+            "dumbbell-gym",
+            "kettlebell-gym",
+            "medicine-ball-gym",
+            "hand-grip"
           ]
         },
         {
           "row": "mid",
-          "note": "救生員救援器材",
           "x": [
-            0.65,
+            0.04,
+            0.4
+          ],
+          "fixture": "platform",
+          "note": "槓鈴舉重台",
+          "on": [
+            "barbell-gym",
+            "weight-plate-gym"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.46,
+            0.62
+          ],
+          "note": "跳箱",
+          "main": "plyo-box"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.68,
             0.96
           ],
-          "fixture": "stand",
-          "on": [
-            "rescue-hook",
-            "rescue-pole"
-          ],
-          "beside": [
-            "pool-skimmer",
-            "pool-brush"
-          ]
+          "note": "戰繩",
+          "main": "battle-rope"
         },
         {
-          "row": "mid",
-          "note": "泳池維護檢測台",
+          "row": "back",
           "x": [
-            0.36,
-            0.61
+            0.64,
+            0.78
           ],
-          "fixture": "cabinet",
-          "on": [
-            "pool-test-kit",
-            "pool-thermometer",
-            "pool-vacuum-head"
+          "note": "重訓鏡",
+          "main": "wall-mirror-gym"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.82,
+            0.98
+          ],
+          "note": "牆上計時器",
+          "wall": [
+            "gym-timer"
           ]
         }
       ]

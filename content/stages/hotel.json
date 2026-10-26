@@ -3,115 +3,41 @@
     "entrance": {
       "sets": [
         {
-          "row": "mid",
-          "note": "無障礙入口與排水",
-          "x": [
-            0.1,
-            0.35
-          ],
-          "main": "wheelchair-ramp",
-          "beside": [
-            "curb-ramp",
-            "drain-channel"
-          ]
-        },
-        {
           "row": "back",
-          "note": "停車場收費與柵欄",
           "x": [
-            0.72,
-            0.96
-          ],
-          "main": "parking-gate-arm",
-          "beside": [
-            "parking-pay-station",
-            "parking-meter-post-hotel"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "雨棚下入口等候區",
-          "x": [
-            0.38,
-            0.68
-          ],
-          "main": "entry-step",
-          "on": [
-            "entry-rug"
-          ],
-          "beside": [
-            "bollard-sleeve",
-            "intercom"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "停車與洗車用品",
-          "x": [
-            0.72,
-            0.96
-          ],
-          "main": "windshield-washer",
-          "on": [
-            "snow-shovel"
-          ],
-          "beside": [
-            "dog-waste-bin",
-            "license-plate-frame"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "飯店入口門扇與五金",
-          "x": [
-            0.05,
-            0.25
+            0.02,
+            0.98
           ],
           "fixture": "facade",
           "door": true,
-          "wall": [
-            "door-closer-arm",
-            "door-handle-hotel",
-            "door-hinge"
-          ]
+          "note": "飯店正門"
         },
         {
           "row": "back",
-          "note": "雨棚結構與排水",
           "x": [
-            0.28,
-            0.48
+            0.3,
+            0.4
           ],
-          "main": "entry-canopy",
-          "beside": [
-            "canopy-support",
-            "canopy-drain"
-          ]
+          "note": "門邊盆栽",
+          "main": "lobby-potted-plant"
         },
         {
           "row": "mid",
-          "note": "代客泊車服務點",
           "x": [
-            0.72,
-            0.9
+            0.6,
+            0.74
           ],
-          "main": "valet-podium",
-          "beside": [
-            "ash-bin"
-          ]
+          "note": "代客泊車櫃檯",
+          "main": "valet-podium"
         },
         {
-          "row": "front",
-          "note": "洗車與除冰工具",
+          "row": "mid",
           "x": [
-            0.38,
-            0.58
+            0.06,
+            0.3
           ],
-          "main": "luggage-bench",
-          "on": [
-            "car-wash-brush",
-            "ice-scraper"
-          ]
+          "note": "行李長椅",
+          "main": "luggage-bench"
         }
       ]
     },
@@ -119,88 +45,78 @@
       "sets": [
         {
           "row": "back",
-          "note": "接待櫃檯",
           "x": [
-            0.34,
+            0.02,
+            0.14
+          ],
+          "note": "電梯",
+          "main": "lobby-elevator"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.16,
+            0.36
+          ],
+          "note": "樓梯",
+          "main": "lobby-staircase"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.4,
             0.62
           ],
+          "note": "壁爐",
+          "main": "lobby-fireplace",
+          "wall": [
+            "lobby-painting"
+          ],
+          "on": [
+            "lobby-vase"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.66,
+            0.98
+          ],
+          "note": "接待櫃檯",
           "main": "lobby-reception-desk",
           "on": [
             "lobby-bell",
-            "lobby-desk-calendar",
             "lobby-keycard",
             "lobby-key-bowl"
           ],
           "wall": [
-            "lobby-wall-clock"
-          ],
-          "beside": [
-            "lobby-cabinet",
-            "lobby-potted-plant"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "大廳樓梯與電梯",
-          "x": [
-            0.68,
-            0.96
-          ],
-          "main": "lobby-staircase",
-          "beside": [
-            "lobby-elevator",
-            "lobby-wall-shelf"
+            "lobby-wall-clock",
+            "lobby-wall-sconce"
           ]
         },
         {
           "row": "mid",
-          "note": "壁爐休息區",
           "x": [
-            0.05,
-            0.31
+            0.06,
+            0.5
           ],
-          "main": "lobby-fireplace",
-          "wall": [
-            "lobby-wall-sconce",
-            "lobby-painting"
-          ],
+          "fixture": "rug",
+          "note": "大廳沙發區",
+          "main": "lobby-sofa",
           "beside": [
-            "lobby-sofa",
             "lobby-floor-lamp"
           ]
         },
         {
-          "row": "mid",
-          "note": "茶几與咖啡待客區",
+          "row": "front",
           "x": [
-            0.34,
-            0.62
+            0.14,
+            0.42
           ],
+          "note": "茶几",
           "main": "lobby-coffee-table",
           "on": [
-            "lobby-table-lamp",
-            "lobby-vase"
-          ],
-          "beside": [
-            "lobby-curtain",
-            "lobby-mirror"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "自助咖啡角",
-          "x": [
-            0.05,
-            0.3
-          ],
-          "fixture": "counter",
-          "on": [
-            "lobby-coffee-machine",
-            "lobby-sugar-bowl",
-            "lobby-ice-tongs"
-          ],
-          "wall": [
-            "lobby-pendant-lamp"
+            "lobby-table-lamp"
           ]
         }
       ]
@@ -209,118 +125,79 @@
       "sets": [
         {
           "row": "back",
-          "note": "客房門與消防設備",
           "x": [
-            0.05,
-            0.3
+            0.02,
+            0.16
           ],
-          "main": "guestroom-door",
+          "note": "客房門",
+          "main": "guestroom-door"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.2,
+            0.32
+          ],
+          "note": "製冰機",
+          "main": "ice-machine"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.36,
+            0.48
+          ],
+          "note": "自動販賣機",
+          "main": "vending-machine-hotel",
           "wall": [
-            "fire-alarm-pull-station",
-            "exit-light",
-            "emergency-light-hotel"
+            "exit-light"
           ]
         },
         {
           "row": "back",
-          "note": "製冰飲水與販賣區",
           "x": [
-            0.34,
-            0.62
+            0.54,
+            0.68
           ],
-          "main": "ice-machine",
-          "beside": [
-            "water-cooler-hotel",
-            "vending-machine-hotel"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "布草滑槽與補給推車",
-          "x": [
-            0.68,
-            0.96
-          ],
-          "main": "laundry-chute-door",
-          "beside": [
-            "linen-cart",
-            "linen-sack"
-          ]
+          "note": "行李架",
+          "main": "folding-luggage-rack"
         },
         {
           "row": "mid",
-          "note": "客房清潔作業區",
           "x": [
-            0.05,
-            0.31
+            0.06,
+            0.4
           ],
+          "note": "客房清潔推車",
           "main": "housekeeping-cart",
           "on": [
             "folded-towel",
             "bath-towel"
           ],
           "beside": [
-            "vacuum-cleaner",
-            "wet-floor-cone"
+            "vacuum-cleaner"
           ]
         },
         {
           "row": "mid",
-          "note": "洗衣與熨燙設備",
           "x": [
-            0.36,
-            0.65
+            0.6,
+            0.8
           ],
-          "main": "laundry-soap-dispenser",
-          "beside": [
-            "ironing-board-hotel",
-            "folding-luggage-rack"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "客房服務與擦鞋角",
-          "x": [
-            0.7,
-            0.95
-          ],
-          "main": "shoe-polishing-machine",
+          "fixture": "stand",
+          "note": "客房送餐托盤",
           "on": [
             "room-service-tray"
           ]
         },
         {
-          "row": "back",
-          "note": "走廊消防灑水管線",
+          "row": "front",
           "x": [
-            0.31,
-            0.33
+            0.86,
+            0.96
           ],
-          "main": "sprinkler-pipe",
-          "on": [
-            "sprinkler-head"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "走廊煙霧與溫控設備",
-          "x": [
-            0.63,
-            0.66
-          ],
-          "wall": [
-            "smoke-detector-hotel",
-            "thermostat-hotel"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "旅客行李秤重處",
-          "x": [
-            0.32,
-            0.35
-          ],
-          "main": "luggage-scale-hotel"
+          "note": "小心地滑",
+          "main": "wet-floor-cone"
         }
       ]
     },
@@ -328,116 +205,79 @@
       "sets": [
         {
           "row": "back",
-          "note": "餐廳入口帶位",
           "x": [
-            0.05,
-            0.22
-          ],
-          "main": "restaurant-host-stand",
-          "on": [
-            "table-number-stand-hotel"
-          ],
-          "beside": [
-            "serving-tray"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "自助餐熱食檯",
-          "x": [
-            0.27,
-            0.52
+            0.02,
+            0.5
           ],
           "fixture": "counter",
+          "note": "自助餐檯",
           "on": [
             "buffet-chafer",
             "soup-tureen",
-            "serving-spoon",
-            "serving-fork"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "冷盤與沙拉檯",
-          "x": [
-            0.56,
-            0.78
-          ],
-          "fixture": "display",
-          "on": [
+            "serving-platter",
             "salad-bowl",
-            "serving-platter"
+            "bread-basket"
           ]
         },
         {
           "row": "back",
-          "note": "麵包奶油檯",
           "x": [
-            0.82,
-            0.97
+            0.54,
+            0.84
           ],
-          "fixture": "cloth-table",
+          "fixture": "cabinet",
+          "note": "飲料與酒水",
           "on": [
-            "bread-basket",
-            "butter-dish-cover",
-            "napkin-ring",
+            "carafe",
+            "wine-decanter",
+            "champagne-flute"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.88,
+            0.98
+          ],
+          "note": "帶位台",
+          "main": "restaurant-host-stand"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.3,
+            0.7
+          ],
+          "note": "餐桌",
+          "main": "dining-table-hotel",
+          "on": [
+            "salt-and-pepper-shakers",
+            "pepper-mill",
+            "tea-light-holder",
             "cloth-napkin"
           ]
         },
         {
           "row": "mid",
-          "note": "雙人桌餐具與調味料",
           "x": [
-            0.08,
-            0.34
+            0.76,
+            0.96
           ],
-          "fixture": "cloth-table",
+          "fixture": "stand",
+          "note": "服務托盤",
           "on": [
-            "table-runner",
-            "condiment-caddy",
-            "salt-cellar",
-            "pepper-mill"
+            "serving-tray"
           ]
-        },
-        {
-          "row": "mid",
-          "note": "餐桌油醋與鹽胡椒",
-          "x": [
-            0.39,
-            0.65
-          ],
-          "fixture": "cloth-table",
-          "on": [
-            "oil-cruet",
-            "vinegar-cruet",
-            "salt-and-pepper-shakers",
-            "tea-light-holder"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "酒水餐桌",
-          "x": [
-            0.7,
-            0.94
-          ],
-          "fixture": "cloth-table",
-          "on": [
-            "wine-decanter",
-            "champagne-flute",
-            "carafe"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "餐桌用餐座位",
-          "x": [
-            0.38,
-            0.66
-          ],
-          "main": "dining-table-hotel"
         }
       ]
     }
+  },
+  "scale": {
+    "lobby-reception-desk": 1.6,
+    "lobby-sofa": 1.5,
+    "lobby-coffee-table": 1.3,
+    "valet-podium": 1.3,
+    "luggage-bench": 1.3,
+    "housekeeping-cart": 1.3
   }
 }

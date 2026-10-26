@@ -11,21 +11,21 @@
     },
     {
       "id": "front-shop",
-      "name": "前廳",
+      "name": "賣場與櫃台",
       "indoor": true,
       "floor": "tile",
       "feature": "counter"
     },
     {
       "id": "medicine-aisle",
-      "name": "藥品區",
+      "name": "調劑區",
       "indoor": true,
       "floor": "tile",
       "feature": "chiller"
     },
     {
       "id": "consultation-room",
-      "name": "諮詢室",
+      "name": "諮詢與量測區",
       "indoor": true,
       "floor": "wood",
       "feature": "table"
@@ -69,21 +69,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "crutch-tip",
-      "zh": "拐杖腳墊",
-      "en": "crutch tip",
-      "ja": "杖先ゴム",
-      "reading": "つえさきゴム",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "黑色厚橡膠套呈短筒狀，底面寬而平，側面有一道凸起圓圈，像拐杖末端的防滑墊。",
-      "loose": true,
-      "motion": null,
-      "cluster": "crutches"
     },
     {
       "id": "bandage-roll",
@@ -213,7 +198,7 @@
       "reading": "スポイト",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "透明細玻璃管上端接黑色橡膠球，尖細管身裡留有一滴淡黃色液體。",
       "loose": true,
@@ -228,7 +213,7 @@
       "reading": "じょうざいカッター",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "白色小塑膠盒呈圓角三角形，掀蓋內側有一片短銀刀片，底部有淺淺凹槽。",
       "loose": true,
@@ -243,7 +228,7 @@
       "reading": "ピルケース",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "透明長方形塑膠盒分成數個小格，每格各有彩色翻蓋，外形扁平輕巧。",
       "loose": true,
@@ -258,7 +243,7 @@
       "reading": "けいりょうスプーン",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "透明塑膠長柄匙，匙面呈淺橢圓形，柄端有一個小圓孔，整體晶亮無字。",
       "loose": true,
@@ -273,7 +258,7 @@
       "reading": "やくはい",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "透明矮小塑膠杯，杯口略寬、杯底較窄，側面以淺淺凸線分出刻度，不含文字。",
       "loose": true,
@@ -288,7 +273,7 @@
       "reading": "てんびやく",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "白色短胖塑膠瓶配藍色按壓頭，頂端有細短噴嘴，瓶身圓滑且沒有標籤。",
       "loose": true,
@@ -303,7 +288,7 @@
       "reading": "めぐすり",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "小巧白色滴瓶配淺藍色尖嘴瓶蓋，瓶身圓潤，瓶口細長，沒有標籤或文字。",
       "loose": true,
@@ -318,7 +303,7 @@
       "reading": "なんこうつぼ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "矮胖白色圓罐，頂部有寬大的平圓蓋，罐身光滑純色，不帶標籤。",
       "loose": true,
@@ -333,7 +318,7 @@
       "reading": "なんこうチューブ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "白色軟管由扁平尾端向圓形旋蓋逐漸變窄，管身有一條藍色弧形裝飾，沒有文字。",
       "loose": true,
@@ -348,7 +333,7 @@
       "reading": "じょうざいシート",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "銀色長方薄片上排列數個圓形透明凸泡，每個泡內有一顆淡色藥片，背面沒有字。",
       "loose": true,
@@ -363,7 +348,7 @@
       "reading": "トローチ",
       "category": "食物",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "一顆淡黃色扁圓喉糖，正中央有小圓凹點，邊緣平滑，表面沒有刻字。",
       "loose": true,
@@ -378,24 +363,9 @@
       "reading": "せきどめドロップ",
       "category": "食物",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "一顆深棕色亮面硬糖呈橢圓形，兩端圓鈍，表面帶柔和反光且沒有包裝。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "herbal-tea-bag",
-      "zh": "草本茶包",
-      "en": "herbal tea bag",
-      "ja": "ハーブティーのティーバッグ",
-      "reading": "ハーブティーのティーバッグ",
-      "category": "食物",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "淺米色方形濾紙包，裡面隱約透出乾燥葉片顆粒，頂端繫著短棉線與小紙片。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -408,7 +378,7 @@
       "reading": "けつあつけい",
       "category": "道具",
       "size": "small",
-      "zone": "front-shop",
+      "zone": "consultation-room",
       "spot": "surface",
       "desc": "白色小型電子主機帶有深色顯示窗，旁邊連著一圈深藍袖帶。",
       "loose": false,
@@ -423,85 +393,10 @@
       "reading": "パルスオキシメーター",
       "category": "道具",
       "size": "small",
-      "zone": "front-shop",
+      "zone": "consultation-room",
       "spot": "surface",
       "desc": "小巧白色夾式儀器，頂面有深色顯示窗，前端呈張開的夾口。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "tongue-depressor-pharmacy",
-      "zh": "壓舌板",
-      "en": "tongue depressor",
-      "ja": "舌圧子",
-      "reading": "ぜつあつし",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "一支扁平的淺木色長條板，兩端圓鈍，表面光滑無字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "electric-kettle-pharmacy",
-      "zh": "快煮壺",
-      "en": "electric kettle",
-      "ja": "電気ケトル",
-      "reading": "でんきケトル",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "白色壺身放在圓形底座上，壺嘴短而尖，頂部有弧形提把。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "tea-strainer-pharmacy",
-      "zh": "茶濾網",
-      "en": "tea strainer",
-      "ja": "茶こし",
-      "reading": "ちゃこし",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "銀色細網圓碗連著短柄，碗口外伸兩個小耳，網孔均勻細密。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "sugar-tongs",
-      "zh": "方糖夾",
-      "en": "sugar tongs",
-      "ja": "シュガートング",
-      "reading": "シュガートング",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "銀色金屬夾呈細長剪形，末端各有一片圓弧夾口，中心以鉚點連接。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "coffee-beans",
-      "zh": "咖啡豆",
-      "en": "coffee beans",
-      "ja": "コーヒー豆",
-      "reading": "コーヒーまめ",
-      "category": "食物",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "幾顆深褐色橢圓豆子散放成一小堆，每顆中央都有一道彎曲凹線。",
-      "loose": true,
       "motion": null,
       "cluster": null
     },
@@ -528,7 +423,7 @@
       "reading": "まちあい いす",
       "category": "設施",
       "size": "medium",
-      "zone": "front-shop",
+      "zone": "consultation-room",
       "spot": "ground",
       "desc": "藍色單人椅有寬椅背、平坦椅面和四支細長椅腳，外形簡潔。",
       "loose": false,
@@ -546,21 +441,6 @@
       "zone": "front-shop",
       "spot": "wall",
       "desc": "圓形白色鐘面配深色外框與兩根指針，沒有刻字或數字。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wall-shelf-pharmacy",
-      "zh": "壁架",
-      "en": "wall shelf",
-      "ja": "壁棚",
-      "reading": "かべだな",
-      "category": "設施",
-      "size": "medium",
-      "zone": "front-shop",
-      "spot": "wall",
-      "desc": "一片淺木色長板固定在牆上，兩端由短支架托住。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -606,36 +486,6 @@
       "zone": "front-shop",
       "spot": "surface",
       "desc": "透明直身瓶裝著淡藍色凝膠，頂部有白色按壓頭與短噴嘴。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stethoscope-pharmacy",
-      "zh": "聽診器",
-      "en": "stethoscope",
-      "ja": "聴診器",
-      "reading": "ちょうしんき",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "銀色圓形聽診頭連著黑色橡膠管，兩端接上金屬耳管。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "otoscope-pharmacy",
-      "zh": "耳鏡",
-      "en": "otoscope",
-      "ja": "耳鏡",
-      "reading": "じきょう",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shop",
-      "spot": "surface",
-      "desc": "黑色短柄連著細長金屬探頭，前端有小圓形檢查燈罩。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -708,7 +558,7 @@
       "reading": "ソープディスペンサー",
       "category": "道具",
       "size": "small",
-      "zone": "front-shop",
+      "zone": "consultation-room",
       "spot": "surface",
       "desc": "透明方圓瓶身配白色壓頭，瓶內可見一段吸管，外觀沒有標籤。",
       "loose": false,
@@ -723,26 +573,11 @@
       "reading": "ペーパータオルディスペンサー",
       "category": "設施",
       "size": "medium",
-      "zone": "front-shop",
+      "zone": "consultation-room",
       "spot": "wall",
       "desc": "白色扁平長方盒固定在牆上，底部開口露出一截摺疊白紙。",
       "loose": false,
       "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "air-purifier-pharmacy",
-      "zh": "空氣清淨機",
-      "en": "air purifier",
-      "ja": "空気清浄機",
-      "reading": "くうきせいじょうき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "front-shop",
-      "spot": "wallbase",
-      "desc": "白色直立長方機身，正面下半部有整齊進氣格柵，頂部平坦。",
-      "loose": false,
-      "motion": "wobble",
       "cluster": null
     },
     {
@@ -753,7 +588,7 @@
       "reading": "れいぞうこ",
       "category": "設施",
       "size": "large",
-      "zone": "front-shop",
+      "zone": "medicine-aisle",
       "spot": "wallbase",
       "desc": "白色直立雙門冰箱，冷藏門較高、冷凍門較矮，門上各有一支把手。",
       "loose": false,
@@ -791,21 +626,6 @@
       "cluster": null
     },
     {
-      "id": "suppository",
-      "zh": "栓劑",
-      "en": "suppository",
-      "ja": "座薬",
-      "reading": "ざやく",
-      "category": "道具",
-      "size": "small",
-      "zone": "medicine-aisle",
-      "spot": "surface",
-      "desc": "白色小型子彈狀藥品，一端圓尖，另一端平整，外層光滑。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "ampoule",
       "zh": "安瓿瓶",
       "en": "ampoule",
@@ -816,21 +636,6 @@
       "zone": "medicine-aisle",
       "spot": "surface",
       "desc": "細長透明玻璃安瓿，瓶頸收窄，頂端有易折的細小尖口。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "safety-pin-pharmacy",
-      "zh": "安全別針",
-      "en": "safety pin",
-      "ja": "安全ピン",
-      "reading": "あんぜんピン",
-      "category": "道具",
-      "size": "small",
-      "zone": "medicine-aisle",
-      "spot": "surface",
-      "desc": "銀色金屬彎針，一端有圓形扣頭，尖端收在保護扣內。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -847,21 +652,6 @@
       "spot": "surface",
       "desc": "一小卷白色柔軟棉絮，捲成短圓柱形，兩端蓬鬆。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "medicine-funnel",
-      "zh": "藥用漏斗",
-      "en": "medicine funnel",
-      "ja": "薬用じょうご",
-      "reading": "やくようじょうご",
-      "category": "道具",
-      "size": "small",
-      "zone": "medicine-aisle",
-      "spot": "surface",
-      "desc": "白色小漏斗，上方寬口逐漸收成短管，輪廓清楚簡單。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -933,7 +723,7 @@
       "reading": "せんがんカップ",
       "category": "道具",
       "size": "small",
-      "zone": "medicine-aisle",
+      "zone": "front-shop",
       "spot": "surface",
       "desc": "透明小杯上窄下寬，杯口呈柔和橢圓形，底部平穩。",
       "loose": false,
@@ -948,7 +738,7 @@
       "reading": "はなせんじょうき",
       "category": "道具",
       "size": "small",
-      "zone": "medicine-aisle",
+      "zone": "front-shop",
       "spot": "surface",
       "desc": "白色塑膠小壺，壺身圓潤，壺嘴細長彎起，帶有握把。",
       "loose": false,
@@ -981,21 +771,6 @@
       "zone": "medicine-aisle",
       "spot": "ground",
       "desc": "淺藍色硬殼方箱，厚實箱蓋配大型提把，箱角圓潤。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "temperature-controller",
-      "zh": "溫度控制器",
-      "en": "temperature controller",
-      "ja": "温度調節器",
-      "reading": "おんどちょうせつき",
-      "category": "設施",
-      "size": "small",
-      "zone": "medicine-aisle",
-      "spot": "wall",
-      "desc": "白色方形控制盒，中央有圓形旋鈕與小型指示燈，沒有刻字。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1046,21 +821,6 @@
       "cluster": null
     },
     {
-      "id": "medical-waste-bin",
-      "zh": "醫療廢棄物桶",
-      "en": "medical waste bin",
-      "ja": "医療廃棄物容器",
-      "reading": "いりょうはいきぶつようき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "medicine-aisle",
-      "spot": "ground",
-      "desc": "紅色有蓋直立桶，桶身方正，頂蓋中央留有小型投入孔。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "medicine-supply-tray",
       "zh": "藥品托盤",
       "en": "medicine tray",
@@ -1074,21 +834,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "pill-bottle-cap",
-      "zh": "藥瓶蓋",
-      "en": "medicine bottle cap",
-      "ja": "薬びんのキャップ",
-      "reading": "くすりびんのキャップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "medicine-aisle",
-      "spot": "surface",
-      "desc": "白色圓形塑膠旋蓋，側面有防滑直紋，內側可見螺紋。",
-      "loose": true,
-      "motion": null,
-      "cluster": "medicine-bottle"
     },
     {
       "id": "consultation-table",
@@ -1151,51 +896,6 @@
       "cluster": "consultation-table"
     },
     {
-      "id": "paper-tray",
-      "zh": "文件盤",
-      "en": "paper tray",
-      "ja": "書類トレー",
-      "reading": "しょるいトレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "黑色塑膠淺盤呈長方形，前緣較低、後端略高，裡面放著幾張白紙。",
-      "loose": false,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "paperweight-glass",
-      "zh": "玻璃鎮紙",
-      "en": "glass paperweight",
-      "ja": "ガラスの文鎮",
-      "reading": "ガラスのぶんちん",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "一顆透明厚玻璃半球，底面平坦，內部有藍綠色渦紋與明亮反光。",
-      "loose": false,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "tea-spoon",
-      "zh": "茶匙",
-      "en": "tea spoon",
-      "ja": "ティースプーン",
-      "reading": "ティースプーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "一支細長銀色小匙，前端是淺橢圓匙面，金屬柄帶柔和反光。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
       "id": "water-pitcher",
       "zh": "水壺",
       "en": "water pitcher",
@@ -1207,21 +907,6 @@
       "spot": "surface",
       "desc": "透明玻璃壺呈高身圓筒形，一側有彎曲把手，另一側壺嘴向外伸出。",
       "loose": false,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "coiled-phone-cord",
-      "zh": "電話捲線",
-      "en": "coiled phone cord",
-      "ja": "電話コード",
-      "reading": "でんわコード",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "黑色彈簧狀捲線兩端接著小型插頭，整段線圈緊密捲曲放在桌邊。",
-      "loose": true,
       "motion": null,
       "cluster": "consultation-table"
     },
@@ -1241,21 +926,6 @@
       "cluster": "consultation-table"
     },
     {
-      "id": "desk-fan",
-      "zh": "桌上電風扇",
-      "en": "desk fan",
-      "ja": "卓上扇風機",
-      "reading": "たくじょうせんぷうき",
-      "category": "設施",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "小型白色圓形風扇有網罩保護的扇葉，安裝在短支架與圓形底座上。",
-      "loose": false,
-      "motion": "wobble",
-      "cluster": "consultation-table"
-    },
-    {
       "id": "desk-lamp-pharmacy",
       "zh": "桌燈",
       "en": "desk lamp",
@@ -1266,36 +936,6 @@
       "zone": "consultation-room",
       "spot": "surface",
       "desc": "圓形底座上立著可彎折的細長燈臂，頂端有朝下的白色燈罩。",
-      "loose": false,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "desk-organizer-pharmacy",
-      "zh": "桌上收納盒",
-      "en": "desk organizer",
-      "ja": "デスクオーガナイザー",
-      "reading": "デスクオーガナイザー",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "透明塑膠製的分格收納盒，排列著不同大小的淺方格，可放小型辦公用品。",
-      "loose": false,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "sticky-note-pad-pharmacy",
-      "zh": "便利貼",
-      "en": "sticky note pad",
-      "ja": "付箋",
-      "reading": "ふせん",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "一疊方形淡黃色紙片整齊疊放，側邊可看見薄薄的多層紙張。",
       "loose": false,
       "motion": null,
       "cluster": "consultation-table"
@@ -1316,21 +956,6 @@
       "cluster": "consultation-table"
     },
     {
-      "id": "desk-clock-pharmacy",
-      "zh": "桌鐘",
-      "en": "desk clock",
-      "ja": "置き時計",
-      "reading": "おきどけい",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "圓形白色鐘面嵌在黑色小支架上，外圈有清楚的指針與刻度，沒有數字。",
-      "loose": false,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
       "id": "reading-glasses-pharmacy",
       "zh": "老花眼鏡",
       "en": "reading glasses",
@@ -1338,7 +963,7 @@
       "reading": "ろうがんきょう",
       "category": "道具",
       "size": "small",
-      "zone": "consultation-room",
+      "zone": "front-shop",
       "spot": "surface",
       "desc": "細金屬框連接兩片透明橢圓鏡片，兩側鏡腳向後彎折，整副平放在桌面。",
       "loose": true,
@@ -1353,114 +978,9 @@
       "reading": "むしめがね",
       "category": "道具",
       "size": "small",
-      "zone": "consultation-room",
+      "zone": "front-shop",
       "spot": "surface",
       "desc": "圓形透明鏡片嵌在黑色圓框中，連接一支短柄，鏡面帶有明亮反光。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "fountain-pen-pharmacy",
-      "zh": "鋼筆",
-      "en": "fountain pen",
-      "ja": "万年筆",
-      "reading": "まんねんひつ",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "細長的深藍色筆身，一端露出金色尖筆尖，另一端有圓潤筆蓋。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "mechanical-pencil-pharmacy",
-      "zh": "自動鉛筆",
-      "en": "mechanical pencil",
-      "ja": "シャープペンシル",
-      "reading": "シャープペンシル",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "細長銀色筆身搭配黑色握把與頂端按鈕，前端伸出細小筆尖。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "highlighter-pharmacy",
-      "zh": "螢光筆",
-      "en": "highlighter",
-      "ja": "蛍光ペン",
-      "reading": "けいこうペン",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "粗短的黃色塑膠筆身配有同色筆蓋，筆尖呈寬扁斜角，外觀鮮明。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "eraser-pharmacy",
-      "zh": "橡皮擦",
-      "en": "eraser",
-      "ja": "消しゴム",
-      "reading": "けしゴム",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "白色長方形橡皮擦有平坦的切面與圓滑邊角，表面乾淨無字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "ruler-pharmacy",
-      "zh": "尺",
-      "en": "ruler",
-      "ja": "定規",
-      "reading": "じょうぎ",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "透明的長條塑膠尺帶有細密刻線，兩端平直，沒有任何數字或字母。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "paper-clips",
-      "zh": "迴紋針",
-      "en": "paper clips",
-      "ja": "ゼムクリップ",
-      "reading": "ゼムクリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "幾枚細金屬線彎成雙層長橢圓形，銀色表面反光，散放在桌角。",
-      "loose": true,
-      "motion": null,
-      "cluster": "consultation-table"
-    },
-    {
-      "id": "binder-clip-pharmacy",
-      "zh": "長尾夾",
-      "en": "binder clip",
-      "ja": "ダブルクリップ",
-      "reading": "ダブルクリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "consultation-room",
-      "spot": "surface",
-      "desc": "黑色三角形金屬夾身配有兩支可折疊的銀色線柄，夾口朝下。",
       "loose": true,
       "motion": null,
       "cluster": "consultation-table"
@@ -1496,21 +1016,6 @@
       "cluster": null
     },
     {
-      "id": "mobility-scooter",
-      "zh": "電動代步車",
-      "en": "mobility scooter",
-      "ja": "電動カート",
-      "reading": "でんどうカート",
-      "category": "交通工具",
-      "size": "medium",
-      "zone": "medicine-aisle",
-      "spot": "ground",
-      "desc": "低矮的四輪代步車，前方有寬大的踏板和一支帶把手的轉向桿。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "knee-brace",
       "zh": "護膝",
       "en": "knee brace",
@@ -1518,7 +1023,7 @@
       "reading": "ひざサポーター",
       "category": "道具",
       "size": "small",
-      "zone": "medicine-aisle",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "黑色弧形布套，中間有圓形開口，兩側帶有寬寬的黏扣帶。",
       "loose": true,
@@ -1533,7 +1038,7 @@
       "reading": "あしくびサポーター",
       "category": "道具",
       "size": "small",
-      "zone": "medicine-aisle",
+      "zone": "front-shop",
       "spot": "ground",
       "desc": "深藍色厚布套包住腳踝的位置，兩端露出腳掌和腳跟，表面有交叉束帶。",
       "loose": true,
@@ -1611,6 +1116,171 @@
       "id": "walker-basket",
       "reason": "和已有的 walking-frame 太像",
       "zone": "medicine-aisle"
+    },
+    {
+      "id": "crutch-tip",
+      "reason": "退役：零件，看不出是什麼",
+      "zone": "entrance"
+    },
+    {
+      "id": "herbal-tea-bag",
+      "reason": "退役：茶飲，不是藥品",
+      "zone": "entrance"
+    },
+    {
+      "id": "tongue-depressor-pharmacy",
+      "reason": "退役：醫師診療器材",
+      "zone": "front-shop"
+    },
+    {
+      "id": "electric-kettle-pharmacy",
+      "reason": "退役：員工茶水，不是陳列",
+      "zone": "front-shop"
+    },
+    {
+      "id": "tea-strainer-pharmacy",
+      "reason": "退役：茶具，不屬於藥局",
+      "zone": "front-shop"
+    },
+    {
+      "id": "sugar-tongs",
+      "reason": "退役：茶具",
+      "zone": "front-shop"
+    },
+    {
+      "id": "coffee-beans",
+      "reason": "退役：不屬於藥局",
+      "zone": "front-shop"
+    },
+    {
+      "id": "wall-shelf-pharmacy",
+      "reason": "退役：是家具不是商品",
+      "zone": "front-shop"
+    },
+    {
+      "id": "stethoscope-pharmacy",
+      "reason": "退役：醫師診療器材",
+      "zone": "front-shop"
+    },
+    {
+      "id": "otoscope-pharmacy",
+      "reason": "退役：醫師診療器材",
+      "zone": "front-shop"
+    },
+    {
+      "id": "air-purifier-pharmacy",
+      "reason": "退役：家電行商品",
+      "zone": "front-shop"
+    },
+    {
+      "id": "suppository",
+      "reason": "退役：不適合初學者，圖也難認",
+      "zone": "medicine-aisle"
+    },
+    {
+      "id": "safety-pin-pharmacy",
+      "reason": "退役：文具雜物",
+      "zone": "medicine-aisle"
+    },
+    {
+      "id": "medicine-funnel",
+      "reason": "退役：實驗室器材",
+      "zone": "medicine-aisle"
+    },
+    {
+      "id": "temperature-controller",
+      "reason": "退役：背景設備",
+      "zone": "medicine-aisle"
+    },
+    {
+      "id": "medical-waste-bin",
+      "reason": "退役：醫院用品",
+      "zone": "medicine-aisle"
+    },
+    {
+      "id": "pill-bottle-cap",
+      "reason": "退役：零件",
+      "zone": "medicine-aisle"
+    },
+    {
+      "id": "paper-tray",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "paperweight-glass",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "tea-spoon",
+      "reason": "退役：餐具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "coiled-phone-cord",
+      "reason": "退役：零件",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "desk-fan",
+      "reason": "退役：家電湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "desk-organizer-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "sticky-note-pad-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "desk-clock-pharmacy",
+      "reason": "退役：和掛鐘重複",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "fountain-pen-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "mechanical-pencil-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "highlighter-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "eraser-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "ruler-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "paper-clips",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "binder-clip-pharmacy",
+      "reason": "退役：辦公文具湊數",
+      "zone": "consultation-room"
+    },
+    {
+      "id": "mobility-scooter",
+      "reason": "退役：醫療器材行商品，不在藥局",
+      "zone": "medicine-aisle"
     }
   ],
   "reviewFixes": [
@@ -1645,8 +1315,10 @@
     }
   },
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 67,
     "added": 5,
-    "at": "2026-10-03T16:18:01.018+09:00"
-  }
+    "at": "2026-10-03T16:18:01.018+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 67
 }

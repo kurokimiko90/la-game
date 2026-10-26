@@ -4,28 +4,25 @@
       "sets": [
         {
           "row": "back",
-          "note": "入口導引與行動輔具",
           "x": [
-            0.08,
-            0.32
+            0.02,
+            0.98
           ],
           "fixture": "facade",
           "door": true,
+          "note": "藥局門面與綠十字招牌",
           "wall": [
             "cross"
-          ],
-          "front": [
-            "walking-cane"
           ]
         },
         {
           "row": "mid",
-          "note": "包紮急救檯",
           "x": [
-            0.08,
-            0.38
+            0.04,
+            0.3
           ],
           "fixture": "stand",
+          "note": "門口花車：包紮用品",
           "on": [
             "bandage-roll",
             "gauze-pad",
@@ -33,75 +30,33 @@
             "medical-tape"
           ],
           "beside": [
-            "medical-scissors",
-            "elastic-bandage"
+            "elastic-bandage",
+            "medical-scissors"
           ]
         },
         {
           "row": "mid",
-          "note": "冷熱敷與用藥工具",
           "x": [
-            0.42,
-            0.7
+            0.7,
+            0.92
           ],
           "fixture": "stand",
+          "note": "門口花車：冷熱敷",
           "on": [
             "instant-cold-pack",
-            "hot-water-bottle",
-            "medicine-dropper",
-            "pill-cutter-pharmacy"
-          ],
-          "beside": [
-            "crutch-tip"
+            "hot-water-bottle"
           ]
         },
         {
           "row": "back",
-          "note": "居家服藥用品",
           "x": [
-            0.56,
-            0.9
+            0.58,
+            0.68
           ],
-          "fixture": "cloth-table",
-          "on": [
-            "pill-organizer",
-            "medicine-spoon",
-            "medicine-cup",
-            "blister-pack-pharmacy"
-          ],
+          "note": "門邊的助行輔具",
+          "main": "walking-frame",
           "beside": [
-            "ointment-jar",
-            "medicine-tube"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "感冒舒緩用品",
-          "x": [
-            0.34,
-            0.52
-          ],
-          "fixture": "stand",
-          "on": [
-            "nasal-spray",
-            "eye-drops",
-            "lozenge",
-            "cough-drop"
-          ],
-          "beside": [
-            "walking-frame"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "草本茶飲補充",
-          "x": [
-            0.73,
-            0.9
-          ],
-          "fixture": "stand",
-          "on": [
-            "herbal-tea-bag"
+            "walking-cane"
           ]
         }
       ]
@@ -110,12 +65,57 @@
       "sets": [
         {
           "row": "back",
-          "note": "藥師接待與結帳櫃台",
           "x": [
-            0.32,
-            0.68
+            0.02,
+            0.22
           ],
-          "fixture": "counter",
+          "fixture": "shelf",
+          "note": "感冒喉嚨用藥",
+          "on": [
+            "nasal-spray",
+            "lozenge",
+            "cough-drop",
+            "eye-drops"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.24,
+            0.44
+          ],
+          "fixture": "shelf",
+          "note": "眼鼻保養",
+          "on": [
+            "eye-wash-cup",
+            "nasal-irrigator",
+            "contact-lens-case-pharmacy",
+            "reading-glasses-pharmacy"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.46,
+            0.66
+          ],
+          "fixture": "shelf",
+          "note": "外用藥與棉品",
+          "on": [
+            "ointment-jar",
+            "medicine-tube",
+            "cotton-swab-pharmacy",
+            "cotton-ball-pharmacy",
+            "tweezers-pharmacy"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.7,
+            0.98
+          ],
+          "note": "藥師櫃台",
           "main": "reception-desk",
           "on": [
             "hand-sanitizer-dispenser-pharmacy",
@@ -127,78 +127,29 @@
         },
         {
           "row": "mid",
-          "note": "候診座位",
           "x": [
-            0.08,
-            0.28
-          ],
-          "main": "waiting-chair",
-          "beside": [
-            "wastebasket-pharmacy"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "血氧與血壓自助測量",
-          "x": [
-            0.72,
-            0.94
+            0.06,
+            0.4
           ],
           "fixture": "stand",
+          "note": "護具展示",
           "on": [
-            "blood-pressure-monitor-pharmacy",
-            "pulse-oximeter-pharmacy"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "藥師檢查工具",
-          "x": [
-            0.08,
-            0.3
+            "knee-brace",
+            "ankle-brace",
+            "magnifying-glass-pharmacy"
           ],
           "beside": [
-            "cotton-swab-pharmacy",
-            "cotton-ball-pharmacy"
-          ],
-          "front": [
-            "stethoscope-pharmacy",
-            "otoscope-pharmacy",
-            "tongue-depressor-pharmacy",
-            "tweezers-pharmacy"
+            "walking-boot"
           ]
         },
         {
-          "row": "back",
-          "note": "飲水與茶水角",
+          "row": "front",
           "x": [
-            0.72,
-            0.94
+            0.92,
+            0.98
           ],
-          "fixture": "cabinet",
-          "on": [
-            "electric-kettle-pharmacy",
-            "tea-strainer-pharmacy",
-            "sugar-tongs",
-            "coffee-beans"
-          ],
-          "beside": [
-            "refrigerator-pharmacy",
-            "air-purifier-pharmacy"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "洗手與擦手區",
-          "x": [
-            0.3,
-            0.42
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "soap-dispenser-pharmacy",
-            "paper-towel-dispenser-pharmacy"
-          ]
+          "note": "櫃台旁垃圾桶",
+          "main": "wastebasket-pharmacy"
         }
       ]
     },
@@ -206,112 +157,86 @@
       "sets": [
         {
           "row": "back",
-          "note": "常溫藥品與藥袋",
           "x": [
-            0.08,
-            0.34
+            0.02,
+            0.24
           ],
           "fixture": "shelf",
+          "note": "處方藥櫃",
           "on": [
-            "prescription-bag",
             "medicine-box",
-            "suppository",
-            "safety-pin-pharmacy"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "調劑研磨工作檯",
-          "x": [
-            0.08,
-            0.36
-          ],
-          "fixture": "counter",
-          "on": [
-            "medicine-mortar",
-            "medicine-pestle",
-            "medicine-funnel",
-            "medicine-spatula"
-          ],
-          "beside": [
-            "medicine-supply-tray",
-            "pill-bottle-cap"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "冷藏藥品設備",
-          "x": [
-            0.42,
-            0.7
-          ],
-          "main": "medicine-cooler-box",
-          "beside": [
-            "temperature-controller",
-            "reusable-cold-pack"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "無菌耗材備品",
-          "x": [
-            0.74,
-            0.94
-          ],
-          "fixture": "shelf",
-          "on": [
-            "ampoule",
-            "cotton-roll",
             "medicine-jar",
+            "ampoule",
             "medicine-dropper-bottle"
           ]
         },
         {
-          "row": "mid",
-          "note": "醫療廢棄物處理",
+          "row": "back",
           "x": [
-            0.72,
-            0.94
+            0.26,
+            0.48
           ],
-          "main": "medical-waste-bin",
-          "beside": [
-            "sharps-container",
-            "disposable-glove-box"
+          "fixture": "shelf",
+          "note": "分裝與服藥用品",
+          "on": [
+            "pill-organizer",
+            "medicine-cup",
+            "medicine-spoon",
+            "blister-pack-pharmacy"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.52,
+            0.62
+          ],
+          "note": "藥品冰箱",
+          "main": "refrigerator-pharmacy"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.66,
+            0.96
+          ],
+          "fixture": "cabinet",
+          "note": "冷藏備品",
+          "on": [
+            "medicine-cooler-box",
+            "reusable-cold-pack"
           ]
         },
         {
           "row": "mid",
-          "note": "眼鼻沖洗用品",
           "x": [
-            0.4,
-            0.62
+            0.06,
+            0.46
           ],
-          "fixture": "stand",
+          "fixture": "counter",
+          "note": "調劑工作檯",
           "on": [
-            "eye-wash-cup",
-            "nasal-irrigator"
+            "medicine-mortar",
+            "medicine-pestle",
+            "medicine-spatula",
+            "pill-cutter-pharmacy",
+            "medicine-dropper"
           ]
         },
         {
           "row": "mid",
-          "note": "行動輔具停放",
           "x": [
-            0.64,
-            0.7
+            0.54,
+            0.9
           ],
-          "main": "mobility-scooter"
-        },
-        {
-          "row": "front",
-          "note": "護膝護踝用品",
-          "x": [
-            0.38,
-            0.62
-          ],
-          "fixture": "stand",
+          "fixture": "cloth-table",
+          "note": "包藥與耗材",
           "on": [
-            "knee-brace",
-            "ankle-brace"
+            "prescription-bag",
+            "medicine-supply-tray",
+            "disposable-glove-box",
+            "cotton-roll",
+            "sharps-container"
           ]
         }
       ]
@@ -319,18 +244,32 @@
     "consultation-room": {
       "sets": [
         {
-          "row": "mid",
-          "note": "藥師諮詢桌",
+          "row": "back",
           "x": [
-            0.28,
-            0.7
+            0.04,
+            0.22
           ],
+          "fixture": "cabinet",
+          "note": "洗手台",
+          "on": [
+            "soap-dispenser-pharmacy"
+          ],
+          "wall": [
+            "paper-towel-dispenser-pharmacy"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.26,
+            0.62
+          ],
+          "note": "藥師諮詢桌",
           "main": "consultation-table",
           "on": [
             "document-folder",
-            "paper-tray",
-            "paperweight-glass",
-            "desk-organizer-pharmacy"
+            "water-pitcher",
+            "water-glass-pharmacy"
           ],
           "beside": [
             "office-chair",
@@ -338,72 +277,40 @@
           ]
         },
         {
-          "row": "mid",
-          "note": "桌面文具與排程",
+          "row": "back",
           "x": [
-            0.08,
-            0.26
+            0.5,
+            0.7
           ],
           "fixture": "cabinet",
+          "note": "資料櫃",
           "on": [
-            "sticky-note-pad-pharmacy",
             "desk-calendar",
-            "fountain-pen-pharmacy",
-            "mechanical-pencil-pharmacy"
-          ],
-          "beside": [
-            "highlighter-pharmacy",
-            "eraser-pharmacy"
+            "desk-lamp-pharmacy"
           ]
         },
         {
           "row": "mid",
-          "note": "桌面閱讀與量測",
           "x": [
-            0.72,
-            0.94
+            0.7,
+            0.96
           ],
-          "fixture": "cabinet",
+          "fixture": "display",
+          "note": "自助量血壓",
           "on": [
-            "reading-glasses-pharmacy",
-            "magnifying-glass-pharmacy",
-            "ruler-pharmacy",
-            "paper-clips"
+            "blood-pressure-monitor-pharmacy",
+            "pulse-oximeter-pharmacy"
           ],
           "beside": [
-            "binder-clip-pharmacy"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "電話與飲水",
-          "x": [
-            0.08,
-            0.28
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "coiled-phone-cord",
-            "water-pitcher",
-            "water-glass-pharmacy",
-            "tea-spoon"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "桌面照明與通風",
-          "x": [
-            0.72,
-            0.94
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "desk-lamp-pharmacy",
-            "desk-fan",
-            "desk-clock-pharmacy"
+            "waiting-chair"
           ]
         }
       ]
     }
+  },
+  "scale": {
+    "reception-desk": 1.6,
+    "consultation-table": 1.6,
+    "cross": 1.6
   }
 }

@@ -198,7 +198,7 @@
   {
     "id": "fire-station",
     "name": "消防局",
-    "itemCount": 84,
+    "itemCount": 40,
     "icon": {
       "viewBox": [
         0,
@@ -212,7 +212,7 @@
   {
     "id": "bakery",
     "name": "麵包店",
-    "itemCount": 91,
+    "itemCount": 63,
     "icon": {
       "viewBox": [
         0,
@@ -226,7 +226,7 @@
   {
     "id": "beach",
     "name": "海邊",
-    "itemCount": 95,
+    "itemCount": 51,
     "icon": {
       "viewBox": [
         0,
@@ -240,7 +240,7 @@
   {
     "id": "clothing-store",
     "name": "服飾店",
-    "itemCount": 88,
+    "itemCount": 50,
     "icon": {
       "viewBox": [
         0,
@@ -254,21 +254,21 @@
   {
     "id": "movie-theater",
     "name": "電影院",
-    "itemCount": 91,
+    "itemCount": 39,
     "icon": {
       "viewBox": [
         0,
         0,
-        160,
-        150
+        140,
+        180
       ],
-      "body": "<rect x=\"8\" y=\"91\" width=\"144\" height=\"59\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"14\" y=\"105\" width=\"132\" height=\"45\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"77\" width=\"16\" height=\"73\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"122\" y=\"83\" width=\"16\" height=\"67\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"30\" y=\"68\" width=\"104\" height=\"13\" rx=\"3\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"52\" y=\"69\" width=\"16\" height=\"11\" fill=\"#e57373\"/><rect x=\"91\" y=\"69\" width=\"16\" height=\"11\" fill=\"#e57373\"/><rect x=\"8\" y=\"118\" width=\"144\" height=\"6\" fill=\"#37474f\"/><rect x=\"35\" y=\"71\" width=\"16\" height=\"4\" fill=\"#fff\" opacity=\"0.25\"/>"
+      "body": "<rect x=\"14\" y=\"4\" width=\"112\" height=\"176\" rx=\"3\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"20\" y=\"12\" width=\"100\" height=\"92\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"25\" y=\"17\" width=\"20\" height=\"74\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"49\" y=\"17\" width=\"20\" height=\"74\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"73\" y=\"17\" width=\"20\" height=\"74\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"97\" y=\"17\" width=\"18\" height=\"74\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"109\" width=\"100\" height=\"28\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"38\" cy=\"119\" r=\"4\" fill=\"#37474f\"/><circle cx=\"62\" cy=\"119\" r=\"4\" fill=\"#37474f\"/><circle cx=\"86\" cy=\"119\" r=\"4\" fill=\"#37474f\"/><circle cx=\"108\" cy=\"119\" r=\"4\" fill=\"#37474f\"/><rect x=\"31\" y=\"145\" width=\"78\" height=\"24\" fill=\"#37474f\"/><rect x=\"43\" y=\"145\" width=\"54\" height=\"15\" fill=\"#90a4ae\"/><rect x=\"18\" y=\"5\" width=\"104\" height=\"6\" fill=\"#ffffff\" opacity=\"0.25\"/>"
     }
   },
   {
     "id": "bank",
     "name": "銀行",
-    "itemCount": 100,
+    "itemCount": 41,
     "icon": {
       "viewBox": [
         0,
@@ -282,7 +282,7 @@
   {
     "id": "museum",
     "name": "博物館",
-    "itemCount": 100,
+    "itemCount": 44,
     "icon": {
       "viewBox": [
         0,
@@ -296,7 +296,7 @@
   {
     "id": "police-station",
     "name": "警察局",
-    "itemCount": 100,
+    "itemCount": 50,
     "icon": {
       "viewBox": [
         0,
@@ -310,21 +310,21 @@
   {
     "id": "hair-salon",
     "name": "美髮院",
-    "itemCount": 100,
+    "itemCount": 51,
     "icon": {
       "viewBox": [
         0,
         0,
-        140,
-        180
+        150,
+        150
       ],
-      "body": "<polygon points=\"10,32 48,22 52,168 14,176\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"48,22 91,28 88,170 52,168\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"91,28 130,20 126,176 88,170\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"22\" y1=\"31\" x2=\"25\" y2=\"173\" stroke=\"#8d6e63\" stroke-width=\"3\"/><line x1=\"37\" y1=\"27\" x2=\"40\" y2=\"170\" stroke=\"#8d6e63\" stroke-width=\"3\"/><line x1=\"61\" y1=\"25\" x2=\"60\" y2=\"168\" stroke=\"#d7a86e\" stroke-width=\"3\"/><line x1=\"77\" y1=\"26\" x2=\"75\" y2=\"169\" stroke=\"#d7a86e\" stroke-width=\"3\"/><line x1=\"103\" y1=\"26\" x2=\"101\" y2=\"172\" stroke=\"#8d6e63\" stroke-width=\"3\"/><line x1=\"117\" y1=\"23\" x2=\"114\" y2=\"174\" stroke=\"#8d6e63\" stroke-width=\"3\"/><rect x=\"15\" y=\"34\" width=\"30\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
+      "body": "<rect x=\"28\" y=\"90\" width=\"94\" height=\"56\" rx=\"3\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"34\" y=\"98\" width=\"82\" height=\"5\" fill=\"#90a4ae\"/><path d=\"M14 40 L136 40 L126 76 L111 88 L94 92 L87 86 L63 86 L56 92 L39 88 L24 76 Z\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><path d=\"M63 86 L87 86 L82 80 L68 80 Z\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"37\" width=\"106\" height=\"7\" rx=\"2\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"33\" y=\"48\" width=\"82\" height=\"4\" fill=\"#fff\" opacity=\"0.25\"/><rect x=\"45\" y=\"110\" width=\"60\" height=\"4\" fill=\"#90a4ae\"/>"
     }
   },
   {
     "id": "flower-shop",
     "name": "花店",
-    "itemCount": 100,
+    "itemCount": 44,
     "icon": {
       "viewBox": [
         0,
@@ -338,7 +338,7 @@
   {
     "id": "bookstore",
     "name": "書店",
-    "itemCount": 100,
+    "itemCount": 32,
     "icon": {
       "viewBox": [
         0,
@@ -352,77 +352,77 @@
   {
     "id": "stationery-store",
     "name": "文具店",
-    "itemCount": 100,
+    "itemCount": 53,
     "icon": {
       "viewBox": [
         0,
         0,
         160,
-        140
+        150
       ],
-      "body": "<rect x=\"4\" y=\"5\" width=\"152\" height=\"135\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"12\" y=\"13\" width=\"136\" height=\"119\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"18\" y=\"20\" width=\"124\" height=\"104\" fill=\"#fafafa\"/><rect x=\"28\" y=\"48\" width=\"9\" height=\"67\" fill=\"#e57373\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"28,48 32,37 37,48\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"51\" y=\"40\" width=\"9\" height=\"75\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"51,40 55,29 60,40\" fill=\"#ffb74d\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"74\" y=\"51\" width=\"9\" height=\"64\" fill=\"#43a047\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"74,51 78,40 83,51\" fill=\"#f48fb1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"13\" width=\"136\" height=\"6\" fill=\"#ffffff\" opacity=\"0.3\"/>"
+      "body": "<rect x=\"8\" y=\"35\" width=\"144\" height=\"113\" rx=\"2\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"4\" y=\"27\" width=\"152\" height=\"16\" rx=\"2\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"17\" y=\"56\" width=\"37\" height=\"29\" rx=\"2\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"61\" y=\"56\" width=\"37\" height=\"29\" rx=\"2\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"105\" y=\"56\" width=\"37\" height=\"29\" rx=\"2\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"70\" r=\"3\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1\"/><circle cx=\"89\" cy=\"70\" r=\"3\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1\"/><circle cx=\"133\" cy=\"70\" r=\"3\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1\"/><rect x=\"17\" y=\"94\" width=\"37\" height=\"39\" rx=\"2\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"61\" y=\"94\" width=\"37\" height=\"39\" rx=\"2\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"105\" y=\"94\" width=\"37\" height=\"39\" rx=\"2\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><circle cx=\"45\" cy=\"113\" r=\"3\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1\"/><circle cx=\"89\" cy=\"113\" r=\"3\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1\"/><circle cx=\"133\" cy=\"113\" r=\"3\" fill=\"#fdd835\" stroke=\"#37474f\" stroke-width=\"1\"/><rect x=\"8\" y=\"35\" width=\"144\" height=\"6\" fill=\"#ffffff\" opacity=\"0.2\"/>"
     }
   },
   {
     "id": "home",
     "name": "我的家",
-    "itemCount": 78,
+    "itemCount": 62,
     "icon": {
       "viewBox": [
         0,
         0,
         140,
-        180
+        160
       ],
-      "body": "<rect x=\"43\" y=\"10\" width=\"54\" height=\"12\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"50\" y=\"22\" width=\"40\" height=\"142\" fill=\"#ffffff\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"46\" y=\"34\" width=\"48\" height=\"5\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"46\" y=\"145\" width=\"48\" height=\"6\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"158\" width=\"56\" height=\"12\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"54\" y=\"24\" width=\"6\" height=\"119\" fill=\"#ffffff\" opacity=\"0.3\"/>"
+      "body": "<rect x=\"26\" y=\"132\" width=\"88\" height=\"18\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"25,76 51,40 97,40 115,76 108,121 35,121\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"13\" y=\"77\" width=\"22\" height=\"57\" rx=\"7\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"105\" y=\"77\" width=\"22\" height=\"57\" rx=\"7\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"26,116 115,116 132,135 43,135\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"51,48 92,48 104,77 38,77\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"31\" y=\"81\" width=\"78\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
   },
   {
     "id": "gym",
     "name": "健身房",
-    "itemCount": 100,
+    "itemCount": 42,
     "icon": {
       "viewBox": [
         0,
         0,
-        140,
-        180
+        150,
+        150
       ],
-      "body": "<rect x=\"55\" y=\"12\" width=\"30\" height=\"142\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"60\" y=\"18\" width=\"7\" height=\"130\" fill=\"#fff\" opacity=\"0.25\"/><rect x=\"22\" y=\"148\" width=\"96\" height=\"20\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"14\" y=\"165\" width=\"112\" height=\"13\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"53\" y=\"10\" width=\"34\" height=\"8\" fill=\"#37474f\"/>"
+      "body": "<rect x=\"15\" y=\"132\" width=\"36\" height=\"12\" rx=\"2\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"99\" y=\"132\" width=\"36\" height=\"12\" rx=\"2\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"25\" y=\"36\" width=\"16\" height=\"98\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"109\" y=\"36\" width=\"16\" height=\"98\" fill=\"#5c6bc0\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"18\" y=\"28\" width=\"114\" height=\"12\" rx=\"5\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"21\" y=\"30\" width=\"108\" height=\"3\" fill=\"#fff\" opacity=\"0.3\"/><rect x=\"18\" y=\"134\" width=\"30\" height=\"3\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
   },
   {
     "id": "swimming-pool",
     "name": "游泳池",
-    "itemCount": 97,
+    "itemCount": 38,
     "icon": {
       "viewBox": [
         0,
         0,
-        140,
-        180
+        150,
+        190
       ],
-      "body": "<ellipse cx=\"70\" cy=\"157\" rx=\"46\" ry=\"16\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"25\" y=\"143\" width=\"90\" height=\"14\" fill=\"#37474f\" stroke=\"#37474f\" stroke-width=\"2\"/><ellipse cx=\"70\" cy=\"143\" rx=\"45\" ry=\"14\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"65\" y=\"18\" width=\"10\" height=\"126\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"66\" y=\"8\" width=\"8\" height=\"14\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"25\" x2=\"68\" y2=\"136\" stroke=\"#90a4ae\" stroke-width=\"2\"/><ellipse cx=\"70\" cy=\"143\" rx=\"8\" ry=\"3\" fill=\"#37474f\"/>"
+      "body": "<rect x=\"8\" y=\"4\" width=\"134\" height=\"186\" rx=\"3\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"17\" y=\"13\" width=\"116\" height=\"168\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"22,18 61,18 42,174 22,174\" fill=\"#ffffff\" opacity=\"0.3\"/><rect x=\"11\" y=\"7\" width=\"128\" height=\"5\" fill=\"#ffffff\" opacity=\"0.25\"/>"
     }
   },
   {
     "id": "hotel",
     "name": "飯店",
-    "itemCount": 100,
+    "itemCount": 44,
     "icon": {
       "viewBox": [
         0,
         0,
         160,
-        140
+        160
       ],
-      "body": "<polygon points=\"8,38 50,38 150,102 150,134 8,134\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"8,38 50,38 150,102 8,102\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"50\" y1=\"38\" x2=\"50\" y2=\"70\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"8\" y1=\"102\" x2=\"150\" y2=\"102\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"12\" y=\"42\" width=\"32\" height=\"4\" fill=\"#fff\" opacity=\"0.25\"/>"
+      "body": "<polygon points=\"12,148 12,128 38,128 38,108 64,108 64,88 90,88 90,68 116,68 116,48 148,48 148,148\" fill=\"#d7a86e\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"12\" y1=\"128\" x2=\"38\" y2=\"128\" stroke=\"#8d6e63\" stroke-width=\"2\"/><line x1=\"38\" y1=\"108\" x2=\"64\" y2=\"108\" stroke=\"#8d6e63\" stroke-width=\"2\"/><line x1=\"64\" y1=\"88\" x2=\"90\" y2=\"88\" stroke=\"#8d6e63\" stroke-width=\"2\"/><line x1=\"90\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#8d6e63\" stroke-width=\"2\"/><line x1=\"116\" y1=\"48\" x2=\"148\" y2=\"48\" stroke=\"#8d6e63\" stroke-width=\"2\"/><path d=\"M8 118 L8 44 L148 12 L152 24 L20 54 L20 118 Z\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><path d=\"M8 118 L20 118 L20 54 L8 57 Z\" fill=\"#37474f\"/><rect x=\"14\" y=\"145\" width=\"132\" height=\"5\" fill=\"#fff\" opacity=\"0.25\"/>"
     }
   },
   {
     "id": "amusement-park",
     "name": "遊樂園",
-    "itemCount": 100,
+    "itemCount": 34,
     "icon": {
       "viewBox": [
         0,
@@ -436,21 +436,21 @@
   {
     "id": "hot-spring",
     "name": "溫泉旅館",
-    "itemCount": 97,
+    "itemCount": 37,
     "icon": {
       "viewBox": [
         0,
         0,
-        140,
+        150,
         180
       ],
-      "body": "<rect x=\"20\" y=\"156\" width=\"100\" height=\"24\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"28\" y=\"148\" width=\"84\" height=\"10\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"42\" y=\"30\" width=\"56\" height=\"118\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"42\" y=\"30\" width=\"56\" height=\"9\" fill=\"#fff\" opacity=\"0.25\"/><rect x=\"35\" y=\"24\" width=\"70\" height=\"9\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"1.5\"/>"
+      "body": "<rect x=\"10\" y=\"10\" width=\"130\" height=\"170\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"16\" y=\"18\" width=\"56\" height=\"156\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"18\" width=\"56\" height=\"156\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"34\" y1=\"20\" x2=\"34\" y2=\"172\" stroke=\"#d7a86e\" stroke-width=\"2\"/><line x1=\"54\" y1=\"20\" x2=\"54\" y2=\"172\" stroke=\"#d7a86e\" stroke-width=\"2\"/><line x1=\"96\" y1=\"20\" x2=\"96\" y2=\"172\" stroke=\"#d7a86e\" stroke-width=\"2\"/><line x1=\"116\" y1=\"20\" x2=\"116\" y2=\"172\" stroke=\"#d7a86e\" stroke-width=\"2\"/><circle cx=\"68\" cy=\"96\" r=\"5\" fill=\"#37474f\"/><circle cx=\"82\" cy=\"96\" r=\"5\" fill=\"#37474f\"/>"
     }
   },
   {
     "id": "farm",
     "name": "農場",
-    "itemCount": 100,
+    "itemCount": 27,
     "icon": {
       "viewBox": [
         0,
@@ -464,7 +464,7 @@
   {
     "id": "campsite",
     "name": "露營區",
-    "itemCount": 100,
+    "itemCount": 70,
     "icon": {
       "viewBox": [
         0,
@@ -478,7 +478,7 @@
   {
     "id": "electronics-store",
     "name": "家電行",
-    "itemCount": 79,
+    "itemCount": 74,
     "icon": {
       "viewBox": [
         0,
@@ -492,7 +492,7 @@
   {
     "id": "pharmacy",
     "name": "藥局",
-    "itemCount": 100,
+    "itemCount": 67,
     "icon": {
       "viewBox": [
         0,
@@ -501,6 +501,34 @@
         180
       ],
       "body": "<rect x=\"8\" y=\"3\" width=\"124\" height=\"177\" rx=\"4\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"13\" y=\"8\" width=\"114\" height=\"4\" fill=\"#ffffff\" opacity=\"0.3\"/><line x1=\"9\" y1=\"117\" x2=\"131\" y2=\"117\" stroke=\"#37474f\" stroke-width=\"2\"/><line x1=\"101\" y1=\"30\" x2=\"101\" y2=\"91\" stroke=\"#90a4ae\" stroke-width=\"5\"/><line x1=\"101\" y1=\"133\" x2=\"101\" y2=\"164\" stroke=\"#90a4ae\" stroke-width=\"5\"/><rect x=\"16\" y=\"15\" width=\"4\" height=\"95\" fill=\"#ffffff\" opacity=\"0.3\"/>"
+    }
+  },
+  {
+    "id": "convenience-store",
+    "name": "便利商店",
+    "itemCount": 64,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        160,
+        150
+      ],
+      "body": "<rect x=\"5\" y=\"8\" width=\"150\" height=\"88\" fill=\"#90a4ae\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"11\" y=\"14\" width=\"138\" height=\"76\" fill=\"#64b5f6\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"11\" y=\"14\" width=\"138\" height=\"76\" fill=\"#ffffff\" opacity=\"0.25\"/><rect x=\"5\" y=\"96\" width=\"150\" height=\"49\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"2\"/><rect x=\"5\" y=\"96\" width=\"150\" height=\"7\" fill=\"#ffffff\" opacity=\"0.25\"/><rect x=\"20\" y=\"112\" width=\"120\" height=\"3\" fill=\"#90a4ae\"/><rect x=\"20\" y=\"127\" width=\"120\" height=\"3\" fill=\"#90a4ae\"/>"
+    }
+  },
+  {
+    "id": "cafe",
+    "name": "咖啡廳",
+    "itemCount": 47,
+    "icon": {
+      "viewBox": [
+        0,
+        0,
+        160,
+        180
+      ],
+      "body": "<polygon points=\"8,66 18,40 38,21 63,9 80,6 97,9 122,21 142,40 152,66\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"2\"/><polygon points=\"8,66 38,21 48,66\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"48,66 63,9 80,6 80,66\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"80,66 97,9 122,21 112,66\" fill=\"#eceff1\" stroke=\"#37474f\" stroke-width=\"1.5\"/><polygon points=\"112,66 122,21 142,40 152,66\" fill=\"#fafafa\" stroke=\"#37474f\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"66\" x2=\"80\" y2=\"174\" stroke=\"#37474f\" stroke-width=\"3\"/><rect x=\"74\" y=\"170\" width=\"12\" height=\"6\" fill=\"#8d6e63\" stroke=\"#37474f\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"39\" width=\"24\" height=\"4\" fill=\"#ffffff\" opacity=\"0.25\"/>"
     }
   }
 ]

@@ -3,68 +3,23 @@
     "entrance": {
       "sets": [
         {
-          "row": "mid",
-          "note": "入口還書箱",
-          "x": [
-            0.05,
-            0.22
-          ],
-          "main": "book-return-box"
-        },
-        {
-          "row": "mid",
-          "note": "圖書推車與書架",
-          "x": [
-            0.46,
-            0.69
-          ],
-          "main": "book-cart-bookstore",
-          "on": [
-            "bookstand-bookstore",
-            "bookend-bookstore"
-          ],
-          "beside": [
-            "book-light-bookstore",
-            "inlaid-box"
-          ]
-        },
-        {
           "row": "back",
-          "note": "戶外舊式目錄桌",
           "x": [
-            0.04,
-            0.32
-          ],
-          "fixture": "stand",
-          "on": [
-            "card-catalog-bookstore",
-            "desk-clock-bookstore",
-            "globe-bookstore",
-            "hourglass-bookstore"
-          ],
-          "beside": [
-            "quill-pen",
-            "inkwell-bookstore"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "書店門面裝飾",
-          "x": [
-            0.68,
-            0.96
+            0.02,
+            0.98
           ],
           "fixture": "facade",
           "door": true,
-          "wall": [
-            "wall-clock-bookstore",
-            "ornate-frame-bookstore",
-            "scroll-bookstore"
+          "note": "書店門面"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.04,
+            0.36
           ],
-          "front": [
-            "abacus-bookstore",
-            "paperweight-bookstore"
-          ]
+          "note": "門口特價書推車",
+          "main": "book-cart-bookstore"
         }
       ]
     },
@@ -72,164 +27,110 @@
       "sets": [
         {
           "row": "back",
-          "note": "新書展示台",
           "x": [
-            0.05,
-            0.42
+            0.02,
+            0.4
           ],
-          "fixture": "stand",
+          "note": "新書書架",
+          "main": "bookstand-bookstore",
           "on": [
-            "stacked-novels",
             "hardcover-book",
             "paperback-book",
-            "book-cover"
-          ],
-          "wall": [
-            "book-display-stand"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "書籍配件陳列",
-          "x": [
-            0.48,
-            0.78
-          ],
-          "fixture": "display",
-          "on": [
-            "book-rest"
-          ],
-          "beside": [
-            "reading-cushion",
-            "step-stool-bookstore"
+            "stacked-novels"
           ]
         },
         {
           "row": "back",
-          "note": "裝訂修補工作桌",
           "x": [
-            0.57,
-            0.94
-          ],
-          "fixture": "desk",
-          "on": [
-            "book-binding-press",
-            "book-repair-tape",
-            "bookbinding-awl",
-            "bookbinding-thread"
-          ],
-          "wall": [
-            "book-cloth",
-            "bookbinding-board",
-            "bookbinding-needle"
-          ],
-          "beside": [
-            "book-dolly",
-            "book-binding-clamp"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "裝訂材料與工具",
-          "x": [
-            0.05,
-            0.43
-          ],
-          "fixture": "cabinet",
-          "on": [
-            "bookbinding-bone-folder",
-            "book-corner-protector"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "閱讀區隔屏",
-          "x": [
-            0.82,
+            0.5,
             0.98
           ],
-          "main": "reading-screen"
+          "fixture": "cabinet",
+          "note": "文具禮品櫃",
+          "on": [
+            "globe-bookstore",
+            "hourglass-bookstore",
+            "quill-pen",
+            "inkwell-bookstore"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.04,
+            0.4
+          ],
+          "note": "新書展示架",
+          "main": "book-display-stand",
+          "beside": [
+            "step-stool-bookstore"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.46,
+            0.96
+          ],
+          "fixture": "display",
+          "note": "書籤與閱讀小物",
+          "on": [
+            "bookmark-bookstore",
+            "bookend-bookstore",
+            "magnifying-glass-bookstore",
+            "reading-glasses-bookstore",
+            "reading-glasses-case"
+          ]
         }
       ]
     },
     "reading-corner": {
       "sets": [
         {
-          "row": "mid",
-          "note": "共讀長桌",
+          "row": "back",
           "x": [
-            0.3,
-            0.7
+            0.02,
+            0.2
           ],
-          "fixture": "desk",
-          "main": "reading-table",
-          "on": [
-            "book-opener",
-            "bookstand-reading",
-            "book-weight",
-            "reading-timer"
+          "note": "移動書梯",
+          "main": "bookcase-ladder"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.26,
+            0.6
           ],
+          "fixture": "rug",
+          "note": "閱讀椅角落",
+          "main": "reading-nook-chair",
           "beside": [
-            "bookcase-ladder",
+            "reading-lamp-bookstore",
             "reading-footstool"
           ]
         },
         {
-          "row": "back",
-          "note": "閱讀小隔間",
+          "row": "mid",
           "x": [
-            0.04,
-            0.27
+            0.08,
+            0.6
           ],
-          "main": "reading-booth",
+          "note": "閱讀長桌",
+          "main": "reading-table",
           "on": [
-            "book-rest-pillow",
-            "reading-glove",
-            "book-sling"
-          ],
-          "wall": [
-            "book-label"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "安靜閱讀艙",
-          "x": [
-            0.73,
-            0.96
-          ],
-          "main": "reading-pod"
-        },
-        {
-          "row": "back",
-          "note": "借還與修復櫃",
-          "x": [
-            0.28,
-            0.48
-          ],
-          "fixture": "cabinet",
-          "beside": [
-            "book-dryer"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "閱讀輔具桌",
-          "x": [
-            0.34,
-            0.66
-          ],
-          "fixture": "desk",
-          "on": [
+            "open-book-bookstore",
             "book-stand",
-            "book-rest-strap",
-            "page-turner",
-            "book-holder"
-          ],
-          "beside": [
-            "book-dampener",
-            "book-jacket"
+            "book-light-bookstore"
           ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.7,
+            0.92
+          ],
+          "note": "閱讀靠墊",
+          "main": "reading-cushion"
         }
       ]
     },
@@ -237,55 +138,43 @@
       "sets": [
         {
           "row": "back",
-          "note": "收銀櫃台",
           "x": [
-            0.32,
-            0.68
+            0.02,
+            0.18
           ],
-          "fixture": "counter",
-          "on": [
-            "receipt-spike-bookstore",
-            "price-computing-scale",
-            "book-bell",
-            "wooden-coin-tray"
-          ],
-          "wall": [
-            "book-mobile"
-          ],
-          "beside": [
-            "coin-bank",
-            "magnifying-lamp"
-          ]
+          "note": "落地擺鐘",
+          "main": "bookshop-pendulum-clock"
         },
         {
           "row": "back",
-          "note": "入口玻璃門與櫥窗",
           "x": [
-            0.02,
-            0.29
+            0.72,
+            0.94
           ],
-          "wall": [
-            "bookshop-window",
-            "bookshop-vent"
-          ]
+          "note": "進貨木箱",
+          "main": "wooden-crate-books"
         },
         {
           "row": "mid",
-          "note": "包裝與防盜用品",
           "x": [
-            0.34,
-            0.63
+            0.2,
+            0.8
           ],
-          "fixture": "display",
+          "fixture": "counter",
+          "note": "結帳櫃台",
           "on": [
+            "book-bell",
+            "book-stamp",
+            "ink-stamp-pad",
+            "wooden-coin-tray",
             "shopping-tote"
-          ],
-          "beside": [
-            "step-ladder",
-            "book-rest-chair"
           ]
         }
       ]
     }
+  },
+  "scale": {
+    "reading-table": 1.3,
+    "bookstand-bookstore": 1.15
   }
 }

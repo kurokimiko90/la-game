@@ -17,7 +17,7 @@ import {
   type StageDef, type StageEvent, type StageState,
 } from '@/lib/stages';
 import { isSceneUnlocked, recordStageClear, recordWordFound, recordWordSeen, wordKey } from '@/lib/progress';
-import { isNearItem } from '@/lib/geometry';
+import { isNearItem, sceneFocus } from '@/lib/geometry';
 import { recordFind, recordHint, recordRevealed, recordWrong } from '@/lib/playstats';
 import { playWord, stopAudio } from '@/lib/audio';
 import { createRng } from '@/lib/rng';
@@ -224,7 +224,7 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
   const onDistrict = (sceneId: string) => {
     const target = districtOf(TOWN, sceneId);
     if (!target) return;
-    setFocus({ ...rectCenter(target.scene.zones[0]), key: Date.now() });
+    setFocus({ ...sceneFocus(target.scene.zones, target.scene.items), key: Date.now() });
     if (lockedSceneIds.has(sceneId)) {
       showToast(lockedMessage(sceneId));
       return;
@@ -273,7 +273,7 @@ export function GameScreen({ initialSceneId }: { initialSceneId: string }) {
           activeSceneId={scene.id}
           lockedSceneIds={lockedSceneIds}
           unlockHints={UNLOCK_HINTS}
-          initialFocus={rectCenter(scene.zones[0])}
+          initialFocus={sceneFocus(scene.zones, scene.items)}
           foundIds={stageForCanvas ? stageForCanvas.state.found : EMPTY_FOUND}
           hideUnfound={stageForCanvas?.stage.mode === 'recall'}
           flashId={flashId}

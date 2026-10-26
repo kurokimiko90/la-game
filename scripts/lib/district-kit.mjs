@@ -78,7 +78,8 @@ export function zoneGeometry(rect, zone) {
     geo.track = { y0: y1 - TRACK.top, y1 };
     geo.ground.bottom = geo.track.y0 - 20;
   } else if (zone.feature === 'water') {
-    geo.pool = { x0: Math.round((x0 + x1) / 2), y0: y0 + 110, x1: x1 - 50, y1: y1 - 40 };
+    // 室內泳池：池子從牆腳下面開始，不蓋到牆
+    geo.pool = { x0: Math.round((x0 + x1) / 2), y0: zone.indoor ? geo.wallBase + 40 : y0 + 110, x1: x1 - 50, y1: y1 - 40 };
     geo.ground.x1 = geo.pool.x0 - 30;
   } else if (SURFACE_LOOKS[zone.feature]) {
     const level = geo.ground.top + 70;

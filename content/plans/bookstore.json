@@ -4,14 +4,14 @@
   "zones": [
     {
       "id": "entrance",
-      "name": "入口廣場",
+      "name": "店門口",
       "indoor": false,
       "floor": "paving",
       "feature": "none"
     },
     {
       "id": "front-shelves",
-      "name": "新書區",
+      "name": "新書與文具禮品",
       "indoor": true,
       "floor": "wood",
       "feature": "stand"
@@ -40,21 +40,6 @@
   "icon": "bookstand-bookstore",
   "elements": [
     {
-      "id": "book-return-box",
-      "zh": "還書箱",
-      "en": "book return box",
-      "ja": "返却ポスト",
-      "reading": "へんきゃくポスト",
-      "category": "道具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "方正的深綠色金屬箱，頂部有一道窄長投入口，正面有圓形把手。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "reading-nook-chair",
       "zh": "閱讀椅",
       "en": "reading chair",
@@ -62,7 +47,7 @@
       "reading": "どくしょいす",
       "category": "設施",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "reading-corner",
       "spot": "ground",
       "desc": "深棕色木椅有寬大的方形椅背、平坦椅面和四條直腿。",
       "loose": false,
@@ -77,7 +62,7 @@
       "reading": "ほんだな",
       "category": "設施",
       "size": "large",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "淺木色直立架子分成數層，側板方直，層板上沒有任何文字。",
       "loose": false,
@@ -92,7 +77,7 @@
       "reading": "ひらいたほん",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "reading-corner",
       "spot": "ground",
       "desc": "一本攤開的厚書，兩側書頁微微拱起，封面是素色，頁面沒有字。",
       "loose": true,
@@ -107,7 +92,7 @@
       "reading": "どくしょようメガネ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "黑色細框眼鏡由兩個圓角鏡片和中央鼻樑架相連，兩側鏡腳向後伸展。",
       "loose": true,
@@ -130,36 +115,6 @@
       "cluster": "bookstand-bookstore"
     },
     {
-      "id": "card-catalog-bookstore",
-      "zh": "卡片目錄櫃",
-      "en": "card catalog",
-      "ja": "カード目録箱",
-      "reading": "カードもくろくばこ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "矮木櫃正面排列許多小抽屜，每個抽屜有圓形拉環，沒有標籤文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": "bookstand-bookstore"
-    },
-    {
-      "id": "page-holder-bookstore",
-      "zh": "書頁固定器",
-      "en": "page holder",
-      "ja": "ページホルダー",
-      "reading": "ページホルダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "兩個木製圓頭夾以短彈簧相連，張開後能壓住攤開書頁。",
-      "loose": true,
-      "motion": null,
-      "cluster": "open-book-bookstore"
-    },
-    {
       "id": "book-light-bookstore",
       "zh": "閱讀燈",
       "en": "book light",
@@ -167,7 +122,7 @@
       "reading": "どくしょとう",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "reading-corner",
       "spot": "ground",
       "desc": "小巧的藍色夾燈有扁平底夾、短彎臂和橢圓形燈頭。",
       "loose": true,
@@ -182,72 +137,12 @@
       "reading": "フロアランプ",
       "category": "設施",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "reading-corner",
       "spot": "ground",
       "desc": "細長黑色立柱接著寬圓底座，頂端是向下開口的米黃色燈罩。",
       "loose": false,
       "motion": null,
       "cluster": "reading-nook-chair"
-    },
-    {
-      "id": "desk-clock-bookstore",
-      "zh": "桌鐘",
-      "en": "desk clock",
-      "ja": "置き時計",
-      "reading": "おきどけい",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "圓形白色鐘面嵌在深棕色木框裡，底部有兩個短支腳，沒有數字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "inlaid-box",
-      "zh": "木盒",
-      "en": "wooden box",
-      "ja": "木箱",
-      "reading": "きばこ",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "方正的胡桃木盒有平坦盒蓋和黃銅小扣，表面鑲著簡單幾何木片。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "decorative-urn",
-      "zh": "陶甕",
-      "en": "ceramic urn",
-      "ja": "陶器の壺",
-      "reading": "とうきのつぼ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "赭紅色陶甕有寬圓腹、短窄瓶口和厚實底部，表面帶有簡單環紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ornate-frame-bookstore",
-      "zh": "相框",
-      "en": "picture frame",
-      "ja": "額縁",
-      "reading": "がくぶち",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "金色長方形木框邊緣有簡單浮雕花紋，中央留白，不含圖畫或文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "bookmark-bookstore",
@@ -257,7 +152,7 @@
       "reading": "しおり",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "細長的橘紅色紙片，頂端有一小段圓弧，底端剪成淺淺的叉形。",
       "loose": true,
@@ -272,7 +167,7 @@
       "reading": "むしめがね",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "圓形透明鏡片嵌在深色圓框中，短直柄向右下延伸，末端略寬。",
       "loose": true,
@@ -287,7 +182,7 @@
       "reading": "ブックエンド",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "一對藍色直角金屬板，底座平坦、背板直立，邊角圓滑。",
       "loose": true,
@@ -302,7 +197,7 @@
       "reading": "ちきゅうぎ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "藍綠色圓球嵌在傾斜的深色圓環中，下方接著圓形底座。",
       "loose": false,
@@ -317,7 +212,7 @@
       "reading": "すなどけい",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "透明玻璃上下兩端呈圓鼓形，中間收窄相連，底部有一小堆金色細沙。",
       "loose": true,
@@ -332,7 +227,7 @@
       "reading": "はねペン",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "白色羽毛斜接在細長黑色筆桿上，筆尖呈金屬三角形。",
       "loose": true,
@@ -347,70 +242,10 @@
       "reading": "インクつぼ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-shelves",
       "spot": "ground",
       "desc": "矮胖的深藍玻璃瓶，瓶身呈圓角方形，頂部有突起的小瓶口。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "scroll-bookstore",
-      "zh": "捲軸",
-      "en": "scroll",
-      "ja": "巻物",
-      "reading": "まきもの",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一張米白色長紙向兩端捲起，露出兩根短圓木軸，紙面沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "abacus-bookstore",
-      "zh": "算盤",
-      "en": "abacus",
-      "ja": "そろばん",
-      "reading": "そろばん",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "長方形木框內排列多根細橫桿，每根桿上串著一排圓珠。",
-      "loose": true,
-      "motion": null,
-      "cluster": "reading-nook-chair"
-    },
-    {
-      "id": "paperweight-bookstore",
-      "zh": "鎮紙",
-      "en": "paperweight",
-      "ja": "ペーパーウェイト",
-      "reading": "ペーパーウェイト",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "厚實透明的圓角玻璃塊，裡面封著一片簡單的藍色葉形裝飾。",
-      "loose": true,
-      "motion": null,
-      "cluster": "scroll-bookstore"
-    },
-    {
-      "id": "wall-clock-bookstore",
-      "zh": "掛鐘",
-      "en": "wall clock",
-      "ja": "掛け時計",
-      "reading": "かけどけい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "圓形木框鐘面有兩根深色指針和淺色底板，沒有數字，立在矮架上。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -475,51 +310,6 @@
       "cluster": null
     },
     {
-      "id": "book-cover",
-      "zh": "書衣",
-      "en": "book cover",
-      "ja": "ブックカバー",
-      "reading": "ブックカバー",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一張攤開的布質書衣，深紅色長方形兩側各有內折封套，邊緣有細緻縫線。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookplate",
-      "zh": "藏書票",
-      "en": "bookplate",
-      "ja": "蔵書票",
-      "reading": "ぞうしょひょう",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一張小型長方形裝飾紙片，中央是植物與卷葉花紋，四周有細框，沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "stacked-novels"
-    },
-    {
-      "id": "book-sleeve",
-      "zh": "書本保護套",
-      "en": "book sleeve",
-      "ja": "ブックカバーケース",
-      "reading": "ブックカバーケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "柔軟的長方形布套，頂端開口並露出淺色內襯，外側有一個圓角縫線口袋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "reading-glasses-case",
       "zh": "眼鏡盒",
       "en": "glasses case",
@@ -535,21 +325,6 @@
       "cluster": null
     },
     {
-      "id": "book-rest",
-      "zh": "書本托架",
-      "en": "book rest",
-      "ja": "ブックレスト",
-      "reading": "ブックレスト",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "低矮的木製斜面托架帶有兩個短支腳，表面平滑，前緣設有一道窄擋條。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "reading-cushion",
       "zh": "閱讀靠墊",
       "en": "reading cushion",
@@ -557,7 +332,7 @@
       "reading": "どくしょクッション",
       "category": "道具",
       "size": "medium",
-      "zone": "front-shelves",
+      "zone": "reading-corner",
       "spot": "ground",
       "desc": "厚實方形靠墊靠在階台旁，橘紅布面有圓角和幾道縫線，中央微微凹陷。",
       "loose": false,
@@ -575,216 +350,6 @@
       "zone": "front-shelves",
       "spot": "ground",
       "desc": "矮小的木製方凳有兩層寬踏板，四支短腳略向外張，木色明亮且表面平整。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-binding-press",
-      "zh": "裝訂壓板",
-      "en": "bookbinding press",
-      "ja": "製本プレス",
-      "reading": "せいほんプレス",
-      "category": "道具",
-      "size": "medium",
-      "zone": "front-shelves",
-      "spot": "ground",
-      "desc": "兩塊厚木板以中央螺桿壓合，板面夾著一本薄冊，兩側伸出短握柄。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-repair-tape",
-      "zh": "書籍修補膠帶",
-      "en": "book repair tape",
-      "ja": "製本テープ",
-      "reading": "せいほんテープ",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一卷透明修補膠帶裝在扁圓形塑膠軸上，邊緣清晰，旁邊露出短短的帶頭。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookbinding-awl",
-      "zh": "裝訂錐",
-      "en": "bookbinding awl",
-      "ja": "製本用目打ち",
-      "reading": "せいほんようめうち",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "細長金屬尖錐配有圓木握柄，尖端朝外，木柄呈深棕色並帶有光滑弧面。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookbinding-thread",
-      "zh": "裝訂線",
-      "en": "bookbinding thread",
-      "ja": "製本糸",
-      "reading": "せいほんいと",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一束粗棉線纏成扁平的小圈，米白色線股整齊平行，末端微微散開。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookbinding-needle",
-      "zh": "裝訂針",
-      "en": "bookbinding needle",
-      "ja": "製本針",
-      "reading": "せいほんばり",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一根粗而長的銀色金屬針，圓頭上有大孔，旁邊放著一小段米白色線。",
-      "loose": true,
-      "motion": null,
-      "cluster": "bookbinding-thread"
-    },
-    {
-      "id": "bookbinding-bone-folder",
-      "zh": "摺紙骨刀",
-      "en": "bone folder",
-      "ja": "へら",
-      "reading": "へら",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "扁平乳白色工具兩端逐漸變尖，表面光滑微彎，適合壓平紙張摺痕。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-cloth",
-      "zh": "裝訂布",
-      "en": "book cloth",
-      "ja": "製本クロス",
-      "reading": "せいほんクロス",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一小片深綠色織布平整攤開，方形邊緣整齊，表面可見細密交錯的布紋。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookbinding-board",
-      "zh": "裝訂紙板",
-      "en": "bookbinding board",
-      "ja": "製本ボード",
-      "reading": "せいほんボード",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "兩片厚實的灰褐色方形紙板上下疊放，直角邊緣俐落，表面平坦無圖案。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-dolly",
-      "zh": "書籍搬運滑車",
-      "en": "book dolly",
-      "ja": "ブックドーリー",
-      "reading": "ブックドーリー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "front-shelves",
-      "spot": "ground",
-      "desc": "低矮長方形金屬平台裝有四個小輪，平台上疊放幾本厚書，側邊有短把手。",
-      "loose": false,
-      "motion": null,
-      "cluster": "stacked-novels"
-    },
-    {
-      "id": "reading-screen",
-      "zh": "閱讀隔屏",
-      "en": "reading screen",
-      "ja": "読書用パーティション",
-      "reading": "どくしょようパーティション",
-      "category": "道具",
-      "size": "large",
-      "zone": "front-shelves",
-      "spot": "ground",
-      "desc": "三片窄木框以鉸鏈連成折屏，中央嵌著半透明淺色板，屏面沒有圖案。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-corner-protector",
-      "zh": "書角保護套",
-      "en": "book corner protector",
-      "ja": "ブックコーナーガード",
-      "reading": "ブックコーナーガード",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "一對小巧的黃銅色三角護角，略帶折邊，並排放置時呈現清楚的金屬反光。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reading-glass-chain",
-      "zh": "眼鏡鍊",
-      "en": "glasses chain",
-      "ja": "メガネチェーン",
-      "reading": "メガネチェーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "細金屬鍊兩端接著柔軟套環，彎成淺弧平放，鏈節在光線下微微發亮。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-binding-clamp",
-      "zh": "裝訂夾",
-      "en": "bookbinding clamp",
-      "ja": "製本クランプ",
-      "reading": "せいほんクランプ",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "深色金屬夾具以螺旋柄收緊，兩片平直夾口張開，形狀簡單而容易辨認。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-embosser",
-      "zh": "壓印器",
-      "en": "book embosser",
-      "ja": "蔵書印",
-      "reading": "ぞうしょいん",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-shelves",
-      "spot": "surface",
-      "desc": "小型手壓金屬器具有圓形握把和厚實底座，壓面呈花紋浮雕，不含字樣。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -820,216 +385,6 @@
       "cluster": "reading-table"
     },
     {
-      "id": "book-return-slot",
-      "zh": "還書口",
-      "en": "book return slot",
-      "ja": "返却口",
-      "reading": "へんきゃくぐち",
-      "category": "設施",
-      "size": "medium",
-      "zone": "reading-corner",
-      "spot": "wall",
-      "desc": "牆上的深色長方形投入口，外框厚實，旁邊有向內傾斜的金屬擋片。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "library-card-bookstore",
-      "zh": "借書證",
-      "en": "library card",
-      "ja": "図書カード",
-      "reading": "としょカード",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "扁平的小長方卡片，邊角圓滑，表面是素色，沒有圖案或文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "reading-table"
-    },
-    {
-      "id": "book-press",
-      "zh": "書籍壓平器",
-      "en": "book press",
-      "ja": "ブックプレス",
-      "reading": "ブックプレス",
-      "category": "道具",
-      "size": "medium",
-      "zone": "reading-corner",
-      "spot": "ground",
-      "desc": "厚重木製方框裡有兩塊平壓板，頂部橫桿連著旋轉螺桿和寬把手。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reading-booth",
-      "zh": "閱讀小隔間",
-      "en": "reading booth",
-      "ja": "読書ブース",
-      "reading": "どくしょブース",
-      "category": "設施",
-      "size": "medium",
-      "zone": "reading-corner",
-      "spot": "ground",
-      "desc": "木製半高圍板形成方正小隔間，前方開口寬敞，內側有平直桌面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reading-pod",
-      "zh": "閱讀艙",
-      "en": "reading pod",
-      "ja": "読書ポッド",
-      "reading": "どくしょポッド",
-      "category": "設施",
-      "size": "large",
-      "zone": "reading-corner",
-      "spot": "ground",
-      "desc": "圓角蛋形外殼立在地面，正面有寬大的拱形開口，內部可見柔軟座面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-repair-kit",
-      "zh": "書籍修補工具盒",
-      "en": "book repair kit",
-      "ja": "本の修理道具箱",
-      "reading": "ほんのしゅうりどうぐばこ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "打開的淺色方盒內整齊排著刷子、膠帶卷和小剪刀，外形簡明。",
-      "loose": false,
-      "motion": null,
-      "cluster": "reading-table"
-    },
-    {
-      "id": "book-opener",
-      "zh": "開書器",
-      "en": "book opener",
-      "ja": "ブックオープナー",
-      "reading": "ブックオープナー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "一個弧形金屬夾扣在書頁兩側，中央伸出細長握柄，方便單手翻頁。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookstand-reading",
-      "zh": "書本展示台",
-      "en": "book display easel",
-      "ja": "ブックイーゼル",
-      "reading": "ブックイーゼル",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "小型木製三角架托住一本合起的書，前方有兩個短橫檔防止滑落。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-dryer",
-      "zh": "書籍乾燥架",
-      "en": "book drying rack",
-      "ja": "本の乾燥ラック",
-      "reading": "ホンノカンソウラック",
-      "category": "道具",
-      "size": "medium",
-      "zone": "reading-corner",
-      "spot": "ground",
-      "desc": "黑色金屬架上排列多道直立窄縫，每道縫裡夾著一本張開的書。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-weight",
-      "zh": "書籍壓重器",
-      "en": "book weight",
-      "ja": "ブックウェイト",
-      "reading": "ブックウェイト",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "厚實的圓形黃銅塊，頂部有簡單的凸起握柄，平底穩穩壓住紙張。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-jacket",
-      "zh": "書籍護封",
-      "en": "dust jacket",
-      "ja": "ブックジャケット",
-      "reading": "ブックジャケット",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "一張包住硬殼書的彩色紙封套，兩側折頁向外翻，中央包覆書脊。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-rest-strap",
-      "zh": "書本固定帶",
-      "en": "book strap",
-      "ja": "ブックバンド",
-      "reading": "ブックバンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "深色彈性寬帶繞成橢圓，旁邊有小小的方形扣件，套在合起的書外。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-label",
-      "zh": "藏書標籤",
-      "en": "book label",
-      "ja": "蔵書ラベル",
-      "reading": "ゾウショラベル",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "一張米白色長方紙片，四角略圓，貼在書本封面中央且完全沒有字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-sling",
-      "zh": "書袋",
-      "en": "book sling",
-      "ja": "ブックスリング",
-      "reading": "ブックスリング",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "ground",
-      "desc": "扁平布袋攤開成長方形，兩側有短提耳，袋口露出幾本沒有文字的書。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "book-stand",
       "zh": "書本支架",
       "en": "book stand",
@@ -1040,111 +395,6 @@
       "zone": "reading-corner",
       "spot": "surface",
       "desc": "金屬線折成兩側弧形支臂，底部有橫桿托住書本，中央留空呈鏤空狀。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-spine-repairer",
-      "zh": "書脊修補器",
-      "en": "book spine repair tool",
-      "ja": "背表紙修理具",
-      "reading": "セビョウシシュウリグ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "兩片短短的金屬壓板由中間鉸鏈連接，張開後呈扁平的書脊形狀。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "page-turner",
-      "zh": "翻頁器",
-      "en": "page turner",
-      "ja": "ページターナー",
-      "reading": "ページターナー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "細長木柄末端接一個扁平彎曲的薄片，薄片邊緣圓滑，像小小的鏟子。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-holder",
-      "zh": "書本夾持器",
-      "en": "book holder",
-      "ja": "ブックホルダー",
-      "reading": "ブックホルダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "兩個短金屬夾以彈簧連接，張開時能夾住攤開書本的兩側封面。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reading-glove",
-      "zh": "閱讀手套",
-      "en": "reading glove",
-      "ja": "読書用手袋",
-      "reading": "ドクショヨウテブクロ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "一隻薄棉白手套平放在桌面，五根手指分開，指尖有柔軟的防滑墊。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-dampener",
-      "zh": "書頁潤濕器",
-      "en": "page dampener",
-      "ja": "ページ加湿器",
-      "reading": "ページカシツキ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "扁圓形木柄接著短短的軟毛墊，外形像小刷子，用來輕沾紙頁邊緣。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reading-timer",
-      "zh": "閱讀計時器",
-      "en": "reading timer",
-      "ja": "読書タイマー",
-      "reading": "ドクショタイマー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "surface",
-      "desc": "圓角方形的薄塑膠小器具，頂部有一顆大圓按鈕和短短的旋鈕，沒有標記。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-rest-pillow",
-      "zh": "書本靠枕",
-      "en": "book support pillow",
-      "ja": "ブッククッション",
-      "reading": "ブッククッション",
-      "category": "道具",
-      "size": "small",
-      "zone": "reading-corner",
-      "spot": "ground",
-      "desc": "深藍色楔形軟枕前端較低、後端較高，表面有幾道平行縫線。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1165,141 +415,6 @@
       "cluster": null
     },
     {
-      "id": "receipt-spike-bookstore",
-      "zh": "收據插針",
-      "en": "receipt spike",
-      "ja": "レシートスパイク",
-      "reading": "レシートスパイク",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "圓形金屬底座中央立著細長尖針，幾張白色紙條穿在針上。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "coin-bank",
-      "zh": "存錢筒",
-      "en": "coin bank",
-      "ja": "貯金箱",
-      "reading": "ちょきんばこ",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "矮胖的陶製小豬，背上有細長投幣縫，圓鼻子與短腳輪廓清楚。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "price-computing-scale",
-      "zh": "計價秤",
-      "en": "price computing scale",
-      "ja": "料金計算はかり",
-      "reading": "りょうきんけいさんはかり",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "低矮方形電子秤，上方是平坦金屬秤盤，前側有一小片深色顯示窗。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "magnifying-lamp",
-      "zh": "放大檢查燈",
-      "en": "magnifying lamp",
-      "ja": "拡大鏡付きランプ",
-      "reading": "かくだいきょうつきランプ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "細長直立支架頂端伸出圓形放大鏡，鏡框內圈有一圈乳白燈罩。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "book-return-bin",
-      "zh": "書籍回收箱",
-      "en": "book recycling bin",
-      "ja": "古本回収ボックス",
-      "reading": "ふるほんかいしゅうボックス",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "深藍色長方箱身，頂部有寬大的斜口投入口，正面有簡單書本圖案。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reading-glass",
-      "zh": "單片眼鏡",
-      "en": "monocle",
-      "ja": "片眼鏡",
-      "reading": "かためがね",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "單片圓形透明鏡片嵌在細金色圓框裡，側邊連著短小金屬環。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "book-bin",
-      "zh": "書籍收納箱",
-      "en": "book bin",
-      "ja": "本収納ボックス",
-      "reading": "ほんしゅうのうボックス",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "矮寬的木製方箱，前面有橫向把手凹槽，箱內幾本書直立排列。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-umbrella",
-      "zh": "書本造型傘架",
-      "en": "book-shaped umbrella stand",
-      "ja": "本型傘立て",
-      "reading": "ほんがたかさたて",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "外形像直立厚書本的長方形傘架，頂部開著幾個圓孔，側面有凸起書脊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "step-ladder",
-      "zh": "雙踏梯",
-      "en": "step ladder",
-      "ja": "脚立",
-      "reading": "きゃたつ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "兩片金屬梯架在頂端相連，兩側各有寬踏板，張開後呈穩固倒三角形。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "wooden-crate-books",
       "zh": "裝書木箱",
       "en": "wooden book crate",
@@ -1312,81 +427,6 @@
       "desc": "淺棕木條拼成的方箱，箱口露出幾本彩色書封，兩端各有橢圓提孔。",
       "loose": false,
       "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-vending-machine",
-      "zh": "二手書販賣機",
-      "en": "book vending machine",
-      "ja": "古本自動販売機",
-      "reading": "ふるほんじどうはんばいき",
-      "category": "設施",
-      "size": "large",
-      "zone": "checkout",
-      "spot": "wallbase",
-      "desc": "高大的窄身機器，玻璃窗內整齊放著彩色書本，側邊有一個圓形取物口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookshop-door",
-      "zh": "書店玻璃門",
-      "en": "bookshop glass door",
-      "ja": "書店のガラスドア",
-      "reading": "しょてんのガラスドア",
-      "category": "設施",
-      "size": "large",
-      "zone": "checkout",
-      "spot": "wallbase",
-      "desc": "高大的透明玻璃門嵌在木框中，中央有一根直立金屬拉把，門後可見室內。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bookshop-window",
-      "zh": "書店櫥窗",
-      "en": "bookshop window",
-      "ja": "書店のショーウィンドウ",
-      "reading": "しょてんのショーウィンドウ",
-      "category": "設施",
-      "size": "large",
-      "zone": "checkout",
-      "spot": "wallbase",
-      "desc": "寬大的透明玻璃窗嵌在牆面，窗台上擺著幾本封面色彩鮮明的書。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wall-shelf-books",
-      "zh": "壁掛展示架",
-      "en": "wall book display",
-      "ja": "壁掛け本棚",
-      "reading": "かべかけほんだな",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "wall",
-      "desc": "兩層淺木色橫板固定在牆上，板面向前微斜，各放著幾本封面朝外的書。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-mobile",
-      "zh": "書本吊飾",
-      "en": "book mobile",
-      "ja": "本のモビール",
-      "reading": "ほんのモビール",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "wall",
-      "desc": "細線懸著數個彩色小書形吊片，連在交錯的細木枝上，輪廓輕巧清楚。",
-      "loose": false,
-      "motion": "sway",
       "cluster": null
     },
     {
@@ -1450,21 +490,6 @@
       "cluster": "cash-register"
     },
     {
-      "id": "book-restraint",
-      "zh": "書本防盜器",
-      "en": "book security device",
-      "ja": "書籍用防犯器",
-      "reading": "しょせきようぼうはんき",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "透明塑膠長條套住一本書的邊緣，兩端各有圓形扣件，形狀簡單醒目。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
       "id": "shopping-tote",
       "zh": "紙製購物袋",
       "en": "paper shopping bag",
@@ -1476,36 +501,6 @@
       "spot": "ground",
       "desc": "挺立的牛皮紙方袋，頂端有兩個彎曲紙把手，袋口露出一本彩色書。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "folding-book-crate",
-      "zh": "折疊書箱",
-      "en": "folding book crate",
-      "ja": "折りたたみ本箱",
-      "reading": "おりたたみほんばこ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "深藍色塑膠折疊箱，側面有規則方孔，箱內幾本書直立露出封面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "book-rest-chair",
-      "zh": "休息椅",
-      "en": "waiting chair",
-      "ja": "待合椅子",
-      "reading": "まちあいイス",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "簡潔的木製單人椅，方形椅背由三根直木條組成，四支椅腳微向外張。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -1522,21 +517,6 @@
       "desc": "高而窄的木製鐘殼，上方有圓形鐘面，下方玻璃窗內垂著金色擺錘。",
       "loose": false,
       "motion": "wobble",
-      "cluster": null
-    },
-    {
-      "id": "bookshop-vent",
-      "zh": "通風口",
-      "en": "wall vent",
-      "ja": "換気口",
-      "reading": "かんきこう",
-      "category": "設施",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "wall",
-      "desc": "牆上嵌著淺灰色長方形通風格柵，內部有一排斜斜的平行薄片。",
-      "loose": false,
-      "motion": null,
       "cluster": null
     }
   ],
@@ -1760,7 +740,352 @@
       "id": "wooden-book-stand",
       "reason": "和已有的 bookshelf 太像",
       "zone": "checkout"
+    },
+    {
+      "id": "book-return-box",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "card-catalog-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "page-holder-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "desk-clock-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "inlaid-box",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "decorative-urn",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ornate-frame-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "scroll-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "abacus-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "paperweight-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "wall-clock-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "book-cover",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "bookplate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-sleeve",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-rest",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-binding-press",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-repair-tape",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "bookbinding-awl",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "bookbinding-thread",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "bookbinding-needle",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "bookbinding-bone-folder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-cloth",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "bookbinding-board",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-dolly",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "reading-screen",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-corner-protector",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "reading-glass-chain",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-binding-clamp",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-embosser",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-shelves"
+    },
+    {
+      "id": "book-return-slot",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "library-card-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-press",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "reading-booth",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "reading-pod",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-repair-kit",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-opener",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "bookstand-reading",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-dryer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-weight",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-jacket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-rest-strap",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-label",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-sling",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-spine-repairer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "page-turner",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-holder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "reading-glove",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-dampener",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "reading-timer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "book-rest-pillow",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reading-corner"
+    },
+    {
+      "id": "receipt-spike-bookstore",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "coin-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "price-computing-scale",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "magnifying-lamp",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-return-bin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "reading-glass",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-bin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-umbrella",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "step-ladder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-vending-machine",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "bookshop-door",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "bookshop-window",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "wall-shelf-books",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-mobile",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-restraint",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "folding-book-crate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "book-rest-chair",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "bookshop-vent",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
     }
   ],
-  "createdAt": "2026-09-26T15:04:57.096+09:00"
+  "createdAt": "2026-09-26T15:04:57.096+09:00",
+  "itemsTarget": 32,
+  "topUp": {
+    "itemsPerScene": 32,
+    "curatedAt": "2026-10-04"
+  }
 }

@@ -38,7 +38,6 @@
     "span": 2
   },
   "colorIndex": 11,
-  "icon": "parking-barrier",
   "elements": [
     {
       "id": "film-reel",
@@ -48,7 +47,7 @@
       "reading": "フィルムリール",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "screening-room",
       "spot": "ground",
       "desc": "圓形金屬膠卷盤，中間有大圓孔，周圍排列幾個小孔，盤上繞著深色膠片。",
       "loose": true,
@@ -63,7 +62,7 @@
       "reading": "フィルム",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "screening-room",
       "spot": "ground",
       "desc": "一條深色窄膠片微微捲曲，兩側有整齊小孔，中央是一格格空白畫面。",
       "loose": true,
@@ -78,117 +77,12 @@
       "reading": "カチンコ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "lobby",
       "spot": "ground",
       "desc": "黑白相間的斜紋活動板連著方形黑板，正面乾淨留白，頂端有一條可掀起的板條。",
       "loose": true,
       "motion": null,
       "cluster": "film-reel"
-    },
-    {
-      "id": "parking-barrier",
-      "zh": "柵欄杆",
-      "en": "parking barrier",
-      "ja": "駐車場ゲート",
-      "reading": "ちゅうしゃじょうゲート",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "白色橫桿帶紅色反光區塊，裝在短柱上並橫跨車道入口，旁邊有小型機箱。",
-      "loose": false,
-      "motion": null,
-      "cluster": "bollard"
-    },
-    {
-      "id": "electric-car",
-      "zh": "電動車",
-      "en": "electric car",
-      "ja": "電気自動車",
-      "reading": "でんきじどうしゃ",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "road",
-      "desc": "小型白色轎車，車頂線條流暢，側面有深色車窗、兩個黑色輪胎與圓形充電孔蓋。",
-      "loose": false,
-      "motion": "wobble",
-      "cluster": "parking-barrier"
-    },
-    {
-      "id": "car-key",
-      "zh": "汽車鑰匙",
-      "en": "car key",
-      "ja": "車のキー",
-      "reading": "くるまのキー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "短金屬鑰匙連著黑色圓角遙控器，遙控器上有兩個簡單按鍵，旁邊掛著小金屬圈。",
-      "loose": true,
-      "motion": null,
-      "cluster": "electric-car"
-    },
-    {
-      "id": "parking-disc",
-      "zh": "停車計時圓盤",
-      "en": "parking disc",
-      "ja": "パーキングディスク",
-      "reading": "パーキングディスク",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "藍色圓形塑膠圓盤，外圈有一圈短刻線，中央是可轉動的白色小圓片，不顯示文字數字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "parking-meter"
-    },
-    {
-      "id": "license-plate",
-      "zh": "車牌",
-      "en": "license plate",
-      "ja": "ナンバープレート",
-      "reading": "ナンバープレート",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "薄薄的白色長方形金屬牌，四角有固定孔，邊緣包著深色細框。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "car-battery",
-      "zh": "汽車電池",
-      "en": "car battery",
-      "ja": "車のバッテリー",
-      "reading": "くるまのばってりー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "黑色扁方盒上有兩個突出的金屬接頭，正面帶有醒目的紅色正極蓋。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "windshield",
-      "zh": "擋風玻璃",
-      "en": "windshield",
-      "ja": "フロントガラス",
-      "reading": "ふろんとがらす",
-      "category": "道具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "大片略帶弧度的透明藍灰色玻璃，外圍有粗黑膠框，兩側向上收窄。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "ticket-barrier",
@@ -198,39 +92,9 @@
       "reading": "かいさつき",
       "category": "設施",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "lobby",
       "spot": "ground",
       "desc": "一座腰高的灰色機台，頂面有感應區，兩側伸出短短的紅色擋片。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ticket-validator",
-      "zh": "驗票機",
-      "en": "ticket validator",
-      "ja": "チケットリーダー",
-      "reading": "チケットリーダー",
-      "category": "設施",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一台小型直立機器，方形外殼上有黑色感應面和一圈亮色邊框。",
-      "loose": false,
-      "motion": null,
-      "cluster": "ticket-barrier"
-    },
-    {
-      "id": "parking-sign",
-      "zh": "停車標誌",
-      "en": "parking sign",
-      "ja": "駐車標識",
-      "reading": "ちゅうしゃひょうしき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一塊藍底白色字母圖樣的方牌固定在細金屬桿上，牌面不含文字。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -243,27 +107,12 @@
       "reading": "えいがチケット",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "lobby",
       "spot": "ground",
       "desc": "一張淡黃色長方紙片，兩端有圓齒狀缺口，中間以虛線分成兩段。",
       "loose": true,
       "motion": null,
       "cluster": "ticket-booth"
-    },
-    {
-      "id": "traffic-barrel",
-      "zh": "交通導引桶",
-      "en": "traffic barrel",
-      "ja": "工事用バリケード",
-      "reading": "こうじようバリケード",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "橘白相間的粗短圓柱桶，頂面平坦，桶身有寬大的斜向色帶。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "potted-shrub",
@@ -279,21 +128,6 @@
       "loose": false,
       "motion": "sway",
       "cluster": null
-    },
-    {
-      "id": "parking-ticket",
-      "zh": "停車票",
-      "en": "parking ticket",
-      "ja": "駐車券",
-      "reading": "ちゅうしゃけん",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一張白色窄長紙片斜落地面，邊緣有小齒孔，中央是空白色塊。",
-      "loose": true,
-      "motion": null,
-      "cluster": "parking-pay-station"
     },
     {
       "id": "popcorn-box",
@@ -324,21 +158,6 @@
       "loose": false,
       "motion": "wobble",
       "cluster": "popcorn-box"
-    },
-    {
-      "id": "armrest",
-      "zh": "扶手",
-      "en": "armrest",
-      "ja": "肘掛け",
-      "reading": "ひじかけ",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "獨立的深紅色軟墊扶手，外形像短厚長方柱，兩端略微圓弧。",
-      "loose": true,
-      "motion": null,
-      "cluster": "lobby-sofa"
     },
     {
       "id": "ticket-roll",
@@ -386,36 +205,6 @@
       "cluster": null
     },
     {
-      "id": "candy-wrapper",
-      "zh": "糖果包裝紙",
-      "en": "candy-wrapper",
-      "ja": "キャンディの包み紙",
-      "reading": "キャンディのつつみがみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "一小片皺摺的亮紫色糖果包裝紙，兩側捏成尖角，表面沒有字樣。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "rubber-sole",
-      "zh": "橡膠鞋底",
-      "en": "sole",
-      "ja": "靴底",
-      "reading": "くつぞこ",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "深棕色鞋底形橡膠片，前端寬圓、後跟稍窄，底面有清楚的波浪紋路。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "red-carpet",
       "zh": "紅地毯",
       "en": "red-carpet",
@@ -423,7 +212,7 @@
       "reading": "レッドカーペット",
       "category": "道具",
       "size": "medium",
-      "zone": "lobby",
+      "zone": "entrance",
       "spot": "ground",
       "desc": "一條鮮紅色長方形地毯，表面平整，兩側各有一排金色圓點裝飾。",
       "loose": false,
@@ -438,7 +227,7 @@
       "reading": "ベルベットロープ",
       "category": "道具",
       "size": "medium",
-      "zone": "lobby",
+      "zone": "entrance",
       "spot": "ground",
       "desc": "深紅色粗繩垂成柔和弧線，兩端接在金色圓柱座上，輪廓簡潔醒目。",
       "loose": false,
@@ -453,7 +242,7 @@
       "reading": "フィルムカメラ",
       "category": "道具",
       "size": "medium",
-      "zone": "lobby",
+      "zone": "screening-room",
       "spot": "ground",
       "desc": "黑色方形機身前方伸出大圓鏡頭，頂部有小把手和兩個圓形轉盤。",
       "loose": false,
@@ -472,36 +261,6 @@
       "spot": "ground",
       "desc": "黑色交叉折疊椅架撐起深藍色帆布座面與椅背，兩側有短扶手。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "film-canister",
-      "zh": "膠卷罐",
-      "en": "film-canister",
-      "ja": "フィルム缶",
-      "reading": "フィルムかん",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "銀灰色扁圓金屬罐，外圈有深色接縫，頂面中央略微凸起。",
-      "loose": true,
-      "motion": null,
-      "cluster": "film-camera"
-    },
-    {
-      "id": "ticket-stub",
-      "zh": "票根",
-      "en": "ticket-stub",
-      "ja": "半券",
-      "reading": "はんけん",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "一小片淡黃色長方紙，兩端帶齒狀缺口，中間有一道撕開的斜邊。",
-      "loose": true,
       "motion": null,
       "cluster": null
     },
@@ -573,7 +332,7 @@
       "reading": "ポスターがくぶち",
       "category": "道具",
       "size": "medium",
-      "zone": "lobby",
+      "zone": "entrance",
       "spot": "wall",
       "desc": "細黑框內是無字的紅金色抽象光束圖案，中央有大圓形與星芒裝飾。",
       "loose": false,
@@ -596,81 +355,6 @@
       "cluster": null
     },
     {
-      "id": "seat-number-plate",
-      "zh": "座位牌",
-      "en": "seat-plate",
-      "ja": "座席プレート",
-      "reading": "ざせきプレート",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "小巧的長方形金屬牌，邊角圓滑，表面空白，底部有兩個固定孔。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cup-holder",
-      "zh": "杯架",
-      "en": "cup-holder",
-      "ja": "カップホルダー",
-      "reading": "カップホルダー",
-      "category": "設施",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "黑色圓筒形杯架，頂端有圓形開口，底部略窄，側面以短支架固定。",
-      "loose": false,
-      "motion": null,
-      "cluster": "folding-seat"
-    },
-    {
-      "id": "seat-cushion",
-      "zh": "座墊",
-      "en": "seat-cushion",
-      "ja": "座布団",
-      "reading": "ざぶとん",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "厚實的方形紅色軟墊，四角微圓，表面有細緻布紋，側邊略微鼓起。",
-      "loose": true,
-      "motion": null,
-      "cluster": "folding-seat"
-    },
-    {
-      "id": "aisle-light",
-      "zh": "階梯燈",
-      "en": "aisle-light",
-      "ja": "足元灯",
-      "reading": "あしもととう",
-      "category": "設施",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "wall",
-      "desc": "嵌在後牆下方的小型方形燈，外框深色，中央透出柔和的暖黃色光。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "exit-door",
-      "zh": "出口門",
-      "en": "exit-door",
-      "ja": "出口ドア",
-      "reading": "でぐちドア",
-      "category": "設施",
-      "size": "large",
-      "zone": "screening-room",
-      "spot": "wallbase",
-      "desc": "深綠色單扇門，帶有銀色橫向把手與深色門框，門面平整沒有文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "floor-speaker",
       "zh": "落地喇叭",
       "en": "floor-speaker",
@@ -686,126 +370,6 @@
       "cluster": null
     },
     {
-      "id": "laser-pointer",
-      "zh": "雷射筆",
-      "en": "laser-pointer",
-      "ja": "レーザーポインター",
-      "reading": "レーザーポインター",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "細長的黑色圓柱筆身，頂端有小圓按鈕，末端帶一圈亮紅色裝飾。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "coiled-cable",
-      "zh": "盤繞電線",
-      "en": "coiled-cable",
-      "ja": "巻き取りケーブル",
-      "reading": "まきとりケーブル",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "黑色電線盤成數圈，兩端各露出短短的直線，旁邊有一個小型接頭。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "handheld-fan",
-      "zh": "手持電風扇",
-      "en": "handheld-fan",
-      "ja": "ハンディファン",
-      "reading": "ハンディファン",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "白色圓形扇罩內有三片扇葉，下方接著細長握柄，底端有圓形開關。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "electric-cable-reel",
-      "zh": "電纜捲盤",
-      "en": "electric-cable-reel",
-      "ja": "コードリール",
-      "reading": "コードリール",
-      "category": "道具",
-      "size": "medium",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "橘色圓盤置於黑色支架間，側面有握柄，盤上繞著整齊的黑色電線。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "step-stool",
-      "zh": "踏凳",
-      "en": "step-stool",
-      "ja": "踏み台",
-      "reading": "ふみだい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "短小的深灰色兩階踏凳，頂面平坦並有防滑紋，兩側支腳向外微張。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "soft-toy",
-      "zh": "毛絨玩具",
-      "en": "soft-toy",
-      "ja": "ぬいぐるみ",
-      "reading": "ぬいぐるみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "圓潤的棕色毛絨球形玩具，表面蓬鬆，頂端有兩個小耳朵與短短的尾巴。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "projector-lens",
-      "zh": "投影鏡頭",
-      "en": "projector lens",
-      "ja": "プロジェクターレンズ",
-      "reading": "プロジェクターレンズ",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "圓形凸出的玻璃鏡片，外圈是黑色金屬環，中央泛著淡藍色反光。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "seat-row-marker",
-      "zh": "排座標記牌",
-      "en": "row marker",
-      "ja": "座席列表示板",
-      "reading": "ざせきれつひょうじばん",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "小巧的直立長方牌，底座扁平穩固，牌面以清楚的色塊區分座位區域。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "fire-extinguisher-cabinet",
       "zh": "滅火器箱",
       "en": "fire extinguisher cabinet",
@@ -816,111 +380,6 @@
       "zone": "screening-room",
       "spot": "wallbase",
       "desc": "細長的紅色金屬箱立在牆邊，正面有透明窗格，可看見裡面的紅色滅火器。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cable-cover",
-      "zh": "電線護蓋",
-      "en": "cable cover",
-      "ja": "ケーブルカバー",
-      "reading": "ケーブルカバー",
-      "category": "設施",
-      "size": "medium",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "黃色扁平長條護蓋橫放在地面，表面有三道凸起的平行槽線。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "seat-back",
-      "zh": "椅背",
-      "en": "seat back",
-      "ja": "座席の背もたれ",
-      "reading": "ざせきのせもたれ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "獨立的深紅色弧形靠背，表面平滑，兩側下方露出短短的金屬支架。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "paper-cup-lid",
-      "zh": "紙杯蓋",
-      "en": "cup lid",
-      "ja": "カップのふた",
-      "reading": "カップのふた",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "白色圓形薄蓋，中央有凸起的飲口，外沿一圈略微翹起。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ticket-punch",
-      "zh": "驗票鉗",
-      "en": "ticket punch",
-      "ja": "改札パンチ",
-      "reading": "かいさつパンチ",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "金屬手持鉗子形狀，兩支握柄在一端相連，前端是小小的圓形打孔口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "curtain-tieback",
-      "zh": "窗簾束帶",
-      "en": "curtain-tieback",
-      "ja": "カーテンタッセル",
-      "reading": "カーテンタッセル",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "一條深紅色粗繩彎成環狀，兩端各垂著圓潤的流蘇，外形簡單醒目。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "glow-stick",
-      "zh": "螢光棒",
-      "en": "glow-stick",
-      "ja": "ケミカルライト",
-      "reading": "ケミカルライト",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "ground",
-      "desc": "細長的透明塑膠管散發鮮綠色光芒，兩端有小圓帽，平放時像一根發亮的短棒。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wristband",
-      "zh": "腕帶",
-      "en": "wristband",
-      "ja": "リストバンド",
-      "reading": "リストバンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "screening-room",
-      "spot": "surface",
-      "desc": "寬版的橘色布環平攤成橢圓形，表面有細密的織紋，沒有扣件或文字。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1061,36 +520,6 @@
       "cluster": null
     },
     {
-      "id": "sundae-spoon",
-      "zh": "聖代匙",
-      "en": "sundae spoon",
-      "ja": "パフェスプーン",
-      "reading": "パフェスプーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "surface",
-      "desc": "細長金屬匙柄連著小而扁的橢圓匙面，整體銀亮，柄尾略尖。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sundae-glass"
-    },
-    {
-      "id": "salt-packet",
-      "zh": "鹽包",
-      "en": "salt packet",
-      "ja": "塩の小袋",
-      "reading": "シオノコブクロ",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "surface",
-      "desc": "扁平白色小紙包，封口兩端壓出細齒狀邊，中央沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "ketchup-packet",
       "zh": "番茄醬包",
       "en": "ketchup packet",
@@ -1106,21 +535,6 @@
       "cluster": null
     },
     {
-      "id": "sauce-bowl",
-      "zh": "醬料碟",
-      "en": "sauce bowl",
-      "ja": "ソース皿",
-      "reading": "ソースザラ",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "surface",
-      "desc": "白色淺圓碟，中央有一個小凹面，邊緣略微翹起，裡面盛著紅色醬料。",
-      "loose": false,
-      "motion": null,
-      "cluster": "nachos"
-    },
-    {
       "id": "soda-dispenser",
       "zh": "汽水飲料機",
       "en": "soda dispenser",
@@ -1132,66 +546,6 @@
       "spot": "wallbase",
       "desc": "高身金屬飲料機有數個直立透明槽，底部排列黑色出水按鈕與接杯凹位。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "serving-tray-rack",
-      "zh": "托盤架",
-      "en": "serving tray rack",
-      "ja": "トレースタンド",
-      "reading": "トレースタンド",
-      "category": "設施",
-      "size": "medium",
-      "zone": "snack-bar",
-      "spot": "ground",
-      "desc": "窄長金屬架有多層水平支撐桿，幾個托盤直立插放在架內。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stainless-steel-table",
-      "zh": "不鏽鋼工作桌",
-      "en": "stainless steel table",
-      "ja": "ステンレス作業台",
-      "reading": "ステンレスサギョウダイ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "snack-bar",
-      "spot": "ground",
-      "desc": "長方形銀灰色桌面由四根細直桌腳支撐，桌面平坦明亮，底下橫桿相連。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "menu-holder",
-      "zh": "菜單架",
-      "en": "menu holder",
-      "ja": "メニュースタンド",
-      "reading": "メニュースタンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "surface",
-      "desc": "透明直立的三角形壓克力架，底座寬而平，裡面放著沒有文字的空白卡片。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stirrer",
-      "zh": "攪拌棒",
-      "en": "stirrer",
-      "ja": "マドラー",
-      "reading": "マドラー",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "surface",
-      "desc": "細長的紅色塑膠棒，一端有扁平小匙形狀，平放在桌面上。",
-      "loose": true,
       "motion": null,
       "cluster": null
     },
@@ -1241,81 +595,6 @@
       "cluster": null
     },
     {
-      "id": "straw-wrapper",
-      "zh": "吸管包裝紙",
-      "en": "straw wrapper",
-      "ja": "ストローの包み紙",
-      "reading": "ストローのつつみがみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "ground",
-      "desc": "細長的白色紙套斜躺在地上，一端微微撕開，露出裡面一小段紅色吸管。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "floor-squeegee",
-      "zh": "地板刮水器",
-      "en": "floor squeegee",
-      "ja": "フロアワイパー",
-      "reading": "フロアワイパー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "snack-bar",
-      "spot": "ground",
-      "desc": "長柄刮水器斜靠在後牆，灰色橡膠刮條橫跨寬扁底座，握柄是藍色。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "oil-can",
-      "zh": "機油罐",
-      "en": "oil can",
-      "ja": "オイル缶",
-      "reading": "オイルかん",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "矮胖的紅色金屬罐，頂部有短短的尖嘴與小圓蓋，側面帶弧形提把。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "paint-bucket",
-      "zh": "油漆桶",
-      "en": "paint bucket",
-      "ja": "ペンキ缶",
-      "reading": "ペンキかん",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "藍色圓柱形金屬桶，頂端開口露出白色漆面，兩側連著細金屬提把。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bollard-light",
-      "zh": "矮柱燈",
-      "en": "bollard-light",
-      "ja": "ボラードライト",
-      "reading": "ボラードライト",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "短粗的深灰色圓柱燈，頂端罩著乳白色半透明燈罩，底部固定在圓盤底座上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "wheelie-bin",
       "zh": "有輪垃圾桶",
       "en": "wheelie-bin",
@@ -1331,51 +610,6 @@
       "cluster": null
     },
     {
-      "id": "cherry",
-      "zh": "櫻桃",
-      "en": "cherry",
-      "ja": "さくらんぼ",
-      "reading": "さくらんぼ",
-      "category": "食物",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "兩顆圓潤鮮紅的果實並排相連，細長綠梗從頂端交叉伸出，輪廓簡潔清楚。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sundae-glass"
-    },
-    {
-      "id": "citrus-squeezer",
-      "zh": "檸檬榨汁器",
-      "en": "citrus-squeezer",
-      "ja": "レモン絞り器",
-      "reading": "レモンしぼりき",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "亮黃色手持榨汁器由兩個碗狀壓片和鉸鏈把手組成，前端有細小濾孔。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sugar-bowl"
-    },
-    {
-      "id": "ice-tongs",
-      "zh": "冰夾",
-      "en": "ice-tongs",
-      "ja": "アイストング",
-      "reading": "アイストング",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "銀色細長金屬夾呈張開的弧形，兩端各有寬而圓的夾面。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "retractable-screen",
       "zh": "捲軸式銀幕",
       "en": "retractable-screen",
@@ -1387,21 +621,6 @@
       "spot": "ground",
       "desc": "寬大的白色長方形幕面掛在深色橫桿下，兩側邊緣筆直，表面平整無字。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "sundae-dish",
-      "zh": "聖代盤",
-      "en": "sundae-dish",
-      "ja": "パフェ皿",
-      "reading": "パフェざら",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-bar",
-      "spot": "ground",
-      "desc": "透明玻璃碗口寬、底部有短柄，碗身帶著一圈圈凸起的弧形紋路。",
-      "loose": true,
       "motion": null,
       "cluster": null
     }
@@ -2176,12 +1395,274 @@
       "id": "menu-board",
       "reason": "id 重複",
       "zone": "snack-bar"
+    },
+    {
+      "id": "parking-barrier",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "electric-car",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "car-key",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-disc",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "license-plate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "car-battery",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "windshield",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "ticket-validator",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-sign",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "traffic-barrel",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-ticket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "armrest",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "candy-wrapper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "rubber-sole",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "film-canister",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "ticket-stub",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "seat-number-plate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "cup-holder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "seat-cushion",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "aisle-light",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "exit-door",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "laser-pointer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "coiled-cable",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "handheld-fan",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "electric-cable-reel",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "step-stool",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "soft-toy",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "projector-lens",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "seat-row-marker",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "cable-cover",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "seat-back",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "paper-cup-lid",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "ticket-punch",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "curtain-tieback",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "glow-stick",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "wristband",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "screening-room"
+    },
+    {
+      "id": "sundae-spoon",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "salt-packet",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "sauce-bowl",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "serving-tray-rack",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "stainless-steel-table",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "menu-holder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "stirrer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "straw-wrapper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "floor-squeegee",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
+    },
+    {
+      "id": "oil-can",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "paint-bucket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "bollard-light",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "cherry",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "citrus-squeezer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "ice-tongs",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "sundae-dish",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "snack-bar"
     }
   ],
   "createdAt": "2026-09-25T20:51:15.677+09:00",
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 39,
     "added": 9,
-    "at": "2026-09-25T21:22:49.998+09:00"
-  }
+    "at": "2026-09-25T21:22:49.998+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 39
 }

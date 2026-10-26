@@ -1,0 +1,36 @@
+{
+  "zones": {
+    "entrance": {
+      "sets": [
+        { "row": "back", "x": [0.02, 0.98], "fixture": "facade", "door": true, "note": "咖啡廳門面" },
+        { "row": "back", "x": [0.08, 0.2], "note": "門邊盆栽", "main": "terracotta-pot" },
+        { "row": "back", "x": [0.62, 0.74], "note": "門邊傘架", "main": "umbrella-stand-cafe", "front": ["folded-umbrella"] },
+        { "row": "back", "x": [0.82, 0.94], "note": "門外垃圾桶", "main": "wastebasket-cafe" }
+      ]
+    },
+    "patio": {
+      "sets": [
+        { "row": "mid", "x": [0.03, 0.52], "note": "庭園傘下的茶桌", "main": "long-table-cafe", "on": ["teapot-cafe", "tea-cup-cafe", "saucer-cafe", "sugar-bowl-cafe"], "beside": ["table-umbrella", "stacking-chair"] },
+        { "row": "mid", "x": [0.58, 0.97], "fixture": "cloth-table", "note": "早午餐桌", "on": ["ceramic-plate-cafe", "fork-cafe", "table-knife", "cloth-napkin-cafe"] },
+        { "row": "back", "x": [0.56, 0.97], "fixture": "stand", "note": "自助調味台", "on": ["honey-jar-cafe", "jam-jar-cafe", "butter-dish-cafe", "cheese-wedge-cafe", "water-pitcher-cafe", "salt-shaker-cafe", "pepper-shaker-cafe"] }
+      ]
+    },
+    "counter": {
+      "sets": [
+        { "row": "back", "x": [0.03, 0.45], "fixture": "shelf", "note": "咖啡豆與杯具架", "on": ["coffee-tin", "syrup-bottle", "coffee-cup-dispenser", "coffee-lid-dispenser"] },
+        { "row": "back", "x": [0.55, 0.96], "fixture": "cabinet", "note": "調味補給站", "on": ["cup-sleeve", "coffee-stirrer-cafe", "coffee-sugar-cubes"] },
+        { "row": "mid", "x": [0.06, 0.7], "fixture": "counter", "note": "點餐吧台", "on": ["coffee-machine", "coffee-scale", "coffee-dripper", "pour-over-kettle", "coffee-counter-bell"] }
+      ]
+    },
+    "lounge": {
+      "sets": [
+        { "row": "back", "x": [0.02, 0.5], "fixture": "rug", "note": "沙發角", "main": "lounge-sofa", "wall": ["landscape-painting-cafe", "wall-sconce-cafe"], "beside": ["floor-lamp-cafe"] },
+        { "row": "back", "x": [0.56, 0.72], "note": "雜誌架", "main": "magazine-rack", "wall": ["wall-clock-cafe"] },
+        { "row": "back", "x": [0.82, 0.96], "note": "衣帽架", "main": "coat-rack-cafe" },
+        { "row": "mid", "x": [0.08, 0.42], "note": "茶几", "main": "coffee-table-cafe", "on": ["tissue-box-cafe", "magazine-stack"], "beside": ["ottoman-cafe"] },
+        { "row": "mid", "x": [0.52, 0.86], "note": "懶骨頭與邊桌", "main": "side-table-cafe", "beside": ["beanbag-chair"] }
+      ]
+    }
+  },
+  "scale": { "coffee-table-cafe": 1.3 }
+}

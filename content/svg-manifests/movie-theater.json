@@ -18,7 +18,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "entrance",
+        "zone": "screening-room",
         "itemId": "film-reel",
         "words": {
           "zh-TW": "電影膠卷",
@@ -39,7 +39,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "entrance",
+        "zone": "screening-room",
         "itemId": "film-strip",
         "words": {
           "zh-TW": "電影膠片",
@@ -60,7 +60,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "entrance",
+        "zone": "lobby",
         "itemId": "clapperboard",
         "words": {
           "zh-TW": "場記板",
@@ -68,153 +68,6 @@
           "ja": {
             "text": "カチンコ",
             "reading": "カチンコ"
-          }
-        }
-      }
-    },
-    {
-      "name": "柵欄杆",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "白色橫桿帶紅色反光區塊，裝在短柱上並橫跨車道入口，旁邊有小型機箱。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "parking-barrier",
-        "words": {
-          "zh-TW": "柵欄杆",
-          "en": "parking barrier",
-          "ja": {
-            "text": "駐車場ゲート",
-            "reading": "ちゅうしゃじょうゲート"
-          }
-        }
-      }
-    },
-    {
-      "name": "電動車",
-      "category": "交通工具",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "小型白色轎車，車頂線條流暢，側面有深色車窗、兩個黑色輪胎與圓形充電孔蓋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "electric-car",
-        "words": {
-          "zh-TW": "電動車",
-          "en": "electric car",
-          "ja": {
-            "text": "電気自動車",
-            "reading": "でんきじどうしゃ"
-          }
-        }
-      }
-    },
-    {
-      "name": "汽車鑰匙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短金屬鑰匙連著黑色圓角遙控器，遙控器上有兩個簡單按鍵，旁邊掛著小金屬圈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "car-key",
-        "words": {
-          "zh-TW": "汽車鑰匙",
-          "en": "car key",
-          "ja": {
-            "text": "車のキー",
-            "reading": "くるまのキー"
-          }
-        }
-      }
-    },
-    {
-      "name": "停車計時圓盤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "藍色圓形塑膠圓盤，外圈有一圈短刻線，中央是可轉動的白色小圓片，不顯示文字數字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "parking-disc",
-        "words": {
-          "zh-TW": "停車計時圓盤",
-          "en": "parking disc",
-          "ja": {
-            "text": "パーキングディスク",
-            "reading": "パーキングディスク"
-          }
-        }
-      }
-    },
-    {
-      "name": "車牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "薄薄的白色長方形金屬牌，四角有固定孔，邊緣包著深色細框。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "license-plate",
-        "words": {
-          "zh-TW": "車牌",
-          "en": "license plate",
-          "ja": {
-            "text": "ナンバープレート",
-            "reading": "ナンバープレート"
-          }
-        }
-      }
-    },
-    {
-      "name": "汽車電池",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色扁方盒上有兩個突出的金屬接頭，正面帶有醒目的紅色正極蓋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "car-battery",
-        "words": {
-          "zh-TW": "汽車電池",
-          "en": "car battery",
-          "ja": {
-            "text": "車のバッテリー",
-            "reading": "くるまのばってりー"
-          }
-        }
-      }
-    },
-    {
-      "name": "擋風玻璃",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "大片略帶弧度的透明藍灰色玻璃，外圍有粗黑膠框，兩側向上收窄。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "windshield",
-        "words": {
-          "zh-TW": "擋風玻璃",
-          "en": "windshield",
-          "ja": {
-            "text": "フロントガラス",
-            "reading": "ふろんとがらす"
           }
         }
       }
@@ -228,7 +81,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "entrance",
+        "zone": "lobby",
         "itemId": "ticket-barrier",
         "words": {
           "zh-TW": "驗票閘門",
@@ -236,48 +89,6 @@
           "ja": {
             "text": "改札機",
             "reading": "かいさつき"
-          }
-        }
-      }
-    },
-    {
-      "name": "驗票機",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一台小型直立機器，方形外殼上有黑色感應面和一圈亮色邊框。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "ticket-validator",
-        "words": {
-          "zh-TW": "驗票機",
-          "en": "ticket validator",
-          "ja": {
-            "text": "チケットリーダー",
-            "reading": "チケットリーダー"
-          }
-        }
-      }
-    },
-    {
-      "name": "停車標誌",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "一塊藍底白色字母圖樣的方牌固定在細金屬桿上，牌面不含文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "parking-sign",
-        "words": {
-          "zh-TW": "停車標誌",
-          "en": "parking sign",
-          "ja": {
-            "text": "駐車標識",
-            "reading": "ちゅうしゃひょうしき"
           }
         }
       }
@@ -291,7 +102,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "entrance",
+        "zone": "lobby",
         "itemId": "movie-ticket",
         "words": {
           "zh-TW": "電影票",
@@ -299,27 +110,6 @@
           "ja": {
             "text": "映画チケット",
             "reading": "えいがチケット"
-          }
-        }
-      }
-    },
-    {
-      "name": "交通導引桶",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "橘白相間的粗短圓柱桶，頂面平坦，桶身有寬大的斜向色帶。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "traffic-barrel",
-        "words": {
-          "zh-TW": "交通導引桶",
-          "en": "traffic barrel",
-          "ja": {
-            "text": "工事用バリケード",
-            "reading": "こうじようバリケード"
           }
         }
       }
@@ -341,27 +131,6 @@
           "ja": {
             "text": "鉢植えの低木",
             "reading": "はちうえのていぼく"
-          }
-        }
-      }
-    },
-    {
-      "name": "停車票",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一張白色窄長紙片斜落地面，邊緣有小齒孔，中央是空白色塊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "parking-ticket",
-        "words": {
-          "zh-TW": "停車票",
-          "en": "parking ticket",
-          "ja": {
-            "text": "駐車券",
-            "reading": "ちゅうしゃけん"
           }
         }
       }
@@ -404,27 +173,6 @@
           "ja": {
             "text": "ポップコーンメーカー",
             "reading": "ポップコーンメーカー"
-          }
-        }
-      }
-    },
-    {
-      "name": "扶手",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "獨立的深紅色軟墊扶手，外形像短厚長方柱，兩端略微圓弧。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "armrest",
-        "words": {
-          "zh-TW": "扶手",
-          "en": "armrest",
-          "ja": {
-            "text": "肘掛け",
-            "reading": "ひじかけ"
           }
         }
       }
@@ -493,48 +241,6 @@
       }
     },
     {
-      "name": "糖果包裝紙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一小片皺摺的亮紫色糖果包裝紙，兩側捏成尖角，表面沒有字樣。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "candy-wrapper",
-        "words": {
-          "zh-TW": "糖果包裝紙",
-          "en": "candy-wrapper",
-          "ja": {
-            "text": "キャンディの包み紙",
-            "reading": "キャンディのつつみがみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "橡膠鞋底",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "深棕色鞋底形橡膠片，前端寬圓、後跟稍窄，底面有清楚的波浪紋路。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "rubber-sole",
-        "words": {
-          "zh-TW": "橡膠鞋底",
-          "en": "sole",
-          "ja": {
-            "text": "靴底",
-            "reading": "くつぞこ"
-          }
-        }
-      }
-    },
-    {
       "name": "紅地毯",
       "category": "道具",
       "lane": "b",
@@ -543,7 +249,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "lobby",
+        "zone": "entrance",
         "itemId": "red-carpet",
         "words": {
           "zh-TW": "紅地毯",
@@ -564,7 +270,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "lobby",
+        "zone": "entrance",
         "itemId": "velvet-rope",
         "words": {
           "zh-TW": "紅絨繩",
@@ -585,7 +291,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "lobby",
+        "zone": "screening-room",
         "itemId": "film-camera",
         "words": {
           "zh-TW": "攝影機",
@@ -614,48 +320,6 @@
           "ja": {
             "text": "ディレクターチェア",
             "reading": "ディレクターチェア"
-          }
-        }
-      }
-    },
-    {
-      "name": "膠卷罐",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀灰色扁圓金屬罐，外圈有深色接縫，頂面中央略微凸起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "film-canister",
-        "words": {
-          "zh-TW": "膠卷罐",
-          "en": "film-canister",
-          "ja": {
-            "text": "フィルム缶",
-            "reading": "フィルムかん"
-          }
-        }
-      }
-    },
-    {
-      "name": "票根",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一小片淡黃色長方紙，兩端帶齒狀缺口，中間有一道撕開的斜邊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "ticket-stub",
-        "words": {
-          "zh-TW": "票根",
-          "en": "ticket-stub",
-          "ja": {
-            "text": "半券",
-            "reading": "はんけん"
           }
         }
       }
@@ -753,7 +417,7 @@
       "ref": {
         "project": "la-game",
         "scene": "movie-theater",
-        "zone": "lobby",
+        "zone": "entrance",
         "itemId": "film-poster-frame",
         "words": {
           "zh-TW": "電影海報框",
@@ -787,111 +451,6 @@
       }
     },
     {
-      "name": "座位牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小巧的長方形金屬牌，邊角圓滑，表面空白，底部有兩個固定孔。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "seat-number-plate",
-        "words": {
-          "zh-TW": "座位牌",
-          "en": "seat-plate",
-          "ja": {
-            "text": "座席プレート",
-            "reading": "ざせきプレート"
-          }
-        }
-      }
-    },
-    {
-      "name": "杯架",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色圓筒形杯架，頂端有圓形開口，底部略窄，側面以短支架固定。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "cup-holder",
-        "words": {
-          "zh-TW": "杯架",
-          "en": "cup-holder",
-          "ja": {
-            "text": "カップホルダー",
-            "reading": "カップホルダー"
-          }
-        }
-      }
-    },
-    {
-      "name": "座墊",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "厚實的方形紅色軟墊，四角微圓，表面有細緻布紋，側邊略微鼓起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "seat-cushion",
-        "words": {
-          "zh-TW": "座墊",
-          "en": "seat-cushion",
-          "ja": {
-            "text": "座布団",
-            "reading": "ざぶとん"
-          }
-        }
-      }
-    },
-    {
-      "name": "階梯燈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "嵌在後牆下方的小型方形燈，外框深色，中央透出柔和的暖黃色光。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "aisle-light",
-        "words": {
-          "zh-TW": "階梯燈",
-          "en": "aisle-light",
-          "ja": {
-            "text": "足元灯",
-            "reading": "あしもととう"
-          }
-        }
-      }
-    },
-    {
-      "name": "出口門",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "深綠色單扇門，帶有銀色橫向把手與深色門框，門面平整沒有文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "exit-door",
-        "words": {
-          "zh-TW": "出口門",
-          "en": "exit-door",
-          "ja": {
-            "text": "出口ドア",
-            "reading": "でぐちドア"
-          }
-        }
-      }
-    },
-    {
       "name": "落地喇叭",
       "category": "設施",
       "lane": "b",
@@ -913,174 +472,6 @@
       }
     },
     {
-      "name": "雷射筆",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長的黑色圓柱筆身，頂端有小圓按鈕，末端帶一圈亮紅色裝飾。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "laser-pointer",
-        "words": {
-          "zh-TW": "雷射筆",
-          "en": "laser-pointer",
-          "ja": {
-            "text": "レーザーポインター",
-            "reading": "レーザーポインター"
-          }
-        }
-      }
-    },
-    {
-      "name": "盤繞電線",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色電線盤成數圈，兩端各露出短短的直線，旁邊有一個小型接頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "coiled-cable",
-        "words": {
-          "zh-TW": "盤繞電線",
-          "en": "coiled-cable",
-          "ja": {
-            "text": "巻き取りケーブル",
-            "reading": "まきとりケーブル"
-          }
-        }
-      }
-    },
-    {
-      "name": "手持電風扇",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "白色圓形扇罩內有三片扇葉，下方接著細長握柄，底端有圓形開關。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "handheld-fan",
-        "words": {
-          "zh-TW": "手持電風扇",
-          "en": "handheld-fan",
-          "ja": {
-            "text": "ハンディファン",
-            "reading": "ハンディファン"
-          }
-        }
-      }
-    },
-    {
-      "name": "電纜捲盤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "橘色圓盤置於黑色支架間，側面有握柄，盤上繞著整齊的黑色電線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "electric-cable-reel",
-        "words": {
-          "zh-TW": "電纜捲盤",
-          "en": "electric-cable-reel",
-          "ja": {
-            "text": "コードリール",
-            "reading": "コードリール"
-          }
-        }
-      }
-    },
-    {
-      "name": "踏凳",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "短小的深灰色兩階踏凳，頂面平坦並有防滑紋，兩側支腳向外微張。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "step-stool",
-        "words": {
-          "zh-TW": "踏凳",
-          "en": "step-stool",
-          "ja": {
-            "text": "踏み台",
-            "reading": "ふみだい"
-          }
-        }
-      }
-    },
-    {
-      "name": "毛絨玩具",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓潤的棕色毛絨球形玩具，表面蓬鬆，頂端有兩個小耳朵與短短的尾巴。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "soft-toy",
-        "words": {
-          "zh-TW": "毛絨玩具",
-          "en": "soft-toy",
-          "ja": {
-            "text": "ぬいぐるみ",
-            "reading": "ぬいぐるみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "投影鏡頭",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓形凸出的玻璃鏡片，外圈是黑色金屬環，中央泛著淡藍色反光。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "projector-lens",
-        "words": {
-          "zh-TW": "投影鏡頭",
-          "en": "projector lens",
-          "ja": {
-            "text": "プロジェクターレンズ",
-            "reading": "プロジェクターレンズ"
-          }
-        }
-      }
-    },
-    {
-      "name": "排座標記牌",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小巧的直立長方牌，底座扁平穩固，牌面以清楚的色塊區分座位區域。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "seat-row-marker",
-        "words": {
-          "zh-TW": "排座標記牌",
-          "en": "row marker",
-          "ja": {
-            "text": "座席列表示板",
-            "reading": "ざせきれつひょうじばん"
-          }
-        }
-      }
-    },
-    {
       "name": "滅火器箱",
       "category": "設施",
       "lane": "b",
@@ -1097,153 +488,6 @@
           "ja": {
             "text": "消火器ボックス",
             "reading": "しょうかきボックス"
-          }
-        }
-      }
-    },
-    {
-      "name": "電線護蓋",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黃色扁平長條護蓋橫放在地面，表面有三道凸起的平行槽線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "cable-cover",
-        "words": {
-          "zh-TW": "電線護蓋",
-          "en": "cable cover",
-          "ja": {
-            "text": "ケーブルカバー",
-            "reading": "ケーブルカバー"
-          }
-        }
-      }
-    },
-    {
-      "name": "椅背",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "獨立的深紅色弧形靠背，表面平滑，兩側下方露出短短的金屬支架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "seat-back",
-        "words": {
-          "zh-TW": "椅背",
-          "en": "seat back",
-          "ja": {
-            "text": "座席の背もたれ",
-            "reading": "ざせきのせもたれ"
-          }
-        }
-      }
-    },
-    {
-      "name": "紙杯蓋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "白色圓形薄蓋，中央有凸起的飲口，外沿一圈略微翹起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "paper-cup-lid",
-        "words": {
-          "zh-TW": "紙杯蓋",
-          "en": "cup lid",
-          "ja": {
-            "text": "カップのふた",
-            "reading": "カップのふた"
-          }
-        }
-      }
-    },
-    {
-      "name": "驗票鉗",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "金屬手持鉗子形狀，兩支握柄在一端相連，前端是小小的圓形打孔口。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "ticket-punch",
-        "words": {
-          "zh-TW": "驗票鉗",
-          "en": "ticket punch",
-          "ja": {
-            "text": "改札パンチ",
-            "reading": "かいさつパンチ"
-          }
-        }
-      }
-    },
-    {
-      "name": "窗簾束帶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一條深紅色粗繩彎成環狀，兩端各垂著圓潤的流蘇，外形簡單醒目。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "curtain-tieback",
-        "words": {
-          "zh-TW": "窗簾束帶",
-          "en": "curtain-tieback",
-          "ja": {
-            "text": "カーテンタッセル",
-            "reading": "カーテンタッセル"
-          }
-        }
-      }
-    },
-    {
-      "name": "螢光棒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長的透明塑膠管散發鮮綠色光芒，兩端有小圓帽，平放時像一根發亮的短棒。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "glow-stick",
-        "words": {
-          "zh-TW": "螢光棒",
-          "en": "glow-stick",
-          "ja": {
-            "text": "ケミカルライト",
-            "reading": "ケミカルライト"
-          }
-        }
-      }
-    },
-    {
-      "name": "腕帶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "寬版的橘色布環平攤成橢圓形，表面有細密的織紋，沒有扣件或文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "screening-room",
-        "itemId": "wristband",
-        "words": {
-          "zh-TW": "腕帶",
-          "en": "wristband",
-          "ja": {
-            "text": "リストバンド",
-            "reading": "リストバンド"
           }
         }
       }
@@ -1438,48 +682,6 @@
       }
     },
     {
-      "name": "聖代匙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長金屬匙柄連著小而扁的橢圓匙面，整體銀亮，柄尾略尖。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "sundae-spoon",
-        "words": {
-          "zh-TW": "聖代匙",
-          "en": "sundae spoon",
-          "ja": {
-            "text": "パフェスプーン",
-            "reading": "パフェスプーン"
-          }
-        }
-      }
-    },
-    {
-      "name": "鹽包",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁平白色小紙包，封口兩端壓出細齒狀邊，中央沒有文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "salt-packet",
-        "words": {
-          "zh-TW": "鹽包",
-          "en": "salt packet",
-          "ja": {
-            "text": "塩の小袋",
-            "reading": "シオノコブクロ"
-          }
-        }
-      }
-    },
-    {
       "name": "番茄醬包",
       "category": "道具",
       "lane": "b",
@@ -1501,27 +703,6 @@
       }
     },
     {
-      "name": "醬料碟",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "白色淺圓碟，中央有一個小凹面，邊緣略微翹起，裡面盛著紅色醬料。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "sauce-bowl",
-        "words": {
-          "zh-TW": "醬料碟",
-          "en": "sauce bowl",
-          "ja": {
-            "text": "ソース皿",
-            "reading": "ソースザラ"
-          }
-        }
-      }
-    },
-    {
       "name": "汽水飲料機",
       "category": "設施",
       "lane": "b",
@@ -1538,90 +719,6 @@
           "ja": {
             "text": "ドリンクディスペンサー",
             "reading": "ドリンクディスペンサー"
-          }
-        }
-      }
-    },
-    {
-      "name": "托盤架",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "窄長金屬架有多層水平支撐桿，幾個托盤直立插放在架內。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "serving-tray-rack",
-        "words": {
-          "zh-TW": "托盤架",
-          "en": "serving tray rack",
-          "ja": {
-            "text": "トレースタンド",
-            "reading": "トレースタンド"
-          }
-        }
-      }
-    },
-    {
-      "name": "不鏽鋼工作桌",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長方形銀灰色桌面由四根細直桌腳支撐，桌面平坦明亮，底下橫桿相連。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "stainless-steel-table",
-        "words": {
-          "zh-TW": "不鏽鋼工作桌",
-          "en": "stainless steel table",
-          "ja": {
-            "text": "ステンレス作業台",
-            "reading": "ステンレスサギョウダイ"
-          }
-        }
-      }
-    },
-    {
-      "name": "菜單架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明直立的三角形壓克力架，底座寬而平，裡面放著沒有文字的空白卡片。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "menu-holder",
-        "words": {
-          "zh-TW": "菜單架",
-          "en": "menu holder",
-          "ja": {
-            "text": "メニュースタンド",
-            "reading": "メニュースタンド"
-          }
-        }
-      }
-    },
-    {
-      "name": "攪拌棒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長的紅色塑膠棒，一端有扁平小匙形狀，平放在桌面上。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "stirrer",
-        "words": {
-          "zh-TW": "攪拌棒",
-          "en": "stirrer",
-          "ja": {
-            "text": "マドラー",
-            "reading": "マドラー"
           }
         }
       }
@@ -1690,111 +787,6 @@
       }
     },
     {
-      "name": "吸管包裝紙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長的白色紙套斜躺在地上，一端微微撕開，露出裡面一小段紅色吸管。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "straw-wrapper",
-        "words": {
-          "zh-TW": "吸管包裝紙",
-          "en": "straw wrapper",
-          "ja": {
-            "text": "ストローの包み紙",
-            "reading": "ストローのつつみがみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "地板刮水器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長柄刮水器斜靠在後牆，灰色橡膠刮條橫跨寬扁底座，握柄是藍色。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "floor-squeegee",
-        "words": {
-          "zh-TW": "地板刮水器",
-          "en": "floor squeegee",
-          "ja": {
-            "text": "フロアワイパー",
-            "reading": "フロアワイパー"
-          }
-        }
-      }
-    },
-    {
-      "name": "機油罐",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "矮胖的紅色金屬罐，頂部有短短的尖嘴與小圓蓋，側面帶弧形提把。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "oil-can",
-        "words": {
-          "zh-TW": "機油罐",
-          "en": "oil can",
-          "ja": {
-            "text": "オイル缶",
-            "reading": "オイルかん"
-          }
-        }
-      }
-    },
-    {
-      "name": "油漆桶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "藍色圓柱形金屬桶，頂端開口露出白色漆面，兩側連著細金屬提把。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "paint-bucket",
-        "words": {
-          "zh-TW": "油漆桶",
-          "en": "paint bucket",
-          "ja": {
-            "text": "ペンキ缶",
-            "reading": "ペンキかん"
-          }
-        }
-      }
-    },
-    {
-      "name": "矮柱燈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "短粗的深灰色圓柱燈，頂端罩著乳白色半透明燈罩，底部固定在圓盤底座上。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "entrance",
-        "itemId": "bollard-light",
-        "words": {
-          "zh-TW": "矮柱燈",
-          "en": "bollard-light",
-          "ja": {
-            "text": "ボラードライト",
-            "reading": "ボラードライト"
-          }
-        }
-      }
-    },
-    {
       "name": "有輪垃圾桶",
       "category": "設施",
       "lane": "b",
@@ -1816,69 +808,6 @@
       }
     },
     {
-      "name": "櫻桃",
-      "category": "食物",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "兩顆圓潤鮮紅的果實並排相連，細長綠梗從頂端交叉伸出，輪廓簡潔清楚。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "cherry",
-        "words": {
-          "zh-TW": "櫻桃",
-          "en": "cherry",
-          "ja": {
-            "text": "さくらんぼ",
-            "reading": "さくらんぼ"
-          }
-        }
-      }
-    },
-    {
-      "name": "檸檬榨汁器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "亮黃色手持榨汁器由兩個碗狀壓片和鉸鏈把手組成，前端有細小濾孔。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "citrus-squeezer",
-        "words": {
-          "zh-TW": "檸檬榨汁器",
-          "en": "citrus-squeezer",
-          "ja": {
-            "text": "レモン絞り器",
-            "reading": "レモンしぼりき"
-          }
-        }
-      }
-    },
-    {
-      "name": "冰夾",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀色細長金屬夾呈張開的弧形，兩端各有寬而圓的夾面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "lobby",
-        "itemId": "ice-tongs",
-        "words": {
-          "zh-TW": "冰夾",
-          "en": "ice-tongs",
-          "ja": {
-            "text": "アイストング",
-            "reading": "アイストング"
-          }
-        }
-      }
-    },
-    {
       "name": "捲軸式銀幕",
       "category": "設施",
       "lane": "b",
@@ -1895,27 +824,6 @@
           "ja": {
             "text": "巻き上げ式スクリーン",
             "reading": "まきあげしきスクリーン"
-          }
-        }
-      }
-    },
-    {
-      "name": "聖代盤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明玻璃碗口寬、底部有短柄，碗身帶著一圈圈凸起的弧形紋路。",
-      "ref": {
-        "project": "la-game",
-        "scene": "movie-theater",
-        "zone": "snack-bar",
-        "itemId": "sundae-dish",
-        "words": {
-          "zh-TW": "聖代盤",
-          "en": "sundae-dish",
-          "ja": {
-            "text": "パフェ皿",
-            "reading": "パフェざら"
           }
         }
       }

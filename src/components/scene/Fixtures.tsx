@@ -91,6 +91,25 @@ function Shelf({ s }: { s: Surface }) {
   );
 }
 
+/** 靠牆的玻璃門冷藏櫃（超商、超市、藥局）：白色外框、頂端燈箱、淺藍內膽、每扇門一條門框 */
+function Cooler({ s }: { s: Surface }) {
+  const levels = [...s.levels].sort((a, b) => b - a);
+  const top = levels.at(-1)! - 90;
+  const doors = Math.max(1, Math.round((s.x1 - s.x0) / 130));
+  const dw = (s.x1 - s.x0) / doors;
+  return (
+    <g>
+      <rect x={s.x0} y={top} width={s.x1 - s.x0} height={s.base - top} fill="#eceff1" stroke="#78909c" strokeWidth={3} />
+      <rect x={s.x0 + 10} y={top + 22} width={s.x1 - s.x0 - 20} height={s.base - top - 44} fill="#e1f5fe" />
+      <rect x={s.x0} y={top} width={s.x1 - s.x0} height={18} fill="#b0bec5" stroke="#78909c" strokeWidth={2} />
+      <Glow><rect x={s.x0 + 14} y={top + 4} width={s.x1 - s.x0 - 28} height={10} rx={4} fill="#fffde7" /></Glow>
+      {levels.map((y) => <rect key={y} x={s.x0 + 10} y={y - 3} width={s.x1 - s.x0 - 20} height={8} fill="#cfd8dc" stroke="#90a4ae" strokeWidth={1.5} />)}
+      {range(doors + 1).map((i) => <rect key={i} x={s.x0 + i * dw - (i === 0 ? 0 : i === doors ? 10 : 4)} y={top + 18} width={i === 0 || i === doors ? 10 : 8} height={s.base - top - 40} fill="#cfd8dc" />)}
+      <rect x={s.x0} y={s.base - 22} width={s.x1 - s.x0} height={22} fill="#90a4ae" />
+    </g>
+  );
+}
+
 function Rug({ s }: { s: Surface }) {
   const y0 = s.levels[0];
   return (
@@ -173,6 +192,7 @@ export const FIXTURE_LOOKS: Record<string, (props: { s: Surface }) => ReactNode>
   cabinet: Cabinet,
   display: Display,
   shelf: Shelf,
+  cooler: Cooler,
   rug: Rug,
   platform: Platform,
   planter: Planter,

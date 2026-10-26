@@ -18,7 +18,7 @@
     },
     {
       "id": "service-hall",
-      "name": "服務區",
+      "name": "櫃台服務區",
       "indoor": true,
       "floor": "carpet",
       "feature": "table"
@@ -81,21 +81,6 @@
       "zone": "front-plaza",
       "spot": "ground",
       "desc": "細長深色燈柱頂端裝著圓罩燈頭，燈罩向下張開，輪廓簡潔醒目。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "fountain-bank",
-      "zh": "噴泉",
-      "en": "fountain",
-      "ja": "噴水",
-      "reading": "ふんすい",
-      "category": "設施",
-      "size": "large",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "低矮圓形石池中央立著短柱，水流向上噴出後落回池中，池沿厚實明顯。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -176,21 +161,6 @@
       "cluster": null
     },
     {
-      "id": "van",
-      "zh": "廂型車",
-      "en": "van",
-      "ja": "バン",
-      "reading": "バン",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "front-plaza",
-      "spot": "road",
-      "desc": "白色廂型車車頭平直，前方有寬擋風玻璃與兩盞方燈，車頂較高且車身方正。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "scooter-bank",
       "zh": "機車",
       "en": "scooter",
@@ -221,96 +191,6 @@
       "cluster": null
     },
     {
-      "id": "traffic-cone-bank",
-      "zh": "交通錐",
-      "en": "traffic cone",
-      "ja": "カラーコーン",
-      "reading": "カラーコーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "橘紅色錐形塑膠筒立在方形底座上，錐身有一道白色橫帶，表面沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "umbrella-bank",
-      "zh": "雨傘",
-      "en": "umbrella",
-      "ja": "傘",
-      "reading": "かさ",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "收起的深藍色雨傘呈細長圓筒狀，頂端有弧形握把，底端露出尖頭。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ball-bank",
-      "zh": "球",
-      "en": "ball",
-      "ja": "ボール",
-      "reading": "ボール",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "圓形橘色球面帶有幾條彎曲接縫線，明暗分明，沒有圖案或文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "key-bank",
-      "zh": "鑰匙",
-      "en": "key",
-      "ja": "鍵",
-      "reading": "かぎ",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "一把金色金屬鑰匙平放，圓環握柄連著細長齒狀匙身，外形簡單易辨。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wallet-bank",
-      "zh": "錢包",
-      "en": "wallet",
-      "ja": "財布",
-      "reading": "さいふ",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "棕色長方形皮革錢包對折，邊角圓滑，正面有一道短縫線與小扣帶。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "flower-bank",
-      "zh": "花",
-      "en": "flower",
-      "ja": "花",
-      "reading": "はな",
-      "category": "植物",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "一朵黃色花有五片圓潤花瓣與橘色花心，連著短綠莖和兩片葉子。",
-      "loose": true,
-      "motion": "sway",
-      "cluster": null
-    },
-    {
       "id": "tree-bank",
       "zh": "樹",
       "en": "tree",
@@ -323,66 +203,6 @@
       "desc": "粗直棕色樹幹支撐一團濃綠圓冠，枝葉外緣起伏，正面形狀完整清楚。",
       "loose": false,
       "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "bush-bank",
-      "zh": "灌木",
-      "en": "bush",
-      "ja": "低木",
-      "reading": "ていぼく",
-      "category": "植物",
-      "size": "medium",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "低矮圓拱形綠色灌木由數團葉簇組成，底部略平，枝葉密集且沒有花果。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "cloud-bank",
-      "zh": "雲",
-      "en": "cloud",
-      "ja": "雲",
-      "reading": "くも",
-      "category": "自然",
-      "size": "medium",
-      "zone": "front-plaza",
-      "spot": "sky",
-      "desc": "白色雲朵由幾個柔軟圓弧連成一團，底部稍平，邊緣蓬鬆而容易辨認。",
-      "loose": false,
-      "motion": "drift",
-      "cluster": null
-    },
-    {
-      "id": "puddle-bank",
-      "zh": "水窪",
-      "en": "puddle",
-      "ja": "水たまり",
-      "reading": "みずたまり",
-      "category": "自然",
-      "size": "medium",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "地面上一灘扁平不規則的淺藍色水面，邊緣彎曲，表面帶著柔和反光。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stone-bank",
-      "zh": "石頭",
-      "en": "stone",
-      "ja": "石",
-      "reading": "いし",
-      "category": "自然",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "灰褐色不規則卵形石塊，表面有幾處深色斑點與圓鈍邊角，獨立放置。",
-      "loose": true,
-      "motion": null,
       "cluster": null
     },
     {
@@ -401,66 +221,6 @@
       "cluster": null
     },
     {
-      "id": "briefcase-bank",
-      "zh": "公事包",
-      "en": "briefcase",
-      "ja": "ブリーフケース",
-      "reading": "ブリーフケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-plaza",
-      "spot": "ground",
-      "desc": "扁平的長方形硬殼包，深棕色皮面，頂端有短提把和兩個金色扣環。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "counter-stool",
-      "zh": "吧台椅",
-      "en": "stool",
-      "ja": "スツール",
-      "reading": "スツール",
-      "category": "設施",
-      "size": "medium",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "圓形深色椅面下接四根細長金屬椅腳，沒有椅背的高腳椅。",
-      "loose": false,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
-      "id": "computer",
-      "zh": "電腦",
-      "en": "computer",
-      "ja": "パソコン",
-      "reading": "パソコン",
-      "category": "道具",
-      "size": "medium",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "黑色扁平螢幕立在底座上，旁邊放著細長鍵盤與滑鼠。",
-      "loose": false,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
-      "id": "telephone-bank",
-      "zh": "電話",
-      "en": "telephone",
-      "ja": "電話",
-      "reading": "でんわ",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "黑色桌上型電話有斜立聽筒、方形按鍵區和捲曲的連接線。",
-      "loose": false,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
       "id": "bell-bank",
       "zh": "鈴",
       "en": "bell",
@@ -468,7 +228,7 @@
       "reading": "ベル",
       "category": "道具",
       "size": "small",
-      "zone": "lobby",
+      "zone": "service-hall",
       "spot": "surface",
       "desc": "亮銀色圓頂搭配小巧底座，頂端有一顆突起按鈕。",
       "loose": true,
@@ -491,21 +251,6 @@
       "cluster": "counter"
     },
     {
-      "id": "paper-bank",
-      "zh": "紙",
-      "en": "paper",
-      "ja": "紙",
-      "reading": "かみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "一張白色長方紙，四角平整，表面空白且沒有圖案。",
-      "loose": true,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
       "id": "stamp",
       "zh": "印章",
       "en": "stamp",
@@ -513,42 +258,12 @@
       "reading": "はんこ",
       "category": "道具",
       "size": "small",
-      "zone": "lobby",
+      "zone": "service-hall",
       "spot": "surface",
       "desc": "紅色圓柱印章立在方形底座上，頂端有一顆圓潤握柄。",
       "loose": true,
       "motion": null,
       "cluster": "counter"
-    },
-    {
-      "id": "stapler-bank",
-      "zh": "訂書機",
-      "en": "stapler",
-      "ja": "ホッチキス",
-      "reading": "ホッチキス",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "黑色長橢圓上蓋連著扁平金屬底座，前端有窄縫。",
-      "loose": true,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
-      "id": "calendar-bank",
-      "zh": "月曆",
-      "en": "calendar",
-      "ja": "カレンダー",
-      "reading": "カレンダー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "lobby",
-      "spot": "wall",
-      "desc": "方形白底紙張掛在牆上，頂端有一排彩色小格與金屬掛環。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "clock-bank",
@@ -581,21 +296,6 @@
       "cluster": null
     },
     {
-      "id": "door",
-      "zh": "門",
-      "en": "door",
-      "ja": "ドア",
-      "reading": "ドア",
-      "category": "設施",
-      "size": "large",
-      "zone": "lobby",
-      "spot": "wallbase",
-      "desc": "深木色長方門板立在後牆，側邊有金屬把手與細長門框。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "plant-pot",
       "zh": "盆栽",
       "en": "potted plant",
@@ -608,21 +308,6 @@
       "desc": "寬大的陶盆裡長出一叢綠色葉片，葉形圓潤並向四周伸展。",
       "loose": false,
       "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "rug",
-      "zh": "地毯",
-      "en": "rug",
-      "ja": "ラグ",
-      "reading": "ラグ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "長方形酒紅色地毯，四周有短流蘇，中央是簡單的金色幾何花紋。",
-      "loose": false,
-      "motion": null,
       "cluster": null
     },
     {
@@ -639,81 +324,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "floor-mat-bank",
-      "zh": "腳踏墊",
-      "en": "mat",
-      "ja": "マット",
-      "reading": "マット",
-      "category": "道具",
-      "size": "medium",
-      "zone": "lobby",
-      "spot": "ground",
-      "desc": "門前鋪著深藍色長方墊子，表面有粗短纖維和清楚的包邊。",
-      "loose": false,
-      "motion": null,
-      "cluster": "door"
-    },
-    {
-      "id": "coffee-cup-bank",
-      "zh": "咖啡杯",
-      "en": "cup",
-      "ja": "カップ",
-      "reading": "カップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "白色陶瓷杯身帶圓弧把手，杯口可見深棕色咖啡表面。",
-      "loose": true,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
-      "id": "tray-bank",
-      "zh": "托盤",
-      "en": "tray",
-      "ja": "トレー",
-      "reading": "トレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "橢圓形銀色托盤邊緣微微翹起，表面光滑明亮。",
-      "loose": true,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
-      "id": "globe-bank",
-      "zh": "地球儀",
-      "en": "globe",
-      "ja": "地球儀",
-      "reading": "ちきゅうぎ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "藍綠色球體以細金屬軸固定在圓形底座上，表面沒有文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": "counter"
-    },
-    {
-      "id": "folder-bank",
-      "zh": "資料夾",
-      "en": "folder",
-      "ja": "ファイル",
-      "reading": "ファイル",
-      "category": "道具",
-      "size": "small",
-      "zone": "lobby",
-      "spot": "surface",
-      "desc": "紅色硬紙板對折成長方形，側邊露出兩個金屬活頁環。",
-      "loose": true,
-      "motion": null,
-      "cluster": "counter"
     },
     {
       "id": "envelope-bank",
@@ -791,21 +401,6 @@
       "cluster": null
     },
     {
-      "id": "service-counter",
-      "zh": "服務櫃檯",
-      "en": "counter",
-      "ja": "カウンター",
-      "reading": "カウンター",
-      "category": "設施",
-      "size": "large",
-      "zone": "service-hall",
-      "spot": "wallbase",
-      "desc": "寬大的木製櫃檯正面平整，邊緣有厚實檯面，底下留有深色踢腳板。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "monitor-bank",
       "zh": "螢幕",
       "en": "monitor",
@@ -836,21 +431,6 @@
       "cluster": null
     },
     {
-      "id": "mouse-bank",
-      "zh": "滑鼠",
-      "en": "mouse",
-      "ja": "マウス",
-      "reading": "マウス",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "圓潤的黑色掌心大小外殼，中央有一道細縫與小滾輪。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "calculator-bank",
       "zh": "計算機",
       "en": "calculator",
@@ -862,96 +442,6 @@
       "spot": "surface",
       "desc": "掌心大小的長方形機身，上方有深色顯示窗，下方排列一格格按鍵。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "scissors-bank",
-      "zh": "剪刀",
-      "en": "scissors",
-      "ja": "はさみ",
-      "reading": "はさみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "兩片交叉的銀色刀刃連著圓形手柄，手柄一大一小，開口微張。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ruler-bank",
-      "zh": "尺",
-      "en": "ruler",
-      "ja": "定規",
-      "reading": "じょうぎ",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "細長透明塑膠長條，兩端平直，沿邊有短刻線但沒有數字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "tape-dispenser-bank",
-      "zh": "膠帶台",
-      "en": "tape-dispenser",
-      "ja": "テープカッター",
-      "reading": "テープカッター",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "沉重的三角形底座上套著透明膠帶卷，前端有鋸齒狀切口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hole-punch-bank",
-      "zh": "打孔機",
-      "en": "hole-punch",
-      "ja": "穴あけパンチ",
-      "reading": "あなあけパンチ",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "黑色金屬長柄壓在圓潤底座上，前端有兩個小圓孔與接紙槽。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "clipboard-bank",
-      "zh": "板夾",
-      "en": "clipboard",
-      "ja": "バインダー",
-      "reading": "バインダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "硬挺的棕色長方板頂端夾著銀色彈簧夾，板面空白平整。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "calculator-receipt-printer",
-      "zh": "收據機",
-      "en": "receipt-printer",
-      "ja": "レシートプリンター",
-      "reading": "レシートプリンター",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "矮胖的白色方形機器，頂部有窄縫伸出一小段空白紙條。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -1016,51 +506,6 @@
       "cluster": null
     },
     {
-      "id": "magnifying-glass-bank",
-      "zh": "放大鏡",
-      "en": "magnifying-glass",
-      "ja": "虫眼鏡",
-      "reading": "むしめがね",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "圓形透明鏡片連著短短黑色手柄，鏡框厚實，輪廓清楚。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "staple-remover-bank",
-      "zh": "拔釘器",
-      "en": "staple-remover",
-      "ja": "リムーバー",
-      "reading": "リムーバー",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "小巧的金屬拔釘器有兩片尖嘴與彎曲握柄，外形像短鉗子。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "coat-rack-bank",
-      "zh": "衣帽架",
-      "en": "coat-rack",
-      "ja": "コートハンガー",
-      "reading": "コートハンガー",
-      "category": "設施",
-      "size": "medium",
-      "zone": "service-hall",
-      "spot": "ground",
-      "desc": "細長木柱立在圓形底座上，頂端伸出幾根向上彎的短掛鉤。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "filing-cabinet-bank",
       "zh": "文件櫃",
       "en": "filing-cabinet",
@@ -1072,66 +517,6 @@
       "spot": "wallbase",
       "desc": "灰色直立金屬櫃有三層抽屜，每層中央各有一個小把手。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "water-bottle-bank",
-      "zh": "水壺",
-      "en": "water-bottle",
-      "ja": "水筒",
-      "reading": "すいとう",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "ground",
-      "desc": "透明細長塑膠瓶裝著藍色瓶蓋，瓶身圓柱形，側面沒有標籤。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "briefcase-lock",
-      "zh": "密碼鎖",
-      "en": "combination-lock",
-      "ja": "ダイヤル錠",
-      "reading": "ダイヤルじょう",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "surface",
-      "desc": "銀色小型掛鎖有圓弧鎖鉤，正面排著幾個無字的轉輪。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "waste-bin-liner",
-      "zh": "垃圾袋",
-      "en": "trash-bag",
-      "ja": "ごみ袋",
-      "reading": "ごみぶくろ",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "ground",
-      "desc": "黑色薄塑膠袋鬆鬆地敞開，袋口皺褶明顯，底部平放在地上。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "paperclip",
-      "zh": "迴紋針",
-      "en": "paperclip",
-      "ja": "ゼムクリップ",
-      "reading": "ゼムクリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "service-hall",
-      "spot": "ground",
-      "desc": "細長銀色金屬線彎成內外兩層橢圓迴圈，側面平扁，散落在地上。",
-      "loose": true,
       "motion": null,
       "cluster": null
     },
@@ -1226,21 +611,6 @@
       "cluster": null
     },
     {
-      "id": "treasure-chest",
-      "zh": "寶箱",
-      "en": "treasure chest",
-      "ja": "宝箱",
-      "reading": "たからばこ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "棕色木箱配圓弧形箱蓋，正面有寬大的金屬扣環與深色包角。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "safe-deposit-box",
       "zh": "保管箱",
       "en": "safe deposit box",
@@ -1256,246 +626,6 @@
       "cluster": null
     },
     {
-      "id": "metal-shelf",
-      "zh": "金屬架",
-      "en": "metal shelf",
-      "ja": "金属棚",
-      "reading": "きんぞくだな",
-      "category": "設施",
-      "size": "large",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "黑色金屬立架有四根細長支柱與三層平板，側邊可見交叉支撐桿。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wooden-crate",
-      "zh": "木箱",
-      "en": "wooden crate",
-      "ja": "木箱",
-      "reading": "きばこ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "方形淺棕木箱由寬木板拼成，四角有深色包邊，側面留著縫隙。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hand-truck-bank",
-      "zh": "手推車",
-      "en": "hand truck",
-      "ja": "台車",
-      "reading": "だいしゃ",
-      "category": "交通工具",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "紅色金屬直立車架底部伸出短平台，兩側各有一個黑色橡膠輪。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "flashlight-bank",
-      "zh": "手電筒",
-      "en": "flashlight",
-      "ja": "懐中電灯",
-      "reading": "かいちゅうでんとう",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "黑色短圓筒手電筒，前端是寬大的透明燈罩，側面有小開關。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "lantern-bank",
-      "zh": "提燈",
-      "en": "lantern",
-      "ja": "ランタン",
-      "reading": "ランタン",
-      "category": "設施",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "方形金屬提燈有拱形提把，透明玻璃罩中露出橘黃色燈芯。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "dustpan-bank",
-      "zh": "畚箕",
-      "en": "dustpan",
-      "ja": "ちりとり",
-      "reading": "ちりとり",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "藍色扁平畚箕前緣寬而低，後方接著短柄，兩側有略高的擋邊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "broom-bank",
-      "zh": "掃把",
-      "en": "broom",
-      "ja": "ほうき",
-      "reading": "ほうき",
-      "category": "道具",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "一根長木柄下端綁著一束金棕色硬刷毛，刷毛向外張成扇形。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bucket-bank",
-      "zh": "水桶",
-      "en": "bucket",
-      "ja": "バケツ",
-      "reading": "バケツ",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "紅色圓桶上寬下窄，頂端有半圓形金屬提把，桶身沒有圖案。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "sponge",
-      "zh": "海綿",
-      "en": "sponge",
-      "ja": "スポンジ",
-      "reading": "スポンジ",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "黃色長方形清潔海綿表面佈滿細小孔洞，底面貼著一層深綠色粗布。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "gloves-bank",
-      "zh": "手套",
-      "en": "gloves",
-      "ja": "手袋",
-      "reading": "てぶくろ",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "一雙橘色厚布手套並排放著，每隻都有清楚分開的拇指和四根指套。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hard-hat",
-      "zh": "安全帽",
-      "en": "hard hat",
-      "ja": "ヘルメット",
-      "reading": "ヘルメット",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "黃色圓頂安全帽前方有短帽簷，帽殼上隆起一條粗厚的中央脊線。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "folding-ladder",
-      "zh": "折疊梯",
-      "en": "folding ladder",
-      "ja": "折りたたみはしご",
-      "reading": "おりたたみはしご",
-      "category": "道具",
-      "size": "large",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "銀灰色雙側梯以尖頂相連，兩側各有數根平直橫踏桿，斜靠在牆邊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "metal-pipe",
-      "zh": "金屬管",
-      "en": "metal pipe",
-      "ja": "金属パイプ",
-      "reading": "きんぞくパイプ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "一根粗直的灰色金屬圓管橫放地面，兩端開口呈深色圓環。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wall-vent",
-      "zh": "通風口",
-      "en": "vent",
-      "ja": "換気口",
-      "reading": "かんきこう",
-      "category": "設施",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "wall",
-      "desc": "牆上嵌著一個灰色長方形通風口，正面有多條平行斜向金屬葉片。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pipe-valve",
-      "zh": "管線閥門",
-      "en": "pipe valve",
-      "ja": "配管バルブ",
-      "reading": "はいかんバルブ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "vault-room",
-      "spot": "wall",
-      "desc": "牆面粗管中央裝著紅色圓輪閥，輪緣有短握柄，管線向上下延伸。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "velvet-pouch",
-      "zh": "絨布袋",
-      "en": "velvet pouch",
-      "ja": "ベルベットの巾着袋",
-      "reading": "ベルベットのきんちゃくぶくろ",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "深紅色柔軟小袋，袋口束緊並露出兩條短繩，底部圓鼓，表面呈細緻絨面。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "safety-deposit-envelope",
       "zh": "存摺",
       "en": "passbook",
@@ -1503,24 +633,9 @@
       "reading": "つうちょう",
       "category": "道具",
       "size": "small",
-      "zone": "vault-room",
+      "zone": "service-hall",
       "spot": "ground",
       "desc": "一本深藍色的小冊子，封面有淺色邊框與簡單的幾何圖案，側邊露出一疊白色紙頁。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "security-seal",
-      "zh": "封蠟",
-      "en": "sealing wax",
-      "ja": "封蝋",
-      "reading": "ふうろう",
-      "category": "道具",
-      "size": "small",
-      "zone": "vault-room",
-      "spot": "ground",
-      "desc": "一小塊紅色圓柱狀蠟塊，頂面微凹，旁邊有短短的蠟滴形凸起。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -1636,12 +751,309 @@
       "id": "cash-counting-machine",
       "reason": "和已有的 counter 太像",
       "zone": "service-hall"
+    },
+    {
+      "id": "fountain-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "van",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "traffic-cone-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "umbrella-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "ball-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "key-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "wallet-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "flower-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "bush-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "cloud-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "puddle-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "stone-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "briefcase-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-plaza"
+    },
+    {
+      "id": "counter-stool",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "computer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "telephone-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "paper-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "stapler-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "calendar-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "door",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "rug",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "floor-mat-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "coffee-cup-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "tray-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "globe-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "folder-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "lobby"
+    },
+    {
+      "id": "mouse-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "scissors-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "ruler-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "tape-dispenser-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "hole-punch-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "clipboard-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "calculator-receipt-printer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "magnifying-glass-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "staple-remover-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "coat-rack-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "water-bottle-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "briefcase-lock",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "waste-bin-liner",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "paperclip",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "service-hall"
+    },
+    {
+      "id": "treasure-chest",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "metal-shelf",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "wooden-crate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "hand-truck-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "flashlight-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "lantern-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "dustpan-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "broom-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "bucket-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "sponge",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "gloves-bank",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "hard-hat",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "folding-ladder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "metal-pipe",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "wall-vent",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "pipe-valve",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "velvet-pouch",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "security-seal",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "vault-room"
+    },
+    {
+      "id": "service-counter",
+      "reason": "退役：背景的櫃台家具已經畫出來，重複",
+      "zone": "service-hall"
     }
   ],
   "createdAt": "2026-09-26T10:20:35.754+09:00",
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 41,
     "added": 1,
-    "at": "2026-09-26T10:59:05.779+09:00"
-  }
+    "at": "2026-09-26T10:59:05.779+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 41
 }

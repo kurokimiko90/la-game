@@ -35,5 +35,7 @@ import farm from './farm.json';
 import campsite from './campsite.json';
 import electronicsStore from './electronics-store.json';
 import pharmacy from './pharmacy.json';
+import convenienceStore from './convenience-store.json';
+import cafe from './cafe.json';
 
-export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, classroom, zoo, 'botanical-garden': botanicalGarden, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop, bookstore, 'stationery-store': stationeryStore, home, gym, 'swimming-pool': swimmingPool, hotel, 'amusement-park': amusementPark, 'hot-spring': hotSpring, farm, campsite, 'electronics-store': electronicsStore, pharmacy };
+export const SCENE_DATA = { park, street, riverside, supermarket, station, restaurant, school, classroom, zoo, 'botanical-garden': botanicalGarden, hospital, airport, library, 'post-office': postOffice, 'fire-station': fireStation, bakery, beach, 'clothing-store': clothingStore, 'movie-theater': movieTheater, bank, museum, 'police-station': policeStation, 'hair-salon': hairSalon, 'flower-shop': flowerShop, bookstore, 'stationery-store': stationeryStore, home, gym, 'swimming-pool': swimmingPool, hotel, 'amusement-park': amusementPark, 'hot-spring': hotSpring, farm, campsite, 'electronics-store': electronicsStore, pharmacy, 'convenience-store': convenienceStore, cafe };

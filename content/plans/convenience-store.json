@@ -1,0 +1,1421 @@
+{
+  "id": "convenience-store",
+  "name": "便利商店",
+  "zones": [
+    {
+      "id": "storefront",
+      "name": "店外入口",
+      "indoor": false,
+      "floor": "paving",
+      "feature": "none"
+    },
+    {
+      "id": "produce-stand",
+      "name": "鮮食區",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "stand"
+    },
+    {
+      "id": "cold-drinks",
+      "name": "冷藏飲料區",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "chiller"
+    },
+    {
+      "id": "checkout-counter",
+      "name": "櫃台與熱食",
+      "indoor": true,
+      "floor": "tile",
+      "feature": "checkout"
+    }
+  ],
+  "slot": {
+    "x": 15200,
+    "y": 10780,
+    "zone": "outskirts",
+    "span": 2
+  },
+  "colorIndex": 32,
+  "elements": [
+    {
+      "id": "door-mat-convenience-store",
+      "zh": "門墊",
+      "en": "door mat",
+      "ja": "玄関マット",
+      "reading": "げんかんマット",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "門前鋪著長方形深藍色粗織墊，四角平整，表面有細密的凸起紋路。",
+      "loose": false,
+      "motion": null,
+      "cluster": "automatic-door"
+    },
+    {
+      "id": "wheelie-bin-convenience-store",
+      "zh": "有輪垃圾桶",
+      "en": "wheelie bin",
+      "ja": "キャスター付きごみ箱",
+      "reading": "キャスターつきごみばこ",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "深綠色方形大垃圾桶有掀蓋和兩個黑色後輪，側邊伸出短把手。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "security-camera-convenience-store",
+      "zh": "監視器",
+      "en": "security camera",
+      "ja": "防犯カメラ",
+      "reading": "ぼうはんカメラ",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "牆角伸出短金屬臂，托著白色長方形攝影機，前端有黑色圓形鏡頭。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bollard-convenience-store",
+      "zh": "防撞柱",
+      "en": "bollard",
+      "ja": "車止めポール",
+      "reading": "くるまどめポール",
+      "category": "設施",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "矮短的黑色金屬柱立在入口外側，柱頂圓滑，底部固定在圓形底座上。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shopping-basket-convenience-store",
+      "zh": "購物籃",
+      "en": "shopping basket",
+      "ja": "買い物かご",
+      "reading": "かいものかご",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "紅色長方形塑膠籃有兩個提把，籃身側面布滿整齊的方形孔洞。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "umbrella-stand-convenience-store",
+      "zh": "傘架",
+      "en": "umbrella stand",
+      "ja": "傘立て",
+      "reading": "かさたて",
+      "category": "道具",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "深藍色直立圓筒放在入口旁，底部略寬，筒身有數條垂直凹槽。",
+      "loose": false,
+      "motion": null,
+      "cluster": "automatic-door-convenience-store"
+    },
+    {
+      "id": "folding-umbrella-convenience-store",
+      "zh": "摺疊傘",
+      "en": "folding umbrella",
+      "ja": "折りたたみ傘",
+      "reading": "おりたたみがさ",
+      "category": "道具",
+      "size": "small",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "收起的黑色細長傘身以短帶束住，末端露出彎曲的塑膠握把。",
+      "loose": true,
+      "motion": null,
+      "cluster": "umbrella-stand-convenience-store"
+    },
+    {
+      "id": "prepared-food-case",
+      "zh": "鮮食冷藏櫃",
+      "en": "display fridge",
+      "ja": "冷蔵ショーケース",
+      "reading": "れいぞうショーケース",
+      "category": "設施",
+      "size": "large",
+      "zone": "produce-stand",
+      "spot": "wallbase",
+      "desc": "長方形玻璃冷藏櫃，裡面透出淡藍冷光，下方是白色實心櫃身，玻璃上沒有標示。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "bento-box",
+      "zh": "便當",
+      "en": "bento box",
+      "ja": "弁当",
+      "reading": "べんとう",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "透明長方形餐盒分成幾格，能看見白飯、金黃色玉子燒和綠色蔬菜。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "sushi-roll",
+      "zh": "壽司卷",
+      "en": "sushi roll",
+      "ja": "巻き寿司",
+      "reading": "まきずし",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "幾段圓形壽司卷並排，外層深綠海苔包著白飯，中心露出橘色與粉色餡料。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "pasta-salad",
+      "zh": "義大利麵沙拉",
+      "en": "pasta salad",
+      "ja": "パスタサラダ",
+      "reading": "パスタサラダ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "透明圓碗盛著彎曲的短麵、紅色番茄丁與綠色葉菜，食材輪廓清楚。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "potato-salad",
+      "zh": "馬鈴薯沙拉",
+      "en": "potato salad",
+      "ja": "ポテトサラダ",
+      "reading": "ポテトサラダ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "淺黃色馬鈴薯塊拌著橘色紅蘿蔔丁，盛在透明小盒裡，頂部有一抹綠色香草。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fried-chicken",
+      "zh": "炸雞",
+      "en": "fried chicken",
+      "ja": "フライドチキン",
+      "reading": "フライドチキン",
+      "category": "食物",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "一塊金褐色雞肉裹著粗糙酥脆外皮，形狀不規則，表面有深淺交錯的凸點。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "croquette",
+      "zh": "可樂餅",
+      "en": "croquette",
+      "ja": "コロッケ",
+      "reading": "コロッケ",
+      "category": "食物",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "橢圓形可樂餅裹著金黃色麵包粉，外殼顆粒分明，兩端略尖。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fried-shrimp",
+      "zh": "炸蝦",
+      "en": "fried shrimp",
+      "ja": "えびフライ",
+      "reading": "えびフライ",
+      "category": "食物",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "彎曲的炸蝦裹著金黃色酥皮，尾端露出紅色蝦尾，外層有細碎麵包粉。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "omelet",
+      "zh": "玉子燒",
+      "en": "omelet",
+      "ja": "卵焼き",
+      "reading": "たまごやき",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "厚實的黃色玉子燒切成幾段，切面呈現一圈圈柔軟蛋層，邊角略帶焦色。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "boiled-egg",
+      "zh": "水煮蛋",
+      "en": "boiled egg",
+      "ja": "ゆで卵",
+      "reading": "ゆでたまご",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "剝殼的橢圓白色水煮蛋，表面光滑，側邊切開露出明亮的黃色蛋黃。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "edamame",
+      "zh": "毛豆",
+      "en": "edamame",
+      "ja": "枝豆",
+      "reading": "えだまめ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "幾枚翠綠毛豆莢放在淺色小盒中，豆莢細長微彎，表面有細小柔毛。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "kimchi",
+      "zh": "泡菜",
+      "en": "kimchi",
+      "ja": "キムチ",
+      "reading": "キムチ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "皺褶明顯的橘紅色白菜葉堆在透明盒裡，葉梗乳白，表面帶著亮紅醬汁。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "tofu",
+      "zh": "豆腐",
+      "en": "tofu",
+      "ja": "豆腐",
+      "reading": "とうふ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "幾塊方正的乳白豆腐浸在透明淺盒內，邊角平整，表面柔滑微微發亮。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "natto",
+      "zh": "納豆",
+      "en": "natto",
+      "ja": "納豆",
+      "reading": "なっとう",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "棕色發酵黃豆裝在淺色小盒中，顆粒圓潤黏亮，旁邊有一小團細絲。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "seaweed-salad",
+      "zh": "海帶芽沙拉",
+      "en": "seaweed salad",
+      "ja": "海藻サラダ",
+      "reading": "かいそうサラダ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "深綠色海帶芽捲曲堆疊在透明盒中，旁邊點綴幾顆亮橘色魚卵。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "fruit-cup",
+      "zh": "水果盒",
+      "en": "fruit cup",
+      "ja": "フルーツカップ",
+      "reading": "フルーツカップ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "透明小盒中排著紅色草莓、橘色橘瓣與淡黃色鳳梨塊，果肉切面清楚可見。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "grilled-salmon",
+      "zh": "烤鮭魚",
+      "en": "grilled salmon",
+      "ja": "焼き鮭",
+      "reading": "やきざけ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "橘粉色鮭魚排放在小餐盒裡，表面有淺褐色烤痕，邊緣露出細白魚肉紋理。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "hamburger-steak",
+      "zh": "漢堡排",
+      "en": "hamburger steak",
+      "ja": "ハンバーグ",
+      "reading": "ハンバーグ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "圓厚的深褐色肉排放在淺色餐盒中，表面有交錯煎痕，邊緣帶著焦香色澤。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "cream-cheese",
+      "zh": "奶油乳酪",
+      "en": "cream cheese",
+      "ja": "クリームチーズ",
+      "reading": "クリームチーズ",
+      "category": "食物",
+      "size": "small",
+      "zone": "produce-stand",
+      "spot": "surface",
+      "desc": "乳白色方塊奶油乳酪裝在透明小盒中，切面平整，邊緣柔軟略帶圓角。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "food-tongs",
+      "zh": "食物夾",
+      "en": "food tongs",
+      "ja": "トング",
+      "reading": "トング",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "一把銀灰色金屬夾子，兩支細長握柄在尾端連接，前端張開成圓弧夾口。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "soup-ladle",
+      "zh": "湯勺",
+      "en": "soup ladle",
+      "ja": "おたま",
+      "reading": "おたま",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "圓弧形銀灰色勺面接著細長柄，勺底深而光滑，柄尾有小圓孔。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "milk-carton",
+      "zh": "牛奶紙盒",
+      "en": "milk carton",
+      "ja": "牛乳パック",
+      "reading": "ぎゅうにゅうパック",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白色長方紙盒，頂端折成尖尖的屋脊形，側面有一塊藍色區域。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "orange-juice-carton",
+      "zh": "柳橙汁紙盒",
+      "en": "orange juice carton",
+      "ja": "オレンジジュースの紙パック",
+      "reading": "オレンジジュースのかみパック",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "橘色小紙盒，頂部折出三角形封口，正面有一個圓形橙色圖案。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "green-tea-bottle",
+      "zh": "綠茶瓶",
+      "en": "green tea bottle",
+      "ja": "緑茶のペットボトル",
+      "reading": "りょくちゃのペットボトル",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "透明綠色細長瓶身帶有環狀凹紋，瓶口旋著深綠色瓶蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "soda-can-convenience-store",
+      "zh": "汽水罐",
+      "en": "soda can",
+      "ja": "炭酸飲料の缶",
+      "reading": "たんさんいんりょうのかん",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "短圓柱形鋁罐，亮紅色罐身上有白色波浪圖案，頂端是銀色拉環。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "yogurt-drink",
+      "zh": "優酪乳飲料",
+      "en": "yogurt drink",
+      "ja": "飲むヨーグルト",
+      "reading": "のむヨーグルト",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "矮胖的白色塑膠瓶，肩部圓潤，瓶口套著藍色瓶蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "sports-drink-bottle",
+      "zh": "運動飲料瓶",
+      "en": "sports drink bottle",
+      "ja": "スポーツドリンクのボトル",
+      "reading": "スポーツドリンクのボトル",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "透明淡黃色塑膠瓶，瓶身中段收窄，頂端是白色旋蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "apple-juice-bottle",
+      "zh": "蘋果汁瓶",
+      "en": "apple juice bottle",
+      "ja": "りんごジュースのボトル",
+      "reading": "りんごジュースのボトル",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "琥珀色小塑膠瓶，圓肩瓶身帶有直條凹紋，頂端是紅色瓶蓋。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "sliced-cheese-pack",
+      "zh": "起司片",
+      "en": "sliced cheese pack",
+      "ja": "スライスチーズ",
+      "reading": "スライスチーズ",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "扁平方形透明包裝，裡面疊著幾片淡黃色方形起司。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "butter-cup",
+      "zh": "奶油小盒",
+      "en": "butter cup",
+      "ja": "バターカップ",
+      "reading": "バターカップ",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "淺黃色方形小塑膠盒，盒蓋微微隆起，邊緣有透明封膜。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-drink-case"
+    },
+    {
+      "id": "pudding-cup",
+      "zh": "布丁杯",
+      "en": "pudding cup",
+      "ja": "プリンカップ",
+      "reading": "プリンカップ",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "透明矮杯裝著淡黃色布丁，頂面平滑，杯口封著銀色薄膜。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-dessert-case"
+    },
+    {
+      "id": "custard-choux",
+      "zh": "卡士達泡芙",
+      "en": "custard puff",
+      "ja": "カスタードシュークリーム",
+      "reading": "カスタードシュークリーム",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "金黃色圓鼓泡芙，表面有不規則裂紋，中央露出一小點奶油餡。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-dessert-case"
+    },
+    {
+      "id": "fruit-yogurt-cup",
+      "zh": "水果優格杯",
+      "en": "fruit yogurt cup",
+      "ja": "フルーツヨーグルト",
+      "reading": "フルーツヨーグルト",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "透明矮杯中是白色優格與幾塊彩色水果，杯口覆著薄膜。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-dessert-case"
+    },
+    {
+      "id": "cheese-cake-cup",
+      "zh": "起司蛋糕杯",
+      "en": "cheesecake cup",
+      "ja": "チーズケーキ",
+      "reading": "チーズケーキ",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "透明小杯裡有乳白色蛋糕層與金黃色餅乾底，頂面點綴一顆紅莓。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-dessert-case"
+    },
+    {
+      "id": "chocolate-pudding",
+      "zh": "巧克力布丁",
+      "en": "chocolate pudding",
+      "ja": "チョコプリン",
+      "reading": "チョコプリン",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "深棕色布丁盛在透明圓杯中，表面平滑，杯緣繞著一圈銀色封膜。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-dessert-case"
+    },
+    {
+      "id": "cream-puff-pack",
+      "zh": "泡芙盒",
+      "en": "cream puff pack",
+      "ja": "シュークリーム",
+      "reading": "シュークリーム",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "透明長方盒內排著三顆金黃色圓泡芙，盒蓋四角略微凸起。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-dessert-case"
+    },
+    {
+      "id": "cheese-sandwich",
+      "zh": "起司三明治",
+      "en": "cheese sandwich",
+      "ja": "チーズサンドイッチ",
+      "reading": "チーズサンドイッチ",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "兩片白吐司夾著一層黃色起司，切成三角形並包在透明薄膜內。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-sandwich-case"
+    },
+    {
+      "id": "egg-sandwich",
+      "zh": "蛋沙拉三明治",
+      "en": "egg sandwich",
+      "ja": "たまごサンド",
+      "reading": "たまごサンド",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白吐司夾著淡黃色蛋沙拉，切成兩個三角塊，外面包著透明薄膜。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-sandwich-case"
+    },
+    {
+      "id": "ham-sandwich",
+      "zh": "火腿三明治",
+      "en": "ham sandwich",
+      "ja": "ハムサンド",
+      "reading": "ハムサンド",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白吐司中夾著粉紅火腿與一片綠色生菜，三角切面清楚可見。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-sandwich-case"
+    },
+    {
+      "id": "tuna-sandwich",
+      "zh": "鮪魚三明治",
+      "en": "tuna sandwich",
+      "ja": "ツナサンド",
+      "reading": "ツナサンド",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白吐司夾著灰褐色鮪魚沙拉，三角切面露出餡料，外層包著薄膜。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-sandwich-case"
+    },
+    {
+      "id": "croissant-sandwich",
+      "zh": "可頌三明治",
+      "en": "croissant sandwich",
+      "ja": "クロワッサンサンド",
+      "reading": "クロワッサンサンド",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "金黃色彎月可頌從中剖開，夾著綠色生菜與一片粉紅火腿。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-sandwich-case"
+    },
+    {
+      "id": "tuna-rice-ball",
+      "zh": "鮪魚飯糰",
+      "en": "tuna rice ball",
+      "ja": "ツナおにぎり",
+      "reading": "ツナおにぎり",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白色三角飯糰外包一片深綠海苔，底部可見一層淡褐色餡料。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-rice-ball-case"
+    },
+    {
+      "id": "salmon-rice-ball",
+      "zh": "鮭魚飯糰",
+      "en": "salmon rice ball",
+      "ja": "鮭おにぎり",
+      "reading": "さけおにぎり",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白色三角飯糰裹著深綠海苔，頂端露出一小塊橘紅色鮭魚。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-rice-ball-case"
+    },
+    {
+      "id": "pickled-plum-rice-ball",
+      "zh": "梅子飯糰",
+      "en": "pickled plum rice ball",
+      "ja": "梅おにぎり",
+      "reading": "うめおにぎり",
+      "category": "食物",
+      "size": "small",
+      "zone": "cold-drinks",
+      "spot": "ground",
+      "desc": "白色三角飯糰外裹深綠海苔，中央嵌著一顆圓潤的暗紅梅子。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-rice-ball-case"
+    },
+    {
+      "id": "meat-bun",
+      "zh": "肉包",
+      "en": "steamed meat bun",
+      "ja": "肉まん",
+      "reading": "にくまん",
+      "category": "食物",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "圓白麵包頂部捏出一圈褶皺，底下墊著一小片白色烘焙紙。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-ready-food-case"
+    },
+    {
+      "id": "fish-cake",
+      "zh": "魚板",
+      "en": "fish cake",
+      "ja": "かまぼこ",
+      "reading": "かまぼこ",
+      "category": "食物",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "半月形白色魚板帶著粉紅外緣，切面平滑，表面有細緻弧形紋路。",
+      "loose": true,
+      "motion": null,
+      "cluster": "refrigerated-ready-food-case"
+    },
+    {
+      "id": "checkout-counter",
+      "zh": "收銀台",
+      "en": "checkout counter",
+      "ja": "レジカウンター",
+      "reading": "レジカウンター",
+      "category": "設施",
+      "size": "medium",
+      "zone": "checkout-counter",
+      "spot": "ground",
+      "desc": "低矮的長方形櫃檯，正面有深色踢腳板，檯面平整寬闊。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "shopping-bag-holder-convenience-store",
+      "zh": "購物袋架",
+      "en": "shopping bag holder",
+      "ja": "レジ袋ホルダー",
+      "reading": "レジぶくろホルダー",
+      "category": "設施",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "金屬支架上掛著幾個空白的薄塑膠袋，袋口撐開呈弧形。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "checkout-counter"
+    },
+    {
+      "id": "cash-register-display-convenience-store",
+      "zh": "收銀顯示器",
+      "en": "cash register display",
+      "ja": "レジの表示器",
+      "reading": "レジのひょうじき",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "小型黑色螢幕立在短支架上，螢幕朝向結帳櫃檯前方。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "barcode-scanner-convenience-store",
+      "zh": "條碼掃描器",
+      "en": "barcode scanner",
+      "ja": "バーコードリーダー",
+      "reading": "バーコードリーダー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "黑色手持掃描器放在底座上，前端有透明紅色掃描窗。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "card-terminal-convenience-store",
+      "zh": "刷卡機",
+      "en": "card terminal",
+      "ja": "カード決済端末",
+      "reading": "カードけっさいたんまつ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "掌心大小的深色終端機，斜面排列凸起按鍵，頂端有小螢幕。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "cash-drawer-convenience-store",
+      "zh": "收銀抽屜",
+      "en": "cash drawer",
+      "ja": "レジの引き出し",
+      "reading": "レジのひきだし",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "扁平的金屬抽屜敞開著，內部有幾格整齊的鈔票與硬幣分隔槽。",
+      "loose": false,
+      "motion": null,
+      "cluster": "cash-register"
+    },
+    {
+      "id": "receipt-roll-dispenser-convenience-store",
+      "zh": "收據紙捲座",
+      "en": "receipt roll dispenser",
+      "ja": "レシートロールホルダー",
+      "reading": "レシートロールホルダー",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "短軸穿過一卷白色紙捲，架在黑色底座上，紙尾垂在前方。",
+      "loose": false,
+      "motion": null,
+      "cluster": "checkout-counter"
+    },
+    {
+      "id": "price-tag-convenience-store",
+      "zh": "價格吊牌",
+      "en": "price tag",
+      "ja": "値札",
+      "reading": "ねふだ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "小片長方形紙卡，頂端有穿繩小孔，空白紙面沒有任何字樣。",
+      "loose": true,
+      "motion": null,
+      "cluster": "checkout-counter"
+    },
+    {
+      "id": "reusable-bag-convenience-store",
+      "zh": "環保購物袋",
+      "en": "reusable shopping bag",
+      "ja": "エコバッグ",
+      "reading": "エコバッグ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "可重複使用的方形布袋，兩個短提把立起，袋身是素色無圖案。",
+      "loose": false,
+      "motion": null,
+      "cluster": "checkout-counter"
+    },
+    {
+      "id": "paper-bag-convenience-store",
+      "zh": "紙袋",
+      "en": "paper bag",
+      "ja": "紙袋",
+      "reading": "かみぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "棕色牛皮紙折成的方底袋，袋口敞開，兩側折出整齊側褶。",
+      "loose": false,
+      "motion": null,
+      "cluster": "shopping-bag-holder-convenience-store"
+    },
+    {
+      "id": "plastic-bag-convenience-store",
+      "zh": "塑膠袋",
+      "en": "plastic bag",
+      "ja": "レジ袋",
+      "reading": "レジぶくろ",
+      "category": "道具",
+      "size": "small",
+      "zone": "checkout-counter",
+      "spot": "surface",
+      "desc": "半透明薄塑膠袋有方形袋身和兩個環形提把，袋面沒有印刷。",
+      "loose": false,
+      "motion": "sway",
+      "cluster": "shopping-bag-holder-convenience-store"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "awning",
+      "reason": "和已有的 awning support 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "curb",
+      "reason": "和已有的 curb ramp 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "bicycle",
+      "reason": "和已有的 bike shelter 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "coffee-milk-carton",
+      "reason": "和已有的 milk carton 太像",
+      "zone": "cold-drinks"
+    },
+    {
+      "id": "shopping-basket-token",
+      "reason": "和已有的 shopping basket 太像",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "checkout-bagging-rack",
+      "reason": "和已有的 bagging rack divider 太像",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cashier-stool",
+      "reason": "中文重複",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register",
+      "reason": "和已有的 cash register cover 太像",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-cart-token",
+      "reason": "和已有的 shopping cart 太像",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "bagging-platform",
+      "reason": "和已有的 bagging platform scale 太像",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "awning-support",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "door-frame-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "storefront-window",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "paving-slab-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "automatic-door-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "door-handle-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "doorbell-button-convenience-store",
+      "reason": "退役：超商門口不會有",
+      "zone": "storefront"
+    },
+    {
+      "id": "intercom-convenience-store",
+      "reason": "退役：超商門口不會有",
+      "zone": "storefront"
+    },
+    {
+      "id": "doorstop-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "threshold-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "window-shutter-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "wall-light-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "drain-grate-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "downspout-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "curb-ramp-convenience-store",
+      "reason": "退役：建築零件，不是可找的物品",
+      "zone": "storefront"
+    },
+    {
+      "id": "parking-post-convenience-store",
+      "reason": "退役：超商門口不會有",
+      "zone": "storefront"
+    },
+    {
+      "id": "bike-shelter-convenience-store",
+      "reason": "退役：超商門口不會有",
+      "zone": "storefront"
+    },
+    {
+      "id": "shopping-cart-convenience-store",
+      "reason": "退役：超商門口不會有",
+      "zone": "storefront"
+    },
+    {
+      "id": "wakame-soup",
+      "reason": "退役：後場器具或難辨認",
+      "zone": "produce-stand"
+    },
+    {
+      "id": "serving-spatula",
+      "reason": "退役：後場器具或難辨認",
+      "zone": "produce-stand"
+    },
+    {
+      "id": "food-thermometer",
+      "reason": "退役：後場器具或難辨認",
+      "zone": "produce-stand"
+    },
+    {
+      "id": "sneeze-guard",
+      "reason": "退役：後場器具或難辨認",
+      "zone": "produce-stand"
+    },
+    {
+      "id": "bagging-platform-scale",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cashier-chair",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "queue-ticket-roll",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register-cover",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "bagging-rack-divider",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cashier-footstool",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "checkout-lane-post",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "checkout-belt-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "checkout-divider-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "price-computing-scale-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin-tray-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt-bin-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cashier-footrest-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register-mat-convenience-store",
+      "reason": "退役：超市收銀耗材湊數，超商櫃台沒有",
+      "zone": "checkout-counter"
+    }
+  ],
+  "reviewFixes": [
+    {
+      "id": "awning-support",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "ひさしの支柱",
+        "reading": "ひさしのしちゅう"
+      }
+    },
+    {
+      "id": "storefront-window",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "店舗の窓",
+        "reading": "てんぽのまど"
+      }
+    },
+    {
+      "id": "wheelie-bin-convenience-store",
+      "issue": "英文偏英式；中文不自然",
+      "changes": {
+        "zh": "有輪垃圾桶"
+      }
+    },
+    {
+      "id": "automatic-door-convenience-store",
+      "issue": "繁中不自然",
+      "changes": {
+        "zh": "自動門"
+      }
+    },
+    {
+      "id": "window-shutter-convenience-store",
+      "issue": "英文不自然；中文不自然",
+      "changes": {
+        "zh": "窗戶鐵捲門",
+        "ja": "窓シャッター",
+        "reading": "まどシャッター"
+      }
+    },
+    {
+      "id": "security-camera-convenience-store",
+      "issue": "繁中不自然",
+      "changes": {
+        "zh": "監視器"
+      }
+    },
+    {
+      "id": "downspout-convenience-store",
+      "issue": "日文指雨樋整體",
+      "changes": {
+        "ja": "縦樋",
+        "reading": "たてどい"
+      }
+    },
+    {
+      "id": "omelet",
+      "issue": "日文不符玉子燒",
+      "changes": {
+        "ja": "卵焼き",
+        "reading": "たまごやき"
+      }
+    },
+    {
+      "id": "fruit-cup",
+      "issue": "日文泛指切好的水果",
+      "changes": {
+        "ja": "フルーツカップ",
+        "reading": "フルーツカップ"
+      }
+    },
+    {
+      "id": "sneeze-guard",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "飛沫防止パネル",
+        "reading": "ひまつぼうしパネル"
+      }
+    },
+    {
+      "id": "soda-can-convenience-store",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "炭酸飲料の缶",
+        "reading": "たんさんいんりょうのかん"
+      }
+    },
+    {
+      "id": "sliced-cheese-pack",
+      "issue": "繁中不自然",
+      "changes": {
+        "zh": "起司片"
+      }
+    },
+    {
+      "id": "custard-choux",
+      "issue": "英文不自然；繁中不自然",
+      "changes": {
+        "zh": "卡士達泡芙"
+      }
+    },
+    {
+      "id": "cheese-cake-cup",
+      "issue": "英文不自然；日文不自然",
+      "changes": {
+        "ja": "チーズケーキ",
+        "reading": "チーズケーキ"
+      }
+    },
+    {
+      "id": "cream-puff-pack",
+      "issue": "英文不自然；日文不自然",
+      "changes": {
+        "ja": "シュークリーム",
+        "reading": "シュークリーム"
+      }
+    },
+    {
+      "id": "shopping-bag-holder-convenience-store",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "レジ袋ホルダー",
+        "reading": "レジぶくろホルダー"
+      }
+    },
+    {
+      "id": "cash-register-display-convenience-store",
+      "issue": "英文不自然；日文不自然",
+      "changes": {
+        "ja": "レジの表示器",
+        "reading": "レジのひょうじき"
+      }
+    },
+    {
+      "id": "cash-drawer-convenience-store",
+      "issue": "日文不自然",
+      "changes": {
+        "ja": "レジの引き出し",
+        "reading": "レジのひきだし"
+      }
+    },
+    {
+      "id": "receipt-bin-convenience-store",
+      "issue": "英文不自然；日文不自然",
+      "changes": {
+        "ja": "レシート入れ",
+        "reading": "レシートいれ"
+      }
+    },
+    {
+      "id": "receipt-roll-dispenser-convenience-store",
+      "issue": "英文不自然；日文不自然",
+      "changes": {
+        "ja": "レシートロールホルダー",
+        "reading": "レシートロールホルダー"
+      }
+    }
+  ],
+  "createdAt": "2026-10-03T16:30:46.077+09:00",
+  "venue": {
+    "accent": "#9bb8a5",
+    "wall": "glass",
+    "zones": {
+      "storefront": [
+        "arrival",
+        "retail"
+      ],
+      "produce-stand": [
+        "display",
+        "shopseating"
+      ],
+      "cold-drinks": [
+        "concourse",
+        "display"
+      ],
+      "checkout-counter": [
+        "service",
+        "retail"
+      ]
+    }
+  },
+  "itemsTarget": 64,
+  "topUp": {
+    "itemsPerScene": 64,
+    "curatedAt": "2026-10-04"
+  }
+}

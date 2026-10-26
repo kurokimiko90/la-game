@@ -35,6 +35,24 @@ describe('placeScene', () => {
     expect(calls).toEqual([['--reset']]);
   });
 
+  test('回報沒進情境的地上物品（呼叫端退役，不散落在地上）；道路、水面、天空的物品不算', async () => {
+    const plan = { ...PLAN, elements: [...PLAN.elements, el('car', 'room', 'road')] };
+    const r = await run({ plan, available: [...AVAILABLE, 'car'], mode: 'new', ask: async () => answer([{ row: 'mid', x: [0.1, 0.5], fixture: 'desk', on: ['cup', 'pen'] }]), layout: () => {} });
+    expect(r.unstaged).toEqual(['desk-lamp', 'sofa']);
+  });
+
+  test('被擋住拿出情境的物品也算沒進情境', async () => {
+    let n = 0;
+    const layout = () => { if (++n === 1) throw BLOCKED(['pen']); };
+    const r = await run({ mode: 'new', ask: async () => answer([{ row: 'mid', x: [0.1, 0.9], fixture: 'desk', on: ['cup', 'pen', 'desk-lamp'], beside: ['sofa'] }]), layout });
+    expect(r.unstaged).toEqual(['pen']);
+  });
+
+  test('沒有情境（整個自動排列）：不回報，避免把整個街區退役', async () => {
+    const r = await run({ mode: 'restage', ask: async () => '沒有 JSON', layout: () => {} });
+    expect(r.unstaged).toEqual([]);
+  });
+
   test('被擋住的物品拿出情境再試，情境其他部分保留', async () => {
     const calls = [];
     const layout = (args) => {

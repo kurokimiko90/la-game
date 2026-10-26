@@ -1,0 +1,1000 @@
+{
+  "sceneName": "語言小鎮・咖啡廳",
+  "sceneSlug": "la-cafe",
+  "propStyle": "front-flat",
+  "zones": {
+    "entrance": "店門口",
+    "patio": "戶外座位",
+    "counter": "點餐吧台",
+    "lounge": "沙發休憩區"
+  },
+  "elements": [
+    {
+      "name": "堆疊椅",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "簡潔的戶外椅子，椅背有弧度，椅面與椅腳是深綠色塑料，四條細金屬腳接地。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "stacking-chair",
+        "words": {
+          "zh-TW": "堆疊椅",
+          "en": "stacking chair",
+          "ja": {
+            "text": "スタッキングチェア",
+            "reading": "スタッキングチェア"
+          }
+        }
+      }
+    },
+    {
+      "name": "庭園傘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "圓形米白傘面由中央細柱撐起，傘面分成數片，柱腳立在桌旁，不遮住地面通道。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "table-umbrella",
+        "words": {
+          "zh-TW": "庭園傘",
+          "en": "patio umbrella",
+          "ja": {
+            "text": "ガーデンパラソル",
+            "reading": "ガーデンパラソル"
+          }
+        }
+      }
+    },
+    {
+      "name": "餐刀",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色餐刀有平直握柄與圓鈍刀尖，刀身一側帶細小鋸齒，放在盤子旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "table-knife",
+        "words": {
+          "zh-TW": "餐刀",
+          "en": "table knife",
+          "ja": {
+            "text": "テーブルナイフ",
+            "reading": "テーブルナイフ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蜂蜜罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖透明玻璃罐裝著金黃色蜂蜜，寬口上蓋著木色旋蓋，沒有標籤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "honey-jar-cafe",
+        "words": {
+          "zh-TW": "蜂蜜罐",
+          "en": "honey jar",
+          "ja": {
+            "text": "はちみつの瓶",
+            "reading": "はちみつのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "果醬罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小玻璃罐裡裝著紅色果醬，罐口旋著淺色金屬蓋，瓶身沒有文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "jam-jar-cafe",
+        "words": {
+          "zh-TW": "果醬罐",
+          "en": "jam jar",
+          "ja": {
+            "text": "ジャムの瓶",
+            "reading": "ジャムのびん"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油碟",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形白瓷奶油盒配著低矮蓋子，盤中露出一塊淡黃色奶油。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "butter-dish-cafe",
+        "words": {
+          "zh-TW": "奶油碟",
+          "en": "butter dish",
+          "ja": {
+            "text": "バターケース",
+            "reading": "バターケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司楔塊",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊淡黃色三角楔形起司，切面平滑，外側有薄薄的橘色外皮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "cheese-wedge-cafe",
+        "words": {
+          "zh-TW": "起司楔塊",
+          "en": "cheese wedge",
+          "ja": {
+            "text": "くさび形のチーズ",
+            "reading": "くさびがたのちーず"
+          }
+        }
+      }
+    },
+    {
+      "name": "陶盆",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓筒狀橘紅色陶盆，盆口向上略寬，表面有粗糙陶土質感，置於桌旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "entrance",
+        "itemId": "terracotta-pot",
+        "words": {
+          "zh-TW": "陶盆",
+          "en": "terracotta pot",
+          "ja": {
+            "text": "テラコッタ鉢",
+            "reading": "テラコッタばち"
+          }
+        }
+      }
+    },
+    {
+      "name": "長桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長方形木桌面架在兩組粗木桌腳上，表面呈淺棕色，桌邊平直，桌下留有通行空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "long-table-cafe",
+        "words": {
+          "zh-TW": "長桌",
+          "en": "long table",
+          "ja": {
+            "text": "長テーブル",
+            "reading": "ながテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "陶瓷盤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓形白色陶瓷盤，邊緣微微翹起，表面光滑，盤面沒有圖案或文字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "ceramic-plate-cafe",
+        "words": {
+          "zh-TW": "陶瓷盤",
+          "en": "ceramic plate",
+          "ja": {
+            "text": "陶器の皿",
+            "reading": "とうきのさら"
+          }
+        }
+      }
+    },
+    {
+      "name": "叉子",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "銀色金屬餐叉，細長握柄末端分成四根尖齒，平放在桌面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "fork-cafe",
+        "words": {
+          "zh-TW": "叉子",
+          "en": "fork",
+          "ja": {
+            "text": "フォーク",
+            "reading": "フォーク"
+          }
+        }
+      }
+    },
+    {
+      "name": "布餐巾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "折成方形的淺藍色布餐巾，布面有柔軟摺痕，放在盤子一側。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "cloth-napkin-cafe",
+        "words": {
+          "zh-TW": "布餐巾",
+          "en": "cloth napkin",
+          "ja": {
+            "text": "布ナプキン",
+            "reading": "ぬのナプキン"
+          }
+        }
+      }
+    },
+    {
+      "name": "鹽罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮玻璃罐裝著白色鹽粒，頂部有銀色金屬蓋和幾個小孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "salt-shaker-cafe",
+        "words": {
+          "zh-TW": "鹽罐",
+          "en": "salt shaker",
+          "ja": {
+            "text": "塩入れ",
+            "reading": "しおいれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "胡椒罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮玻璃罐裡裝著深色胡椒粒，頂部是帶小孔的銀色金屬蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "pepper-shaker-cafe",
+        "words": {
+          "zh-TW": "胡椒罐",
+          "en": "pepper shaker",
+          "ja": {
+            "text": "こしょう入れ",
+            "reading": "こしょういれ"
+          }
+        }
+      }
+    },
+    {
+      "name": "糖罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色圓腹小瓷罐配有蓋子和短柄小匙，外觀素雅，放在桌子中央。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "sugar-bowl-cafe",
+        "words": {
+          "zh-TW": "糖罐",
+          "en": "sugar bowl",
+          "ja": {
+            "text": "シュガーボウル",
+            "reading": "シュガーボウル"
+          }
+        }
+      }
+    },
+    {
+      "name": "水壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明玻璃水壺有寬口、弧形把手與尖嘴，瓶身沒有花紋，擺在桌面上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "water-pitcher-cafe",
+        "words": {
+          "zh-TW": "水壺",
+          "en": "water pitcher",
+          "ja": {
+            "text": "水差し",
+            "reading": "みずさし"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶托",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型圓形白瓷碟，中央有淺淺凹槽，邊緣微翹，平放在桌上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "saucer-cafe",
+        "words": {
+          "zh-TW": "茶托",
+          "en": "saucer",
+          "ja": {
+            "text": "ソーサー",
+            "reading": "ソーサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色陶瓷茶杯有圓弧杯身和小把手，杯口朝上，放在茶碟上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "tea-cup-cafe",
+        "words": {
+          "zh-TW": "茶杯",
+          "en": "tea cup",
+          "ja": {
+            "text": "ティーカップ",
+            "reading": "ティーカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的白瓷茶壺帶有短壺嘴、拱形把手和圓蓋，放在桌面中央。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "patio",
+        "itemId": "teapot-cafe",
+        "words": {
+          "zh-TW": "茶壺",
+          "en": "teapot",
+          "ja": {
+            "text": "ティーポット",
+            "reading": "ティーポット"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡電子秤",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的黑色方形秤台，正面有小螢幕和幾個圓形按鈕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-scale",
+        "words": {
+          "zh-TW": "咖啡電子秤",
+          "en": "coffee scale",
+          "ja": {
+            "text": "コーヒースケール",
+            "reading": "コーヒースケール"
+          }
+        }
+      }
+    },
+    {
+      "name": "糖漿瓶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "高身透明方瓶裝著琥珀色糖漿，瓶口有黑色壓頭和細長導管。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "syrup-bottle",
+        "words": {
+          "zh-TW": "糖漿瓶",
+          "en": "syrup bottle",
+          "ja": {
+            "text": "シロップボトル",
+            "reading": "シロップボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "手沖濾杯",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色錐形杯身有明顯縱向肋紋，下方開口，側面帶小耳把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-dripper",
+        "words": {
+          "zh-TW": "手沖濾杯",
+          "en": "coffee dripper",
+          "ja": {
+            "text": "コーヒードリッパー",
+            "reading": "コーヒードリッパー"
+          }
+        }
+      }
+    },
+    {
+      "name": "細口手沖壺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓潤的不鏽鋼壺身伸出細長彎嘴，頂部有黑色圓鈕壺蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "pour-over-kettle",
+        "words": {
+          "zh-TW": "細口手沖壺",
+          "en": "gooseneck kettle",
+          "ja": {
+            "text": "細口ケトル",
+            "reading": "ほそぐちケトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡罐",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的圓柱形鐵罐，深褐色罐身配金屬色蓋，罐口露出咖啡粉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-tin",
+        "words": {
+          "zh-TW": "咖啡罐",
+          "en": "coffee tin",
+          "ja": {
+            "text": "コーヒー缶",
+            "reading": "コーヒーカン"
+          }
+        }
+      }
+    },
+    {
+      "name": "杯套",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色瓦楞紙捲成短筒，側邊接縫明顯，內側留有套杯的空間。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "cup-sleeve",
+        "words": {
+          "zh-TW": "杯套",
+          "en": "cup sleeve",
+          "ja": {
+            "text": "カップスリーブ",
+            "reading": "カップスリーブ"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡攪拌棒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "細長的淺木色平棒，末端微圓，旁邊靠著幾根同樣的木棒。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-stirrer-cafe",
+        "words": {
+          "zh-TW": "咖啡攪拌棒",
+          "en": "coffee stirrer",
+          "ja": {
+            "text": "マドラー",
+            "reading": "マドラー"
+          }
+        }
+      }
+    },
+    {
+      "name": "方糖",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾顆潔白的小方塊整齊疊放，邊角略圓，旁邊散落一兩顆。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-sugar-cubes",
+        "words": {
+          "zh-TW": "方糖",
+          "en": "sugar cubes",
+          "ja": {
+            "text": "角砂糖",
+            "reading": "カクザトウ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙杯架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "直立的透明圓筒壁架裡裝著一疊白紙杯，底部開口露出最下一只杯口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-cup-dispenser",
+        "words": {
+          "zh-TW": "紙杯架",
+          "en": "cup dispenser",
+          "ja": {
+            "text": "カップディスペンサー",
+            "reading": "カップディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "杯蓋架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "窄長透明壁掛筒內疊著白色圓杯蓋，底端有一道取蓋開口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-lid-dispenser",
+        "words": {
+          "zh-TW": "杯蓋架",
+          "en": "lid dispenser",
+          "ja": {
+            "text": "ふたディスペンサー",
+            "reading": "フタディスペンサー"
+          }
+        }
+      }
+    },
+    {
+      "name": "櫃檯鈴",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "亮銀色圓底座上立著小圓頂，頂部有一顆短按鈕，旁邊伸出平薄彈片。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-counter-bell",
+        "words": {
+          "zh-TW": "櫃檯鈴",
+          "en": "counter bell",
+          "ja": {
+            "text": "カウンターベル",
+            "reading": "カウンターベル"
+          }
+        }
+      }
+    },
+    {
+      "name": "咖啡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "方正的銀色機身，前方有黑色沖煮頭、圓形壓力錶和一對短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "counter",
+        "itemId": "coffee-machine",
+        "words": {
+          "zh-TW": "咖啡機",
+          "en": "coffee machine",
+          "ja": {
+            "text": "コーヒーマシン",
+            "reading": "コーヒーマシン"
+          }
+        }
+      }
+    },
+    {
+      "name": "雜誌架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "黑色金屬落地架有數個向前傾斜的淺層，裡面放著無字彩色封面的雜誌。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "magazine-rack",
+        "words": {
+          "zh-TW": "雜誌架",
+          "en": "magazine rack",
+          "ja": {
+            "text": "マガジンラック",
+            "reading": "マガジンラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "雜誌疊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾本薄雜誌整齊疊成一小疊，彩色封面交錯露出，邊緣呈現密集紙頁線條。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "magazine-stack",
+        "words": {
+          "zh-TW": "雜誌疊",
+          "en": "magazine stack",
+          "ja": {
+            "text": "雑誌の束",
+            "reading": "ざっしのたば"
+          }
+        }
+      }
+    },
+    {
+      "name": "懶骨頭",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "橘黃色梨形軟椅鼓鼓地坐在地上，頂端收窄，表面有柔軟布料的細縫線。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "beanbag-chair",
+        "words": {
+          "zh-TW": "懶骨頭",
+          "en": "beanbag chair",
+          "ja": {
+            "text": "ビーズクッション",
+            "reading": "ビーズクッション"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺疊傘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "收起的深紫色摺疊傘，尖端朝下，彎曲手柄和束帶清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "entrance",
+        "itemId": "folded-umbrella",
+        "words": {
+          "zh-TW": "摺疊傘",
+          "en": "folded umbrella",
+          "ja": {
+            "text": "折りたたみ傘",
+            "reading": "おりたたみがさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "沙發",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "寬大的深綠色長沙發，厚實坐墊連成一排，兩側有低矮方形扶手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "lounge-sofa",
+        "words": {
+          "zh-TW": "沙發",
+          "en": "sofa",
+          "ja": {
+            "text": "ソファ",
+            "reading": "ソファ"
+          }
+        }
+      }
+    },
+    {
+      "name": "茶几",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮矮的圓形木桌，淺棕色桌面平整，下面有三支向外張開的細桌腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "coffee-table-cafe",
+        "words": {
+          "zh-TW": "茶几",
+          "en": "coffee table",
+          "ja": {
+            "text": "コーヒーテーブル",
+            "reading": "コーヒーテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "邊桌",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "小巧方形木邊桌，深色桌面配四支細直桌腳，桌面邊緣略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "side-table-cafe",
+        "words": {
+          "zh-TW": "邊桌",
+          "en": "side table",
+          "ja": {
+            "text": "サイドテーブル",
+            "reading": "サイドテーブル"
+          }
+        }
+      }
+    },
+    {
+      "name": "落地燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "細長黑色燈柱立在圓形底座上，頂端有向下彎曲的弧形燈罩。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "floor-lamp-cafe",
+        "words": {
+          "zh-TW": "落地燈",
+          "en": "floor lamp",
+          "ja": {
+            "text": "フロアランプ",
+            "reading": "フロアランプ"
+          }
+        }
+      }
+    },
+    {
+      "name": "腳凳",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮長方形腳凳，灰藍色軟墊包覆四側，底下露出短短的木腳。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "ottoman-cafe",
+        "words": {
+          "zh-TW": "腳凳",
+          "en": "ottoman",
+          "ja": {
+            "text": "オットマン",
+            "reading": "オットマン"
+          }
+        }
+      }
+    },
+    {
+      "name": "衣帽架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木製直立衣帽架有多支彎曲掛鉤，三腳底座穩穩立在地上，掛鉤上沒有物品。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "coat-rack-cafe",
+        "words": {
+          "zh-TW": "衣帽架",
+          "en": "coat rack",
+          "ja": {
+            "text": "コートラック",
+            "reading": "コートラック"
+          }
+        }
+      }
+    },
+    {
+      "name": "傘架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色圓筒傘架有開口頂緣和窄窄的接水底盤，表面帶有直向凹槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "entrance",
+        "itemId": "umbrella-stand-cafe",
+        "words": {
+          "zh-TW": "傘架",
+          "en": "umbrella stand",
+          "ja": {
+            "text": "傘立て",
+            "reading": "かさたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "垃圾桶",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "細長圓筒形編織垃圾桶，淺棕色藤條一圈圈交錯，頂端敞開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "entrance",
+        "itemId": "wastebasket-cafe",
+        "words": {
+          "zh-TW": "垃圾桶",
+          "en": "wastebasket",
+          "ja": {
+            "text": "くずかご",
+            "reading": "くずかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "面紙盒",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺綠色長方紙盒，頂部開口抽出一張白色薄面紙，盒身沒有印字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "tissue-box-cafe",
+        "words": {
+          "zh-TW": "面紙盒",
+          "en": "tissue box",
+          "ja": {
+            "text": "ティッシュボックス",
+            "reading": "ティッシュボックス"
+          }
+        }
+      }
+    },
+    {
+      "name": "掛鐘",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "圓形淺木色掛鐘，白色錶面有深色指針和簡單刻度，沒有數字。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "wall-clock-cafe",
+        "words": {
+          "zh-TW": "掛鐘",
+          "en": "wall clock",
+          "ja": {
+            "text": "壁掛け時計",
+            "reading": "かべかけどけい"
+          }
+        }
+      }
+    },
+    {
+      "name": "壁燈",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "乳白色半圓燈罩朝上固定在小型黑色底座上，燈光柔和地向牆面散開。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "wall-sconce-cafe",
+        "words": {
+          "zh-TW": "壁燈",
+          "en": "wall sconce",
+          "ja": {
+            "text": "ブラケットライト",
+            "reading": "ブラケットライト"
+          }
+        }
+      }
+    },
+    {
+      "name": "風景畫",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "木框方形風景畫，畫著綠色山丘和淡藍天空，不含文字或人物。",
+      "ref": {
+        "project": "la-game",
+        "scene": "cafe",
+        "zone": "lounge",
+        "itemId": "landscape-painting-cafe",
+        "words": {
+          "zh-TW": "風景畫",
+          "en": "landscape painting",
+          "ja": {
+            "text": "風景画",
+            "reading": "ふうけいが"
+          }
+        }
+      }
+    }
+  ]
+}

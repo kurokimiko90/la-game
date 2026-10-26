@@ -473,6 +473,132 @@
       "score": 1,
       "take": "en-1790882361115.aac",
       "account": "chatgpt1"
+    },
+    "electric-log-splitter": {
+      "heard": "Electric Log Splitter",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "plastic-pallet": {
+      "heard": "plastic pallet,",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "floor-standing-radio": {
+      "heard": "Floor standing speed.",
+      "score": 0.85,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "electric-meat-slicer": {
+      "heard": "Beaker Electric Meat Slicer",
+      "score": 0.75,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "portable-generator": {
+      "heard": "Portable Generator",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "air-compressor": {
+      "heard": "air compressor.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "electric-pressure-washer": {
+      "heard": "Pressure washer.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "floor-scrubber": {
+      "heard": "Floor Scrubber",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "floor-polisher": {
+      "heard": "Floor polisher.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "folding-hand-truck": {
+      "heard": "Folding hand truck.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "portable-record-player": {
+      "heard": "Here, record player.",
+      "score": 0.75,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "folding-step-stool": {
+      "heard": "Folding Step Stool",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "umbrella-stand-electronics-store": {
+      "heard": "Umbrella stand.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "floor-standing-sign-holder": {
+      "heard": "Floor standing sign hold.",
+      "score": 0.91,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "shoe-bench-electronics-store": {
+      "heard": "or shoe bench.",
+      "score": 0.82,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "floor-standing-clothes-rack": {
+      "heard": "Coat rack.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "floor-drain-electronics-store": {
+      "heard": "Floor drain.",
+      "score": 1,
+      "take": "en-1791025377367.aac",
+      "account": "chatgpt2"
+    },
+    "dehumidifier-drain-hose": {
+      "heard": "Drain hose?",
+      "score": 1,
+      "take": "en-1791025541438.aac",
+      "account": "chatgpt2"
+    },
+    "foam-corner-guard": {
+      "heard": "Foam Corner Guard.",
+      "score": 1,
+      "take": "en-1791025541438.aac",
+      "account": "chatgpt2"
+    },
+    "fire-alarm-panel-electronics-store": {
+      "heard": "Fire alarm panel.",
+      "score": 1,
+      "take": "en-1791025541438.aac",
+      "account": "chatgpt2"
+    },
+    "standing-mirror-electronics-store": {
+      "heard": "Standing mirror.",
+      "score": 1,
+      "take": "en-1791025541438.aac",
+      "account": "chatgpt2"
     }
   }
 }

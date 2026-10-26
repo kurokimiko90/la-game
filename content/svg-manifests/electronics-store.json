@@ -4,9 +4,9 @@
   "propStyle": "front-flat",
   "zones": {
     "storefront": "店舖入口",
-    "showroom": "展示區",
-    "appliance-aisle": "家電走道",
-    "checkout": "結帳區"
+    "showroom": "廚房家電區",
+    "appliance-aisle": "生活家電區",
+    "checkout": "影音與結帳區"
   },
   "elements": [
     {
@@ -18,7 +18,7 @@
       "ref": {
         "project": "la-game",
         "scene": "electronics-store",
-        "zone": "storefront",
+        "zone": "appliance-aisle",
         "itemId": "washing-machine",
         "words": {
           "zh-TW": "洗衣機",
@@ -60,7 +60,7 @@
       "ref": {
         "project": "la-game",
         "scene": "electronics-store",
-        "zone": "storefront",
+        "zone": "appliance-aisle",
         "itemId": "vacuum-cleaner-electronics-store",
         "words": {
           "zh-TW": "吸塵器",
@@ -123,7 +123,7 @@
       "ref": {
         "project": "la-game",
         "scene": "electronics-store",
-        "zone": "storefront",
+        "zone": "appliance-aisle",
         "itemId": "air-purifier-electronics-store",
         "words": {
           "zh-TW": "空氣清淨機",
@@ -249,7 +249,7 @@
       "ref": {
         "project": "la-game",
         "scene": "electronics-store",
-        "zone": "storefront",
+        "zone": "appliance-aisle",
         "itemId": "refrigerator-electronics-store",
         "words": {
           "zh-TW": "冰箱",
@@ -270,7 +270,7 @@
       "ref": {
         "project": "la-game",
         "scene": "electronics-store",
-        "zone": "storefront",
+        "zone": "checkout",
         "itemId": "television-electronics-store",
         "words": {
           "zh-TW": "電視",
@@ -1270,27 +1270,6 @@
       }
     },
     {
-      "name": "硬幣紙卷收納架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "矮小的分格架有數個半圓形槽位，排列著不同大小的硬幣紙卷。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "coin-roll-dispenser",
-        "words": {
-          "zh-TW": "硬幣紙卷收納架",
-          "en": "coin roll dispenser",
-          "ja": {
-            "text": "硬貨ロールホルダー",
-            "reading": "こうかロールホルダー"
-          }
-        }
-      }
-    },
-    {
       "name": "條碼標籤紙卷",
       "category": "道具",
       "lane": "b",
@@ -1328,48 +1307,6 @@
           "ja": {
             "text": "買い物かごの山",
             "reading": "かいものかごのやま"
-          }
-        }
-      }
-    },
-    {
-      "name": "裝袋平台",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "低矮的長方形平台靠在收銀台旁，淺灰檯面下方有兩支方形支腳。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "bagging-platform",
-        "words": {
-          "zh-TW": "裝袋平台",
-          "en": "bagging platform",
-          "ja": {
-            "text": "袋詰め台",
-            "reading": "ふくろづめだい"
-          }
-        }
-      }
-    },
-    {
-      "name": "收銀椅腳踏圈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一圈銀色金屬環固定在椅柱下方，環面扁平，前方略寬方便踩踏。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "cashier-footrest",
-        "words": {
-          "zh-TW": "收銀椅腳踏圈",
-          "en": "cashier footrest",
-          "ja": {
-            "text": "レジ椅子の足置き",
-            "reading": "レジいすのあしおき"
           }
         }
       }
@@ -1438,27 +1375,6 @@
       }
     },
     {
-      "name": "結帳分隔桿",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短短的長方形塑膠桿，兩端微微翹起，常放在輸送帶上分隔商品。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "checkout-divider-electronics-store",
-        "words": {
-          "zh-TW": "結帳分隔桿",
-          "en": "checkout divider",
-          "ja": {
-            "text": "仕切り板",
-            "reading": "しきりいた"
-          }
-        }
-      }
-    },
-    {
       "name": "條碼掃描器",
       "category": "道具",
       "lane": "b",
@@ -1496,27 +1412,6 @@
           "ja": {
             "text": "買い物袋",
             "reading": "かいものぶくろ"
-          }
-        }
-      }
-    },
-    {
-      "name": "硬幣盤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "淺淺的橢圓形黑色托盤，中央凹下，邊緣有一圈平滑凸起。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "coin-tray-electronics-store",
-        "words": {
-          "zh-TW": "硬幣盤",
-          "en": "coin tray",
-          "ja": {
-            "text": "コイントレー",
-            "reading": "コイントレー"
           }
         }
       }
@@ -1564,90 +1459,6 @@
       }
     },
     {
-      "name": "收據夾",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁平的深藍色長方形夾子，頂端有金屬夾口，旁邊露出一張空白紙。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "receipt-folder-electronics-store",
-        "words": {
-          "zh-TW": "收據夾",
-          "en": "receipt folder",
-          "ja": {
-            "text": "レシートホルダー",
-            "reading": "レシートホルダー"
-          }
-        }
-      }
-    },
-    {
-      "name": "收據回收盒",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小型方盒上方開著狹長投入口，盒身是淺灰色，前面有圓角開口。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "receipt-bin-electronics-store",
-        "words": {
-          "zh-TW": "收據回收盒",
-          "en": "receipt bin",
-          "ja": {
-            "text": "レシート回収箱",
-            "reading": "レシートかいしゅうばこ"
-          }
-        }
-      }
-    },
-    {
-      "name": "收據插針",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "尖細金屬針直立在圓形底座中央，底座是扁平的黑色圓盤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "receipt-spike-electronics-store",
-        "words": {
-          "zh-TW": "收據插針",
-          "en": "receipt spike",
-          "ja": {
-            "text": "レシート刺し",
-            "reading": "レシートさし"
-          }
-        }
-      }
-    },
-    {
-      "name": "排隊號碼牌機",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "白色直立小機器上方有圓形取票口，下方伸出一段短短的空白紙帶。",
-      "ref": {
-        "project": "la-game",
-        "scene": "electronics-store",
-        "zone": "checkout",
-        "itemId": "queue-ticket-dispenser-electronics-store",
-        "words": {
-          "zh-TW": "排隊號碼牌機",
-          "en": "queue ticket dispenser",
-          "ja": {
-            "text": "順番待ち発券機",
-            "reading": "じゅんばんまちはっけんき"
-          }
-        }
-      }
-    },
-    {
       "name": "點鈔機",
       "category": "設施",
       "lane": "b",
@@ -1669,22 +1480,85 @@
       }
     },
     {
-      "name": "存錢筒",
+      "name": "落地式音響",
       "category": "道具",
       "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓滾滾的陶製小豬身上有細長投幣縫，四隻短腳穩穩支在桌面。",
+      "sizeHint": "large",
+      "desc": "高而窄的黑色音箱直立在地面，正面有兩個圓形喇叭單體與細密網罩。",
       "ref": {
         "project": "la-game",
         "scene": "electronics-store",
         "zone": "checkout",
-        "itemId": "coin-bank-electronics-store",
+        "itemId": "floor-standing-radio",
         "words": {
-          "zh-TW": "存錢筒",
-          "en": "coin bank",
+          "zh-TW": "落地式音響",
+          "en": "floor-standing speaker",
           "ja": {
-            "text": "貯金箱",
-            "reading": "ちょきんばこ"
+            "text": "フロアスピーカー",
+            "reading": "フロアスピーカー"
+          }
+        }
+      }
+    },
+    {
+      "name": "攜帶式唱片機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平方形的深色機身上有圓形唱盤，掀起的透明上蓋斜靠在一旁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "electronics-store",
+        "zone": "checkout",
+        "itemId": "portable-record-player",
+        "words": {
+          "zh-TW": "攜帶式唱片機",
+          "en": "record player",
+          "ja": {
+            "text": "レコードプレーヤー",
+            "reading": "レコードプレーヤー"
+          }
+        }
+      }
+    },
+    {
+      "name": "落地式告示牌架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "銀色細框立在兩腳底座上，中央嵌著一大片空白淺色板面，沒有圖文。",
+      "ref": {
+        "project": "la-game",
+        "scene": "electronics-store",
+        "zone": "storefront",
+        "itemId": "floor-standing-sign-holder",
+        "words": {
+          "zh-TW": "落地式告示牌架",
+          "en": "floor standing sign holder",
+          "ja": {
+            "text": "スタンド看板",
+            "reading": "すたんどかんばん"
+          }
+        }
+      }
+    },
+    {
+      "name": "雨傘架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深色細長筒形架立在地上，頂端有數個圓孔，旁邊靠著幾把合起的素色雨傘。",
+      "ref": {
+        "project": "la-game",
+        "scene": "electronics-store",
+        "zone": "storefront",
+        "itemId": "umbrella-stand-electronics-store",
+        "words": {
+          "zh-TW": "雨傘架",
+          "en": "umbrella stand",
+          "ja": {
+            "text": "傘立て",
+            "reading": "かさたて"
           }
         }
       }

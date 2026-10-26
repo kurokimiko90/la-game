@@ -1,0 +1,307 @@
+{
+  "zones": {
+    "storefront": {
+      "sets": [
+        {
+          "row": "back",
+          "x": [
+            0.02,
+            0.98
+          ],
+          "fixture": "facade",
+          "door": true,
+          "note": "超商門面與自動門",
+          "wall": [
+            "security-camera-convenience-store"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.36,
+            0.44
+          ],
+          "note": "門邊購物籃",
+          "main": "shopping-basket-convenience-store"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.58,
+            0.74
+          ],
+          "fixture": "stand",
+          "note": "門口雨傘架與摺疊傘",
+          "on": [
+            "folding-umbrella-convenience-store"
+          ],
+          "beside": [
+            "umbrella-stand-convenience-store"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.86,
+            0.95
+          ],
+          "note": "店外垃圾桶",
+          "main": "wheelie-bin-convenience-store"
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.44,
+            0.56
+          ],
+          "note": "門口腳踏墊",
+          "main": "door-mat-convenience-store"
+        },
+        {
+          "row": "front",
+          "x": [
+            0.1,
+            0.24
+          ],
+          "note": "人行道防撞柱",
+          "main": "bollard-convenience-store"
+        }
+      ]
+    },
+    "produce-stand": {
+      "sets": [
+        {
+          "row": "back",
+          "x": [
+            0.02,
+            0.23
+          ],
+          "fixture": "cooler",
+          "note": "冷藏便當",
+          "on": [
+            "bento-box",
+            "sushi-roll",
+            "grilled-salmon",
+            "hamburger-steak"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.25,
+            0.47
+          ],
+          "fixture": "cooler",
+          "note": "沙拉與小菜",
+          "on": [
+            "pasta-salad",
+            "potato-salad",
+            "seaweed-salad"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.5,
+            0.62
+          ],
+          "note": "鮮食冷藏櫃",
+          "main": "prepared-food-case"
+        },
+        {
+          "row": "back",
+          "x": [
+            0.65,
+            0.87
+          ],
+          "fixture": "cooler",
+          "note": "豆腐蛋品",
+          "on": [
+            "tofu",
+            "natto",
+            "boiled-egg",
+            "omelet",
+            "cream-cheese"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.2,
+            0.8
+          ],
+          "fixture": "display",
+          "note": "開放式鮮食櫃：水果與小菜",
+          "on": [
+            "fruit-cup",
+            "edamame",
+            "kimchi"
+          ]
+        }
+      ]
+    },
+    "cold-drinks": {
+      "sets": [
+        {
+          "row": "back",
+          "x": [
+            0.02,
+            0.24
+          ],
+          "fixture": "cooler",
+          "note": "冷藏飲料：茶與汽水",
+          "on": [
+            "green-tea-bottle",
+            "soda-can-convenience-store",
+            "sports-drink-bottle",
+            "apple-juice-bottle"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.26,
+            0.48
+          ],
+          "fixture": "cooler",
+          "note": "冷藏飲料：乳品果汁",
+          "on": [
+            "milk-carton",
+            "orange-juice-carton",
+            "yogurt-drink"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.52,
+            0.74
+          ],
+          "fixture": "cooler",
+          "note": "乳製品",
+          "on": [
+            "sliced-cheese-pack",
+            "butter-cup",
+            "fruit-yogurt-cup",
+            "pudding-cup"
+          ]
+        },
+        {
+          "row": "back",
+          "x": [
+            0.76,
+            0.98
+          ],
+          "fixture": "cooler",
+          "note": "冷藏甜點",
+          "on": [
+            "custard-choux",
+            "cheese-cake-cup",
+            "chocolate-pudding",
+            "cream-puff-pack"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.06,
+            0.44
+          ],
+          "fixture": "display",
+          "note": "開放式冷藏櫃：三明治",
+          "on": [
+            "cheese-sandwich",
+            "egg-sandwich",
+            "ham-sandwich",
+            "tuna-sandwich",
+            "croissant-sandwich"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.56,
+            0.9
+          ],
+          "fixture": "display",
+          "note": "開放式冷藏櫃：飯糰",
+          "on": [
+            "tuna-rice-ball",
+            "salmon-rice-ball",
+            "pickled-plum-rice-ball"
+          ]
+        }
+      ]
+    },
+    "checkout-counter": {
+      "sets": [
+        {
+          "row": "back",
+          "x": [
+            0.36,
+            0.64
+          ],
+          "fixture": "shelf",
+          "note": "櫃台後的購物袋與標籤",
+          "on": [
+            "reusable-bag-convenience-store",
+            "paper-bag-convenience-store",
+            "plastic-bag-convenience-store",
+            "price-tag-convenience-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.36,
+            0.66
+          ],
+          "note": "收銀櫃台",
+          "main": "checkout-counter",
+          "on": [
+            "cash-register-display-convenience-store",
+            "barcode-scanner-convenience-store",
+            "card-terminal-convenience-store",
+            "cash-drawer-convenience-store",
+            "receipt-roll-dispenser-convenience-store"
+          ],
+          "beside": [
+            "shopping-bag-holder-convenience-store"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.04,
+            0.32
+          ],
+          "fixture": "display",
+          "note": "櫃台旁熱食保溫櫃",
+          "on": [
+            "fried-chicken",
+            "croquette",
+            "fried-shrimp",
+            "food-tongs"
+          ]
+        },
+        {
+          "row": "mid",
+          "x": [
+            0.7,
+            0.96
+          ],
+          "fixture": "counter",
+          "note": "關東煮與包子機",
+          "on": [
+            "fish-cake",
+            "soup-ladle",
+            "meat-bun"
+          ]
+        }
+      ]
+    }
+  },
+  "scale": {
+    "checkout-counter": 1.6
+  }
+}

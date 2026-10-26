@@ -4,9 +4,9 @@
   "zones": [
     {
       "id": "entrance",
-      "name": "沙灘入口",
+      "name": "沙灘",
       "indoor": false,
-      "floor": "paving",
+      "floor": "sand",
       "feature": "road"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "id": "snack-shack",
-      "name": "海邊小屋",
+      "name": "海灘小屋與租借",
       "indoor": true,
       "floor": "tile",
       "feature": "counter"
@@ -63,7 +63,7 @@
       "reading": "シャワー",
       "category": "設施",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "boardwalk",
       "spot": "ground",
       "desc": "銀色直立管柱頂端伸出圓形蓮蓬頭，旁邊有一個明顯的旋鈕。",
       "loose": false,
@@ -78,7 +78,7 @@
       "reading": "あしあらいば",
       "category": "設施",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "boardwalk",
       "spot": "ground",
       "desc": "矮矮的白色方形水槽裝在金屬支架上，前方有腳踏板和彎曲水管。",
       "loose": false,
@@ -93,7 +93,7 @@
       "reading": "サーフボード",
       "category": "道具",
       "size": "large",
-      "zone": "entrance",
+      "zone": "snack-shack",
       "spot": "ground",
       "desc": "細長的白色板身兩端收尖，一端較圓，底面有三片小小的尾鰭。",
       "loose": false,
@@ -108,7 +108,7 @@
       "reading": "シュノーケル",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "snack-shack",
       "spot": "ground",
       "desc": "彎成弧形的藍色塑膠管，一端有短短的咬嘴，另一端向上彎起。",
       "loose": true,
@@ -123,7 +123,7 @@
       "reading": "ゴーグル",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "snack-shack",
       "spot": "ground",
       "desc": "兩個圓角透明鏡框由短橋連接，外側繫著一條藍色彈性帶。",
       "loose": true,
@@ -138,7 +138,7 @@
       "reading": "フィン",
       "category": "道具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "snack-shack",
       "spot": "ground",
       "desc": "一雙亮黃色長腳蹼，前端寬扁，後方各有套住腳掌的橢圓開口。",
       "loose": false,
@@ -156,21 +156,6 @@
       "zone": "entrance",
       "spot": "ground",
       "desc": "藍白相間的布面椅身由細金屬管撐起，椅背向後傾斜，支腳交叉。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "folding-table",
-      "zh": "折疊桌",
-      "en": "folding-table",
-      "ja": "折りたたみテーブル",
-      "reading": "おりたたみテーブル",
-      "category": "道具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "白色長方桌面架在兩組交叉金屬腳上，桌面邊緣平直，腳架可折起。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -288,71 +273,11 @@
       "reading": "かいがらのふうりん",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "snack-shack",
       "spot": "ground",
       "desc": "幾片乳白色小貝殼以細繩垂掛在圓形木環下，底端繫著一片長條形吊飾。",
       "loose": false,
       "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "electric-scooter",
-      "zh": "電動滑板車",
-      "en": "electric-scooter",
-      "ja": "電動キックボード",
-      "reading": "でんどうキックボード",
-      "category": "交通工具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "黑色窄踏板下裝著兩個小輪，直立車桿連著橫向把手，前方有小燈。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "parking-post",
-      "zh": "停車樁",
-      "en": "parking-post",
-      "ja": "車止め",
-      "reading": "くるまどめ",
-      "category": "設施",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "矮短的圓柱形金屬樁，頂端圓潤，漆成醒目的黃黑相間條紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "parking-block",
-      "zh": "停車擋",
-      "en": "parking-block",
-      "ja": "輪止め",
-      "reading": "わどめ",
-      "category": "設施",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "貼著地面的長條混凝土塊，外形低矮，表面有黃黑斜紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "road-marker",
-      "zh": "道路反光標記",
-      "en": "road-marker",
-      "ja": "道路鋲",
-      "reading": "どうろびょう",
-      "category": "設施",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "貼在地面的扁圓形金屬標記，銀灰外框包著明亮的黃色反光面。",
-      "loose": false,
-      "motion": null,
       "cluster": null
     },
     {
@@ -408,7 +333,7 @@
       "reading": "シュノーケルマスク",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "snack-shack",
       "spot": "ground",
       "desc": "透明的大框面罩邊緣有藍色軟膠，兩側連著一條彎曲的藍色頭帶。",
       "loose": true,
@@ -461,36 +386,6 @@
       "cluster": null
     },
     {
-      "id": "camera-tripod",
-      "zh": "相機腳架",
-      "en": "camera tripod",
-      "ja": "カメラ三脚",
-      "reading": "カメラさんきゃく",
-      "category": "道具",
-      "size": "medium",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "黑色伸縮支架由中央柱和三根向外張開的細腳組成，頂端有小平台。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "driftwood-branch",
-      "zh": "枯枝",
-      "en": "branch",
-      "ja": "小枝",
-      "reading": "こえだ",
-      "category": "自然",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "灰褐色細長枯枝有兩個分岔，表面粗糙並帶著幾段淺色磨痕。",
-      "loose": true,
-      "motion": null,
-      "cluster": "driftwood"
-    },
-    {
       "id": "dune-grass",
       "zh": "海濱草",
       "en": "beach grass",
@@ -501,36 +396,6 @@
       "zone": "boardwalk",
       "spot": "ground",
       "desc": "一叢細長綠葉從低矮根部向外散開，葉片尖細，頂端微微彎垂。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "sea-holly",
-      "zh": "海濱刺芹",
-      "en": "sea holly",
-      "ja": "ハマボウフウ",
-      "reading": "ハマボウフウ",
-      "category": "植物",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "貼地的深綠色圓裂葉叢中伸出細莖，頂端聚成一顆淡紫色小花球。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "coastal-grass-seedhead",
-      "zh": "草穗",
-      "en": "grass seed head",
-      "ja": "草の穂",
-      "reading": "くさのほ",
-      "category": "植物",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "細直綠莖頂端長著一支金棕色穗狀花序，穗粒排列緊密並微微下垂。",
       "loose": false,
       "motion": "sway",
       "cluster": null
@@ -581,21 +446,6 @@
       "cluster": "bucket"
     },
     {
-      "id": "tide-pool-guide",
-      "zh": "觀察盒",
-      "en": "viewing box",
-      "ja": "観察ケース",
-      "reading": "かんさつケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "透明方形淺盒，上緣有厚厚的藍色框，盒底平整，能看見空空的內部。",
-      "loose": true,
-      "motion": null,
-      "cluster": "magnifying-glass"
-    },
-    {
       "id": "rock",
       "zh": "岩石",
       "en": "rock",
@@ -624,21 +474,6 @@
       "loose": true,
       "motion": null,
       "cluster": "pebble"
-    },
-    {
-      "id": "tide-pool-sign-post",
-      "zh": "木樁",
-      "en": "wooden post",
-      "ja": "木の杭",
-      "reading": "きのくい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "一根粗短的褐色木柱立在池邊，頂端平平的，表面有幾道深色木紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": "tide-pool"
     },
     {
       "id": "towel",
@@ -671,51 +506,6 @@
       "cluster": "towel"
     },
     {
-      "id": "waterproof-case",
-      "zh": "防水盒",
-      "en": "waterproof case",
-      "ja": "防水ケース",
-      "reading": "ぼうすいケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "透明扁平方盒，邊緣有橘色密封圈，側面扣著一個短短的卡扣。",
-      "loose": true,
-      "motion": null,
-      "cluster": "viewing-box"
-    },
-    {
-      "id": "reed",
-      "zh": "蘆葦",
-      "en": "reed",
-      "ja": "アシ",
-      "reading": "アシ",
-      "category": "植物",
-      "size": "medium",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "幾根細長綠色莖稈直立成簇，頂端長著棕色毛絮狀穗子，葉片向旁伸展。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": "tide-pool"
-    },
-    {
-      "id": "sea-lavender",
-      "zh": "海濱馬鞍藤",
-      "en": "beach morning glory",
-      "ja": "ハマヒルガオ",
-      "reading": "ハマヒルガオ",
-      "category": "植物",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "低矮藤蔓貼地伸展，圓心形綠葉旁開著淡粉紫色喇叭花，花瓣向外展開。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": "rock"
-    },
-    {
       "id": "buoy",
       "zh": "浮標",
       "en": "buoy",
@@ -729,21 +519,6 @@
       "loose": false,
       "motion": "bob",
       "cluster": "tide-pool"
-    },
-    {
-      "id": "water-scope",
-      "zh": "水下觀察鏡",
-      "en": "water-scope",
-      "ja": "水中スコープ",
-      "reading": "すいちゅうスコープ",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "短粗的藍色圓筒，前端有透明圓形鏡片，側邊連著一個扁平握把。",
-      "loose": true,
-      "motion": null,
-      "cluster": "tide-pool-guide"
     },
     {
       "id": "sand-dollar",
@@ -761,21 +536,6 @@
       "cluster": "shell"
     },
     {
-      "id": "tide-pool-marker",
-      "zh": "潮池標記牌",
-      "en": "tide-pool-marker",
-      "ja": "潮だまりの目印",
-      "reading": "しおだまりのめじるし",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "紅白相間的短木棒，頂端是圓鈍形，底部尖細，插在池邊砂地上。",
-      "loose": false,
-      "motion": null,
-      "cluster": "tide-pool"
-    },
-    {
       "id": "water-pail",
       "zh": "提水桶",
       "en": "water-pail",
@@ -791,36 +551,6 @@
       "cluster": "rock-pool-net"
     },
     {
-      "id": "shell-brush",
-      "zh": "貝殼刷",
-      "en": "shell-brush",
-      "ja": "貝がらブラシ",
-      "reading": "かいがらブラシ",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "短木柄末端固定一簇淺棕色刷毛，刷頭略呈橢圓形，旁邊放著貝殼。",
-      "loose": true,
-      "motion": null,
-      "cluster": "shell"
-    },
-    {
-      "id": "sand-sifter",
-      "zh": "篩砂網",
-      "en": "sand-sifter",
-      "ja": "砂ふるい",
-      "reading": "すなふるい",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "淺藍色圓框繃著細密網面，兩側有短握柄，框內留著少量細砂。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sand-shovel"
-    },
-    {
       "id": "sea-anemone",
       "zh": "海葵",
       "en": "sea-anemone",
@@ -834,66 +564,6 @@
       "loose": false,
       "motion": "sway",
       "cluster": "rock"
-    },
-    {
-      "id": "waterproof-bin",
-      "zh": "防水收納盒",
-      "en": "waterproof-bin",
-      "ja": "防水収納ケース",
-      "reading": "ぼうすいしゅうのうケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "透明扁方盒配亮黃色卡扣，盒蓋邊緣有粗厚密封圈，旁邊放著防水盒。",
-      "loose": true,
-      "motion": null,
-      "cluster": "waterproof-case"
-    },
-    {
-      "id": "tide-pool-ladder",
-      "zh": "池邊小梯",
-      "en": "tide-pool-ladder",
-      "ja": "潮だまり用の小さなはしご",
-      "reading": "しおだまりようのちいさなはしご",
-      "category": "道具",
-      "size": "medium",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "兩根淺木色直桿由三根橫桿連接，底端穩穩踩在石岸上，靠著池邊。",
-      "loose": false,
-      "motion": null,
-      "cluster": "tide-pool"
-    },
-    {
-      "id": "rock-pool-chart",
-      "zh": "潮池圖卡",
-      "en": "rock-pool-chart",
-      "ja": "磯の生き物カード",
-      "reading": "いそのいきものカード",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "一張橫向的淡藍色硬卡片，正面畫著幾個彩色貝殼和海星圖案，四角圓滑。",
-      "loose": true,
-      "motion": null,
-      "cluster": "viewing-box"
-    },
-    {
-      "id": "sea-glass-bottle",
-      "zh": "海玻璃瓶",
-      "en": "sea-glass-bottle",
-      "ja": "シーグラス瓶",
-      "reading": "シーグラスびん",
-      "category": "道具",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "透明矮玻璃瓶，瓶身裝著幾顆磨圓的綠色與淡藍色海玻璃，寬口配著木塞。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sea-glass"
     },
     {
       "id": "tide-pool-sandals",
@@ -986,96 +656,6 @@
       "cluster": null
     },
     {
-      "id": "fireplace",
-      "zh": "壁爐",
-      "en": "fireplace",
-      "ja": "暖炉",
-      "reading": "だんろ",
-      "category": "設施",
-      "size": "large",
-      "zone": "snack-shack",
-      "spot": "wallbase",
-      "desc": "深棕石砌壁爐有方形黑色爐口，上方突出厚實的木製爐台。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wood-log",
-      "zh": "木柴",
-      "en": "log",
-      "ja": "薪",
-      "reading": "まき",
-      "category": "自然",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "兩截短粗棕色木柴交疊擺放，圓形切面露出淺色年輪。",
-      "loose": true,
-      "motion": null,
-      "cluster": "fireplace"
-    },
-    {
-      "id": "firewood-basket",
-      "zh": "柴籃",
-      "en": "firewood basket",
-      "ja": "薪かご",
-      "reading": "まきかご",
-      "category": "道具",
-      "size": "medium",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "深棕色橢圓編織籃裝著幾截木柴，兩側各有一個粗把手。",
-      "loose": false,
-      "motion": null,
-      "cluster": "fireplace"
-    },
-    {
-      "id": "candle-holder",
-      "zh": "燭台",
-      "en": "candle holder",
-      "ja": "キャンドルスタンド",
-      "reading": "キャンドルスタンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "surface",
-      "desc": "黃銅色金屬燭台有圓形底盤、細長立柱和淺碟形托座。",
-      "loose": false,
-      "motion": null,
-      "cluster": "bar-counter"
-    },
-    {
-      "id": "bartop",
-      "zh": "吧台檯面",
-      "en": "bar top",
-      "ja": "カウンターの天板",
-      "reading": "カウンターのてんばん",
-      "category": "設施",
-      "size": "large",
-      "zone": "snack-shack",
-      "spot": "wallbase",
-      "desc": "深棕色長方形木檯面，正面有厚實的直立木板，沿牆延伸成一字形吧台。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bar-stool-footrest",
-      "zh": "吧台椅腳踏桿",
-      "en": "bar stool footrest",
-      "ja": "カウンターチェアの足置き",
-      "reading": "カウンターチェアのあしおき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "金屬椅腳中段橫接一圈細長圓桿，呈銀灰色，形成清楚的環狀踏腳處。",
-      "loose": false,
-      "motion": null,
-      "cluster": "bar-stool"
-    },
-    {
       "id": "bar-counter",
       "zh": "吧台櫃",
       "en": "bar counter",
@@ -1106,21 +686,6 @@
       "cluster": "bartop"
     },
     {
-      "id": "bar-spoon",
-      "zh": "吧匙",
-      "en": "bar spoon",
-      "ja": "バースプーン",
-      "reading": "バースプーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "surface",
-      "desc": "細長銀色金屬匙柄，一端有小匙勺，另一端有扁平小圓盤。",
-      "loose": true,
-      "motion": null,
-      "cluster": "bartop"
-    },
-    {
       "id": "cocktail-glass",
       "zh": "雞尾酒杯",
       "en": "cocktail glass",
@@ -1134,36 +699,6 @@
       "loose": true,
       "motion": null,
       "cluster": "bartop"
-    },
-    {
-      "id": "fire-poker",
-      "zh": "火鉗",
-      "en": "fire poker",
-      "ja": "火かき棒",
-      "reading": "ひかきぼう",
-      "category": "道具",
-      "size": "medium",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "黑色細長金屬桿，一端彎成短鉤，另一端有小圓握柄，靠在壁爐旁。",
-      "loose": false,
-      "motion": null,
-      "cluster": "fireplace"
-    },
-    {
-      "id": "bellows",
-      "zh": "風箱",
-      "en": "bellows",
-      "ja": "ふいご",
-      "reading": "ふいご",
-      "category": "道具",
-      "size": "medium",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "深棕木柄夾著摺疊的黑色皮風囊，前端接短金屬噴嘴，放在壁爐邊。",
-      "loose": false,
-      "motion": null,
-      "cluster": "fireplace"
     },
     {
       "id": "wooden-tray",
@@ -1194,66 +729,6 @@
       "loose": false,
       "motion": null,
       "cluster": "bar-counter"
-    },
-    {
-      "id": "ashtray",
-      "zh": "煙灰缸",
-      "en": "ashtray",
-      "ja": "灰皿",
-      "reading": "はいざら",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "surface",
-      "desc": "淺而寬的圓形玻璃碟，厚實的透明邊緣有幾個放煙的位置。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "record-player",
-      "zh": "唱片機",
-      "en": "record-player",
-      "ja": "レコードプレーヤー",
-      "reading": "レコードプレーヤー",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "surface",
-      "desc": "方形木色機箱上有一片黑色圓盤，旁邊伸出細長的金屬唱臂。",
-      "loose": false,
-      "motion": null,
-      "cluster": "bar-counter"
-    },
-    {
-      "id": "firewood",
-      "zh": "柴火",
-      "en": "firewood",
-      "ja": "薪",
-      "reading": "まき",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "幾段短粗的棕色木柴交疊成小堆，斷面呈淺色圓形並帶有年輪。",
-      "loose": true,
-      "motion": null,
-      "cluster": "fireplace"
-    },
-    {
-      "id": "poker-chip",
-      "zh": "籌碼",
-      "en": "poker-chip",
-      "ja": "ポーカーチップ",
-      "reading": "ポーカーチップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "幾枚扁平圓形籌碼散落地面，紅藍相間，外圈有簡單的白色短條。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "bicycle-bell",
@@ -1301,66 +776,6 @@
       "cluster": "bicycle-pump"
     },
     {
-      "id": "camera-lens",
-      "zh": "相機鏡頭",
-      "en": "camera lens",
-      "ja": "カメラレンズ",
-      "reading": "カメラレンズ",
-      "category": "道具",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "黑色短圓筒前端嵌著一圈玻璃，筒身有兩道凸起的調整環。",
-      "loose": true,
-      "motion": null,
-      "cluster": "camera-tripod"
-    },
-    {
-      "id": "lens-cap",
-      "zh": "鏡頭蓋",
-      "en": "lens cap",
-      "ja": "レンズキャップ",
-      "reading": "レンズキャップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "扁平的黑色圓蓋，邊緣有一圈細紋，中央略微凸起。",
-      "loose": true,
-      "motion": null,
-      "cluster": "camera-lens"
-    },
-    {
-      "id": "camera-bag",
-      "zh": "相機包",
-      "en": "camera bag",
-      "ja": "カメラバッグ",
-      "reading": "カメラバッグ",
-      "category": "道具",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "深灰色長方軟包有厚實圓角、短提把與兩個扣合的外袋。",
-      "loose": false,
-      "motion": null,
-      "cluster": "camera-tripod"
-    },
-    {
-      "id": "binocular-case",
-      "zh": "望遠鏡袋",
-      "en": "binocular case",
-      "ja": "双眼鏡ケース",
-      "reading": "そうがんきょうケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "深藍色軟質橢圓袋身，頂端有短拉鍊，側邊接著細肩帶。",
-      "loose": true,
-      "motion": null,
-      "cluster": "binoculars"
-    },
-    {
       "id": "shell-necklace",
       "zh": "貝殼項鍊",
       "en": "shell necklace",
@@ -1374,21 +789,6 @@
       "loose": true,
       "motion": null,
       "cluster": "driftwood"
-    },
-    {
-      "id": "driftwood-log",
-      "zh": "漂流木枝幹",
-      "en": "driftwood log",
-      "ja": "流木",
-      "reading": "りゅうぼく",
-      "category": "自然",
-      "size": "medium",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "灰褐色粗木段表面乾燥粗糙，兩端不平，側面伸出短短的斷枝。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "coastal-shelter",
@@ -1419,66 +819,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "driftwood-piece",
-      "zh": "小塊漂流木",
-      "en": "driftwood-piece",
-      "ja": "流木",
-      "reading": "りゅうぼく",
-      "category": "自然",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "淺褐色短木塊表面粗糙，一端分出兩根彎曲的小枝。",
-      "loose": true,
-      "motion": null,
-      "cluster": "driftwood-log"
-    },
-    {
-      "id": "dry-leaf",
-      "zh": "乾葉",
-      "en": "dry-leaf",
-      "ja": "枯れ葉",
-      "reading": "かれは",
-      "category": "植物",
-      "size": "small",
-      "zone": "boardwalk",
-      "spot": "ground",
-      "desc": "一片黃褐色的扁平葉片，中央粗葉脈清楚，邊緣微捲。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "quartz",
-      "zh": "石英",
-      "en": "quartz",
-      "ja": "石英",
-      "reading": "せきえい",
-      "category": "自然",
-      "size": "small",
-      "zone": "tide-pool",
-      "spot": "ground",
-      "desc": "一塊乳白色半透明的小石英，表面有幾個尖角，側面透出淡淡的光澤。",
-      "loose": true,
-      "motion": null,
-      "cluster": "rock"
-    },
-    {
-      "id": "bottle-cork",
-      "zh": "瓶塞",
-      "en": "cork",
-      "ja": "コルク栓",
-      "reading": "コルクせん",
-      "category": "道具",
-      "size": "small",
-      "zone": "snack-shack",
-      "spot": "ground",
-      "desc": "短短的圓柱形棕色軟木塞，表面有細小孔洞，一端略寬。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cocktail-glass"
     }
   ],
   "rejected": [
@@ -2211,12 +1551,234 @@
       "id": "wine-glass",
       "reason": "id 重複",
       "zone": "snack-shack"
+    },
+    {
+      "id": "folding-table",
+      "reason": "退役：停車場雜物，不是海灘",
+      "zone": "entrance"
+    },
+    {
+      "id": "electric-scooter",
+      "reason": "退役：停車場雜物，不是海灘",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-post",
+      "reason": "退役：停車場雜物，不是海灘",
+      "zone": "entrance"
+    },
+    {
+      "id": "parking-block",
+      "reason": "退役：停車場雜物，不是海灘",
+      "zone": "entrance"
+    },
+    {
+      "id": "road-marker",
+      "reason": "退役：停車場雜物，不是海灘",
+      "zone": "entrance"
+    },
+    {
+      "id": "camera-tripod",
+      "reason": "退役：攝影器材湊數",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "driftwood-branch",
+      "reason": "退役：同一種東西的變體或碎屑",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "sea-holly",
+      "reason": "退役：同一種東西的變體或碎屑",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "coastal-grass-seedhead",
+      "reason": "退役：同一種東西的變體或碎屑",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "tide-pool-guide",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "tide-pool-sign-post",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "waterproof-case",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "reed",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "sea-lavender",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "water-scope",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "tide-pool-marker",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "shell-brush",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "sand-sifter",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "waterproof-bin",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "tide-pool-ladder",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "rock-pool-chart",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "sea-glass-bottle",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "fireplace",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "wood-log",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "firewood-basket",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "candle-holder",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bartop",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bar-stool-footrest",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bar-spoon",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "fire-poker",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "bellows",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "ashtray",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "record-player",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "firewood",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "poker-chip",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
+    },
+    {
+      "id": "camera-lens",
+      "reason": "退役：攝影器材湊數",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "lens-cap",
+      "reason": "退役：攝影器材湊數",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "camera-bag",
+      "reason": "退役：攝影器材湊數",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "binocular-case",
+      "reason": "退役：攝影器材湊數",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "driftwood-log",
+      "reason": "退役：同一種東西的變體或碎屑",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "driftwood-piece",
+      "reason": "退役：同一種東西的變體或碎屑",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "dry-leaf",
+      "reason": "退役：同一種東西的變體或碎屑",
+      "zone": "boardwalk"
+    },
+    {
+      "id": "quartz",
+      "reason": "退役：零件、太專業或不屬於潮池",
+      "zone": "tide-pool"
+    },
+    {
+      "id": "bottle-cork",
+      "reason": "退役：山上小屋或酒吧的東西，海灘小吃店沒有",
+      "zone": "snack-shack"
     }
   ],
   "createdAt": "2026-09-23T08:08:46.898Z",
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 51,
     "added": 15,
-    "at": "2026-09-23T23:12:00.611+09:00"
-  }
+    "at": "2026-09-23T23:12:00.611+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 51
 }

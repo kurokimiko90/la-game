@@ -25,7 +25,7 @@
     },
     {
       "id": "pasture",
-      "name": "牧場",
+      "name": "池塘與牧場",
       "indoor": false,
       "floor": "grass",
       "feature": "water"
@@ -71,36 +71,6 @@
       "cluster": null
     },
     {
-      "id": "barn",
-      "zh": "穀倉",
-      "en": "barn",
-      "ja": "納屋",
-      "reading": "なや",
-      "category": "設施",
-      "size": "large",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "紅色長方形木建築配深灰雙扇大門，屋頂呈高聳三角形。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "silo",
-      "zh": "筒倉",
-      "en": "silo",
-      "ja": "サイロ",
-      "reading": "サイロ",
-      "category": "設施",
-      "size": "large",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "高聳的銀灰色圓筒形儲存塔，頂部有圓弧形屋頂與窄窄的側梯。",
-      "loose": false,
-      "motion": null,
-      "cluster": "barn"
-    },
-    {
       "id": "windmill",
       "zh": "風車",
       "en": "windmill",
@@ -138,7 +108,7 @@
       "reading": "ほしくさのたわら",
       "category": "道具",
       "size": "medium",
-      "zone": "farmyard",
+      "zone": "barn",
       "spot": "ground",
       "desc": "金黃色長方形乾草捆以兩道細繩綁緊，側面露出蓬鬆的草梗。",
       "loose": false,
@@ -153,27 +123,12 @@
       "reading": "ほしくさようフォーク",
       "category": "道具",
       "size": "medium",
-      "zone": "farmyard",
+      "zone": "barn",
       "spot": "ground",
       "desc": "長木柄末端接著黑色金屬叉頭，幾根尖齒平行向前伸出。",
       "loose": false,
       "motion": null,
       "cluster": "hay-bale"
-    },
-    {
-      "id": "shovel",
-      "zh": "鏟子",
-      "en": "shovel",
-      "ja": "シャベル",
-      "reading": "シャベル",
-      "category": "道具",
-      "size": "medium",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "木柄末端連著寬扁的深灰色鏟面，鏟面尖端略圓，邊緣微微上翹。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "milk-can",
@@ -183,7 +138,7 @@
       "reading": "ミルクかん",
       "category": "道具",
       "size": "small",
-      "zone": "farmyard",
+      "zone": "barn",
       "spot": "ground",
       "desc": "銀色金屬桶身窄口收束，頂部有圓蓋與兩側弧形提把。",
       "loose": true,
@@ -198,27 +153,12 @@
       "reading": "しりょうぶくろ",
       "category": "道具",
       "size": "medium",
-      "zone": "farmyard",
+      "zone": "barn",
       "spot": "ground",
       "desc": "米白色布袋裝得鼓鼓的，袋口束緊，側面可見摺痕與粗織布紋。",
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "grain-scoop",
-      "zh": "穀物勺",
-      "en": "grain scoop",
-      "ja": "穀物用スコップ",
-      "reading": "こくもつようスコップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "短柄連著深碗狀金屬勺頭，銀灰色勺面寬大，適合舀取穀物。",
-      "loose": true,
-      "motion": null,
-      "cluster": "feed-sack"
     },
     {
       "id": "egg-crate",
@@ -234,96 +174,6 @@
       "loose": true,
       "motion": null,
       "cluster": "basket"
-    },
-    {
-      "id": "haystack",
-      "zh": "乾草堆",
-      "en": "haystack",
-      "ja": "干し草の山",
-      "reading": "ほしくさのやま",
-      "category": "道具",
-      "size": "large",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "金黃色乾草堆成寬大的圓頂形，底部蓬鬆散開，表面有層層草梗。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stone-trough",
-      "zh": "石槽",
-      "en": "stone trough",
-      "ja": "石の水槽",
-      "reading": "いしのみずおけ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "灰色長方形石槽厚重結實，槽口敞開，外側有粗糙斑駁的石紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wooden-bucket",
-      "zh": "木桶",
-      "en": "wooden bucket",
-      "ja": "木のバケツ",
-      "reading": "きのバケツ",
-      "category": "道具",
-      "size": "small",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "矮圓木桶由窄木板拼成，外側套著金屬箍，兩邊連著提把。",
-      "loose": true,
-      "motion": null,
-      "cluster": "stone-trough"
-    },
-    {
-      "id": "fence-farm",
-      "zh": "圍籬",
-      "en": "fence",
-      "ja": "フェンス",
-      "reading": "フェンス",
-      "category": "設施",
-      "size": "large",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "一排淺棕色木板直立排列，頂端平整，木板間留有細窄空隙。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wooden-post",
-      "zh": "木柱",
-      "en": "wooden post",
-      "ja": "木の柱",
-      "reading": "きのはしら",
-      "category": "設施",
-      "size": "medium",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "粗短的方形木柱直立在地面，表面有深淺不一的木紋與斜切頂端。",
-      "loose": false,
-      "motion": null,
-      "cluster": "fence-farm"
-    },
-    {
-      "id": "gate-latch-farm",
-      "zh": "門閂",
-      "en": "gate latch",
-      "ja": "門の掛け金",
-      "reading": "もんのかけがね",
-      "category": "道具",
-      "size": "small",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "銀灰色金屬扣件由短柄與環扣組成，橫跨兩片木門邊緣。",
-      "loose": false,
-      "motion": null,
-      "cluster": "farm-gate"
     },
     {
       "id": "wheelbarrow-farm",
@@ -356,141 +206,6 @@
       "cluster": null
     },
     {
-      "id": "basket-farm",
-      "zh": "藤籃",
-      "en": "basket",
-      "ja": "かご",
-      "reading": "かご",
-      "category": "道具",
-      "size": "medium",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "淺棕色藤條編成圓筒形籃身，籃口寬大，兩側各有一個粗編提把。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wooden-plank-farm",
-      "zh": "木板",
-      "en": "wooden plank",
-      "ja": "木の板",
-      "reading": "きのいた",
-      "category": "道具",
-      "size": "medium",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "長條形淺棕木板平放地面，兩端方正，表面可見深色木紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wooden-crate-farm",
-      "zh": "木箱",
-      "en": "wooden crate",
-      "ja": "木箱",
-      "reading": "きばこ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "方形木條箱的四面留有寬縫，箱內空空的，角落以較深色木條加固。",
-      "loose": false,
-      "motion": null,
-      "cluster": "wooden-plank-farm"
-    },
-    {
-      "id": "spade-farm",
-      "zh": "園藝鏟",
-      "en": "spade",
-      "ja": "スコップ",
-      "reading": "スコップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "farmyard",
-      "spot": "ground",
-      "desc": "短木柄接著窄長的深灰色鏟片，鏟片前端尖銳，兩側稍微上彎。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hay-hook",
-      "zh": "吊草鉤",
-      "en": "hay hook",
-      "ja": "干し草用フック",
-      "reading": "ほしくさようフック",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "wall",
-      "desc": "黑色鐵鉤固定在短木柄上，彎曲尖端朝上，常掛在穀倉牆邊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "grain-sieve",
-      "zh": "穀物篩",
-      "en": "grain sieve",
-      "ja": "穀物ふるい",
-      "reading": "こくもつふるい",
-      "category": "道具",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "wall",
-      "desc": "淺棕色圓形木框中繃著細密金屬網，邊緣有磨損痕跡。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "grain-bin",
-      "zh": "穀物箱",
-      "en": "grain bin",
-      "ja": "穀物保管箱",
-      "reading": "こくもつほかんばこ",
-      "category": "設施",
-      "size": "large",
-      "zone": "barn",
-      "spot": "wallbase",
-      "desc": "方形木製儲存箱有厚實斜頂與前方小開口，木板呈深棕色。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "grain-chute",
-      "zh": "穀物溜槽",
-      "en": "grain chute",
-      "ja": "穀物シュート",
-      "reading": "こくもつシュート",
-      "category": "設施",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "wall",
-      "desc": "一段斜向下的深色木槽固定在牆上，末端有短短的方形出口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hay-net",
-      "zh": "牧草網",
-      "en": "hay net",
-      "ja": "干し草ネット",
-      "reading": "ほしくさネット",
-      "category": "道具",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "wall",
-      "desc": "粗麻繩編成菱格網袋，袋口綁在牆邊木鉤上，裡面塞著少量乾草。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": null
-    },
-    {
       "id": "milking-stool",
       "zh": "擠乳矮凳",
       "en": "milking stool",
@@ -498,24 +213,9 @@
       "reading": "さくにゅうようスツール",
       "category": "道具",
       "size": "small",
-      "zone": "barn",
+      "zone": "stable",
       "spot": "ground",
       "desc": "矮矮的三腳木凳，圓形座面磨得發亮，腿部向外微微張開。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cheese-press",
-      "zh": "起司壓模",
-      "en": "cheese press",
-      "ja": "チーズプレス",
-      "reading": "チーズプレス",
-      "category": "道具",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "木製方框夾著圓形模具，上方有螺旋壓桿與寬扁握把。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -536,66 +236,6 @@
       "cluster": null
     },
     {
-      "id": "butter-pat",
-      "zh": "奶油塊",
-      "en": "butter pat",
-      "ja": "バターの小片",
-      "reading": "バターのしょうへん",
-      "category": "食物",
-      "size": "small",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "方方的淡黃色奶油塊放在小木板上，表面留有平滑刀痕。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cream-separator",
-      "zh": "奶油分離器",
-      "en": "cream separator",
-      "ja": "クリームセパレーター",
-      "reading": "クリームセパレーター",
-      "category": "道具",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "銀色圓筒機身立在矮底座上，側面有小搖柄與兩個短出液嘴。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "milk-filter",
-      "zh": "牛奶濾布",
-      "en": "milk filter cloth",
-      "ja": "ミルク用ろ布",
-      "reading": "ミルクようろふ",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "白色方形棉布折成厚厚一疊，邊緣有細密織紋與柔軟垂角。",
-      "loose": true,
-      "motion": null,
-      "cluster": "milk-can"
-    },
-    {
-      "id": "cattle-branding-iron",
-      "zh": "烙印鐵",
-      "en": "branding iron",
-      "ja": "焼き印",
-      "reading": "やきいん",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "wall",
-      "desc": "長鐵柄末端接著簡單彎曲的金屬圖形頭，整件呈暗黑色。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "curry-comb",
       "zh": "馬刷",
       "en": "curry comb",
@@ -603,7 +243,7 @@
       "reading": "うまようブラシ",
       "category": "道具",
       "size": "small",
-      "zone": "barn",
+      "zone": "stable",
       "spot": "surface",
       "desc": "橢圓形木背板上排列整齊的短金屬齒，背面有皮革手帶。",
       "loose": true,
@@ -618,7 +258,7 @@
       "reading": "かいばおけ",
       "category": "設施",
       "size": "medium",
-      "zone": "barn",
+      "zone": "stable",
       "spot": "ground",
       "desc": "長方形木槽架在兩隻矮腳上，內側空著，邊緣有粗糙木紋。",
       "loose": false,
@@ -656,111 +296,6 @@
       "cluster": null
     },
     {
-      "id": "feed-bin",
-      "zh": "飼料桶",
-      "en": "feed bin",
-      "ja": "飼料入れ",
-      "reading": "しりょういれ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "ground",
-      "desc": "矮胖的深綠色金屬桶有圓形桶蓋與側邊提把，表面略帶刮痕。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "egg-separator",
-      "zh": "蛋黃蛋白分離器",
-      "en": "egg separator",
-      "ja": "卵黄分離器",
-      "reading": "らんおうぶんりき",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "白色小瓷器像淺碗，兩側有短短的支耳，中央帶細縫排液口。",
-      "loose": false,
-      "motion": null,
-      "cluster": "egg-basket"
-    },
-    {
-      "id": "cheese-cloth",
-      "zh": "起司布",
-      "en": "cheesecloth",
-      "ja": "チーズクロス",
-      "reading": "チーズクロス",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "薄薄的白色方布帶有稀疏網眼，四角柔軟下垂，布面透出細緻織紋。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wooden-spigot",
-      "zh": "木製龍頭",
-      "en": "wooden spigot",
-      "ja": "木製の蛇口",
-      "reading": "もくせいのじゃぐち",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "wall",
-      "desc": "短短的深棕色木栓橫插在木桶側壁，末端有小圓形旋柄。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "barrel-tap",
-      "zh": "桶龍頭",
-      "en": "barrel tap",
-      "ja": "樽の蛇口",
-      "reading": "たるのじゃぐち",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "surface",
-      "desc": "短金屬管接著圓形旋柄，末端向下彎，整體呈暗銅色。",
-      "loose": true,
-      "motion": null,
-      "cluster": "wooden-spigot"
-    },
-    {
-      "id": "cattle-panel",
-      "zh": "牛欄板",
-      "en": "cattle panel",
-      "ja": "牛用柵",
-      "reading": "うしようさく",
-      "category": "設施",
-      "size": "large",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "一片深灰色金屬欄板，粗直桿焊成長方格，兩端有厚實的直立框架。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "calf-hutch",
-      "zh": "小牛屋",
-      "en": "calf hutch",
-      "ja": "子牛小屋",
-      "reading": "こうしごや",
-      "category": "設施",
-      "size": "large",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "白色塑膠小屋呈圓弧頂棚形，前方有寬大的黑色開口，旁邊連著矮矮的圍欄。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "sheep-shears",
       "zh": "剪羊毛剪",
       "en": "sheep shears",
@@ -774,156 +309,6 @@
       "loose": true,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "livestock-scale",
-      "zh": "牲畜秤",
-      "en": "livestock scale",
-      "ja": "家畜用体重計",
-      "reading": "かちくようたいじゅうけい",
-      "category": "道具",
-      "size": "large",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "低矮方形金屬秤台四周有粗欄杆，前端立著一根短柱，頂部裝有圓形錶盤。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "livestock-ear-tag",
-      "zh": "牲畜耳標",
-      "en": "livestock ear tag",
-      "ja": "家畜用耳標",
-      "reading": "かちくようじひょう",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "一對黃色扁平塑膠牌呈圓角三角形，頂端有短短的扣合柱，表面沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "manure-spreader",
-      "zh": "糞肥撒佈器",
-      "en": "manure spreader",
-      "ja": "肥料散布機",
-      "reading": "ひりょうさんぷき",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "綠色拖車有兩個粗黑輪胎，車斗後方露出一排深色旋轉齒輪與直立防護架。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "livestock-trailer",
-      "zh": "牲畜拖車",
-      "en": "livestock trailer",
-      "ja": "家畜運搬車",
-      "reading": "かちくうんぱんしゃ",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "銀灰色長方形拖車架在四個黑輪上，側面有通風欄孔，後方有向下斜伸的裝卸坡板。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "milking-machine",
-      "zh": "擠乳機",
-      "en": "milking machine",
-      "ja": "搾乳機",
-      "reading": "さくにゅうき",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "銀色金屬桶上接著四個透明杯狀吸頭，粗黑軟管盤繞在側面，底部有兩個小輪子。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "milk-measuring-jar",
-      "zh": "牛奶量杯",
-      "en": "milk measuring jar",
-      "ja": "ミルク計量カップ",
-      "reading": "ミルクけいりょうカップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "透明直筒玻璃杯有厚底與短把手，杯身帶著細小刻線但沒有文字，頂部是寬圓杯口。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "livestock-thermometer",
-      "zh": "牲畜體溫計",
-      "en": "livestock thermometer",
-      "ja": "家畜用体温計",
-      "reading": "かちくようたいおんけい",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "細長銀色金屬棒末端連著白色圓形錶盤，錶面只有黑色短刻線與指針，沒有數字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "livestock-syringe",
-      "zh": "牲畜注射器",
-      "en": "livestock syringe",
-      "ja": "家畜用注射器",
-      "reading": "かちくようちゅうしゃき",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "透明細筒接著長金屬針頭，尾端有寬圓按柄與兩側指環，筒身只有刻線而沒有數字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pond",
-      "zh": "池塘",
-      "en": "pond",
-      "ja": "池",
-      "reading": "いけ",
-      "category": "自然",
-      "size": "large",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "橢圓形淺藍水面，邊緣圍著不規則的深灰色石頭。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "duckweed",
-      "zh": "浮萍",
-      "en": "duckweed",
-      "ja": "浮き草",
-      "reading": "うきくさ",
-      "category": "植物",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "幾片鮮綠色圓葉密集漂在水面，葉片細小，沒有明顯花朵。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
     },
     {
       "id": "water-lily-pad",
@@ -941,141 +326,6 @@
       "cluster": "pond"
     },
     {
-      "id": "lotus-seed-pod",
-      "zh": "蓮蓬",
-      "en": "lotus seed pod",
-      "ja": "ハスの実",
-      "reading": "はすのみ",
-      "category": "植物",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "綠色倒錐形蓮蓬，頂面有幾個圓孔，柄端朝下。",
-      "loose": true,
-      "motion": null,
-      "cluster": "water-lily-pad"
-    },
-    {
-      "id": "water-hyacinth",
-      "zh": "布袋蓮",
-      "en": "water hyacinth",
-      "ja": "ホテイアオイ",
-      "reading": "ほていあおい",
-      "category": "植物",
-      "size": "medium",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "一簇亮綠色橢圓葉長在膨大的葉柄上，頂端開著淡紫色花穗。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
-    },
-    {
-      "id": "water-sedge",
-      "zh": "莎草",
-      "en": "sedge",
-      "ja": "カヤツリグサ",
-      "reading": "かやつりぐさ",
-      "category": "植物",
-      "size": "medium",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "成叢的細長翠綠葉片向上伸展，頂端有細小的褐色穗子。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": "pond"
-    },
-    {
-      "id": "water-strider",
-      "zh": "水黽",
-      "en": "water strider",
-      "ja": "アメンボ",
-      "reading": "あめんぼ",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "細長黑色身體配六條纖細長腳，張開貼在水面上。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
-    },
-    {
-      "id": "tadpole",
-      "zh": "蝌蚪",
-      "en": "tadpole",
-      "ja": "おたまじゃくし",
-      "reading": "おたまじゃくし",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "一顆圓潤的黑色小頭連著細長尾巴，側面可見小小的眼點。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
-    },
-    {
-      "id": "frogspawn",
-      "zh": "蛙卵",
-      "en": "frogspawn",
-      "ja": "カエルの卵",
-      "reading": "かえるのたまご",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "一團透明膠狀圓球黏在一起，每顆中央都有一個深色小點。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
-    },
-    {
-      "id": "frog",
-      "zh": "青蛙",
-      "en": "frog",
-      "ja": "カエル",
-      "reading": "かえる",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "綠色圓身青蛙蹲伏著，兩側有突出的眼睛和彎曲的後腿。",
-      "loose": false,
-      "motion": null,
-      "cluster": "pond"
-    },
-    {
-      "id": "snail-shell",
-      "zh": "蝸牛殼",
-      "en": "snail shell",
-      "ja": "カタツムリの殻",
-      "reading": "かたつむりのから",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "棕褐色圓錐殼表面有清楚的螺旋紋，殼口朝向一側。",
-      "loose": true,
-      "motion": null,
-      "cluster": "pond"
-    },
-    {
-      "id": "mosquito",
-      "zh": "蚊子",
-      "en": "mosquito",
-      "ja": "蚊",
-      "reading": "か",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "sky",
-      "desc": "極細的黑色身體帶著六條細腳和一對透明窄翅。",
-      "loose": false,
-      "motion": "drift",
-      "cluster": "pond"
-    },
-    {
       "id": "water-wheel",
       "zh": "水車",
       "en": "water wheel",
@@ -1088,126 +338,6 @@
       "desc": "棕色圓形木輪由中心軸和放射狀葉板組成，架在水邊。",
       "loose": false,
       "motion": "wobble",
-      "cluster": "pond"
-    },
-    {
-      "id": "wooden-paddle",
-      "zh": "木槳",
-      "en": "wooden paddle",
-      "ja": "木のパドル",
-      "reading": "きのぱどる",
-      "category": "道具",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "長柄末端接著寬扁橢圓槳葉，整支是淺棕色木頭。",
-      "loose": true,
-      "motion": null,
-      "cluster": "pond"
-    },
-    {
-      "id": "fishing-float-farm",
-      "zh": "釣魚浮標",
-      "en": "fishing float",
-      "ja": "釣り浮き",
-      "reading": "つりうき",
-      "category": "道具",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "紅白相間的細長浮標直立露出水面，下端浸在池水裡。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
-    },
-    {
-      "id": "fish-hook",
-      "zh": "魚鉤",
-      "en": "fish hook",
-      "ja": "釣り針",
-      "reading": "つりばり",
-      "category": "道具",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "銀灰色金屬鉤彎成尖銳的弧形，尾端有圓形繫線環。",
-      "loose": true,
-      "motion": null,
-      "cluster": "fishing-rod"
-    },
-    {
-      "id": "water-jar",
-      "zh": "陶水罐",
-      "en": "water jar",
-      "ja": "水がめ",
-      "reading": "みずがめ",
-      "category": "道具",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "赭紅色陶罐有圓鼓罐身、短頸和寬口，表面沒有花紋。",
-      "loose": true,
-      "motion": null,
-      "cluster": "pond"
-    },
-    {
-      "id": "duck-decoy",
-      "zh": "木製浮水誘餌",
-      "en": "duck decoy",
-      "ja": "木製のカモ型おとり",
-      "reading": "もくせいのかもがたおとり",
-      "category": "道具",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "water",
-      "desc": "簡化的棕色木製鴨形浮具，表面平滑，底部露出水面。",
-      "loose": false,
-      "motion": "bob",
-      "cluster": "pond"
-    },
-    {
-      "id": "water-bowl",
-      "zh": "陶製水盆",
-      "en": "water bowl",
-      "ja": "水鉢",
-      "reading": "みずばち",
-      "category": "設施",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "寬口淺盆呈灰藍色，厚實圓形盆沿包住平坦內底。",
-      "loose": false,
-      "motion": null,
-      "cluster": "pond"
-    },
-    {
-      "id": "reed-mace",
-      "zh": "香蒲",
-      "en": "cattail",
-      "ja": "ガマ",
-      "reading": "がま",
-      "category": "植物",
-      "size": "medium",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "幾根筆直的細長綠葉之間，立著深褐色細柱狀的穗子。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": "pond"
-    },
-    {
-      "id": "dragonfly-farm",
-      "zh": "蜻蜓",
-      "en": "dragonfly",
-      "ja": "トンボ",
-      "reading": "とんぼ",
-      "category": "自然",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "sky",
-      "desc": "細長藍綠色身體兩側展開四片透明翅膀，翅脈清晰。",
-      "loose": false,
-      "motion": "drift",
       "cluster": "pond"
     },
     {
@@ -1241,21 +371,6 @@
       "cluster": "pond"
     },
     {
-      "id": "pond-stone-step",
-      "zh": "踏水石",
-      "en": "stepping stone",
-      "ja": "飛び石",
-      "reading": "とびいし",
-      "category": "設施",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "幾塊扁平灰色圓石沿著池邊排成間隔清楚的踏步。",
-      "loose": false,
-      "motion": null,
-      "cluster": "pond"
-    },
-    {
       "id": "barrel-farm",
       "zh": "木酒桶",
       "en": "cask",
@@ -1266,66 +381,6 @@
       "zone": "barn",
       "spot": "ground",
       "desc": "矮胖的棕色木桶橫放在地上，桶身有深色金屬箍，兩端是圓形木板。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "spittoon",
-      "zh": "痰盂",
-      "en": "spittoon",
-      "ja": "痰壺",
-      "reading": "たんつぼ",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "ground",
-      "desc": "深綠色金屬製的矮圓桶，頂部有寬圓沿和中央凹口，底部略窄。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "boot-scraper-farm",
-      "zh": "靴底刮泥器",
-      "en": "boot scraper",
-      "ja": "靴底落とし",
-      "reading": "くつぞこおとし",
-      "category": "道具",
-      "size": "small",
-      "zone": "barn",
-      "spot": "ground",
-      "desc": "黑色鑄鐵底座上豎著兩排短金屬刷齒，底座扁平，放在穀倉入口旁。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stool-farm",
-      "zh": "吧台椅",
-      "en": "bar stool",
-      "ja": "バースツール",
-      "reading": "バースツール",
-      "category": "設施",
-      "size": "medium",
-      "zone": "barn",
-      "spot": "ground",
-      "desc": "高高的圓形木座面下接四根細木腳，腳間有圓形橫桿，靠著吧台排列。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "manure-fork",
-      "zh": "糞叉",
-      "en": "manure fork",
-      "ja": "堆肥フォーク",
-      "reading": "たいひフォーク",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "長木柄連著寬扁金屬叉頭，叉頭有數根細長直齒，靠在棚內地面。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1346,51 +401,6 @@
       "cluster": null
     },
     {
-      "id": "stable-scraper",
-      "zh": "刮糞板",
-      "en": "manure scraper",
-      "ja": "ふん尿かき",
-      "reading": "ふんにょうかき",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "短木柄連著寬扁長方形金屬板，板邊平直，工具平放在地上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hoof-pick",
-      "zh": "馬蹄清潔器",
-      "en": "hoof pick",
-      "ja": "蹄ピック",
-      "reading": "ひづめピック",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "短小金屬柄末端彎成尖鉤，另一端帶著小刷頭，放在地面。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hoof-rasp",
-      "zh": "馬蹄銼刀",
-      "en": "hoof rasp",
-      "ja": "蹄やすり",
-      "reading": "ひづめやすり",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "寬扁長方形金屬銼面帶有粗糙齒紋，兩端接著短握柄。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "horseshoe",
       "zh": "馬蹄鐵",
       "en": "horseshoe",
@@ -1406,141 +416,6 @@
       "cluster": null
     },
     {
-      "id": "hoof-boot",
-      "zh": "馬蹄護套",
-      "en": "hoof boot",
-      "ja": "蹄ブーツ",
-      "reading": "ひづめブーツ",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "圓筒狀深色橡膠套，頂端開口寬大，前方有一條固定帶。",
-      "loose": true,
-      "motion": null,
-      "cluster": "horseshoe"
-    },
-    {
-      "id": "stable-muck-tub",
-      "zh": "糞便搬運盆",
-      "en": "muck tub",
-      "ja": "ふん尿運搬たらい",
-      "reading": "ふんにょううんぱんたらい",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "低矮寬口的黑色橡膠盆，盆身厚實略有彈性，空盆放在地面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stable-rake",
-      "zh": "馬廄耙",
-      "en": "stable rake",
-      "ja": "馬小屋用の熊手",
-      "reading": "うまごやようのくまで",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "長木柄末端接著一排密集短金屬齒，齒列橫向平直，靠在牆邊地上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stall-chain",
-      "zh": "馬廄鏈條",
-      "en": "stall chain",
-      "ja": "馬房の鎖",
-      "reading": "ばぼうのくさり",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "一段粗重的深色金屬鏈條鬆散盤成幾圈，鏈節清楚可辨。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stall-hinge",
-      "zh": "馬廄門鉸鏈",
-      "en": "stall hinge",
-      "ja": "馬房の蝶番",
-      "reading": "ばぼうのちょうつがい",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "厚實的黑色金屬鉸鏈由中央轉軸連接兩片長方形翼板，平放地面。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stable-latch",
-      "zh": "馬廄插銷",
-      "en": "stall latch",
-      "ja": "馬房の掛け金",
-      "reading": "ばぼうのかけがね",
-      "category": "道具",
-      "size": "small",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "一根粗短金屬插桿連著扁平底座與圓形拉環，放在地上。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stable-mat",
-      "zh": "馬廄橡膠墊",
-      "en": "stable mat",
-      "ja": "馬房マット",
-      "reading": "ばぼうマット",
-      "category": "道具",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "厚實方形深灰橡膠墊，表面有規則凸起圓點，平鋪在地面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "stable-drain-grate",
-      "zh": "馬廄排水格柵",
-      "en": "stable drain grate",
-      "ja": "厩舎の排水格子",
-      "reading": "きゅうしゃのはいすいこうし",
-      "category": "設施",
-      "size": "medium",
-      "zone": "stable",
-      "spot": "ground",
-      "desc": "嵌在地面上的方形深色金屬格柵，由一排平行長孔構成。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "horse-trailer",
-      "zh": "馬匹拖車",
-      "en": "horse trailer",
-      "ja": "馬運車",
-      "reading": "うまうんしゃ",
-      "category": "交通工具",
-      "size": "large",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "長方形的銀灰色拖車，側面有通風窗，後方有一扇寬大的斜坡門。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "shepherds-crook",
       "zh": "牧羊杖",
       "en": "shepherd's crook",
@@ -1548,7 +423,7 @@
       "reading": "ひつじかいのつえ",
       "category": "道具",
       "size": "small",
-      "zone": "pasture",
+      "zone": "stable",
       "spot": "ground",
       "desc": "細長的深木色手杖，頂端彎成明顯的鉤形，杖身帶有自然木紋。",
       "loose": true,
@@ -1563,85 +438,10 @@
       "reading": "ひつじのすず",
       "category": "道具",
       "size": "small",
-      "zone": "pasture",
+      "zone": "stable",
       "spot": "ground",
       "desc": "小巧的黃銅色方鐘，底部開口，頂端有短短的繫環。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "lambing-pen",
-      "zh": "產羔欄",
-      "en": "lambing pen",
-      "ja": "分娩用の囲い",
-      "reading": "ぶんべんようのかこい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "矮矮的木製圍欄圍成方形，入口留有空隙，欄板排列整齊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "shearing-stand",
-      "zh": "剪毛架",
-      "en": "shearing stand",
-      "ja": "毛刈り台",
-      "reading": "けがりだい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "穩固的木製平台帶有四根短腳，一端立著兩根直立支架。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "sheepdog-whistle",
-      "zh": "牧羊犬哨",
-      "en": "sheepdog whistle",
-      "ja": "牧羊笛",
-      "reading": "ぼくようぶえ",
-      "category": "道具",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "短小的銀色金屬哨子，外形細長，一端有圓孔和小掛環。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "salt-lick",
-      "zh": "舔鹽磚",
-      "en": "salt lick",
-      "ja": "塩ブロック",
-      "reading": "しおブロック",
-      "category": "食物",
-      "size": "small",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "粗糙的淡粉色方磚，邊角略圓，表面有不規則的小凹點。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "hay-bale-spear",
-      "zh": "草捆叉",
-      "en": "bale spear",
-      "ja": "ロールベール用スピア",
-      "reading": "ロールベールようスピア",
-      "category": "道具",
-      "size": "medium",
-      "zone": "pasture",
-      "spot": "ground",
-      "desc": "厚實的金屬叉架帶有兩根長尖齒，後方連著短短的安裝座。",
-      "loose": false,
       "motion": null,
       "cluster": null
     }
@@ -1837,6 +637,406 @@
       "id": "stable-wheelbarrow",
       "reason": "和已有的 wheelbarrow 太像",
       "zone": "stable"
+    },
+    {
+      "id": "barn",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "silo",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "shovel",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "grain-scoop",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "haystack",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "stone-trough",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "wooden-bucket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "fence-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "wooden-post",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "gate-latch-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "basket-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "wooden-plank-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "wooden-crate-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "spade-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "farmyard"
+    },
+    {
+      "id": "hay-hook",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "grain-sieve",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "grain-bin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "grain-chute",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "hay-net",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "cheese-press",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "butter-pat",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "cream-separator",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "milk-filter",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "cattle-branding-iron",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "feed-bin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "egg-separator",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "cheese-cloth",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "wooden-spigot",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "barrel-tap",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "cattle-panel",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "calf-hutch",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "livestock-scale",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "livestock-ear-tag",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "manure-spreader",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "livestock-trailer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "milking-machine",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "milk-measuring-jar",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "livestock-thermometer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "livestock-syringe",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "pond",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "duckweed",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "lotus-seed-pod",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "water-hyacinth",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "water-sedge",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "water-strider",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "tadpole",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "frogspawn",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "frog",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "snail-shell",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "mosquito",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "wooden-paddle",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "fishing-float-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "fish-hook",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "water-jar",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "duck-decoy",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "water-bowl",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "reed-mace",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "dragonfly-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "pond-stone-step",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "spittoon",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "boot-scraper-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "stool-farm",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "barn"
+    },
+    {
+      "id": "manure-fork",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-scraper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "hoof-pick",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "hoof-rasp",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "hoof-boot",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-muck-tub",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-rake",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stall-chain",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stall-hinge",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-latch",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-mat",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "stable-drain-grate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "stable"
+    },
+    {
+      "id": "horse-trailer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "lambing-pen",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "shearing-stand",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "sheepdog-whistle",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "salt-lick",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
+    },
+    {
+      "id": "hay-bale-spear",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "pasture"
     }
   ],
   "reviewFixes": [
@@ -1991,8 +1191,10 @@
     }
   },
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 27,
     "added": 26,
-    "at": "2026-10-02T02:52:52.118+09:00"
-  }
+    "at": "2026-10-02T02:52:52.118+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 27
 }

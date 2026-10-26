@@ -11,21 +11,21 @@
     },
     {
       "id": "showroom",
-      "name": "展示區",
+      "name": "廚房家電區",
       "indoor": true,
       "floor": "tile",
       "feature": "stand"
     },
     {
       "id": "appliance-aisle",
-      "name": "家電走道",
+      "name": "生活家電區",
       "indoor": true,
       "floor": "tile",
       "feature": "counter"
     },
     {
       "id": "checkout",
-      "name": "結帳區",
+      "name": "影音與結帳區",
       "indoor": true,
       "floor": "tile",
       "feature": "checkout"
@@ -48,7 +48,7 @@
       "reading": "せんたくき",
       "category": "道具",
       "size": "large",
-      "zone": "storefront",
+      "zone": "appliance-aisle",
       "spot": "ground",
       "desc": "白色方形機身，正面中央有一個帶深色玻璃的大圓門。",
       "loose": false,
@@ -78,7 +78,7 @@
       "reading": "そうじき",
       "category": "道具",
       "size": "medium",
-      "zone": "storefront",
+      "zone": "appliance-aisle",
       "spot": "ground",
       "desc": "紅色圓筒機身下有兩個小輪，旁邊連著長彎管和扁吸頭。",
       "loose": false,
@@ -123,7 +123,7 @@
       "reading": "くうきせいじょうき",
       "category": "道具",
       "size": "medium",
-      "zone": "storefront",
+      "zone": "appliance-aisle",
       "spot": "ground",
       "desc": "白色直立方柱機身，正面有大片格柵，頂部留著出風孔。",
       "loose": false,
@@ -213,7 +213,7 @@
       "reading": "れいぞうこ",
       "category": "道具",
       "size": "large",
-      "zone": "storefront",
+      "zone": "appliance-aisle",
       "spot": "ground",
       "desc": "高大的白色長方體家電，正面有上下兩扇門與側邊把手。",
       "loose": false,
@@ -228,7 +228,7 @@
       "reading": "テレビ",
       "category": "道具",
       "size": "large",
-      "zone": "storefront",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "寬扁的黑色長方形螢幕，細窄邊框下方有短底座。",
       "loose": false,
@@ -941,21 +941,6 @@
       "cluster": null
     },
     {
-      "id": "coin-roll-dispenser",
-      "zh": "硬幣紙卷收納架",
-      "en": "coin roll dispenser",
-      "ja": "硬貨ロールホルダー",
-      "reading": "こうかロールホルダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "矮小的分格架有數個半圓形槽位，排列著不同大小的硬幣紙卷。",
-      "loose": false,
-      "motion": null,
-      "cluster": "coin-roll"
-    },
-    {
       "id": "barcode-label-roll",
       "zh": "條碼標籤紙卷",
       "en": "barcode label roll",
@@ -981,36 +966,6 @@
       "zone": "checkout",
       "spot": "ground",
       "desc": "幾個紅色塑膠籃上下套疊，鏤空格子和扁平提把清楚可見。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bagging-platform",
-      "zh": "裝袋平台",
-      "en": "bagging platform",
-      "ja": "袋詰め台",
-      "reading": "ふくろづめだい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "低矮的長方形平台靠在收銀台旁，淺灰檯面下方有兩支方形支腳。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cashier-footrest",
-      "zh": "收銀椅腳踏圈",
-      "en": "cashier footrest",
-      "ja": "レジ椅子の足置き",
-      "reading": "レジいすのあしおき",
-      "category": "設施",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "一圈銀色金屬環固定在椅柱下方，環面扁平，前方略寬方便踩踏。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1061,21 +1016,6 @@
       "cluster": null
     },
     {
-      "id": "checkout-divider-electronics-store",
-      "zh": "結帳分隔桿",
-      "en": "checkout divider",
-      "ja": "仕切り板",
-      "reading": "しきりいた",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "短短的長方形塑膠桿，兩端微微翹起，常放在輸送帶上分隔商品。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "barcode-scanner-electronics-store",
       "zh": "條碼掃描器",
       "en": "barcode scanner",
@@ -1102,21 +1042,6 @@
       "spot": "surface",
       "desc": "打開的棕色紙袋呈長方形，袋口微張，兩側各有一個扁平提把。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "coin-tray-electronics-store",
-      "zh": "硬幣盤",
-      "en": "coin tray",
-      "ja": "コイントレー",
-      "reading": "コイントレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "淺淺的橢圓形黑色托盤，中央凹下，邊緣有一圈平滑凸起。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -1151,66 +1076,6 @@
       "cluster": null
     },
     {
-      "id": "receipt-folder-electronics-store",
-      "zh": "收據夾",
-      "en": "receipt folder",
-      "ja": "レシートホルダー",
-      "reading": "レシートホルダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "扁平的深藍色長方形夾子，頂端有金屬夾口，旁邊露出一張空白紙。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "receipt-bin-electronics-store",
-      "zh": "收據回收盒",
-      "en": "receipt bin",
-      "ja": "レシート回収箱",
-      "reading": "レシートかいしゅうばこ",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "小型方盒上方開著狹長投入口，盒身是淺灰色，前面有圓角開口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "receipt-spike-electronics-store",
-      "zh": "收據插針",
-      "en": "receipt spike",
-      "ja": "レシート刺し",
-      "reading": "レシートさし",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "尖細金屬針直立在圓形底座中央，底座是扁平的黑色圓盤。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "queue-ticket-dispenser-electronics-store",
-      "zh": "排隊號碼牌機",
-      "en": "queue ticket dispenser",
-      "ja": "順番待ち発券機",
-      "reading": "じゅんばんまちはっけんき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "白色直立小機器上方有圓形取票口，下方伸出一段短短的空白紙帶。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "cash-counter",
       "zh": "點鈔機",
       "en": "cash counter",
@@ -1226,16 +1091,61 @@
       "cluster": null
     },
     {
-      "id": "coin-bank-electronics-store",
-      "zh": "存錢筒",
-      "en": "coin bank",
-      "ja": "貯金箱",
-      "reading": "ちょきんばこ",
+      "id": "floor-standing-radio",
+      "zh": "落地式音響",
+      "en": "floor-standing speaker",
+      "ja": "フロアスピーカー",
+      "reading": "フロアスピーカー",
+      "category": "道具",
+      "size": "large",
+      "zone": "checkout",
+      "spot": "ground",
+      "desc": "高而窄的黑色音箱直立在地面，正面有兩個圓形喇叭單體與細密網罩。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "portable-record-player",
+      "zh": "攜帶式唱片機",
+      "en": "record player",
+      "ja": "レコードプレーヤー",
+      "reading": "レコードプレーヤー",
       "category": "道具",
       "size": "small",
       "zone": "checkout",
-      "spot": "surface",
-      "desc": "圓滾滾的陶製小豬身上有細長投幣縫，四隻短腳穩穩支在桌面。",
+      "spot": "ground",
+      "desc": "扁平方形的深色機身上有圓形唱盤，掀起的透明上蓋斜靠在一旁。",
+      "loose": true,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "floor-standing-sign-holder",
+      "zh": "落地式告示牌架",
+      "en": "floor standing sign holder",
+      "ja": "スタンド看板",
+      "reading": "すたんどかんばん",
+      "category": "設施",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "銀色細框立在兩腳底座上，中央嵌著一大片空白淺色板面，沒有圖文。",
+      "loose": false,
+      "motion": null,
+      "cluster": null
+    },
+    {
+      "id": "umbrella-stand-electronics-store",
+      "zh": "雨傘架",
+      "en": "umbrella stand",
+      "ja": "傘立て",
+      "reading": "かさたて",
+      "category": "設施",
+      "size": "medium",
+      "zone": "storefront",
+      "spot": "ground",
+      "desc": "深色細長筒形架立在地上，頂端有數個圓孔，旁邊靠著幾把合起的素色雨傘。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1406,6 +1316,176 @@
     {
       "id": "parcel-scale-electronics-store",
       "reason": "審核：家電行不常見此物"
+    },
+    {
+      "id": "electric-vacuum-sealer",
+      "reason": "和已有的 vacuum sealer 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "portable-air-conditioner",
+      "reason": "和已有的 air-conditioner 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "oil-radiator",
+      "reason": "和已有的 space heater 太像",
+      "zone": "storefront"
+    },
+    {
+      "id": "floor-standing-speaker",
+      "reason": "和已有的 floor-standing speaker 太像",
+      "zone": "appliance-aisle"
+    },
+    {
+      "id": "plastic-pallet",
+      "reason": "英文重複",
+      "zone": "checkout"
+    },
+    {
+      "id": "shopping-bag-holder",
+      "reason": "和已有的 shopping bag 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "hand-truck",
+      "reason": "和已有的 folding hand truck 太像",
+      "zone": "checkout"
+    },
+    {
+      "id": "coin-roll-dispenser",
+      "reason": "退役：銀行用品",
+      "zone": "checkout"
+    },
+    {
+      "id": "bagging-platform",
+      "reason": "退役：超市裝袋台",
+      "zone": "checkout"
+    },
+    {
+      "id": "cashier-footrest",
+      "reason": "退役：看不出是什麼的零件",
+      "zone": "checkout"
+    },
+    {
+      "id": "checkout-divider-electronics-store",
+      "reason": "退役：超市輸送帶用的分隔桿",
+      "zone": "checkout"
+    },
+    {
+      "id": "receipt-spike-electronics-store",
+      "reason": "退役：餐廳用品",
+      "zone": "checkout"
+    },
+    {
+      "id": "queue-ticket-dispenser-electronics-store",
+      "reason": "退役：家電行結帳不抽號碼牌",
+      "zone": "checkout"
+    },
+    {
+      "id": "electric-meat-slicer",
+      "reason": "退役：商用切肉機，不是家電",
+      "zone": "storefront"
+    },
+    {
+      "id": "portable-generator",
+      "reason": "退役：五金行的發電機",
+      "zone": "storefront"
+    },
+    {
+      "id": "air-compressor",
+      "reason": "退役：五金行的空壓機",
+      "zone": "storefront"
+    },
+    {
+      "id": "floor-polisher",
+      "reason": "退役：商用清潔機",
+      "zone": "storefront"
+    },
+    {
+      "id": "electric-log-splitter",
+      "reason": "退役：劈柴機是五金/農具，不在家電行",
+      "zone": "storefront"
+    },
+    {
+      "id": "electric-pressure-washer",
+      "reason": "退役：五金行商品",
+      "zone": "storefront"
+    },
+    {
+      "id": "floor-scrubber",
+      "reason": "退役：商用清潔機",
+      "zone": "storefront"
+    },
+    {
+      "id": "dehumidifier-drain-hose",
+      "reason": "退役：配件太瑣碎",
+      "zone": "storefront"
+    },
+    {
+      "id": "folding-hand-truck",
+      "reason": "退役：員工搬運工具，不是陳列品",
+      "zone": "storefront"
+    },
+    {
+      "id": "plastic-pallet",
+      "reason": "退役：倉庫棧板，賣場不會擺",
+      "zone": "storefront"
+    },
+    {
+      "id": "foam-corner-guard",
+      "reason": "退役：包材，太瑣碎",
+      "zone": "storefront"
+    },
+    {
+      "id": "shoe-bench-electronics-store",
+      "reason": "退役：家電行沒有穿鞋椅",
+      "zone": "appliance-aisle"
+    },
+    {
+      "id": "standing-mirror-electronics-store",
+      "reason": "退役：服飾店的東西",
+      "zone": "appliance-aisle"
+    },
+    {
+      "id": "floor-standing-clothes-rack",
+      "reason": "退役：服飾店的東西",
+      "zone": "appliance-aisle"
+    },
+    {
+      "id": "fire-alarm-panel-electronics-store",
+      "reason": "退役：背景設備，不是該學的單字",
+      "zone": "checkout"
+    },
+    {
+      "id": "folding-step-stool",
+      "reason": "退役：員工工具",
+      "zone": "checkout"
+    },
+    {
+      "id": "floor-drain-electronics-store",
+      "reason": "退役：賣場地面沒有排水孔",
+      "zone": "checkout"
+    },
+    {
+      "id": "coin-tray-electronics-store",
+      "reason": "退役：和收銀托盤重複",
+      "zone": "checkout"
+    },
+    {
+      "id": "receipt-folder-electronics-store",
+      "reason": "退役：辦公用品，太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "receipt-bin-electronics-store",
+      "reason": "退役：看不出是什麼的小盒子",
+      "zone": "checkout"
+    },
+    {
+      "id": "coin-bank-electronics-store",
+      "reason": "退役：存錢筒不是家電",
+      "zone": "checkout"
     }
   ],
   "reviewFixes": [
@@ -1422,6 +1502,20 @@
       "issue": "日文讀音多了空格",
       "changes": {
         "reading": "じゅんばんまちはっけんき"
+      }
+    },
+    {
+      "id": "portable-record-player",
+      "issue": "手提式應改為攜帶式",
+      "changes": {
+        "zh": "攜帶式唱片機"
+      }
+    },
+    {
+      "id": "floor-standing-sign-holder",
+      "issue": "英文不自然，且日文是看板",
+      "changes": {
+        "zh": "落地式告示牌架"
       }
     }
   ],
@@ -1447,5 +1541,12 @@
         "concourse"
       ]
     }
-  }
+  },
+  "topUp": {
+    "itemsPerScene": 74,
+    "added": 21,
+    "at": "2026-10-03T19:56:22.826+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 74
 }

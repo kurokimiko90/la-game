@@ -81,7 +81,7 @@
       "ref": {
         "project": "la-game",
         "scene": "fire-station",
-        "zone": "front-yard",
+        "zone": "equipment-room",
         "itemId": "fire-helmet",
         "words": {
           "zh-TW": "消防頭盔",
@@ -102,7 +102,7 @@
       "ref": {
         "project": "la-game",
         "scene": "fire-station",
-        "zone": "front-yard",
+        "zone": "garage",
         "itemId": "axe",
         "words": {
           "zh-TW": "消防斧",
@@ -157,27 +157,6 @@
       }
     },
     {
-      "name": "滅火器軟管",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色短軟管彎成弧形，一端接著紅色圓筒狀滅火器，另一端有小噴口。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "fire-extinguisher-hose",
-        "words": {
-          "zh-TW": "滅火器軟管",
-          "en": "extinguisher-hose",
-          "ja": {
-            "text": "消火器ホース",
-            "reading": "しょうかきホース"
-          }
-        }
-      }
-    },
-    {
       "name": "消防警鈴",
       "category": "設施",
       "lane": "b",
@@ -199,27 +178,6 @@
       }
     },
     {
-      "name": "排水溝蓋",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "深灰色長方形金屬格柵嵌在地面，表面有數條平行縫隙。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "drain-grate",
-        "words": {
-          "zh-TW": "排水溝蓋",
-          "en": "drain-grate",
-          "ja": {
-            "text": "排水溝のふた",
-            "reading": "はいすいこうのふた"
-          }
-        }
-      }
-    },
-    {
       "name": "工具箱",
       "category": "道具",
       "lane": "b",
@@ -228,7 +186,7 @@
       "ref": {
         "project": "la-game",
         "scene": "fire-station",
-        "zone": "front-yard",
+        "zone": "garage",
         "itemId": "toolbox",
         "words": {
           "zh-TW": "工具箱",
@@ -257,69 +215,6 @@
           "ja": {
             "text": "スコップ",
             "reading": "スコップ"
-          }
-        }
-      }
-    },
-    {
-      "name": "水帶接頭",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀色短圓筒兩端有凸起環圈，中間帶有卡榫，放在水帶旁。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "hose-coupling",
-        "words": {
-          "zh-TW": "水帶接頭",
-          "en": "hose-coupling",
-          "ja": {
-            "text": "ホースカップリング",
-            "reading": "ホースカップリング"
-          }
-        }
-      }
-    },
-    {
-      "name": "車庫鐵捲門",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "寬大的紅色橫向捲門由許多細長金屬片組成，表面沒有標誌或文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "fire-station-shutter",
-        "words": {
-          "zh-TW": "車庫鐵捲門",
-          "en": "fire-station-shutter",
-          "ja": {
-            "text": "車庫シャッター",
-            "reading": "しゃこシャッター"
-          }
-        }
-      }
-    },
-    {
-      "name": "車庫窗戶",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "方形窗框裡有兩片藍灰色玻璃，中間以直條分隔，嵌在車庫外牆。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "fire-station-window",
-        "words": {
-          "zh-TW": "車庫窗戶",
-          "en": "fire-station-window",
-          "ja": {
-            "text": "車庫の窓",
-            "reading": "しゃこのまど"
           }
         }
       }
@@ -367,69 +262,6 @@
       }
     },
     {
-      "name": "側門",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "深紅色的單扇門，表面有幾道凸起長框，旁邊裝著圓形金屬把手。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "fire-station-door",
-        "words": {
-          "zh-TW": "側門",
-          "en": "side-door",
-          "ja": {
-            "text": "勝手口",
-            "reading": "かってぐち"
-          }
-        }
-      }
-    },
-    {
-      "name": "排水管",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "沿著磚牆垂直延伸的紅色金屬管，末端彎向地面，管口清楚可見。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "fire-station-gutter",
-        "words": {
-          "zh-TW": "排水管",
-          "en": "drainpipe",
-          "ja": {
-            "text": "排水管",
-            "reading": "はいすいかん"
-          }
-        }
-      }
-    },
-    {
-      "name": "台階",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "三層寬闊的灰色混凝土階梯，邊角平直，連接側門與車道地面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "front-yard",
-        "itemId": "fire-station-steps",
-        "words": {
-          "zh-TW": "台階",
-          "en": "steps",
-          "ja": {
-            "text": "階段",
-            "reading": "かいだん"
-          }
-        }
-      }
-    },
-    {
       "name": "扳手",
       "category": "道具",
       "lane": "b",
@@ -438,7 +270,7 @@
       "ref": {
         "project": "la-game",
         "scene": "fire-station",
-        "zone": "front-yard",
+        "zone": "garage",
         "itemId": "fire-station-wrench",
         "words": {
           "zh-TW": "扳手",
@@ -480,7 +312,7 @@
       "ref": {
         "project": "la-game",
         "scene": "fire-station",
-        "zone": "front-yard",
+        "zone": "garage",
         "itemId": "fire-pole",
         "words": {
           "zh-TW": "消防滑竿",
@@ -501,7 +333,7 @@
       "ref": {
         "project": "la-game",
         "scene": "fire-station",
-        "zone": "front-yard",
+        "zone": "equipment-room",
         "itemId": "fire-boot",
         "words": {
           "zh-TW": "消防靴",
@@ -530,237 +362,6 @@
           "ja": {
             "text": "防火ブランケット",
             "reading": "ぼうかブランケット"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防車座椅",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色車廂內的單人座椅，有厚實的深色椅墊和明顯的靠背。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "fire-engine-seat",
-        "words": {
-          "zh-TW": "消防車座椅",
-          "en": "fire-engine-seat",
-          "ja": {
-            "text": "消防車の座席",
-            "reading": "しょうぼうしゃのざせき"
-          }
-        }
-      }
-    },
-    {
-      "name": "方向盤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色圓環連著中央圓盤，裝在駕駛座前方，輪圈上有幾道握槽。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "steering-wheel",
-        "words": {
-          "zh-TW": "方向盤",
-          "en": "steering-wheel",
-          "ja": {
-            "text": "ハンドル",
-            "reading": "ハンドル"
-          }
-        }
-      }
-    },
-    {
-      "name": "儀表板",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "駕駛座前方的寬扁黑色面板，帶有圓形儀表和幾個凸起按鈕。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "dashboard",
-        "words": {
-          "zh-TW": "儀表板",
-          "en": "dashboard",
-          "ja": {
-            "text": "ダッシュボード",
-            "reading": "ダッシュボード"
-          }
-        }
-      }
-    },
-    {
-      "name": "後視鏡",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "車廂前方的小型黑框長方鏡，固定在短支架上，鏡面呈灰藍色。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "rearview-mirror",
-        "words": {
-          "zh-TW": "後視鏡",
-          "en": "rearview-mirror",
-          "ja": {
-            "text": "バックミラー",
-            "reading": "バックミラー"
-          }
-        }
-      }
-    },
-    {
-      "name": "雨刷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "兩支細長黑色雨刷平放在車窗下緣，帶有扁平橡膠刮片。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "windshield-wiper",
-        "words": {
-          "zh-TW": "雨刷",
-          "en": "windshield-wiper",
-          "ja": {
-            "text": "ワイパー",
-            "reading": "ワイパー"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防車車門",
-      "category": "交通工具",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "紅色方形車門帶有黑色窗框、銀色把手和一條醒目的黃色反光條。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "fire-engine-door",
-        "words": {
-          "zh-TW": "消防車車門",
-          "en": "fire-engine-door",
-          "ja": {
-            "text": "消防車のドア",
-            "reading": "しょうぼうしゃのドア"
-          }
-        }
-      }
-    },
-    {
-      "name": "車側後視鏡",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色短支架伸出車門，末端接著黑框橢圓鏡面，外殼厚實醒目。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "side-mirror",
-        "words": {
-          "zh-TW": "車側後視鏡",
-          "en": "side-mirror",
-          "ja": {
-            "text": "サイドミラー",
-            "reading": "サイドミラー"
-          }
-        }
-      }
-    },
-    {
-      "name": "輪圈蓋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "銀灰色圓盤帶放射狀凹槽，中央有圓形凸起，靠著車輪擺放。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "hubcap",
-        "words": {
-          "zh-TW": "輪圈蓋",
-          "en": "hubcap",
-          "ja": {
-            "text": "ホイールカバー",
-            "reading": "ホイールカバー"
-          }
-        }
-      }
-    },
-    {
-      "name": "備胎",
-      "category": "交通工具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黑色厚橡膠圓環平放在地，外圈有深刻的防滑紋路，中央露出金屬輪圈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "spare-wheel",
-        "words": {
-          "zh-TW": "備胎",
-          "en": "spare-wheel",
-          "ja": {
-            "text": "スペアタイヤ",
-            "reading": "スペアタイヤ"
-          }
-        }
-      }
-    },
-    {
-      "name": "輪胎扳手",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀灰色金屬長柄工具，一端分成十字形短臂，另一端有套筒頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "wheel-wrench",
-        "words": {
-          "zh-TW": "輪胎扳手",
-          "en": "wheel-wrench",
-          "ja": {
-            "text": "ホイールレンチ",
-            "reading": "ホイールレンチ"
-          }
-        }
-      }
-    },
-    {
-      "name": "千斤頂",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "紅色金屬菱形支架，中央有螺桿和短曲柄，底部是扁平支腳。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "jack",
-        "words": {
-          "zh-TW": "千斤頂",
-          "en": "jack",
-          "ja": {
-            "text": "ジャッキ",
-            "reading": "ジャッキ"
           }
         }
       }
@@ -829,69 +430,6 @@
       }
     },
     {
-      "name": "梯鉤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "銀灰色長金屬桿，頂端彎成醒目的鉤子，底部有黑色握把。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "ladder-hook",
-        "words": {
-          "zh-TW": "梯鉤",
-          "en": "ladder-hook",
-          "ja": {
-            "text": "梯子フック",
-            "reading": "はしごフック"
-          }
-        }
-      }
-    },
-    {
-      "name": "水帶跨橋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "黃色低矮拱形護罩，頂面有兩道平行凹槽，兩端平坦，供水帶從下方通過。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "hose-bridge",
-        "words": {
-          "zh-TW": "水帶跨橋",
-          "en": "hose-bridge",
-          "ja": {
-            "text": "ホースブリッジ",
-            "reading": "ホースブリッジ"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防水帶噴嘴",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀色短圓管前端逐漸收窄，後端有紅色旋鈕和粗大的接頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "fire-nozzle",
-        "words": {
-          "zh-TW": "消防水帶噴嘴",
-          "en": "fire-nozzle",
-          "ja": {
-            "text": "消防ノズル",
-            "reading": "しょうぼうノズル"
-          }
-        }
-      }
-    },
-    {
       "name": "水帶櫃",
       "category": "道具",
       "lane": "b",
@@ -950,27 +488,6 @@
           "ja": {
             "text": "消防ゴーグル",
             "reading": "しょうぼうゴーグル"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防頭盔面罩",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明弧形防護面罩帶有紅色固定邊框，兩側各有小型金屬卡扣。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "garage",
-        "itemId": "fire-helmet-visor",
-        "words": {
-          "zh-TW": "消防頭盔面罩",
-          "en": "fire-helmet-visor",
-          "ja": {
-            "text": "消防ヘルメットのシールド",
-            "reading": "しょうぼうヘルメットのシールド"
           }
         }
       }
@@ -1039,90 +556,6 @@
       }
     },
     {
-      "name": "無線電麥克風",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色小型長方形麥克風，側邊有按鍵，上方伸出捲曲電線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "radio-microphone",
-        "words": {
-          "zh-TW": "無線電麥克風",
-          "en": "radio-microphone",
-          "ja": {
-            "text": "無線機マイク",
-            "reading": "むせんきマイク"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防頭盔燈",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小巧的黑色燈座前端有圓形透明燈罩，背面帶有夾扣。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-helmet-lamp",
-        "words": {
-          "zh-TW": "消防頭盔燈",
-          "en": "fire-helmet-lamp",
-          "ja": {
-            "text": "ヘルメットライト",
-            "reading": "ヘルメットライト"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防頭盔護目鏡",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明琥珀色弧形護目鏡，兩端有黑色轉軸，能罩住臉部。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-helmet-shield",
-        "words": {
-          "zh-TW": "消防頭盔護目鏡",
-          "en": "fire-helmet-shield",
-          "ja": {
-            "text": "ヘルメットシールド",
-            "reading": "ヘルメットシールド"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防頭套",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "米黃色厚布頭套像短圓筒，頂部封住，前方留有橢圓形開口。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-hood",
-        "words": {
-          "zh-TW": "消防頭套",
-          "en": "fire-hood",
-          "ja": {
-            "text": "防火フード",
-            "reading": "ぼうかフード"
-          }
-        }
-      }
-    },
-    {
       "name": "消防外套",
       "category": "道具",
       "lane": "b",
@@ -1165,48 +598,6 @@
       }
     },
     {
-      "name": "消防腰帶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "寬版黑色腰帶，中央有大型金屬扣環，兩側掛著小型固定環。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-belt",
-        "words": {
-          "zh-TW": "消防腰帶",
-          "en": "fire-belt",
-          "ja": {
-            "text": "消防用ベルト",
-            "reading": "しょうぼうようベルト"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防安全吊帶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色織帶交叉成背心狀，肩部和腰部有多個銀色金屬扣環。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-harness",
-        "words": {
-          "zh-TW": "消防安全吊帶",
-          "en": "fire-harness",
-          "ja": {
-            "text": "消防用ハーネス",
-            "reading": "しょうぼうようハーネス"
-          }
-        }
-      }
-    },
-    {
       "name": "消防救援繩",
       "category": "道具",
       "lane": "b",
@@ -1223,174 +614,6 @@
           "ja": {
             "text": "救助ロープ",
             "reading": "きゅうじょロープ"
-          }
-        }
-      }
-    },
-    {
-      "name": "登山扣",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "銀色橢圓金屬環有一側開口，開口處連著可活動的彈簧門。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "carabiner",
-        "words": {
-          "zh-TW": "登山扣",
-          "en": "carabiner",
-          "ja": {
-            "text": "カラビナ",
-            "reading": "カラビナ"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防破壞斧",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長木柄頂端裝著銀灰色金屬頭，一端是寬斧刃，另一端尖如鉤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-pickaxe",
-        "words": {
-          "zh-TW": "消防破壞斧",
-          "en": "fire-pickaxe",
-          "ja": {
-            "text": "消防用ピッケル",
-            "reading": "しょうぼうようピッケル"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防剪切器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色手持液壓工具前端有兩片粗厚彎曲刀刃，中央連著黑色握把。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-cutter",
-        "words": {
-          "zh-TW": "消防剪切器",
-          "en": "fire-cutter",
-          "ja": {
-            "text": "油圧カッター",
-            "reading": "ゆあつカッター"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防撐開器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色液壓工具前端分成兩支向外張開的金屬臂，底部連著粗管。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-spreader",
-        "words": {
-          "zh-TW": "消防撐開器",
-          "en": "fire-spreader",
-          "ja": {
-            "text": "油圧スプレッダー",
-            "reading": "ゆあつスプレッダー"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防破門器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "粗壯的紅色金屬圓筒橫放在地，兩端有厚重的黑色撞擊頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-ram",
-        "words": {
-          "zh-TW": "消防破門器",
-          "en": "fire-ram",
-          "ja": {
-            "text": "破壊器具",
-            "reading": "はかいきぐ"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防鉤",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長木柄頂端接著彎曲的銀灰色金屬鉤，鉤尖朝上並向內彎。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-hook",
-        "words": {
-          "zh-TW": "消防鉤",
-          "en": "fire-hook",
-          "ja": {
-            "text": "消防用フック",
-            "reading": "しょうぼうようフック"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防鏟",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長木柄底端裝著寬扁的黑色鏟面，鏟面兩側微微上翹。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-shovel",
-        "words": {
-          "zh-TW": "消防鏟",
-          "en": "fire-shovel",
-          "ja": {
-            "text": "消防用シャベル",
-            "reading": "しょうぼうようシャベル"
-          }
-        }
-      }
-    },
-    {
-      "name": "消防耙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長柄頂端橫接一排粗短金屬齒，齒尖向下排列，形狀清楚俐落。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "fire-rake",
-        "words": {
-          "zh-TW": "消防耙",
-          "en": "fire-rake",
-          "ja": {
-            "text": "消防用レーキ",
-            "reading": "しょうぼうようレーキ"
           }
         }
       }
@@ -1417,27 +640,6 @@
       }
     },
     {
-      "name": "救援籃",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "橘紅色長橢圓框架籃，側邊有交叉支架，底部是扁平網格。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "equipment-room",
-        "itemId": "rescue-basket",
-        "words": {
-          "zh-TW": "救援籃",
-          "en": "rescue-basket",
-          "ja": {
-            "text": "救助バスケット",
-            "reading": "きゅうじょバスケット"
-          }
-        }
-      }
-    },
-    {
       "name": "氧氣面罩",
       "category": "道具",
       "lane": "b",
@@ -1454,27 +656,6 @@
           "ja": {
             "text": "酸素マスク",
             "reading": "さんそマスク"
-          }
-        }
-      }
-    },
-    {
-      "name": "無線電控制台",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "長方形深色機身上排列數個旋鈕與方形按鍵，前方有小喇叭孔與手持話筒。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "dispatch-room",
-        "itemId": "radio-console",
-        "words": {
-          "zh-TW": "無線電控制台",
-          "en": "radio console",
-          "ja": {
-            "text": "無線機",
-            "reading": "むせんき"
           }
         }
       }
@@ -1606,27 +787,6 @@
       }
     },
     {
-      "name": "消防毯箱",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "紅色長方形金屬箱，正面有透明窄窗，裡面露出摺疊的黃布。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "dispatch-room",
-        "itemId": "fire-blanket-case",
-        "words": {
-          "zh-TW": "消防毯箱",
-          "en": "fire-blanket-case",
-          "ja": {
-            "text": "防火毛布ケース",
-            "reading": "ぼうかもうふケース"
-          }
-        }
-      }
-    },
-    {
       "name": "火警控制盤",
       "category": "道具",
       "lane": "b",
@@ -1669,27 +829,6 @@
       }
     },
     {
-      "name": "雨靴",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一雙黃色高筒雨靴並排放著，靴口寬大，黑色厚底和圓潤鞋尖清楚可見。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "dispatch-room",
-        "itemId": "boots",
-        "words": {
-          "zh-TW": "雨靴",
-          "en": "boots",
-          "ja": {
-            "text": "長靴",
-            "reading": "ながぐつ"
-          }
-        }
-      }
-    },
-    {
       "name": "水帶推車",
       "category": "道具",
       "lane": "b",
@@ -1706,69 +845,6 @@
           "ja": {
             "text": "ホースリールカート",
             "reading": "ホースリールカート"
-          }
-        }
-      }
-    },
-    {
-      "name": "防火門",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "厚實的深紅色單扇門，表面平整，配銀色門把和簡單的金屬鉸鏈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "dispatch-room",
-        "itemId": "fire-door",
-        "words": {
-          "zh-TW": "防火門",
-          "en": "fire door",
-          "ja": {
-            "text": "防火扉",
-            "reading": "ぼうかとびら"
-          }
-        }
-      }
-    },
-    {
-      "name": "地面排水孔",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "嵌在地面的方形銀色金屬格柵，格縫排列整齊，外圍有平整邊框。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "dispatch-room",
-        "itemId": "floor-drain",
-        "words": {
-          "zh-TW": "地面排水孔",
-          "en": "floor drain",
-          "ja": {
-            "text": "排水口",
-            "reading": "はいすいこう"
-          }
-        }
-      }
-    },
-    {
-      "name": "電池",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一節銀色圓柱電池橫放在地上，兩端分別有凸起的小圓點和扁平金屬底。",
-      "ref": {
-        "project": "la-game",
-        "scene": "fire-station",
-        "zone": "dispatch-room",
-        "itemId": "flashlight-battery",
-        "words": {
-          "zh-TW": "電池",
-          "en": "battery",
-          "ja": {
-            "text": "電池",
-            "reading": "でんち"
           }
         }
       }

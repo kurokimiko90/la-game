@@ -116,21 +116,6 @@
       "cluster": "barrier-post"
     },
     {
-      "id": "barrier-post",
-      "zh": "柵欄立柱",
-      "en": "barrier post",
-      "ja": "ゲート柱",
-      "reading": "ゲートちゅう",
-      "category": "設施",
-      "size": "medium",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "矮方柱立在車道邊，頂部有圓角蓋板，側面伸出一支長柵欄桿。",
-      "loose": false,
-      "motion": null,
-      "cluster": "parking-barrier-arm"
-    },
-    {
       "id": "police-badge",
       "zh": "警徽",
       "en": "police badge",
@@ -138,7 +123,7 @@
       "reading": "けいさつバッジ",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "銀色盾牌形金屬徽章，中央有凸起的小圓飾，周圍有細窄的邊框。",
       "loose": true,
@@ -153,7 +138,7 @@
       "reading": "けいさつぼう",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "深藍色圓頂帽，帽前有小型金色盾形徽章，前方伸出短帽簷。",
       "loose": true,
@@ -168,7 +153,7 @@
       "reading": "てじょう",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "兩個銀色金屬圓環以短鏈相連，每個圓環旁都有一段細小的齒狀扣環。",
       "loose": true,
@@ -183,27 +168,12 @@
       "reading": "けいさつむせんき",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "黑色長方形手持機身，頂端有短天線，正面有揚聲孔和圓形旋鈕。",
       "loose": true,
       "motion": null,
       "cluster": "radio-holster"
-    },
-    {
-      "id": "radio-holster",
-      "zh": "無線電套",
-      "en": "radio holster",
-      "ja": "無線機ホルスター",
-      "reading": "むせんきホルスター",
-      "category": "道具",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "黑色皮革直立套袋，頂端敞開，側邊有短扣帶和金屬固定環。",
-      "loose": true,
-      "motion": null,
-      "cluster": "police-radio"
     },
     {
       "id": "police-baton",
@@ -213,27 +183,12 @@
       "reading": "けいぼう",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "短而粗的黑色圓柱棍，一端略粗，握柄處有一圈防滑紋路。",
       "loose": true,
       "motion": null,
       "cluster": "baton-holster"
-    },
-    {
-      "id": "whistle-lanyard",
-      "zh": "哨子掛繩",
-      "en": "whistle lanyard",
-      "ja": "笛のひも",
-      "reading": "ふえのひも",
-      "category": "道具",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "深色細繩彎成一個圈，末端有小金屬扣環，可連接一只小哨子。",
-      "loose": true,
-      "motion": null,
-      "cluster": "whistle"
     },
     {
       "id": "traffic-baton",
@@ -243,24 +198,9 @@
       "reading": "ゆうどうぼう",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "細長的紅色圓柱棒，兩端為黑色，握柄末端有一段防滑紋路。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "police-gloves",
-      "zh": "警用手套",
-      "en": "police gloves",
-      "ja": "警察用手袋",
-      "reading": "けいさつようてぶくろ",
-      "category": "道具",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "一雙深藍色短手套，五根指頭分開，手腕處各有窄窄的收口。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -273,145 +213,10 @@
       "reading": "どうろようはつえんとう",
       "category": "道具",
       "size": "small",
-      "zone": "station-entrance",
+      "zone": "reception",
       "spot": "ground",
       "desc": "紅色短圓筒警示燈，透明圓罩露出在頂端，底部有扁平黑色底座。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "reflector-post",
-      "zh": "反光標柱",
-      "en": "reflector post",
-      "ja": "視線誘導標",
-      "reading": "しせんゆうどうひょう",
-      "category": "設施",
-      "size": "medium",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "白色細長立柱固定在路邊，頂端有一塊紅色反光片，底部套著黑色圓環。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "road-stud",
-      "zh": "道路反光標記",
-      "en": "road stud",
-      "ja": "道路鋲",
-      "reading": "どうろびょう",
-      "category": "設施",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "扁平金屬圓角方塊嵌在車道表面，頂面有一小片黃色反光材質。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "ground-marker",
-      "zh": "地面標記塊",
-      "en": "ground marker",
-      "ja": "路面標示ブロック",
-      "reading": "ろめんひょうじブロック",
-      "category": "設施",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "黃色扁平長方塊固定在地面，表面有凸起的幾何紋路，不含文字或數字。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "guard-rail",
-      "zh": "護欄",
-      "en": "guard rail",
-      "ja": "ガードレール",
-      "reading": "ガードレール",
-      "category": "設施",
-      "size": "medium",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "銀灰色金屬橫桿由多根直立支柱架起，沿著車道邊緣延伸。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "chain-post",
-      "zh": "連鎖柱",
-      "en": "chain post",
-      "ja": "チェーンポール",
-      "reading": "チェーンポール",
-      "category": "設施",
-      "size": "medium",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "兩根黑色短柱立在地面，中間垂著一段銀色金屬鏈條。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "parking-curb-stop",
-      "zh": "停車擋輪塊",
-      "en": "parking curb stop",
-      "ja": "車止めブロック",
-      "reading": "くるまどめブロック",
-      "category": "設施",
-      "size": "medium",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "低矮的灰色長方塊橫在車位前端，兩側有圓角，表面嵌著小型反光片。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bollard-cover",
-      "zh": "防撞柱套",
-      "en": "bollard cover",
-      "ja": "車止めポールカバー",
-      "reading": "くるまどめポールカバー",
-      "category": "道具",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "黃色厚布套包住短圓柱，頂部圓滑，表面有一圈黑色反光帶。",
-      "loose": true,
-      "motion": null,
-      "cluster": "bollard"
-    },
-    {
-      "id": "camera-bracket",
-      "zh": "攝影機支架",
-      "en": "camera bracket",
-      "ja": "カメラブラケット",
-      "reading": "カメラブラケット",
-      "category": "設施",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "灰色金屬彎臂連著方形固定底板，末端有圓形接頭，可托住攝影機。",
-      "loose": false,
-      "motion": null,
-      "cluster": "security-camera"
-    },
-    {
-      "id": "wall-light",
-      "zh": "壁燈",
-      "en": "wall light",
-      "ja": "壁付け照明",
-      "reading": "かべつけしょうめい",
-      "category": "設施",
-      "size": "small",
-      "zone": "station-entrance",
-      "spot": "ground",
-      "desc": "黑色短彎臂托著乳白色圓罩燈，燈罩朝下，底部連著小型圓形底座。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -429,21 +234,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "filing-tray-police-station",
-      "zh": "文件盤",
-      "en": "filing tray",
-      "ja": "書類トレー",
-      "reading": "しょるいトレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "surface",
-      "desc": "扁平長方形塑膠盤，前緣較低，盤內疊著幾張沒有文字的白紙。",
-      "loose": false,
-      "motion": null,
-      "cluster": "document-folder"
     },
     {
       "id": "ink-pad-police-station",
@@ -476,51 +266,6 @@
       "cluster": "ink-pad-police-station"
     },
     {
-      "id": "hole-punch-police-station",
-      "zh": "打孔機",
-      "en": "hole punch",
-      "ja": "穴あけパンチ",
-      "reading": "あなあけパンチ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "surface",
-      "desc": "黑色金屬長臂壓在扁平底座上，前端有兩個圓形打孔口。",
-      "loose": false,
-      "motion": null,
-      "cluster": "filing-tray-police-station"
-    },
-    {
-      "id": "paperclip-police-station",
-      "zh": "迴紋針",
-      "en": "paper clip",
-      "ja": "ゼムクリップ",
-      "reading": "ゼムクリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "surface",
-      "desc": "銀色細金屬線彎成兩層細長橢圓，一端收成圓滑的小彎鉤。",
-      "loose": true,
-      "motion": null,
-      "cluster": "filing-tray-police-station"
-    },
-    {
-      "id": "binder-clip-police-station",
-      "zh": "長尾夾",
-      "en": "binder clip",
-      "ja": "ダブルクリップ",
-      "reading": "ダブルクリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "surface",
-      "desc": "黑色三角金屬夾身兩側各有一個細長銀色折柄，輪廓緊湊醒目。",
-      "loose": true,
-      "motion": null,
-      "cluster": "filing-tray-police-station"
-    },
-    {
       "id": "coat-rack-police-station",
       "zh": "衣帽架",
       "en": "coat rack",
@@ -534,81 +279,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "fire-alarm-police-station",
-      "zh": "火警警報器",
-      "en": "fire alarm",
-      "ja": "火災報知器",
-      "reading": "かさいほうちき",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "wall",
-      "desc": "紅色方形盒子中央凸出一個透明圓燈罩，底部有小型按壓面板。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "trash-bag",
-      "zh": "垃圾袋",
-      "en": "trash bag",
-      "ja": "ごみ袋",
-      "reading": "ごみぶくろ",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "ground",
-      "desc": "半透明深色塑膠袋鼓起成不規則圓團，袋口打結並向一側歪斜。",
-      "loose": true,
-      "motion": null,
-      "cluster": "wastebasket"
-    },
-    {
-      "id": "wall-calendar",
-      "zh": "月曆",
-      "en": "wall calendar",
-      "ja": "壁掛けカレンダー",
-      "reading": "かべかけカレンダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "wall",
-      "desc": "白色長方紙張掛在牆上，頂端有金屬線圈，頁面只見空白格線。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "wall-shelf-police-station",
-      "zh": "壁架",
-      "en": "wall shelf",
-      "ja": "壁棚",
-      "reading": "かべだな",
-      "category": "設施",
-      "size": "medium",
-      "zone": "reception",
-      "spot": "wall",
-      "desc": "一片淺木色長板由兩個黑色三角支架托住，板面放著幾本合起來的空白冊子。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "desk-organizer-police-station",
-      "zh": "桌上收納架",
-      "en": "desk organizer",
-      "ja": "デスクオーガナイザー",
-      "reading": "デスクオーガナイザー",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "surface",
-      "desc": "木製多格小架子有幾個開口方格，插著空白紙張與幾支不同顏色的筆。",
-      "loose": false,
-      "motion": null,
-      "cluster": "pen"
     },
     {
       "id": "pen-police-station",
@@ -641,36 +311,6 @@
       "cluster": "filing-tray-police-station"
     },
     {
-      "id": "stapler-police-station",
-      "zh": "訂書機",
-      "en": "stapler",
-      "ja": "ホチキス",
-      "reading": "ホチキス",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "surface",
-      "desc": "短胖的黑色金屬機身上下分層，前端有窄縫，底部平穩貼著桌面。",
-      "loose": false,
-      "motion": null,
-      "cluster": "filing-tray-police-station"
-    },
-    {
-      "id": "drawer-police-station",
-      "zh": "抽屜",
-      "en": "drawer",
-      "ja": "引き出し",
-      "reading": "ひきだし",
-      "category": "設施",
-      "size": "medium",
-      "zone": "reception",
-      "spot": "wallbase",
-      "desc": "吧台下方露出一個木製長方抽屜，正面有單一圓形金屬把手。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "filing-cabinet-police-station",
       "zh": "文件櫃",
       "en": "filing cabinet",
@@ -696,21 +336,6 @@
       "zone": "reception",
       "spot": "wallbase",
       "desc": "紅色圓筒瓶身頂部有黑色握把與短噴嘴，側邊掛著一條黑色軟管。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "smoke-detector-police-station",
-      "zh": "煙霧偵測器",
-      "en": "smoke detector",
-      "ja": "煙感知器",
-      "reading": "けむりかんちき",
-      "category": "道具",
-      "size": "small",
-      "zone": "reception",
-      "spot": "wall",
-      "desc": "白色圓盤狀裝置貼在牆面上，中央有細小通氣孔，側邊露出窄窄的縫。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -896,21 +521,6 @@
       "cluster": null
     },
     {
-      "id": "wax-seal-police-station",
-      "zh": "封蠟",
-      "en": "wax seal",
-      "ja": "封蝋",
-      "reading": "ふうろう",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "圓形暗紅色蠟片表面帶有簡單凸紋，邊緣微微不規則，沒有字母或數字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "sealed-envelope"
-    },
-    {
       "id": "evidence-tag",
       "zh": "證物吊牌",
       "en": "evidence tag",
@@ -922,51 +532,6 @@
       "spot": "surface",
       "desc": "小張米白色硬紙牌，頂端穿孔並繫著短棉繩，牌面完全空白。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "evidence-seal",
-      "zh": "封條",
-      "en": "evidence seal",
-      "ja": "封印シール",
-      "reading": "ふういんシール",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "亮黃色窄長封條帶有撕裂邊緣，中央只有醒目的盾形圖案，沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "handheld-scanner",
-      "zh": "手持掃描器",
-      "en": "handheld scanner",
-      "ja": "ハンディスキャナー",
-      "reading": "ハンディスキャナー",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "黑色手握式裝置頂端有寬扁掃描窗，握柄上有幾個彩色按鍵，沒有螢幕文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "digital-scale",
-      "zh": "電子秤",
-      "en": "digital scale",
-      "ja": "デジタルはかり",
-      "reading": "デジタルはかり",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "扁平方形秤面配四個圓角，前側有一塊空白深色顯示窗，表面沒有數字。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -986,96 +551,6 @@
       "cluster": "camera"
     },
     {
-      "id": "film-canister-police-station",
-      "zh": "底片筒",
-      "en": "film canister",
-      "ja": "フィルムケース",
-      "reading": "フィルムケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "小巧不透明圓筒配緊密卡扣上蓋，外觀簡潔，沒有標籤或文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "camera"
-    },
-    {
-      "id": "shoe-print-cast",
-      "zh": "鞋印石膏模",
-      "en": "shoeprint cast",
-      "ja": "靴跡の石膏型",
-      "reading": "くつあとのせっこうがた",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "淺灰色長方形石膏塊上壓著清楚的鞋底紋路，邊緣厚實且略有缺口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "broken-glass",
-      "zh": "玻璃碎片",
-      "en": "broken glass",
-      "ja": "ガラス片",
-      "reading": "ガラスへん",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "幾片淡藍透明的不規則尖角薄片聚在一起，邊緣帶有明亮反光。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "metal-shard",
-      "zh": "金屬碎片",
-      "en": "metal shard",
-      "ja": "金属片",
-      "reading": "きんぞくへん",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "彎曲的銀灰色薄金屬片一端尖銳，表面有明暗反光與一道折痕。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "spent-cartridge",
-      "zh": "彈殼",
-      "en": "spent cartridge",
-      "ja": "薬莢",
-      "reading": "やっきょう",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "短小黃銅色圓筒，一端開口、一端平整，側面有一圈明顯的底緣。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "broken-watch",
-      "zh": "破損手錶",
-      "en": "broken watch",
-      "ja": "壊れた腕時計",
-      "reading": "こわれたうでどけい",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "圓形深色錶盤外接一條斷開的皮革錶帶，鏡面有裂紋且沒有可讀刻度。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "broken-phone",
       "zh": "破損手機",
       "en": "broken phone",
@@ -1087,21 +562,6 @@
       "spot": "surface",
       "desc": "扁平黑色長方形機身，正面玻璃裂成放射狀紋路，沒有圖示或文字。",
       "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "utility-knife",
-      "zh": "美工刀",
-      "en": "utility knife",
-      "ja": "カッターナイフ",
-      "reading": "カッターナイフ",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "細長塑膠刀柄配一截銀色滑出刀片，背面有醒目的推鈕，造型簡單。",
-      "loose": true,
       "motion": null,
       "cluster": null
     },
@@ -1121,21 +581,6 @@
       "cluster": null
     },
     {
-      "id": "protective-mask",
-      "zh": "防護面罩",
-      "en": "protective mask",
-      "ja": "防護マスク",
-      "reading": "ぼうごマスク",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "透明硬質面罩罩住口鼻區域，兩側有深色固定帶，沒有任何人形或圖案。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "measuring-tape-police-station",
       "zh": "捲尺",
       "en": "tape measure",
@@ -1147,81 +592,6 @@
       "spot": "surface",
       "desc": "黃色短尺帶從紅黑色圓形外殼伸出，外殼側邊有按壓鎖定鈕，不顯示刻度。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "metal-file",
-      "zh": "金屬銼刀",
-      "en": "metal file",
-      "ja": "金属やすり",
-      "reading": "きんぞくやすり",
-      "category": "道具",
-      "size": "small",
-      "zone": "evidence-room",
-      "spot": "surface",
-      "desc": "細長矩形鋼製銼刀表面布滿斜向齒紋，一端接著短而圓的黑色握柄。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "balance-beam",
-      "zh": "平衡木",
-      "en": "balance beam",
-      "ja": "平均台",
-      "reading": "へいきんだい",
-      "category": "道具",
-      "size": "medium",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一條低矮的長方形木樑，表面平坦，兩端由短腳架撐起。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "parallel-bars",
-      "zh": "雙槓",
-      "en": "parallel bars",
-      "ja": "平行棒",
-      "reading": "へいこうぼう",
-      "category": "設施",
-      "size": "large",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "兩根平行的水平金屬桿架在四支直立支柱上，底部有寬腳座。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "horizontal-bar",
-      "zh": "單槓",
-      "en": "horizontal bar",
-      "ja": "鉄棒",
-      "reading": "てつぼう",
-      "category": "設施",
-      "size": "large",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一根筆直的水平金屬桿，由兩根垂直支柱穩穩架在地面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "vaulting-horse",
-      "zh": "跳馬",
-      "en": "vaulting horse",
-      "ja": "跳び箱",
-      "reading": "とびばこ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "長方形分層箱體上覆著棕色軟墊，底部有穩固的支撐腳。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -1251,21 +621,6 @@
       "zone": "training-yard",
       "spot": "ground",
       "desc": "兩個窄腳架撐著一根橫向欄木，造型簡單，顏色對比鮮明。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "starting-block",
-      "zh": "起跑架",
-      "en": "starting block",
-      "ja": "スターティングブロック",
-      "reading": "スターティングブロック",
-      "category": "道具",
-      "size": "small",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一條短金屬橫桿連著兩塊斜向踏板，踏板有止滑紋路。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1316,21 +671,6 @@
       "cluster": null
     },
     {
-      "id": "medicine-ball",
-      "zh": "藥球",
-      "en": "medicine ball",
-      "ja": "メディシンボール",
-      "reading": "メディシンボール",
-      "category": "道具",
-      "size": "small",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一顆深色圓球，表面有粗糙顆粒紋理，輪廓厚實飽滿。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "dumbbell",
       "zh": "啞鈴",
       "en": "dumbbell",
@@ -1376,21 +716,6 @@
       "cluster": null
     },
     {
-      "id": "weight-plate",
-      "zh": "槓片",
-      "en": "weight plate",
-      "ja": "ウェイトプレート",
-      "reading": "ウェイトプレート",
-      "category": "道具",
-      "size": "small",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "厚實的圓形金屬片，中央有圓孔，外緣平滑且略帶倒角。",
-      "loose": true,
-      "motion": null,
-      "cluster": "barbell"
-    },
-    {
       "id": "pull-up-station",
       "zh": "引體向上架",
       "en": "pull-up station",
@@ -1421,36 +746,6 @@
       "cluster": null
     },
     {
-      "id": "rope-net",
-      "zh": "攀爬網",
-      "en": "climbing net",
-      "ja": "登り網",
-      "reading": "のぼりあみ",
-      "category": "設施",
-      "size": "large",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "粗繩交織成方格網面，四邊繃緊固定在堅固的支架上。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "balance-disc",
-      "zh": "平衡盤",
-      "en": "balance disc",
-      "ja": "バランスディスク",
-      "reading": "バランスディスク",
-      "category": "道具",
-      "size": "small",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一片圓形厚墊，表面布滿小凸點，側面略有弧度。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "jump-box",
       "zh": "跳箱",
       "en": "jump box",
@@ -1461,36 +756,6 @@
       "zone": "training-yard",
       "spot": "ground",
       "desc": "厚實的方形軟墊箱，邊角圓滑，表面由不同顏色區塊組成。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "agility-hoop",
-      "zh": "訓練圓環",
-      "en": "agility hoop",
-      "ja": "アジリティフープ",
-      "reading": "アジリティフープ",
-      "category": "道具",
-      "size": "medium",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一個直立的圓形塑膠環，底部接著寬而扁的穩固腳座。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "slalom-pole",
-      "zh": "迴轉標桿",
-      "en": "slalom pole",
-      "ja": "スラロームポール",
-      "reading": "スラロームポール",
-      "category": "道具",
-      "size": "medium",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "細長直立的彩色桿子插在圓形底座上，外形醒目簡潔。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -1524,21 +789,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "foam-roller",
-      "zh": "滾筒",
-      "en": "foam roller",
-      "ja": "フォームローラー",
-      "reading": "フォームローラー",
-      "category": "道具",
-      "size": "small",
-      "zone": "training-yard",
-      "spot": "ground",
-      "desc": "一根短粗圓柱形泡棉筒，表面有規則凸紋，兩端平整。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
     }
   ],
   "rejected": [
@@ -1556,7 +806,262 @@
       "id": "umbrella",
       "reason": "和已有的 umbrella stand 太像",
       "zone": "reception"
+    },
+    {
+      "id": "barrier-post",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "radio-holster",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "whistle-lanyard",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "police-gloves",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "reflector-post",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "road-stud",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "ground-marker",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "guard-rail",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "chain-post",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "parking-curb-stop",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "bollard-cover",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "camera-bracket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "wall-light",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "station-entrance"
+    },
+    {
+      "id": "filing-tray-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "hole-punch-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "paperclip-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "binder-clip-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "fire-alarm-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "trash-bag",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "wall-calendar",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "wall-shelf-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "desk-organizer-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "stapler-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "drawer-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "smoke-detector-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "reception"
+    },
+    {
+      "id": "wax-seal-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "evidence-seal",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "handheld-scanner",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "digital-scale",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "film-canister-police-station",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "shoe-print-cast",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "broken-glass",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "metal-shard",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "spent-cartridge",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "broken-watch",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "utility-knife",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "protective-mask",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "metal-file",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "evidence-room"
+    },
+    {
+      "id": "balance-beam",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "parallel-bars",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "horizontal-bar",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "vaulting-horse",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "starting-block",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "medicine-ball",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "weight-plate",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "rope-net",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "balance-disc",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "agility-hoop",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "slalom-pole",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
+    },
+    {
+      "id": "foam-roller",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "training-yard"
     }
   ],
-  "createdAt": "2026-09-26T12:31:49.925+09:00"
+  "createdAt": "2026-09-26T12:31:49.925+09:00",
+  "itemsTarget": 50,
+  "topUp": {
+    "itemsPerScene": 50,
+    "curatedAt": "2026-10-04"
+  }
 }

@@ -4,21 +4,21 @@
   "zones": [
     {
       "id": "entrance",
-      "name": "入口",
+      "name": "店門口",
       "indoor": false,
       "floor": "paving",
       "feature": "none"
     },
     {
       "id": "front-display",
-      "name": "門市展示區",
+      "name": "紙品與辦公文具",
       "indoor": true,
       "floor": "tile",
       "feature": "stand"
     },
     {
       "id": "writing-supplies",
-      "name": "書寫用品區",
+      "name": "筆類與繪畫",
       "indoor": true,
       "floor": "wood",
       "feature": "table"
@@ -38,7 +38,6 @@
     "span": 2
   },
   "colorIndex": 21,
-  "icon": "display-window",
   "elements": [
     {
       "id": "colored-pencil",
@@ -63,7 +62,7 @@
       "reading": "テープ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "透明膠帶捲成扁平圓環，中央露出棕色紙芯，外緣有一小段膠帶翹起。",
       "loose": true,
@@ -78,27 +77,12 @@
       "reading": "ホッチキスのはり",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "一小排銀色細金屬針連成扁平長條，兩端直角彎折，表面帶著微亮光澤。",
       "loose": true,
       "motion": null,
       "cluster": "stapler"
-    },
-    {
-      "id": "paint-roller",
-      "zh": "小滾筒",
-      "en": "paint roller",
-      "ja": "ローラー",
-      "reading": "ローラー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "短絨毛圓筒套在彎曲金屬架上，末端接著藍色塑膠握柄，滾筒表面沾著一抹黃色。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "push-pin",
@@ -108,24 +92,9 @@
       "reading": "がびょう",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "小小的紅色圓帽連著細短金屬針，側面可見尖尖的針頭，帽面光滑明亮。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "index-card",
-      "zh": "索引卡",
-      "en": "index card",
-      "ja": "単語カード",
-      "reading": "たんごカード",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一張淺藍色小長方形卡片，四角微圓、表面空白，厚實挺直，不帶任何符號。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -138,57 +107,12 @@
       "reading": "ふせん",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "一疊明黃色正方形紙片，邊角整齊，最上層微微掀起一角，紙面完全空白。",
       "loose": true,
       "motion": null,
       "cluster": "paper"
-    },
-    {
-      "id": "display-window",
-      "zh": "展示窗",
-      "en": "display window",
-      "ja": "ショーウインドー",
-      "reading": "ショーウインドー",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "寬大的透明玻璃窗嵌在深色方框內，窗後陳列幾支彩色筆，玻璃清澈且沒有字樣。",
-      "loose": false,
-      "motion": null,
-      "cluster": "display-shelf"
-    },
-    {
-      "id": "display-shelf",
-      "zh": "展示架",
-      "en": "display shelf",
-      "ja": "陳列棚",
-      "reading": "ちんれつだな",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "靠牆的矮木製層架有三層平板，邊緣略厚，架上整齊擺著色彩繽紛的文具。",
-      "loose": false,
-      "motion": null,
-      "cluster": "display-window"
-    },
-    {
-      "id": "storefront",
-      "zh": "店面外牆",
-      "en": "storefront",
-      "ja": "店の正面",
-      "reading": "みせのしょうめん",
-      "category": "設施",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "淺米色平直外牆嵌著玻璃門與大窗，門旁有簡單把手，整面沒有招牌或文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": "awning"
     },
     {
       "id": "potted-fern",
@@ -213,7 +137,7 @@
       "reading": "えんぴつけずり",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "writing-supplies",
       "spot": "ground",
       "desc": "小巧的方形塑膠盒，側面有圓形削孔，透明集屑盒裡露出捲曲的木屑。",
       "loose": true,
@@ -228,7 +152,7 @@
       "reading": "けしゴム",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "writing-supplies",
       "spot": "ground",
       "desc": "白色長方形橡膠塊，邊角微圓，表面平滑，旁邊有一小片捲起的橡皮屑。",
       "loose": true,
@@ -243,7 +167,7 @@
       "reading": "マーカー",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "writing-supplies",
       "spot": "ground",
       "desc": "粗短的藍色塑膠筆身，兩端各有圓潤筆蓋，筆蓋頂端帶著小突起。",
       "loose": true,
@@ -273,7 +197,7 @@
       "reading": "チョーク",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "writing-supplies",
       "spot": "ground",
       "desc": "短圓柱形白色粉筆，兩端平整，表面有粉末質感，旁邊散著少許白色粉屑。",
       "loose": true,
@@ -288,7 +212,7 @@
       "reading": "じょうぎ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "透明長方形塑膠尺，邊緣筆直，中央有狹長凹槽，表面沒有刻度或文字。",
       "loose": true,
@@ -303,7 +227,7 @@
       "reading": "はさみ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "兩片銀色刀刃在中央交叉，末端各有一個圓形握孔，握柄是亮黃色塑膠。",
       "loose": true,
@@ -318,7 +242,7 @@
       "reading": "スティックのり",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "短胖的圓柱塑膠管，拔開的蓋子露出淡黃色膠體，底部有可旋轉的圓形轉盤。",
       "loose": true,
@@ -333,7 +257,7 @@
       "reading": "テープカッター",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "低矮的藍色底座托著透明膠帶卷，前端有鋸齒狀金屬切口，膠帶邊緣微微翹起。",
       "loose": false,
@@ -348,7 +272,7 @@
       "reading": "ゼムクリップ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "細銀色金屬線彎成兩層橢圓迴圈，線條光滑，整體扁平且沒有文字。",
       "loose": true,
@@ -363,7 +287,7 @@
       "reading": "ダブルクリップ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "黑色三角形夾身上立著兩支細金屬拉柄，拉柄向外張開，夾口微微合起。",
       "loose": true,
@@ -378,7 +302,7 @@
       "reading": "ホッチキス",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "front-display",
       "spot": "ground",
       "desc": "厚實的紅色長方形機身，前端露出銀色釘嘴，底座平坦，後方有一段弧形握柄。",
       "loose": true,
@@ -426,21 +350,6 @@
       "zone": "front-display",
       "spot": "surface",
       "desc": "一疊方形的彩色薄紙，邊緣整齊，能看見紅、黃、藍、綠等不同色面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "construction-paper",
-      "zh": "西卡紙",
-      "en": "construction paper",
-      "ja": "色画用紙",
-      "reading": "いろがようし",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "幾張厚實的彩色長方紙疊在一起，紙邊平直，顏色鮮明且表面霧面。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -506,66 +415,6 @@
       "cluster": null
     },
     {
-      "id": "tracing-paper",
-      "zh": "描圖紙",
-      "en": "tracing paper",
-      "ja": "トレーシングペーパー",
-      "reading": "トレーシングペーパー",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "半透明的乳白色薄紙疊成方正一疊，後方輪廓隱約透出，紙邊輕薄。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "carbon-paper",
-      "zh": "複寫紙",
-      "en": "carbon paper",
-      "ja": "カーボン紙",
-      "reading": "カーボンし",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "幾張深藍色薄紙整齊疊放，表面帶淡淡光澤，邊角俐落而平整。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "index-divider",
-      "zh": "活頁分隔頁",
-      "en": "binder divider",
-      "ja": "インデックスシート",
-      "reading": "インデックスシート",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "一疊彩色長方薄片，側邊凸出幾個不同位置的小耳片，排列整齊。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "sheet-protector",
-      "zh": "活頁資料套",
-      "en": "sheet protector",
-      "ja": "クリアポケット",
-      "reading": "クリアポケット",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "透明長方形塑膠套疊成一疊，邊緣有細緻封線，頂端留有開口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "ring-binder",
       "zh": "三孔活頁夾",
       "en": "ring binder",
@@ -576,21 +425,6 @@
       "zone": "front-display",
       "spot": "surface",
       "desc": "直立的厚封面夾具，打開處可見一排銀色圓環，外殼邊角圓順。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "document-wallet",
-      "zh": "文件袋",
-      "en": "document wallet",
-      "ja": "ドキュメントケース",
-      "reading": "ドキュメントケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "扁平的半透明塑膠文件袋，長方外形配有翻蓋，邊緣帶有彩色封邊。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -611,66 +445,6 @@
       "cluster": null
     },
     {
-      "id": "portfolio",
-      "zh": "作品集資料夾",
-      "en": "portfolio folder",
-      "ja": "ポートフォリオ",
-      "reading": "ポートフォリオ",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "大型扁平硬殼資料夾，表面素雅，兩側有束帶固定，輪廓寬而方正。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "document-tray",
-      "zh": "文件收納盤",
-      "en": "document tray",
-      "ja": "書類トレー",
-      "reading": "しょるいトレー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "淺口長方形收納盤，四周有低矮斜邊，前側開口方便抽取紙張。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "magazine-file",
-      "zh": "雜誌收納架",
-      "en": "magazine file",
-      "ja": "マガジンファイル",
-      "reading": "マガジンファイル",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "直立的窄長收納盒，前面有圓弧形凹口，背板較高，側面厚實。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "letter-tray",
-      "zh": "信件盤",
-      "en": "letter tray",
-      "ja": "レタートレー",
-      "reading": "レタートレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "淺扁的長方形塑膠盤，兩側有微凸邊緣，內部平滑且呈單一亮色。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "pencil-cup",
       "zh": "筆筒",
       "en": "pencil cup",
@@ -681,21 +455,6 @@
       "zone": "front-display",
       "spot": "surface",
       "desc": "圓筒形開口容器，筒身色彩鮮明，底部平穩，可直立收納文具。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "pencil-board",
-      "zh": "切割墊",
-      "en": "cutting mat",
-      "ja": "カッターマット",
-      "reading": "カッターマット",
-      "category": "道具",
-      "size": "small",
-      "zone": "front-display",
-      "spot": "surface",
-      "desc": "厚實的長方形綠色墊板，表面有細密網格，四角圓鈍且邊緣平直。",
       "loose": false,
       "motion": null,
       "cluster": null
@@ -738,7 +497,7 @@
       "reading": "すいさいえのぐセット",
       "category": "道具",
       "size": "small",
-      "zone": "front-display",
+      "zone": "writing-supplies",
       "spot": "surface",
       "desc": "打開的扁平塑膠盒內排著數個彩色方格顏料，盒蓋攤在一側。",
       "loose": false,
@@ -753,7 +512,7 @@
       "reading": "すいさいふで",
       "category": "道具",
       "size": "small",
-      "zone": "front-display",
+      "zone": "writing-supplies",
       "spot": "surface",
       "desc": "細長木桿末端束著尖細棕色筆毛，中間有亮銀色筆箍，輪廓簡單。",
       "loose": true,
@@ -896,96 +655,6 @@
       "cluster": "pencil-cup"
     },
     {
-      "id": "pen-cap",
-      "zh": "筆蓋",
-      "en": "pen cap",
-      "ja": "ペンキャップ",
-      "reading": "ペンキャップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "短短的圓筒形彩色塑膠蓋，一端封住，側面有細長夾子，開口朝前。",
-      "loose": true,
-      "motion": null,
-      "cluster": "gel-pen"
-    },
-    {
-      "id": "ink-cartridge",
-      "zh": "墨水卡匣",
-      "en": "ink cartridge",
-      "ja": "インクカートリッジ",
-      "reading": "インクカートリッジ",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "細長透明塑膠小管裡裝著藍色墨水，兩端收窄，一端有短短的插接頭。",
-      "loose": true,
-      "motion": null,
-      "cluster": "fountain-pen-stationery-store"
-    },
-    {
-      "id": "pen-stand",
-      "zh": "筆架",
-      "en": "pen stand",
-      "ja": "ペンスタンド",
-      "reading": "ペンスタンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "低矮的圓形木座上立著一個直立小圓筒，筒口寬敞，側面有一道淺色木紋。",
-      "loose": false,
-      "motion": null,
-      "cluster": "gel-pen"
-    },
-    {
-      "id": "pencil-grip",
-      "zh": "握筆器",
-      "en": "pencil grip",
-      "ja": "鉛筆グリップ",
-      "reading": "えんぴつグリップ",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "柔軟的藍色三角形橡膠套，中間有細長通孔，外側三面微微凹弧。",
-      "loose": true,
-      "motion": null,
-      "cluster": "wooden-pencil"
-    },
-    {
-      "id": "pencil-extender",
-      "zh": "鉛筆延長器",
-      "en": "pencil extender",
-      "ja": "鉛筆補助軸",
-      "reading": "えんぴつほじょじく",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "細長金屬筒前端有小夾環，筒身略粗於鉛筆，尾端開口可插入短鉛筆。",
-      "loose": false,
-      "motion": null,
-      "cluster": "wooden-pencil"
-    },
-    {
-      "id": "paper-fastener",
-      "zh": "兩腳釘",
-      "en": "paper fastener",
-      "ja": "ペーパーファスナー",
-      "reading": "ペーパーファスナー",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "圓形金屬帽下伸出兩條細長扁腳，銀色表面平滑，兩腳向外微張。",
-      "loose": true,
-      "motion": null,
-      "cluster": "index-card"
-    },
-    {
       "id": "pencil-lead-case",
       "zh": "筆芯盒",
       "en": "lead case",
@@ -999,36 +668,6 @@
       "loose": false,
       "motion": null,
       "cluster": "pencil-lead"
-    },
-    {
-      "id": "pen-cleaner",
-      "zh": "筆尖清潔器",
-      "en": "nib cleaner",
-      "ja": "ペン先クリーナー",
-      "reading": "ペンさきクリーナー",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "小巧的白色橡膠塊中央有細縫，旁邊附著一片薄薄的深色吸墨布。",
-      "loose": true,
-      "motion": null,
-      "cluster": "fountain-pen-stationery-store"
-    },
-    {
-      "id": "desk-bell",
-      "zh": "桌鈴",
-      "en": "desk bell",
-      "ja": "卓上ベル",
-      "reading": "たくじょうベル",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "亮銀色圓頂罩在扁圓底座上，頂端有一顆小按鈕，像迷你金屬鐘。",
-      "loose": false,
-      "motion": null,
-      "cluster": "ink-stamp"
     },
     {
       "id": "ink-brush",
@@ -1046,36 +685,6 @@
       "cluster": "ink-bottle"
     },
     {
-      "id": "blotting-paper",
-      "zh": "吸墨紙",
-      "en": "blotting paper",
-      "ja": "吸取紙",
-      "reading": "すいとりがみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "一疊淡粉色厚紙裁成圓角長方形，表面略帶細孔質感，邊緣整齊。",
-      "loose": false,
-      "motion": null,
-      "cluster": "ink-bottle"
-    },
-    {
-      "id": "paper-fan",
-      "zh": "紙扇",
-      "en": "paper fan",
-      "ja": "紙製うちわ",
-      "reading": "かみせいうちわ",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "圓弧形紙面固定在短木柄上，外緣平滑，紙面有簡單的色塊裝飾。",
-      "loose": false,
-      "motion": null,
-      "cluster": "colored-paper"
-    },
-    {
       "id": "drawing-compass",
       "zh": "圓規",
       "en": "drawing compass",
@@ -1089,51 +698,6 @@
       "loose": false,
       "motion": null,
       "cluster": "protractor"
-    },
-    {
-      "id": "paper-trimmer",
-      "zh": "裁紙器",
-      "en": "paper trimmer",
-      "ja": "ペーパートリマー",
-      "reading": "ペーパートリマー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "扁平長底座帶透明壓條，側邊滑槽裡有一個小型滑動刀片，外形俐落。",
-      "loose": false,
-      "motion": null,
-      "cluster": "paper-cutter"
-    },
-    {
-      "id": "paper-embosser",
-      "zh": "壓凸器",
-      "en": "paper embosser",
-      "ja": "エンボッサー",
-      "reading": "エンボッサー",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "小型金屬手壓工具有兩支相對的短柄，前端是一對圓形壓模，外觀像迷你鉗子。",
-      "loose": false,
-      "motion": null,
-      "cluster": "colored-paper"
-    },
-    {
-      "id": "desktop-paper-rack",
-      "zh": "桌上紙架",
-      "en": "desktop paper rack",
-      "ja": "卓上ペーパーホルダー",
-      "reading": "たくじょうペーパーホルダー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "writing-supplies",
-      "spot": "surface",
-      "desc": "直立木製框架分成數個狹長隔槽，底部平穩，正面露出一疊彩色紙張邊緣。",
-      "loose": false,
-      "motion": null,
-      "cluster": "colored-paper"
     },
     {
       "id": "desk-organizer-tray",
@@ -1151,21 +715,6 @@
       "cluster": "pen-holder"
     },
     {
-      "id": "paper-scrap",
-      "zh": "紙屑",
-      "en": "paper scrap",
-      "ja": "紙くず",
-      "reading": "かみくず",
-      "category": "道具",
-      "size": "small",
-      "zone": "writing-supplies",
-      "spot": "ground",
-      "desc": "幾片白色薄紙揉皺成鬆散小團，邊緣參差，旁邊散著一小片平整紙角。",
-      "loose": true,
-      "motion": null,
-      "cluster": "paper-cutter"
-    },
-    {
       "id": "cash-wrap-counter",
       "zh": "收銀櫃台",
       "en": "cash counter",
@@ -1179,21 +728,6 @@
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "coin-tray-stationery-store",
-      "zh": "零錢盤",
-      "en": "coin tray",
-      "ja": "コイントレー",
-      "reading": "コイントレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "淺扁長方形托盤，四角圓滑，中央分成幾格放置硬幣。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
     },
     {
       "id": "reusable-shopping-bag",
@@ -1226,231 +760,6 @@
       "cluster": "cash-wrap-counter"
     },
     {
-      "id": "checkout-divider-stationery-store",
-      "zh": "結帳分隔桿",
-      "en": "checkout divider",
-      "ja": "仕切りバー",
-      "reading": "しきりバー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "細長的塑膠長方條，兩端圓潤，表面有凸起的握持脊線。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
-    },
-    {
-      "id": "queue-stanchion-stationery-store",
-      "zh": "排隊柱",
-      "en": "queue stanchion",
-      "ja": "ベルトパーティション",
-      "reading": "ベルトパーティション",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "沉重圓形底盤上立著細柱，柱頂伸出一條繃直的伸縮帶。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "coin-roll-stationery-store",
-      "zh": "硬幣紙卷",
-      "en": "coin roll",
-      "ja": "コインロール",
-      "reading": "コインロール",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "短圓柱形紙筒，兩端折口收緊，外層紙面沒有任何文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "receipt-folder-stationery-store",
-      "zh": "收據夾",
-      "en": "receipt folder",
-      "ja": "レシートホルダー",
-      "reading": "レシートホルダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "窄長的硬質直立夾，底部有寬底座，中央夾著一張空白紙。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
-    },
-    {
-      "id": "cash-tray-stationery-store",
-      "zh": "現金托盤",
-      "en": "cash tray",
-      "ja": "現金トレー",
-      "reading": "げんきんトレー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "淺長方形托盤內有幾個分隔小格，一端留有寬闊的平坦區域。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
-    },
-    {
-      "id": "cash-register-mat-stationery-store",
-      "zh": "收銀防滑墊",
-      "en": "cash register mat",
-      "ja": "レジマット",
-      "reading": "レジマット",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "扁平長方形黑色墊片，表面布滿細小凸點，四角略微圓滑。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
-    },
-    {
-      "id": "cash-register-key-stationery-store",
-      "zh": "收銀機鑰匙",
-      "en": "cash register key",
-      "ja": "レジの鍵",
-      "reading": "レジのかぎ",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "短金屬鑰匙連著扁平圓頭，柄端有幾道明顯的齒口。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
-    },
-    {
-      "id": "shopping-cart-token-stationery-store",
-      "zh": "購物車代幣",
-      "en": "shopping cart token",
-      "ja": "カート用コイン",
-      "reading": "カートようコイン",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "厚實圓形金屬片，邊緣帶有淺刻紋，中央保持平滑無字。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cash-counter-stool",
-      "zh": "收銀椅",
-      "en": "cashier stool",
-      "ja": "レジ用スツール",
-      "reading": "レジようスツール",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "圓形軟墊椅面由單根金屬柱支撐，底部展開五支短腳輪。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "floor-scale-stationery-store",
-      "zh": "落地秤",
-      "en": "floor scale",
-      "ja": "フロアスケール",
-      "reading": "フロアスケール",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "寬大的扁平秤台放在低矮底座上，側邊立著短小顯示柱。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "parcel-scale-stationery-store",
-      "zh": "包裹秤",
-      "en": "parcel scale",
-      "ja": "荷物用はかり",
-      "reading": "にもつようはかり",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "方形金屬秤盤連著低矮底座，側面有一片小型斜立顯示板。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "bagging-rack",
-      "zh": "裝袋架",
-      "en": "bagging rack",
-      "ja": "袋詰め台",
-      "reading": "ふくろづめだい",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "窄長金屬桌架有兩層平台，側邊立著數根直桿撐住袋口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "queue-ticket-dispenser-stationery-store",
-      "zh": "排隊取號機",
-      "en": "queue ticket dispenser",
-      "ja": "番号札発券機",
-      "reading": "ばんごうふだはっけんき",
-      "category": "設施",
-      "size": "medium",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "直立窄盒架在短底座上，正面有一個圓形按鈕與紙張出口。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "receipt-bin",
-      "zh": "收據回收桶",
-      "en": "receipt bin",
-      "ja": "レシート回収箱",
-      "reading": "レシートかいしゅうばこ",
-      "category": "設施",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "ground",
-      "desc": "小型方盒頂部開著狹長投入口，正面有圓角透明視窗。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "checkout-belt",
-      "zh": "結帳輸送帶",
-      "en": "checkout belt",
-      "ja": "レジのベルトコンベア",
-      "reading": "レジのベルトコンベア",
-      "category": "設施",
-      "size": "large",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "收銀檯旁的長方形黑色帶面，兩端各有一根短圓柱滾軸。",
-      "loose": false,
-      "motion": "wobble",
-      "cluster": "cash-wrap-counter"
-    },
-    {
       "id": "cash-register-display",
       "zh": "收銀顯示器",
       "en": "cash register display",
@@ -1477,21 +786,6 @@
       "spot": "surface",
       "desc": "小片長方形紙牌，頂端有圓孔與細繩，紙面保持空白沒有字樣。",
       "loose": true,
-      "motion": null,
-      "cluster": "cash-wrap-counter"
-    },
-    {
-      "id": "receipt-spike-stationery-store",
-      "zh": "收據插針",
-      "en": "receipt spike",
-      "ja": "レシートスパイク",
-      "reading": "レシートスパイク",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout-counter",
-      "spot": "surface",
-      "desc": "圓形底座中央豎起一根細尖金屬針，針上串著幾張空白紙條。",
-      "loose": false,
       "motion": null,
       "cluster": "cash-wrap-counter"
     },
@@ -1601,7 +895,247 @@
       "id": "cash-register",
       "reason": "和已有的 cash register mat 太像",
       "zone": "checkout-counter"
+    },
+    {
+      "id": "paint-roller",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "index-card",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "display-window",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "display-shelf",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "storefront",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "construction-paper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "tracing-paper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "carbon-paper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "index-divider",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "sheet-protector",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "document-wallet",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "portfolio",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "document-tray",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "magazine-file",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "letter-tray",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "pencil-board",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "front-display"
+    },
+    {
+      "id": "pen-cap",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "ink-cartridge",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "pen-stand",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "pencil-grip",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "pencil-extender",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "paper-fastener",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "pen-cleaner",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "desk-bell",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "blotting-paper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "paper-fan",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "paper-trimmer",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "paper-embosser",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "desktop-paper-rack",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "paper-scrap",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "writing-supplies"
+    },
+    {
+      "id": "coin-tray-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "checkout-divider-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "queue-stanchion-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "coin-roll-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt-folder-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-tray-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register-mat-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-register-key-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "shopping-cart-token-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "cash-counter-stool",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "floor-scale-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "parcel-scale-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "bagging-rack",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "queue-ticket-dispenser-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt-bin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "checkout-belt",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
+    },
+    {
+      "id": "receipt-spike-stationery-store",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout-counter"
     }
   ],
-  "createdAt": "2026-09-27T17:20:44.714+09:00"
+  "createdAt": "2026-09-27T17:20:44.714+09:00",
+  "itemsTarget": 53,
+  "topUp": {
+    "itemsPerScene": 53,
+    "curatedAt": "2026-10-04"
+  }
 }

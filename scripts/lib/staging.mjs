@@ -21,6 +21,7 @@ export const FIXTURES = {
   cabinet: { height: 55, depth: 38, words: ['cabinet', 'drawer', 'dresser', 'sideboard'] },
   display: { height: 90, depth: 45, words: ['display case', 'showcase', 'glass case'] },
   shelf: { height: 55, depth: 28, levels: 2, gap: 95, back: true, indoor: true, words: ['shelf', 'bookshelf', 'bookcase', 'rack'] },
+  cooler: { height: 55, depth: 28, levels: 2, gap: 95, back: true, indoor: true, words: ['refrigerator', 'fridge', 'freezer', 'cooler', 'drink cooler'] },
   stand: { height: 45, depth: 50, levels: 2, gap: 70, words: ['stand', 'stall'] },
   'cloth-table': { height: 75, depth: 45, words: ['table', 'tablecloth'] },
   rug: { height: 0, depth: 110, flat: true, words: ['rug', 'carpet', 'mat', 'doormat'] },

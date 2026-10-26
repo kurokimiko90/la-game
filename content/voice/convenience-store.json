@@ -1,0 +1,586 @@
+{
+  "en": {
+    "window-shutter-convenience-store": {
+      "heard": "Window Shutter",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "storefront-window": {
+      "heard": "Storefront window.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "awning-support": {
+      "heard": "Awning support.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "sneeze-guard": {
+      "heard": "Sneeze guard.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "food-thermometer": {
+      "heard": "Food Thermometer.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "door-frame-convenience-store": {
+      "heard": "Doorframe.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "wheelie-bin-convenience-store": {
+      "heard": "Wheelie Bin.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "door-handle-convenience-store": {
+      "heard": "Door handle.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "intercom-convenience-store": {
+      "heard": "an intercom",
+      "score": 0.8,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "door-mat-convenience-store": {
+      "heard": "Doormat.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "paving-slab-convenience-store": {
+      "heard": "paving slab,",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "boiled-egg": {
+      "heard": "boiled egg,",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "edamame": {
+      "heard": "edamame.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "kimchi": {
+      "heard": "Kimchi.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "fruit-cup": {
+      "heard": "fruit cup",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "grilled-salmon": {
+      "heard": "grilled salmon,",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "hamburger-steak": {
+      "heard": "Hamburger steak.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cream-cheese": {
+      "heard": "cream cheese,",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "wakame-soup": {
+      "heard": "Seaweed Soup",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "threshold-convenience-store": {
+      "heard": "Threshold.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "security-camera-convenience-store": {
+      "heard": "told Security Camera.",
+      "score": 0.78,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "prepared-food-case": {
+      "heard": "Display Fridge",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "bike-shelter-convenience-store": {
+      "heard": "Bike shelter.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "shopping-basket-convenience-store": {
+      "heard": "Shopping basket.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "folding-umbrella-convenience-store": {
+      "heard": "folding umbrella.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "parking-post-convenience-store": {
+      "heard": "Parking post.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "umbrella-stand-convenience-store": {
+      "heard": "Umbrella stand.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "bento-box": {
+      "heard": "Bento box.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "sushi-roll": {
+      "heard": "Sushi Roll",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "pasta-salad": {
+      "heard": "Pasta salad.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "potato-salad": {
+      "heard": "Potato salad.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "fried-chicken": {
+      "heard": "Fried chicken.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "croquette": {
+      "heard": "Croquette.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "fried-shrimp": {
+      "heard": "Fried shrimp.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "omelet": {
+      "heard": "Omelette.",
+      "score": 0.75,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "sports-drink-bottle": {
+      "heard": "Sports drink bottle.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "salmon-rice-ball": {
+      "heard": "Salmon rice ball.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "pickled-plum-rice-ball": {
+      "heard": "Pickled plum rice ball.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "meat-bun": {
+      "heard": "Steamed meat bun.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cash-drawer-convenience-store": {
+      "heard": "Cash drawer.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "coin-tray-convenience-store": {
+      "heard": "CoinTray.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "receipt-roll-dispenser-convenience-store": {
+      "heard": "Bin receipt roll dispenser.",
+      "score": 0.87,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cash-register-mat-convenience-store": {
+      "heard": "Cash register mad.",
+      "score": 0.93,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cashier-footstool": {
+      "heard": "Cashier footstool.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cashier-footrest-convenience-store": {
+      "heard": "Cashier Footrest.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "checkout-counter": {
+      "heard": "Check out Counter.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "butter-cup": {
+      "heard": "Buttercup.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "pudding-cup": {
+      "heard": "Pudding cup.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "custard-choux": {
+      "heard": "Custard Puff",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "fruit-yogurt-cup": {
+      "heard": "Fruit yogurt cup.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cheese-cake-cup": {
+      "heard": "Cheesecake cup.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "chocolate-pudding": {
+      "heard": "Chocolate pudding.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cream-puff-pack": {
+      "heard": "Cream Puff Pack",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cheese-sandwich": {
+      "heard": "Cheese Sandwich",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "egg-sandwich": {
+      "heard": "Egg sandwich.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "ham-sandwich": {
+      "heard": "Ham sandwiched.",
+      "score": 0.85,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "tuna-sandwich": {
+      "heard": "Tuna sandwich.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "shopping-bag-holder-convenience-store": {
+      "heard": "shopping bag holder,",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "checkout-belt-convenience-store": {
+      "heard": "Check out Belt.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cash-register-display-convenience-store": {
+      "heard": "Cash register display.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "barcode-scanner-convenience-store": {
+      "heard": "Play Barcode Scanner.",
+      "score": 0.78,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "card-terminal-convenience-store": {
+      "heard": "Card terminal.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "reusable-bag-convenience-store": {
+      "heard": "Reusable shopping bag",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "paper-bag-convenience-store": {
+      "heard": "Paper bag.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "plastic-bag-convenience-store": {
+      "heard": "Plastic bag.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "bagging-rack-divider": {
+      "heard": "Bagging rack divider.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "tuna-rice-ball": {
+      "heard": "Tuna rice ball.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "checkout-divider-convenience-store": {
+      "heard": "Check out Divider.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "cashier-chair": {
+      "heard": "Cashier chair.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "croissant-sandwich": {
+      "heard": "Croissant sandwich.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "checkout-lane-post": {
+      "heard": "Check out Lane Post.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "price-tag-convenience-store": {
+      "heard": "Price tag.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "price-computing-scale-convenience-store": {
+      "heard": "Price computing scale.",
+      "score": 1,
+      "take": "en-1791013980259.aac",
+      "account": "chatgpt4"
+    },
+    "automatic-door-convenience-store": {
+      "heard": "Automatic door.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "doorstop-convenience-store": {
+      "heard": "Doorstop.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "doorbell-button-convenience-store": {
+      "heard": "Doorbell button.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "tofu": {
+      "heard": "Tofu.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "natto": {
+      "heard": "Natto.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "seaweed-salad": {
+      "heard": "Seaweed Salad",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "soup-ladle": {
+      "heard": "Soup ladle.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "downspout-convenience-store": {
+      "heard": "Downspout.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "shopping-cart-convenience-store": {
+      "heard": "Shopping cart.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "bollard-convenience-store": {
+      "heard": "Bollard.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "drain-grate-convenience-store": {
+      "heard": "Drain grade.",
+      "score": 0.9,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "milk-carton": {
+      "heard": "Milk Carton.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "orange-juice-carton": {
+      "heard": "Orange juice carton.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "green-tea-bottle": {
+      "heard": "Green tea bottle.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "soda-can-convenience-store": {
+      "heard": "Soda can.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "yogurt-drink": {
+      "heard": "Yogurt drink.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "apple-juice-bottle": {
+      "heard": "Apple juice bottle.",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "queue-ticket-roll": {
+      "heard": "Cue ticket roll.",
+      "score": 0.8,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "cash-register-cover": {
+      "heard": "cash register cover,",
+      "score": 1,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "bagging-platform-scale": {
+      "heard": "Ben, bagging platform scale.",
+      "score": 0.87,
+      "take": "en-1791014557585.aac",
+      "account": "chatgpt2"
+    },
+    "wall-light-convenience-store": {
+      "heard": "Wall-Light.",
+      "score": 1,
+      "take": "en-1791014765577.aac",
+      "account": "chatgpt2"
+    },
+    "food-tongs": {
+      "heard": "Food tongs.",
+      "score": 1,
+      "take": "en-1791014765577.aac",
+      "account": "chatgpt2"
+    },
+    "serving-spatula": {
+      "heard": "Serving spatula",
+      "score": 1,
+      "take": "en-1791014765577.aac",
+      "account": "chatgpt2"
+    },
+    "curb-ramp-convenience-store": {
+      "heard": "curb ramp.",
+      "score": 1,
+      "take": "en-1791014765577.aac",
+      "account": "chatgpt2"
+    }
+  }
+}

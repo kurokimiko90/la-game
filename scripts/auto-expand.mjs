@@ -385,16 +385,39 @@ async function integrate(plan, settings, { topUp = false, restage = false } = {}
   log(`scene-config：${plan.id}，${available.length} 個物件，地圖 ${world.width}×${world.height}`);
 
   // 按實際場景擺放（scripts/lib/placement.mjs）：新街區、重排整個規劃情境再 --reset；補元素只安排新物品，舊的不動
-  await placeScene({
+  const layoutFile = path.join(ROOT, 'content', 'layouts', `${plan.id}.json`);
+  const placedBefore = topUp && fs.existsSync(layoutFile) ? new Set(Object.keys(readJson(layoutFile))) : new Set();
+  const layout = (args) => run('layout', process.execPath, ['scripts/build-layout.mjs', plan.id, ...args]);
+  const { unstaged } = await placeScene({
     plan, available, terrain: readJson(P.config).scenes[plan.id].terrain,
     mode: topUp ? 'topUp' : restage ? 'restage' : 'new',
     stageFile: path.join(P.stages, `${plan.id}.json`),
     ask: codexText,
-    layout: (args) => run('layout', process.execPath, ['scripts/build-layout.mjs', plan.id, ...args]),
+    layout,
     log,
+    isNew: (id) => !placedBefore.has(id),
   });
+  // 排不進情境的物品：真實場景裡沒有合理的位置，退役（不散落在地上湊數）
+  const kept = unstaged.length ? retireUnstaged(plan, available, unstaged, world, order) : available;
+  if (unstaged.length) layout([]);
   runChecks(plan.id);
-  return available.length;
+  return kept.length;
+}
+
+/** 物品移到 plan.rejected（之後補元素不會再加回來），重寫規劃、manifest、scene-config；回傳剩下有 SVG 的物品 */
+function retireUnstaged(plan, available, ids, world, order) {
+  const drop = new Set(ids);
+  const next = {
+    ...plan,
+    elements: plan.elements.filter((e) => !drop.has(e.id)),
+    rejected: [...(plan.rejected ?? []), ...plan.elements.filter((e) => drop.has(e.id)).map((e) => ({ id: e.id, reason: '退役：真實場景裡排不進情境', zone: e.zone }))],
+  };
+  writeJson(path.join(P.plans, `${plan.id}.json`), next);
+  writeJson(path.join(P.manifests, `${plan.id}.json`), planToManifest(next));
+  const kept = available.filter((id) => !drop.has(id));
+  fs.writeFileSync(P.config, upsertScene(fs.readFileSync(P.config, 'utf8'), plan.id, planToSceneConfig(next, kept), { world, order }));
+  log(`排不進情境，退役 ${ids.length} 個：${ids.join('、').slice(0, 300)}`);
+  return kept;
 }
 
 /**

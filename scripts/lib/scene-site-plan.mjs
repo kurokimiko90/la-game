@@ -11,18 +11,16 @@ const rect = (z, id, kind, x0, y0, x1, y1) => ({
   y1: Math.round(z.y0 + (z.y1 - z.y0) * y1),
 });
 
-const queueZones = new Set(['ticket-hall', 'gates', 'check-in-hall', 'security-check', 'service-hall', 'checkout-counter', 'checkout', 'reception', 'lobby']);
-const seatingZones = new Set(['dining-hall', 'waiting-area', 'reading-room', 'seating-area', 'departure-gate', 'reading-corner', 'screening-room', 'poolside']);
 const gardenZones = new Set(['front-garden', 'sculpture-garden', 'boardwalk', 'training-yard', 'front-yard', 'front-plaza']);
 
+// 不再自動畫排隊帶和座位區：每個區域都有情境擺放（content/stages）畫出真正的櫃台、座椅，
+// 通用的半透明色塊疊在家具上反而像看不清楚的幽靈家具。
 function detailsFor(zone) {
   const features = [];
   // 戶外入口採用步道；室內的通行空白由分組與地板保留，避免每間房都長得一樣。
   if (!zone.indoor && ['entrance', 'plaza', 'front-plaza', 'station-entrance', 'front-yard'].includes(zone.id)) {
     features.push(rect(zone, 'arrival-walk', 'walkway', .08, .72, .92, .86));
   }
-  if (queueZones.has(zone.id)) features.push(rect(zone, 'queue', 'queue', .20, .50, .80, .66));
-  if (seatingZones.has(zone.id)) features.push(rect(zone, 'seating', 'seating', .25, .42, .76, .73));
   if (gardenZones.has(zone.id) && !zone.indoor) {
     features.push(rect(zone, 'planting', 'bed', .08, .18, .28, .44));
     features.push(rect(zone, 'shade', 'canopy', .68, .14, .90, .34));

@@ -2,359 +2,41 @@
   "zones": {
     "station-entrance": {
       "sets": [
-        {
-          "row": "mid",
-          "note": "入口警用腳踏車與裝備",
-          "x": [
-            0.04,
-            0.24
-          ],
-          "main": "bicycle-police-station",
-          "on": [
-            "uniform-cap",
-            "handcuffs",
-            "police-radio"
-          ],
-          "beside": [
-            "radio-holster",
-            "police-baton"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "停車柵欄入口",
-          "x": [
-            0.29,
-            0.49
-          ],
-          "main": "parking-barrier-arm",
-          "beside": [
-            "barrier-post",
-            "chain-post"
-          ],
-          "front": [
-            "road-stud",
-            "ground-marker"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "車道防護與停車導引",
-          "x": [
-            0.54,
-            0.76
-          ],
-          "main": "guard-rail",
-          "beside": [
-            "reflector-post",
-            "parking-curb-stop"
-          ],
-          "front": [
-            "bollard-cover"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "入口警示與照明",
-          "x": [
-            0.81,
-            0.98
-          ],
-          "fixture": "facade",
-          "wall": [
-            "camera-bracket",
-            "wall-light"
-          ],
-          "front": [
-            "road-flare"
-          ]
-        },
-        {
-          "row": "front",
-          "note": "交通指揮裝備",
-          "x": [
-            0.3,
-            0.48
-          ],
-          "fixture": "stand",
-          "on": [
-            "whistle-lanyard",
-            "traffic-baton",
-            "police-gloves"
-          ]
-        }
+        { "row": "back", "x": [0.02, 0.98], "fixture": "facade", "door": true, "note": "警察局門面" },
+        { "row": "mid", "x": [0.06, 0.2], "note": "警用腳踏車", "main": "bicycle-police-station" },
+        { "row": "mid", "x": [0.66, 0.9], "note": "停車場柵欄", "main": "parking-barrier-arm" }
       ]
     },
     "reception": {
       "sets": [
-        {
-          "row": "back",
-          "note": "接待櫃台文書作業",
-          "x": [
-            0.04,
-            0.31
-          ],
-          "fixture": "counter",
-          "on": [
-            "filing-tray-police-station",
-            "ink-pad-police-station",
-            "rubber-stamp-police-station",
-            "desk-organizer-police-station"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "文書辦公桌",
-          "x": [
-            0.35,
-            0.55
-          ],
-          "fixture": "desk",
-          "on": [
-            "pen-police-station",
-            "folder-police-station",
-            "stapler-police-station",
-            "hole-punch-police-station"
-          ],
-          "wall": [
-            "wall-calendar",
-            "wall-clock"
-          ],
-          "beside": [
-            "drawer-police-station"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "訪客等候區",
-          "x": [
-            0.04,
-            0.24
-          ],
-          "main": "visitor-chair",
-          "beside": [
-            "coat-rack-police-station",
-            "umbrella-stand-police-station"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "檔案與文具收納",
-          "x": [
-            0.59,
-            0.77
-          ],
-          "main": "filing-cabinet-police-station",
-          "on": [
-            "paperclip-police-station",
-            "binder-clip-police-station"
-          ],
-          "wall": [
-            "wall-shelf-police-station"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "飲水與安全設備",
-          "x": [
-            0.29,
-            0.49
-          ],
-          "main": "water-cooler-police-station",
-          "wall": [
-            "fire-alarm-police-station",
-            "smoke-detector-police-station"
-          ],
-          "beside": [
-            "fire-extinguisher-police-station",
-            "wastebasket-police-station"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "急救與清潔用品",
-          "x": [
-            0.81,
-            0.98
-          ],
-          "fixture": "shelf",
-          "on": [
-            "first-aid-kit-police-station"
-          ],
-          "beside": [
-            "trash-bag"
-          ]
-        }
+        { "row": "back", "x": [0.02, 0.14], "note": "文件櫃", "main": "filing-cabinet-police-station" },
+        { "row": "back", "x": [0.18, 0.5], "fixture": "shelf", "note": "值勤裝備架", "on": ["uniform-cap", "police-radio", "handcuffs", "police-baton", "traffic-baton", "road-flare"] },
+        { "row": "back", "x": [0.56, 0.66], "note": "飲水機", "main": "water-cooler-police-station", "wall": ["wall-clock"] },
+        { "row": "back", "x": [0.72, 0.84], "note": "衣帽架", "main": "coat-rack-police-station" },
+        { "row": "back", "x": [0.88, 0.96], "note": "滅火器", "main": "fire-extinguisher-police-station" },
+        { "row": "mid", "x": [0.08, 0.6], "fixture": "counter", "note": "報案櫃台", "on": ["police-badge", "rubber-stamp-police-station", "ink-pad-police-station", "pen-police-station", "folder-police-station"], "beside": ["visitor-chair"] },
+        { "row": "mid", "x": [0.7, 0.84], "fixture": "cabinet", "note": "急救箱", "on": ["first-aid-kit-police-station"] },
+        { "row": "mid", "x": [0.88, 0.96], "note": "門邊傘架", "main": "umbrella-stand-police-station", "beside": ["wastebasket-police-station"] }
       ]
     },
     "evidence-room": {
       "sets": [
-        {
-          "row": "back",
-          "note": "指紋採證工作台",
-          "x": [
-            0.04,
-            0.25
-          ],
-          "fixture": "desk",
-          "on": [
-            "fingerprint-card",
-            "fingerprint-powder",
-            "fingerprint-brush",
-            "handheld-scanner"
-          ],
-          "wall": [
-            "evidence-tag"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "證物封存與登記",
-          "x": [
-            0.29,
-            0.5
-          ],
-          "fixture": "shelf",
-          "on": [
-            "evidence-box",
-            "evidence-bag",
-            "sealed-envelope",
-            "evidence-seal"
-          ],
-          "wall": [
-            "wax-seal-police-station"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "證物檢測台",
-          "x": [
-            0.54,
-            0.76
-          ],
-          "fixture": "stand",
-          "on": [
-            "digital-scale",
-            "swab",
-            "measuring-tape-police-station",
-            "protective-goggles"
-          ],
-          "beside": [
-            "tripod"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "現場碎片與彈道證物",
-          "x": [
-            0.04,
-            0.25
-          ],
-          "fixture": "display",
-          "on": [
-            "broken-glass",
-            "metal-shard",
-            "spent-cartridge",
-            "film-canister-police-station"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "損壞物件證物",
-          "x": [
-            0.29,
-            0.5
-          ],
-          "fixture": "display",
-          "on": [
-            "broken-watch",
-            "broken-phone",
-            "shoe-print-cast"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "工具與防護裝備",
-          "x": [
-            0.81,
-            0.98
-          ],
-          "fixture": "shelf",
-          "on": [
-            "utility-knife",
-            "metal-file",
-            "protective-mask"
-          ]
-        }
+        { "row": "back", "x": [0.02, 0.48], "fixture": "shelf", "note": "證物架", "on": ["evidence-box", "evidence-bag", "sealed-envelope", "broken-phone"] },
+        { "row": "back", "x": [0.56, 0.7], "note": "攝影腳架", "main": "tripod" },
+        { "row": "mid", "x": [0.06, 0.62], "fixture": "desk", "note": "採證工作台", "on": ["fingerprint-card", "fingerprint-powder", "fingerprint-brush", "swab", "evidence-tag"] },
+        { "row": "mid", "x": [0.7, 0.96], "fixture": "cabinet", "note": "防護與量測用品", "on": ["protective-goggles", "measuring-tape-police-station"] }
       ]
     },
     "training-yard": {
       "sets": [
-        {
-          "row": "mid",
-          "note": "障礙跑道",
-          "x": [
-            0.04,
-            0.25
-          ],
-          "main": "agility-ladder",
-          "beside": [
-            "hurdle",
-            "starting-block"
-          ],
-          "front": [
-            "cone-marker",
-            "stopwatch"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "平衡與跳躍訓練",
-          "x": [
-            0.29,
-            0.5
-          ],
-          "main": "balance-beam",
-          "beside": [
-            "vaulting-horse",
-            "gym-mat"
-          ],
-          "front": [
-            "balance-disc",
-            "agility-hoop"
-          ]
-        },
-        {
-          "row": "back",
-          "note": "體能器械區",
-          "x": [
-            0.54,
-            0.76
-          ],
-          "main": "parallel-bars",
-          "beside": [
-            "horizontal-bar",
-            "pull-up-station"
-          ],
-          "front": [
-            "medicine-ball",
-            "dumbbell",
-            "kettlebell"
-          ]
-        },
-        {
-          "row": "mid",
-          "note": "擒拿與跳箱訓練",
-          "x": [
-            0.54,
-            0.76
-          ],
-          "main": "training-dummy",
-          "beside": [
-            "jump-box",
-            "slalom-pole"
-          ]
-        }
+        { "row": "back", "x": [0.02, 0.2], "note": "引體向上架", "main": "pull-up-station" },
+        { "row": "back", "x": [0.24, 0.36], "note": "攀爬繩", "main": "climbing-rope" },
+        { "row": "back", "x": [0.42, 0.56], "note": "沙包", "main": "punching-bag" },
+        { "row": "back", "x": [0.62, 0.76], "note": "擒拿訓練假人", "main": "training-dummy", "beside": ["gym-mat"] },
+        { "row": "mid", "x": [0.04, 0.4], "fixture": "platform", "note": "重量訓練區", "on": ["barbell", "dumbbell", "kettlebell"] },
+        { "row": "mid", "x": [0.46, 0.66], "note": "跳箱", "main": "jump-box" },
+        { "row": "front", "x": [0.06, 0.94], "note": "體能測驗跑道", "front": ["hurdle", "cone-marker", "agility-ladder"] },
+        { "row": "mid", "x": [0.72, 0.9], "fixture": "stand", "note": "教官計時", "on": ["stopwatch"] }
       ]
     }
   }

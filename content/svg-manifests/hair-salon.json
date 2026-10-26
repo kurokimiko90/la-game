@@ -3,8 +3,8 @@
   "sceneSlug": "la-hair-salon",
   "propStyle": "front-flat",
   "zones": {
-    "entrance": "入口",
-    "reception": "接待區",
+    "entrance": "店門口",
+    "reception": "接待與結帳",
     "styling-area": "造型區",
     "wash-area": "洗髮區"
   },
@@ -31,153 +31,6 @@
       }
     },
     {
-      "name": "隱私屏風",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "立在入口旁的三片木板折屏，表面是淺棕色直條木紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "privacy-screen",
-        "words": {
-          "zh-TW": "隱私屏風",
-          "en": "privacy screen",
-          "ja": {
-            "text": "目隠しパネル",
-            "reading": "めかくしパネル"
-          }
-        }
-      }
-    },
-    {
-      "name": "鞋刷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短木柄連著一排深色硬毛，刷毛扁平寬厚，斜放在門邊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "shoe-brush-hair-salon",
-        "words": {
-          "zh-TW": "鞋刷",
-          "en": "shoe brush",
-          "ja": {
-            "text": "靴ブラシ",
-            "reading": "くつブラシ"
-          }
-        }
-      }
-    },
-    {
-      "name": "折疊傘",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "收起的細長黑色傘布包著金屬傘骨，短彎把手朝上，靠在傘架旁。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "folding-umbrella",
-        "words": {
-          "zh-TW": "折疊傘",
-          "en": "folding umbrella",
-          "ja": {
-            "text": "折りたたみ傘",
-            "reading": "おりたたみがさ"
-          }
-        }
-      }
-    },
-    {
-      "name": "自行車籃",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "淺棕色編織長方籃，籃口寬、底部窄，兩側有彎曲的金屬固定架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "bicycle-basket",
-        "words": {
-          "zh-TW": "自行車籃",
-          "en": "bicycle basket",
-          "ja": {
-            "text": "自転車かご",
-            "reading": "じてんしゃかご"
-          }
-        }
-      }
-    },
-    {
-      "name": "腳踏車停車架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "粗短的黑色金屬支架斜撐在地面，頂端彎折，底端扁平。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "kickstand",
-        "words": {
-          "zh-TW": "腳踏車停車架",
-          "en": "kickstand",
-          "ja": {
-            "text": "自転車スタンド",
-            "reading": "じてんしゃスタンド"
-          }
-        }
-      }
-    },
-    {
-      "name": "腳踏車坐墊",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色長橢圓形坐墊，前端窄而後端寬，底下露出兩條金屬支架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "bicycle-seat",
-        "words": {
-          "zh-TW": "腳踏車坐墊",
-          "en": "bicycle seat",
-          "ja": {
-            "text": "自転車のサドル",
-            "reading": "じてんしゃのサドル"
-          }
-        }
-      }
-    },
-    {
-      "name": "把手握套",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "短短的黑色橡膠圓筒套，表面有一圈圈防滑紋，兩端圓滑。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "handlebar-grip",
-        "words": {
-          "zh-TW": "把手握套",
-          "en": "handlebar grip",
-          "ja": {
-            "text": "ハンドルグリップ",
-            "reading": "ハンドルグリップ"
-          }
-        }
-      }
-    },
-    {
       "name": "吹風機",
       "category": "道具",
       "lane": "b",
@@ -186,7 +39,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hairdryer",
         "words": {
           "zh-TW": "吹風機",
@@ -207,7 +60,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "spray-bottle",
         "words": {
           "zh-TW": "噴霧瓶",
@@ -228,7 +81,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hair-roller",
         "words": {
           "zh-TW": "髮捲",
@@ -249,7 +102,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hairpin",
         "words": {
           "zh-TW": "髮夾",
@@ -270,7 +123,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hair-claw",
         "words": {
           "zh-TW": "鯊魚夾",
@@ -278,27 +131,6 @@
           "ja": {
             "text": "バンスクリップ",
             "reading": "バンスクリップ"
-          }
-        }
-      }
-    },
-    {
-      "name": "髮帶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "亮紅色布帶打成蝴蝶結，中央結節明顯，兩端帶尾平垂在地面。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "hair-ribbon",
-        "words": {
-          "zh-TW": "髮帶",
-          "en": "hair ribbon",
-          "ja": {
-            "text": "ヘアリボン",
-            "reading": "ヘアリボン"
           }
         }
       }
@@ -312,7 +144,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hair-wig",
         "words": {
           "zh-TW": "假髮",
@@ -320,27 +152,6 @@
           "ja": {
             "text": "かつら",
             "reading": "かつら"
-          }
-        }
-      }
-    },
-    {
-      "name": "染髮帽",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明薄塑膠圓帽，邊緣有鬆緊圈，帽面分布許多細小圓孔。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "entrance",
-        "itemId": "haircap",
-        "words": {
-          "zh-TW": "染髮帽",
-          "en": "hair cap",
-          "ja": {
-            "text": "ヘアキャップ",
-            "reading": "ヘアキャップ"
           }
         }
       }
@@ -354,7 +165,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "cape",
         "words": {
           "zh-TW": "理髮披肩",
@@ -375,7 +186,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hand-mirror-hair-salon",
         "words": {
           "zh-TW": "手持鏡",
@@ -396,7 +207,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "reception",
         "itemId": "hair-product-jar",
         "words": {
           "zh-TW": "髮蠟罐",
@@ -417,7 +228,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "reception",
         "itemId": "hair-oil-bottle",
         "words": {
           "zh-TW": "護髮油瓶",
@@ -438,7 +249,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hair-color-bowl",
         "words": {
           "zh-TW": "染髮碗",
@@ -459,7 +270,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hair-color-brush",
         "words": {
           "zh-TW": "染髮刷",
@@ -480,7 +291,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "reception",
         "itemId": "shampoo-bottle",
         "words": {
           "zh-TW": "洗髮精瓶",
@@ -501,7 +312,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "hair-salon-chair",
         "words": {
           "zh-TW": "美髮椅",
@@ -522,7 +333,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "entrance",
+        "zone": "styling-area",
         "itemId": "salon-stool",
         "words": {
           "zh-TW": "美髮工作椅",
@@ -556,48 +367,6 @@
       }
     },
     {
-      "name": "鑰匙櫃",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "窄長的淺灰金屬櫃，門上有小圓鎖孔，打開處可見一排排掛鉤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "key-cabinet-hair-salon",
-        "words": {
-          "zh-TW": "鑰匙櫃",
-          "en": "key cabinet",
-          "ja": {
-            "text": "鍵キャビネット",
-            "reading": "かぎキャビネット"
-          }
-        }
-      }
-    },
-    {
-      "name": "衣架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一個白色三角形塑膠衣架，頂端有彎曲掛鉤，橫桿平直俐落。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "coat-hanger-hair-salon",
-        "words": {
-          "zh-TW": "衣架",
-          "en": "coat hanger",
-          "ja": {
-            "text": "ハンガー",
-            "reading": "ハンガー"
-          }
-        }
-      }
-    },
-    {
       "name": "面紙盒",
       "category": "道具",
       "lane": "b",
@@ -619,132 +388,6 @@
       }
     },
     {
-      "name": "鞋架",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "兩層窄木架由細金屬支腳撐起，層板前緣平直，架上不放任何物品。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "shoe-rack-hair-salon",
-        "words": {
-          "zh-TW": "鞋架",
-          "en": "shoe rack",
-          "ja": {
-            "text": "靴棚",
-            "reading": "くつだな"
-          }
-        }
-      }
-    },
-    {
-      "name": "立燈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "細長黑色燈桿立在圓形底盤上，頂端接著向下敞開的米白布罩。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "floor-lamp-hair-salon",
-        "words": {
-          "zh-TW": "立燈",
-          "en": "floor lamp",
-          "ja": {
-            "text": "フロアランプ",
-            "reading": "フロアランプ"
-          }
-        }
-      }
-    },
-    {
-      "name": "回收桶",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "方形淺藍色塑膠桶，頂蓋有一條寬扁投入口，正面沒有標誌或文字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "recycling-bin-hair-salon",
-        "words": {
-          "zh-TW": "回收桶",
-          "en": "recycling bin",
-          "ja": {
-            "text": "リサイクルボックス",
-            "reading": "リサイクルボックス"
-          }
-        }
-      }
-    },
-    {
-      "name": "洗衣籃",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "淺棕色橢圓藤編籃，兩側有弧形提把，籃身呈交錯編織紋理。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "laundry-basket-hair-salon",
-        "words": {
-          "zh-TW": "洗衣籃",
-          "en": "laundry basket",
-          "ja": {
-            "text": "洗濯かご",
-            "reading": "せんたくかご"
-          }
-        }
-      }
-    },
-    {
-      "name": "便利貼",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一疊亮黃色正方形便條紙，頂張一角微微掀起，紙面保持空白。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "sticky-note-hair-salon",
-        "words": {
-          "zh-TW": "便利貼",
-          "en": "sticky note",
-          "ja": {
-            "text": "付箋",
-            "reading": "ふせん"
-          }
-        }
-      }
-    },
-    {
-      "name": "拆信刀",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "細長銀色金屬刀身配圓滑深木色握柄，尖端鈍圓，平放在吧台上。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "letter-opener-hair-salon",
-        "words": {
-          "zh-TW": "拆信刀",
-          "en": "letter opener",
-          "ja": {
-            "text": "レターオープナー",
-            "reading": "レターオープナー"
-          }
-        }
-      }
-    },
-    {
       "name": "花盆",
       "category": "設施",
       "lane": "b",
@@ -753,7 +396,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "reception",
+        "zone": "entrance",
         "itemId": "plant-pot-hair-salon",
         "words": {
           "zh-TW": "花盆",
@@ -761,48 +404,6 @@
           "ja": {
             "text": "植木鉢",
             "reading": "うえきばち"
-          }
-        }
-      }
-    },
-    {
-      "name": "吊扇",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "短桿連著圓形馬達罩，三片寬扇葉向外伸展，固定在上方天花板。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "ceiling-fan-hair-salon",
-        "words": {
-          "zh-TW": "吊扇",
-          "en": "ceiling fan",
-          "ja": {
-            "text": "天井扇",
-            "reading": "てんじょうせん"
-          }
-        }
-      }
-    },
-    {
-      "name": "廚房紙巾",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一卷白色壓紋紙巾立在短軸上，外層邊緣微翹，呈現一圈圈紙卷。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "paper-towel-hair-salon",
-        "words": {
-          "zh-TW": "廚房紙巾",
-          "en": "paper towel",
-          "ja": {
-            "text": "キッチンペーパー",
-            "reading": "キッチンペーパー"
           }
         }
       }
@@ -892,27 +493,6 @@
       }
     },
     {
-      "name": "壁架",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "一片淺木色長方形層板固定在後牆上，兩端由深色三角支架托住。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "wall-shelf-hair-salon",
-        "words": {
-          "zh-TW": "壁架",
-          "en": "wall shelf",
-          "ja": {
-            "text": "壁棚",
-            "reading": "かべだな"
-          }
-        }
-      }
-    },
-    {
       "name": "乾洗手壓瓶",
       "category": "道具",
       "lane": "b",
@@ -984,7 +564,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "reception",
+        "zone": "entrance",
         "itemId": "umbrella-stand-hair-salon",
         "words": {
           "zh-TW": "傘架",
@@ -992,69 +572,6 @@
           "ja": {
             "text": "傘立て",
             "reading": "かさたて"
-          }
-        }
-      }
-    },
-    {
-      "name": "立扇",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "圓形護網罩住三片寬葉扇片，細直支柱連著扁圓底座，整體呈白色。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "floor-fan-hair-salon",
-        "words": {
-          "zh-TW": "立扇",
-          "en": "floor fan",
-          "ja": {
-            "text": "扇風機",
-            "reading": "せんぷうき"
-          }
-        }
-      }
-    },
-    {
-      "name": "空氣清淨機",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "白色直立長方機身，前面有細密格柵和深色出風口，底部貼地放置。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "air-purifier-hair-salon",
-        "words": {
-          "zh-TW": "空氣清淨機",
-          "en": "air purifier",
-          "ja": {
-            "text": "空気清浄機",
-            "reading": "くうきせいじょうき"
-          }
-        }
-      }
-    },
-    {
-      "name": "冰箱",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "高身白色雙門箱體，上門較大、下方有短抽屜，門面平整沒有標誌。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "reception",
-        "itemId": "refrigerator-hair-salon",
-        "words": {
-          "zh-TW": "冰箱",
-          "en": "refrigerator",
-          "ja": {
-            "text": "冷蔵庫",
-            "reading": "れいぞうこ"
           }
         }
       }
@@ -1207,90 +724,6 @@
       }
     },
     {
-      "name": "髮髻插梳",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "兩根平行的細長金屬齒連著彎曲的裝飾柄，整體像小型叉子。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-pin-curl",
-        "words": {
-          "zh-TW": "髮髻插梳",
-          "en": "hair fork",
-          "ja": {
-            "text": "ヘアフォーク",
-            "reading": "ヘアフォーク"
-          }
-        }
-      }
-    },
-    {
-      "name": "髮網",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "黑色細網收成扁圓形，邊緣有鬆緊帶圈，網孔形成清楚的菱格紋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-net",
-        "words": {
-          "zh-TW": "髮網",
-          "en": "hair net",
-          "ja": {
-            "text": "ヘアネット",
-            "reading": "ヘアネット"
-          }
-        }
-      }
-    },
-    {
-      "name": "接髮束",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一束柔順的深棕色長髮由小型髮扣固定，髮絲垂成整齊的弧線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-extension",
-        "words": {
-          "zh-TW": "接髮束",
-          "en": "hair extension",
-          "ja": {
-            "text": "エクステ",
-            "reading": "エクステ"
-          }
-        }
-      }
-    },
-    {
-      "name": "髮色樣本環",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "金屬環串著一排整齊的髮束樣本，從淺金、棕色到黑色依序排列。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-swatch-ring",
-        "words": {
-          "zh-TW": "髮色樣本環",
-          "en": "hair color swatch ring",
-          "ja": {
-            "text": "カラーチャートリング",
-            "reading": "カラーチャートリング"
-          }
-        }
-      }
-    },
-    {
       "name": "髮色樣本板",
       "category": "道具",
       "lane": "b",
@@ -1307,27 +740,6 @@
           "ja": {
             "text": "ヘアカラーチャート",
             "reading": "ヘアカラーチャート"
-          }
-        }
-      }
-    },
-    {
-      "name": "接髮片",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一片平直的深棕色髮片上緣縫成窄帶，底下垂著密集整齊的長髮。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-extension-weft",
-        "words": {
-          "zh-TW": "接髮片",
-          "en": "hair weft",
-          "ja": {
-            "text": "シールエクステ",
-            "reading": "シールエクステ"
           }
         }
       }
@@ -1354,27 +766,6 @@
       }
     },
     {
-      "name": "染髮雙氧乳瓶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "乳白色不透明塑膠瓶有圓肩與窄口，頂部旋著尖嘴形黑色瓶蓋。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "developer-bottle",
-        "words": {
-          "zh-TW": "染髮雙氧乳瓶",
-          "en": "developer bottle",
-          "ja": {
-            "text": "オキシドール",
-            "reading": "オキシドール"
-          }
-        }
-      }
-    },
-    {
       "name": "染髮鋁箔片",
       "category": "道具",
       "lane": "b",
@@ -1391,27 +782,6 @@
           "ja": {
             "text": "アルミホイル",
             "reading": "アルミホイル"
-          }
-        }
-      }
-    },
-    {
-      "name": "挑染帽",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "半透明乳白色軟帽呈圓頂形，帽面均勻分布許多小孔，邊緣貼合頭部。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "highlighting-cap",
-        "words": {
-          "zh-TW": "挑染帽",
-          "en": "highlighting cap",
-          "ja": {
-            "text": "ウィービングキャップ",
-            "reading": "ウィービングキャップ"
           }
         }
       }
@@ -1488,7 +858,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "styling-area",
+        "zone": "wash-area",
         "itemId": "hair-wash-basin",
         "words": {
           "zh-TW": "洗髮槽",
@@ -1496,90 +866,6 @@
           "ja": {
             "text": "シャンプー台",
             "reading": "シャンプーダイ"
-          }
-        }
-      }
-    },
-    {
-      "name": "剪髮吸髮器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "白色矮圓筒機身配黑色軟管，底座有小輪，前方伸出寬扁吸口。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-vacuum",
-        "words": {
-          "zh-TW": "剪髮吸髮器",
-          "en": "hair vacuum",
-          "ja": {
-            "text": "ヘアクリーナー",
-            "reading": "ヘアクリーナー"
-          }
-        }
-      }
-    },
-    {
-      "name": "排水口濾網",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓形銀色金屬網罩中央微凸，周圍均勻分布細孔，邊緣有窄圈。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-trap",
-        "words": {
-          "zh-TW": "排水口濾網",
-          "en": "drain hair catcher",
-          "ja": {
-            "text": "ヘアキャッチャー",
-            "reading": "ヘアキャッチャー"
-          }
-        }
-      }
-    },
-    {
-      "name": "披肩架",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "細長金屬立柱頂端分出數個短鉤，掛著一件摺疊的深藍色布披肩。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "hair-cutting-cape-stand",
-        "words": {
-          "zh-TW": "披肩架",
-          "en": "cape stand",
-          "ja": {
-            "text": "ケープハンガー",
-            "reading": "ケープハンガー"
-          }
-        }
-      }
-    },
-    {
-      "name": "放大鏡",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "小型圓鏡嵌在銀色伸縮臂末端，鏡背有兩節摺疊關節固定於牆上。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "styling-area",
-        "itemId": "wall-mounted-magnifier",
-        "words": {
-          "zh-TW": "放大鏡",
-          "en": "magnifying mirror",
-          "ja": {
-            "text": "拡大鏡",
-            "reading": "カクダイキョウ"
           }
         }
       }
@@ -1614,7 +900,7 @@
       "ref": {
         "project": "la-game",
         "scene": "hair-salon",
-        "zone": "wash-area",
+        "zone": "styling-area",
         "itemId": "salon-mirror",
         "words": {
           "zh-TW": "美髮鏡",
@@ -1690,27 +976,6 @@
       }
     },
     {
-      "name": "洗髮刷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓形藍色刷盤上排列一圈圈短軟刷齒，中央凸起半圓握柄清楚可見。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "shampoo-brush",
-        "words": {
-          "zh-TW": "洗髮刷",
-          "en": "shampoo brush",
-          "ja": {
-            "text": "シャンプーブラシ",
-            "reading": "シャンプーブラシ"
-          }
-        }
-      }
-    },
-    {
       "name": "毛巾加熱箱",
       "category": "設施",
       "lane": "b",
@@ -1727,27 +992,6 @@
           "ja": {
             "text": "タオルウォーマー",
             "reading": "タオルウォーマー"
-          }
-        }
-      }
-    },
-    {
-      "name": "橡膠拖鞋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "一雙深灰色橡膠拖鞋並排放著，寬帶橫跨鞋面，鞋底厚而平坦。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "rubber-sandals",
-        "words": {
-          "zh-TW": "橡膠拖鞋",
-          "en": "rubber sandals",
-          "ja": {
-            "text": "ゴムサンダル",
-            "reading": "ゴムサンダル"
           }
         }
       }
@@ -1774,111 +1018,6 @@
       }
     },
     {
-      "name": "水龍頭",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "亮銀色短彎管從牆面伸出，前端向下，底部有一對小圓旋鈕。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "water-tap",
-        "words": {
-          "zh-TW": "水龍頭",
-          "en": "water tap",
-          "ja": {
-            "text": "蛇口",
-            "reading": "じゃぐち"
-          }
-        }
-      }
-    },
-    {
-      "name": "溫度調節閥",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "圓形銀色閥體中央有粗短旋鈕，旁邊伸出兩段細金屬管。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "thermostatic-valve",
-        "words": {
-          "zh-TW": "溫度調節閥",
-          "en": "temperature valve",
-          "ja": {
-            "text": "温度調節バルブ",
-            "reading": "おんどちょうせつバルブ"
-          }
-        }
-      }
-    },
-    {
-      "name": "防水矮凳",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "白色圓形塑膠凳面配三支短腿，凳面中央有一個橢圓握孔。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "waterproof-stool",
-        "words": {
-          "zh-TW": "防水矮凳",
-          "en": "waterproof stool",
-          "ja": {
-            "text": "防水スツール",
-            "reading": "ぼうすいスツール"
-          }
-        }
-      }
-    },
-    {
-      "name": "塑膠盆",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "淺藍色圓盆有寬厚外緣，盆底微微內凹，正面能看出空空的盆內。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "plastic-basin",
-        "words": {
-          "zh-TW": "塑膠盆",
-          "en": "plastic basin",
-          "ja": {
-            "text": "洗面器",
-            "reading": "せんめんき"
-          }
-        }
-      }
-    },
-    {
-      "name": "水瓢",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "白色小瓢有圓弧杯身和細長側柄，柄端微微上翹，放在盆邊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "water-scoop",
-        "words": {
-          "zh-TW": "水瓢",
-          "en": "water scoop",
-          "ja": {
-            "text": "手おけ",
-            "reading": "ておけ"
-          }
-        }
-      }
-    },
-    {
       "name": "橡膠手套",
       "category": "道具",
       "lane": "b",
@@ -1900,153 +1039,6 @@
       }
     },
     {
-      "name": "防水圍裙",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "湖水綠色圍裙攤平呈梯形，下擺寬大，頂端有圓弧領口和細繫帶。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "waterproof-apron",
-        "words": {
-          "zh-TW": "防水圍裙",
-          "en": "waterproof apron",
-          "ja": {
-            "text": "防水エプロン",
-            "reading": "ぼうすいエプロン"
-          }
-        }
-      }
-    },
-    {
-      "name": "衣物夾",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "兩個木色夾臂由銀色彈簧連起，張開的夾口和圓潤尾端清楚可見。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "laundry-tongs",
-        "words": {
-          "zh-TW": "衣物夾",
-          "en": "laundry tongs",
-          "ja": {
-            "text": "洗濯ばさみ",
-            "reading": "せんたくばさみ"
-          }
-        }
-      }
-    },
-    {
-      "name": "壁掛式按壓器",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "白色窄長盒體貼在牆上，底端突出短按鈕，下面有小小接液盤。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "wall-dispenser",
-        "words": {
-          "zh-TW": "壁掛式按壓器",
-          "en": "wall dispenser",
-          "ja": {
-            "text": "壁付けディスペンサー",
-            "reading": "かべつけディスペンサー"
-          }
-        }
-      }
-    },
-    {
-      "name": "熱水器",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "方正銀灰色機箱立靠牆面，正面有圓形旋鈕、短排氣格柵和細管接頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "water-heater",
-        "words": {
-          "zh-TW": "熱水器",
-          "en": "water heater",
-          "ja": {
-            "text": "給湯器",
-            "reading": "きゅうとうき"
-          }
-        }
-      }
-    },
-    {
-      "name": "洗衣機",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "白色方箱正面有大型圓形玻璃艙門，艙門外圈是深灰色圓框。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "laundry-machine",
-        "words": {
-          "zh-TW": "洗衣機",
-          "en": "washing machine",
-          "ja": {
-            "text": "洗濯機",
-            "reading": "せんたくき"
-          }
-        }
-      }
-    },
-    {
-      "name": "洗衣精瓶",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "淡粉色方瓶有短彎握把，瓶口裝著白色旋蓋，瓶身側邊略微收窄。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "laundry-detergent-bottle",
-        "words": {
-          "zh-TW": "洗衣精瓶",
-          "en": "laundry detergent bottle",
-          "ja": {
-            "text": "洗濯洗剤ボトル",
-            "reading": "せんたくせんざいボトル"
-          }
-        }
-      }
-    },
-    {
-      "name": "橡膠刮水器",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "長直柄連著寬扁黑色橡膠刮條，刮條兩端有短短的固定接頭。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "rubber-squeegee",
-        "words": {
-          "zh-TW": "橡膠刮水器",
-          "en": "rubber squeegee",
-          "ja": {
-            "text": "水切りワイパー",
-            "reading": "みずきりワイパー"
-          }
-        }
-      }
-    },
-    {
       "name": "小心濕滑立牌",
       "category": "道具",
       "lane": "b",
@@ -2063,27 +1055,6 @@
           "ja": {
             "text": "滑り止め表示板",
             "reading": "すべりどめひょうじばん"
-          }
-        }
-      }
-    },
-    {
-      "name": "洗頭刷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "橢圓形白色刷柄連著柔軟短刷齒，背面略凸，兩端收成圓弧。",
-      "ref": {
-        "project": "la-game",
-        "scene": "hair-salon",
-        "zone": "wash-area",
-        "itemId": "hair-washing-brush",
-        "words": {
-          "zh-TW": "洗頭刷",
-          "en": "hair washing brush",
-          "ja": {
-            "text": "洗髪ブラシ",
-            "reading": "せんぱつブラシ"
           }
         }
       }

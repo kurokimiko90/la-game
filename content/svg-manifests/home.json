@@ -73,27 +73,6 @@
       }
     },
     {
-      "name": "門牌板",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "門旁固定的空白長方形牌板，表面平滑、邊緣略凸，不含文字或數字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "house-number-plaque",
-        "words": {
-          "zh-TW": "門牌板",
-          "en": "house plaque",
-          "ja": {
-            "text": "表札",
-            "reading": "ひょうさつ"
-          }
-        }
-      }
-    },
-    {
       "name": "門上花環",
       "category": "道具",
       "lane": "b",
@@ -131,174 +110,6 @@
           "ja": {
             "text": "玄関灯",
             "reading": "げんかんとう"
-          }
-        }
-      }
-    },
-    {
-      "name": "鞋底刷",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "固定在地面的短毛刷，長方形刷面朝上，兩側有低矮金屬支架。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "door-mat-brush",
-        "words": {
-          "zh-TW": "鞋底刷",
-          "en": "boot brush",
-          "ja": {
-            "text": "靴底ブラシ",
-            "reading": "くつぞこブラシ"
-          }
-        }
-      }
-    },
-    {
-      "name": "門廊柱",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "方形白色木柱由地面直立支撐門廊屋頂，柱身有簡潔的上下裝飾線。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "porch-post",
-        "words": {
-          "zh-TW": "門廊柱",
-          "en": "porch post",
-          "ja": {
-            "text": "ポーチの柱",
-            "reading": "ポーチのはしら"
-          }
-        }
-      }
-    },
-    {
-      "name": "門廊欄杆",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "large",
-      "desc": "沿門廊邊緣排列的白色欄杆，由粗扶手與一排細直桿組成。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "porch-railing",
-        "words": {
-          "zh-TW": "門廊欄杆",
-          "en": "porch railing",
-          "ja": {
-            "text": "ポーチの手すり",
-            "reading": "ポーチのてすり"
-          }
-        }
-      }
-    },
-    {
-      "name": "排水管彎頭",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "排水管底部向外彎折的短金屬接頭，管口朝向地面外側。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "downspout-elbow",
-        "words": {
-          "zh-TW": "排水管彎頭",
-          "en": "downspout elbow",
-          "ja": {
-            "text": "雨どいの曲がり",
-            "reading": "あまどいのまがり"
-          }
-        }
-      }
-    },
-    {
-      "name": "雨鏈",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "從屋簷垂下的一串金屬小杯或環圈，末端接近地面，輪廓細長。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "rain-chain-home",
-        "words": {
-          "zh-TW": "雨鏈",
-          "en": "rain chain",
-          "ja": {
-            "text": "鎖樋",
-            "reading": "くさりどい"
-          }
-        }
-      }
-    },
-    {
-      "name": "迎賓石",
-      "category": "自然",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "扁圓形灰色石塊，表面有不規則斑點與圓潤邊緣，放在門邊。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "welcome-stone",
-        "words": {
-          "zh-TW": "迎賓石",
-          "en": "welcome stone",
-          "ja": {
-            "text": "飾り石",
-            "reading": "かざりいし"
-          }
-        }
-      }
-    },
-    {
-      "name": "風車飾",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "彩色扁平葉片圍繞中央圓軸，插在細杆頂端，葉片呈放射狀排列。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "wind-spinner",
-        "words": {
-          "zh-TW": "風車飾",
-          "en": "wind spinner",
-          "ja": {
-            "text": "風車飾り",
-            "reading": "かざぐるま"
-          }
-        }
-      }
-    },
-    {
-      "name": "草坪邊界條",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "一段彎曲的矮型深色塑膠邊條，部分露出地面，用來分隔草坪與步道。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "lawn-edging",
-        "words": {
-          "zh-TW": "草坪邊界條",
-          "en": "lawn edging",
-          "ja": {
-            "text": "芝生の縁取り",
-            "reading": "しばふのふちどり"
           }
         }
       }
@@ -346,27 +157,6 @@
       }
     },
     {
-      "name": "雨量計",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "透明直立圓筒插在細杆支架上，頂端敞開，外壁沒有刻度或數字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "rain-gauge-home",
-        "words": {
-          "zh-TW": "雨量計",
-          "en": "rain gauge",
-          "ja": {
-            "text": "雨量計",
-            "reading": "うりょうけい"
-          }
-        }
-      }
-    },
-    {
       "name": "風向標",
       "category": "道具",
       "lane": "b",
@@ -409,48 +199,6 @@
       }
     },
     {
-      "name": "窗板",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "窗戶兩側各一片深綠色木板，板面有平行排列的斜向百葉條。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "window-shutter",
-        "words": {
-          "zh-TW": "窗板",
-          "en": "window shutter",
-          "ja": {
-            "text": "窓 shutters",
-            "reading": "まどシャッター"
-          }
-        }
-      }
-    },
-    {
-      "name": "門廊階梯",
-      "category": "設施",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "兩級寬而低的灰色石階，踏面平坦，前緣有清晰直線邊角。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "porch-step",
-        "words": {
-          "zh-TW": "門廊階梯",
-          "en": "porch step",
-          "ja": {
-            "text": "ポーチの段",
-            "reading": "ポーチのだん"
-          }
-        }
-      }
-    },
-    {
       "name": "鞋盤",
       "category": "道具",
       "lane": "b",
@@ -467,69 +215,6 @@
           "ja": {
             "text": "靴置きトレー",
             "reading": "くつおきトレー"
-          }
-        }
-      }
-    },
-    {
-      "name": "庭園溫度計",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "窄長木框內有透明管與紅色液柱，固定在門廊柱側，不顯示數字。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "garden-thermometer",
-        "words": {
-          "zh-TW": "庭園溫度計",
-          "en": "outdoor thermometer",
-          "ja": {
-            "text": "屋外温度計",
-            "reading": "おくがいおんどけい"
-          }
-        }
-      }
-    },
-    {
-      "name": "庭園玻璃球",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "光滑的彩色玻璃球固定在短矮底座上，球面有柔和色塊反光。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "garden-globe",
-        "words": {
-          "zh-TW": "庭園玻璃球",
-          "en": "garden globe",
-          "ja": {
-            "text": "ガーデングローブ",
-            "reading": "ガーデングローブ"
-          }
-        }
-      }
-    },
-    {
-      "name": "風向袋",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "medium",
-      "desc": "彩色布筒套在圓形支架上，尾端逐漸變窄，橫向飄展在空中。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "front-yard",
-        "itemId": "wind-sock-home",
-        "words": {
-          "zh-TW": "風向袋",
-          "en": "windsock",
-          "ja": {
-            "text": "吹き流し",
-            "reading": "ふきながし"
           }
         }
       }
@@ -971,27 +656,6 @@
           "ja": {
             "text": "チェス盤",
             "reading": "チェスばん"
-          }
-        }
-      }
-    },
-    {
-      "name": "拼圖",
-      "category": "道具",
-      "lane": "b",
-      "sizeHint": "small",
-      "desc": "幾片彩色拼圖散開擺放，片邊有凸出與凹入的卡榫，圖案是簡單風景。",
-      "ref": {
-        "project": "la-game",
-        "scene": "home",
-        "zone": "living-room",
-        "itemId": "jigsaw-puzzle",
-        "words": {
-          "zh-TW": "拼圖",
-          "en": "jigsaw-puzzle",
-          "ja": {
-            "text": "ジグソーパズル",
-            "reading": "ジグソーパズル"
           }
         }
       }

@@ -1,0 +1,1357 @@
+{
+  "sceneName": "語言小鎮・便利商店",
+  "sceneSlug": "la-convenience-store",
+  "propStyle": "front-flat",
+  "zones": {
+    "storefront": "店外入口",
+    "produce-stand": "鮮食區",
+    "cold-drinks": "冷藏飲料區",
+    "checkout-counter": "櫃台與熱食"
+  },
+  "elements": [
+    {
+      "name": "門墊",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "門前鋪著長方形深藍色粗織墊，四角平整，表面有細密的凸起紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "door-mat-convenience-store",
+        "words": {
+          "zh-TW": "門墊",
+          "en": "door mat",
+          "ja": {
+            "text": "玄関マット",
+            "reading": "げんかんマット"
+          }
+        }
+      }
+    },
+    {
+      "name": "有輪垃圾桶",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深綠色方形大垃圾桶有掀蓋和兩個黑色後輪，側邊伸出短把手。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "wheelie-bin-convenience-store",
+        "words": {
+          "zh-TW": "有輪垃圾桶",
+          "en": "wheelie bin",
+          "ja": {
+            "text": "キャスター付きごみ箱",
+            "reading": "キャスターつきごみばこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "監視器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "牆角伸出短金屬臂，托著白色長方形攝影機，前端有黑色圓形鏡頭。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "security-camera-convenience-store",
+        "words": {
+          "zh-TW": "監視器",
+          "en": "security camera",
+          "ja": {
+            "text": "防犯カメラ",
+            "reading": "ぼうはんカメラ"
+          }
+        }
+      }
+    },
+    {
+      "name": "防撞柱",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "矮短的黑色金屬柱立在入口外側，柱頂圓滑，底部固定在圓形底座上。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "bollard-convenience-store",
+        "words": {
+          "zh-TW": "防撞柱",
+          "en": "bollard",
+          "ja": {
+            "text": "車止めポール",
+            "reading": "くるまどめポール"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物籃",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "紅色長方形塑膠籃有兩個提把，籃身側面布滿整齊的方形孔洞。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "shopping-basket-convenience-store",
+        "words": {
+          "zh-TW": "購物籃",
+          "en": "shopping basket",
+          "ja": {
+            "text": "買い物かご",
+            "reading": "かいものかご"
+          }
+        }
+      }
+    },
+    {
+      "name": "傘架",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "深藍色直立圓筒放在入口旁，底部略寬，筒身有數條垂直凹槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "umbrella-stand-convenience-store",
+        "words": {
+          "zh-TW": "傘架",
+          "en": "umbrella stand",
+          "ja": {
+            "text": "傘立て",
+            "reading": "かさたて"
+          }
+        }
+      }
+    },
+    {
+      "name": "摺疊傘",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "收起的黑色細長傘身以短帶束住，末端露出彎曲的塑膠握把。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "storefront",
+        "itemId": "folding-umbrella-convenience-store",
+        "words": {
+          "zh-TW": "摺疊傘",
+          "en": "folding umbrella",
+          "ja": {
+            "text": "折りたたみ傘",
+            "reading": "おりたたみがさ"
+          }
+        }
+      }
+    },
+    {
+      "name": "鮮食冷藏櫃",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "large",
+      "desc": "長方形玻璃冷藏櫃，裡面透出淡藍冷光，下方是白色實心櫃身，玻璃上沒有標示。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "prepared-food-case",
+        "words": {
+          "zh-TW": "鮮食冷藏櫃",
+          "en": "display fridge",
+          "ja": {
+            "text": "冷蔵ショーケース",
+            "reading": "れいぞうショーケース"
+          }
+        }
+      }
+    },
+    {
+      "name": "便當",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長方形餐盒分成幾格，能看見白飯、金黃色玉子燒和綠色蔬菜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "bento-box",
+        "words": {
+          "zh-TW": "便當",
+          "en": "bento box",
+          "ja": {
+            "text": "弁当",
+            "reading": "べんとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "壽司卷",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾段圓形壽司卷並排，外層深綠海苔包著白飯，中心露出橘色與粉色餡料。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "sushi-roll",
+        "words": {
+          "zh-TW": "壽司卷",
+          "en": "sushi roll",
+          "ja": {
+            "text": "巻き寿司",
+            "reading": "まきずし"
+          }
+        }
+      }
+    },
+    {
+      "name": "義大利麵沙拉",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明圓碗盛著彎曲的短麵、紅色番茄丁與綠色葉菜，食材輪廓清楚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "pasta-salad",
+        "words": {
+          "zh-TW": "義大利麵沙拉",
+          "en": "pasta salad",
+          "ja": {
+            "text": "パスタサラダ",
+            "reading": "パスタサラダ"
+          }
+        }
+      }
+    },
+    {
+      "name": "馬鈴薯沙拉",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺黃色馬鈴薯塊拌著橘色紅蘿蔔丁，盛在透明小盒裡，頂部有一抹綠色香草。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "potato-salad",
+        "words": {
+          "zh-TW": "馬鈴薯沙拉",
+          "en": "potato salad",
+          "ja": {
+            "text": "ポテトサラダ",
+            "reading": "ポテトサラダ"
+          }
+        }
+      }
+    },
+    {
+      "name": "炸雞",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一塊金褐色雞肉裹著粗糙酥脆外皮，形狀不規則，表面有深淺交錯的凸點。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "fried-chicken",
+        "words": {
+          "zh-TW": "炸雞",
+          "en": "fried chicken",
+          "ja": {
+            "text": "フライドチキン",
+            "reading": "フライドチキン"
+          }
+        }
+      }
+    },
+    {
+      "name": "可樂餅",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橢圓形可樂餅裹著金黃色麵包粉，外殼顆粒分明，兩端略尖。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "croquette",
+        "words": {
+          "zh-TW": "可樂餅",
+          "en": "croquette",
+          "ja": {
+            "text": "コロッケ",
+            "reading": "コロッケ"
+          }
+        }
+      }
+    },
+    {
+      "name": "炸蝦",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "彎曲的炸蝦裹著金黃色酥皮，尾端露出紅色蝦尾，外層有細碎麵包粉。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "fried-shrimp",
+        "words": {
+          "zh-TW": "炸蝦",
+          "en": "fried shrimp",
+          "ja": {
+            "text": "えびフライ",
+            "reading": "えびフライ"
+          }
+        }
+      }
+    },
+    {
+      "name": "玉子燒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "厚實的黃色玉子燒切成幾段，切面呈現一圈圈柔軟蛋層，邊角略帶焦色。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "omelet",
+        "words": {
+          "zh-TW": "玉子燒",
+          "en": "omelet",
+          "ja": {
+            "text": "卵焼き",
+            "reading": "たまごやき"
+          }
+        }
+      }
+    },
+    {
+      "name": "水煮蛋",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "剝殼的橢圓白色水煮蛋，表面光滑，側邊切開露出明亮的黃色蛋黃。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "boiled-egg",
+        "words": {
+          "zh-TW": "水煮蛋",
+          "en": "boiled egg",
+          "ja": {
+            "text": "ゆで卵",
+            "reading": "ゆでたまご"
+          }
+        }
+      }
+    },
+    {
+      "name": "毛豆",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾枚翠綠毛豆莢放在淺色小盒中，豆莢細長微彎，表面有細小柔毛。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "edamame",
+        "words": {
+          "zh-TW": "毛豆",
+          "en": "edamame",
+          "ja": {
+            "text": "枝豆",
+            "reading": "えだまめ"
+          }
+        }
+      }
+    },
+    {
+      "name": "泡菜",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "皺褶明顯的橘紅色白菜葉堆在透明盒裡，葉梗乳白，表面帶著亮紅醬汁。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "kimchi",
+        "words": {
+          "zh-TW": "泡菜",
+          "en": "kimchi",
+          "ja": {
+            "text": "キムチ",
+            "reading": "キムチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "豆腐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "幾塊方正的乳白豆腐浸在透明淺盒內，邊角平整，表面柔滑微微發亮。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "tofu",
+        "words": {
+          "zh-TW": "豆腐",
+          "en": "tofu",
+          "ja": {
+            "text": "豆腐",
+            "reading": "とうふ"
+          }
+        }
+      }
+    },
+    {
+      "name": "納豆",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色發酵黃豆裝在淺色小盒中，顆粒圓潤黏亮，旁邊有一小團細絲。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "natto",
+        "words": {
+          "zh-TW": "納豆",
+          "en": "natto",
+          "ja": {
+            "text": "納豆",
+            "reading": "なっとう"
+          }
+        }
+      }
+    },
+    {
+      "name": "海帶芽沙拉",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深綠色海帶芽捲曲堆疊在透明盒中，旁邊點綴幾顆亮橘色魚卵。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "seaweed-salad",
+        "words": {
+          "zh-TW": "海帶芽沙拉",
+          "en": "seaweed salad",
+          "ja": {
+            "text": "海藻サラダ",
+            "reading": "かいそうサラダ"
+          }
+        }
+      }
+    },
+    {
+      "name": "水果盒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明小盒中排著紅色草莓、橘色橘瓣與淡黃色鳳梨塊，果肉切面清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "fruit-cup",
+        "words": {
+          "zh-TW": "水果盒",
+          "en": "fruit cup",
+          "ja": {
+            "text": "フルーツカップ",
+            "reading": "フルーツカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "烤鮭魚",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘粉色鮭魚排放在小餐盒裡，表面有淺褐色烤痕，邊緣露出細白魚肉紋理。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "grilled-salmon",
+        "words": {
+          "zh-TW": "烤鮭魚",
+          "en": "grilled salmon",
+          "ja": {
+            "text": "焼き鮭",
+            "reading": "やきざけ"
+          }
+        }
+      }
+    },
+    {
+      "name": "漢堡排",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓厚的深褐色肉排放在淺色餐盒中，表面有交錯煎痕，邊緣帶著焦香色澤。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "hamburger-steak",
+        "words": {
+          "zh-TW": "漢堡排",
+          "en": "hamburger steak",
+          "ja": {
+            "text": "ハンバーグ",
+            "reading": "ハンバーグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油乳酪",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "乳白色方塊奶油乳酪裝在透明小盒中，切面平整，邊緣柔軟略帶圓角。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "produce-stand",
+        "itemId": "cream-cheese",
+        "words": {
+          "zh-TW": "奶油乳酪",
+          "en": "cream cheese",
+          "ja": {
+            "text": "クリームチーズ",
+            "reading": "クリームチーズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "食物夾",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "一把銀灰色金屬夾子，兩支細長握柄在尾端連接，前端張開成圓弧夾口。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "food-tongs",
+        "words": {
+          "zh-TW": "食物夾",
+          "en": "food tongs",
+          "ja": {
+            "text": "トング",
+            "reading": "トング"
+          }
+        }
+      }
+    },
+    {
+      "name": "湯勺",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓弧形銀灰色勺面接著細長柄，勺底深而光滑，柄尾有小圓孔。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "soup-ladle",
+        "words": {
+          "zh-TW": "湯勺",
+          "en": "soup ladle",
+          "ja": {
+            "text": "おたま",
+            "reading": "おたま"
+          }
+        }
+      }
+    },
+    {
+      "name": "牛奶紙盒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色長方紙盒，頂端折成尖尖的屋脊形，側面有一塊藍色區域。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "milk-carton",
+        "words": {
+          "zh-TW": "牛奶紙盒",
+          "en": "milk carton",
+          "ja": {
+            "text": "牛乳パック",
+            "reading": "ぎゅうにゅうパック"
+          }
+        }
+      }
+    },
+    {
+      "name": "柳橙汁紙盒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "橘色小紙盒，頂部折出三角形封口，正面有一個圓形橙色圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "orange-juice-carton",
+        "words": {
+          "zh-TW": "柳橙汁紙盒",
+          "en": "orange juice carton",
+          "ja": {
+            "text": "オレンジジュースの紙パック",
+            "reading": "オレンジジュースのかみパック"
+          }
+        }
+      }
+    },
+    {
+      "name": "綠茶瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明綠色細長瓶身帶有環狀凹紋，瓶口旋著深綠色瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "green-tea-bottle",
+        "words": {
+          "zh-TW": "綠茶瓶",
+          "en": "green tea bottle",
+          "ja": {
+            "text": "緑茶のペットボトル",
+            "reading": "りょくちゃのペットボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "汽水罐",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短圓柱形鋁罐，亮紅色罐身上有白色波浪圖案，頂端是銀色拉環。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "soda-can-convenience-store",
+        "words": {
+          "zh-TW": "汽水罐",
+          "en": "soda can",
+          "ja": {
+            "text": "炭酸飲料の缶",
+            "reading": "たんさんいんりょうのかん"
+          }
+        }
+      }
+    },
+    {
+      "name": "優酪乳飲料",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "矮胖的白色塑膠瓶，肩部圓潤，瓶口套著藍色瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "yogurt-drink",
+        "words": {
+          "zh-TW": "優酪乳飲料",
+          "en": "yogurt drink",
+          "ja": {
+            "text": "飲むヨーグルト",
+            "reading": "のむヨーグルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "運動飲料瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明淡黃色塑膠瓶，瓶身中段收窄，頂端是白色旋蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "sports-drink-bottle",
+        "words": {
+          "zh-TW": "運動飲料瓶",
+          "en": "sports drink bottle",
+          "ja": {
+            "text": "スポーツドリンクのボトル",
+            "reading": "スポーツドリンクのボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "蘋果汁瓶",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "琥珀色小塑膠瓶，圓肩瓶身帶有直條凹紋，頂端是紅色瓶蓋。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "apple-juice-bottle",
+        "words": {
+          "zh-TW": "蘋果汁瓶",
+          "en": "apple juice bottle",
+          "ja": {
+            "text": "りんごジュースのボトル",
+            "reading": "りんごジュースのボトル"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司片",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平方形透明包裝，裡面疊著幾片淡黃色方形起司。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "sliced-cheese-pack",
+        "words": {
+          "zh-TW": "起司片",
+          "en": "sliced cheese pack",
+          "ja": {
+            "text": "スライスチーズ",
+            "reading": "スライスチーズ"
+          }
+        }
+      }
+    },
+    {
+      "name": "奶油小盒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "淺黃色方形小塑膠盒，盒蓋微微隆起，邊緣有透明封膜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "butter-cup",
+        "words": {
+          "zh-TW": "奶油小盒",
+          "en": "butter cup",
+          "ja": {
+            "text": "バターカップ",
+            "reading": "バターカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "布丁杯",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮杯裝著淡黃色布丁，頂面平滑，杯口封著銀色薄膜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "pudding-cup",
+        "words": {
+          "zh-TW": "布丁杯",
+          "en": "pudding cup",
+          "ja": {
+            "text": "プリンカップ",
+            "reading": "プリンカップ"
+          }
+        }
+      }
+    },
+    {
+      "name": "卡士達泡芙",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色圓鼓泡芙，表面有不規則裂紋，中央露出一小點奶油餡。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "custard-choux",
+        "words": {
+          "zh-TW": "卡士達泡芙",
+          "en": "custard puff",
+          "ja": {
+            "text": "カスタードシュークリーム",
+            "reading": "カスタードシュークリーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "水果優格杯",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明矮杯中是白色優格與幾塊彩色水果，杯口覆著薄膜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "fruit-yogurt-cup",
+        "words": {
+          "zh-TW": "水果優格杯",
+          "en": "fruit yogurt cup",
+          "ja": {
+            "text": "フルーツヨーグルト",
+            "reading": "フルーツヨーグルト"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司蛋糕杯",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明小杯裡有乳白色蛋糕層與金黃色餅乾底，頂面點綴一顆紅莓。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "cheese-cake-cup",
+        "words": {
+          "zh-TW": "起司蛋糕杯",
+          "en": "cheesecake cup",
+          "ja": {
+            "text": "チーズケーキ",
+            "reading": "チーズケーキ"
+          }
+        }
+      }
+    },
+    {
+      "name": "巧克力布丁",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "深棕色布丁盛在透明圓杯中，表面平滑，杯緣繞著一圈銀色封膜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "chocolate-pudding",
+        "words": {
+          "zh-TW": "巧克力布丁",
+          "en": "chocolate pudding",
+          "ja": {
+            "text": "チョコプリン",
+            "reading": "チョコプリン"
+          }
+        }
+      }
+    },
+    {
+      "name": "泡芙盒",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "透明長方盒內排著三顆金黃色圓泡芙，盒蓋四角略微凸起。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "cream-puff-pack",
+        "words": {
+          "zh-TW": "泡芙盒",
+          "en": "cream puff pack",
+          "ja": {
+            "text": "シュークリーム",
+            "reading": "シュークリーム"
+          }
+        }
+      }
+    },
+    {
+      "name": "起司三明治",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "兩片白吐司夾著一層黃色起司，切成三角形並包在透明薄膜內。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "cheese-sandwich",
+        "words": {
+          "zh-TW": "起司三明治",
+          "en": "cheese sandwich",
+          "ja": {
+            "text": "チーズサンドイッチ",
+            "reading": "チーズサンドイッチ"
+          }
+        }
+      }
+    },
+    {
+      "name": "蛋沙拉三明治",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白吐司夾著淡黃色蛋沙拉，切成兩個三角塊，外面包著透明薄膜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "egg-sandwich",
+        "words": {
+          "zh-TW": "蛋沙拉三明治",
+          "en": "egg sandwich",
+          "ja": {
+            "text": "たまごサンド",
+            "reading": "たまごサンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "火腿三明治",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白吐司中夾著粉紅火腿與一片綠色生菜，三角切面清楚可見。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "ham-sandwich",
+        "words": {
+          "zh-TW": "火腿三明治",
+          "en": "ham sandwich",
+          "ja": {
+            "text": "ハムサンド",
+            "reading": "ハムサンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "鮪魚三明治",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白吐司夾著灰褐色鮪魚沙拉，三角切面露出餡料，外層包著薄膜。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "tuna-sandwich",
+        "words": {
+          "zh-TW": "鮪魚三明治",
+          "en": "tuna sandwich",
+          "ja": {
+            "text": "ツナサンド",
+            "reading": "ツナサンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "可頌三明治",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金黃色彎月可頌從中剖開，夾著綠色生菜與一片粉紅火腿。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "croissant-sandwich",
+        "words": {
+          "zh-TW": "可頌三明治",
+          "en": "croissant sandwich",
+          "ja": {
+            "text": "クロワッサンサンド",
+            "reading": "クロワッサンサンド"
+          }
+        }
+      }
+    },
+    {
+      "name": "鮪魚飯糰",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色三角飯糰外包一片深綠海苔，底部可見一層淡褐色餡料。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "tuna-rice-ball",
+        "words": {
+          "zh-TW": "鮪魚飯糰",
+          "en": "tuna rice ball",
+          "ja": {
+            "text": "ツナおにぎり",
+            "reading": "ツナおにぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "鮭魚飯糰",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色三角飯糰裹著深綠海苔，頂端露出一小塊橘紅色鮭魚。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "salmon-rice-ball",
+        "words": {
+          "zh-TW": "鮭魚飯糰",
+          "en": "salmon rice ball",
+          "ja": {
+            "text": "鮭おにぎり",
+            "reading": "さけおにぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "梅子飯糰",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "白色三角飯糰外裹深綠海苔，中央嵌著一顆圓潤的暗紅梅子。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "cold-drinks",
+        "itemId": "pickled-plum-rice-ball",
+        "words": {
+          "zh-TW": "梅子飯糰",
+          "en": "pickled plum rice ball",
+          "ja": {
+            "text": "梅おにぎり",
+            "reading": "うめおにぎり"
+          }
+        }
+      }
+    },
+    {
+      "name": "肉包",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "圓白麵包頂部捏出一圈褶皺，底下墊著一小片白色烘焙紙。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "meat-bun",
+        "words": {
+          "zh-TW": "肉包",
+          "en": "steamed meat bun",
+          "ja": {
+            "text": "肉まん",
+            "reading": "にくまん"
+          }
+        }
+      }
+    },
+    {
+      "name": "魚板",
+      "category": "食物",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半月形白色魚板帶著粉紅外緣，切面平滑，表面有細緻弧形紋路。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "fish-cake",
+        "words": {
+          "zh-TW": "魚板",
+          "en": "fish cake",
+          "ja": {
+            "text": "かまぼこ",
+            "reading": "かまぼこ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀台",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "medium",
+      "desc": "低矮的長方形櫃檯，正面有深色踢腳板，檯面平整寬闊。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "checkout-counter",
+        "words": {
+          "zh-TW": "收銀台",
+          "en": "checkout counter",
+          "ja": {
+            "text": "レジカウンター",
+            "reading": "レジカウンター"
+          }
+        }
+      }
+    },
+    {
+      "name": "購物袋架",
+      "category": "設施",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "金屬支架上掛著幾個空白的薄塑膠袋，袋口撐開呈弧形。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "shopping-bag-holder-convenience-store",
+        "words": {
+          "zh-TW": "購物袋架",
+          "en": "shopping bag holder",
+          "ja": {
+            "text": "レジ袋ホルダー",
+            "reading": "レジぶくろホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀顯示器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小型黑色螢幕立在短支架上，螢幕朝向結帳櫃檯前方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-register-display-convenience-store",
+        "words": {
+          "zh-TW": "收銀顯示器",
+          "en": "cash register display",
+          "ja": {
+            "text": "レジの表示器",
+            "reading": "レジのひょうじき"
+          }
+        }
+      }
+    },
+    {
+      "name": "條碼掃描器",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "黑色手持掃描器放在底座上，前端有透明紅色掃描窗。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "barcode-scanner-convenience-store",
+        "words": {
+          "zh-TW": "條碼掃描器",
+          "en": "barcode scanner",
+          "ja": {
+            "text": "バーコードリーダー",
+            "reading": "バーコードリーダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "刷卡機",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "掌心大小的深色終端機，斜面排列凸起按鍵，頂端有小螢幕。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "card-terminal-convenience-store",
+        "words": {
+          "zh-TW": "刷卡機",
+          "en": "card terminal",
+          "ja": {
+            "text": "カード決済端末",
+            "reading": "カードけっさいたんまつ"
+          }
+        }
+      }
+    },
+    {
+      "name": "收銀抽屜",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "扁平的金屬抽屜敞開著，內部有幾格整齊的鈔票與硬幣分隔槽。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "cash-drawer-convenience-store",
+        "words": {
+          "zh-TW": "收銀抽屜",
+          "en": "cash drawer",
+          "ja": {
+            "text": "レジの引き出し",
+            "reading": "レジのひきだし"
+          }
+        }
+      }
+    },
+    {
+      "name": "收據紙捲座",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "短軸穿過一卷白色紙捲，架在黑色底座上，紙尾垂在前方。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "receipt-roll-dispenser-convenience-store",
+        "words": {
+          "zh-TW": "收據紙捲座",
+          "en": "receipt roll dispenser",
+          "ja": {
+            "text": "レシートロールホルダー",
+            "reading": "レシートロールホルダー"
+          }
+        }
+      }
+    },
+    {
+      "name": "價格吊牌",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "小片長方形紙卡，頂端有穿繩小孔，空白紙面沒有任何字樣。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "price-tag-convenience-store",
+        "words": {
+          "zh-TW": "價格吊牌",
+          "en": "price tag",
+          "ja": {
+            "text": "値札",
+            "reading": "ねふだ"
+          }
+        }
+      }
+    },
+    {
+      "name": "環保購物袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "可重複使用的方形布袋，兩個短提把立起，袋身是素色無圖案。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "reusable-bag-convenience-store",
+        "words": {
+          "zh-TW": "環保購物袋",
+          "en": "reusable shopping bag",
+          "ja": {
+            "text": "エコバッグ",
+            "reading": "エコバッグ"
+          }
+        }
+      }
+    },
+    {
+      "name": "紙袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "棕色牛皮紙折成的方底袋，袋口敞開，兩側折出整齊側褶。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "paper-bag-convenience-store",
+        "words": {
+          "zh-TW": "紙袋",
+          "en": "paper bag",
+          "ja": {
+            "text": "紙袋",
+            "reading": "かみぶくろ"
+          }
+        }
+      }
+    },
+    {
+      "name": "塑膠袋",
+      "category": "道具",
+      "lane": "b",
+      "sizeHint": "small",
+      "desc": "半透明薄塑膠袋有方形袋身和兩個環形提把，袋面沒有印刷。",
+      "ref": {
+        "project": "la-game",
+        "scene": "convenience-store",
+        "zone": "checkout-counter",
+        "itemId": "plastic-bag-convenience-store",
+        "words": {
+          "zh-TW": "塑膠袋",
+          "en": "plastic bag",
+          "ja": {
+            "text": "レジ袋",
+            "reading": "レジぶくろ"
+          }
+        }
+      }
+    }
+  ]
+}

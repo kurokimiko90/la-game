@@ -4,7 +4,7 @@
   "zones": [
     {
       "id": "entrance",
-      "name": "入口",
+      "name": "店門口",
       "indoor": false,
       "floor": "paving",
       "feature": "none"
@@ -18,14 +18,14 @@
     },
     {
       "id": "fitting",
-      "name": "試衣間",
+      "name": "試衣與整燙區",
       "indoor": true,
       "floor": "carpet",
       "feature": "none"
     },
     {
       "id": "checkout",
-      "name": "結帳區",
+      "name": "結帳與修改衣服",
       "indoor": true,
       "floor": "wood",
       "feature": "checkout"
@@ -40,21 +40,6 @@
   "colorIndex": 10,
   "icon": "full-length-mirror",
   "elements": [
-    {
-      "id": "facade-bracket",
-      "zh": "遮棚支架",
-      "en": "canopy-bracket",
-      "ja": "ひさしの金具",
-      "reading": "ひさしのかなぐ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "兩根深色金屬桿從牆面斜伸出來，末端以橫桿相連，撐住上方布棚。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
     {
       "id": "clothing-rack",
       "zh": "衣架桿",
@@ -123,7 +108,7 @@
       "reading": "くつひも",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "display",
       "spot": "ground",
       "desc": "細長柔軟的扁繩盤成鬆散圈狀，兩端各有一截硬質包頭。",
       "loose": true,
@@ -138,7 +123,7 @@
       "reading": "くつブラシ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "display",
       "spot": "ground",
       "desc": "短木柄連著一排密集深色刷毛，刷毛邊緣整齊排列成長方形。",
       "loose": true,
@@ -153,7 +138,7 @@
       "reading": "くつクリーム",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "display",
       "spot": "ground",
       "desc": "矮圓鐵罐配扁平旋蓋，罐身有色塊與簡單圖案但沒有字樣。",
       "loose": true,
@@ -168,27 +153,12 @@
       "reading": "すがたみ",
       "category": "設施",
       "size": "large",
-      "zone": "entrance",
+      "zone": "fitting",
       "spot": "ground",
       "desc": "高而窄的長方形鏡面嵌在細木框內，底部有兩支斜撐腳。",
       "loose": false,
       "motion": null,
       "cluster": null
-    },
-    {
-      "id": "clothing-bag",
-      "zh": "衣物防塵袋",
-      "en": "garment-bag",
-      "ja": "衣類カバー",
-      "reading": "いるいカバー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "透明長袋包住衣物輪廓，頂端開口收在短掛鉤下，表面有細摺痕。",
-      "loose": true,
-      "motion": null,
-      "cluster": "coat-hanger"
     },
     {
       "id": "standee",
@@ -206,21 +176,6 @@
       "cluster": null
     },
     {
-      "id": "folding-screen",
-      "zh": "折疊屏風",
-      "en": "folding-screen",
-      "ja": "ついたて",
-      "reading": "ついたて",
-      "category": "道具",
-      "size": "large",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "三片窄長木板以深色鉸鏈相連，站立成彎折形狀，表面是素色布面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "button",
       "zh": "鈕扣",
       "en": "button",
@@ -228,7 +183,7 @@
       "reading": "ボタン",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "小巧的圓形扁片，表面有四個深色小孔，邊緣略帶光澤。",
       "loose": true,
@@ -243,7 +198,7 @@
       "reading": "ぬいばり",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "細直的銀色金屬針，一端尖銳，另一端有清楚可見的小圓孔。",
       "loose": true,
@@ -258,7 +213,7 @@
       "reading": "いとまき",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "矮胖的圓筒形木軸，中間纏著一圈圈亮色細線，上下有凸出的圓盤。",
       "loose": true,
@@ -273,7 +228,7 @@
       "reading": "ミシン",
       "category": "道具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "矮方盒形機身向右伸出縫紉臂，頂部有大圓輪，前方可見細針和底座。",
       "loose": false,
@@ -288,7 +243,7 @@
       "reading": "ぬのロール",
       "category": "道具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "一卷厚實的長方布料橫放著，兩端露出圓形紙筒，外層有簡單條紋。",
       "loose": false,
@@ -303,57 +258,12 @@
       "reading": "メジャー",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "扁圓形黃色外殼，側面伸出一小截金屬尺帶，頂端有方形止片。",
       "loose": true,
       "motion": null,
       "cluster": "fabric-roll"
-    },
-    {
-      "id": "shoe-tree",
-      "zh": "鞋撐",
-      "en": "shoe-tree",
-      "ja": "シューキーパー",
-      "reading": "シューキーパー",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "木製鞋楦呈鞋頭形狀，後方接著細長彈簧桿與圓形拉環。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "clothesline",
-      "zh": "曬衣繩",
-      "en": "clothesline",
-      "ja": "物干しロープ",
-      "reading": "ものほしロープ",
-      "category": "設施",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "兩根短柱之間拉著一條細直繩，繩上夾著幾個素色木製衣夾。",
-      "loose": false,
-      "motion": "sway",
-      "cluster": null
-    },
-    {
-      "id": "clothes-hamper",
-      "zh": "衣物籃",
-      "en": "clothes-hamper",
-      "ja": "ランドリーバスケット",
-      "reading": "ランドリーバスケット",
-      "category": "道具",
-      "size": "medium",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "米白色長方形編織籃，兩側有提把，籃身排列著整齊的通風孔。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
     },
     {
       "id": "sewing-scissors",
@@ -363,7 +273,7 @@
       "reading": "たちばさみ",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "一把銀色長刀刃剪刀，搭配兩個黑色橢圓握環，刀刃在中間以螺絲相接。",
       "loose": true,
@@ -378,24 +288,9 @@
       "reading": "きじみほん",
       "category": "道具",
       "size": "small",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "一小片方形靛藍布料，邊緣有細密白色車線，布面帶著柔軟的織紋。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "clothes-peg",
-      "zh": "曬衣夾",
-      "en": "clothes-peg",
-      "ja": "洗濯ばさみ",
-      "reading": "せんたくばさみ",
-      "category": "道具",
-      "size": "small",
-      "zone": "entrance",
-      "spot": "ground",
-      "desc": "一枚黃色木製曬衣夾，兩片細長夾身由中央金屬彈簧連接，夾口清楚可見。",
       "loose": true,
       "motion": null,
       "cluster": null
@@ -442,21 +337,6 @@
       "spot": "surface",
       "desc": "花朵形金屬飾針，中央鑲著一顆醒目的彩色圓石。",
       "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "crown",
-      "zh": "皇冠",
-      "en": "crown",
-      "ja": "王冠",
-      "reading": "おうかん",
-      "category": "道具",
-      "size": "small",
-      "zone": "display",
-      "spot": "surface",
-      "desc": "金色弧形底環上立著三個尖角，中央鑲有一顆紅寶石。",
-      "loose": false,
       "motion": null,
       "cluster": null
     },
@@ -536,36 +416,6 @@
       "cluster": "shoebox"
     },
     {
-      "id": "boot-jack",
-      "zh": "脫靴器",
-      "en": "boot-jack",
-      "ja": "ブーツジャック",
-      "reading": "ブーツジャック",
-      "category": "道具",
-      "size": "small",
-      "zone": "display",
-      "spot": "ground",
-      "desc": "扁平木板兩端各有一個叉形凹口，中央凸起形成踩踏區。",
-      "loose": true,
-      "motion": null,
-      "cluster": "boot"
-    },
-    {
-      "id": "laundry-detergent",
-      "zh": "洗衣精",
-      "en": "laundry-detergent",
-      "ja": "洗濯洗剤",
-      "reading": "せんたくせんざい",
-      "category": "道具",
-      "size": "small",
-      "zone": "display",
-      "spot": "ground",
-      "desc": "圓角塑膠瓶身配寬瓶口與握把，瓶身沒有標籤或文字。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "iron",
       "zh": "熨斗",
       "en": "iron",
@@ -573,7 +423,7 @@
       "reading": "アイロン",
       "category": "道具",
       "size": "small",
-      "zone": "display",
+      "zone": "fitting",
       "spot": "ground",
       "desc": "三角尖頭的扁平底座上立著弧形握把，側面有小旋鈕。",
       "loose": false,
@@ -588,7 +438,7 @@
       "reading": "アイロンだい",
       "category": "道具",
       "size": "medium",
-      "zone": "display",
+      "zone": "fitting",
       "spot": "ground",
       "desc": "長橢圓布面由交叉金屬腳架支撐，尖端朝向一側。",
       "loose": false,
@@ -701,51 +551,6 @@
       "cluster": "clothing-rack"
     },
     {
-      "id": "laundry-basket",
-      "zh": "洗衣籃",
-      "en": "laundry-basket",
-      "ja": "洗濯かご",
-      "reading": "せんたくかご",
-      "category": "道具",
-      "size": "medium",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "一只淺灰色橢圓塑膠籃，側面有整齊長孔，兩端各有一個寬握把。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "belt-buckle",
-      "zh": "皮帶扣",
-      "en": "belt-buckle",
-      "ja": "ベルトのバックル",
-      "reading": "ベルトのバックル",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "一枚銀色長方形皮帶扣，中間有細金屬針，外框四角圓滑且表面發亮。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "laundry-tag",
-      "zh": "洗衣標籤",
-      "en": "laundry-tag",
-      "ja": "洗濯表示タグ",
-      "reading": "せんたくひょうじタグ",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "一小片白色長方布標籤，兩端平整，表面只有幾個簡單線條圖樣且沒有文字。",
-      "loose": true,
-      "motion": null,
-      "cluster": "coat"
-    },
-    {
       "id": "clothes-brush",
       "zh": "衣物刷",
       "en": "clothes-brush",
@@ -791,21 +596,6 @@
       "cluster": null
     },
     {
-      "id": "laundry-bag",
-      "zh": "洗衣袋",
-      "en": "laundry-bag",
-      "ja": "ランドリーバッグ",
-      "reading": "ランドリーバッグ",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "半透明網布縫成的長方形拉鍊袋，袋身柔軟微鼓，能看見裡面的布料輪廓。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "changing-stool",
       "zh": "試衣凳",
       "en": "changing-stool",
@@ -836,21 +626,6 @@
       "cluster": null
     },
     {
-      "id": "fabric-measuring-tape",
-      "zh": "裁縫軟尺",
-      "en": "fabric-measuring-tape",
-      "ja": "洋裁用メジャー",
-      "reading": "ようさいようメジャー",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "黃色柔軟布尺捲成鬆散圓圈，末端鑲著小金屬片，表面沒有可辨識字樣。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "privacy-curtain",
       "zh": "試衣簾",
       "en": "privacy-curtain",
@@ -866,141 +641,6 @@
       "cluster": null
     },
     {
-      "id": "shoe-polishing-cloth",
-      "zh": "擦鞋布",
-      "en": "shoe-polishing-cloth",
-      "ja": "靴磨きクロス",
-      "reading": "くつみがきクロス",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "折成方塊的深棕色柔軟布片，邊緣有細密車縫線，表面略帶絨感。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "garment-cover",
-      "zh": "衣物套",
-      "en": "garment-cover",
-      "ja": "洋服カバー",
-      "reading": "ようふくカバー",
-      "category": "道具",
-      "size": "medium",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "透明長形塑膠衣套，頂端有開口與短掛孔，底部寬鬆垂下並微微起皺。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "full-length-mirror-frame",
-      "zh": "鏡框",
-      "en": "mirror-frame",
-      "ja": "鏡の額縁",
-      "reading": "かがみのがくぶち",
-      "category": "道具",
-      "size": "medium",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "細長的直立長方形框，四角略帶裝飾，中央留有明亮平滑的鏡面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "handbag-mirror",
-      "zh": "化妝鏡",
-      "en": "compact-mirror",
-      "ja": "コンパクトミラー",
-      "reading": "コンパクトミラー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "圓形銀色雙片小鏡合起放置，外殼光滑，邊緣有一圈亮面。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "scarf-ring",
-      "zh": "圍巾環",
-      "en": "scarf-ring",
-      "ja": "スカーフリング",
-      "reading": "スカーフリング",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "金色圓環配一個小小的橢圓穿孔，表面平滑並帶柔和亮光。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "shoehorn-stand",
-      "zh": "鞋拔架",
-      "en": "shoehorn-stand",
-      "ja": "靴べらスタンド",
-      "reading": "くつべらスタンド",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "黑色直立小架座配圓形底盤，中央插著一支細長彎曲的金屬鞋拔。",
-      "loose": false,
-      "motion": null,
-      "cluster": "shoehorn"
-    },
-    {
-      "id": "seam-ripper",
-      "zh": "拆線器",
-      "en": "seam ripper",
-      "ja": "リッパー",
-      "reading": "リッパー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "短柄塑膠工具前端分成兩叉，中間有尖銳彎鉤，旁邊帶著紅色小圓珠。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "thimble",
-      "zh": "頂針",
-      "en": "thimble",
-      "ja": "指ぬき",
-      "reading": "ゆびぬき",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "小巧的銀色金屬杯狀物，頂部圓潤，外壁布滿細小凹點。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "fabric-marker",
-      "zh": "布用筆",
-      "en": "fabric marker",
-      "ja": "布用ペン",
-      "reading": "ぬのようペン",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "一支粗短的紫色筆，兩端各有深色筆蓋，筆身平滑且沒有標記。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "price-gun",
       "zh": "標價槍",
       "en": "price-gun",
@@ -1011,21 +651,6 @@
       "zone": "checkout",
       "spot": "surface",
       "desc": "手持式槍形工具，白色外殼配橘色扳機，前端有短短的出標口。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "receipt-spike",
-      "zh": "收據插針",
-      "en": "receipt-spike",
-      "ja": "伝票差し",
-      "reading": "でんぴょうさし",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "surface",
-      "desc": "黑色圓形底座中央豎起一根細長金屬尖針，頂端有小圓頭。",
       "loose": false,
       "motion": null,
       "cluster": "cash-register"
@@ -1076,21 +701,6 @@
       "cluster": null
     },
     {
-      "id": "coat-check-token",
-      "zh": "寄物牌",
-      "en": "coat-check-token",
-      "ja": "預かり札",
-      "reading": "あずかりふだ",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "扁平橢圓形木牌，邊緣繞著深色細框，頂端穿有一個小孔。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "dress-form",
       "zh": "裁縫人台",
       "en": "dress form",
@@ -1098,7 +708,7 @@
       "reading": "トルソー",
       "category": "道具",
       "size": "medium",
-      "zone": "entrance",
+      "zone": "checkout",
       "spot": "ground",
       "desc": "米色布面的人體上半身立裁人台，沒有頭和四肢，底部以細金屬桿連著圓形底座。",
       "loose": false,
@@ -1151,36 +761,6 @@
       "cluster": null
     },
     {
-      "id": "shoelast",
-      "zh": "鞋楦",
-      "en": "shoelast",
-      "ja": "靴型",
-      "reading": "くつがた",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "光滑的淺木色鞋形模型，前端圓滑上翹，後端有短柄便於拿取。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "laundry-folding-board",
-      "zh": "摺衣板",
-      "en": "folding board",
-      "ja": "衣類たたみボード",
-      "reading": "いるいたたみボード",
-      "category": "道具",
-      "size": "medium",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "長方形的淺色硬板，兩側有可折疊的短翼，表面平整，邊緣帶圓角。",
-      "loose": false,
-      "motion": null,
-      "cluster": null
-    },
-    {
       "id": "lint-roller",
       "zh": "黏毛滾筒",
       "en": "lint roller",
@@ -1196,126 +776,6 @@
       "cluster": null
     },
     {
-      "id": "laundry-powder-box",
-      "zh": "洗衣粉盒",
-      "en": "laundry powder box",
-      "ja": "洗濯洗剤ケース",
-      "reading": "せんたくせんざいケース",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "矮胖的方形塑膠盒，頂部有掀蓋與小量匙，盒身呈白色並帶簡單色塊。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "laundry-detergent-scoop",
-      "zh": "洗衣粉量匙",
-      "en": "detergent scoop",
-      "ja": "洗剤スプーン",
-      "reading": "せんざいスプーン",
-      "category": "道具",
-      "size": "small",
-      "zone": "fitting",
-      "spot": "ground",
-      "desc": "短柄連著淺圓碗狀匙面，整體為半透明白色塑膠，柄端有小孔。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "cash-register-key",
-      "zh": "收銀機鑰匙",
-      "en": "cash-register-key",
-      "ja": "レジの鍵",
-      "reading": "レジのかぎ",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "一把銀色小鑰匙，細長金屬柄頂端有簡單圓環，齒口清楚，斜躺在地面上。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "coin-roll",
-      "zh": "硬幣捲",
-      "en": "coin-roll",
-      "ja": "硬貨ロール",
-      "reading": "こうかロール",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "短圓柱形紙卷，淡褐色外紙包住硬幣，兩端露出圓形金屬邊，放在地面。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "price-labeler",
-      "zh": "標價標籤器",
-      "en": "price-labeler",
-      "ja": "値札ラベラー",
-      "reading": "ねふだラベラー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "手掌大小的塑膠手持器具，前端有圓弧形鼻嘴，握把下垂，外殼呈紅色。",
-      "loose": true,
-      "motion": null,
-      "cluster": "price-gun"
-    },
-    {
-      "id": "cash-register-mat",
-      "zh": "收銀台墊",
-      "en": "cash-register-mat",
-      "ja": "レジマット",
-      "reading": "レジマット",
-      "category": "道具",
-      "size": "medium",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "收銀機前方鋪著一塊長方形深綠色軟墊，邊角略圓，表面平整並帶細緻紋理。",
-      "loose": false,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "receipt-folder",
-      "zh": "收據夾",
-      "en": "receipt-folder",
-      "ja": "レシートホルダー",
-      "reading": "レシートホルダー",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "扁平長方形木製夾座，頂部有一道細縫可插入紙張，原木色底座平放地面。",
-      "loose": true,
-      "motion": null,
-      "cluster": "cash-register"
-    },
-    {
-      "id": "size-ring",
-      "zh": "尺寸環",
-      "en": "size-ring",
-      "ja": "サイズリング",
-      "reading": "サイズリング",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "一個小型白色塑膠圓環，外圈平滑，側面有突出的短柄，單獨放在地板上。",
-      "loose": true,
-      "motion": null,
-      "cluster": "clothing-rack"
-    },
-    {
       "id": "cash-tray",
       "zh": "收銀托盤",
       "en": "cash-tray",
@@ -1329,36 +789,6 @@
       "loose": false,
       "motion": null,
       "cluster": "cash-register"
-    },
-    {
-      "id": "scarf-pin",
-      "zh": "圍巾別針",
-      "en": "scarf-pin",
-      "ja": "スカーフピン",
-      "reading": "スカーフピン",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "金色圓形別針中央嵌著一顆綠色寶石，尾端有細長針尖。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
-    },
-    {
-      "id": "shoe-measuring-device",
-      "zh": "鞋碼測量器",
-      "en": "shoe measuring device",
-      "ja": "靴のサイズ測定器",
-      "reading": "くつのサイズそくていき",
-      "category": "道具",
-      "size": "small",
-      "zone": "checkout",
-      "spot": "ground",
-      "desc": "扁平的白色塑膠量鞋器，前端有寬大的弧形擋片，兩側伸出短滑軌與小型活動量爪。",
-      "loose": true,
-      "motion": null,
-      "cluster": null
     }
   ],
   "rejected": [
@@ -2256,12 +1686,204 @@
       "id": "garment-folding-board",
       "reason": "中文重複",
       "zone": "checkout"
+    },
+    {
+      "id": "facade-bracket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "clothing-bag",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "folding-screen",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "shoe-tree",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "clothesline",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "clothes-hamper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "clothes-peg",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "entrance"
+    },
+    {
+      "id": "crown",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "display"
+    },
+    {
+      "id": "boot-jack",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "display"
+    },
+    {
+      "id": "laundry-detergent",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "display"
+    },
+    {
+      "id": "laundry-basket",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "belt-buckle",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "laundry-tag",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "laundry-bag",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "fabric-measuring-tape",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "shoe-polishing-cloth",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "garment-cover",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "full-length-mirror-frame",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "handbag-mirror",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "scarf-ring",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "shoehorn-stand",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "seam-ripper",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "thimble",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "fabric-marker",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "receipt-spike",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "coat-check-token",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "shoelast",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "laundry-folding-board",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "laundry-powder-box",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "laundry-detergent-scoop",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "fitting"
+    },
+    {
+      "id": "cash-register-key",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "coin-roll",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "price-labeler",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "cash-register-mat",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "receipt-folder",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "size-ring",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "scarf-pin",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
+    },
+    {
+      "id": "shoe-measuring-device",
+      "reason": "退役：真實場所裡不會陳列，或是零件、重複、太瑣碎",
+      "zone": "checkout"
     }
   ],
   "createdAt": "2026-09-25T08:53:58.207+09:00",
   "topUp": {
-    "itemsPerScene": 100,
+    "itemsPerScene": 50,
     "added": 18,
-    "at": "2026-09-25T20:33:27.115+09:00"
-  }
+    "at": "2026-09-25T20:33:27.115+09:00",
+    "curatedAt": "2026-10-04"
+  },
+  "itemsTarget": 50
 }
