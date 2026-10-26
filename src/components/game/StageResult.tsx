@@ -2,9 +2,11 @@
 
 import { RotateCcw, ArrowRight, List, Volume2 } from 'lucide-react';
 import { SvgArt } from '../SvgArt';
+import { ResidentAvatar } from './ResidentAvatar';
 import { WordText } from '../WordText';
 import { Stars, formatTime } from './StageMenu';
-import { getStage, type StageDef, type StageState } from '@/lib/stages';
+import { activeRequest, getStage, type StageDef, type StageState } from '@/lib/stages';
+import { residentFor } from '@/lib/residents';
 import type { Lang, SceneItem } from '@/lib/types';
 import { translationOf } from '@/lib/words';
 
@@ -12,6 +14,8 @@ interface StageResultProps {
   stage: StageDef;
   state: StageState;
   stars: number;
+  bestCombo: number;
+  sceneId: string;
   itemsById: ReadonlyMap<string, SceneItem>;
   lang: Lang;
   showReading: boolean;
@@ -22,9 +26,11 @@ interface StageResultProps {
   onMenu: () => void;
 }
 
-export function StageResult({ stage, state, stars, itemsById, lang, showReading, showTranslation, onSay, onRetry, onNext, onMenu }: StageResultProps) {
+export function StageResult({ stage, state, stars, bestCombo, sceneId, itemsById, lang, showReading, showTranslation, onSay, onRetry, onNext, onMenu }: StageResultProps) {
   const next = getStage(stage.id + 1);
   const timeMs = (state.finishedAt ?? state.startedAt) - state.startedAt;
+  const requests = activeRequest(state, stage).total;
+  const helped = Array.from({ length: Math.min(requests, 3) }, (_, i) => residentFor(sceneId, i));
   return (
     // 遮罩不擋滑鼠：面板外可以直接拖曳地圖；只有面板本身攔截
     <div className="pointer-events-none absolute inset-0 z-30 grid place-items-center bg-ink/20 p-4">
@@ -32,8 +38,13 @@ export function StageResult({ stage, state, stars, itemsById, lang, showReading,
         <div className="text-center">
           <div className="text-sm font-semibold text-brand">{stage.name} 完成</div>
           <div className="mt-2 flex justify-center"><Stars count={stars} size={36} /></div>
+          <div className="mt-3 flex items-end justify-center -space-x-2">
+            {helped.map((r) => <ResidentAvatar key={r.name} look={r.look} happy className="size-12 rounded-full ring-2 ring-paper" />)}
+          </div>
+          <div className="mt-1 text-sm font-semibold">完成 {requests} 個委託，{helped.map((r) => r.name).join('、')}都很感謝你！</div>
           <div className="mt-2 text-sm text-muted">
             用時 {formatTime(timeMs)} · 提示 {state.hintsUsed} 次{state.revealed.length > 0 && ` · 揭曉 ${state.revealed.length} 個`}
+            {bestCombo >= 2 && <span className="font-bold text-accent"> · 最高連擊 ×{bestCombo}</span>}
           </div>
         </div>
 

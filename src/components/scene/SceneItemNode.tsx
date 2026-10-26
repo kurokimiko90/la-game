@@ -4,7 +4,17 @@ import type { CSSProperties } from 'react';
 import { itemTransform } from '@/lib/geometry';
 import type { SceneItem } from '@/lib/types';
 
-export function SceneItemNode({ item, className }: { item: SceneItem; className?: string }) {
+/** 物品的一次性反應：找到（彈一下）、跟讀念對（歡呼跳）、差一點（搖一搖） */
+export type ReactionKind = 'pop' | 'cheer' | 'wiggle';
+
+export interface ItemReaction {
+  itemId: string;
+  sceneId: string;
+  kind: ReactionKind;
+  key: number;
+}
+
+export function SceneItemNode({ item, className, reaction }: { item: SceneItem; className?: string; reaction?: ItemReaction | null }) {
   const m = item.motion;
   const motionStyle = m ? ({ '--dur': `${m.dur}s`, '--delay': `${m.delay}s`, '--amp': m.amp } as CSSProperties) : undefined;
   return (
@@ -23,7 +33,10 @@ export function SceneItemNode({ item, className }: { item: SceneItem; className?
         overflow="visible"
         className={className}
       >
-        <g className={m ? `motion motion--${m.type}` : undefined} style={motionStyle} dangerouslySetInnerHTML={{ __html: item.body }} />
+        {/* key 換了就重新掛載，動畫才會重播 */}
+        <g key={reaction?.key ?? 'rest'} className={reaction ? `item-react item-react--${reaction.kind}` : undefined}>
+          <g className={m ? `motion motion--${m.type}` : undefined} style={motionStyle} dangerouslySetInnerHTML={{ __html: item.body }} />
+        </g>
       </svg>
     </g>
   );

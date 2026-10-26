@@ -125,18 +125,48 @@ test('自由探索：點物品顯示英文與中文，切日語顯示假名', as
   await expect(page.getByText('長椅')).toBeVisible();
 });
 
-test('看圖找：找齊 10 個 → 3 星', async ({ page }) => {
+test('看圖找：居民一次委託 3 樣，完成 3 個委託 → 3 星；連續找到有連擊', async ({ page }) => {
   await page.goto('/scene/park');
   await page.getByRole('button', { name: /看圖找/ }).click();
-  const words = await page.locator('ul[aria-label="要找的物品"] li span[lang="en"]').allTextContents();
-  expect(words).toHaveLength(10);
-  for (const w of words) {
-    const item = itemByEn.get(w)!;
-    await clickItem(page, item.id, item.zone);
-    await expect(page.getByRole('status')).toContainText('找到了');
+  const list = page.locator('ul[aria-label="要找的物品"] li span[lang="en"]');
+  for (let request = 1; request <= 3; request++) {
+    await expect(page.getByText(`委託 ${request} / 3`)).toBeVisible({ timeout: 5000 });
+    await expect(page.locator('ul[aria-label="要找的物品"]')).toBeVisible();
+    const words = await list.allTextContents();
+    expect(words).toHaveLength(3);
+    for (const [i, w] of words.entries()) {
+      const item = itemByEn.get(w)!;
+      await clickItem(page, item.id, item.zone);
+      await expect(page.getByRole('status')).toContainText('找到了');
+      if (request === 1 && i === 1) await expect(page.getByText('連擊 ×2')).toBeVisible();
+    }
   }
   await expect(page.getByText('看圖找 完成')).toBeVisible({ timeout: 5000 });
+  await expect(page.getByText(/完成 3 個委託/)).toBeVisible();
   await expect(page.getByLabel('3 顆星').first()).toBeVisible();
+});
+
+test('跟讀：按麥克風念對 → 念得好；首頁小鎮點亮', async ({ page }) => {
+  // 假的語音辨識（headless 沒有麥克風）：固定聽到 "a bench"
+  await page.addInitScript(() => {
+    const Fake = class {
+      onresult: ((e: unknown) => void) | null = null;
+      start() { setTimeout(() => this.onresult?.({ results: [[{ transcript: 'a bench' }]] }), 200); }
+      abort() {}
+    };
+    Object.assign(window, { SpeechRecognition: Fake, webkitSpeechRecognition: Fake });
+  });
+  await page.goto('/');
+  await expect(page.getByText(/記憶宮殿已點亮 0 \//)).toBeVisible();
+  await page.goto('/scene/park');
+  await page.getByRole('button', { name: /自由探索/ }).click();
+  await clickItem(page, 'bench', 'entrance');
+  await page.getByRole('button', { name: '跟著念' }).click();
+  await expect(page.getByRole('status')).toContainText('念得好');
+  await page.getByRole('link', { name: '回小鎮地圖' }).or(page.getByRole('button', { name: '回選關' })).first().click();
+  await page.goto('/');
+  await expect(page.getByText(/記憶宮殿已點亮 1 \//)).toBeVisible();
+  await expect(page.getByRole('link', { name: /公園.*1\/33/ })).toBeVisible();
 });
 
 /** 畫面內的一點：mode='gap' → 在某物品外框內、但不在任何形狀上（回傳外框最小的那個物品）；mode='empty' → 離所有物品外框 30px 以上 */
@@ -247,7 +277,7 @@ test('看圖找：點錯物品只顯示單字、不算找到；提示會用掉�
   await clickItem(page, other.id, other.zone);
   await expect(page.getByRole('status')).toContainText(other.words.en);
   await expect(page.getByRole('status')).not.toContainText('找到了');
-  await expect(page.getByText('1. 看圖找 · 0 / 10')).toBeVisible();
+  await expect(page.getByText('1. 看圖找 · 0 / 9')).toBeVisible();
 
   await page.getByRole('button', { name: /^3$/ }).click();
   await expect(page.getByText(/提示：在「/)).toBeVisible();

@@ -4,6 +4,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Minus, Plus, Maximize } from 'lucide-react';
 import { DistrictLayer } from './DistrictLayer';
+import type { ItemReaction } from './SceneItemNode';
 import { TownStrip } from './TownStrip';
 import { TownMinimap } from './TownMinimap';
 import { WorldBackground, worldSections } from './WorldBackground';
@@ -46,6 +47,10 @@ interface TownCanvasProps {
   initialFocus: Point;
   onSceneClick: (click: SceneClick) => void;
   onDistrict: (sceneId: string) => void;
+  /** 物品的一次性反應（彈跳、搖晃） */
+  reaction?: ItemReaction | null;
+  /** 畫在地圖座標裡的特效（找到時的粒子） */
+  worldLayer?: ReactNode;
   children?: ReactNode;
 }
 
@@ -72,7 +77,7 @@ const intersects = (a: Rect, b: Rect) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.
 
 export function TownCanvas({
   town, activeSceneId, lockedSceneIds, unlockHints, foundIds, hideUnfound = false, flashId = null, hintZoneKey = null, focus,
-  initialFocus, onSceneClick, onDistrict, children,
+  initialFocus, onSceneClick, onDistrict, reaction = null, worldLayer, children,
 }: TownCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState<Size | null>(null);
@@ -302,12 +307,14 @@ export function TownCanvas({
                   hideUnfound={active && hideUnfound}
                   flashId={active ? flashId : null}
                   hintZoneKey={active ? hintZoneKey : null}
+                  reaction={reaction?.sceneId === d.scene.id ? reaction : null}
                 />
               );
             })}
             {ripples.map((r) => (
               <circle key={r.id} cx={r.x} cy={r.y} r={36} fill="none" stroke="#ffffff" strokeWidth={6} className="click-ripple" pointerEvents="none" />
             ))}
+            {worldLayer && <g pointerEvents="none">{worldLayer}</g>}
           </g>
         </svg>
       )}

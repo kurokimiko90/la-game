@@ -121,9 +121,9 @@ const LOOKS: Record<string, (props: { s: Surface }) => ReactNode> = {
 export function Surfaces({ surfaces }: { surfaces: readonly Surface[] }) {
   return (
     <>
-      {surfaces.map((s) => {
+      {surfaces.map((s, i) => {
         const Look = LOOKS[s.look];
-        return Look ? <Look key={`${s.look}-${s.zone}`} s={s} /> : null;
+        return Look ? <Look key={`${s.look}-${s.zone}-${i}`} s={s} /> : null;
       })}
     </>
   );

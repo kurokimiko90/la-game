@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import {
   STAGES, RECALL_MAX_MISSES, getStage, pickTargets, createStageState, clickItem,
-  currentTarget, remainingTargets, takeHint, starsFor, type StageDef, type StageState,
+  currentTarget, remainingTargets, takeHint, starsFor, activeRequest, type StageDef, type StageState,
 } from '@/lib/stages';
 import { createRng } from '@/lib/rng';
 
@@ -15,7 +15,8 @@ function stateWith(id: number, targets: string[]): StageState {
 describe('STAGES', () => {
   test('四個階段，提示逐步減少', () => {
     expect(STAGES.map((s) => s.mode)).toEqual(['picture', 'text', 'audio', 'recall']);
-    expect(STAGES.map((s) => s.count)).toEqual([10, 8, 10, 10]);
+    expect(STAGES.map((s) => s.count)).toEqual([9, 9, 10, 10]);
+    expect(STAGES.map((s) => s.batch)).toEqual([3, 3, 5, 5]);
     expect(STAGES.map((s) => s.hints)).toEqual([3, 3, 3, 10]);
     expect(getStage(9)).toBeUndefined();
   });
@@ -154,5 +155,65 @@ describe('starsFor / remainingTargets', () => {
   test('remainingTargets', () => {
     const s = clickItem(stateWith(1, ['bench', 'tree']), stage(1), 'tree', 1).state;
     expect(remainingTargets(s)).toEqual(['bench']);
+  });
+});
+
+describe('委託（一次只處理一批目標）', () => {
+  const six = ['bench', 'tree', 'kite', 'ball', 'slide', 'swing'];
+
+  test('activeRequest：第一批還沒完成前只顯示第一批', () => {
+    const s = stateWith(1, six);
+    expect(activeRequest(s, stage(1))).toEqual({ index: 0, total: 2, items: ['bench', 'tree', 'kite'] });
+    const one = clickItem(s, stage(1), 'tree', 1).state;
+    expect(activeRequest(one, stage(1)).items).toEqual(['bench', 'tree', 'kite']);
+  });
+
+  test('下一批的物品還不算目標', () => {
+    const s = stateWith(1, six);
+    expect(clickItem(s, stage(1), 'slide', 1).events).toEqual([{ type: 'not-target', itemId: 'slide' }]);
+  });
+
+  test('一批完成 → request-done，進到下一批；最後一批只有 complete', () => {
+    let s = stateWith(1, six);
+    s = clickItem(s, stage(1), 'bench', 1).state;
+    s = clickItem(s, stage(1), 'kite', 2).state;
+    const r = clickItem(s, stage(1), 'tree', 3);
+    expect(r.events).toEqual([{ type: 'found', itemId: 'tree' }, { type: 'request-done', index: 0 }]);
+    expect(activeRequest(r.state, stage(1))).toEqual({ index: 1, total: 2, items: ['ball', 'slide', 'swing'] });
+    s = r.state;
+    s = clickItem(s, stage(1), 'ball', 4).state;
+    s = clickItem(s, stage(1), 'slide', 5).state;
+    expect(clickItem(s, stage(1), 'swing', 6).events.map((e) => e.type)).toEqual(['found', 'complete']);
+  });
+
+  test('提示只指向目前這一批', () => {
+    let s = stateWith(1, six);
+    for (const id of ['bench', 'tree', 'kite']) s = clickItem(s, stage(1), id, 1).state;
+    expect(takeHint(s, stage(1)).targetId).toBe('ball');
+  });
+
+  test('依序模式也分批（換一位居民來問）', () => {
+    let s = stateWith(3, ITEMS.slice(0, 10));
+    expect(activeRequest(s, stage(3))).toEqual({ index: 0, total: 2, items: ITEMS.slice(0, 5) });
+    for (const id of ITEMS.slice(0, 4)) s = clickItem(s, stage(3), id, 1).state;
+    expect(clickItem(s, stage(3), ITEMS[4], 2).events).toContainEqual({ type: 'request-done', index: 0 });
+  });
+
+  test('記憶挑戰：揭曉最後一個也算這批完成', () => {
+    let s = stateWith(4, ITEMS.slice(0, 10));
+    for (const id of ITEMS.slice(0, 4)) s = clickItem(s, stage(4), id, 1).state;
+    let events: string[] = [];
+    for (let i = 0; i < RECALL_MAX_MISSES; i++) {
+      const r = clickItem(s, stage(4), null, i);
+      s = r.state;
+      events = r.events.map((e) => e.type);
+    }
+    expect(events).toEqual(['miss', 'revealed', 'request-done']);
+  });
+
+  test('完成後停在最後一批', () => {
+    let s = stateWith(1, ['bench']);
+    s = clickItem(s, stage(1), 'bench', 1).state;
+    expect(activeRequest(s, stage(1))).toEqual({ index: 0, total: 1, items: ['bench'] });
   });
 });

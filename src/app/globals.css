@@ -152,6 +152,106 @@ ruby rt {
   to { opacity: 1; transform: none; }
 }
 
+/* 物品的一次性反應（SceneItemNode 的 item-react）：transform-box 讓縮放以物件本身為中心 */
+.item-react {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.item-react--pop { animation: react-pop 0.55s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.item-react--cheer { animation: react-cheer 0.9s ease-out; }
+.item-react--wiggle { animation: react-wiggle 0.5s ease-in-out; }
+@keyframes react-pop {
+  0% { transform: scale(1, 1); }
+  25% { transform: scale(1.18, 0.82); }
+  55% { transform: translateY(-14%) scale(0.92, 1.12); }
+  100% { transform: none; }
+}
+@keyframes react-cheer {
+  0%, 100% { transform: none; }
+  20% { transform: translateY(-22%) rotate(-6deg); }
+  40% { transform: translateY(0) scale(1.1, 0.9); }
+  60% { transform: translateY(-12%) rotate(6deg); }
+  80% { transform: translateY(0); }
+}
+@keyframes react-wiggle {
+  0%, 100% { transform: none; }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(7deg); }
+  60% { transform: rotate(-5deg); }
+  80% { transform: rotate(3deg); }
+}
+
+/* 找到時的粒子（FoundBurst）：位移經 --dx/--dy 帶入，單位是地圖座標。
+   平常 opacity 0：減少動態時動畫關掉，粒子就不會停在畫面上 */
+.burst-bit {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: burst-fly var(--dur, 0.8s) cubic-bezier(0.15, 0.7, 0.3, 1) forwards;
+}
+@keyframes burst-fly {
+  0% { opacity: 1; transform: translate(0, 0) scale(0.4) rotate(0deg); }
+  60% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1) rotate(var(--rot, 90deg)); }
+}
+.burst-ring {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: burst-ring 0.6s ease-out forwards;
+}
+@keyframes burst-ring {
+  from { opacity: 0.9; transform: scale(0.3); }
+  to { opacity: 0; transform: scale(1.4); }
+}
+
+/* 連擊徽章 */
+.combo-pop {
+  animation: combo-pop 0.45s cubic-bezier(0.3, 1.7, 0.5, 1);
+}
+@keyframes combo-pop {
+  from { opacity: 0; transform: scale(0.4) rotate(-8deg); }
+  to { opacity: 1; transform: none; }
+}
+
+/* 居民說話：頭微微上下、嘴巴開合 */
+.resident--talking .resident-head {
+  animation: resident-bob 0.32s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.resident-mouth-open { display: none; }
+.resident--talking .resident-mouth-open { display: inline; animation: mouth 0.24s steps(1) infinite; }
+.resident--talking .resident-mouth-closed { animation: mouth 0.24s steps(1) infinite reverse; }
+@keyframes resident-bob {
+  from { transform: translateY(0); }
+  to { transform: translateY(-3%); }
+}
+@keyframes mouth {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.resident--happy .resident-head {
+  animation: react-cheer 0.9s ease-out;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+/* 跟讀：錄音中的麥克風外圈 */
+.mic-listening {
+  animation: mic-pulse 1s ease-in-out infinite;
+}
+@keyframes mic-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(229, 115, 115, 0.55); }
+  50% { box-shadow: 0 0 0 8px rgba(229, 115, 115, 0); }
+}
+
+/* 首頁小鎮：還沒點過的物品褪色，點過的恢復原色 */
+.town-overview .item-dim {
+  filter: grayscale(0.85);
+  opacity: 0.45;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation: none !important;

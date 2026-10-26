@@ -8,7 +8,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       include: ['src/lib/**/*.ts', 'scripts/lib/**/*.mjs'],
-      exclude: ['src/lib/types.ts', 'src/lib/audio.ts'],
+      exclude: ['src/lib/types.ts', 'src/lib/audio.ts', 'src/lib/sfx.ts'],
     },
   },
 });

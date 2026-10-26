@@ -2,7 +2,7 @@
 // memo：平移時只有 idle 會變，其他街區不必重畫；idle（在畫面外）時暫停動畫。
 import { memo } from 'react';
 import { Lock } from 'lucide-react';
-import { SceneItemNode } from './SceneItemNode';
+import { SceneItemNode, type ItemReaction } from './SceneItemNode';
 import { districtBounds, rectCenter, zoneKey, type District } from '@/lib/town';
 
 interface DistrictLayerProps {
@@ -16,9 +16,11 @@ interface DistrictLayerProps {
   hideUnfound: boolean;
   flashId: string | null;
   hintZoneKey: string | null;
+  /** 這個街區裡正在反應的物品（別的街區傳 null，memo 才有效） */
+  reaction: ItemReaction | null;
 }
 
-function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfound, flashId, hintZoneKey }: DistrictLayerProps) {
+function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfound, flashId, hintZoneKey, reaction }: DistrictLayerProps) {
   const { scene } = district;
   const hintZone = scene.zones.find((z) => zoneKey(scene.id, z.id) === hintZoneKey);
   const center = rectCenter(districtBounds(district));
@@ -35,7 +37,7 @@ function DistrictLayerImpl({ district, idle, locked, unlockHint, found, hideUnfo
           const isFound = found.has(item.id);
           const cls = ['scene-item', isFound && 'scene-item--found', hideUnfound && !isFound && 'scene-item--hidden', flashId === item.id && 'scene-item--flash']
             .filter(Boolean).join(' ');
-          return <SceneItemNode key={item.id} item={item} className={cls} />;
+          return <SceneItemNode key={item.id} item={item} className={cls} reaction={reaction?.itemId === item.id ? reaction : null} />;
         })}
       </g>
       {locked && (

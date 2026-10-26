@@ -15,13 +15,15 @@ export interface StageDef {
   sequential: boolean;
   /** 這一關可用的提示次數 */
   hints: number;
+  /** 一個「委託」幾個目標：一次只處理一批，完成後換下一位居民 */
+  batch: number;
 }
 
 export const STAGES: readonly StageDef[] = [
-  { id: 1, mode: 'picture', name: '看圖找', description: '看圖示和單字，找出物品', count: 10, sequential: false, hints: 3 },
-  { id: 2, mode: 'text', name: '看字找', description: '看單字和圖示，找出物品', count: 8, sequential: false, hints: 3 },
-  { id: 3, mode: 'audio', name: '聽音找', description: '聽發音、看圖示，找出物品', count: 10, sequential: true, hints: 3 },
-  { id: 4, mode: 'recall', name: '記憶挑戰', description: '物品都藏起來了，聽到單字後點出它原本的位置', count: 10, sequential: true, hints: 10 },
+  { id: 1, mode: 'picture', name: '看圖找', description: '看圖示和單字，找出物品', count: 9, sequential: false, hints: 3, batch: 3 },
+  { id: 2, mode: 'text', name: '看字找', description: '看單字和圖示，找出物品', count: 9, sequential: false, hints: 3, batch: 3 },
+  { id: 3, mode: 'audio', name: '聽音找', description: '聽發音、看圖示，找出物品', count: 10, sequential: true, hints: 3, batch: 5 },
+  { id: 4, mode: 'recall', name: '記憶挑戰', description: '物品都藏起來了，聽到單字後點出它原本的位置', count: 10, sequential: true, hints: 10, batch: 5 },
 ];
 
 /** 記憶挑戰同一個物品點錯幾次後直接揭曉位置 */
@@ -57,6 +59,7 @@ export type StageEvent =
   | { type: 'not-target'; itemId: string }
   | { type: 'miss'; targetId: string; misses: number }
   | { type: 'revealed'; itemId: string }
+  | { type: 'request-done'; index: number }
   | { type: 'complete' };
 
 export function createStageState(stage: StageDef, itemIds: readonly string[], rng: () => number, now: number): StageState {
@@ -76,19 +79,38 @@ export function remainingTargets(state: StageState): string[] {
   return state.targets.filter((id) => !state.found.includes(id));
 }
 
+export interface Request {
+  index: number;
+  total: number;
+  /** 這一批的全部目標（含已找到的） */
+  items: string[];
+}
+
+/** 目前的委託：第一個還沒全部找到的批次；全部完成後停在最後一批 */
+export function activeRequest(state: StageState, stage: StageDef): Request {
+  const size = Math.max(1, stage.batch);
+  const total = Math.max(1, Math.ceil(state.targets.length / size));
+  const batchAt = (i: number) => state.targets.slice(i * size, (i + 1) * size);
+  let index = 0;
+  while (index < total - 1 && batchAt(index).every((id) => state.found.includes(id))) index++;
+  return { index, total, items: batchAt(index) };
+}
+
 /** 依序模式下目前要找的物品；清單模式回 null */
 export function currentTarget(state: StageState, stage: StageDef): string | null {
   if (!stage.sequential) return null;
   return remainingTargets(state)[0] ?? null;
 }
 
-function markFound(state: StageState, itemId: string, now: number): { state: StageState; events: StageEvent[] } {
+function markFound(state: StageState, stage: StageDef, itemId: string, now: number): { state: StageState; events: StageEvent[] } {
   const found = [...state.found, itemId];
   const done = found.length === state.targets.length;
-  return {
-    state: { ...state, found, finishedAt: done ? now : null },
-    events: done ? [{ type: 'found', itemId }, { type: 'complete' }] : [{ type: 'found', itemId }],
-  };
+  const next = { ...state, found, finishedAt: done ? now : null };
+  if (done) return { state: next, events: [{ type: 'found', itemId }, { type: 'complete' }] };
+  const before = activeRequest(state, stage).index;
+  const events: StageEvent[] = [{ type: 'found', itemId }];
+  if (activeRequest(next, stage).index !== before) events.push({ type: 'request-done', index: before });
+  return { state: next, events };
 }
 
 /**
@@ -101,27 +123,29 @@ export function clickItem(state: StageState, stage: StageDef, itemId: string | n
   if (stage.mode === 'recall') {
     const target = currentTarget(state, stage);
     if (!target) return { state, events: [] };
-    if (itemId === target) return markFound(state, target, now);
+    if (itemId === target) return markFound(state, stage, target, now);
     const misses = (state.misses[target] ?? 0) + 1;
     const next = { ...state, misses: { ...state.misses, [target]: misses } };
     if (misses < RECALL_MAX_MISSES) return { state: next, events: [{ type: 'miss', targetId: target, misses }] };
     const revealedState = { ...next, revealed: [...next.revealed, target] };
-    const result = markFound(revealedState, target, now);
+    const result = markFound(revealedState, stage, target, now);
     return { state: result.state, events: [{ type: 'miss', targetId: target, misses }, { type: 'revealed', itemId: target }, ...result.events.filter((e) => e.type !== 'found')] };
   }
 
   if (itemId === null) return { state, events: [] };
   const isTarget = stage.sequential
     ? itemId === currentTarget(state, stage)
-    : state.targets.includes(itemId) && !state.found.includes(itemId);
+    : activeRequest(state, stage).items.includes(itemId) && !state.found.includes(itemId);
   if (!isTarget) return { state, events: [{ type: 'not-target', itemId }] };
-  return markFound(state, itemId, now);
+  return markFound(state, stage, itemId, now);
 }
 
-/** 用掉一次提示，回傳要提示的物品（依序模式 = 目前目標；清單模式 = 第一個還沒找到的） */
+/** 用掉一次提示，回傳要提示的物品（依序模式 = 目前目標；清單模式 = 這一批第一個還沒找到的） */
 export function takeHint(state: StageState, stage: StageDef): { state: StageState; targetId: string | null } {
   if (state.finishedAt !== null || state.hintsUsed >= stage.hints) return { state, targetId: null };
-  const targetId = stage.sequential ? currentTarget(state, stage) : remainingTargets(state)[0] ?? null;
+  const targetId = stage.sequential
+    ? currentTarget(state, stage)
+    : activeRequest(state, stage).items.find((id) => !state.found.includes(id)) ?? null;
   if (!targetId) return { state, targetId: null };
   return { state: { ...state, hintsUsed: state.hintsUsed + 1 }, targetId };
 }

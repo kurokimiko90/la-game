@@ -20,6 +20,8 @@ export interface Settings {
   showReading: boolean;
   /** 測試用：解鎖全部場景與階段 */
   unlockAll: boolean;
+  /** 找到、連擊、完成的音效 */
+  sfx: boolean;
 }
 
 export interface Progress {
@@ -31,7 +33,7 @@ export interface Progress {
   words: Record<string, WordRecord>;
 }
 
-export const DEFAULT_SETTINGS: Settings = { lang: 'en', showTranslation: true, showReading: true, unlockAll: false };
+export const DEFAULT_SETTINGS: Settings = { lang: 'en', showTranslation: true, showReading: true, unlockAll: false, sfx: true };
 export const DEFAULT_PROGRESS: Progress = { version: 1, settings: DEFAULT_SETTINGS, stages: {}, words: {} };
 
 export const stageKey = (sceneId: string, stageId: number) => `${sceneId}:${stageId}`;
@@ -87,6 +89,11 @@ export function sceneStars(p: Progress, sceneId: string): number {
     .reduce((sum, [, r]) => sum + r.stars, 0);
 }
 
+/** 街區裡看過（點過）幾個物品：首頁小鎮用來決定這一區亮了多少 */
+export function sceneSeenCount(p: Progress, sceneId: string, itemIds: readonly string[]): number {
+  return itemIds.filter((id) => (p.words[wordKey(sceneId, id)]?.seen ?? 0) > 0).length;
+}
+
 // ── localStorage 解析：欄位型別不對就丟掉該欄位，不讓壞資料弄壞遊戲 ──
 
 const isObject = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
@@ -99,6 +106,7 @@ function parseSettings(raw: unknown): Settings {
     showTranslation: typeof raw.showTranslation === 'boolean' ? raw.showTranslation : DEFAULT_SETTINGS.showTranslation,
     showReading: typeof raw.showReading === 'boolean' ? raw.showReading : DEFAULT_SETTINGS.showReading,
     unlockAll: typeof raw.unlockAll === 'boolean' ? raw.unlockAll : DEFAULT_SETTINGS.unlockAll,
+    sfx: typeof raw.sfx === 'boolean' ? raw.sfx : DEFAULT_SETTINGS.sfx,
   };
 }
 

@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import {
   DEFAULT_PROGRESS, FREE_SCENE_COUNT, recordStageClear, recordWordSeen, recordWordFound, updateSettings,
-  isSceneUnlocked, isStageUnlocked, isStageCleared, sceneStars, parseProgress, stageKey, wordKey,
+  isSceneUnlocked, isStageUnlocked, isStageCleared, sceneStars, sceneSeenCount, parseProgress, stageKey, wordKey,
 } from '@/lib/progress';
 
 const ORDER = ['park', 'street', 'riverside', 'supermarket'];
@@ -81,7 +81,7 @@ describe('parseProgress（localStorage 資料不可信）', () => {
       stages: { 'park:1': { stars: 9, bestTimeMs: 100, clears: 1 }, 'park:2': { stars: -1 }, bad: 3 },
       words: { 'park/bench': { seen: 1, found: 0, lastAt: 2 }, 'park/x': { seen: 'a' } },
     });
-    expect(p.settings).toEqual({ lang: 'en', showTranslation: false, showReading: true, unlockAll: true });
+    expect(p.settings).toEqual({ lang: 'en', showTranslation: false, showReading: true, unlockAll: true, sfx: true });
     expect(p.stages).toEqual({ 'park:1': { stars: 3, bestTimeMs: 100, clears: 1 } });
     expect(p.words).toEqual({ 'park/bench': { seen: 1, found: 0, lastAt: 2 } });
   });
@@ -93,5 +93,21 @@ describe('parseProgress（localStorage 資料不可信）', () => {
   test('正常資料原樣保留', () => {
     const p = recordWordSeen(recordStageClear(updateSettings(DEFAULT_PROGRESS, { lang: 'ja' }), 'park', 1, 3, 9), 'park', 'bench', 1);
     expect(parseProgress(JSON.parse(JSON.stringify(p)))).toEqual(p);
+  });
+});
+
+describe('音效設定與街區點亮', () => {
+  test('預設開啟音效；壞資料退回預設', () => {
+    expect(DEFAULT_PROGRESS.settings.sfx).toBe(true);
+    expect(parseProgress({ version: 1, settings: { sfx: false } }).settings.sfx).toBe(false);
+    expect(parseProgress({ version: 1, settings: { sfx: 'no' } }).settings.sfx).toBe(true);
+  });
+
+  test('sceneSeenCount：只算這個街區看過的物品', () => {
+    let p = recordWordSeen(DEFAULT_PROGRESS, 'park', 'bench', 1);
+    p = recordWordSeen(p, 'park', 'tree', 2);
+    p = recordWordSeen(p, 'street', 'bench', 3);
+    expect(sceneSeenCount(p, 'park', ['bench', 'tree', 'kite'])).toBe(2);
+    expect(sceneSeenCount(p, 'riverside', ['bench'])).toBe(0);
   });
 });
